@@ -1,18 +1,26 @@
 from django.shortcuts import render
+import os
+import sys
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect, HttpResponse
-from django.shortcuts import render
+from django.conf import settings
 from django.contrib.auth.models import User
 from OCR.models import DocUpload
 from OCR.forms import DocUploadForm, UserForm, UserProfileForm
-
+CV_CODE_PATH=settings.BASE_DIR+'/CVCode/'
+sys.path.insert(0, CV_CODE_PATH)
+import AdapThresh
 def index(request):
+    #print os.listdir(settings.BASE_DIR)
+    #print settings.BASE_DIR
     if request.method == 'POST':
         form = DocUploadForm(request.POST, request.FILES)
         if form.is_valid():
             newdoc = DocUpload(uploaded_doc = request.FILES['uploaded_doc'])
             newdoc.save()
-            return HttpResponse('image upload success')
+            IMAGE_PATH=str(newdoc)
+            AdapThresh.binarise(IMAGE_PATH)
+            return render(request, 'OCR/user.html', {'url':str(newdoc)})
         else:
             print form.errors
             return HttpResponse('image upload failed')
@@ -33,7 +41,7 @@ def user_login(request):
         if user:
             if user.is_active:
                 login(request, user)
-                return HttpResponseRedirect('/OCR/')
+                return HttpResponseRedirect('/OCR/user/')
             else:
                 return HttpResponse("Your ResearchUSA account is disabled.")
         else:
@@ -42,6 +50,10 @@ def user_login(request):
 
     else:
         return render(request, 'OCR/login.html', {})
+    
+
+def user(request):
+    return render(request, 'OCR/user.html', {})
 
 def register(request):
 

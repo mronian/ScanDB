@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ResearchUSA</title>
+    </head>
+
+    <body>
+        <h1>Check the Image</h1>
+        
+         <img src="{{STATIC_URL}}/binarised/{{url}}" alt="Binary Image" />
+         {{url}}
+
+        <form id="doc_edit" method="post" action="/OCR/user/"
+                enctype="multipart/form-data">
+
+            {% csrf_token %}
+
+            <input type="submit" name="submit" value="Next" />
+        </form>
+    </body>
+</html>
