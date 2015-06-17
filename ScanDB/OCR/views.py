@@ -9,7 +9,8 @@ from OCR.models import DocUpload
 from OCR.forms import DocUploadForm, UserForm, UserProfileForm
 CV_CODE_PATH=settings.BASE_DIR+'/CVCode/'
 sys.path.insert(0, CV_CODE_PATH)
-import AdapThresh
+import GetData
+
 def index(request):
     #print os.listdir(settings.BASE_DIR)
     #print settings.BASE_DIR
@@ -19,7 +20,7 @@ def index(request):
             newdoc = DocUpload(uploaded_doc = request.FILES['uploaded_doc'])
             newdoc.save()
             IMAGE_PATH=str(newdoc)
-            AdapThresh.binarise(IMAGE_PATH)
+            GetData.start(IMAGE_PATH)
             return render(request, 'OCR/user.html', {'url':str(newdoc)})
         else:
             print form.errors
