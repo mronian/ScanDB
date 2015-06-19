@@ -1,7 +1,9 @@
+from __future__ import absolute_import
 """
 Django settings for ScanDB project.
 
 For more information on this file, see
+
 https://docs.djangoproject.com/en/1.7/topics/settings/
 
 For the full list of settings and their values, see
@@ -26,7 +28,11 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+# CELERY SETTINGS
+BROKER_URL = 'amqp://guest:guest@localhost//'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
 # Application definition
 
 INSTALLED_APPS = (

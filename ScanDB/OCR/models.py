@@ -18,8 +18,12 @@ class DocUpload(models.Model):
 		return os.path.basename(self.uploaded_doc.name)
 
 class UserProfile(models.Model):
+	Admin_type = "Admin"
+	User_type= "User"
+	
+	User_Account_Types= ((Admin_type, 'Admin'), (User_type , 'User'))
 	user = models.OneToOneField(User)
-	account_type = models.CharField(max_length=100)
+	account_type = models.CharField(max_length=100, choices=User_Account_Types, default=User_type)
     
 	def __unicode__(self):
 		return self.user.username

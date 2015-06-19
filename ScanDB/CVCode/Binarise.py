@@ -3,9 +3,6 @@ import cv2
 from django.conf import settings
 import os
 
-def nothing(x):
-    pass
-
 def getBinary(filename):
     pathr=settings.BASE_DIR+'/media/uploads/'
     filenamer=pathr+filename
@@ -22,4 +19,4 @@ def getBinary(filename):
 
 if __name__ == "__main__":
     import sys
-    binarise(sys.argv[1])
+    getBinary(sys.argv[1])

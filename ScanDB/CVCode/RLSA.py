@@ -2,20 +2,13 @@ import numpy as np
 import cv2
 import os
 
-def nothing(x):
-    pass
-
 def getSegments(filename):
     print filename
-    print "Binarisation"
-
-    # command="ocropus-nlbin -n "+filename+" -o book"
-    # os.system(command)
     print "Running RLSA"
-    filenamer="book/0001.bin.png"
+    filenamer="./static/binarised/"+filename
     img=cv2.imread(filenamer, cv2.IMREAD_UNCHANGED)
     thresholdh=70
-    thresholdw=47
+    thresholdw=45
 
     height, width=img.shape
 
@@ -25,8 +18,8 @@ def getSegments(filename):
     doc = cv2.dilate(doc, element, iterations=1)
     # doc = cv2.erode(doc, element, iterations=1)
 
-    filenamew="Thresh/Noise2.png"
-    cv2.imwrite(filenamew, doc)
+    #filenamew="Thresh/Noise2.png"
+    #cv2.imwrite(filenamew, doc)
     doc2=doc.copy()
     h=w=0
     while(h<height):
@@ -44,7 +37,7 @@ def getSegments(filename):
         h=h+1 
         w=0
 
-    print "Doc 1 Done for "+ str(thresholdh)
+    #print "Doc 1 Done for "+ str(thresholdh)
 
     while(w<width):
         c=1
@@ -60,15 +53,15 @@ def getSegments(filename):
                 doc2.itemset((i,w), VAL)
         w=w+1 
         h=0
-    print "Doc 2 Done for "+ str(thresholdh)
+    #print "Doc 2 Done for "+ str(thresholdh)
     cv2.bitwise_and(doc, doc2, doc)
     doc3 = cv2.dilate(doc, element, iterations=2)
-    filenamew="Thresh/Noised.png"
-    cv2.imwrite(filenamew, doc3)
+    #filenamew="Thresh/Noised.png"
+    #cv2.imwrite(filenamew, doc3)
     doc3 = cv2.erode(doc3, element, iterations=5)
 
-    filenamew="Thresh/Noisede.png"
-    cv2.imwrite(filenamew, doc3)
+    #filenamew="Thresh/Noisede.png"
+    #cv2.imwrite(filenamew, doc3)
     contours, hierarchy=cv2.findContours(doc3, 2,cv2.CHAIN_APPROX_SIMPLE)
     tr=0
     area=0
@@ -82,18 +75,14 @@ def getSegments(filename):
             x,y,w,h=cv2.boundingRect(cnt)
             cv2.rectangle(doc3,(x,y),(x+w,y+h),(127),5)
             img2=img[y:y+h, x:x+w]
-            filenamew="Thresh/Dump1"+ str(tr)+'.png'
+            filenamew="./static/segments/"+ str(tr)+'.jpg'
             cv2.imwrite(filenamew,  img2)
             tr=tr+1
-    print tr
-        # es=cv2.waitKey(33)
-        # if es==27:
-        #     break
-
-    filenamew="Thresh/Bin1"+ str(tr)+'.png'
+    #print tr
+    filenamew="./static/segmented/"+ str(tr)+'.jpg'
     cv2.imwrite(filenamew, doc3)
 
 
 if __name__ == "__main__":
     import sys
-    rlsa(sys.argv[1])
+    getSegments(sys.argv[1])

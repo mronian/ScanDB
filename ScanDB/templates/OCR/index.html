@@ -3,7 +3,7 @@
 {% load staticfiles %} <!-- New line -->
 
 <html>
-
+ 
     <head>
         <title>OCR</title>
     </head>
@@ -12,17 +12,24 @@
         <h1>Hello!</h1>
         {% if user.is_authenticated %}
         <h1>Hello {{ user.username }}!</h1>
+        <a href="/OCR/logout/">Logout</a>
         {% else %}
         <h1>Hello world!</h1>
+        <a href="/OCR/login/">Login</a>
         {% endif %}
+        {{acc_type}}
+        
+        {% if Admin %}
         <strong>{{ boldmessage }}</strong><br />
         <a href="/OCR/register/">Register Here</a>
-        <a href="/OCR/login/">Login</a>
-        <form action="/OCR/" method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{form.as_p }}
-           <input type="submit" value="Submit" />
-         </form>
+        <a href="/OCR/admin/">Go To Console</a>
+        {% endif %}
+        
+        {% if User %}
+        <a href="/OCR/user/">Check Data</a>
+        {% endif %}
+        
+      
     </body>
 
 </html>

@@ -6,17 +6,30 @@
 
     <body>
         <h1>Check the Image</h1>
-        
-         <img src="{{STATIC_URL}}/binarised/{{url}}" alt="Binary Image" />
-         {{url}}
-
         <form id="doc_edit" method="post" action="/OCR/user/"
                 enctype="multipart/form-data">
-
+            <table align="center">
+            <tr>
+                <td>
+                    <img src="{{STATIC_URL}}segments/{{url}}" height="40%" alt="Contact" />
+                </td>
+                <td>
+                    <textarea rows="25" cols="40">
+                        {{OCR_TEXT}}
+                    </textarea>
+                </td>
+            </tr>
+            </table>
+            <table align="center">
+            <tr>
+                <td>
+                    <input type="hidden" name="Filename" value= "{{url}}" />
+                    <input type="submit" name="Next" value="Next" />
+                    <input type="submit" name="Delete" value="Delete" />
+                </td>
+            </tr>
+            </table>
             {% csrf_token %}
-
-            <input type="submit" name="Next" value="Next" />
-            <input type="submit" name="Delete" value="Delete" />
         </form>
     </body>
 </html>

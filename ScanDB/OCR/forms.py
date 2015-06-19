@@ -16,6 +16,11 @@ class UserForm(forms.ModelForm):
         fields = ('username', 'email', 'password',)
 
 class UserProfileForm(forms.ModelForm):
+    Admin_type = "Admin"
+    User_type= "User"
+    
+    User_Account_Types= ((Admin_type, 'Admin'), (User_type , 'User'))
+    account_type=forms.ChoiceField(choices=User_Account_Types, widget=forms.RadioSelect())
     class Meta:
         model = UserProfile
         fields = ('account_type',)
