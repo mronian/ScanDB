@@ -11,9 +11,12 @@ information from directories and other sources of business details.
 1. OpenCV <br>
 2. Python 2.7 <br>
 3. Django 1.7 <br>
-4. Celery <br>
-5. Tesseract OCR <br>
+4. Celery 3.1.18<br>
+5. Tesseract OCR 3.02 <br>
 6. OCROpus <br>
+7. PLY (Python Lex-Yacc) 3.6 <br>
+8. FuzzyWuzzy
+9. Scikit-learn
 
 ##Setting it Up
 
@@ -51,8 +54,10 @@ The process may be completely automated once a sufficient confidence level is ac
 * OCR by Tesseract
 * Correcting OCR with Spell Check, Fuzzy String Matching
 * Correcting OCR with learned Neural Network from User corrections
+* Regular Expressions for Details like Email, Website, Phone Number etc.
 * Analysing Tokens
 * Parsing Tokens with a Stochastic Layout Parser
+* Layout Parser uses an LR Grammar
 * Validating Information
 * Showing Information to User
 * Learning from Corrections made
