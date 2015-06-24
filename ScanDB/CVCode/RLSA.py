@@ -62,22 +62,24 @@ def getSegments(filename):
 
     #filenamew="Thresh/Noisede.png"
     #cv2.imwrite(filenamew, doc3)
-    contours, hierarchy=cv2.findContours(doc3, 2,cv2.CHAIN_APPROX_SIMPLE)
+    print "HELLO"
+    contours, hierarchy=cv2.findContours(doc3, cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     tr=0
     area=0
     # cv2.namedWindow('Original', cv2.WINDOW_AUTOSIZE)
     # cv2.createTrackbar('WP','Original',1000,20000,nothing)
     # while(1):
     #     tr=0
-    for cnt in contours:
+    for idx, cnt in enumerate(contours):
         area = cv2.contourArea(cnt)
         if area>15000:#cv2.getTrackbarPos('WP', 'Original'):
-            x,y,w,h=cv2.boundingRect(cnt)
-            cv2.rectangle(doc3,(x,y),(x+w,y+h),(127),5)
-            img2=img[y:y+h, x:x+w]
-            filenamew="./static/segments/"+ str(tr)+'.jpg'
-            cv2.imwrite(filenamew,  img2)
-            tr=tr+1
+            if hierarchy[0][idx][3]==0:
+                x,y,w,h=cv2.boundingRect(cnt)
+                cv2.rectangle(doc3,(x,y),(x+w,y+h),(127),5)
+                img2=img[y:y+h, x:x+w]
+                filenamew="./static/segments/"+ str(tr)+'.jpg'
+                cv2.imwrite(filenamew,  img2)
+                tr=tr+1
     #print tr
     filenamew="./static/segmented/"+ str(tr)+'.jpg'
     cv2.imwrite(filenamew, doc3)
