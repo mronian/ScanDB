@@ -6,7 +6,10 @@ from django.contrib.auth.models import User
 
 def update_filename(instance, filename):
     path = "uploads/"
-    return path+format(filename)
+    idx=str(DocUpload.objects.all().aggregate(models.Max('id'))['id__max'])
+    if idx=='None':
+	idx='0'
+    return path+idx+'.tif'
 
 class DocUpload(models.Model):
 	
@@ -27,3 +30,4 @@ class UserProfile(models.Model):
     
 	def __unicode__(self):
 		return self.user.username
+	

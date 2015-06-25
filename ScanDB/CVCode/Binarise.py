@@ -10,11 +10,12 @@ def getBinary(filename):
     doc=cv2.imread(filenamer, cv2.IMREAD_UNCHANGED)
     
     print "Setting the White Point/Black Point for the Image"
-    command="ocropus-nlbin -n "+filenamer+" -o ./static/binarised"
+    os.system("mkdir ./static/binarised/"+filename.strip('.tif'))
+    command="ocropus-nlbin -n "+filenamer+" -o ./static/binarised/"+filename.strip('.tif')+"/"
     os.system(command)
-    command="mv ./static/binarised/0001.bin.png ./static/binarised/"+filename
+    command="mv ./static/binarised/"+filename.strip('.tif')+"/0001.bin.png ./static/binarised/"+filename.strip('.tif')+".png"
     os.system(command)
-    command="rm ./static/binarised/0001*"
+    command="rm -r ./static/binarised/"+filename.strip('.tif')
     os.system(command)
 
 if __name__ == "__main__":

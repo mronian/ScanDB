@@ -72,7 +72,7 @@ def user(request):
         doclist=os.listdir(settings.BASE_DIR+'/static/segments')
         if doclist :
             doc=doclist[0]
-            ocrdoc='./static/OCRfiles/'+doc+'.txt'
+            ocrdoc='./static/OCRfiles/'+doc.strip('.png')+'.txt'
             OCR_TEXT=open(ocrdoc).read()
             return render(request, 'OCR/user.html', {'url' : str(doc), 'OCR_TEXT' : OCR_TEXT})
         else :

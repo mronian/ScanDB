@@ -5,7 +5,7 @@ import os
 def getSegments(filename):
     print filename
     print "Running RLSA"
-    filenamer="./static/binarised/"+filename
+    filenamer="./static/binarised/"+filename+".png"
     img=cv2.imread(filenamer, cv2.IMREAD_UNCHANGED)
     thresholdh=70
     thresholdw=45
@@ -62,9 +62,8 @@ def getSegments(filename):
 
     #filenamew="Thresh/Noisede.png"
     #cv2.imwrite(filenamew, doc3)
-    print "HELLO"
     contours, hierarchy=cv2.findContours(doc3, cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-    tr=0
+    counter=1
     area=0
     # cv2.namedWindow('Original', cv2.WINDOW_AUTOSIZE)
     # cv2.createTrackbar('WP','Original',1000,20000,nothing)
@@ -77,13 +76,13 @@ def getSegments(filename):
                 x,y,w,h=cv2.boundingRect(cnt)
                 cv2.rectangle(doc3,(x,y),(x+w,y+h),(127),5)
                 img2=img[y:y+h, x:x+w]
-                filenamew="./static/segments/"+ str(tr)+'.jpg'
+                filenamew="./static/segments/"+filename.strip('.tif')+"_" + str(counter)+'.png'
                 cv2.imwrite(filenamew,  img2)
-                tr=tr+1
-    #print tr
-    filenamew="./static/segmented/"+ str(tr)+'.jpg'
+                counter=counter+1
+    #print counter
+    filenamew="./static/segmented/"+ filename.strip('.tif') +'.png'
     cv2.imwrite(filenamew, doc3)
-
+    return counter
 
 if __name__ == "__main__":
     import sys

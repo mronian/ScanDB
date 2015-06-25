@@ -12,8 +12,8 @@ import RLSA
 @shared_task
 def start(filename):
     Binarise.getBinary(filename)
-    RLSA.getSegments(filename)
-    Read.getText()
+    number_of_segments=RLSA.getSegments(filename.strip('.tif'))
+    Read.getText(filename.strip('.tif'), number_of_segments)
     #Shift this to Admin
     #Add Trackbars for Changing Thresholds
     #Field Extraction
