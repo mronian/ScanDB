@@ -1,0 +1,247 @@
+<DOC>
+<DOCNO>g00185</DOCNO>
+<DOCHDR>http://www.cathedralhillhotel.com</DOCHDR>
+<html>
+<head>
+<title>Cathedral Hill Hotel, a San Francisco Hotel in the Bay Area, California</title>
+<base target="_top">
+<meta name=description content="Cathedral Hill Hotel is conveniently located in San Francisco California near Union Square and Japantown ideal for meetings, weddings and vacations in San Francisco CA">
+<meta name=keywords content="cathedral hill hotel, hotel san francisco ca, san francisco california hotel, hotel in san francisco california, best hotel san francisco, san francisco bay area hotel, downtown san francisco hotel, sf hotel, hotel in sf,  hotel near moscone convention center">
+</head>
+
+<!-- OLD POP UP CODING HAS BEEN HIDDEN
+
+<body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 background="images/bg.gif"  onload="javascript: pop(); setVariables(); checkLocation(); startit();"style="text-align: left">
+
+-->
+
+<body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 background="images/bg.gif">
+
+<TABLE cellSpacing=0 HEIGHT=100 WIDTH=900 cellPadding=0 border=0 leftmargin=0 topmargin=0>
+<TR>
+  <TD VALIGN=center height=100 width=900 background="images/layout001sCTHDRLhead.jpg">&nbsp;</TD>
+</TR>
+</TABLE>
+<table cellspacing=0 cellpadding=0 width=900 border=0 bordercolor=green topmargin=0 leftmargin=0>
+  <tr valign=top>
+  
+  <TD height=500 width=150 valign=top background="images/layout001sCTHDRLmenu.jpg"><center>
+    <br>
+    <br>
+    <a href="welcome.htm"> <IMG border=0 alt=welcome.asp src="images/welcome.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href=https://reservations.ihotelier.com/onescreen.cfm?hotelID=3786&languageID=1> <IMG border=0 alt=reservation.htm src="images/reservation.htm003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="hotelamenities.htm"> <IMG border=0 alt=hotelamenities.asp src="images/hotelamenities.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="roomamenities.htm"> <IMG border=0 alt=roomamenities.asp src="images/roomamenities.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="dining.htm"> <IMG border=0 alt=dining.asp src="images/dining.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="attractions.htm"> <IMG border=0 alt=attractions.asp src="images/attractions.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="location.htm"> <IMG border=0 alt=location.asp src="images/location.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="virtualtour.htm"> <IMG border=0 alt=virtualtour.asp src="images/virtualtour.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="weddings.htm"> <IMG border=0 alt=weddings.asp src="images/weddings.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="meetings.htm"> <IMG border=0 alt=meetings.asp src="images/meetings.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="packages.htm"> <IMG border=0 alt=packages.asp src="images/packages.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="employment.htm"> <IMG border=0 alt=employment.asp src="images/employment.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <a href="contact.htm"> <IMG border=0 alt=contact.asp src="images/contact.asp003FDD.gif" width="125" height="19"></a>&nbsp;<br>
+    <br>
+    <center>
+    <p></p></td>
+  </td>
+  
+  <td width=750 valign=top bgcolor=#FFFFFF background="images/layout001sCTHDRLbody.jpg">
+  
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="750" id="AutoNumber1" background="images/tabletrans.gif">
+    <tr>
+      <td width="211">&nbsp;</td>
+      <td width="540" height="324"><script language="JavaScript1.2">
+
+//Fade-in image slideshow- By Dynamic Drive
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+
+var slideshow_width=438 //SET IMAGE WIDTH
+var slideshow_height=324 //SET IMAGE HEIGHT
+var pause=5000 //SET PAUSE BETWEEN SLIDE (3000=3 seconds)
+
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]="slide1.jpg"
+fadeimages[1]="slide2.jpg"
+fadeimages[2]="slide3.jpg"
+
+
+////NO need to edit beyond here/////////////
+
+var preloadedimages=new Array()
+for (p=0;p<fadeimages.length;p++){
+preloadedimages[p]=new Image()
+preloadedimages[p].src=fadeimages[p]
+}
+
+var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+var dom=document.getElementById&&navigator.userAgent.indexOf("Opera")==-1
+
+if (ie4||dom)
+document.write('<div style="position:relative;width:'+slideshow_width+';height:'+slideshow_height+';overflow:hidden"><div  id="canvas0" style="position:absolute;width:'+slideshow_width+';height:'+slideshow_height+';top:0;filter:alpha(opacity=10);-moz-opacity:10"></div><div id="canvas1" style="position:absolute;width:'+slideshow_width+';height:'+slideshow_height+';top:0;filter:alpha(opacity=10);-moz-opacity:10"></div></div>')
+else
+document.write('<img name="defaultslide" src="'+fadeimages[0]+'">')
+
+var curpos=10
+var degree=10
+var curcanvas="canvas0"
+var curimageindex=0
+var nextimageindex=1
+
+
+function fadepic(){
+if (curpos<100){
+curpos+=10
+if (tempobj.filters)
+tempobj.filters.alpha.opacity=curpos
+else if (tempobj.style.MozOpacity)
+tempobj.style.MozOpacity=curpos/100
+}
+else{
+clearInterval(dropslide)
+nextcanvas=(curcanvas=="canvas0")? "canvas0" : "canvas1"
+tempobj=ie4? eval("document.all."+nextcanvas) : document.getElementById(nextcanvas)
+tempobj.innerHTML='<img src="'+fadeimages[nextimageindex]+'">'
+nextimageindex=(nextimageindex<fadeimages.length-1)? nextimageindex+1 : 0
+setTimeout("rotateimage()",pause)
+}
+}
+
+function rotateimage(){
+if (ie4||dom){
+resetit(curcanvas)
+var crossobj=tempobj=ie4? eval("document.all."+curcanvas) : document.getElementById(curcanvas)
+crossobj.style.zIndex++
+var temp='setInterval("fadepic()",50)'
+dropslide=eval(temp)
+curcanvas=(curcanvas=="canvas0")? "canvas1" : "canvas0"
+}
+else
+document.images.defaultslide.src=fadeimages[curimageindex]
+curimageindex=(curimageindex<fadeimages.length-1)? curimageindex+1 : 0
+}
+
+function resetit(what){
+curpos=10
+var crossobj=ie4? eval("document.all."+what) : document.getElementById(what)
+if (crossobj.filters)
+crossobj.filters.alpha.opacity=curpos
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=curpos/100
+}
+
+function startit(){
+var crossobj=ie4? eval("document.all."+curcanvas) : document.getElementById(curcanvas)
+crossobj.innerHTML='<img src="'+fadeimages[curimageindex]+'">'
+rotateimage()
+}
+
+//popup window//
+	
+	function pop(){
+	//	return;
+		window.open('popup_specials.htm','Specials','width=432,height=490,directories=no,location=no,menubar=no,scrollbars=no,status=no,toolbar=no,resizable=no');
+	}
+
+
+    
+  	</script>
+      </td>
+    </tr>
+    <tr>
+      <td width="750" colspan="2">
+      <table border="0" cellpadding="5" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber2" height="113">
+        <tr>
+          <td width="12%" height="55"><p style="line-height: 150%"></td>
+          <td width="26%" height="55" valign="top"><p align="right"> <font face="Arial" style="font-weight: 700" color="#666666"> A warm welcome awaits you at the Cathedral Hill Hotel, San Francisco's most inviting hotel in the Bay Area.</font></td>
+          <td width="2%" valign="top" height="55"><font face="Arial"> <img border="0" src="images/vlineblue.gif" width="1" height="56"></font></td>
+          <td width="36%" valign="top" height="55"><p align="justify"> <font face="Arial" color="#666666" size="1">Extensive renovation has preserved the early modern architecture and design.  This includes modern facilities and guest services required to satisfy all your needs, whether your stay at our hotel in San Francisco California is for business or pleasure.</font></td>
+          </font>
+        
+        <td width="24%" valign="top" height="55">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="100%" colspan="5" height="38"><table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber3">
+              <tr>
+                <td width="87%"><hr color="#454981" size="1"></td>
+                <td width="13%">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="87%" align="right"><table cellpadding=0 cellspacing=0 border=0>
+                    <tr>
+                      <td valign=top><div align="right"> <font face="Verdana" style="font-size: 7pt" color="#454981">1101 Van Ness Ave. (Corner of Geary Blvd.) San Francisco CA 94109 - Tel: 415. 776. 8200</font></div></td>
+                    </tr>
+                    <tr>
+                      <td valign=top><div align="center"><font face="Verdana" style="font-size: 7pt" color="#454981">Toll Free Reservations: 800. 622. 0855</font></div></td>
+                    </tr>
+                  </table></td>
+                <td width="13%">&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+    </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+  <tr>
+    <td width="403">
+</table>
+<script LANGUAGE="JavaScript">
+<!-- Begin
+function setVariables() {
+imgwidth=100;  // logo width, in pixels
+imgheight=30;  // logo height, in pixels
+if (navigator.appName == "Netscape") {
+horz=".left";
+vert=".top";
+docStyle="document.";
+styleDoc="";
+innerW="window.innerWidth";
+innerH="window.innerHeight";
+offsetX="window.pageXOffset";
+offsetY="window.pageYOffset";
+}
+else {
+horz=".pixelLeft";
+vert=".pixelTop";
+docStyle="";
+styleDoc=".style";
+innerW="document.body.clientWidth";
+innerH="document.body.clientHeight";
+offsetX="document.body.scrollLeft";
+offsetY="document.body.scrollTop";
+   }
+}
+function checkLocation() {
+objectXY="branding";
+var availableX=eval(innerW);
+var availableY=eval(innerH);
+var currentX=eval(offsetX);
+var currentY=eval(offsetY);
+x=availableX-(imgwidth+30)+currentX;
+y=availableY-(imgheight+20)+currentY;
+evalMove();
+setTimeout("checkLocation()",10);
+}
+function evalMove() {
+eval(docStyle + objectXY + styleDoc + horz + "=" + x);
+eval(docStyle + objectXY + styleDoc + vert + "=" + y);
+}
+// End -->
+</script>
+
+<div id="branding" style="position:absolute; visibility:show; left:200px; top:-50px; z-index:2">
+  <table width="10">
+    <td width="150"><a href=https://reservations.ihotelier.com/onescreen.cfm?hotelID=3786&languageID=1>
+        <center>
+          <img SRC="images/checkAvailable.gif" border="0" alt="Check Reservations" width="108" height="25">
+        </center>
+        </a></font></td>
+  </table>
+</div>
+</BODY>
+</HTML>

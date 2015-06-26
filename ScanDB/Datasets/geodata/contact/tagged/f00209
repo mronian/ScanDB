@@ -1,0 +1,653 @@
+<DOC>
+<DOCNO>f00209</DOCNO>
+<DOCHDR>http://www.thestate.com/mld/thestate/contact_us</DOCHDR>
+
+
+
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+
+var rm = false;
+
+</script>
+<title>Contact Us -- TheState.com</title>
+<link rel='stylesheet' type='text/css' href='/css/palette/thestate/en/global.css'/><script type="text/javascript" language="javascript">
+
+_krdDartOrd = new Date().getTime();
+
+_krdDartInc = 0;
+var navReady = false;
+var toolsReady = false;var onLoadScript="";function Browser() {var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+// I have disabled the following line, but something similar might be useful later,
+// but launching a popup window is more polite than this alert.
+//if (!b) alert(''Unidentified browser./nThis browser is not supported,'');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.ns=(this.b=="ns" && this.v>=4);
+this.ns4=(this.b=="ns" && this.v==4);
+this.ns6=(this.b=="ns" && this.v==5);
+this.ie=(this.b=="ie" && this.v>=4);
+this.ie4=(this.version.indexOf('MSIE 4')>0);
+this.ie4up = (this.ie && this.v>= 4);
+this.ns5up = (this.ns && this.v>= 5);
+this.ie5=(this.version.indexOf('MSIE 5')>0);
+this.ie5up = (this.ie5);
+this.ie55=(this.version.indexOf('MSIE 5.5')>0);
+this.opera=(this.b=="opera");
+this.def=(this.ie||this.dom);var ua=navigator.userAgent.toLowerCase();
+this.mac = (ua.indexOf("mac")!=-1);if (ua.indexOf("win")>-1) this.platform="win32";
+else if (ua.indexOf("mac")>-1) this.platform="mac";
+else this.platform="other";
+}
+var is = new Browser();
+// tiny extra css. these are ONLY used by old browsers.
+// VAST majority of users will NEVER request these files.
+// Even NS4 is around 7% of market and falling
+if (is.ns4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/thestate/en/browser/ns4.css'>\n";
+document.write(css);
+}
+if (((is.ns4)||(is.ie4))&&( is.mac)) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/thestate/en/browser/ns4mac.css'>\n";
+document.write(css);
+}
+if (is.ie4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/thestate/en/browser/ie4.css'>\n";
+document.write(css);
+}
+
+function LayerObject(divId) {
+this.name = divId;
+if (is.ns4) this.ob = eval("document." +divId);
+else if (is.ie4) this.ob = document.all(divId);
+else this.ob = document.getElementById(divId);
+this.x = 0;
+this.y = 0;
+this.width = this.getWidth();
+this.height = this.getHeight();
+}
+LayerObject.prototype.px = (is.version>=5)?"px":"";
+LayerObject.prototype.hideSyntax = (is.ns4)? "hide":"hidden";
+LayerObject.prototype.showSyntax = "visible";// NS4::  Unbelievable, but document.layername.document.imgname works for img-in-layer-in document
+// and it works for img in layer in table in document.
+// but it doesnt work for img in layer in table in table in document.
+// Maybe a workaround exists, but it seems unlikely at this point.
+// The images MUST therefore be nested only one deep....
+LayerObject.prototype.getInlineLeft = function() {
+if (is.ns4) return this.ob.pageX;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var xPos = 0;
+var yPos = 0;
+while (elem.offsetParent != null) {
+xPos += elem.offsetLeft;
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) xPos += 2;
+return xPos;
+}
+else return (this.ob.offsetLeft + document.body.offsetLeft);
+}
+
+LayerObject.prototype.getInlineTop = function() {
+if (is.ns4) return this.ob.pageY;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var yPos=0;
+while (elem.offsetParent != null) {
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) yPos += 2;
+return yPos;
+}
+else return (this.ob.offsetTop+ document.body.offsetTop);
+}
+
+//getWidth and getHeight works for both inline and positioned divs.
+LayerObject.prototype.getWidth = function () {
+if (is.ns4) return this.ob.clip.width;
+else if (is.opera) return this.ob.style.pixelWidth;
+else return this.ob.offsetWidth;
+}
+LayerObject.prototype.getHeight = function () {
+if (is.ns4) return this.ob.clip.height;
+else if (is.opera) return this.ob.style.pixelHeight;
+else return this.ob.offsetHeight;
+}
+LayerObject.prototype.hide = function() {
+if (is.ns4) this.ob.visibility = this.hideSyntax;
+else this.ob.style.visibility = this.hideSyntax;
+}
+LayerObject.prototype.show = function() {
+if (is.ns4) this.ob.visibility = this.showSyntax;
+else this.ob.style.visibility = this.showSyntax;
+}
+LayerObject.prototype.moveLayerTo = function(toX, toY) {
+this.x = toX;
+this.y = toY;
+}
+LayerObject.prototype.updateLayer = function() {
+if (is.ns4) {
+this.ob.left = Math.round(this.x) + this.px;
+this.ob.top = Math.round(this.y)+ this.px ;
+}
+else {
+this.ob.style.left = Math.round(this.x) + this.px;
+this.ob.style.top = Math.round(this.y) + this.px;
+}
+}
+//-----------------
+function roll(divName, imgName, which) {
+var suffix = (which==1)?"on":"off"
+if ((is.ns4)&&(divName!=0)) {
+var imgObject = eval("document." + divName +".document.images['"+imgName +"']");
+imgObject.src = eval(imgName + "_" + suffix + ".src");
+}
+else {
+document.images[imgName].src = eval(imgName + "_" + suffix + ".src");
+}
+}
+
+function init() {
+if (onLoadScript) eval(onLoadScript);
+}
+
+// Workaround for the netscape resize problem --
+// namely, on resize ns looses div positioning and
+// styles from css files.
+// This checks to see if the window''s dimensions have
+// actually changed (because Netscape often fires a
+// false onResize event when it forms scrollbars);
+// if the dimensions have changed, page is reloaded
+function resizefix(){
+if((document.resizeFix.initWidth != window.innerWidth) ||
+(document.resizeFix.initHeight != window.innerHeight))
+{
+document.location = document.location;
+}
+}
+
+// This code creates a new object with properties
+// to hold the current window width & height to be
+// used in the event of a netscape resize
+document.resizeFix = new Object();
+if(is.ns4){
+document.resizeFix.initWidth = window.innerWidth;
+document.resizeFix.initHeight = window.innerHeight;
+window.onresize=resizefix;
+}
+
+
+
+
+
+
+
+function initMenus(){
+}
+
+
+
+function showResults(siteSurveyKey) {
+var url="/mld/templates/contentModules/poll-results-popup.jsp"+ "?siteSurveyKey=" + siteSurveyKey;
+window.open(url, 'Title');
+}
+
+function openWin(URL) {
+aWindow = window.open(URL,
+'thewindow','width=500,height=400,resizable=yes,scrollbars=yes');
+}
+function getSite(){
+foundSite = false;
+site=document.location.hostname;
+endPos=site.indexOf(".com");
+if (endPos>= 1) {
+foundSite = true;
+site = site.substr(0, endPos);
+startPos = site.lastIndexOf(".");
+site = site.substr(startPos + 1);
+}
+return site;
+}
+function getPublication(){
+publication=document.location.pathname;
+startPos=publication.indexOf("/mld/");
+publication=publication.substr(startPos+5);
+endPos=publication.indexOf("/");
+publication=publication.substr(0,endPos);
+return publication;
+}
+function openSlideshow(url,width,height) {
+y=Math.floor((screen.availHeight-height)/2);
+x=Math.floor((screen.width-width)/2);
+window.open(url,'slideshow','width='+width+',height='+height+',top='+y+',left='+x+',scrollbars=yes,resizable=yes').focus();
+}
+
+
+
+</script>
+</head>
+<body class="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CDS : SDP2.5.0_full_02072005_100000 : production --><table width="768" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:5px;">
+<tr><td class="header1">
+
+
+<a HREF="http://www.thestate.com/mld/thestate/contact_us/subscriptions_np1"><img SRC="/images/logos/site/thestate/thestate/mediapartners/sm_logo_thestate.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a>
+
+
+
+</td><td class="header2">
+<a href="/"><img src="/images/logos/site/thestate/thestate/site_logo_340x60.gif" width="340" height="60" alt="" hspace="0" vspace="0" border="0"/></a>
+</td><td class="header3">
+
+
+
+<a href="http://weather.thestate.com"><img src="http://banners.wunderground.com/banner/krd_cond/language/www/US/SC/Columbia.gif" alt="Weather" hspace="0" vspace="0" border="0"></a>
+<br>
+
+
+
+<a href="http://weather.thestate.com">Complete Forecast</a>
+
+
+
+</td><td class="header4">
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/thestate.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;dcopt=ist;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/thestate.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109859291884?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/thestate.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109859291884?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+</td></tr></table>
+
+
+
+
+
+<script id="search_box_center_jsp_script" language="javascript" type="text/javascript">
+function searchFormSubmit(form) {
+if (form.searchSelect[1].checked == true) {
+window.location = "http://www.newslibrary.com/nlsearch.asp?forceTheme=RealCities&s_site=thestate&search_mode=all&action=search&date_mode=year&year=last+180+days&sort=d%3Ah&nitems=10&region=cs&dbquery=" + form.query.value;
+return false;
+}
+return true;
+}
+</script><table cellspacing="0" cellpadding="0" border="0" width="768"><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr><tr><td align="center" class="navbg1">
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/thestate.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/thestate.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109859291886?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/thestate.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109859291886?" BORDER="0" ></A>
+</NOSCRIPT>
+
+</td></tr><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr></table><table cellspacing="0" cellpadding="0" border="0" width="768">
+<form action="http://www.thestate.com/mld/thestate/search/search_results.htm" method="get" name="SearchForm_top" onsubmit="return searchFormSubmit(this)">
+<input type=hidden name="pubName" value="thestate">
+<input type=hidden name="orderBy" value="date">
+<input type=hidden name="pageStart" value="1">
+
+
+
+<input type="hidden" name="sitesToSearch" value="thestate">
+
+
+<input type=hidden name="pageSize" value="10">
+<input type=hidden name="fieldsToSearch" value="HEADLINE,FORSEARCH,LEAD,BYLINE">
+<input type=hidden name="queryType" value="all">
+<tr style="background-color:#f2f2f2;">
+<td class="newsearch">
+
+<b>Search</b>&nbsp;
+
+
+<input name="searchSelect" value="article" type="radio" checked>Recent News&nbsp;
+
+
+
+<input name="searchSelect" value="archives" type="radio">Archives&nbsp;
+
+
+
+
+<input name="searchSelect" value="web" type="radio">Web&nbsp;&nbsp;
+
+
+
+<b>for&nbsp;&nbsp;</b><input name="query" size="25" maxlength="256" type="text">&nbsp;&nbsp;<input value="Go" type="submit">
+
+</td><script language="javascript" type="text/javascript">
+document.write('<td class="newregbox">');
+if (rm) {
+document.write('Welcome <b>' + rname + '</b><br>');
+
+document.write('	<a href="https://secure.thestate.com/listit/myclassifieds/">My Classifieds</a>&nbsp;|&nbsp;');
+
+document.write('<a href="https://registration.thestate.com/reg/myAccount.do">My Account</a>&nbsp;|&nbsp;');
+document.write('<a href="https://registration.thestate.com/reg/logout.do">Sign Out</a>');
+} else {
+document.write('	Welcome <b>Guest</b><br />');
+document.write('	<a href="https://registration.thestate.com/reg/createAccount.do">Sign Up</a>&nbsp;|&nbsp;<a href="https://registration.thestate.com/reg/login.do">Sign In</a>&nbsp;|&nbsp;');
+document.write('	<a href="https://registration.thestate.com/reg/memberBenefits.do">Member Benefits</a>');
+}
+document.write('</td>');
+</script>
+</tr></form>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="columndiv" width="134"><img src="/images/common/spacer.gif" width="134" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="472"><img src="/images/common/spacer.gif" width="472" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="160"><img src="/images/common/spacer.gif" width="160" height="1"></td></tr><tr>
+<td class="leftrail" valign="top" align="center" width="134">
+
+
+
+<table cellpadding=0 cellspacing=0 border=0 width=100%><tr><td valign=top width=100% bgcolor=#ffffff>
+
+<!-- classifieds -->
+<div style="border-left:4px solid #004080; text-align:left; margin-top:-2px;">
+<div class="contentnav" style="border-top:1px solid #cccccc;"><img src="http://www.thestate.com/multimedia/thestate/images/thestate_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/thestate/classifieds/employment/"><B>Jobs</B></A></div>
+<div class="contentnav"><img src="http://www.thestate.com/multimedia/thestate/images/thestate_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/thestate/classifieds/automotive/"><B>Cars</B></A></div>
+<div class="contentnav"><img src="http://www.thestate.com/multimedia/thestate/images/thestate_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/thestate/classifieds/real_estate/"><B>Real Estate</B></A></div>
+<div class="contentnav"><img src="http://www.thestate.com/multimedia/thestate/images/thestate_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.apartments.com/thestate"><B>Apartments</B></A></div>
+<div class="contentnav"><img src="http://www.thestate.com/multimedia/thestate/images/thestate_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.shoplocal.com/thestate/new_user_entry.aspx?CityStateZip=29201&AdRef=link03"><B>Local Shopping</B></A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/thestate/new_user_entry.aspx?CityStateZip=29201&AdRef=link03">Find Sales & Deals</A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/thestate/new_user_entry.aspx?CityStateZip=29201&AdRef=link03">Shop Local Stores</A><BR /></div>
+<div class="contentnav"><img src="http://www.thestate.com/multimedia/thestate/images/thestate_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/thestate/classifieds/"><B>All Classifieds</B></A></div>
+<div class="contentnav"><img src="http://www.thestate.com/multimedia/thestate/images/thestate_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/thestate/classifieds/personals/"><B>Personals</B></A></div>
+</div>
+				
+
+<!-- site nav -->
+<div class="navtitlebar"></div>
+<div class="contentnav"><A HREF="/mld/thestate/news/"><B>News</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/thestate/news/local/">Local</A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/thestate/news/nation/">Nation</A><BR /></div>
+<div class="contentnav"><A HREF="/mld/thestate/sports/"><B>Sports</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/thestate/sports/colleges/university_of_south_carolina/">Gamecocks</A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/thestate/sports/colleges/clemson_university/">Tigers</A><BR /></div>
+<div class="contentnav"><A HREF="/mld/state/news/opinion/"><B>Opinion</A> / <a href="http://www.thestate.com/mld/state/news/editorial/letters/">Letters</B></A><BR /></div>
+<div class="contentnav"><A HREF="/mld/state/news/obituaries/"><B>Obituaries</B></A><BR /></div>
+<div class="contentnav"><A HREF="/mld/thestate/business/"><B>Business</B></A></div>
+<div class="contentnav"><A HREF="/mld/thestate/entertainment/"><B>Entertainment</B></A></div>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="http://www.columbiatunes.com/">Local Scene</A><BR />
+<div class="contentnav"><A HREF="/mld/thestate/living/"><B>Living</B></A><BR /></div>
+
+<!-- online extras -->
+<div class="navtitlebar">ONLINE EXTRAS</div>
+<div class="contentnav"><A HREF="/mld/thestate/news/news_to_use"><B>News to Use</B></A></div>
+<div class="contentnav"><A HREF="/mld/thestate/living/occasions/weddings/"><B>Weddings</B></A></div>
+<div class="contentnav"><A HREF="/mld/thestate/archives/"><B>Archives</B></A></div>
+<div class="contentnav"><A HREF="http://forums.realcities.com/dir-app/nav/forumdirectory.aspx?webtag=kr-thestatez&byName=y"><B>Discussion Boards</B></A></div>
+<div class="contentnav"><A HREF="/mld/thestate/news/special_packages/multimedia/"><B>Multimedia</B></A></div>
+<div class="contentnav"><A HREF="http://newspaperads.thestate.com/"><B>Newspaper Ads</B></A></div>
+<div class="contentnav"><A HREF="http://maps.thestate.com/jump.cgi/refsrc=KR.1205"><B>Maps &amp; Directions</B></A></div>
+<div class="contentnav"><A HREF="http://yp.thestate.com/bin/cgidir.dll?MEM=1205&s=SC&t=Columbia"><B>Yellow Pages</B></A></div>			
+<div class="contentnav"><A HREF="/mld/thestate/7397060.htm"><B>RSS Feeds</B></A></div>
+<div class="contentnav"><A HREF="/mld/thestate/5157032.htm"><B>Wireless</B></A></div>
+
+<!-- site services -->
+<div class="navtitlebar">SITE SERVICES</div>
+<div class="contentnav"><A HREF="/mld/thestate/contact_us/"><B>Contact Us</B></A></div>
+<div class="contentnav"><A HREF="/mld/thestate/classifieds/"><B>Advertise</B></A></div>
+<div class="contentnav"><A HREF="http://www.thestatestore.com/default.asp"><B>The State Store</B></A></div>
+
+
+<BR />
+</td></tr></table>
+
+
+<br><br>
+<table width=100% cellpadding=0 cellspacing=0 border=0><tr><td valign=top width=100%>
+<div align="center"><a href="http://www.thestate.com/multimedia/thestate/KRT_packages/np_fronts/a1.pdf" target="_blank"><img src=http://www.thestate.com/multimedia/thestate/KRT_packages/np_fronts/a1.jpg border=1 width=120><br></a></div>
+&nbsp;&nbsp;&nbsp;&#149; <a href="http://www.thestate.com/multimedia/thestate/KRT_packages/np_fronts/a1.pdf" target="_blank">Front page</a><br>
+&nbsp;&nbsp;&nbsp;&#149; <a href="http://www.thestate.com/multimedia/thestate/KRT_packages/np_fronts/b1.pdf" target="_blank">Metro</a><br>
+&nbsp;&nbsp;&nbsp;&#149; <a href="http://www.thestate.com/multimedia/thestate/KRT_packages/np_fronts/c1.pdf" target="_blank">Sports</a></td></tr></table>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td class="raildiv"><img src="/images/common/spacer.gif" width="1" height="1" alt=""></td></tr></table>
+<!-- begin NS newspaper free-form left nav -->
+<table border="0" cellpadding="0" cellspacing="1" width="100%">
+<tr><td class="npnavbg2" align="left" colspan="2">
+<div align="center">
+<a href="http://www.thestate.com/mld/thestate/contact_us/subscriptions_np1/"><img src="http://www.thestate.com//images/thestate/state/8387/70345978274.gif" width="132" height="53" border="0" vspace="3" alt="The News Sentinel"></a><br>
+</td></tr>
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td class="raildiv"><img src="/images/common/spacer.gif" width="1" height="1" alt=""></td></tr></table>
+<!-- end NS newspaper free-form left nav -->
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td>
+<td class="centerrail" valign="top" align="center" width="472">
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td><td><table width=100% cellpadding=5 cellspacing=0 border=0>
+<tr><td align=center>
+
+<div class="pagetitle">Contact Us</div>
+
+</td></tr>
+<tr><td>
+<hr color=#CCCCCC size=2 noshade width=100%>
+</td></tr></table>
+
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr><td class=smalltitle noWrap>PROBLEM WITH THE WEBSITE?&nbsp;&nbsp;</td>
+<td width="100%"><hr color=#CCCCCC noshade size=1>
+</td></tr></table>
+
+<table width=100% cellpadding=5 cellspacing=0 border=0>
+<tr><td valign=top>
+<a href="/mld/thestate/contact_us/help/" class="headline">FAQ</a><br>
+Having a problem? First consult our list of Frequently Asked Questions. We may already have an answer for you.
+
+</td></tr><tr><td valign=top>
+
+<a href="mailto:feedback@thestate.com" class="headline">Feedback</a><br>
+Have a problem with our site that we can help you with? Send us an email <a href="mailto:feedback@thestate.com">feedback@thestate.com</a><br><br>
+&#149; <a href="/mld/thestate/contact_us/contact_list/">Looking for a reporter or editor?</a><br>
+&#149; <a href="/mld/state/news/opinion/2572707.htm">Interested in writing a letter to the editor?</a><br>
+
+</td></tr><tr><td valign=top>
+
+<a href="/mld/thestate/archives/" class="headline">Archives</a><br>
+Having trouble finding an article? Use our search engine (on the top right) or search our <a href="/mld/thestate/archives/#form">Newslibrary Archives</a>.
+
+</td></tr></table>
+
+<br><br>
+
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr><td class=smalltitle noWrap>CONTACTING OUR NEWSPAPER&nbsp;&nbsp;</td>
+<td width="100%"><hr color=#CCCCCC noshade size=1>
+</td></tr></table>
+
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr><td valign=top>
+
+<table width=100% cellpadding=5 cellspacing=0 border=0>
+<tr><td valign=top>
+<font class="headline">Address and main switchboard</font><br>
+The State, <GEO TYPE="US">P.O. Box 1333, Columbia, SC 29202</GEO><br>
+(800) 888-5353<br>
+</td></tr>
+<tr><td valign=top>
+<font class="headline">Home delivery and circulation service</font><br>
+<li> <a href="/mld/thestate/contact_us/subscriptions_np1/" class="headline2">Subscribe to The State</a> | <a href="mailto:statecirc@thestate.com" class="headline2">E-mail circulation</a><p>
+<li> Call 771-8380 or toll-free at (800) 888-3566 <br>
+&nbsp;&nbsp;&nbsp;- Monday-Friday, 6 a.m.-5 p.m.<br>
+&nbsp;&nbsp;&nbsp;- Saturday, 6:30 a.m.-noon<br>
+&nbsp;&nbsp;&nbsp;- Sunday, 7 a.m.-1 p.m.<br>
+<li> For delivery problems in most areas: <br>
+&nbsp;&nbsp;&nbsp;- Monday-Friday, 6-9:30 a.m.<br>
+&nbsp;&nbsp;&nbsp;- Saturday, 6:30-11 a.m.<br>
+&nbsp;&nbsp;&nbsp;- Sunday, 7 a.m.-1 p.m. <p>
+
+<b>TDD</b>
+Telephone device for the deaf, call: 771-8698 or (800) 777-8698<p>
+
+<font class="headline">Newsroom Departments</font><br>
+<li><A href="mailto:state@thestate.com" class="headline2">E-mail a story idea</A><p>
+<table width=100% cellpadding=5 cellspacing=0 border=0>
+<tr><td>
+<UL>
+<b>MAIN NUMBERS:</b>
+<li> Newsroom (803) 771-8415<br>or (800) 288-2727
+<li> Sports (803) 771-8470
+<li> Editorial (803) 771-8465
+</UL>
+</td>
+<td width=50%>
+<UL>
+<b>EMAIL:</b>
+<li><A href="mailto:state@thestate.com">E-mail a story idea</A>
+<li> <a href="/mld/thestate/contact_us/contact_list/">Find a reporter/editor</a>
+<li> <a href="mailto:stateeditor@thestate.com">Write a letter to the editor</a>
+
+</UL>
+</td>
+</tr></table>
+
+<font class="headline">Advertising | <a href="http://www.thestate.com/mld/thestate/6776947.htm">Online Advertising</a></font><br>
+<table width=100% cellpadding=5 cellspacing=0 border=0>
+<tr><td valign=top>
+<UL>
+<b>MAIN NUMBERS:</b>
+<li> Classified Advertising (803) 771-SOLD
+<li> Retail Advertising (803) 771-8338
+<li> Online Advertising (803) 771-8494
+<li> Legal Notices (803) 771-8477
+<li> National Advertising (803) 771-8688
+<li> Preprints (803) 771-8685
+</UL>
+
+<UL>
+<b>OBITUARIES</b>
+<li> Voice mail: 803-771-8452 
+<li> Fax: 803-771-8611 
+<li> Email: <a href="mailto:stateobits@thestate.com">stateobits@thestate.com</a> 
+<li> Deadline: 7 days a week, 4 p.m., for next day publication 
+</UL>
+</td>
+<td width=50%>
+<UL>
+<b>2005 RATES:</b>
+<li> <a href="/multimedia/thestate/archive/ratecards/2005_business_builder.pdf">Business
+Builder</a><br />
+<li> <a
+href="/multimedia/thestate/archive/ratecards/2005_classified.pdf">Classified</a><br />
+<li> <a
+href="/multimedia/thestate/archive/ratecards/2005_employment.pdf">Employment</a><br />
+<li> <a href="/multimedia/thestate/archive/ratecards/2005_national.pdf">National</a><br />
+<li> <a href="/multimedia/thestate/archive/ratecards/2005_national_preprint.pdf">National Preprint</a><br />
+<li> <a
+href="/multimedia/thestate/archive/ratecards/2005_neighbors.pdf">Neighbors</a><br />
+<li> <a
+href="/multimedia/thestate/archive/ratecards/2005_retail.pdf">Retail</a><br />
+<li> <a href="/multimedia/thestate/archive/ratecards/2005_retail_preprint.pdf">Retail Preprint</a><br />
+</UL>
+</td>
+</tr></table>
+
+<li> <a href="/mld/thestate/contact_us/about_np1/" class="headline2">About The State newspaper</a>
+</td></tr>
+
+</td></tr></table>
+</td></tr></table>
+
+
+
+
+
+</td><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td></tr></table>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="rightrail" valign="top" align="center" width="160">
+
+
+<DIV style="margin-top:-2px;">
+
+<script language="JavaScript">
+if (document.all){
+ 	document.write('<TABLE WIDTH=160 cellpadding=0 cellspacing=0><TR bgcolor="#f2f2f2"><TD nobreak rowspan="2" width=100% align="right" style="border-bottom:solid 1px #ccc;border-left:solid 1px #ccc;">');
+	document.write('<A HREF="#" onClick="this.style.behavior=\'url(#default#homepage)\'; this.setHomePage(\'http://www.thestate.com/\');" style="font-size:.85em;">');
+	document.write('Make us your homepage</a><b><span class="arrow">&nbsp;&#187;</span></b></TD><TD style="border-right:solid 1px #ccc;" align="right">&nbsp;</TD></TR>');
+	document.write('<TR bgcolor="#f2f2f2"><TD valign="bottom" align="right"><IMG SRC="/images/common/ecommerce/cc_br.gif" width=14 height=9></TD></TR></TABLE>');}
+
+else if ((document.getElementById) || (document.layers)){ document.write('<BR />'); }
+</script>
+</DIV>
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/thestate.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/thestate.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109859291989?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/thestate.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109859291989?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/thestate.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/thestate.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109859291989?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/thestate.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109859291989?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="leftrail" width="134">
+<img src="/images/common/spacer.gif" width="134" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="centerrail" width="100%" align="center">
+<img src="/images/common/spacer.gif" width="450" height="1"/><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/thestate.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/thestate.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109859291990?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/thestate.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109859291990?" BORDER="0" ></A>
+</NOSCRIPT>
+
+<br/><br/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="rightrail" width="160">
+<img src="/images/common/spacer.gif" width="160" height="1"/></td></tr></table>
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="768"><tr><td rowspan="2" valign="top" class="footer"><a href="http://www.realcities.com" target="_blank"><img src="/images/palette/thestate/realcities_logo.gif" width="155" height="57" alt="RealCities" border="0"/></a>
+</td><td align="left" class="footer">
+<span class="lightgreylinks"><a href="/mld/thestate/news/"> News  |</a> <a href="/mld/thestate/business/"> Business  |</a> <a href="/mld/thestate/sports/"> Sports  |</a> <a href="/mld/thestate/entertainment/"> Entertainment  |</a> <a href="/mld/thestate/living/">Living  |</a> <a href="http://www.shoplocal.com/thestate/new_user_entry.aspx?CityStateZip=29201&AdRef=link02">Shop Local |</a> <a href="/mld/thestate/classifieds/"> Classifieds  |</a> <a href="/mld/thestate/classifieds/employment/"> Jobs  |</a> <a href="/mld/thestate/classifieds/automotive/"> Cars  |</a> <a href="/mld/thestate/classifieds/real_estate/"> Homes   </a><br><a href="/mld/thestate/contact_us/about">About TheState.com |</a> <a href="/mld/thestate/contact_us/rc_sites/">About the Real Cities Network |</a> <a href="/mld/thestate/contact_us/terms_of_use">Terms of Use & Privacy Statement |</a> <a href="http://www.knightridder.com">About Knight Ridder |</a> <a href="/mld/thestate/contact_us/copyright">Copyright  </a><br></span>
+</td></tr></table>
+
+</body>
+</html>
+
+
+

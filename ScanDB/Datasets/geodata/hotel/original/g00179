@@ -1,0 +1,419 @@
+<DOC>
+<DOCNO>g00179</DOCNO>
+<DOCHDR>http://www.kinggeorge.com/index1.asp</DOCHDR>
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 5.0">
+<meta NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+
+<script src="rollover.js" language="javascript"></script>
+<script language="javascript">
+<!--
+level = 1;
+
+// Beginning of JavaScript Applet ------------
+/* Copyright (C)1996,97 
+All Rights Reserved.
+*/
+function scroll_status (seed)
+{
+    var msg = "Welcome to the King George Hotel in San Francisco, conveniently located by the world famous cable cars in the heart of Union Square.         For reservations please call (800) 288-6005 or check our availability online.        ";
+    var out = " ";
+    var c = 1;
+    if (150 < seed) {
+            seed--;
+            var cmd="scroll_status(" + seed + ")";
+            timerTwo = window.setTimeout(cmd, 50);
+    }
+    else if (seed <= 150 && 0 < seed) {
+            for (c=0 ; c < seed ; c++) {
+                    out+=" ";
+            }
+            out+=msg;
+            seed--;
+            var cmd="scroll_status(" + seed + ")";
+                window.status=out;
+            timerTwo=window.setTimeout(cmd,50);
+    }
+    else if (seed <= 0) {
+            if (-seed < msg.length) {
+                    out+=msg.substring(-seed,msg.length);
+                    seed--;
+            var cmd="scroll_status(" + seed + ")";
+                    window.status=out;
+                    timerTwo=window.setTimeout(cmd,50);
+            }
+            else {
+                    window.status=" ";
+                    timerTwo=window.setTimeout("scroll_status(150)",50);
+            }
+    }
+}
+// -- End of JavaScript code -------------- 
+// --></script> 
+<script language="JavaScript">
+<!--
+function openSmall(){
+	popSmall = window.open('giants-congrats.html','giants','left=100,top=400,screenX=100,screenY=400,width=350,height=200');
+	popSmall.focus();
+	if(popSmall.opener == null)
+	{
+		pop.opener = window;
+		popSmall.opener.name = "opener";
+		popSmall.focus();
+	}
+}
+function updateDate(fName, mField, dField, yField, dateField)
+{
+    var tempMonth, tempDate, tempYear, theDate;
+    var iTemp;
+
+    iTemp = document.forms[fName].elements[mField].selectedIndex;
+    tempMonth = document.forms[fName].elements[mField].options[iTemp].value;
+
+    iTemp = document.forms[fName].elements[dField].selectedIndex;
+    tempDate = document.forms[fName].elements[dField].options[iTemp].value;
+
+    iTemp = document.forms[fName].elements[yField].selectedIndex;
+    tempYear = document.forms[fName].elements[yField].options[iTemp].value;
+
+    theDate = tempMonth + "/" + tempDate + "/" + tempYear;
+    document.forms[fName].elements[dateField].value= theDate;
+} 
+function updateArrival() 
+{
+updateDate("ipxres", "arrivemonth", "arriveday", "arriveyear", "pChkIn");
+}
+
+function updateDeparture() 
+{
+updateDate("ipxres", "departmonth", "departday", "departyear", "pChkOut");
+}
+//-->
+</script>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>San Francisco Hotel Suite San Francisco CA Hotel San Francisco California Hotel </title>
+<META NAME="description" content="San Francisco hotel offering San Francisco hotel suite, San Francisco ca hotel, and San Francisco California hotel.">
+<META NAME="KEYWORDS" CONTENT="san francisco hotel, san Francisco hotel suite, san francisco ca hotel, san francisco california hotel, hotel in union square, union square hotel san Francisco, union square hotel in san francsico, hotel in san francisco ca, san Francisco luxury hotel, san Francisco airport hotel, san francisco business hotel">
+<META NAME="robots" content="index,follow">
+<meta name="GOOGLEBOT" content="index,follow"> 
+<META NAME="revisit-after" CONTENT="14 days">
+
+</head>
+
+<body class="splash" onLoad="loadImages();openSmall();timerOne=window.setTimeout('scroll_status(151)',50);" leftmargin="0" marginwidth="0">
+<div align="center">
+<table BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<tr>
+					<td class="menu">
+					
+
+					<table border="0" cellpadding="3" cellspacing="0" style="border-collapse: collapse" width="100%" id="table1">
+						<tr>
+							<td align="right" class="menu1">
+                            <p align="center">
+							<A HREF="index1.asp">home</A> | 
+							<a href="contactus.html">contact</a> | 
+							<b><a HREF="https://www.ipxres.com/hotelsite/reservations/resrv.asp?pHotelId=2364&amp;pChainId=1001&amp;pHotelShell=1&amp;pScd=ip" class="red">reservations</a></b> 
+							| <a href="traveclub.htm">travel club</a> | <a href="sister.html">sister hotels</a> |
+                            <a href="links.html">sF WEBSITES</a> | <a href="conventioneers.html">Conventioneers</a></p>
+							</td>
+						</tr>
+					</table>
+					
+
+
+                    </td>
+				</tr>
+	<tr>
+		<td>
+			<div class="body">
+						
+
+<p class="menu2" style="line-height: 100%; margin-top: 5; margin-bottom: 6"><A HREF="guestrooms.html"> Rooms</A> | 
+							<a href="meetingroom.html">Meeting Room</a> |
+							<A HREF="amenities.html"> Amenities</A> |
+							<A HREF="dining.html">Dining</A> | 
+							<A HREF="location.html" > Location &amp; Directions </A> | 
+							<A HREF="brochure.html">Brochure</A> |
+							<a href="vtours.html">Virtual Tours</a> | 
+							<A HREF="specials.html">Packages</A>
+							</p>
+
+<p class="menu2" align="left" style="line-height: 100%; margin-top: 5; margin-bottom: 6"><a href="kg-spanish/index.html"><img border="0" src="images/spain1.gif" width="30" height="21" alt="Español "></a>&nbsp;
+<a href="kg-japanese/index1.html"><img border="0" src="images/japan1.gif" width="29" height="23" alt="Japanese"></a>&nbsp;
+<a href="kg-german/index1.html"><img border="0" src="images/germany1.gif" width="28" height="23" alt="Deutsch"></a>&nbsp;
+<a href="kg-french/index1.html"><img border="0" src="images/france1.gif" width="37" height="22" alt="français"></a>&nbsp;
+<a href="kg-spanish/index.html"><img border="0" src="images/mexico.gif" width="30" height="23" alt="Español "></a>&nbsp;
+<a href="index1.asp"><img border="0" src="images/uk.gif" width="38" height="23" alt="English"></a>&nbsp;
+								<a href="https://www.ipxres.com/hotelsite/reservations/resrv.asp?pHotelId=2364&pChainId=1001&pHotelShell=1&pScd=ip">
+								<img border="0" src="images/button-july4.gif" width="90" height="50"></a>
+<span style="vertical-align: super"><font size="2">Reserve any 2 nights or more 
+receive up to 20% off! </font></span></p>
+
+
+
+            </div></td>
+	</tr>
+	<tr>
+		<td>
+			<table BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="750">
+				<tr>
+					<td ALIGN="right">
+					<img BORDER="0" SRC="images/finalhome_1.jpg" width="189" height="119"></td>
+					<td>
+						<table BORDER="0" CELLPADDING="0" CELLSPACING="0">
+							<tr>
+								<td ALIGN="left">
+								<img BORDER="0" SRC="images/finalhome_kg.gif" width="433" height="57"></td>
+								<td ROWSPAN="2">
+								<img BORDER="0" SRC="images/finalhome_logo.gif" width="97" height="119"></td>
+							</tr>
+							<tr>
+								<td ALIGN="left">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH="433" HEIGHT="62"><param NAME="movie" VALUE="tagline.swf"><param NAME="quality" VALUE="high"> 
+ <param NAME="bgcolor" VALUE="#FFFFFF">
+                                  <embed src="tagline.swf" quality="high" bgcolor="#FFFFFF" WIDTH="433" HEIGHT="62" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></object>
+</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td VALIGN="top" ALIGN="right">
+					<img BORDER="0" SRC="images/finalhome_2.jpg" width="189" height="201"></td>
+					<td VALIGN="top">
+						<table BORDER="0" CELLPADDING="0" CELLSPACING="0">
+							<tr>
+								<td>
+								<img BORDER="0" SRC="images/finalhome_3.jpg" width="209" height="201"></td>
+								<td VALIGN="top">
+									<table BORDER="0" CELLPADDING="2" CELLSPACING="0">
+										<tr>
+											<td>
+                                            <a href="location.html">
+											<img BORDER="0" SRC="images/square_sunset.jpg" width="104" height="104"></a></td>
+											<td>
+                                            <a href="links.html">
+											<img BORDER="0" SRC="images/square_cablecar.jpg" width="104" height="104"></a></td>
+											<td>
+                                            <a href="dining.html">
+											<img BORDER="0" SRC="images/square_teacup.jpg" width="104" height="104"></a></td>
+										</tr>
+									</table>
+									<h4><a href="http://www.kinggeorge.com/meetingroom.html">San Francisco Hotel</a> Located in the heart&nbsp;of San Francisco's Union Square...</h4>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<tr>
+					<td VALIGN="top" ALIGN="right" COLSPAN="2">
+						<table BORDER="0" CELLPADDING="3" CELLSPACING="0">
+							<tr>
+								<td VALIGN="top"><a HREF="promo.html">
+								<img BORDER="0" SRC="images/reserveonline.gif" width="200" height="145"></a><table BORDER="0" CELLPADDING="0" CELLSPACING="0" STYLE="border-collapse: collapse" BORDERCOLOR="#111111">
+									<tr>
+										<td>
+										<img BORDER="0" SRC="images/spacer.gif" WIDTH="32" HEIGHT="33"></td>
+										<td>
+                                <a href="https://www.ipxres.com/hotelsite/reservations/resrv.asp?pHotelId=2364&pChainId=1001&pHotelShell=1&pScd=ip">
+								<img BORDER="0" SRC="images/reservebutton.gif" width="90" height="30"></a><p>
+								<a href="https://www.ipxres.com/hotelsite/reservations/resrv.asp?pHotelId=2364&ChainId=1001&pHotelShell=1&pScd=ip">
+								<img border="0" src="images/button-july4.gif" width="90" height="50"></a></td>
+									</tr>
+									<tr>
+										<td>&nbsp;
+										</td>
+										<td>
+								&nbsp;<p>
+                                <img border="0" src="images/pic-exterior.jpg" width="154" height="231"></td>
+									</tr>
+								</table>
+								<p></td>
+								<td VALIGN="top"><p CLASS="space"><span class="first">T</span>he <span class="green">King George Hotel
+                                  - Union Square <font color="#000000"> a 
+                                boutique <a href="http://www.kinggeorge.com/dining.html">San Francisco CA Hotel </a>offers
+                                  the perfect San Francisco location.</font></span>
+                                  Our <a href="http://www.kinggeorge.com/location.html">San Francisco California Hotel </a>shares 
+								sidewalks with fine dining, 
+								world class 
+								shopping, theatre,
+								Moscone Convention Center, Convention Hotels and 
+								San Francisco's world famous cable car line to 
+								Fisherman's Wharf.&nbsp;&nbsp;
+								  <p CLASS="space"> You will immediately notice 
+								our comfort and warmth at our San Francisco Hotel. A tradition of charm and 
+								personal service have been our hallmark since we 
+								first opened our doors in 1912. This San Francisco CA Hotel amenities 
+								are distinctly up-to-date, including <font color="#800000">complimentary
+                                  in-room high speed Internet access</font>,&nbsp;
+                                  but our hospitality 
+								and our rates are wonderfully old-fashioned.
+								  <p CLASS="space">In
+                                  the heart of downtown the King George Hotel a San Francisco  Hotel is
+                                  just three blocks from the Powell Street BART
+                                  station, which now services both Oakland <a href="airport.html">(OAK)</a>
+                                  and San Francisco <a href="directions_bart.htm">(SFO)</a>
+                                  International Airports.&nbsp;&nbsp;
+								  <p CLASS="space">We look forward to making the <span class="green">King George 
+								Hotel</span> a San Francisco CA Hotel your home away from home while you are a 
+								guest in San Francisco. </p>
+						          <h3>King George Hotel&nbsp;- San Francisco Hotel </h3>
+						          <p>334 Mason @ Geary<br>
+						San Francisco, CA 94102<br>
+						<b>Reservations: (800) 288-6005</b><br>
+						<b>Ph: (415) 781-5050 ~ Fax: (415) 391-6976</b></p>
+						<p>Rates ranging from $99 to $165</p>
+								<div ALIGN="center">
+									<center>
+									<form action="https://www.ipxres.com/hotelsite/reservations/rm_avail.asp" method="GET" name="ipxres" id="ipxres">
+									<input type="hidden" name="pHotelId" value="2364">
+									<input type="hidden" name="pChainId" value="1001">
+									<input type="hidden" name="pScd" value="ip">
+									<input type="hidden" name="pHotelShell" value="1">
+									<input type="hidden" name="pChkIn" value>
+									<input type="hidden" name="pChkOut" value>
+									<table STYLE="border-collapse: collapse" BORDERCOLOR="#111111" CELLPADDING="0" CELLSPACING="0">
+									  <tr>
+										<td align="right" CLASS="space">Arrival Date:</td>
+									    <td>
+										<select name="arrivemonth" id="arrivemonth" onChange="updateArrival();">
+										  <option value="1" >January</option>
+										  <option value="2" >February</option>
+										  <option value="3" >March</option>
+										  <option value="4" >April</option>
+										  <option value="5" >May</option>
+										  <option value="6" >June</option>
+										  <option value="7" selected>July</option>
+										  <option value="8" >August</option>
+										  <option value="9" >September</option>
+										  <option value="10" >October</option>
+										  <option value="11" >November</option>
+										  <option value="12" >December</option>
+										</select>
+										<select name="arriveday" id="arriveday" onChange="updateArrival();">
+											<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27" selected>27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+										</select>
+										<select name="arriveyear" id="arriveyear" onChange="updateArrival();">
+											<option value="2006" selected>2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option>
+										</select>
+									    </td>
+										<td width="103" rowspan="3"><font face="Times New Roman, Times, serif" color="#000000">
+											<input type="image" src="images/checkavailability.gif" name="cont" alt="Continue" align="middle" border="0" width="69" height="30">
+										</td>
+									  </tr>
+									  <tr>
+									    <td align="right" CLASS="space">Departure Date:</td>
+										<td>
+										 <select name="departmonth" id="departmonth" onChange="updateDeparture();">
+										  <option value="1" >January</option>
+										  <option value="2" >February</option>
+										  <option value="3" >March</option>
+										  <option value="4" >April</option>
+										  <option value="5" >May</option>
+										  <option value="6" >June</option>
+										  <option value="7" selected>July</option>
+										  <option value="8" >August</option>
+										  <option value="9" >September</option>
+										  <option value="10" >October</option>
+										  <option value="11" >November</option>
+										  <option value="12" >December</option>
+										</select>
+										<select name="departday" id="departday" onChange="updateDeparture();">
+											<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27" selected>27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+										</select>
+										<select name="departyear" id="departyear" onChange="updateDeparture();">
+											<option value="2006" selected>2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option>
+										</select>
+										</td>
+									  </tr>
+									  <tr>
+										<td align="right" CLASS="space">
+											Adults:
+										</td>
+										<td CLASS="space">
+											<input name="pAdult" type="text" value="2" size="2" maxlength="2">
+											Children: <input name="pChild" type="text" value="0" size="2" maxlength="2">
+										</td>
+									  </tr>
+									</table>
+									</form>
+									<script language="javascript">
+										<!--
+										updateArrival();
+										updateDeparture();
+										//chargeAction("ipxres", "pChkIn", "pChkOut");
+										-->
+									</script>
+									</center>
+								</div>
+
+						<p>Our Promotional rates include AAA/AARP discounts, Corporate,
+						Government,
+						Return Guest, Seasonal Packages with Parking or
+                        Breakfast and Theater Packages.</p>
+									<p></td>
+								<td VALIGN="top">
+								<p ALIGN="center">
+								<br>
+								<img BORDER="0" SRC="images/fadedhotel.gif" width="129" height="300"></p>
+								<p ALIGN="center">
+								<img BORDER="0" SRC="images/aaalogo.gif" width="59" height="37"></td>
+							</tr>
+							<tr>
+								<td VALIGN="top" colspan="3">
+						
+
+					<table border="0" cellpadding="3" cellspacing="0" style="border-collapse: collapse" width="100%" id="table1">
+						<tr>
+							<td align="center" class="copyright">
+							Copyright &copy; 2003 
+							<a target="_blank" href="http://www.greystonehospitality.com">Greystone Hospitality</a> 
+							| <a href="sitemap.htm">Site Map</a></td>
+						</tr>
+					</table>
+					
+
+
+                                </td>
+							</tr>
+							</table>
+				</td>
+				</tr>
+
+		
+			</table>
+		</td>
+	</tr>
+	
+		
+</table>
+<a href="http://t.extreme-dm.com/?login=nggeorge"
+target="_top"><img src="http://t1.extreme-dm.com/i.gif"
+name="EXim" border="0" height="38" width="41"
+alt="eXTReMe Tracker"></img></a>
+<script type="text/javascript" language="javascript1.2"><!--
+EXs=screen;EXw=EXs.width;navigator.appName!="Netscape"?
+EXb=EXs.colorDepth:EXb=EXs.pixelDepth;//-->
+</script><script type="text/javascript"><!--
+var EXlogin='nggeorge' // Login
+var EXvsrv='s9' // VServer
+navigator.javaEnabled()==1?EXjv="y":EXjv="n";
+EXd=document;EXw?"":EXw="na";EXb?"":EXb="na";
+EXd.write("<img src=http://e0.extreme-dm.com",
+"/"+EXvsrv+".g?login="+EXlogin+"&amp;",
+"jv="+EXjv+"&amp;j=y&amp;srw="+EXw+"&amp;srb="+EXb+"&amp;",
+"l="+escape(EXd.referrer)+" height=1 width=1>");//-->
+</script><noscript><img height="1" width="1" alt=""
+src="http://e0.extreme-dm.com/s9.g?login=nggeorge&amp;j=n&amp;jv=n"/></noscript>
+
+
+</div>
+</body>
+
+</html>

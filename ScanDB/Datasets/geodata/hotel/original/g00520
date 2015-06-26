@@ -1,0 +1,1417 @@
+<DOC>
+<DOCNO>g00520</DOCNO>
+<DOCHDR>http://www.wyndham.com/hotels/SYRSH/main.wnt</DOCHDR>
+
+
+
+<html>
+<head>
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<link href="/resources/css/wyndham.css" rel=stylesheet type="text/css">
+<script language="JavaScript" src="/resources/javascript/common.js"></script>
+<script language="JavaScript" src="/resources/javascript/error.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<link href="/hotels/visual_tour_w_pan.css" rel=stylesheet type="text/css">
+<div class="widgetcopysmall" id="imageCaption"></div>
+
+<script language="JavaScript" type="text/javascript">
+
+var browser = navigator.appName;
+var versionNumber = parseFloat(navigator.appVersion);
+var version = navigator.appVersion;
+var version4 = version.indexOf('MSIE 4',0);
+var version5 = version.indexOf('MSIE 5',0);
+var pc = version.indexOf('Win',0);
+var mac = version.indexOf('Mac',0);
+
+var thumbnailsTop = null;
+
+//write styles
+document.write('<style type="text/css">');
+
+if ((browser == "Netscape") &&  (versionNumber < 5)) {
+    document.write('.widgetcopysmall {font-size: 11px;font-family: "arial", "verdana", "helvetica", sans-serif;color: #666666;}');
+}
+else {
+    document.write('.widgetcopysmall {font-size: 11px;font-family: "arial", "verdana", "helvetica", sans-serif;color: #666666;text-align: center;padding-left : 1px;}');
+}
+
+document.write('</style>');
+<!--start@@@@@@@@@@@@@@@@@@@@@@-->
+<!--// -->-->
+<!--start@@@@@@@@@@@@@@@@@@@@@@-->
+</script>
+
+<script language="JavaScript" src="/resources/javascript/common.js"></script>
+<script language="JavaScript" src="/resources/javascript/error.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+
+var versionNumber = parseFloat(navigator.appVersion);
+
+// Begin form validation
+function validateForm(form) {
+	form.searchWord.value=form.hotelSearchWord.value;
+
+if(versionNumber >= 5 || navigator.appName != "Netscape"){
+
+	form.hotelSearchWord.style.backgroundColor = '#FFFFFF';
+
+}
+
+	var output = "";
+
+	if (!validateAlphaNum(form.hotelSearchWord.value,1,30)) {
+		output += "* Search word or phrase\n";
+	}
+
+	//final validation error message
+	if (output != "") {
+		alert("The following information was missing or incorrect:\n\n"+output);
+
+
+if(versionNumber >= 5 || navigator.appName != "Netscape"){
+
+
+		form.hotelSearchWord.focus();
+		form.hotelSearchWord.style.backgroundColor = '#FFFFCC';
+
+}
+
+
+
+		return false;
+
+	}
+	else {
+
+		return true;
+
+	}
+}
+//  End form validation
+
+
+</script>
+
+<script language="JavaScript" TYPE="text/javascript">
+
+
+// Begin visual tour
+/*
+inputsArray is an external input to this page and includes the path to the large image,  off thumbnail and on thumbnail and it includes the caption text (in that order) for the first through the nth image in the visual tour
+ */
+//var inputsArray = new Array ("images/h_image_1_1_lrg.gif","images/h_image_1_1_off.gif","images/h_image_1_1_on.gif","This is the 1st caption in set 1.","images/h_image_2_1_lrg.gif","images/h_image_2_1_off.gif","images/h_image_2_1_on.gif","This is the 2nd caption in set 1.","images/h_image_3_1_lrg.gif","images/h_image_3_1_off.gif","images/h_image_3_1_on.gif","This is the 3rd caption in set 1.","images/h_image_4_1_lrg.gif","images/h_image_4_1_off.gif","images/h_image_4_1_on.gif","This is the 4th caption in set 1.","images/h_image_5_1_lrg.gif","images/h_image_5_1_off.gif","images/h_image_5_1_on.gif","This is the 5th caption in set 1.","images/h_image_1_2_lrg.gif","images/h_image_1_2_off.gif","images/h_image_1_2_on.gif","This is the 1st caption in set 2.","images/h_image_2_2_lrg.gif","images/h_image_2_2_off.gif","images/h_image_2_2_on.gif","This is the 2nd caption in set 2.","images/h_image_3_2_lrg.gif","images/h_image_3_2_off.gif","images/h_image_3_2_on.gif","This is the third caption in set 2.","images/h_image_4_2_lrg.gif","images/h_image_4_2_off.gif","images/h_image_4_2_on.gif","This is the 4th caption in set 2.","images/h_image_5_2_lrg.gif","images/h_image_5_2_off.gif","images/h_image_5_2_on.gif","This is the 5th caption in set 2.","images/h_image_1_3_lrg.gif","images/h_image_1_3_off.gif","images/h_image_1_3_on.gif","This is the 1st caption in set 3.","images/h_image_2_3_lrg.gif","images/h_image_2_3_off.gif","images/h_image_2_3_on.gif","This is the 2nd caption in set 3.");
+
+var inputsArray = new Array ( 
+"/cms_content/hotels/SYRSH/images/hero.jpg","/cms_content/hotels/SYRSH/images/Dhero.jpg","/cms_content/hotels/SYRSH/images/Shero.jpg","","/cms_content/hotels/SYRSH/images/Mpool.jpg","/cms_content/hotels/SYRSH/images/Dpool.jpg","/cms_content/hotels/SYRSH/images/Spool.jpg","","/cms_content/hotels/SYRSH/images/Mdining.jpg","/cms_content/hotels/SYRSH/images/Ddining.jpg","/cms_content/hotels/SYRSH/images/Sdining.jpg","","/cms_content/hotels/SYRSH/images/Mguestroom.jpg","/cms_content/hotels/SYRSH/images/Dguestroom.jpg","/cms_content/hotels/SYRSH/images/Sguestroom.jpg",""
+
+ );
+
+// end external input
+var setsAllowed = 10;
+var slidesPerSet = 5;
+var currentSet = null;
+var numSlides = inputsArray.length/4;
+
+var divThumbnailsPrefix = "thumbnails";
+
+var numSlidesSet = new Array;
+    for (i = 0; i < setsAllowed; i++) {
+        if (numSlides < slidesPerSet *(i+1))  {
+            numSlidesSet[i]=  numSlides - (slidesPerSet *(i));
+        }
+        else {
+            numSlidesSet[i]=  slidesPerSet;
+        }
+        if (numSlidesSet[i] < 0 ) numSlidesSet[i] = "null"
+}
+
+
+var captionArray = new Array ();
+
+//Preload Visual Tour images
+var precacheSets = 1;
+
+var keys = new Array("h_image_1_","h_image_2_","h_image_3_","h_image_4_","h_image_5_");
+
+var IMGOFF = "0";
+var IMGON = "1";
+var IMGLRG = "2";
+var num = 0;
+var captionNum = 0;
+var precacheTourImages = new Array();
+
+if (document.images) {
+    for (var i=0; i < inputsArray.length; i+=4) {
+
+        precacheTourImages[keys[num]+precacheSets+IMGLRG] = new Image();
+        precacheTourImages[keys[num]+precacheSets+IMGOFF] = new Image();
+        precacheTourImages[keys[num]+precacheSets+IMGON] = new Image();
+        precacheTourImages[keys[num]+precacheSets+IMGLRG].src = inputsArray[i];
+        precacheTourImages[keys[num]+precacheSets+IMGOFF].src = inputsArray[i+1];
+        precacheTourImages[keys[num]+precacheSets+IMGON].src = inputsArray[i+2];
+        captionArray[captionNum] = inputsArray[i+3];
+        num += 1;
+        captionNum += 1;
+        if (num == 5) {
+            precacheSets += 1;
+            num = 0;
+        }
+    }
+}
+//End Preload
+
+</script>
+
+
+
+    
+<TITLE>Wyndham Syracuse</TITLE>
+<META NAME="keywords" CONTENT="SYRSH,Syracuse, NYC, New York" />	
+<META NAME="description" CONTENT="Located close to the majestic Finger Lakes Region and convenient to downtown Syracuse, the Wyndham Syracuse is the perfect place to stay in central New York state. " />
+<META NAME="section" CONTENT="hotels" />
+<META NAME="subsection" CONTENT="SYRSH" />
+<META NAME="hotel" CONTENT="SYRSH" />
+<META NAME="propertyLine" CONTENT="HOTEL" />
+<META NAME="city" CONTENT="east syracuse" />
+<META NAME="state" CONTENT="New York" />
+<META NAME="country" CONTENT="United States" />
+<META NAME="vacation" CONTENT="" />
+<META NAME="music" CONTENT="" />
+<META NAME="reading" CONTENT="" />
+<META NAME="spectatorSports" CONTENT="" />
+<META NAME="specialinterests" CONTENT="" />
+<META NAME="region" CONTENT="New York" />
+<META NAME="geographic" CONTENT="New York" />
+<META NAME="demographics" CONTENT="" />
+<META NAME="travel" CONTENT="Overide" />
+<META NAME="airline" CONTENT="" />
+<META NAME="cardType1" CONTENT="" />
+<META NAME="cardType2" CONTENT="" />
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" alink="#FF6600">
+
+<table width="740" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// setting focus on the first item that was invalid on the form
+var focusItemGS = "";
+var bgColorArrayGS = new Array(); // array for changing background color of invalid items
+var arrayCounterGS = 0;
+var helpPath = this.window.location.pathname; //variable for help feature
+
+function setFocusGS(itemGS) {
+    if (focusItemGS == "") focusItemGS = itemGS;
+}
+// Begin form validation
+function validateSearchForm(form)   {
+    if ((document.getElementById) || (document.all)) {
+        for (var loop=0; loop < bgColorArrayGS.length; loop++) {
+            var path = eval("document.headerSearch." + bgColorArrayGS[loop] + ".style");
+            path.backgroundColor = '#FFFFFF';
+        }
+        for (var loop=0; loop < bgColorArrayGS.length; loop++) {
+            bgColorArrayGS[loop] = "";
+        }
+    }
+
+
+        var output = "";
+
+        if (!validateAlphaNum(form.searchWord.value,1,30)) {
+                output += "* Search word or phrase\n";
+                setFocusGS(form.searchWord);
+                if ((document.getElementById) || (document.all)) {
+                    bgColorArrayGS[arrayCounterGS] = "searchWord";
+                    arrayCounterGS += 1;
+                }
+            }
+
+        //final validation error message
+        if (output != "")
+            {
+                alert("The following information was missing or incorrect:\n\n"+output);
+                focusItemGS.focus();
+                focusItemGS = "";
+                if ((document.getElementById) || (document.all)) {
+                    bgColorArrayGS.length = arrayCounterGS;
+                    arrayCounterGS = 0;
+
+                    //loop through to change background color of incorrect items
+                    for (var loop=0; loop < bgColorArrayGS.length; loop++) {
+                        var path = eval("document.headerSearch." + bgColorArrayGS[loop] + ".style");
+                        path.backgroundColor = '#FFFFCC';
+                    }
+                }
+                return false;
+            }
+
+        return true;
+    }
+//  End form validation
+
+//Begin function for setting default option in dropdown context sensitive
+function dropDownDefault() {
+
+  var path = this.window.location.pathname;
+  var arrpath=path.split("/");
+  var cur=arrpath[1];
+//  window.alert("inside selectit and cur is : " + cur);
+  switch (cur){
+
+     case "locator": cur="site";break;
+     case "wbr": cur="wbr";break;
+     case "meetingsandweddings": cur="meetings";break;
+     case "destinationsandinterests": cur="destinationsandinterests";break;
+     case "wotw": cur = "wotw";break;
+     //case "hotels": cur = "thishotel"; break;
+     case "corporate": cur = "corporate";break;
+     //case "help": cur = "help";  break;
+     default: cur="site";
+ }
+
+
+// window.alert("cur after switching is :  " + cur);
+ for (i=0;i < document.headerSearch.searchContext.length;i++) {
+
+//   window.alert(document.headerSearch.searchContext.options[i].value);
+
+   if (cur == document.headerSearch.searchContext.options[i].value) {
+//      window.alert("matched");
+        document.headerSearch.searchContext.options[i].defaultSelected = true;
+
+   } else {
+        document.headerSearch.searchContext.options[i].defaultSelected = false;
+   }
+
+ }
+ document.headerSearch.reset();
+
+}
+
+// end of context sensitive dropdown
+
+// -->
+</script>
+
+<!--%@ taglib uri="sitesearch.tld" prefix="search" %-->
+<!--%@ taglib uri="wbr.tld" prefix="wbr" %-->
+
+
+
+
+
+<table width="740" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% begin %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<form name="headerSearch" action="/search/main.wnt" method="post">
+<input type="hidden" name="searchContext" value="site">
+<table id="header0001" width="740" border="0" cellpadding="0" cellspacing="0">
+    <tr bgcolor="#E9EEF6">
+<!-- wbr login -->
+       
+        <td class="hdrxsmall" width="350">&nbsp;&nbsp;</td>
+        <td align="right"><img src="/resources/images/wbr0000.gif" width="116" height="16" alt="" border="0">
+        <a href="/wbr/signin.wnt?event=globalSignIn">
+        <img src="/resources/images/wbr0002.gif" width="36" height="16" alt="Sign In" border="0"></a>
+        <img src="/resources/images/wbr0001.gif" width="7" height="16" alt="" border="0">
+        <a href="/wbr/join.wnt"><img src="/resources/images/wbr0003.gif" width="130" height="16" alt="Join Wyndham ByRequest" border="0"></a>
+        <img src="/resources/images/spacer.gif" width="5" height="16" alt="" border="0"></td>
+       
+     
+<!-- /wbr login -->
+    </tr>
+    <tr>
+<!-- logo_search -->
+        <td colspan="2">
+
+        <table id="header0002" width="740" height="53" border="0" cellpadding="0" cellspacing="0" bordercolor="red">
+        <tr>
+            <td rowspan="2" valign="middle" align="left"><a href="/main.wnt"><img border="0" name="logo" src="/resources/images/logo_wyndham.gif" width="172" height="48" alt="Wyndham Hotels & Resorts"></a></td>
+<!-- tile_banners -->
+                <td align="right" valign="middle">
+                
+                    <a href="http://www.wyndhampromotions.com/tiles/tile001.asp"><img src="/resources/images/tile001.gif" width="128" height="26" alt="" border="0"></a>
+                    <a href="http://www.wyndhampromotions.com/tiles/tile002.asp"><img src="/resources/images/tile002.gif" width="128" height="26" alt="" border="0"></a>
+                    <a href="http://www.wyndhampromotions.com/tiles/tile003.asp"><img src="/resources/images/tile003.gif" width="128" height="26" alt="" border="0"></a>
+                
+                </td>
+<!-- /tile_banners -->
+                </tr>
+
+
+<!-- /logo_search -->
+
+
+<tr>
+     <td align="right">
+     <table border="0" cellpadding="0" cellspacing="0">
+     <tr>
+        <td valign="middle">
+        
+
+                         
+                         <a href="/emailsubscriptions/main.wnt">
+                        
+                         
+
+                        <img src="/resources/images/sub0010.gif" width="117" height="20" alt="" border="0"></a>
+                        <img src="/resources/images/header0003_02.gif" width="9" height="20" alt="" border="0">
+                        <a href="/contact/contact.wnt"><img src="/resources/images/contact0010.gif" width="58" height="20" alt="" border="0"></a>
+                        <img src="/resources/images/header0003_02.gif" width="9" height="20" alt="" border="0">
+                        <a href="javascript:openWindow('http://www.wyndham.com/help/main.jsp?url='+helpPath);">
+                        <img src="/resources/images/help0010.gif" width="27" height="20" alt="" border="0"></a>
+                        <img src="/resources/images/header0003_02.gif" width="9" height="20" alt="" border="0">
+                        <img src="/resources/images/search0010.gif" width="39" height="20" alt="" border="0"></td>
+                        <td><input type="text" value="" name="searchWord" size="20" maxlength="30" class="formcaption"></td>
+                        <td valign="middle"><a href="javascript:if (validateSearchForm(document.headerSearch)) document.headerSearch.submit();"><img src="/resources/images/go0010.gif" width="41" height="20" alt="" border="0"></a></td>
+                    </tr>
+                </table></td>
+
+
+        
+
+
+
+    
+    </tr>
+    </table>
+    </tr>
+</table>
+</tr>
+
+</form>
+</table>
+<!-- /HEADER TABLE -->
+
+
+
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+
+
+        <!-- GLOBAL NAV TABLE -->
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td><a href="/rates/main.wnt" onMouseOver="setImg('nav_rr',IMGOVER)" onMouseOut="setImg('nav_rr',IMGOFF)" onClick="setImg('nav_rr',IMGON);"><img name="nav_rr" src="/resources/images/nav_rr_off.gif" width="107" height="32" alt="Rates and Reservations" title="Rates and Reservations" border="0"></a><a href="/locator/main.wnt" onMouseOver="setImg('nav_locate',IMGOVER)" onMouseOut="setImg('nav_locate',IMGOFF)" onClick="setImg('nav_locate',IMGON);"><img name="nav_locate" src="/resources/images/nav_locate_off.gif" width="105" height="32" alt="Hotel and Resort Locator" title="Hotel and Resort Locator" border="0"></a><a href="/wbr/member_page.wnt" onMouseOver="setImg('nav_byr',IMGOVER)" onMouseOut="setImg('nav_byr',IMGOFF)" onClick="setImg('nav_byr',IMGON);"><img name="nav_byr" src="/resources/images/nav_byr_off.gif" width="106" height="32" alt="Wyndham ByRequest" title="Wyndham ByRequest" border="0"></a><a href="/specialoffers/main.wnt" onMouseOver="setImg('nav_so',IMGOVER)" onMouseOut="setImg('nav_so',IMGOFF)" onClick="setImg('nav_so',IMGON);"><img name="nav_so" src="/resources/images/nav_so_off.gif" width="105" height="32" alt="Special Offers" title="Special Offers" border="0"></a><a href="/meetingsandweddings/main.wnt" onMouseOver="setImg('nav_mw',IMGOVER)" onMouseOut="setImg('nav_mw',IMGOFF)" onClick="setImg('nav_mw',IMGON);"><img name="nav_mw" src="/resources/images/nav_mw_off.gif" width="106" height="32" alt="Meetings and Weddings" title="Meetings and Weddings" border="0"></a><a href="/destinationsandinterests/main.wnt" onMouseOver="setImg('nav_di',IMGOVER)" onMouseOut="setImg('nav_di',IMGOFF)" onClick="setImg('nav_di',IMGON);"><img name="nav_di" src="/resources/images/nav_di_off.gif" width="106" height="32" alt="Destinations and Interests" title="Destinations and Interests" border="0"></a><a href="/wotw/main.wnt" onMouseOver="setImg('nav_wotw',IMGOVER)" onMouseOut="setImg('nav_wotw',IMGOFF)" onClick="setImg('nav_wotw',IMGON);"><img name="nav_wotw" src="/resources/images/nav_wotw_off.gif" width="105" height="32" alt="Women On Their Way" title="Women On Their Way" border="0"></a></td>
+</tr>
+</table>
+<!-- /GLOBAL NAV TABLE -->
+
+  
+
+
+
+</td>
+</tr>
+<!-- BODY TABLE -->
+<!-- Add logic for home page -->
+<tr>
+<td>
+<table width="740" border="0" cellspacing="0" cellpadding="0">
+
+    <tr>
+
+        <td valign="top" WIDTH="145" bgcolor="#E9EDF6">
+<!-- left nav nested table -->
+<table width="145" border="0" cellspacing="0" cellpadding="0" bgcolor="#E9EDF6">
+<tr>
+<td width="10"><img src="/resources/images/spacer.gif" width="10" height="10"></td>
+<td width="5"><img src="/resources/images/spacer.gif" width="5" height="1"></td>
+<td width="5"><img src="/resources/images/spacer.gif" width="5" height="1"></td>
+<td width="125"><img src="/resources/images/spacer.gif" width="125" height="1"></td>
+</tr>
+<tr>
+    <td><img src="/resources/images/spacer.gif" width="10" height="1"></td>
+    <td colspan="3" valign="top" class="leftnavhdr">Wyndham Syracuse</td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/wbe/reservations.wnt?cha=WYNDHAM&PRO=SYRSH">Rates And Reservations</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/specialoffers/main.wnt">Special Offers</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/guestrooms/main.wnt">Guest Rooms</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/services/main.wnt">Services and Amenities</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/activities/main.wnt">Activities and Entertainment</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/dining/main.wnt">Dining</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/planameeting/main.wnt">Meetings and Conventions</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/planawedding/main.wnt">Weddings and Honeymoons</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/forthedisabled/main.wnt">For Guests with Disabilities</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/mapanddirections/main.wnt?param=1">Map and Directions</a></td>
+</tr>
+
+<!-- section divider --><tr>   <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="10"></td></tr><tr>   <td><img src="/resources/images/spacer.gif" width="10" height="1"></td>   <td colspan="3"><img src="/resources/images/d1.gif"></td></tr><tr>   <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="1"></td></tr><tr>   <td colspan="4"><img src="/resources/images/spacer.gif" width="1" height="10"></td></tr><!-- /section divider -->
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="http://www.affiliate.viator.com/brochure/ed_PRODUCT_results.jsp?AUID=2543&CITY=NEW+YORK">Tours And Attractions</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/weather/main.wnt">Weather</a></td>
+</tr>
+
+<!-- section divider --><tr>   <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="10"></td></tr><tr>   <td><img src="/resources/images/spacer.gif" width="10" height="1"></td>   <td colspan="3"><img src="/resources/images/d1.gif"></td></tr><tr>   <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="1"></td></tr><tr>   <td colspan="4"><img src="/resources/images/spacer.gif" width="1" height="10"></td></tr><!-- /section divider -->
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/fastfacts/main.wnt">Fast Facts</a></td>
+</tr>
+
+<tr bgcolor=>
+    <td colspan="4"><img src="/resources/images/spacer.gif" width="2" height="3"></td>
+</tr>
+<tr bgcolor=>
+ <td ><img src="/resources/images/spacer.gif" width="2" height="1"><img src=/resources/images/b1.gif></td>
+    <td colspan="3 valign="top" class=copysmall><a href="/hotels/SYRSH/requestabrochure/main.wnt">Request A Brochure</a></td>
+</tr>
+
+</table>
+</div>
+<!-- /left nav nested table -->
+</td>
+
+
+        <!-- GUTTER -->
+        <td width="10"><img src="/resources/images/spacer.gif" width="10" height="1"></td>
+    <!-- /GUTTER -->
+
+            <!-- page content -->
+        <td>
+
+            
+
+<link href="/resources/css/wyndham.css" rel=stylesheet type="text/css">
+<script language="JavaScript" src="/resources/javascript/common.js"></script>
+
+
+
+<script language="JavaScript" src="/resources/javascript/error.js"></script>
+ 
+<link href="/resources/css/wyndham.css" rel=stylesheet type="text/css">
+
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" alink="#FF6600">
+<!-- Begin NetConversions Code -->
+<script language="javascript"> 
+<!-- 
+navU=navigator.userAgent 
+if((navU.indexOf('MSIE 5')!=-1||navU.indexOf('MSIE 6')!=-1)&&navU.toLowerCase().indexOf('mac')==-1&&navU.indexOf('KTXN')==-1)document.write('<'+'script language="javascript" src="http://spd.atdmt.com/lp/wyndham/nc_tuhead.js"><'+'/script>')
+//--> 
+</script>
+<!-- End NetConversions Code -->
+
+<!-- Begin NetConversions Code -->
+<script language="javascript"> 
+<!-- 
+navU=navigator.userAgent 
+if((navU.indexOf('MSIE 5')!=-1||navU.indexOf('MSIE 6')!=-1)&&navU.toLowerCase().indexOf('mac')==-1&&navU.indexOf('KTXN')==-1)document.write('<'+'script language="javascript" src="http://spd.atdmt.com/lp/wyndham/nc_usability.js"><'+'/script>')
+//--> 
+</script>
+<!-- End NetConversions Code -->
+
+
+<table width="740" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+
+<!-- INNER CONTENT -->
+
+	<td valign="top">
+
+	<!-- inner content nested header table   -->
+	<table width="586" border="0" cellspacing="0" cellpadding="0">
+	<!-- TAG 5.01-->
+	<tr>
+		<td colspan="3" valign="top"><img src="/resources/images/spacer.gif" width="2" height="5"></td>
+	</tr>
+	<tr>
+		<td colspan="3" valign="top"><img src="/cms_content/hotels/SYRSH/images/A_syracuse.gif" width="585" height="52" alt="Wyndham Syracuse" title="Wyndham Syracuse" border="0"></td>
+	</tr>
+	<!-- /TAG 5.01-->
+	<!-- TAG 5.01a optional -->
+	
+
+	
+			
+			<tr>
+				<td colspan="3" valign="top"><img src="/resources/images/spacer.gif" width="2" height="5"></td>
+			</tr>
+			<tr>
+				<td valign="top"><img name="panorama" src="/cms_content/hotels/SYRSH/images/pano.jpg" width="585" height="126" alt="" border="0"></td>
+			</tr>
+			
+		
+	
+	<!-- /TAG 5.01a optional -->
+	</table> 
+
+
+	<script language="JavaScript">
+		var sub_base = "/cms_content/hotels/images/";
+		var sub_offSuffix = "_off.gif";
+		var sub_overSuffix = "_over.gif";
+		var sub_onSuffix = "_on.gif";
+
+		var sub_precacheKeys = new Array("rr_hotel","Go");
+
+		var sub_IMGOFF = "0";
+		var sub_IMGOVER = "1";
+		var sub_IMGON = "2";
+
+		var sub_precacheImages = new Array();
+
+
+		if (document.images) {
+		for (var i=0; i < sub_precacheKeys.length; i++) {
+		    sub_precacheImages[sub_precacheKeys[i]+sub_IMGOFF] = new Image();
+		    sub_precacheImages[sub_precacheKeys[i]+sub_IMGOVER] = new Image();
+		    sub_precacheImages[sub_precacheKeys[i]+sub_IMGOFF].src = sub_base + sub_precacheKeys[i] + sub_offSuffix;
+		    sub_precacheImages[sub_precacheKeys[i]+sub_IMGOVER].src = sub_base + sub_precacheKeys[i] + sub_overSuffix;
+
+		}
+		}
+
+		// key,status=0/1
+		function setRRHotelImg()
+		{
+		if (document.images) {
+		    for (var i=0; i < setRRHotelImg.arguments.length; i+=2) {
+			var key = setRRHotelImg.arguments[i];
+			var status = setRRHotelImg.arguments[i+1];
+			document.images[key].src = sub_precacheImages[key+status].src;
+		    }
+		}
+		}
+	</script>
+
+	<script language="JavaScript">
+		function addIsis(form) {
+			form.searchWord.value = form.isiscode.value+form.searchWord.value;
+			//alert(form.searchWord.value);
+			form.submit();
+    	}
+
+		// Code  for  key pressed
+		function fnPressEnterPart(form)
+		{
+		if(navigator.appName != "Netscape"){
+			var k = window.event.keyCode;
+			if (k==13) // ENTER KEY IS PRESSED
+			  {
+			   if (validateForm(form))
+				 {
+				 addIsis(form);
+			 	 }
+			   else
+			     {
+			     return false;
+			     }
+			  }
+			 }
+		}
+	</script>
+
+	<script language="JavaScript" type="text/javascript">
+
+		//	@@@@@@@@@@@@@@@ for Netscape
+			function PressEnter(anEvent)
+			{
+				var WhichKey = anEvent.which;
+				var eventTarget = anEvent ? anEvent.target : event.srcElement;
+				var textField = eventTarget.type == 'text' ;
+
+				if(WhichKey ==13  && textField)
+				{
+					if (validateForm(document.hotelSearch))
+				 	{
+				 		addIsis(document.hotelSearch);
+				 	}
+					else
+					{
+					 return false;
+					}
+
+
+
+				}
+			}
+
+			if(navigator.appName=="Netscape")
+			{
+			//var x = new Array(10);
+			//alert("Inside Netscape");
+			document.captureEvents(Event.KEYPRESS);
+			document.onkeypress = PressEnter;
+
+
+			}
+
+			//End of key pressed
+//	@@@@@@@@@@@@@@@@@@@@@@
+	</script>
+
+	<script language="JavaScript">
+
+		var thumbnailsClass = "thumbnails";
+
+		var setdivClass = "setdiv";
+
+		var divPhotoSetID = "divPhotoSet";
+
+		if (document.panorama) {
+			thumbnailsClass = "thumbnails";
+			setdivClass = "setdiv";
+			divPhotoSetID = "divPhotoSet";
+			}
+		else {
+			thumbnailsClass = "thumbnailsTwo";
+			setdivClass = "setdivTwo";
+			divPhotoSetID = "divPhotoSetTwo";
+		}
+		// alert("thumbnailsClass="+thumbnailsClass);
+	</script>
+
+	<script language="JavaScript" src="/resources/javascript/hotel_thumbnails.js">
+	</script>
+
+	<!-- /inner content nested header table -->
+	<!-- inner content nested two-column body table -->
+	<table width="586" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<!-- inner content left column -->
+		<td valign="top" width="282">
+		<!-- inner content left column nested table -->
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<!--  TAG 5.09 Lanyon -->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="25" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td class="copymediumblue">
+			<!--
+			path=../../LanyonData/data/SYRSH*<br>
+			-->
+			6301 State Route 298<br>East Syracuse, New York&nbsp;13057<br>United States<br>Phone: 315-432-0200
+			</td>
+		</tr>
+		<!--  /TAG 5.09 -->
+		
+		
+		<!-- reservation button -->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="10"></td>
+		</tr>
+		<tr>
+			<td><a href="/wbe/reservations.wnt?PRO=SYRSH&cha=WYNDHAM" onMouseOver="setRRHotelImg('rr_hotel',sub_IMGOVER);" onMouseOut="setRRHotelImg('rr_hotel',sub_IMGOFF);"><img src="/cms_content/hotels/images/rr_hotel_off.gif" width="282" height="24" name="rr_hotel" title="Get Rates or Make a Reservation for This Hotel" alt="Get Rates or Make a Reservation for This Hotel" border="0"></a></td>  
+		</tr>
+		<!-- /reservation button -->
+		
+		<!--  TAG 5.02a optional: 1 to 3 allowed-->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="10"></td>
+		</tr>
+		<tr>
+			<td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			
+			
+			
+			</table>
+			</td>
+		</tr>
+		<!--  /TAG 5.02a optional -->
+		<!--  TAG 5.07 -->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="10" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td class="copymedium">
+			<B>The Wyndham Syracuse Hotel is pleased to announce our 250 guest room renovation is now complete. Come stay with us and experience the difference!</B> 
+
+<P>Located close to the majestic Finger Lakes Region and convenient to downtown Syracuse, the Wyndham Syracuse is the perfect place to stay in central New York state.   
+
+<p>Guest rooms feature thoughtful amenities like pillow top mattresses, high-speed Internet access and ergonomic work chairs. Relax and recharge in our health club, and indoor and outdoor pools. Savor upscale American cuisine in the Regatta Bar & Grill's comfortable elegance. 
+
+<p>We're just minutes from the Syracuse Business District and Lakefront Development Area. Visit the distinguished 130-year old Syracuse University. The Erie Canal, Emerson and Salt museums, and nearby mountains are must see local attractions. Place your bets at the Turning Stone Casino. Lake Ontario, Finger Lakes and Thousand Islands are less than an hour away. 
+
+<p>Whatever brings you to central New York State, you'll discover the warmth, hospitality, and recreation that set Syracuse apart at the Wyndham Syracuse. 
+ 
+
+			</td>
+		</tr>
+		<!--  /TAG 5.07 -->
+		
+		
+		<!--  Search this hotel - Lanyon -->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="25" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td><img src="/cms_content/hotels/images/subhdr_hotel_search.gif" width="282" height="16" alt="Quick Search" title="Quick Search" border="0"></td>
+		</tr>
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="15" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td class="copymediumblue">Wyndham Syracuse</td>
+		</tr>
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="10" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td class="copysmall">Not finding what you're looking for?<br>Try searching this hotel.</td>
+		</tr>
+		<tr>
+	<td align="right"><form name="hotelSearch" action="/search/main.wnt" method="post" onSubmit = "javascript: return false;" >
+			<input type="hidden" name="searchWord" value="">
+			<!-- Mouse over Start-->
+			<input type="text" value="" name="hotelSearchWord" size="10" maxlength="30"  onKeyDown="return fnPressEnterPart(document.hotelSearch);"><img src="/resources/images/spacer.gif" width="5" height="1"><a href="javascript:if (validateForm(document.hotelSearch)) addIsis(document.hotelSearch); else void(0);" onMouseOver="setRRHotelImg('Go',sub_IMGOVER)" onMouseOut="setRRHotelImg('Go',sub_IMGOFF);"><img src="/cms_content/hotels/images/Go_off.gif" align="absmiddle"  name="Go" title="Go" alt="Go" border="0" vspace="2"></a>
+			<!--Mouse  Over   end-->
+			<input type="hidden" name="isiscode" value="+SYRSH+" >
+			<input type="hidden" name="searchContext" value="site"></form>
+</td>
+		</tr>
+		<!--  /Search this hotel -->
+		</table>
+		<!-- /inner content left column nested table -->
+		</td>
+		<!-- /inner content left column -->
+		<!-- inner content gutter -->
+		<td><img src="/resources/images/spacer.gif" width="21" height="1"></td>
+
+		
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+
+
+	
+
+	
+
+	
+
+
+
+
+<td valign="top" width="282">
+        <!-- inner content right column nested table -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <!-- Time and Temp -->
+        <tr>
+            <td><img src="/resources/images/spacer.gif" width="2" height="25" alt="" border="0"></td>
+        </tr>
+        <tr>
+            <td>
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+            
+              
+
+             
+			
+
+              
+
+                    <tr>
+
+                     <td valign="top" class="copysmallblue">Local Time:&nbsp;05:31 PM<img src="/resources/images/spacer.gif" width="40" height="1" alt="" border="0"></td>
+              
+				            	
+				
+                    
+
+                    
+
+                    
+                    
+
+                    <td valign="top"><a href="weather/main.wnt"><img src="/resources/images/weather/84.jpg" width="33" height="32" alt="" border="0" align="top"></a></td>
+                    <td align="right" valign="top" class="copysmallblue"><a href="weather/main.wnt"><img src="/resources/images/spacer.gif" width="5" height="1" alt="" border="0">Local Temp: 79 &deg;F</a><br><a href="weather/main.wnt">5-Day Forecast</a></td>
+                    
+
+                </tr>
+            </table>
+            </td>
+        </tr>
+
+        <!-- /Time and Temp -->
+
+        <!-- /Time and Temp -->
+
+
+
+
+
+
+
+	
+
+	
+		
+			
+		
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+
+
+		<!-- Printer-friendly Version -->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="10" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td align="right" valign="top" class="copysmall"><a href="/cms_content/hotels/SYRSH/printerfriendly.html" target="_new">Printer-friendly Version</a></td>
+		</tr>
+		<!-- /Printer-friendly Version -->
+		<!-- Visual Tours of this Hotel -->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="15" alt="" border="0"></td>
+		</tr>
+		<!-- Visual Tour Large Image -- object name is "largeTourImage" -->
+		<tr>
+			<td align="center"><img name="largeTourImage" src="/resources/images/spacer.gif" width="258" height="220" alt="" border="0"></td>
+		</tr>
+		<!-- /Visual Tour Large Image -->
+		<!-- TAG 5.05b -->
+		<tr>
+			<td align="center"><img src="/resources/images/spacer.gif" width="2" height="20" alt="" border="0"></td>
+		</tr>
+		<!-- /TAG 5.05b -->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="15" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td><img src="/cms_content/hotels/images/subhdr_visual_tour.gif" width="282" height="16" alt="Visual Tours of This Hotel" title="Visual Tours of This Hotel" border="0"></td>
+		</tr>
+		<!-- Thumbnails -->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="60" alt="" border="0">
+			</td>
+		</tr>
+		<!-- /Thumbnails -->
+		<!-- Photosets - optional: only display if there is more than 1 set -->
+		<script language="JavaScript" type="text/javascript">
+			<!--
+			if (numSlides > 5) {
+			document.write('<tr><td class="copysmall"><img src="/resources/images/spacer.gif" width="15" height="20" alt="" border="0">');
+			document.write('</td></tr>');
+		} 
+		// -->
+			</script>
+		<!-- /Photosets -->
+		<!-- Video and 360s for this Hotel -->
+		<tr>
+			<td><img src="/resources/images/spacer.gif" width="2" height="10" alt="" border="0"></td>
+		</tr>
+		
+
+		
+		
+		<tr align="left">
+			<td align="left"><img src="/cms_content/hotels/images/arrow_video.gif" width="97" height="77" alt="" border="0">
+			
+					<img src="
+					/cms_content/hotels/SYRSH/images/video.jpg
+						 " width="85" height="77" alt="Video" title="Video" border="0" usemap="#video">
+				
+
+			
+		   
+		    
+		    <script language="JavaScript" type="text/javascript">
+			//Pop up window for Video and 360
+			//Variable size window based on the arguments from DCT fields
+			function openVideoResizable(url,second,third) {
+				popupVideoWin =   window.open(url,second,third);
+			    //return popupWin;
+			}
+			</script>
+				<MAP name=video><AREA title=Video shape=RECT alt=Video coords=16,8,71,69 href="#" onClick="openVideoWin('http://exc.visualfrenzy.com/exc/aspquery?command=invoke&ipid=0651&ids=40468');"></MAP>
+				<MAP name=view360><AREA title="360-Degree View" shape=RECT alt="360-Degree View" coords=15,12,60,74 href="#" onClick="openVideoResizable('','remote','resizable,dependent,width=,height=,left=yes,top=yes');"></MAP>
+			</td>
+		</tr>
+		
+
+		
+
+		
+			<!-- /Video and 360s for this Hotel -->
+		<!-- /Visual Tours of this Hotel -->
+		
+		
+									<tr><td><br/></td></tr><tr><td><a href="http://www.meetingsmadesimple.com/wyndham" target="new"><img src="/cms_content/hotels/ABQAP/images/meetingsimple_282x86.jpg" width="282" height="86" border=0></a></td></tr>
+									
+
+
+
+
+<!-- Special Offers for this Hotel -->
+
+
+                                <tr><td>
+                                </td></tr>
+                        
+                           
+
+                            
+
+                                    
+
+                                    <tr>
+                                        <td><img src="/resources/images/spacer.gif" width="2" height="25" alt="" border="0"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/cms_content/hotels/images/subhdr_special_offers.gif" width="282" height="16" alt="Special Offers for This Hotel" title="Special Offers for This Hotel" border="0"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/resources/images/spacer.gif" width="2" height="15" alt="" border="0"></td>
+                                    </tr>
+                                        <td>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                                    
+
+                                    <tr>
+                                        <td width="10" valign="top"><img src="/resources/images/spacer.gif" width="10" height="1" border="0"><br><img src="/resources/images/subhdr_square.gif" width="6" height="6" alt="" border="0" vspace="3"></td>
+                                        <td class="copymedium"><!-- TAG 6.07a --><a href="/specialoffers/special_offers/details/syrsh_shopping.wnt">Shopping Extravaganza Package - at the Wyndham Syracuse Hotel</a><!-- /TAG 6.07a --></td>
+                                    </tr>
+                                
+
+                                    
+
+                                    <tr>
+                                        <td width="10" valign="top"><img src="/resources/images/spacer.gif" width="10" height="1" border="0"><br><img src="/resources/images/subhdr_square.gif" width="6" height="6" alt="" border="0" vspace="3"></td>
+                                        <td class="copymedium"><!-- TAG 6.07a --><a href="/specialoffers/special_offers/details/wbr_syrsh_gas.wnt">Cash for your Gas - at the Wyndham Syracuse</a><!-- /TAG 6.07a --></td>
+                                    </tr>
+                                
+
+                        <tr>
+                            <td colspan="2"><img src="/resources/images/spacer.gif" width="2" height="8" alt="" border="0"></td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- /Special Offers for this Hotel -->
+
+                </tr>
+                <!-- /Special Offers for this Hotel -->
+        </table>
+        <!-- /inner content right column nested table -->
+        </td>
+        <!-- inner content right column -->
+        </tr>
+    </table>
+    <!-- /inner content nested table -->
+    </td>
+<!-- /INNER CONTENT -->
+     </td>
+     <!-- /page content -->
+    </tr>
+
+</table>
+
+
+
+
+
+
+
+        </td>
+            <!-- /page content -->
+
+    </tr>
+
+</table>
+</td>
+</tr>
+<!-- /BODY TABLE -->
+
+<tr>
+<td>
+
+
+
+
+
+<!-- This file will need some logic so that the Text for the current page
+will be be a link -->
+<!-- FOOTER TABLE -->
+<table width="740" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td><img src="/resources/images/spacer.gif" width="1" height="30"></td>
+</tr>
+<tr>
+    <td bgcolor="#000000"><img src="/resources/images/spacer.gif" width="740" height="4"></td>
+</tr>
+<tr>
+    <td><img src="/resources/images/spacer.gif" width="1" height="5"></td>
+</tr>
+<tr>
+    <td class="copysmall" align="center" style="text-align: center; line-height:20px">
+    <a href="http://www.wyndhampromotions.com/store">Wyndham Store</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="/corporate/main.wnt">Corporate Information</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.wyndham-recruiting.com/">Employment Opportunities</a><br />
+<a href="/travelagents/main.wnt">Travel Agent Services</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.connectcommerce.com/secure/partner_app.html?ccmid=K36637">Become an Affiliate</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="/corporate/franchise/main.wnt">Franchise Opportunities</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.wyndhampromotions.com/vacationclub">WVO Owner Rates</a><br />
+&copy;2006 Wyndham Hotels & Resorts, LLC.&nbsp;&nbsp;&nbsp;&nbsp;<a href="/hoteldir/main.wnt">Wyndham Hotels &amp; Resorts&reg;</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="/privacystatement/info.wnt">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="/terms/info.wnt">Terms of Use</a><a href="/hotels/hotels_for_indexing.jsp"></a></td>
+</tr>
+</table>
+
+<!--wcomap02-->
+
+
+
+<!-- DCS code -->
+
+
+
+<!-- Begin DCS server tag -->
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright 2002 NetIQ Corporation -->
+<!-- V6.1 -->
+<!-- $DateTime: 2003/07/15 11:52:11 $ -->
+<!-- $Revision: #3 $ -->
+<SCRIPT LANGUAGE="Javascript"><!--
+gVersion="1.0";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.1"><!--
+gVersion="1.1";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.2"><!--
+gVersion="1.2";
+var RE={"%09":/\t/g, "%20":/ /g, "%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g};
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.3"><!--
+gVersion="1.3";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.4"><!--
+gVersion="1.4";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.5"><!--
+gVersion="1.5";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"><!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+
+var gDomain="dcs.wyndham.com";
+var gDcsId="";
+// Add customizations here
+//WT.sp="@@SPLITVALUE@@";
+
+function dcsVar(){
+    var dCurrent=new Date();
+    WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+    WT.bh=dCurrent.getHours();
+    WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+    if (typeof(screen)=="object"){
+        WT.cd=screen.colorDepth;
+        WT.sr=screen.width+"x"+screen.height;
+    }
+    if (typeof(navigator.javaEnabled())=="boolean"){
+        WT.jo=navigator.javaEnabled()?"Yes":"No";
+    }
+    if (document.title){
+        WT.ti=document.title;
+    }
+    WT.js="Yes";
+    if (typeof(gVersion)!="undefined"){
+        WT.jv=gVersion;
+    }
+    DCS.dcsdat=dCurrent.getTime();
+    DCS.dcssip=window.location.hostname;
+    DCS.dcsuri=window.location.pathname;
+    if (window.location.search){
+        DCS.dcsqry=window.location.search;
+    }
+    if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+        if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+            DCS.dcsref=window.document.referrer;
+        }
+    }
+}
+
+function A(N,V){
+    return "&"+N+"="+dcsEscape(V);
+}
+
+function dcsEscape(S){
+    if (typeof(RE)!="undefined"){
+        var retStr = new String(S);
+        for (R in RE){
+            retStr = retStr.replace(RE[R],R);
+        }
+        return retStr;
+    }
+    else{
+        return escape(S);
+    }
+}
+
+function dcsCreateImage(dcsSrc){
+    if (document.images){
+        gImages[gIndex]=new Image;
+        gImages[gIndex].src=dcsSrc;
+        gIndex++;
+    }
+    else{
+        document.write('<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+    }
+}
+
+function dcsMeta(){
+    var myDocumentElements;
+    if (document.all){
+        myDocumentElements=document.all.tags("meta");
+    }
+    else if (document.documentElement){
+        myDocumentElements=document.getElementsByTagName("meta");
+    }
+    if (typeof(myDocumentElements)!="undefined"){
+        for (var i=1;i<=myDocumentElements.length;i++){
+            myMeta=myDocumentElements.item(i-1);
+            if (myMeta.name){
+                if (myMeta.name.indexOf('WT.')==0){
+                    WT[myMeta.name.substring(3)]=myMeta.content;
+                }
+                else if (myMeta.name.indexOf('DCSext.')==0){
+                    DCSext[myMeta.name.substring(7)]=myMeta.content;
+                }
+                else if (myMeta.name.indexOf('DCS.')==0){
+                    DCS[myMeta.name.substring(4)]=myMeta.content;
+                }
+            }
+        }
+    }
+}
+
+function dcsTag(){
+    var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?";
+    for (N in DCS){
+        if (DCS[N]) {
+            P+=A(N,DCS[N]);
+        }
+    }
+    for (N in WT){
+        if (WT[N]) {
+            P+=A("WT."+N,WT[N]);
+        }
+    }
+    for (N in DCSext){
+        if (DCSext[N]) {
+            P+=A(N,DCSext[N]);
+        }
+    }
+    if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+        P=P.substring(0,2040)+"&WT.tu=1";
+    }
+    dcsCreateImage(P);
+}
+
+dcsVar();
+dcsMeta();
+dcsTag();
+//-->
+</SCRIPT>
+
+<NOSCRIPT>
+<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://dcs.wyndham.com/njs.gif?dcsuri=/nojavascript&WT.js=No">
+</NOSCRIPT>
+<!-- END OF Data Collection Server TAG -->
+<!-- End DCS server tag -->
+
+
+<!-- /DCS code -->
+
+<!-- /FOOTER TABLE -->
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+

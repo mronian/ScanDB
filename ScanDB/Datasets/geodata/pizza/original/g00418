@@ -1,0 +1,360 @@
+<DOC>
+<DOCNO>g00418</DOCNO>
+<DOCHDR>http://www.judysbook.com/members/davenaff/posts/2006/3/270863</DOCHDR>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	Mad Pizza - Seattle, WA - Review by David N. on Judy's Book
+</title>
+<script type="text/javascript" src="http://images.judysbook.com/members/js/prototype.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    function submitSignIn(signInForm)
+    {                      
+        new Ajax.Updater('commentAdd', '/controls/ajax/addcomment.aspx', {method: 'post', evalScripts: true, parameters:Form.serialize(signInForm)});
+    }
+    function submitComment(commentForm)
+    {
+        if(Form.Element.getValue('commentText').length == 0) {                 
+            new Ajax.Updater('commentAdd', '/controls/ajax/AddComment.aspx?error=Please fill out comment before submitting', {method: 'post', evalScripts: true});
+        }
+        else
+        {
+            $('commentError').style.display = "none";                    
+            new Ajax.Updater('commentBlock', '/controls/ajax/submitcomment.aspx', {method: 'post', evalScripts: true, insertion: Insertion.Bottom, parameters:Form.serialize(commentForm) + "&ciId=270863"});                                                             
+            $('commentText').value = "";                    
+        }
+    }    
+    function displayComment(commentId)
+    {
+        $('commentBlock').style.display = "";
+        var pars = 'ci=270863&m=1140';
+        new Ajax.Updater('contentItemFeedback', '/controls/ajax/submitcontentitemfeedback.aspx', {method:'post', evalScripts: true, parameters: pars});return false;       
+    }
+    function submitContentItemFeedback(ciId, rating)
+    {   
+        var pars = 'ci=' + ciId + '&rating=' + rating;
+        new Ajax.Updater('contentItemFeedback', '/controls/ajax/submitcontentitemfeedback.aspx', {method:'post', evalScripts: true, parameters: pars});return false;       
+    }
+    function setFavoriteContentItem(ciId, remove)
+    {   
+        var pars = 'ci=' + ciId;
+        if(remove)
+            pars += '&remove=' + remove;
+        new Ajax.Updater('addToFav', '/controls/ajax/setFavoriteContentItem.aspx', {method:'post', evalScripts: true, parameters: pars});return false;       
+    }
+    function sendToAFriend(stfForm)
+    {
+        if(Form.Element.getValue('stfEmail').length == 0 || $('stfEmail').value == 'Enter an email address') {
+            $('stfError').style.display = "";                    
+        }
+        else
+        {
+            $('stfError').style.display = "none";                    
+            new Ajax.Updater('sendtofriend', '/controls/ajax/sendtoafriendCI.aspx', {method: 'post', evalScripts: true, parameters:Form.serialize(stfForm) + "&ciId=270863"});                                                             
+            $('stfEmail').value = "";                    
+        }
+    }
+    function clearSTF()
+    {
+        if($('stfEmail').value == 'Enter an email address')
+            $('stfEmail').value = '';        
+    }
+    //]]>
+</script> 
+
+<link rel="SHORTCUT ICON" href="/judysbook.ico" />
+<link rel="stylesheet" type="text/css" href="http://images.judysbook.com/members/css/print.css" media="print" />
+<style type="text/css">
+    /*<![CDATA[*/
+
+    @import url("http://images.judysbook.com/members/css/common_23.css");
+    @import url("http://images.judysbook.com/members/css/static_19.css");
+    @import url("http://images.judysbook.com/members/css/merchant_12.css");
+
+    /*]]>*/
+</style>
+<script type="text/javascript" src="http://images.judysbook.com/members/js/static.js"></script>	
+<script type="text/javascript" src="http://images.judysbook.com/members/js/common_16.js"></script>	
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+	_uacct = "UA-76007-1";
+	_udn="judysbook.com";
+	_userv=2;
+	urchinTracker();
+</script>
+<meta name="description" content="Mad Pizza reviews at Judy's Book'Mad Pizza in Fremont is a great place to stop by f...'" /></head>
+<body>
+
+<div id="header">
+    <div class="wrapper">
+	    <div id="logo">
+		    <a href="/"><img src="http://images.judysbook.com/members/judysbook.png" alt="Mad Pizza - Seattle, WA - Review by David N. on Judy's Book" title="" /></a>
+	    </div>
+	    <ul id="global-nav">	 
+             <li id="home"><a href="/" title="Home" rel="home">Home</a></li>		    <li id="mybook"><a href="/mybook/" title="My Book">MyBook</a></li>		    <li id="signin">
+                                    <a href="/login.aspx" title="Sign In">Sign In</a>                
+              </li>	    </ul>	    <div id="searchbox-wrapper">	        <form id="frmSearch" method="get" action="/search/">    	        <fieldset>  	        		<label for="searchbox_keyword" id="keyword_label">Search for:</label>	            <input type="text" id="searchbox_keyword" name="k" value="" />	            <span>e.g. restaurants, hair salons, doctors</span>  	        		<label for="searchbox_location" id="location_label">Location:</label>	            <input type="text" id="searchbox_location" name="l" value="seattle wa" />	            <input type="image" onclick="qBox.value=searchbox_keyword.value+' '+searchbox_location.value" src="http://images.judysbook.com/members/search.png" id="search_button" value="Search" />    	        <input type="hidden" id="qBox" name="q" />    	        </fieldset>            </form>	    </div>	    <hr />	</div>	</div>
+
+<div id="content-wrapper">
+	
+<div id="ctl00_PageMessage1_promoMessage" class="promoMessage">
+<div id="promoblock">
+       <p>Be recognized. Be rewarded. Become a City Editor. <a href="/promotions/cityeditor/" onClick="javascript:urchinTracker('/RM/cityeditor-CI')">Sign up now</a></p>    
+</div></div>
+
+
+	
+<div id="ci-page">
+
+	<div id="content" class="three-column-navright">
+		<div id="main">
+			
+<div id="ctl00_MainColumn_ContentItemControl">
+<div class="hreview">
+	<h1 class="item vcard"><a class="fn org summary" href="/cities/seattle/Pizza-Restaurants/23552665/p1/Mad_Pizza.htm">Mad Pizza</a></h1>
+	<img src="http://images.judysbook.com/members/stars/rate4_lg.gif" class="stars-big" alt="4 stars" />
+
+    <h3 class="title">Good, thick pizza</h3>
+    <p class="details"><abbr class="dtreviewed" title="20060317">March 17, 2006 12:02 PM PST</abbr></p>
+    
+    <p class="description">Mad Pizza in Fremont is a great place to stop by for a slice or two of pizza.  They feature quick counter service pizza with a few beers on tap.  They usually have a few different pizzas made and ready to go. They do a good job building creative pizzas that are typically tastier than most standard pizzas.<br><br>Their pizza is fairly thick and not for the thin crust crowd.</p>
+	
+    
+</div>
+<div id="contentItemFeedback">
+	
+<ul class="helpful">
+   
+        <li><a href="/login.aspx?ReturnUrl=%2fmembers%2fdavenaff%2fposts%2f2006%2f3%2f270863%2f"><img src="http://images.judysbook.com/members/thumbs_up_bl_count.gif" alt="Thumbs up" /><em>1</em></a></li>
+    
+        <li><a href="/login.aspx?ReturnUrl=%2fmembers%2fdavenaff%2fposts%2f2006%2f3%2f270863%2f"><img src="http://images.judysbook.com/members/thumbs_down_bl.gif" alt="Thumbs down" /></a></li>
+    
+    <li><a href="/members/davenaff/posts/2006/3/270863/#commentAdd"><img src="http://images.judysbook.com/members/add_comment_bl.gif" alt="Add Comment" /></a></li>
+
+</ul>
+<hr />
+
+</div>
+
+<div class="" style="margin:10px; padding-left:0px">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-7564012199704606";
+    google_hints = "";
+    google_alternate_ad_url = "http://www.judysbook.com/controls/AlternateAdBlock.aspx?bc=FFFFFF&cc=FFFFFF&h=60&lc=0077aa&tc=777777&uc=0077aa&w=234";
+    google_ad_width = 234;
+    google_ad_height = 60;
+    google_ad_format = "234x60_as";
+    google_ad_type = "text";
+    google_ad_channel ="5474555522";
+    google_color_border = "FFFFFF";
+    google_color_bg = "FFFFFF";
+    google_color_link = "0077aa";
+    google_color_url = "0077aa";
+    google_color_text = "777777";
+    //--></script>
+    <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+
+<ul class="action">
+	<li><a href="/members/davenaff/posts/2006/3/270863/flag/">Flag this post</a></li>
+	<li>View all <a href="/cities/seattle/Pizza-Restaurants/23552665/p1/Mad_Pizza.htm">Mad Pizza</a> reviews</li>
+	<li>View more <a href="/cities/seattle/Pizza-Restaurants/">Pizza Restaurants reviews in Seattle</a></li>
+	<li>David's <a href="/members/davenaff/posts/">post archive</a></li>
+</ul>	
+
+
+</div>
+<div id="commentBlock" style="display:none;">
+<h3>Comments:</h3>
+<div id="ctl00_MainColumn_comments"></div>
+</div>    
+<div class="cbb thought">
+<div id="commentAdd">
+
+<fieldset class="form stacked">    
+    <h3>Sign in to add a comment</h3>
+    <span id="commentSignInErrors"></span>
+    <form id="commentSignInForm" method="get" action="" onsubmit="submitSignIn(this);return false;">    
+	    <dl>
+				<dt><label for="login_email">Email address</label></dt>
+				<dd><input name="login_email" type="text" id="login_email" class="textbox" /></dd>
+				<dt><label for="login_password">Password</label></dt>
+				<dd><input name="login_password" type="password" id="login_password" class="textbox" /></dd>
+				<dt></dt>
+				<dd>
+				   <input name="login_chkautologin" type="checkbox" id="login_chkautologin" />&nbsp;
+					<label for="login_chkautologin">Sign me in automatically next time</label>
+				</dd>			
+			</dl>
+	    <p><input type="submit" class="button" value="Sign In" /> </p>
+    </form>
+</fieldset>
+
+
+Not a member?  <a href="/signup/">Sign up now!</a>
+
+</div>  
+</div>
+
+<div class="ci-list more">
+    <h3>More from David:</h3>  
+    <ul>
+    
+        
+<li><a href="/members/davenaff/posts/2006/7/405839/">Reasonably good, reasonably priced</a></li>
+    
+        
+<li><a href="/members/davenaff/posts/2005/8/50594/">A dashboard for your life</a></li>
+    
+        
+<li><a href="/members/davenaff/posts/2005/6/4211/">Flaming swords of lamb!</a></li>
+    
+    </ul>      
+</div>
+
+    <hr />
+
+		</div>
+		<div id="sub">
+			
+	
+<div class="degrees-container">
+  	<a href="/members/davenaff/" id="ctl00_SubColumn_Member_InfoColumn1_MemberImage1_MemberLink" title="David N."><img src="http://images.judysbook.com/html/80/00/00/1000080_lgsq.jpg" id="ctl00_SubColumn_Member_InfoColumn1_MemberImage1_MemberImage" class="member-photo" alt="David N." /></a>
+<span class="degree"></span> 
+</div>
+
+
+<div class="rounded-box">
+	<dl class="vcard">
+	  
+	  <dt class="fn"><a href="/members/davenaff/" title="More about David N.">David N.</a></dt>
+	    
+	  <dd class="adr"><a class="locality" href="/cities/seattle/">Seattle, WA</a></dd>
+	  <dd class="join-date">Member Since: June 08, 2004</dd>
+	  <dd class="trustscore">
+	  		<a id="what-is-ts" href="javascript:popUp('/about/trustscore.aspx','400','400')"><span>TrustScore<sup>SM</sup> = 9</span>
+	  		<img src="http://images.judysbook.com/members/trustscore/ts_lg_9.gif" alt="TrustScore = 9" title="TrustScore = 9" /></a> 
+	  </dd>
+	</dl>
+</div>
+
+	<hr />
+
+    <div id="ctl00_SubColumn_adBlock" class="adsensehoriz">
+        
+<div class="" style="margin:10px; padding-left:0px">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-7564012199704606";
+    google_hints = "Pizza Restaurants Restaurants Food Dining Seattle Washington";
+    google_alternate_ad_url = "http://www.judysbook.com/controls/AlternateAdBlock.aspx?bc=FFFFFF&cc=FFFFFF&h=600&lc=0077aa&tc=777777&uc=0077aa&w=120";
+    google_ad_width = 120;
+    google_ad_height = 600;
+    google_ad_format = "120x600_as";
+    google_ad_type = "text";
+    google_ad_channel ="0831579159";
+    google_color_border = "FFFFFF";
+    google_color_bg = "FFFFFF";
+    google_color_link = "0077aa";
+    google_color_url = "0077aa";
+    google_color_text = "777777";
+    //--></script>
+    <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+
+    </div>
+
+
+		</div>
+		<div id="nav">
+			  
+    <div id="ctl00_NavColumn_ciMoreInfo">
+
+<div class="map-wrapper">
+    
+<iframe src="http://maps.judysbook.com/minimap.aspx?lat=47.6513210000000&lng=-122.3499650000000&height=173&width=173&ZoomLevel=4&ShowTypeControl=False&ShowControls=True&EnableDrag=True" frameborder="0" width="175" height="175" scrolling="no"></iframe>
+    <a href="http://maps.judysbook.com/default.aspx?ri=23552665" target="_blank">View Larger Map</a>
+    
+    <!--a href="#" class="directions"><img src="http://images.judysbook.com/members/get-directions.png" alt="Get Directions" /></a-->
+</div>    
+<dl class="item vcard">
+<dt class="fn org summary">Mad Pizza</dt>
+<dd class="adr">
+    <span class="street-address">3601 Fremont Ave N Ste 101</span>
+    <span class="locality">Seattle</span>, <span class="region">WA</span> <span class="postal-code">98103</span>
+    <span class="phone">(206) 632-5453</span>
+    
+</dd>
+</dl>
+
+<hr />
+
+</div>
+    <h4>To Do</h4>
+    <ul class="nav-list">
+        
+        <li><a href="/post/add/service.aspx?ri=23552665">Write a Review of this Business</a></li>
+        
+        <li><a href="/tools/IsThisYourBusiness.aspx?ri=23552665">Is this Business’s Information Incorrect?</a></li>    
+        
+        <li><a href="/mybook/tools/sendtoafriend.aspx?ci=270863">Send to a Friend</a></li>        
+    </ul>
+       
+    
+<div class="" style="margin:10px; padding-left:0px">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-7564012199704606";
+    google_hints = "Pizza Restaurants Restaurants Food Dining Seattle Washington";
+    google_alternate_ad_url = "";
+    google_ad_width = 160;
+    google_ad_height = 90;
+    google_ad_format = "160x90_0ads_al";
+    google_ad_type = "";
+    google_ad_channel ="0831579159";
+    google_color_border = "FFFFFF";
+    google_color_bg = "FFFFFF";
+    google_color_link = "0077aa";
+    google_color_url = "0077aa";
+    google_color_text = "777777";
+    //--></script>
+    <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+
+    
+		</div>
+	</div>    
+	
+</div>
+                  
+	
+<div id="footer">
+    <div class="wrapper">
+	    <ul>
+		    <li><a href="/about/">About us</a>::</li>
+		    <li><a href="/help/">Help</a>::</li>
+		    <li><a href="/merchant/">Businesses &amp; Professionals</a>::</li>
+		    <li><a href="/help/feedback/">Give us your feedback</a>::</li>
+		    <li><a href="/about/privacy/">Privacy policy</a>::</li>
+		    <li><a href="/about/terms/">Terms of use</a></li>
+	    </ul>
+	    <p class="copyright">Copyright 2004-2006 Judy's Book, Inc. All rights reserved.</p>
+    </div>
+</div>
+<script type="text/javascript">
+	addLoadEvent(focusLabels);
+	addLoadEvent(roundedCorners);
+</script> 
+</div>  
+</body>
+</html>

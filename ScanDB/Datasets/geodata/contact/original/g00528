@@ -1,0 +1,407 @@
+<DOC>
+<DOCNO>g00528</DOCNO>
+<DOCHDR>http://www.ohiohistory.org/contact.html</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML> 
+<HEAD>
+<TITLE>Contact The Ohio Historical Society</TITLE>
+
+</HEAD> 
+<BODY BGCOLOR="#ffffcc" LINK="#006666" ALINK="#993333" VLINK="#996600">
+
+<style type="text/css">
+<!--
+.p7tbsub {background-color: #FFFFFF; border: 1px solid #ffffcc; font-size: 12px; font-family: Arial, Helvetica, sans-serif; layer-background-color: #990000; background-color: #990000;}
+.p7tbsub p {margin: 0px; padding-left:7px; padding-top:3px; padding-right:4px; padding-bottom:3px; background-color: #990000; font-weight: bold;}
+.p7tbsub a:link {TEXT-DECORATION: none; color: #FFFFCC;}
+.p7tbsub a:visited {TEXT-DECORATION: none; color: #FFFFCC;}
+.p7tbsub a:hover {TEXT-DECORATION: underline; color: #FFFFCC; font-weight: bold;}
+.p7tbsub a:active {TEXT-DECORATION: none; color: #FFFFCC;}
+.p7tbdn {color: #FF9900 !important; font-weight: bold;}
+-->
+</style>
+
+<body BGCOLOR="#ffffcc" LINK="#006666" ALINK="#993333" VLINK="#996600" 
+ onLoad="P7_setMM2('none',1,0,'none','none');P7_trigMM2();">
+
+<script>
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+//MenuMagic II scripts by PVII
+//www.projectseven.com
+//Copyright(c) 2002, All Rights Reserved
+//
+function P7_setMM2(){ //v2.0 by PVII
+ //set the image over and down name convention
+ document.p7TabOver="_over";
+ document.p7TabDown="_down";
+ var dt=false;if(document.getElementsByTagName){dt=true;}if(document.P7TabBar){return;}
+ var i,k=-1,g,x,gg,tl,ts,ti,tm,tt,tsn,tu,el,args=P7_setMM2.arguments;
+ P7TabProp=new Array();for(i=0;i<args.length;i++){P7TabProp[i]=args[i];}
+ P7TabIM=new Array();P7TabSB=new Array();if(dt){tm=document.getElementsByTagName("IMG");
+ }else{tm=document.images;}tm=document.images;tt=new Array();tt=tt.concat(tm);
+ if(document.layers){for(i=0;i<document.layers.length;i++){ti=document.layers[i].document.images;
+ if(ti){tt=tt.concat(ti);}for(x=0;x<document.layers[i].document.layers.length;x++){
+ ti=document.layers[i].document.layers[x].document.images;if(ti){tt=tt.concat(ti);}}}tm=tt;}
+ for(i=0;i<tm.length;i++){tl=tm[i].name; if(dt&&!tl){tl=tm[i].id;}
+ if(tl.indexOf("p7TBim")==0){ts=tl.replace("p7TBim","");
+ tsn="p7TBsub"+ts;k++;P7TabIM[k]=tl;if((g=MM_findObj(tsn))!=null){P7TabSB[k]=tsn;
+ gg=(document.layers)?g:g.style;gg.visibility="hidden";}else{P7TabSB[k]='N';}}}
+ document.P7_TBswapd=new Array();document.P7_TBswapo=new Array();for(i=0;i<P7TabIM.length;i++){
+ g=MM_findObj(P7TabIM[i]);gg=g.src;g.p7TBim=g.src;tu=gg.lastIndexOf(".");
+ g.p7TBimo=gg.substring(0,tu)+document.p7TabOver+gg.substring(tu,gg.length);
+ g.p7TBimd=gg.substring(0,tu)+document.p7TabDown+gg.substring(tu,gg.length);
+ if(P7TabProp[2]>1){document.P7_TBswapo[i]=new Image();document.P7_TBswapo[i].src=g.p7TBimo;}
+ if(P7TabProp[2]>0){if(P7TabProp[2]==3){g.p7TBimd=g.p7TBimo;}document.P7_TBswapd[i]=new Image();
+ document.P7_TBswapd[i].src=g.p7TBimd;}}if((g=MM_findObj('P7TabH'))!=null){gg=(document.layers)?g:g.style;
+ gg.visibility="hidden";}if(dt&&P7TabProp[3]!='none'&&!window.opera){
+ g=document.getElementsByTagName("A");for(i=0;i<g.length;i++){if(g[i].hasChildNodes()){el=g[i].firstChild;
+ while (el){if(el.nodeType==3){gg=el.nodeValue;if(P7TabProp[3]==gg.replace("\n","")){
+ g[i].className=P7TabProp[4];break;}}el=el.firstChild;}}}}document.P7TabBar=true;
+}
+
+function P7_trigMM2(bu){ //v2.0 by PVII
+ if(!document.P7TabBar){return;}var i,g,d,dB=-1,tF=false,sF=false;
+ for(i=0;i<P7TabSB.length;i++){sF=false;if((g=MM_findObj(P7TabSB[i]))!=null){g=MM_findObj(P7TabSB[i]);
+ gg=(document.layers)?g:g.style;sF=true;}d=MM_findObj(P7TabIM[i]);if(P7TabIM[i]==P7TabProp[0]){
+ dB=i;}if(P7TabIM[i]==bu){tF=true;if(sF){gg.visibility="visible";}if(P7TabProp[2]>0){
+ if(i==dB){d.src=d.p7TBimd;}else if (P7TabProp[2]>1){d.src=d.p7TBimo;}}if((g=MM_findObj('P7TabH'))!=null){
+ gg=(document.layers)?g:g.style;gg.visibility="visible";}}else{if(sF){gg.visibility="hidden";}
+ if(P7TabProp[2]>0){d.src=d.p7TBim;}}}if(!tF){if(dB>-1){d=MM_findObj(P7TabIM[dB]);
+ if((g=MM_findObj(P7TabSB[dB]))!=null&&P7TabProp[1]==0){gg=(document.layers)?g:g.style;
+ gg.visibility="visible";}if(P7TabProp[2]>0){d.src=d.p7TBimd;}}
+ if((g=MM_findObj('P7TabH'))!=null){gg=(document.layers)?g:g.style;gg.visibility="hidden";}}
+}
+</script>
+
+<div style="position:absolute; left: 9px; top: 13px; width: 610px; z-index: 300; visibility: visible"><a href="http://www.ohiohistory.org/occ/menu.htm"><img src="/occ/images/gotoocc.gif" width="610" height="15" border="0" alt=""></a></div>
+
+<div style="position:absolute; left: 9px; top: 30px; width: 62px; z-index: 300; visibility: visible"><a href="/index.html"><img src="/images/nav/nav_home.gif" alt="HOME" width="62" height="15" border="0"></a></div>
+
+<div style="position:absolute; left: 71px; top: 30px; width: 81px; z-index: 300; visibility: visible"><a href="/contact.html" onmouseover="P7_trigMM2('p7TBim20')"><img src="/images/nav/nav_contact.gif" alt="CONTACT" width="81" height="15" border="0"></a></div>
+
+<div id="p7TBtrig30" style="position:absolute; left: 142px; top: 30px; width: 53px; z-index: 300; visibility: visible"><a href="/about/index.html" onmouseover="P7_trigMM2('p7TBim30')"><img src="/images/nav/nav_about.gif" alt="ABOUT" name="p7TBim30" id="p7TBim30" width="53" height="15" border="0"></a></div>
+
+<div id="p7TBsub30" class="p7tbsub" style="position:absolute; left: 141px; top: 45px; width: 118px; z-index: 400; visibility: hidden"> 
+	<p><a href="/etcetera/welcome.html" class="item">Our History</a></p>
+	<p><a href="/about/vision2000_stageOne.html" class="item">Vision 2000</a></p>
+	<p><a href="/about/bordtrus.html" class="item">Board of Trustees</a></p>
+	<p><a href="/about/pr/" class="item">Press Releases</a></p>
+	<p><a href="/about/mem.html" class="item">Join OHS</a></p>
+	<p><a href="/about/ohf/index.html" class="item">Support OHS</a></p>
+	<p><a href="/about/jobs/" class="item">Jobs</a></p>
+	<p><a href="/about/vol.html" class="item">Volunteer</a></p>
+	<p><a href="/about/annualreport.html" class="item">Annual Report</a></p>
+</div>
+
+<div style="position:absolute; left: 195px; top: 30px; width: 74px; z-index: 300; visibility: visible"><a href="/calendar/index.html"><img src="/images/nav/nav_calendar.gif" alt="CALENDAR" width="74" height="15" border="0"></a></div>
+
+<div id="p7TBtrig50" style="position:absolute; left: 269px; top: 30px; width: 53px; z-index: 300; visibility: visible"><a href="/places/index.html" onmouseover="P7_trigMM2('p7TBim50')"><img src="/images/nav/nav_places.gif" alt="PLACES" name="p7TBim50" id="p7TBim50" width="53" height="15" border="0"></a></div>
+
+<div id="p7TBsub50" class="p7tbsub" style="position:absolute; left: 268px; top: 45px; width: 100px; z-index: 400; visibility: hidden"> 
+  	<p><a href="/places/name.html" class="item">Sites by Name</a></p>
+	<p><a href="/places/topic.html" class="item">Sites by Topic</a></p>
+</div>
+
+<div id="p7TBtrig60" style="position:absolute; left: 322px; top: 30px; width: 79px; z-index: 300; visibility: visible"><a href="/resource/index.html" onmouseover="P7_trigMM2('p7TBim60')"><img src="/images/nav/nav_resources.gif" alt="RESOURCES" name="p7TBim60" id="p7TBim60" width="79" height="15" border="0"></a></div>
+
+<div id="p7TBsub60" class="p7tbsub" style="position:absolute; left: 321px; top: 45px; width: 138px; z-index: 400; visibility: hidden"> 
+  	<p><a href="/resource/archlib/" class="item">Archives/Library</a></p>
+	<p><a href="/resource/edserv/" class="item">Education Services</a></p>
+	<p><a href="/resource/histpres/" class="item">Historic Preservation</a></p>
+	<p><a href="/resource/oahsm/" class="item">Local History</a></p>
+	<p><a href="/resource/collect/index.html" class="item">Museum Collections</a></p>
+	<p><a href="http://publications.ohiohistory.org/" class="item">OHS Publications</a></p>
+	<p><a href="/resource/statearc/" class="item">State Archives</a></p>
+</div>
+
+   <div id="p7TBtrig70" 
+    style="position:absolute; left:401px; top:30px; width:95px; z-index:300; visibility:visible;"><a 
+    href="http://www.ohiohistorystore.com"><img 
+    src="/images/nav/nav_ohstore.gif" 
+    name="p7TBim70" id="p7TBim70" 
+    width="104" height="15" 
+    border="0" alt="OHIO HISTORY STORE"></a></div>
+
+   <div id="ribbonDiv" 
+    style="position:absolute; left:400px; top:45px; width:104px; z-index:200; visibility:visible;"><img 
+    src="/images/nav/nav_ribbon.gif" 
+    width="104" height="28" border="0" alt="Ribbon"></div>
+
+<div style="position:absolute; left: 505px; top: 30px; width: 43px; z-index: 300; visibility: visible"><a href="/links/index.html"><img src="/images/nav/nav_links.gif" alt="LINKS" width="43" height="15" border="0"></a></div>
+
+<div id="p7TBtrig90" style="position:absolute; left: 548px; top: 30px; width: 70px; z-index: 300; visibility: visible"><a href="/search/index.html" onmouseover="P7_trigMM2('p7TBim90')"><img src="/images/nav/nav_search.gif" alt="SEARCH" name="p7TBim90" id="p7TBim90" width="70" height="15" border="0"></a></div>
+
+<div id="p7TBsub90" class="p7tbsub" style="position:absolute; left: 547px; top: 45px; width: 75px; z-index: 400; visibility: hidden"> 
+  <p><a href="/siteindex.html" class="item">Site Index</a></p>
+</div>
+
+<div id="P7TabH" style="position:absolute; left: 0px; top: 0px; z-index: 200; visibility: hidden"><a href="javascript:;" onmouseover="P7_trigMM2()"><img src="/images/spacer44.gif" alt="" width="98%" height="345" border="0"></a> 
+</div>
+
+<img src="/images/spacer44.gif" alt="" width="50" height="30" border="0">
+
+
+  
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="11" WIDTH="610">
+  <TR> 
+  
+<!-- THIS IS THE CELL WITH THE LEFT HAND OHS LOGO --> 
+  
+    <TD ALIGN="left" VALIGN="bottom" WIDTH="121"> 
+      <DIV ALIGN="CENTER"> <A HREF="/index.html"><IMG SRC="/images/logo3.gif" WIDTH=104 HEIGHT=78 BORDER=0 ALT="www.ohiohistory.org/index.html"></A> 
+      </DIV>
+      <HR>
+    </TD>
+    
+<!-- THIS IS THE CELL WITH THE PAGE BANNER --> 
+
+    <TD ALIGN="LEFT" VALIGN="bottom" WIDTH="456">
+      <B><FONT SIZE="+4"><IMG SRC="/images/contactban.gif" WIDTH=450 HEIGHT=74 ALIGN=TOP ALT="Contact Ohio Historical Society"></FONT></B> 
+      <HR>
+    </TD>
+  </TR>
+  <TR VALIGN="TOP">
+
+<!-- THIS IS THE CELL WITH THE LEFT HAND LINKS this cell appears directly below logo cell --> 
+    
+    <TD ALIGN="left" VALIGN="TOP" WIDTH="121"> 
+      <div align="center"> 
+	<p><font size="1"><a href="/people/mem.html">BECOME 
+	  A<br>
+	  MEMBER</a></font></p>
+	<hr width="20%">
+	<p><font size="1"><a href="/calendar/index.html">CALENDAR<br>
+	  OF EVENTS</a></font></p>
+	<p>&nbsp; </p>
+        </div>
+    </TD>
+    
+    <!-- THIS IS THE TABLE CELL WITH THE MAIN PAGE CONTENTS this cell appears directly below banner cell--> 
+    <TD ALIGN="left" VALIGN="top" WIDTH="456"> 
+    
+		  <p>The Ohio Historical Society:<Br>
+Address: 1982 Velma Avenue, Columbus, OH 43211<br>Telephone: <b>614-297-2300</b><br><br>
+		  </p>
+		  
+		  <b><h3>Contact form</h3>
+        </b>The following contact form has been created to help our staff 
+        handle your questions/requests in an efficient manner. After you have 
+        completed the form below, please click on the button labeled &quot;<b>next</b>&quot; 
+        at the bottom of the page.<p>
+		  
+      <form method="post" action="/cgi-bin/af.cgi">
+	  <input type="hidden" name="_error_path" value="error.txt">
+	  <input type="hidden" name="_out_file" value="log_contacts.txt">
+	  <input type="hidden" name="loc-date" value="Friday, 04-Mar-2005 12:15:10 EST">
+	  <input type="hidden" name="doc-name" value="contact.html">
+	<hr>
+	<p><b><font color="#990000">Please provide the 
+	  following information:</font></b><br><br>
+	<table width="100%" border="0" cellspacing="2" cellpadding="2">
+	  <tr> 
+	    <td width="4%"> 
+	      <p align=RIGHT> <font size="-2"> </font> 
+	    </td>
+	    <td width="96%" valign="top"> <b><font size="+1">Your E-mail address</font> 
+              </b><font size="2"> (required)</font>:<br>
+	      &nbsp;&nbsp;<input name="re_email" type="text" size="40" maxlength="40">
+	      <br>
+	      <br>
+	    </td>
+	  </tr>
+	</table>
+	    <table width="100%" border="0" cellspacing="2" cellpadding="2">
+          <tr valign="top"> 
+            <td width="4%" valign="bottom"> 
+              <p align=RIGHT> <b> <font size="-2"> &nbsp; </font> </b> 
+            </td>
+            <td width="96%" valign="bottom"> 
+              <p><b><font size="+1">Your Question/Comment is regarding...</font></b><font size="2"> 
+                (choose one):<br>
+                <br>
+                </font><b>Archives, Research and Reference Requests</b>:<br>
+                <input type="radio" name="_browser_out" value="contacts/archae-form.html">
+                Archaeology questions <br>
+                <input type="radio" name="_browser_out" value="contacts/audiovis-form.html">
+                Audiovisual, photographs <br>
+                <input type="radio" name="_browser_out" value="contacts/ohsref-bdm-form.html">
+                <a href="/resource/archlib/brthdth1.html">Birth</a>, 
+					 <a href="/resource/archlib/death1.html">death</a>, 
+                and/or <a href="/resource/archlib/marriag1.html">marriage</a> records 
+					 (click to see our holdings)<br>
+                <input type="radio" name="_browser_out" value="contacts/ohsref-military-form.html">
+                <a href="/resource/archlib/military.html">Military Records</a>  (click to see our holdings)<br>
+                <input type="radio" name="_browser_out" value="contacts/ohsref-family-form.html">
+                <a href="/resource/archlib/index.html">Family history, genealogy</a>  (click to see more information)<br>
+                <input type="radio" name="_browser_out" value="contacts/histart-form.html">
+                Historical artifact collections<br>
+					  <input type="radio" name="_browser_out" value="contacts/ohsref-history-form.html">
+                History of Ohio<br>
+                <input type="radio" name="_browser_out" value="contacts/ohsref-land-form.html">
+                <a href="/resource/archlib/landentr.html">Land Records</a> (click to see our holdings) <br>
+                <input type="radio" name="_browser_out" value="contacts/lgr-form.html">
+                <a href="/lgr/">Local Government Records Program</a> (click here to learn more)<br>
+                <input type="radio" name="_browser_out" value="contacts/ohsref-micro-form.html">
+                Microfilm [Purchasing Microfilms]<br>
+                <input type="radio" name="_browser_out" value="contacts/nathist-form.html">
+                Natural history <br>
+					 <input type="radio" name="_browser_out" value="contacts/ohsref-interlibrary-form.html">
+                <a href="/resource/archlib/ill.html">Interlibrary Loan Questions</a> (click to see more information)<br>
+					 
+              <p><b>Customer Service:</b><br>
+                <input type="radio" name="_browser_out" value="contacts/csmt-form.html">
+                Customer Service Related Compliment/Complaint<br>
+              </p>
+              <p><b>Donating:</b> <br>
+                <input type="radio" name="_browser_out" value="contacts/museum-form.html">
+                Archaeological and historical artifacts <br>
+					 
+                <input type="radio" name="_browser_out" value="contacts/manuscripts-form.html">
+                Manuscripts, audiovisual and printed materials<br>
+                
+					 <input type="radio" name="_browser_out" value="contacts/museum-form.html">
+                Natural history specimens<br>
+                
+					 <input type="radio" name="_browser_out" value="contacts/ohf-form.html">
+                Ohio Historical Foundation (Donations/Monetary Gifts)<br>
+                <br>
+                <b>Education:<br>
+                </b> 
+                <input type="radio" name="_browser_out" value="contacts/edcenter-form.html">
+                Education Center <br>
+                <input type="radio" name="_browser_out" value="contacts/teachers-form.html">
+                Teachers resources<br>
+                <input type="radio" name="_browser_out" value="contacts/tours-form.html">
+                Tours and groups <br>
+                <br>
+                <b>Historic Preservation:</b> <br>
+                <input type="radio" name="_browser_out" value="contacts/hp1-form.html">
+                Americans with Disabilities Act & Historic preservation <br>
+                <input type="radio" name="_browser_out" value="contacts/hp2-form.html">
+                Barn Again! <br>
+                <input type="radio" name="_browser_out" value="contacts/hp3-form.html">
+                Building Doctor Clinics<br>
+                <input type="radio" name="_browser_out" value="contacts/hp4-form.html">
+                Certified Local Government Grants<br>
+                <input type="radio" name="_browser_out" value="contacts/hp5-form.html">
+                Certified Local Government Program<br>
+                <input type="radio" name="_browser_out" value="contacts/hp6-form.html">
+                Federal Compliance (Section 106) Reviews<br>
+                <input type="radio" name="_browser_out" value="contacts/hp7-form.html">
+                How to research your old house<br>
+                <input type="radio" name="_browser_out" value="contacts/hp8-form.html">
+                National Register of Historic Places <br>
+                <input type="radio" name="_browser_out" value="contacts/hp9-form.html">
+                Ohio Archaeological Inventory <br>
+                <input type="radio" name="_browser_out" value="contacts/hp2-form.html">
+                Ohio Historic Inventory <br>
+                <input type="radio" name="_browser_out" value="contacts/hp10-form.html">
+                Physical conservation of historic buildings<br>
+                <input type="radio" name="_browser_out" value="contacts/hp1-form.html">
+                Rehabilitation Investment Tax Credit 
+              <p><b>Local History:</b> <br>
+                <input type="radio" name="_browser_out" value="contacts/localHistory1-form.html">
+                Ohio Historical agencies<br>
+                <input type="radio" name="_browser_out" value="contacts/localHistory2-form.html">
+                Ohio Historical markers<br>
+                <br>
+              <p><b>Ohio Historical Society Sites/Places:</b> <br>
+                <input type="radio" name="_browser_out" value="contacts/sites-form.html">
+                Directions<br>
+                <input type="radio" name="_browser_out" value="contacts/sites-form.html">
+                General questions<br>
+                <input type="radio" name="_browser_out" value="contacts/sites-form.html">
+                Hours of Operation<br>
+                <input type="radio" name="_browser_out" value="contacts/sites-form.html">
+                Themes/Topics<br>
+                <br>
+                <b>Public Relations:</b> <br>
+                <input type="radio" name="_browser_out" value="contacts/jobs-form.html">
+                Job or volunteer opportunities <i>(<a href="/about/jobs/index.html">see 
+                job opportunities page</a>)</i> <br>
+                <input type="radio" name="_browser_out" value="contacts/facility-form.html">
+                Facility rental <br>
+                <input type="radio" name="_browser_out" value="contacts/membership-form.html">
+                Membership <br>
+                <input type="radio" name="_browser_out" value="contacts/webmaster-form.html">
+                Web site maintenance questions<br>
+                <br>
+                <b>Other: </b><br>
+                <input type="radio" name="_browser_out" value="contacts/webmaster-form.html">
+                Any topic not listed<br>
+               
+            </td>
+          </tr>
+          <tr valign="top">
+            <td width="4%" valign="bottom">&nbsp;</td>
+            <td width="96%" valign="bottom">&nbsp;</td>
+          </tr>
+        </table>
+	<table width="100%" border="0" cellspacing="2" cellpadding="2">
+	  <tr valign="top"> 
+	    <td width="3%" valign="top"> 
+
+	    </td>
+	    <td width="97%" valign="top"> 
+<hr>
+             <div align="center">
+                <input type="image" name="submit" src="/webpacdocs/jump_next.gif" border value="NEXT">
+              </div>
+            </td>
+	  </tr>
+	</table>
+	</form>
+
+      </TD>
+  </TR>
+  <TR VALIGN="top">
+
+<!-- BLANK CELL --> 
+      <td width="121">
+  <div align="center">
+	  <hr>
+	  	<font size="-2" face="Arial, Helvetica, sans-serif">
+          <a href="/index.html">HOME</a> ||
+		  <a href="/contact.html">CONTACT</a>
+		  </font>
+		  <hr>
+	  </div>
+
+ 
+    </td>
+
+<!-- OHS FOOTER CELL --> 
+    <td WIDTH="456">
+ 
+  <div align="center">
+<hr>
+	<font size="-2" face="Arial, Helvetica, sans-serif">
+            <a href="/about/index.html">ABOUT</a>
+	   || <a href="/calendar/index.html">CALENDAR</a>
+	   || <a href="/places/index.html">PLACES</a>
+	   || <a href="/resource/index.html">RESOURCES</a>
+	   || <a href="http://www.ohiohistorystore.com">OHIO HISTORY STORE</a>
+	   || <a href="/links/index.html">LINKS</a>
+	   || <a href="/search/index.html">SEARCH</a>
+	</font>
+<hr>
+</div>
+      <font size="-2">
+http://www.ohiohistory.org<font color="#990000">/contact.html</font> || Last modified <font color="#990000">Tuesday, 25-May-2004 10:42:52 EDT</font> <br>
+ <font size="-1"><b><a href="http://www.ohiohistory.org/places/ohc/">Ohio Historical Center</a></b></font> 1982 Velma Ave. Columbus, OH 43211  &copy; 1996-2003 All Rights Reserved.
+	  </font> 
+
+ 
+
+	 </td>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,676 @@
+<DOC>
+<DOCNO>g00276</DOCNO>
+<DOCHDR>http://www.popsci.com/popsci/contactus</DOCHDR>
+<!-- Vignette StoryServer 5.0 Thu Feb 17 14:36:08 2005 -->
+<html>
+	<head>
+		<title>Popular Science</title>
+		<script>
+//this is the image rollover function
+function changeImage(image_name,image_src) {
+	//alert(image_name);
+	document.images[image_name].src = image_src;
+}
+</script>
+<script language="JavaScript">
+window.name= "daddy";
+function popThis(url){
+	var junior = open(url,"junior","scrollbars,resizable,height=375,width=500");
+}
+function open_window(url) {
+	mywin = window.open(url,"win",'toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=yes,resizable=yes,width=600,height=300');
+}
+function popMailWin() {
+	var pageURL   = escape(self.document.URL);
+    var pageTitle = escape(self.document.title);
+    var formURL   = "/cgi-bin/mail/mailurl2friend.cgi?path=/popsci/email&url=" + pageURL + "&group=popsci&title=" + pageTitle ;
+	window.open(formURL,"emailpop","height=475,width=350,resizable,scrollbars");
+	return false;
+}
+</script>
+<SCRIPT>
+	function openTarget (form, features, windowName) {
+	  if (!windowName)
+	    windowName = 'formTarget' + (new Date().getTime());
+	  form.target = windowName;
+	  open ('', windowName, features);
+	}
+</SCRIPT>
+<script language="JavaScript">
+window.name= "mainslideshow";
+</script>
+<script language="Javascript">
+<!--//
+
+
+		function removespace(thestring)
+  		{
+		for (i=0; i < thestring.length; i++)
+	    {
+	    thestring = thestring.replace(' ', '_')
+		} return thestring;
+		}
+
+function searchOpen() {
+	var a = window.document.search.keywords.value; 
+	var kw = removespace(a);
+	var d = window.document.search.surfer.selectedIndex;
+	var e = window.document.search.surfer[d].value;
+	var r = window.document.search.role.selectedIndex;
+	var s = window.document.search.role[r].value;
+	
+	var qs = 'keywords=' + kw + '&surfer=' + e + '&role=' + s;
+	var junior = open('/surf/search/photos?' + qs,'juniors','scrollbars,resizable,height=600,width=750,status=yes');
+}
+//-->
+</script>
+<script language="JavaScript">
+<!--//
+//    Cookie JS for newsletter signup box
+function getCookieVal (offset) {
+  var endstr = document.cookie.indexOf (";", offset);
+  if (endstr == -1)
+    endstr = document.cookie.length;
+  return unescape(document.cookie.substring(offset, endstr));
+}
+function FixCookieDate (date) {
+  var base = new Date(0);
+  var skew = base.getTime(); // dawn of (Unix) time - should be 0
+  if (skew > 0)  // Except on the Mac - ahead of its time
+    date.setTime (date.getTime() - skew);
+}
+function GetCookie (name) {
+  var arg = name + "=";
+  var alen = arg.length;
+  var clen = document.cookie.length;
+  var i = 0;
+  while (i < clen) {
+    var j = i + alen;
+    if (document.cookie.substring(i, j) == arg)
+      return getCookieVal (j);
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break; 
+  }
+  return "";
+}
+function SetCookie (name,value,expires,path,domain,secure) {
+  document.cookie = name + "=" + escape (value) +
+    ((expires) ? "; expires=" + expires.toGMTString() : "") +
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    ((secure) ? "; secure" : "");
+}
+function DeleteCookie (name,path,domain) {
+  if (GetCookie(name)) {
+    document.cookie = name + "=" +
+      ((path) ? "; path=" + path : "") +
+      ((domain) ? "; domain=" + domain : "") +
+      "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+  }
+}
+function newsletterCookie (formObj,email) {
+  var expdate = new Date();
+  FixCookieDate (expdate); // Correct for Mac date bug - call only once for given Date object!
+  expdate.setTime (expdate.getTime() + (24 * 60 * 60 * 1000)); // 24 hrs from now 
+  SetCookie ("newsletter", email.value, expdate);
+  formObj.submit();
+}
+//-->
+</script>
+<script language="javascript">
+function openWindow (form, features, windowName) {
+    open (form, windowName, features);
+}
+</script>
+<script language="JavaScript">
+<!--
+var P_isLoaded=false;
+function P_checkUnload() {
+if(P_isLoaded)P_closeDown();
+}
+function P_checkLoad() {
+if(P_isLoaded)P_startUp();
+}
+function P_popupoff() {
+ P_execute=false;
+}
+var toggel=P_popupoff;
+// -->
+</script>
+
+<script language="JavaScript1.2"  type="text/javascript" src="http://www.timeinc.net/subs/popup2/po/popup2.js"></script>
+
+<!-- Static Code to be included in the HEAD section of any page in which an AOL ad will appear --> 
+<script LANGUAGE="JavaScript1.1" SRC="http://ar.atwola.com/file/adsWrapper.js"></SCRIPT>
+<script LANGUAGE="JavaScript1.1" SRC="http://ar.atwola.com/file/adsPopup2.js"></SCRIPT> <link rel="stylesheet" type="text/css" href="/popsci/css/popsci.css"> </head>
+	<body marginheight="5" marginwidth="5" leftmargin="5" topmargin="5" link="#003366" bgcolor="#000000" alink="#CC9933" vlink="#336699" onload="P_checkLoad();" onunload="P_checkUnload();"> <table border="0" cellspacing="0" cellpadding="0" width="870" align="left" valign="top">
+		<tr>
+			<td width="870" align="left" valign="top" bgcolor="#000000">
+				<table align='left' width='870' cellpadding='0' cellspacing='0' border='0'>
+	<tr>
+		<td width='430' align='left' valign='top'><a href='/popsci'><img src='http://i.timeinc.net/popsci/images/logo430.reverse.gif' width='430' align='left' valign='top' vspace='0' hspace='0' alt='Popular Science' border='0'></a></td>
+		<td width='25' align='left' valign='top'><img src='http://i.timeinc.net/popsci/images/popsci.com.gif' width='25' align='left' valign='top' vspace='0' hspace='0' alt='News' border='0'></td>
+		<td width='240' align='left' valign='top'><img src='http://i.timeinc.net/popsci/images/head_contactus.gif' align='left' valign='top' vspace='0' hspace='0' alt='contactus' border='0'></td>
+		<td width='20' align='left' valign='top'><img src='http://i.timeinc.net/popsci/images/bracket2.gif' width='20' align='left' valign='top' vspace='0' hspace='0' alt='News' border='0'></td>
+		<td width='155' align='left' valign='top'><img src='http://i.timeinc.net/popsci/images/subspot.reverse1.gif' width='155' height='105' border='0' alt='Popular Science' usemap='#sub_home_map'></td>
+	</tr>
+</table>
+<map name='sub_home_map'> <area shape='rect' alt='Customer Service' coords='70,60,128,86' href='https://secure.customersvc.com/servlet/Show?WESPAGE=am/home.jsp&MSRSMAG=PO'target='_blank'>
+<area shape='rect' alt='Give a Gift' coords='70,44,128,58' href='http://subs.timeinc.net/CampaignHandler/POdnr?source_id=16'
+target='_blank'>
+<area shape='rect' alt='Subscribe' coords='70,23,128,41' href='http://subs.timeinc.net/CampaignHandler/POcntrl?source_id=29'
+target='_blank'>
+<area shape='rect' alt='Subscribe' coords='22,23,67,86' href='http://subs.timeinc.net/CampaignHandler/POcntrl?source_id=29'
+target='_blank'>
+</map> </td>
+   		</tr>
+		<tr>
+   			<td width="870" align="left" valign="top" border="0" bgcolor="#bababa">
+				<!--BEGIN TOOLBAR MINITABLE-->
+				<!-- Vignette StoryServer 5.0 Thu Jan 20 14:41:36 2005 -->
+<table bgcolor='#666666' width='870' cellpadding='1' cellspacing='0' border='0'>
+					<tr>
+						<td align='center'>
+							<table width='868' valign='top' border='0' cellpadding='3' cellspacing='0'>
+								<tr>
+									<td align='left' valign='middle' width='143' bgcolor='#000000'>
+										<font class='tiny' color='#0099CC'>&nbsp;
+											<script type='text/javascript'>
+												var mydate= new Date()
+												var theyear=mydate.getFullYear()
+												var themonth=mydate.getMonth()+1
+												var thetoday=mydate.getDate()
+												document.write(themonth+'.'+thetoday+'.'+theyear)
+											</script>
+										</font>
+									</td>
+									<td align='left' valign='middle' width='460' bgcolor='#000000'>
+								<a href="http://www.barewalls.com/cgi-bin/nph-referral.exe?code=BWPOPSCI&path=/collections/index_popsci.html" target="_blank" class="tiny"><font class="tiny" color="#FF7E00">Classic Popular Science covers: buy now!</font></a>
+								</td>
+									<td align='right' valign='middle' width='265' bgcolor='#000000'>
+										<font class='arrow' color='#FF9900'>></font> <a href='http://subs.timeinc.net/CampaignHandler/POcntrl?source_id=28' class='arrow' target='new'><font class='tiny' color='#FF7E00'>Subscribe</font></a>
+										<font class='arrow' color='#FF9900'>|</font>  <font class='arrow' color='#FF9900'>></font> <a href='/popsci/newsletter' class='arrow'><font class='tiny' color='#FF7E00'>Newsletter&nbsp;</font></a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table> <!--END TOOLBAR MINITABLE-->
+			</td>
+  		</tr>
+		<tr>
+			<td width="870" align="left" bgcolor="#000000"><img src="http://i.timeinc.net/popsci/images/spacer.gif" width="870" height="1" hspace="0" vspace="0" border="0"></td>
+		</tr>
+		<tr>
+			<td width="870" align="left" valign="top">
+				<table bgcolor="#000000" align="left" width="870" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td width="140" align="left" valign="top" background="http://i.timeinc.net/popsci/images/wayback.gif">
+							<!--SEARCH EMBEDDED MINITABLE-->
+							<table width='140' bgcolor='#666666' cellpadding='1' cellspacing='0' border='0'>
+								<tr>
+									<td align='center'>
+										<table width='138' align='left' bgcolor='#000000' cellpadding='3' cellspacing='1' border='0'>
+											<tr>
+												<td align='left' background='http://i.timeinc.net/popsci/images/bg2.gif' colspan='2'><img src='http://i.timeinc.net/popsci/images/header_search.gif' align='left' vspace='0' hspace='0' border='0'></td>
+											</tr>
+											<form method='post' action='/popsci/search'>
+											<tr>
+												<td align='left' valign='middle' bgcolor='#000000' width='50%'>
+													<input type='text' size='11' value='' name='query'>
+												</td>
+												<td align='left' valign='middle' bgcolor='#000000' width='50%'>
+													<input value='submit' border='0' name='submit' alt='Submit' type='image' src='http://i.timeinc.net/popsci/images/gobut.gif' onClick=''>
+												</td>
+											</tr>
+											</form>
+										</table>
+									</td>
+								</tr>
+							</table><br clear='all'> <!--END SEARCH TABLE-->
+							<!--BEGIN NAVIGATION TABLE-->
+							<table width="140" bgcolor="#666666" cellpadding="1" cellspacing="0" border="0">
+								<tr>
+									<td align="center">
+										<table width="138" align="left" cellpadding="3" bgcolor="#333333" cellspacing="1" border="0">
+											<tr>
+												<td align="left" background="http://i.timeinc.net/popsci/images/bg2.gif" colspan="2"><img src="http://i.timeinc.net/popsci/images/header_popsci.gif" align="left" vspace="0" hspace="0" border="0"></td>
+											</tr>
+											<tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci" onmouseover="changeImage('home','http://i.timeinc.net/popsci/images/1on.gif')" onmouseout="changeImage('home','http://i.timeinc.net/popsci/images/1off.gif')"><img src="http://i.timeinc.net/popsci/images/1off.gif" border="0" name="home" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci" class="navlink"><font class="navlink" color="#EEEEEE">Home</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/whatsnew" onmouseover="changeImage('whatsnew','http://i.timeinc.net/popsci/images/2on.gif')" onmouseout="changeImage('whatsnew','http://i.timeinc.net/popsci/images/2off.gif')"><img src="http://i.timeinc.net/popsci/images/2off.gif" border="0" name="whatsnew" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/whatsnew" class="navlink"><font class="navlink" color="#EEEEEE">What's New</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/how2" onmouseover="changeImage('how2','http://i.timeinc.net/popsci/images/3on.gif')" onmouseout="changeImage('how2','http://i.timeinc.net/popsci/images/3off.gif')"><img src="http://i.timeinc.net/popsci/images/3off.gif" border="0" name="how2" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/how2" class="navlink"><font class="navlink" color="#EEEEEE">How2.0</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/science" onmouseover="changeImage('science','http://i.timeinc.net/popsci/images/4on.gif')" onmouseout="changeImage('science','http://i.timeinc.net/popsci/images/4off.gif')"><img src="http://i.timeinc.net/popsci/images/4off.gif" border="0" name="science" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/science" class="navlink"><font class="navlink" color="#EEEEEE">Science</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/computers" onmouseover="changeImage('computers','http://i.timeinc.net/popsci/images/5on.gif')" onmouseout="changeImage('computers','http://i.timeinc.net/popsci/images/5off.gif')"><img src="http://i.timeinc.net/popsci/images/5off.gif" border="0" name="computers" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/computers" class="navlink"><font class="navlink" color="#EEEEEE">Computers & Elec.</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/aviation" onmouseover="changeImage('aviation','http://i.timeinc.net/popsci/images/6on.gif')" onmouseout="changeImage('aviation','http://i.timeinc.net/popsci/images/6off.gif')"><img src="http://i.timeinc.net/popsci/images/6off.gif" border="0" name="aviation" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/aviation" class="navlink"><font class="navlink" color="#EEEEEE">Aviation/Space</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/automotive" onmouseover="changeImage('automotive','http://i.timeinc.net/popsci/images/7on.gif')" onmouseout="changeImage('automotive','http://i.timeinc.net/popsci/images/7off.gif')"><img src="http://i.timeinc.net/popsci/images/7off.gif" border="0" name="automotive" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/automotive" class="navlink"><font class="navlink" color="#EEEEEE">Automotive Tech</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/technology" onmouseover="changeImage('technology','http://i.timeinc.net/popsci/images/8on.gif')" onmouseout="changeImage('technology','http://i.timeinc.net/popsci/images/8off.gif')"><img src="http://i.timeinc.net/popsci/images/8off.gif" border="0" name="technology" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/technology" class="navlink"><font class="navlink" color="#EEEEEE">Technology</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/medicine" onmouseover="changeImage('medicine','http://i.timeinc.net/popsci/images/9on.gif')" onmouseout="changeImage('medicine','http://i.timeinc.net/popsci/images/9off.gif')"><img src="http://i.timeinc.net/popsci/images/9off.gif" border="0" name="medicine" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/medicine" class="navlink"><font class="navlink" color="#EEEEEE">Medicine</font></a></td>
+							</tr><tr>
+							<td align="left" background="http://i.timeinc.net/popsci/images/bg2.gif" colspan="2"><img src="http://i.timeinc.net/popsci/images/header_magazine.gif" align="left" vspace="0" hspace="0" border="0"></td>
+						</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/currentissue" onmouseover="changeImage('currentissue','http://i.timeinc.net/popsci/images/10on.gif')" onmouseout="changeImage('currentissue','http://i.timeinc.net/popsci/images/10off.gif')"><img src="http://i.timeinc.net/popsci/images/10off.gif" border="0" name="currentissue" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/currentissue" class="navlink"><font class="navlink" color="#EEEEEE">Current Issue</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/archive/currentissue" onmouseover="changeImage('archive','http://i.timeinc.net/popsci/images/11on.gif')" onmouseout="changeImage('archive','http://i.timeinc.net/popsci/images/11off.gif')"><img src="http://i.timeinc.net/popsci/images/11off.gif" border="0" name="archive" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/archive/currentissue" class="navlink"><font class="navlink" color="#EEEEEE">Archive</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="http://subs.timeinc.net/CampaignHandler/POcntrl?source_id=9" onmouseover="changeImage('subscribe','http://i.timeinc.net/popsci/images/12on.gif')" onmouseout="changeImage('subscribe','http://i.timeinc.net/popsci/images/12off.gif')"><img src="http://i.timeinc.net/popsci/images/12off.gif" border="0" name="subscribe" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="http://subs.timeinc.net/CampaignHandler/POcntrl?source_id=9" class="navlink" target="new"><font class="navlink" color="#EEEEEE">Subscribe</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="https://secure.customersvc.com/servlet/Show?WESPAGE=am/home.jsp&MSRSMAG=PO" onmouseover="changeImage('services','http://i.timeinc.net/popsci/images/12on.gif')" onmouseout="changeImage('services','http://i.timeinc.net/popsci/images/12off.gif')"><img src="http://i.timeinc.net/popsci/images/12off.gif" border="0" name="services" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="https://secure.customersvc.com/servlet/Show?WESPAGE=am/home.jsp&MSRSMAG=PO" class="navlink" target="new"><font class="navlink" color="#EEEEEE">Customer Service</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="http://subs.timeinc.net/CampaignHandler/POdnr?source_id=16" onmouseover="changeImage('gift','http://i.timeinc.net/popsci/images/12on.gif')" onmouseout="changeImage('gift','http://i.timeinc.net/popsci/images/12off.gif')"><img src="http://i.timeinc.net/popsci/images/12off.gif" border="0" name="gift" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="http://subs.timeinc.net/CampaignHandler/POdnr?source_id=16" class="navlink" target="new"><font class="navlink" color="#EEEEEE">Gift Subscription</font></a></td>
+							</tr><tr>
+							<td align="left" background="http://i.timeinc.net/popsci/images/bg2.gif" colspan="2"><img src="http://i.timeinc.net/popsci/images/header_resources.gif" align="left" vspace="0" hspace="0" border="0"></td>
+						</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/store" onmouseover="changeImage('store','http://i.timeinc.net/popsci/images/12on.gif')" onmouseout="changeImage('store','http://i.timeinc.net/popsci/images/12off.gif')"><img src="http://i.timeinc.net/popsci/images/12off.gif" border="0" name="store" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/store" class="navlink"><font class="navlink" color="#EEEEEE">PopSci Store</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+								<a href="/popsci/contactus"><img 
+src="http://i.timeinc.net/popsci/images/13on.gif" border="0" name="contactus" align="left" hspace="0" vspace="0"></a>
+							</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/contactus" class="navlink"><font class="navlink" color="#FF7E00">Contact Us</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/classifieds" onmouseover="changeImage('classifieds','http://i.timeinc.net/popsci/images/14on.gif')" onmouseout="changeImage('classifieds','http://i.timeinc.net/popsci/images/14off.gif')"><img src="http://i.timeinc.net/popsci/images/14off.gif" border="0" name="classifieds" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/classifieds" class="navlink"><font class="navlink" color="#EEEEEE">PS Showcase</font></a></td>
+							</tr><tr>
+							<td align="left" bgcolor="#000000">
+				<a href="/popsci/mediakit" onmouseover="changeImage('mediakit','http://i.timeinc.net/popsci/images/15on.gif')" onmouseout="changeImage('mediakit','http://i.timeinc.net/popsci/images/15off.gif')"><img src="http://i.timeinc.net/popsci/images/15off.gif" border="0" name="mediakit" align="left" hspace="0" vspace="0"></a>
+			</td>
+							<td align="left" bgcolor="#000000" width="123">
+								<A HREF="/popsci/mediakit" class="navlink"><font class="navlink" color="#EEEEEE">Media Kit</font></a></td>
+							</tr>
+										</table>
+									</td>
+								</tr>
+							</table><br clear="all"> <!--END NAVIGATION TABLE-->
+							<!--BEGIN NEWSLETTER TABLE-->
+							<table width="140" bgcolor="#666666" cellpadding="1" cellspacing="0" border="0">
+								<tr>
+									<td align="center">
+										<table width="138" align="left" bgcolor="#000000" cellpadding="3" cellspacing="1" border="0">
+											<tr>
+												<td align="left" background="http://i.timeinc.net/popsci/images/bg2.gif" colspan="2"><img src="http://i.timeinc.net/popsci/images/header_newsletter.gif" align="left" vspace="0" hspace="0" border="0"></td>
+											</tr>
+											<tr>
+												<td align="left" bgcolor="#000000" colspan="2">
+													<font class="tiny" color="#999999">Enter e-mail address to receive popsci weekly updates to your inbox.</font>
+												</td>
+											</tr>
+											<tr>
+											<form name="newsletter" method="post" action="/popsci/newsletter/0,21707,,00.html">
+												<td align="left" valign="middle" bgcolor="#000000" width="50%">
+													<input type="text" size="11" value="" name="email" class="caption" onclick="this.value=''">
+												</td>
+												<td align="left" valign="middle" bgcolor="#000000" width="50%">
+													<input value="submit" border="0" name="submit" alt="Submit" type="image" src="http://i.timeinc.net/popsci/images/gobut.gif" onClick="newsletterCookie(this.form, email);">
+												</td>
+											</form>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table><br clear="all"><br><br> <!--END NEWSLETTER TABLE-->
+						</td>
+						
+						<td width="730" align="left" valign="top" bgcolor="#ffffff">
+							<!--INSIDE AD BEGINS-->
+							<center>
+							
+<!-- AOL AdTag  (adTopBanner_728x90) //-->
+<SCRIPT LANGUAGE='JavaScript1.1'>
+<!-- 
+	adSetTarget('_blank'); htmlAdWH('93171612', '728', '90');  adSetTarget('');
+//-->
+</SCRIPT><NOSCRIPT><A HREF='http://ar.atwola.com/link/93171612/aol'><IMG SRC='http://ar.atwola.com/image/93171612/aol' ALT='Click here to visit our advertister.' WIDTH=728 HEIGHT=90 BORDER=0></A></NOSCRIPT>
+<!-- / AOL AdTag //-->
+ </center>
+							<!--INSIDE AD ENDS-->
+							<img src="http://i.timeinc.net/popsci/images/bar.gif" align="left" vspace="3" hspace="0" border="0" alt="ad"><br clear="all">
+							<!--INNER CONTENT TABLE BEGINS-->
+		        			<table width="725" align="left" valign="top" border="0" cellpadding="0" cellspacing="0">
+   								<tr>
+   									<td width="5" align="left"><img src="http://i.timeinc.net/popsci/images/spacer.gif" width="5" height="10" align="left" vspace="0" hspace="0" border="0"></td>
+      								<td width="525" align="left" valign="top">
+            							
+											<TABLE cellpadding=5 border="0">
+<TR>
+	<TD><font class="large" color="#000000"><strong>CONTACT US</strong></font>
+<BR>
+<BR>
+<font class="link">
+
+<font class="medium" color="#CC6600"><strong>SUBSCRIPTION QUESTIONS</strong></font>
+<br>
+<br>
+To subscribe to Popular Science magazine, use our online ordering form by clicking <a href="http://subs.timeinc.net/CampaignHandler/POcntrl?source_id=9" class="link" target="_blank"><font class="link" color="#000000"><strong>here</strong></font></a>, or call 1-800-289-9399
+<br>
+<br>
+For subscription or delivery problems, or to request a change of address, please visit our <A href="https://secure.customersvc.com/servlet/Show?WESPAGE=po/home.html&amp;MSRSMAG=PO" target="_blank" class="link">online service center</A>&nbsp;or contact us by phone (1-800-289-9399), email (<A href="mailto:popularscience@customersvc.com" class="link">popularscience@customersvc.com</A>), or mail, at
+<BR>
+<br>
+Popular Science<br>
+PO Box 60001<br>
+Tampa, FL  33660-0001
+<br>
+<br>
+For inquiries about international subscriptions, please contact <A href="mailto:popularscience@customersvc.com">popularscience@customersvc.com</A>.
+<br>
+<br>
+<font class="medium" color="#CC6600"><strong>ADVERTISING QUESTIONS</strong></font>
+<br>
+<br>
+For all advertising inquiries, including requests for media kits, please visit the <A href="/popsci/mediakit" class="link">media kit</A> page.
+<br>
+<br>
+<font class="medium" color="#CC6600"><strong>PUBLICITY</strong></font>
+<br>
+<br>
+Samara Farber Mormar, Director, Corporate Communications
+<BR>
+<a href="mailto:hallie.deaktor@time4.com" class="link">Hallie Deaktor</a>, Publicity Manager
+<br>
+<br>
+<font class="medium" color="#CC6600"><strong>STORY IDEA SUBMISSIONS/WRITERS' GUIDELINES</strong></font>
+<br>
+<br>
+For details about story idea submissions and to view our writers' guidelines, <A href="/popsci/contactus1/" class="link">click here</A>.
+<br>
+<br>
+<font class="medium" color="#CC6600"><strong>SEND A LETTER TO THE EDITOR</strong></font>
+<br>
+<br>
+Comments may be edited for space and clarity. Please include your address and daytime phone number. We regret that we cannot answer unpublished letters. Email: <A href="mailto:letters@popsci.com" class="link">letters@popsci.com</A> or regular mail:
+<br>
+<br>
+Popular Science<br>
+Letters<br>
+2 Park Ave., 9th Floor<br>
+New York, NY 10016
+<br>
+<br>
+
+
+
+
+<font class="medium" color="#CC6600"><strong>ORDER BACK ISSUES OF POPULAR SCIENCE</strong></font>
+<br>
+<br>
+Back issues of Popular Science can be purchased by calling (800) 274-6800.
+<br>
+<br>
+<font class="medium" color="#CC6600"><strong>ORDER REPRINTS</strong></font>
+<br>
+<br>
+For reprints, please contact <a href="http://www.parsintl.com" target="_blank" class="link">PARS International Corp</a>: Phone: (212) 221-9595; fax: (212) 221-9195; <A href="mailto:Reprints@parsintl.com" class="link">Reprints@parsintl.com</A>.
+<br>
+<br>
+<font class="medium" color="#CC6600"><strong>REPORT A PROBLEM WITH THIS WEBSITE</strong></font>
+<br>
+<br>
+To report any problems with this website, or if you have any questions or concerns about PopSci.com, please contact <A href="mailto:webmaster@popsci.com" class="link">webmaster@popsci.com</A>.
+<br>
+<br>
+<font class="medium" color="#CC6600"><strong>INTERNATIONAL EDITIONS</strong></font>
+<br>
+<br>
+For inquiries regarding international licensing or syndication, please contact: <a href="mailto:syndication@popsci.com" class="link">syndication@popsci.com</a>
+<br>
+<br>
+
+<font class="medium" color="#CC6600"><strong>INTERNSHIPS</strong></font>
+<br>
+<br>
+
+PopSci hires one "free agent" intern every summer (we also hire one through <a href="http://www.magazine.org/Editorial/Internships/" target="_blank" class="link">ASME's summer program</a> and one through <a href="http://www.aaas.org/careercenter/internships/science.shtml" class="link" target="_blank">AAAS</a>), and occasionally during the school year as well. The position is full time for roughly 12 weeks (we're flexible on exact dates) and pays $100 a week. Primary duties include research and reporting for all departments of the magazine, including the feature well, but most interns also have a chance to write a few short pieces--sidebars, small departments and Web stories. The relatively small staff and open atmosphere at PopSci expose interns to all parts of the magazine-making process (including the opportunity to sit in on most meetings), and interns are encouraged to pitch ideas and chase down their own work from editors. Ideal candidates have a passion for and some background in science and/or personal technology, as well as a real interest in magazine journalism. Prior experience helps, but is not required. Interested parties should send resume, clips and a cover letter explaining why you want to work at PopSci (versus any other magazine) to Mike Haney either by e-mail or snail mail by March 15 for the summer position. (Applications for other quarters accepted on a rolling basis.) A decision will be made by April 1.
+<br>
+<br>
+
+<a href="mailto:mike.haney@time4.com" class="link" target="_blank">mike.haney@time4.com</a><br>
+Popular Science<br>
+2 Park Ave, Ninth Floor<br>
+New York, NY 10016
+
+
+
+
+
+
+
+
+
+
+
+</font>
+</TD>
+</TR>
+</TABLE>
+	
+										 </td>
+      								<td width="9" align="left"><img src="http://i.timeinc.net/popsci/images/spacer.gif" width="9" height="10" align="left" vspace="0" hspace="0" border="0"></td>
+     								<td width="1" align="left" bgcolor="#CCCCCC"><img src="http://i.timeinc.net/popsci/images/spacer.gif" width="1" height="10" align="left" vspace="0" hspace="0" border="0"></td>
+									<td width="10" align="left"><img src="http://i.timeinc.net/popsci/images/spacer.gif" width="10" height="10" align="left" vspace="0" hspace="0" border="0"></td>
+         							<td width="160" align="left" valign="top">
+            							<!--RELATED LINKS TABLE-->
+										<table width="160" bgcolor="#DDDDDD" cellpadding="1" cellspacing="0" border="0">
+											<tr>
+												<td align="center">
+													<table width="158" align="left" cellpadding="3" bgcolor="#FFFFFF" cellspacing="1" border="0">
+														<tr>
+															<td width="158" colspan="2" align="left" bgcolor="#CCCCCC">
+																<font class="head" color="#333333"><strong>Archives By Section:</strong></font>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/whatsnew" class="arrow"><font class="arrow" color="#000000">What's New</font></a>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/how2" class="arrow"><font class="arrow" color="#000000">How2.0</font></a>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/science" class="arrow"><font class="arrow" color="#000000">Science</font></a>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/computers" class="arrow"><font class="arrow" color="#000000">Computers & Electronics</font></a>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/aviation" class="arrow"><font class="arrow" color="#000000">Aviation/Space</font></a>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/automotive" class="arrow"><font class="arrow" color="#000000">Automotive Technology</font></a>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/hometech" class="arrow"><font class="arrow" color="#000000">Home Technology</font></a>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/generaltech" class="arrow"><font class="arrow" color="#000000">General Technology</font></a>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/personaltech" class="arrow"><font class="arrow" color="#000000">Personal Technology</font></a>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" width="188" bgcolor="#EEEEEE">
+																<a href="/popsci/archive/medicine" class="arrow"><font class="arrow" color="#000000">Medicine</font></a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table><br clear="all"><br> <!--END TOP FIVE TABLE-->
+   										
+<!-- AOL AdTag  (adRight_160x600) //-->
+<SCRIPT LANGUAGE='JavaScript1.1'>
+<!-- 
+	adSetTarget('_blank'); htmlAdWH('93171613', '160', '600');  adSetTarget('');
+//-->
+</SCRIPT><NOSCRIPT><A HREF='http://ar.atwola.com/link/93171613/aol'><IMG SRC='http://ar.atwola.com/image/93171613/aol' ALT='Click here to visit our advertister.' WIDTH=160 HEIGHT=600 BORDER=0></A></NOSCRIPT>
+<!-- / AOL AdTag //-->
+ </td>
+								    <td width="15" align="left"><img src="http://i.timeinc.net/popsci/images/spacer.gif" width="15" height="10" align="left" vspace="0" hspace="0" border="0"></td>
+      							</tr>
+							</table><br clear="all"><br>
+							<!--INNER CONTENT TABLE ENDS-->
+						</td> 
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td width="870" align="left" bgcolor="#000000"><img src="http://i.timeinc.net/popsci/images/spacer.gif" width="870" height="2"></td>
+		</tr>
+		<tr>
+			<td width="870" align="left" valign="top" bgcolor="#bababa">
+				<!-- Vignette StoryServer 5.0 Wed Feb 23 13:09:03 2005 -->
+<!--BEGIN FOOT AD TABLE-->
+<table bgcolor='#666666' width='870' cellpadding='1' cellspacing='0' border='0'>
+	<tr>
+		<td align='center'>
+			<table width='868' valign='top' border='0' cellpadding='1' cellspacing='0'>
+				<tr>
+					<td align='center' width='868' height='20' valign='middle' bgcolor='#000000'>
+						<a href="https://secure.customersvc.com/servlet/Show?WESPAGE=am/home.jsp&MSRSMAG=PO" target="_blank" class="tiny"><font class="tiny" color="#FF7E00">Customer Service</font></a>		
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!--END FOOT AD TABLE--> </td>
+		</tr>
+		<tr>
+			<td width="870" align="left" bgcolor="#000000"><img src="http://i.timeinc.net/popsci/images/spacer.gif" width="870" height="2"></td>
+		</tr>
+		<tr>
+			<td align='center' bgcolor='#000000' height='40'>
+				<font class='small' color='#999999'>Copyright &copy; 2004 Popular Science</font><br>
+				<a href='http://www.time4.com' class='small'><font class='small' color='#006699'>A Time4 Media Company</font></a>
+				<font class='small' color='#999999'>All rights reserved. Reproduction in whole or in part without permission is prohibited.</font> 
+				<font class='medium' color='#B9B9B9'>&nbsp;|&nbsp;</font>
+				<a href='http://cgi.timeinc.net/cgi-bin/mail/dnp/privacy_centralized.cgi/popsci?dnp_source=E' class='small'><font class='small' color='#006699'>Privacy Policy</font></a>
+				<font class='medium' color='#B9B9B9'>&nbsp;|&nbsp;</font>
+				<a href='/popsci/siteindex' class='small'><font class='small' color='#006699'>Site Index</font></a>
+			</td>
+<!-- AOL AdTag  (adRichMedia) //-->
+<SCRIPT LANGUAGE='JavaScript1.1'>
+<!-- 
+	adSetType('J'); htmlAdWH('93139576', '101', '1');  adSetType('');
+//-->
+</SCRIPT>
+<!-- / AOL AdTag //-->
+
+			<!-- OMNITURE: DISPLAY BEGIN -->
+<div style="display:none">
+<script language="JavaScript" type="text/javascript">
+<!--
+var s_account = 'timepopsci';
+var s_pageName = 'popsci|contactus';
+var s_channel = 'popsci';
+var s_prop16 = 'contactus';
+
+	var s_prop18;
+	var s_prop17 = location.href;
+	
+	if (s_prop18 != "undefined") {
+		var s_prop19 = s_prop18 + "|" + s_pageName;
+	}
+// -->
+</script>
+<script language="JavaScript" src="http://i.timeinc.net/tii/omniture/popsci.js" type="text/javascript"></script><br /></div>
+<!-- OMNITURE: DISPLAY END -->
+			 </tr>
+		<tr>
+			<td width="870" align="left" bgcolor="#999999"><img src="http://i.timeinc.net/popsci/images/spacer.gif" width="870" height="1"></td>
+		</tr>
+	</table><br clear="all"><br><br>
+	<!--(0)sec-->
+	<!-- Static Code to be included right before the /BODY tag of any page in which an AOL ad will appear --> 
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ar.atwola.com/file/adsEnd.js"></SCRIPT> </body>
+</html>

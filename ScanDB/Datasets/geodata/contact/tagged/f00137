@@ -1,0 +1,638 @@
+<DOC>
+<DOCNO>f00137</DOCNO>
+<DOCHDR>http://www.utsouthwestern.edu/home/contact</DOCHDR>
+<!-- Vignette V6 Thu Feb 17 12:58:42 PM 2005 -->
+
+
+
+
+
+
+
+   
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><title>Contact UT Southwestern</title><!-- Vignette V6 Tue Jan 11 02:15:52 PM 2005 -->
+  
+ 
+
+
+
+
+
+
+
+
+
+<!-- only use this in dev link rel="STYLESHEET" type="text/css" href="/utsw/globalsearch/"-->
+<link rel="STYLESHEET" type="text/css" href="/utsw/global/include/fontspecs.css">
+<!-- JavaScript for the multiroll overs -->
+<script language="JavaScript" type="text/javascript">
+<!--
+
+  function menuItem(pid, sid) {
+ 		this.parentMenu = getMenu(pid);
+		this.subMenu = getSubMenu(pid, sid);
+ 	   
+	}
+
+   function menuNode(title, href, width, height, image, imageName, mouseOverImage, selectedImage) {
+		this.title = title;
+		this.href = href;
+		this.width = width;
+		this.height = height;
+		this.image = image;
+		this.imageName = imageName;
+		this.mouseOverImage = mouseOverImage;
+		this.selectedImage = selectedImage;
+	}
+   
+    
+    function swapImg(myImage, imgName) {
+		document.images[myImage].src = "/images/nav/" + imgName;
+	}
+	
+   function getMenu (menuId) {
+		var pmenu = '';
+		var myImage;
+
+		pmenu += '<td height="15"  bgcolor="#000000" align="right"><img src="/images/nav/spacer.gif" height="15" width=172 alt=""></td>'
+		for (var currMenu = 0; currMenu < menu.length; currMenu++) with (menu[currMenu][0]) {
+			if (menuId == currMenu) {
+				myImage = selectedImage;
+			} else {
+				myImage = image;
+			}
+			
+		  if(currMenu!=0) {	
+		      pmenu += '<td height="15" width="3"><img src="/images/nav/tbnr_mnav_spacer.gif" height="15" width="3" alt=""></td>';	
+		   }
+		     pmenu += '<td height="'+ height +'" width="'+ width +' "><a href="'+ href +'" onmouseover="swapImg(\'' + imageName +'\',\''+ mouseOverImage + '\')"  onmouseout="swapImg(\''+ imageName +'\',\'' + myImage + '\')"><img name = "' + imageName + '" alt="' + title + '" src="/images/nav/' + myImage + '" height="'+ height +'" width="' + width + '" border="0"></a></td>';						 
+			 
+		}
+		return pmenu;
+	}
+
+    
+    function getSubMenu (menuId, subMenuId) {
+		var smenu = '';
+		var myImage;
+        var glbHeight; 
+		var glbParentImageName;
+		for (var currItem = 1; currItem < menu[menuId].length; currItem++) with (menu[menuId][currItem]) {
+			if (subMenuId == currItem) {
+				myImage = selectedImage
+			} else {
+				myImage = image
+			}
+			
+		   	if(currItem == 1) {
+		   		//define leftnav general spacing
+				var parentImageName=menu[menuId][0].imageName
+				glbParentImageName=parentImageName;
+				if(parentImageName=="patientcare") {
+				smenu +='<table bgcolor="#000000" cellspacing="0" cellpadding="0" border="0" height="1"><tr><td width="219" align="right"><table width="219" cellspacing="0" cellpadding="0"  height="1" border="0" ><tr><td height="1" bgcolor="#ffffff"><img src="/images/nav/spacer.gif" alt="" ></td></tr><tr><td height="1" bgcolor="#000000"><img src="/images/nav/spacer.gif" alt="" height="'+ height +'"></td></tr></table></td><td><table cellspacing="0" bgcolor="#000000" cellpadding="0" width="1" border="0"  height="1"><tr>'
+				} else if(parentImageName=="faculty") {
+		        smenu +='<table bgcolor="#000000" cellspacing="0" cellpadding="0"  border="0" height="1"><tr><td width="263" align="right"><table cellspacing="0" cellpadding="0"  height="1" border="0" width=263><tr><td height="1" bgcolor="#ffffff"><img src="/images/nav/spacer.gif" alt=""></td></tr><tr><td height="1" bgcolor="#000000"><img src="/images/nav/spacer.gif" alt="" height="'+ height +'"></td></tr></table></td><td><table cellspacing="0" bgcolor="#000000" cellpadding="0" width="1" border="0"  height="1"><tr>'
+		        } else if(parentImageName=="research") {
+		        smenu +='<table bgcolor="#000000" cellspacing="0" cellpadding="0" border="0" height="1"><tr><td width="73" align="right"><table width="73" cellspacing="0" cellpadding="0"  height="1" border="0" ><tr><td height="1" bgcolor="#ffffff"><img src="/images/nav/spacer.gif" alt=""></td></tr><tr><td height="1" bgcolor="#000000"><img src="/images/nav/spacer.gif" alt="" height="'+ height +'"></td></tr></table></td><td><table cellspacing="0" bgcolor="#000000" cellpadding="0" width="1" border="0"  height="1"><tr>'
+		        } else if(parentImageName=="careers") {
+		        smenu +='<table bgcolor="#000000" cellspacing="0" cellpadding="0" border="0" height="1"><tr><td><table cellspacing="0" bgcolor="#000000" cellpadding="0" width="1" border="0"  height="1"><tr>'
+				 } else if(parentImageName=="education") {
+                smenu +='<table bgcolor="#000000" cellspacing="0" cellpadding="0" border="0"  height="1"><tr><td><table cellspacing="0" bgcolor="#000000" cellpadding="0" width="1" border="0"  height="1"><tr>'
+				} else {		
+		        smenu +='<table bgcolor="#000000" cellspacing="0" cellpadding="0" border="0"  height="1"><tr><td width="115" align="right"><table width="115" cellspacing="0" cellpadding="0"  height="1" border="0" ><tr><td height="1" bgcolor="#ffffff"><img src="/images/nav/spacer.gif" alt=""></td></tr><tr><td height="1" bgcolor="#000000"><img src="/images/nav/spacer.gif" alt="" height="'+ height +'"></td></tr></table></td><td><table cellspacing="0" bgcolor="#000000" cellpadding="0" width="1" border="0"  height="1"><tr>'
+				} 
+		
+		    }
+			glbHeight=height
+			
+
+			smenu += '<td height="'+ height +'" width="'+ width +'"><a href="'+ href +'" onmouseover="swapImg(\''+ imageName +'\',\''+ mouseOverImage +'\')"  onmouseout="swapImg(\''+ imageName +'\',\''+ myImage +'\')"><img name = "'+ imageName + '" alt="'+ title +'" src="/images/nav/'+ myImage +'" height="'+ height +'" width="'+ width +'" border="0"></a></td>';
+		   //make sure image names do not conflict in regsub
+		   
+			if(imageName=="RSCHpdf") {
+			      //Use clean spacer  
+                   smenu += '<td height="'+ height +'" width="1"><img src="/images/rsch_nav_images/rsch_nav_grey_spacer.gif" alt="" height="30" width="1" ></td>';
+		    } else if((parentImageName=="patientcare")||(parentImageName=="faculty")) {
+				    //User short spacer
+				smenu += '<td height="18" width="1"><img src="/images/nav/short_subnav_spacer.gif" height="18" width="1" alt=""></td>';
+			} else {
+		      //Use spacer with border 
+			  if(imageName=="cadfw") {
+				   smenu += '<td height="'+ height +'" width="1"><img src="/images/rsch_nav_images/rsch_nav_grey_spacer.gif" height="30" width="1" alt=""></td>';			 
+			  } else {
+			      		   smenu += '<td height="'+ height +'" width="1"><img src="/images/nav/tall_subnav_spacer.gif" height="30" width="1" alt=""></td>';			 
+			  }
+		  }
+		}
+		if(glbParentImageName=="careers") {
+		smenu+='</tr></table></td><td width="100%" ><table cellspacing="0" cellpadding="0"  height="1" border="0" width="100%"><tr><td height="1" bgcolor="#000000"><img src="/images/nav/spacer.gif" alt=""></td></tr><tr><td height="1" bgcolor="#000000"><img src="/images/nav/spacer.gif" height="'+ glbHeight +'" alt=""></td></tr></table></td></tr></table>'
+		} else {
+        smenu+='</tr></table></td><td width="100%" ><table cellspacing="0" cellpadding="0"  height="1" border="0" width="100%"><tr><td height="1" bgcolor="#FFFFFF"><img src="/images/nav/spacer.gif" alt=""></td></tr><tr><td height="1" bgcolor="#000000"><img src="/images/nav/spacer.gif" height="'+ glbHeight +'" alt=""></td></tr></table></td></tr></table>'
+		}
+		return smenu;
+
+	}
+
+	hashTable = new Array(40);
+	FinalhashTable = new Array(1);
+	
+	home=new Array(1);
+	
+	
+	
+	    home[0]= new menuNode('Home', '/index.html', '64', '15', 'tbnr_mnav_home.gif', 'home', 'tbnr_mnav_home_over.gif', 'tbnr_mnav_home_down.gif');
+    	education=new Array(8);
+	    education[0] = new menuNode('Education', '/home/education/index.html', '89', '15', 'tbnr_mnav_education.gif', 'education', 'tbnr_mnav_education_over.gif', 'tbnr_mnav_education_down.gif');
+	    research=new Array(8);
+	    research[0] = new menuNode('Research', '/home/research/index.html', '85',  '15', 'tbnr_mnav_research.gif', 'research', 'tbnr_mnav_research_over.gif', 'tbnr_mnav_research_down.gif');
+	    patientcare=new Array(4);
+	    patientcare[0] = new menuNode('Patient Care', '/home/patientcare/index.html', '103', '15', 'tbnr_mnav_patientcare.gif', 'patientcare', 'tbnr_mnav_patientcare_over.gif', 'tbnr_mnav_patientcare_down.gif');
+		faculty=new Array(4);
+	    faculty[0] = new menuNode('Faculty & Administration', '/home/facultyadministration/index.html', '175', '15', 'tbnr_mnav_facultyadmin.gif', 'faculty', 'tbnr_mnav_facultyadmin_over.gif', 'tbnr_mnav_facultyadmin_down.gif');
+	    careers=new Array(7);
+	    careers[0] = new menuNode('Careers', '/home/careers/index.html', '76', '15', 'tbnr_mnav_careers.gif', 'careers', 'tbnr_mnav_careers_over.gif', 'tbnr_mnav_careers_down.gif');
+   
+
+	
+	
+	//education=new Array(8);
+	//education[0] = new menuNode('Education', '/home/education/index.html', '89', '15', 'tbnr_mnav_education.gif', 'education', 'tbnr_mnav_education_over.gif', 'tbnr_mnav_education_down.gif');
+	education[1] = new menuNode('Medical School', '/home/education/medicalschool/index.html', '78', '30', 'ed_nav_ms.gif', 'EDms', 'ed_nav_ms_over.gif', 'ed_nav_ms_down.gif');
+	education[2] = new menuNode('Graduate School of Biomedical Sciences', '/home/education/gradschool/index.html', '150', '30', 'ed_nav_gsbs.gif', 'EDgsbs', 'ed_nav_gsbs_over.gif', 'ed_nav_gsbs_down.gif');
+	education[3] = new menuNode('Allied Health Sciences School', '/home/education/alliedschool/index.html', '126', '30', 'ed_nav_ahss.gif', 'EDahss', 'ed_nav_ahss_over.gif', 'ed_nav_ahss_down.gif');
+	education[4] = new menuNode('Residencies & Fellowships', '/home/education/residenciesfellowships/index.html', '112', '30', 'ed_nav_rs.gif', 'EDrs', 'ed_nav_rs_over.gif', 'ed_nav_rs_down.gif');
+	education[5] = new menuNode('Program Directory', '/home/education/programdirectory/index.html', '88', '30', 'ed_nav_pd.gif', 'EDpd', 'ed_nav_pd_over.gif', 'ed_nav_pd_down.gif');
+	education[6] = new menuNode('Students & Alumni', '/home/education/studentsalumni/index.html', '85', '30', 'ed_nav_sa.gif', 'EDsa', 'ed_nav_sa_over.gif', 'ed_nav_sa_down.gif');
+	education[7] = new menuNode('Continuing Education', '/home/education/continuingeducation/index.html', '94', '30', 'ed_nav_ce.gif', 'EDcp', 'ed_nav_ce_over.gif', 'ed_nav_ce_down.gif');
+
+    //research=new Array(9);
+	//research[0] = new menuNode('Research', '/home/research/index.html', '85',  '15', 'tbnr_mnav_research.gif', 'research', 'tbnr_mnav_research_over.gif', 'tbnr_mnav_research_down.gif');
+	research[1] = new menuNode('Centers & Departments', '/home/research/centersdepts/index.html', '100', '30', 'rsch_nav_cd.gif', 'RSCHcd', 'rsch_nav_cd_over.gif', 'rsch_nav_cd_down.gif');
+	research[2] = new menuNode('Core Facilities', '/home/research/corefacilities/index.html', '79', '30', 'rsch_nav_cf.gif', 'RSCHcf', 'rsch_nav_cf_over.gif', 'rsch_nav_cf_down.gif');
+	//research[3] = new menuNode('Funding', '/home/research/funding/index.html', '72', '30', 'rsch_nav_f.gif', 'RSCHf', 'rsch_nav_f_over.gif', 'rsch_nav_f_down.gif');
+	research[3] = new menuNode('Post Doctoral Fellowships', '/home/research/postdocfellowships/index.html', '104', '30', 'rsch_nav_pdf.gif', 'RSCHpdf', 'rsch_nav_pdf_over.gif', 'rsch_nav_pdf_down.gif');
+	research[4] = new menuNode('Research Faculty Opportunities', '/home/research/rschfacopportunities/index.html', '124', '30', 'rsch_nav_ro.gif', 'RSCHro', 'rsch_nav_ro_over.gif', 'rsch_nav_ro_down.gif');
+	research[5] = new menuNode('Clinical Trials', '/home/research/clinicaltrials/index.html', '70', '30', 'rsch_nav_ct.gif', 'RSCHct', 'rsch_nav_ct_over.gif', 'rsch_nav_ct_down.gif');
+	research[6] = new menuNode('Technology Development', '/home/research/techdevelopment/index.html', '101', '30', 'rsch_nav_td.gif', 'RSCHtd', 'rsch_nav_td_over.gif', 'rsch_nav_td_down.gif');
+	research[7] = new menuNode('Research Administration', '/home/research/researchadministration/index.html', '111', '30', 'rsch_nav_ra.gif', 'RSCHra', 'rsch_nav_ra_over.gif', 'rsch_nav_ra_down.gif');
+
+	//patientcare=new Array(4);
+	//patientcare[0] = new menuNode('Patient Care', '/home/patientcare/index.html', '103', '15', 'tbnr_mnav_patientcare.gif', 'patientcare', 'tbnr_mnav_patientcare_over.gif', 'tbnr_mnav_patientcare_down.gif');
+	patientcare[1] = new menuNode('For Patients & Public', '/home/patientcare/patientsandpublic/index.html', '151', '18', 'pc_nav_fpp.gif', 'fpp', 'pc_nav_fpp_over.gif', 'pc_nav_fpp_down.gif');
+	patientcare[2] = new menuNode('For Health Care Professionals', '/home/patientcare/healthcareprofessionals/index.html', '199', '18', 'pc_nav_fhcp.gif', 'fhcp', 'pc_nav_fhcp_over.gif', 'pc_nav_fhcp_down.gif');
+	patientcare[3] = new menuNode('Clinics and Hospitals', '/home/patientcare/affhospitals/index.html', '179', '18', 'university_hospitals_grey.gif', 'ah', 'university_hospitals_light_grey.gif', 'university_hospitals_white.gif');
+
+	//faculty=new Array(4);
+	//faculty[0] = new menuNode('Faculty & Administration', '/home/facultyadministration/index.html', '175', '15', 'tbnr_mnav_facultyadmin.gif', 'faculty', 'tbnr_mnav_facultyadmin_over.gif', 'tbnr_mnav_facultyadmin_down.gif');
+	faculty[1] = new menuNode('Faculty Directory', 'http://www.utsouthwestern.edu/findfac', '129', '18', 'fa_nav_fd.gif', 'FAfd', 'fa_nav_fd_over.gif', 'fa_nav_fd_down.gif');
+	faculty[2] = new menuNode('Administration', '/home/facultyadministration/administration/index.html', '116', '18', 'fa_nav_a.gif', 'Faa', 'fa_nav_a_over.gif', 'fa_nav_a_down.gif');
+	faculty[3] = new menuNode('Administrative Departments', '/home/facultyadministration/admindept/index.html', '190', '18', 'fa_nav_ad.gif', 'Faad', 'fa_nav_ad_over.gif', 'fa_nav_ad_down.gif');
+		
+	//careers=new Array(7);
+	//careers[0] = new menuNode('Careers', '/home/careers/index.html', '76', '15', 'tbnr_mnav_careers.gif', 'careers', 'tbnr_mnav_careers_over.gif', 'tbnr_mnav_careers_down.gif');
+	careers[1] = new menuNode('Opportunities', '/home/careers/opportunities/index.html', '109', '30', 'careers_nav_o.gif', 'nav_o', 'careers_nav_o_over.gif', 'careers_nav_o_down.gif');
+	careers[2] = new menuNode('Benefits', '/home/careers/benefits/index.html', '80', '30', 'careers_nav_b.gif', 'nav_b', 'careers_nav_b_over.gif', 'careers_nav_b_down.gif');
+	careers[3] = new menuNode('Hospital Careers', '/home/careers/hospitals/index.html', '179', '30', 'careers_nav_etpd.gif', 'cetpd', 'careers_nav_etpd_over.gif', 'careers_nav_etpd_down.gif');
+	careers[4] = new menuNode('Current Events', '/utsw/home/careers/current/index.html', '152', '30', 'careers_nav_eap.gif', 'ceap', 'careers_nav_eap_over.gif', 'careers_nav_eap_down.gif');
+	careers[5] = new menuNode('Human Resources Directory', '/utsw/home/careers/hrstaff/index.html', '150', '30', 'careers_nav_epp.gif', 'cepp', 'careers_nav_epp_over.gif', 'careers_nav_epp_down.gif');
+	careers[6] = new menuNode('About Dallas Fort Worth', '/home/careers/aboutdallas/index.html', '104', '30', 'careers_nav_adfw.gif', 'cadfw', 'careers_nav_adfw_over.gif', 'careers_nav_adfw_down.gif');
+	
+	
+	menu = new Array(home,education,research,patientcare,faculty,careers);
+
+
+    //home
+	hashTable['Home'] = new menuItem(0,0);
+	hashTable['Ways To Make A Gift'] = new menuItem(0,1);
+	hashTable['Join A Group'] = new menuItem(0,2);
+	hashTable['Giving News'] = new menuItem(0,3);
+	hashTable['Southwestern Medical Foundation'] = new menuItem(0,4);
+	hashTable['Parking'] = new menuItem(0,5);
+	hashTable['Maps & Directions'] = new menuItem(0,6);
+		
+
+	//Education
+	hashTable['Education'] = new menuItem(1,0);
+  	hashTable['Medical School'] = new menuItem(1,1);
+	hashTable['Graduate School of Biomedical Sciences'] = new menuItem(1,2);
+  	hashTable['Allied Health Sciences School'] = new menuItem(1,3);
+  	hashTable['Residencies & Fellowships'] = new menuItem(1,4);
+  	hashTable['Program Directory'] = new menuItem(1,5);
+  	hashTable['Students & Alumni'] = new menuItem(1,6);
+  	hashTable['Continuing Education'] = new menuItem(1,7);
+	
+	// Research
+	hashTable['Research'] = new menuItem(2,0);
+  	hashTable['Centers & Departments'] = new menuItem(2,1);
+  	hashTable['Core Facilities'] = new menuItem(2,2);
+  	//hashTable['Funding'] = new menuItem(2,3);
+  	hashTable['Post Doctoral Fellowships'] = new menuItem(2,3);
+  	hashTable['Research Faculty Opportunities'] = new menuItem(2,4);
+  	hashTable['Clinical Trials'] = new menuItem(2,5);
+  	hashTable['Technology Development'] = new menuItem(2,6);
+  	hashTable['Research Administration'] = new menuItem(2,7);
+
+
+	// Patient Care
+	hashTable['Patient Care'] = new menuItem(3,0);
+  	hashTable['For Patients & Public'] = new menuItem(3,1);
+  	hashTable['For Health Care Professionals'] = new menuItem(3,2);
+  	hashTable['Clinics and Hospitals'] = new menuItem(3,3);
+	
+	//Faculty and Admin
+	hashTable['Faculty & Administration'] = new menuItem(4,0);
+  	hashTable['Faculty Directory'] = new menuItem(4,1);
+  	hashTable['Administration'] = new menuItem(4,2);
+  	hashTable['Administrative Departments'] = new menuItem(4,3);
+	
+	//careers 
+    hashTable['Careers'] = new menuItem(5,0);
+  	hashTable['Opportunities'] = new menuItem(5,1);
+  	hashTable['Benefits'] = new menuItem(5,2);
+  	hashTable['Hospital Careers'] = new menuItem(5,3);
+  	hashTable['Current Events'] = new menuItem(5,4);
+  	hashTable['Human Resources Staff Directory'] = new menuItem(5,5);
+  	hashTable['About Dallas Fort Worth'] = new menuItem(5,6);
+
+
+  abouton = new Image();
+  abouton.src = "/images/nav/tbnr_unav_about_over.gif";
+  aboutoff = new Image();
+  aboutoff.src = "/images/nav/tbnr_unav_about.gif";
+
+  newson = new Image();
+  newson.src = "/images/nav/tbnr_unav_news_over.gif";
+  newsoff=new Image();     
+  newsoff.src="/images/nav/tbnr_unav_news.gif";
+
+  givingon = new Image();
+  givingon.src = "/images/nav/tbnr_unav_giving_over.gif";
+  givingoff = new Image();
+  givingoff.src = "/images/nav/tbnr_unav_giving.gif";
+
+  serviceson = new Image();
+  serviceson.src = "/images/nav/tbnr_unav_campussrvcs_over.gif";
+  servicesoff = new Image();
+  servicesoff.src = "/images/nav/tbnr_unav_campussrvcs.gif";
+  
+  contacton = new Image();
+  contacton.src = "/images/nav/tbnr_unav_contactus_over.gif";
+  contactoff = new Image();
+  contactoff.src = "/images/nav/tbnr_unav_contactus.gif";
+
+  sitemapon = new Image();
+  sitemapon.src = "/images/nav/tbnr_unav_sitemap_over.gif";
+  sitemapoff = new Image();
+  sitemapoff.src = "/images/nav/tbnr_unav_sitemap.gif";
+
+if (document.images) {
+
+educationpersonon = new Image();
+educationpersonon.src = "/utsw/images/home/hp_education_btn_over.jpg";
+educationpersonoff = new Image();
+educationpersonoff.src = "/utsw/images/home/hp_education_btn.jpg";
+
+researchpersonon = new Image();
+researchpersonon.src = "/utsw/images/home/hp_research_btn_over.jpg";
+researchpersonoff = new Image();
+researchpersonoff.src = "/utsw/images/home/hp_research_btn.jpg";
+
+patiencarepersonon = new Image();
+patiencarepersonon.src = "/utsw/images/home/hp_patientcare_btn_over.jpg";
+patiencarepersonoff = new Image();
+patiencarepersonoff.src = "/utsw/images/home/hp_patientcare_btn.jpg";
+
+schoolimagedefault = new Image();
+schoolimagedefault.src = "/utsw/images/home/hp_img.jpg";
+schoolimageeducation = new Image();
+schoolimageeducation.src = "/utsw/images/home/hp_img_education.jpg";
+schoolimageresearch = new Image();
+schoolimageresearch.src = "/utsw/images/home/hp_img_research.jpg";
+schoolimagepatientcare = new Image();
+schoolimagepatientcare.src = "/utsw/images/home/hp_img_patientcare.jpg";
+
+ 
+   professionaloverviewon = new Image();
+  professionaloverviewon.src = "/UTSW/FacDir/CDA/images/dsr_images/dsr_tab_pro_down.gif";
+  professionaloverviewoff = new Image();
+  professionaloverviewoff.src = "/UTSW/FacDir/CDA/images/dsr_images/dsr_tab_pro.gif";
+  
+  researchdetailson = new Image();
+  researchdetailson.src = "/UTSW/FacDir/CDA/images/dsr_images/dsr_tab_rd_down.gif";
+  researchdetailsoff = new Image();
+  researchdetailsoff.src = "/UTSW/FacDir/CDA/images/dsr_images/dsr_tab_rd.gif";
+  
+  personaloverviewon = new Image();
+  personaloverviewon.src = "/UTSW/FacDir/CDA/images/dsr_images/dsr_tab_pero_down.gif";
+  personaloverviewoff = new Image();
+  personaloverviewoff.src = "/UTSW/FacDir/CDA/images/dsr_images/dsr_tab_pero.gif";  
+  
+  contactinfoon = new Image();
+  contactinfoon.src = "/UTSW/FacDir/CDA/images/dsr_images/dsr_tab_ci_down.gif";
+  contactinfooff = new Image();
+  contactinfooff.src = "/UTSW/FacDir/CDA/images/dsr_images/dsr_tab_ci.gif";
+    
+
+}
+
+function imgOn(imgName) {if (document.images) {document[imgName].src = eval(imgName + "on.src"); } }
+
+function imgOff(imgName) { if (document.images) { document[imgName].src = eval(imgName + "off.src");  }}
+
+function changeImages() {
+  if (document.images) {
+    for (var i=0; i<changeImages.arguments.length; i+=2) {
+      document[changeImages.arguments[i]].src = eval(changeImages.arguments[i+1] + ".src");
+    }
+  }
+}
+
+// -->
+</script>
+<!-- End of JS for multi rollovers -->
+ <META NAME="keywords" CONTENT="University of Texas Southwestern Medical Center at Dallas,Dallas,Hospital,Texas,University"/>
+ <meta name="description" content="University of Texas Southwestern Medical Center at Dallas" />
+ <meta http-equiv="Content-Type" content="text/html; charset=us-ascii"/> 
+</head>
+<body>
+
+<!-- Begin Header -->
+<table cellspacing="0" cellpadding="0" width="100%" >
+				<tr height="13">
+				<td bgcolor="#003A74" height="13">
+			       	        <table cellspacing="0" height="13" cellpadding="0" >
+					     	<tr>
+							 <!-- Top right general nav list -->
+							<td height="13" bgcolor="#003A74"><img src="/images/nav/spacer.gif" alt="" width=280 height="1"> </td>
+							<td height="13" bgcolor="#000000"><img src="/images/nav/spacer.gif" height="13" width="1" alt="Skip to main content" border="0"></td>
+						    <td height="13" bgcolor="#000000" width="127"><a href="/home/about/index.html" onmouseover="imgOn('about')"  onmouseout="imgOff('about')" ><img name = "about" alt="About" src="/images/nav/tbnr_unav_about.gif" height="13" width="127" border="0"></a></td>
+							<td height="13" bgcolor="#000000" width="1"><img src="/images/nav/tbnr_unav_spacer.gif" height="13" width="3" alt=""></td>
+						    <td height="13" bgcolor="#000000" width="40"><a href="/home/news/index.html" onmouseover="imgOn('news')"  onmouseout="imgOff('news')"><img name = "news" alt="News" src="/images/nav/tbnr_unav_news.gif" height="13" width="40" border="0"></a></td>
+							<td height="13" bgcolor="#000000" width="1"><img src="/images/nav/tbnr_unav_spacer.gif" height="13" width="3" alt=""></td>
+						    <td height="13" bgcolor="#000000" width="43"><a href="/home/giving/index.html" onmouseover="imgOn('giving')"  onmouseout="imgOff('giving')"  ><img name = "giving" alt="Giving" src="/images/nav/tbnr_unav_giving.gif" height="13" width="43" border="0"></a></td>
+							<td height="13" bgcolor="#000000" width="1"><img src="/images/nav/tbnr_unav_spacer.gif" height="13" width="3" alt=""></td>
+						    <td height="13" bgcolor="#000000" width="97"><a href="/home/alldepts/index.html" onmouseover="imgOn('services')"  onmouseout="imgOff('services')" ><img name = "services" alt="All Departments" src="/images/nav/tbnr_unav_campussrvcs.gif" height="13" width="97" border="0"></a></td>
+					 		<td height="13" bgcolor="#000000" width="1"><img src="/images/nav/tbnr_unav_spacer.gif" height="13" width="3" alt=""></td>
+						    <td height="13" bgcolor="#000000" width="65"><a href="/home/contact/index.html" onmouseover="imgOn('contact')"  onmouseout="imgOff('contact')"  ><img name = "contact" alt="Contact Us" src="/images/nav/tbnr_unav_contactus.gif" height="13" width="65" border="0"></a></td>
+							<td height="13" bgcolor="#000000" width="1"><img src="/images/nav/tbnr_unav_spacer.gif" height="13" width="3" alt=""></td>
+						    <td height="13" bgcolor="#000000" width="56" ><a href="/home/sitemap/index.html" onmouseover="imgOn('sitemap')"  onmouseout="imgOff('sitemap')"  ><img name = "sitemap" alt="Site Map" src="/images/nav/tbnr_unav_sitemap.gif" height="13" width="56" border="0"></a></td>
+							<td height="13" bgcolor="#000000" width="100%"><img src="/images/nav/spacer.gif" alt=""></td>	
+							</tr>
+						    </table>
+				<td>
+				</tr>
+						<tr>
+						<td valign=bottom bgcolor="#003A74">
+								<table cellspacing="0" cellpadding="0" border="0" width="100%">
+								<tr>
+								<td height = "63" width="441" bgcolor="#003A74" valign=bottom>&nbsp;<a href="/index.html"><img src="/utsw/images/home/utswLogo.jpg"  width=325 height = "63" alt="University of Texas Southwestern Medical School" border="0"></a></td>
+								<td height = "63" width="100%" bgcolor="#003A74">
+										<table cellspacing="0" cellpadding="0" border="0" width="100%">
+										<tr >
+										<td colspan="13" height="1" width="100%" ><img src="/images/nav/spacer.gif" alt=""></td>
+										</tr>
+										<tr>
+										<td bgcolor = "#003A74" colspan="13">
+										&nbsp
+										</td>
+										</tr>
+										<!-- Global Search -->
+										<tr>
+										<td colspan="13" align="left" bgcolor = "#003A74" height="49" width="100%" valign=middle>
+															<form name="searchForm" class="searchform" action="/utsw/global/searchresults/0,,,00.html">
+																	<table cellspacing="0" cellpadding="0" border="0">
+																	<tr>
+																	<td width=100><img src="/images/nav/spacer.gif" alt="" height="1"></td>
+																	<td valign="bottom" align="center"><img src="/images/nav/tbnr_search.gif" alt="Search" height="17" width="40">&nbsp;</td>
+																	<td><input type="text" name="SearchText" size="15" class="searchform">&nbsp;&nbsp;</td>
+																	<td valign="bottom" align="center"><input type="IMAGE" name="findSearch" src="/images/nav/tbnr_find_btn.gif" alt="Find">&nbsp;&nbsp;</td>
+																	<td ><a href="/utsw/global/advancedsearch/0,,,00.html"><font color="#ffffff">Advanced Search</font></a>&nbsp;&nbsp;&nbsp;</td>
+																	</tr>
+																	<tr>
+																	<td align=right colspan=1><a href="javascript:void(window.open('/utsw/cda/common/cdaprintfriendly/0,,00.html?textPath='+location.href,'printfile',''))"><img src=/utsw/cda/common/icon_printer.gif border=0></a></td>
+																	<td align=left colspan=4 valign=top>&nbsp;</td>
+																	</tr>
+																	</table>
+															</form>
+										</td>
+										</tr>					
+										</table>
+								</td>
+								</tr>
+								</table>
+						</td>
+						</tr>
+	<tr>
+	<td width="100%" align="left" bgcolor="#000000" >
+						    <table cellspacing="0" cellpadding="0" border="0" width="770">
+							<tr><td colspan="13" height="2" width="770" bgcolor="#000000"><img src="/images/nav/spacer.gif" alt=""></td></tr>
+							<tr>
+							 <!-- Top Level Links -->
+							  <script language="javascript" type="text/javascript">
+							  document.write(hashTable['Home'].parentMenu)
+
+						      </script>
+							  
+    						</tr>
+							</table>
+ 
+	</td>
+	</tr>
+	
+
+	</table>	
+<table cellspacing=0 cellpadding=0 border=0><tr><td width=75 height=76><table cellspacing=0 width=75 height=76 cellpadding=0 border=0><tr><td><img src="/utsw/image/dept3201/cat15/10105_gen_pg_bnr_left.jpg" width=75 height=76 alt= border=0> </td></tR></table></td><td width=703 height=76><table cellspacing=0 width=703 height=76 background="/utsw/image/dept3201/cat16/10109_gen_pg_bnr_right.gif" cellpadding=0 border=0 ><tr><td valign=top><img src="/utsw/dept/stencil/spacer.gif"  width=1 height=1 alt=""><span class="breadcrumbsNew"><!-- Vignette V6 Wed Apr 07 12:25:56 2004 -->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+| 
+<a href=/index.html>Home</a> &gt;
+</span><br><img src="/utsw/dept/stencil/spacer.gif"  width=10 height=1 alt=""><utswprinttitle><span class="subpageheader">Contact UT Southwestern</span></utswprinttitle><br><br></td></tr></table></td></tr></table><table cellspacing=0 width=781 cellpadding=0 border=0><tr><td width=172 align=right valign=top><table width=172 cellspacing=0 cellpadding=0 border=0 background="/utsw/image/dept3209/cat17/10053_fa_pg_nav_bg.gif"><tr><td width=172>&nbsp;</td><td class="seperatorrule" width="1" align="left"><img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td></tr></table><table width=172 cellspacing=0 cellpadding=0 border=0><tr><td width=20>&nbsp;</td><td colspan=2><br><a href="http://www8.utsouthwestern.edu/utsw/cda/dept37321/files/37709.html" class="subpageleftlink">News Media Contacts</a></td><td width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="2" height="1"></td><td class="seperatorrule" width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td></tr><tr><td width=20>&nbsp;</td><td colspan=2><br><a href="http://www8.utsouthwestern.edu/utsw/cda/dept37331/files/37823.html" class="subpageleftlink">Publications Staff</a></td><td width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="2" height="1"></td><td class="seperatorrule" width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td></tr><tr><td width=20>&nbsp;</td><td colspan=2><br><a href="http://www8.utsouthwestern.edu/home/news/index.html" class="subpageleftlink">Latest News</a></td><td width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="2" height="1"></td><td class="seperatorrule" width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td></tr><tr><td width=20>&nbsp;</td><td colspan=2><br><a href="http://www8.utsouthwestern.edu/utsw/cda/dept37336/files/37833.html" class="subpageleftlink">Calendar and Events</a></td><td width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="2" height="1"></td><td class="seperatorrule" width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td></tr><tr><td width=20>&nbsp;</td><td colspan=2><br><a href="http://www8.utsouthwestern.edu/utsw/cda/dept37326/files/37813.html" class="subpageleftlink">Receive Our News</a></td><td width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="2" height="1"></td><td class="seperatorrule" width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td></tr><tr><td width=20>&nbsp;</td><td colspan=2><br><a href="http://www8.utsouthwestern.edu/utsw/cda/dept20604/files/21128.html" class="subpageleftlink">Health and Wellness Information</a></td><td width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="2" height="1"></td><td class="seperatorrule" width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td></tr><tr><td width=20>&nbsp;</td><td colspan=2><br><a href="http://www8.utsouthwestern.edu/utsw/home/phonedir/index.html" class="subpageleftlink">Online Telephone Directory</a></td><td width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="2" height="1"></td><td class="seperatorrule" width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td></tr><tr><td width=20>&nbsp;</td><td colspan=2><br> &nbsp;</td><td width="2" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td><td class="seperatorrule" width="1" align="left"> <img src="/utsw/dept/stencil/spacer.gif" alt="" width="1" height="1"></td></tr></table></td><td width=10><img src=/utsw/dept/stencil/spacer.gif width=10 height=1></td><td colspan=2 width=370 height="360" align=left valign=top class=centertext><utswprintbody><p><strong>General Information</strong><br />
+For general information about UT Southwestern,<br />
+call or write to us at:<br />
+UT Southwestern Medical Center<br />
+<GEO TYPE="US">5323 Harry Hines Blvd.<br />
+Dallas, TX 75390</GEO><br />
+Phone: 214-648-3111<br />
+&#160;<br />
+<strong>Schools</strong><br />
+<a href="/home/education/medicalschool/index.html">Southwestern Medical School</a><br />
+UT Southwestern Medical Center<br />
+<GEO TYPE="US">5323 Harry Hines Blvd.<br />
+Dallas, TX&#160; 75390-9003</GEO><br />
+Phone:&#160; 214-648-2509<br />
+Fax:&#160; 214-648-8955<br />
+Admissions:&#160; 214-648-5617<br />
+Registrar:&#160; 214-648-3606<br />
+<a href="mailto:admissions@utsouthwestern.edu"></a><br />
+<a href="/home/education/gradschool/index.html">Southwestern Graduate School of Biomedical Sciences</a><br />
+UT Southwestern Medical Center<br />
+<GEO TYPE="US">5323 Harry Hines Blvd.<br />
+Dallas, TX&#160; 75390-9004</GEO><br />
+Phone:&#160; 214-648-2174<br />
+Fax:&#160; 214-648-2102<br />
+Admissions:&#160; 214-648-5617<br />
+Registrar:&#160; 214-648-3606<br />
+<br />
+<a href="/home/education/alliedschool/index.html">Allied Health Sciences School</a><br />
+UT Southwestern Medical Center<br />
+<GEO TYPE="US">5323 Harry Hines Blvd.<br />
+Dallas, TX&#160; 75390-9082</GEO><br />
+Phone:&#160; 214-648-1500<br />
+Fax:&#160; 214-648-1505<br />
+Admissions:&#160; 214-648-5617<br />
+Registrar:&#160; 214-648-3606</p>
+
+<p><strong>University Hospitals</strong></p>
+
+<p><a href="http://www.zluh.org/">Zale Lipshy Building</a><br />
+<GEO TYPE="US">5151 Harry Hines Blvd.<br />
+Dallas, TX&#160; 75235</GEO><br />
+Phone:&#160; 214-590-3000</p>
+
+<p><a href="http://www.stpauldallas.com/">St. Paul Building</a><br />
+<GEO TYPE="US">5909 Harry Hines Blvd.<br />
+Dallas,TX 75235</GEO><br />
+Phone: 214-879-1000<br />
+Fax: 214-879-8934</p>
+
+<p><strong>Affiliated Hospitals</strong></p>
+
+<p><a href="http://www3.utsouthwestern.edu/parkland/realindex.html">Parkland Memorial Hospital</a><br />
+<GEO TYPE="US">5201 Harry Hines Blvd.<br />
+Dallas,&#160; TX 75235</GEO><br />
+Phone: &#160;214-590-8000</p>
+
+<p><a href="http://www.childrens.com/index.cfm">Children's Medical Center Dallas</a><br />
+<GEO TYPE="US">1935 Motor Street<br />
+Dallas, TX&#160; 75235</GEO><br />
+Phone: 214-456-7000</p>
+
+<p><strong>Clinics</strong><br />
+Aston Ambulatory Care Center<br />
+<GEO TYPE="US">5303 Harry Hines Blvd.<br />
+Dallas, TX 75390</GEO><br />
+Phone:&#160; 214-648-6864</p>
+
+<p>Clinical Building 1<br />
+<GEO TYPE="US">6263 Harry Hines Blvd.<br />
+Dallas, TX 75390</GEO><br />
+Phone:&#160; 214-648-0606</p>
+
+<p>Clinical Building 2<br />
+<GEO TYPE="US">6303 Harry Hines Blvd.<br />
+Dallas, TX 75390</GEO><br />
+Phone:&#160; 214-648-0606</p>
+
+<p>Seay Biomedical&#160;Building<br />
+<GEO TYPE="US">2201 Inwood Rd.<br />
+Dallas, TX 75390</GEO><br />
+Phone:&#160; 214-648-7001</p>
+
+<p>Sprague Clinical Services&#160;Building<br />
+<GEO TYPE="US">5161 Harry Hines Blvd.<br />
+Dallas, TX 75390</GEO><br />
+Phone:&#160; 214-648-4550</p>
+
+<p>St. Paul Professional Office Building 1<br />
+<GEO TYPE="US">5959 Harry Hines Blvd.<br />
+Dallas, TX 75390</GEO><br />
+Phone:&#160; 214-645-8071</p>
+
+<p>St. Paul Professional Office&#160;Building 2<br />
+<GEO TYPE="US">5959&#160;Harry Hines Blvd.<br />
+Dallas, TX 75390</GEO><br />
+Phone:&#160; 214-645-8071</p>
+
+<p><strong>Media Inquiries<br />
+<br />
+</strong>For UT Southwestern, its hospitals&#160;and clinics<br />
+Office of News and Publications<br />
+<GEO TYPE="US">5323 Harry Hines Blvd.<br />
+Dallas, TX&#160; 75235-9060</GEO><br />
+Phone:&#160; 214-648-3404<br />
+Fax:&#160; 214-648-9119<br />
+E-mail:&#160; <a href="mailto:news@utsouthwestern.edu">news@utsouthwestern.edu</a>&#160;<br />
+</p></utswprintbody></td><td width=10><img src=/utsw/dept/stencil/spacer.gif width=10 height=1></td><td valign=top><table cellspacing=0 cellpadding=0 border=0 width=220><tr><td rowspan=2 class=quicklinksheader><img src=/utsw/dept/stencil/spacer.gif  width=1></td><td width=11 class=quicklinksheader><img src="/utsw/dept/stencil/spacer.gif" alt="" ></td><td height=17 width=200 class=quicklinksheader>Quick Links</td></tr><tr><td colspan=2 width=219 valign=top><table cellspacing=0 cellpadding=0 border=0><tr valign=top><td colspan=2><img src=/utsw/dept/stencil/spacer.gif  height=10 width=10></td></tr><tr><td>&nbsp;</td><td colspan="2"  align="left" class="quicklinkslink"><a href="http://www8.utsouthwestern.edu/utsw/cda/dept20564/files/21407.html" >Clinical Referral Network</a></td></tr><tr><td>&nbsp;</td><td colspan="2" class="homepagetext">Information for physicians on how to refer patients to UT Southwestern</td></tr><tr><td colspan=2><img src=/utsw/dept/stencil/spacer.gif  height=3></td></tr><tr><td>&nbsp;</td><td colspan="2"  align="left" class="quicklinkslink"><a href="http://www8.utsouthwestern.edu/finddoc" >Find a Doctor</a></td></tr><tr><td>&nbsp;</td><td colspan="2" class="homepagetext">Search for one of UT Southwestern's physicians</td></tr><tr><td colspan=2><img src=/utsw/dept/stencil/spacer.gif  height=3></td></tr><tr><td>&nbsp;</td><td colspan="2"  align="left" class="quicklinkslink"><a href="http://www8.utsouthwestern.edu/findfac" >Faculty Directory</a></td></tr><tr><td>&nbsp;</td><td colspan="2" class="homepagetext">Check our faculty bios. for detailed information on clinical backgrounds, specialties and more</td></tr><tr><td colspan=2><img src=/utsw/dept/stencil/spacer.gif  height=3></td></tr><tr><td>&nbsp;</td><td colspan="2"  align="left" class="quicklinkslink"><a href="http://www8.utsouthwestern.edu/utsw/cda/dept23439/files/24888.html" >Maps and Directions</a></td></tr><tr><td>&nbsp;</td><td colspan="2" class="homepagetext">Maps of the UT Southwestern Medical Center campus</td></tr><tr><td colspan=2><img src=/utsw/dept/stencil/spacer.gif  height=3></td></tr><tr><td colspan=2><img src=/utsw/dept/stencil/spacer.gif  height=10> </td></tr></table></td></tr></table></td></tr><tr><td colspan=4>&nbsp;</td></tr></table><!-- Vignette V6 Mon Jan 03 09:37:07 AM 2005 -->
+ 
+<!-- Begin Footer -->
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td height="5" bgcolor="#000000"><img src="/images/nav/spacer.gif" width="1" height="5" alt=""></td>
+  </tr>
+  <tr>
+
+                      <td valign="bottom" bgcolor="#003A74" align="center" class="footer" width="780">
+                         <table width="780" cellspacing="0" cellpadding="0" border="0">
+						  <tr>
+						   <td valign="bottom" bgcolor="#003A74" align="center" class="footer" width="780">
+						    <p><a href="/index.html" class="footer">Home</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/education/index.html" class="footer" >Education</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/research/index.html" class="footer" >Research</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/patientcare/index.html" class="footer" >Patient&nbsp;Care</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/facultyadministration/index.html" class="footer">Faculty&nbsp;&amp;&nbsp;Administration</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/careers/index.html" class="footer">Careers</a><br>
+							<a href="/home/about/index.html" class="footer">About&nbsp;UT&nbsp;Southwestern</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/news/index.html" class="footer">News</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/giving/index.html" class="footer">Giving</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/alldepts/index.html" class="footer">All&nbsp;Departments</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/contact/index.html" class="footer">Contact&nbsp;Us</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+							<a href="/home/sitemap/index.html" class="footer">Site&nbsp;Map</a>&nbsp;&nbsp;<span class="footerspacer">|</span>&nbsp;
+					        <a href="/home/disclaimer/index.html" class="footer">Legal Disclaimer</a>
+					      </td></tr>
+						  <tr><td valign="bottom" bgcolor="#003A74" align="center" class="footer" width="780">
+						  <a href="javascript:void(window.open('http://www.copyright.gov/legislation/dmca.pdf','copyright',''))" class="footer">The Digital Millennium Copyright Act of 1998</a>
+						  </td></tr>
+						  </table>
+					</td>   
+					</tr>
+					<tr>
+					<td bgcolor="#003A74"   align="center" class="footer" width=770>		
+							<br><br>
+							Copyright 2005.  The University of Texas Southwestern Medical Center at Dallas <br>
+							<GEO TYPE="US">5323 Harry Hines Boulevard, Dallas, Texas 75390</GEO>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone 214-648-3111<br><br>
+	                </td>
+                    </tr>
+					
+</table>
+</body>
+</html>
+
+  

@@ -1,0 +1,557 @@
+<DOC>
+<DOCNO>f00269</DOCNO>
+<DOCHDR>http://www.cnn.com/INDEX/about.us</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<title>CNN.com - About Us</title>
+	<link rel="Start" href="/">
+	<link rel="Search" href="/search/">
+	<link rel="stylesheet" href="http://i.cnn.net/cnn/.element/ssi/css/1.1/main.css" type="text/css">
+	<script language="JavaScript1.2" src="http://i.cnn.net/cnn/.element/ssi/js/1.1/main.js" type="text/javascript"></script>
+<script type="text/javascript" language="JavaScript1.1" src="http://ar.atwola.com/file/adsWrapper.js"></script>
+<style type="text/css">
+<!--
+.aoltextad { text-align: justify; font-size: 12px; color: black; font-family: Georgia, sans-serif }
+-->
+</style>
+<script language="JavaScript1.1" type="text/javascript" src="http://ar.atwola.com/file/adsPopup2.js"></script>
+<script language="JavaScript1.2" type="text/javascript">
+
+function CNN_getCookies() {
+	var hash = new Array;
+	if ( document.cookie ) {
+		var cookies = document.cookie.split( '; ' );
+		for ( var i = 0; i < cookies.length; i++ ) {
+			var namevaluePairs = cookies[i].split( '=' );
+			hash[namevaluePairs[0]] = unescape( namevaluePairs[1] ) || null;
+		}
+	}
+	return hash;
+}
+
+function CNN_parseCookieData( cookieDataString ) {
+	var cookieValues = new Object();
+	var separatePairs = cookieDataString.split( '&' );
+	for ( var i = 0; i < separatePairs.length; i++  ) {
+		var separateValues = separatePairs[i].split( ':' );
+		cookieValues[separateValues[0]] = separateValues[1] || null;
+	}
+	return cookieValues;
+}
+
+// default values
+var adHeadOffset = 0;
+var adHeadClass = "us.low";
+
+var allCookies = CNN_getCookies();
+var adHeadCookie = allCookies[ "Target" ] || null;
+var isClassAndOffsetValid = false;
+var alreadySwappedTargetImage = false;
+var alreadySwappedCookieCrumb = false;
+
+if ( adHeadCookie ) {	// got milk?
+	var adHeadHash = CNN_parseCookieData( adHeadCookie );
+	//alert("o=" +  adHeadHash[ "o" ] + "\nclass=" + adHeadHash[ "class"]);
+	if ( adHeadHash[ "o" ] && adHeadHash[ "class" ] ) {
+		var validClassesAndOffsets = [ 'us.low', 0, 'us.high', 1, 'intl', 2, 'intl', 3, 'us.edu', 0, 'us.gov', 0, 'us.mil', 0, 'us.org', 0 ];
+		for ( var i = 0; i < validClassesAndOffsets.length; i+=2 ) {
+			if ( validClassesAndOffsets[i] == adHeadHash[ "class" ] && validClassesAndOffsets[i+1] == adHeadHash[ "o" ] ) {
+				isClassAndOffsetValid = true;
+				break;
+			}
+		}
+	}
+	if ( isClassAndOffsetValid ) {
+		adHeadOffset = adHeadHash[ "o" ];
+		adHeadClass = adHeadHash[ "class" ];
+	}
+}
+
+document.adoffset = adHeadOffset;
+document.adPopupDomain = window.location.hostname;
+document.adPopupFile = '/cnn_adspaces/adsPopup2.html';
+document.adPopupInterval = 'P24';
+document.adPopunderInterval = 'P24';
+adSetOther('&TVAR='+escape('class=' + adHeadClass));
+
+//alert( "GLOBAL\nalreadySwappedTargetImage=" + alreadySwappedTargetImage + "\nisClassAndOffsetValid=" + isClassAndOffsetValid );
+
+function getAdHeadCookie( imageRef ) {
+	//alert( "isClassAndOffsetValid=" + isClassAndOffsetValid + "\nadHeadOffset=" + adHeadOffset + "\nadHeadClass=" + adHeadClass);
+	var newSrc = "http://cnn.dyn.cnn.com/1.gif?" + new Date().getTime();
+	if ( !alreadySwappedTargetImage && !isClassAndOffsetValid && WM_browserAcceptsCookies() ) {
+		//alert( "getAdHeadCookie\nalreadySwappedTargetImage=" + alreadySwappedTargetImage + "\nisClassAndOffsetValid=" + isClassAndOffsetValid );
+		imageRef.src = newSrc;
+		alreadySwappedTargetImage = true;
+	}
+}
+
+</script>
+
+</head>
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" onload="cnnHandleCSIs();">
+<a href="#ContentArea"><img src="http://i.cnn.net/cnn/images/1.gif" alt="Skip to main content" align="right" width="10" height="1" border="0" hspace="0" vspace="0"></a>
+<style type="text/css">
+<!--
+#cnnWatchNowBar {
+	background-color: #299CBD;
+	speak: normal;
+}
+
+#cnnWatchNowTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#cnnWatchNowTitle H1 {
+	padding: none;
+	margin: none;
+	font-size: 1em;
+	line-height: 1em;
+	display: inline;
+}
+
+#cnnWatchNowText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#cnnWatchNowText A:link, #cnnWatchNowText A:visited {
+	color: #fff;
+}
+-->
+</style>
+<table width="770" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+	<tr>
+		<td width="202" rowspan="3" valign="bottom"><a href="http://www.cnn.com/"><img src="http://i.a.cnn.net/cnn/.element/img/1.1/logo/logo.gif" width="202" height="47" hspace="0" vspace="2" border="0"></a></td>
+		<td width="568" height="27" colspan="2" align="right">
+			<table cellpadding="0" cellspacing="0" border="0" align="right">
+				<tr valign="middle">
+					<td><div class="cnnCeilingB"><a href="/linkto/intl.html" onClick="clickEdLink()">International Edition</a>&nbsp;|&nbsp;</div></td>
+					<td><script type="text/javascript" language="JavaScript1.2">
+<!--
+
+displayHat( 'white' );
+
+//-->
+					</script></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2" valign="bottom" width="34" bgcolor="#003366"><img src="http://i.a.cnn.net/cnn/.element/img/1.1/ceiling/left.corner.gif" width="34" height="25" hspace="0" vspace="0" border="0"></td>
+		<td height="5" valign="top"><img src="http://i.a.cnn.net/cnn/.element/img/1.1/ceiling/top.right.corner.gif" width="534" height="5" hspace="0" vspace="0" border="0"></td>
+	</tr>
+	<tr bgcolor="#003366">
+		<td height="20"><div class="cnnCeilingW"><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
+		
+		<a href="http://audience.cnn.com/services/cnn/memberservices/regwall/member_profile.jsp?source=cnn">MEMBER SERVICES</a>
+</td><td align="right"><a href="javascript:CNN_openPopup('/feedback/help/homepage/frameset.exclude.html','620x364','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=auto,resizable=no,width=620,height=430');">
+<img src="http://i.a.cnn.net/cnn/.element/img/1.1/ceiling/make.homepage.gif" width="182" height="14" valign="absmiddle" border="0" hspace="5" align="right"></a>
+
+</td></tr></table></div></td>	
+	</tr>
+	<tr><td colspan="3"><img src="http://i.a.cnn.net/cnn/.element/img/1.1/ceiling/gradient.line.gif" width="770" height="6" hspace="0" vspace="0" border="0"></td></tr>
+</table>
+
+<table width="770" cellpadding="0" cellspacing="0" border="0">
+	<tr bgcolor="#003366">
+		<td align="center">
+<div class="cnn4pxBpad">
+<table width="728" cellpadding="1" cellspacing="0" border="0">
+	<tr bgcolor="#FFFFFF">
+		<td align="center"><!-- generic/top.728x90 -->
+<script language="JavaScript1.1">
+<!--
+adSetTarget('_top');
+htmlAdWH( (new Array(93182789,93182789,93182814,93182814))[document.adoffset||0] , 728, 90);
+//-->
+</script><noscript><a href="http://ar.atwola.com/link/93182789/aol" target="_top"><img src="http://ar.atwola.com/image/93182789/aol" alt="Click here for our advertiser" width="728" height="90" border="0"></a></noscript></td>
+	</tr>
+</table></div>
+		</td>
+	</tr>
+</table>
+<div id="cnnBreakingNewsBanner"></div><script>if(location.hostname.indexOf('edition.')>-1) {cnnAddCSI('cnnBreakingNewsBanner','/.element/ssi/intl/breaking_news/1.1/banner.exclude.html');} else {cnnAddCSI('cnnBreakingNewsBanner','/.element/ssi/www/breaking_news/1.1/banner.exclude.html');}</script>
+<table width="770" cellpadding="0" cellspacing="0" border="0"><form action="http://search.cnn.com/cnn/search" method="get" onsubmit="return CNN_validateSearchForm(this);">
+<input type="hidden" name="source" value="cnn">
+<input type="hidden" name="invocationType" value="search/top">
+<tr><td colspan="12"><img src="http://i.a.cnn.net/cnn/.element/img/1.0/misc/CC0000.px.gif" alt="" width="770" height="3" border="0" hspace="0" vspace="0"></td></tr>
+<tr>
+		<td rowspan="2" bgcolor="#DAEEF2"><img src="http://i.a.cnn.net/cnn/images/1.gif" alt="" width="8" height="30" border="0" hspace="0" vspace="0"></td>
+		<td bgcolor="#DAEEF2" colspan="10"><img src="http://i.a.cnn.net/cnn/images/1.gif" alt="" width="759" height="1" border="0" hspace="0" vspace="0"></td>
+		<td rowspan="2"><img src="http://i.a.cnn.net/cnn/.element/img/1.1/searchbar/search.right.gif" width="3" height="30" hspace="0" vspace="0" border="0"></td>
+	</tr>
+	<tr bgcolor="#B6D8E0" valign="middle">
+		<td><img src="http://i.a.cnn.net/cnn/.element/img/1.1/searchbar/search.gif" width="70" height="15" hspace="15" vspace="0" border="0"></td>
+		<td><input type="radio" name="sites" value="web" checked></td>
+		<td nowrap><span class="cnnFormTextB" style="color:#369">The Web</span></td>
+		<td>&nbsp;&nbsp;</td>
+		<td><input type="radio" name="sites" value="cnn"></td>
+		<td><span class="cnnFormTextB" style="color:#369;">CNN.com</span></td>
+		<td>&nbsp;&nbsp;</td>
+		<td><input type="text" name="query" class="cnnFormText" value="" title="Enter text to search for and click 'Search'" size="30" maxlength="40" style="width: 250px"></td>
+		<td>&nbsp;<input type="Submit" value="Search" class="cnnNavButton" style="padding: 0px; margin: 0px; width: 50px"></td>
+		<td align="right"><div class="cnn6pxLpad"><img src="http://i.a.cnn.net/cnn/.element/img/1.1/searchbar/yahoo.logo.gif" width="153" height="19" hspace="8" vspace="0" border="0" ALT="Powered by"></div></td>
+	</tr>
+	<tr><td colspan="12"><img src="http://i.a.cnn.net/cnn/.element/img/1.1/searchbar/search.bottom.gif" width="770" height="3" hspace="0" vspace="0" border="0"></td></tr></form>
+</table>
+<table width="770" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td width="126" valign="top"><table id="cnnNavBar" width="126" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0" summary="CNN.com Navigation">
+	<col width="8" align="left" valign="top">
+	<col width="118" align="left" valign="top">
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/')"><div class="cnnNavText"><a href="/">Home Page</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/WORLD/')"><div class="cnnNavText"><a href="/WORLD/">World</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/US/')"><div class="cnnNavText"><a href="/US/">U.S.</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/WEATHER/')"><div class="cnnNavText"><a href="/WEATHER/">Weather</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/money/')"><div class="cnnNavText"><a href="/money/index.html?cnn=yes">Business</a>&nbsp;<a href="/money/index.html?cnn=yes"><img src="http://i.cnn.net/cnn/.element/img/1.0/main/nav_at_money.gif" alt="at CNN/Money" width="51" height="5" border="0"></a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/si/')"><div class="cnnNavText"><a href="/si/index.html?cnn=yes">Sports</a>&nbsp;<a href="/si/index.html?cnn=yes"><img src="http://i.cnn.net/cnn/.element/img/1.0/main/nav_at_si.gif" alt="at SI.com" width="50" height="5" border="0"></a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/ALLPOLITICS/')"><div class="cnnNavText"><a href="/ALLPOLITICS/">Politics</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/LAW/')"><div class="cnnNavText"><a href="/LAW/">Law</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/TECH/')"><div class="cnnNavText"><a href="/TECH/">Technology</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/TECH/space/')"><div class="cnnNavText"><a href="/TECH/space/">Science &amp; Space</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/HEALTH/')"><div class="cnnNavText"><a href="/HEALTH/">Health</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/SHOWBIZ/')"><div class="cnnNavText"><a href="/SHOWBIZ/">Entertainment</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/TRAVEL/')"><div class="cnnNavText"><a href="/TRAVEL/">Travel</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/EDUCATION/')"><div class="cnnNavText"><a href="/EDUCATION/">Education</a></div></td></tr>
+	<tr class="cnnNavRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNav" onMouseOver="CNN_navBar(this,1,1)" onMouseOut="CNN_navBar(this,0,1)" onClick="CNN_navBarClick(this,1,'/SPECIALS/')"><div class="cnnNavText"><a href="/SPECIALS/">Special Reports</a></div></td></tr>
+	<tr bgcolor="#FFFFFF"><td class="cnnNavAd" colspan="2" align="center"><!-- generic/left.120x90 -->
+<script language="JavaScript1.1">
+<!--
+adSetTarget('_top');
+htmlAdWH( (new Array(93182790,93182790,93182815,93182815))[document.adoffset||0] , 120, 90);
+//-->
+</script><noscript><a href="http://ar.atwola.com/link/93182790/aol" target="_top"><img src="http://ar.atwola.com/image/93182790/aol" alt="Click here for our advertiser" width="120" height="90" border="0"></a></noscript></td></tr>
+	<tr bgcolor="#999999" class="cnnNavGroupRow">
+		<td colspan="2" class="cnnNavGroup"><div class="cnnNavText">SERVICES</div></td></tr>
+	<tr class="cnnNavOtherRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNavOther" onMouseOver="CNN_navBar(this,1,0)" onMouseOut="CNN_navBar(this,0,0)" onClick="CNN_navBarClick(this,0,'/video/')"><div class="cnnNavText"><a href="/video/">Video</a></div></td></tr>
+	<tr class="cnnNavOtherRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNavOther" onMouseOver="CNN_navBar(this,1,0)" onMouseOut="CNN_navBar(this,0,0)" onClick="CNN_navBarClick(this,0,'/EMAIL/')"><div class="cnnNavText"><a href="/EMAIL/">E-mail Newsletters</a></div></td></tr>
+	<tr class="cnnNavOtherRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNavOther" onMouseOver="CNN_navBar(this,1,0)" onMouseOut="CNN_navBar(this,0,0)" onClick="CNN_navBarClick(this,0,'/youralerts/')"><div class="cnnNavText"><a href="/youralerts/">Your E-mail Alerts</a></div></td></tr>
+		<tr class="cnnNavOtherRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNavOther" onMouseOver="CNN_navBar(this,1,0)" onMouseOut="CNN_navBar(this,0,0)" onClick="CNN_navBarClick(this,0,'/services/rss/')"><div class="cnnNavText"><a href="/services/rss/">RSS</a></div></td></tr>
+	<tr class="cnnNavOtherRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNavOther" onMouseOver="CNN_navBar(this,1,0)" onMouseOut="CNN_navBar(this,0,0)" onClick="CNN_navBarClick(this,0,'/togo/')"><div class="cnnNavText"><a href="/togo/">CNNtoGO</a></div></td></tr>
+	<tr class="cnnNavOtherRow"><td class="swath">&nbsp;</td>
+			<td class="cnnNavOther" onMouseOver="CNN_navBar(this,1,0)" onMouseOut="CNN_navBar(this,0,0)" onClick="CNN_navBarClick(this,0,'/yourcommand/')"><div class="cnnNavText"><a href="/yourcommand/">TV Commercials</a></div></td></tr>
+	<tr class="cnnNavOtherRow"><td class="swath">&nbsp;</td>
+		<td class="cnnNavOther" onMouseOver="CNN_navBar(this,1,0)" onMouseOut="CNN_navBar(this,0,0)" onClick="CNN_navBarClick(this,0,'/feedback/')"><div class="cnnNavText"><a href="/feedback/">Contact Us</a></div></td></tr>
+	<tr bgcolor="#999999" class="cnnNavGroupRow">
+		<td colspan="2" class="cnnNavGroup" style="background-color: #445B60"><div class="cnnNavText" style="color: #fff">SEARCH</div></td></tr>
+	<tr bgcolor="#CCCCCC"><td colspan="2" class="cnnNavSearch" style="background-color:#B6D8E0">
+
+<form action="http://search.cnn.com/cnn/search" method="get" name="nav_bottom_search" onSubmit="return CNN_validateSearchForm(this)" style="margin: 0px;">
+	<input type="hidden" name="sites" value="cnn">
+	<input type="hidden" name="source" value="cnn">
+	<input type="hidden" name="invocationType" value="side/bottom">
+<table width="100%" border="0" cellpadding="0" cellspacing="4">
+	<tr>
+		<td colspan="2">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="left"><span class="cnnFormTextB" style="color: #369">Web</span></td>
+					<td><input type="radio" name="sites" value="web" checked style="margin-left:0px;margin-right:0px;"></td>
+					<td align="middle"><span class="cnnFormTextB" style="color: #369">CNN.com</span></td>
+					<td><input type="radio" name="sites" value="cnn" style="margin-left:0px;margin-right:0px;"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr><td colspan="2"><input type="text" name="query" class="cnnFormText" value="" title="Enter text to search for and click 'Search'" size="7" maxlength="40" style="width: 100%"></td></tr>
+	<tr valign="top">
+		<td><input type="submit" value="Search" class="cnnNavButton" style="padding: 0px; margin: 0px; width: 50px"></td>
+		<td align="right"><img src="http://i.cnn.net/cnn/.element/img/1.1/sect/SEARCH/yahoo_nav.gif" alt="powered by Yahoo!" width="61" height="33"></td>
+	</tr>
+</table>
+
+</td></form></tr>
+</table>
+</td>
+		<td width="10"><img src="http://i.cnn.net/cnn/images/1.gif" width=10 height="1" hspace="0" vspace="0" alt="" border="0"></td>
+		<td>
+<div><img src="http://i.cnn.net/cnn/images/1.gif" width=634 height="3" hspace="0" vspace="0" alt="" border="0"></div>
+<a name="ContentArea"></a>
+			<table cellpadding="0" cellspacing="0" width="100%" border="0">
+				<tr valign="top">
+					<td><img src="http://i.cnn.net/cnn/.element/img/1.0/sect/services/about.us/header_aboutcnn.gif" width="294" height="32" alt="" border="0" hspace="0" vspace="0" border="0" align="top"></td>
+				</tr>
+				<tr valign="top">
+					<td width="634" bgcolor="#003366" height="3"><img src="http://i.cnn.net/cnn/images/1.gif" width="634" height="3" hspace="0" vspace="0" alt="" border="0"></td>
+				</tr>
+			</table>
+<div><img src="http://i.cnn.net/cnn/images/1.gif" width=634 height="9" hspace="0" vspace="0" alt="" border="0"></div>
+<!-- CONTENT STARTS HERE -->
+<div class="cnnBodyText">
+<span class="cnnBigPrint"><b style="color:#c00">CNN.COM</b></span><BR>
+<span class="cnnBodyText">
+CNN.com is among the world's leaders in online news and information delivery. Staffed 24 hours, seven days a week by a dedicated staff in CNN's world headquarters in Atlanta, Georgia, and in bureaus worldwide, CNN.com relies heavily on CNN's global team of almost 4,000 news professionals. CNN.com features the latest multimedia technologies, from live video streaming to audio packages to searchable archives of news features and background information. The site is updated continuously throughout the day.<br><a href="/INDEX/about.us/dotcom_executives.html">Meet CNN.com's executives</a><BR><BR>	
+</span>
+<span class="cnnBigPrint"><b style="color:#c00">VIEWER OPINIONS:</b></span><BR>
+<span class="cnnBodyText">Help us make your comments count. Use our viewer comment page to tell us what you think about our shows, our anchors, and our hot topics for the day by clicking on:
+<a href="/feedback/">http://www.cnn.com/feedback/</a><BR><BR>
+</span>
+<span class="cnnBigPrint"><b style="color:#c00">HELP PAGE:</b></span><BR>
+<span class="cnnBodyText">If you have questions about how to use CNN.com or wish to request transcripts or videotapes, please visit one of these pages for help: <a href="/feedback/index2.dotcom.html">CNN.com FAQ</a> | <a href="/feedback/index3.technical.html">Technical FAQ</a> | <a href="/feedback/index.1.cnntv.html">CNN TV FAQ</a> | <a href="/services/ms/faq.html">CNN Member Services FAQ</a><BR><BR>
+</span>
+
+<table width="634" cellpadding="0" cellspacing="0" border="0"><tr bgcolor="#CC0000"><td colspan="3"><img src="http://i.cnn.net/cnn/images/1.gif" alt="" width="634" height="2" border="0" hspace="0" vspace="0"></td></tr><tr><td bgcolor="#15467C" height="19" colspan="3"><div class="cnnSectBoxHeadW">CNN:</div></td></tr></table><BR>
+<span class="cnnBigPrint"><b style="color:#c00">WHAT'S ON:</b></span><BR>
+<span class="cnnBodyText">The full rundown of all CNN daily programming<br>
+<a href="/whatson/">CNN.com/whatson</a><BR><BR>
+</span>
+
+<span class="cnnBigPrint"><b style="color:#c00">WHO'S ON:</b></span><BR>
+<span class="cnnBodyText">Bios on all of CNN's anchors, correspondents and executives<br>
+<a href="/CNN/anchors_reporters/">CNN.com/anchors</a><BR><BR>
+</span>
+
+<span class="cnnBigPrint"><b style="color:#c00">STUDIO TOUR:</b></span><BR>
+<span class="cnnBodyText">The CNN Studio Tour offers visitors a behind-the-scenes look at CNN. Take a look back at CNN's history-making coverage of news events that have shaped the world and get a peek at state-of-the-art studios where these events are reported daily to over one billion people worldwide.<br>
+<a href="/StudioTour/">CNN.com/StudioTour</a><BR><BR>
+</span>
+
+<span class="cnnBigPrint"><b style="color:#c00">CNN'S PARENT COMPANY:</b></span><BR>
+<span class="cnnBodyText"><a href="http://www.timewarner.com" target="new">http://www.timewarner.com</a><BR><BR>
+</span>
+
+
+<table width="634" cellpadding="0" cellspacing="0" border="0"><tr bgcolor="#CC0000"><td colspan="3"><img src="http://i.cnn.net/cnn/images/1.gif" alt="" width="634" height="2" border="0" hspace="0" vspace="0"></td></tr><tr><td bgcolor="#15467C" height="19" colspan="3"><div class="cnnSectBoxHeadW">SERVICES:</div></td></tr></table><BR>
+
+<span class="cnnBigPrint"><b style="color:#c00">NEW SERVICE! YOUR E-MAIL ALERTS:</b></span><BR>
+<span class="cnnBodyText">
+Your E-mail Alerts, is a free, personalized news alerting service created for you. 
+<BR>
+<BR>
+With CNN's new service you can:<BR>
+<LI>Sign up for Your E-mail Alerts and follow the news that matters to you.<BR>
+<LI>Select key words and topics across the wide range of news and information on the site. <BR>
+<LI>Create your own alerts.<BR>
+<LI>Customize your delivery options to fit your schedule and be alerted as a story is published on CNN.com. Receive your alerts daily or weekly.<BR>
+<LI>Easily manage your alerts. Edit, delete, suspend or re-activate them  at any time.
+<BR><BR>
+<a href="http://audience.cnn.com/services/cnn/memberservices/member_register.jsp?source=cnn">Register</a> to be a member and begin customizing your e-mail alerts today! 
+<BR><BR>
+<span class="cnnBigPrint"><b style="color:#c00">SUBSCRIPTION VIDEO SERVICES:</b></span><BR>
+<span class="cnnBodyText">CNN video content is now available only with a subscription to CNN NewsPass or through RealOne SuperPass. For complete information on both services, visit <a href="/NewsPass/faq/index.html">About CNN.com/video</a>. If you are already a member of either CNN NewsPass or RealOne SuperPass you can also e-mail your comments, problems, or suggestions directly to <a href="http://service.real.com/realone/index.html" target="new">Customer Service</a>.<BR><BR>
+</span>
+
+<span class="cnnBigPrint"><b style="color:#c00">CNN FOR MOBILE PHONES</b></span><BR>
+<span class="cnnBodyText">CNN.com content is now available through your mobile phone with CNNtoGO. With CNNtoGO, you can read up-to-the-minute news stories with color photos and receive CNN NEWStoGO Text Alerts. You can also watch CNN news stories with VIDEOtoGO or listen to CNN TV and CNNRadio with AUDIOtoGO.  No matter where your on-the-go lifestyle takes you, CNN brings the news direct to you. Click <a href="/togo/">here</a> or go to <a href="/togo/">http://www.cnn.com/togo/</a> to find out more.<BR><BR>
+</span>
+
+
+
+
+
+<!--
+[[span class="cnnBigPrint"]][[b style="color:#c00"]]CNN NEWSWATCH POWERED BY INFOGATE:[[/b]][[/span]][[BR]]
+[[span class="cnnBodyText"]]CNN.com regrets to inform you that Infogate, the company that developed and maintained CNN Newswatch, will no longer be providing this service as of the end of June 2003.  We will be refunding subscription costs to subscribers' credit cards for a prorated amount according to the terms and conditions that were agreed to before the sign-up was complete. If you subscribed to this service a year ago and your yearly subscription ended on or before June 1, 2003, then you have not been charged for a new annual subscription and will not be receiving a refund.  To see a copy of the billing terms and refund policy, go to [[a href="http://www.cnn.com/services/newswatch/"]]www.cnn.com/services/newswatch/[[/a]].[[br]][[br]]
+We are sorry for any inconvenience. Any questions or concerns can be sent to [[a href="mailto:support@newswatch.cnn.com"]]support@newswatch.cnn.com[[/a]] or call 1-888-564-6726, 9 a.m. - 6 p.m. ET Monday - Friday.[[br]][[br]]
+[[/span]]
+-->
+<span class="cnnBigPrint"><b style="color:#c00">ORDER CNN VIDEO TAPES:</b></span><BR>
+<span class="cnnBodyText">To buy video tapes of CNN shows <A HREF="https://orion.fdch.com/forms/orcnn.html" target="_blank">click here</A>, or go to 
+<a href="https://orion.fdch.com/forms/orcnn.html" target="_blank">https://orion.fdch.com/forms/orcnn.html</a><BR><BR>
+</span>
+<span class="cnnBigPrint"><b style="color:#c00">E-MAIL NEWSLETTERS:</b></span><BR>
+<span class="cnnBodyText">Be the first to know with a variety of e-mail news services. Keep as current as the news - CNN provides up-to-the-minute headlines delivered to your e-mail address. CNN.com offers e-mail updates as numerous and diverse as your tastes. Register with CNN Member Services and select from the various e-mails.  <a href="/EMAIL/#register">Click here</a>, or go to <a href="/EMAIL/#bnews">http://www.cnn.com/EMAIL/</a>.<BR><BR>
+</span>
+<span class="cnnBigPrint"><b style="color:#c00">ADVERTISE ON CNN.COM:</b></span><BR>
+<span class="cnnBodyText"><a href="/feedback/forms/form3.html?1">Send an e-mail</a> and a CNN representative will provide information about advertising on the CNN Web sites.<BR><BR>
+</span>
+<!--<span class="cnnBigPrint"><b style="color:#c00">BUSINESS DEVELOPMENT:</b></span><BR>
+<span class="cnnBodyText">Companies interested in partnering with CNN should contact CNN Business Operations by sending an email to <a href="mailto:bizops@cnn.com">bizops@cnn.com</a>.<BR><BR>
+</span>-->
+<span class="cnnBigPrint"><b style="color:#c00">JOB SEARCH:</b></span><BR>
+<span class="cnnBodyText">For information about internships or job opportunities with CNN, please visit our website at <a href="http://www.turnerjobs.com" target="new">www.turnerjobs.com</a>.<br><br>For information on job opportunities outside of CNN.com, visit CNN's link to <a href="http://www.cnn.com/linkto/careerbuilder/cb.travel.html">CareerBuilder.com</a>.  CNN.com has a business relationship with CareerBuilder to provide CNN users with information about employment opportunities. <BR><BR>
+</span>
+<span class="cnnBigPrint"><b style="color:#c00">CNN.COM ADDITIONAL SERVICES:</b></span><BR>
+<span class="cnnBodyText">Get broadband Internet service that brings you high-quality CNN video and more.<br><a href="/services/broadband/">CNN.com/services/broadband/</a>.<br><br>Lawyer Locator: CNN.com has a business relationship with <a href="http://www.cnn.com/LAW/#mdh">Martindale.com</a> to provide professional information about attorneys listed in the Martindale-Hubbell lawyer database. <BR><BR>
+</span>
+
+<table width="634" cellpadding="0" cellspacing="0" border="0"><tr bgcolor="#CC0000"><td colspan="3"><img src="http://i.cnn.net/cnn/images/1.gif" alt="" width="634" height="2" border="0" hspace="0" vspace="0"></td></tr><tr><td bgcolor="#15467C" height="19" colspan="3"><div class="cnnSectBoxHeadW">HELP:</div></td></tr></table><BR>
+<span class="cnnBigPrint"><b style="color:#c00">FEEDBACK/QUESTIONS:</b></span><BR>
+<span class="cnnBodyText">We'd like to hear what you have to say<br>
+<a href="/feedback/">CNN.com/feedback</a><BR><BR>
+</span>
+<span class="cnnBigPrint"><b style="color:#c00">HELP PAGE:</b></span><BR>
+<span class="cnnBodyText">Find an answer to your questions about CNN<br>
+<a href="/feedback/help/">CNN.com/feedback/help</a><BR><BR>
+</span>
+
+<span class="cnnBigPrint"><b style="color:#c00">SUBSCRIPTION VIDEO SERVICES:</b></span><BR>
+<span class="cnnBodyText">If you are already a member of either CNN NewsPass or RealOne SuperPass and are having problems accessing your account, visit <a href="/NewsPass/faq/index.new.html">About CNN.com/video</a> for Web-based customer service. You can also e-mail your comments, problems, or suggestions directly to <a href="http://service.real.com/realone/index.html" target="new">Customer Service</a>.<BR><BR>
+</span>
+<span class="cnnBigPrint"><b style="color:#c00">SEARCH CNN:</b></span><BR>
+<span class="cnnBodyText"><a href="/SEARCH/">CNN.com/search</a><BR><BR>
+</span>
+
+<table width="634" cellpadding="0" cellspacing="0" border="0"><tr bgcolor="#CC0000"><td colspan="3"><img src="http://i.cnn.net/cnn/images/1.gif" alt="" width="634" height="2" border="0" hspace="0" vspace="0"></td></tr><tr><td bgcolor="#15467C" height="19" colspan="3"><div class="cnnSectBoxHeadW">LEGAL TERMS AND CONDITIONS:</div></td></tr></table><BR>
+
+<!--
+[[span class="cnnBigPrint"]][[b style="color:#c00"]]CNN LOGO LINK:[[/b]][[/span]][[BR]]
+[[span class="cnnBodyText"]]Use the CNN.com logo as an active link on your Web site[[br]]
+[[A HREF="/logo/"]]Click here[[/A]][[BR]][[BR]]
+[[/span]]
+-->
+
+<span class="cnnBigPrint"><b style="color:#c00">CNN INTERACTIVE SERVICE AGREEMENT:</b></span><BR>
+<span class="cnnBodyText"><a href="/interactive_legal.html">CNN.com/interactive_legal.html</a><BR><BR>
+</span>
+
+<span class="cnnBigPrint"><b style="color:#c00">PRIVACY STATEMENT:</b></span><BR>
+<span class="cnnBodyText">To better protect your privacy, we provide this notice explaining our online information practices and the choices you can make about the way your information is collected and used<br>
+<a href="/privacy.html">CNN.com/privacy.html</a><BR><BR>
+</span>
+
+<span class="cnnBigPrint"><b style="color:#c00">CNN'S REPRINT AND COPYRIGHT INFORMATION: </b></span><BR>
+<span class="cnnBodyText">Copyrights and Copyright Agent. CNN respects the rights of all copyright holders and in this regard, CNN has adopted and implemented a policy that provides for the termination in appropriate circumstances of subscribers and account holders who infringe the rights of copyright holders. If you believe that your work has been copied in a way that constitutes copyright infringement, please provide CNN's Copyright Agent the following information required by the Online Copyright Infringement Liability Limitation Act of the Digital Millennium Copyright Act, 17 U.S.C. ¤ 512: <br><BR><BR>
+
+&#149;&nbsp;A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.<BR><BR>
+
+&#149;&nbsp;Identification of the copyright work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site.<BR><BR>
+
+&#149;&nbsp;Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit us to locate the material.<BR><BR>
+
+&#149;&nbsp;Information reasonably sufficient to permit us to contact the complaining party.<BR><BR>
+
+&#149;&nbsp;A statement that the complaining party has a good-faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law.<BR><BR>
+
+&#149;&nbsp;A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.<BR><BR>
+
+CNN's Copyright Agent for notice of claims of copyright infringement on or regarding this site can be reached by sending an email to infringement.notification@cnn.com or writing to-<BR><BR>
+
+
+Copyright Agent<br><GEO TYPE="US">One CNN Center<br>Atlanta, GA 30303</GEO><br>Phone: (404) 878-2276<br>Fax: (404) 827-1995<br>Email:  <a href="mailto:copyrightagent@turner.com">copyrightagent@turner.com</a><br><br>
+
+
+<b>For any questions or requests other than copyright issues, please contact</b> <a href="/feedback">http://cnn.com/feedback</a>.
+</span>
+
+</div>
+<!-- /CONTENT ENDS HERE -->
+		</td>
+	</tr>
+</table>
+
+
+
+<!-- below fold -->
+
+
+<br clear="all">
+<table width="770" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="10"><img src="http://i.cnn.net/cnn/images/1.gif" alt="" width="10" height="10"></td>
+		<td width="760">
+<!-- floor -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#999999"><img src="http://i.a.cnn.net/cnn/images/1.gif" alt="" width="1" height="1"></td></tr></table>
+<div style="background-color:#fff;"><img src="http://i.a.cnn.net/cnn/images/1.gif" alt="" width="1" height="1" hspace="0" vspace="0"></div>
+<table width="100%" bgcolor="#DEDEDE" border="0" cellpadding="3" cellspacing="0">
+	<tr>
+		<td><img src="http://i.a.cnn.net/cnn/images/1.gif" alt="" width="5" height="5"></td>
+		<td><a href="http://edition.cnn.com" class="cnnFormTextB" onClick="clickEdLink()" style="color:#000;">International Edition</a></td>
+
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0"><tr><form><td><select title="CNN.com is available in different languages" class="cnnMenuText" name="languages" size="1" style="font-weight: bold; vertical-align: middle" onChange="if (this.options[selectedIndex].value != '') location.href=this.options[selectedIndex].value">
+				<option value="" disabled selected>Languages</option>
+				<option value="" disabled>---------</option>
+				<option value="http://arabic.cnn.com/">Arabic</option>				
+				<option value="http://cnn.de/">German</option>
+				<option value="http://www.CNN.co.jp/">Japanese</option>
+				<option value="http://www.joins.com/cnn/">Korean</option>
+				<option value="http://cnnturk.com/">Turkish</option>				
+			</select></td></tr></form></table></td>
+
+		<td><a href="/CNN/Programs/" class="cnnFormTextB" style="color:#000;">CNN TV</a></td>
+		<td><a href="/CNNI/" class="cnnFormTextB" style="color:#000;">CNN International</a></td>
+		<td><a href="/HLN/" class="cnnFormTextB" style="color:#000;">Headline News</a></td>
+		<td><a href="/TRANSCRIPTS/" class="cnnFormTextB" style="color:#000;">Transcripts</a></td>
+		<td><a href="/services/advertise/" title="Customize your CNN.com experience" class="cnnFormTextB" style="color:#000;">Advertise With Us</a></td>
+		<td><a href="/INDEX/about.us/" class="cnnFormTextB" style="color:#000;">About Us</a></td>
+	</tr>
+</table>
+<div style="background-color:#fff;"><img src="http://i.a.cnn.net/cnn/images/1.gif" alt="" width="1" height="2"></div>
+<table width="100%" bgcolor="#DEDEDE" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="middle">
+		<td bgcolor="#435963" align="center"><div class="cnnFormTextB" style="padding:10px;color:#fff;">SEARCH</div></td>
+<form action="http://search.cnn.com/cnn/search" method="get" onSubmit="return CNN_validateSearchForm(this);">
+<input type="hidden" name="source" value="cnn">
+<input type="hidden" name="invocationType" value="search/bottom">
+		<td bgcolor="#C1D3DC"><table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>&nbsp;&nbsp;</td>
+					<td nowrap><span class="cnnFormTextB" style="color:#369">The Web</span></td>
+					<td><input type="radio" name="sites" value="web" checked></td>
+					<td>&nbsp;&nbsp;</td>
+					<td><span class="cnnFormTextB" style="color:#369;">CNN.com</span></td>
+					<td><input type="radio" name="sites" value="cnn"></td>
+					<td>&nbsp;&nbsp;</td>
+					<td><input type="text" name="query" class="cnnFormText" value="" title="Enter text to search for and click 'Search'" size="35" maxlength="40" style="width: 280px"></td>
+					<td>&nbsp;<input type="submit" value="Search" class="cnnNavButton" style="padding: 0px; margin: 0px; width: 50px"></td>
+				</tr>
+			</table></td>
+</form>
+		<td bgcolor="#C1D3DC" align="right"><img src="http://i.a.cnn.net/cnn/.element/img/1.1/searchbar/yahoo.logo.bottom.gif" width="153" height="19" border="0" alt="Powered by" hspace="6" vspace="0"></td>
+	</tr>
+</table>
+<div style="background-color:#fff;"><img src="http://i.a.cnn.net/cnn/images/1.gif" alt="" width="1" height="2"></div>
+<table width="100%" bgcolor="#EFEFEF" border="0" cellpadding="4" cellspacing="0">
+	<tr valign="top">
+		<td style="padding-left:10px"><div class="cnnSectCopyright"><b>&copy; 2005 Cable News Network LP, LLLP.</b><br>
+	A Time Warner Company. All Rights Reserved.<br>
+	<a href="/interactive_legal.html">Terms</a> under which this service is provided to you.<br>
+	Read our <a href="/privacy.html">privacy guidelines</a>. <a href="/feedback/">Contact us</a>.</div></td>
+		<td align="right"><table border="0" cellpadding="4" cellspacing="0">
+				<tr>
+					<td rowspan="3"><img src="http://i.a.cnn.net/cnn/.element/img/1.0/sect/SEARCH/dotted.line.gif" alt="" width="7" height="46"></td>
+					<td align="middle"><img src="http://i.a.cnn.net/cnn/.element/img/1.0/misc/icon.external.links.gif" alt="external link" width="20" height="13"></td>
+					<td><div class="cnnSectCopyright">All external sites will open in a new browser.<br>
+							CNN.com does not endorse external sites.</div></td>
+				</tr>
+				<tr valign="top">
+					<td align="middle"><img src="http://i.a.cnn.net/cnn/.element/img/1.0/main/icon_premium.gif" alt=" Premium content icon " width="9" height="11"></td>
+					<td><span class="cnnSectCopyright">Denotes premium content.</span></td>
+				</tr>
+				<tr valign="top"> <td align="middle"><a href="/services/rss/"><img src="http://i.a.cnn.net/cnn/.element/img/1.1/misc/xml_button.gif" width="28" height="13" hspace="0" vspace="0" border="0" alt="" align="texttop"></a></td><td><span class="cnnSectCopyright">Add <a href="/services/rss/">RSS headlines</a>.</span></td></tr>
+			</table></td>
+	</tr>
+</table>
+
+<!-- /floor --></td>
+	</tr>
+</table>
+<img src="/cookie.crumb" alt="" width="1" height="1">
+<img src="http://i.a.cnn.net/cnn/1.gif" alt="" id="TargetImage" name="TargetImage" width="1" height="1" onLoad="getAdHeadCookie(this)">
+
+<script language="JavaScript1.1" src="http://ar.atwola.com/file/adsEnd.js"></script>
+
+<div id="csiIframe" style="visibility:hidden;height:0px;width:0px;"></div>
+
+</body>
+</html>

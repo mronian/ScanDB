@@ -1,0 +1,588 @@
+<DOC>
+<DOCNO>f00149</DOCNO>
+<DOCHDR>http://www.techlearning.com/content/about/articles/staff.html</DOCHDR>
+<!--
+SiteCatalyst code version: G.7. Copyright 1997-2004 Omniture, Inc.
+More info available at http://www.omniture.com
+-->
+
+<script language="JavaScript">
+<!--
+
+/* You may give each page an identifying name, server, and channel on the next lines. */
+var s_pageName=""
+var s_server=""
+var s_channel=""
+var s_pageType=""
+var s_prop1=""
+var s_prop2=""
+var s_prop3=""
+var s_prop4=""
+var s_prop5=""
+var s_prop6=""
+var s_prop7=""
+var s_prop8=""
+var s_prop9=""
+var s_prop10=""
+
+/* E-commerce Variables */
+var s_campaign=""
+var s_state=""
+var s_zip=""
+var s_events=""
+var s_products=""
+var s_purchaseID=""
+var s_eVar1=""
+var s_eVar2=""
+var s_eVar3=""
+var s_eVar4=""
+var s_eVar5=""
+
+/********* INSERT THE DOMAIN AND PATH TO YOUR CODE BELOW *********/
+//-->
+</script>
+
+<table cellpadding=0 cellspacing=0>
+<tr>
+<td><script language="JavaScript" src="http://i.cmpnet.com/shared/omniture/s_code_remote.js"></script></td>
+</tr>
+</table>
+<!-- End SiteCatalyst code version: G.7. -->
+
+
+
+
+
+<!--java>System.out.println("Internetweek dhandler called for " + request.getParameter("dhandlerExtrapath"));</java-->
+
+<!-- STATS PURPOSES -->
+
+<!-- /STATS PURPOSES -->
+
+<!-- Javascript to handle redirects -->
+<script language="javascript">
+checkit(location.pathname, "/events.html", "/events.html/", "/resources/events.jhtml");
+
+function checkit(source, rexp1, rexp2 ,dest) {
+   if (source == rexp1) {
+      doRedirect(dest);
+   }
+   var findstring = new RegExp(rexp2);
+   if (findstring.test(source)) {
+      doRedirect(dest);
+   }
+}
+
+function doRedirect(dest) {
+   window.location.replace(dest);
+}
+</script>
+<!-- //Javascript to handle redirects -->
+
+
+  
+    
+
+			
+					
+				
+
+            
+                    
+                
+
+			<!-- if reading from /events/techforum directory, don't load main template -->
+
+			
+	
+			<!-- read left toc from static file -->
+      
+
+        <!-- ++++ START HEADER ++++ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+
+
+
+
+    <title>techLEARNING.com | Technology & Learning - The Resource for Education Technology Leaders</title>
+    
+
+
+
+<META name="keywords" 
+     content="K-12, technology, education, techLEARNING, Technology & Learning, SchoolTech, edtech news, grants, contests, software reviews, events, educational technology, accountability, administration, art, collaboration, communication, copyright, cross-disciplinary, digital video, photography, e-learning, events, foreign language, esl, gifted and special education, grade level, primary, elementary, middle school, secondary, career counseling, guidance counseling, hardware, information, classroom management, internet, language arts, math, multimedia, productivity tools, professional development, reading, reference tools, research, science, security, social studies, technology advice, test preparation, study skills">
+		
+
+
+<META name="description"
+     content="The Resource for Education Technology Leaders focusing on K-12 educators. Site contains a Software Reviews and Announcement Database, articles from Technology & Learning Magazine, articles from Educators in Educators' Outlook, Events and Contests listings, Reader suggested Web sites, and weekly news updates on education technology leaders.">
+
+    
+
+
+
+<!--random image script-->
+<script language="JavaScript">
+<!--
+// ==============================================
+// Copyright 2003 by jsCode.com
+// Source: jsCode.com
+// Author: etLux
+// Free for all; but please leave in the header.
+// ==============================================
+
+// Set up the image files to be used.
+var theImages = new Array() // do not change this
+// To add more image files, continue with the
+// pattern below, adding to the array. Rememeber
+// to increment the theImages[x] index!
+
+theImages[0] = 'http://i.cmpnet.com/techlearning/home/home1.gif';
+theImages[1] = 'http://i.cmpnet.com/techlearning/home/home2.gif';
+theImages[2] = 'http://i.cmpnet.com/techlearning/home/home3.gif';
+theImages[3] = 'http://i.cmpnet.com/techlearning/home/home4.gif';
+theImages[4] = 'http://i.cmpnet.com/techlearning/home/home5.gif';
+theImages[5] = 'http://i.cmpnet.com/techlearning/home/home6.gif';
+theImages[6] = 'http://i.cmpnet.com/techlearning/home/home7.gif';
+theImages[7] = 'http://i.cmpnet.com/techlearning/home/home8.gif';
+theImages[8] = 'http://i.cmpnet.com/techlearning/home/home9.gif';
+theImages[9] = 'http://i.cmpnet.com/techlearning/home/home10.gif';
+theImages[10] = 'http://i.cmpnet.com/techlearning/home/home11.gif';
+theImages[11] = 'http://i.cmpnet.com/techlearning/home/home12.gif';
+theImages[12] = 'http://i.cmpnet.com/techlearning/home/home13.gif';
+theImages[13] = 'http://i.cmpnet.com/techlearning/home/home14.gif';
+theImages[14] = 'http://i.cmpnet.com/techlearning/home/home15.gif';
+theImages[15] = 'http://i.cmpnet.com/techlearning/home/home16.gif';
+theImages[16] = 'http://i.cmpnet.com/techlearning/home/home17.gif';
+theImages[17] = 'http://i.cmpnet.com/techlearning/home/home18.gif';
+theImages[18] = 'http://i.cmpnet.com/techlearning/home/home19.gif';
+theImages[19] = 'http://i.cmpnet.com/techlearning/home/home20.gif';
+theImages[20] = 'http://i.cmpnet.com/techlearning/home/home21.gif';
+theImages[21] = 'http://i.cmpnet.com/techlearning/home/home22.gif';
+theImages[22] = 'http://i.cmpnet.com/techlearning/home/home23.gif';
+theImages[23] = 'http://i.cmpnet.com/techlearning/home/home24.gif';
+theImages[24] = 'http://i.cmpnet.com/techlearning/home/home25.gif';
+
+
+
+// ======================================
+// do not change anything below this line
+// ======================================
+
+var j = 0
+var p = theImages.length;
+
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){
+document.write('<img src="'+theImages[whichImage]+'">');
+}
+
+//-->
+</script>
+<!--end random image-->
+
+<Script Language="JavaScript">
+// Detect the browsername
+browsername=navigator.appName;
+if (browsername.indexOf("Netscape")!=-1) {browsername="NS"}
+else
+{if (browsername.indexOf("Microsoft")!=-1) {browsername="MSIE"}
+else {browsername="N/A"}};
+
+//detect the browserversion
+browserversion="0";
+if (navigator.appVersion.indexOf("2.")!=-1) {browserversion="2"};
+if (navigator.appVersion.indexOf("3.")!=-1) {browserversion="3"};
+if (navigator.appVersion.indexOf("4.")!=-1) {browserversion="4"};
+if (navigator.appVersion.indexOf("5.")!=-1) {browserversion="5"};
+if (navigator.appVersion.indexOf("6.")!=-1) {browserversion="6"};
+
+// Send visitor to relevant pages
+if (browsername=="MSIE") {document.write('<link rel="stylesheet" type="text/css" href="http://i.cmpnet.com/techlearning/elements/style.css">')}
+if (browsername=="NS") {
+if (browserversion<5){document.write('<link rel="stylesheet" type="text/css" href="http://i.cmpnet.com/techlearning/elements/netscape.css">')}
+else {document.write('<link rel="stylesheet" type="text/css" href="http://i.cmpnet.com/techlearning/elements/style.css">')}
+}
+if (browsername=="N/A") {document.write('<link rel="stylesheet" type="text/css" href="http://i.cmpnet.com/techlearning/elements/style.css">')};
+</script>
+	
+	<script language="JavaScript">
+<!--
+function land(ref, target)
+{
+lowtarget=target.toLowerCase();
+if (lowtarget=="_self") {window.location=loc;}
+else {if (lowtarget=="_top") {top.location=loc;}
+else {if (lowtarget=="_blank") {window.open(loc);}
+else {if (lowtarget=="_parent") {parent.location=loc;}
+else {parent.frames[target].location=loc;};
+}}}
+}
+function jump(menu)
+{
+ref=menu.choice.options[menu.choice.selectedIndex].value;
+splitc=ref.lastIndexOf("*");
+target="";
+if (splitc!=-1)
+{loc=ref.substring(0,splitc);
+target=ref.substring(splitc+1,1000);}
+else {loc=ref; target="_self";};
+if (ref != "") {land(loc,target);}
+}
+//-->
+</script>
+
+
+
+<script language="JavaScript">
+
+
+// email article script
+
+ function launcher(file) {
+   	uri = "/shared/emailStory.jhtml?story=" + file;
+ 		window.open(uri,"","toolbar=no,scrollbars=yes,location=no,status=no,width=450,height=450,resizable=1");
+ }
+//-->
+</script>
+<!-- /EMAIL THIS ARTICLE -->
+
+
+</head>
+
+
+<body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 bgcolor="#FFFFFF">
+
+<!-- Top table -->
+<table width="775" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="775" colspan="2"><img src="http://i.cmpnet.com/techlearning/techlearn/top_spacer.gif" width="775" height="9" alt="" border="0"></td>
+  </tr>
+  <tr valign="middle">
+    <td width="295"><img src="http://i.cmpnet.com/techlearning/techlearn/top_logo.gif" width="295" height="67" alt="" border="0"></td>
+    <td width="480">
+
+<!-- top banner -->
+
+    <!-- http://as.cmpnet.com/html.ng/affiliate=techlearning&pagepos=top&site=btgvmg&server=atg&target=/content/about/articles/staff.html&country=canada&state=ns&city=halifax -->
+<a target="_top" href="http://as.cmpnet.com/event.ng/Type=click&FlightID=18669&AdID=48144&TargetID=30&Segments=26,1411,3108,3448&Targets=30,2625,2878&Values=34,46,51,63,77,84,90,100,140,203,221,226,235,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=IP,10.40.1.103,&Redirect=http://www.techlearning.com/events/"><img src="http://i.cmpnet.com/ads/graphics/as5/sc/tlevents_468.gif" border=0 height=60 width=468 alt="Click Here!"></a><img src="http://as.cmpnet.com/event.ng/Type=count&AdID=48144&FlightID=18669&TargetID=30&Segments=26,1411,3108,3448&Targets=30,2625,2878&Values=34,46,51,63,77,84,90,100,140,203,221,226,235,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=&random=cmWrcbA,bbcolbmbhymlA" width=1 height=1 border=0>
+  
+
+</td>
+  </tr>
+  <tr valign="top">
+    <td width="795" colspan="2"><map name="navbar">
+<area alt="HOME" coords="39,0,98,18" href="/;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN">
+<area alt="TEACHERS" coords="186,0,264,18" href="/teacher;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN">
+<area alt="TECHNOLOGY COORDINATORS" coords="328,1,527,19" href="/techcoordinator;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN">
+<area alt="ADMINISTRATORS" coords="587,0,714,20" href="/administrator;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" shape="RECT">
+</map>
+<img src="http://i.cmpnet.com/techlearning/techlearn/top_navbar.gif" width="775" height="19" border="0" usemap="#navbar"></td>
+  </tr>
+</table>
+
+<!-- ---- END HEADER ---- -->
+
+<!-- ++++ START NAV_HOME ++++ -->
+
+
+
+				<!-- Middle Table -->
+<table width="775" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top">
+    <td width="150" bgcolor="#6699CC">
+	  
+	  <!-- Left Navbar Table -->
+	  <table width="150" border="0" cellspacing="0" cellpadding="0">
+	    <tr>
+		  <td height="5">&nbsp;</td>
+		</tr>
+		<tr>
+		  <td>
+	<div class="left_main_title"><a href="/content/about/tl_current.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">T&L Magazine</a></div>
+	<div class="left_main_title"><a href="/content/working/;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Educators' Outlook</a></div>
+	<div class="left_main_title"><a href="/digitalmedia/;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Digital Media</a></div>
+	<div class="left_main_title"><a href="/schoolcio/;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">School CIO</a></div>
+	<div class="left_main_title"><a href="/content/reviews/;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Resources</a></div>
+	<div class="left_main_title"><a href="/events/;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">T&L Events</a></div>
+	
+
+	      </td>
+		</tr>
+		<tr>
+		  <td align="center">
+		  		
+
+
+<!-- Title: getAd -->
+
+
+    <!-- http://as.cmpnet.com/html.ng/affiliate=techlearning&site=btgvmg&pagepos=tile&server=atg&target=/content/about/articles/staff.html&country=canada&state=ns&city=halifax -->
+<a target="_top" href="http://as.cmpnet.com/event.ng/Type=click&FlightID=34428&AdID=55379&TargetID=3795&Segments=27,1411,3108,3448&Targets=3795,2625,2878&Values=34,46,51,63,77,84,90,100,140,205,221,226,235,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=IP,10.40.1.103,&Redirect=http://www.techlearning.com/prodevnotes/"><img src="http://i.cmpnet.com/ads/graphics/as5/ps/Pro_Dev_notebook_ani.gif" border=0 height=60 width=120 alt="Click Here!"></a><img src="http://as.cmpnet.com/event.ng/Type=count&AdID=55379&FlightID=34428&TargetID=3795&Segments=27,1411,3108,3448&Targets=3795,2625,2878&Values=34,46,51,63,77,84,90,100,140,205,221,226,235,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=&random=djbelwi,bbcolbmbhymmb" width=1 height=1 border=0>
+  
+			</td>
+		</tr>
+		<tr>
+		  <td align="center"><br>
+				
+
+
+<!-- Title: getAd -->
+
+
+    <!-- http://as.cmpnet.com/html.ng/affiliate=techlearning&site=btgvmg&pagepos=toprightbutton&server=atg&target=/content/about/articles/staff.html&country=canada&state=ns&city=halifax -->
+<a target="_top" href="http://as.cmpnet.com/event.ng/Type=click&FlightID=18678&AdID=45945&TargetID=2955&Segments=42,1411,3108,3448,3551&Targets=27,2625,2878,2955&Values=34,46,51,63,77,84,90,100,140,221,226,235,238,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=IP,10.40.1.103,&Redirect=http://www.techlearning.com/teacher/"><img src="http://i.cmpnet.com/ads/graphics/as5/aj/tile_amerattic.gif" border=0 height=60 width=120 alt="Click Here!"></a><img src="http://as.cmpnet.com/event.ng/Type=count&AdID=45945&FlightID=18678&TargetID=2955&Segments=42,1411,3108,3448,3551&Targets=27,2625,2878,2955&Values=34,46,51,63,77,84,90,100,140,221,226,235,238,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=&random=cIdpbjW,bbcolbmbhymme" width=1 height=1 border=0>
+  
+			</td>
+		</tr>
+		<tr>
+		  <td><br>
+	<div class="left_main_title"><a href="/content/about/;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">About Us</a></div>
+
+<div class="left_section_title"><a href="/content/about/techlearning.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">techLEARNING.com</a></div>
+<div class="left_section_title"><a href="/content/about/wce.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Well-Connected Educator</a></div>
+<div class="left_section_title"><a href="/content/about/articles/staff.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN#sales" class="left_main_link">Sales and Advertising</a></div>
+<div class="left_section_title"><a href="/mediakit/;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Media Kit</a></div>
+<div class="left_section_title"><a href="/events/techforum;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Tech Forum</a></div>
+<div class="left_section_title"><a href="/content/about/press/;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Press Releases</a></div>
+
+	<div class="left_small_title"><a href="/content/about/faq.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">FAQ</a></div>
+	<div class="left_small_title"><a href="/content/resources/newsletter.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Free Newsletters</a></div>
+	<div class="left_small_title"><a href="/content/about/tl_sub.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Subscribe to T&L</a></div>
+	<div class="left_small_title"><a href="/content/ad/downloads.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Media Kit</a></div>
+	
+	<div class="left_small_title"><a href="/content/about/articles/staff.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Contact Us</a></div>
+		  </td>
+		</tr>
+		<tr>
+		  <td align="center">
+	<div class="db_form_titles">Site Search</div>
+	
+<form action="/search/resultsw.jhtml;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="db_forms">
+<input type="text" name="queryText" size="16" maxlength="25" length="20"><br>
+<input type="submit" value="Search">
+<div class="sponsor_link"><a href="/content/working/articles/search_wDF.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN">Advanced search</a></div>
+</form>
+
+		  </td>
+		</tr>
+		<tr>
+		  <td align="center">
+	<div class="db_form_titles">Search Databases</div>
+<form action="/html/toc/dummy;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" method="post" class="db_forms">
+<select name="choice" size="1" onChange="jump(this.form)">
+<option value="">Choose a DB --></option>
+<option value="/content/working/articles/search_wDF.html">Articles</option>
+<option value="/resources/events.jhtml">Events</option>
+<option value="/resources/grants.jhtml">Grants</option>
+<option value="/resources/product_announce.jhtml">Product Announce</option>
+<option value="/resources/product_guide.jhtml">Reviews</option>
+<option value="/resources/web_picks.jhtml">Web Picks</option>
+
+
+</select></form>
+		  </td>
+		</tr>
+		<tr>
+		  <td align="center">
+<map name="quickmore">
+<area alt="Take a QuickPoll" coords="16,5,77,55" href="#" onclick="window.open('/quickpoll/index.jhtml','quickpoll','width=300,height=500,resizable');return false">
+<area alt="More@Content" coords="88,9,129,49" href="/more.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN">
+</map>
+<img src="http://i.cmpnet.com/techlearning/techlearn/quickmore_logo.gif" width="150" height="60" border="0" usemap="#quickmore">
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+	<div class="left_small_title"><a href="/content/speak/articles/write.html;jsessionid=CAJ5RTKKLOGGGQSNDBGCKH0CJUMEKJVN" class="left_main_link">Become a techLEARNING.com author</a></div>
+		  </td>
+		</tr>
+	  </table>
+	</td>
+	<td width="625">
+		  <!-- Main Table -->
+	  <table width="625" border="0" cellspacing="0" cellpadding="0">
+		<!-- Top Row -->
+	    <tr valign="top">
+		  <td>
+		  
+
+			
+
+<!-- ---- END NAV_HOME ---- -->
+	 
+	  <!-- Main Table -->
+		
+	</td>
+	</tr>
+
+    <!-- Lower Row -->
+    <tr valign="top">
+      <td colspan="2">
+      <table width="625" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+					<td width="20">&nbsp;</td>
+					<td width="457">
+<!-- BEGIN MAIN CONTENT -->
+						
+
+            <table width=450 border=0>
+						<tr>
+<!--							<td width="5"></td>  -->
+							<td>
+
+                                
+
+            		
+
+
+
+
+<!-- ltoc=/html/toc/nav_about.html -->
+
+	  
+<div class="breadcrumb">
+<a href="/">Home</a> > <a href="/content/about/index.html">About Us</a> > Contact Us
+</div>
+
+
+
+
+
+<h4>Contact Us</h4>
+
+<a name="office"></a>
+<h5>Office Address</h5>
+<p>Technology & Learning<br>
+<GEO TYPE="US">600 Harrison Street<br>
+San Francisco, CA 94107</GEO><br>
+General: (415) 947-6746<br>
+Editorial: (415) 947-6760<br>
+Fax: (415) 947-6041</p>
+
+<a name="magazine"></a>
+<h5>Magazine Staff</h5>
+<p><a href="mailto:smclester@cmp.com">Susan McLester</a>, Editor in Chief</p>
+<p><a href="mailto:apoftak@cmp.com">Amy Poftak</a>, Executive Editor</p>
+<p><a href="mailto:mthatcher@cmp.com">Michelle Thatcher</a>, Managing Editor, Software Editor</p>
+<p><a href="mailto:jphares@cmp.com">Janet Phares</a>, Art Director</p>
+<!--<p><a href="mailto:rreuter@cmp.com">Ron Reuter</a>, Sales &amp; Marketing Coordinator</p>-->
+
+<a name="online"></a>
+<h5>Online Staff</h5>
+<p><a href="mailto:gwensol@earthlink.net">Gwen Solomon</a>, Director</p>
+<p><a href="mailto:margaret_minnick@yahoo.com">Margaret Minnick</a>, Web Producer</p>
+<p><a href="mailto:mthatcher@cmp.com">Michelle Thatcher</a>, Special Projects Coordinator</p>
+<p>
+	Professional Development QuickTips Coordinator: <a href="mailto:bbray@compstrategies.com">Barbara Bray</a><br>
+	Leaders' Edge and School Site Coordinator: <a href="mailto:sjbrooks@aol.com">Susan Brooks-Young</a>
+</p>
+
+
+<a name="sales"></a>
+<h5>Sales and Advertising</h5>
+
+<ul><li><a href="/content/ad/downloads.html">Media Kit</a></ul>
+
+<p><a href="mailto:jmcdevitt@cmp.com">Jo-Ann McDevitt</a>, Publisher<br>
+(415) 947-6752</p>
+
+<p><a href="mailto:stschinkel@cmp.com">Simon Tschinkel</a>,  National Sales Manager<br>
+Technology & Learning<br>
+CMP Media, LLC<br>
+<GEO TYPE="US">3 Park Avenue<br>
+New York, NY 10016</GEO><br>
+(212) 600-3094 voice<br>
+(212) 600-3122 fax<br>
+</p>
+
+
+<p><a href="mailto:aknapp@cmp.com">Allison Knapp</a>, Western Region Account Manager<br>
+(415) 947-6151</p>
+
+<p><a href="mailto:prife@cmp.com">Patrick Rife</a>, Account Manager<br>
+(415) 947-6267 voice
+(415) 947-6041 fax</p>
+
+
+
+
+								
+
+            	</td>	
+						</tr>
+						</table>
+
+          
+<!-- END MAIN CONTENT -->
+					</td>
+            
+								<td width="10">&nbsp;</td>
+								<td align="middle">
+
+
+
+<br>
+
+    <!-- http://as.cmpnet.com/html.ng/affiliate=techlearning&pagepos=sky&site=btgvmg&server=atg&target=/content/about/articles/staff.html&country=canada&state=ns&city=halifax -->
+<a target="_top" href="http://as.cmpnet.com/event.ng/Type=click&FlightID=18668&AdID=41761&TargetID=28&Segments=28,1411,3108,3448&Targets=28,2625,2878&Values=34,46,51,63,77,84,90,100,140,206,221,226,235,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=IP,10.40.1.103,&Redirect=http://www.techlearning.com/content/resources/newsletter.html"><img src="http://i.cmpnet.com/ads/graphics/cs/ar/tl_newsletter_sky.gif" border=0 height=600 width=120 alt="Click Here!"></a><img src="http://as.cmpnet.com/event.ng/Type=count&AdID=41761&FlightID=18668&TargetID=28&Segments=28,1411,3108,3448&Targets=28,2625,2878&Values=34,46,51,63,77,84,90,100,140,206,221,226,235,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=&random=cRmctpW,bbcolbnbhymnW" width=1 height=1 border=0>
+  
+
+			</td>
+							
+			</tr>
+			</table>
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+
+<table width="775" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><br><br><div class="footer_text">TechLEARNING is brought to you by <a href="http://www.cmp.com/">CMP Media LLC</a><br>
+<a href="http://www.cmpnet.com/delivery/copyright.html">Copyright &copy; 2005</a>  <a href="http://www.cmpnet.com/delivery/privacy.html">Privacy Statement</a> - <a href="http://www.cmp.com/delivery/terms.html">Terms of Service</a></div></td>
+  </tr>
+    <tr>
+    <td align="center"><!-- Bottom banner -->
+
+
+    <!-- http://as.cmpnet.com/html.ng/affiliate=techlearning&pagepos=bottom&site=btgvmg&server=atg&target=/content/about/articles/staff.html&country=canada&state=ns&city=halifax -->
+<a target="_top" href="http://as.cmpnet.com/event.ng/Type=click&FlightID=18670&AdID=29086&TargetID=29&Segments=29,1411,3108,3448&Targets=29,2625,2878&Values=34,46,51,63,77,84,90,100,140,204,221,226,235,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=IP,10.40.1.103,&Redirect=http://www.techlearning.com/content/resources/newsletter.html"><img src="http://i.cmpnet.com/ads/graphics/cs/ar/newslettersignup.gif" border=0 height=60 width=468 alt="Click Here!"></a><img src="http://as.cmpnet.com/event.ng/Type=count&AdID=29086&FlightID=18670&TargetID=29&Segments=29,1411,3108,3448&Targets=29,2625,2878&Values=34,46,51,63,77,84,90,100,140,204,221,226,235,442,646,658,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=&random=cpartrn,bbcolbnbhymob" width=1 height=1 border=0>
+  
+
+<br>
+<!--popup ad-->
+
+    <!-- http://as.cmpnet.com/html.ng/affiliate=techlearning&pagepos=popup&site=btgvmg&server=atg&target=/content/about/articles/staff.html&country=canada&state=ns&city=halifax -->
+<a target="_top" href="http://as.cmpnet.com/event.ng/Type=click&FlightID=17681&AdID=27494&TargetID=2878&Segments=1173,1411,3108,3448&Targets=898,2625,2878&Values=34,46,51,63,77,84,90,100,140,221,226,235,442,646,658,771,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=IP,10.40.1.103,&Redirect=http://www.cmp.com"><img src="http://i.cmpnet.com/ads/graphics/as5/rk/iopsblank.gif" border=0  alt=""></a><img src="http://as.cmpnet.com/event.ng/Type=count&AdID=27494&FlightID=17681&TargetID=2878&Segments=1173,1411,3108,3448&Targets=898,2625,2878&Values=34,46,51,63,77,84,90,100,140,221,226,235,442,646,658,771,1184,1716,1767,1785,1901,1925,1935,1936,1945,1970,1979,2277,2299,2310,2328,2352,2678,2862,2878&RawValues=&random=bNiirhq,bbcolbnbhymof" width=1 height=1 border=0>
+  
+<!-- will pop if needs to, won't if it doesn't need to. yippee-->
+
+</td>
+  </tr>
+</table>
+
+
+					
+			
+			
+
+
+
+
+
+      
+
+  

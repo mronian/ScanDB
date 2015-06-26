@@ -1,0 +1,695 @@
+<DOC>
+<DOCNO>g00409</DOCNO>
+<DOCHDR>http://www.duluthsuperior.com/mld/duluthsuperior/contact_us</DOCHDR>
+
+
+
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+
+var rm = false;
+
+</script>
+<title>Contact Us -- DuluthSuperior.com</title>
+<link rel='stylesheet' type='text/css' href='/css/palette/duluthsuperior/en/global.css'/><script type="text/javascript" language="javascript">
+
+_krdDartOrd = new Date().getTime();
+
+_krdDartInc = 0;
+var navReady = false;
+var toolsReady = false;var onLoadScript="";function Browser() {var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+// I have disabled the following line, but something similar might be useful later,
+// but launching a popup window is more polite than this alert.
+//if (!b) alert(''Unidentified browser./nThis browser is not supported,'');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.ns=(this.b=="ns" && this.v>=4);
+this.ns4=(this.b=="ns" && this.v==4);
+this.ns6=(this.b=="ns" && this.v==5);
+this.ie=(this.b=="ie" && this.v>=4);
+this.ie4=(this.version.indexOf('MSIE 4')>0);
+this.ie4up = (this.ie && this.v>= 4);
+this.ns5up = (this.ns && this.v>= 5);
+this.ie5=(this.version.indexOf('MSIE 5')>0);
+this.ie5up = (this.ie5);
+this.ie55=(this.version.indexOf('MSIE 5.5')>0);
+this.opera=(this.b=="opera");
+this.def=(this.ie||this.dom);var ua=navigator.userAgent.toLowerCase();
+this.mac = (ua.indexOf("mac")!=-1);if (ua.indexOf("win")>-1) this.platform="win32";
+else if (ua.indexOf("mac")>-1) this.platform="mac";
+else this.platform="other";
+}
+var is = new Browser();
+// tiny extra css. these are ONLY used by old browsers.
+// VAST majority of users will NEVER request these files.
+// Even NS4 is around 7% of market and falling
+if (is.ns4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/duluthsuperior/en/browser/ns4.css'>\n";
+document.write(css);
+}
+if (((is.ns4)||(is.ie4))&&( is.mac)) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/duluthsuperior/en/browser/ns4mac.css'>\n";
+document.write(css);
+}
+if (is.ie4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/duluthsuperior/en/browser/ie4.css'>\n";
+document.write(css);
+}
+
+function LayerObject(divId) {
+this.name = divId;
+if (is.ns4) this.ob = eval("document." +divId);
+else if (is.ie4) this.ob = document.all(divId);
+else this.ob = document.getElementById(divId);
+this.x = 0;
+this.y = 0;
+this.width = this.getWidth();
+this.height = this.getHeight();
+}
+LayerObject.prototype.px = (is.version>=5)?"px":"";
+LayerObject.prototype.hideSyntax = (is.ns4)? "hide":"hidden";
+LayerObject.prototype.showSyntax = "visible";// NS4::  Unbelievable, but document.layername.document.imgname works for img-in-layer-in document
+// and it works for img in layer in table in document.
+// but it doesnt work for img in layer in table in table in document.
+// Maybe a workaround exists, but it seems unlikely at this point.
+// The images MUST therefore be nested only one deep....
+LayerObject.prototype.getInlineLeft = function() {
+if (is.ns4) return this.ob.pageX;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var xPos = 0;
+var yPos = 0;
+while (elem.offsetParent != null) {
+xPos += elem.offsetLeft;
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) xPos += 2;
+return xPos;
+}
+else return (this.ob.offsetLeft + document.body.offsetLeft);
+}
+
+LayerObject.prototype.getInlineTop = function() {
+if (is.ns4) return this.ob.pageY;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var yPos=0;
+while (elem.offsetParent != null) {
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) yPos += 2;
+return yPos;
+}
+else return (this.ob.offsetTop+ document.body.offsetTop);
+}
+
+//getWidth and getHeight works for both inline and positioned divs.
+LayerObject.prototype.getWidth = function () {
+if (is.ns4) return this.ob.clip.width;
+else if (is.opera) return this.ob.style.pixelWidth;
+else return this.ob.offsetWidth;
+}
+LayerObject.prototype.getHeight = function () {
+if (is.ns4) return this.ob.clip.height;
+else if (is.opera) return this.ob.style.pixelHeight;
+else return this.ob.offsetHeight;
+}
+LayerObject.prototype.hide = function() {
+if (is.ns4) this.ob.visibility = this.hideSyntax;
+else this.ob.style.visibility = this.hideSyntax;
+}
+LayerObject.prototype.show = function() {
+if (is.ns4) this.ob.visibility = this.showSyntax;
+else this.ob.style.visibility = this.showSyntax;
+}
+LayerObject.prototype.moveLayerTo = function(toX, toY) {
+this.x = toX;
+this.y = toY;
+}
+LayerObject.prototype.updateLayer = function() {
+if (is.ns4) {
+this.ob.left = Math.round(this.x) + this.px;
+this.ob.top = Math.round(this.y)+ this.px ;
+}
+else {
+this.ob.style.left = Math.round(this.x) + this.px;
+this.ob.style.top = Math.round(this.y) + this.px;
+}
+}
+//-----------------
+function roll(divName, imgName, which) {
+var suffix = (which==1)?"on":"off"
+if ((is.ns4)&&(divName!=0)) {
+var imgObject = eval("document." + divName +".document.images['"+imgName +"']");
+imgObject.src = eval(imgName + "_" + suffix + ".src");
+}
+else {
+document.images[imgName].src = eval(imgName + "_" + suffix + ".src");
+}
+}
+
+function init() {
+if (onLoadScript) eval(onLoadScript);
+}
+
+// Workaround for the netscape resize problem --
+// namely, on resize ns looses div positioning and
+// styles from css files.
+// This checks to see if the window''s dimensions have
+// actually changed (because Netscape often fires a
+// false onResize event when it forms scrollbars);
+// if the dimensions have changed, page is reloaded
+function resizefix(){
+if((document.resizeFix.initWidth != window.innerWidth) ||
+(document.resizeFix.initHeight != window.innerHeight))
+{
+document.location = document.location;
+}
+}
+
+// This code creates a new object with properties
+// to hold the current window width & height to be
+// used in the event of a netscape resize
+document.resizeFix = new Object();
+if(is.ns4){
+document.resizeFix.initWidth = window.innerWidth;
+document.resizeFix.initHeight = window.innerHeight;
+window.onresize=resizefix;
+}
+
+
+
+
+
+
+
+function initMenus(){
+}
+
+
+
+function showResults(siteSurveyKey) {
+var url="/mld/templates/contentModules/poll-results-popup.jsp"+ "?siteSurveyKey=" + siteSurveyKey;
+window.open(url, 'Title');
+}
+
+function openWin(URL) {
+aWindow = window.open(URL,
+'thewindow','width=500,height=400,resizable=yes,scrollbars=yes');
+}
+function getSite(){
+foundSite = false;
+site=document.location.hostname;
+endPos=site.indexOf(".com");
+if (endPos>= 1) {
+foundSite = true;
+site = site.substr(0, endPos);
+startPos = site.lastIndexOf(".");
+site = site.substr(startPos + 1);
+}
+return site;
+}
+function getPublication(){
+publication=document.location.pathname;
+startPos=publication.indexOf("/mld/");
+publication=publication.substr(startPos+5);
+endPos=publication.indexOf("/");
+publication=publication.substr(0,endPos);
+return publication;
+}
+function openSlideshow(url,width,height) {
+y=Math.floor((screen.availHeight-height)/2);
+x=Math.floor((screen.width-width)/2);
+window.open(url,'slideshow','width='+width+',height='+height+',top='+y+',left='+x+',scrollbars=yes,resizable=yes').focus();
+}
+
+
+
+</script>
+</head>
+<body class="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CDS : SDP2.5.0_full_02072005_100000 : production --><table width="768" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:5px;">
+<tr><td class="header1">
+
+
+<a HREF="http://www.duluthsuperior.com/mld/duluthsuperior/contact_us/subscriptions_np1/"><img SRC="/images/logos/site/duluthsuperior/duluthsuperior/mediapartners/sm_logo_duluthtribune.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a>
+
+
+
+</td><td class="header2">
+<a href="/"><img src="/images/logos/site/duluthsuperior/duluthsuperior/site_logo_340x60.gif" width="340" height="60" alt="" hspace="0" vspace="0" border="0"/></a>
+</td><td class="header3">
+
+
+
+<a href="http://weather.duluthsuperior.com"><img src="http://banners.wunderground.com/banner/krd_cond/language/www/US/MN/Duluth.gif" alt="Weather" hspace="0" vspace="0" border="0"></a>
+<br>
+
+
+
+<a href="http://weather.duluthsuperior.com">Complete Forecast</a>
+
+
+
+</td><td class="header4">
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/duluthsuperior.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;dcopt=ist;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/duluthsuperior.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109897042060?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/duluthsuperior.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109897042060?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+</td></tr></table>
+
+
+
+
+
+<script id="search_box_center_jsp_script" language="javascript" type="text/javascript">
+function searchFormSubmit(form) {
+if (form.searchSelect[1].checked == true) {
+window.location = "http://www.newslibrary.com/nlsearch.asp?forceTheme=RealCities&s_site=duluthsuperior&search_mode=all&action=search&date_mode=year&year=last+180+days&sort=d%3Ah&nitems=10&region=nt&dbquery=" + form.query.value;
+return false;
+}
+return true;
+}
+</script><table cellspacing="0" cellpadding="0" border="0" width="768"><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr><tr><td align="center" class="navbg1">
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/duluthsuperior.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/duluthsuperior.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109897042062?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/duluthsuperior.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109897042062?" BORDER="0" ></A>
+</NOSCRIPT>
+
+</td></tr><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr></table><table cellspacing="0" cellpadding="0" border="0" width="768">
+<form action="http://www.duluthsuperior.com/mld/duluthsuperior/search/search_results.htm" method="get" name="SearchForm_top" onsubmit="return searchFormSubmit(this)">
+<input type=hidden name="pubName" value="duluthsuperior">
+<input type=hidden name="orderBy" value="date">
+<input type=hidden name="pageStart" value="1">
+
+
+<input type="hidden" name="sitesToSearch" value="duluthsuperior,duluthtribune,realcities">
+
+
+
+<input type=hidden name="pageSize" value="10">
+<input type=hidden name="fieldsToSearch" value="HEADLINE,FORSEARCH,LEAD,BYLINE">
+<input type=hidden name="queryType" value="all">
+<tr style="background-color:#f2f2f2;">
+<td class="newsearch">
+
+<b>Search</b>&nbsp;
+
+
+<input name="searchSelect" value="article" type="radio" checked>Recent News&nbsp;
+
+
+
+<input name="searchSelect" value="archives" type="radio">Archives&nbsp;
+
+
+
+
+<input name="searchSelect" value="web" type="radio">Web&nbsp;&nbsp;
+
+
+
+<b>for&nbsp;&nbsp;</b><input name="query" size="25" maxlength="256" type="text">&nbsp;&nbsp;<input value="Go" type="submit">
+
+</td><script language="javascript" type="text/javascript">
+document.write('<td class="newregbox">');
+if (rm) {
+document.write('Welcome <b>' + rname + '</b><br>');
+
+document.write('	<a href="https://secure.duluthsuperior.com/listit/myclassifieds/">My Classifieds</a>&nbsp;|&nbsp;');
+
+document.write('<a href="https://registration.duluthsuperior.com/reg/myAccount.do">My Account</a>&nbsp;|&nbsp;');
+document.write('<a href="https://registration.duluthsuperior.com/reg/logout.do">Sign Out</a>');
+} else {
+document.write('	Welcome <b>Guest</b><br />');
+document.write('	<a href="https://registration.duluthsuperior.com/reg/createAccount.do">Sign Up</a>&nbsp;|&nbsp;<a href="https://registration.duluthsuperior.com/reg/login.do">Sign In</a>&nbsp;|&nbsp;');
+document.write('	<a href="https://registration.duluthsuperior.com/reg/memberBenefits.do">Member Benefits</a>');
+}
+document.write('</td>');
+</script>
+</tr></form>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="columndiv" width="134"><img src="/images/common/spacer.gif" width="134" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="472"><img src="/images/common/spacer.gif" width="472" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="160"><img src="/images/common/spacer.gif" width="160" height="1"></td></tr><tr>
+<td class="leftrail" valign="top" align="center" width="134">
+
+
+
+<!-- classifieds -->
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BGCOLOR="#ffffff"><TR><TD>
+<div style="border-left:4px solid #1e4380;">
+<div class="contentnav" style="border-top:1px solid #cccccc;"><img src="http://www.duluthsuperior.com/multimedia/duluthsuperior/images/duluth_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/duluthsuperior/classifieds/employment/"><B>Jobs</B></A></div>
+<div class="contentnav"><img src="http://www.duluthsuperior.com/multimedia/duluthsuperior/images/duluth_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/duluthsuperior/classifieds/automotive/"><B>Cars</B></A></div>
+<div class="contentnav"><img src="http://www.duluthsuperior.com/multimedia/duluthsuperior/images/duluth_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/duluthsuperior/classifieds/real_estate/"><B>Real Estate</B></A></div>
+<div class="contentnav"><img src="http://www.duluthsuperior.com/multimedia/duluthsuperior/images/duluth_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.apartments.com/search/oasis.dll?p=duluth&Area2=Y&page=SubArea&state=MN&rgn1=60&partner=duluth&prvpg=3"><B>Apartments</B></A></div>
+<div class="contentnav"><img src="http://www.duluthsuperior.com/multimedia/duluthsuperior/images/duluth_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.shoplocal.com/duluthsuperior/new_user_entry.aspx?CityStateZip=55701&AdRef=link03"><B>Local Shopping</B></A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/duluthsuperior/new_user_entry.aspx?CityStateZip=55701&AdRef=link03">Find Sales & Deals</A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/duluthsuperior/new_user_entry.aspx?CityStateZip=55701&AdRef=link03">Shop Local Stores</A><BR /></div>
+<div class="contentnav"><img src="http://www.duluthsuperior.com/multimedia/duluthsuperior/images/duluth_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/duluthsuperior/classifieds/"><B>All Classifieds</B></A></div>
+<div class="contentnav"><img src="http://www.duluthsuperior.com/multimedia/duluthsuperior/images/duluth_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/duluthsuperior/classifieds/personals/"><B>Personals</B></A></div>
+</div>		
+</TD></TR></TABLE>
+
+<DIV style="text-align: left; background-color:#fff;">
+
+<!-- site nav -->
+<div class="navtitlebar"></div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/news/"><B>News</B></A><BR />
+	  •  <A HREF="/mld/duluthsuperior/news/local/">Local</A><BR />
+	  •  <A HREF="/mld/duluthsuperior/news/nation/">Nation</A><BR />
+	  •  <A HREF="http://www.legacy.com/duluthsuperior/">Obituaries</A></div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/sports/"><B>Sports</B></A></div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/entertainment/"><B>Entertainment</B></A></div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/business/"><B>Business</B></A></div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/living/"><B>Living</B></A><BR />
+	  •  <A HREF="/mld/duluthsuperior/living/health/">Health</A><BR />
+	  •  <A HREF="/mld/duluthsuperior/living/community/">Communities</A></div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/news/editorial/"><B>Opinion / Letters</B></A><BR />
+	  •  <A HREF="/mld/duluthsuperior/news/columnists/">Columnists</A></div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/sports/outdoors/"><B>Outdoors</B></A></div>
+	  
+
+
+<DIV style="text-align: left; background-color:#fff;">
+
+<!-- online extras -->
+<div class="navtitlebar">ONLINE EXTRAS</div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/archives/"><B>Archives</B></A></div>
+<div class="contentnav"><A HREF="http://216.70.11.13/view/view.shtml"><B>Aquarium Cam</B></A><BR /></DIV>
+<div class="contentnav"><A HREF="http://forums.realcities.com/dir-app/nav/forumdirectory.aspx?webtag=kr-duluthz&byName=y"><B>Discussion Boards</B></A></div>
+<div class="contentnav"><A HREF="http://maps.duluthsuperior.com/jump.cgi/refsrc=KR.1209"><B>Maps & Directions</B></A></div>
+<div class="contentnav"><A HREF="http://newspaperads.duluthsuperior.com/RopCategory.aspx"><B>Newspaper Ads</B></A></div>
+<div class="contentnav"><A HREF="http://yp.duluthsuperior.com/bin/cgidir.dll?MEM=1209"><B>Yellow Pages</B></A></div>			
+
+
+<!-- site services -->
+<div class="navtitlebar">SITE SERVICES</div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/contact_us/"><B>Contact Us</B></A></div>
+<div class="contentnav"><A HREF="/mld/duluthsuperior/contact_us/advertise/"><B>Advertise</B></A></div>
+
+</DIV>
+
+<BR />
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td>
+<td class="centerrail" valign="top" align="center" width="472">
+
+
+
+
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="2" width="97%">
+<tr><td valign="middle"><a href="/mld/duluthsuperior/" class="related">Back to Home</a>&nbsp;&gt;&nbsp;
+</td><td align="right" class="byline">Thursday, Mar 03, 2005</td></tr><tr><td colspan="2" align="center" bgcolor="#ffffff"> <img src="/images/common/spacer.gif" width="1" height="1" /><br></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="97%">
+<tr> <td align="center" class="pagetitle" width="100%">Contact Us</td><td align="right" width="1" valign="top"><img src="/images/common/spacer.gif" width="1" height="1" /></td><td align="right"  valign="top">
+
+</td></tr></table><table border="0" cellpadding="0" cellspacing="0" width="97%" align="center">
+<tr><td align="center">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center" bgcolor="#cccccc">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center" bgcolor="#cccccc">
+<img src="/images/common/spacer.gif" width="1" height="1" /><br></td></tr></table><img src="/images/common/spacer.gif" width="100%" height="5" /><br></div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td><td><center><b>Duluth News Tribune</b><br>
+424 W. First St.<br>
+Duluth, MN 55802<br>
+(218) 723-5281 or (800) 456-7979<br><br><TABLE cellSpacing=0 cellPadding=2 width="95%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc>
+<TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+<TBODY>
+<TR>
+<TD align=middle bgColor=#ffffff><SPAN class=bulletin><B>»</B></SPAN> <A
+href="http://classifieds.duluthsuperior.com/dnt/home/support/faq.html"><B>Click
+here for information and feedback on the online classifieds.</B>
+</A><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><BR><!-- COMPONENT 28  SKYBOX , variation 04  --><!--  NOTE THAT ANY SPACES IN THE FIELD "COMPONENT TITLE" MUST BE REPLACED BY &nbsp; TO GET NETSCAPE LOOKING OK IT WAS EITHER THIS, OR A SURPRISINGLY HUGE AMOUNT OF TABLECODE PER COMPONENT.  HOPEFULLY THIS ISNT A HUGE ISSUE FOR THE JSP, CAUSE THE FILESIZE SAVINGS ARE SIGNIFICANT, AND THE STRETCHY LINE IS A KEY DESIGN ELEMENT FOR INLINE COMPONENTS .  WE TRIED NOBR, AND MANY OTHER IDEAS.  -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10><IMG height=1 alt="" src="/images/common/spacer.gif" width=10>
+</TD>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD
+class=smalltitle><NOBR>PROBLEM WITH THE WEBSITE?  </NOBR></TD>
+<TD width="100%">
+<HR width="100%" color=#cccccc SIZE=1>
+</TD></TR></TBODY></TABLE></TD>
+<TD width=10 rowSpan=2><IMG height=1 alt="" src="/images/common/spacer.gif"
+width=10> </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/duluthsuperior/contact_us/help/faq/">Frequently Asked
+Questions</A></B> - Can't find what you are looking for? Please read through our
+list of common questions before reporting a problem.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="/mld/duluthsuperior/contact_us/feedback/">Report a
+technical problem</A></B><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="/mld/duluthsuperior/archives.htm">Need to find an
+article?</A></B> - Search our archives. Stories from the last 7 days are
+available by clicking on the <A
+href="/mld/duluthsuperior/archives/"><B>7-Day Archive</B></A> link from
+this page. Older stories are accessible from the <A
+href="/mld/duluthsuperior/archives/#form"><B>Newslibrary</B></A><BR></TD></TR></TBODY></TABLE><!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   --><IMG
+height=25 alt="" src="/images/common/spacer.gif" width="100%"><BR><!-- END COMPONENT 28 SKYBOX -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10><IMG height=1 alt="" src="/images/common/spacer.gif" width=10>
+</TD>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD
+class=smalltitle><NOBR>CONTACTING THE NEWSPAPER  </NOBR></TD>
+<TD width="100%">
+<HR color=#cccccc SIZE=1>
+</TD></TR></TBODY></TABLE></TD>
+<TD width=10 rowSpan=2><IMG height=1 alt="" src="/images/common/spacer.gif"
+width=10> </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="/mld/duluthsuperior/contact_us/about_np1/">About
+the Duluth News Tribune</A></B><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/duluthsuperior/contact_us/feedback_np1/">Contact the
+newsroom</A></B> - You can reach the newsroom by phone at (218) 723-5300 or (800) 456-8282 
+or reach specific newsroom personnel from the <A
+href="/mld/duluthsuperior/contact_us/contact_list/newspaper_staff_np1/"><B>Contact
+Page</B></A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="mailto:letters@duluthnews.com">Write a letter to the
+editor</A></B></A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="mailto:cityeditors@duluthnews.com">Send information to the Local section</A></B></A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="mailto:biz@duluthnews.com">Send information to the Business section</A></B></A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="mailto:nightlife@duluthnews.com">Send information to the Night Life section</A></B></A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="mailto:faith@duluthnews.com">Send information to the Faith section</A></B></A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="mailto:sports@duluthnews.com">Send information to the Sports section</A></B></A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="mailto:us@duluthnews.com">Send information to the
+Us section</A></B></A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/duluthsuperior/contact_us/contact_list/departments_np1/">Contact
+Information</A></B> - Contact information for customer service, circulation,
+advertising and more at the Duluth News Tribune.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/duluthsuperior/contact_us/subscriptions_np1/">Subscriptions</A></B>
+- Subscribe to the printed version of the Duluth News Tribune or report a problem with your
+subscription to our <A href="mailto:Subscribe@duluthnews.com">customer service
+department</A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/duluthsuperior/contact_us/advertise_np1/">Newspaper Advertising</A></B>
+- Want to place a classified ad? <A href="http://classifieds.duluthsuperior.com/dnt/home/support/placead.html">Click here</a> to place
+your ad in print and online.<BR></TD></TR>
+
+
+</TBODY></TABLE><!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   --><IMG
+height=25 alt="" src="/images/common/spacer.gif" width="100%"><BR><!-- END COMPONENT 28 SKYBOX -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10><IMG height=1 alt="" src="/images/common/spacer.gif" width=10>
+</TD>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD
+class=smalltitle><NOBR>HOW TO ADVERTISE ON THIS SITE  </NOBR></TD>
+<TD width="100%">
+<HR color=#cccccc SIZE=1>
+</TD></TR></TBODY></TABLE></TD>
+<TD width=10 rowSpan=2><IMG height=1 alt="" src="/images/common/spacer.gif"
+width=10> </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/duluthsuperior/contact_us/advertise/">Advertise in the Duluth
+News Tribune or on Duluthsuperior.com</A></B><BR></TD></TR>
+<!-- <TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="http://www.knightridderdigital.com/network/index.html">About the
+RealCities Network</A></B><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="http://www.knightridderdigital.com/press/index.html">Press
+Center</A></B><BR></TD></TR> --></TBODY></TABLE>
+</td><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td></tr></table>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="rightrail" valign="top" align="center" width="160">
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/duluthsuperior.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/duluthsuperior.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109897042090?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/duluthsuperior.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109897042090?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/duluthsuperior.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/duluthsuperior.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109897042090?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/duluthsuperior.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109897042090?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="leftrail" width="134">
+<img src="/images/common/spacer.gif" width="134" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="centerrail" width="100%" align="center">
+<img src="/images/common/spacer.gif" width="450" height="1"/><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/duluthsuperior.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/duluthsuperior.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109897042091?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/duluthsuperior.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109897042091?" BORDER="0" ></A>
+</NOSCRIPT>
+
+<br/><br/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="rightrail" width="160">
+<img src="/images/common/spacer.gif" width="160" height="1"/></td></tr></table>
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="768"><tr><td rowspan="2" valign="top" class="footer"><a href="http://www.realcities.com" target="_blank"><img src="/images/palette/duluthsuperior/realcities_logo.gif" width="155" height="57" alt="RealCities" border="0"/></a>
+</td><td align="left" class="footer">
+<span class="lightgreylinks"><a href="/mld/duluthsuperior/news/"> News  |</a> <a href="/mld/duluthsuperior/business/"> Business  |</a> <a href="/mld/duluthsuperior/sports/"> Sports  |</a> <a href="/mld/duluthsuperior/entertainment/"> Entertainment  |</a> <a href="/mld/duluthsuperior/living/">Living  |</a> <a href="http://www.shoplocal.com/duluthsuperior/new_user_entry.aspx?CityStateZip=55701&AdRef=link02">Shop Local |</a> <a href="/mld/duluthsuperior/classifieds/"> Classifieds  |</a> <a href="/mld/duluthsuperior/classifieds/employment/"> Jobs  |</a> <a href="/mld/duluthsuperior/classifieds/automotive/"> Cars  |</a> <a href="/mld/duluthsuperior/classifieds/real_estate/"> Homes   </a><br><a href="/mld/duluthsuperior/contact_us/about">About DuluthSuperior.com |</a> <a href="/mld/duluthsuperior/contact_us/rc_sites/">About the Real Cities Network |</a> <a href="/mld/duluthsuperior/contact_us/terms_of_use">Terms of Use & Privacy Statement |</a> <a href="http://www.knightridder.com">About Knight Ridder |</a> <a href="/mld/duluthsuperior/contact_us/copyright">Copyright  </a><br></span>
+</td></tr></table>
+
+</body>
+</html>
+
+
+

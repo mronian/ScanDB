@@ -1,0 +1,628 @@
+<DOC>
+<DOCNO>f00446</DOCNO>
+<DOCHDR>http://deals.hotels.com/hotel.asp?city=new+york&country=united+states</DOCHDR>
+
+<html>
+<head>
+<TITLE>Hotels.com > Cheap New York Hotels</TITLE>
+<META name=description content="Cheap new york hotels - With discounts off when you book online with Hotels.com. The web #1 websites for booking hotels online, and the only site with a low rates guarantee for Hotels in new york.">
+<META name=keywords content="Book new york Hotels,Reservations,Accomodation,Hotel In new york, Discount hotels, Hotel Rooms, new york, Hotel Rooms In united states">
+
+<script language="javascript" src="jsIncludes/indexJS.js"></script>
+<script language="javascript" src="jsIncludes/datesChange.js"></script>
+<script language="javascript" src="jsIncludes/shippingOptionsJS.js"></script>
+<script language="javascript" src="jsIncludes/passengerInfoJS.js"></script>
+<script language="javascript" src="default_files/loaddates.js"></script>
+<SCRIPT language=JavaScript src="default_files/mm_functions.js"></SCRIPT>
+<script language="javascript">
+<!--
+function handleError() {
+return true;
+}
+window.onerror = handleError;
+function openPopUnder() {
+//check for popunder cookie return if found
+if (document.cookie.indexOf("popunder") != -1) { return; }
+//create a cookie name = popunder value = false cookie expires at end of session
+document.cookie = "popunder=false;";
+popUnderWindow = window.open('/popups/popunders/tnowPopunder.jsp','popunder','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=600,height=400,left=100,top=100');
+self.focus();
+}
+function deleteCookie(name) {
+document.cookie = name + '=false; expires=Fri, 27 Jul 2001 02:47:11 UTC;path=/';
+}
+//-->
+
+function submitAdvancedSearchForm() {
+if (document.frm_Search.numberOfRooms.value == 5) {window.location="http://uk.hotels.com";
+return false;
+}
+if ((document.frm_Search.city.value == null || document.frm_Search.city.value == "") &&
+(document.frm_Search.otherDestText.value == "" || document.frm_Search.otherDestText.value == null)) {
+alert("You must enter a city.".replace("'","\'"));
+return false;
+}
+if (document.frm_Search.otherDestText.value != "" && document.frm_Search.otherDestText.value != null) {
+document.frm_Search.city.value=document.frm_Search.otherDestText.value;
+document.frm_Search.stateProvince.value='';
+document.frm_Search.country.value='';
+}
+if (document.frm_Search.streetAddress != null &&
+document.frm_Search.streetAddress.value.length > 0 &&
+document.frm_Search.country.options[document.frm_Search.country.selectedIndex].value != "US") {
+alert("A street address may only be specified for searches within the United States.".replace("'","\'"));
+document.frm_Search.streetAddress.select();
+document.frm_Search.streetAddress.focus();
+return false;
+}
+return true; }
+
+
+function MM_jumpMenu(targ,selObj,restore)
+{ //v3.0
+var CName = selObj.options[selObj.selectedIndex].text.toUpperCase();
+
+if (selObj.selectedIndex > 0)
+	{
+		if (restore) selObj.selectedIndex=0;
+		window.location.replace("Redirect.asp?Country=" + CName);
+	}
+else
+	{
+		return;
+	}
+
+}
+	function bookmarksite(title, url)
+	{
+		if (document.all) 
+		{
+			window.external.AddFavorite(url, title);
+		} 
+		else if (window.sidebar) 
+		{
+			window.sidebar.addPanel(title, url, "");
+		}
+	}
+
+
+</script>
+<style type="text/css">
+<!--
+.style3 {font-size: 24px}
+.bigHotelPrice{
+font-family:"Times New Roman", Times, serif,Arial,Verdana;
+font-size:15px;
+font-weight:bold;
+color:#2D5986;
+}
+}
+.Verdana10Black {
+	FONT-SIZE: 10px; 
+	COLOR:black; 
+	font-weight:bold;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	
+}
+-->
+</style>
+
+<link href="default_files/main.css" type=text/css rel=stylesheet>
+<LINK href="default_files/main(1).css" type=text/css rel=stylesheet>
+<LINK href="default_files/locations.css" type=text/css rel=stylesheet>
+<LINK href="default_files/new_style.css" type=text/css rel=stylesheet>
+<LINK href="default_files/new_style1.css" type=text/css rel=stylesheet>
+
+<script language="JavaScript" type="text/javascript" src="default_files/common.js"></script>
+</head>
+
+<iframe src="http://clkuk.tradedoubler.com/click?p=19300&a=1147771&g=15963044" width="0" height="0" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+<body topmargin="0" marginheight="0" bottommargin="0" leftmargin="10" marginwidth="10" link="#3333CC" alink="#3333CC" vlink="#CC0033">
+
+
+
+<table border="0" width="755" cellpadding="0"  cellspacing="0" class="header" bordercolor="#0000FF">
+	<tr><td width="755" colspan="2" height="4px" background="default_files/4px_redbar.gif"></td></tr>
+	<tr><td width="255" align="left" valign="middle"><div align="left" style=" margin:0px; padding:0px;"><a href="http://uk.hotels.com/index.jsp?pageName=guarantee&cid=51553&locale=en" rel="nofollow"><img src="default_files/uk_logo.gif" width="219" height="74" border="0" alt="Book a cheap hotel in new york"></a></div></td>
+		<td  class="BreadCrumb1" align="right" valign="bottom" style="padding-bottom:4px;">You're in:
+            <a class="BreadCrumb1" href="/.">Hotels</a> &gt;
+            <a class="BreadCrumb1" href="./country.asp?country=united states">United States</a> &gt;
+            <a class="BreadCrumb1" href="./hotel.asp?city=new york&country=united states">New York</a> &gt;
+	       <a class="BreadCrumb1" href="http://deals.hotels.com/hotel.asp?city=new york&country=united states">
+            Hotels in New York</a>&nbsp;&nbsp;&nbsp;
+		</td>
+	</tr>
+</table>
+<table width="755" height="45" border="0" cellpadding="0" cellspacing="0" bordercolor="#008000">
+<tr>
+    <td width="755" height="35" background="default_files/4px_redbar.gif" align="left" valign="bottom">
+		<table width="754" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td class="Small" width="10">&nbsp;</td>
+				<td width="25"><img src="default_files/uk_flag.gif" border="0"></td>
+				<td class="Small" width="5">&nbsp;</td>
+				<td width="130">
+					<select name="menu1" class="ClassDD" onchange="MM_jumpMenu('parent',this,0)">
+						<option selected value="http://uk.hotels.com/">Change country</option>
+						<option value="http://osterreich.hotels.com/">Austria</option>
+						<option value="http://belgie.hotels.com/">Belgium</option>
+						<option value="http://www.hotels.dk/">Denmark</option>
+						<option value="http://suomi.hotels.com/">Finland</option>
+						<option value="http://france.hotels.com/">France</option>
+						<option value="http://deutschland.hotels.com/">Germany</option>
+						<option value="http://ireland.hotels.com/">Ireland</option>
+						<option value="http://it.hotels.com/">Italy</option>
+						<option value="http://nederlands.hotels.com/">Netherlands</option>
+						<option value="http://www.hotell.com/">Norway</option>
+						<option value="http://polska.hotels.com/">Poland</option>
+						<option value="http://portugal.hotels.com/">Portugal</option>
+						<option value="http://rossija.hotels.com/">Russia</option>
+						<option value="http://southafrica.hotels.com/">South Africa</option>
+						<option value="http://peninsulaiberica.hotels.com/">Spain</option>
+						<option value="http://www.hotels.se/">Sweden</option>
+						<option value="http://www.hotels.ch/">Switzerland</option>
+						<option value="http://www.hotels.co.uk/">UK</option>
+						<option value="http://www.hotels.com/?isRedirect=true">USA</option>
+              			<option value="http://uk.hotels.com/index.jsp?pageName=globalSites&cid=51553&currencyCode=GBP&locale=en">More...</option>
+					</select>
+				</td>
+				<td class="Small" width="100">&nbsp;</td>
+				<td class="BSeprater" width="474" align="right">
+					<a href="/index.jsp?pageName=contactUs&cid=51553&locale=en" class="TopNavLinks">Contact Us </a> | 
+					<a href="/users/cancel/home.jsp?cid=51553&locale=en" class="TopNavLinks">Your Reservations</a> | 
+					<a href="/index.jsp?pageName=guarantee&cid=51553&locale=en" class="TopNavLinks">Best Price Guarantee</a> | 
+					<img src="default_files/bookmark.gif" width="15" height="11" align="top" alt="" border="0"> 
+					<a href="javascript:bookmarksite('Hotels.com - Best prices, Best places. Guaranteed.', '/')" class="TopNavLinks">Bookmark Page</a>
+		  		</td>
+				<td class="BSeprater" width="10" align="center">&nbsp;</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr bgcolor="#F7F7F7"><td height="5"></td></tr>
+</table>
+
+
+
+
+
+<table width="755" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    <td class="PageTitle1" valign="bottom"><h1 style="margin-bottom:5px;" class="PageTitle1">Book cheap 
+        
+        hotels in 
+        New York, 
+        United States, with last minute discounts.<br>
+       
+      </h1></td>
+  </tr>
+        
+  <tr>
+    <td valign="top"> 
+      <div align="justify"> 
+        <p class="hotelDescription1" style="margin-bottom:2px; ">Hotels.com lets 
+          you book top value 
+          
+          hotels in 
+          New York, 
+          United States
+          and is the leading online hotel reservation and accommodation booking 
+          specialist on the internet with access to to 
+          New York
+          hotels like 
+          <A class="linksintext" href="http://deals.hotels.com/Hotel-Details.asp?City=new york&Brand= &HotelID=152696">Wall Street District Hotel</a>, <A class="linksintext" href="http://deals.hotels.com/Hotel-Details.asp?City=new york&Brand=kimpton group llc&HotelID=126898">70 Park Avenue - A Kimpton Hotel</a> and <A class="linksintext" href="http://deals.hotels.com/Hotel-Details.asp?City=new york&Brand=summit hotels and resorts&HotelID=125871">San Carlos Hotel</a> and close to Metropolitan Area (NYC)
+          . You&#8217;ll find that making hotel reservations and booking a 
+          New York
+          hotel online has never been quicker, easier or cheaper, thanks to our 
+          extensive range of 
+          New York
+          hotels, the great room rates, late deals, and last minute bargains that 
+          our reservation agents find, and our hotel finder, which lets you search 
+          for 
+          New York
+          hotels by your own criteria, and find great places to stay throughout 
+          New York, and close to the city of new york's favorite attractions, including: <A class="linksintext" href="./attractions.asp?attraction=sloan kettering center&city=new york">Sloan Kettering Center</A>, <A class="linksintext" href="./attractions.asp?attraction=madison square garden&city=new york">Madison Square Garden</A>, <A class="linksintext" href="./attractions.asp?attraction=radio city music hall&city=new york">Radio City Music Hall</A> and many more. . .
+          <br>
+          So don&#8217;t delay - book online now with Hotels.com, and snap up 
+          a great offer on rooms at a 
+          
+          Hotel in 
+          New York.
+         </p>
+    </div></td>
+  </tr>
+   
+</table>
+<font style="font-size:5px"><br></font>
+
+<table width="755" cellpadding="0" cellspacing="0" border="0" bordercolor="red"><!-- Start of table for Search Form and Dynamic Drop-Downs -->
+<tr>
+	<td width="420" valign="top"><!-- Search Form TD Started -->
+	
+		<table border="0" width="420" cellpadding="0" cellspacing="0" class="bbartabl0e">
+			<tr>
+			  <td valign="top" width="100%"> 
+			  <table  class="index-select-dest-bg" border="0" cellpadding="0" cellspacing="0" width="420">
+				  <tr>
+					<td width="100%"  valign="top" background="default_files/uk-header-title_b1.gif" style="padding-top:4px;padding-left:8px;color:#FFFFFF;font-family:Arial;font-size:14px;font-weight:bold">
+					Search for more 
+				    New York Hotel Deals</td>
+				  </tr>
+				  <tr>
+					<td style="border:1px solid #336699;"  valign="top">
+					  <FORM name=frm_Search onsubmit="return submitAdvancedSearchForm();" action="http://uk.hotels.com/index.jsp" method=post style="margin:0px; padding:0px; ">
+						<INPUT type=hidden value=true name=validateCity>
+						<INPUT type=hidden value=true name=validateDates>
+						<INPUT type=hidden value=true name=submitted>
+						<INPUT type=hidden value=true name=passThrough>
+						<INPUT type=hidden value=2 name=mode>
+						<INPUT type=hidden value=true name=advanced>
+						<INPUT type=hidden value=true name=newAdvancedSearch>
+						<INPUT type=hidden value=true name=showPopUp>
+						<INPUT type=hidden value=en_UK name=locale>
+						<INPUT type=hidden value=list name=fc>
+						<INPUT type=hidden value=hotSearch name=pageName>
+						<INPUT type=hidden value=GBP name=currencyCode>
+						<INPUT type=hidden value=51553 name=cid>
+						<INPUT type=hidden value=vrBookingSource|index name=additionalDataString>
+						<INPUT type=hidden name=city2>
+						<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr><td colspan="3" class="Small" height="4px"></td></tr>
+						  <tr>
+							<td width="45%"><span class="hotelAddress"><b>Where would
+							  you like to stay?</b></span><br> <input name="city" type="text" class="select" onclick="emptyBox(this);" value="New York , ny, United States " size="28" />
+							</td>	
+								  <td width="45%"  valign="top" align="center"><div align="center"><span class="hotelAddress"><b> &nbsp;&nbsp;Arrive</b></span><br>
+									  <select class="select" onchange="amadChange(document.myform.arrivalMonth, document.myform.arrivalDay, document.myform.departureMonth, document.myform.departureDay)" name="arrivalDay">
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									  </select>
+									  <SELECT class="select" onchange="amadChange(document.myform.arrivalMonth, document.myform.arrivalDay, document.myform.departureMonth, document.myform.departureDay)" name=arrivalMonth>
+										<OPTION value=0 selected>January</OPTION>
+										<OPTION value=1>Februar</OPTION>
+										<OPTION value=2>March</OPTION>
+										<OPTION value=3>April</OPTION>
+										<OPTION value=4>May</OPTION>
+										<OPTION value=5>June</OPTION>
+										<OPTION value=6>July</OPTION>
+										<OPTION value=7>August</OPTION>
+										<OPTION value=8>September</OPTION>
+										<OPTION value=9>October</OPTION>
+										<OPTION value=10>November</OPTION>
+										<OPTION value=11>December</OPTION>
+									  </SELECT>
+									  <a href="javascript:OpenCalendar('arrivalDay',%20document.myform.arrivalDay.options[document.myform.arrivalDay.selectedIndex].value,%20'arrivalMonth',%20document.myform.arrivalMonth.options[document.myform.arrivalMonth.selectedIndex].value,%20null,%20null%20)"><img src="default_files/cc0000_calendar.gif" alt="Calendar" width="18" height="18" border="0"align="top" /></a> </div></td>                              
+								  <td align=center valign="top"> 
+									  
+						    </td>                         
+						  </tr>   
+						  <tr><td colspan="3" class="Small" height="4px"></td></tr>             
+						  <tr>
+							<td><TABLE width="100%" height="5" border=0 cellPadding=0 cellSpacing=0>
+								<TBODY>
+								  <TR>
+									<TD noWrap><div id="hot-search-params">
+										<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+										  <TBODY>
+											<TR>
+											  <TD height="1" valign="top" class=index-select-dest-bg>
+												<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+												  <TBODY>
+													<TR>
+													  <TD class="hotelAddress" noWrap><b>Rooms:&nbsp;</b><br> 
+														<SELECT size=1 name=numberOfRooms Class="index-select-options-text">
+														  <OPTION value=1 selected>1</OPTION>
+														  <OPTION value=2>2</OPTION>
+														  <OPTION value=3>3</OPTION>
+														  <OPTION value=4>4</OPTION>
+														  <OPTION value=5>5+</OPTION>
+														</SELECT> </TD>
+													  <TD class=index-select-dest-bg width=5>&nbsp;</TD>
+													  <TD class="hotelAddress" noWrap><b>Adults
+														per Room:&nbsp; </b><br><center>
+														<SELECT size=1 name=numberOfAdults style Class="index-select-options-text">
+														  <OPTION value=1>1</OPTION>
+														  <OPTION value=2 selected>2</OPTION>
+														  <OPTION value=3>3</OPTION>
+														  <OPTION value=4>4</OPTION>
+														</SELECT> </center></TD>                                                                                      
+													</TR>
+												  </TBODY>
+												</TABLE></TD>                                            
+											</TR>
+										  </TBODY>
+										</TABLE>
+									  </div></TD>                                      
+								  </TR>
+								</TBODY>
+							  </TABLE>
+							  
+						    </td>  
+							  <td align="center">
+							  	<div align="center">&nbsp;&nbsp;<span class="hotelAddress"><b>Depart</b></span><br>
+									  <select class="select" onchange="dmddChange(document.myform.departureMonth,document.myform.departureDay);" name="departureDay">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3" selected>3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									  </select>
+									  <SELECT class="select" onchange=dmddChange(document.myform.departureMonth,document.myform.departureDay) name=departureMonth>
+										<OPTION value=0 selected>January</OPTION>
+										<OPTION value=1>Februar</OPTION>
+										<OPTION value=2>March</OPTION>
+										<OPTION value=3>April</OPTION>
+										<OPTION value=4>May</OPTION>
+										<OPTION value=5>June</OPTION>
+										<OPTION value=6>July</OPTION>
+										<OPTION value=7>August</OPTION>
+										<OPTION value=8>September</OPTION>
+										<OPTION value=9>October</OPTION>
+										<OPTION value=10>November</OPTION>
+										<OPTION value=11>December</OPTION>
+									  </SELECT>
+									  <a href="javascript:OpenCalendar('departureDay',%20document.myform.departureDay.options[document.myform.departureDay.selectedIndex].value,%20'departureMonth',%20document.myform.departureMonth.options[document.myform.departureMonth.selectedIndex].value,%20null,%20null%20%20)">
+									  <img src="default_files/cc0000_calendar.gif" alt="Calendar" width="18" height="18" border="0" align="top" /></a> </div>
+							  </td>                        
+							 <td align=center><input name="image2" type="image" src="default_files/en_big_go.gif" alt="Go" width="58" height="29"/></td>                  
+						  </tr>
+						  <tr><td colspan="3" class="Small" height="4px"></td></tr>
+							<!--<tr>
+							<td><div align="right">
+							<input name="image2" type="image" src="default_files/en_big_go.gif" alt="Go" width="58" height="29" />
+							</div></td>
+							</tr>
+							<tr>							
+							<td colspan=3 align=right><input name="image2" type="image" src="default_files/en_big_go.gif" alt="Go" width="58" height="29" /></td>
+							</tr>-->
+						</table>
+						<script language="JavaScript" src="default_files/search.js"></script>
+					  </form></td>
+				  </tr>
+				</table>
+		</table>   
+	
+	</td><!-- Search Form TD End -->
+	<td width="300" valign="middle"><!-- Dynamic Drop-Downs TD Started -->
+		
+		      
+			<table width="300"  border="0" cellspacing="0" cellpadding="0">
+					<tr>
+					  <td width="100%"  valign="top" align="center"><A onclick="buttonMouseover(event, 'brand');" ><img src="default_files/hotel-brands.gif" width="162" height="20"></a>
+						<DIV class=menu id=brand  valign="top" align="left" onmouseover=menuMouseover(event)>
+						  <ul><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=fairmont hotels&city=new york&country=united states">&nbsp;&nbsp;Fairmont Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=sheraton hotels&city=new york&country=united states">&nbsp;&nbsp;Sheraton Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=comfort inns&city=new york&country=united states">&nbsp;&nbsp;Comfort Inns in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=mandarin oriental hotels&city=new york&country=united states">&nbsp;&nbsp;Mandarin Oriental Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=utell international&city=new york&country=united states">&nbsp;&nbsp;Utell International in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=marriott hotels&city=new york&country=united states">&nbsp;&nbsp;Marriott Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=ihotelier&city=new york&country=united states">&nbsp;&nbsp;Ihotelier in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=unirez&city=new york&country=united states">&nbsp;&nbsp;Unirez in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=leading hotels&city=new york&country=united states">&nbsp;&nbsp;Leading Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=manhattan east suites&city=new york&country=united states">&nbsp;&nbsp;Manhattan East Suites in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=lexington services&city=new york&country=united states">&nbsp;&nbsp;Lexington Services in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=super 8&city=new york&country=united states">&nbsp;&nbsp;Super 8 in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=quality inns and suites&city=new york&country=united states">&nbsp;&nbsp;Quality Inns And Suites in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=luxe worldwide hotels&city=new york&country=united states">&nbsp;&nbsp;Luxe Worldwide Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=synxis corporation&city=new york&country=united states">&nbsp;&nbsp;Synxis Corporation in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=allegiance services&city=new york&country=united states">&nbsp;&nbsp;Allegiance Services in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=small luxury hotels&city=new york&country=united states">&nbsp;&nbsp;Small Luxury Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=sterling hotel group&city=new york&country=united states">&nbsp;&nbsp;Sterling Hotel Group in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=doubletree hotels&city=new york&country=united states">&nbsp;&nbsp;Doubletree Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=courtyard by marriott&city=new york&country=united states">&nbsp;&nbsp;Courtyard By Marriott in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=sceptre hospitality svcs&city=new york&country=united states">&nbsp;&nbsp;Sceptre Hospitality Svcs in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=loews hotels&city=new york&country=united states">&nbsp;&nbsp;Loews Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=warwick hotels&city=new york&country=united states">&nbsp;&nbsp;Warwick Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=jolly hotels&city=new york&country=united states">&nbsp;&nbsp;Jolly Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=summit hotels and resorts&city=new york&country=united states">&nbsp;&nbsp;Summit Hotels And Resorts in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=melrose hotel&city=new york&country=united states">&nbsp;&nbsp;Melrose Hotel in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=ramada inns&city=new york&country=united states">&nbsp;&nbsp;Ramada Inns in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=w hotels&city=new york&country=united states">&nbsp;&nbsp;W Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=kimpton group llc&city=new york&country=united states">&nbsp;&nbsp;Kimpton Group Llc in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=renaissance hotels&city=new york&country=united states">&nbsp;&nbsp;Renaissance Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=hilton hotels&city=new york&country=united states">&nbsp;&nbsp;Hilton Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=robert f warner&city=new york&country=united states">&nbsp;&nbsp;Robert F Warner in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=four seasons hotels&city=new york&country=united states">&nbsp;&nbsp;Four Seasons Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=srs-worldhotels&city=new york&country=united states">&nbsp;&nbsp;Srs-worldhotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=destination hotels&city=new york&country=united states">&nbsp;&nbsp;Destination Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=best western international&city=new york&country=united states">&nbsp;&nbsp;Best Western International in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=hotelbank&city=new york&country=united states">&nbsp;&nbsp;Hotelbank in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=sol melia, s.a.&city=new york&country=united states">&nbsp;&nbsp;Sol Melia, S.a. in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=millennium copthorne htls&city=new york&country=united states">&nbsp;&nbsp;Millennium Copthorne Htls in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=classic international hotels&city=new york&country=united states">&nbsp;&nbsp;Classic International Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=howard johnson&city=new york&country=united states">&nbsp;&nbsp;Howard Johnson in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=accor hotels&city=new york&country=united states">&nbsp;&nbsp;Accor Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=grand hospitality&city=new york&country=united states">&nbsp;&nbsp;Grand Hospitality in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=embassy suites&city=new york&country=united states">&nbsp;&nbsp;Embassy Suites in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=red roof inns&city=new york&country=united states">&nbsp;&nbsp;Red Roof Inns in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=innpoints&city=new york&country=united states">&nbsp;&nbsp;Innpoints in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=the small hotel company&city=new york&country=united states">&nbsp;&nbsp;The Small Hotel Company in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=design hotels&city=new york&country=united states">&nbsp;&nbsp;Design Hotels in New York</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=ritz-carlton hotels&city=new york&country=united states">&nbsp;&nbsp;Ritz-carlton Hotels in New York</A></li></ul>
+						</DIV></td>
+						
+					  <td width="100%" align="center" valign="top"><A onclick="buttonMouseover(event, 'worlddestinations');" ><IMG src="default_files/topworlddestinations.gif" alt="Top Hotel Destinations" width="162" height="20" border=0></A>
+						<DIV class=menu valign=top align=left width=162	id=worlddestinations onmouseover=menuMouseover(event)>
+						  <ul><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=acapulco&country=mexico">&nbsp;&nbsp;Acapulco Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=alicante&country=spain">&nbsp;&nbsp;Alicante Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=atlanta&country=united states">&nbsp;&nbsp;Atlanta Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=boston&country=united states">&nbsp;&nbsp;Boston Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=cambridge&country=united kingdom">&nbsp;&nbsp;Cambridge Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=cape town&country=south africa">&nbsp;&nbsp;Cape Town Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=chester&country=united kingdom">&nbsp;&nbsp;Chester Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=chicago&country=united states">&nbsp;&nbsp;Chicago Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=devon&country=united kingdom">&nbsp;&nbsp;Devon Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=dublin&country=ireland">&nbsp;&nbsp;Dublin Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=edinburgh&country=united kingdom">&nbsp;&nbsp;Edinburgh Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=frankfurt&country=germany">&nbsp;&nbsp;Frankfurt Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=gelsenkirchen&country=germany">&nbsp;&nbsp;Gelsenkirchen Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=glasgow&country=united kingdom">&nbsp;&nbsp;Glasgow Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=hamburg&country=germany">&nbsp;&nbsp;Hamburg Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=ibiza&country=spain">&nbsp;&nbsp;Ibiza Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=kaiserslautern&country=germany">&nbsp;&nbsp;Kaiserslautern Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=kuala lumpur&country=malaysia">&nbsp;&nbsp;Kuala Lumpur Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=los angeles&country=united states">&nbsp;&nbsp;Los Angeles Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=mallorca&country=spain">&nbsp;&nbsp;Mallorca Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=miami&country=united states">&nbsp;&nbsp;Miami Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=montreal&country=canada">&nbsp;&nbsp;Montreal Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=newcastle&country=united kingdom">&nbsp;&nbsp;Newcastle Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=oxford&country=united kingdom">&nbsp;&nbsp;Oxford Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=san diego&country=united states">&nbsp;&nbsp;San Diego Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=seattle&country=united states">&nbsp;&nbsp;Seattle Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=stuttgart&country=germany">&nbsp;&nbsp;Stuttgart Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=sydney&country=australia">&nbsp;&nbsp;Sydney Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=tokyo&country=japan">&nbsp;&nbsp;Tokyo Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=toronto&country=canada">&nbsp;&nbsp;Toronto Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=vancouver&country=canada">&nbsp;&nbsp;Vancouver Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=venice&country=italy">&nbsp;&nbsp;Venice Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=vienna&country=austria">&nbsp;&nbsp;Vienna Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=aberdeen&country=united kingdom">&nbsp;&nbsp;Aberdeen Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=amsterdam&country=netherlands">&nbsp;&nbsp;Amsterdam Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=bath&country=united kingdom">&nbsp;&nbsp;Bath Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=belfast&country=ireland">&nbsp;&nbsp;Belfast Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=berlin&country=germany">&nbsp;&nbsp;Berlin Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=birmingham&country=united kingdom">&nbsp;&nbsp;Birmingham Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=bournemouth&country=united kingdom">&nbsp;&nbsp;Bournemouth Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=bristol&country=united kingdom">&nbsp;&nbsp;Bristol Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=budapest&country=hungary">&nbsp;&nbsp;Budapest Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=cairo&country=egypt">&nbsp;&nbsp;Cairo Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=cardiff&country=united kingdom">&nbsp;&nbsp;Cardiff Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=cornwall&country=canada">&nbsp;&nbsp;Cornwall Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=dallas&country=united states">&nbsp;&nbsp;Dallas Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=denver&country=united states">&nbsp;&nbsp;Denver Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=dubai&country=united arab emirates">&nbsp;&nbsp;Dubai Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=florence&country=italy">&nbsp;&nbsp;Florence Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=fort lauderdale&country=united states">&nbsp;&nbsp;Fort Lauderdale Hotels</A></li></ul>
+						</DIV></td>
+						</tr>
+						<tr><td class="Small" height="20px"></td></tr>
+						<tr>
+					  <td width="100%" align="center"> <A onclick="buttonMouseover(event, 'otherhotels');" ><img src="default_files/other-hotels-inthis-city.gif" width="162" height="20"></a>
+						<DIV class=menu valign=top id=otherhotels onmouseover=menuMouseover(event)>
+						  <ul><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=unirez&hotelID=197539"> The Wall Street Inn</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=ihotelier&hotelID=196593"> Park South Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=performance connections&hotelID=223460"> Wyndham New York</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=srs-worldhotels&hotelID=171177"> The Muse</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=utell international&hotelID=134540"> Pickwick Arms Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=destination hotels&hotelID=135096"> Algonquin</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=synxis corporation&hotelID=135149"> Hotel Roger Williams</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=utell international&hotelID=144414"> The Avalon</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=utell international&hotelID=163758"> Amsterdam Court Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=synxis corporation&hotelID=124901"> The Lucerne Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=warwick hotels&hotelID=125511"> Warwick New York</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=unirez&hotelID=125617"> Excelsior Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=lexington services&hotelID=131561"> Skyline Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=utell international&hotelID=122350"> Washington Square Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=utell international&hotelID=117112"> Edison Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=howard johnson&hotelID=200512"> Howard Johnson Exp New York</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=synxis corporation&hotelID=111484"> Salisbury Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=srs-worldhotels&hotelID=215798"> The Alex Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=doubletree hotels&hotelID=163796"> Doubletree Metropolitan Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=new york&brand=sheraton hotels&hotelID=171621"> The St. Regis Club At The Essex House, New York</a></li></ul>
+						</DIV></td>
+						
+					  <td valign="top" align="center" width="100%"> <A onclick="buttonMouseover(event, 'placesofinterest');" ><IMG src="default_files/placesofinterest.gif" alt="Hotels of Interest" width="162" height="20" border=0></A>
+						<DIV class=menu valign=top align="left" id=placesofinterest onmouseover=menuMouseover(event)>
+						  <ul><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=grand central station&city=new york">&nbsp;&nbsp;New York Hotels, near Grand Central Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=sloan kettering center&city=new york">&nbsp;&nbsp;New York Hotels, near Sloan Kettering Center</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=madison square garden&city=new york">&nbsp;&nbsp;New York Hotels, near Madison Square Garden</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=radio city music hall&city=new york">&nbsp;&nbsp;New York Hotels, near Radio City Music Hall</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=gramercy park&city=new york">&nbsp;&nbsp;New York Hotels, near Gramercy Park</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=cruise line terminal&city=new york">&nbsp;&nbsp;New York Hotels, near Cruise Line Terminal</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=intrepid sea air museum&city=new york">&nbsp;&nbsp;New York Hotels, near Intrepid Sea Air Museum</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=diamond district&city=new york">&nbsp;&nbsp;New York Hotels, near Diamond District</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=new york city amtrak&city=new york">&nbsp;&nbsp;New York Hotels, near New York City Amtrak</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=carnegie hall&city=new york">&nbsp;&nbsp;New York Hotels, near Carnegie Hall</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=jfk international airport&city=new york">&nbsp;&nbsp;New York Hotels, near JFK International Airport</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=metro museum of art&city=new york">&nbsp;&nbsp;New York Hotels, near Metro Museum of Art</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=la guardia airport&city=new york">&nbsp;&nbsp;New York Hotels, near La Guardia Airport</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=cornell medical ctr&city=new york">&nbsp;&nbsp;New York Hotels, near Cornell Medical Ctr</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=new york university&city=new york">&nbsp;&nbsp;New York Hotels, near New York University</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=wall street financial district&city=new york">&nbsp;&nbsp;New York Hotels, near Wall Street Financial District</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=little italy&city=new york">&nbsp;&nbsp;New York Hotels, near Little Italy</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=upper west side&city=new york">&nbsp;&nbsp;New York Hotels, near Upper West Side</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=ed sullivan theatre&city=new york">&nbsp;&nbsp;New York Hotels, near Ed Sullivan Theatre</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=soho&city=new york">&nbsp;&nbsp;New York Hotels, near SoHo</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=washington square&city=new york">&nbsp;&nbsp;New York Hotels, near Washington Square</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=rockefeller centre&city=new york">&nbsp;&nbsp;New York Hotels, near Rockefeller Centre</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=garment district&city=new york">&nbsp;&nbsp;New York Hotels, near Garment District</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=penn station&city=new york">&nbsp;&nbsp;New York Hotels, near Penn Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=saint patricks cathedral&city=new york">&nbsp;&nbsp;New York Hotels, near Saint Patricks Cathedral</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=lincoln center&city=new york">&nbsp;&nbsp;New York Hotels, near Lincoln Center</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=times square&city=new york">&nbsp;&nbsp;New York Hotels, near Times Square</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=empire state bldg&city=new york">&nbsp;&nbsp;New York Hotels, near Empire State Bldg</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=central park&city=new york">&nbsp;&nbsp;New York Hotels, near Central Park</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=javits convention centre&city=new york">&nbsp;&nbsp;New York Hotels, near Javits Convention Centre</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=museum natural history&city=new york">&nbsp;&nbsp;New York Hotels, near Museum Natural History</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=manhattan&city=new york">&nbsp;&nbsp;New York Hotels, near Manhattan</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=meatpacking district&city=new york">&nbsp;&nbsp;New York Hotels, near Meatpacking District</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=columbus circle&city=new york">&nbsp;&nbsp;New York Hotels, near Columbus Circle</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=union square&city=new york">&nbsp;&nbsp;New York Hotels, near Union Square</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=shea stadium&city=new york">&nbsp;&nbsp;New York Hotels, near Shea Stadium</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=meadowlands entertainment complex&city=new york">&nbsp;&nbsp;New York Hotels, near Meadowlands Entertainment Complex</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=guggenheim museum&city=new york">&nbsp;&nbsp;New York Hotels, near Guggenheim Museum</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=united nations&city=new york">&nbsp;&nbsp;New York Hotels, near United Nations</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=new york public library&city=new york">&nbsp;&nbsp;New York Hotels, near New York Public Library</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=bryant park&city=new york">&nbsp;&nbsp;New York Hotels, near Bryant Park</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=chinatown&city=new york">&nbsp;&nbsp;New York Hotels, near Chinatown</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=columbia university&city=new york">&nbsp;&nbsp;New York Hotels, near Columbia University</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=city hall&city=new york">&nbsp;&nbsp;New York Hotels, near City Hall</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=upper east side&city=new york">&nbsp;&nbsp;New York Hotels, near Upper East Side</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=continental airlines arena&city=new york">&nbsp;&nbsp;New York Hotels, near Continental Airlines Arena</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=greenwich village&city=new york">&nbsp;&nbsp;New York Hotels, near Greenwich Village</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=theatre district&city=new york">&nbsp;&nbsp;New York Hotels, near Theatre District</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=south street seaport&city=new york">&nbsp;&nbsp;New York Hotels, near South Street Seaport</A></li>/<ul>
+						</div></td>
+					</tr>
+				  
+			</table>
+			      
+	</td><!-- Dynamic Drop-Downs TD End -->
+</tr>
+</table><!-- End of table for Search Form and Dynamic Drop-Downs -->
+
+<font style="font-size:10px"><br></font>
+    
+    
+    
+      <table width="755" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="90%" height="4" valign="middle" background="default_files/uk-header-title_b.gif" style="padding-top:4px;padding-left:8px;color:#FFFFFF;font-family:Arial;font-size:14px;font-weight:bold">
+            Featured
+            New York
+          Hotel</td>
+        </tr>
+        <tr>
+          <td height="17" valign="middle">   <font style="font-size:8px"><br></font>       
+            <table width="100%" border="2" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFCC" bordercolor="#F7BE4C" style="border-width:0px;">
+              <tr>
+                <td valign="center">
+					<font style="font-size:3px"><br></font>
+                  <table width="100%"  border="0" cellspacing="0" cellpadding="0" bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="78" rowspan="4" align="center" valign="top" ><table width="78" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#FFFFCC" valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand= &hotelID=152696"><img src="http://images.travelnow.com/hotels/thumbs/NYC_HIWA-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Wall Street District Hotel in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£101 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand= &hotelID=152696" class="hotelTitle">Wall Street District Hotel New York</a>&nbsp;&nbsp;</a> </td><td width="30%" rowspan="2" align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand= &hotelID=152696"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of wall street district hotel"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">22 platt street / (New York)</GEO></td></tr><tr><td width="100%" valign="top" colspan="2" style="padding-left:2px;" class="hotelDescription1">among new york hotels, there is no better choice than the holiday inn wall street, the place where successful business and well deserved pleasure meet. The holiday inn wall street district is a first class hotel strategically located 9 miles from la guard</td></tr></table>
+</td>
+              </tr>
+            </table>
+         </td>
+        </tr>
+		
+		<!--
+		<tr><td valign="top" style=" border-bottom:1px solid #336699;">&nbsp;</td></tr>
+        <tr>
+          <td valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="100%" background="default_files/table-bottom-bg.gif"><img src="default_files/left-round-corner.gif" width="12" height="15"></td>
+                <td width="1%"><img src="default_files/right-round-corner.gif" width="12" height="15"></td>
+              </tr>
+            </table></td>
+        </tr>
+		-->
+      </table>      
+<font style="font-size:10px"><br></font>      
+
+
+<!-- Hotels details starts below -->
+
+
+
+	<table width="755" border="0" cellspacing="0" cellpadding="0" style="border-width:0px ">
+	  <tr>
+		<td width="755px" height="24" valign="top" background="default_files/uk-header-title_b.gif"><h2 class="boxTitle">Our Top New York  Hotels</h2></td>
+	  </tr>
+	  <tr>
+		<td width="755px">
+		<font style="font-size:8px"><br></font>
+				<table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=kimpton group llc&hotelID=126898"><img src="http://images.travelnow.com/hotels/thumbs/NYC_DORP-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book 70 Park Avenue - A Kimpton Hotel in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£153 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=kimpton group llc&hotelID=126898" class="hotelTitle">70 Park Avenue - A Kimpton Hotel New York</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=kimpton group llc&hotelID=126898"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of 70 park avenue - a kimpton hotel"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">70 Park Ave / (New York)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">welcome to one of new york's finest midtown manhattan hotels. The doral park is a superior first class hotel strategically located near grand central station. This property offers a comfortable stay and value for money. The intimate park avenue hotel b</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=summit hotels and resorts&hotelID=125871"><img src="http://images.travelnow.com/hotels/thumbs/NYC_CLOS-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book San Carlos Hotel in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£138 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=summit hotels and resorts&hotelID=125871" class="hotelTitle">San Carlos Hotel New York</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"><IMG alt="5 star hotels" src="default_files/stars_5_y.gif" border=0></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=summit hotels and resorts&hotelID=125871"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of san carlos hotel"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">150 E 50th St / (New York)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1"> the san carlos hotel is located in the heart of midtown manhattan at 150 east 50th street between lexington and 3rd avenues. The hotel is surrounded by some of new yorks most popular tourist attractions, shopping, business district and fine dining. </td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=utell international&hotelID=163786"><img src="http://images.travelnow.com/hotels/thumbs/NYC_HELM-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book The Helmsley Carlton House in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£161 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=utell international&hotelID=163786" class="hotelTitle">The Helmsley Carlton House Hotel in New York</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=utell international&hotelID=163786"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of the helmsley carlton house"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">680 Madison Ave / (New York)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">the helmsley carlton house is located in the midst of central park between madison and 62nd street. The hotel is in the center of high style fashion. New york's finest shops and restaurants surround the helmsley carlton house and world renowned maxim's</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=synxis corporation&hotelID=121657"><img src="http://images.travelnow.com/hotels/thumbs/NYC_TRAV-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Travel Inn Hotel in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£96 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=synxis corporation&hotelID=121657" class="hotelTitle">Travel Inn Hotel New York</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=synxis corporation&hotelID=121657"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of travel inn hotel"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">515 W 42nd St / (New York)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">located in the exciting westside of manhattan, the travel inn is an exquisite property and the perfect combination of convenience, comfort and value. Whether traveling to the big apple for business or pleasure, the travel inn is perfectly suited to meet a</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=melrose hotel&hotelID=126823"><img src="http://images.travelnow.com/hotels/thumbs/NYC_BARB-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book The Melrose Hotel in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£115 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=melrose hotel&hotelID=126823" class="hotelTitle">The Melrose Hotel New York</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=melrose hotel&hotelID=126823"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of the melrose hotel"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">140 E 63rd St / (New York)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">the melrose (formerly the barbizon) is a superior first class hotel located in the upper eastside of manhattan. Completely restored, this historic hotel has catered to the likes of grace kelly, joan crawford, liza minelli and candace bergen. A few minutes</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=srs-worldhotels&hotelID=179766"><img src="http://images.travelnow.com/hotels/thumbs/NYC_ROGE-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book The Roger Smith in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£116 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=srs-worldhotels&hotelID=179766" class="hotelTitle">The Roger Smith Hotel in New York</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"><IMG alt="2 star hotels" src="default_files/stars_2_y.gif" border=0></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=srs-worldhotels&hotelID=179766"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of the roger smith"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">501 Lexington Ave / (New York)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">property type hotelyear built 1929 year remodeled 2003the roger smith is a boutique hotel with 130 individuallydecorated rooms and suites. Located in midtown eastmanhattan, on lexington avenue and 47 st. Our amenitiesinclude coffee and tea makers,</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=srs-worldhotels&hotelID=198706"><img src="http://images.travelnow.com/hotels/thumbs/NYC_CCLU-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book City Club Hotel in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£215 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=srs-worldhotels&hotelID=198706" class="hotelTitle">City Club Hotel New York</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=srs-worldhotels&hotelID=198706"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of city club hotel"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">55 W 44th St / (New York)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">the city club is a superior class hotel located 12 miles from la guardia airport and just minutes from new york's most famous attractions and shops. The hotel is all about privacy, style and service, providing guests with an unparalleled experience full o</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=utell international&hotelID=203729"><img src="http://images.travelnow.com/hotels/thumbs/NYC_STFD-exter-2-thumb.jpg" width="64" height="64" border="0" alt="Book Stanford Hotel in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£92 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=utell international&hotelID=203729" class="hotelTitle">Stanford Hotel New York</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=utell international&hotelID=203729"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of stanford hotel"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">43 W 32nd St / (New York)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">the hotel stanford is located on west 32nd street between fifth and broadway, just are a block away from the empire state building. Not only is this location considered the heart of the city, but also it is very convenient for people that are here for bus</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=utell international&hotelID=206674"><img src="http://images.travelnow.com/hotels/thumbs/NYC_HMET-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Metro Hotel in New York "></a></td></tr></table><span align=left class="bigHotelPrice">£98 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=utell international&hotelID=206674" class="hotelTitle">Metro Hotel New York</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=new york&Brand=utell international&hotelID=206674"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of metro hotel"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">45 W 35th St / (New York)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">the hotel metro is a superior, first class hotel located in midtown manhattan, near the empire state building. This hotel captures the essence of new york city, combining the excitement of a sleek, art deco dúcor with the charm and comfort of a boutique h</td></tr></table></td></tr></table><font style="font-size:8px"><br></font>
+		</td>
+		
+	  </tr>
+	  
+	  <!--
+	  <tr><td colspan="3" valign="top" style=" border-bottom:1px solid #336699;">&nbsp;</td></tr>
+	  <tr>
+		<td align="left" height="12px" width="12px" valign="top"><img src="default_files/left-round-corner.gif" width="12" height="15" border="0"></td>
+		<td valign="bottom" background="default_files/table-bottom-bg.gif"><font style=" font-size:0px">&nbsp;</font></td>
+		<td align="right" height="12px" width="12px"  valign="top"><img src="default_files/right-round-corner.gif" width="12" height="15" border="0"></td>
+	  </tr>
+	  -->
+	</table>
+	  
+<!-- Hotels details end here -->	
+  
+	  
+	  </td>
+  </tr>
+  <tr>
+    <td height="25px" valign="bottom" class="abartable">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+<table width=755 border=0 cellpadding=0 cellspacing=0 bgcolor="#EDCECD">
+	<tr><td>
+		<table width=100%" align=center border=0>
+		<tr><td align=center width=125>
+			<b>Page 1 of 27
+		</td>
+		<td align=left width="85%">
+				<a href="?city=new york&country=united states">1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=2">2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=3">3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=4">4</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=5">5</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=6">6</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=7">7</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=8">8</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=9">9</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=10">10</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=11">11</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=12">12</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=13">13</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=14">14</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=15">15</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=16">16</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=17">17</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=18">18</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=19">19</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=20">20</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=21">21</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=22">22</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=23">23</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=24">24</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=25">25</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=26">26</a>&nbsp;&nbsp;&nbsp;<a href="?city=new york&country=united states&page=27">27</a>&nbsp;&nbsp;&nbsp;<br>
+		  <b> .&nbsp;.&nbsp;.&nbsp;</b> </td>
+		</tr>
+		</table>
+	</td></tr>
+</table>	
+
+<table style="margin-top:10px" width="755" border=0 bordercolor=green>
+	<tr>
+		<td align="right">
+			
+			<a class="Verdana10Black" href="?city=new york&country=united states&page=2">Next New York Hotels</a>
+			
+		 </td>
+	</tr>
+</table>
+
+<table width="755" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td class="abartable">
+	<!-- footer begin -->
+<IMG style="MARGIN-TOP: 0px" height=4 alt="" src="default_files/4px_redbar.gif" width=762 align=top> 
+<P class=foothead><SPAN class=footheadfloat>
+<A href="http://uk.hotels.com/index.jsp?pageName=addHotel&amp;country=UK&amp;locale=en&amp;cid=51553" class="Verdana10"><B>Add Your Hotel</B></A> | 
+<A href="http://affiliate.travelnow.com/affiliates/home.jsp" target=_blank class="Verdana10"><B>Affiliate With Us</B></A> | 
+<A href="http://uk.hotels.com/index.jsp?pageName=terms&amp;cid=51553&amp;locale=en" class="Verdana10">Terms &amp; Conditions</A> | 
+<A href="http://uk.hotels.com/index.jsp?pageName=privacy&amp;cid=51553&amp;locale=en" class="Verdana10">Privacy</A> | 
+<A style="CURSOR: help" href="http://uk.hotels.com/index.jsp?pageName=hotelFaq&amp;locale=en&amp;cid=51553" class="Verdana10">FAQs</A>
+</SPAN></P>
+<P class=footbody>© 2002-2006 Hotels.com, L.P. All rights reserved.<BR>Hotels, 
+hotels.com logo and bellman are trademarks and or service marks of Hotels.com, 
+L.P., a subsidiary of Hotels.com.<BR><BR><B>Partners</B><BR>
+<A href="http://www.expedia.co.uk/" target=_blank class=fade_text>Expedia (uk)</A> | 
+<A href="http://espana.hotels.com/" target=_blank class=fade_text>Hotel (es)</A> | 
+<A href="http://it.hotels.com/" target=_blank class=fade_text>Hotels (it)</A> | 
+<A href="http://www.hotell.com/" target=_blank class=fade_text>Hotels (no)</A> | 
+<A href="http://www.hotels.se/" target=_blank class=fade_text>Hotels (se)</A> | 
+<A href="http://www.hotels.dk/" target=_blank class=fade_text>Hotels (dk)</A> | 
+<A href="http://finland.hotels.com/" target=_parent class=fade_text>Hotels (fi)</A> | 
+<A href="http://nederland.hotels.com/" target=_blank class=fade_text>Hotels (nl)</A> | 
+<A href="http://www.hotels.co.uk/" target=_blank class=fade_text>Hotels (uk)</A> | 
+<A href="http://deutsch.hotels.com/" target=_blank class=fade_text>Hotels (de)</A> | 
+<A href="http://deals.hotels.com/" target=_blank class=fade_text>Hotels (EU)</A> | 
+<A href="http://osterreich.hotels.com/" target=_blank class=fade_text>Hotels (at)</A> | 
+<A href="http://belgie.hotels.com/" target=_blank class=fade_text>Hotels (be)</A> | 
+<A href="http://emea.hotels.com/" target=_blank class=fade_text>Hotels (EMEA)</A> | 
+<A href="http://israel.hotels.com/" target=_blank class=fade_text>Hotels (il)</A> | 
+<A href="http://polska.hotels.com/" target=_blank class=fade_text>Hotels (pl)</A> | 
+<A href="http://portugal.hotels.com/" target=_blank class=fade_text>Hotels (pt)</A> | 
+<A href="http://rossija.hotels.com/" target=_blank class=fade_text>Hotels (ru)</A> | 
+<A href="http://southafrica.hotels.com/" target=_blank class=fade_text>Hotels (sa)</A> | 
+<A href="http://www.hotels.ch/" target=_blank class=fade_text>Hotels (ch)</A> | 
+<A href="http://www.hotels.fr/" target=_blank class=fade_text>Hotels (fr)</A> | 
+<A href="http://www.hotels.ie/" target=_blank class=fade_text>Hotels (ie)</A> 
+</P>
+<!-- footer end -->
+
+</td>
+  </tr>
+</table>
+
+<IMG height=4 alt="" src="default_files/p(1).gif" width=1 onload=loadDates(); border=0>
+</body>
+</html>

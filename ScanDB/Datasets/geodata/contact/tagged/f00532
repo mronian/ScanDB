@@ -1,0 +1,301 @@
+<DOC>
+<DOCNO>f00532</DOCNO>
+<DOCHDR>http://www.apa.org/divisions/div12/contact.html</DOCHDR>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>Society of Clinical Psychology</title>
+		<csscriptdict>
+			<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'home2',/*URL*/'images/homebuta.jpg',/*URL*/'images/homebutb.jpg',/*URL*/'images/homebuta.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'about',/*URL*/'images/aboutb.jpg',/*URL*/'images/about.jpg',/*URL*/'images/aboutb.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'sections',/*URL*/'images/sections.jpg',/*URL*/'images/sectionsb.jpg',/*URL*/'images/sections.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'govern',/*URL*/'images/govern.jpg',/*URL*/'images/governb.jpg',/*URL*/'images/govern.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'public',/*URL*/'images/publicc.jpg',/*URL*/'images/publicd.jpg',/*URL*/'images/publicc.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'conted',/*URL*/'images/contedb.jpg',/*URL*/'images/conted.jpg',/*URL*/'images/contedb.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button7',/*URL*/'images/news.jpg',/*URL*/'images/newsb.jpg',/*URL*/'images/news.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'awards',/*URL*/'images/awardsc.jpg',/*URL*/'images/awardsb.jpg',/*URL*/'images/awardsc.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'memb',/*URL*/'images/memb.jpg',/*URL*/'images/membb.jpg',/*URL*/'images/memb.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'pubs',/*URL*/'images/pubs.jpg',/*URL*/'images/pubsb.jpg',/*URL*/'images/pubs.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'conv',/*URL*/'images/convb.jpg',/*URL*/'images/conv.jpg',/*URL*/'images/convb.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'links',/*URL*/'images/links.jpg',/*URL*/'images/linksb.jpg',/*URL*/'images/links.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'contact',/*URL*/'images/contactb.jpg',/*URL*/'images/contact.jpg',/*URL*/'images/contactb.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'home',/*URL*/'images/apa.jpg',/*URL*/'images/apab.jpg',/*URL*/'images/apa.jpg','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'apa',/*URL*/'images/other.jpg',/*URL*/'images/otherb.jpg',/*URL*/'images/other.jpg','');
+
+// --></script>
+		</csactiondict>
+		<link href="apa.css" rel="styleSheet" type="text/css">
+	</head>
+
+	<body bgcolor="white" onload="CSScriptInit();">
+		<div align="left">
+			<!-- ImageReady Slices (layout5b.jpg) -->
+			<table width="135" border="0" cellpadding="0" cellspacing="0" height="110">
+				<tr height="81">
+					<td bgcolor="#006ea5" width="135" height="81"><img height="81" width="129" src="newpics/psitop.jpg"></td>
+					<td width="755" align="left" valign="top" bgcolor="#1f679e" height="81"><img height="81" width="479" src="newpics/header.jpg" align="top"></td>
+				</tr>
+				<tr bgcolor="#bbdfef" align="left" valign="top" height="17">
+					<td align="left" valign="top" width="135" height="17"><img src="newpics/stripestart.jpg" width="135" height="18"></td>
+					<td width="755" rowspan="2" bgcolor="#bbdfef" align="left" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="755">
+							<tr height="17">
+								<td height="17" width="20" align="left" valign="top"><img height="36" width="23" src="newpics/bracket2.jpg" alt="image" align="top"></td>
+								<td height="17">
+									<div align="left">
+										<img height="36" width="390" src="subheads/contact.jpg" alt="About Clinical Psychology" align="middle"></div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="18" align="left" valign="top">
+					<td width="135" height="18" bgcolor="#bbdfef" align="left" valign="top"><img src="newpics/stripestart.jpg" width="135" height="18"></td>
+				</tr>
+				<tr height="17" align="left" valign="top">
+					<td height="17" bgcolor="#bbdfef" width="135" align="left" valign="top"><img src="newpics/stripestart.jpg" width="135" height="18"></td>
+					<td width="755" height="17"></td>
+				</tr>
+				<tr height="500">
+					<td align="left" valign="top" width="135" bgcolor="#7aa1cd" height="500">
+						<div align="right">
+							<table border="0" cellpadding="0" cellspacing="0" width="135" height="450">
+								<tr height="30">
+									
+              <td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/homebutb.jpg" cl="images/homebuta.jpg"><a href="homepage.html" onmouseover="return CSIShow(/*CMP*/'home2',1)" onmouseout="return CSIShow(/*CMP*/'home2',0)" onclick="CSIShow(/*CMP*/'home2',2);return CSButtonReturn()"><img src="images/homebuta.jpg" width="135" height="30" name="home2" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/about.jpg" cl="images/aboutb.jpg"><a href="aboutcp.html" onmouseover="return CSIShow(/*CMP*/'about',1)" onmouseout="return CSIShow(/*CMP*/'about',0)" onclick="CSIShow(/*CMP*/'about',2);return CSButtonReturn()"><img src="images/aboutb.jpg" width="135" height="30" name="about" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/sectionsb.jpg" cl="images/sections.jpg"><a href="div12.html" onmouseover="return CSIShow(/*CMP*/'sections',1)" onmouseout="return CSIShow(/*CMP*/'sections',0)" onclick="CSIShow(/*CMP*/'sections',2);return CSButtonReturn()"><img src="images/sections.jpg" width="135" height="30" name="sections" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/governb.jpg" cl="images/govern.jpg"><a href="div12G.html" onmouseover="return CSIShow(/*CMP*/'govern',1)" onmouseout="return CSIShow(/*CMP*/'govern',0)" onclick="CSIShow(/*CMP*/'govern',2);return CSButtonReturn()"><img src="images/govern.jpg" width="135" height="30" name="govern" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/publicb.jpg" cl="images/public.jpg"><a href="cppi.html" onmouseover="return CSIShow(/*CMP*/'public',1)" onmouseout="return CSIShow(/*CMP*/'public',0)" onclick="CSIShow(/*CMP*/'public',2);return CSButtonReturn()"><img src="images/publicc.jpg" width="135" height="30" name="public" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									
+              <td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/conted.jpg" cl="images/contedb.jpg"><a href="conted.html" onmouseover="return CSIShow(/*CMP*/'conted',1)" onmouseout="return CSIShow(/*CMP*/'conted',0)" onclick="CSIShow(/*CMP*/'conted',2);return CSButtonReturn()"><img src="images/contedb.jpg" width="135" height="30" name="conted" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/newsb.jpg" cl="images/news.jpg"><a href="news.html" onmouseover="return CSIShow(/*CMP*/'button7',1)" onmouseout="return CSIShow(/*CMP*/'button7',0)" onclick="CSIShow(/*CMP*/'button7',2);return CSButtonReturn()"><img src="images/news.jpg" width="135" height="30" name="button7" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/awards.jpg" cl="images/awardsb.jpg"><a href="awards.html" onmouseover="return CSIShow(/*CMP*/'awards',1)" onmouseout="return CSIShow(/*CMP*/'awards',0)" onclick="CSIShow(/*CMP*/'awards',2);return CSButtonReturn()"><img src="images/awardsc.jpg" width="135" height="30" name="awards" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/membb.jpg" cl="images/memb.jpg"><a href="members.html" onmouseover="return CSIShow(/*CMP*/'memb',1)" onmouseout="return CSIShow(/*CMP*/'memb',0)" onclick="CSIShow(/*CMP*/'memb',2);return CSButtonReturn()"><img src="images/memb.jpg" width="135" height="30" name="memb" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/pubsb.jpg" cl="images/pubs.jpg"><a href="journals.html" onmouseover="return CSIShow(/*CMP*/'pubs',1)" onmouseout="return CSIShow(/*CMP*/'pubs',0)" onclick="CSIShow(/*CMP*/'pubs',2);return CSButtonReturn()"><img src="images/pubs.jpg" width="135" height="30" name="pubs" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/conv.jpg" cl="images/convb.jpg"><a href="convention.html" onmouseover="return CSIShow(/*CMP*/'conv',1)" onmouseout="return CSIShow(/*CMP*/'conv',0)" onclick="CSIShow(/*CMP*/'conv',2);return CSButtonReturn()"><img src="images/convb.jpg" width="135" height="30" name="conv" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/linksb.jpg" cl="images/links.jpg"><a href="links.html" onmouseover="return CSIShow(/*CMP*/'links',1)" onmouseout="return CSIShow(/*CMP*/'links',0)" onclick="CSIShow(/*CMP*/'links',2);return CSButtonReturn()"><img src="images/links.jpg" width="135" height="30" name="links" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/contact.jpg" cl="images/contactb.jpg"><a href="contact.html" onmouseover="return CSIShow(/*CMP*/'contact',1)" onmouseout="return CSIShow(/*CMP*/'contact',0)" onclick="CSIShow(/*CMP*/'contact',2);return CSButtonReturn()"><img src="images/contactb.jpg" width="135" height="30" name="contact" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30"><csobj w="135" h="30" t="Button" ht="images/apab.jpg" cl="images/apa.jpg"><a href="http://www.apa.org" onmouseover="return CSIShow(/*CMP*/'home',1)" onmouseout="return CSIShow(/*CMP*/'home',0)" onclick="CSIShow(/*CMP*/'home',2);return CSButtonReturn()"><img src="images/apa.jpg" width="135" height="30" name="home" border="0"></a></csobj></td>
+								</tr>
+								<tr height="30">
+									<td width="135" height="30" align="left" valign="top"><csobj w="135" h="30" t="Button" ht="images/otherb.jpg" cl="images/other.jpg"><a href="http://www.apa.org/about/division.html" onmouseover="return CSIShow(/*CMP*/'apa',1)" onmouseout="return CSIShow(/*CMP*/'apa',0)" onclick="CSIShow(/*CMP*/'apa',2);return CSButtonReturn()"><img src="images/other.jpg" width="135" height="30" name="apa" border="0"></a></csobj></td>
+								</tr>
+							</table>
+							
+          <img src="images/symbol.jpg" width="135" height="173"> </div>
+					</td>
+					<td width="755" height="500" align="left" valign="top">
+						<div align="left">
+							
+          <ul>
+            <table border="0" cellpadding="0" cellspacing="2" width="76%">
+              <tr height="10"> 
+                <td height="10"></td>
+                <td height="10"><spacer type="vertical" size="10"></td>
+                <td height="10"></td>
+              </tr>
+              <tr height="500"> 
+                <td height="500"></td>
+                <td height="500" valign="top"><span class="subhead">For questions 
+                  regarding event information, membership applications, or to 
+                  order a publication from this site please contact:<br>
+                  </span> <ul>
+                    <p><span class="body">Division 12 Central Office<br>
+                      <GEO TYPE="US">P.O. Box 1082<br>
+                      Niwot CO 80544</GEO><br>
+                      (303) 652-3126 FAX: (303) 652-2723<br>
+                      <a href="mailto:div12apa@comcast.net">div12apa@comcast.net</a></span></p>
+                  </ul>
+                  <p><span class="subhead"> 
+                  <hr noshade size="1">
+                  </span><span class="subhead">Website Editor:<br>
+                  </span></p> <ul>
+                    <p><span class="body">Stephen Ilardi, Ph.D.<br>
+                      (785) 864-9840<br>
+                      <a href="mailto:ilardi@ukans.edu">email: ilardi@ukans.edu</a></span></p>
+                  </ul>
+                  <p><span class="body"> 
+                  <hr noshade size="1">
+                  </span><span class="subhead">Website Design &amp; Maintenance:<br>
+                  </span></p> <ul>
+                    <p><span class="body">Emily Visser<br>
+                      (416) 516-3622<br>
+                      <a href="http://www.visserdesign.com">Visser Design Associates</a></span></p>
+                  </ul>
+                  <p><span class="body"> 
+                  <hr noshade size="1">
+                  </span><span class="subhead2"><span class="header"><b>Copyright 
+                  Notice</b></span></span></p> <div align="left"> 
+                    <p><span class="subhead2">All works within this website are 
+                      copyright their respective owners. Information from this 
+                      website may be reproduced with permission of the publisher.</span></div></td>
+                <td height="500"></td>
+              </tr>
+              <tr> 
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr> 
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </ul>
+        </div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<center>
+			<p>
+			<table border="0" cellpadding="5" cellspacing="0" width="100%" bgcolor="#bbdfef" height="50">
+				<tr>
+					
+      <td align="center" valign="middle" bgcolor="#c3e1ff" width="87%"><a href="index.html"><span class="body">Home</span></a><span class="body"> 
+        &#149; <a href="aboutcp.html">About Clinical Psychology</a> &#149; <a href="div12.html">Division 
+        12 Sections</a> &#149; <a href="div12G.html">Division 12 Governance</a> 
+        &#149;&nbsp;<a href="members.html">Membership</a> &#149;&nbsp;<a href="journals.html">Journals 
+        and Publications</a> &#149; <a href="news.html">News and Announcements</a> 
+        &#149; <a href="awards.html">Fellowships and Awards</a> &#149; <a href="cppi.html">Clinical 
+        Psychology and the Public Interest</a> &#149; <a href="conted.html">Continuing 
+        Education</a> &#149; <a href="convention.html">Convention Program</a> 
+        &#149; <a href="links.html">Link Resources</a> &#149; <a href="contact.html">Contact 
+        Information</a> &#149; <a href="http://www.apa.org">APA Home</a> &#149; 
+        <a href="http://www.apa.org/about/division.html">Other APA Divisions</a></span></td>
+				</tr>
+			</table>
+			<!-- End ImageReady Slices -->
+		</center>
+	</body>
+
+</html>

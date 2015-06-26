@@ -1,0 +1,122 @@
+<DOC>
+<DOCNO>g00353</DOCNO>
+<DOCHDR>http://www.tpt.org/about/feedback_form.html</DOCHDR>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>  <title>TPT - Twin Cities Public Television</title>  <meta http-equiv="content-type" content="text/html; charset=us-ascii" />  <script type="text/javascript" src="http://tpt.org/includes/javascript.js"></script>  <!-- All page styles come from this link. -->  <style type="text/css">  @import "http://www.tpt.org/includes/station_tpt.css";.style2 {font-size: 10px}  </style> </head><body onload="preloadImages();" bgcolor=#ffffff><!-- Top Navigation Include -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+userAgent = window.navigator.userAgent;
+browserVers = parseInt(userAgent.charAt(userAgent.indexOf("/")+1),10);
+function findElement(n,ly) {
+	if (browserVers < 4)		return document[n];
+	var curDoc = ly ? ly.document : document;
+	var elem = curDoc[n];
+	if (!elem) {
+		for (var i=0;i<curDoc.layers.length;i++) {
+			elem = findElement(n,curDoc.layers[i]);
+			if (elem) return elem;
+		}
+	}
+	return elem;
+}
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images) {
+		var img;
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			img = null;
+			if (document.layers) {
+				img = findElement(changeImages.arguments[i],0);
+			}
+			else {
+				img = document.images[changeImages.arguments[i]];
+			}
+			if (img) {
+				img.src = changeImages.arguments[i+1];
+			}
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		nav_01_over = newImage("http://tpt.org/images/2004nav/nav_01-over.gif");
+		nav_02_over = newImage("http://tpt.org/images/2004nav/nav_02-over.gif");
+		nav_03_over = newImage("http://tpt.org/images/2004nav/nav_03-over.gif");
+		nav_04_over = newImage("http://tpt.org/images/2004nav/nav_04-over.gif");
+		nav_05_over = newImage("http://tpt.org/images/2004nav/nav_05-over.gif");
+		nav_06_over = newImage("http://tpt.org/images/2004nav/nav_06-over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr><td valign=top bgcolor="#006DA9" width="553"><a href="http://tpt.org/"><img src="http://www.tpt.org/images/2004nav/tpt_logo.gif" width="553" height="76" alt="Twin Cities Public Television" hspace=0 vspace=0 border=0></a></td>
+<td bgcolor="#006DA9" align=left>
+<form action="http://tpt.org/cgi-bin/htsearch">
+        <input type="hidden" name="config" value="htdig">
+        <input type="hidden" name="restrict" value="">
+        <input type="hidden" name="exclude" value="">
+        <input type="hidden" name="method" value="and">
+        <input type="hidden" name="format" value="builtin-long">
+        <input type="hidden" name="sort" value="score">
+        <input type="text" name="words" size="10"> <input type="image" src="http://www.tpt.org/images/2004nav/submit_button.gif" value="submit"> 
+</form> 
+</td></tr>
+
+<tr><td colspan="2" bgcolor="#000000" valign="top">
+<div style="position:absolute; left:0px; top:76px; width:17px; height:17px; ">
+		<img name="nav_00" src="http://tpt.org/images/2004nav/nav_00.gif" width=17 height=17 border=0></div>
+
+<div style="position:absolute; left:17px; top:76px; width:46px; height:17px; ">
+	<a href="http://tpt.org"
+		ONMOUSEOVER="changeImages('nav_01', 'http://tpt.org/images/2004nav/nav_01-over.gif'); return true;"
+		ONMOUSEOUT="changeImages('nav_01', 'http://tpt.org/images/2004nav/nav_01.gif'); return true;">
+		<img name="nav_01" src="http://tpt.org/images/2004nav/nav_01.gif" width=46 height=17 border=0 alt="tpt home page" title="tpt home page"></A></div>
+
+<div style="position:absolute; left:63px; top:76px; width:90px; height:17px; ">
+	<a href="http://tpt.org/program/"
+		ONMOUSEOVER="changeImages('nav_02', 'http://tpt.org/images/2004nav/nav_02-over.gif'); return true;"
+		ONMOUSEOUT="changeImages('nav_02', 'http://tpt.org/images/2004nav/nav_02.gif'); return true;">
+		<img name="nav_02" src="http://tpt.org/images/2004nav/nav_02.gif" width=90 height=17 border=0  alt="TV schedules, view all shows, search all shows, digital TV" title="TV schedules, view all shows, search all shows, digital TV"></A></div>
+
+<div style="position:absolute; left:153px; top:76px; width:93px; height:17px; ">
+	<a href="http://www.tpt.org/program/prog_a-z.html"
+		ONMOUSEOVER="changeImages('nav_03', 'http://tpt.org/images/2004nav/nav_03-over.gif'); return true;"
+		ONMOUSEOUT="changeImages('nav_03', 'http://tpt.org/images/2004nav/nav_03.gif'); return true;">
+		<img name="nav_03" src="http://tpt.org/images/2004nav/nav_03.gif" width=93 height=17 border=0 alt="Programs A to Z, alphabetical directory of PBS web sites" title="Programs A to Z, alphabetical directory of PBS web sites"></A></div>
+
+<div style="position:absolute; left:246px; top:76px; width:129px; height:17px; ">
+	<a href="http://tpt.org/highlights/"
+		ONMOUSEOVER="changeImages('nav_04', 'http://tpt.org/images/2004nav/nav_04-over.gif'); return true;"
+		ONMOUSEOUT="changeImages('nav_04', 'http://tpt.org/images/2004nav/nav_04.gif'); return true;">
+		<img name="nav_04" src="http://tpt.org/images/2004nav/nav_04.gif" width=129 height=17 border=0 alt="Program Highlights Overview: Links to Genre pages" title="Program Highlights Overview: Links to Genre pages"></A></div>
+
+<div style="position:absolute; left:375px; top:76px; width:83px; height:17px; ">
+	<a href="http://tpt.org/support/"
+		ONMOUSEOVER="changeImages('nav_05', 'http://tpt.org/images/2004nav/nav_05-over.gif'); return true;"
+		ONMOUSEOUT="changeImages('nav_05', 'http://tpt.org/images/2004nav/nav_05.gif'); return true;">
+		<img name="nav_05" src="http://tpt.org/images/2004nav/nav_05.gif" width=83 height=17 border=0 alt="Suppport TPT, Become A Member, Pledge/Renew your Membership, Volunteer, Donate Your Car, Join Studio Society, Give Stock" title="Suppport TPT, Become A Member, Pledge/Renew your Membership, Volunteer, Donate Your Car, Join Studio Society, Give Stock"></A></div>
+
+<div style="position:absolute; left:458px; top:76px; width:77px; height:17px; ">
+	<a href="http://pbs.org"
+		ONMOUSEOVER="changeImages('nav_06', 'http://tpt.org/images/2004nav/nav_06-over.gif'); return true;"
+		ONMOUSEOUT="changeImages('nav_06', 'http://tpt.org/images/2004nav/nav_06.gif'); return true;">
+		<img name="nav_06" src="http://tpt.org/images/2004nav/nav_06.gif" width=77 height=17 border=0  alt="Visit PBS.ORG web site" title="Visit PBS.ORG web site"></A></div>
+
+<img src="http://tpt.org/images/2004home/invisible.gif" width="0" height="17" align="right" hspace="0" vspace="0"></td></tr></table>
+<br clear="all"><br /><!-- Page Content --><table cellspacing="0">  <tr valign="top">    <td class="leftcol" height="100%">        <div class="BoxButter"><img src="../images/2004headers/header_about_left.gif" width="156" height="23" border="0" /><br /><br />		<div class="content">  <a href="http://tpt.org/about" class="sidenav">About <em><strong>tpt</strong></em>: Overview</a> <br clear="all" />  <a href="directions.html" class="sidenav">Directions to <em><strong>tpt</strong></em></a> <br clear="all" />  <a href="jobs.html" class="sidenav">Career Center</a> <br clear="all" />  <a href="http://www.tpt.org/innertube/inside" class="sidenav">Tech Zone</a> <br clear="all" />
+<a href="http://tpt.blogs.com/press" class="sidenav">Press Room</a> <br clear="all" />
+<a href="#" class="sidenav_selected">Contact Us</a> <br clear="all" /> <br clear="all" /> <p>&nbsp;</p> <p><span class="style2"><b>ADDRESS</b><br />  Twin Cities Public Television, Inc.<br />  172 East 4th Street<br />  St. Paul, MN 55101<br />  <br />  <b>CONTACT INFO.</b><br />  Tel: 651-222-1717 <br />  Fax: 651-229-1282 </span></p> <br />   </div>        </div>    </td>    <td class="maincol">    <div class="BoxWhite"><img src="../images/2004headers/header_contact_us.gif" width="550" height="23" border="0">  <br /><br />		<div class="content">      <p>We welcome questions and comments about this web site and our television programming! </p>      <p> All parts of our comment form are optional, but we'll need your e-mail address if you'd like a response. </p>      <dl>        <form method="post" action="http://www.tpt.org/cgi-bin/FormMail.pl">          <input type="hidden" name="recipient" value="viewerservices@tpt.org" />          <input type="hidden" name="redirect" value="http://www.tpt.org/about/feedback_thankyou.html" />          <table>            <tr>              <td>                <p><b>Subject: </b> </p></td>              <td>                <input type="text" name="subject" size="50" maxlength="80" />              </td>            </tr>            <tr>              <td>                <p><b>Your name:</b> </p></td>              <td>                <input type="text" name="realname" size="50" maxlength="80" />              </td>            </tr>            <tr>              <td>                <p><b>Your email:</b> </p></td>              <td>                <input type="text" name="email" size="50" maxlength="80" />              </td>            </tr>            <tr>              <td>                <p><b>Your comments:</b> </p></td>              <td>                <textarea name="comments" cols="50" rows="8" wrap="physical"></textarea>              </td>            </tr>          </table>          <p>            <center>              <b>              <input type="submit" value="send comments" name="submit" />                            <input type="reset" value="clear form" name="reset" />              </font>            </center>          </p>        </form>      </dl>      <br />     <br />  <b>VIEWER SERVICES</b><br />  <p>Call our Viewer Services line for the latest program and broadcast information. The Viewer Services staff is available 9am - 5pm, Monday - Friday.</p>      <br />      Viewer Services Telephone: 651-229-1330<br />      Viewer Services Email: <a href="mailto:viewerservices@tpt.org">viewerservices@tpt.org</a> </p>		</div>	</div>    </td>  </tr></table>  <br /><br clear="all" /><br /><div class="footer"><a href="http://www.tpt.org">TPT.ORG</a>&nbsp;| <a href="http://www.tpt.org/about/">ABOUT TPT</a>&nbsp;| <a href="http://www.tpt.org/about/feedback_form.html">CONTACT US</a>&nbsp;|<a href="http://www.tpt.org/about/termsofuse.html">TERMS OF USE</a>&nbsp;|<a href="http://www.tpt.org/about/privacypolicy.html">PRIVACY POLICY</a>&nbsp;<br clear="all" /><nobr>&copy;&nbsp;2005 Twin Cities Public Television, Inc. &nbsp;&middot;&nbsp; 651-222-1717 &nbsp;&middot;&nbsp; <a href="mailto:viewerservices@tpt.org">viewerservices@tpt.org</a> &nbsp;&middot;&nbsp; An EEO/AA Employer</nobr></div></body></html>

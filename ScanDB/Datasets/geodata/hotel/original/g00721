@@ -1,0 +1,1066 @@
+<DOC>
+<DOCNO>g00721</DOCNO>
+<DOCHDR>http://www.sidestep.com/hotel/hoteldetails1/us/wa/seattle/seattle_pacific_hotel</DOCHDR>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+    <title></title>
+    <meta name="description" content=""/>
+    <link type="text/css" rel="stylesheet" href="/common/css/masterstyle.css" />
+    <link href="/hotel/css/ppc_hotel_details.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/common/js/_bsJavascript/lib/LibCrossBrowser.js"></script>
+<script type="text/javascript" src="/common/js/_bsJavascript/lib/EventHandler.js"></script>
+<script type="text/javascript" src="/common/js/_bsJavascript/core/form/Bs_FormUtil.lib.js"></script>
+<script type="text/javascript" src="/common/js/_bsJavascript/core/gfx/Bs_ColorUtil.lib.js"></script>
+<script type="text/javascript" src="/common/js/_bsJavascript/components/slider/Bs_Slider.class.js"></script>
+<script type="text/javascript" src="/common/js/prototype-1.3.1.js"></script>
+<script type="text/javascript" language="javascript" src="/common/js/ajaxtags.js"></script>
+<script type="text/javascript" language="javascript" src="/common/js/localeCalendar.js"></script>
+<script type="text/javascript" language="javaScript" src="/common/js/util.js"></script>
+<script type="text/javascript" language="javascript" src="/common/js/x_core.js"></script>
+<script type="text/javascript" language="javascript" src="/common/js/x_dom.js"></script>
+<script type="text/javascript" language="javascript" src="/common/js/x_event.js"></script>
+<script type="text/javascript" language="javascript" src="/common/js/x_slide.js"></script>
+<script type="text/javascript" language="javascript" src="/hotel/js/front.js"></script>
+<script type="text/javascript" language="javascript" src="/hotel/js/geocode.js"></script>
+<script type="text/javascript" language="javascript">
+
+var doneLoad = false;
+var trySwap  = 0;
+
+tab0on      = new Image();
+tab0on.src  = "/images/tabs/hotel_information_on.png";
+tab0off     = new Image();
+tab0off.src = "/images/tabs/hotel_information_off.png";
+tab1on      = new Image();
+tab1on.src  = "/images/tabs/hotel_map_on.png";
+tab1off     = new Image();
+tab1off.src = "/images/tabs/hotel_map_off.png";
+tab2on      = new Image();
+tab2on.src  = "/images/tabs/amenities_on.png";
+tab2off     = new Image();
+tab2off.src = "/images/tabs/amenities_off.png";
+tab3on      = new Image();
+tab3on.src  = "/images/tabs/hotel_policies_on.png";
+tab3off     = new Image();
+tab3off.src = "/images/tabs/hotel_policies_off.png";
+tab4on      = new Image();
+tab4on.src  = "/images/tabs/hotel_reviews_on.png";
+tab4off     = new Image();
+tab4off.src = "/images/tabs/hotel_reviews_off.png";
+
+var currentTab = 0;
+
+function swapTab(num){
+    if (doneLoad){
+        eval('document.images.tab' + currentTab + '.src = tab' + currentTab + 'off.src');
+        currentTab = num;
+        eval('document.images.tab' + num + '.src = tab' + num + 'on.src');
+        for(l=0;l<5;l++) {
+            if(document.getElementById('tabContent' + l)!=null)
+                document.getElementById('tabContent' + l).style.display = 'none';
+        }
+        if(document.getElementById('tabContent' + num)){
+            document.getElementById('tabContent' + num).style.display = 'inline';
+        }
+    } else {
+        setTimeout('swapTab('+num+')',1000);
+    }
+}
+
+
+function format_date(adate) {
+	var d = adate.getDate();
+	var dLength = d.toString().length;
+	if (dLength < 2) d = '0' + d;
+	var m = adate.getMonth()+1;
+	var mLength = m.toString().length;
+	if (mLength < 2) m = '0' + m;
+	var y = adate.getYear().toString().substr(2,2);
+    return m + '/' + d + '/' + y;
+}
+
+var rightNow = new Date();
+var defaultCheckInDate = new Date(rightNow.getTime() + (14 * 86400000));
+defaultCheckInDate = format_date(defaultCheckInDate);  // format date
+var defaultCheckOutDate = new Date(rightNow.getTime() + (16 * 86400000));
+defaultCheckOutDate = format_date(defaultCheckOutDate); // format date
+
+function set_dates() {
+    var getCheckInDate = document.HotelSearchAddressForm.checkinDate.value;
+    var getCheckOutDate = document.HotelSearchAddressForm.checkoutDate.value
+    if(getCheckInDate=='mm/dd/yy') document.HotelSearchAddressForm.checkinDate.value = defaultCheckInDate;
+    if(getCheckOutDate=='mm/dd/yy') document.HotelSearchAddressForm.checkoutDate.value = defaultCheckOutDate;
+}
+
+var err = 0;
+var loadFlag = false;
+var gallery  = new Array("225876_0"  , "225876_1"  , "225876_2"  , "225876_3"  , "225876_4"  , "225876_5"  , "225876_6");
+
+function preLoad(what){
+	var myPic = new Image();
+	myPic.src = what;
+	return myPic;
+};
+
+var imgNum = 0;
+function swap(clicked){
+    var imgLink = document.getElementById('imgLink' + imgNum);
+    imgLink.style.color = '';
+    imgLink.style.textDecoration = 'underline';
+    imgNum = clicked;
+    imgLink = document.getElementById('imgLink' + imgNum);
+    imgLink.style.color = '#ff6600';
+    imgLink.style.textDecoration = 'none';
+    if (loadFlag && document.images){
+        document.images.bigpic.src = pic[clicked].src;
+	}
+};
+
+var numImgs = 6;
+
+function nextSlide() {
+var nextNum = imgNum + 1;
+if (nextNum == numImgs || nextNum == 6) nextNum = 0;
+swap(nextNum);
+}
+
+// Preload Slide Show Control Icons
+var playBtnOn = new Image();
+playBtnOn.src = '/images/buttons/play_on.png';
+var playBtnOff = new Image();
+playBtnOff.src = '/images/buttons/play_off.png';
+var stopBtnOn = new Image();
+stopBtnOn.src = '/images/buttons/stop_on.png';
+var stopBtnOff = new Image();
+stopBtnOff.src = '/images/buttons/stop_off.png';
+
+var currentAction = 'stop';
+
+function slideShow(cmd) {
+    var action = cmd;
+
+    if (action=='play') {
+        if (currentAction=='play') return false;
+        currentAction = action;
+        show = setInterval("nextSlide()", 4000);
+        document.images.play.src = playBtnOn.src;
+        document.images.stop.src = stopBtnOff.src;
+        } else {
+        if (currentAction=='stop') return false;
+        currentAction = action;
+        clearInterval(show);
+        document.images.play.src = playBtnOff.src;
+        document.images.stop.src = stopBtnOn.src ;
+        }
+}
+
+function getLrg(supp){
+	window.open('/hotel/lrg_' + supp + '.html','lrg','width=300px; height=250px; scrollbars=1;')
+};
+
+function loadPics(){
+	pic    = new Array();
+	for (p=0; p<gallery.length; p++)
+	{
+	    pic[p] = preLoad('http://images.sidestep.com/c/img/website/hotels/suppliers/VENERE/VE/' + gallery[p] + '.jpg');
+	}
+    loadFlag = true;
+};
+
+function errPic(){
+    if (((gallery.length - 1 <= 6 && err == gallery.length - 1) || (gallery.length - 1 > 6 && err >= 6))) {
+        if(document.getElementById("picInf")!=null)
+            document.getElementById("picInf").style.display = "none";
+
+    }
+}
+function switchTab(tabname){
+    var loc = window.location.href;
+    if(loc.indexOf('?') > 0){
+        if(loc.indexOf('tab=') > 0){
+            var params = loc.substring(loc.indexOf('?')+1,loc.length).split('&');
+            for(var i=0;i<params.length;i++){
+                var p = params[i];
+                if(p.indexOf('tab=')==0){
+                    params[i] = 'tab='+tabname;
+                    break;
+                }
+            }
+            var newparams = params.join('&');
+            loc = loc.substring(0,loc.indexOf('?')+1) + newparams;
+        }
+        else
+            loc += '&tab=' + tabname;
+    }
+    else
+        loc += '?tab=' + tabname;
+
+    window.location.href = loc;
+
+}
+
+function initPage(){
+    loadPics();
+    errPic();
+    doneLoad = true
+}
+
+
+
+</script>
+</head>
+<body>
+<div id="sidestep_header"><div id="coBrandedHeader"></div>
+    <div style="float:left;"><a href="http://www.sidestep.com"><img src="/images/header/logo_ss.gif" border="0" alt="SideStep" width="191" height="68"/></a></div>
+    <div style="float:left; background-color:#ffffff"><img src="/images/clear.gif" width="10" height="68"/></div>
+    <div style="float:left; background-color:#ffffff">
+        <div><img src="/images/clear.gif" width="11" height="41" alt=""/></div>
+        <div><img src="/images/header/tab_left.gif" width="11" height="27" alt=""/></div>
+    </div>
+    <div style="float:left; border-left:1px solid #ffffff">
+        <div><a href="/air/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/icon_flight.gif" alt="Airline Tickets" width="61" height="41" border="0"></a></div>
+        <div><a href="/air/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/flight_off.gif" border="0" width="61" height="27" alt="Airline Tickets"></a></div>
+    </div>
+	<div style="float:left; border-left:1px solid #ffffff">
+        <div style="position:absolute; top:72px; width:57px; z-index:39" align="center"><img src="/images/tabs/tab_pointer.gif" width="13" height="7"/></div><div><a href="/hotel/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/icon_hotel.gif" alt="Hotels" width="57" height="41" border="0"></a></div>
+        <div><a href="/hotel/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/hotel_on.gif" border="0" width="57" height="27" alt="Hotels"></a></div>
+    </div>
+	<div style="float:left; border-left:1px solid #ffffff">
+        <div><a href="/car/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/icon_car.gif" alt="Car Rentals" width="44" height="41" border="0"></a></div>
+        <div style="position:relative; z-index:5"><a href="/car/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/car_off.gif" border="0" width="44" height="27" alt="Car Rentals"></a></div>
+	</div>
+    <div style="float:left; border-left:1px solid #ffffff">
+        <div><a href="/vacations/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/icon_vacation_packages.gif" alt="Packages" width="123" height="41" border="0"></a></div>
+	    <div style="position:relative; z-index:5"><a href="/vacations/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/vacation_packages_off.gif" border="0" alt="Packages"></a></div>
+    </div>
+    <div style="float:left; border-left:1px solid #ffffff">
+        <div><a href="/activities/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/icon_activities.gif" alt="Activities" width="77" height="41" border="0"></a></div>
+	    <div style="position:relative; z-index:5"><a href="/activities/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/activities_off.gif" border="0" width="77" height="27" alt="Activities"></a></div>
+    </div>
+    <div style="float:left; border-left:1px solid #ffffff">
+        <div><a href="/travel-guides/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/icon_travel_guides.gif" alt="Travel Guides" width="103" height="41" border="0"></a></div>
+	    <div style="position:relative; z-index:5"><a href="/travel-guides/;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10"><img src="/images/header/travel_guides_off.gif" border="0" width="103" height="27" alt="Travel Guides"></a></div>
+    </div>
+    <div style="float:left; border-left:1px solid #ffffff">
+        <div><img src="/images/clear.gif" width="11" height="41" alt=""></div>
+        <div><img src="/images/header/tab_right.gif" width="11" height="27" alt=""/></div>
+    </div>
+    <div style="float:right; border-left:1px solid #ffffff; position:relative; z-index:5">
+        <div><img src="/images/clear.gif" width="11" height="41" alt=""/></div>
+        <div><img src="/images/header/tab_right.gif" width="11" height="27" alt=""/></div>
+    </div>
+    <div style="float:right; border-left:1px solid #ffffff"><div><a href="http://www.sidestep.com/home.html"><img src="/images/header/icon_toolbar.gif" alt="Toolbar" width="69" height="41" border="0"></a></div><div><a href="http://www.sidestep.com/home.html"><img src="/images/header/toolbar_off.gif" alt="Toolbar" width="69" height="27" border="0"></a></div></div><div style="float:right; border-left:1px solid #ffffff; position:relative; z-index:5">
+        <div><a href="/newsletter/signup.do?signup=new"><img src="/images/header/icon_newsletters.gif" alt="Newsletters" width="104" height="41" border="0"></a></div>
+        <div><a href="/newsletter/signup.do?signup=new"><img src="/images/header/newsletter_off.gif" alt="Newsletters" width="104" height="27" border="0"></a></div>
+    </div>
+    <div style="float:right; border-left:1px solid #ffffff; position:relative; z-index:5">
+        <div><a href="/deals/"><img src="/images/header/icon_deals.gif" alt="Deals" width="70" height="41" border="0"></a></div>
+        <div><a href="/deals/"><img src="/images/header/deals_off.gif" alt="Deals" width="70" height="27" border="0"></a></div>
+    </div>
+    <div style="float:right; border-left:1px solid #ffffff; position:relative; z-index:5">
+        <div><img src="/images/clear.gif" width="11" height="41" alt=""/></div>
+        <div><img src="/images/header/tab_left.gif" width="11" height="27" alt=""/></div>
+    </div>
+<div style="background-color:#DF5900; padding-bottom:1px; clear:both; border-bottom:1px solid #ffffff; z-index:10; position:relative;"><img src="/images/clear.gif" width="977" height="3"></div>
+</div>
+<div id="calendarDiv">
+<iframe id="cal_iframe_id" src="/common/CalendarAction.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10" scrolling="no" marginheight="0" marginwidth="0" noresize frameborder="0"></iframe>
+</div>
+<div id="content">
+    <div id="leftbar"></div>
+    <div id="maincontent">
+        <div id="main_header"></div>
+        <div id="corecontent"><table cellpadding="0" cellspacing="0" border="0" width="739">
+            <tr>
+                <td>
+                <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                        <td nowrap><a href="/hotel/" class="txt-small"><b>Home</b></a></td>
+                        <td nowrap valign="bottom"><img src="/images/buttons/arrow_breadcrumb.png" hspace="7" vspace="3"></td>
+                        <td nowrap><span class="txt-small"><b>Hotel Details</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="/images/clear.gif" width="1" height="11"></td>
+            </tr>
+            <tr>
+                <td class="hdr" align="left">
+                    <h1 class="hdr"></h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="txt">
+                <span class="txt" style="font-size:14px"><b>Priced from&nbsp;</b></span><span class="hdr-sub" style="font-size:14px; color:#CC0000">$79.00</span>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" style="padding-top:10px;">
+                <!-- SUMMARY x2 start -->
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="panelTopLeft"><img src="/images/clear.gif" height="14" width="14"></td>
+                            <td class="panelTop"><img src="/images/clear.gif" height="14" width="14"></td>
+                            <td class="panelTopRight"><img src="/images/clear.gif" height="14" width="14"></td>
+                        </tr>
+                        <tr>
+                            <td class="panelLeft"><img src="/images/clear.gif" height="14" width="14"></td>
+                            <td class="panelMiddle" align="center" width="100%">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="txt-label" align="left"><table cellpadding="0" cellspacing="0" border="0">
+<form name="nav" method="GET" target="_top">
+<input type="hidden" name="tab" value="WHcit"/>
+<input type="hidden" name="moreOptions"/>
+
+<tr>
+    <td class="txt-label">Search:</td>
+    <td style="padding-left:10px"><input type="radio" name="subNav" checked /></td>
+    <td><nobr><span style="color:#ff6600; font-weight:bold;" class="txt-label">this hotel</span></nobr></td>
+    <td style="padding-left:10px"><input type="radio" name="subNav" onClick="document.location='/hotel/search_input_switch.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10?tripType=city&currentTripType=htdl'"/></td>
+    <td><nobr><a href="/hotel/search_input_switch.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10?tripType=city&currentTripType=htdl" style="color:#3366ff;">in city</a></nobr></td>
+    <td style="padding-left:10px"><input type="radio" name="subNav" onClick="document.location='/hotel/search_input_switch.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10?tripType=addr&currentTripType=htdl'"/></td>
+    <td><nobr><a href="/hotel/search_input_switch.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10?tripType=addr&currentTripType=htdl" style="color:#3366ff;">near address</a></nobr></td>
+    <td style="padding-left:10px"><input type="radio" name="subNav" onClick="document.location='/hotel/search_input_switch.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10?tripType=apcd&currentTripType=htdl'"/></td>
+    <td><nobr><a href="/hotel/search_input_switch.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10?tripType=apcd&currentTripType=htdl" style="color:#3366ff;">near airport</a></nobr></td>
+</tr>
+</form>
+</table>
+</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-label" align="left" style="padding-top:10px"><table cellpadding="0" cellspacing="0" border="0" width="0">
+<form name="HotelSearchAddressForm" method="POST" action="/hotel/search_address.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10" target="_top"><input type="hidden" name="hotelKey" value="130928"><input type="hidden" name="origin" value="WHhot"><tr>
+<td align="center"><table border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+    <td style="padding-right:15px" valign="bottom"><nobr><img src="/images/clear.gif" border="0" align="absmiddle" name="error_checkin"><span class="txt-label">Check In&nbsp;</span><span class="txt-small grey">(mm/dd/yy)</span></nobr></td>
+    <td style="padding-right:15px" valign="bottom"><nobr><img src="/images/clear.gif" border="0" align="absmiddle" name="error_checkout"><span class="txt-label">Check Out&nbsp;</span><span class="txt-small grey">(mm/dd/yy)</span></nobr></td>
+    <td>&nbsp;</td>
+</tr>
+<script>
+function updateDateInput(oValue,oInput) {
+if (oInput=='checkinDate') checkDateRange(oValue,document.HotelSearchAddressForm,document.HotelSearchAddressForm.checkinDate);
+if (oInput=='checkoutDate') checkDateRange(oValue,document.HotelSearchAddressForm,document.HotelSearchAddressForm.checkoutDate);
+}
+
+function openCalendar(oInput,y,x) {
+if (oInput=='checkinDate') popCalendar(document.HotelSearchAddressForm,document.HotelSearchAddressForm.checkinDate,'',y,x);
+if (oInput=='checkoutDate') popCalendar(document.HotelSearchAddressForm,document.HotelSearchAddressForm.checkoutDate,'',y,x);
+}
+
+function checkEnter(e) {
+	if (e.keyCode == 13) {
+        runSearch();
+		document.HotelSearchAddressForm.submit();
+	}
+}
+</script>
+<tr>
+<td style="padding-right:15px" valign="top">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td><input type="text" name="checkinDate" value="mm/dd/yy" onkeypress="checkEnter(event)" onblur="updateDateInput(this.value,'checkinDate')" style="width: 80px" id="checkinDate"></td>
+    <td><a href="javascript:void(0)" onClick="popupCalendar({action:'/common/CalendarAction.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10',field:'checkinDate'},event.clientY,event.clientX);"><img src="/images/icons/calendar_icon.png" border="0" width="28" height="21"></a></td>
+</tr>
+</table>
+</td>
+<td style="padding-right:15px" valign="top">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td><input type="text" name="checkoutDate" value="mm/dd/yy" onkeypress="checkEnter(event)" onblur="updateDateInput(this.value,'checkoutDate')" style="width: 80px" id="checkoutDate"></td>
+    <td><a href="javascript:void(0)" onClick="popupCalendar({action:'/common/CalendarAction.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10',field:'checkoutDate'},event.clientY,event.clientX);"><img src="/images/icons/calendar_icon.png" border="0" width="28" height="21"></a></td>
+</tr>
+</table></td><td>&nbsp;</td>
+</tr>
+<tr>
+    <td style="padding-top:10px" class="txt-label" valign="bottom">Total Rooms</td>
+    <td style="padding-top:10px" class="txt-label" valign="bottom">Total Adults</td>
+    <td style="padding-top:10px" class="txt-label" valign="bottom">Total Children</td>
+</tr>
+<tr>
+    <td style="padding-right:15px; padding-top: 1px" valign="top">
+    <select name="numberOfRooms" onchange="fixList(this.value)" style="width:80px;" id="numberOfRooms"><option value="1" selected="selected">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option></select></td>
+    <td style="padding-top: 1px; padding-right:15px" valign="top"><div id="pullAdults">
+    <select name="AdultsNumber" id="AdultsNumber" style="width:80px;font-size:11px">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    </select></div><input type="hidden" name="numberOfAdults" value="1" id="numberOfAdults"></td><td style="padding-top: 1px; padding-right:15px" valign="top"><div id="pullChildren">
+    <select name="ChildrenNumber" id="ChildrenNumber" style="width:80px;">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    </select></div><input type="hidden" name="numberOfChildren" value="0" id="numberOfChildren"></td>
+</tr>
+<script type="text/javascript" language="javaScript">
+    fixList(1);
+</script>
+<input type="hidden" name="hotelName" value=""><input type="hidden" name="hotelKey" value="130928"><input type="hidden" name="hotelRating" value="1"><tr>
+    <td valign="top" colspan="6"><img src="/images/clear.gif" height="15" width="1"></td>
+</tr>
+<tr>
+    <td valign="top" colspan="6" align="center"><input type="image" style="cursor:pointer" src="/images/buttons/search_multiple.png"/><input type="hidden" name="calaction1" id="calaction1"> <input type="hidden" name="calaction2" id="calaction2"> </td>
+</tr>
+</table>
+<script type="text/javascript">
+var updatefield_checkinDate = new AjaxJspTag.UpdateField(
+"/common/comparedatefields.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10", {
+parameters: "date1={checkinDate},date2={checkoutDate},target=checkoutDate,o=1,formName=HotelSearchAddressForm",
+action: "calaction1",
+target: "checkoutDate",
+source: "checkinDate"
+});
+</script>
+
+
+<script type="text/javascript">
+var updatefield_checkoutDate = new AjaxJspTag.UpdateField(
+"/common/comparedatefields.do;jsessionid=3B6D4E45C06AD3AE3613AB5FFD7CD9E2.fe10", {
+parameters: "date1={checkinDate},date2={checkoutDate},target=checkinDate,o=2,formName=HotelSearchAddressForm",
+action: "calaction2",
+target: "checkinDate",
+source: "checkoutDate"
+});
+</script>
+
+
+</td>
+</tr>
+</form></table>
+</td>
+                                </tr>
+                            </table>
+                            </td>
+                            <td class="panelRight"><img src="/images/clear.gif" height="14" width="14"></td>
+                        </tr>
+                        <tr>
+                            <td class="panelBottomLeft"><img src="/images/clear.gif" height="14" width="14"></td>
+                            <td class="panelBottom"><img src="/images/clear.gif" height="14" width="14"></td>
+                            <td class="panelBottomRight"><img src="/images/clear.gif" height="14" width="14"></td>
+                        </tr>
+                    </table>
+                    </td>
+                <!-- end SEARCH -->
+                </tr>
+                <tr>
+                    <td bgcolor="ffffff"><img src="/images/clear.gif" height="20" border="0"></td>
+                </tr>
+                <tr>
+                    <td>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<!-- start SUBTABLE -->
+    <tr>
+        <td>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <!-- start SUBTABLE -->
+            <tr>
+                <td background="/images/tabs/tab_right_spacer.gif"><img src="/images/clear.gif" width="5" height="28"></td>
+                <td><img src="/images/tabs/hotel_information_on.png"  border="0" name="tab0" onclick="switchTab('hotel-information')" style="cursor:pointer"></td>
+                <td><img src="/images/tabs/hotel_reviews_off.png"  border="0" name="tab4" onclick="switchTab('user-reviews')" style="cursor:pointer"></td>
+                <td><img src="/images/tabs/hotel_map_off.png" border="0" name="tab1" onclick="switchTab('map')" style="cursor:pointer"></td>
+                <td><img src="/images/tabs/amenities_off.png" border="0" name="tab2" onclick="switchTab('amenities')" style="cursor:pointer"></td>
+                <td width="100%" background="/images/tabs/tab_right_spacer.gif"><img src="/images/clear.gif" width="1" height="28"></td>
+            </tr>
+            <tr>
+                <td colspan="10" style="background-color:#df5a02"><img src="/images/clear.gif" width="1" height="6"></td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+<tr>
+    <td style="padding:10px; border-right: 1px solid #D7DAC5; border-bottom: 1px solid #D7DAC5; border-left: 1px solid #D7DAC5;" colspan="7" class="txt">
+<div id="tabContent0">
+<div id="picInf">
+<table cellpadding="0" cellspacing="0" border="0" align="right">
+<tr>
+    <td rowspan="3"><img src="/images/clear.gif" height="1" width="20" border="0"></td>
+    <td class="tableborder"><img src="http://images.sidestep.com/c/img/website/hotels/suppliers/VENERE/VE/225876_0.jpg" border="0" vspace="0" name="bigpic" width="217" height="166" onError="this.src='/images/clear.gif'" alt="SEATTLE PACIFIC HOTEL"></td>
+</tr>
+<tr>
+    <td style="border-top-width:0px; border-right-width:1px; border-bottom-width:1px; border-left-width:1px; border-style:solid; border-color:#CCCC66;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" align="right">
+        <tr>
+            <td width="24" height="21"><img src="/images/buttons/stop_on.png" id="stop" name="stop" alt="Stop" width="24" height="21" border="0" style="cursor:pointer" onclick="slideShow('stop')"></td>
+            <td width="24" height="21"><img src="/images/buttons/play_off.png" id="play" name="play" alt="Play" width="24" height="21" border="0" style="cursor:pointer" onclick="nextSlide();slideShow('play')"></td>
+            <td align="right" valign="middle" height="21" style="padding-bottom: 3px" bgcolor="#F5F6EE"><span class="txt grey">Picture:&nbsp;</span>
+            <nobr>
+            <span class="txt-small"><a onClick="slideShow('stop'); swap(0)" id="imgLink0"
+            
+            style="cursor:pointer;font-weight: bold; text-decoration: none; color: #ff6600">1</a>
+            <span class='txt-grey'>-</span><span class="txt-small"><a onClick="slideShow('stop'); swap(1)" id="imgLink1"
+            
+            style="cursor:hand;cursor:pointer; font-weight: bold; text-decoration: underline">2</a>
+            <span class='txt-grey'>-</span><span class="txt-small"><a onClick="slideShow('stop'); swap(2)" id="imgLink2"
+            
+            style="cursor:hand;cursor:pointer; font-weight: bold; text-decoration: underline">3</a>
+            <span class='txt-grey'>-</span><span class="txt-small"><a onClick="slideShow('stop'); swap(3)" id="imgLink3"
+            
+            style="cursor:hand;cursor:pointer; font-weight: bold; text-decoration: underline">4</a>
+            <span class='txt-grey'>-</span><span class="txt-small"><a onClick="slideShow('stop'); swap(4)" id="imgLink4"
+            
+            style="cursor:hand;cursor:pointer; font-weight: bold; text-decoration: underline">5</a>
+            <span class='txt-grey'>-</span><span class="txt-small"><a onClick="slideShow('stop'); swap(5)" id="imgLink5"
+            
+            style="cursor:hand;cursor:pointer; font-weight: bold; text-decoration: underline">6</a>
+            
+            &nbsp;</nobr></td>
+        </tr>
+    </table>
+    </td>
+</tr>
+<tr>
+    <td><img src="/images/clear.gif" height="20" border="0"></td>
+</tr>
+</table>
+</div>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+    <td class="txt" valign="top" style="padding-bottom: 7px">Hotel:&nbsp;&nbsp;</td>
+    <td class="txt" valign="top" style="padding-bottom: 7px"><h2  class="txt"><b>Seattle Pacific Hotel</b></h2>
+    </td>
+</tr>
+<tr>
+    <td class="txt" valign="top" style="padding-bottom: 7px">Rating:&nbsp;&nbsp;</td>
+    <td class="txt" valign="top" style="padding-bottom: 7px">
+    <nobr>
+    <img src="/images/results/star.png" width="18" height="18" border="0" align="absmiddle">
+    <img src="/images/results/star.png" width="18" height="18" border="0" align="absmiddle">
+    </nobr>
+    </td>
+</tr>
+<tr>
+    </tr>
+<tr>
+    <td class="txt" valign="top" style="padding-bottom: 7px">Address:&nbsp;&nbsp;</td>
+    <td class="txt" valign="top" style="padding-bottom: 7px" width="100%">325 Aurora Avenue North<br>
+    Seattle, WA98109</td>
+</tr>
+<tr>
+    <td class="txt" valign="top" style="padding-bottom: 10px">Amenities:&nbsp;&nbsp;&nbsp;</td>
+    <td class="txt-grey" align="left" valign="top" style="padding-bottom: 10px"><img src="/images/results/amenities/restaurant.gif" border="0" align="absmiddle" width="20" height="20" alt=" Restaurant">
+    <img src="/images/results/amenities/outdoorpool.gif" border="0" align="absmiddle" width="20" height="20" alt=" Outdoor Pool">
+    </td>
+</tr>
+</table>
+The Seattle Pacific Hotel is a pleasant, three-story property conveniently located in the heart of Seattle, just two blocks from the Space Needle and the Seattle Center, and minutes to famed Pike`s Place Market, Pioneer Square, the University of Washington, as well as the Woodland Park Zoo. Close access to many area businesses, to the airport, and to major tourist attractions, make the property a good choice for both corporate and leisure travelers. Whatever brings you to Seattle, you will be always welcomed with a kind, Western hospitality. Enjoy some of the numerous tours of Seattle and of the surrounding area, or relax in one of the newly remodeled guest rooms. Start your day with complimentary continental breakfast and catch up on current events with a free weekday newspaper in the lobby. And after a long day, you can go for a swim in the heated outdoor pool (seasonal) or unwind in the spa tub. Wi-Fi Internet access is available throughout the property, and an Internet Point is at guests` disposal free of charge in the lobby.</div>
+</td>
+</tr>
+<!-- end SUBTABLE -->
+</table>
+                </td>
+            </tr>
+            <tr>
+<td><img src="/images/clear.gif" height="20" width="1"></td>
+</tr>
+            <tr>
+                <td style="border-bottom: 1px solid #D7DAC5">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" id="NoArea" style="display:inline">
+                        <tr>
+                            <td><img src="/images/tabs/component_tab_left.png" width="7" height="21"></td>
+                            <td nowrap background="/images/tabs/component_tab_bkgnd.png" valign="bottom" class="colheader" width="100%" style="padding-left: 5px;">Other Area Hotels</td>
+                            <td><img src="/images/tabs/component_tab_right2.png" width="7" height="21"></td>
+                            <td width="99%"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+        <td class="componentContent" style="padding-left:10px; padding-right:10px; padding-top:6px">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <img src="/images/results/star.png" width="18" height="18" border="0" align="absmiddle"/><img src="/images/results/star.png" width="18" height="18" border="0" align="absmiddle"/></td>
+                        <td valign="middle" align="right" class="txt-small" nowrap><b>Priced from</b></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/seattle/roosevelt,_a_coast_hotel">Roosevelt, A Coast Hotel</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"><span class="txt-label price"><b>$145.89</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/seattle/la_hacienda_motel">La Hacienda Motel</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/seattle/kings_inn">Kings Inn</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"><span class="txt-label price"><b>$81.50</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/seattle/quality_inn_&amp;_suites">Quality Inn &amp; Suites</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"><span class="txt-label price"><b>$118.56</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/seattle/ramada_inn_downtown_seattle">Ramada Inn Downtown Seattle</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"><span class="txt-label price"><b>$119.00</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/seattle/seattle_vagabond_inn">Seattle Vagabond Inn</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"><span class="txt-label price"><b>$87.62</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/seattle/inn_at_queen_anne">Inn At Queen Anne</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"><span class="txt-label price"><b>$108.73</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/seattle/la_quinta_seattle">La Quinta Seattle</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"><span class="txt-label price"><b>$129.00</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/seattle/days_inn-seattle_downtown">Days Inn-seattle Downtown</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"><span class="txt-label price"><b>$91.68</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding-top:4px; padding-right:3px" nowrap class="txt"><a href="/hotel/hoteldetails1/us/wa/tukwila/days_inn_seattlesouth_tukwila">Days Inn Seattlesouth Tukwila</a></td>
+                        <td style="background-image: url(/images/bg_dotted_border_btm_18.png); background-repeat" width="99%"><img src="/images/clear.gif" height="18" width="1"></td>
+                        <td style="padding-top:5px; padding-left:3px" align="right"><span class="txt-label price"><b>$68.00</b></span></td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+            </table>
+        </td>
+    </tr>
+            <tr>
+        <td>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+                <td><img src="/images/tabs/component_bottom_left.png" width="12" height="15"></td>
+                <td width="99%" nowrap background="/images/tabs/component_bottom_bkgnd.png"><img src="/images/clear.gif" width="1" height="15"></td>
+                <td><img src="/images/tabs/component_bottom_right.png" width="12" height="15"></td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+        </table>
+        </td>
+
+    <!-- end HOTEL DETAIL BLOCK -->
+    </tr>
+
+</table>
+<!-- SEO Random Review List -->
+<!-- End SEO Random Reviews List -->
+
+<div id="fbb_ads_pcc">
+    <html>
+<head>
+<link rel=stylesheet href="/common/css/masterstyle.css" type="text/css" />
+</head>
+<body>
+<div id="fbb_element" style="overflow:hidden;display:block;margin:20px 0px 20px 0px;text-align:center;">
+   <!--side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=300x250;tile=4;ord=91534512--><script language="JavaScript" type="text/javascript"> document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=300x250;tile=4;ord=91534512?"  type="text/javascript"><\/script>');</script><noscript><a href="http://ad.doubleclick.net/jump/side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=300x250;tile=4;ord=91534512?"  target="_blank"> <img src="http://ad.doubleclick.net/ad/side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=300x250;tile=4;ord=91534512?"  width="300"  height="250"  border="0" alt=""></a></noscript></div>
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="728px">
+  <tr>
+        <td style="background-image:url(/images/common/card_dotted_line.gif);"><img src="/images/spacer.gif" width="1" height="12"></td>
+  </tr>
+  <tr>
+        <td style="font-size: 10px; color:#999999; font-family: Verdana, Arial, Helvetica, sans-serif;">
+Sponsored Links
+        </td>
+  </tr>
+</table>
+<body rightmargin="0" leftmargin="0" topmargin="0" bgcolor="#FFFFFF">
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+        
+        <!--
+         result set data:
+        --><tr>
+<td><img border="0" height="1" width="5" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td><td bgcolor="#eaeaf3"><img border="0" height="1" width="1" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td>
+</tr>
+<tr>
+<td class="txt-small" valign="top"><a href="http://www.google.com/pagead/iclk?sa=l&ai=ByAqioqrLRI_aA6eOowLdk9ykCu_o_RfbrsuEApu5vgXg6yUQARgBIJ7EkAMoCUDMEEieOVDApb2JBJgBypAGoAHX2u_-A6oBMldlYnNpdGVfSG90ZWxfU0VPLVJlc2VydmF0aW9uLURldGFpbHNfVG9wLURvbWVzdGljyAEBlQIb7EgKyAKnqzs&num=1&adurl=http://expedia.click-url.com/go/gglcxeca0050016243ave/direct%3Bct.1/01/" class="txt" style="color:#3366ff;" onmouseOver="window.status='www.hotels.ca';return true;" onmouseOut="window.status='';" target="googleAdWin" onclick="focusAdWin('googleAdWin')">
+<div style="padding-top:5px" class="txt-small"><b>Hotel</b> Deals in <b>Seattle</b></div>
+</a><span onmouseout="window.status=''" onmouseover="window.status='www.hotels.ca'" style="cursor:pointer" onclick="focusAdWin('googleAdWin','http://www.google.com/pagead/iclk?sa=l&amp;ai=ByAqioqrLRI_aA6eOowLdk9ykCu_o_RfbrsuEApu5vgXg6yUQARgBIJ7EkAMoCUDMEEieOVDApb2JBJgBypAGoAHX2u_-A6oBMldlYnNpdGVfSG90ZWxfU0VPLVJlc2VydmF0aW9uLURldGFpbHNfVG9wLURvbWVzdGljyAEBlQIb7EgKyAKnqzs&amp;num=1&amp;adurl=http://expedia.click-url.com/go/gglcxeca0050016243ave/direct%3Bct.1/01/')"><span style="color:#000000;" class="txt-small">Guaranteed Low Rates for <b>Seattle</b> Hotels. Book in Canadian Dollars.</span>
+<div style="color:#666666">www.hotels.ca</div>
+</span><script language="javascript">
+                                function focusAdWin(windowname,link) {
+                                  var thelink = link;
+                                  if(link == null) thelink = "";
+                                  var win_tmp = window.open(thelink, windowname);
+                                  if(win_tmp == null || win_tmp.closed)
+                                    alert("A new window cannot be opened. \nPlease allow pop-ups from Sidestep to view the desired page");
+                                  else
+                                    win_tmp.focus();
+                                  return false;
+                                }
+                            </script></td>
+</tr>
+        
+        <!--
+         result set data:
+        --><tr>
+<td><img border="0" height="1" width="5" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td><td bgcolor="#eaeaf3"><img border="0" height="1" width="1" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td>
+</tr>
+<tr>
+<td class="txt-small" valign="top"><a href="http://www.google.com/url?sa=L&ai=BRN63oqrLRI_aA6eOowLdk9ykCrePlRizurSfAuXWnBTgvjQQAhgCIJ7EkAMoCUDMEEijOVCrkODz-v____8BmAHKkAaqATJXZWJzaXRlX0hvdGVsX1NFTy1SZXNlcnZhdGlvbi1EZXRhaWxzX1RvcC1Eb21lc3RpY8gBAZUCHIFICsgC89lB&num=2&q=http://expedia.click-url.ca/go/gglcxeca00313770ave/direct/01" class="txt" style="color:#3366ff;" onmouseOver="window.status='www.expedia.ca';return true;" onmouseOut="window.status='';" target="googleAdWin" onclick="focusAdWin('googleAdWin')">
+<div style="padding-top:5px" class="txt-small"><b>Hotel Seattle</b></div>
+</a><span onmouseout="window.status=''" onmouseover="window.status='www.expedia.ca'" style="cursor:pointer" onclick="focusAdWin('googleAdWin','http://www.google.com/url?sa=L&amp;ai=BRN63oqrLRI_aA6eOowLdk9ykCrePlRizurSfAuXWnBTgvjQQAhgCIJ7EkAMoCUDMEEijOVCrkODz-v____8BmAHKkAaqATJXZWJzaXRlX0hvdGVsX1NFTy1SZXNlcnZhdGlvbi1EZXRhaWxzX1RvcC1Eb21lc3RpY8gBAZUCHIFICsgC89lB&amp;num=2&amp;q=http://expedia.click-url.ca/go/gglcxeca00313770ave/direct/01')"><span style="color:#000000;" class="txt-small">Top Hotels all in Canadian Prices Discounted Rates Only at Expedia.ca</span>
+<div style="color:#666666">www.expedia.ca</div>
+</span><script language="javascript">
+                                function focusAdWin(windowname,link) {
+                                  var thelink = link;
+                                  if(link == null) thelink = "";
+                                  var win_tmp = window.open(thelink, windowname);
+                                  if(win_tmp == null || win_tmp.closed)
+                                    alert("A new window cannot be opened. \nPlease allow pop-ups from Sidestep to view the desired page");
+                                  else
+                                    win_tmp.focus();
+                                  return false;
+                                }
+                            </script></td>
+</tr>
+        
+        <!--
+         result set data:
+        --><tr>
+<td><img border="0" height="1" width="5" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td><td bgcolor="#eaeaf3"><img border="0" height="1" width="1" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td>
+</tr>
+<tr>
+<td class="txt-small" valign="top"><a href="http://www.google.com/url?sa=L&ai=BYDl2oqrLRI_aA6eOowLdk9ykCpLL0hmO9a7nAZu5vgWwmZkBEAMYAyCexJADKAlAzBBIqDlQqsy-ivv_____AZgBypAGqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGVAhA3SAo&num=3&q=http://www.searchignite.com//si/cm/tracking/clickredirect.aspx%3Fsicontent%3D0%26sicreative%3D396397326%26sitrackingid%3D1826586" class="txt" style="color:#3366ff;" onmouseOver="window.status='www.RedLion.com';return true;" onmouseOut="window.status='';" target="googleAdWin" onclick="focusAdWin('googleAdWin')">
+<div style="padding-top:5px" class="txt-small"><b>Seattle Hotel</b></div>
+</a><span onmouseout="window.status=''" onmouseover="window.status='www.RedLion.com'" style="cursor:pointer" onclick="focusAdWin('googleAdWin','http://www.google.com/url?sa=L&amp;ai=BYDl2oqrLRI_aA6eOowLdk9ykCpLL0hmO9a7nAZu5vgWwmZkBEAMYAyCexJADKAlAzBBIqDlQqsy-ivv_____AZgBypAGqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGVAhA3SAo&amp;num=3&amp;q=http://www.searchignite.com//si/cm/tracking/clickredirect.aspx%3Fsicontent%3D0%26sicreative%3D396397326%26sitrackingid%3D1826586')"><span style="color:#000000;" class="txt-small">Stay Comfortable With Our &#39;We Promise Or We Pay&#39; Guarantee!</span>
+<div style="color:#666666">www.RedLion.com</div>
+</span><script language="javascript">
+                                function focusAdWin(windowname,link) {
+                                  var thelink = link;
+                                  if(link == null) thelink = "";
+                                  var win_tmp = window.open(thelink, windowname);
+                                  if(win_tmp == null || win_tmp.closed)
+                                    alert("A new window cannot be opened. \nPlease allow pop-ups from Sidestep to view the desired page");
+                                  else
+                                    win_tmp.focus();
+                                  return false;
+                                }
+                            </script></td>
+</tr>
+        
+    </table>
+</body>
+<div style="background-image:url(/images/common/card_dotted_line.gif); width: 728px;"><img src="/images/spacer.gif" width="1" height="12"></div>
+
+</body>
+</html></div>
+
+
+<div style="display:none">
+<img src="http://images.sidestep.com/c/img/website/hotels/suppliers/VENERE/VE/225876_0.jpg" onerror="if(0<6)err ++;"/>
+<img src="http://images.sidestep.com/c/img/website/hotels/suppliers/VENERE/VE/225876_1.jpg" onerror="if(1<6)err ++;"/>
+<img src="http://images.sidestep.com/c/img/website/hotels/suppliers/VENERE/VE/225876_2.jpg" onerror="if(2<6)err ++;"/>
+<img src="http://images.sidestep.com/c/img/website/hotels/suppliers/VENERE/VE/225876_3.jpg" onerror="if(3<6)err ++;"/>
+<img src="http://images.sidestep.com/c/img/website/hotels/suppliers/VENERE/VE/225876_4.jpg" onerror="if(4<6)err ++;"/>
+<img src="http://images.sidestep.com/c/img/website/hotels/suppliers/VENERE/VE/225876_5.jpg" onerror="if(5<6)err ++;"/>
+</div>
+
+
+<script type="text/javascript">initPage();</script>
+
+
+
+</div>
+        <div id="rightbar"><div id="frb_ads">
+<html>
+<head>
+<link rel=stylesheet href="/common/css/masterstyle.css" type="text/css" />
+<script type="text/javascript" language="javascript">
+    function fixwidth() {
+        var ads_content = document.getElementById("ads_content");
+        if(!ads_content) return;
+        var tw = ads_content.offsetWidth;
+        var th = ads_content.offsetHeight;
+        var rightframe = parent.document.getElementById("rightframe");
+        if(!rightframe) return;
+        rightframe.width = tw + "px";
+        rightframe.height = th + "px";
+    }
+</script>
+</head>
+<body onload="fixwidth();">
+<div id="ads_content">
+<!---- Start Frb Ads ---->
+<div id="frb_0" class="frb_style" style="text-align:left;margin:0px 0px 10px 0px;display:block">
+  <!--side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=180x150;tile=2;ord=91534512--><script language="JavaScript" type="text/javascript"> document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=180x150;tile=2;ord=91534512?"  type="text/javascript"><\/script>');</script><noscript><a href="http://ad.doubleclick.net/jump/side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=180x150;tile=2;ord=91534512?"  target="_blank"> <img src="http://ad.doubleclick.net/ad/side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=180x150;tile=2;ord=91534512?"  width="180"  height="150"  border="0" alt=""></a></noscript></div>
+<div id="frbgoogle_1" style="padding:10px 0px 20px 0px">
+<table id="maintable" cellpadding="0" cellspacing="0" border="0" width="190px">
+  <tr>
+        <td style="font-size: 10px; color:#999999; font-family: Verdana, Arial, Helvetica, sans-serif;">
+            Sponsored&nbsp;Links</td>
+  </tr>
+  <tr>
+        <td style="background-image:url(http://www.sidestep.com/images/common/card_dotted_line.gif);"><img src="/images/spacer.gif" width="1" height="12"></td>
+  </tr>
+  <tr>
+        <td align="center" style="text-align:left">
+           <body rightmargin="0" leftmargin="0" topmargin="0" bgcolor="#FFFFFF">
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+        
+        <!--
+         result set data:
+        --><tr>
+<td><img border="0" height="1" width="5" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td><td bgcolor="#eaeaf3"><img border="0" height="1" width="1" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td>
+</tr>
+<tr>
+<td class="txt-small" valign="top"><a href="http://www.google.com/url?sa=L&ai=BH5GNoqrLRI_aA6eOowLdk9ykCqHihQ6bmdDqAZnyz3mw61QQBBgEIJ7EkAMoCUDMEEipOVD6krrFBZgBypAGqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGVAh1-SQrIAt2aJA&num=4&q=http://www.seattlehotels.holiday-inn.com/%3F_IATAno%3D99612461%26GCID%3DS15434x001%26keyword%3D%255BSeattle%2BHotel%255D" class="txt" style="color:#3366ff;" onmouseOver="window.status='www.holiday-inn.com';return true;" onmouseOut="window.status='';" target="googleAdWin" onclick="focusAdWin('googleAdWin')">
+<div style="padding-top:5px" class="txt-small">Holiday Inn <b>Seattle</b></div>
+</a><span onmouseout="window.status=''" onmouseover="window.status='www.holiday-inn.com'" style="cursor:pointer" onclick="focusAdWin('googleAdWin','http://www.google.com/url?sa=L&amp;ai=BH5GNoqrLRI_aA6eOowLdk9ykCqHihQ6bmdDqAZnyz3mw61QQBBgEIJ7EkAMoCUDMEEipOVD6krrFBZgBypAGqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGVAh1-SQrIAt2aJA&amp;num=4&amp;q=http://www.seattlehotels.holiday-inn.com/%3F_IATAno%3D99612461%26GCID%3DS15434x001%26keyword%3D%255BSeattle%2BHotel%255D')"><span style="color:#000000;" class="txt-small">Book Your <b>Seattle Hotel</b> Room Online &amp; Get Our Low Rate Guarantee</span>
+<div style="color:#666666">www.holiday-inn.com</div>
+</span><script language="javascript">
+                                function focusAdWin(windowname,link) {
+                                  var thelink = link;
+                                  if(link == null) thelink = "";
+                                  var win_tmp = window.open(thelink, windowname);
+                                  if(win_tmp == null || win_tmp.closed)
+                                    alert("A new window cannot be opened. \nPlease allow pop-ups from Sidestep to view the desired page");
+                                  else
+                                    win_tmp.focus();
+                                  return false;
+                                }
+                            </script></td>
+</tr>
+        
+        <!--
+         result set data:
+        --><tr>
+<td><img border="0" height="1" width="5" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td><td bgcolor="#eaeaf3"><img border="0" height="1" width="1" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td>
+</tr>
+<tr>
+<td class="txt-small" valign="top"><a href="http://www.google.com/pagead/iclk?sa=l&ai=BdSD3oqrLRI_aA6eOowLdk9ykCufknxfHyJDTAZu5vgXA3h8QBRgFIJ7EkAMoCUDMEEiTOVC7hYHBBpgBypAGoAHw2f3-A6oBMldlYnNpdGVfSG90ZWxfU0VPLVJlc2VydmF0aW9uLURldGFpbHNfVG9wLURvbWVzdGljyAEBlQIQEkkK&num=5&adurl=http://www.seattlesupersaver.com/SCVBBooking/index.aspx%3Freferersource%3DGO" class="txt" style="color:#3366ff;" onmouseOver="window.status='www.seattlesupersaver.com';return true;" onmouseOut="window.status='';" target="googleAdWin" onclick="focusAdWin('googleAdWin')">
+<div style="padding-top:5px" class="txt-small"><b>Seattle</b> Area Hotels</div>
+</a><span onmouseout="window.status=''" onmouseover="window.status='www.seattlesupersaver.com'" style="cursor:pointer" onclick="focusAdWin('googleAdWin','http://www.google.com/pagead/iclk?sa=l&amp;ai=BdSD3oqrLRI_aA6eOowLdk9ykCufknxfHyJDTAZu5vgXA3h8QBRgFIJ7EkAMoCUDMEEiTOVC7hYHBBpgBypAGoAHw2f3-A6oBMldlYnNpdGVfSG90ZWxfU0VPLVJlc2VydmF0aW9uLURldGFpbHNfVG9wLURvbWVzdGljyAEBlQIQEkkK&amp;num=5&amp;adurl=http://www.seattlesupersaver.com/SCVBBooking/index.aspx%3Freferersource%3DGO')"><span style="color:#000000;" class="txt-small"><b>Seattle</b> Super Saver Value Season Is Back. <b>Seattle</b>&#39;s Top <b>Hotel</b> Deals!</span>
+<div style="color:#666666">www.seattlesupersaver.com</div>
+</span><script language="javascript">
+                                function focusAdWin(windowname,link) {
+                                  var thelink = link;
+                                  if(link == null) thelink = "";
+                                  var win_tmp = window.open(thelink, windowname);
+                                  if(win_tmp == null || win_tmp.closed)
+                                    alert("A new window cannot be opened. \nPlease allow pop-ups from Sidestep to view the desired page");
+                                  else
+                                    win_tmp.focus();
+                                  return false;
+                                }
+                            </script></td>
+</tr>
+        
+        <!--
+         result set data:
+        --><tr>
+<td><img border="0" height="1" width="5" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td><td bgcolor="#eaeaf3"><img border="0" height="1" width="1" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td>
+</tr>
+<tr>
+<td class="txt-small" valign="top"><a href="http://www.google.com/pagead/iclk?sa=l&ai=BfVAvoqrLRI_aA6eOowLdk9ykCq2PvxLVvN6oAvXSgqIJoOmOARAGGAYgnsSQAygJQMwQSKo5UMCl4vn4_____wGYAcqQBqABl_D2_AOqATJXZWJzaXRlX0hvdGVsX1NFTy1SZXNlcnZhdGlvbi1EZXRhaWxzX1RvcC1Eb21lc3RpY8gBAZUCEt5ICqkCrz_9To-TrT4&num=6&adurl=http://www.executivehotels.net/seattle/s_seattle_home.cgi" class="txt" style="color:#3366ff;" onmouseOver="window.status='www.executivehotels.net';return true;" onmouseOut="window.status='';" target="googleAdWin" onclick="focusAdWin('googleAdWin')">
+<div style="padding-top:5px" class="txt-small">Executive <b>Hotel Seattle</b></div>
+</a><span onmouseout="window.status=''" onmouseover="window.status='www.executivehotels.net'" style="cursor:pointer" onclick="focusAdWin('googleAdWin','http://www.google.com/pagead/iclk?sa=l&amp;ai=BfVAvoqrLRI_aA6eOowLdk9ykCq2PvxLVvN6oAvXSgqIJoOmOARAGGAYgnsSQAygJQMwQSKo5UMCl4vn4_____wGYAcqQBqABl_D2_AOqATJXZWJzaXRlX0hvdGVsX1NFTy1SZXNlcnZhdGlvbi1EZXRhaWxzX1RvcC1Eb21lc3RpY8gBAZUCEt5ICqkCrz_9To-TrT4&amp;num=6&amp;adurl=http://www.executivehotels.net/seattle/s_seattle_home.cgi')"><span style="color:#000000;" class="txt-small">Close to shopping, dining, theatre In the heart of downtown</span>
+<div style="color:#666666">www.executivehotels.net</div>
+</span><script language="javascript">
+                                function focusAdWin(windowname,link) {
+                                  var thelink = link;
+                                  if(link == null) thelink = "";
+                                  var win_tmp = window.open(thelink, windowname);
+                                  if(win_tmp == null || win_tmp.closed)
+                                    alert("A new window cannot be opened. \nPlease allow pop-ups from Sidestep to view the desired page");
+                                  else
+                                    win_tmp.focus();
+                                  return false;
+                                }
+                            </script></td>
+</tr>
+        
+        <!--
+         result set data:
+        --><tr>
+<td><img border="0" height="1" width="5" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td><td bgcolor="#eaeaf3"><img border="0" height="1" width="1" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td>
+</tr>
+<tr>
+<td class="txt-small" valign="top"><a href="http://www.google.com/url?sa=L&ai=BZbQgoqrLRI_aA6eOowLdk9ykCoOooQvv76ySAZu5vgXg5FEQBxgHIJ7EkAMoCUDMEEidOVD8s5KkBJgBypAGqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGVAg2vSArIAqOcXA&num=7&q=http://click.atdmt.com/avenuea/go/gglxxstr0020000916nyc/direct/01" class="txt" style="color:#3366ff;" onmouseOver="window.status='www.starwood.com';return true;" onmouseOut="window.status='';" target="googleAdWin" onclick="focusAdWin('googleAdWin')">
+<div style="padding-top:5px" class="txt-small"><b>Seattle</b> Hotels</div>
+</a><span onmouseout="window.status=''" onmouseover="window.status='www.starwood.com'" style="cursor:pointer" onclick="focusAdWin('googleAdWin','http://www.google.com/url?sa=L&amp;ai=BZbQgoqrLRI_aA6eOowLdk9ykCoOooQvv76ySAZu5vgXg5FEQBxgHIJ7EkAMoCUDMEEidOVD8s5KkBJgBypAGqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGVAg2vSArIAqOcXA&amp;num=7&amp;q=http://click.atdmt.com/avenuea/go/gglxxstr0020000916nyc/direct/01')"><span style="color:#000000;" class="txt-small">Check Rates And Availability For <b>Seattle</b> Area Hotels!</span>
+<div style="color:#666666">www.starwood.com</div>
+</span><script language="javascript">
+                                function focusAdWin(windowname,link) {
+                                  var thelink = link;
+                                  if(link == null) thelink = "";
+                                  var win_tmp = window.open(thelink, windowname);
+                                  if(win_tmp == null || win_tmp.closed)
+                                    alert("A new window cannot be opened. \nPlease allow pop-ups from Sidestep to view the desired page");
+                                  else
+                                    win_tmp.focus();
+                                  return false;
+                                }
+                            </script></td>
+</tr>
+        
+        <!--
+         result set data:
+        --><tr>
+<td><img border="0" height="1" width="5" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td><td bgcolor="#eaeaf3"><img border="0" height="1" width="1" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td>
+</tr>
+<tr>
+<td class="txt-small" valign="top"><a href="http://www.google.com/url?sa=L&ai=BBRBOoqrLRI_aA6eOowLdk9ykCovTpRmjmOiJApu5vgXQ_y4QCBgIIJ7EkAMoCUDMEEifOVCAivLiB5gBypAGqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGVAh8NSAo&num=8&q=http://www.onlinehotels.com/hotels-search/washington/seattle-city-1651/results.html%3Futm_source%3Dgoogle-adwords%26utm_medium%3Dppc%26utm_term%3Dseattle%2Bwa%26utm_campaign%3Dcity" class="txt" style="color:#3366ff;" onmouseOver="window.status='www.OnlineHotels.com';return true;" onmouseOut="window.status='';" target="googleAdWin" onclick="focusAdWin('googleAdWin')">
+<div style="padding-top:5px" class="txt-small"><b>Seattle</b> Hotels</div>
+</a><span onmouseout="window.status=''" onmouseover="window.status='www.OnlineHotels.com'" style="cursor:pointer" onclick="focusAdWin('googleAdWin','http://www.google.com/url?sa=L&amp;ai=BBRBOoqrLRI_aA6eOowLdk9ykCovTpRmjmOiJApu5vgXQ_y4QCBgIIJ7EkAMoCUDMEEifOVCAivLiB5gBypAGqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGVAh8NSAo&amp;num=8&amp;q=http://www.onlinehotels.com/hotels-search/washington/seattle-city-1651/results.html%3Futm_source%3Dgoogle-adwords%26utm_medium%3Dppc%26utm_term%3Dseattle%2Bwa%26utm_campaign%3Dcity')"><span style="color:#000000;" class="txt-small">Stop here first for great deals on hotels in <b>Seattle</b>, Washington.</span>
+<div style="color:#666666">www.OnlineHotels.com</div>
+</span><script language="javascript">
+                                function focusAdWin(windowname,link) {
+                                  var thelink = link;
+                                  if(link == null) thelink = "";
+                                  var win_tmp = window.open(thelink, windowname);
+                                  if(win_tmp == null || win_tmp.closed)
+                                    alert("A new window cannot be opened. \nPlease allow pop-ups from Sidestep to view the desired page");
+                                  else
+                                    win_tmp.focus();
+                                  return false;
+                                }
+                            </script></td>
+</tr>
+        
+        <!--
+         result set data:
+        --><tr>
+<td><img border="0" height="1" width="5" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td><td bgcolor="#eaeaf3"><img border="0" height="1" width="1" src="http://images.sidestep.com/c/img/mvc/nav/clear.gif"></td>
+</tr>
+<tr>
+<td class="txt-small" valign="top"><a href="http://www.google.com/pagead/iclk?sa=l&ai=BmvS6oqrLRI_aA6eOowLdk9ykCoib4g_us7SqAc2jlAyQ9B0QCRgJIJ7EkAMoCUDMEEirOVDHwNqS_f____8BmAHKkAagAZXepP8DqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGAAgGVAhOvSAo&num=9&adurl=http://travel.hotels-and-discounts.com/hotels/searchframe.jsp%3Fcid%3D59562%26city%3DSeattle%26stateProvince%3D%26country%3D%26validateCity%3Dtrue%26submitted%3Dtrue%26temp1%3DGoogle_City_Hotels" class="txt" style="color:#3366ff;" onmouseOver="window.status='www.Hotels-And-Discounts.com';return true;" onmouseOut="window.status='';" target="googleAdWin" onclick="focusAdWin('googleAdWin')">
+<div style="padding-top:5px" class="txt-small"><b>Seattle Hotel</b></div>
+</a><span onmouseout="window.status=''" onmouseover="window.status='www.Hotels-And-Discounts.com'" style="cursor:pointer" onclick="focusAdWin('googleAdWin','http://www.google.com/pagead/iclk?sa=l&amp;ai=BmvS6oqrLRI_aA6eOowLdk9ykCoib4g_us7SqAc2jlAyQ9B0QCRgJIJ7EkAMoCUDMEEirOVDHwNqS_f____8BmAHKkAagAZXepP8DqgEyV2Vic2l0ZV9Ib3RlbF9TRU8tUmVzZXJ2YXRpb24tRGV0YWlsc19Ub3AtRG9tZXN0aWPIAQGAAgGVAhOvSAo&amp;num=9&amp;adurl=http://travel.hotels-and-discounts.com/hotels/searchframe.jsp%3Fcid%3D59562%26city%3DSeattle%26stateProvince%3D%26country%3D%26validateCity%3Dtrue%26submitted%3Dtrue%26temp1%3DGoogle_City_Hotels')"><span style="color:#000000;" class="txt-small">Save on Hotels, Motels &amp; Resorts Call 1-800-276-7415 Or Book Online</span>
+<div style="color:#666666">www.Hotels-And-Discounts.com</div>
+</span><script language="javascript">
+                                function focusAdWin(windowname,link) {
+                                  var thelink = link;
+                                  if(link == null) thelink = "";
+                                  var win_tmp = window.open(thelink, windowname);
+                                  if(win_tmp == null || win_tmp.closed)
+                                    alert("A new window cannot be opened. \nPlease allow pop-ups from Sidestep to view the desired page");
+                                  else
+                                    win_tmp.focus();
+                                  return false;
+                                }
+                            </script></td>
+</tr>
+        
+    </table>
+</body>
+</td>
+  </tr>
+</table>
+</div>
+<div id="frb_2" class="frb_style" style="text-align:left;margin:0px 0px 10px 0px;display:block">
+  <!--side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=160x600;tile=3;ord=91534512--><script language="JavaScript" type="text/javascript"> document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=160x600;tile=3;ord=91534512?"  type="text/javascript"><\/script>');</script><noscript><a href="http://ad.doubleclick.net/jump/side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=160x600;tile=3;ord=91534512?"  target="_blank"> <img src="http://ad.doubleclick.net/ad/side.us.ss.web.hotel/details1;o=;co=US;st=WA;ci=SEATTLE;cid=seattle;sz=160x600;tile=3;ord=91534512?"  width="160"  height="600"  border="0" alt=""></a></noscript></div>
+<!---- End Frb Ads ---->
+</div>
+</body>
+</html></div>    </div>
+        <br clear="all"/>
+        <div id="fbb_ads"></div>
+        <div id="pre-footer"></div>
+        <div id="footer"><table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+    <td><img src="/images/clear.gif" width="1" height="20" border="0"></td>
+</tr>
+<tr>
+	<td align="center" style="color:#666666; white-space: nowrap;" class="txt-small">
+    <a href="http://www.sidestep.com/html/about_sidestep/index.html" class="txt-small">About SideStep</a>&nbsp;|
+    <a href="http://sidestep.custhelp.com" class="txt-small" rel="nofollow">Help Desk</a>&nbsp;|
+    <a href="http://www.sidestep.com/html/careers/index.html" class="txt-small" rel="nofollow">Careers</a>&nbsp;|
+    <a href="http://www.sidestep.com/html/support/privacy_policy.html" class="txt-small" rel="nofollow">Privacy Policy</a>&nbsp;|
+    <a href="http://www.sidestep.com/html/support/terms_of_service.html" class="txt-small" rel="nofollow">Terms of Service</a>&nbsp;|
+    <a href="http://www.sidestep.com/html/advertise_with_us/index.html" class="txt-small" rel="nofollow">Advertise</a><br />
+    <a href="http://www.sidestep.com/downloads/toolbars.html" rel="nofollow" class="txt-small">Downloads</a>&nbsp;|
+    <a href="/activities/" class="txt-small">Activities</a>&nbsp;|&nbsp;
+    <a href="/travel-guides/" class="txt-small">Travel Guides</a>&nbsp;|&nbsp;
+    <a href="http://www.sidestep.com/sitemap" class="txt-small">Site Map</a>
+    </td>
+<tr>
+<tr>
+	<td align="center" class="txt-small" style="color:#666666;">Copyright &copy;&nbsp;SideStep, Inc. 2006</td>
+</tr>
+    <td><img src="/images/clear.gif" width="1" height="40" border="0"></td>
+</tr>
+</table>
+</div>
+    </div>
+</div>
+
+
+</body>
+</html>

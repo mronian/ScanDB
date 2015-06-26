@@ -1,0 +1,473 @@
+<DOC>
+<DOCNO>f00247</DOCNO>
+<DOCHDR>http://www.townhall.com/about/contact.html</DOCHDR>
+<HTML>
+<HEAD>
+	<TITLE>Town Hall: Contact Us</TITLE>
+</HEAD>
+
+
+<BODY topmargin="0" leftmargin="0" background="http://www.townhall.com/graphics1/greenbackground.gif" link="#000099">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright 2002 NetIQ Corporation -->
+<!-- V6.0 -->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function dcs_6_0(dcs_URI,dcs_QRY,dcs_EXT)
+{
+	var dCurrent = new Date();
+	var P = "";
+	P+="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://webtrends.townhall.com/DCSHDBrUrIbrqfHmO0kf1cGh5_5B3U/dcs.gif?";
+	P+="dcsuri="+escape(dcs_URI);
+	P+="&dcsqry="+escape(dcs_QRY);
+	if ((window.document.referrer != "") && (window.document.referrer != "-"))
+	{
+		if (!(navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) < 4) )
+		{
+			P+="&dcsref="+escape(window.document.referrer);
+		}
+	}
+	P+=dcs_EXT;
+	//P+="&dcssip=yourdomain";  //For Cross domain tracking, replace 'yourdomain' and remove the leading '//'.
+	//P+="&dcsp3p=yourp3pheader";  //To issue P3P header, replace 'yourp3pheader' and remove the leading '//'.
+	//P+="&dcscfg=yourcfg";  //To configure SDC, replace 'yourcfg' and remove the leading '//'.
+	P+="&dcsdat="+escape(dCurrent.getTime());
+	document.write('<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+P+'">');
+}
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function dcsExtend(N,V)
+{
+	dcsEXT+="&"+N+"="+escape(V);
+}
+function dcsMeta() 
+{
+	var F=false;
+	var myDocumentElements;
+	if (document.all)
+	{
+		F = true;
+		myDocumentElements=document.all.tags("meta");
+	}
+	if (!F && document.documentElement)
+	{
+		F = true;    
+		myDocumentElements=document.getElementsByTagName("meta");
+	}
+	if (F)
+	{
+		for (var i=1; i<=myDocumentElements.length;i++)
+		{
+			myMeta=myDocumentElements.item(i-1);
+			if (myMeta.name.indexOf('WT.')==0)
+				dcsExtend(myMeta.name,myMeta.content);
+		}
+	}	
+}
+
+var dcsURI=window.location.pathname;
+var dcsQRY=window.location.search;
+var dcsEXT="";
+dcsMeta();
+dcs_6_0(dcsURI,dcsQRY,dcsEXT);
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://webtrends.townhall.com/DCSHDBrUrIbrqfHmO0kf1cGh5_5B3U/njs.gif?dcsuri=/nojavascript">
+</NOSCRIPT>
+<!-- END OF SmartSource Data Collector TAG -->	
+
+<!-- Javascript BEGIN -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var axel = Math.random() + "";
+var PageId = axel * 1000000000000000000;
+// This part of script alleviates a Netscape document.write bug
+NS4 = document.layers;
+if (NS4) {
+origWidth = innerWidth;
+origHeight = innerHeight;
+}
+function reDo() {
+if (innerWidth != origWidth || innerHeight != origHeight)
+location.reload();
+}
+if (NS4) onresize = reDo;
+//-->
+</SCRIPT>
+<!-- Javascript END -->
+
+
+<table border="0" cellspacing="0" cellpadding="0" width=750>
+<tr>
+<td width=133 valign=top>
+
+
+
+<center>
+        <FORM METHOD="GET" ACTION="http://searchengine.townhall.com/cgi-bin/texis.exe/webinator/newsearch/">
+          <INPUT TYPE=text NAME=query VALUE="" SIZE=10>
+          <br>
+          <INPUT TYPE="image" SRC="http://www.townhall.com/images/button_search.gif" ALT="Search" name=submit VALUE="submit" border=0>
+          <INPUT TYPE=hidden NAME=db VALUE="thsearch">
+        </form>
+      </center>
+      <p align="center"><a href="https://secure.heritage.org/townhall/supportth.cfm?gold"><img src="http://www.townhall.com/images/nav/support-square.gif" border="0"></a> </center>
+     <P><a href="http://www.townhall.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image42','','/images/nav/home-navb.gif',1)"><img src="/images/nav/home-nav.gif" alt="Home" name="Image42" width="140" height="18" border="0"></a><br>
+        <a href="http://www.townhall.com/columnists" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image43','','/images/nav/commentary-navb.gif',1)"><img src="/images/nav/commentary-nav.gif" alt="Columnists" name="Image43" width="140" height="18" border="0"></a><br>
+        <a href="/clog" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image44','','/images/nav/weblog-navb.gif',1)"><img src="/images/nav/weblog-nav.gif" alt="Weblog" name="Image44" width="140" height="18" border="0"></a><br>
+  <a href="/meetup/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image51','','/images/nav/meetup-navb.gif',1)"><img src="/images/nav/meetup-nav.gif" alt="MeetUp" name="Image51" width="140" height="18" border="0"></a><br>
+        <a href="/election2004/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image46','','/images/nav/election-navb.gif',1)"><img src="/images/nav/election-nav.gif" alt="Election" name="Image46" width="140" height="18" border="0"></a><br>
+        <a href="/issues/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image47','','/images/nav/issueslibrary-navb.gif',1)"><img src="/images/nav/issueslibrary-nav.gif" alt="Issues" name="Image47" width="140" height="18" border="0"></a><br>
+        <a href="/news/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image48','','/images/nav/newswire-navb.gif',1)"><img src="/images/nav/newswire-nav.gif" alt="News Wire" name="Image48" width="140" height="18" border="0"></a><br>
+        <a href="/culture/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image49','','/images/nav/books-ent-navb.gif',1)"><img src="/images/nav/books-ent-nav.gif" alt="Books" name="Image49" width="140" height="18" border="0"></a><br>
+        <a href="/rightpages/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image50','','/images/nav/rightpages-navb.gif',1)"><img src="/images/nav/rightpages-nav.gif" alt="RightPages" name="Image50" width="140" height="18" border="0"></a><br>
+ 
+
+      <p><font face="Arial" size="-1" color="#fdefcc"><font face="Arial, Helvetica, sans-serif" size="2"> 
+        <b><img src="http://www.townhall.com/graphics1/teenyicon_arrow.gif" width="9" height="10"> <a href="/about/"><font color=#fdefcc>About 
+        Us</font></a><br>
+        </b></font><b><font face="Arial" size="-1" color="#fdefcc"><font face="Arial, Helvetica, sans-serif" size="2"><img src="http://www.townhall.com/graphics1/teenyicon_arrow.gif" width="9" height="10"> <a href="/members/"><font color=#fdefcc>Our 
+        Members</font></a></font></font></b></font><b><font face="Arial" size="-1" color="#fdefcc"><font face="Arial, Helvetica, sans-serif" size="2"><br>
+        <font face="Arial" size="-1" color="#fdefcc"><img src="http://www.townhall.com/graphics1/teenyicon_arrow.gif" width="9" height="10"> <a href="/newsletters/"><font color=#fdefcc>Newsletters</font></a></font><br>
+        <font face="Arial" size="-1" color="#fdefcc"><img src="http://www.townhall.com/graphics1/teenyicon_arrow.gif" width="9" height="10"> <a href="/calendar/"><font color=#fdefcc>Calendar</font></a></font> 
+        <br>
+        <img src="http://www.townhall.com/graphics1/teenyicon_arrow.gif" width="9" height="10"> <a href="/notables/"><font color=#fdefcc>Hall 
+        of Fame</font></a><br>
+        <font face="Arial" size="-1" color="#fdefcc"><img src="http://www.townhall.com/graphics1/teenyicon_arrow.gif" width="9" height="10"> <a href="/radio/"><font color=#fdefcc>Radio</font></a></font> 
+        </font><br>
+        <font face="Arial" size="-1" color="#fdefcc"><font face="Arial" size="-1" color="#fdefcc"><font face="Arial, Helvetica, sans-serif" size="2"><img src="http://www.townhall.com/graphics1/teenyicon_arrow.gif" width="9" height="10"> <a href="/opportunities/"><font color=#fdefcc>Jobs/Internships</font></a></font></font> 
+        </font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+        <font face="Arial" size="-1" color="#fdefcc"><img src="http://www.townhall.com/graphics1/teenyicon_arrow.gif" width="9" height="10"> <a href="http://capwiz.com/townhall/home/"><font color=#fdefcc>Contact 
+        Congress</font></a><br>
+        <img src="http://www.townhall.com/graphics1/teenyicon_arrow.gif" width="9" height="10"> <a href="/documents"><font color=#fdefcc>Historical 
+        Docs</font></a></font> <br>
+        </font></font></b>
+<p align="center"><font size="-2" face="Arial" color="#fdefcc">-- Advertisements*  
+        --</font> 
+      <p align="center"> <font color="#FFFFCC" size="1" face="Verdana, Arial, Helvetica, sans-serif"></font>
+
+<!-- Begin Ban Man Pro Banner Code -  Site: TownHall.com  Zone: Lefthand Sitewide -->
+<SCRIPT LANGUAGE="JAVASCRIPT">
+<!--
+var browName = navigator.appName;
+var browDateTime = (new Date()).getTime();
+var browVersion = parseInt(navigator.appVersion);
+var ua=navigator.userAgent.toLowerCase();
+var adcode='';
+if (browName=='Netscape'){
+     if (browVersion>=5) 
+          { document.write('<ifr'+'ame src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=10&Task=Get&Browser=NETSCAPE6&SiteID=1&X=' + browDateTime + '" width=120 height=90 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+     else if ((browVersion>=4)&&(ua.indexOf("mac")==-1))
+          { document.write('<S'+'CRIPT src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=10&Task=Get&Browser=NETSCAPE4&SiteID=1">');
+          document.write('</'+'scr'+'ipt>');
+          document.write(adcode); }
+     else if (browVersion>=3) 
+          { document.write('<A HREF="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=10&Task=Click&Mode=HTML&SiteID=1&PageID=39060&RandomNumber=' + browDateTime + '" target="_new"><IMG SRC="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=10&Task=Get&Mode=HTML&SiteID=1&PageID=39060&RandomNumber=' + browDateTime + '" width="120" height="90" border="0"></A>'); } }
+if (browName=='Microsoft Internet Explorer')
+     { document.write('<ifr'+'ame src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=10&Task=Get&SiteID=1&X=' + browDateTime + '" width=120 height=90 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+// --> 
+</script>
+<noscript>
+    <a href="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=10&Task=Click&Mode=HTML&SiteID=1&PageID=39060" target="_new">
+    <img src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=10&Task=Get&Mode=HTML&SiteID=1&PageID=39060" width="120" height="90" border="0"></a>
+</noscript>
+<!-- End Ban Man Pro Banner Code -  Site: TownHall.com  Zone: Lefthand Sitewide -->
+
+      <p align="center"> 
+    <!-- Begin Ban Man Pro Banner Code -  Site: TownHall.com  Zone: Lefthand2 -->
+<SCRIPT LANGUAGE="JAVASCRIPT">
+<!--
+var browName = navigator.appName;
+var browDateTime = (new Date()).getTime();
+var browVersion = parseInt(navigator.appVersion);
+var ua=navigator.userAgent.toLowerCase();
+var adcode='';
+if (browName=='Netscape'){
+     if (browVersion>=5) 
+          { document.write('<ifr'+'ame src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=3&Task=Get&Browser=NETSCAPE6&SiteID=1&X=' + browDateTime + '" width=120 height=90 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+     else if ((browVersion>=4)&&(ua.indexOf("mac")==-1))
+          { document.write('<S'+'CRIPT src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=3&Task=Get&Browser=NETSCAPE4&SiteID=1">');
+          document.write('</'+'scr'+'ipt>');
+          document.write(adcode); }
+     else if (browVersion>=3) 
+          { document.write('<A HREF="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=3&Task=Click&Mode=HTML&SiteID=1&PageID=27256&RandomNumber=' + browDateTime + '" target="_new"><IMG SRC="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=3&Task=Get&Mode=HTML&SiteID=1&PageID=27256&RandomNumber=' + browDateTime + '" width="120" height="90" border="0"></A>'); } }
+if (browName=='Microsoft Internet Explorer')
+     { document.write('<ifr'+'ame src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=3&Task=Get&SiteID=1&X=' + browDateTime + '" width=120 height=90 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+// --> 
+</script>
+<noscript>
+    <a href="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=3&Task=Click&Mode=HTML&SiteID=1&PageID=27256" target="_new">
+    <img src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=3&Task=Get&Mode=HTML&SiteID=1&PageID=27256" width="120" height="90" border="0"></a>
+</noscript>
+<!-- End Ban Man Pro Banner Code -  Site: TownHall.com  Zone: Lefthand2 -->
+      <p align="center"> 
+        <!-- Begin Ban Man Pro Banner Code -  Site: TownHall.com  Zone: Lefthand1 -->
+        <SCRIPT LANGUAGE="JAVASCRIPT">
+<!--
+var browName = navigator.appName;
+var browDateTime = (new Date()).getTime();
+var browVersion = parseInt(navigator.appVersion);
+var ua=navigator.userAgent.toLowerCase();
+var adcode='';
+if (browName=='Netscape'){
+     if (browVersion>=5) 
+          { document.write('<ifr'+'ame src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=1&Task=Get&Browser=NETSCAPE6&SiteID=1&X=' + browDateTime + '" width=120 height=118 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+     else if ((browVersion>=4)&&(ua.indexOf("mac")==-1))
+          { document.write('<S'+'CRIPT src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=1&Task=Get&Browser=NETSCAPE4&SiteID=1">');
+          document.write('</'+'scr'+'ipt>');
+          document.write(adcode); }
+     else if (browVersion>=3) 
+          { document.write('<A HREF="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=1&Task=Click&Mode=HTML&SiteID=1&PageID=40156&RandomNumber=' + browDateTime + '" target="_new"><IMG SRC="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=1&Task=Get&Mode=HTML&SiteID=1&PageID=40156&RandomNumber=' + browDateTime + '" width="120" height="118" border="0"></A>'); } }
+if (browName=='Microsoft Internet Explorer')
+     { document.write('<ifr'+'ame src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=1&Task=Get&SiteID=1&X=' + browDateTime + '" width=120 height=118 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+// --> 
+</script>
+        <noscript> <a href="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=1&Task=Click&Mode=HTML&SiteID=1&PageID=40156" target="_new"> 
+        <img src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=1&Task=Get&Mode=HTML&SiteID=1&PageID=40156" width="120" height="118" border="0"></a> 
+        </noscript> 
+        <!-- End Ban Man Pro Banner Code -  Site: TownHall.com  Zone: Lefthand1 -->
+      </p>
+
+
+      <p align="center"><font color="#FFFFCC" size="1" face="Verdana, Arial, Helvetica, sans-serif">  </font> 
+      <div align="center"> </div>
+      <hr width=80% noshade size="2" align="center">
+      <div align="center"><font size="-2" face="Arial" color="#fdefcc"><b><font face="Arial, Helvetica, sans-serif" size="2">Townhall.com</font></b><font face="Arial, Helvetica, sans-serif" size="2"><br>
+        </font></font> <font face="Arial, Helvetica, sans-serif" size="1" color="#FFFFCC"><GEO TYPE="US">214 
+        Massachusetts Ave NE<br>
+		Suite 310<br>
+        Washington, DC 20002</GEO><br>
+        202-608-6099<br>
+        Fax 202-544-7330</font><font face="Arial" size="1" color="#FFFFFF"><br>
+        <a href="http://www.townhall.com/about/contact.html"><font color="#FFFFCC"><b>Email 
+        us</b></font></a> <br>
+        </font> </div>
+      <hr width=80% noshade size="2" align="center">
+      <div align="center"><a href="http://www.townhall.com/privacy"><font size="-2" face="Arial" color="#fdefcc">Our 
+        Privacy Policy</font></a><br><a href="http://www.townhall.com/about/advertising.html"><font size="-2" face="Arial" color="#fdefcc">Advertise With Us</font></a><p>
+<font size="-2" face="Arial" color="#fdefcc">*Advertisers may or may not share political views with Townhall.com.</font></div> 
+        <p>
+
+</td>
+<td width=15>     </td>
+<td valign=top>
+<center>
+
+<!-- Begin Ban Man Pro Banner Code -  Site: TownHall.com  Zone: Column Top -->
+<SCRIPT LANGUAGE="JAVASCRIPT">
+<!--
+var browName = navigator.appName;
+var browDateTime = (new Date()).getTime();
+var browVersion = parseInt(navigator.appVersion);
+var ua=navigator.userAgent.toLowerCase();
+var adcode='';
+if (browName=='Netscape'){
+     if (browVersion>=5) 
+          { document.write('<ifr'+'ame src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=9&Task=Get&Browser=NETSCAPE6&SiteID=1&X=' + browDateTime + '" width=468 height=60 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+     else if ((browVersion>=4)&&(ua.indexOf("mac")==-1))
+          { document.write('<S'+'CRIPT src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=9&Task=Get&Browser=NETSCAPE4&SiteID=1">');
+          document.write('</'+'scr'+'ipt>');
+          document.write(adcode); }
+     else if (browVersion>=3) 
+          { document.write('<A HREF="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=9&Task=Click&Mode=HTML&SiteID=1&PageID=69073&RandomNumber=' + browDateTime + '" target="_new"><IMG SRC="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=9&Task=Get&Mode=HTML&SiteID=1&PageID=69073&RandomNumber=' + browDateTime + '" width="468" height="60" border="0"></A>'); } }
+if (browName=='Microsoft Internet Explorer')
+     { document.write('<ifr'+'ame src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=9&Task=Get&SiteID=1&X=' + browDateTime + '" width=468 height=60 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+// --> 
+</script>
+<noscript>
+    <a href="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=9&Task=Click&Mode=HTML&SiteID=1&PageID=69073" target="_new">
+    <img src="http://ads.townhall.com/banmanpro/banman.asp?ZoneID=9&Task=Get&Mode=HTML&SiteID=1&PageID=69073" width="468" height="60" border="0"></a>
+</noscript>
+<!-- End Ban Man Pro Banner Code -  Site: TownHall.com  Zone: Column Top -->
+<p>
+
+
+</center>
+
+<table width=100%>
+<tr>
+<td bgcolor=#fdefcc><center><b><font face=arial color=#003300 size=+2>Contact Us</font></b></center></td>
+</tr>
+</table>
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><a href="contact.html"><b>Contact 
+        Townhall.com</b></a><b> | <a href="../membership/welcome.html">Become 
+        a Townhall.com member group</a> <br>
+        <a href="advertising.html">Advertise on Townhall.com</a> | <a href="http://www.heritage.org/About/Internships/index.cfm">Intern 
+        with Townhall.com</a></b></font><br>
+      </p>
+
+<font face="Arial, Helvetica, sans-serif" size="2">  
+If you need to change your e-mail list subscription information, you may do so <a href="http://cf.townhall.com/change.cfm">here</a>.
+<form action="http://cf.townhall.com/contact.cfm" method="post">
+<p>
+<b>Type of inquiry:</b>
+
+<blockquote>
+<input type="radio" name="inquiry" value="Editor" checked>
+          Comments, questions to Jonathan Garthwaite, Editor<br>
+<input type="radio" name="inquiry" value="C-Log">
+          Questions, tips, comments, diatribes, or requests for <a href="/clog">C-Log</a><br>
+<input type="radio" name="inquiry" value="Internship"> Internship inquiries<br>
+<input type="radio" name="inquiry" value="Meetup"> Meetup questions/comments (View <a href="http://www.townhall.com/meetup">Meetup information</a>)<br>
+<input type="radio" name="inquiry" value="Membership"> Membership inquiries (Browse our online <a href="/membership/welcome.html" target="_blank">membership packet</a>)<br>
+<input type="radio" name="inquiry" value="Advertising"> Advertising/promotion opportunities (Browse our <a href="advertising.html" target="_blank">media kit</a>)<br>
+<input type="radio" name="inquiry" value="JobsandEvents">
+          Submit <a href="/jobs" target="_blank">job openings</a> and <a href="/calendar" target="_blank">upcoming 
+          events</a> <br>
+          <font face="Arial, Helvetica, sans-serif" size="2"> 
+          <input type="radio" name="inquiry" value="Technical">
+          Technical problems with site</font></blockquote>
+<b>Name:</b> <input type="text" name="Name"><p></p>
+<p>
+<b>E-mail:</b> <input type="text" name="Email"></p>
+<p>
+<b>Subject:</b> <input type="text" name="Subject"></p>
+<p><b>Message:</b><br>
+<textarea name="MsgBody" rows=10 cols=50></textarea>
+</p>
+<p align="center">
+<input type="submit" value="Contact Us"></p>
+</form>
+</font>
+
+
+  <p><font face="Arial, Helvetica, sans-serif" size="2"><b>Mailing address and 
+      phone number:</b> 
+      <p> Town Hall<br>
+        <GEO TYPE="US">214 Massachusetts Ave., NE<br>
+        Suite 310<br>
+        Washington, DC 20002</GEO><br>
+        (202) 608-6099<br>
+        Fax: (202) 544-7330</p>
+      </font> 
+      
+ <SCRIPT LANGUAGE="JavaScript">
+ <!--
+// Send to a Friend
+
+// Used to id browsers.
+var browser="";
+if(navigator.appName=="Netscape" && parseInt(navigator.appVersion)==2) { browser="n2"; }
+if(navigator.appName=="Netscape" && parseInt(navigator.appVersion)==3) { browser="n3"; }
+if(navigator.appName=="Netscape" && parseInt(navigator.appVersion)==4) { browser="n4"; }
+if(navigator.appName=="Netscape" && parseInt(navigator.appVersion)==5) { browser="n5"; }
+if(navigator.appVersion.indexOf("MSIE 3.0") != -1) { browser="ie3"; }
+if(navigator.appVersion.indexOf("MSIE 4.0") != -1) { browser="ie4"; }
+if(navigator.appVersion.indexOf("MSIE 5.0") != -1) { browser="ie5"; }
+
+// Used to position window for Netscape 4
+var w=0;
+var h=0;
+if ( browser=="n4" )
+   {
+   var screen_height=parent.screen.height;
+   var screen_width=parent.screen.width;
+   var main_height=parent.window.innerHeight;
+   w=(screen_width/2)-300;
+   }
+  // Called by onLoad statement in the BODY tag.
+function openWindow()   
+   {
+   var newWind=window.open("http://cf.townhall.com/SendtoFriend/referpopup.cfm?Referer=" + document.URL,"display","width=600,height=500,screenX="+w+",screenY="+h);
+   if (newWind.opener == null)
+      {newWind.opener = window;}
+   else
+      { 
+      if ( browser=="n3"  ||  browser=="n4"  ||  browser=="ie4"  ||  browser=="ie5")
+
+         newWind.focus();
+      }   
+   }
+// De-activate Cloaking -->
+</script>
+<br>
+<center>
+   
+              <table border="1" cellspacing="0" cellpadding="1" width="575"
+    bgcolor="#fdefcc" bordercolor="#000000">
+                <tr bgcolor="#cc9933"> 
+                  <td valign="top" colspan=3> 
+                    <div align="center"><font face="Arial, Helvetica, sans-serif" size="3"><b>Special 
+                      Offers</b></font></div>
+                  </td>
+                </tr>
+                <tr bgcolor="ffffff"> 
+                  <td valign="top"> 
+                    <div align="left"><font face="Arial, Helvetica, sans-serif" size=2> 
+                      <p><a href="http://cf.heritage.org/rd.cfm?id=485">Give Hope to Child in Poverty</a><br>
+                        <a href="http://www.1automationwiz.com/app/adtrack.asp?AdID=90472" target="_top" >Free 
+                        CD reveals millionaire secrets</a><br>
+                        <a href="http://cf.heritage.org/rd.cfm?id=445">How to focus like Bush</a> 
+                      </font></div>
+                  </td>
+                  <td valign="top"> 
+                    <div align="left"><font face="Arial, Helvetica, sans-serif" size=2> 
+                      <p><a href="http://cf.heritage.org/rd.cfm?id=434">Pre-Construction Secrets $</a> <br>
+                        <a href="http://etools.ncol.com/a/jgroup/bg_wwwpersecutioncom_townhall_9.html">Christian 
+                        Persecution Newsletter</a> <br>
+                        <a href="http://cf.heritage.org/rd.cfm?id=501">2 Free Weeks of Investor's Business Daily</a> 
+                      </font></div>
+                  </td>
+                  <td valign="top"> 
+                    <div align="left"><font face="Arial, Helvetica, sans-serif" size=2> 
+                      
+        <p>
+                        <a href="http://cf.heritage.org/rd.cfm?id=526">"Rathergate" Merchandise</a><br> <a href="http://cf.heritage.org/rd.cfm?id=468">Drink Less Water</a><br>
+                        <a href="http://etools.ncol.com/a/jgroup/bg_wwwmatrix-direct-rlcom_townhall_6.html">Term 
+                        Life Insurance</a>
+                      </font></div>
+                  </td>
+                </tr>
+              </table>
+
+
+<br>
+<table width=550 border=0 cellpadding="0" cellspacing="0" align="center"><tr><td valign=top width=50%><p align="center"><form><div align="right"><select OnChange="location.href=this.options[this.selectedIndex].value"><option value="http://www.townhall.com/citizens" selected>Pull Down For Member Groups</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.aworldconnected.org">A World Connected</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.abetterearth.org/">aBetterEarth.org</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.academia.org">Accuracy In Academia</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.aim.org">Accuracy in Media</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.acton.org">Acton Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.agapepress.org">AgapePress</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.alliancedefensefund.org">Alliance Defense Fund</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.conservative.org">American Conservative Union</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.taemag.com">The American Enterprise</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.landrights.org">American Land Rights Association</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.alec.org">American Legislative Exchange Council</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.tfp.org">Tradition, Family and Property</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.limitedgov.org">Americans for Limited Government</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.americansforprosperity.org/">Americans for Prosperity</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.atr.org">Americans for Tax Reform</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.anncoulter.org">AnnCoulter.org</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.ashbrook.org">Ashbrook Center</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.bipps.org/">Bluegrass Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.bradleyfdn.org">Bradley Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.pfm.org/AM/Template.cfm?Section=BreakPoint1">BreakPoint Online</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.campusreportonline.net">Campus Report</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.capitalresearch.org">Capital Research Center</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.cbhd.org">Center for Bioethics & Human Dignity</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.consumerfreedom.com">Center for Consumer Freedom</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.ceousa.org">Center for Equal Opportunity</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.freedomandprosperity.org/">Center for Freedom and Prosperity</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.cfif.org">Center for Individual Freedom</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.centerforsecuritypolicy.org">Center for Security Policy</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.future-of-russia.org">Center for the Future of Russia</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.co2science.org">Center for the Study of CO2 and Global Change</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.cagw.org">Citizens Against Government Waste</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.claremont.org">Claremont Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://clashradio.com/">clashradio.com</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.collegeguide.org">CollegeGuide.org</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.collegiatenetwork.org/">Collegiate Network</option><option value="http://cf.townhall.com/linkurl.cfm?http://collegiatepatriot.us/">The Collegiate Patriot</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.cei.org">Competitive Enterprise Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.cwfa.org">Concerned Women for America</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.conservativeusa.org">Conservative Caucus</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.conservativepetitions.com">Conservative Petitions.com</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.cpac.org">CPAC</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.yourpropertyrights.org/">Defenders of Property Rights</option><option value="http://cf.townhall.com/linkurl.cfm?http://unix.dfn.org/">Digital Freedom Network</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.epionline.org">Employment Policies Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://envirotruth.org">EnviroTruth.org</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.effwa.org">Evergreen Freedom Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.frc.org">Family Research Council</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.fed-soc.org">Federalist Society</option><option value="http://cf.townhall.com/linkurl.cfm?http://FederalistPatriot.US">FederalistPatriot.US</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.defenddemocracy.org">Foundation for the Defense of Democracies</option><option value="http://cf.townhall.com/linkurl.cfm?http://freedomalliance.org/">Freedom Alliance</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.freedomworks.org/">FreedomWorks</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.friedmanfoundation.org">Friedman Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://ff.org">Frontiers of Freedom</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.tfas.org/">The Fund for American Studies</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.gppf.org">Georgia Public Policy Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.greenwatch.org/">Green Watch</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.greeningearthsociety.org">Greening Earth Society</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.gcc.edu">Grove City College</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.heartland.org">Heartland Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.heritage.org">The Heritage Foundation </option><option value="http://cf.townhall.com/linkurl.cfm?http://www.hillsdale.edu">Hillsdale College</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.profam.org/">Howard Center</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.humaneventsonline.com/">Human Events Online</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.humanlifereview.com">Human Life Review</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.iwf.org/">Independent Women's Forum</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.insightmag.com">Insight Magazine</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.theihs.org">Institute for Humane Studies</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.ipi.org">Institute for Policy Innovation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.isi.org">Intercollegiate Studies Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.isibooks.org">ISI Books</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.landmarklegal.org">Landmark Legal Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.sickoflawsuits.org">Lawsuit Abuse Makes Us Sick</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.leadershipinstitute.org">Leadership Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.lonestarreport.org">Lone Star Report</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.cblpolicyinstitute.org">Luce Policy Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.mackinac.org">Mackinac Center for Public Policy</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.mdpolicy.org">Maryland Public Policy Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.massnews.com">Massachusetts News</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.mediaresearch.org">Media Research Center</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.mountainstateslegal.org/">Mountain States Legal Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.ncpa.org">National Center for Policy Analysis</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.nationalcenter.org">National Center for Public Policy Research</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.nlpc.org">National Legal and Policy Center</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.nationalreview.com">National Review</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.nrtw.org">National Right to Work</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.ntu.org">National Taxpayers Union</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.opinioneditorials.com/">OpinionEditorials.com</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.pacificlegal.org/">Pacific Legal Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.pacificresearch.org">Pacific Research Institute</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.patrickhenrycenter.org">Patrick Henry Center</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.townhall.com/phillysoc">Philadelphia Society</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.californiasfuture.org">Project for California's Future</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.reaganranch.org">Reagan Ranch</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.religionjournal.com/">religionjournal.com</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.retiresafe.org">RetireSafe.org</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.riograndefoundation.org/">Rio Grande Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.sbecouncil.org">Small Business & Entrepreneurship Council</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.spn.org">State Policy Network</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.studentnewsdaily.com">StudentNewsDaily.com</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.sba-list.org">Susan B. Anthony List</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.taxfoundation.org/">Tax Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.taxpayersleague.org">Taxpayers League of Minnesota</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.techcentralstation.com">Tech Central Station</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.texaspolicy.com/">Texas Public Policy Foundation</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.traditionalvalues.org">Traditional Values Coalition</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.usenglish.org/inc">U.S. English</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.americasnewspaper.com">Washington Times Weekly</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.weeklystandard.com">Weekly Standard</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.worldcongress.org/">World Congress of Families</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.worldmag.com">World Magazine</option><option value="http://cf.townhall.com/linkurl.cfm?http://www.yaf.org">Young America's Foundation</option></select></div></form></td><td valign=top width=50%><form><div align="left"><select OnChange="location.href=this.options[this.selectedIndex].value"><option value="http://www.townhall.com/issues" selected>Pull Down For Issues</option><option value="http://www.townhall.com/issues/Economics">Budget, Taxes, and the Economy</option><option value="http://www.townhall.com/issues/ConservativeThought">Conservative Thought and Philosophy</option><option value="http://www.townhall.com/issues/Education">Education</option><option value="http://www.townhall.com/issues/EnergyandEnvironment">Energy and the Environment</option><option value="http://www.townhall.com/issues/FamilyandSociety">Family and Society</option><option value="http://www.townhall.com/issues/ForeignPolicy">Foreign Policy</option><option value="http://www.townhall.com/issues/HealthandScience">Health and Science</option><option value="http://www.townhall.com/issues/LegalIssues">Immigration and Legal Issues</option><option value="http://www.townhall.com/issues/InternetandTechnology">Internet and Technology</option><option value="http://www.townhall.com/issues/MediaandtheArts">Media and the Arts</option><option value="http://www.townhall.com/issues/NationalSecurity">National Security</option><option value="http://www.townhall.com/issues/PoliticsandElections">Politics and Elections</option><option value="http://www.townhall.com/issues/ReligiousIssues">Religious Issues</option><option value="http://www.townhall.com/issues/SecondAmendment">Second Amendment</option><option value="http://www.townhall.com/issues/SocialSecurity">Social Security</option><option value="http://www.townhall.com/issues/TradeandCommerce">Trade and Commerce</option></select></div></form></td></tr></table>
+
+
+<font face=arial size=-2>All site content © 1995-2005 Townhall.com</font><P>
+
+</center>
+
+
+
+</td></tr></table>
+
+</BODY>
+</html>
+
+

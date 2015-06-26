@@ -1,0 +1,826 @@
+<DOC>
+<DOCNO>g00818</DOCNO>
+<DOCHDR>http://naic.acf.hhs.gov/../../general/nad/index.cfm</DOCHDR>
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+				
+				
+				
+					
+					
+				
+			
+		
+	
+	
+	
+
+<html>
+<head>
+
+<title>National Adoption Directory Search</title>
+<script language="JavaScript" type="text/JavaScript">function mmLoadMenus() {
+  if (window.mm_menu_0406085233_0) return;
+  
+ //Professionals - Admins menu code
+    window.mm_menu_0406085233_0 = new Menu("root",264,16,"Arial, Helvetica, sans-serif",10,"#000000","#FFFFFF","#FBE596","#219C7B","left","middle",1,0,1000,-5,7,true,true,true,2,true,true);
+ mm_menu_0406085233_0.addMenuItem("What Works in Adoption Programs","location='http://naic.acf.hhs.gov/profess/admin/works/index.cfm'");
+  mm_menu_0406085233_0.addMenuItem("Funding and Grant Information","location='http://naic.acf.hhs.gov/profess/admin/funding/index.cfm'");
+  mm_menu_0406085233_0.addMenuItem("Statistics and Research","location='http://naic.acf.hhs.gov/profess/admin/stats/index.cfm'");
+  mm_menu_0406085233_0.addMenuItem("Child and Family Services Reviews (CFSRs)","location='http://naic.acf.hhs.gov/profess/admin/cfsr/index.cfm'");
+  mm_menu_0406085233_0.addMenuItem("Child Welfare Workforce and Training Resources","location='http://naic.acf.hhs.gov/profess/admin/workforce/index.cfm'");
+   mm_menu_0406085233_0.fontWeight="bold";
+   mm_menu_0406085233_0.hideOnMouseOut=true;
+   mm_menu_0406085233_0.bgColor='#FFFFFF';
+   mm_menu_0406085233_0.menuBorder=1;
+   mm_menu_0406085233_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0406085233_0.menuBorderBgColor='#B0DCD0';
+
+//Professionals - Work with Families
+  window.mm_menu_0406090014_0 = new Menu("root",264,16,"Arial, Helvetica, sans-serif",10,"#000000","#FFFFFF","#FBE596","#219C7B","left","middle",3,0,1000,-5,7,true,true,true,2,true,true);
+   mm_menu_0406090014_0.addMenuItem("Recruiting and Preparing Families","location='http://naic.acf.hhs.gov/profess/families/recruit/index.cfm'");
+  mm_menu_0406090014_0.addMenuItem("Supporting Expectant Birth Mothers","location='http://naic.acf.hhs.gov/profess/families/support/index.cfm'");
+  mm_menu_0406090014_0.addMenuItem("Types of Adoption","location='http://naic.acf.hhs.gov/profess/families/adopttype/index.cfm'");
+  mm_menu_0406090014_0.addMenuItem("Types of Adoptive Families","location='http://naic.acf.hhs.gov/profess/families/familiestype/index.cfm'");
+  mm_menu_0406090014_0.addMenuItem("Post-Adoption Information","location='http://naic.acf.hhs.gov/profess/families/post/index.cfm'");
+   mm_menu_0406090014_0.fontWeight="bold";
+   mm_menu_0406090014_0.hideOnMouseOut=true;
+   mm_menu_0406090014_0.bgColor='#FFFFFF';
+   mm_menu_0406090014_0.menuBorder=1;
+   mm_menu_0406090014_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0406090014_0.menuBorderBgColor='#B0DCD0';
+   
+   //prospective parents
+  window.mm_menu_0406090146_0 = new Menu("root",264,16,"Arial, Helvetica, sans-serif",10,"#000000","#FFFFFF","#FBE596","#219C7B","left","middle",3,0,1000,-5,7,true,true,true,2,true,true);
+   mm_menu_0406090146_0.addMenuItem("Getting Started","location='http://naic.acf.hhs.gov/parents/prospective/started/index.cfm'");
+  mm_menu_0406090146_0.addMenuItem("What to Expect in the Adoption Process","location='http://naic.acf.hhs.gov/parents/prospective/expect/index.cfm'");
+mm_menu_0406090146_0.addMenuItem("Funding and Financial Assistance","location='http://naic.acf.hhs.gov/parents/prospective/funding/index.cfm'");
+  mm_menu_0406090146_0.addMenuItem("Legal Considerations&#133;","location='http://naic.acf.hhs.gov/parents/prospective/legal/index.cfm'");
+  mm_menu_0406090146_0.addMenuItem("Types of Adoption","location='http://naic.acf.hhs.gov/parents/prospective/adopttype/index.cfm'");
+	mm_menu_0406090146_0.addMenuItem("Types of Adoptive Families","location='http://naic.acf.hhs.gov/parents/prospective/familiestype/index.cfm'");
+	mm_menu_0406090146_0.addMenuItem("Issues Common to Adopted Children","location='http://naic.acf.hhs.gov/parents/prospective/issues/index.cfm'");
+	mm_menu_0406090146_0.addMenuItem("Understanding Potential Challenges","location='http://naic.acf.hhs.gov/parents/prospective/understand/index.cfm'");	
+   mm_menu_0406090146_0.fontWeight="bold";
+   mm_menu_0406090146_0.hideOnMouseOut=true;
+   mm_menu_0406090146_0.bgColor='#FFFFFF';
+   mm_menu_0406090146_0.menuBorder=1;
+   mm_menu_0406090146_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0406090146_0.menuBorderBgColor='#B0DCD0';
+   
+   //adoptive parents
+    window.mm_menu_0408080746_0 = new Menu("root",264,16,"Arial, Helvetica, sans-serif",10,"#000000","#FFFFFF","#FBE596","#219C7B","left","middle",3,0,1000,-5,7,true,true,true,2,true,true);
+  mm_menu_0408080746_0.addMenuItem("Parenting Your Adoptive Child: Birth to Adulthood","location='http://naic.acf.hhs.gov/parents/adoptive/parent/index.cfm'");
+  mm_menu_0408080746_0.addMenuItem("Types of Adoptive Families","location='http://naic.acf.hhs.gov/parents/adoptive/types/index.cfm'");
+  mm_menu_0408080746_0.addMenuItem("Talking About Adoption","location='http://naic.acf.hhs.gov/parents/adoptive/talk/index.cfm'");
+  mm_menu_0408080746_0.addMenuItem("Understanding Potential Challenges","location='http://naic.acf.hhs.gov/parents/adoptive/understand/index.cfm'");
+  mm_menu_0408080746_0.addMenuItem("Obtaining Children's Records&#133;","location='http://naic.acf.hhs.gov/parents/adoptive/obtain/index.cfm'");
+  mm_menu_0408080746_0.addMenuItem("Legal Considerations&#133;","location='http://naic.acf.hhs.gov/parents/adoptive/legal/index.cfm'");
+  mm_menu_0408080746_0.addMenuItem("Searching for Birth Relatives","location='http://naic.acf.hhs.gov/parents/adoptive/search/index.cfm'");
+mm_menu_0408080746_0.addMenuItem("Funding and Financial Assistance","location='http://naic.acf.hhs.gov/parents/adoptive/funding/index.cfm'");
+   mm_menu_0408080746_0.fontWeight="bold";
+   mm_menu_0408080746_0.hideOnMouseOut=true;
+   mm_menu_0408080746_0.bgColor='#FFFFFF';
+   mm_menu_0408080746_0.menuBorder=1;
+   mm_menu_0408080746_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0408080746_0.menuBorderBgColor='#B0DCD0';
+   
+   //adopted people
+window.mm_menu_0406090333_0 = new Menu("root",264,16,"Arial, Helvetica, sans-serif",10,"#000000","#FFFFFF","#FBE596","#219C7B","left","middle",3,0,1000,-5,7,true,true,true,2,true,true);
+  mm_menu_0406090333_0.addMenuItem("Obtaining Birth and/or Adoption Records","location='http://naic.acf.hhs.gov/adopted/obtain/index.cfm'");
+  mm_menu_0406090333_0.addMenuItem("Legal Considerations&#133;","location='http://naic.acf.hhs.gov/adopted/legal/index.cfm'");
+  mm_menu_0406090333_0.addMenuItem("Issues Adopted People May Face","location='http://naic.acf.hhs.gov/adopted/issues/index.cfm'");
+  mm_menu_0406090333_0.addMenuItem("Searching for Birth Relatives","location='http://naic.acf.hhs.gov/adopted/search/index.cfm'");
+  mm_menu_0406090333_0.addMenuItem("College Scholarships and Tuition Waivers","location='http://naic.acf.hhs.gov/adopted/funding/index.cfm'");
+   mm_menu_0406090333_0.fontWeight="bold";
+   mm_menu_0406090333_0.hideOnMouseOut=true;
+   mm_menu_0406090333_0.bgColor='#FFFFFF';
+   mm_menu_0406090333_0.menuBorder=1;
+   mm_menu_0406090333_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0406090333_0.menuBorderBgColor='#B0DCD0';
+   
+ //Pregnant Women menu code
+  window.mm_menu_0406090453_0 = new Menu("root",264,16,"Arial, Helvetica, sans-serif",10,"#000000","#FFFFFF","#FBE596","#219C7B","left","middle",3,0,1000,-5,7,true,true,true,2,true,true);
+  mm_menu_0406090453_0.addMenuItem("Making the Decision&#133;","location='http://naic.acf.hhs.gov/expecting/pregnant/decision/index.cfm'");
+  mm_menu_0406090453_0.addMenuItem("Legal Considerations&#133;","location='http://naic.acf.hhs.gov/expecting/pregnant/legal/index.cfm'");
+   mm_menu_0406090453_0.fontWeight="bold";
+   mm_menu_0406090453_0.hideOnMouseOut=true;
+   mm_menu_0406090453_0.bgColor='#FFFFFF';
+   mm_menu_0406090453_0.menuBorder=1;
+   mm_menu_0406090453_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0406090453_0.menuBorderBgColor='#B0DCD0';
+   
+//Birth Mothers menu code
+      window.mm_menu_0408072538_0 = new Menu("root",264,16,"Arial, Helvetica, sans-serif",10,"#000000","#FFFFFF","#FBE596","#219C7B","left","middle",3,0,1000,-5,7,true,true,true,2,true,true);
+ mm_menu_0408072538_0.addMenuItem("Degree of Contact with Adoptive Parents&#133","location='http://naic.acf.hhs.gov/expecting/birthfamilies/contact/index.cfm'");
+  mm_menu_0408072538_0.addMenuItem("Searching for Information on Adopted Children","location='http://naic.acf.hhs.gov/expecting/birthfamilies/search/index.cfm'");
+  mm_menu_0408072538_0.addMenuItem("Legal Considerations&#133;","location='http://naic.acf.hhs.gov/expecting/birthfamilies/legal/index.cfm'");
+   mm_menu_0408072538_0.fontWeight="bold";
+   mm_menu_0408072538_0.hideOnMouseOut=true;
+   mm_menu_0408072538_0.bgColor='#FFFFFF';
+   mm_menu_0408072538_0.menuBorder=1;
+   mm_menu_0408072538_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0408072538_0.menuBorderBgColor='#B0DCD0';
+   
+
+mm_menu_0408072538_0.writeMenus();
+} // mmLoadMenus()
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<script language="JavaScript" src="http://naic.acf.hhs.gov/link_disclaimer.js"></script>
+<script language="JavaScript" src="http://naic.acf.hhs.gov/mm_menu.js"></script>
+<link rel="STYLESHEET" type="text/css" href="http://naic.acf.hhs.gov/mastercss.css">
+</head>
+
+<body bgcolor="#FFFFFF" link="#339966" vlink="#339966" alink="#339966" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('http://naic.acf.hhs.gov/images/admin-bt-up.gif','http://naic.acf.hhs.gov/images/individuals-bt-up.gif','http://naic.acf.hhs.gov/images/expectant-bt-up.gif','http://naic.acf.hhs.gov/images/birth-bt-up.gif','http://naic.acf.hhs.gov/images/families-bt-up.gif','http://naic.acf.hhs.gov/images/prospective-bt-up.gif','http://naic.acf.hhs.gov/images/adoptive-bt-up.gif','http://naic.acf.hhs.gov/images/resources-bt-up.gif','http://naic.acf.hhs.gov/images/icons/cart-full-ic.gif','http://naic.acf.hhs.gov/images/home-bt-up.gif','http://naic.acf.hhs.gov/images/about-us-up.gif','http://naic.acf.hhs.gov/images/suggestion-up.gif','http://naic.acf.hhs.gov/images/subscribe-up.gif','http://naic.acf.hhs.gov/images/faqs-up.gif')">
+
+<script language="JavaScript1.2">mmLoadMenus();</script>
+
+
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr> 
+	<td bgcolor="#FFFFFF" valign="top" align="center">
+    <span class="banner" bgcolor="##FFFFFF"> 
+    <!--Banner Start -->
+<style type="text/css">
+<!--
+.acfglobal, a.acfglobal, a.acfglobal:link, a.acfglobal:visited, a.acfglobal:active {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000066;
+	text-decoration: none;
+	background-color: #FFFFFF;
+}
+a.acfglobal:hover, a.acfglobal:link:hover, a.acfglobal:visited:hover, a.acfglobal:active:hover{
+	color: #999999;
+	text-decoration: underline;
+	background-color: #FFFFFF;
+}
+.acfsub, a.acfsub:link, a.acfsub:visited, a.acfsub:active {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+ color: #FFFFFF;
+ text-decoration: none;
+ background-color: #00008c;
+}
+.acfsubsearch, a.acfsubsearch, a.acfsubsearch:link, a.acfsubsearch:visited, a.acfsubsearch:active {
+ font-family: Verdana, Helvetica, Arial, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+ color: #FFC800;
+ text-decoration: none;
+ background-color: #00008C;
+}
+a.acfsubsearch:hover, a.acfsubsearch:link:hover, a.acfsubsearch:visited:hover, a.acfsubsearch:active:hover{
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #CCCCCC;
+	text-decoration: underline;
+	background-color: #00008C;
+}
+/* end search styles for programs 3rd tier */
+.acfsearch {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	font-weight: bold;
+	color: #00008C;
+}
+a.acfsub:hover, a.acfsub:link:hover, a.acfsub:visited:hover, a.acfsub:active:hover{
+ color: #FFC800;
+ text-decoration: underline;
+ background-color: #00008c;
+}
+.gold{
+ font-size: 8px;
+ color: #FFC800;
+ line-height: 10px;
+ background-color: #00008c;
+}
+.notice, p.notice {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+}
+a.skipnav, a.skipnav:active, a.skipnav:hover, a.skipnav:visited {
+	color: #FFFFFF;
+	line-height: 1px;
+}
+.whiteback {
+	background-color: #FFFFFF;
+}
+.blueback {
+	background-color: #00008C;
+}
+
+-->
+</style>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tr class="whiteback">
+<td colspan="3"><a class="acfskip" href="#skip">Skip ACF navigation and go to main website navigation</a></td>
+</tr>
+
+<tr class="whiteback">
+	<td valign="bottom" align="right" rowspan="2" colspan="2" class="whiteback"><a href="http://www.hhs.gov"><img name="acf_logo_tp" src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/acf_logo_tp.jpg" width="94" height="100" border="0" alt="Department of Health and Human Services logo"></a></td>
+
+	<td align="left" valign="top" class="whiteback"><img name="acf_bnr_text" src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/acf_bnr_text.gif" width="432" height="76" border="0" usemap="#acf_bnr" alt=" "></td>
+	
+	<td valign="middle" align="right" class="whiteback" nowrap>
+	
+	<table border="0" cellspacing="2" cellpadding="0">
+	<tr valign="middle">
+		<td align="right" valign="bottom"><img src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/arrow_circle.gif" alt=" " width="11" height="11" hspace="0" vspace="0" border="0"></td>
+		<td nowrap class="acfglobal" valign="top"><a href="http://faq.acf.hhs.gov/cgi-bin/acfrightnow.cfg/php/enduser/std_alp.php?p_cat_lvl1=10" class="acfglobal">ACF Questions?</a>&#160;&#160;</td>
+	</tr>
+	<tr valign="middle">
+		<td align="right" valign="bottom"><img src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/arrow_circle.gif" alt=" " width="11" height="11" hspace="0" vspace="0" border="0"></td>
+		<td nowrap class="acfglobal" valign="top"><a href="http://www.acf.hhs.gov/acf_privacy_policy.html" class="acfglobal">ACF Privacy</a>&#160;&#160;</td>
+	</tr>
+	<tr valign="middle">
+		<td align="right" valign="bottom"><img src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/arrow_circle.gif" alt=" " width="11" height="11" hspace="0" vspace="0" border="0"></td>
+		<td nowrap class="acfglobal" valign="top"><a href="http://www.acf.hhs.gov/acf_site_index.html" class="acfglobal">ACF Site Index</a>&#160;&#160;</td>
+	</tr>
+	<tr valign="middle">
+		<td align="right" valign="bottom"><img src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/arrow_circle.gif" alt=" " width="11" height="11" hspace="0" vspace="0" border="0"></td>
+		<td nowrap class="acfglobal" valign="top"><a href="http://www.acf.hhs.gov/acf_contact_us.html" class="acfglobal">ACF Contact Us</a>&#160;&#160;</td>
+	</tr>
+	</table>
+	
+	</td>
+</tr>
+
+<tr class="blueback">
+	
+
+	<td valign="middle" nowrap class="acfsub" height="24">
+	<img src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/clearpixel.gif" height="10" width="1" alt="spacer image">
+&#160;<a href="http://www.acf.hhs.gov/index.html" class="acfsub">ACF Home</a>
+&#160;<span class="gold">|</span>&#160;
+<a href="http://www.acf.hhs.gov/acf_services.html" class="acfsub">ACF Services</a>
+&#160;<span class="gold">|</span>&#160;
+<a href="http://www.acf.hhs.gov/acf_working_with.html" class="acfsub">Working with ACF</a>
+&#160;<span class="gold">|</span>&#160;
+<a href="http://www.acf.hhs.gov/acf_policy_planning.html" class="acfsub">ACF Policy/Planning</a>
+&#160;<span class="gold">|</span>&#160;
+<a href="http://www.acf.hhs.gov/acf_about.html" class="acfsub">About ACF</a>
+&#160;<span class="gold">|</span>&#160;
+<a href="http://www.acf.hhs.gov/acf_news.html" class="acfsub">ACF News</a></td>
+	<td align="center" valign="middle" class="acfsubsearch"> <a href="http://www.acf.hhs.gov/cgi-bin/mnogo/bin/search.cgi" class="acfsubsearch">Search ACF</a></td>
+</tr>
+
+<tr class="whiteback">
+    <td width="62" align="right" valign="top"><img name="acf_logo_bm" src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/acf_logo_bm.jpg" width="62" height="15" border="0" alt=" "></td>
+	<td width="32" background="http://www.acf.hhs.gov/images2/banner/acf_bnr_shadow1.gif" width="32"><img src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/clearpixel.gif" width="32" height="1" border="0" alt=" "></td>
+	<td colspan="2" background="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/acf_bnr_shadow1.gif" width="100%"><img src="http://nccanch.acf.hhs.gov/images/acf_hdr_imgs/clearpixel.gif" width="1" height="15" border="0" alt=" "></td>
+</tr>
+
+</table>
+
+ <a name="skip"></a>
+<map name="acf_bnr">
+ <area shape="rect" coords="18,43,396,67" href="http://www.acf.hhs.gov/" title="Administration for Children and Families" alt="Administration for Children and Families" >
+ <area shape="rect" coords="0,21,251,34" href="http://www.hhs.gov" title="US Department of Health and Human Services" alt="US Department of Health and Human Services" >
+</map>
+
+	</span></td>
+</tr>
+</table>
+
+
+
+
+	
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td background="http://naic.acf.hhs.gov/images/ban_top.gif" colspan="2"><img name="ban_top" src="http://naic.acf.hhs.gov/images/ban_top.gif" width="760" height="1" border="0" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<table align="left" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td background="http://naic.acf.hhs.gov/images/ban_naic.gif"><a href="http://naic.acf.hhs.gov/index.cfm"><img name="ban_naic" src="http://naic.acf.hhs.gov/images/ban_naic.gif" width="161" height="66" border="0" alt=""></a></td>
+					<td nowrap background="http://naic.acf.hhs.gov/images/ban_title.gif"><a href="http://naic.acf.hhs.gov/index.cfm"><img name="ban_title" src="http://naic.acf.hhs.gov/images/ban_title.gif" width="432" height="66" border="0" alt=""></a></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<form name="form1" method="post" action="../../search/search_results.cfm">
+			<input type="hidden" name="simple_search_flag" value="1">
+			<table height="66" border="0" align="right" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="top_search">Search Clearinghouse</td>
+				</tr>
+				<tr>
+					<td class="small"> 
+						<label for="Enter a search term"><input type="text" name="criteria" size="20" maxlength="250" class="small" style="width: 110px;" title="Enter Search Term Here"></label>
+						
+						<input type="image" src="../../images/icons/go-button.gif" alt="Go" width="22" height="22" border="0">
+					</td>
+				</tr>
+				<tr>
+					<td align="center" nowrap class="small">
+						<a href="http://naic.acf.hhs.gov/search/advanced_search.cfm" class="top_search_links">Advanced Search</a> | <a href="http://naic.acf.hhs.gov/search/searchtips.cfm" class="top_search_links">Search Tips</a><br>
+						<a href="http://naic.acf.hhs.gov/search/atozindex.cfm" class="top_search_links">A-Z Index</a> | <a href="http://naic.acf.hhs.gov/admin/siteindex.cfm" class="top_search_links">Site Index</a>
+					</td>
+				</tr>
+			</table>
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td background="http://naic.acf.hhs.gov/images/ban_tilebt.gif" colspan="2"><img name="ban_btm" src="http://naic.acf.hhs.gov/images/ban_btm.gif" width="760" height="5" border="0" alt=""></td>
+	</tr>
+</table>
+
+
+
+
+
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr> 
+	<td width="142" valign="top" background="http://naic.acf.hhs.gov/images/green-tile.gif">
+	<table height="100%" border="0" cellpadding="0" cellspacing="5">
+   <tr>
+		<td height="2"><a href="#skipnavigation" class="skipnavsmall">skip navigation</a></td>
+	</tr>
+    <tr> 
+    	<td width="116" valign="top" align="center">
+
+        <a href="http://naic.acf.hhs.gov/index.cfm" onMouseOver="MM_swapImage('home_button','','http://naic.acf.hhs.gov/images/home-bt-up.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="http://naic.acf.hhs.gov/images/home-bt.gif" alt="Home" name="home_button" width="116" height="32" vspace="2" border="0" id="home_button"></a><br>
+
+		<a href="http://naic.acf.hhs.gov/profess/admin/index.cfm" onMouseOver="MM_swapImage('profs_admins','','http://naic.acf.hhs.gov/images/admin-bt-up.gif',1);MM_showMenu(window.mm_menu_0406085233_0,116,10,null,'profs_admins')" onMouseOut="MM_swapImgRestore();MM_startTimeout()"><img src="http://naic.acf.hhs.gov/images/admin-bt.gif" alt="For Professionals Who Are Administrators" name="profs_admins" width="116" height="32" vspace="2" border="0" id="profs_admins"></a><br>
+
+		<a href="http://naic.acf.hhs.gov/profess/families/index.cfm" onMouseOver="MM_swapImage('professs_families','','http://naic.acf.hhs.gov/images/families-bt-up.gif',1);MM_showMenu(window.mm_menu_0406090014_0,116,10,null,'professs_families')" onMouseOut="MM_swapImgRestore();MM_startTimeout();"><img src="http://naic.acf.hhs.gov/images/families-bt.gif" alt="For Professionals Who Work With Families" name="professs_families" width="116" height="32" vspace="2" border="0" id="professs_families"></a><br>
+
+		<a href="http://naic.acf.hhs.gov/parents/prospective/index.cfm" onMouseOver="MM_swapImage('prospective_parents','','http://naic.acf.hhs.gov/images/prospective-bt-up.gif',1);MM_showMenu(window.mm_menu_0406090146_0,116,10,null,'prospective_parents')" onMouseOut="MM_swapImgRestore();MM_startTimeout()"><img src="http://naic.acf.hhs.gov/images/prospective-bt.gif" alt="For Prospective Parents" name="prospective_parents" width="116" height="32" vspace="2" border="0" id="prospective_parents"></a><br>
+
+		<a href="http://naic.acf.hhs.gov/parents/adoptive/index.cfm" onMouseOver="MM_swapImage('adoptive_parents','','http://naic.acf.hhs.gov/images/adoptive-bt-up.gif',1);MM_showMenu(window.mm_menu_0408080746_0,116,10,null,'adoptive_parents')" onMouseOut="MM_swapImgRestore();MM_startTimeout()"><img src="http://naic.acf.hhs.gov/images/adoptive-bt.gif" alt="For Adoptive Parents" name="adoptive_parents" width="116" height="32" vspace="2" border="0" id="adoptive_parents"></a><br>
+
+		<a href="http://naic.acf.hhs.gov/adopted/index.cfm" onMouseOver="MM_swapImage('adopted_people','','http://naic.acf.hhs.gov/images/individuals-bt-up.gif',1);MM_showMenu(window.mm_menu_0406090333_0,116,10,null,'adopted_people')" onMouseOut="MM_swapImgRestore();MM_startTimeout()"><img src="http://naic.acf.hhs.gov/images/individuals-bt.gif" alt="For Adopted People" name="adopted_people" width="116" height="32" vspace="2" border="0" id="adopted_people"></a><br>
+
+		<a href="http://naic.acf.hhs.gov/expecting/pregnant/index.cfm" onMouseOver="MM_swapImage('pregnant_women','','http://naic.acf.hhs.gov/images/expectant-bt-up.gif',1);MM_showMenu(window.mm_menu_0406090453_0,116,10,null,'pregnant_women')" onMouseOut="MM_swapImgRestore();MM_startTimeout()"><img src="http://naic.acf.hhs.gov/images/expectant-bt.gif" alt="For Pregnant Women" name="pregnant_women" width="116" height="32" vspace="2" border="0" id="pregnant_women"></a><br>
+
+		<a href="http://naic.acf.hhs.gov/expecting/birthfamilies/index.cfm" onMouseOver="MM_swapImage('birth_relatives','','http://naic.acf.hhs.gov/images/birth-bt-up.gif',1);MM_showMenu(window.mm_menu_0408072538_0,116,10,null,'birth_relatives')" onMouseOut="MM_swapImgRestore();MM_startTimeout()"><img src="http://naic.acf.hhs.gov/images/birth-bt.gif" alt="For Birth Mothers, Fathers and Relatives" name="birth_relatives" width="116" height="32" vspace="2" border="0" id="birth_relatives"></a><br>
+
+
+		<table border="0" cellpadding="0" cellspacing="0" width="116">
+		<tr>
+			<td valign="bottom" height="35"><img name="buttondd" src="http://naic.acf.hhs.gov/images/resources-dd.gif" alt="General Resources" width="116" height="33" border="0" alt=""></td>
+		</tr>
+		<tr>
+			<td valign="top" background="http://naic.acf.hhs.gov/images/middle-dd.gif">
+			<table width="100%" border="0" cellspacing="3" cellpadding="3" align="center">
+				<tr><td align="center"><a href="http://naic.acf.hhs.gov/general/nad/index.cfm" class="menulink">National Adoption Directory Search</a></td></tr>
+				<tr><td align="center"><a href="http://naic.acf.hhs.gov/general/legal/index.cfm" class="menulink">Legal Issues and Laws</a></td></tr>
+   		 		<tr><td align="center"><a href="http://naic.acf.hhs.gov/general/adoptmonth/index.cfm" class="menulink">National Adoption Month in November</a></td></tr>
+   				<tr><td align="center"><a href="http://cbexpress.acf.hhs.gov" class="menulink"><i>Children's Bureau Express</i> Online Digest</a></td></tr>
+	    		<tr><td align="center"><a href="http://basis1.calib.com/BASIS/chdocs/docs/naicweb/SF" class="menulink">Clearinghouse Library Search</a></td></tr>
+    			<tr><td align="center"><a href="http://naic.acf.hhs.gov/general/publications/index.cfm" class="menulink">Clearinghouse Publications Search</a></td></tr>
+    			<tr><td align="center"><a href="http://naic.acf.hhs.gov/general/conferences/index.cfm" class="menulink">Conference Calendar Search</a></td></tr>
+				<tr><td align="center"><a href="http://naic.acf.hhs.gov/general/organizations/index.cfm" class="menulink">Related Organizations/ Resource Lists</a></td></tr>
+				<tr><td align="center"><a href="http://naic.acf.hhs.gov/general/espanol/index.cfm" class="menulink">En Espa&ntilde;ol</a></td>
+		</tr>
+		</table></td>
+	</tr>
+    <tr>
+    	<td valign="top" height="16"><img name="bottomdd" src="http://naic.acf.hhs.gov/images/bottom-dd.gif" width="116" height="14" border="0" alt=""></td>
+	</tr>
+	</table>
+	<br><br>
+	
+	
+	
+	<a href="http://naic.acf.hhs.gov/admin/aboutus.cfm" onMouseOver="MM_swapImage('about_us','','http://naic.acf.hhs.gov/images/about-us-up.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="http://naic.acf.hhs.gov/images/about-us.gif" alt="About Us" name="about_us" width="117" height="24" vspace="3" border="0" id="about_us"></a><br>
+	<a href="http://naic.acf.hhs.gov/admin/suggestions.cfm" onMouseOver="MM_swapImage('suggestions','','http://naic.acf.hhs.gov/images/suggestion-up.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="http://naic.acf.hhs.gov/images/suggestion.gif" alt="Give Us Suggestions" name="suggestions" width="117" height="24" vspace="3" border="0" id="suggestions"></a><br>
+	<a href="http://naic.acf.hhs.gov/admin/glossary.cfm" onMouseOver="MM_swapImage('Image5','','http://naic.acf.hhs.gov/images/glossary-up.gif','Image5','','http://naic.acf.hhs.gov/images/glossary-up.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="http://naic.acf.hhs.gov/images/glossary.gif" alt="Glossary" name="Image5" width="117" height="24" border="0" id="Image5"></a><br>
+	<a href="http://naic.acf.hhs.gov/admin/subscribe.cfm" onMouseOver="MM_swapImage('subscribe','','http://naic.acf.hhs.gov/images/subscribe-up.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="http://naic.acf.hhs.gov/images/subscribe.gif" alt="Free Subscriptions" name="subscribe" width="117" height="24" vspace="3" border="0" id="subscribe"></a><br>
+	<a href="http://naic.acf.hhs.gov/admin/faqs.cfm" onMouseOver="MM_swapImage('faqs','','http://naic.acf.hhs.gov/images/faqs-up.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="http://naic.acf.hhs.gov/images/faqs.gif" alt="FAQs" name="faqs" width="117" height="24" vspace="3" border="0" id="faqs"></a>
+
+	<p><span class="goldtext_small">For more information <br>
+        on children waiting<br>
+		for families in<br>
+		the U.S. foster care <br>
+		system, see <br>
+		<a class="goldtext_small" title="(External Link)" onClick="Disclaimer()" href="http://www.adoptuskids.org"><img src="http://naic.acf.hhs.gov/images/logos/adopt_us_kids_logo.gif" alt="AdoptUSKids Logo" width="111" height="30" border="0"><br>
+      	<b>AdoptUSKids</b></a></span>
+		<br><br>
+              
+		<p><span class="goldtext_small">For information on child abuse and neglect, see<br>
+		<a class="goldtext_small" href="http://nccanch.acf.hhs.gov"><img src="http://naic.acf.hhs.gov/images/logos/can_logo_small.gif" alt="CAN Logo" width="55" height="62" border="0"><br>
+		<b>National Clearinghouse on Child Abuse and Neglect Information</b></a></span><br>
+		<br><br></p></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<p><br></p></td>
+	<td width="724" valign="top" background="http://naic.acf.hhs.gov/images/green-tile.gif">
+
+	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="2" height="10"></td>
+	</tr>
+   <tr valign="top"> 
+    	<td height="9" bgcolor="#FFFFFF"><img src="http://naic.acf.hhs.gov/images/curve-l.gif" alt="" name="curvel" id="curvel" width="9" height="9" border="0" align="top"></td>
+		<td height="9" align="right" bgcolor="#FFFFFF"><img src="http://naic.acf.hhs.gov/images/curve-r.gif" alt="" name="curver" id="curver" width="9" height="9" border="0"></td>
+	</tr>
+    <tr valign="top"> 
+		<td colspan="2" valign="top" bgcolor="#FFFFFF" style="padding-left: 5px; padding-right: 5px;">
+		<a name="skipnavigation"></a>
+
+
+
+	
+  
+
+<p class="breadcrumb">You are here: <a href="../../index.cfm" class="bread">Home</a> &gt; <a href="../index.cfm" class="bread">General Resources</a> &gt; National Adoption Directory Search</p>
+
+<p class="title"><span class="h3_title">National Adoption Directory Search</span><br>
+<img src="../../images/divider.gif" width="100%" height="3" border="0"><br>
+
+
+Includes State-by-State contact information for a variety of adoption-related organizations and services including public and licensed private adoption agencies, support groups, State reunion registries, and more.  These listings are provided as a public service and should not be construed as a Clearinghouse or Children's Bureau endorsement or recommendation of any one agency or organization.
+</p>
+
+<p>To search for a specific adoption agency or organization by name, use our <a href="../organizations/search.cfm">Related Organizations Search</a>.</p>
+
+
+<form action="searchresults.cfm" method="post">
+<table width="100%" border="0" cellspacing="3" cellpadding="0" align="center">
+<tr>
+	<td colspan="2"><b>Step 1 (of 3): Select a State (Required)</b></td>
+</tr>
+<tr>
+	<td valign="top" width="12">&nbsp;</td>
+	<td valign="top">
+				<select name="state1" class="formselect" tabindex="10">			
+					<option value="" style="color: 999999;">Select a State</option>
+					
+						<option value="AL">Alabama</option>
+					
+						<option value="AK">Alaska</option>
+					
+						<option value="AZ">Arizona</option>
+					
+						<option value="AR">Arkansas</option>
+					
+						<option value="CA">California</option>
+					
+						<option value="CO">Colorado</option>
+					
+						<option value="CT">Connecticut</option>
+					
+						<option value="DE">Delaware</option>
+					
+						<option value="DC">District of Columbia</option>
+					
+						<option value="FL">Florida</option>
+					
+						<option value="GA">Georgia</option>
+					
+						<option value="GU">Guam</option>
+					
+						<option value="HI">Hawaii</option>
+					
+						<option value="ID">Idaho</option>
+					
+						<option value="IL">Illinois</option>
+					
+						<option value="IN">Indiana</option>
+					
+						<option value="IA">Iowa</option>
+					
+						<option value="KS">Kansas</option>
+					
+						<option value="KY">Kentucky</option>
+					
+						<option value="LA">Louisiana</option>
+					
+						<option value="ME">Maine</option>
+					
+						<option value="MD">Maryland</option>
+					
+						<option value="MA">Massachusetts</option>
+					
+						<option value="MI">Michigan</option>
+					
+						<option value="MN">Minnesota</option>
+					
+						<option value="MS">Mississippi</option>
+					
+						<option value="MO">Missouri</option>
+					
+						<option value="MT">Montana</option>
+					
+						<option value="NE">Nebraska</option>
+					
+						<option value="NV">Nevada</option>
+					
+						<option value="NH">New Hampshire</option>
+					
+						<option value="NJ">New Jersey</option>
+					
+						<option value="NM">New Mexico</option>
+					
+						<option value="NY">New York</option>
+					
+						<option value="NC">North Carolina</option>
+					
+						<option value="ND">North Dakota</option>
+					
+						<option value="OH">Ohio</option>
+					
+						<option value="OK">Oklahoma</option>
+					
+						<option value="OR">Oregon</option>
+					
+						<option value="PA">Pennsylvania</option>
+					
+						<option value="PR">Puerto Rico</option>
+					
+						<option value="RI">Rhode Island</option>
+					
+						<option value="SC">South Carolina</option>
+					
+						<option value="SD">South Dakota</option>
+					
+						<option value="TN">Tennessee</option>
+					
+						<option value="TX">Texas</option>
+					
+						<option value="UT">Utah</option>
+					
+						<option value="VT">Vermont</option>
+					
+						<option value="VI">Virgin Islands</option>
+					
+						<option value="VA">Virginia</option>
+					
+						<option value="WA">Washington</option>
+					
+						<option value="WV">West Virginia</option>
+					
+						<option value="WI">Wisconsin</option>
+					
+						<option value="WY">Wyoming</option>
+					
+				</select>
+				<br><br>
+	</td>
+</tr>
+<tr>
+	<td colspan="2"><b>Step 2 (of 3): Select at Least One Type of Information You Desire (Required)</b></td>
+</tr>
+<tr>
+	<td valign="top" width="12" rowspan="2"><img src="../../images/icons/arrow-ic-trans.gif" alt="Arrow"></td>
+	<td valign="top"><i>State-level Phone Numbers for Information on Becoming an Adoptive Parent or Foster Parent</i></td>
+</tr>
+<tr>
+	<td valign="top">
+	<table border="0" width="100%">
+				<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="14" tabindex="20"></td>
+						<td valign="top">Toll-free State-sponsored Adoption Information Lines - <a href="definitions.cfm#AdoptionInformationLines">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="15" tabindex="30"></td>
+						<td valign="top">Toll-free State-sponsored Foster Care Information Lines - <a href="definitions.cfm#FosterCareInformationLines">view definition</a></td>
+		</tr>
+	</table>
+	</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="3" cellpadding="0" align="center">
+<tr>
+			<td valign="top" width="12" rowspan="2"><img src="../../images/icons/arrow-ic-trans.gif" alt="Arrow"></td>
+			<td valign="top"><i>Adoption Agencies</i></td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0" width="100%">
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="41/3" tabindex="40"></td>
+						<td valign="top">Licensed Private Adoption Agencies for Domestic Adoptions - <a href="definitions.cfm#DomesticAdoptions">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="42/3" tabindex="50"></td>
+						<td valign="top">Licensed Private Adoption Agencies for Intercountry Adoptions - <a href="definitions.cfm#IntercountryAdoptions">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="4/5" tabindex="60"></td>
+						<td valign="top">Local/Regional Offices of the State (Public) Adoption Agency - <a href="definitions.cfm#LocalRegionalOffices">view definition</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12" rowspan="2"><img src="../../images/icons/arrow-ic-trans.gif" alt="Arrow"></td>
+			<td valign="top"><i>Support Groups</i></td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0" width="100%">
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="1" tabindex="70"></td>
+						<td valign="top">For Adoptive/Foster Families - <a href="definitions.cfm#FosterFamilySupportGroups">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="6" tabindex="80"></td>
+						<td valign="top">For Birth Families, Adopted People, and Those Involved in the Search Process - <a href="definitions.cfm#SearchProcess">view definition</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12" rowspan="2"><img src="../../images/icons/arrow-ic-trans.gif" alt="Arrow"></td>
+			<td valign="top"><i>Contact Information for State-Level Officials Involved in Adoption or Foster Care</i></td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0" width="100%">
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="8" tabindex="90"></td>
+						<td valign="top">State Adoption Specialist/Manager - <a href="definitions.cfm#StateAdoptionSpecialist">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="10" tabindex="100"></td>
+						<td valign="top">State Foster Care Specialist/Manager - <a href="definitions.cfm#StateFosterCareSpecialist">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="12" tabindex="110"></td>
+						<td valign="top">State Licensing Specialist - <a href="definitions.cfm#StateLicensingSpecialist">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="11" tabindex="120"></td>
+						<td valign="top">State Interstate Compact on the Placement of Children (ICPC) Administrator - <a href="definitions.cfm#StateInterstateCompact">view definition</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12" rowspan="2"><img src="../../images/icons/arrow-ic-trans.gif" alt="Arrow"></td>
+			<td valign="top"><i>Statewide Services Available for Prospective Adoptive Parents, Adopted Individuals, and Birth Parents and Relatives</i></td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0" width="100%">
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="13" tabindex="130"></td>
+						<td valign="top">State Reunion Registry - <a href="definitions.cfm#StateReunionRegistry">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="9" tabindex="140"></td>
+						<td valign="top">State Confidential Intermediary Service - <a href="definitions.cfm#IntermediaryService">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="81" tabindex="150"></td>
+						<td valign="top">State Adoption Exchange - <a href="definitions.cfm#exchange">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="82" tabindex="155"></td>
+						<td valign="top">State Photolisting of Children Waiting for Adoption - <a href="definitions.cfm#photolisting">view definition</a></td>
+					</tr>
+					<tr>
+						<td valign="top" width="10"><input type="checkbox" name="atypeid" value="2" tabindex="160"></td>
+						<td valign="top">Attorney Referral Service - <a href="definitions.cfm#Attorney">view definition</a><br><br></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><b>Step 3 (of 3): Submit Your Search (Required)</b></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" value="Go!" tabindex="170"></td>
+		</tr>
+	</table>
+</form>
+
+
+
+
+<p>&nbsp;</p>
+	   
+<p><img src="http://naic.acf.hhs.gov/images/divider.gif" width="100%" height="3" border="0"></p>
+			  
+		  
+<p class="homecenter"><a href="http://naic.acf.hhs.gov/index.cfm" class="bread">Home</a> | <a href="http://naic.acf.hhs.gov/admin/aboutus.cfm" class="bread">About Us</a> | <a href="http://naic.acf.hhs.gov/admin/suggestions.cfm" class="bread">Give Us Suggestions</a> | <a href="http://naic.acf.hhs.gov/admin/glossary.cfm" class="bread">Glossary</a> | <a href="http://naic.acf.hhs.gov/admin/subscribe.cfm" class="bread">Free Subscriptions</a>  | <a href="http://naic.acf.hhs.gov/admin/faqs.cfm" class="bread">FAQs</a><br>
+<a href="http://naic.acf.hhs.gov/admin/privacy.cfm" class="bread">Privacy and Linking Policy</a> | <a href="http://naic.acf.hhs.gov/admin/copyright.cfm" class="bread">Copyright Information</a> | <a href="http://naic.acf.hhs.gov/search/atozindex.cfm" class="bread">A-Z Index</a> | <a href="http://naic.acf.hhs.gov/search/advanced_search.cfm" class="bread">Advanced Search</a> | <a href="http://naic.acf.hhs.gov/admin/siteindex.cfm" class="bread">Site Index</a></p>
+
+
+
+
+<p class="homecenter">A Service of the <a href="http://www.acf.hhs.gov/programs/cb/" class="bread">Children's Bureau</a>, Administration for Children and Families,<br>
+U.S. Department of Health and Human Services</p>
+    
+<p class="homecenter">For more information, contact:<br>
+National Adoption Information Clearinghouse<br>
+330 C Street, SW<br>
+Washington, DC 20447<br>
+Phone: (703) 352-3488 or (888) 251-0075<br>
+Fax: (703) 385-3206<br>
+E-mail: <a href="mailto:naic@caliber.com" class="bread">naic@caliber.com</a></p>
+
+
+<p class="homecenter">Updated on January 10, 2005 by <a href="mailto:webmaster_naic@caliber.com" class="bread">webmaster_naic@caliber.com</a>.</p>
+		
+
+
+
+
+	</td>
+	</tr>
+	</table></td>
+	
+    <td valign="top" background="http://naic.acf.hhs.gov/images/green-tile.gif">
+	
+	
+	<table width="100%" cellpadding="5" align="center"><tr><td> 
+	
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+
+	<td height="6" colspan="2" valign="top"></td>
+</tr>
+<tr>
+	<td height="10" colspan="2" valign="top" align="center"><img src="http://naic.acf.hhs.gov/images/line-ic.gif" width="120" height="3" border="0"></td>
+</tr>
+
+	<tr> 
+		<td width="46" height="34" valign="top"><a href="http://naic.acf.hhs.gov/cart/view_cart.cfm" onMouseOver="MM_swapImage('Image8','','http://naic.acf.hhs.gov/images/icons/cart-full-ic.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="http://naic.acf.hhs.gov/images/icons/cart-ic.gif" alt="Shopping Cart" name="Image8" width="40" height="33" hspace="3" border="0" id="Image8"></a></td>
+		<td width="74" valign="top" align="center"><span class="whitetext_small">0 Items in cart<br>
+		<a href="http://naic.acf.hhs.gov/cart/view_cart.cfm" class="whitetext_small">View My<br>NAIC Cart</a></span></td>
+	</tr>
+
+<tr>
+	<td height="10" colspan="2" valign="bottom" align="center"><img src="http://naic.acf.hhs.gov/images/line-ic.gif" width="120" height="3" border="0"></td>
+</tr>
+</table>	
+	
+
+
+
+		
+
+</td></tr></table>
+
+
+	<table width="95%" border="0" cellspacing="0" cellpadding="4" align="center"><tr><td><p class="whitetext_small"><img src="http://naic.acf.hhs.gov/images/icons/arrow-ic-trans.gif" alt="Arrow" border="0" style="background-color: transparent;"> <a href="http://naic.acf.hhs.gov/general/nad/update.cfm" class="whitetext_small">Update/Add Your Organization's Contact Information</a>.</p>
+
+<p class="whitetext_small"><img src="http://naic.acf.hhs.gov/images/icons/arrow-ic-trans.gif" alt="Arrow"> <a href="http://naic.acf.hhs.gov/pubs/twenty.cfm" class="whitetext_small">How to Assess the Reputation of Licensed, Private Adoption Agencies</a>.</p>
+
+<p class="whitetext_small"><img src="http://naic.acf.hhs.gov/images/icons/arrow-ic-trans.gif" alt="Arrow"> <a href="http://naic.acf.hhs.gov/pubs/country_resource_lists.cfm" class="whitetext_small">U.S. Adoption Agencies That Place Children From Abroad</a> (by Country)</p></td></tr></table>	
+	
+    </td>
+</tr>
+</table>
+
+
+
+
+</body>
+</html>		
+
+
+
+

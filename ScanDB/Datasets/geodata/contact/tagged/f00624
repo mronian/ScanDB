@@ -1,0 +1,538 @@
+<DOC>
+<DOCNO>f00624</DOCNO>
+<DOCHDR>http://www.thomasnelson.com/consumer/dept.asp?dept_id=1117900</DOCHDR>
+ <!-- Dept<br> -->
+
+
+<!-- topLevel<br> -->
+ <!-- ParentID -->
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function NewWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function findobj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findobj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+ 
+function validatefields() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=validatefields.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=findobj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@'); p=val.indexOf('.');
+        if (p<1 || p==(val.length-1)) errors+='     - The email address in the '+nm+' field must have a @ and provider base to enable us to\r        contact you (i.e. example@aol.com)\n';
+      } else if (test!='R') {
+        if (isNaN(val)) errors+='     - '+nm+' must contain a number\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (val<min || max<val) errors+='     - '+nm+' must contain a number between '+min+' and '+max+'\n';
+    } } } else if (test.charAt(0) == 'R') errors += '     - Please fill out the '+nm+' field.\n'; }
+  } if (errors) alert('To send your message, the following information needs to be corrected:\r\r\n'+errors);
+  document.returnvalue = (errors == '');
+}
+ 
+function CompareEmails(f1,f2,rule,errorMsg){
+ var myErr = "";
+ if(eval("findobj('"+f1+"').value"+rule+"findobj('"+f2+"').value")){
+  alert(unescape(errorMsg));myErr += 'errorMsg';}
+ document.returnvalue = (myErr == "");
+}
+
+function MakeUpperCase(strInput,words){//1.1
+    var theString = strInput.value;
+    var strOutput = "";// Our temporary string used to build the function's output
+    var sp = " ";
+    var small = false;
+    var smallWords = words.split(",") //words that shouldn't be  capitalized
+    theString = theString.replace(/(\s*)([^\s])/,"$2")//remove leading spaces
+    theString = theString.toLowerCase();  
+    var inputArray = theString.split(sp);
+    strOutput = inputArray[0].slice(0,1).toUpperCase()+inputArray[0].slice(1);
+    for (i = 1; i < inputArray.length; i++){ 
+        small=false;
+        for (ii=0;ii<smallWords.length;ii++){
+           if(inputArray[i] == smallWords[ii]) small = true;
+           }
+        if(!small) inputArray[i] = inputArray[i].slice(0,1).toUpperCase()+inputArray[i].slice(1);
+        strOutput = strOutput + sp + inputArray[i];  
+        }
+    strInput.value = strOutput;
+}
+
+ 
+//-->
+</SCRIPT>
+
+
+
+
+<script>
+
+// information window popups
+function Old_NewWindow(mypage, myname, w, h, scroll, menubar, status, location) {
+ var winl = w;
+ var wint = h;
+ winprops = 'height='+h+',width='+w+',scrollbars='+scroll+',resizable'+',menubar='+menubar+',status='+status+',location='+location
+ win = window.open(mypage, myname, winprops)
+ if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+}
+
+
+//-->
+</script>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title> Contact Information
+| Thomas Nelson, Inc. - Publisher of Christian Books, Videos, Software, Bibles and Children's Books</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Robots" content="index, follow" />
+<meta name="Description" content="ThomasNelson, Inc." />
+<meta name="Keywords" content="christian books publishing, book publishing, writings, literature, fiction, bookstores, Amazon, Billy Graham, Frank Peretti, John Maxwell, leadership, Max Lucado, preaching, bibles, reference, dictionaries, nkjv, bible commentaries, audio books, books-on-tape, e-books, christian living, church life, church, literature, church leaders, c.s. lewis, religious gifts, evangelism, extreme for jesus, extreme 4 jesus, teens, church issues, relationships, business, cookbooks, vegetarian cookbooks, ministry, stories, promise keepers, spirituality, prayer, theology, academic, christian, topical, youth ministry, christian, books for kids, childrenís publishing, jay jay the jet plane, little dogs on the prairie, veggie tales, Thomas Nelson, dept nelson, women of faith,, Store Home" />
+<meta name="Author" content="Branden W. Nichols, ThomasNelson, Inc." />
+<meta name="Copyright" content="Copyright 2003, ThomasNelson, Inc." />
+<link rel="Shortcut Icon" href="images/thomasnelson.ico" />
+<link rel="stylesheet" type="text/css" href="css/sitewide_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/dept_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/wpublishing_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/caribe_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/coolsprings_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/jcountryman_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nbusiness_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nelsonbibles_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nelsonbooks_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nelsonref_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/rutledge_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/tommy_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/transit_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/westbow_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/wndbooks_styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nelsoncurrent_styles.css" />
+<title>Thomas Nelson, Inc. - Publisher of Christian Books, Videos, Software, Bibles and Children's Books</title>
+</head>
+<body LINK="#000000" VLINK="#000000" ALINK="#003366">
+
+	
+<!--start header-->
+		
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="85%" ALIGN="CENTER">
+			
+  <TR>
+				
+	<TD><IMG SRC="images/dept_tplft_bv1.gif" WIDTH="27" HEIGHT="102" /></TD>
+	<TD><IMG SRC="images/dept_tplft_bv2.gif" WIDTH="14" HEIGHT="102"  /></TD>
+	<TD ID="deptheader" VALIGN="bottom"><IMG SRC="images/spacer.gif" WIDTH="319" HEIGHT="1" /><BR />
+				<A HREF="/consumer"><IMG SRC="images/dept_logo.gif" WIDTH="263" HEIGHT="64" BORDER="0" ALT="ThomasNelson.com : Link to Home" /></A></TD>
+	<TD ID="deptheader" CLASS="headertxt" ALIGN="RIGHT" VALIGN="TOP">
+	 	      <!--  S E A R C H    B O X  -->
+        
+<script language="javascript">
+<!--
+
+//function validateDate() {
+function validateDate(form0) {
+//alert('hey');
+//form = window.document.SearchForm[0];
+//var InputDate = SearchForm.SearchText.value;
+//setTimeout("document.AnswerForm.submit();", 500); 
+var InputDate = window.document.forms[0].SearchText.value;
+//rcvEnter.receiptTypeField.options[rcvEnter.receiptTypeField.selectedIndex].value;
+//alert('hey2');
+//var varSearchType = SearchForm.SearchType.value;
+var TypeIndex = window.document.forms[0].SearchType.selectedIndex;
+var varSearchType = window.document.forms[0].SearchType.options[TypeIndex].value;
+
+//alert('stype: ' + varSearchType);
+	if (varSearchType == 'Date') {
+	//alert('hey-if');
+		if (InputDate != "" ){
+		//alert('hey-if2');
+			var datePat = /^(.+)\/(.+)\/(.+)$/;
+			var formvalue = InputDate; 
+			var dateArray = formvalue.match(datePat);
+			if (dateArray == null) {
+			alert("    Please enter a valid date in form 'mm/dd/yy'\rfor example, enter '01/31/02' for Jan 31st, 2002");  
+			window.document.forms[0].SearchText.focus();
+			window.document.forms[0].SearchText.select();
+			return false;  // alert will pop up if slashes are missing
+			}
+			
+			var monthValue = dateArray[1];
+			var dayValue = dateArray[2];
+			var yearValue = dateArray[3];
+			
+			var generalPat = /\D/;  // each value must be a number. This pattern will check if there are other characters than digits
+			
+			var monthCheck = monthValue.match(generalPat);
+			var dayCheck = dayValue.match(generalPat);
+			var yearCheck = yearValue.match(generalPat);
+			
+			if ((monthCheck != null) || (dayCheck != null) || (yearCheck != null)) {
+					alert("    Please enter a valid date in form 'mm/dd/yy'\rfor example, enter '01/31/02' for Jan 31st, 2002");
+					window.document.forms[0].SearchText.focus();
+					window.document.forms[0].SearchText.select();
+					return false;    // return false if the date contained characters other than digits
+					}
+			
+			if ((monthValue > 12) || (dayValue > 31)) {
+					alert("    cPlease enter a valid date in form 'mm/dd/yy'\rfor example, enter '01/31/02' for Jan 31st, 2002");  
+					window.document.forms[0].SearchText.focus();
+					window.document.forms[0].SearchText.select();
+					return false;   // This alert will pop up if numbers are too big
+					}
+			}
+	}
+}
+
+// -->
+</script>
+
+ <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" HEIGHT="99">
+		<TR>
+		  <TD HEIGHT="13">&nbsp;</TD>
+		</TR>
+		  <FORM name="SearchForm" method="get" action="SearchResults.asp">
+		<TR>
+		  <TD CLASS="headertxt" NOWRAP ALIGN="RIGHT" VALIGN="BOTTOM">
+		
+           
+              <font color="#FFFFFF"> Search:</font>   
+			   <SELECT name="SearchType" class="searchbox">          
+			       <OPTION NAME="SEARCH" VALUE="Title" class="searchbox"
+										
+										>
+										Title&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+                    <OPTION NAME="SEARCH" VALUE="Author" class="searchbox"
+											
+										>
+										Author</OPTION>
+                    <OPTION NAME="SEARCH" VALUE="ISBN"
+											
+										>
+										ISBN</OPTION>
+                    <OPTION NAME="SEARCH" VALUE="Style"
+											
+										>
+										Style#</OPTION>
+                    <!--<OPTION NAME="SEARCH" VALUE="Date">MM/DD/YY</OPTION>-->
+              </SELECT>&nbsp;
+			   <input name="SearchText" type="text" size="20" maxlength="20" class="searchbox" />
+            
+			   <input type="submit" name="submit" value="GO" class="searchbox"/>
+			
+            <!-- <img src="images/spacer.gif" height=8 width=20></TD>
+			 -->
+            
+        </TD>
+		  </TR> </FORM>
+     </TABLE>
+      <!--end search box-->
+
+	  
+	  <IMG SRC="images/spacer.gif" WIDTH="360" HEIGHT="1" /></TD>
+	<TD><IMG SRC="images/dept_tprt_bv2.gif" WIDTH="13" HEIGHT="102" /></TD>
+	<TD><IMG SRC="images/dept_tprt_bv1.gif" WIDTH="27" HEIGHT="102" /></TD>
+  </TR>
+		
+</TABLE>
+<!--end header-->
+		
+	<!--start main navigation-->
+		
+<table border="0" cellpadding="0" cellspacing="0" width="85%" ALIGN="CENTER">
+			<tr>
+				
+	<td id="deptleftcol"><IMG SRC="images/spacer.gif" WIDTH="27" HEIGHT="10"></td>
+				<td id="deptmainnav" class="mainnavtxt" align="center">
+					<IMG SRC="images/spacer.gif" WIDTH="706" HEIGHT="4" /><BR />
+					<a href="dept.asp?dept_id=110000&TopLevel_id=110000" class="mainnavtxt">Books</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="dept.asp?dept_id=120000&TopLevel_id=120000" class="mainnavtxt">Bibles</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="dept.asp?dept_id=130000&TopLevel_id=130000" class="mainnavtxt">Kids/Teens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="dept.asp?dept_id=140000&TopLevel_id=140000" class="mainnavtxt">Reference</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="dept.asp?dept_id=150000&TopLevel_id=150000" class="mainnavtxt">Gift Books</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="http://www.nelsonministryservices.com/nms/support.asp" class="mainnavtxt">Tech Support</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="dept.asp?dept_id=1117930" class="mainnavtxt">FAQ's</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="dept.asp?dept_id=1117900" class="mainnavtxt">Contact Us</a><BR />
+					<IMG SRC="images/spacer.gif" WIDTH="706" HEIGHT="1" /></td>
+				
+	<td id="deptrtcol"><IMG SRC="images/spacer.gif" WIDTH="27" HEIGHT="10"></td>
+			</tr><tr><td id="deptleftcol" colspan="2"><IMG SRC="images/spacer.gif" WIDTH="27" HEIGHT="2"></td><td id="deptrtcol"><IMG SRC="images/spacer.gif" WIDTH="27" HEIGHT="5"></tr>
+</table>
+	<!--end main navigation-->
+	
+	<!--start main content area-->	
+		
+<table border="0" cellpadding="0" cellspacing="0" width="85%" ALIGN="CENTER">
+			<tr>
+				
+	<td rowspan="2" id="deptleftcol"><IMG SRC="images/spacer.gif" WIDTH="27" HEIGHT="100" /></td>
+			
+			<!--start featured products area-->
+				
+	<td valign="top">
+	
+			     <!-- topLevel<br> -->
+ <!-- ParentID -->
+
+
+					
+	  <TABLE WIDTH="100%"
+	  
+
+ BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		
+		<tr><td>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" ALIGN="CENTER">
+		<TR><TD ID="deptmainbanner">&nbsp;Contact Information<br></TD>
+		<td ID="deptmainbanner">
+</td>
+		</TR>
+		</table>
+		</td></tr>
+		
+		<tr><td>
+
+		
+		<IMG SRC="images/spacer.gif" WIDTH="706" HEIGHT="5" /><br>
+				
+						 <IMG SRC="images/spacer.gif" WIDTH="502" HEIGHT="5" /><br>
+				<TABLE CELLPADDING=10 CELLSPACING=0 BORDER=0 WIDTH="100%">
+  			  <TR>
+    			<TD VALIGN="TOP">
+
+				    
+				  
+      <P CLASS="standardmediumfont">Please review the following links for your specific need.</P>
+
+				  <TABLE BORDER="0" CELLSPACING="1" CELLPADDING="5" BGCOLOR="#6391CE" ALIGN="CENTER">
+								
+				    <TR>
+									
+					  <TD CLASS="deptrowbkgrd" VALIGN="TOP">• <A HREF="#Address" CLASS="links">Nelson's Mailing Address</A><BR>
+						
+							• <A HREF="http://www.nelsonministryservices.com/nms/support.asp" TARGET="_blank" CLASS="links">eBible/NEBRL Technical Support</A><BR>
+							• <A HREF="#Submissions" CLASS="links">Manuscript Submissions</A><BR>
+						
+							• <A HREF="dept.asp?dept_id=190610&TopLevel_id=190000" CLASS="links">Bible Quotation Policies</A><BR>
+						
+							• <A HREF="#FRights" CLASS="links">Foreign Rights</A><BR>
+							• <A HREF="dept.asp?dept_id=1117908#Copies" CLASS="links">Request Review Copies</A><BR>
+					  </TD>
+					  <TD CLASS="deptrowbkgrd" VALIGN="TOP">• <A HREF="dept.asp?dept_id=1117908#Publicity" CLASS="links">Publicity Department</A><BR>
+						• <A HREF="#ContAuthor" CLASS="links">Contacting an Author</A><BR>
+						• <A HREF="#Employment" CLASS="links">Employment Opportunities</A><BR>
+						• <A HREF="#Ordering" CLASS="links">Ordering a Product</A><BR>
+						• <A HREF="dept.asp?dept_id=1118900" CLASS="links">Investor Relations</A><BR>
+						• <A HREF="dept.asp?dept_id=1117930" CLASS="links">Frequently Asked Questions</A><BR>
+						• <A HREF="dept.asp?dept_id=1117901" CLASS="links">All Other Questions</A>
+</TD>
+					</TR>
+							
+				  </TABLE>
+				  <P> </P>
+				  <A NAME="Address"></A>
+  						
+				  <HR noshade>
+							
+				  <DIV CLASS="largebold">
+		    				
+				    <P CLASS="SectionHeadersLarge">Mailing Address</P>
+				  </DIV>
+				  <P CLASS="standardmediumfont">The mailing address for the Thomas Nelson, Inc. corporate offices and all imprints is:</P>
+				  <BLOCKQUOTE>
+								
+				    <P CLASS="standardmediumfont">Thomas Nelson, Inc. (or imprint name)<BR>
+				<GEO TYPE="US">PO Box 141000<BR>
+				Nashville, TN 37214</GEO></P>
+					<P> </P>
+				  </BLOCKQUOTE>
+				  
+      <P><A NAME="Submissions"></A></P>
+      <HR noshade>
+      <P><SPAN CLASS="SectionHeadersLarge">Manuscript Submissions</SPAN></P>
+				  <P CLASS=standardmediumfont STYLE='line-height:125%'>Thomas Nelson, Inc. publishers do not consider any unsolicited manuscripts. This is a policy consistent with most publishers within the industry. Unsolicited packages and letters mailed to our offices will be returned to the sender unopened.</P>
+				  <P CLASS=standardmediumfont STYLE='line-height:125%'>If you are interested in having a manuscript considered for publication by a major publisher, we recommend that you enlist the services of an established literary agent; particularly one acclimated with the Christian Publishing industry. You may find the book <I>The Christian Writer's Market Guide</I> by Sally E. Stuart to be helpful. This book includes writer's guidelines and submission procedures for all Christian publishing houses that do accept unsolicited manuscripts. </P>
+				  <P CLASS=standardmediumfont STYLE='line-height:125%'>Additional information about literary agents and guidelines for submitting manuscripts to agents can be found through Bowker’s Literary MarketPlace at <A HREF="DelayRedirect.asp?varURL=http://www.LiteraryMarketPlace.com" CLASS="links">www.LiteraryMarketPlace.com</A>. If you are interested in having someone read and review your work, a manuscript critique service is one alternative. The Editorial Services section of Literary Market Place (LMP), published by R.R. Bowker, New Providence, New Jersey, lists over 500 entries, many of which provide some kind of critique service.</P>
+				  <P> </P>
+				  
+     
+      <P><A NAME="FRights"></A></P>
+      <HR noshade>
+      <P><SPAN CLASS="SectionHeadersLarge">Foreign Rights</SPAN>
+</P>
+				  <P CLASS="standardmediumfont">To obtain rights to translate a book into another language please follow the instructions below:</P>
+				  <P CLASS="standardmediumfont">Thomas Nelson, Inc. controls the rights to most of its titles. Requests for foreign language rights (only) should be sent to: </P>
+				  <P CLASS="standardmediumfont"><B>Mailing Address:</B><BR>
+				Director of Foreign Rights<BR>
+				<GEO TYPE="US">P.O. Box 141000<BR>
+				Nashville, TN 37214</GEO> </P>
+				  <P CLASS="standardmediumfont"><B>Fax:</B> (615) 889-5940
+				</P>
+				  <P CLASS="standardmediumfont">All other rights and permission requests should be mailed to the appropriate publishing division (Thomas Nelson, J Countryman, etc.) or faxed to our main corporate fax number, (615) 391-5225. </P>
+				  <P CLASS="standardmediumfont">If you desire to translate one chapter of a book or more, rights are only granted to publishing companies or other organizations, not individuals. Please provide the following information in your request: </P>
+				  <BLOCKQUOTE>
+				    <P CLASS="standardmediumfont">1. Information on your company</P>
+				  </BLOCKQUOTE>
+				  <UL>
+				    <UL>
+					  <LI CLASS="standardmediumfont">Full company name, publishing imprints, address and other contact information </LI>
+					  <LI CLASS="standardmediumfont">One paragraph about the type of books you publish, length of time in business, distribution methods, etc. </LI>
+					  <LI CLASS="standardmediumfont">The language in which your company publishes</LI>
+					  <LI CLASS="standardmediumfont">3 business references</LI>
+					  <LI CLASS="standardmediumfont">The names of other US publishers you have worked with</LI>
+					  <LI CLASS="standardmediumfont">The titles and authors of other books you have translated with other US publishers</LI>
+					</UL>
+				  </UL>
+				  <BLOCKQUOTE>
+				    <P CLASS="standardmediumfont">2.	The ISBN, title and author of the work you desire <BR>
+				3.	The estimated number of copies you plan to publish <BR>
+				4.	The estimated retail sales price of the translated edition </P>
+				  </BLOCKQUOTE>
+				  <P CLASS="standardmediumfont">If rights are available, we will contact you within 4-6 weeks with details of how you can obtain the foreign license to translate the book.</P>
+				  <P>&nbsp;			</P>
+				  
+
+      <P><A NAME="ContAuthor"></A></P>
+      <HR noshade>
+      <P><SPAN CLASS="SectionHeadersLarge">Contacting an Author</SPAN></P>
+				  <P CLASS=standardmediumfont STYLE='line-height:125%'>Due to the high volume of requests we have for communication with authors, we are not able to release the phone, fax, and mailing or e-mail addresses of any of our authors. If you would like to send a letter to your favorite author, please send a standard letter addressed as follows:</P>
+				  <BLOCKQUOTE>
+								
+				    <P CLASS="standardmediumfont">(Author’s Name)<BR>
+				c/o (Imprint) Publicity<BR>
+				<GEO TYPE="US">PO Box 141000<BR>
+				Nashville, TN 37214</GEO></P>
+				  </BLOCKQUOTE>
+				  <P> </P>
+				  
+      <P><A NAME="Employment"></A></P>
+      <HR noshade>
+      <P><SPAN CLASS="SectionHeadersLarge">Employment Opportunities</SPAN></P>
+				  <P CLASS=standardmediumfont STYLE='line-height:125%'>If you are interested in employment opportunities with Thomas Nelson, Inc., please visit our <B>online job listings </B>at<B> </B><A HREF="http://corporate.thomasnelson.com/employment" CLASS="links">www.ThomasNelson.com/Employment</A> where you can view positions presently available in the company and complete an online job application. </P>
+				  <P> </P>
+				  <A NAME="Ordering"></A>
+      <HR noshade>
+      <DIV CLASS="SectionHeadersLarge">Ordering a Product</DIV>
+				  <P CLASS=standardmediumfont STYLE='line-height:125%'>If you are trying to locate a product published by Thomas Nelson, Inc., we encourage you to search our online catalog. You may do this in the top right corner of the site by entering the ISBN, Title or Author’s Name for the product. You may also purchase our products through various online retailers or at local bookstores nationwide.</P>
+				  <P> </P>
+				  
+      <P><A NAME="General"></A></P>
+      <HR noshade>
+      <P><SPAN CLASS="SectionHeadersLarge">General Questions</SPAN></P>
+				  <P CLASS=standardmediumfont STYLE='line-height:125%'>For questions and concerns not covered above, please fill out our <A HREF="dept.asp?dept_id=1117901&TopLevel_id=100000" CLASS="links">contact form</A>.  We will try to respond to your question(s) within 7 days of receiving it.<BR>
+				<BR>
+				<BR>
+				<BR>
+				</P>
+				</TD>
+			  </TR>
+			</TABLE>
+			
+
+
+						<center>
+						
+				<!-- <IMG SRC="images/middletop-companybestsellers.gif" WIDTH=450 HEIGHT=21><BR>
+            
+						</center> -->
+
+						</td></tr>
+	  </TABLE>
+	
+	  <table cellpadding="10" cellspacing="0" border="0" width="99%">
+						
+		
+<IMG SRC="images/spacer.gif" WIDTH="502" HEIGHT="1" /><br> 
+
+	  </table>
+	  <TABLE WIDTH="99%" BORDER="0" CELLSPACING="0" CELLPADDING="10">
+		
+		
+		<!-- List of Products -->
+		
+			
+			
+			
+		  
+	  
+	  </TABLE>
+	  <P><IMG SRC="images/spacer.gif" WIDTH="508" HEIGHT="1" /></P>
+	  
+	  
+	
+
+	</td>
+	
+			<!--end featured products area-->
+
+			<!--start side navigation	dept_id < "1119150" OR dept_id => "1118000" AND -->
+    
+	
+			<!--end side navigation-->
+				
+				
+	<td rowspan="2" id="deptrtcol"><IMG SRC="images/spacer.gif" WIDTH="27" HEIGHT="100" /></td>
+			</tr>			
+			<tr>
+    			<td colspan="5"><img src="images/spacer.gif" width="10" height="5" /></td>
+			</tr>
+		</table>
+	<!--end main content area-->
+	
+	<!--start footer navigation-->	
+		
+<table border="0" cellpadding="0" cellspacing="0" width="85%" ALIGN="CENTER">
+			<tr>		
+				<td><img src="images/dept_btlft_bv1.gif" width="27" height="87" /></td>
+				<td><img src="images/dept_btlft_bv2.gif" width="14" height="87"  /></td>
+			  <td id="deptfooter" align="center">
+					<IMG SRC="images/spacer.gif" WIDTH="678" HEIGHT="1" /><BR />
+				  <a href="dept.asp?dept_id=1118000" class="footernavtxt">News</a>&nbsp;&nbsp;&nbsp;
+				  <a href="dept.asp?dept_id=1118900" class="footernavtxt">Investor Relations</a>&nbsp;&nbsp;&nbsp;
+				  <a href="dept.asp?dept_id=1118910&TopLevel_id=100000" class="footernavtxt">About Nelson</a>&nbsp;&nbsp;&nbsp;
+				  <a href="dept.asp?dept_id=1118950" class="footernavtxt">Catalogs</a>&nbsp;&nbsp;&nbsp;
+				  <a href="http://corporate.thomasnelson.com/employment/" class="footernavtxt">Employment</a>&nbsp;&nbsp;&nbsp;
+				  <a href="Storefinder.asp" class="footernavtxt">Store Finder</a>&nbsp;&nbsp;&nbsp;
+				  <a href="dept.asp?dept_id=1117940" class="footernavtxt">Directory of Sites</a>&nbsp;&nbsp;&nbsp;
+				  <a href="dept.asp?dept_id=1117950" class="footernavtxt">Business Resources</a>
+				</td>
+				<td><img src="images/dept_btrt_bv2.gif" width="14" height="87"  /></td>
+				<td><img src="images/dept_btrt_bv1.gif" width="27" height="87" /></td>
+			</tr>
+		</table>
+	<!--end footer navigation-->
+	
+	<!--start legal information-->
+		
+<table border="0" cellpadding="0" cellspacing="0" width="85%" ALIGN="CENTER">
+			<tr>
+			  <td align="center">
+					<IMG SRC="images/spacer.gif" WIDTH="760" HEIGHT="1" /><BR />
+				  <a href="dept.asp?dept_id=1117904" class="legallinks">Terms and Conditions</a> | 
+				  <a href="dept.asp?dept_id=1117903" class="legallinks">Privacy Policy</a> | 
+				  &copy;2005 Thomas Nelson, Inc.
+				| <a href="https://webmail1.thomasnelson.com/exchange" target="_blank" class="legallinks">TN E-Mail</a></td>
+			</tr>
+		</table>
+	<!--end legal information-->
+	
+</body>
+</html>
+

@@ -1,0 +1,1359 @@
+<DOC>
+<DOCNO>g00536</DOCNO>
+<DOCHDR>http://www.nycom.org</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><!-- InstanceBegin template="/Templates/Base Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>New York Conference of Mayors :: Welcome to NYCOM!</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" -->
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_jumpMenuGo(selName,targ,restore){ //v3.0
+  var selObj = MM_findObj(selName); if (selObj) MM_jumpMenu(targ,selObj,restore);
+}
+
+function Lvl_jumpMenuWin(el,y,q) { //v1.1 4LevelWebs
+  var O=el.options[el.selectedIndex].value,ww,hh;if(y)el.selectedIndex=0;
+  var er=O.charAt(O.length),as=O.substring(O.length,er),a=as.split('~');
+  var tp=",top=",tr=",toolbar=",ts=",status=",ln=",location=",mb=",menubar=",ss=",scrollbars=",re=",resizable=",fs=",fullscreen=";
+  var sw=(screen.width),sh=(screen.height);
+  var u=a[0],n=a[1],WW=a[2],HH=a[3];
+  var t=(a[6]==0)?tr+0:tr+1,l=(a[7]==0)?ln+0:ln+1,s=(a[8]==0)?ts+0:ts+1,z=(a[13]==0)?fs+0:fs+1;
+  var m=(a[9]==0)?mb+0:mb+1;x=(a[10]==0)?ss+0:ss+1,r=(a[11]==0)?re+0:re+1,c=a[12];
+   if (a[12]==0){ww=(sw)}else{ww=(sw-WW)/2}
+   if (a[12]==0){hh=(sh)}else{hh=(sh-HH)/2}
+  var j=(c==1)?tp+hh:tp+a[5],k=(c==1||c==2)?",left="+ww:",left="+a[4];if(q==0)q='top';
+  var W=(a[2]==0)?0:",width="+WW,H=(a[3]==0)?0:",height="+HH,f=W+=H+=j+=k+=t+=l+=s+=m+=x+=r+=z;
+   if(u)if(a[14]==1){u=eval("parent.frames[\'"+q+"\'].location='"+u+"'")}else{window.open(u,n,f)}el.blur();
+}
+//-->
+</script>
+<script src="includes/common/js/base.js" type="text/javascript"></script>
+<script src="includes/common/js/utility.js" type="text/javascript"></script>
+<link href="includes/skins/mxkollection3.css" rel="stylesheet" type="text/css" media="all" />
+<!-- InstanceEndEditable -->
+<link href="css/base_style.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="p7pm/p7popmenu.js"></script>
+<style type="text/css" media="screen">
+<!--
+@import url("p7pm/p7pmh6.css");
+#Layer1 {
+	position:absolute;
+	z-index:10001;
+}
+-->
+
+/*
+menu modifications
+cancel menu CSS width setting
+*/
+#p7PMnav li {width: auto;}
+
+/*
+Change padding to ems so we can calculate total width
+*/
+#p7PMnav a {
+	padding-bottom: 4px;
+	padding-top: 3px;
+	padding-left: 1em;
+	padding-right: 0em;
+}
+
+/*
+top-level width styles.
+Because the width is in ems, it will need to be adjusted
+based on any font size settings you may make.
+
+The sum of all the widths will
+determine the overall top-level width of your menu.
+*/
+#p7PMroot1 {width: 8em;}
+#p7PMroot2 {width: 13em;}
+#p7PMroot3 {width: 5em;}
+#p7PMroot4 {width: 11em;}
+#p7PMroot5 {width: 8em;}
+#p7PMroot6 {width: 7em;}
+#p7PMroot7 {width: 6em;}
+/*
+Main menu bar width.
+Add the root widths together. Then add 2 ems per top-level item
+to account for the left and right padding. Then add 1em to compensate
+for browser rounding errors.
+*/
+#p7PMnav {width: 65em;}
+/*
+this sets the submenu widths to ems so that the width is
+proportional, just like the top-level widths.
+*/
+#p7PMnav ul, #p7PMnav ul li {width: 17em;}
+
+/*
+this sets a down arrow on the top-level menu item triggers.
+
+#p7PMnav .p7PMtrg, #p7PMnav .p7PMon {
+	background-image:  url(p7pm/img/p7PM_light_south.gif);
+	background-repeat:	no-repeat;
+	background-position: right center;
+}
+*/
+
+</style>
+
+<script type="text/javascript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<link href="css/tooltip.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body leftmargin="0" marginwidth="0" onLoad="P7_initPM(1,6,1,-20,10)">
+
+<!--ZOOMSTOP-->
+
+<table width="750" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+	<tr>
+		<td width="10" bgcolor="#FFFFFF">
+			<img src="images/nycom_template_01.jpg" width="10" height="221" alt=""></td>
+	    <td colspan="3" valign="top" bgcolor="#FFFFFF">
+	      <div class="masthead" id="Layer1" align="right">
+		  <form method="GET" action="/search_index/search.asp">
+          <input name="zoom_query" type="text" class="search_field" size="15">
+          <input name="Button1" type="submit" class="search_field" value="Search">
+    	  </form>
+		  </div>
+		  <!-- InstanceBeginEditable name="Masthead" -->
+	      <script language="JavaScript">
+// Advanced Random Images Start
+// Copyright 2001-2002 All rights reserved, by Paul Davis - www.kaosweaver.com
+  var j,d="",l="",m="",p="",q="",z="",KW_ARI= new Array()
+  KW_ARI[KW_ARI.length]='/images/nycom_template_hd1.jpg?&width=730&height=221&alt=NYCOM&title=Oneonta, Canadaigua, and Albany&border=0&link=/index.asp';
+  KW_ARI[KW_ARI.length]='/images/nycom_template_hd2.jpg?&width=730&height=221&alt=NYCOM&title=NYS Capitol in Albany, New York City Hall, and Garden City&border=0&link=/index.asp';
+  KW_ARI[KW_ARI.length]='/images/nycom_template_hd3.jpg?&width=730&height=221&alt=NYCOM&title=Lindenhurst, Ithaca, and Pittsford&border=0&link=/index.asp';
+  KW_ARI[KW_ARI.length]='/images/nycom_template_hd4.jpg?&width=730&height=221&alt=NYCOM&title=City of Canandaigua, Seneca Falls and City of Yonkers&border=0&link=/index.asp';
+  j=parseInt(Math.random()*KW_ARI.length);
+  j=(isNaN(j))?0:j;
+  if (KW_ARI[j].indexOf('?')==-1) {
+    document.write("<img src='"+KW_ARI[j]+"'>");
+  }
+  else {
+    nvp=KW_ARI[j].substring(KW_ARI[j].indexOf('?')+2).split('&');
+    for(var i=0;i<nvp.length;i++) {
+      sub=nvp[i].split('=');
+   	  switch(sub[0]) {
+ 	    case 'link':
+          l="<a href='"+unescape(sub[1])+"'>";
+          p="</a>";
+		  break;
+	    case 'target':
+          q=" target='"+unescape(sub[1])+"'";
+  		  break;
+  	    default:
+          m+=" "+sub[0]+"='"+unescape(sub[1])+"'";
+  		  break;
+      }
+    }
+    z=(l!="")?((q!="")?l.substring(0,l.length-1)+q+">":l):"";
+    z+="<img src='"+KW_ARI[j].substring(0,KW_ARI[j].indexOf('?'))+"'"+m+">"+p;
+  document.write(z);
+  }
+// Advanced Random Images End
+          </script><!-- InstanceEndEditable --></td>
+	    <td width="10" bgcolor="#FFFFFF">
+			<img src="images/nycom_template_03.jpg" width="10" height="221" alt=""></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF">
+			<img src="images/nycom_template_04.jpg" width="10" height="19" alt=""></td>
+		<td height="19" colspan="3" background="images/nycom_template_05.jpg" class="menu">
+		  <ul id="p7PMnav">
+            <li><a href="#" class="p7PMtrg" id="p7PMroot1">ABOUT NYCOM</a>
+                <ul>
+                  <li><a href="mn_about/about.html">History of NYCOM</a></li>
+                  <li><a href="mn_about/join.html">Benefits of NYCOM Membership</a></li>
+                  <li><a href="mn_about/excommittee.html">Executive Committee</a></li>
+                  <li><a href="mn_about/meetstaff.html">Meet the NYCOM Staff</a></li>
+                  <li><a href="mn_about/membership.html">Associate Membership</a></li>
+                  <li><a href="mn_about/afforganization.html">Affiliate Organizations</a></li>
+                  <li><a href="mn_about/contact.html">Contact Us</a></li>
+                </ul>
+            </li>
+		    <li><a href="#" class="p7PMtrg" id="p7PMroot2">LEGISLATIVE ADVOCACY</a>
+		        <ul>
+                  <li><a href="mn_legislative/program.html">Legislative Program</a></li>
+		          <li><a href="mn_legislative/determining_priorities.html">Determining NYCOM Priorities</a></li>
+		          <li><a href="mn_legislative/legissum.html">Summary of Legislation</a></li>
+		          <li><a href="mn_legislative/legiscontact.html">Contact Your Legislator</a></li>
+	          </ul>
+	        </li>
+		    <li><a href="#" class="p7PMtrg" id="p7PMroot3">EVENTS</a>
+		        <ul>
+                  <li><a href="mn_events/winterlegis/index.html">Winter Legislative Meeting</a></li>
+		          <li><a href="mn_events/mainst/index.html">Main Street</a></li>
+		          <li><a href="mn_events/annual_meeting/index.html">Annual Meeting</a></li>
+		          <li><a href="mn_events/falltraining/index.html">Fall Training School</a></li>
+		          <li><a href="mn_events/publicworks/index.html">Public Works School</a></li>
+		          <li><a href="mn_events/novleg/index.html">November Legislative Meeting</a></li>
+		          <li><a href="mn_events/othevents/index.asp">Other Training Events</a></li>
+	          </ul>
+	        </li>
+		    <li><a href="#" class="p7PMtrg" id="p7PMroot4">NEWS &amp; RESOURCES</a>
+		        <ul>
+                  <li><a href="mn_news/pressreleases.html">Press Releases</a></li>
+		          <li><a href="mn_news/newsletters.html">Newsletters</a></li>
+	          </ul>
+	        </li>
+		    <li><a href="#" class="p7PMtrg" id="p7PMroot5">PUBLICATIONS</a>
+		        <ul>
+                  <li><a href="mn_pubs/municipal_bulletin/index.html">NYCOM Municipal Bulletin</a></li>
+		          <li><a href="mn_pubs/dir_cityvillage_officials/index.html">Directory of City &amp; Village Officials</a></li>
+		          <li><a href="mn_pubs/handbook/handbook_village.html">Handbooks for Village Officials</a></li>
+		          <li><a href="mn_pubs/handbook/handbook_city.html">Handbook for City Officials</a></li>
+		          <li><a href="mn_pubs/mgmt_specialrpts/index.html">NYCOM Management Series and Special Reports</a></li>
+		          <li><a href="mn_pubs/orders/order.html">Publications Order Form &amp; Label Requests</a></li>
+	          </ul>
+	        </li>
+		    <li><a href="#" class="p7PMtrg" id="p7PMroot6">CLASSIFIEDS</a>
+		        <ul>
+                  <li><a href="mn_class/helpwanted.asp">Help Wanted</a></li>
+		          <li><a href="mn_class/forsale.asp">For Sale</a></li>
+		          <li><a href="mn_class/wanted.asp">Wanted</a></li>
+	          </ul>
+	        </li>
+		    <li><a href="mn_members/index.html" class="p7PMtrg" id="p7PMroot7" style="color:#993300;">MEMBERS</a>
+		        <ul>
+                  <li><a href="mn_members/index.html">Legislative Action Center</a></li>
+		          <li><a href="mn_members/index.html">New York Cities and Villages</a></li>
+		          <li><a href="mn_members/index.html">Publications</a></li>
+		          <li><a href="mn_members/index.html">Surveys</a></li>
+		          <li><a href="mn_members/index.html">LADS</a></li>
+		          <li><a href="mn_members/index.html">Conference Materials</a></li>
+		          <li><a href="mn_members/index.html">Listservs</a></li>
+	          </ul>
+	        </li>
+		    <!--[if lte IE 6]><style>#p7PMnav a{height:1em;}#p7PMnav li{height:1em;}#p7PMnav ul li{float:left;clear:both;width:100%}</style><![endif]-->
+		    <!--[if IE 6]><style>#p7PMnav ul li{clear:none;}</style><![endif]-->
+          </ul></td>
+		<td bgcolor="#FFFFFF">
+			<img src="images/nycom_template_06.jpg" width="10" height="19" alt=""></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF">
+			<img src="images/nycom_template_07.jpg" width="10" height="409" alt=""></td>
+			
+<!--ZOOMRESTART-->
+			
+	  <td width="180" valign="top" bgcolor="#ccd3eb"><!-- InstanceBeginEditable name="LeftSidebarRegion" -->
+	    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="images/hd_hottopics.jpg" alt="Hot Items header" width="180" height="25"></td>
+          </tr>
+          <tr>
+            <td>
+			<div id="sidebarNav">
+			<ul>
+			  <li><strong>Addressing the Financial Problems of Upstate Cities in New York State </strong><br>
+			    <a href="mn_home/testimony.doc" target="_blank">Testimony of the New York State Conference of Mayors	(.doc)</a> </li>
+			  </ul>
+			</div></td>
+          </tr>
+          <tr>
+            <td><img src="images/hd_calendar.jpg" alt="Calendar of Events" width="180" height="25"></td>
+          </tr>
+          <tr>
+            <td class="cal_cell">
+	<table class="main_cal nugget_cal kt_add_tooltips" cellpadding="0" cellspacing="0" border="0">
+		<tr class="nav_cal">
+			<th class="np_cal">
+			
+				<a href="http://www.nycom.org/index.asp?date=2006%2D06%2D29" title="prev">&laquo;</a>
+			
+			</th>
+			<th colspan="5">
+			July&nbsp;2006
+			</th>
+			<th class="np_cal">
+			
+				<a href="http://www.nycom.org/index.asp?date=2006%2D08%2D29" title="next">&raquo;</a>
+						
+			</th>
+		</tr>
+		<tr class="days_cal">
+            
+				<th>S</th>
+			
+				<th>M</th>
+			
+				<th>T</th>
+			
+				<th>W</th>
+			
+				<th>T</th>
+			
+				<th>F</th>
+			
+				<th>S</th>
+				
+		</tr>
+		<tr class="weeks_cal">
+		
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						25
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						26
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						27
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						28
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						29
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						30
+					</div>
+				</td>
+				
+				
+				<td class="none_cal weekend_cal">
+					<div>
+						01
+					</div>
+				</td>
+				</tr><tr class="weeks_cal">
+				
+				<td class="none_cal weekend_cal">
+					<div>
+						02
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						03
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						04
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						05
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						06
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						07
+					</div>
+				</td>
+				
+				
+				<td class="none_cal weekend_cal">
+					<div>
+						08
+					</div>
+				</td>
+				</tr><tr class="weeks_cal">
+				
+				<td class="none_cal weekend_cal">
+					<div>
+						09
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						10
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						11
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						12
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						13
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						14
+					</div>
+				</td>
+				
+				
+				<td class="none_cal weekend_cal">
+					<div>
+						15
+					</div>
+				</td>
+				</tr><tr class="weeks_cal">
+				
+				<td class="none_cal weekend_cal">
+					<div>
+						16
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						17
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						18
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						19
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						20
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						21
+					</div>
+				</td>
+				
+				
+				<td class="none_cal weekend_cal">
+					<div>
+						22
+					</div>
+				</td>
+				</tr><tr class="weeks_cal">
+				
+				<td class="none_cal weekend_cal">
+					<div>
+						23
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						24
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						25
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						26
+					</div>
+				</td>
+				
+				
+				<td class="none_cal hasevent_cal">
+					<div>
+						
+							<a href="mn_events/cal_event_redirect.asp?view=day&amp;date=2006%2D07%2D27" title="Planning and Zoning Summer Schools 2006" >27</a>
+						
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						28
+					</div>
+				</td>
+				
+				
+				<td class="none_cal weekend_cal selected_cal today_cal">
+					<div>
+						29
+					</div>
+				</td>
+				</tr><tr class="weeks_cal">
+				
+				<td class="none_cal weekend_cal">
+					<div>
+						30
+					</div>
+				</td>
+				
+				
+				<td class="none_cal">
+					<div>
+						31
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						01
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						02
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						03
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						04
+					</div>
+				</td>
+				
+				
+				<td class="none_cal othermonth_cal">
+					<div>
+						05
+					</div>
+				</td>
+				
+		</tr>
+	</table>
+              </td>
+          </tr>
+          <tr>
+            <td><img src="images/hd_resources.jpg" alt="Resources" width="180" height="25"></td>
+          </tr>
+          <tr>
+            <td>
+			<div id="sidebarNav">
+			<ul>
+			  <li><a href="mn_pubs/mgmt_specialrpts/census.pdf" target="_blank">2010 Census Process Underway</a> (pdf)</li>
+			  <li><a href="mn_pubs/mgmt_specialrpts/foil.pdf" target="_blank">FOIL &amp; Open Meetings Law</a> (pdf) </li>
+			  <li><a href="mn_home/AmicusCuriae.pdf" target="_blank">Guidlines for NYCOM Participation in Municipal Cases as Amicus Curia</a></li>
+			  <li><a href="mn_pubs/mgmt_specialrpts/marriage_ceremony.html">Local Officials' Guide to Performing Marriages</a> (see also the <a href="http://www.oag.state.ny.us/lawyers/opinions/2004/informal/2004_1.html" target="_blank">AG's legal analysis</a>) </li>
+			  <li><a href="mn_home/MunicipalityInquiry.pdf" target="_blank">NYCOM Municipal Inquiry Service</a></li>
+			  <li><a href="mn_pubs/mgmt_specialrpts/streets-and-sidewalks.pdf">Streets, Sidewalks, and Right of Ways</a> &mdash; supplemental handout from the 2005 Annual Meeting (pdf)</li>
+			  </ul>
+			</div>			</td>
+          </tr>
+        </table>
+	  <!-- InstanceEndEditable --></td>
+		<td width="425" valign="top" bgcolor="#FFFFFF" class="region_body"><!-- InstanceBeginEditable name="BodyRegion" -->
+		  <h1><a href="mn_events/falltraining/index.html"><img src="mn_events/falltraining/06logo.gif" alt="06 Fall Training School Logo" width="175" height="180" border="0" align="right"></a>NYCOM&rsquo;s Annual Fall Training School 
+		    for City &amp; 
+	      Village Officials</h1>
+		  <p><span class="hd1">October 2-6, 2006</span><br>
+	      More than 65 training sessions for city and village officials. The NYCOM Fall Training School is co-sponsored by the Office of the State Comptroller and in conjunction with the NYS Society of Municipal Finance Officers and the NYS Association of City &amp; Village Clerks. </p>
+		  <p>Meeting headquarters will be at the Albany Crowne Plaza Hotel. Room accommodations will be available at the Albany Crowne Plaza Hotel and Hampton Inn &amp; Suites Downtown Albany. </p>
+		  <h2><img src="images/nys_capitol.jpg" alt="NYS Capitol" width="187" height="148" align="right">Legislative Update </h2>
+		  <p><a href="mn_news/news_nycomnews/nycomnews_063006.doc"><strong>June 30 , 2006</strong></a> (.doc) <br>
+	      State Legislature Completes Post-Budget Session: Local Action Needed on New   Mandates.</p>
+		  <p>&nbsp;</p>
+		  <p>&nbsp;</p>
+		  <hr size="1" noshade>
+		  <table width="100%" border="0" cellspacing="0" cellpadding="3">
+            <tr>
+              <td width="18%" valign="top"><a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank"><img src="images/getacro.gif" alt="Acrobat Reader image" width="88" height="31" border="0"></a></td>
+              <td width="82%" valign="top">Many documents on the web site are available in Adobe's PDF format. You can get a <a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank">free PDF Reader</a> from Adobe.</td>
+            </tr>
+          </table>
+		 
+		  <!-- InstanceEndEditable -->
+	      <p>&nbsp;</p>
+		  <div id="pmmcrumb">
+	      <a id="pmmcr" href="index.asp">NYCOM Home</a> :: 
+          </div>
+      </td>
+		<td width="125" valign="top" bgcolor="#d6d6d6">
+		<!-- InstanceBeginEditable name="RightSidebarRegion" -->
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/hd_partners.jpg" alt="Partners" width="125" height="25"></td>
+  </tr>
+  <tr>
+    <td class="region_sidebar"><div align="center">
+      <p><a href="http://www.nymir.org" target="_blank"><img src="images/partner_logos/nymir.gif" alt="NYMIR" width="80" height="91" border="0"></a></p>
+      <p><a href="http://www.nlc.org/home/" target="_blank"><img src="images/partner_logos/nlc.gif" alt="National League of Cities" width="106" height="79" border="0"></a></p>
+      </div></td>
+  </tr>
+  <tr>
+    <td><img src="images/hd_cityvillage.jpg" alt="NYS Cities &amp; Villages" width="125" height="25"></td>
+  </tr>
+  <tr>
+    <td class="region_sidebar"><form name="form1">
+<select name="select" onChange="Lvl_jumpMenuWin(this,0,'0')" style="width:106px; font-size:9px">
+  <option selected>Select Link</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Adams</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Addison</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Afton</option>
+  <option value="http://www.airmont.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Airmont</option>
+  <option value="http://www.erie.gov/akron~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Akron</option>
+  <option value="http://www.albanyny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Albany</option>
+  <option value="http://www.vil.albion.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Albion</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Alden</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Alexander</option>
+  <option value="http://www.alexandria-bay.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Alexandria Bay</option>
+  <option value="http://www.alfredny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Alfred</option>
+  <option value="http://www.allegany.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Allegany</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Almond</option>
+  <option value="http://www.townofguilderland.org/Altamont.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Altamont</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Altmar</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ames</option>
+  <option value="http://www.amityville.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Amityville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Amsterdam</option>
+  <option value="http://www.villageofandover.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Andover</option>
+  <option value="http://www.angelica-ny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Angelica</option>
+  <option value="http://www.villageofangola.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Angola</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Antwerp</option>
+  <option value="http://villageofarcade.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Arcade</option>
+  <option value="http://www.ardsleyvillage.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ardsley</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Argyle</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Arkport</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Asharoken</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Athens</option>
+  <option value="http://www.vofab.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Atlantic Beach</option>
+  <option value="http://attica.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Attica</option>
+  <option value="http://ci.auburn.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Auburn</option>
+  <option value="http://co.cayuga.ny.us/aurora~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Aurora</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Avoca</option>
+  <option value="http://www.avon-ny.org/VillageofAvon~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Avon</option>
+  <option value="http://www.villageofbabylonny.gov~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Babylon</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bainbridge</option>
+  <option value="http://www.baldwinsville.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Baldwinsville</option>
+  <option value="http://www.geocities.com/BALLSTONSPANY~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ballston Spa</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Barker</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Barneveld</option>
+  <option value="http://www.batavianewyork.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Batavia</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bath</option>
+  <option value="http://www.baxterestates.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Baxter Estates</option>
+  <option value="http://www.bayvillevillagehall.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bayville</option>
+  <option value="http://cityofbeacon.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Beacon</option>
+  <option value="http://www.villageofbelleterre.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Belle Terre</option>
+  <option value="http://www.bellerosevillage.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bellerose</option>
+  <option value="http://www.bellport.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bellport</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Belmont</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bemus Point</option>
+  <option value="http://www.villageofbergen.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bergen</option>
+  <option value="http://www.cityofbinghamton.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Binghamton</option>
+  <option value="http://blackriverny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Black River</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Blasdell</option>
+  <option value="http://bloomfieldny.org/main.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bloomfield</option>
+  <option value="http://www.co.sullivan.ny.us/content/govt/scdir/tv.asp?TownCd=VB~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bloomingburg</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bolivar</option>
+  <option value="http://www.village.boonville.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Boonville</option>
+  <option value="http://www.brewstervillage-ny.gov~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Brewster</option>
+  <option value="http://www.briarcliffmanor.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Briarcliff Manor</option>
+  <option value="http://www.borg.com/~bridgwtr~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bridgewater</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Brightwaters</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Broadalbin</option>
+  <option value="http://www.brockportny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Brockport</option>
+  <option value="http://www.villageofbrocton.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Brocton</option>
+  <option value="http://www.villageofbronxville.com/home.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Bronxville</option>
+  <option value="http://www.villageofbrookville.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Brookville</option>
+  <option value="http://www.villageofbrownville.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Brownville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Brushton</option>
+  <option value="http://www.villageofbuchanan.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Buchanan</option>
+  <option value="http://www.ci.buffalo.ny.us/document_3.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Buffalo</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Burdett</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Burke</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Caledonia</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cambridge</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Camden</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Camillus</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Canajoharie</option>
+  <option value="http://www.ci.canandaigua.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Canandaigua</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Canaseraga</option>
+  <option value="http://www.canastota.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Canastota</option>
+  <option value="http://www.tiogacountyny.com/towns_villages/candor.php~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Candor</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Canisteo</option>
+  <option value="http://village.canton.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Canton</option>
+  <option value="http://www.capevincent.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cape Vincent</option>
+  <option value="http://www.racog.org/Carthage/CarthageHomePage.asp~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Carthage</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cassadaga</option>
+  <option value="http://www.wyomingco.net/towns/villageofcastile.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Castile</option>
+  <option value="http://www.castleton-on-hudson.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Castleton-on-Hudson</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Castorland</option>
+  <option value="http://co.cayuga.ny.us/villageofcato~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cato</option>
+  <option value="http://www.villageofcatskill.net~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Catskill</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cattaraugus</option>
+  <option value="http://www.co.cayuga.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cayuga</option>
+  <option value="http://www.cayuga-heights.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cayuga Heights</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cazenovia</option>
+  <option value="http://www.cedarhurst.gov/cedarhurst/cedarhurst_village.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cedarhurst</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Celoron</option>
+  <option value="http://www.villageofcentralsquare-n.y.u.s.gov~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Central Square</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Centre Island</option>
+  <option value="http://www.vchamplain.com/index.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Champlain</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Chateaugay</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Chatham</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Chaumont</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cherry Creek</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cherry Valley</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Chester</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Chestnut Ridge</option>
+  <option value="http://www.chittenango.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Chittenango</option>
+  <option value="http://www.churchville.net~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Churchville</option>
+  <option value="http://www.villageofclayton.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Clayton</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Clayville</option>
+  <option value="http://www.villageofcleveland-ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cleveland</option>
+  <option value="http://www.cliftonspringsny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Clifton Springs</option>
+  <option value="http://village.clinton.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Clinton</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Clyde</option>
+  <option value="http://www.schohariecounty-ny.gov/CountyWebSite/villcob/index.jsp~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cobleskill</option>
+  <option value="http://www.cohoctonny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cohocton</option>
+  <option value="http://www.ci.cohoes.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Cohoes</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cold Brook</option>
+  <option value="http://users.bestweb.net/~vcsclerk/govt.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cold Spring</option>
+  <option value="http://www.colonievillage.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Colonie</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Constableville</option>
+  <option value="http://www.cooperstownny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cooperstown</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Copenhagen</option>
+  <option value="http://www.corfuny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Corfu</option>
+  <option value="http://www.villageofcorinthny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Corinth</option>
+  <option value="http://www.cityofcorning.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Corning</option>
+  <option value="http://www.cornwall-on-hudson.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cornwall-on-Hudson</option>
+  <option value="http://www.cortland.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Cortland</option>
+  <option value="http://www.coveneck.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cove Neck</option>
+  <option value="http://www.villageofcoxsackie.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Coxsackie</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Croghan</option>
+  <option value="http://village.croton-on-hudson.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Croton-on-Hudson</option>
+  <option value="http://www.cuba-ny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Cuba</option>
+  <option value="http://www.dannemora.tk~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Dannemora</option>
+  <option value="http://www.dansvilleny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Dansville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Deferiet</option>
+  <option value="http://www.delanson.net~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Delanson</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Delevan</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Delhi</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Depew</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Deposit</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Dering Harbor</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of DeRuyter</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Dexter</option>
+  <option value="http://www.dobbsferry.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Dobbs Ferry</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Dolgeville</option>
+  <option value="http://www.dresdenny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Dresden</option>
+  <option value="http://www.dryden-ny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Dryden</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Dundee</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Dunkirk</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Earlville</option>
+  <option value="http://www.east-aurora.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of East Aurora</option>
+  <option value="http://www.easthamptonvillage.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of East Hampton</option>
+  <option value="http://www.villageofeasthills.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of East Hills</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of East Nassau</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of East Randolph</option>
+  <option value="http://www.eastrochester.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of East Rochester</option>
+  <option value="http://www.villageofeastrockaway.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of East Rockaway</option>
+  <option value="http://www.east-syracuse.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of East Syracuse</option>
+  <option value="http://www.eastwilliston.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of East Williston</option>
+  <option value="http://www.edwardsny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Edwards</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Elba</option>
+  <option value="http://www.villageofelbridge.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Elbridge</option>
+  <option value="http://www.ellenvilleny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ellenville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ellicottville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ellisburg</option>
+  <option value="http://www.ci.elmira.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Elmira</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Elmira Heights</option>
+  <option value="http://www.elmsfordny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Elmsford</option>
+  <option value="http://www.endicottny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Endicott</option>
+  <option value="http://www.schohariecounty-ny.gov/CountyWebSite/villesp/index.jsp~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Esperance</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Evans Mills </option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fabius</option>
+  <option value="http://www.co.cayuga.ny.us./fairhaven/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fair Haven</option>
+  <option value="http://www.village.fairport.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fairport</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Falconer</option>
+  <option value="http://www.farmingdalevillage.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Farmingdale</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Farnham</option>
+  <option value="http://www.fayettevilleny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fayetteville</option>
+  <option value="http://www.vofishkill.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fishkill</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fleischmanns</option>
+  <option value="http://www.fpvillage.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Floral Park</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Florida</option>
+  <option value="http://www.villageflowerhill.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Flower Hill</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fonda</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Forestville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fort Ann</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fort Edward</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fort Johnson</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fort Plain</option>
+  <option value="http://www.frankfortvillage.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Frankfort </option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Franklin</option>
+  <option value="http://village.franklinvilleny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Franklinville</option>
+  <option value="http://www.village.fredonia.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fredonia</option>
+  <option value="http://www.freeportny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Freeport</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Freeville</option>
+  <option value="http://cityoffulton.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Fulton</option>
+  <option value="http://www.fultonville.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Fultonville</option>
+  <option value="http://www.wyomingco.net/towns/villageofgainesville.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Gainesville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Galway</option>
+  <option value="http://www.gardencityny.net/gcvillage.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Garden City</option>
+  <option value="http://www.geneseony.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Geneseo</option>
+  <option value="http://www.geneva.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Geneva</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Gilbertsville</option>
+  <option value="http://www.glencove-li.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Glen Cove</option>
+  <option value="http://www.digitaltowpath.com/egovernment/members/villageglenpark/main.cfm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Glen Park</option>
+  <option value="http://www.cityofglensfalls.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Glens Falls</option>
+  <option value="http://gloversville.fulton.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Gloversville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Goshen</option>
+  <option value="http://www.villageofgouverneur.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Gouverneur</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Gowanda </option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Grand View-on-Hudson</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Granville</option>
+  <option value="http://www.greatneckvillage.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Great Neck</option>
+  <option value="http://www.vgne.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Great Neck Estates</option>
+  <option value="http://greatneckplaza.com/index.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Great Neck Plaza</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Green Island</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Greene</option>
+  <option value="http://www.greenportvillage.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Greenport</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Greenwich</option>
+  <option value="http://www.villageofgreenwoodlake.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Greenwood Lake</option>
+  <option value="http://www.grotonny.org/village/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Groton</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hagaman </option>
+  <option value="http://villagehamburg.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hamburg</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hamilton</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hammond</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hammondsport</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hancock</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hannibal</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Harriman</option>
+  <option value="http://www.town.harrison.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Harrison</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Harrisville</option>
+  <option value="http://hastingsgov.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hastings-on-Hudson</option>
+  <option value="http://www.villageofhaverstraw.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Haverstraw</option>
+  <option value="http://www.villagehohny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Head of the Harbor</option>
+  <option value="http://www.villageofhempstead.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hempstead</option>
+  <option value="http://village.herkimer.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Herkimer</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hermon</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Herrings</option>
+  <option value="http://www.heuveltonny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Heuvelton</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hewlett Bay Park</option>
+  <option value="http://www.villageof hewlettharbor.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hewlett Harbor</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hewlett Neck</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Highland Falls</option>
+  <option value="http://www.hillburn.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hillburn</option>
+  <option value="http://www.hiltonny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hilton</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hobart</option>
+  <option value="http://village.holland-patent.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Holland Patent</option>
+  <option value="http://www.villageofholley.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Holley</option>
+  <option value="http://www.homerny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Homer</option>
+  <option value="http://honeoyefalls.8m.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Honeoye Falls</option>
+  <option value="http://www.hoosickfalls.com/village/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hoosick Falls</option>
+  <option value="http://www.cityofhornell.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Hornell</option>
+  <option value="http://horseheads.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Horseheads</option>
+  <option value="http://cityofhudson.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Hudson</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hudson Falls</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Hunter</option>
+  <option value="http://www.huntingtonbay.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Huntington Bay </option>
+  <option value="http://www.ilionny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ilion</option>
+  <option value="http://www.co.seneca.ny.us/interlaken/interlaken.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Interlaken</option>
+  <option value="http://ci.irvington.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Irvington</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Island Park</option>
+  <option value="http://www.villageofislandia.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Islandia</option>
+  <option value="http://www.ci.ithaca.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Ithaca</option>
+  <option value="http://www.jamestownny.net/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Jamestown</option>
+  <option value="http://www.co.sullivan.ny.us/content/govt/scdir/tv.asp?TownCd=VJ~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Jeffersonville</option>
+  <option value="http://www.johnsoncityny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Johnson City</option>
+  <option value="http://www.cityofjohnstown-ny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Johnstown</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Jordan</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Kaser</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Keeseville</option>
+  <option value="http://vi.kenmore.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Kenmore</option>
+  <option value="http://villageofkensingtonny.gov~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Kensington</option>
+  <option value="http://www.berk.com/okvillage~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Kinderhook</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Kings Point</option>
+  <option value="http://www.ci.kingston.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Kingston</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Kiryas Joel</option>
+  <option value="http://www.ci.lackawanna.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Lackawanna</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lacona</option>
+  <option value="http://www.lakegeorgevillage.com/index.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lake George</option>
+  <option value="http://www.lakegroveny.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lake Grove</option>
+  <option value="www.lakeplacid.com/village~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lake Placid</option>
+  <option value="http://www.villageoflakesuccess.com/index1.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lake Success</option>
+  <option value="http://www.co.chautauqua.ny.us/municipal/lakewood.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lakewood</option>
+  <option value="http://www.lancastervillage.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lancaster</option>
+  <option value="http://vlansing.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lansing</option>
+  <option value="http://vlansing.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Larchmont</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lattingtown</option>
+  <option value="http://www.laurelhollow.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Laurel Hollow</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Laurens</option>
+  <option value="http://www.villageoflawrence.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lawrence</option>
+  <option value="http://www.villageofleroy.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Le Roy</option>
+  <option value="http://www.villageofleicester@frontiernet.net~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Leicester</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lewiston</option>
+  <option value="http://www.townofliberty.org/villagegovt.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Liberty</option>
+  <option value="http://www.villageoflima.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lima</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Limestone</option>
+  <option value="http://www.villageoflindenhurst.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lindenhurst</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lisle</option>
+  <option value="http://www.cityoflittlefalls.net/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Little Falls</option>
+  <option value="http://www.vilaageoflittlevalley.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Little Valley</option>
+  <option value="http://www.villageofliverpool.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Liverpool</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Livonia </option>
+  <option value="http://www.lloydharbor_ny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lloyd Harbor</option>
+  <option value="http://www.elockport.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Lockport</option>
+  <option value="http://www.co.seneca.ny.us/lodi/lodi_v.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lodi</option>
+  <option value="http://www.longbeachny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Long Beach</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lowville</option>
+  <option value="http://www.lynbrookvillage.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lynbrook</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lyndonville</option>
+  <option value="http://www.villageoflyons.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lyons</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Lyons Falls</option>
+  <option value="http://www.villageofmacedon.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Macedon</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Madison</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Malone</option>
+  <option value="http://www.malvernevillage.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Malverne</option>
+  <option value="http://www.village.mamaroneck.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mamaroneck</option>
+  <option value="http://www.villageofmanchester.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Manchester</option>
+  <option value="http://www.manliusvillage.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Manlius</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mannsville</option>
+  <option value="http://www.manorhaven.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Manorhaven</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Marathon</option>
+  <option value="http://www.nysegov.com/www.village.marcellusny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Marcellus</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Margaretville</option>
+  <option value="http://www.ci.massapequa-park.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Massapequa Park</option>
+  <option value="http://www.village.massena.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Massena</option>
+  <option value="http://www.matinecockvillage.org/index.php~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Matinecock</option>
+  <option value="http://www.villageofmaybrook.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Maybrook</option>
+  <option value="http://www.madbbs.com/users/mayville/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mayfield</option>
+  <option value="http://www.madbbs.com/users/mayville/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mayville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of McGraw</option>
+  <option value="http://www.mechanicville.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Mechanicville</option>
+  <option value="http://www.villagemedina.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Medina</option>
+  <option value="http://www.villageofmenands.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Menands</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Meridian</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mexico</option>
+  <option value="http://www.schohariecounty-ny.gov/CountyWebSite/villmid/index.jsp~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Middleburgh</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Middleport</option>
+  <option value="http://www.middletownnyonline.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Middletown</option>
+  <option value="http://www.ci.middletown.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Middleville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Milford</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mill Neck</option>
+  <option value="http://www.village.millbrook.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Millbrook</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Millerton</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Millport</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mineola</option>
+  <option value="http://www.villageofminoa.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Minoa</option>
+  <option value="http://www.mohawkny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mohawk</option>
+  <option value="http://www.villageofmonroe.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Monroe</option>
+  <option value="http://www.villageofmontebello.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Montebello</option>
+  <option value="http://www.villageofmontgomery.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Montgomery</option>
+  <option value="http://www.co.sullivan.ny.us/content/govt/scdir/tv.asp?TownCd=VM~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Monticello</option>
+  <option value="http://www.villageofmontourfalls.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Montour Falls</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Moravia	http://co.cayuga.ny.us/villageofmoravia</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Morris</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Morristown</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Morrisville</option>
+  <option value="http://www.mountkisco.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mount Kisco</option>
+  <option value="http://www.villageofmountmorris.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Mount Morris</option>
+  <option value="http://www.ci.mount-vernon.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Mount Vernon</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Munnsville</option>
+  <option value="http://www.munseypark.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Munsey Park</option>
+  <option value="http://www.villageofmuttontown.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Muttontown</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Naples</option>
+  <option value="http://www.villagenassauny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Nassau</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Nelliston</option>
+  <option value="http://www.villageofnelsonville.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Nelsonville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of New Berlin</option>
+  <option value="http://www.villageofnewhartford.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of New Hartford</option>
+  <option value="http://www.newhemstead.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of New Hempstead</option>
+  <option value="http://www.vnhp.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of New Hyde Park</option>
+  <option value="http://www.new-paltz.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of New Paltz</option>
+  <option value="http://www.newrochelleny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of New Rochelle</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of New Square</option>
+  <option value="http://www.nyc.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of New York</option>
+  <option value="http://www.villageofnewyorkmills.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of New York Mills</option>
+  <option value="http://www.villageofnewark.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Newark</option>
+  <option value="http://www.tiogacountyny.com/towns_villages/newark_valley.php~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Newark Valley</option>
+  <option value="http://www.newburgh-ny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Newburgh</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Newport</option>
+  <option value="http://www.niagarafallsusa.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Niagara Falls</option>
+  <option value="http://www.tiogacountyny.com/towns_villages/nichols.php~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Nichols</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Nissequogue</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of North Collins</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of North Haven</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of North Hills</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of North Hornell</option>
+  <option value="http://www.northsyracuse.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of North Syracuse</option>
+  <option value="http://www.northtonawanda.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of North Tonawanda</option>
+  <option value="http://www.northportny.com/village.php~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Northport</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Northville</option>
+  <option value="http://www.norwichnewyork.net/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Norwich</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Norwood</option>
+  <option value="http://www.nunda.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Nunda</option>
+  <option value="http://www.nyack.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Nyack</option>
+  <option value="http://www.oakfield.govoffice.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Oakfield</option>
+  <option value="http://www.obvillage.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ocean Beach</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Odessa</option>
+  <option value="http://www.ogdensburg.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Ogdensburg</option>
+  <option value="http://www.oldbrookville.net~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Old Brookville</option>
+  <option value="http://www.oldfieldny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Old Field </option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Old Westbury</option>
+  <option value="http://www.cityofolean.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Olean</option>
+  <option value="http://www.oneidacity.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Oneida</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Oneida Castle</option>
+  <option value="http://www.oneonta.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Oneonta</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Orchard Park</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Oriskany</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Oriskany Falls</option>
+  <option value="http://www.village.ossining.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ossining</option>
+  <option value="http://www.oswegony.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Oswego</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Otego</option>
+  <option value="http://www.villageofotisville.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Otisville</option>
+  <option value="http://www.co.seneca.ny.us/ovid/ovid_v.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ovid</option>
+  <option value="http://www.villageofowego.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Owego</option>
+  <option value="http://www.oxfordny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Oxford</option>
+  <option value="http://www.oysterbaycove.net~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Oyster Bay Cove</option>
+  <option value="http://www.paintedpostny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Painted Post</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Palatine Bridge</option>
+  <option value="http://www.palmyrany.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Palmyra</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Panama</option>
+  <option value="http://www.parish-ny-us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Parish</option>
+  <option value="http://www.patchoguevillage.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Patchogue</option>
+  <option value="www.pawling.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Pawling</option>
+  <option value="http://www.ci.peekskill.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Peekskill</option>
+  <option value="http://www.pelhamgov.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Pelham</option>
+  <option value="http://www.pelhammanor.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Pelham Manor</option>
+  <option value="http://www.villageofpennyan.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Penn Yan</option>
+  <option value="http://www.villageofperry.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Perry</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Perrysburg</option>
+  <option value="http://www.phelpsny.com/village~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Phelps</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Philadelphia</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Philmont</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Phoenix</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Piermont</option>
+  <option value="http://www.wyomingco.net/towns/villageofpike.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Pike</option>
+  <option value="http://www.villageofpittsford.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Pittsford</option>
+  <option value="http://www.plandomevillage.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Plandome</option>
+  <option value="http://www.plandomeheights-ny.gov~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Plandome Heights</option>
+  <option value="http://www.plandomemanor.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Plandome Manor</option>
+  <option value="http://www.cityofplattsburgh.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Plattsburgh</option>
+  <option value="http://www.pleasantville-ny.gov/Home/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Pleasantville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Poland</option>
+  <option value="http://www.pomonavillage.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Pomona</option>
+  <option value="http://www.poquott.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Poquot</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Port Byron</option>
+  <option value="http://www.portchesterny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Port Chester</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Port Dickinson</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Port Henry</option>
+  <option value="http://www.portjeff.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Port Jefferson</option>
+  <option value="http://portjervisny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Port Jervis</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Port Leyden</option>
+  <option value="http://www.portwashingtonnorth.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Port Washington North</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Portville</option>
+  <option value="http://www.potsdam.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Potsdam</option>
+  <option value="http://cityofpoughkeepsie.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Poughkeepsie</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Prospect</option>
+  <option value="http://villagepulaski.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Pulaski</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Quogue</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Randolph</option>
+  <option value="http://www.villageofravena.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Ravena</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Red Creek</option>
+  <option value="http://www.redhooknyvillage.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Red Hook</option>
+  <option value="http://villageofremsen.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Remsen</option>
+  <option value="http://www.rensselaeronline.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Rensselaer</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Rensselaer Falls</option>
+  <option value="http://www.rhinebeckny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Rhinebeck</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Richburg</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Richfield Springs</option>
+  <option value="http://www.schohariecounty-ny.gov/CountyWebSite/villric/index.jsp~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Richmondville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Richville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Riverside</option>
+  <option value="http://www.cityofrochester.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Rochester</option>
+  <option value="http://www.ci.rockville-centre.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Rockville Centre</option>
+  <option value="http://romenewyork.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Rome</option>
+  <option value="http://www.historicroslyn.org/government.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Roslyn</option>
+  <option value="http://www.villageofroslynestates.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Roslyn Estates</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Roslyn Harbor</option>
+  <option value="http://www.roundlakevillage.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Round Lake</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Rouses Point</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Rushville</option>
+  <option value="http://www.russellgardens.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Russell Gardens</option>
+  <option value="http://www.ryeny.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Rye</option>
+  <option value="http://www.ryebrook.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Rye Brook</option>
+  <option value="http://www.sacketsharborny.com/index.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sackets Harbor</option>
+  <option value="http://www.saddlerock.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Saddle Rock</option>
+  <option value="http://sagharborvillage.com/home.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sag Harbor</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sagaponack</option>
+  <option value="http://www.salmun.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Salamanca</option>
+  <option value="http://www.salem-ny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Salem</option>
+  <option value="http://www.saltaire.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Saltaire</option>
+  <option value="http://www.sandspoint.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sands Point</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sandy Creek</option>
+  <option value="http://www.saranaclake.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Saranac Lake</option>
+  <option value="http://www.saratoga-springs.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Saratoga Springs</option>
+  <option value="http://www.village.saugerties.ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Saugerties</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Savona</option>
+  <option value="http://www.scarsdale.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Scarsdale</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Schaghticoke</option>
+  <option value="http://www.cityofschenectady.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Schenectady</option>
+  <option value="http://www.schohariecounty-ny.gov/CountyWebSite/villsch/index.jsp~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Schoharie</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Schuylerville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Scotia</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Scottsville</option>
+  <option value="http://www.seacliff-ny.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sea Cliff</option>
+  <option value="http://www.senecafalls.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Seneca Falls</option>
+  <option value="http://www.schohariecounty-ny.gov/CountyWebSite/villsha/index.jsp~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sharon Springs</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sherburne</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sherman </option>
+  <option value="http://www.sherrillny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Sherrill</option>
+  <option value="http://shorehamvillage.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Shoreham</option>
+  <option value="http://www.villageofshortsvilleny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Shortsville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sidney</option>
+  <option value="http://www.silvercreekny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Silver Creek</option>
+  <option value="http://www.wyomingco.net/towns/villageofsilversprings.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Silver Springs</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sinclairville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Skaneateles</option>
+  <option value="http://www.villageofsleepyhollow.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sleepy Hollow</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sloan</option>
+  <option value="http://www.sloatsburgny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sloatsburg</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Smyrna</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sodus</option>
+  <option value="http://www.soduspoint.info~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sodus Point</option>
+  <option value="http://www.villageofsolvay.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Solvay</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of South Corning</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of South Dayton</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of South Floral Park</option>
+  <option value="http://www.sgfny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of South Glens Falls</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of South Nyack</option>
+  <option value="http://www.southamptonvillage.org/home.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Southampton</option>
+  <option value="http://www.lakepleasantny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Speculator</option>
+  <option value="http://www.tiogacountyny.com/towns_villages/spencer.php~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Spencer</option>
+  <option value="http://www.vil.spencerport.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Spencerport</option>
+  <option value="http://www.villagespringvalley.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Spring Valley</option>
+  <option value="http://www.villageofspringvilleny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Springville</option>
+  <option value="http://www.stjohnsville.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of St. Johnsville</option>
+  <option value="http://www.stamfordny.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Stamford</option>
+  <option value="http://www.stewartmanor.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Stewart Manor</option>
+  <option value="http://www.stillwaterny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Stillwater</option>
+  <option value="http://www.suffernvillage.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Suffern</option>
+  <option value="http://www.sylvanbeachny.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Sylvan Beach</option>
+  <option value="http://www.syracuse.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Syracuse</option>
+  <option value="http://www.tannersvilleny.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Tannersville</option>
+  <option value="http://www.tarrytowngov.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Tarrytown</option>
+  <option value="http://www.villageofthebranch.net~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of The Branch</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Theresa</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Thomaston</option>
+  <option value="http://www.tivoliny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Tivoli</option>
+  <option value="http://www.ci.tonawanda.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Tonawanda</option>
+  <option value="http://www.troyny.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Troy</option>
+  <option value="http://www.trumansburg.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Trumansburg</option>
+  <option value="http://www.tuckahoe.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Tuckahoe</option>
+  <option value="http://www.tullyny.org/government.asp~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Tully</option>
+  <option value="http://www.tupperlakeinfo.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Tupper Lake</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Turin</option>
+  <option value="http://www.tuxedopark-ny.gov~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Tuxedo Park</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Unadilla</option>
+  <option value="http://co.cayuga.ny.us/unionsprings/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Union Springs</option>
+  <option value="http://www.unionvilleny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Unionville</option>
+  <option value="http://www.upperbrookville.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Upper Brookville</option>
+  <option value="http://www.uppernyack-ny.us~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Upper Nyack</option>
+  <option value="http://www.cityofutica.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Utica</option>
+  <option value="http://www.valatievillage.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Valatie</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Valley Falls</option>
+  <option value="http://valleystream.govoffice.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Valley Stream</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Van Etten</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Vernon</option>
+  <option value="http://www.victorny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Victor</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Victory </option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Voorheesville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Waddington</option>
+  <option value="http://www.villageofwalden.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Walden</option>
+  <option value="http://www.walton.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Walton</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wampsville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wappingers Falls</option>
+  <option value="http://www.wyomingco.net/towns/villageofwarsaw.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Warsaw</option>
+  <option value="http://www.villageofwarwick.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Warwick</option>
+  <option value="http://washingtonville-ny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Washingtonville</option>
+  <option value="http://www.waterfordny.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Waterford</option>
+  <option value="http://www.waterloony.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Waterloo</option>
+  <option value="http://www.watertown-ny.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Watertown</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Waterville</option>
+  <option value="http://www.watervliet.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Watervliet</option>
+  <option value="http://www.lightlink.com/vowgny~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Watkins Glen</option>
+  <option value="http://www.waverlyny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Waverly</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wayland</option>
+  <option value="http://www.villageofwebster.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Webster</option>
+  <option value="http://cayugacounty.us/weedsport/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Weedsport</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wellsburg</option>
+  <option value="http://www.wellsvilleny.com/index.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wellsville</option>
+  <option value="http://www.wesleyhills.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wesley Hills</option>
+  <option value="http://www.racog.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of West Carthage</option>
+  <option value="http://whdunes.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of West Hampton Dunes</option>
+  <option value="http://www.westhaverstraw.org~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of West Haverstraw</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of West Winfield</option>
+  <option value="http://www.villageofwestbury.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Westbury</option>
+  <option value="http://www.villageofwestfield.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Westfield</option>
+  <option value="http://www.whbvillage.com/home-dir.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Westhampton Beach</option>
+  <option value="http://www.cityofwhiteplains.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of White Plains</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Whitehall</option>
+  <option value="http://www.village.whitesboro.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Whitesboro</option>
+  <option value="http://home.stny.rr.com/whitneypoint/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Whitney Point</option>
+  <option value="http://village.williamsville.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Williamsville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Williston Park</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wilson</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Windsor</option>
+  <option value="http://www.villageofwolcott.com~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wolcott</option>
+  <option value="http://www.co.sullivan.ny.us/content/govt/scdir/tv.asp?TownCd=VW~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Woodridge</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Woodsburgh</option>
+  <option value="http://www.co.sullivan.ny.us/content/govt/scdir/tv.asp?TownCd=VX~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wurtsboro</option>
+  <option value="http://www.wyomingco.net/towns/villageofwyoming.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Wyoming</option>
+  <option value="http://www.cityofyonkers.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">City of Yonkers</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Yorkville</option>
+  <option value="nowebsite.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Village of Youngstown</option>
+</select>
+<!--		  <input type="button" name="Button1" value="Go" onClick="MM_jumpMenuGo('menu1','parent',0)"> -->
+		</form>    </td>
+  </tr>
+  <tr>
+    <td><img src="images/hd_government.jpg" alt="Government" width="125" height="25"></td>
+  </tr>
+  <tr>
+    <td class="region_sidebar">
+		<form name="form2">
+		  <select name="menu1" onChange="Lvl_jumpMenuWin(this,0,'0')" style="width:106px; font-size:9px">
+ 		    <option selected>Select Link</option>
+            <option value="http://www.whitehouse.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">White House</option>
+            <option value="http://www.senate.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Senate</option>
+            <option value="http://www.house.gov/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">House of Representatives</option>
+            <option value="http://www.firstgov.gov/Agencies/federal.shtml~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Federal Agencies</option>
+            <option value="http://www.state.ny.us/governor/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Governor</option>
+            <option value="http://www.senate.state.ny.us/senatehomepage.nsf/home?openform~~800~400~0~0~1~1~1~1~1~1~0~0~0~">NYS Senate</option>
+            <option value="http://www.assembly.state.ny.us/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">NYS Assembly</option>
+            <option value="http://www.nysegov.com/citguide.cfm?superCat=102&cat=449&content=main~~800~400~0~0~1~1~1~1~1~1~0~0~0~">State Agencies</option>
+            <option value="http://www.nysac.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">NYS Association of Counties (NYSAC)</option>
+            <option value="http://www.nytowns.org/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Association of Towns of NYS</option>
+            <option value="http://www.nyassessor.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">NYS Assessors' Association</option>
+            <option value="http://www.nysclerks.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">NYS Association of City & Village Clerks</option>
+            <option value="http://www.nysmunicipalfinanceofficers.org/index.html~~800~400~0~0~1~1~1~1~1~1~0~0~0~">NYS Society of Municipal Finance Officers</option>
+            <option value="http://www.ncvoa.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Nassau County Village Officials Association (NCVOA)</option>
+            <option value="http://www.scvoa.com/~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Suffolk County Village Officials Association (SCVOA)</option>
+            <option value="http://www.westchester.org/commGovt-pub.htm~~800~400~0~0~1~1~1~1~1~1~0~0~0~">Westchester County Association</option>
+          </select>
+<!--		  <input type="button" name="Button1" value="Go" onClick="MM_jumpMenuGo('menu1','parent',0)"> -->
+		</form>		</td>
+  </tr>
+</table>
+		<!-- InstanceEndEditable -->
+		<table width="125" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/hd_features.jpg" alt="Features" width="125" height="25"></td>
+  </tr>
+  <tr>
+    <td><div id="sidebarNav2">
+<ul>
+  <li><a href="mn_news/news_legupdate/061206.html">Legislative Update (June 12, 2006)</a> </li>
+  <li><a href="mn_news/news_albanyaction/albaction_052506.doc" target="_blank">Albany Action</a> (.doc) </li>
+</ul>
+</div></td>
+  </tr>
+</table>
+		</td>
+		<td bgcolor="#FFFFFF">
+			<img src="images/nycom_template_11.jpg" width="10" height="409" alt=""></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF">
+			<img src="images/nycom_template_12.jpg" width="10" height="26" alt=""></td>
+		<td height="26" colspan="3" class="footer">NYCOM | 119 Washington Avenue | Albany, NY 12210 | 518.463.1185 ph | 518.463.1190 fax| <a href="mailto:info@nycom.org" style="color:#FFFFFF">info@nycom.org</a></td>
+		<td bgcolor="#FFFFFF">
+			<img src="images/nycom_template_14.jpg" width="10" height="26" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</body>
+<!-- InstanceEnd --></html>

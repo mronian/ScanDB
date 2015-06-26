@@ -1,0 +1,395 @@
+<DOC>
+<DOCNO>f00832</DOCNO>
+<DOCHDR>http://www.easychair.org/FLoC-06/floc-hotel.html</DOCHDR>
+<html>
+<head>
+<title>FLoC 2006 - Hotel Information</title>
+<style><!--
+/* cells in the program table */
+.greycell {
+  background-color : #dddddd;
+  text-align : center;
+  font-family : sans-serif;
+  margin : 1px;
+  padding : 2px;
+  border : 2px solid #000080; /* navy */
+  font-size : 8pt;
+}
+/* empty cells in the program table */
+.whitecell {
+  background-color : white;
+  padding : 2px;
+  margin : 1px;
+}
+/* coffee breaks and similar enterprises */
+.coffee {
+  background-color : #ccccff;
+  border : 2px solid #000080; /* navy */
+  text-align : center;
+  vertical-align : middle;
+  font-size : 12pt;
+  font-family : sans-serif;
+  padding : 2px;
+  margin : 1px;
+}
+
+body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #fffaf5;
+  padding: 0px 0px 0px 0px;
+  color: #000000;
+}
+a:link { color: #0000ff }
+a:active { color: #cc00ff }
+a:visited { color: #000066 }
+
+/* session names in the program */
+.session {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  font-weight: bold
+}
+/* session chairs */
+.chair {
+  font-weight : normal;
+  color : black;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #660000;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #660000;
+}
+
+/* menu's background color */
+.menu {
+  background-color:#970013
+}
+/* top three lines */
+.top3 {
+  height : 51px
+}
+/* left part of the menu */
+.menu-left {
+  width : 6px
+}
+/* central part of the menu */
+.menu-centre {
+  width : 156px
+}
+/* right part of the menu */
+.menu-right {
+  width : 6px
+}
+/* border between the menu and the main text */
+.menu-border {
+  width : 20px;
+  background-image : url("menu-border.gif")
+}
+/* border between the menu and the main text */
+.menu-border-width {
+  width : 20px;
+}
+/* main part of the page */
+.main {
+  width : 100%
+}
+/* main content */
+.main-content {
+  height : 100%;
+  vertical-align : top
+}
+/* right border of the page */
+.right-border {
+  width : 6px
+}
+/* arrows */
+.arrow {
+  border : 0px;
+  margin : 0px 4px;
+  height : 22px;
+  width : 22px
+}
+/* line that divides top of the page from the rest */
+.horizontal-line {
+  background-color : black;
+  height : 5px;
+}
+/* centre of the heading */
+.heading-centre {
+  height : 40px
+}
+/* the bottom of the page */
+.bottom {
+  height : 200px;
+}
+/* bottom image */
+.bottom-image {
+  height : 200px;
+  width : 182px;
+  vertical-align : top
+}
+
+b.sec {
+  font-size:13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#ffcccc
+}
+.menu a {
+  text-decoration: none;
+  font-size:13px; 
+  font-family: Arial, Helvetica, sans-serif
+}
+.menu a:link {
+  color:#cccccc 
+}
+.menu a:visited {
+  color:#cccccc
+}
+.menu div {
+  margin-top:3px; 
+  margin-left:4px; 
+  font-size:13px; 
+  font-family:Arial, Helvetica, sans-serif
+}
+.menu div.last {
+  margin-bottom:10px
+}
+b.head {
+  font-size:32px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#666666;
+  text-decoration : none
+}
+.subhead {
+  font-size:13px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#660000;
+  margin-bottom:1px;
+  text-align : right
+}
+span.glance {
+  font-size:11px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+a.email {
+  color:#000000
+}
+td.hide {
+  display:none;
+}
+td.no {
+  border-style:none;
+  border-color:#f5f5f5;
+}
+table.glance td {
+  padding:3px;
+  border-width:3px;
+  border-style:solid;
+  text-align:center;
+  width:33px;
+}
+table.glance th {
+  padding:0px;
+  border-style:none;
+}
+table.glance {
+  border-spacing:4px;
+  border-width:0px;
+}
+table.parallel td {
+  vertical-align:top;
+  padding:3px;
+  border-width:3px;
+  border-style:solid;
+}
+table.parallel th {
+  padding:3px;
+  border-style:none; 
+}
+table.parallel tr {
+  height:30px;
+}
+table.parallel {
+  border-spacing:4px;
+  border-width:0px;
+}
+.specialTalks {
+  font-size: 10pt;
+  text-decoration: none;
+  font-family: Arial, sans-serif; 
+  border: 1px solid #C0C0C0;
+}
+.specialTalks .plenary {
+  background-color : #FFFF99;
+  height : 15pt;
+  border: 1px solid #C0C0C0;
+}
+.specialTalks .keynote {
+  background-color : #CCFFFF;
+  height : 15pt;
+  border: 1px solid #C0C0C0;
+}
+.specialTalks .invited {
+  background-color : white;
+  height : 15pt;
+  border: 1px solid #C0C0C0;
+}
+.specialWeekday {
+  margin-top : 10px;
+  margin-bottom : 5px;
+}
+.specialTalks .date {
+  vertical-align: middle;
+  border: 1px solid #C0C0C0;
+  padding: 1px;
+}
+.specialTalks .talk {
+  width : 500px;
+  border: 1px solid #C0C0C0;
+  padding: 1px;
+}
+.specialTalks .meeting {
+  width : 62px;
+  border: 1px solid #C0C0C0;
+  padding: 1px;
+  text-align: center;
+}
+.specialTalks .title {
+  color : black;
+  text-decoration : underline;
+}
+--></style>
+
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+ <td rowspan="3" class="menu top3 menu-left"></td>
+ <td rowspan="3" class="menu top3 menu-centre" align='center'></td>
+ <td rowspan="2" style="height:46px" class="menu-border"></td>
+ <td colspan="2" style="height:6px"></td>
+ <td rowspan="2" style="height:46px" class="right-border"></td>
+</tr>
+<tr>
+ <td class="menu-left heading-centre"></td>
+ <td class="heading-centre" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top"><a href="FLoC.html" style="text-decoration:none"><b class="head">FLoC 2006</b></a></td><td class="subhead">The 2006 Federated Logic Conference<br />Seattle, August 10 - 22, 2006</td></tr></tbody></table></td>
+</tr>
+<tr>
+ <td class="horizontal-line menu-border-width"></td>
+ <td colspan="3" class="horizontal-line"></td>
+</tr>
+<tr>
+ <td rowspan="2" class="menu menu-left"></td>
+ <td rowspan="2" class="menu menu-centre main-content" valign="top">
+ <b class=SEC><a href="index.html">FLoC</b></b>
+ <div><a href="index.html"> Home </a></div>
+ <div><a href="floc-dates.html">Important Dates</a></div>
+ <div><a href="floc-registration.html">On-line registration</a></div>
+ <div><a href="floc-student-grants.html">Student Travel Support</a></div>
+ <div><a href="floc-visa.html">Visa Information</a></div>
+ <div><a href="floc-about.html">About FLoC</a></div>
+  <b class=SEC>MEETINGS</b>
+  <div><a href="CAV.html">CAV</a></div>
+  <div><a href="ICLP.html">ICLP</a></div>
+  <div><a href="IJCAR.html">IJCAR</a></div>
+  <div><a href="LICS.html">LICS</a></div>
+  <div><a href="RTA.html">RTA</a></div>
+  <div><a href="SAT.html">SAT</a></div>
+  <div><a href="floc-workshops.html">Workshops (alpha.)</a></div>
+  <div><a href="floc-workshopsbyconference.html">Workshops (by conf.)</a></div>
+ <b class=SEC>PROGRAM</b>
+   <div><a href="floc-ataglance.html">FLoC at a glance</a></div>
+   <div><a href="floc-talks.html">Invited Talks</a></div>
+   <div><a href="floc-daybyday.html">Day by day</a></div>
+   <div><a href="floc-meetingbymeeting.html">Meeting by Meeting</a></div>
+ <b class=SEC>FACILITIES</b>   
+   <div><a href="floc-hotel.html">Conference Hotel</a></div>
+   <div><a href="floc-eventspace.html">Event Space</a></div>
+   <div><a href="floc-internetaccess.html"> Internet Access</a></div>
+ <b class=SEC>SEATTLE</b>
+   <div><a href="floc-travel.html">Travel to/in Seattle</a></div>
+   <div><a href="floc-seattle.html">Things to do in Seattle</a></div>
+<b class=SEC>ORGANIZATION</b>
+ <div><a href="floc-committee.html#steering">Steering Committee</a></div>
+ <div><a href="floc-committee.html#program">Program Committee</a></div>
+ <div><a href="floc-committee.html#organizing">Organizing Committee</a></div>
+ <div><a href="floc-sponsors.html">Sponsors</a></div>
+  <b class=SEC>MISCELLANEOUS</b>
+  <div><a href="floc-related.html">Related Events</a></div>
+  <div><a href="floc-web.html">Site Design</a></div>
+  <div><a href="mailto:floc6web@microsoft.com">Webmaster</a></div>
+ </td>
+ <td rowspan="2" class="menu-border"></td>
+ <td rowspan="2" class="menu-right"></td>
+ <td rowspan="2" valign="top">
+
+
+<h3> Conference Hotel </h3>
+<p>The FLoC 2006 conferences will be held at the 
+<a href="http://sheraton.com/seattle">Seattle Sheraton Hotel and Towers</a> in the heart of downtown Seattle. The address and the contact information is as follows:</p>
+
+<img src="sheraton.jpg" width=200 align="right">
+   Seattle Sheraton Hotel and Towers<br>
+   <GEO TYPE="US">1400 6th Avenue<br>
+   Seattle, Washington 98101<br>
+   United States</GEO> <br>
+   Phone: (206) 621-9000 <br>
+   Fax: (206) 621-8441
+
+<h3>Rates</h3>
+
+<p>
+The rates agreed upon between FLoC and the Seattle Sheraton are very  reasonable rates for a first-class hotel in downtown Seattle during the  summer vacation season. To reduce conference costs and keep registration fees reasonable, FLoC is contractually obligated to meet a commitment for a  certain number of FloC attendees staying in the conference hotel. FLoC  attendees are strongly encouraged to use the Seattle Sheraton for conference accommodation.
+</p>
+
+<p>Guest rooms in the Sheraton Seattle are available for the conference participants at the following special rates:</p>
+
+<table border="0">
+<tr><td>               <td><td><center><u>Single</u></center>  <td> <center><u>Double</u></center>
+<tr><td> Student Block: <td><td> $149.00 <td> $149.00
+<tr><td> Standard:   <td><td> $149.00 <td> $169.00
+</table>
+
+<p>All room rates are quoted exclusive of applicable state and local taxes (currently 15.6%). 
+
+
+<h3>Reservations</h3>
+
+You should reserve before or on <b>July 21st 2006 </b> to get the discounted rate. Reservation requests received after 5:00 pm PST at the hotel on July 21st will be accepted on a space and rate availability basis. Note, that August is a very popular time of year to visit Seattle. It is recommended that you reserve your room as soon as possible. 
+
+<p><b>Student Block Reservation: </b>
+A limited number of discounted hotel rooms are available for student participants. Students interested in availing these rooms should follow the directions indicated in the <a href="floc-registration.html#student">FLoC 2006 registration page</a> during registration.
+
+<p><b>Standard Reservations: </b>
+For standard hotel reservation, use this <a href="http://www.starwoodmeeting.com/StarGroupsWeb/res?id=0604070155&key=35CF6">link</a>. For student block reservations, see instructions above.
+If you are making a reservation by phone, be sure to mention "Federated Logic Conference (FLoC)" to get the special rate.
+
+<p><b> Early Departure Fee: </b>
+If you check out prior to the reserved checkout date, you will be charged an early departure fee of $75.00. To avoid this fee you <u>must</u> advise the hotel at or before check in of any change in the scheduled length of stay. 
+
+
+
+</p>
+
+</td>
+ <td rowspan="3" class="right-border"></td>
+</tr>
+<tr>
+</tr>
+<tr>
+ <td colspan="3" class="bottom-image"><img alt="" src="bottom-round.gif" height="200" width="182"></td></tr></tbody></table>
+ <td class="bottom menu-right"></td>
+ <td class="bottom"></td>
+</tr>
+</tbody>
+</table>
+
+
+</body>
+</html>

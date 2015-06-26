@@ -1,0 +1,813 @@
+<DOC>
+<DOCNO>f00401</DOCNO>
+<DOCHDR>http://www.myrtlebeachonline.com/mld/myrtlebeachonline/contact_us</DOCHDR>
+
+
+
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+
+var rm = false;
+
+</script>
+<title>Contact Us -- MyrtleBeachOnline.com</title>
+<link rel='stylesheet' type='text/css' href='/css/palette/myrtlebeachonline/en/global.css'/><script type="text/javascript" language="javascript">
+
+_krdDartOrd = new Date().getTime();
+
+_krdDartInc = 0;
+var navReady = false;
+var toolsReady = false;var onLoadScript="";function Browser() {var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+// I have disabled the following line, but something similar might be useful later,
+// but launching a popup window is more polite than this alert.
+//if (!b) alert(''Unidentified browser./nThis browser is not supported,'');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.ns=(this.b=="ns" && this.v>=4);
+this.ns4=(this.b=="ns" && this.v==4);
+this.ns6=(this.b=="ns" && this.v==5);
+this.ie=(this.b=="ie" && this.v>=4);
+this.ie4=(this.version.indexOf('MSIE 4')>0);
+this.ie4up = (this.ie && this.v>= 4);
+this.ns5up = (this.ns && this.v>= 5);
+this.ie5=(this.version.indexOf('MSIE 5')>0);
+this.ie5up = (this.ie5);
+this.ie55=(this.version.indexOf('MSIE 5.5')>0);
+this.opera=(this.b=="opera");
+this.def=(this.ie||this.dom);var ua=navigator.userAgent.toLowerCase();
+this.mac = (ua.indexOf("mac")!=-1);if (ua.indexOf("win")>-1) this.platform="win32";
+else if (ua.indexOf("mac")>-1) this.platform="mac";
+else this.platform="other";
+}
+var is = new Browser();
+// tiny extra css. these are ONLY used by old browsers.
+// VAST majority of users will NEVER request these files.
+// Even NS4 is around 7% of market and falling
+if (is.ns4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/myrtlebeachonline/en/browser/ns4.css'>\n";
+document.write(css);
+}
+if (((is.ns4)||(is.ie4))&&( is.mac)) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/myrtlebeachonline/en/browser/ns4mac.css'>\n";
+document.write(css);
+}
+if (is.ie4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/myrtlebeachonline/en/browser/ie4.css'>\n";
+document.write(css);
+}
+
+function LayerObject(divId) {
+this.name = divId;
+if (is.ns4) this.ob = eval("document." +divId);
+else if (is.ie4) this.ob = document.all(divId);
+else this.ob = document.getElementById(divId);
+this.x = 0;
+this.y = 0;
+this.width = this.getWidth();
+this.height = this.getHeight();
+}
+LayerObject.prototype.px = (is.version>=5)?"px":"";
+LayerObject.prototype.hideSyntax = (is.ns4)? "hide":"hidden";
+LayerObject.prototype.showSyntax = "visible";// NS4::  Unbelievable, but document.layername.document.imgname works for img-in-layer-in document
+// and it works for img in layer in table in document.
+// but it doesnt work for img in layer in table in table in document.
+// Maybe a workaround exists, but it seems unlikely at this point.
+// The images MUST therefore be nested only one deep....
+LayerObject.prototype.getInlineLeft = function() {
+if (is.ns4) return this.ob.pageX;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var xPos = 0;
+var yPos = 0;
+while (elem.offsetParent != null) {
+xPos += elem.offsetLeft;
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) xPos += 2;
+return xPos;
+}
+else return (this.ob.offsetLeft + document.body.offsetLeft);
+}
+
+LayerObject.prototype.getInlineTop = function() {
+if (is.ns4) return this.ob.pageY;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var yPos=0;
+while (elem.offsetParent != null) {
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) yPos += 2;
+return yPos;
+}
+else return (this.ob.offsetTop+ document.body.offsetTop);
+}
+
+//getWidth and getHeight works for both inline and positioned divs.
+LayerObject.prototype.getWidth = function () {
+if (is.ns4) return this.ob.clip.width;
+else if (is.opera) return this.ob.style.pixelWidth;
+else return this.ob.offsetWidth;
+}
+LayerObject.prototype.getHeight = function () {
+if (is.ns4) return this.ob.clip.height;
+else if (is.opera) return this.ob.style.pixelHeight;
+else return this.ob.offsetHeight;
+}
+LayerObject.prototype.hide = function() {
+if (is.ns4) this.ob.visibility = this.hideSyntax;
+else this.ob.style.visibility = this.hideSyntax;
+}
+LayerObject.prototype.show = function() {
+if (is.ns4) this.ob.visibility = this.showSyntax;
+else this.ob.style.visibility = this.showSyntax;
+}
+LayerObject.prototype.moveLayerTo = function(toX, toY) {
+this.x = toX;
+this.y = toY;
+}
+LayerObject.prototype.updateLayer = function() {
+if (is.ns4) {
+this.ob.left = Math.round(this.x) + this.px;
+this.ob.top = Math.round(this.y)+ this.px ;
+}
+else {
+this.ob.style.left = Math.round(this.x) + this.px;
+this.ob.style.top = Math.round(this.y) + this.px;
+}
+}
+//-----------------
+function roll(divName, imgName, which) {
+var suffix = (which==1)?"on":"off"
+if ((is.ns4)&&(divName!=0)) {
+var imgObject = eval("document." + divName +".document.images['"+imgName +"']");
+imgObject.src = eval(imgName + "_" + suffix + ".src");
+}
+else {
+document.images[imgName].src = eval(imgName + "_" + suffix + ".src");
+}
+}
+
+function init() {
+if (onLoadScript) eval(onLoadScript);
+}
+
+// Workaround for the netscape resize problem --
+// namely, on resize ns looses div positioning and
+// styles from css files.
+// This checks to see if the window''s dimensions have
+// actually changed (because Netscape often fires a
+// false onResize event when it forms scrollbars);
+// if the dimensions have changed, page is reloaded
+function resizefix(){
+if((document.resizeFix.initWidth != window.innerWidth) ||
+(document.resizeFix.initHeight != window.innerHeight))
+{
+document.location = document.location;
+}
+}
+
+// This code creates a new object with properties
+// to hold the current window width & height to be
+// used in the event of a netscape resize
+document.resizeFix = new Object();
+if(is.ns4){
+document.resizeFix.initWidth = window.innerWidth;
+document.resizeFix.initHeight = window.innerHeight;
+window.onresize=resizefix;
+}
+
+
+
+
+
+
+
+function initMenus(){
+}
+
+
+
+function showResults(siteSurveyKey) {
+var url="/mld/templates/contentModules/poll-results-popup.jsp"+ "?siteSurveyKey=" + siteSurveyKey;
+window.open(url, 'Title');
+}
+
+function openWin(URL) {
+aWindow = window.open(URL,
+'thewindow','width=500,height=400,resizable=yes,scrollbars=yes');
+}
+function getSite(){
+foundSite = false;
+site=document.location.hostname;
+endPos=site.indexOf(".com");
+if (endPos>= 1) {
+foundSite = true;
+site = site.substr(0, endPos);
+startPos = site.lastIndexOf(".");
+site = site.substr(startPos + 1);
+}
+return site;
+}
+function getPublication(){
+publication=document.location.pathname;
+startPos=publication.indexOf("/mld/");
+publication=publication.substr(startPos+5);
+endPos=publication.indexOf("/");
+publication=publication.substr(0,endPos);
+return publication;
+}
+function openSlideshow(url,width,height) {
+y=Math.floor((screen.availHeight-height)/2);
+x=Math.floor((screen.width-width)/2);
+window.open(url,'slideshow','width='+width+',height='+height+',top='+y+',left='+x+',scrollbars=yes,resizable=yes').focus();
+}
+
+
+
+</script>
+</head>
+<body class="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CDS : SDP2.5.0_full_02072005_100000 : production --><table width="768" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:5px;">
+<tr><td class="header1">
+
+
+<a HREF="http://www.myrtlebeachonline.com/mld/myrtlebeachonline/contact_us/subscriptions_np1"><img SRC="/images/logos/site/myrtlebeachonline/myrtlebeachonline/mediapartners/sm_logo_sunnews.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a>
+
+
+
+</td><td class="header2">
+<a href="/"><img src="/images/logos/site/myrtlebeachonline/myrtlebeachonline/site_logo_340x60.gif" width="340" height="60" alt="" hspace="0" vspace="0" border="0"/></a>
+</td><td class="header3">
+
+
+
+<a href="http://weather.myrtlebeachonline.com"><img src="http://banners.wunderground.com/banner/krd_cond/language/www/US/SC/Myrtle_Beach.gif" alt="Weather" hspace="0" vspace="0" border="0"></a>
+<br>
+
+
+
+<a href="http://weather.myrtlebeachonline.com">Complete Forecast</a>
+
+
+
+</td><td class="header4">
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/myrtlebeachonline.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;dcopt=ist;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myrtlebeachonline.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109896796420?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/myrtlebeachonline.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109896796420?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+</td></tr></table>
+
+
+
+
+
+<script id="search_box_center_jsp_script" language="javascript" type="text/javascript">
+function searchFormSubmit(form) {
+if (form.searchSelect[1].checked == true) {
+window.location = "http://www.newslibrary.com/nlsearch.asp?forceTheme=RealCities&s_site=myrtlebeachonline&search_mode=all&action=search&date_mode=year&year=last+180+days&sort=d%3Ah&nitems=10&region=mb&dbquery=" + form.query.value;
+return false;
+}
+return true;
+}
+</script><table cellspacing="0" cellpadding="0" border="0" width="768"><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr><tr><td align="center" class="navbg1">
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/myrtlebeachonline.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myrtlebeachonline.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109896796421?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/myrtlebeachonline.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109896796421?" BORDER="0" ></A>
+</NOSCRIPT>
+
+</td></tr><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr></table><table cellspacing="0" cellpadding="0" border="0" width="768">
+<form action="http://www.myrtlebeachonline.com/mld/myrtlebeachonline/search/search_results.htm" method="get" name="SearchForm_top" onsubmit="return searchFormSubmit(this)">
+<input type=hidden name="pubName" value="myrtlebeachonline">
+<input type=hidden name="orderBy" value="date">
+<input type=hidden name="pageStart" value="1">
+
+
+<input type="hidden" name="sitesToSearch" value="myrtlebeachonline,sunnews,realcities">
+
+
+
+<input type=hidden name="pageSize" value="10">
+<input type=hidden name="fieldsToSearch" value="HEADLINE,FORSEARCH,LEAD,BYLINE">
+<input type=hidden name="queryType" value="all">
+<tr style="background-color:#f2f2f2;">
+<td class="newsearch">
+
+<b>Search</b>&nbsp;
+
+
+<input name="searchSelect" value="article" type="radio" checked>Recent News&nbsp;
+
+
+
+<input name="searchSelect" value="archives" type="radio">Archives&nbsp;
+
+
+
+
+<input name="searchSelect" value="web" type="radio">Web&nbsp;&nbsp;
+
+
+
+<b>for&nbsp;&nbsp;</b><input name="query" size="25" maxlength="256" type="text">&nbsp;&nbsp;<input value="Go" type="submit">
+
+</td><script language="javascript" type="text/javascript">
+document.write('<td class="newregbox">');
+if (rm) {
+document.write('Welcome <b>' + rname + '</b><br>');
+
+document.write('	<a href="https://secure.myrtlebeachonline.com/listit/myclassifieds/">My Classifieds</a>&nbsp;|&nbsp;');
+
+document.write('<a href="https://registration.myrtlebeachonline.com/reg/myAccount.do">My Account</a>&nbsp;|&nbsp;');
+document.write('<a href="https://registration.myrtlebeachonline.com/reg/logout.do">Sign Out</a>');
+} else {
+document.write('	Welcome <b>Guest</b><br />');
+document.write('	<a href="https://registration.myrtlebeachonline.com/reg/createAccount.do">Sign Up</a>&nbsp;|&nbsp;<a href="https://registration.myrtlebeachonline.com/reg/login.do">Sign In</a>&nbsp;|&nbsp;');
+document.write('	<a href="https://registration.myrtlebeachonline.com/reg/memberBenefits.do">Member Benefits</a>');
+}
+document.write('</td>');
+</script>
+</tr></form>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="columndiv" width="134"><img src="/images/common/spacer.gif" width="134" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="472"><img src="/images/common/spacer.gif" width="472" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="160"><img src="/images/common/spacer.gif" width="160" height="1"></td></tr><tr>
+<td class="leftrail" valign="top" align="center" width="134">
+
+
+
+<!-- classifieds -->
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BGCOLOR="#ffffff"><TR><TD>
+<div style="border-left:4px solid #265191;">
+<div class="contentnav" style="border-top:1px solid #cccccc;"><img src="http://www.myrtlebeachonline.com/multimedia/myrtlebeachonline/images/myrtlebeach_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/myrtlebeachonline/classifieds/employment/"><B>Jobs</B></A></div>
+<div class="contentnav"><img src="http://www.myrtlebeachonline.com/multimedia/myrtlebeachonline/images/myrtlebeach_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/myrtlebeachonline/classifieds/automotive/"><B>Cars</B></A></div>
+<div class="contentnav"><img src="http://www.myrtlebeachonline.com/multimedia/myrtlebeachonline/images/myrtlebeach_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/myrtlebeachonline/classifieds/real_estate/"><B>Real Estate</B></A></div>
+<div class="contentnav"><img src="http://www.myrtlebeachonline.com/multimedia/myrtlebeachonline/images/myrtlebeach_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.apartments.com/search/oasis.dll?p=myrtleb&Area3=Y&page=SubArea&state=SC&rgn1=46&partner=myrtleb&prvpg=3"><B>Apartments</B></A></div>
+<div class="contentnav"><img src="http://www.myrtlebeachonline.com/multimedia/myrtlebeachonline/images/myrtlebeach_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.shoplocal.com/myrtlebeachonline/new_user_entry.aspx?CityStateZip=29572&AdRef=link03"><B>Local Shopping</B></A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/myrtlebeachonline/new_user_entry.aspx?CityStateZip=29572&AdRef=link03">Find Sales & Deals</A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/myrtlebeachonline/new_user_entry.aspx?CityStateZip=29572&AdRef=link03">Shop Local Stores</A><BR /></div>
+<div class="contentnav"><img src="http://www.myrtlebeachonline.com/multimedia/myrtlebeachonline/images/myrtlebeach_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/myrtlebeachonline/classifieds/"><B>All Classifieds</B></A></div>
+<div class="contentnav"><img src="http://www.myrtlebeachonline.com/multimedia/myrtlebeachonline/images/myrtlebeach_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/myrtlebeachonline/classifieds/personals/"><B>Personals</B></A></div>
+</div>		
+</TD></TR></TABLE>
+
+<DIV style="text-align: left; background-color:#fff;">
+<!-- site nav -->
+<div class="navtitlebar"></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/news/"><B>News</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/myrtlebeachonline/news/local/">Local</A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/myrtlebeachonline/news/local/states/south_carolina/">Neighbors</A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="http://www.legacy.com/myrtlebeachonline/">Obituaries</A></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/sports/"><B>Sports</B></A></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/entertainment/"><B>Entertainment</B></A></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/business/"><B>Business</B></A></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/living/"><B>Living</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/myrtlebeachonline/living/special_packages/vitality/">Vitality</A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/myrtlebeachonline/living/education/">Education</A></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/news/opinion/"><B>Opinion</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/myrtlebeachonline/news/columnists/">Columnists</A></div>
+</DIV>
+
+<DIV style="text-align: left; background-color:#fff;">
+<!-- online extras -->
+<div class="navtitlebar"><a href="http://www.myrtlebeachonline.com/mld/myrtlebeachonline/news/special_packages/online_extras/">ONLINE EXTRAS</a></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/entertainment/visitors_guide/"><B>Visitors Guide</B></A></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/sports/special_packages/myrtle_beach_golf/"><B>Myrtle Beach Golf</B></A></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/news/special_packages/newspaper_in_education/"><B>NIE</B></A></div>
+
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/living/occasions/"><B>Weddings & Engagements</B></A></div>
+
+<div class="contentnav"><A HREF="http://forums.realcities.com/dir-app/nav/forumdirectory.aspx?webtag=kr-myrtlebeachz&byName=y"><B>Discussion Boards</B></A></div>
+<div class="contentnav"><A HREF="http://maps.myrtlebeachonline.com/jump.cgi/refsrc=KR.1220"><B>Maps & Directions</B></A></div>
+<div class="contentnav"><A HREF="http://yp.myrtlebeachonline.com/bin/cgidir.dll?MEM=1220&s=SC&t=Myrtle%20Beach"><B>Yellow Pages</B></A></div>			
+<div class="contentnav"><A HREF="http://newspaperads.myrtlebeachonline.com"><B>Newspaper Ads</B></A></div>			
+
+<!-- site services -->
+<div class="navtitlebar">SITE SERVICES</div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/archives/"><B>Archives</B></A></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/contact_us/"><B>Contact Us</B></A></div>
+<div class="contentnav"><A HREF="/mld/myrtlebeachonline/contact_us/advertise/"><B>Advertise</B></A></div>
+</DIV>
+<BR />
+
+<div align="center">
+<hr noshade>
+<a href="/mld/myrtlebeachonline/entertainment/special_packages/coastal_carolina_dining/">
+<img src="http://www.myrtlebeachonline.com/images/myrtlebeachonline/sunnews/9959/99190603264.jpg" alt="" border="0" align="middle"></a><br>
+<b><a href="/mld/myrtlebeachonline/entertainment/special_packages/coastal_carolina_dining/">Coastal Carolina Dining</a></b>
+</div>
+
+<hr noshade>
+
+<div align="center">
+<hr noshade>
+<i>Spring edition<BR>now online</i><BR>
+<a href="/mld/myrtlebeachonline/living/special_packages/homestyles/">
+<img src="http://www.myrtlebeachonline.com/images/myrtlebeachonline/sunnews/10856/117857305376.jpg" alt="" border="0" align="middle"></a><br>
+<b><a href="/mld/myrtlebeachonline/living/special_packages/homestyles/">Coastal Carolina HomeStyles</a></b>
+</div>
+
+<hr noshade>
+
+<div align="center">
+<hr noshade>
+<a href="/mld/myrtlebeachonline/news/special_packages/newspaper_in_education/">
+<img src="http://www.myrtlebeachonline.com/images/myrtlebeachonline/sunnews/9553/91268482124.jpg" alt="" border="0" align="middle"></a><br>
+<b><a href="/mld/myrtlebeachonline/news/special_packages/newspaper_in_education/">Read about, sign your class up for The Sun News' Newspaper In Education program</a></b>
+</div>
+
+<hr noshade>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td>
+<td class="centerrail" valign="top" align="center" width="472">
+
+
+
+
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="2" width="97%">
+<tr><td valign="middle"><a href="/mld/myrtlebeachonline/" class="related">Back to Home</a>&nbsp;&gt;&nbsp;
+</td><td align="right" class="byline">Thursday, Mar 03, 2005</td></tr><tr><td colspan="2" align="center" bgcolor="#ffffff"> <img src="/images/common/spacer.gif" width="1" height="1" /><br></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="97%">
+<tr> <td align="center" class="pagetitle" width="100%">Contact Us</td><td align="right" width="1" valign="top"><img src="/images/common/spacer.gif" width="1" height="1" /></td><td align="right"  valign="top">
+
+</td></tr></table><table border="0" cellpadding="0" cellspacing="0" width="97%" align="center">
+<tr><td align="center">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center" bgcolor="#cccccc">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center" bgcolor="#cccccc">
+<img src="/images/common/spacer.gif" width="1" height="1" /><br></td></tr></table><img src="/images/common/spacer.gif" width="100%" height="5" /><br></div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td><td><center>
+<b>The Sun News</b><br>
+<GEO TYPE="US">P.O. Box 406<br>
+Myrtle Beach, SC 29578</GEO><br>
+843-626-8555 or 1-800-568-1800<br><br>
+
+<TABLE cellSpacing=0 cellPadding=2 width="95%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc>
+<TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+<TBODY>
+<TR>
+<TD align=middle bgColor=#ffffff><SPAN class=bulletin><B>»</B></SPAN> <A
+href="http://classifieds.myrtlebeachonline.com/msn/home/support/faq.html"><B>Click
+here for information and feedback on the online classifieds.</B>
+</A><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><BR><!-- COMPONENT 28  SKYBOX , variation 04  --><!--  NOTE THAT ANY SPACES IN THE FIELD "COMPONENT TITLE" MUST BE REPLACED BY &nbsp; TO GET NETSCAPE LOOKING OK IT WAS EITHER THIS, OR A SURPRISINGLY HUGE AMOUNT OF TABLECODE PER COMPONENT.  HOPEFULLY THIS ISNT A HUGE ISSUE FOR THE JSP, CAUSE THE FILESIZE SAVINGS ARE SIGNIFICANT, AND THE STRETCHY LINE IS A KEY DESIGN ELEMENT FOR INLINE COMPONENTS .  WE TRIED NOBR, AND MANY OTHER IDEAS.  -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10><IMG height=1 alt="" src="/images/common/spacer.gif" width=10>
+</TD>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD
+class=smalltitle><NOBR>PROBLEM WITH THE WEBSITE?  </NOBR></TD>
+<TD width="100%">
+<HR width="100%" color=#cccccc SIZE=1>
+</TD></TR></TBODY></TABLE></TD>
+<TD width=10 rowSpan=2><IMG height=1 alt="" src="/images/common/spacer.gif"
+width=10> </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/help/faq/">Frequently Asked
+Questions</A></B> - Can't find what you are looking for? Please read through our
+list of common questions before reporting a problem.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="/mld/myrtlebeachonline/contact_us/feedback/">Report a
+technical problem</A></B><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="/mld/myrtlebeachonline/archives.htm">Need to find an
+article?</A></B> - Search our archives. Stories from the last 7 days are
+available by clicking on the <A
+href="/mld/myrtlebeachonline/archives"><B>7-Day Archive</B></A> link from
+this page. Older stories are accessible from the <A
+href="/mld/myrtlebeachonline/archives/#form"><B>Newslibrary</B></A><BR></TD></TR></TBODY></TABLE><!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   --><IMG
+height=25 alt="" src="/images/common/spacer.gif" width="100%"><BR><!-- END COMPONENT 28 SKYBOX -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10><IMG height=1 alt="" src="/images/common/spacer.gif" width=10>
+</TD>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD
+class=smalltitle><NOBR>CONTACTING THE NEWSROOM  </NOBR></TD>
+<TD width="100%">
+<HR color=#cccccc SIZE=1>
+</TD></TR></TBODY></TABLE></TD>
+<TD width=10 rowSpan=2><IMG height=1 alt="" src="/images/common/spacer.gif"
+width=10> </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="/mld/myrtlebeachonline/contact_us/about_np1/">About
+The Sun News</A></B><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/contact_list/departments_np1/">Contact the
+newsroom</A></B> - Reach the newsroom by calling 843-626-0300. E-mail a story tip to <B><A href="mailto:sneditors@thesunnews.com">sneditors@thesunnews.com</A></B></A>. <BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/contact_list/departments_np1/">Contact an editor or reporter</A></B> - View our <A
+href="/mld/myrtlebeachonline/contact_us/contact_list/departments_np1/"><B>list of editors and reporters</B></A> to contact a specific person.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="mailto:opinions@thesunnews.com">Write a letter to the
+editor</A></B></A>. Or <B><A href="5365657.htm">click here</A></B> to read our letters policy.<BR><BR>
+<B>SUBMISSION INFORMATION, DEADLINES AND E-MAIL ADDRESSES</b><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12>
+<IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/8161863.htm/#worship">Where We Worship</A></B> - Announcements of special church services or events.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12>
+<IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/8161863.htm/#bizpulse">Business Pulse</A></B> - Hirings and promotions within the past 60 days, business openings, timely meeting notices, board appointments and awards.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/8161863.htm/#nightcal">Night life calendar in kicks!</A></B> - Local music, comedy and more. <BR><font class="arrow">&#187; </font> <font class="arrow">&#187; </font> <font class="arrow">&#187; </font> <A
+href="8467247.htm"><B>Click here to submit events online</B></A><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/8161863.htm/#localcal">Local and Region plan ahead calendars in kicks!</A></B> - Events, festivals, book signings, auditions and more.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/8161863.htm/#swap">Saturday Swap</A></B> - Exchange of tips and information.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/8161863.htm/#commcal">Community Calendar, Club Clipboard, Support Groups and other community group events and listings</A></B><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/8161863.htm/#nebsgaz">Neighbors and The Horry County Gazette</A></B> - Information about and achievements by local communities and residents, schools, nonprofit groups, clubs, churches and recreational sports.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/8161863.htm/#kidcal">Children's Calendar</A></B> - Kid-friendly events and classes.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/8161863.htm/#healthbrfs">Health briefs</A></B> - Health screenings, medical seminars/talks and hospital classes.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="mailto:sneditors@thesunnews.com">General submission</A></B> - Don't know where to send something? Send it to <B><A href="mailto:sneditors@thesunnews.com">sneditors@thesunnews.com</A></B>.<BR></TD></TR>
+
+
+</TBODY></TABLE><!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   --><IMG
+height=25 alt="" src="/images/common/spacer.gif" width="100%"><BR><!-- END COMPONENT 28 SKYBOX -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10><IMG height=1 alt="" src="/images/common/spacer.gif" width=10>
+</TD>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD
+class=smalltitle><NOBR>NEWSPAPER ADVERTISING/SUBSCRIPTIONS/WEDDINGS</NOBR></TD>
+<TD width="100%">
+<HR color=#cccccc SIZE=1>
+</TD></TR></TBODY></TABLE></TD>
+<TD width=10 rowSpan=2><IMG height=1 alt="" src="/images/common/spacer.gif"
+width=10> </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/advertise_np1/">Contact
+Information</A></B> - Contact information for customer service, circulation,
+advertising and more at The Sun News.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/advertise_np1/">Ad rates</A></B> - View, download and print our ad rates here.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/subscriptions_np1/">Subscriptions</A></B>
+- Subscribe to the printed version of The Sun News or report a problem with your
+subscription to our <A href="mailto:service@thesunnews.com">customer service
+department</A>.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A href="mailto:weddings@thesunnews.com">Weddings, engagements and anniversaries</A></B>
+- To request information on placing a wedding, engagement or anniversary announcement in The Sun News, contact Claire Adare at 626-0325 or via e-mail at <A href="mailto:weddings@thesunnews.com">weddings@thesunnews.com</A>. You can download the forms and ordering information by <B><A href="/mld/myrtlebeachonline/living/occasions/">clicking here</A></B> to go to our announcements page.<BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/advertise_np1/">Newspaper Advertising</A></B>
+- Want to place a display ad in the newspaper? <A href="/mld/myrtlebeachonline/contact_us/advertise_np1/">Click here</a> for more
+information.<BR></TD></TR>
+
+
+</TBODY></TABLE><!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   --><IMG
+height=25 alt="" src="/images/common/spacer.gif" width="100%"><BR><!-- END COMPONENT 28 SKYBOX -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=10><IMG height=1 alt="" src="/images/common/spacer.gif" width=10>
+</TD>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD
+class=smalltitle><NOBR>HOW TO ADVERTISE ON THIS SITE  </NOBR></TD>
+<TD width="100%">
+<HR color=#cccccc SIZE=1>
+</TD></TR></TBODY></TABLE></TD>
+<TD width=10 rowSpan=2><IMG height=1 alt="" src="/images/common/spacer.gif"
+width=10> </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="/mld/myrtlebeachonline/contact_us/advertise_np1/">Advertise in The Sun
+News or on MyrtleBeachOnline.com</A></B><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="http://www.knightridderdigital.com/network/index.html">About the
+RealCities Network</A></B><BR></TD></TR>
+<TR>
+<TD vAlign=top width=12><IMG height=9 alt=""
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left
+vspace=2 border=0> </TD>
+<TD vAlign=top><B><A
+href="http://www.knightridderdigital.com/press/index.html">Press
+Center</A></B><BR></TD></TR></TBODY></TABLE>
+</td><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td></tr></table>
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10" rowspan="5"><img src=/images/common/spacer.gif width="10" height="1" /></td><td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td class="smalltitle" nowrap><nobr>PHOTO REPRINTS<a name=photoreprints>&nbsp;&nbsp;</nobr></td><td width="100%"><hr size="1" color="#cccccc" width="100%"/></td></tr></table>
+</td><td width="10" rowspan="5"><img src=/images/common/spacer.gif width="10" height="1" /></td></tr><tr><td><img src=/images/common/spacer.gif width="400" height="7"/><br></td></tr><tr><td><table cellpadding="0" cellspacing="0" border="0">
+<tr><td valign="top">
+
+<img src="/images/myrtlebeachonline/sunnews/8161/thumb_66609550535.jpg" width="100" height="133" vspace="5" alt=""/><br>
+</td><td>&nbsp;&nbsp;</td><td valign="top" align="left" width="100%"><a href="http://www.myrtlebeachonline.com/multimedia/myrtlebeachonline/KRT_packages/archive/reprintform.pdf" class="subfeature-headline">Capture the moment with a photo<BR>
+from our award-winning staff</a><br />
+
+Want to buy a certain photo you saw in The Sun News or here at MyrtleBeachOnline.com? If a staff photographer of The Sun News took the photo, you can. It's easy. <br><BR>Just <b><A HREF="http://www.myrtlebeachonline.com/multimedia/myrtlebeachonline/KRT_packages/archive/reprintform.pdf">click here</A></b> to download our photo reprint form (a PDF). Then print it out and follow the instructions.<br>
+
+</td></tr></table>
+</td></tr></table><img src=/images/common/spacer.gif width="100%" height="25" /><br>
+
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="rightrail" valign="top" align="center" width="160">
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/myrtlebeachonline.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myrtlebeachonline.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109896796661?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/myrtlebeachonline.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109896796661?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/myrtlebeachonline.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myrtlebeachonline.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109896796661?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/myrtlebeachonline.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109896796661?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="leftrail" width="134">
+<img src="/images/common/spacer.gif" width="134" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="centerrail" width="100%" align="center">
+<img src="/images/common/spacer.gif" width="450" height="1"/><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/myrtlebeachonline.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/myrtlebeachonline.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109896796661?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/myrtlebeachonline.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109896796661?" BORDER="0" ></A>
+</NOSCRIPT>
+
+<br/><br/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="rightrail" width="160">
+<img src="/images/common/spacer.gif" width="160" height="1"/></td></tr></table>
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="768"><tr><td rowspan="2" valign="top" class="footer"><a href="http://www.realcities.com" target="_blank"><img src="/images/palette/myrtlebeachonline/realcities_logo.gif" width="155" height="57" alt="RealCities" border="0"/></a>
+</td><td align="left" class="footer">
+<span class="lightgreylinks"><a href="/mld/myrtlebeachonline/news/"> News  |</a> <a href="/mld/myrtlebeachonline/business/"> Business  |</a> <a href="/mld/myrtlebeachonline/sports/"> Sports  |</a> <a href="/mld/myrtlebeachonline/entertainment/"> Entertainment  |</a> <a href="/mld/myrtlebeachonline/living/">Living  |</a> <a href="http://www.shoplocal.com/myrtlebeachonline/new_user_entry.aspx?CityStateZip=29572&AdRef=link02">Shop Local |</a> <a href="/mld/myrtlebeachonline/classifieds/"> Classifieds  |</a> <a href="/mld/myrtlebeachonline/classifieds/employment/"> Jobs  |</a> <a href="/mld/myrtlebeachonline/classifieds/automotive/"> Cars  |</a> <a href="/mld/myrtlebeachonline/classifieds/real_estate/"> Homes   </a><br><a href="/mld/myrtlebeachonline/contact_us/about">About MyrtleBeachOnline.com |</a> <a href="/mld/myrtlebeachonline/contact_us/rc_sites/">About the Real Cities Network |</a> <a href="/mld/myrtlebeachonline/contact_us/terms_of_use">Terms of Use & Privacy Statement |</a> <a href="http://www.knightridder.com">About Knight Ridder |</a> <a href="/mld/myrtlebeachonline/contact_us/copyright">Copyright  </a><br></span>
+</td></tr></table>
+
+</body>
+</html>
+
+
+

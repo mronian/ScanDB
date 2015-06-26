@@ -1,0 +1,924 @@
+<DOC>
+<DOCNO>f00412</DOCNO>
+<DOCHDR>http://www.philly.com/mld/philly/contact_us/contact_list/departments_np1</DOCHDR>
+
+
+
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+
+var rm = false;
+
+</script>
+<title>Contact Us : Departments of The Philadelphia Inquirer -- Philly.com</title>
+<link rel='stylesheet' type='text/css' href='/css/palette/philly/en/global.css'/><script type="text/javascript" language="javascript">
+
+_krdDartOrd = new Date().getTime();
+
+_krdDartInc = 0;
+var navReady = false;
+var toolsReady = false;var onLoadScript="";function Browser() {var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+// I have disabled the following line, but something similar might be useful later,
+// but launching a popup window is more polite than this alert.
+//if (!b) alert(''Unidentified browser./nThis browser is not supported,'');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.ns=(this.b=="ns" && this.v>=4);
+this.ns4=(this.b=="ns" && this.v==4);
+this.ns6=(this.b=="ns" && this.v==5);
+this.ie=(this.b=="ie" && this.v>=4);
+this.ie4=(this.version.indexOf('MSIE 4')>0);
+this.ie4up = (this.ie && this.v>= 4);
+this.ns5up = (this.ns && this.v>= 5);
+this.ie5=(this.version.indexOf('MSIE 5')>0);
+this.ie5up = (this.ie5);
+this.ie55=(this.version.indexOf('MSIE 5.5')>0);
+this.opera=(this.b=="opera");
+this.def=(this.ie||this.dom);var ua=navigator.userAgent.toLowerCase();
+this.mac = (ua.indexOf("mac")!=-1);if (ua.indexOf("win")>-1) this.platform="win32";
+else if (ua.indexOf("mac")>-1) this.platform="mac";
+else this.platform="other";
+}
+var is = new Browser();
+// tiny extra css. these are ONLY used by old browsers.
+// VAST majority of users will NEVER request these files.
+// Even NS4 is around 7% of market and falling
+if (is.ns4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/philly/en/browser/ns4.css'>\n";
+document.write(css);
+}
+if (((is.ns4)||(is.ie4))&&( is.mac)) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/philly/en/browser/ns4mac.css'>\n";
+document.write(css);
+}
+if (is.ie4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/philly/en/browser/ie4.css'>\n";
+document.write(css);
+}
+
+function LayerObject(divId) {
+this.name = divId;
+if (is.ns4) this.ob = eval("document." +divId);
+else if (is.ie4) this.ob = document.all(divId);
+else this.ob = document.getElementById(divId);
+this.x = 0;
+this.y = 0;
+this.width = this.getWidth();
+this.height = this.getHeight();
+}
+LayerObject.prototype.px = (is.version>=5)?"px":"";
+LayerObject.prototype.hideSyntax = (is.ns4)? "hide":"hidden";
+LayerObject.prototype.showSyntax = "visible";// NS4::  Unbelievable, but document.layername.document.imgname works for img-in-layer-in document
+// and it works for img in layer in table in document.
+// but it doesnt work for img in layer in table in table in document.
+// Maybe a workaround exists, but it seems unlikely at this point.
+// The images MUST therefore be nested only one deep....
+LayerObject.prototype.getInlineLeft = function() {
+if (is.ns4) return this.ob.pageX;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var xPos = 0;
+var yPos = 0;
+while (elem.offsetParent != null) {
+xPos += elem.offsetLeft;
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) xPos += 2;
+return xPos;
+}
+else return (this.ob.offsetLeft + document.body.offsetLeft);
+}
+
+LayerObject.prototype.getInlineTop = function() {
+if (is.ns4) return this.ob.pageY;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var yPos=0;
+while (elem.offsetParent != null) {
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) yPos += 2;
+return yPos;
+}
+else return (this.ob.offsetTop+ document.body.offsetTop);
+}
+
+//getWidth and getHeight works for both inline and positioned divs.
+LayerObject.prototype.getWidth = function () {
+if (is.ns4) return this.ob.clip.width;
+else if (is.opera) return this.ob.style.pixelWidth;
+else return this.ob.offsetWidth;
+}
+LayerObject.prototype.getHeight = function () {
+if (is.ns4) return this.ob.clip.height;
+else if (is.opera) return this.ob.style.pixelHeight;
+else return this.ob.offsetHeight;
+}
+LayerObject.prototype.hide = function() {
+if (is.ns4) this.ob.visibility = this.hideSyntax;
+else this.ob.style.visibility = this.hideSyntax;
+}
+LayerObject.prototype.show = function() {
+if (is.ns4) this.ob.visibility = this.showSyntax;
+else this.ob.style.visibility = this.showSyntax;
+}
+LayerObject.prototype.moveLayerTo = function(toX, toY) {
+this.x = toX;
+this.y = toY;
+}
+LayerObject.prototype.updateLayer = function() {
+if (is.ns4) {
+this.ob.left = Math.round(this.x) + this.px;
+this.ob.top = Math.round(this.y)+ this.px ;
+}
+else {
+this.ob.style.left = Math.round(this.x) + this.px;
+this.ob.style.top = Math.round(this.y) + this.px;
+}
+}
+//-----------------
+function roll(divName, imgName, which) {
+var suffix = (which==1)?"on":"off"
+if ((is.ns4)&&(divName!=0)) {
+var imgObject = eval("document." + divName +".document.images['"+imgName +"']");
+imgObject.src = eval(imgName + "_" + suffix + ".src");
+}
+else {
+document.images[imgName].src = eval(imgName + "_" + suffix + ".src");
+}
+}
+
+function init() {
+if (onLoadScript) eval(onLoadScript);
+}
+
+// Workaround for the netscape resize problem --
+// namely, on resize ns looses div positioning and
+// styles from css files.
+// This checks to see if the window''s dimensions have
+// actually changed (because Netscape often fires a
+// false onResize event when it forms scrollbars);
+// if the dimensions have changed, page is reloaded
+function resizefix(){
+if((document.resizeFix.initWidth != window.innerWidth) ||
+(document.resizeFix.initHeight != window.innerHeight))
+{
+document.location = document.location;
+}
+}
+
+// This code creates a new object with properties
+// to hold the current window width & height to be
+// used in the event of a netscape resize
+document.resizeFix = new Object();
+if(is.ns4){
+document.resizeFix.initWidth = window.innerWidth;
+document.resizeFix.initHeight = window.innerHeight;
+window.onresize=resizefix;
+}
+
+
+
+
+
+
+
+function initMenus(){
+}
+
+
+
+function showResults(siteSurveyKey) {
+var url="/mld/templates/contentModules/poll-results-popup.jsp"+ "?siteSurveyKey=" + siteSurveyKey;
+window.open(url, 'Title');
+}
+
+function openWin(URL) {
+aWindow = window.open(URL,
+'thewindow','width=500,height=400,resizable=yes,scrollbars=yes');
+}
+function getSite(){
+foundSite = false;
+site=document.location.hostname;
+endPos=site.indexOf(".com");
+if (endPos>= 1) {
+foundSite = true;
+site = site.substr(0, endPos);
+startPos = site.lastIndexOf(".");
+site = site.substr(startPos + 1);
+}
+return site;
+}
+function getPublication(){
+publication=document.location.pathname;
+startPos=publication.indexOf("/mld/");
+publication=publication.substr(startPos+5);
+endPos=publication.indexOf("/");
+publication=publication.substr(0,endPos);
+return publication;
+}
+function openSlideshow(url,width,height) {
+y=Math.floor((screen.availHeight-height)/2);
+x=Math.floor((screen.width-width)/2);
+window.open(url,'slideshow','width='+width+',height='+height+',top='+y+',left='+x+',scrollbars=yes,resizable=yes').focus();
+}
+
+
+
+</script>
+</head>
+<body class="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CDS : SDP2.5.0_full_02072005_100000 : production --><table width="768" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:5px;">
+<tr><td class="header1">
+
+
+<a HREF="https://apps.pnionline.com/readerservices/"><img SRC="/images/logos/site/philly/philly/mediapartners/sm_logo_inquirer.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a>
+
+
+<div class="header1" style="font-size:1em; border-top:1px solid #cccccc; padding-top:2px; margin-top:2px;"><a href="http://www.pnionline.com/readerservices/subscribe/dn_delivery.asp"><img src="/images/logos/site/philly/philly/mediapartners/sm_logo_dailynews.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a></div>
+
+
+</td><td class="header2">
+<a href="/"><img src="/images/logos/site/philly/philly/site_logo_340x60.gif" width="340" height="60" alt="" hspace="0" vspace="0" border="0"/></a>
+</td><td class="header3">
+
+
+
+<a href="http://weather.philly.com"><img src="http://banners.wunderground.com/banner/krd_cond/language/www/US/PA/Philadelphia.gif" alt="Weather" hspace="0" vspace="0" border="0"></a>
+<br>
+
+
+
+<a href="http://weather.philly.com">Complete Forecast</a>
+
+
+
+</td><td class="header4">
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/philly.contact_us/departments_np1;kw=header;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=header;group=160x60;dcopt=ist;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/philly.contact_us/departments_np1;kw=header;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=header;group=160x60;ord=1109897162334?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/philly.contact_us/departments_np1;kw=header;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=header;group=160x60;ord=1109897162334?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+</td></tr></table>
+
+
+
+
+
+<script id="search_box_center_jsp_script" language="javascript" type="text/javascript">
+function searchFormSubmit(form) {
+if (form.searchSelect[1].checked == true) {
+window.location = "http://www.newslibrary.com/nlsearch.asp?forceTheme=RealCities&s_site=philly&search_mode=all&action=search&date_mode=year&year=last+180+days&sort=d%3Ah&nitems=10&region=dn&region=pi&dbquery=" + form.query.value;
+return false;
+}
+return true;
+}
+</script><table cellspacing="0" cellpadding="0" border="0" width="768"><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr><tr><td align="center" class="navbg1">
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/philly.contact_us/departments_np1;kw=top;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=top;group=banner;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/philly.contact_us/departments_np1;kw=top;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=top;group=banner;ord=1109897162338?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/philly.contact_us/departments_np1;kw=top;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=top;group=banner;ord=1109897162338?" BORDER="0" ></A>
+</NOSCRIPT>
+
+</td></tr><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr></table><table cellspacing="0" cellpadding="0" border="0" width="768">
+<form action="http://www.philly.com/mld/philly/search/search_results.htm" method="get" name="SearchForm_top" onsubmit="return searchFormSubmit(this)">
+<input type=hidden name="pubName" value="philly">
+<input type=hidden name="orderBy" value="date">
+<input type=hidden name="pageStart" value="1">
+
+
+<input type="hidden" name="sitesToSearch" value="philly,inquirer,dailynews,realcities">
+
+
+
+<input type=hidden name="pageSize" value="10">
+<input type=hidden name="fieldsToSearch" value="HEADLINE,FORSEARCH,LEAD,BYLINE">
+<input type=hidden name="queryType" value="all">
+<tr style="background-color:#f2f2f2;">
+<td class="newsearch">
+
+<b>Search</b>&nbsp;
+
+
+<input name="searchSelect" value="article" type="radio" checked>Recent News&nbsp;
+
+
+
+<input name="searchSelect" value="archives" type="radio">Archives&nbsp;
+
+
+
+
+<input name="searchSelect" value="web" type="radio">Web&nbsp;&nbsp;
+
+
+
+<b>for&nbsp;&nbsp;</b><input name="query" size="25" maxlength="256" type="text">&nbsp;&nbsp;<input value="Go" type="submit">
+
+</td><script language="javascript" type="text/javascript">
+document.write('<td class="newregbox">');
+if (rm) {
+document.write('Welcome <b>' + rname + '</b><br>');
+
+document.write('	<a href="https://secure.philly.com/listit/myclassifieds/">My Classifieds</a>&nbsp;|&nbsp;');
+
+document.write('<a href="https://registration.philly.com/reg/myAccount.do">My Account</a>&nbsp;|&nbsp;');
+document.write('<a href="https://registration.philly.com/reg/logout.do">Sign Out</a>');
+} else {
+document.write('	Welcome <b>Guest</b><br />');
+document.write('	<a href="https://registration.philly.com/reg/createAccount.do">Sign Up</a>&nbsp;|&nbsp;<a href="https://registration.philly.com/reg/login.do">Sign In</a>&nbsp;|&nbsp;');
+document.write('	<a href="https://registration.philly.com/reg/memberBenefits.do">Member Benefits</a>');
+}
+document.write('</td>');
+</script>
+</tr></form>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="columndiv" width="134"><img src="/images/common/spacer.gif" width="134" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="472"><img src="/images/common/spacer.gif" width="472" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="160"><img src="/images/common/spacer.gif" width="160" height="1"></td></tr><tr>
+<td class="leftrail" valign="top" align="center" width="134">
+
+
+
+<link rel='stylesheet' type='text/css' href='http://www.philly.com/css/palette/philly/en/global.css'/>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" >
+<tr><td align="left" bgcolor="white">
+
+<!-- pubsnav -->
+<!-- Philly version -->
+<div class="nav2" style="padding:3px; color:#cc0000; ">Philly.com</div>
+<div style="border: 1px solid #ccc; padding:3px; margin-top:-1px; "><a class="nav2" href="/mld/inquirer/">Today's Inquirer</a></div>
+<div style="border: 1px solid #ccc; padding:3px; margin-top:-1px; margin-bottom:10px; "><a class="nav2" href="/mld/dailynews/">Today's Daily News</a></div>
+<!-- end Philly version -->
+
+<!-- classifieds -->
+<div style="border-left:4px solid #21558c;">
+<div class="contentnav" style="border-top:1px solid #cccccc;"><img src="http://www.realcities.com/multimedia/nationalchannel/news/KRT_Packages/archive/philly_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/philly/classifieds/employment/"><B>Jobs</B></A></div>
+
+<div class="contentnav"><img src="http://www.realcities.com/multimedia/nationalchannel/news/KRT_Packages/archive/philly_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/philly/classifieds/automotive/"><B>Cars</B></A></div>
+<div class="contentnav"><img src="http://www.realcities.com/multimedia/nationalchannel/news/KRT_Packages/archive/philly_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/philly/classifieds/real_estate/"><B>Real Estate</B></A></div>
+<div class="contentnav"><img src="http://www.realcities.com/multimedia/nationalchannel/news/KRT_Packages/archive/philly_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.apartments.com/search/oasis.dll?p=philly&rgn3=93&page=Area&state=PA&partner=philly&prvpg=2"><B>Apartments</B></A></div>
+<div class="contentnav"><img src="http://www.realcities.com/multimedia/nationalchannel/news/KRT_Packages/archive/philly_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.shoplocal.com/philly/new_user_entry.aspx?CityStateZip=19101&AdRef=link03"><B>Local Shopping</B></A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/philly/new_user_entry.aspx?CityStateZip=19101&AdRef=link03">Find Sales & Deals</A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/philly/new_user_entry.aspx?CityStateZip=19101&AdRef=link03">Shop Local Stores</A><BR /></div>
+<div class="contentnav"><img src="http://www.realcities.com/multimedia/nationalchannel/news/KRT_Packages/archive/philly_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/philly/classifieds/"><B>All Classifieds</B></A></div>
+
+<div class="contentnav"><img src="http://www.realcities.com/multimedia/nationalchannel/news/KRT_Packages/archive/philly_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/philly/classifieds/personals/"><B>Personals</B></A></div>
+</div>
+				
+
+<!-- site nav -->
+<div class="navtitlebar"></div>
+<div class="contentnav"><A HREF="/mld/philly/news/"><B>News</B></A></div>
+<div class="contentnav"><A HREF="/mld/philly/sports/"><B>Sports</B></A></div>
+<div class="contentnav"><A HREF="/mld/philly/entertainment/"><B>Entertainment</B></A></div>
+<div class="contentnav"><A HREF="/mld/philly/business/"><B>Business</B></A></div>
+<div class="contentnav"><A HREF="/mld/philly/living/people/women/"><B>PhillyWomen</B></A></div>
+<div class="contentnav"><A HREF="/mld/philly/living/home/"><strong>Home</strong></A></div>
+<div class="contentnav"><A HREF="/mld/philly/living/health/"><strong>Health</strong></A></div>
+<div class="contentnav"><A HREF="/mld/philly/living/travel/"><strong>Travel</strong></A></div>
+<div class="contentnav"><A HREF="/mld/philly/living/education/"><strong>Education</strong></A></div>
+<div class="contentnav"><A HREF="/mld/philly/contact_us/"><B>Contact us</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/contact_list/">Philly.com contacts</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/contact_list/departments_np1/">Inquirer contacts</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/contact_list/departments_np2/">Daily News contacts</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/feedback/">Philly.com feedback</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/feedback_np1/">Inquirer feedback</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/feedback_np2/">Daily News feedback</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/advertise/">Advertise on Philly.com</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/advertise_np2/">Advertise with Daily News</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/advertise_np1/">Advertise with Inquirer</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/terms_of_use/">Privacy policy</A><br>
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/philly/contact_us/rc_sites/">Find other newspapers</A><br>
+	</div>
+	
+</td></tr></table>	 
+<!-- end site nav -->
+
+<!-- <link rel='stylesheet' type='text/css' href='http://www.philly.com/css/palette/philly/en/global.css'/>
+-->
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" >
+<tr><td align="left" bgcolor="white">
+
+<!-- online extras -->
+<div class="navtitlebar">ONLINE EXTRAS</div>
+<div class="contentnav"><A HREF="/mld/philly/archives/"><B>Archives</B></A></div>
+<div class="contentnav"><A HREF="http://maps.philly.com/jump.cgi/refsrc=KR.1222"><B>Maps &amp;  Directions</B></A></div>
+<div class="contentnav"><A HREF="https://registration.philly.com/reg/accLogin.do?navType=subscriptions&navPage=subscriptions&loginForward=globalUpdateSubscriptionsForward&url=http://www.philly.com/mld/philly/"><B>Newsletters</B></A></div>
+<div class="contentnav"><A HREF="http://www.philly.com/mld/philly/news/transportation/"><B>Traffic Reports</B></A></div>
+<div class="contentnav"><A HREF="http://weather.philly.com"><B>Weather</B></A></div>		
+<div class="contentnav"><A HREF="http://yp.philly.com/bin/cgidir.dll?MEM=1222"><B>Yellow  Pages</B></A></div>			
+<div class="contentnav"><A HREF="http://forums.realcities.com/dir-app/nav/forumdirectory.aspx?webtag=kr-phillyz&byName=y"><B>Discussion Boards</B></A></div>
+<div class="contentnav"><A HREF="http://contests.philly.com/"><B>Freebies</B></A></div> 
+<div class="contentnav"><A HREF="http://www.philly.com/mld/philly/7444190.htm"><B>RSS</B></A></div>
+<div class="contentnav"><A HREF="http://specialsections.philly.com/"><B>Special sections</B></A></div>
+<div class="contentnav"><A HREF="http://www.philly.com/mld/philly/shopping/newspaper_ads/"><B>Newspaper ads online</B></A></div>
+<div class="contentnav"><A HREF="http://philly.tribe.net/listing/category/3000?r=10319" target="_blank"><B>Reader reviews</B></A></div>
+
+
+<!-- site services -->
+<div class="navtitlebar">SITE SERVICES</div>
+<div class="contentnav"><A HREF="/mld/philly/contact_us/"><B>Help</B></A></div>
+<div class="contentnav"><A HREF="/mld/philly/contact_us/feedback/"><B>Feedback</B></A></div>
+<div class="contentnav"><A HREF="https://newsstand.pnionline.com/store"><B>Online store</B></A></div>
+<div class="contentnav"><A HREF="http://go.philly.com/buyphotos"><B>Photo reprints</B></A></div>
+<div class="contentnav"><A HREF="/mld/philly/contact_us/advertise/"><B>Advertise</B></A></div>
+<div class="contentnav"><A HREF="https://apps.pnionline.com/readerservices/"><B>Subscribe/Services</B></A></div>
+<BR />
+
+
+<!-- partners -->
+<div class="classnav"style="margin-top:10px; border-top:1px solid #ccc;">PARTNERS</div>
+<div class="contentnav" style="font-size:.9em;">
+<ul style="margin:0px; padding-left:15px; padding-bottom:0px; list-style-type:square;">
+<li><a href="http://www.tribe.net/" target="_blank">Tribe.net</a>
+<li><a href="http://www.nbc10.com/" target="_blank">NBC10.com</a>
+<li><a href="http://www.buckscountymidweek.com/" target="_blank">Bucks Midweek</a>
+<li><a href="http://www.montgomerycountymidweek.com/" target="_blank">Montco Midweek</a>
+<li><a href="http://www.northeasttimes.com/" target="_blank">Northeast Times</a>
+<li><a href="http://www.tasteofphiladelphia.com/" target="_blank">Taste of Phila.</a>
+<li><a href="http://www.fi.edu/" target="_blank">Franklin Institute</a>
+<li><a href="http://homesandliving.com/" target="_blank">Homes and Living</span></a>
+<li><a href="http://www.beachandbayhomes.com/" target="_blank">Beach and Bay Homes</a>
+<li><a href="http://www.activeadulthousing.com/" target="_blank">Active Adult Housing</a>
+<li><a href="http://www.4mywedding.com/" target="_blank">My Wedding</a>
+
+</ul>
+</div><BR>
+<!-- end partners -->
+
+</td></tr></table>
+
+
+
+<!-- SiteCatalyst code version: G.7.
+Copyright 1997-2004 Omniture, Inc. More info available at
+http://www.omniture.com --><script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+var s_pageName=""
+var s_server=""
+var s_channel=""
+var s_pageType=""
+var s_prop1=""
+var s_prop2=""
+var s_prop3=""
+var s_prop4=""
+var s_prop5=""
+/* E-commerce Variables */
+var s_campaign=""
+var s_state=""
+var s_zip=""
+var s_events=""
+var s_products=""
+var s_purchaseID=""
+var s_eVar1=""
+var s_eVar2=""
+var s_eVar3=""
+/********* INSERT THE DOMAIN AND PATH TO YOUR CODE BELOW ************/
+//--></script><script language="JavaScript" src="http://www.philly.com/html/philly/s_code_remote.js"></script>
+<!-- End SiteCatalyst code version: G.7. -->
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td>
+<td class="centerrail" valign="top" align="center" width="472">
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td><td><div align="left">
+
+
+
+<table border="0" cellpadding="0" cellspacing="2" width="600">
+<tr><!--  Breadcrumb -->
+<td valign="center" class="bcrumb"><A class=related title="Philly.com home page" href="/mld/philly">Back to Home</A> &gt; <A href="/mld/philly/contact_us">Contact Us</A></td>
+<td align="right" class="byline">&nbsp;
+</td>
+</tr>
+
+
+
+<tr>
+<td  colspan="2" align="middle" bgcolor="#ffffff">
+<IMG height=1 alt="" src="/images/common/spacer.gif" width=1 ><br 
+      >
+</td>
+</tr>
+</table>
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+
+<tr><!--  the graphic page title may be replaced by text, the graphic dimensions need to be flexible -->
+<td  align="middle" class="pagetitle" width="600">Philadelphia Inquirer Contacts
+</td>
+<td align="right" width="1" valign="top"><IMG height=35 alt="" src="/images/common/spacer.gif" width=1 >
+</td>
+<td align="right" width="56" valign="top">&nbsp;</td>
+
+</tr>
+
+<tr>
+<td colspan="3">
+<%NP.comContactsContactPageIntroTextContactPageintrotext-howtoreachNP.compersonnel%>
+</td>
+</tr></table><!--  the background colors of the following table cells need to be variable to accomodate changes in color-->
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="600" align="center">
+
+<tr>
+<td  align="middle">
+<IMG height=2 alt="" src="/images/common/spacer.gif" width=1 ><br >
+</td>
+</tr>
+
+
+
+<tr>
+<td  align="middle" bgcolor="#cccccc">
+<IMG height=2 alt="" src="/images/common/spacer.gif" width=1 ><br >
+</td>
+</tr>
+
+
+
+<tr>
+<td  align="middle">
+<IMG height=2 alt="" src="/images/common/spacer.gif" width=1 ><br >
+</td>
+</tr>
+
+
+<tr>
+<td  align="middle"  bgcolor="#cccccc">
+<IMG height=1 alt="" src="/images/common/spacer.gif" width=1 ><br 
+  >
+</td>
+</tr>
+ 
+</table><!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   -->
+<IMG height=5 alt="" src="/images/common/spacer.gif" width="600" ><br >
+
+
+
+</div><!-- END INLINE HEADER component 44 -->
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="600"><!-- THIS COMMENTS/QUESTIONS SECTION DUPLICATES THE FEEDBACK FORM EMAIL ADDRESSES :: IT DOES NOT PROPERLY BELONG ON THIS PAGE -- CPA -- 1/16/2002 --><!--
+
+
+  <tr> 
+<td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+width="10" height="1" alt="" border="0" /></td>
+<td>
+
+		<table border="0" cellpadding="0" cellspacing="0" width="600">
+		<tr valign="bottom">
+		<td nowrap class="smalltitle"><b>Comments or Questions</b></td>
+		<td width="600"><hr size="1" color="#cccccc" /></td>
+		</tr>
+		</table>	
+
+</td>
+<td width="10" rowspan="2"><img src="/images/common/spacer.gif" width="10" height="1" alt="" border="0" /></td>
+</tr>
+
+<tr>
+<td>
+      <br />
+      <b>Regarding news coverage</b><br />
+      
+      <a href="mailto:ombudsman@phillynews.com">ombudsman@phillynews.com</a><br />
+     (215) 854-2425<br />
+	  
+	  
+	  <br />
+      <b>Letters to the Editor</b><br />
+      
+      <a href="mailto:inquirer.letters@phillynews.com">inquirer.letters@phillynews.com</a><br />
+      
+	  
+	  <br />
+      <b>Regarding The Inquirer Web site</b><br />
+      
+      <a href="mailto:inqonline@phillynews.com">inqonline@phillynews.com</a><br />
+      
+      <br />
+
+      
+      <br />
+</td></tr>
+
+
+ END COMMENTS/QUESTIONS SECTION -->
+
+<tr> 
+<td width="10" rowspan="2"><IMG height=1
+ alt="" src="/images/common/spacer.gif" width=10 border=0 ></td>
+<td>
+
+		<table border="0" cellpadding="0" cellspacing="0" width="600">
+		<tr valign="bottom">
+		<td nowrap class="smalltitle"><b>Contact Us&nbsp;</b></td>
+		<td width="600"><hr size="1" color="#cccccc" ></td>
+		</tr>
+		</table>	
+
+
+<table>
+        
+        <TR>
+<td width="10" rowspan="2"><IMG height=1 alt="" src="/images/common/spacer.gif" width=10 border=0 ></td></TR>
+
+<tr>
+<td>
+
+
+<br ><!-- insert top content here -->
+<table >
+              <TBODY>
+<tr>
+<td >
+<b>The Philadelphia Inquirer</b><br>
+
+<b>Mailing address:</b><br>
+<GEO TYPE="US">P.O. Box 8263<br>
+Philadelphia, Pa. 19101</GEO><br>
+<b>Phone:</b> 215-854-2000<br><br >
+
+<b>Courier mail:</b><br >
+<GEO TYPE="US">400 N. Broad Street<br >
+Philadelphia, Pa. 19130</GEO><br><br ></td>
+
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td valign="top">
+
+
+<A href="/mld/philly/contact_us/5305730.htm"><b> News/Sports/Opinion</b></A><br>
+
+<A href="/mld/philly/contact_us/5305738.htm"><b>PA Suburbs</b></A><br>	
+
+<A href="/mld/philly/contact_us/5305749.htm"><b>South Jersey</b></A>	<br>			
+
+<A href="/mld/philly/contact_us/5277960.htm"><b>Features</b></A><br>
+
+<A href="/mld/philly/contact_us/5286840.htm"><b>Weekend</b></A>	<br>	
+
+<A href="/mld/philly/contact_us/5286939.htm"><b>Obituaries</b></A><br><br>
+<A href="/mld/philly/contact_us/contact_list/newspaper_staff_np1/"><b>Staff E-mail</b></A><br>
+
+<A href="/mld/philly/contact_us/2480089.htm"><b>Jobs/Internships</b></A></td></tr>				
+					
+			
+
+</td></tr></table>
+				
+					
+					
+
+              
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+		<tr valign="bottom">
+		<td nowrap class="smalltitle"><b>Newspaper Resources&nbsp;</b></td>
+		<td width="600"><hr size="1" color="#cccccc" ></td></tr>
+
+		</table><br>
+		
+<table   width="600">		
+
+<b>Contact our Customer Service Website, <A href="http://www.service.pnionline.com">www.service.pnionline.com</A>, to:</b><br>
+<ul>
+<li>	Start a subscription with a credit card payment.
+  
+<li>	Make a credit card payment on your existing account.
+  
+<li>	Check on your account payment history.
+  
+<li>	Stop your paper for vacation with a restart date.
+  
+
+<li>	Register a complaint for a missed, wet or damaged 
+  paper.</li>
+</ul>
+
+<b>Classified advertising / job listings:</b> 215-665-1234 or <A href="mailto:triclassifieds@phillynews.com">triclassifieds@phillynews.com</A>. <br><br>
+<b>
+Research:</b>
+<ul>
+<li>	Copyright permission: 215-854-4529.
+  
+
+<li>	Genealogical and general research: 215-854-4665.
+  
+<li>	Previous articles, back issues: 215-854-4444 or search our <a href="http://www.philly.com/mld/philly/archives/">7-day or full archives</a>. For more than 100 copies, contact Valeo Intellectual Property: 800-217-7874, <a href="mailto:PhiladelphiaInquirer@ValeoIP.com">PhiladelphiaInquirer@ValeoIP.com</a></li>   
+</ul>
+<P>
+<b>Photo reprints:</b>  215-854-2628.</P><br>
+</table>
+
+
+  <tr> 
+
+
+
+<td width="10" rowspan="2"><IMG height=1
+
+
+
+ alt="" src="/images/common/spacer.gif" width=10 border=0 ></td>
+
+
+
+<td>
+
+
+
+		<table border="0" cellpadding="0" cellspacing="0" width="600">
+
+
+
+		<tr valign="bottom">
+
+
+
+		<td nowrap class="smalltitle"><b>Contact Newsroom Management&nbsp;</b></td>
+
+
+
+		<td width="600"><hr size="1" color="#cccccc" ></td></tr></table>	
+
+<table><tr>
+<td width="10" rowspan="2"><IMG height=1 alt="" src="/images/common/spacer.gif" width=10 border=0 ></td>
+</tr>
+
+<tr><td>
+    
+<br >
+Joseph Natoli, Publisher and Chairman, 215-854-4600<br >
+Amanda Bennett, Editor and Executive Vice President, 215-854-2529<br >
+Anne Gordon,&nbsp;Managing Editor, 215-854-4682 <br>
+Sandra D. Long, Deputy Managing Editor, 215-854-4515 <br >   
+Tom McNamara, Deputy Managing Editor, 215-854-2549 <br >
+Carl Lavin, Deputy Managing Editor, 215-854-4562<br>
+Mary Flannery, Senior Editor/Newsroom Initiatives, 215-854-2592<br>
+
+Matt Golas, Metropolitan Editor, 215-854-5134<br>  
+Chris Satullo, Editor of the Editorial Page, 215-854-5943 <br>  
+Harold Jackson, Deputy Editor of the Editorial Page, 215-854-2555 <br >  
+Acel Moore, Associate Editor, 215-854-4533</P> </td></tr>
+
+<td width="10" rowspan="2"><IMG height=1 alt="" src="/images/common/spacer.gif" width=10 border=0 ></td>
+</tr></table>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+<tr valign="bottom"></tr></table>
+		
+
+<table><tr><td width="10" rowspan="2"><IMG height=1 alt="" src="/images/common/spacer.gif" width=10 border=0 ></td></tr>
+
+<tr>
+<td><!-- content goes here -->
+	  
+</td></tr>
+<tr><td width="10" rowspan="2"><IMG height=1 alt="" src="/images/common/spacer.gif" width=10 border=0 ></td></tr></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="600">	<tr valign="bottom">
+<td nowrap class="smalltitle"><b>Sales and Delivery&nbsp;</b></td>
+<td width="600"><hr size="1" color="#cccccc" ></td></tr></table></TD>
+<td width="10" rowspan="2"><IMG height=1 alt="" src="/images/common/spacer.gif" width=10 border=0 ></td></TR>
+
+<tr>
+<td>
+
+<br>
+<b></b><br >
+For questions or complaints about service, missing sections or billings:<br 
+      > 
+Philadelphia: 215-665-1234 <br 
+      >
+Outside Philadelphia: 800-222-2765 <br 
+      >
+If you don't receive your paper, please call before 10 a.m. daily or by 11:30 a.m. Sunday and we will deliver a replacement. <br ><br >
+Mail Subscriptions: 215-854-4790 <br >
+Newsstand Sales: 215-854-2740 <br 
+      >
+School Delivery: 215-854-5537 <br 
+      >
+
+Hearing Impaired (TDD): 215-854-2630<br 
+      >
+
+<br >
+</td></tr></TBODY></TABLE><p>&nbsp;</p>
+</td><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td></tr></table>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="rightrail" valign="top" align="center" width="160">
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/philly.contact_us/departments_np1;kw=right_top;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=right_top;group=cube;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/philly.contact_us/departments_np1;kw=right_top;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=right_top;group=cube;ord=1109897162578?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/philly.contact_us/departments_np1;kw=right_top;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=right_top;group=cube;ord=1109897162578?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/philly.contact_us/departments_np1;kw=right1;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=right1;group=cube;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/philly.contact_us/departments_np1;kw=right1;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=right1;group=cube;ord=1109897162579?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/philly.contact_us/departments_np1;kw=right1;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=right1;group=cube;ord=1109897162579?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/philly.contact_us/departments_np1;kw=right2;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=right2;group=tower;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/philly.contact_us/departments_np1;kw=right2;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=right2;group=tower;ord=1109897162579?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/philly.contact_us/departments_np1;kw=right2;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=right2;group=tower;ord=1109897162579?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="leftrail" width="134">
+<img src="/images/common/spacer.gif" width="134" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="centerrail" width="100%" align="center">
+<img src="/images/common/spacer.gif" width="450" height="1"/><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/philly.contact_us/departments_np1;kw=footer;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=footer;group=contextual;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/philly.contact_us/departments_np1;kw=footer;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=footer;group=contextual;ord=1109897162580?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/philly.contact_us/departments_np1;kw=footer;c2=contact_list;c3=departments_np1;c4=departments_np1_homepage;pos=footer;group=contextual;ord=1109897162580?" BORDER="0" ></A>
+</NOSCRIPT>
+
+<br/><br/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="rightrail" width="160">
+<img src="/images/common/spacer.gif" width="160" height="1"/></td></tr></table>
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="768"><tr><td rowspan="2" valign="top" class="footer"><a href="http://www.realcities.com" target="_blank"><img src="/images/palette/philly/realcities_logo.gif" width="155" height="57" alt="RealCities" border="0"/></a>
+</td><td align="left" class="footer">
+<span class="lightgreylinks"><a href="/mld/inquirer/"> The Inquirer  |</a> <a href="/mld/dailynews/"> Daily News  |</a> <a href="/mld/philly/sports/"> Sports  |</a> <a href="/mld/philly/entertainment/"> Entertainment  |</a> <a href="http://www.shoplocal.com/philly/new_user_entry.aspx?CityStateZip=19123&AdRef=link02">Shop Local |</a> <a href="/mld/philly/classifieds/"> Classifieds   </a><br><a href="/mld/philly/contact_us/about">About Philly.com |</a> <a href="/mld/philly/contact_us/rc_sites/">About the Real Cities Network |</a> <a href="/mld/philly/contact_us/terms_of_use">Terms of Use & Privacy Statement |</a> <a href="http://www.knightridder.com">About Knight Ridder |</a> <a href="/mld/philly/contact_us/copyright">Copyright  </a><br></span>
+</td></tr></table>
+
+</body>
+</html>
+
+
+

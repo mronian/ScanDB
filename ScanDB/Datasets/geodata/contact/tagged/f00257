@@ -1,0 +1,363 @@
+<DOC>
+<DOCNO>f00257</DOCNO>
+<DOCHDR>http://www.sentara.com/contactus/Default.cfm</DOCHDR>
+<html>
+
+<head>
+<title>Sentara Healthcare - Contact Us </title>
+<script language="Javascript">
+<!--//
+browser_name = navigator.appName;
+browser_version = parseFloat(navigator.appVersion); 
+
+if (browser_name == "Netscape" && browser_version < 2.0)
+        {
+        roll = 'false';
+        }
+else if (browser_name == "Netscape" && browser_version == 2.0)
+        {
+        roll = 'false';
+        }
+else if (browser_name == "Netscape" && browser_version >= 3.0)
+        {
+        roll = 'true';
+        }
+else if (browser_name == "Microsoft Internet Explorer" && browser_version <= 2.0)
+        {
+        roll = 'false';
+        }
+else if (browser_name == "Microsoft Internet Explorer" && browser_version >= 3.0)
+        {
+        roll = 'true';
+        }
+else
+        {
+        roll = 'false';
+        }
+
+function msover(img1,ref1,msg)
+        {
+                if (roll == 'true')
+                        {
+                        document.images[img1].src = ref1;
+                        window.status=msg;                      
+                        }
+        }
+        
+function msout(img1,ref1,msg)
+        {
+                if (roll == 'true')
+                        {
+                        document.images[img1].src = ref1;
+                        window.status=msg;                       
+                        }
+        }
+
+if (roll == 'true')
+                                {
+        b1 = new Image();
+        b1.src="/graphics/in_about_on.gif";
+        b2 = new Image();
+        b2.src="/graphics/in_contact_on.gif";
+        b3 = new Image();
+        b3.src="/graphics/in_employ_on.gif";
+        b4 = new Image();
+        b4.src="/graphics/in_find_on.gif";
+        b5 = new Image();
+        b5.src="/graphics/in_healthy_on.gif";
+        b6 = new Image();
+        b6.src="/graphics/in_home_on.gif";
+        b7 = new Image();
+        b7.src="/graphics/in_hospitals_on.gif";
+        b8 = new Image();
+        b8.src="/graphics/in_news_on.gif";
+        b9 = new Image();
+        b9.src="/graphics/in_plans_on.gif";
+        b10 = new Image();
+        b10.src="/graphics/in_resources_on.gif";
+        b11 = new Image();
+        b11.src="/graphics/in_search_on.gif";
+        b12 = new Image();
+        b12.src="/graphics/in_services_on.gif";
+        b13 = new Image();
+        b13.src="/graphics/in_phone_on.gif";
+        }
+//-->
+</script>
+
+<script Language="JavaScript"><!--
+function makeSure(theForm)
+{
+  var info = 0;
+  if ((theForm.more_info2.checked) || (theForm.more_info3.checked) || (theForm.more_info4.checked) || (theForm.more_info5.checked))
+  { info = 1; 
+  }
+  if (theForm.first_name.value == "")
+  {
+    alert("Please enter a value for the \"First Name\" field.");
+    theForm.first_name.focus();
+    return (false);
+  }
+
+  if (theForm.last_name.value == "")
+  {
+    alert("Please enter a value for the \"Last Name\" field.");
+    theForm.last_name.focus();
+    return (false);
+  }
+
+  if (theForm.email.value == "")
+  {
+    alert("Please enter a value for the \"Email\" field.");
+    theForm.email.focus();
+    return (false);
+  }
+
+  if (theForm.zip.value == "")
+  {
+    alert("Please enter a value for the \"Zipcode\" field.");
+    theForm.zip.focus();
+    return (false);
+  }
+  
+  if ((theForm.work_phone.value == "") && (info == 1))
+  {
+    alert("When \"More Information\" is selected, you must enter a value for the \"Work Phone\" field.");
+    theForm.work_phone.focus();
+    return (false);
+  }
+  
+  if ((theForm.address.value == "") && (info == 1))
+  {
+    alert("When \"More Information\" is selected, you must enter a value for the \"Address\" field.");
+    theForm.address.focus();
+    return (false);
+  }
+  
+  if ((theForm.city.value == "") && (info == 1))
+  {
+    alert("When \"More Information\" is selected, you must enter a value for the \"City\" field.");
+    theForm.city.focus();
+    return (false);
+  }
+  
+  if ((theForm.state.value == "") && (info == 1))
+  {
+    alert("When \"More Information\" is selected, you must enter a value for the \"State\" field.");
+    theForm.state.focus();
+    return (false);
+  }
+  
+  if ((theForm.country.value == "") && (info == 1))
+  {
+    alert("When \"More Information\" is selected, you must enter a value for the \"Country\" field.");
+    theForm.country.focus();
+    return (false);
+  }
+    return (true);
+}
+//--></script>
+
+<meta name="description" content="Sentara Healthcare - Southeastern Virginia and northeastern North Carolina's premier fully integrated, not-for-profit heathcare organization providing a broad range of affordable, high-quality health care services. Sentara has 12,000 employees, six hospitals, more than 2,000 physicians, a full range of health plans, skilled nursing and assisted living centers, ground and air medical transport services, home health and hospice centers, and a variety of other outpatient services.">
+<meta name="keywords" content="health, medical, healthy, heath care, healthcare, hospital, hospitals, hospital system, medicine, physician, physicians, referral, practice, doctor, doctors, Sentara, Sentara Health care, Sentara health system, Sentara Healthcare, Sentara Medical Group, Sentara Bayside Hospital, Sentara Hampton General Hospital, Sentara Leigh Hospital, Sentara Norfolk General Hospital, Williamsburg Community Hospital, home care, home health, home health care, virginia beach, norfolk, hampton roads, virginia, north carolina, managed care, priority, virginia health network, heart, cardiology, cardiac, oncology, quality, family practice, pediatrician, surgeon, opthamologist, psychiatry, neurosurgery, plastic, critical care, orthopedics, orthopeadics, gyn, general medicine, endocrinologgy, oral, otolaryngology, rheumatology, colon, gastroenterology, hematology, pulmonary, cardiovascular, allergy, neonatology, dermatology, radiology, urology, podiatry, emergency, job opportunity, recruiting, physician recruitment, primary care, employment, lab services, clinical lab, clinical pathology, laboratory, immunology, anesthesiology, cardiothoracic surgery, chiropractic, colon surgery, rectal surgery, ent, general practice, infectious disease, internal medicine, maternal-fetal medicine, nephrology, pediatrics, neurology, obgyn, ob/gyn, opthamology, men's health, neuroscience, prostate, prostate cancer, diabetes, breast health, breast cancer, laboratory medicine, lab, asthma, women's health, maternity, cancer, staying healthy, guest services, center of excellence, executive evaluation center, senior services, Sentara mental health management, health plans, optima, optima health plan, optima health insurance company, nursing, nursing jobs">
+</head>
+
+<body bgcolor="#ffffff" TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+<font size="2" face="arial, helvetica">
+
+<table width="600" cellspacing="0" cellpadding="0" border="0">
+  <tr valign="top">
+    <td colspan="3"><table width="600" cellspacing="0" cellpadding="0" border="0">
+      <tr valign="top">
+        <td><a href="/index.html"><img src="/graphics/in_toplogo.gif" border="0" alt="Sentara" WIDTH="145" HEIGHT="57"></a></td>
+        <td><img src="/graphics/title_contactus.gif" border="0" alt="Contact Us" WIDTH="455" HEIGHT="36"><br>
+        <img src="/graphics/in_topspace.gif" border="0" alt="Sentara" WIDTH="19" HEIGHT="21"><a href="/index.html" onmouseover="msover('home','/graphics/in_home_on.gif','Home');return true;" onmouseout="msout('home','/graphics/in_home.gif','');"><img name="home" src="/graphics/in_home.gif" border="0" alt="Home" WIDTH="74" HEIGHT="21"></a><a href="/sitemap/" onmouseover="msover('search','/graphics/in_search_on.gif','Search \&amp; Site Map');return true;" onmouseout="msout('search','/graphics/in_search.gif','');"><img name="search" src="/graphics/in_search.gif" border="0" alt="Search and Site Map" WIDTH="146" HEIGHT="21"></a><a href="/contactus/" onmouseover="msover('contact','/graphics/in_contact_on.gif','Contact Us');return true;" onmouseout="msout('contact','/graphics/in_contact.gif','');"><img name="contact" src="/graphics/in_contact.gif" border="0" alt="Contact Us" WIDTH="107" HEIGHT="21"></a><a href="/about/1800.html" onmouseover="msover('phone','/graphics/in_phone_on.gif','1\-800\-SENTARA');return true;" onmouseout="msout('phone','/graphics/in_phone.gif','');"><img name="phone" src="/graphics/in_phone.gif" border="0" alt="1-800-Sentara" WIDTH="109" HEIGHT="21"></a></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td><img src="/graphics/in_leftspace.gif" border="0" alt="Sentara" WIDTH="21" HEIGHT="317"></td>
+    <td><img src="/graphics/in_lefttop.gif" border="0" alt="Sentara" WIDTH="135" HEIGHT="10"><br>
+        <a href="/about/" onmouseover="msover('about','/graphics/in_about_on.gif','About Sentara');return true;" onmouseout="msout('about','/graphics/in_about.gif','');"><img name="about" src="/graphics/in_about.gif" border="0" alt="About Sentara" WIDTH="135" HEIGHT="34"></a><br>
+<a href="/Peninsula/"onmouseover="msover('peninsula','/graphics/in_peninsula_on.gif','Peninsula');return true;" onmouseout="msout('peninsula','/graphics/in_peninsula.gif','');"><img name="peninsula" src="/graphics/in_peninsula.gif" border="0" alt="Exclusively Peninsula" width="135" height="34"></a><br>
+    <a href="/news/" onmouseover="msover('news','/graphics/in_news_on.gif','News \&amp; Current Events');return true;" onmouseout="msout('news','/graphics/in_news.gif','');"><img name="news" src="/graphics/in_news.gif" border="0" alt="News and Current Events" WIDTH="135" HEIGHT="34"></a><br>
+    <a href="/staying_healthy/" onmouseover="msover('healthy','/graphics/in_healthy_on.gif','Staying Healthy');return true;" onmouseout="msout('healthy','/graphics/in_healthy.gif','');"><img name="healthy" src="/graphics/in_healthy.gif" border="0" alt="Staying Healthy" WIDTH="135" HEIGHT="34"></a><br>
+    <a href="/find_a_doctor/" onmouseover="msover('find','/graphics/in_find_on.gif','Find A Doctor');return true;" onmouseout="msout('find','/graphics/in_find.gif','');"><img name="find" src="/graphics/in_find.gif" border="0" alt="Find A Doctor" WIDTH="135" HEIGHT="34"></a><br>
+    <a href="/hospitals/" onmouseover="msover('hospitals','/graphics/in_hospitals_on.gif','Hospitals');return true;" onmouseout="msout('hospitals','/graphics/in_hospitals.gif','');"><img name="hospitals" src="/graphics/in_hospitals.gif" border="0" alt="Hospitals" WIDTH="135" HEIGHT="34"></a><br>
+    <a href="/facilities_services/" onmouseover="msover('services','/graphics/in_services_on.gif','Facilities \&amp; Services');return true;" onmouseout="msout('services','/graphics/in_services.gif','');"><img name="services" src="/graphics/in_services.gif" border="0" alt="Facilities and Services" WIDTH="135" HEIGHT="34"></a><br>
+    <a href="/employment/" onmouseover="msover('employ','/graphics/in_employ_on.gif','Job Opportunities');return true;" onmouseout="msout('employ','/graphics/in_employ.gif','');"><img name="employ" src="/graphics/in_employ.gif" border="0" alt="Job Opportunities" WIDTH="135" HEIGHT="34"></a><br>
+    <a href="/healthplans/" onmouseover="msover('plans','/graphics/in_plans_on.gif','Health Plans');return true;" onmouseout="msout('plans','/graphics/in_plans.gif','');"><img name="plans" src="/graphics/in_plans.gif" border="0" alt="Health Plans" WIDTH="135" HEIGHT="34"></a><br>
+    <a href="/web_resources/" onmouseover="msover('web','/graphics/in_resources_on.gif','Web Resources');return true;" onmouseout="msout('web','/graphics/in_resources.gif','');"><img name="web" src="/graphics/in_resources.gif" border="0" alt="Web Resources" WIDTH="135" HEIGHT="34"></a></td>
+    </font>
+	
+	
+	
+	<td><font size="2" face="arial, helvetica">&nbsp;</font><table width="447">
+      <tr>
+        <td valign="top"><font size="2" face="arial, helvetica"><!--Start Form--><p>If you would like more
+        information about Sentara or have comments or suggestions for Sentara Online, fill out the
+        form below and hit the send button. We welcome your comments. Before you submit your
+        comment, <a href="contact_guidelines.html">please read and consider a few guidelines</a>.</P>
+ <form ACTION="contact_send.cfm" METHOD="POST" name="contact" onSubmit="return makeSure(this)">
+<input type="hidden" name="TimeOfVisit" value="03/03/2005">
+
+<font face="Arial" size="2" ><p><b>Select the information you would like to receive:</b><br>
+
+
+
+
+<input type="checkbox" name="more_info2" value="Medication_Wallet"> Medication Wallet Card <br>
+<input type="checkbox" name="more_info3" value="Neuro"> Neurosciences Patient &amp; Family Guide <br>
+<input type="checkbox" name="more_info4" value="Smoking_Cessation_Resource_Guide"> 2003 Smoking Cessation Resource Guide <br>
+<input type="checkbox" name="more_info5" value="Patient_Safety_Video">Patient Safety Video<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(Please indicate preferred format in "Comments" area: either VHS Video,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DVD Video, CD Audio or Cassette Audio.)
+
+<br>
+<!--
+	<input type="checkbox" name="more_info5" value="explore"> <a href="http://www.sentara.com/explorehealth/center" target="_blank"><i>ExploreHealth with Sentara</i> Center</a> - Membership Info</font><br>
+-->
+<input type="checkbox" name="more_info6" value="nursing cd"> <a href="http://www.sentara.com/nursing" target="_blank"><i>Sentara Nursing Experience</a></i> CD ROM</font><br>
+<br>
+<font face="Arial" size="2" ><b>Choose an area to direct your question:</b><br>
+
+<input type="Radio" name="area" value="general_employment">  General Employment<br>
+<input type="Radio" name="area" value="nursing_employment"> Nursing Employment<br>
+<input type="Radio" name="area" value="optima_member_services"> Optima Member Services<br>
+<input type="Radio" name="area" value="patient_billing"> Patient Billing<br>
+<input type="Radio" name="area" value="sentara_assisted_living"> Sentara Assisted Living Information/Tour<br>
+<input type="Radio" name="area" value="about_this_web_site"> About this Web Site<br><br>
+<b>An (*) denotes fields that are required for questions.  All information is required for information requests.</b><br><br>
+<table>
+	<tr>
+              </font><font size="2"><td ALIGN="right"><font face="Arial" size="2"><b>First Name*</b></font></td></font>
+              <td><font face="Arial"><input TYPE="text" NAME="first_name" SIZE="20"></font></td>
+              <font size="2" face="arial, helvetica">
+            </tr>
+            <tr>
+              </font><font size="2"><td ALIGN="right"><font face="Arial" size="2"><b>Last Name*</b></font></td></font>
+              <td><font face="Arial"><input TYPE="text" NAME="last_name" SIZE="20"></font></td>
+              <font size="2" face="arial, helvetica">
+            </tr>
+            <tr>
+              </font><font size="2"><td ALIGN="right"><font face="Arial" size="2"><b>E-mail Address*</b></font></td></font>
+              <td><font face="Arial"><input TYPE="text" NAME="email" SIZE="20"></font></td>
+              <font size="2" face="arial, helvetica">
+            </tr>
+            <tr>
+              </font><font size="2"><td ALIGN="right"><font face="Arial" size="2"><b>Day-time Phone</b></font></td></font>
+              <td><font face="Arial"><input TYPE="text" NAME="work_phone" SIZE="20"></font></td>
+              <font size="2" face="arial, helvetica">
+            </tr>
+            <tr>
+              </font><font size="2"><td ALIGN="right"><font face="Arial" size="2"><b>Street Address</b></font></td></font>
+              <td><font face="Arial"><input TYPE="text" NAME="address" SIZE="20"></font></td>
+              <font size="2" face="arial, helvetica">
+            </tr>
+            <tr>
+              </font><font size="2"><td ALIGN="right"><font face="Arial" size="2"><b>City</b></font></td></font>
+              <td><font face="Arial"><input TYPE="text" NAME="city" SIZE="20""></font></td>
+              <font size="2" face="arial, helvetica">
+            </tr>
+            <tr>
+              </font><font size="2"><td ALIGN="right"><font face="Arial" size="2"><b>State or Province</b></font></td></font>
+              <td><font face="Arial"><input TYPE="text" NAME="state" SIZE="15"></font></td>
+              <font size="2" face="arial, helvetica">
+            </tr>
+            <tr>
+              </font><font size="2"><td ALIGN="right"><font face="Arial" size="2"><b>Zip Code*</b></font></td></font>
+              <td><font face="Arial"><input TYPE="text" NAME="zip" SIZE="10"></font></td>
+              <font size="2" face="arial, helvetica">
+            </tr>
+            <tr>
+              </font><font size="2"><td ALIGN="right"><font face="Arial" size="2"><b>Country</b></font></td></font>
+              <td><font face="Arial"><input TYPE="text" NAME="country" SIZE="20"></font></td>
+            </tr>
+          </table>
+</font>
+        </td>
+      </tr>
+    </table>
+    <font size="2" face="arial, helvetica"><div align="left"><table cellspacing="0" cellpadding="0">
+      <tr>
+        <td></td>
+      </tr>
+      </font>
+
+    </table>
+    </div><div align="left"><table cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top" align="left"><font size="2" face="Arial">How did you hear about <a href="http://www.sentara.com">www.sentara.com</a>?</font><br>
+        <select name="how_hear" size="1">
+          <option value="">Please Select From Below </option>
+          <option value="ExploreHealth with Sentara">ExploreHealth with Sentara</option>
+          <option value="Family">Family</option>
+          <option value="Friend">Friend</option>
+          <option value="Health Care Professional">Health Care Professional</option>
+          <option value="Internet Search Engine">Internet Search Engine</option>
+          <option value="1-800-Sentara">1-800-Sentara</option>
+          <option value="Sentara Brochure">Sentara Brochure</option>
+          <option value="Newspaper Ad">Newspaper Ad</option>
+          <option value="Newspaper Article">Newspaper Article</option>
+          <option value="Online Ad">Online Ad</option>
+          <option value="Radio">Radio</option>
+          <option value="TV">TV</option>
+          <option value="Other">Other</option>
+        </select><p><font size="2" face="Arial">Please rate our Web site:<br>
+		
+        <select name="rate" size="1">
+          <option value="">Please Select From Below </option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>(1 being poor; 5 being excellent)</font></td>
+        <td align="center" valign="top"></td>
+      </tr>
+    </table>
+    </div><div align="left"><table cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="left"><font size="2" face="arial, helvetica"><br>
+          Please feel free to leave any comments below:
+        <br>
+        <textarea name="comments" rows="4" cols="35" wrap="physical"></textarea></font></td>
+      </tr>
+	  <tr><td>&nbsp;</td></tr>
+	  <tr>
+	  	<td align="left"><font size="2" face="arial, helvetica"">I would like to receive information from Sentara in the future (via email).<br>
+			<input type="radio" name="receive_info" value="yes">Yes&nbsp;&nbsp;&nbsp;<input type="radio" name="receive_info" value="no">No
+			</td>
+	    </tr>
+		<tr><td>&nbsp;</td></tr>
+    </table>
+    </div><font size="2" face="arial, helvetica">
+      <dd align="center"><input TYPE="submit" VALUE="Send E-mail to Sentara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="reset" value="Reset">
+</form> </dd>
+      <p align="center">Sentara Healthcare<br>
+      <GEO TYPE="US">6015 Poplar Hall Drive, Norfolk, Virginia 23502</GEO><br>
+      Toll-Free: 1-(800) SENTARA or (757)552-7200<br>
+<!--End Form-->      </p>
+      </font><p><font size="2" face="arial, helvetica"><!-- Start Footer --></p>
+      <p align="center"><img src="/graphics/front_url.gif" border="0" alt="www.sentara.com" WIDTH="316" HEIGHT="23"> </p>
+      <hr noshade width="400" align="center">
+      </font><p align="center"><font size="2" face="arial, helvetica"><a href="/about/">About
+      Sentara</a> | <a href="/news/">News &amp; Events</a> | <a href="/staying_healthy/">Staying
+      Healthy</a><br>
+      <a href="/find_a_doctor/">Find a Doctor</a> | <a href="/hospitals/">Hospitals</a> | <a href="/facilities_services/">Facilities &amp; Services</a> | <a href="/employment/">Job
+      Opportunities</a><br>
+      <a href="/healthplans/">Health Plans</a> | <a href="/sitemap/">Search &amp; Site Map</a> |
+      <a href="/web_resources/">Web Resources</a> | <a href="/contactus/">Contact Us</a> </p>
+      <hr noshade width="400" align="center">
+      <p align="center">Copyright © 2003 Sentara Healthcare. All Rights Reserved.<br>
+       Please read our <a href="/disclaimer.html">disclaimer</a>. <br>
+      <img src="/graphics/spacer.gif" width="444" height="2" border="0"> </font></p>
+    
+    </td>
+  </tr>
+</table>
+<!-- End Footer -->
+</body>
+</html>

@@ -1,0 +1,1039 @@
+<DOC>
+<DOCNO>g00385</DOCNO>
+<DOCHDR>http://www.harvardsquare.com/directory.php?id=349&cat=</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+
+<html>
+
+<head>
+
+	<title>Harvard Square: </title>
+
+
+
+</head>
+
+
+
+
+<script language="JavaScript">
+
+window.name="main";
+
+var isNav, isIE, isN6;
+var coll = "";
+var styleObj = "";
+var currSub = "none"
+var name = "none"
+
+
+
+findblank = "images/menu/findblank.gif";
+find = new Array();
+find[0] = "images/menu/businessdirectory.gif";
+find[1] = "images/menu/hotelsrestaurants.gif";
+find[2] = "images/menu/shopsservices.gif";
+find[3] = "images/menu/artsentertainment.gif";
+find[4] = "images/menu/citycommunity.gif";
+
+eventsblank = "images/menu/eventsblank.gif";
+events = new Array();
+events[0] = "images/menu/todaysevents.gif";
+events[1] = "images/menu/eventdate.gif";
+events[2] = "images/menu/eventcat.gif";
+events[3] = "images/menu/eventsannual.gif";
+events[4] = "images/menu/currentnews.gif";
+events[5] = "images/menu/eventspons.gif";
+
+visitorblank = "images/menu/mapsblank.gif";
+visitor = new Array();
+visitor [0] = "images/menu/gettinghere.gif";
+visitor [1] = "images/menu/maps.gif";
+visitor [2] = "images/menu/parkinglocations.gif";
+visitor [3] = "images/menu/tours.gif";
+
+hsquareblank = "images/menu/hsquareblank.gif";
+hsquare = new Array();
+hsquare[0] = "images/menu/history.gif";
+hsquare[1] = "images/menu/literaryhsquare.gif";
+hsquare[2] = "images/menu/squarepersonalities.gif";
+hsquare[3] = "images/menu/sendpostcard.gif";
+hsquare[4] = "images/menu/souvenirstore.gif";
+hsquare[5] = "images/menu/abouthsbablue.gif";
+hsquare[6] = "images/menu/hsbamemberinfo.gif";
+
+hsbablank = "images/menu/hsbablank.gif";
+hsba = new Array();
+hsba[0] = "images/menu/overview.gif";
+hsba[1] = "images/menu/becomemember.gif";
+hsba[2] = "images/menu/eventsponsorship.gif";
+hsba[3] = "images/menu/designcredits.gif";
+hsba[4] = "images/menu/store.gif";
+hsba[5] = "images/menu/contactus.gif";
+
+
+if( navigator.appName == "Netscape"){
+	if ( parseInt( navigator.appVersion ) >= 5 ){
+		isN6 = true;
+		//styleObj = ".style";
+		//coll = "getElementById(";
+		//styleObj = ").style";
+	}
+	else
+		isNav = true;
+	
+}
+else{
+	isIE = true;
+	coll = "all.";
+	styleObj = ".style";
+}
+
+
+
+function getObject( obj ){
+	var theObj, temp;
+	//if( isN6 ){
+		//theObj = document.getElementById( obj )
+		//alert( theObj );
+	//}
+	if(typeof obj == "string"){
+		if( isN6 ){
+			theObj = document.getElementById( obj ).style;
+			//theObj = eval("document."+obj+".style");
+			//alert( theObj );
+		}
+		else
+			theObj = eval("document."+coll+obj+styleObj);
+	}else{
+		theObj = obj;
+	}
+	return theObj;
+}
+
+
+function rollOver( imageName, imageSrc, layer ){
+	
+		if( isNav ){
+			if( layer != "" ){
+				var obj = eval("document."+layer+".document");
+				obj.images[imageName].src = imageSrc;
+			}
+			else
+				document.images[imageName].src = imageSrc;
+		}
+		else{
+			document[imageName].src = imageSrc;
+		}
+}
+
+function findlayers(){
+	for( i=0;i<document.layers.length; i++){
+		alert(document.layers[i]);
+	}
+
+
+}
+
+
+function hide( obj ){
+		var theObj = getObject(obj);
+		theObj.visibility = "hidden";
+
+}
+
+
+
+function show( obj ){
+		var theObj = getObject(obj);
+		theObj.visibility = "visible";
+}
+
+
+function openWin( URL ) { 
+  var newWin = window.open(URL,"newWin","toolbar,scrollbars,width=450,height=470");
+  newWin.focus();
+}
+
+
+function preloadImgs() { 
+
+		
+		img1 = new Image; 
+		img1.src = "images/menu/contacton.gif";
+
+
+
+}
+
+function reloadWin(){
+	document.location = document.location;
+}
+
+function jmp(){
+	d = document.jmpFORM.jmplist
+	document.location.href = "#" + d[d.selectedIndex].value;
+}
+
+function isEmpty( str ){
+
+
+	if(( str == "") || (str == " ")){
+	
+		return true;
+	}
+
+
+}
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i>a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i>d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+function MM_showHideLayers() {
+	var i,p,v,obj,args=MM_showHideLayers.arguments;
+	if( !isNav ){
+			if (document.getElementById){
+				
+				for (i=0; i<(args.length-2); i+=3) {
+					v=args[i+2]; /* this code should not change into the format
+					i<(args.length-1); i+=2)... v=args[i+1], because the changed script doesn't then work in MS IE 5.0 for Windows */
+					//{
+					var Cmenu = document.getElementById(args[i]); 
+					v=(v=='show')?'visible':(v='hide')?'hidden':v; 
+					Cmenu.style.visibility = v;
+				} 
+			//} 
+			} else {
+			
+				//var i,p,v,obj,args=MM_showHideLayers.arguments;
+			  	for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+				    if (obj.style) { 
+						obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; 
+					}
+			    	obj.visibility=v; 
+				}
+			
+			}/* the formal termination, which is not necessary */
+		}else{
+			//alert( "NAV" );
+			//var i,p,v,obj,args=MM_showHideLayers.arguments;
+  			for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    		if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    		obj.visibility=v; }
+		}
+}
+
+
+
+function closeTour(){
+	MM_showHideLayers('openlayer','','hide')
+	MM_showHideLayers('closedlayer','','show')
+}
+function openTour(){
+	MM_showHideLayers('closedlayer','','hide')
+	MM_showHideLayers('openlayer','','show')
+}
+
+function submitQS(){
+	d=document.QSFORM.quicksearch;
+	if( d.options[d.selectedIndex].value != "" ){
+		//alert(d.options[d.selectedIndex].value);
+		document.location = d.options[d.selectedIndex].value;
+	}
+	else{
+		alert("Please select a specific page to view.");
+		//return false;
+	
+	}
+	//document.QSFORM.quicksearch.options[].value
+
+}
+
+function sortbycat(cat){
+	d=document.sortform.sortby;
+
+	if( d.options[d.selectedIndex].value != "" ){
+		URL = "directory.php?subcat=" + d.options[d.selectedIndex].value + "&cat=" + cat;
+		document.location = URL;
+	}
+	//document.QSFORM.quicksearch.options[].value
+
+}
+
+var timer, timer2, tempSub;
+pauselength = 500;
+tempSub="";
+currentChoice = "";
+currentMenu = "";
+home = true;
+
+function mover( str ){
+
+	//if its not the homepage
+	
+	//clear timeout
+	window.clearTimeout(timer);
+	
+	//hide existing menu if there is one
+	if( currentChoice != "" ){
+		closeMenus();
+	}
+	//make the items visable
+	showMenus( str );
+	currentChoice = str;
+
+
+
+}
+
+function mout( imageName, imageSrc ){
+
+	//rollOver( imageName, imageSrc, "" );
+	//start timer - the timer will expire and close the submenu if not selected first
+	timer = setTimeout( "closeMenus()", pauselength );
+
+
+}
+
+function closeMenus(){
+	layer = "";
+	//if its not the homepage
+
+	if( !home ){
+		layer = currentMenu + "menu";
+	}
+
+	choice = currentChoice;
+	
+	
+	if( currentChoice != "" ){
+		spacer = eval(choice+"blank");
+		temp = eval(choice);
+		for( i=0;i<temp.length;i++){
+			rollOver( choice + i, spacer, layer );	
+		}
+	}
+
+}
+
+function closeMenuLayers(){
+	hide( currentMenu + "menu" )
+	show( firstMenu + "menu" );
+	currentMenu = firstMenu;
+	window.clearTimeout(timer);
+
+}
+
+
+function showMenus( choice ){
+	
+	layer = "";
+
+	if( !home ){
+		layer = currentMenu + "menu";
+	}
+	//temp = new Array();
+	tempA = eval(choice);
+	//alert(temp);
+	for( i=0;i<tempA.length;i++){
+		//alert("inside loop");
+		rollOver( choice + i, tempA[i], layer );	
+	}
+
+
+}
+
+function loadMenus(){
+	
+	for( i=0;i<find.length;i++){
+		MM_preloadImages(find[i]);	
+	}
+	for( i=0;i>events.length;i++){
+		MM_preloadImages(events[i]);	
+	}
+	for( i=0;i<visitor.length;i++){
+		MM_preloadImages(visitor[i]);	
+	}
+	for( i=0;i>hsquare.length;i++){
+		MM_preloadImages(hsquare[i]);	
+	}
+	for( i=0;i<hsba.length;i++){
+		MM_preloadImages(hsba[i]);	
+	}
+
+
+}
+
+function WindowWidth() {
+  var myWidth = 0, myHeight = 0;
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else {
+    if( document.documentElement &&
+        ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+      //IE 6+ in 'standards compliant mode'
+      myWidth = document.documentElement.clientWidth;
+      myHeight = document.documentElement.clientHeight;
+    } else {
+      if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+        //IE 4 compatible
+        myWidth = document.body.clientWidth;
+        myHeight = document.body.clientHeight;
+      }
+    }
+  }
+  return myWidth;
+  //return myHeight;
+}
+
+function placeBanners(){
+	if( WindowWidth() >= 945 ){
+		place( "banners", 770, 10 );
+	}
+	show( "banners" );
+
+}
+
+function place( obj, x, y ){
+		
+		x = parseInt( x );
+		y = parseInt( y );
+		
+		var theObj = getObject(obj);
+		if( isN6 ){
+			theObj.left = x + "px";
+			theObj.top = y + "px";
+		}
+		else{
+			theObj.left = x;
+			theObj.top = y;
+		}
+}
+
+firstMenu = "find";
+currentMenu = "find";
+
+
+function initMenu(obj){
+	
+	placeBanners();
+	loadMenus();
+	home = false;
+	firstMenu = obj;
+	currentMenu = obj;
+	showMenus( firstMenu );
+	show( obj + "menu" );
+	
+	
+	
+	
+
+}
+
+function smover( obj ){
+
+	window.clearTimeout(timer2);
+	hide( currentMenu + "menu" )
+	show( obj + "menu" );
+	currentMenu = obj;
+	showMenus( obj );
+}
+
+
+function smout( obj ){
+	//alert("SMOUT");
+	timer2 = setTimeout( "closeMenuLayers()", pauselength );
+}
+
+currentLabel="mainlabel";
+firstLabel="mainlabel";
+
+function initLabel(){
+	MM_showHideLayers('mainlabel','','show');
+	
+}
+
+function zoomIn( num ){
+	//hidecurrent layer
+	MM_showHideLayers(currentLabel,'','hide');
+	//now this is current label
+	currentLabel="label" + num;
+	//show text layer
+	//alert(currentLabel);
+	MM_showHideLayers(currentLabel,'','show');
+
+
+
+}
+
+function zoomOut(){
+	MM_showHideLayers(currentLabel,'','hide');
+	MM_showHideLayers('mainlabel','','show');
+	currentLabel="mainlabel";
+}
+
+function enlargePic(picid,gallery){
+	URL = "zoom.php?gallery=" + gallery + "&id=" + picid;
+	var newWin = window.open(URL,"newWin","toolbar,width=500,height=500");
+  	newWin.focus();
+
+
+}
+
+function launchSpecial(URL){
+	var newWin = window.open(URL,"newWin","toolbar,scrollbars,width=610,height=500");
+  	newWin.focus();
+
+
+}
+
+function membForm(){
+	URL = "membform.php";
+	var newWin = window.open(URL,"newWin","toolbar,width=500,height=500");
+  	newWin.focus();
+
+
+}
+currentMap = "";
+function showMapInfo(num){
+	//hide existing
+	if( currentMap != "" ){
+		hide( "maptext" + currentMap );
+	}
+	//now show this one
+	show( "maptext" + num );
+	currentMap = num;
+
+
+}
+
+function dirPic(busid){
+	URL = "dirpic.php?id=" + busid;
+	var newWin = window.open(URL,"newWin","toolbar,width=500,height=500");
+  	newWin.focus();
+
+
+}
+</script>
+<style type="text/css">
+
+.banners{position:absolute; top:248px; left:27px; visibility:hidden;}
+.bodycopy{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: black; margin-left:20px; margin-right:10px;}
+.homecopy{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: black; margin-top:5px; margin-right:5px; margin-right:2px;}
+.copy{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: black}
+.calcopy{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: black}
+.datetext{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color:white; font-weight:bold; margin:5px;}
+.alert{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #E02A06; padding:5px;}
+.boldred{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #E02A06; font-weight:bold;}
+.neweventtitle{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; font-weight:bold; font-decoration:none;}
+.eventtitle{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 19px; color: #E9A31F; font-weight:bold; font-decoration:none;}
+.eventtitle2{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 19px; color: #999999; font-weight:bold; font-decoration:none;}
+.eventlocale{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 17px; color: #666666; font-weight:bold; font-decoration:none;}
+.contactinfo{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 17px; color: #666666; font-weight:bold; font-decoration:none;}
+.copyright{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #333333}
+.closedfolder{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #EC7316; font-weight:bold; font-decoration:none;}
+.openfolder{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #E02A06; font-weight:bold; font-decoration:none;}
+.closedsubfolder{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #EC7316; font-weight:bold; font-decoration:none;}
+.opensubfolder{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #E02A06; font-weight:bold; font-decoration:none;}
+.subtitle{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; font-weight:bold;}
+.selected{text-decoration:none; color:#666666;}
+.parkingtitle{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #006699; font-weight: bold;}
+.parkingadd{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #666666;}
+.greylabel{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight:bold; color: #BFAD18;}
+a{color:#EC7316; text-decoration:none;}
+p a{color:#EC7316; text-decoration:none;}
+td a{color:#EC7316; text-decoration:none;}
+a:visited{color:#EC7316; text-decoration:none;}
+.topmenu{position:absolute; top:0px; left:0px; visibility:hidden;}
+.picholder{position:relative; width:697px; visibility:visible;}
+.picclosed{position:absolute; top:0px; left:0px; visibility:visible; width:697px;}
+.picopen{position:absolute; top:0px; left:0px; visibility:hidden; width:697px;}
+body {  background-image: url(images/common/longbgstripe.gif); background-repeat: repeat-y}
+.mapholder{position:relative; width:489px; visibility:visible;}
+.smmapholder{position:relative; width:324px; visibility:visible;}
+.labbelholder{position:relative; width:231px; visibility:visible;}
+.whitelabel{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 19px; color: white; font-weight:bold; font-decoration:none;}
+.smwhitelabel{text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: white; font-weight:bold; font-decoration:none;}
+.placedlabel{position:absolute; top:10px; left:10px; visibility:hidden; width:215px; }
+.required {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #CC0000}
+.label {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #333333; font-weight: bold}
+.disc {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #333333}
+.header {  font-family: Arial, Helvetica, sans-serif; font-size: 16pt; font-weight: bold; color: #CC9933}
+.icontext{text-decoration:none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:9.5px; color:white; font-weight:bold;}
+.inpt {background-color:#CCCCCC; border:0px;}
+</style>
+
+<body bgcolor="#E02A06" onresize = "reloadWin();" bgcolor="#FFFFFF" onLoad="MM_preloadImages('images/phototours/picture1.jpg', 'images/phototours/picture1.jpg', 'images/phototours/picture1.jpg');initMenu('find')" background="images/common/bgroundtile.gif" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<span class="topmenu" id="findmenu"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left"> 
+    <td> 
+      <table border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td><img src="images/common/spacer.gif" width="22" height="8"></td>
+          <td><a href="../index.php"><img src="images/common/insidepic.gif" width="159" height="159" border="0"></a></td>
+          <td align="left" valign="bottom"> 
+            <table width="158" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><a onMouseOver="smover('find');" onMouseOut="smout('find');"  href="#"><img src="images/menu/find.gif" width="158" height="40" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('find');" onMouseOut="smout('find');"  href="directory.php"><img name="find0" src="images/menu/findblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('find');" onMouseOut="smout('find');"  href="directory.php?parent=HOTELS+%26+B%26Bs&cat=hotels"><img name="find1" src="images/menu/findblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('find');" onMouseOut="smout('find');"  href="directory.php?parent=SHOPS+%26+SERVICES&cat=shop"><img name="find2" src="images/menu/findblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('find');" onMouseOut="smout('find');"  href="directory.php?parent=ARTS+%26+ENTERTAINMENT&cat=arts"><img name="find3" src="images/menu/findblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('find');" onMouseOut="smout('find');"  href="directory.php?parent=CITY+%26+COMMUNITY&cat=city"><img  name="find4" src="images/menu/findblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('find');" onMouseOut="smout('find');"  href="#"><img src="images/menu/findblank.gif" width="158" height="28" border="0"></a></td>
+              </tr>
+            </table>
+          </td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('events');" onMouseOut="smout('');"><img src="images/menu/smevents.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('visitor');" onMouseOut="smout('');"><img src="images/menu/smvisitor.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('hsquare');" onMouseOut="smout('');"><img src="images/menu/smabouthsquare.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="parking.php"><img src="images/menu/smparking.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="top"><img src="images/common/spacer.gif" width="39" height="39" border="0"></td>
+        </tr>
+      </table>
+    </tr>
+      </table></span>
+
+<span class="topmenu" id="eventsmenu">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left"> 
+    <td> 
+      <table border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td><img src="images/common/spacer.gif" width="22" height="8"></td>
+          <td><a href="../index.php"><img src="images/common/insidepic.gif" width="159" height="159" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('find');" onMouseOut="smout('');"><img src="images/menu/smfind.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"> 
+            <table width="158" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><a onMouseOver="smover('events');" onMouseOut="smout('events');"  href="#"><img src="images/menu/events.gif" width="158" height="25" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('events');" onMouseOut="smout('events');"  href="events.php"><img name="events0" src="images/menu/eventsblank.gif" width="158" height="20" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('events');" onMouseOut="smout('events');"  href="events.php"><img  name="events1" src="images/menu/eventsblank.gif" width="158" height="20" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('events');" onMouseOut="smout('events');"  href="eventcat.php"><img  name="events2" src="images/menu/eventsblank.gif" width="158" height="20" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('events');" onMouseOut="smout('events');"  href="eventcat.php?catid=1"><img name="events3" src="images/menu/eventsblank.gif" width="158" height="20" border="0"></a></td>
+              </tr>
+			  <tr> 
+                <td><a onMouseOver="smover('events');" onMouseOut="smout('events');"  href="news.php"><img name="events4" src="images/menu/eventsblank.gif" width="158" height="20" border="0"></a></td>
+              </tr>
+			  <tr> 
+                <td><a onMouseOver="smover('events');" onMouseOut="smout('events');"  href="sponsor.php"><img name="events5" src="images/menu/eventsblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr><td><a onMouseOver="smover('events');" onMouseOut="smout('events');"  href="#"><img src="images/menu/eventsblank.gif" width="158" height="15" border="0"></a></td>
+        </tr>
+            </table>
+          </td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('visitor');" onMouseOut="smout('');"><img src="images/menu/smvisitor.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('hsquare');" onMouseOut="smout('');"><img src="images/menu/smabouthsquare.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="parking.php"><img src="images/menu/smparking.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="top"><img src="images/common/spacer.gif" width="39" height="39" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></span>
+
+<span class="topmenu" id="visitormenu">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left"> 
+    <td> 
+      <table border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td><img src="images/common/spacer.gif" width="22" height="8"></td>
+          <td><a href="../index.php"><img src="images/common/insidepic.gif" width="159" height="159" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('find');" onMouseOut="smout('');"><img src="images/menu/smfind.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('events');" onMouseOut="smout('');"><img src="images/menu/smevents.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"> 
+            <table width="158" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><a onMouseOver="smover('visitor');" onMouseOut="smout('visitor');"  href="#"><img src="images/menu/visitorinformation.gif" width="158" height="25" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('visitor');" onMouseOut="smout('visitor');"  href="gettinghere.php"><img name="visitor0" src="images/menu/mapsblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('visitor');" onMouseOut="smout('visitor');"  href="maps.php"><img  name="visitor1" src="images/menu/mapsblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('visitor');" onMouseOut="smout('visitor');"  href="parking.php"><img name="visitor2" src="images/menu/mapsblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('visitor');" onMouseOut="smout('visitor');"  href="tours.php"><img name="visitor3" src="images/menu/mapsblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('visitor');" onMouseOut="smout('visitor');"  href="#"><img src="images/menu/mapsblank.gif" width="158" height="61" border="0"></a></td>
+              </tr>
+            </table>
+          </td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('hsquare');" onMouseOut="smout('');"><img src="images/menu/smabouthsquare.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="parking.php"><img src="images/menu/smparking.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="top"><img src="images/common/spacer.gif" width="39" height="39" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></span>
+
+<span class="topmenu" id="hsquaremenu">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left"> 
+    <td> 
+      <table border="0" cellspacing="5" cellpadding="0">
+        <tr> 
+          <td><img src="images/common/spacer.gif" width="22" height="8"></td>
+          <td align="left" valign="bottom"><a href="../index.php"><img src="images/common/insidepic.gif" width="159" height="159" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('find');" onMouseOut="smout('');"><img src="images/menu/smfind.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('events');" onMouseOut="smout('');"><img src="images/menu/smevents.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('visitor');" onMouseOut="smout('');"><img src="images/menu/smvisitor.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"> 
+            <table width="158" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><a onMouseOver="smover('hsquare');" onMouseOut="smout('hsquare');"  href="#"><img src="images/menu/abouthsquare.gif" width="158" height="25" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsquare');" onMouseOut="smout('hsquare');"  href="history.php"><img name="hsquare0" src="images/menu/hsquareblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsquare');" onMouseOut="smout('hsquare');"  href="literary.php"><img name="hsquare1" src="images/menu/hsquareblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsquare');" onMouseOut="smout('hsquare');"  href="personalities.php"><img name="hsquare2" src="images/menu/hsquareblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsquare');" onMouseOut="smout('hsquare');"  href="postcard.php"><img name="hsquare3" src="images/menu/hsquareblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsquare');" onMouseOut="smout('hsquare');"  href="store.php"><img name="hsquare4" src="images/menu/hsquareblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+			  <tr> 
+                <td><a onMouseOver="smover('hsquare');" onMouseOut="smout('hsquare');"  href="mission.php"><img name="hsquare5" src="images/menu/hsquareblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+			  <tr> 
+                <td><a onMouseOver="smover('hsquare');" onMouseOut="smout('hsquare');"  href="member.php"><img name="hsquare6" src="images/menu/hsquareblank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsquare');" onMouseOut="smout('hsquare');"  href="#"><img src="images/menu/hsquareblank.gif" width="158" height="8" border="0"></a></td>
+              </tr>
+            </table>
+          </td>
+          <td align="left" valign="bottom"><a href="parking.php"><img src="images/menu/smparking.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="top"><img src="images/common/spacer.gif" width="39" height="39" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></span>
+
+<span class="topmenu" id="hsbamenu">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="left"> 
+    <td> 
+      <table border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td><img src="images/common/spacer.gif" width="22" height="8"></td>
+          <td><a href="../index.php"><img src="images/common/insidepic.gif" width="159" height="159" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('find');" onMouseOut="smout('');"><img src="images/menu/smfind.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('events');" onMouseOut="smout('');"><img src="images/menu/smevents.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('visitor');" onMouseOut="smout('');"><img src="images/menu/smvisitor.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"><a href="#" onMouseOver="smover('hsquare');" onMouseOut="smout('');"><img src="images/menu/smabouthsquare.gif" width="78" height="78" border="0"></a></td>
+          <td align="left" valign="bottom"> 
+            <table width="158" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><a onMouseOver="smover('hsba');" onMouseOut="smout('hsba');"  href="#"><img src="images/menu/aboutthehsba.gif" width="158" height="25" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsba');" onMouseOut="smout('hsba');"  href="mission.php"><img name="hsba0" src="images/menu/hsbablank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsba');" onMouseOut="smout('hsba');"  href="member.php"><img name="hsba1" src="images/menu/hsbablank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsba');" onMouseOut="smout('hsba');"  href="sponsor.php"><img name="hsba2" src="images/menu/hsbablank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsba');" onMouseOut="smout('hsba');"  href="credits.php"><img name="hsba3" src="images/menu/hsbablank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsba');" onMouseOut="smout('hsba');"  href="store.php"><img name="hsba4" src="images/menu/hsbablank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsba');" onMouseOut="smout('hsba');"  href="contact.php"><img name="hsba5" src="images/menu/hsbablank.gif" width="158" height="18" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td><a onMouseOver="smover('hsba');" onMouseOut="smout('hsba');"  href="#"><img src="images/menu/hsbablank.gif" width="158" height="26" border="0"></a></td>
+              </tr>
+            </table>
+          </td>
+          <td align="left" valign="top"><img src="images/common/spacer.gif" width="39" height="39" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</span>
+<span class="banners" id="banners"></span>
+<table cellpadding="0" cellspacing="0" border="0" width="700" height="100%"><tr><td align="left" valign="top">
+
+<table width="689" border="0" cellspacing="0" cellpadding="0" align="left">
+
+  <tr> 
+
+	<td width="31"><img src="images/common/spacer.gif" width="31" height="1"></td>
+
+    <td width="159"><img src="images/common/spacer.gif" width="159" height="168"></td>
+
+    <td width="5"><img src="images/common/spacer.gif" width="5" height="5"></td>
+
+    <td width="494">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+  	<td width="31"><img src="images/common/spacer.gif" width="31" height="1"></td>
+
+    <td width="159" align="left" valign="top"><img src="images/common/insidelogo.gif" width="157" height="24"></td>
+
+    <td width="5">&nbsp;</td>
+
+    <td width="494">
+
+      <table width="490" border="0" cellspacing="0" cellpadding="0">
+
+        <tr> 
+
+          <td bgcolor="#E02A06"><img src="images/titles/find.gif" width="28" height="19"></td>
+
+        </tr>
+
+      </table>
+
+       <img src="images/titles/businessdirectory.gif" width="452" height="38" alt="" border="0">
+
+       
+
+	
+	
+
+	
+	
+
+	
+
+	  
+
+	 <a href="javascript:window.history.back()"><img src="images/buttons/back.gif" width="46" height="13" alt="" border="0"></a>
+
+		 
+
+	  
+
+	  </td>
+
+  </tr>
+
+  <tr>
+
+  	<td width="31"><img src="images/common/spacer.gif" width="31" height="1"></td>
+
+    <td width="159" align="left" valign="top">&nbsp;</td>
+
+    <td width="5">&nbsp;</td>
+
+    <td width="494" align="left" valign="top">
+
+	
+	
+
+
+
+	</td>
+
+  </tr>
+
+  <tr> 
+
+  	<td width="31"><img src="images/common/spacer.gif" width="31" height="1"></td>
+
+    <td width="159" align="left" valign="top">
+			
+
+		
+		
+				
+		
+				
+		
+		
+		
+		
+					
+		
+	</td>
+
+    <td width="5">&nbsp;</td>
+
+    <td width="494" align="left" valign="top"> 
+
+	 <div class="bodycopy">
+
+	  
+	  
+
+	  <p><span class="eventtitle">Tommy's Famous New York Pizza</span><br> <span class="contactinfo">49 Mt. Auburn Street<br>Cambridge, MA  02138<br></span><b>Phone:</b> 617-497-4849<br><b>Web:</b> <b><a href="http://www.campusfood.com" target="_blank">http://www.campusfood.com</a></b></p><p class="disc"><b>Hours:</b><br>7 Days a Week 11am-2am</p><p>$7.00 minimum order<br />
+10% Off the purchase of over $50<br />
+FREE DELIVERY!<br />
+             EVERY DAY SPECIALS<br />
+<br />
+Super Special-FREE-2 liter soda w/purchase of Large cheese pizza w/ 1 Topping or more.<br />
+<br />
+Double Special-2 large cheese pizzas w/ 1 topping each. $15.99<br />
+<br />
+Lunch Special-Medium cheese pizza w/ 1 topping and 20 oz soda or 10 inch Super Sub w/ small fries and a can of soda. $6.99<br />
+<br />
+Money Saver- $3.00 off Any large cheese pizza w/ 2 toppings or more.<br />
+<br />
+Family Special- Large cheese pizza w/ 1 topping plus large chicken wings, garden salsd & 2 ltr. soda. $21.99<br />
+<br />
+Dinner Special- 1 large cheese pizza w/ 1 topping small chicken or buffalo wings & 2 ltr. soda. $14.99<br />
+<br />
+WE DO CATERING<br />
+ONE COUPON PER CUSTOMER-MUST MENTION COUPON WHEN ORDERING- DELIVERY ONLY!</p> 
+
+        
+
+      
+
+	  
+
+	  </div>
+
+	  
+	  </td>
+
+  </tr>
+
+
+
+</table>
+
+
+
+
+
+</td></tr>
+
+
+
+<tr><td align="left" valign="bottom">
+
+<table width="689" border="0" cellspacing="0" cellpadding="0" align="left">
+
+  <tr valign="top" height="58" align="right">
+
+  	 <td width="31"><img src="images/common/spacer.gif" width="31" height="1"></td>
+
+    <td width="658"><!--
+<br>
+<div class="picholder">
+<span class="picopen" id="openlayer" name="openlayer">
+<table border="0" cellspacing="3" cellpadding="0" align="right">
+  <tr> 
+    <td><a href="javascript:closeTour();"><img src="images/labels/lessphotos.gif" width="123" height="48" border="0"></a></td>
+    <td><img src="images/phototours/picture1.jpg" width="87" height="48"></td>
+    <td><img src="images/phototours/picture1.jpg" width="87" height="48"></td>
+    <td><img src="images/phototours/picture1.jpg" width="87" height="48"></td>
+    <td><img src="images/phototours/picture1.jpg" width="87" height="48"></td>
+	<td><img src="images/common/spacer.gif" height="1" width="44"></td>
+  </tr>
+</table>
+</span>
+
+<span class="picclosed" id="closedlayer" name="closedlayer">
+<table border="0" cellspacing="3" cellpadding="0" align="right">
+  <tr> 
+    <td><a href="javascript:openTour();"><img src="images/labels/morephotos.gif" width="123" height="48" border="0"></a></td>
+    <td><img src="images/phototours/picture1.jpg" width="87" height="48"></td>
+	<td><img src="images/common/spacer.gif" height="1" width="44"></td>
+  </tr>
+</table>
+</span>
+</div>
+--></td>
+
+  </tr>
+
+  <tr>
+
+  <td width="31"><img src="images/common/spacer.gif" width="31" height="1"></td>
+
+    <td width="658" align="center"><p>&nbsp;</p>
+<script language="JavaScript">
+// Demonstrates the typical format for date and time info derived form date()
+// Create a varible with the current data info
+var right_now=new Date();
+var right_year=right_now.getYear();
+if (right_year < 2000) 
+right_year = right_year + 1900; 
+
+</script>
+<table width="699" border="0" cellspacing="0" cellpadding="0"><tr>
+<td width="200"></td>
+<td width="499"><div class="copyright">Copyright &copy; 1996-<script language="javascript">document.write( right_year );</script>. Harvard Square Business Association. All rights reserved. 
+<br>
+ Website design and development by <a href="http://www.curryinteractive.com" target="_blank">Curry Intractive</a>. <a href="credits.php">Credits</a></div>
+&nbsp;<br></td>
+</tr></table></td>
+
+  </tr>
+
+</table>
+
+
+
+
+
+
+
+</td></tr></table>
+
+</body>
+
+</html>
+

@@ -1,0 +1,859 @@
+<DOC>
+<DOCNO>f00753</DOCNO>
+<DOCHDR>http://www.telecampus.utsystem.edu/index.cfm/4,0,62,94,html</DOCHDR>
+
+	
+
+
+	
+	
+	
+
+
+
+
+
+	
+
+
+
+	
+	
+
+
+
+
+
+	
+		
+	
+
+
+	
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<style>
+	body { text-align: center; }
+</style>
+
+<script type="text/javascript" language="javascript" src="/forms/bcheck/detectBrowser.js"></script>
+<script language="Javascript" type="text/javascript">
+<!--
+
+
+
+	// redirect older bowsers that are not standards compliant by using the getElementById function (only supported by new browsers)
+	if (!document.getElementById) {
+	 top.location.replace('/forms/browsercheck_upgrade.cfm');
+	}
+
+
+// variables used in fncIsClientOK below
+var isBrowserOK = false;
+var isPlatformOK = false;
+var isClientOK = false;  	
+
+function fncIsClientOK() {      
+	// this function checks the browser and OS (platform) based on the javascript functions included above in "detectBrowser.js"
+	if (typeof(fncDetectPlatform) == "function") {
+		fncDetectPlatform();
+
+		if (oPlatform.isWin || oPlatform.isMac) {
+			isPlatformOK = true;
+
+			if (typeof(fncDetectBrowser) == "function") {
+				fncDetectBrowser();
+
+				if (oPlatform.isMacOS9) {
+					if (oBrowser.isIE5Up || oBrowser.isNav6 || oBrowser.isNav7Up) {
+						isBrowserOK = true;
+					}
+				} else if (oPlatform.isMacOSX) {
+					if (oBrowser.isIE5Up || oBrowser.isNav6 || oBrowser.isNav7Up) {
+						isBrowserOK = true;
+					}
+				} else if (oPlatform.isWin) {
+					if (oBrowser.isIE5Up || oBrowser.isNav7Up) {
+						isBrowserOK = true;
+					}
+				}
+			}
+		}
+	}
+
+	if (isPlatformOK && isBrowserOK) {
+  		isClientOK = true;   	  
+	}
+}	
+
+
+	// redirect any older browsers that were not caught by the getElementById check above
+	fncIsClientOK();
+	if (!isClientOK) {
+		//top.location.replace('/forms/browsercheck_upgrade.cfm'); // commented out
+	}
+
+//-->
+</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Contact Information - uttc (UTTC): Online degrees and courses from The University of Texas System</title>
+<meta name="copyright" content="copyright 2005. uttc - www.telecampus.utsystem.edu">	
+<meta name="author" content="uttc">
+<meta name="description" content="Online courses and degree programs from The University of Texas System via the award-winning UT TeleCampus (UTTC).">
+<meta name="keywords" content="UT Telecampus, UTTC, University of Texas Telecampus, Online Degree, Telecampus, UT, MBA Online, University of Texas, Learn Online, Distance Education, Online MBA, online graduate degrees, Online Graduate School, Distance Degrees, The University of Texas System, master degree online, Internet college Course, Education online, online college class, Distance learning Degree, online texas university, distance education master degree, Educational Technology, master of education, MPA Online, public administration degree, Digital Library, accredited online university, online master degree program, texas undergraduate courses, online certifications, distance learning texas, Kinesiology degree, RN to BSN, Master Reading Teacher, teaching English as a Second Language, alternative teacher certification, texas teacher certification, online Nursing Course, master degree education online, taks test prep, Superintendent Certification, Chess in Education, Master of Science in Technology, Human Resource Development, Bachelor’s Completion, criminal justice degree online, criminology degree, GenEd, Dual Credit, Curriculum and Instruction, distance education master degree, texas online education, www.telecampus.utsystem.edu">
+<meta name="generator" content="AssetNow Professional 2.8r4 (Windows) build 11082003 - http://www.assetnow.com">
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/standard.css" title="standard" id="styleLink">
+<link rel="stylesheet" type="text/css" media="print" href="/styles/print.css" title="print">
+
+<!-- Learn online via the award-winning UT TeleCampus (UTTC) - online degrees and courses from The University of Texas System. The UT TeleCampus is the support center for online learning among the 15 University of Texas System campuses and research facilities. Our online degrees and courses can be completed entirely at a distance and meet the same high-quality academic standards as their onsite equivalents. The UT TeleCampus provides everything you need to participate as an online learner. The University of Texas offers the following completely online: MBA Online; Master of Education in Educational Technology; Master's Degree in Kinesiology; RN to BSN; Graduate Certificate Nursing Education; ATCP; Master's in Curriculum and Instruction (includes the ESL Endorsement Courses and Master Reading Teacher Certification); Master of Science in Technology / HRD option; Master of Public Administration; undergraduate GenEd courses. Our programs are collaborative in nature allowing you to take courses from the following campuses via the internet: UT Arlington, UT Austin, UT Brownsville, UT Dallas, UT El Paso, UT Pan American, UT Permian Basin, UT San Antonio, UT Tyler, UT Southwestern Medical Center, UT Medical Branch, UT Health Science Center, M.D. Anderson Cancer Center, UT Health Center.-->
+
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" onload="bodyLoad();">
+
+
+<script language='JavaScript'>
+<!-- hide this script from non-javascript-enabled browsers
+// function to pop contact form window 
+function winopen(){
+contact=open('/contactform/index.cfm','ContactWindow','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=yes,width=480,height=460').focus();
+}
+
+// email address validation function
+function testemail(TheForm,TheField,TheValue) {
+  // are regular expressions supported?
+  var supported = 0;
+  if (window.RegExp) {
+    var tempStr = "a";
+    var tempReg = new RegExp(tempStr);
+    if (tempReg.test(tempStr)) supported = 1;
+  }
+  if (!supported) 
+    return (TheValue.indexOf(".") > 2) && (TheValue.indexOf("@") > 0);
+  var r1 = new RegExp("(@.*@)|(\\.\\.)|(@\\.)|(^\\.)");
+  var r2 = new RegExp("^.+\\@(\\[?)[a-zA-Z0-9\\-\\.]+\\.([a-zA-Z]{2,3}|[0-9]{1,3})(\\]?)$");
+  return (!r1.test(TheValue) && r2.test(TheValue));
+}
+// stop hiding -->
+</script>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a name="page_top"></a><a name="top"></a>
+<form name="frmSearch" id="frmSearch" method="get" action="http://google.utsystem.edu/search">
+
+	
+	
+		
+	
+	
+		
+		<script type="text/javascript" language="javascript">
+			function bodyLoad() {
+				
+					if (oBrowser.isIE5Up && !oBrowser.isIE6) {
+						document.getElementById("divWrapper").style.width = "741px";
+						document.getElementById("divMain").style.width = "556px";
+						document.getElementById("divFooterWrapper").style.width = "741px";
+						document.getElementById("divFooter").style.width = "741px";
+					}
+				
+			}
+		</script>
+		
+		<div id="divOuterContainer">
+		<div id="divMainTable">
+			<div id="divHead">
+				<div id="divLogo">
+					
+						<a href="/"><img src="/images/logo_notext.jpg" border="0" /></a>
+						<p>Online courses and degrees from The University of Texas System</p>
+					
+				</div>
+				<div id="divShortcuts">
+					Student shortcuts: 
+					
+						<a href="/index.cfm/4,651,html">Course Login</a>
+						<a href="/index.cfm/4,655,html" title="TeleCampus Information System">TIS</a>
+						<a href="/index.cfm/4,0,76,81,html">Academic Calendars</a>
+					
+				</div>
+			</div>
+			
+				<div id="divWrapper">
+			
+				<div id="divNav">
+					
+
+	
+	
+
+
+	
+
+
+
+
+
+	
+
+
+
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<table class="clsNavTable" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td id="tdCategories" class="clsNavCategories">
+	
+			
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<p><a href="/index.cfm/4,0,82,html" title="">Catalog</a></p>
+				
+			
+						
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<p><a href="/index.cfm/4,0,76,html" title="">Enrollment</a></p>
+				
+			
+						
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<p><a href="/index.cfm/4,0,64,html" title="">UTTC Digital Library</a></p>
+				
+			
+						
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<p><a href="/index.cfm/4,0,83,html" title="">Technical Support</a></p>
+				
+			
+						
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<p><a href="/index.cfm/4,0,84,html" title="">Faculty Resources</a></p>
+				
+			
+						
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<p><a href="/index.cfm/4,0,85,html" title="">About UTTC</a></p>
+				
+			
+						
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<p>Contact Us >></p>
+					
+				
+			
+						
+		
+		
+		
+			
+				
+
+			
+			
+			
+				
+				
+								
+				
+					
+						
+							
+								
+							
+						
+					
+				
+				
+					
+						
+							
+											
+							
+						
+					
+				
+				
+					
+						
+							
+											
+							
+						
+					
+				
+				
+				
+				
+					</td>
+					</tr>
+					<tr>
+						<td class="clsNavSubcategories">
+							
+							<p>Contact Information</p><p><a href="/index.cfm/4,0,62,95,html" title="">Submit a Question</a></p><p><a href="/index.cfm/4,0,62,96,html" title="">Request a Brochure</a></p>
+						</td>
+					</tr>
+					<tr>
+						<td id="tdCategories" class="clsNavCategories">
+				
+			
+			
+			
+		
+		
+	
+			
+	
+			</td>
+		</tr>
+		<tr>
+			<td class="clsNavWatermark">
+				
+					<img src="/images/watermark.jpg">
+				
+			</td>
+		</tr>
+	
+	
+	</table>
+
+
+
+
+
+
+
+
+				</div>
+				
+					<div id="divMain">
+					<div id="divBreadcrumb">
+				
+						
+
+
+
+	
+	
+	
+	
+			<div class="clsBreadcrumbFirst">
+				<a href="/index.cfm/4,0,62,html" title="Contact Us">Contact Us</a>
+			</div>
+			<div class="clsBreadcrumbSecond">> </div>
+			<div class="clsBreadcrumbMore">Contact Information</div>
+		
+	
+	
+
+
+	
+
+					</div>
+					
+					
+					
+					<div id="divContent">
+									
+							
+
+
+
+
+
+
+
+
+						
+		
+		
+	
+
+
+
+	
+<!-- subcategory handler 3 -->
+
+
+	
+		
+			
+			
+				
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="100%" valign="top"> 
+	<table border="0" width="100%" cellspacing="10" cellpadding="1">
+	<tr>
+		<td colspan="4">
+
+
+
+
+	
+
+
+	
+		
+		
+	
+
+<table width="100%" border="0" cellspacing="10" cellpadding="0">
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td class="bodyText" colspan="2">
+	
+
+			
+	
+		<UL dir=ltr>
+<LI>
+<DIV><STRONG>Main UTTC Contact Information:</STRONG></DIV></LI></UL>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<P>UT TeleCampus<BR>The University of Texas System<BR><GEO TYPE="US">702 Colorado<BR>CLB - Suite 4.100<BR>Austin, Texas 78701</GEO><BR><BR>(512) 499-4323 - <I>phone</I><BR>(512) 499-4715 - <I>fax<BR></I>1-888-TEXAS-16 - <I>toll-free<BR></I><A href="mailto:telecampus@utsystem.edu">TeleCampus@utsystem.edu</A> - <I>email</I></P></BLOCKQUOTE></BLOCKQUOTE>
+<UL>
+<LI><STRONG>UTTC Student and Faculty Services:</STRONG> Use the contact information above.</LI>
+<LI><STRONG>UTTC Staff:</STRONG> <A href="/index.cfm/4,1185,62,94,html">Organizational Chart</A></LI>
+<LI><STRONG>Technical Assistance 24 x 7</STRONG>:&nbsp; <U><A href="/index.cfm/4,0,83,87,html">Technical Support</A></U> </LI>
+<LI><A href="/index.cfm/4,0,76,63,html">Campus Contacts</A> for Admission, Registration, Billing/Payment, Financial Aid, and Veterans Affairs Contacts.</LI>
+<LI><STRONG>Campus Advisors</STRONG>: Program-specific advisor contacts are listed in&nbsp;the <A href="/index.cfm/4,0,82,56,html">Program Information</A> pages.</LI>
+<LI><STRONG>Report Website Problems</STRONG>:&nbsp; <A href="mailto:telecampuswebmaster@utsystem.edu">telecampuswebmaster@utsystem.edu</A> </LI></UL>
+<P>&nbsp;</P>
+	
+
+
+	
+		
+
+
+	
+	
+	
+
+	
+
+
+<table border="0" cellspacing="0" cellpadding="2" align="right">	
+	<tr>
+		
+		
+			
+				<td class="bodyTextSm" align="right" valign="middle" nowrap>
+					Last Updated: January 19, 2005
+				</td>
+			
+		
+		<td class="bodyTextSm" align="right" valign="middle" nowrap>
+		
+			
+			&nbsp;&nbsp;&nbsp;<a href="" onClick="msgWindow=window.open('/handlers/emailcontent.cfm?GroupID=4&ContentID=509&ThisPageURL=http%3A%2F%2Fwww%2Etelecampus%2Eutsystem%2Eedu%2Findex%2Ecfm%2F4%2C0%2C62%2C94%2Chtml&EntryCode=3730', 'displayWindow', 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=440,height=440').focus(); return false" title="Email - Contact Information"><img src="/images/assetnow/email.gif" width="20" height="20" align="middle" alt="email this page" border="0"></a>
+		
+		</td>
+		<td class="bodyTextSm" align="left" valign="middle" nowrap>
+		
+			
+			<nobr><a href="" onClick="msgWindow=window.open('/handlers/emailcontent.cfm?GroupID=4&ContentID=509&ThisPageURL=http%3A%2F%2Fwww%2Etelecampus%2Eutsystem%2Eedu%2Findex%2Ecfm%2F4%2C0%2C62%2C94%2Chtml&EntryCode=7770', 'displayWindow', 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=440,height=440').focus(); return false" title="Email - Contact Information">Email</a></nobr>
+		
+		</td>
+		<td class="bodyTextSm" align="right" valign="middle">	
+		
+			<nobr>&nbsp;&nbsp;&nbsp;<a href="" onClick="msgWindow=window.open('/handlers/printcontent.cfm?GroupID=4&ContentID=509&ThisPageURL=http%3A%2F%2Fwww%2Etelecampus%2Eutsystem%2Eedu%2Findex%2Ecfm%2F4%2C0%2C62%2C94%2Chtml&EntryCode=1554', 'displayWindow', 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=650,height=540').focus(); return false" title="Print - Contact Information"><img src="/images/assetnow/print.gif" width="20" height="20" align="middle" alt="print this page" border="0"></a></nobr>
+		</td>
+		<td class="bodyTextSm" align="left" valign="middle">	
+		
+			<nobr><a href="" onClick="msgWindow=window.open('/handlers/printcontent.cfm?GroupID=4&ContentID=509&ThisPageURL=http%3A%2F%2Fwww%2Etelecampus%2Eutsystem%2Eedu%2Findex%2Ecfm%2F4%2C0%2C62%2C94%2Chtml&EntryCode=7803', 'displayWindow', 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=650,height=540').focus(); return false" title="Print - Contact Information">Print</a></nobr>
+		</td>
+	
+		<td class="bodyTextSm" align="right" valign="middle">
+			
+			<nobr>&nbsp;&nbsp;&nbsp;<A href="javascript:history.back()" title="Back"><img src="/images/assetnow/back.gif" width="20" height="20" align="middle" alt="Back" border="0"></a></nobr>
+		</td>
+		<td class="bodyTextSm" align="left" valign="middle">
+			
+			<nobr><A href="javascript:history.back()" title="Back">Back</a></nobr>
+		</td>
+		<td class="bodyTextSm" align="right" valign="middle">
+			
+			<nobr>&nbsp;&nbsp;&nbsp;<A href="#page_top" title="Top"><img src="/images/assetnow/up.gif" width="20" height="20" align="middle" alt="Top" border="0"></a></nobr>
+		</td>
+		<td class="bodyTextSm" align="left" valign="middle">
+			
+			<nobr><A href="#page_top" title="Top">Top</a></nobr>
+		</td>
+	</tr>
+</table>
+
+
+
+
+</td>
+</tr>		
+		
+
+</table>
+
+
+
+	</td>
+</tr>	
+
+	
+		
+	
+    <tr> 
+        <td colspan="4">
+</td>			  
+	</tr>
+</table>
+
+   
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+	
+	  	
+			
+					</div>
+				</div>
+			</div>
+			
+			
+				<div id="divExtras">
+					<div id="divSearch">
+						Search UTTC:
+						<br />
+						<input maxLength="255" size="20" name="q" />
+						<a href="javascript:document.getElementById('frmSearch').submit();" status="Submit Search"><img src="/images/gobutton.gif" /></a>
+						<br />
+						<input type="hidden" value="UTSystemAdmin" name="site" /> 
+						<input type="hidden" value="UTSystemAdmin" name="client" /> 
+						<input type="hidden" value="UTSystemAdmin" name="proxystylesheet" /> 
+						<input type="hidden" value="telecampus" name="restrict" /> 
+						<input type="hidden" value="xml_no_dtd" name="output" />
+						<a href="http://google.utsystem.edu/user_help.html">Advanced search link</a>
+					</div>
+					
+					<div id="divNews">
+						
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+ 
+	
+	
+	
+
+			
+	
+		
+			<P>Please contact us if you have any questions about the UT TeleCampus by using our <A href="/index.cfm/4,0,62,94,html">toll-free phone number</A>, <A href="/forms/submit_a_question_form.cfm">webform</A> or <A href="mailto:telecampus@utsystem.edu">email</A>. </P>
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+					
+				</div>
+			
+			
+				
+					<div id="divFooterWrapper">
+						<div id="divFooter">
+				
+					
+
+
+
+<p>
+	
+		<a href="#top">Back To Top</a> | 
+		<a href="/index.cfm/4,661,html">Privacy Policy</a> | 
+		<a href="/index.cfm/4,662,html">Compact With Texans</a><br />
+		<a href="http://www.utsystem.edu" target="_blank">U.T. System</a> | 
+		<a href="/index.cfm/4,663,html">Access Information</a> | 
+		<a href="/index.cfm/4,664,html">Disclosure</a> | 
+		<a href="/index.cfm/4,html?sitemap=4,0,62,94,html" title="Site Map">Site Map</a>
+	
+</p>
+
+
+	
+		
+	
+
+
+
+ 
+
+	
+
+
+
+
+		
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+		</div>
+		
+
+
+
+	
+
+
+
+
+
+
+
+
+
+</form>
+<a name="page_bottom"></a>
+</body>
+</html>
+
+
+

@@ -1,0 +1,225 @@
+<DOC>
+<DOCNO>f00301</DOCNO>
+<DOCHDR>http://www.sfstation.com/hotels</DOCHDR>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="robots" content="index,follow">
+<link rel='stylesheet' rev='stylesheet' href='/css/common/style.css' media="screen">
+<script language="JavaScript">
+  <!--
+
+  // This function displays the ad results.
+  // It must be defined above the script that calls show_ads.js
+  // to guarantee that it is defined when show_ads.js makes the call-back.
+
+  function google_ad_request_done(google_ads) {
+
+    // Proceed only if we have ads to display!
+    if (google_ads.length < 1 )
+      return;
+
+    // Display ads in a table
+    document.write("<table class=\"google\" cellspacing=\"0\">");
+ 
+    // Print "Ads By Google" -- include link to Google feedback page if available
+    document.write("<tr><td>");
+    document.write("<div class=\"adsby\">");
+    if (google_info.feedback_url) {
+      document.write("<a href=\"" + google_info.feedback_url + 
+        "\">Ads by Google</a>");
+    } else {
+      document.write("Ads By Google");
+    }
+    document.write("</div>");  
+  
+    // For text ads, display each ad in turn.
+    // In this example, each ad goes in a new row in the table.
+    if (google_ads[0].type == 'text') {
+      for(i = 0; i <  google_ads.length; ++i) {// google_ads.length; ++i) {
+        document.write("<div class=\"adsense\">" +
+          "<a href=\"" +  google_ads[i].url + "\">" +
+          google_ads[i].line1 + "</a><br/> " +
+          google_ads[i].line2 + " " +
+          google_ads[i].line3 + "<br/>" + 
+          "<span class=\"url\">" + 
+          google_ads[i].visible_url +
+          "</span></div>"); 
+      }
+    }
+
+    // For an image ad, display the image; there will be only one .
+    if (google_ads[0].type == 'image') {
+      document.write("<div class=\"adsense\">" +
+        "<a href=\"" + google_ads[0].url + "\"style=\"text-decoration: none\">" +
+        "<img src=\"" + google_ads[0].image_url + 
+        "\" height=\"" + google_ads[0].height + 
+        "\" width=\"" + google_ads[0].width +
+        "\" border=\"0\"></a></div>");
+    }
+
+    // Finish up anything that needs finishing up
+    document.write ("</td></tr></table>");
+  } 
+  
+  google_hints = "San Francisco, California, Hotels";
+-->
+</script>
+    <title>SF Station: Hotels Directory</title>
+</head>
+
+<body>
+<div id="frame"> 
+<table id="header" cellspacing="0">
+    <tbody><tr> 
+      <td rowspan="2" class="logo">
+       
+      </td>
+      <td align="right" valign="bottom"> 
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table id="bar" cellspacing="0">
+    <tr> 
+      <td> 
+        <h1>&nbsp;</h1>
+      </td>
+    </tr>
+  </table>  <!-- Topic Title Begins -->
+  <table id="topicsnav" cellspacing="0">
+    <tr> 
+      <td class="title"> 
+        <h1>Hotels Directory</h1>
+              </td>
+      <td id="listyour">
+		      </td>
+	  
+    </tr>
+  </table>
+  <!-- Topic Title Ends -->
+<div class="banner_hori_top"><!-- begin ZEDO -->
+<script language="JavaScript">
+var zflag_nid="393";
+var zflag_cid="31/29";
+var zflag_width="728";
+var zflag_height="90";
+var zflag_sz="14"; 
+</script>
+<iframe src="http://c5.zedo.com/jsc/c5/ff2.html?n=393;c=31/29;d=14;w=728;h=90" frameborder=0 marginheight=0 marginwidth=0 scrolling="no" allowTransparency="true" width=728 height=90>
+<script language="JavaScript" src="http://c5.zedo.com/jsc/c5/ff2.js"></script>
+</iframe>
+<!-- end ZEDO -->
+</div>
+<table id="content" cellspacing="0">
+    <tbody>
+    <tr> 
+      <td id="contentL"> 
+        <table id="topics" cellspacing="0">
+          <tbody>
+          <tr> 
+            <td id="topicsT"></td>
+          </tr>
+          <tr> 
+            <td id="topicsM">
+                <a href='/hotels/business-directory' class='ON'>Hotels</a><br/><a href='/hotels/business-directory/luxury-hotels'>Luxury Hotels</a><br/><a href='/hotels/business-directory/first-class-hotels'>First Class Hotels</a><br/><a href='/hotels/business-directory/moderate-hotels'>Moderate Hotels</a><br/><a href='/hotels/business-directory/economy-hotels'>Economy Hotels</a><br/><a href='/hotels/business-directory/bed-breakfast'>Bed & Breakfast</a><br/><a href='/hotels/business-directory/hostels'>Hostels</a><br/><a href='/hotels/business-directory/motels'>Motels</a><br/><a href='/hotels/business-directory/home-rentals'>Home Rentals</a><br/><a href='/hotels/business-directory/vacation-rentals'>Vacation Rentals</a><br/><a href='/hotels/business-directory'></a><br/>            </td>
+          </tr>
+          <tr> 
+            <td id="topicsB">&nbsp;</td>
+          </tr>
+        	</tbody>
+        </table>
+        <table id="topics" cellspacing="0">
+          <tbody>
+          <tr> 
+            <td id="topicsT"></td>
+          </tr>
+          <tr> 
+            <td id="topicsM">
+            	<div class="indi">Districts</div>
+                <a href='/hotels/business-directory/bay-area'>Bay Area</a><br/><a href='/hotels/business-directory' class='ON'>San Francisco</a><br/><a href='/hotels/business-directory/east-bay'>East Bay</a><br/><a href='/hotels/business-directory/peninsula'>Peninsula</a><br/><a href='/hotels/business-directory/north-bay'>North Bay</a><br/><a href='/hotels/business-directory/san-jose'>South Bay</a><br/><a href='/hotels/business-directory/santa-cruz'>Santa Cruz & Monterey</a><br/>            </td>
+          </tr>
+          <tr> 
+            <td id="topicsB">&nbsp;</td>
+          </tr>
+        	</tbody>
+        </table>
+        <div class="banner_verti_left"><!-- begin ZEDO -->
+<script language="JavaScript">
+var zflag_nid="393";
+var zflag_cid="31/29";
+var zflag_width="160";
+var zflag_height="600";
+var zflag_sz="7"; 
+</script>
+<iframe src="http://c5.zedo.com/jsc/c5/ff2.html?n=393;c=31/29;d=7;w=160;h=600" frameborder=0 marginheight=0 marginwidth=0 scrolling="no" allowTransparency="true" width=160 height=600>
+<script language="JavaScript" src="http://c5.zedo.com/jsc/c5/ff2.js"></script>
+</iframe>
+<!-- end ZEDO -->
+</div>        
+      </td>
+        <td id="contentM"> 
+        <div class="banner_google"><!-- Google Ads Begin -->
+<script type="text/javascript">
+<!--
+  // This script sets the attributes for requesting ads.
+  google_ad_client = "pub-8952751094992228";         
+  google_ad_output = "js";         
+  google_max_num_ads = 3;         
+  google_ad_type  = "text_image";
+  google_color_line = "ff0000";    
+//--></script>
+<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script>
+<!-- Google Ads End -->
+</div><div id="sortbyL">Sort By:</div><div id="sortby"><a href='/hotels/business-directory/sortBy-enhanced-up' class='ON'>Internet Specials</a><img src="/images/common/arrow_sortby.gif" border="0" /> </div><div id="sortby"> <a href='/hotels/business-directory/sortBy-name-down'>Name</a><img src="/images/common/arrow_sortby.gif" border="0" /></div><div id="sortby">&nbsp;</div><br clear="all" /><div><img src='/images/common/sortby_enh01.gif' alt='sort by' border='0' /></div><br clear="all" />            
+		    <table id="flipT" cellspacing="0">
+		        <tbody>
+		            <tr> 
+		            <td> 1&nbsp;to&nbsp;20&nbsp;of&nbsp;873 |&nbsp;Previous Page &nbsp; <b>1</b> <a href='/hotels/business-directory/2'>2</a> <a href='/hotels/business-directory/3'>3</a> <a href='/hotels/business-directory/4'>4</a> <a href='/hotels/business-directory/5'>5</a> <a href='/hotels/business-directory/6'>6</a> <a href='/hotels/business-directory/7'>7</a> <a href='/hotels/business-directory/8'>8</a> <a href='/hotels/business-directory/9'>9</a> ... &nbsp;<a href='/hotels/business-directory/2'>Next Page</a></td>		            </tr>
+		        </tbody>
+		    </table>
+		
+		    <table id="list" cellspacing="0">
+		    	<tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/archmansion/">		<img src="/images/bl/90/10590a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/archmansion/">Archbishop's Mansion</a>		</div><GEO TYPE="US">1000 Fulton Street, San Francisco, CA 94117</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=1000+Fulton+Street&city=San+Francisco&state=CA&zipcode=94117" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.302.0862<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10590&formMapId=1670&res=5e0bdfa5f745e7c0b32e95a42122ac07" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/americania/">		<img src="/images/bl/82/10582a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/americania/">Best Western Americania</a>		</div><GEO TYPE="US">121 Seventh Street, San Francisco, CA 94103</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=121+Seventh+Street&city=San+Francisco&state=CA&zipcode=94103" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.826.6441<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10582&formMapId=1662&res=8c0f92a43f656f94aafdead3290c3bd1" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/carriageinn/">		<img src="/images/bl/94/10594a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/carriageinn/">Best Western Carriage Inn</a>		</div><GEO TYPE="US">140 Seventh Street, San Francisco, CA</GEO>  <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=140+Seventh+Street&city=San+Francisco&state=CA" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.826.6481<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10594&formMapId=1674&res=fb8167690f9fb3ccdcba772f3875f028" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/flamingoinn/">		<img src="/images/bl/96/10596a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/flamingoinn/">Best Western Flamingo Inn</a>		</div><GEO TYPE="US">114 Seventh Street, San Francisco, CA</GEO>  <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=114+Seventh+Street&city=San+Francisco&state=CA" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.826.6499<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10596&formMapId=1676&res=ba6a930087632dd2a642a28a79dfb6d8" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/chancellor/">		<img src="/images/bl/78/10578a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/chancellor/">Chancellor Hotel</a>		</div><GEO TYPE="US">433 Powell Street, San Francisco, CA 94102</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=433+Powell+Street&city=San+Francisco&state=CA&zipcode=94102" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.301.0522<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10578&formMapId=1659&res=8da3854b29de43d400a80cd954a1d661" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/crowne-plaza-unionsquare/">		<img src="/images/bl/73/10573a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/crowne-plaza-unionsquare/">Crowne Plaza Hotel</a>		</div><GEO TYPE="US">480 Sutter St, San Francisco, CA 94108</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=480+Sutter+St&city=San+Francisco&state=CA&zipcode=94108" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.800.240.8085<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10573&formMapId=1656&res=e46cf63d036c63b0f20e64742b147fac" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/daysinnciviccenter/">		<img src="/images/bl/98/10598a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/daysinnciviccenter/">Days Inn Civic Center</a>		</div><GEO TYPE="US">465 Grove Street, San Francisco, CA</GEO>  <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=465+Grove+Street&city=San+Francisco&state=CA" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.800.4932<br/>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/edwardii/">		<img src="/images/bl/00/10600a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/edwardii/">Edward II Inn and Suites</a>		</div><GEO TYPE="US">3155 Scott Street, San Francisco, CA</GEO>  <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=3155+Scott+Street&city=San+Francisco&state=CA" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.800.4908<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10600&formMapId=1679&res=6c576b62b9c7b841f8aa226845bbb101" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/edwardian-hotel/">		<img src="/images/bl/57/10657a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/edwardian-hotel/">Edwardian San Francisco Hotel</a>		</div><GEO TYPE="US">1668 Market Street, San Francisco, CA 94102</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=1668+Market+Street&city=San+Francisco&state=CA&zipcode=94102" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  415-864-1271<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10657&formMapId=1714&res=c6f358f1bf410629832a9f582f9b575b" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="/elements-hotel-b5400">		<img src="/images/bl/00/5400a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="/elements-hotel-b5400">Elements Hotel</a>		</div><GEO TYPE="US">2516 Mission Street, San Francisco, CA 94110</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?searchtype=address&formtype=search&countryid=250&addtohistory=&country=US&address=2516+Mission+Street&city=San+Francisco&state=CA&zipcode=94110&submit=Get+Map" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1-866-327-8407<br/>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/fitzgerald/">		<img src="/images/bl/99/10599a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/fitzgerald/">Fitzgerald Hotel Union Square</a>		</div><GEO TYPE="US">620 Post Street, San Francisco, CA 94941</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=620+Post+Street&city=San+Francisco&state=CA&zipcode=94941" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.302.3918<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10599&formMapId=1678&res=200062fc3059407fe29b616cffbe7242" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/grantplaza/">		<img src="/images/bl/89/10589a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/grantplaza/">Grant Plaza Hotel</a>		</div><GEO TYPE="US">465 Grant Ave, San Francisco, CA 94108</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=465+Grant+Ave&city=San+Francisco&state=CA&zipcode=94108" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.285.5419<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10589&formMapId=1669&res=756763479a02e2c540531bad8a78bb5b" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/holiday-inn-fishermanswharf/">		<img src="/images/bl/86/10586a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/holiday-inn-fishermanswharf/">Holiday Inn</a>		</div><GEO TYPE="US">1300 Columbus Avenue, San Francisco, CA 94133</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=1300+Columbus+Avenue&city=San+Francisco&state=CA&zipcode=94133" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.877.211.3289<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10586&formMapId=1666&res=a8fd9095b87069ae817bb51137abf372" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/holiday-inn-civiccenter/">		<img src="/images/bl/87/10587a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/holiday-inn-civiccenter/">Holiday Inn</a>		</div><GEO TYPE="US">50 Eighth St, San Francisco, CA 94103</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=50+Eighth+St&city=San+Francisco&state=CA&zipcode=94103" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.877.211.3289<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10587&formMapId=1667&res=603eb1677215679eaddd3633c432005d" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/holiday-inn-express/">		<img src="/images/bl/83/10583a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/holiday-inn-express/">Holiday Inn Express Hotel &amp; Suites</a>		</div><GEO TYPE="US">550 North Point St, San Francisco, CA 94133</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=550+North+Point+St&city=San+Francisco&state=CA&zipcode=94133" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.877.211.3289<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10583&formMapId=1663&res=41193e7b0c9e4d90462a9e329d537d42" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/holiday-inn-goldengate/">		<img src="/images/bl/84/10584a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/holiday-inn-goldengate/">Holiday Inn San Francisco - Golden Gateway</a>		</div><GEO TYPE="US">1500 Van Ness Ave., San Francisco, CA 94109</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=1500+Van+Ness+Ave.&city=San+Francisco&state=CA&zipcode=94109" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.877.211.3289<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10584&formMapId=1664&res=29f4bce55a23c511ba0d546762fc0d40" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/holiday-inn-select-downtown/">		<img src="/images/bl/85/10585a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/holiday-inn-select-downtown/">Holiday Inn Select Downtown Hotel &amp; Spa San Francisco</a>		</div><GEO TYPE="US">750 Kearny Street, San Francisco, CA 94108</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=750+Kearny+Street&city=San+Francisco&state=CA&zipcode=94108" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.877.211.3289<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10585&formMapId=1665&res=9107264755d3ed6ae7911f172c7c4d32" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/britton/">		<img src="/images/bl/88/10588a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/britton/">Hotel Britton</a>		</div><GEO TYPE="US">112 Seventh Street, San Francisco, CA</GEO>  <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=112+Seventh+Street&city=San+Francisco&state=CA" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.826.6472<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10588&formMapId=1668&res=554ec8da70c07d1469c1152007af85f3" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/hoteldesarts/">		<img src="/images/bl/74/10574a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/hoteldesarts/">Hotel Des Arts</a>		</div><GEO TYPE="US">447 Bush Street, San Francisco, CA</GEO>  <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=447+Bush+Street&city=San+Francisco&state=CA" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.285.4104<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10574&formMapId=1657&res=4df9e23d08aede27b029b9658a988531" target="_blank">Book it Now!	 </a></div>	</td></tr></tr><tr class="enhanced">	<td class="enh">		<a href="http://www.sanfrancisco.com/hoteldiva/">		<img src="/images/bl/65/10565a_tn80x80.jpg" border="0">		</a>	</td>	<td class="name"> 		<div class="title"><a href="http://www.sanfrancisco.com/hoteldiva/">Hotel Diva</a>		</div><GEO TYPE="US">440 Geary Street, San Francisco, CA 94102</GEO> <span class="pretitle10"><a href="http://www.mapquest.com/maps/map.adp?formtype=address&address=440+Geary+Street&city=San+Francisco&state=CA&zipcode=94102" target="_blank">Map</a></span>	</td>	<td class="price"> &nbsp;	</td>	<td class="phone">  <img src="/images/common/icon_phone.gif" border="0" />  1.866.829.6150<br/>   <div class=""upsell><a href="/app/redir.php?bIid=10565&formMapId=1649&res=3465cf81acedb13a6b32f285c0b4bbbe" target="_blank">Book it Now!	 </a></div>	</td></tr></tr>		    </table>
+	
+		    <table id="flip" cellspacing="0">
+		        <tbody>
+		            <tr> 
+		            <td> 1&nbsp;to&nbsp;20&nbsp;of&nbsp;873 |&nbsp;Previous Page &nbsp; <b>1</b> <a href='/hotels/business-directory/2'>2</a> <a href='/hotels/business-directory/3'>3</a> <a href='/hotels/business-directory/4'>4</a> <a href='/hotels/business-directory/5'>5</a> <a href='/hotels/business-directory/6'>6</a> <a href='/hotels/business-directory/7'>7</a> <a href='/hotels/business-directory/8'>8</a> <a href='/hotels/business-directory/9'>9</a> ... &nbsp;<a href='/hotels/business-directory/2'>Next Page</a></td>		            </tr>
+		        </tbody>
+		    </table>
+			
+		 <div class="banner_pagination"><!-- Google Ads Begin -->
+<script type="text/javascript">
+<!--
+  // This script sets the attributes for requesting ads.
+  google_ad_client = "pub-8952751094992228";         
+  google_ad_output = "js";         
+  google_max_num_ads = 3;         
+  google_ad_type  = "text_image";
+  google_color_line = "ff0000";    
+//--></script>
+<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script>
+<!-- Google Ads End -->
+</div>      </td>
+    </tr>
+  </tbody>
+  </table>
+ 
+<div id="copyright"> 
+<a href="/app/contact/us.php" >Contact SFStation</a> | 
+<a href="/cityds" >Advertise with SFStation</a> | 
+<a href="/mediakit" >Media Kit</a> | 
+<a href="/about" >About SFStation</a> | 
+<a href="/app/site-map.php" >Site Map</a> | 
+<a href="/app/business-post/" >List Your Business</a> | 
+<a href="/app/event-post/" >List Your Event</a>
+<br/>
+<a href="/jobs" >Job Opportunities</a> | 
+<a href="/legal/privacy.php" >Privacy Policy</a> | 
+<a href="/legal/terms.php" >Terms of Use</a> |
+<a href="/forms/userfeedback.html" >User Feedback</a>
+<br />
+<br />
+Copyright 2006 SF Station: A City Guide by <a href="http://www.boulevards.com/" target="_blank">Boulevards</a>. All rights reserved. </div></body>
+</html>

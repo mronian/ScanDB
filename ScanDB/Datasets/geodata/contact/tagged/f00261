@@ -1,0 +1,551 @@
+<DOC>
+<DOCNO>f00261</DOCNO>
+<DOCHDR>http://www.doi.gov/contact.html</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+
+<!-- 1. insert page title below -->
+
+<TITLE>U.S. Department of the Interior - Contact US</TITLE>
+
+<!-- 2. insert meta tag information below -->
+
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META name="description" content="U.S. Department of the Interior">
+<META name="keywords" content="DOI, Government, E-Gov, Interior">
+<META name="author" content="Dan DuBray, Sharon Williams, Nicole Munno, Renu Chaudhry, Andrea Antunes, Sandra Rainbolt">
+
+
+<!-- below is a link to the style -->
+
+<LINK rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+@import url(style.css);
+</style>
+<script language= "JavaScript">
+
+<!-- hide me from older browsers
+function visitSite(the_site)
+{
+ window.location = the_site;
+ }
+ // show me -->
+ </script>
+
+
+<!-- JavaScript below adds todays date to the page -->
+
+<SCRIPT TYPE="text/JAVASCRIPT">
+var now = new Date();
+var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+function fourdigits(number)	{
+	return (number < 1000) ? number + 1900 : number;
+	}
+
+today =  days[now.getDay()] + ", " +
+              months[now.getMonth()] + " " +
+               date + ", " +
+                (fourdigits(now.getYear())) ;
+ 
+</SCRIPT>
+
+<!-- JavaScript below pops open a new window for accessibility statement and Feedback -->
+
+<SCRIPT TYPE="text/JAVASCRIPT">
+  function open_window(url){
+  mywin=
+ window.open(url,"win",'toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,screenX=0,screenY=0,top=0,left=0,width=520,height=410');}
+ </script>
+<SCRIPT TYPE="text/JAVASCRIPT">
+var now = new Date();
+var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+function fourdigits(number)	{
+	return (number < 1000) ? number + 1900 : number;
+	}
+
+today =  days[now.getDay()] + ", " +
+              months[now.getMonth()] + " " +
+               date + ", " +
+                (fourdigits(now.getYear())) ;
+ 
+</SCRIPT>
+
+<!-- JavaScript below pops open a new window for accessibility statement and Feedback -->
+
+<SCRIPT TYPE="text/JAVASCRIPT">
+  function open_window(url){
+  mywin=
+ window.open(url,"win",'toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,screenX=0,screenY=0,top=0,left=0,width=520,height=410');}
+ </script>
+<script>
+
+var SlideShowSpeed = 7500;
+var CrossFadeDuration = 3;
+
+var Picture = new Array(); // don't change this
+var Caption = new Array(); // don't change this
+
+
+Picture[1]  = 'images/quickfact1.jpg ';
+Picture[2]  = 'images/quickfact2.jpg ';
+Picture[3]  = 'images/quickfact3.jpg ';
+Picture[4]  = 'images/quickfact4.jpg ';
+Picture[5]  = 'images/quickfact5.jpg ';
+
+
+
+Caption[1]  = "DOI protects 1,265 endangered or threatened species in the United States.";
+Caption[2]  = "The Bureau of Reclamation supplies the water that grows 60% of America's vegetables.";
+Caption[3]  = "DOI manages 507 million acres of surface land, or about one-fifth of the land in the U.S.";
+Caption[4]  = "BIA provides education services to 47,671 children at 184 sites.";
+Caption[5]  = "68% of oil and gas reserves are managed by the U.S. Department of the Interior.";
+
+
+var tss;
+var iss;
+var jss = 1;
+var pss = Picture.length-1;
+
+var preLoad = new Array();
+for (iss = 1; iss < pss+1; iss++){
+preLoad[iss] = new Image();
+preLoad[iss].src = Picture[iss];}
+
+function runSlideShow(){
+if (document.all){
+document.images.PictureBox.style.filter="blendTrans(duration=2)";
+document.images.PictureBox.style.filter="blendTrans(duration=CrossFadeDuration)";
+document.images.PictureBox.filters.blendTrans.Apply();}
+document.images.PictureBox.src = preLoad[jss].src;
+if (document.getElementById) document.getElementById("CaptionBox").innerHTML= Caption[jss];
+if (document.all) document.images.PictureBox.filters.blendTrans.Play();
+jss = jss + 1;
+if (jss > (pss)) jss=1;
+tss = setTimeout('runSlideShow()', SlideShowSpeed);
+}
+
+</script>
+</head>
+
+
+<BODY onload=runSlideShow()>
+        
+
+  
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="769">
+
+
+<!-- top banner and navigation -->
+
+    <tr>
+    <td colspan="3" heigh="155">
+<table border="0" cellpadding="0" cellspacing="0" width="769">
+  <tr><!---Today's Date--->
+<td class="date" valign="middle"><SCRIPT Type="text/Javascript">document.write(today);</script></td>
+<td colspan="6"><img src="images/doi_banner_02.jpg" width="590" height="20" alt="Department of the Interior" border="0" USEMAP="#banner_top"></td>
+        </tr>       
+       <tr>
+          <td colspan="7"><img src="images/doi_banner_03.jpg" width="769" height="110" alt="Department of the Interior" border="0" usemap="#banner_01alt2"><!--- <img border="0" src="images/banner_01.gif" alt="banner_01"> ---></td>
+        </tr><tr><form name="query" action="http://www.firstgov.gov/fgsearch/index.jsp" target="new"><input type="hidden" name="rn" value="169"><input type="hidden" name="in0" value="domain"><input type="hidden" name="dom0" value="www.doi.gov"><input type="hidden" name="parsed" value="true">
+    <td width="179" height="25" bgcolor="#003366"  align="center" nowrap ><!--- &nbsp;Search ---> <input type="text"   id="mw0"  name="mw0" size=10 maxlength=40
+ >&nbsp;<input type="image" src="images/Search.gif" alt="Search" border="0" align="absbottom" width="55" height="25"> </td>
+    
+<td width="5" height="25" bgcolor="#FFFFFF" valign="top"><img border="0" src="images/tab_02.gif" width="5" height="25"></td>
+    <td width="117" height="25" bgcolor="#FFFFFF" valign="top"><a href="welcome.html"  onmouseover="document.welcome.src='images/tab_welcome_on.gif'" onmouseout="document.welcome.src='images/tab_welcome.gif'"><img border="0" src="images/tab_welcome.gif" width="117" height="25" name="welcome" alt ="Welcome"></a></td>
+    <td width="117" height="25" bgcolor="#FFFFFF" valign="top"><a href="subject.html" onmouseover="document.subject.src='images/tab_index_on.gif'" onmouseout="document.subject.src='images/tab_index.gif'"><img border="0" src="images/tab_index.gif" width="117" height="25" name="subject" alt="Index"></a></td>
+    <td width="117" height="25" bgcolor="#FFFFFF" valign="top"><a href="news.html" onmouseover="document.news.src='images/tab_news_on.gif'" onmouseout="document.news.src='images/tab_news.gif'"><img border="0" src="images/tab_news.gif" width="117" height="25" name="news" alt="DOI News"></a></td>
+    <td width="117" height="25" bgcolor="#FFFFFF" valign="top"><a href="contact.html" onmouseover="document.contact.src='images/tab_contact_on.gif'" onmouseout="document.contact.src='images/tab_contact_on.gif'"><img border="0" src="images/tab_contact_on.gif" width="117" height="25" name="contact" alt="Contact US"></a></td>
+    <td width="117" height="25" bgcolor="#FFFFFF" valign="top"><a href="index.html" onmouseover="document.home.src='images/tab_home_on.gif'" onmouseout="document.home.src='images/tab_home.gif'"><img border="0" src="images/tab_home.gif" width="117" height="25"   name="home" alt="DOI Home"></a></td>
+  </tr>
+  
+      </table>
+    </td>
+  </tr>
+
+</form>
+<!-- left column -->  
+
+  <tr>
+    <td width="180" valign="top" align="center" bgcolor="#EFF3F3">
+	
+   <table border="0" cellpadding="0" width="180" cellspacing="0">
+<tr >
+	<td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td><a href="accomplishments/index.html " class="bold">DOI Activities<img src="images/new.gif" width="40" height="15" alt="new" align="bottom" border="0" hspace="1"></a></td>	<TD rowspan="45" valign="top"><img src="images/dot.gif" width="2" height="985" alt="vertical line" border="0"></td></tr>
+<tr><td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td></tr>	
+
+<tr >
+	<td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td><a href="initiatives.html " class="bold">Initiatives</a>&nbsp;&nbsp;<a href="initiatives.html"><img src="images/more.gif" width="40" height="15" alt="more" align="bottom" border="0"></a></td>	 </tr>
+
+ <tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="initiatives/forest.html" class="tab">Healthy Forests</a></td></tr>
+	
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="initiatives/parks.html" class="tab">Improving National Parks</a></td></tr>
+	
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="initiatives/water2025.html " class="tab">Water 2025</a></td></tr>
+	
+	
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="initiatives/conservation.html" class="tab">Cooperative Conservation</a></td></tr>
+	
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="initiatives/takepride.html" class="tab">Take Pride in America</a></td></tr>
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="initiatives/energy.html " class="tab">National Energy Plan</a></td></tr>
+	
+	<!--- <tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="initiatives/recreation.html " class="tab">Promoting Recreation</a></td></tr> ---> 
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="initiatives/management.html " class="tab">Management Excellence</a></td></tr>
+	
+	<tr><td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td></tr>	
+	<tr>
+	<td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td valign="bottom"><a href="issues.html" class="bold">Issues of Interest</td></tr>
+	
+	<tr><td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td></tr>	
+	<tr>
+	<td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td valign="bottom"><a href="how.html" class="bold">How do I?</a>&nbsp;&nbsp;<a href="how.html"><img src="images/more.gif" width="40" height="15" alt="more" align="bottom" border="0"></a></td></tr>
+	<tr>
+	<td valign="top"><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td valign="top"><a href="parkpass.html" class="tab">Get a National Parks Pass?  </a></td></tr>
+	<tr>
+	<td valign="top"><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="ancestry.html" class="tab">Trace Indian Ancestry?</a></td></tr>
+	<!---  --->
+
+
+	<TR><td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td></tr>
+   	<TR><td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td><a href="facts.html" class="bold">DOI Quick Facts</a></td>
+	</tr>
+<TR ><td colspan="2" valign="middle" height="162"><img src="images/quickfact3.jpg" name="PictureBox" width="170" height="162" border="0" alt="Quick Fact Images" ></td></tr><tr><td colspan="2" id="CaptionBox"  valign="top">
+DOI manages 507 million acres of surface land, or about one-fifth of the land in the U.S.</td></tr> 
+<TR>
+	<td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td></tr>
+	
+	<tr>
+	<td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td><td><a href="spanish/index.html" class="bold">DOI en Español</a></td></tr>
+
+
+
+<tr>
+	<td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td></tr>	
+<tr>
+	<td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td><a href="employees.html" class="bold">For DOI Employees
+	</a></td></tr>
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="emergency/index.html" class="tab">DOI DC Operating Status</a></td></tr>  
+	<tr>
+	<td valign="top"><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td class="drop"  height="25" valign="top">
+	<select name="the_select"  onChange="visitSite(this.options[this.selectedIndex].value);"  class="drop">
+<OPTION VALUE="" SELECTED >Select one</option>
+<option value="/cgi-bin/intercept?http://www.doifcu.org/">DOI Federal Credit Union</option>
+<option value="http://www.doi.gov/training/">DOI University</option>
+<option value="https://www.employeeexpress.gov/" >Employee Express</option>
+<option value="http://www.doi.gov/greening">Greening Interior</option>
+<option value="http://www.nbc.gov" >National Business Center </option>
+<option value="http://www.doi.gov/SupportOurTroops/">Support Our Troops </option>
+<option value="http://www.tsp.gov/">Thrift Savings Plan </option>
+
+	
+</SELECT></td></tr>  
+<tr>
+	<td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td>
+	</tr>
+	<TR><td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td><a href="http://www.doi.gov/doijobs/doijobs.html" class="bold">DOI Jobs</a></td>
+	</tr>
+	<tr>
+<td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td>
+	</tr>
+	<TR><td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td><a href="teachers/index.html" class="bold">Teacher Resources</a></td>
+	</tr>
+   <TR><td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td></tr>
+ <tr>
+	<td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td><a href="kids/index.html" class="bold">Children's Pages</a></td>
+	</tr>
+	
+
+	
+	  <!--- <TR><td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td></tr>
+   <tr>
+	<td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td><a href="resources.html" class="bold">Resources</a></td>
+	</tr> --->
+	
+	<TR><td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td></tr>
+	<TR><td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td><a href="bureaus.html" class="bold">Bureaus and Offices</a></td>
+	</tr>
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="secretary/officials.html" class="tab">DOI Key Officials</a></td></tr>  
+	<!--- <tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="http://www.doi.gov/iga/" class="tab">External/Intergovernmental </a></td></tr>
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="http://www.doi.gov/ocl/" class="tab">Congressional Affairs </a></td></tr>  --->
+	
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="history.html" class="tab">DOI History</a></td></tr>  
+  <!---  <tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="http://www.doi.gov/oia" class="tab">Territories and Islands</a></td> </tr>  --->  
+
+	
+	
+	
+<tr>
+	<td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td>
+	</tr>
+<TR><td><img src="images/menu_bullet.gif" width="10" height="10" alt="Bullet" border="0"></td>
+	<td class="bold"><a href="webcam.html" class="bold">Webcams</a></td></tr>
+<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="http://www.nps.gov/yell/oldfaithfulcam.htm" class="tab">Old Faithful</a></td></tr>  
+<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="http://www.nps.gov/yell/mammothcam.htm" class="tab">Mammoth Hot Springs</a></td></tr>  
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="http://www.nps.gov/glac/whatsnew/cam4_manyglacier.htm" class="tab">Glacier National Park</a></td></tr>  
+	<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="http://www2.nature.nps.gov/air/webcams/parks/grcacam/grcacam.htm " class="tab">Grand Canyon</a></td></tr>  
+<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	<td><a href="http://www.nps.gov/bibe/basincam.htm" class="tab">Big Bend National Park</a></td></tr>  
+ 
+	<!---<tr>
+	<td><img src="images/menu_bullet2.gif" width="10" height="15" alt="Bullet" border="0" align="top"></td>
+	 <td><a href="http://vulcan.wr.usgs.gov/Photo/volcano_cams.html" class="tab">Volcano Cams</a></td></tr>   --->
+<TR><TD colspan="2"><a href="http://www.nps.gov/yell/oldfaithfulcam.htm" class="tab"><img src="images/webcam.jpg" width="170" height="170" alt="Old Faithful" border="0"></A></td></tr>
+<TR><TD colspan="2" class="caption">Old Faithful webcam is one of several webcams available in National Parks.</td></tr>
+
+	
+
+  <tr>
+	<td colspan=2 background="images/dot.gif"><img src="images/p.gif" width=1 height=1 border=0 alt="pixel of space"></td>
+	</tr>   
+ </table>
+ </td>
+<!-- central column -->
+
+  <td width="580" bgcolor="#FFFFFF" valign="top" align="center" >
+    <table width="580" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+ <tr>
+      <td  bgcolor="#FFFFFF"  class="hdrko" valign="top" align="center" height="30" >Contact Us</td>
+    </tr>
+	<TR><TD   > 
+	<table border="0" cellspacing="0" cellpadding="0" bgcolor="#3366CC" width="450" align="center"><tr><td >
+<table border="0" cellpadding="5" cellspacing="1" width="450" align="center">
+
+	<tr><td class="reg" align="left" width="190" bgcolor="#FFFFFF">
+	<table border="0" cellpadding="0" cellspacing="0" width="450" align="center">
+
+	<tr><td class="reg" align="left" width="190" bgcolor="#FFFFFF">
+	<b>Mailing Address:</b><BR>
+Department of the Interior<BR>
+<GEO TYPE="US">1849 C Street, N.W.<BR>
+Washington DC 20240</GEO>
+</td><TD class="reg" width="190" valign="top" align="left" bgcolor="#FFFFFF">
+<b>Phone:</b> 202-208-3100<BR>
+<b>E-Mail:</b> <A HREF="mailto:webteam@ios.doi.gov" class="tab">webteam@ios.doi.gov</A></td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr>
+<tr><td >&nbsp;</td></tr>
+	<tr><td align="center">
+	<table border="0" cellpadding="2" cellspacing="2" width="480" >
+
+<tr><td class="reg" valign="top">
+   
+	<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="mailto:webteam@ios.doi.gov" class="tab">Department of the Interior Webteam</a> 
+(for issues concerning www.doi.gov)
+<br>
+<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="mailto:Doiwebmaster@doi.gov" class="tab">Department of the Interior Webmaster</a>
+<br>
+<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="http://www.nps.gov/pub_aff/e-mail/" class="tab" target="New">National Park Service</a><br>
+<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="mailto:contact@fws.gov" class="tab">U.S. Fish and Wildlife</a><br>
+<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="mailto:webmaster@bia.gov" class="tab">Bureau of Indian Affairs</a><br>
+<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="http://www.blm.gov/nhp/feedback.htm" class="tab" target="New">Bureau of Land Management</a><br>
+<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="mailto:getinfo@osmre.gov" class="tab">Office of Surface Mining</a><br>
+<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="http://www.mms.gov/ooc/newweb/contactus.htm" class="tab" target="New">Minerals Management Service</a><br>
+<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="http://www.usgs.gov/ask/" class="tab" target="New">U.S. Geological Survey</a><br>
+<img src="images/bullet3.gif" width="10" height="10" alt="Bullet" border="0" align="absmiddle" hspace="2"><a href="http://www.usbr.gov/main/comments.html" class="tab" target="New">Bureau of Reclamation</a> 
+</td>
+	 </tr>
+	</table>
+	</td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td>
+	<table border="0" cellspacing="0" cellpadding="0" bgcolor="#3366CC" width="450" align="center"><tr><td >
+<table border="0" cellpadding="5" cellspacing="1" width="450" align="center">
+
+	<tr><td class="reg" align="left"  bgcolor="#FFFFFF">
+	<table border="0" cellpadding="0" cellspacing="0" width="450" align="center">
+
+	<tr><td class="reg" align="left"  bgcolor="#FFFFFF">
+<FORM ACTION="http://www5.doi.gov/email/doi.cfm" METHOD="POST"  target="new"> 
+<b>Email/Phone Search</b>  
+<BR>
+Enter <b>Last</b> Name.  Wild cards '*' are OK
+
+
+&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="name" size="13">&nbsp;<input type="image" src="images/Search2.gif" alt="Search" border="0" align="absbottom" width="55" height="25">
+<input type="Hidden" name="server" value="Interior">
+</form>
+
+ </td></tr></table> </td></tr></table> </td></tr></table>
+	<table width="588" border="0">
+	<tr><td>&nbsp;</td></tr>
+<tr><td colspan="2" class="subtitle" align="center">
+
+Please Use This Form To Send Your Questions or Comments.
+</td></tr>
+</table>
+
+ <FORM method="post" action="http://webteam.nbc.gov/doifinal2/fbtrans.cfm" name="emailForm" onsubmit="return submitIt(this)">
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#3366CC" width="450" align="center"><tr><td >
+<table border="0" cellpadding="5" cellspacing="1" width="450" align="center">
+
+<tr><td class="reg" bgcolor="#FFFFFF">
+
+	<table border="0" cellpadding="4" cellspacing="0" width="450" align="center" bgcolor="#FFFFFF">
+<tr><td class="reg" bgcolor="#FFFFFF">
+
+ Name: </TD>
+    <TD class="reg" bgcolor="#FFFFFF">
+    <INPUT name="realname" size="25">
+           </TD></TR>
+                
+ <TR>
+ <TD class="reg" bgcolor="#FFFFFF">E-mail Address:
+</TD>
+<TD class="reg" bgcolor="#FFFFFF">
+ <INPUT name="EMAIL" size="25">
+  </TD>  </TR>
+<tr><td  bgcolor="#FFFFFF" colspan="2">
+
+<TEXTAREA cols=45 name=information rows=8 wrap=PHYSICAL></TEXTAREA><BR>
+</td></tr>
+
+<tr><td  bgcolor="#FFFFFF" colspan="2" align="center" >
+  <input type="image" src="images/button_submit.gif" alt="Submit" border="0" >             <a href="javascript:document.forms['emailForm'].reset()"><img  src="images/button_reset.gif" alt="Reset" border="0"  ></a>
+
+</FORM>
+</td></tr>  
+</table>
+</td></tr>  
+</table>
+</td></tr>
+
+</table>
+
+
+
+</td>
+	 </tr>
+	</table>
+
+
+ </td>
+</tr>
+
+<!-- Site Navigation Links -->  
+<tr>
+<td colspan="3" height="10" bgcolor="#FFFFFF" width="769"><img border="0" alt="space" src="images/white-spacer.gif" width="1" height="1"></td>
+</tr>
+<tr>
+<td colspan="3" height="1" background="images/dot.gif" width="769"><img border="0" alt="pixel of space" src="images/dot.gif" width="1" height="1"></td>
+</tr>
+  <tr>
+    <td width="769" colspan="3" valign="middle" align="center" class="navftr">
+     <!-- <a href="index.html" class="navftr">Text Only</a>&nbsp;|&nbsp; --><a href="sitemap.html" class="navftr">
+     Sitemap</a>&nbsp;|&nbsp;
+     <a href="Javascript:open_window('feedback.html')" title="feedback" class="navftr">Feedback</a>
+     &nbsp;|&nbsp;<a href="Javascript:open_window('accessibility.html')" title="accessibility" class="navftr">
+     Accessibility</a>&nbsp;|&nbsp;<a href="Javascript:open_window('print.html')" title="Printing Instructions" class="navftr">
+    Printing Instructions</a></td>
+  </tr>
+ 
+
+<!-- Footer --> 
+
+ <tr>
+    <td width="769" height="30" colspan="3" valign="middle" align="center" class="navftr">
+    <a href="Javascript:open_window('disclaimer.html')" class="navftr"> Disclaimer</a>
+    &nbsp;|&nbsp;<a href="Javascript:open_window('privacy.html')" class="navftr">
+    Privacy Statement</a>&nbsp;|&nbsp;<a href="http://www.doi.gov/foia/" class="navftr" target="New">
+    FOIA</A>&nbsp;|&nbsp; <a HREF="http://www.whitehouse.gov/omb/egov/" class="navftr" target="_new">
+    E-Gov</a>&nbsp;|&nbsp;<a HREF="http://www.firstgov.gov" class="navftr" target="_new">FirstGov</a>
+    &nbsp;|&nbsp;<a HREF="http://www.whitehouse.gov" class="navftr" target="_new">White House</a>
+    &nbsp;|&nbsp;<a HREF="http://www.doi.gov" class="navftr" >DOI Home</a></td>
+  </tr>
+
+
+<!-- Address --> 
+
+  <tr>
+    <td width="769" height="10" colspan="3" valign="middle" align="center">&nbsp;</td>
+  </tr>
+
+
+  <tr>
+
+    <td width="769" colspan="3" class="navhdron" valign="bottom" align="center">
+     U.S. Department of the Interior<BR>
+     <GEO TYPE="US">1849 C Street, NW <br>
+     Washington, DC 20240</GEO><BR>
+
+<!--- Below is contact information for this web page -->
+
+    <a href="mailto:webteam@ios.doi.gov" class="navhdron">webteam@ios.doi.gov</a><BR>
+
+<!--- Below is date last updated for this web page -->
+     Last Updated on 10/04/04<BR></td>
+  </tr>
+
+  
+
+</table>
+
+
+<MAP NAME="banner_01alt2">
+  <AREA SHAPE=CIRCLE COORDS="53,54,45" HREF="http://www.doi.gov"  ALT="Department of the Interior"  OnMouseOut="window.status=''; return true"  OnMouseOver="window.status='Department of the Interior'; return true">
+  <AREA SHAPE=RECT COORDS="106,69,766,105" HREF="http://www.doi.gov"  ALT="Department of the Interior"  OnMouseOut="window.status=''; return true"  OnMouseOver="window.status='Department of the Interior'; return true">
+</MAP>
+
+<MAP NAME="banner_top">
+  <AREA SHAPE=RECT COORDS="337,0,489,20" HREF="http://www.doi.gov"  ALT="Department of the Interior"  OnMouseOut="window.status=''; return true"  OnMouseOver="window.status='Department of the Interior'; return true">
+</MAP>
+
+</body>
+
+</html>
+

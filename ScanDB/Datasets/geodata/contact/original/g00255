@@ -1,0 +1,379 @@
+<DOC>
+<DOCNO>g00255</DOCNO>
+<DOCHDR>http://www.conservationfund.org/?article=1007</DOCHDR>
+<!--6.9.02 wood@nogoodname.com -->
+
+<html>
+<head>
+	<title>The Conservation Fund - Contact Us </title>
+	<!--this script handles all of the rollovers in the top nav-->
+	<script language="JavaScript">
+
+	function jumptoorg(){
+	        {
+			var i,newloc
+			newloc=document.form.jumporg.options[document.form.jumporg.selectedIndex].value
+			if (newloc.length > 0)
+				{
+				location.href=newloc
+				}
+	        }
+	 }
+
+	function openPrintable(){
+	        {
+	        var printableWindow = window.open("","","toolbar=yes,menubar=yes,scrollbars=yes,width=550,height=400");
+			printableWindow.document.location = "?article=1007&print=true&start=1";
+	        }
+	 }
+
+	function clean(arg)
+		{
+		var j
+		var goodchars='1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@-_.'
+		var inval=arg+' '
+		var outval=''
+		for (j=0;j<inval.length;j++)
+			{
+			var c=inval.charAt(j)
+			if (goodchars.indexOf(c)!=-1)
+				{
+				outval+=c
+				}
+			}
+			if (outval.length==0)
+				{
+				return ''
+				}
+		return outval
+		}
+
+	function checkEmail()
+	{
+		arg = clean(document.subform.email.value);
+		document.subform.email.value = arg
+		if (arg=='')
+			{
+			alert('Please enter an Email address.');
+			document.subform.email.select();
+			document.subform.email.focus();
+			return false;
+			}
+		var len = arg.length;
+		var ats = arg.indexOf('@');
+		var prd = arg.indexOf('.',ats);
+		if ((ats < 1) || (ats == len - 1) || (ats + 2 > prd) || (prd + 1 == len))
+			{
+			alert('Please enter an Email address in the format "name@domain.dom".');
+			document.subform.email.select();
+			document.subform.email.focus();
+			return false;
+			}
+		return true;
+	}
+
+	function cleanPW(arg)
+		{
+		var j
+		var goodchars='1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+		var inval=arg+' '
+		var outval=''
+		for (j=0;j<inval.length;j++)
+			{
+			var c=inval.charAt(j)
+			if (goodchars.indexOf(c)!=-1)
+				{
+				outval+=c
+				}
+			}
+			if (outval.length==0)
+				{
+				return ''
+				}
+		return outval
+		}
+
+	function checkPW()
+	{
+		arg = cleanPW(document.subform.pw0.value);
+		if (arg != document.subform.pw0.value)
+			{
+			alert('Please use only letters and numbers in your password.');
+			document.subform.pw0.value = ""
+			document.subform.pw1.value = ""
+			document.subform.pw0.select();
+			document.subform.pw0.focus();
+			return false;
+			}
+		if (arg.length<6)
+			{
+			alert('Please use a password of at least 6 characters.');
+			document.subform.pw0.value = ""
+			document.subform.pw1.value = ""
+			document.subform.pw0.select();
+			document.subform.pw0.focus();
+			return false;
+			}
+		if (document.subform.pw0.value!=document.subform.pw1.value)
+			{
+			alert('Your passwords do not match.\n\nPlease Re-Enter.');
+			document.subform.pw0.value = ""
+			document.subform.pw1.value = ""
+			document.subform.pw0.select();
+			document.subform.pw0.focus();
+			return false;
+			}
+		return true;
+	}
+
+	</script>
+	<!--link to stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css" title="global_styles">
+</head>
+
+<body bgcolor="#006633" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+<!-- center the outermost table in the browser's window --->
+<!-- <center> --->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" height="1"><form name="form" method="POST" action="pagespinner.asp?article=1010">
+	<tr height="1">
+		<!-- Begin Top Top Header -->
+		<td bgcolor="#006633" colspan="4">
+			<table bgcolor="#006633" width="750" border="0" cellpadding="0" cellspacing="0" height="1">
+				<tr>
+					<!-- Begin Logo -->
+					<td valign="middle">
+						<a href="?article=1000"><img src="images/common/logo.gif" width="380" height="50" alt border="0"></a>
+					</td>
+					<!-- Begin TopNav -->
+					<td align="right" nowrap class="top_nav_text">
+						<select name='jumporg' size='1' onChange='jumptoorg();'>
+<option value select>Jump to related site...
+<option value='http://www.freshwaterinstitute.org'>Freshwater Institute
+<option value='http://www.wvncif.org'>Natural Capital Investment Fund
+<option value='http://www.greeninfrastructure.net'>GreenInfrastructure.Net
+<option value='http://www.resourcefulcommunities.org'>Resourceful Communities
+<option value='http://www.amazon.com/exec/obidos/tg/detail/-/1565792815/102-5491944-0558515?v=glance'>California Land Legacy
+<option value='http://www.conservationgis.com'>ConservationGIS.com
+<option value='http://www.palmettopeartree.org'>Palmetto Peartree Preserve
+</select>&nbsp;&nbsp;<br>
+						<img src="images/common/1pxtrans.gif" width="1" height="6" border="0"><br>
+						<a href="?article=1008" class="top_nav_text">Newsletter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1009" class="top_nav_text">Donate Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="kw0" type="text" size="15" value="search" OnClick="JavaScript:if (document.form.kw0.value=='search'){document.form.kw0.value='';};select()">&nbsp;<a href="JavaScript:document.form.submit()" class="top_nav_text">Go</a>&nbsp;&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+		<!-- Begin Right Padding -->
+		<td bgcolor="#006633" align="middle" valign="middle" width="100%">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+	</tr>
+
+	<tr>
+		<!-- Begin Top Middle Header -->
+		<td bgcolor="#006633" colspan="4">
+			<table bgcolor="#006633" width="100%" border="0" cellpadding="0" cellspacing="0" height="1">
+				<tr height="1">
+					<!-- Begin Banner -->
+					<td bgcolor="#006633" align="middle" width="750"><a href="?article=1000"><img src="images/common/6.jpg" width="738" height="73" alt border="0"></a></td>
+				</tr>
+			</table>
+		</td>
+		<!-- Begin Right Padding -->
+		<td bgcolor="#006633" align="middle" valign="middle">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+	</tr>
+
+	<tr>
+		<!-- Begin Top Bottom Header -->
+		<td bgcolor="#094001" colspan="4">
+			<table bgcolor="#094001" width="750" border="0" cellpadding="0" cellspacing="0" height="1">
+				<tr height="1">
+					<!-- Begin NavBar -->
+					<td bgcolor="#094001">
+						<table bgcolor="#094001" width="750" border="0" cellpadding="0" cellspacing="0">
+							<tr height="20">
+								<td align="middle" valign="middle" class="top_nav_text">
+									<center><a href="?article=1001" class="top_nav_text">About&nbsp;Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1002" class="top_nav_text">Our&nbsp;Work</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1003" class="top_nav_text">Support&nbsp;Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1004" class="top_nav_text">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1005" class="top_nav_text">News&nbsp;&amp;&nbsp;Publications</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1006" class="top_nav_text">Award&nbsp;Programs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1007" class="top_nav_text_down">Contact&nbsp;Us</a></center>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<!-- Begin Right Padding -->
+		<td bgcolor="#094001" align="middle" valign="middle" width="100%">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+	</tr></form>
+
+	<!-- Begin Central Content Area -->
+	<tr height="1">
+		<!-- Begin SideBar -->
+		<td bgcolor="#E6E6CC" align="middle" valign="top" width="24">
+			<img src="images/sidebar/sidebar_1007.gif">
+		</td>
+		<!-- Begin Menu -->
+		<td bgcolor="#CCCC99" align="middle" valign="top" width="160">
+			<img src="images/common/1pxtrans.gif" width="160" height="15" border="0"><br>
+<!-- Begin Menu -->
+<table border='0' cellpadding='1' cellspacing='0'width='150'>
+</table>
+<!-- End Menu -->
+
+			<img src="images/common/1pxtrans.gif" width="1" height="2" border="0">
+		</td>
+		<!-- Begin Gutter -->
+		<td bgcolor="white" align="middle" valign="middle" width="24">
+			<img src="images/common/1pxtrans.gif" width="24" height="1" border="0">
+		</td>
+		<!-- Begin Content -->
+		<td bgcolor="white" valign="top" width="493">
+			<img src="images/common/1pxtrans.gif" width="532" height="20" border="0"><br>
+<!-- Begin Content -->
+<table border='0' cellpadding='0' cellspacing='0' width='532' height='1'>
+<tr><td class='copy' valign='top' align='left'><span class='header1'>Directory of Offices</span><br>National Office  <BR>1800 North Kent Street, Suite 1120  <BR>Arlington, Virginia 22209-2156  <BR>Phone: 703-525-6300  <BR>Fax: 703-525-4610 <BR><a href="mailto:postmaster@conservationfund.org" target=”newwindow”>postmaster@conservationfund.org </a>  <BR><BR>Alaska Office <BR>6400 Andover Drive<BR>Anchorage, AK  99516<BR>Phone:	(907) 868-7974 <BR>Fax: 	(907) 929-0912 <BR><BR>California Office<BR>P.O. Box 5326 <BR>Larkspur, CA 94977<BR>Phone: (415) 927-2123<BR>Fax: 	(415) 924-7354<BR><BR>Conservation Leadership Network<BR>The National Conservation Training Center<BR>698 Conservation Way <BR>Shepherdstown, WV 25443 <BR>Phone: (304) 876-7967 <BR>Fax: (304) 876-7751<BR><BR>Delaware Office<BR>5807 Kennett Pike<BR>Centreville, DE 19807<BR>Phone: (302) 656-1103<BR>Fax: 	(302) 656-1104<BR><BR>Florida Offices<BR>Tallahassee <BR>2507 Callaway Road, Suite 107<BR>Tallahassee, FL 32303<BR>Phone:	(850) 386-8683<BR>Fax: 	(850) 224-6056<BR><BR>West Palm Beach<BR>224 Datura Street, Suite 209<BR>West Palm Beach, FL  33401<BR>Phone:	(561) 832-7665<BR>Fax:	(561) 832-8102<BR><BR>Freshwater Institute<BR>1098 Turner Road<BR>Shepherdstown WV 25443<BR>Phone:	(304) 876-2815<BR>Fax:	(304) 870-2208<BR><BR>Great Lakes Office <BR>P.O. Box 111<BR>Auburn, MI  48611<BR>Phone:	(989) 662-6024<BR>Fax:	(989) 662-6065<BR><BR>Illinois Office<BR>30 West Monroe Street, 18th Floor<BR>Chicago, IL  60603<BR>Phone:	(312) 332-6292<BR>Fax:	(312) 332-8412<BR><BR>Maryland Office<BR>584 Bellerive Drive, Suite 3-D<BR>Annapolis, MD  21401<BR>Phone:	(410) 757-0370<BR>Fax:	(410) 757-3791<BR><BR>Midwest Regional Office<BR>P.O. Box 506<BR>Sawyer, MI  49125<BR>Phone:	(269) 426-8825<BR>Fax:	(269) 426-4067<BR><BR>Montana Office<BR>125 Bank Street, Suite 612<BR>Missoula, MT 59802<BR>Phone:	(406) 541-8555<BR>Fax:	(406) 541-8556<BR><BR>Nevada and Southwest Office<BR>3960 Howard Hughes Parkway, Suite 534<BR>Las Vegas, NV  89109<BR>Phone:	(702) 990-3540<BR>Fax:	(702) 990-3541<BR><BR>New Mexico Office<BR>1511 Don Gaspar<BR>Santa Fe, NM  87505<BR>Phone:	(505) 984-2871<BR>Fax:	(505) 982-5355<BR><BR>North Carolina Office<BR>P.O. Box 271<BR>Chapel Hill, NC  27514<BR>Phone:	(919) 967-2223<BR>Fax:	(919) 967-9702<BR><BR>Northwest Regional Office<BR>P.O. Box 1524<BR>Sun Valley, ID  83353<BR>Phone:	(208) 726-4419<BR>Fax:	(208) 726-4429<BR><BR>Oregon Office<BR>721 N.W. Ninth Avenue, Suite 226<BR>Portland, OR 97209<BR>Phone: (503) 546-8086<BR>Fax: 	(503) 546-8087<BR><BR>Pennsylvania Office<BR>105 North Front Street<BR>Harrisburg, PA  17101<BR>Phone:	(717) 230-8166<BR>Fax:	(717) 230-8167<BR><BR>South Carolina Office<BR>P.O. Box 5226<BR>Columbia, SC 29250<BR>Phone: (803) 256-2449<BR>Fax: 	(803) 256-6052<BR><BR>Southeast Regional Office<BR>P.O. Box 1362<BR>Tucker, GA  30085<BR>Phone:	(770) 414-0211<BR>Fax:	(770) 938-0585<BR><BR>Texas Office<BR>101 West 6th Street, Suite 601<BR>Austin, TX  78701<BR>Phone:	(512) 477-1712<BR>Fax:	(512) 477-3316<BR><BR>Upper Mississippi River Office <BR>6459 Smithtown Road<BR>Excelsior, MN 55331<BR>Phone:	(952) 474-9189<BR>Fax:	(952) 474-0735<BR><BR>Vermont Office <BR>1331 Town Hill Road<BR>Shrewsbury, VT 05738<BR>Phone:	(802) 492-3368<BR>Fax:	(802) 492-3363<BR><BR>Western Regional Office	<BR>1942 Broadway, Suite 323<BR>Boulder, CO  80302<BR>Phone:	(303) 444-4369<BR>Fax:	(303) 938-3763<BR><BR>Wisconsin Office<BR>260 W. Seeboth <BR>Milwaukee, WI 53204<BR>Phone: (414) 225-2124<BR>Fax:	(414) 225-4910<BR></td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+<!-- End Content -->
+
+			<img src="images/common/1pxtrans.gif" width="1" height="2" border="0">
+		</td>
+		<!-- Begin Right Padding -->
+		<td bgcolor="white" align="middle" valign="middle" width="99%">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+	</tr>
+
+	<tr height="100%">
+		<!-- Begin SideBar Filler -->
+		<td bgcolor="#E6E6CC" align="middle" valign="top" width="24">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+		<!-- Begin Menu Filler -->
+		<td bgcolor="#CCCC99" align="middle" valign="top" width="160">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+		<!-- Begin Gutter Filler -->
+		<td bgcolor="white" align="middle" valign="middle" width="24">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+		<!-- Begin Content Filler -->
+		<td bgcolor="white" valign="top" width="532">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+		<!-- Begin Right Padding -->
+		<td bgcolor="white" align="middle" valign="middle" width="99%">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+	</tr>
+
+	<tr height="46">
+		<!-- Begin SW Corner -->
+		<td bgcolor="#CCCCB3" align="middle" valign="top" width="24">
+			<img src="images/common/1pxtrans.gif" width="1" height="46" border="0">
+		</td>
+		<!-- Begin Donate Now -->
+		<td bgcolor="#999966" align="middle" valign="middle" width="160">
+			<table>
+				<tr>
+					<td align="left">
+						<a href="?article=1009" class="donate_text">Click here to<br><b>DONATE&nbsp;NOW</b></a>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<!-- Begin Lower Gutter -->
+		<td bgcolor="white" align="middle" valign="middle" width="24">
+			&nbsp;
+		</td>
+		<!-- Begin PrevNextPrint Table -->
+		<td bgcolor="white" valign="middle" width="532">
+			<table bgcolor="white" width="100%" border="0" cellpadding="0" cellspacing="0" height="1">
+				<tr>
+					<!-- Begin PrevNext -->
+					<td align="left" valign="middle" nowrap>
+	
+					</td>
+					<td align="right" valign="middle" nowrap class="prevnext">
+	
+					</td>
+				</tr>
+				<tr>
+					<!-- Begin PrevNext -->
+					<td align="left" valign="middle" colspan="2" nowrap>
+						<a href="Javascript:openPrintable();" class="printer"><img src="images/common/printer.gif" border="0"><img src="images/common/1pxtrans.gif" width="4" height="1" border="0">PRINTER-FRIENDLY VERSION</a>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<!-- Begin Right Padding -->
+		<td bgcolor="white" align="middle" valign="middle" width="99%">
+			<img src="images/common/1pxtrans.gif" width="1" height="1" border="0">
+		</td>
+	</tr>
+
+	<!-- Begin Bottom Bar Area -->
+	<tr height="1">
+		<td bgcolor="#006633" colspan="4">
+			<table width="750" border="0" cellpadding="0" cellspacing="0" height="1">
+
+				<tr height="1">
+					<td bgcolor="#006633">
+						<table bgcolor="#006633" width="100%" border="0" cellpadding="0" cellspacing="0" height="1">
+							<tr>
+								<!-- Begin Text Navigation -->
+								<td align="middle" valign="middle" nowrap>
+									<center><a href="?article=1001" class="bottom_nav_text">About&nbsp;Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1002" class="bottom_nav_text">Our&nbsp;Work</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1003" class="bottom_nav_text">Support&nbsp;Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1004" class="bottom_nav_text">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1005" class="bottom_nav_text">News&nbsp;&amp;&nbsp;Publications</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1006" class="bottom_nav_text">Award&nbsp;Programs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1007" class="bottom_nav_text_down">Contact&nbsp;Us</a></center>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr height="1">
+					<td bgcolor="#006633">
+						<table bgcolor="#006633" width="100%" border="0" cellpadding="0" cellspacing="0" height="1">
+							<tr>
+								<!-- Begin Search|Newsletter|etc Navigation -->
+								<td align="middle" valign="middle" nowrap>
+									<center><a href="?article=1008" class="bottom_nav_text">Newsletter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1009" class="bottom_nav_text">Donate Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1010" class="bottom_nav_text">Search</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?article=1011" class="bottom_nav_text">Site&nbsp;Map</a></center>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr height="1">
+					<td bgcolor="#006633">
+						<table bgcolor="#006633" width="100%" border="0" cellpadding="0" cellspacing="0" height="1">
+							<tr>
+								<!-- Begin Horizontal Rule -->
+								<td align="middle" valign="middle" nowrap><img src="images/common/bot_bar.gif" width="738" height="1" alt border="0"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr height="1">
+					<td bgcolor="#006633">
+						<table bgcolor="#006633" width="100%" border="0" cellpadding="0" cellspacing="0" height="1">
+							<tr height="18">
+								<!-- Begin Copyright -->
+								<td align="middle" valign="middle" class="copyright">
+									© 2001-2005&nbsp;The Conservation Fund.  All rights reserved.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>				
+		<!-- Begin Right Fill Area -->
+		<td bgcolor="#006633" width="99%">&nbsp;
+		</td>
+	</tr>
+</table>					
+<!--	</center> -->
+</body>

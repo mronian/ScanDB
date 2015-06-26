@@ -1,0 +1,82 @@
+Created by PLY version 3.6 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    FAX
+    ESTAB
+    NAME
+    ZIP
+    SALES
+    EMPLOYS
+    PH_NUM
+    DISTRIB
+    PH
+    LINE_END
+
+Grammar
+
+Rule 0     S' -> sic_code
+Rule 1     sic_code -> SIC NUM
+Rule 2     naics_code -> NAICS NAICS_NUM
+Rule 3     email -> EMAIL_TOK EMAIL
+Rule 4     email -> EMAIL
+Rule 5     website -> WEB
+
+Terminals, with rules where they appear
+
+DISTRIB              : 
+EMAIL                : 3 4
+EMAIL_TOK            : 3
+EMPLOYS              : 
+ESTAB                : 
+FAX                  : 
+LINE_END             : 
+NAICS                : 2
+NAICS_NUM            : 2
+NAME                 : 
+NUM                  : 1
+PH                   : 
+PH_NUM               : 
+SALES                : 
+SIC                  : 1
+WEB                  : 5
+ZIP                  : 
+error                : 
+
+Nonterminals, with rules where they appear
+
+email                : 
+naics_code           : 
+sic_code             : 0
+website              : 
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . sic_code
+    (1) sic_code -> . SIC NUM
+
+    SIC             shift and go to state 1
+
+    sic_code                       shift and go to state 2
+
+state 1
+
+    (1) sic_code -> SIC . NUM
+
+    NUM             shift and go to state 3
+
+
+state 2
+
+    (0) S' -> sic_code .
+
+
+
+state 3
+
+    (1) sic_code -> SIC NUM .
+
+    $end            reduce using rule 1 (sic_code -> SIC NUM .)
+

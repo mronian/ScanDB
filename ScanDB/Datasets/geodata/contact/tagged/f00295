@@ -1,0 +1,750 @@
+<DOC>
+<DOCNO>f00295</DOCNO>
+<DOCHDR>http://www.nami.org/template.cfm?section=Contact_Us</DOCHDR>
+
+<!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+
+
+
+<!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+
+
+
+ 
+
+ 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL="StyleSheet" HREF="/Styles/Styles.css" type="text/css">
+
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+  
+  var varBrowser = "Other";
+  if(navigator.appName.indexOf("Netscape",0) == 0)
+    {varBrowser = "Netscape";
+  }else{
+    if((navigator.appName.indexOf("Microsoft",0) == 0) || (navigator.appName.indexOf("MS",0) == 0))
+    {varBrowser = "MSIE";}
+  }
+
+  if(document.images) {
+  this[1] = new Image();
+  this[1].src = "/Graphics/informyourself_on.gif";
+  this[2] = new Image();
+  this[2].src = "/Graphics/findsupport_on.gif";
+  this[3] = new Image();
+  this[3].src = "/Graphics/takeaction_on.gif";
+}
+
+function swapIt(imgName,imgType,imgAction) {
+      if (document.images) {
+        if (imgAction == 1) {
+          switch(imgType){
+            case "Inform_Yourself": newSrc="/Graphics/informyourself_on.gif"; break
+          case "Find_Support": newSrc="/Graphics/findsupport_on.gif"; break
+          case "Take_Action": newSrc="/Graphics/takeaction_on.gif"; break
+        }
+        }
+        else {
+          switch(imgType){
+            case "Inform_Yourself": newSrc="/Graphics/informyourself_off.gif"; break
+          case "Find_Support": newSrc="/Graphics/findsupport_off.gif"; break
+          case "Take_Action": newSrc="/Graphics/takeaction_off.gif"; break
+        }
+        }
+        document.images[imgName].src = newSrc;
+      }
+    }
+//-->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+} 
+
+</SCRIPT>
+
+<!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+if(window.event + "" == "undefined") event = null;
+function HM_f_PopUp(){return false};
+function HM_f_PopDown(){return false};
+popUp = HM_f_PopUp;
+popDown = HM_f_PopDown;
+//-->
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE="JavaScript1.2" TYPE="text/javascript">
+<!--
+isMac = (navigator.appVersion.indexOf("Mac") != -1);
+HM_PG_MenuWidth = 150;
+HM_PG_FontFamily = "Verdana,Arial,Sans-serif";
+if(isMac){HM_PG_FontSize = 10;}
+     else{HM_PG_FontSize = 10 - 2;}
+HM_PG_FontBold = 1;
+HM_PG_FontItalic = 0;
+HM_PG_FontColor = "#000099";
+HM_PG_FontColorOver = "#FFFFFF";
+HM_PG_BGColor = "#FF9900";
+HM_PG_BGColorOver = "#000099";
+HM_PG_ItemPadding = 3;
+
+HM_PG_BorderWidth = 1;
+HM_PG_BorderColor = "#336699";
+HM_PG_BorderStyle = "solid";
+HM_PG_SeparatorSize = 1;
+HM_PG_SeparatorColor = "black";
+
+HM_PG_ImageSrc = "";
+HM_PG_ImageSrcLeft = "";
+HM_PG_ImageSrcOver = "";
+HM_PG_ImageSrcLeftOver = "";
+
+HM_PG_ImageSize = 5;
+HM_PG_ImageHorizSpace = 0;
+HM_PG_ImageVertSpace = 2;
+
+HM_PG_KeepHilite = true; 
+HM_PG_ClickStart = 0;
+HM_PG_ClickKill = false;
+HM_PG_ChildOverlap = 20;
+HM_PG_ChildOffset = 10;
+HM_PG_ChildPerCentOver = null;
+HM_PG_TopSecondsVisible = .5;
+HM_PG_StatusDisplayBuild =0;
+HM_PG_StatusDisplayLink = 0;
+HM_PG_UponDisplay = null;
+HM_PG_UponHide = null;
+HM_PG_RightToLeft = false;
+
+HM_PG_CreateTopOnly = 1;
+HM_PG_ShowLinkCursor = 1;
+HM_PG_NSFontOver = true;
+
+//HM_a_TreesToBuild = [2];
+
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript1.2" TYPE="text/javascript">
+<!--
+/*
+ * Original Script: HM_Loader.js & HM_Arrays.js
+ * Original script copyright © 2001 Peter Belesis.
+ * http://www.webreference.com/dhtml/
+ * All rights reserved.
+ * Used under license.
+ * All modifications Copyright © 2001 Active Matter, Inc. www.activematter.com 
+ * Copyright (c) 2001 Peter Belesis. All Rights Reserved.
+*/
+
+HM_DOM = (document.getElementById) ? true : false;
+HM_NS4 = (document.layers) ? true : false;
+HM_IE = (document.all) ? true : false;
+HM_IE4 = HM_IE && !HM_DOM;
+HM_Mac = (navigator.appVersion.indexOf("Mac") != -1);
+HM_IE4M = HM_IE4 && HM_Mac;
+
+// Test for Mac Nav 4.0.x and disable menu
+// due to page relaoding issue.
+if(HM_NS4 && HM_Mac){
+  version = parseFloat(navigator.appVersion);
+  HM_NS4_0M = (version < 4.1) ? true : false;
+}
+else HM_NS4_0M = false;
+
+HM_IsMenu = (HM_DOM || HM_NS4 || (HM_IE4 && !HM_IE4M));
+
+HM_BrowserString = HM_NS4 ? "NS4" : HM_DOM ? "DOM" : "IE4";
+
+if(window.event + "" == "undefined") event = null;
+function HM_f_PopUp(){return false};
+function HM_f_PopDown(){return false};
+popUp = HM_f_PopUp;
+popDown = HM_f_PopDown;
+
+
+HM_GL_MenuWidth          = 150;
+HM_GL_FontFamily         = "Arial,sans-serif";
+HM_GL_FontSize           = 10;
+HM_GL_FontBold           = true;
+HM_GL_FontItalic         = false;
+HM_GL_FontColor          = "black";
+HM_GL_FontColorOver      = "white";
+HM_GL_BGColor            = "transparent";
+HM_GL_BGColorOver        = "transparent";
+HM_GL_ItemPadding        = 3;
+
+HM_GL_BorderWidth        = 2;
+HM_GL_BorderColor        = "red";
+HM_GL_BorderStyle        = "solid";
+HM_GL_SeparatorSize      = 2;
+HM_GL_SeparatorColor     = "yellow";
+
+HM_GL_ImageSrc = "";
+HM_GL_ImageSrcLeft = "";
+
+HM_GL_ImageSrcOver = "";
+HM_GL_ImageSrcLeftOver = "";
+
+HM_GL_ImageSize          = 5;
+HM_GL_ImageHorizSpace    = 5;
+HM_GL_ImageVertSpace     = 5;
+
+HM_GL_KeepHilite         = false;
+HM_GL_ClickStart         = false;
+HM_GL_ClickKill          = 0;
+HM_GL_ChildOverlap       = 40;
+HM_GL_ChildOffset        = 10;
+HM_GL_ChildPerCentOver   = null;
+HM_GL_TopSecondsVisible  = .5;
+HM_GL_ChildSecondsVisible = .3;
+HM_GL_StatusDisplayBuild = 0;
+HM_GL_StatusDisplayLink  = 1;
+HM_GL_UponDisplay        = null;
+HM_GL_UponHide           = null;
+
+//HM_GL_RightToLeft      = true;
+HM_GL_CreateTopOnly      = HM_NS4 ? true : false;
+HM_GL_ShowLinkCursor     = true;
+
+// the following function is included to illustrate the improved JS expression handling of
+// the left_position and top_position parameters
+// you may delete if you have no use for it
+
+function HM_f_CenterMenu(topmenuid) {
+	var MinimumPixelLeft = 0;
+	var TheMenu = HM_DOM ? document.getElementById(topmenuid) : HM_IE4 ? document.all(topmenuid) : eval("window." + topmenuid);
+	var TheMenuWidth = HM_DOM ? parseInt(TheMenu.style.width) : HM_IE4 ? TheMenu.style.pixelWidth : TheMenu.clip.width;
+	var TheWindowWidth = HM_IE ? document.body.clientWidth : window.innerWidth;
+	return Math.max(parseInt((TheWindowWidth-TheMenuWidth) / 2),MinimumPixelLeft);
+}
+
+if(HM_IsMenu) {
+	HM_Array1 = [[,1,129,,,,,,,,,,,,,,,,],["About NAMI","http://www.nami.org/Content/NavigationMenu/Inform_Yourself/About_NAMI/About_NAMI.htm",1,0,0],["About Mental Illness","http://www.nami.org/Content/NavigationMenu/Inform_Yourself/About_Mental_Illness/About_Mental_Illness.htm",1,0,0],["About Medication","http://www.nami.org/Content/NavigationMenu/Inform_Yourself/About_Medications/Default798.htm",1,0,0],["About Research","http://www.nami.org/Content/NavigationMenu/Inform_Yourself/About_Research/About_Research.htm",1,0,0],["About Public Policy","http://www.nami.org/Content/NavigationMenu/Inform_Yourself/About_Public_Policy/About_Public_Policy.htm",1,0,0],["Upcoming Events","http://www.nami.org/Content/NavigationMenu/Inform_Yourself/Upcoming_Events/Upcoming_Events.htm",1,0,0],["NAMI en español","http://www.nami.org/Content/NavigationMenu/Inform_Yourself/NAMI_en_español/NAMI_en_español.htm",1,0,0]];HM_Array2 = [[,188,129,,,,,,,,,,,,,,,,],["State & Local NAMIs","http://www.nami.org/Template.cfm?Section=Your_Local_NAMI&Template=/CustomSource/AffiliateFinder.cfm",1,0,0],["Education & Training","http://www.nami.org/Content/NavigationMenu/Find_Support/Education_and_Training/Education_Training_and_Peer_Support_Center/Education,_Training_and_Peer_Support_Center.htm",1,0,0],["Consumer Support","http://www.nami.org/Content/NavigationMenu/Find_Support/Consumer_Support/Consumer_Support.htm",1,0,0],["Child & Teen Support","http://www.nami.org/Template.cfm?Section=Child_and_Adolescent_Action_Center",1,0,0],["NAMI on Campus","http://www.nami.org/Template.cfm?Section=NAMI_on_Campus&Template=/TaggedPage/TaggedPageDisplay.cfm&TPLID=19&ContentID=12235",1,0,0],["Multicultural Action Center","http://www.nami.org/Template.cfm?Section=Multicultural_Support&Template=/TaggedPage/TaggedPageDisplay.cfm&TPLID=41&ContentID=13041",1,0,0],["Legal Support","http://www.nami.org/Content/NavigationMenu/Find_Support/Legal_Support/NAMI_Legal_Support.htm",1,0,0],["Information Helpline","http://www.nami.org/Content/NavigationMenu/Find_Support/Helpline/NAMI_Information_Helpline.htm",1,0,0],["Online Communities","http://www.nami.org/template.cfm?section=communities",1,0,0]];HM_Array3 = [[,368,129,,,,,,,,,,,,,,,,],["Contact Your Representatives","http://www.nami.org/Template.cfm?Section=Become_An_Advocate&Template=/MembersOnly.cfm&NavMenuID=327&ContentID=7661&DirectListComboInd=D",1,0,0],["Fight Stigma","http://www.nami.org/Content/NavigationMenu/Take_Action/Fight_Stigma/Fight_Stigma_StigmaBusters.htm",1,0,0],["Campaign for the Mind of America","http://www.nami.org/Template.cfm?section=Campaign_for_the_Mind_of_America",1,0,0],["National Surveys","http://www.nami.org/Template.cfm?Section=National_Surveys&Template=/Surveys/SurveyList.cfm",1,0,0],["NAMIWALKS","http://www.nami.org/template.cfm?section=namiwalks",1,0,0],["Donate","http://www.nami.org/template.cfm?section=Donate&template=/ContentManagement/ContentDisplay.cfm&ContentID=11665&lstid=103",1,0,0],["Register & Join","https://www.nami.org/Template.cfm?Section=Become_A_Member&Template=/MemberManagement/SignUpForm.cfm",1,0,0],["25th Anniversary","http://www.nami.org/Content/NavigationMenu/Take_Action/25th_Anniversary/NAMIs_25th_Anniversary.htm",1,0,0]];
+  document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='/HierMenu/HM_Script"+ HM_BrowserString +".js' TYPE='text/javascript'><\/SCR" + "IPT>");
+}
+//end
+//-->
+</SCRIPT>
+ 
+
+
+  
+
+
+<script LANGUAGE=JAVASCRIPT TYPE="text/javascript" >
+<!--
+function _CF_onError(form_object, input_object, object_value, error_message)
+    {
+	alert(error_message);
+       	return false;	
+    }
+
+function _CF_hasValue(obj, obj_type)
+    {
+    if (obj_type == "TEXT" || obj_type == "PASSWORD")
+	{
+    	if (obj.value.length == 0) 
+      		return false;
+    	else 
+      		return true;
+    	}
+    else if (obj_type == "SELECT")
+	{
+        for (i=0; i < obj.length; i++)
+	    	{
+		if (obj.options[i].selected)
+			return true;
+		}
+       	return false;	
+	}
+    else if (obj_type == "SINGLE_VALUE_RADIO" || obj_type == "SINGLE_VALUE_CHECKBOX")
+	{
+		if (obj.checked)
+			return true;
+		else
+       		return false;	
+	}
+    else if (obj_type == "RADIO" || obj_type == "CHECKBOX")
+	{
+        for (i=0; i < obj.length; i++)
+	    	{
+		if (obj[i].checked)
+			return true;
+		}
+       	return false;	
+	}
+	}
+
+function  _CF_checksearch(_CF_this)
+    {
+    if  (!_CF_hasValue(_CF_this.criteria, "TEXT" )) 
+        {
+        if  (!_CF_onError(_CF_this, _CF_this.criteria, _CF_this.criteria.value, "You must enter search criteria."))
+            {
+            return false; 
+            }
+        }
+    return true;
+    }
+//-->
+</script>
+  
+
+
+<meta name="Keywords" content="NAMI, National Alliace for the Mentally Ill, mental illness, contact, email, feedback, webmaster, help, employees, jobs, technical support, tech, staff">
+<meta name="Description" content="We want to hear from you! Your questions, comments and concerns are important to us and we will do our best to address them in a timely fashion.">
+<title>NAMI | Contacting NAMI</title></head> 
+
+<BODY bgcolor="#FFFFFF" text="#000000" topmargin="0" leftmargin="0" rightmargin="0" MARGINHEIGHT="0" MARGINWIDTH="0" bottommargin="0"> 
+
+
+
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#000066">
+<tr>
+  <td>
+  
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#000066"> 
+  <tr>
+    <td bgcolor="#000066"> 
+      <table width=757 border=0 cellpadding=0 cellspacing=0> 
+        <tr> 
+          <td><img src="/Graphics/Template/spacer.gif" height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=133 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=7 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=8 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=3 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=29 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=93 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=8 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=34 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=57 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=18 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=24 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=6 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=16 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=69 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=10 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=20 height=1 alt=""></td>
+          <td><img src="/Graphics/Template/spacer.gif" width=35 height=1 alt=""></td>
+          <td></td>
+        </tr>        
+           <tr> 
+          <td colspan="13" background="/Graphics/Template/logo_sliver.gif" align="right" height="21" valign="top"><a href="http://www.nami.org/template.cfm?section=your_local_NAMI"><img src="/Graphics/Template/logotext3.gif" width="265" height="21" alt="Serving more than 1000 affiliates" align="left" hspace="0" vspace="0" border="0"></a><a href="http://www.nami.org/template.cfm?section=About_NAMI" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('aboutnami','','/Graphics/template/aboutnami_on.gif',1)"><img src="/Graphics/Template/aboutnami_off.gif" name="aboutnami" width=64 height=21 alt="About NAMI" border="0" hspace="0" vspace="0"></a><a href="http://www.nami.org/template.cfm?section=Contact_Us" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contactus','','/Graphics/template/contactus_on.gif',1)"><img src="/Graphics/Template/contactus_off.gif" name="contactus" width=69 height=21 alt="" border="0" hspace="0" vspace="0"></a><a href="http://www.nami.org/template.cfm?section=NAMI_en_español" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('espanol','','/Graphics/template/espanol_on.gif',1)"><img src="/Graphics/Template/espanol_off.gif" name="espanol" width="65" height="21" alt="" border="0" hspace="0" vspace="0"></a><a href="http://www.nami.org/template.cfm?section=logout" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('logout','','/Graphics/template/logout_on.gif',1)"><img src="/Graphics/Template/logout_off.gif" name="logout" width="37" height="21" alt="Logout" border="0" hspace="0" vspace="0"></a>&nbsp;</td>
+          <td colspan="5" valign="top"><a href="http://www.nami.org/template.cfm?section=Donate&lstid=100" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('donateTop','','/Graphics/template/donatebutt_on.gif',1)"><img src="/Graphics/Template/donatebutt_off.gif"  alt="Donate" name="donateTop" width="150" height="21" BORDER="0"></a></td>
+<td></TD>
+        </tr>
+        <tr> 
+          <td><a href="http://www.nami.org/Hometemplate.cfm"><img src="/Graphics/Template/logo.gif" width=187 height=80 alt="" border="0"></a></td>
+          <td colspan=8><img src="/Graphics/Template/logo_02.gif" width=315 height=80 alt=""></td>
+          
+              
+            <td colspan=9><img src="/Graphics/TemplateHeader/Contact_Us_top_pic.gif" width=255 height=80 alt=""></td>
+                    
+          <td><img src="/Graphics/Template/spacer.gif" width=1 height=80 alt=""></td>
+        </tr>        
+        <tr>
+          <td colspan="10">
+<!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr><td align="center"><a class="TopNav" href="http://www.nami.org/Template.cfm?section=Inform_Yourself"       
+      
+      onMouseOver="swapIt('i_Inform_Yourself','Inform_Yourself',1);popUp('HM_Menu1',event);" onMouseOut="swapIt('i_Inform_Yourself', 'Inform_Yourself', 0); popDown('HM_Menu1',event);"
+       >      
+      <img name="i_Inform_Yourself" src="/Graphics/informyourself_off.gif" width="187" height="27" border="0"></a></td><td align="center"><a class="TopNav" href="http://www.nami.org/Template.cfm?section=Find_Support"       
+      
+      onMouseOver="swapIt('i_Find_Support','Find_Support',1);popUp('HM_Menu2',event);" onMouseOut="swapIt('i_Find_Support', 'Find_Support', 0); popDown('HM_Menu2',event);"
+       >      
+      <img name="i_Find_Support" src="/Graphics/findsupport_off.gif" width="180" height="27" border="0"></a></td><td align="center"><a class="TopNav" href="http://www.nami.org/Template.cfm?section=Take_Action"       
+      
+      onMouseOver="swapIt('i_Take_Action','Take_Action',1);popUp('HM_Menu3',event);" onMouseOut="swapIt('i_Take_Action', 'Take_Action', 0); popDown('HM_Menu3',event);"
+       >      
+      <img name="i_Take_Action" src="/Graphics/takeaction_off.gif" width="192" height="27" border="0"></a></td></tr></table> 
+
+          </td>
+          <td colspan=3><img src="/graphics/template/find.gif" width=48 height=27 alt=""></td>
+           <form name="search" action="http://www.nami.org/Template.cfm?section=Search&Template=Search/SearchDisplay.cfm" method="POST" onSubmit="return _CF_checksearch(this)">
+          <td colspan=4 background="/graphics/template/find_sliver.gif" class="FindInputSmall">
+          &nbsp;<input type="Text" name="criteria" size="12" required="Yes" message="You must enter search criteria.">          
+          </td>
+          <td ><input type="Image" src="/graphics/template/find_go.gif" width=35 height=27 alt="Search" border="0"></td>
+          </form>
+          <td><img src="/graphics/template/spacer.gif" width=1 height=27 alt=""></td>
+        </tr>
+    </table>
+    <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
+     <tr valign="top">
+          <td width="187" bgcolor="#000066">&nbsp;</td>
+          <td><img src="/graphics/template/stripe_interior.gif" width=420 height=14 alt="" border="0"></td>
+          <td><a href="http://www.nami.org/Template.cfm?section=search"><img src="/graphics/template/find_advancedsearch.gif" width=150 height=14 alt="" border="0"></a></td>          
+          
+        </tr>   
+    </table>
+
+</td></tr>
+
+<tr valign="Top"><td>
+<!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+
+
+<table border="0" width="757" cellpadding="0" cellspacing="0">
+
+ 	<tr>
+    
+    <td width="3" bgcolor="##000066">&nbsp;</td>
+    <td width="178" valign="top" bgcolor="#ffffff"   >
+      
+       <table border="0" cellpadding="0" cellspacing="0" >
+      <tr><td>
+        <a href="http://www.nami.org/template.cfm?section=Sign_In" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('signin','','/Graphics/template/1_signin_on.gif',1)"><img name="signin" src="/Graphics/Template/1_signin_off.gif" width=178 height=17 alt="Sign In" border="0"></a><br>
+        <a href="http://www.nami.org/template.cfm?section=My_Nami&lstid=375" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('createnami','','/Graphics/template/1_createnami_on.gif',1)"><img name="createnami" src="/Graphics/Template/1_createnami_off.gif" width=178 height=17 alt="myNAMI" border="0"></a><br>
+    <a href="http://www.nami.org/template.cfm?section=Communities" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('communities','','/Graphics/template/1_communities_on.gif',1)"><img name="communities" src="/Graphics/Template/1_communities_off.gif" width=178 height=17 alt="Communities" border="0"></a><br>
+        <a href="http://www.nami.org/template.cfm?section=Become_A_Member" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('becomeamember','','/Graphics/template/1_becomeamember_on.gif',1)"><img name="becomeamember" src="/Graphics/Template/1_becomeamember_off.gif" width=178 height=17 alt="Register & Join" border="0"></a><br>
+        <a href="http://www.nami.org/template.cfm?section=Donate&lstid=101" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('donate','','/Graphics/template/1_donate_on.gif',1)"><img name="donate" src="/Graphics/Template/1_donate_off.gif" width=178 height=17 alt="Donate" border="0"></a><br>
+        <a href="http://www.nami.org/template.cfm?section=whats_new43&lstid=352" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('breakingnew','','/Graphics/template/1_whatsnew_on.gif',1)"><img name="whatsnew" src="/Graphics/Template/1_whatsnew_off.gif" width=178 height=17 alt="What's New" border="0"></a><br>
+        <a href="http://www.nami.org/Template.cfm?section=your_local_NAMI" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('statelocalnami','','/Graphics/template/1_statelocalnami_on.gif',1)"><img name="statelocalnami" src="/Graphics/Template/1_statelocalnami_off.gif" width=178 height=17 alt="State & Local NAMIs" border="0"></a><br>
+        <a href="http://www.nami.org/ADVtemplate.cfm?section=Advocate_Magazine" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('advocate','','/Graphics/template/1_advocate_on.gif',1)"><img name="advocate" src="/Graphics/Template/1_advocate_off.gif" width=178 height=17 alt="Advocate Magazine" border="0"></a><br>
+
+  <a href="http://www.nami.org/template.cfm?section=press_room" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('newsroom','','/Graphics/template/1_newsroom_on.gif',1)"><img name="newsroom" src="/Graphics/Template/1_newsroom_off.gif" width=178 height=17 alt="NAMI Newsroom" border="0"></a><br>
+
+        <a href="http://www.nami.org/template.cfm?section=Nami_Store" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Namistore','','/Graphics/template/1_Namistore_on.gif',1)"><img name="Namistore" src="/Graphics/Template/1_Namistore_off.gif" width=178 height=17 alt="NAMI Store"border="0"></a><br>
+
+  <a href="http://www.nami.org/template.cfm?section=namiwalks" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('namiwalks','','/Graphics/template/1_namiwalks_on.gif',1)"><img name="namiwalks" src="/Graphics/Template/1_namiwalks_off.gif" width=178 height=17 alt="NAMIWALKS" border="0"></a><br>
+
+
+        <a href="http://www.nami.org/template.cfm?section=convention" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Convention','','/Graphics/template/1_convention05_on.gif',1)"><img name="Convention" src="/Graphics/Template/1_convention05_off.gif" width=178 height=17 alt="NAMI National Convention" border="0"></a><br>
+
+  <a href="http://www.nami.org/template.cfm?section=Special_Needs_Estate_Planning" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('snep','','/Graphics/template/1_snep_on.gif',1)"><img name="snep" src="/Graphics/Template/1_snep_off.gif" width=178 height=17 alt="Special Needs Estate Planning" border="0"></a><br>
+
+      
+       <center><img src="/Graphics/template/dotlinenav.gif" width="160" height="1" alt="" vspace="6"></center>
+       </td></tr>
+       <tr><td>&nbsp;</td></tr>
+       </table>
+          
+        
+          
+          <table width='178' cellpadding='5' cellspacing='0' border='0'><tr valign='top'><td colspan='12'><span class='SideNavSelectedTitle'><a class='SideNavSelectedTitle' href='http://www.nami.org/Template.cfm?section=Contact_Us' >Contact Us</a><br></span></td></tr><tr valign='top'><td align='left' width='6' class='small'>&nbsp;</td><td colspan='11'><span class='SideNav'><a class='SideNav' href='http://www.nami.org/template.cfm?section=Contact_Us&Template=/customsource/contact/stafflist1.cfm' >NAMI National Staff</a><br></span></td></tr><tr valign='top'><td align='left' width='6' class='small'>&nbsp;</td><td colspan='11'><span class='SideNav'><a class='SideNav' href='http://www.nami.org/template.cfm?section=Your_Local_NAMI' >State & Local Contacts</a><br></span></td></tr></table>  
+         
+                   
+          
+          
+          
+          
+                     
+          
+          <table  border="0" cellpadding="0" cellspacing="0" >
+          
+          <tr><td align="center" width="178">
+          <br>
+          
+                 
+          <a href="/PrinterTemplate.cfm?section=Contact_Us"><img src="/Graphics/printicon.gif" alt="Print this page" border="0" align="texttop"></a>                   
+          <form action="/Template.cfm?Section=Contact_Us&template=/TellAFriend/SendToFriend.cfm" method="post">       
+            
+						
+						
+						
+						
+												
+						
+						<input type="hidden" name="PageLinkStatic" value="http://www.nami.org/template.cfm?section=Contact_Us">
+						
+ 						
+							
+						
+						<input type="hidden" name="Title" value="Contact Us">
+						       
+            <input type="image" src="/Graphics/emailthispage.gif" alt="Email this page" border="0" align="texttop">
+          </form>
+		  
+          <form action="/Personalization/bookmark.cfm" method="post" target="bookmark">     
+          	<input type="hidden" name="BookmarkURL" value="http://www.nami.org/template.cfm?section=Contact_Us">
+ 			<input type="hidden" name="BookmarkTitle" value="Contact Us">
+        <input type="image" src="/Graphics/savetomynami.gif" width="117" height="18" alt="Save to myNAMI" border="0" align="texttop" onClick="window.open('Save to myNAMI','bookmark','top=200,left=200,directories=no,height=300,location=no,menubar=no,resizable=no,scrollbars=yes,status=no,toolbar=no,width=540');">
+          </form>               
+          <br><br>   
+          
+           
+            <br>
+            <div align="center">
+            
+            <a href="/TemplateSwitch.cfm?TextOnly=True&PageURL=/TextTemplate.cfm?section%3DContact%5FUs" class="small">Low Graphics Site</a>
+            
+            </div>
+          
+          
+          
+		  
+		  
+		  		 	 	  <!--- note: max width for image is 133px --->
+  <center><BR>
+<a href="/Template.cfm?Section=Other&Template=/ContentManagement/ContentDisplay.cfm&ContentID=16765&lstid=311"><img src="/graphics/template/star-ad.gif" border="0" width="133" height="120"></a><BR><BR>
+<a href="/template.cfm?section=amazon_com&lstid=388"><img src="/graphics/amazonnami.gif" width="133" height="142" alt="Shop with Amazon, Support NAMI" border="0"></a><BR><BR>
+<a href="/Template.cfm?Section=Professional_Supporters&Template=/ContentManagement/ContentDisplay.cfm&ContentID=18784&lstid=380"><img src="/graphics/profsupporter-ad.gif" border="0" width="133" height="35" alt="Professional Supporters"></a><BR>
+</center>
+		  
+		  
+
+		
+		  
+		  
+                 
+          </td></tr>
+         </table>        
+      </td> 
+      <td width="6" bgcolor="##000066">&nbsp;</td>
+        
+    
+      <td valign="Top" align="left"  bgcolor="FFFFFF" width="570">     
+         <!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+
+  
+  
+   <table border="0" cellpadding="5" cellspacing="0" >        
+        <tr><td width="540" valign="top">
+  
+  <div class="breadcrumb">
+  
+    <a href="http://www.nami.org/" class="BreadCrumb">Home</a>
+    
+    
+      <img src="/Graphics/indentarrow.gif" alt="" border=0 align="bottom">Contact Us
+    
+  
+  </div><br>
+          </td>
+		  
+<td width="30" align="right" valign="top"><img src="/Graphics/inbkarrow.gif" alt="" border=0 align="bottom"><a href="javascript:history.back();" class="breadcrumb">back</A><BR></TD>
+
+		  		  </tr>
+      </table>
+
+  <table border="0" cellpadding="0" cellspacing="0">
+     <tr><td><img src="/Graphics/TemplateHeader/Contact_Us_Header.gif" width="570" height="85" border="0" alt="Contact_Us header image"></td></tr>    
+   </table>
+  
+   
+   <table border="0" cellpadding="10" cellspacing="0" width="100%">        
+        <tr><td>
+   
+<!-- Source Code Copyright © 2001 Active Matter,Inc. www.activematter.com -->
+<table cellspacing="0" cellpadding="5" border="0" valign="top">
+<tbody>
+<tr>
+<td align="middle" colspan="2"><a href="/Template.cfm?Section=Sign_In&amp;Template=/Security/PasswordHelp.cfm"><u>HELP ME SIGN IN NOW!</u></a></td>
+</tr>
+
+<tr>
+<td width="55%"><b>We want to hear from you!</b> Your questions, comments and concerns are important to us and we will do our best to address them in a timely fashion.<br>
+<img height="8" src="/Graphics/Template/spacer.gif" width="1"><br>
+Refer to the sections on the left to contact a <a href="/Template.cfm?Section=NAMI_National_Staff">national staff member</a> or find a <a href="/Template.cfm?Section=Your_Local_NAMI">local NAMI contact</a>.<br>
+<img height="8" src="/Graphics/Template/spacer.gif" width="1"><br>
+You may also call our <a href="/Content/NavigationMenu/Find_Support/Helpline/NAMI_Helpline1.htm">Information Helpline</a>:<br>
+<b>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1-800-950-NAMI (6264)<br>
+</b></td>
+<td valign="top" width="45%"><b>Main Contact Information:</b> 
+
+<hr noshade size="1">
+<font class="FMCellSmall">NAMI<br>
+Colonial Place Three<br>
+<GEO TYPE="US">2107 Wilson Blvd., Suite 300<br>
+Arlington, VA 22201-3042</GEO></font> 
+
+<hr noshade size="1">
+<font class="FMCellSmall">Main: (703) 524-7600<br>
+Fax: (703) 524-9094<br>
+TDD: (703) 516-7227<br>
+Member Services: (800) 950-NAMI<br>
+</font></td>
+</tr>
+</tbody>
+</table>
+
+<h3 align="center">Questions about NAMI's Campaign for the Mind of America?<br>
+Please contact: <a href="mailto:campaign@nami.org">campaign@nami.org</a></h3>
+
+<form name="contactForm" action="/template.cfm?section=contact_us&amp;template=/CustomSource/contact/contactEmail.cfm" method="post"><!--begin contact table -->
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td class="HeaderBar" colspan="6">To contact us right now, select a subject area below:</td>
+</tr>
+
+<tr>
+<td colspan="6"><img height="5" src="/Graphics/Template/spacer.gif" width="1"></td>
+</tr>
+
+<tr>
+<td valign="center" align="left" width="1%"><input type="radio" checked value="NAMI" name="radioTo"><br>
+</td>
+<td valign="center" align="left" width="32%">About NAMI<br>
+</td>
+<td valign="center" align="left" width="1%"><input type="radio" value="Mental Illness/Treatments" name="radioTo"><br>
+</td>
+<td valign="center" align="left" width="33%">Mental Illness/Treatments<br>
+</td>
+<td valign="center" align="left" width="1%"><input type="radio" value="NAMI Membership" name="radioTo"><br>
+</td>
+<td valign="center" align="left" width="32%">NAMI Membership<br>
+</td>
+</tr>
+
+<tr>
+<td colspan="6"><img height="3" src="/Graphics/Template/spacer.gif" width="1"></td>
+</tr>
+
+<tr>
+<td valign="center" align="left" width="1%"><input type="radio" value="Giving to NAMI" name="radioTo"><br>
+</td>
+<td valign="center" align="left" width="32%">Giving to NAMI<br>
+</td>
+<td valign="center" align="left" width="1%"><input type="radio" value="Public Policy/Advocacy" name="radioTo"><br>
+</td>
+<td valign="center" align="left">Public Policy/Advocacy<br>
+</td>
+<td valign="center" align="left" width="1%"><input type="radio" value="Website Issues" name="radioTo"><br>
+</td>
+<td valign="center" align="left">Website Issues/Feedback<br>
+</td>
+</tr>
+
+<!-- begin spcr row -->
+<tr>
+<td valign="center" colspan="6" height="5"><img height="5" src="/Graphics/Template/spacer.gif" width="1"><br>
+</td>
+</tr>
+
+<!-- end spcr row -->
+<tr>
+<td valign="center" align="left" width="1%"><input type="radio" value="NAMI's Convention" name="radioTo"><br>
+</td>
+<td valign="center" align="left" width="32%">National Convention<br>
+</td>
+<!-- need one in this row -->
+<td valign="center" align="left" width="1%"><input type="radio" value="the Online Store" name="radioTo"></td>
+<td valign="center" align="left" width="33%">Online Store<br>
+</td>
+<td valign="center" align="left" width="1%"><input type="radio" value="NAMIWALKS" name="radioTo"><br>
+</td>
+<td valign="center" align="left" width="32%">NAMIWALKS<br>
+</td>
+</tr>
+
+<!-- begin spcr row -->
+<tr>
+<td valign="center" colspan="6" height="5"><img height="5" src="/Graphics/Template/spacer.gif" width="1"><br>
+</td>
+</tr>
+
+<!-- end spcr row -->
+<tr>
+<td valign="center" align="left" width="1%"><input type="radio" value="Press/Media Relations" name="radioTo"><br>
+</td>
+<td valign="center" align="left" width="32%">Press<br>
+</td>
+<td valign="center" align="left" width="1%"><input type="radio" value="job opportunities" name="radioTo"><br>
+</td>
+<td valign="center" align="left" width="33%">Job Opportunities<br>
+</td>
+<td valign="center" align="left" width="1%"><input type="radio" value="Assistance/Support/Other" name="radioTo"><br>
+</td>
+<td valign="center" align="left" width="32%">Assistance/Support/Other<br>
+</td>
+</tr>
+
+<!-- begin spcr row -->
+<tr>
+<td valign="center" colspan="6" height="5"><img height="10" src="/Graphics/Template/spacer.gif" width="1"><br>
+</td>
+</tr>
+
+<!-- end spcr row -->
+<tr>
+<td valign="top" align="middle" colspan="6" height="5"><input type="image" alt="Proceed to next step" src="/graphics/next.gif" border="0" name="Next"> </td>
+</tr>
+</tbody>
+</table>
+</form>
+<BR><h2 align="center">NAMI Needs Your Support!</h2>
+Help us to continue helping others. NAMI offers <a href="/template.cfm?section=donate&lstid=399">several ways to contribute</a> in support of our programs and services--and many of these ways have significant tax benefits for you. <a href="/template.cfm?section=donate&lstid=399">Please make a donation to NAMI now</a>!
+</td></tr>
+      </table>
+
+
+      </td>
+    </tr>
+              
+    <tr valign="bottom">
+       <td width="3" bgcolor="##000066">&nbsp;</td>
+        <td  width="178" bgcolor="#ffffff" >&nbsp;       
+        </td>  
+        <td width="6" bgcolor="##000066">&nbsp;</td> 
+                 
+        <td bgcolor="FFFFFF" ALIGN="center">      
+          
+            <div class="TemplateFooterText" align="center">
+            
+            <u><a class="TemplateFooterText" href="http://www.nami.org/Hometemplate.cfm">Home</a></u>&nbsp;&nbsp;|&nbsp;&nbsp;<u><a class="TemplateFooterText" href="http://www.nami.org/Template.cfm?Section=My_Nami">myNAMI</a></u>&nbsp;&nbsp;|&nbsp;&nbsp;<u><a class="TemplateFooterText" href="http://www.nami.org/Template.cfm?Section=About_Nami">About NAMI</a></u>&nbsp;&nbsp;|&nbsp;&nbsp;<u><a class="TemplateFooterText" href="http://www.nami.org/Template.cfm?Section=Contact_Us">Contact Us</a></u>&nbsp;&nbsp;|&nbsp;&nbsp;<u><a class="TemplateFooterText" href="http://www.nami.org/Template.cfm?Section=Employment">Jobs</a></u>&nbsp;&nbsp;|&nbsp;&nbsp;<u><a class="TemplateFooterText" href="http://www.nami.org/Template.cfm?Section=Terms_of_Use">Terms of Use</a></u>&nbsp;&nbsp;|&nbsp;&nbsp;<u><a class="TemplateFooterText" href="http://www.nami.org/Template.cfm?Section=Site_Map">SiteMap</a></u>
+
+
+
+            
+              <br><br>
+            
+			  Copyright © 2005 NAMI. All Rights Reserved.
+<BR><BR>Site Designed and Developed by Active Matter, Inc.
+			  
+			
+            </div>
+             <BR>
+        
+        </td>    
+  </tr>  
+  
+</table>
+</td></tr>
+<tr><td bgcolor="##000066">&nbsp;</td></tr>
+</table></td></tr>
+<td bgcolor="##000066">&nbsp;</td></table>
+
+
+
+
+
+
+</body>
+</html>
+
+
+  
+

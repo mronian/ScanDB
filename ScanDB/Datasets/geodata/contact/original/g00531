@@ -1,0 +1,416 @@
+<DOC>
+<DOCNO>g00531</DOCNO>
+<DOCHDR>http://www.icann.org/general/contact.htm</DOCHDR>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>ICANN | Contact ICANN</title>
+<META NAME="keywords" CONTENT="icann, dns, internet, internet corporation for assigned names and numbers, iana, aso, gnso, dnso, cctld, gtld, stld">
+<META NAME="description" CONTENT="Internet Corporation for Assigned Names and Numbers">
+<style type="text/css">
+<!--
+/*** >> Basic elements */
+
+body {
+	color: #000000;
+	padding: 4;
+}
+
+p, blockquote {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+h1, h2, h3, p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+td, ul, li {
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+td.caltitle {
+	font-size: xx-large;
+	font-weight: bold;
+	text-align: center;
+}
+
+.red { color: #FF0000; }
+.mag { color: #FF00CC; }
+
+.deleted { color: #FF0000; text-decoration: line-through; }
+.added { color: #FF00CC; text-decoration: underline; }
+
+.keys {  font-family: monospace}
+
+
+/*** Summary box -- color set in style tag when called */
+#summary { border-style: solid; border-width: thin; border-color: #000000; padding: 4px; margin-bottom: 6px; }
+
+/*** Alpha box -- color set in style tag when called */
+#alpha { border-style: solid; border-width: thin; border-color: #000000; padding: 4px; text-align: center; }
+
+#letter {border-style: solid; border-width: thin; border-color: #000000;  width: 40px; }
+
+/*** Call-out box -- color and float (right or left) set when called */
+div.callout { display: none; } 
+
+.sub { font-weight: bold; text-align: center; margin: 2px;}
+.sub2 { font-weight: bold; font-style: italic; text-align: center; margin: 2px; }
+
+td.menlist { background: #ccc; padding: 2px;}
+td.menspace { background: #ccc; }
+
+td.morelist { background: #ccc; padding: 2px; text-align: right; }
+
+td.genlist { background: #ccccff; padding: 3px;}
+td.genspace { background: #ccccff; }
+
+td.menback { background: #9999CC; padding: 1px; }
+
+td.rmenback { background: #336699; padding: 1px; }
+
+a.news { color: #339966; font-weight: bold; font-size: small; }
+a.news:hover { color: #003300; }
+
+/*** >> Browse, Resource, Forum, and Supporting Org menu links */
+a.menu { color: #000000; font-weight: bold; font-size: 9pt; }
+a.menu:hover { color: #330066; }
+
+/*** >> More links */
+a.more { color: #FF0000; font-weight: bold; font-size: 9pt; text-align: right; }
+a.more:hover { color: #990000; }
+
+.due { font-size: 7pt; }
+
+/*** >> Press Corner and FAQ menu links */
+a.smenu { color: #FFFFFF; font-weight: bold; font-size: smaller; letter-spacing: 2px; margin-left: 2;}
+a.smenu:hover { color: #CCCCCC; }
+
+td.pad { padding-right: 20px; }
+
+/*** >> Top Navigation Bar Links (ie: Site Map) */
+a.tmenu { color: #000000; font-weight: bold; text-decoration: none; font-size: medium; letter-spacing: 1px; }
+a.tmenu:hover { color: #FFFFFF; font-weight: bold; text-decoration: none;}
+
+/*** >> Green Archive Link (ie: New and Noteworthy Archives) */
+a.amenu { color: #339966; font-weight: bold; font-size: medium; }
+a.amenu:hover { color: #CCCCCC; }
+
+/*** >> Drill-down links */
+a.drill { color: #339966; font-weight: bold; font-size: small; }
+a.drill:hover { color: #003300; }
+
+td.ttitle { font-weight: bold; background: #FFFFCC; }
+tr.alt { background: #CCCCFF; }
+
+/*** >> Drill-down arrows/text */
+.drilltext { color: #336699; font-weight: bold; font-size: small; }
+
+.datetext { color: #336699; font-weight: bold; font-size: medium; }
+
+.headtext { color: #339966; font-weight: bold; font-size: medium; }
+
+
+a.listing {color: #336699; font-weight: bold; font-size: medium; }
+a.listing:hover { color: #CCCCCC; } 
+
+a.listsm {color: #336699; font-weight: bold; }
+a.listsm:hover { color: #339966; }
+
+
+.listtext { color: #336699; font-weight: bold; font-size: medium; text-align: center; letter-spacing: 1px; }
+
+.right_text { text-align: right; }
+
+/*** >> White Text (ie: Navigate in the top nav bar) */
+.wmenu { color: #FFFFFF; font-weight: bold; letter-spacing: 1px; margin-left: 10px;} 
+
+/*** >> Light Blue Text (ie: Site Search) */
+.stext { color: #9999CC; font-weight: bold; font-size: small; letter-spacing: 1px; text-align: right;}
+
+/*** >> Blue Text (ie: New and Noteworthy and "Hot topics") */
+.bmenu {color: #339966; font-weight: bold; font-size: medium; }
+
+.copytext { font-size: x-small; text-align: center; }
+
+.title { text-align: center; font-size: large; font-weight: bold; margin: 0px; }
+
+.docdate { text-align: center; font-size: small; font-style: italic; }
+
+HR {
+	padding: 0px;
+    height: 1px;
+    /*background: #9999CC;*/
+	color: #9999CC;
+   }
+
+
+.sttitle {
+    font-weight: bold;
+    color: #FFF;
+}
+
+a.press {
+	color: #FFFFFF; 
+	font-weight: bold; 
+	letter-spacing: 2px; 
+}
+
+a.press:hover {
+	color: #CCCCFF;
+}
+
+a.faq {
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+a.faq:hover {
+    color: #CCC;
+}
+
+#newsitem {
+	margin-bottom: 10px;
+}
+
+#doctitle {
+	width: 100%;
+	text-align: center;
+}
+
+H1 { font-size: large; text-align: center; }
+H1.maintitle { color: #33669c; padding-top: 10px; }
+
+#subs { padding: 4px; width: 45%; border-style: solid; border-width: thin; border-color: #000000; }
+
+
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="/style/newer.css" />
+</head>
+<body bgcolor="#FFFFFF"><a name="top"></a>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="pad" width="1%" rowspan="2"><a href="/index.html"><img src="/images/inner_logo.gif" border="0" width="60" height="57" alt="ICANN Logo"></a></td>
+		<td>&nbsp;</td>
+		<td colspan="3" valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#9999CC">
+	<form method="POST" action="/cgi/jump.cgi" name="jumpmenu">
+			<tr>
+				<td width="11"><img src="/images/topnav_left.gif" border="0" width="11" height="24"></td>
+				<td><a class="tmenu" href="/siteindex.html">Site Index</a></td>
+				<td><a class="tmenu" href="http://forum.icann.org">Public Comment Forum</a></td>
+				<td width="2%">&nbsp;</td>
+				<td align="right" width="2%"><font class="wmenu">Navigate:</font></td>
+				<td width="2">&nbsp;</td>
+				<td align="right" width="2%">
+				<select name="jumpto" onchange="if(this.options[this.selectedIndex].value != -1){ document.jumpmenu.submit() }" class='forminput'>
+				<option value="announce">Announcements</option>
+<option value="background">Background Documents</option>
+<option value="minutes">Board Meetings</option>
+<option value="board">Board of Directors</option>
+<option value="commercial">Commercial & Business Users</option>
+<option value="contact">Contact Information</option>
+<option value="corporate">Corporate Documents</option>
+<option value="correspondence">Correspondence</option>
+<option value="cctlds">Country Code Managers</option>
+<option value="udrp">Domain Name Dispute Resolution Policies</option>
+<option value="faq">FAQs</option>
+<option value="financial">Financial Information</option>
+<option value="gov">Government Representatives</option>
+<option value="about">ICANN Info</option>
+<option value="isp">ISPs</option>
+<option value="users">Individual Users</option>
+<option value="ip">Intellectual Property Interests</option>
+<option value="meetings">Meetings</option>
+<option value="ombudsman">Ombudsman</option>
+<option value="policy">Policy Documents</option>
+<option value="press">Press Corner</option>
+<option value="press">Press Resources</option>
+<option value="poc">Proof of Concept Reports</option>
+<option value="registrars">Registrars</option>
+<option value="registries">Registries</option>
+<option value="speech">Speeches and Publications</option>
+<option value="staff">Staff</option>
+<option value="so">Supporting Organizations</option>
+<option value="committees">Task Forces Committees Etc.</option>
+<option value="topics">Topics</option>
+
+				</select>
+				</td>
+				<td width="1">&nbsp;</td>
+				<td>
+					<input type="image" src="/images/nav_go.gif" width="19" height="12" border="0" alt="Go">
+				</td>
+				<td width="11" align="right"><img src="/images/topnav_right.gif" border="0" width="11" height="24"></td>
+			</tr>
+			</form>
+		</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td colspan="3">
+		<a class="drill" href="/index.html">ICANN Home</a> <span class="drilltext">>></span> 
+
+<a class="drill" href="/general/">ICANN Info</a>
+        </td> 
+        </tr>    
+        <tr>    
+        <td colspan="5"><hr></td> 
+        </tr> 
+	</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="120" valign="top">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td valign="top">
+				                <table border="0" cellpadding="0" cellspacing="0" width="120">
+                    <tr>
+                        <td bgcolor="#9999CC" valign="top"><img src="/images/left_nav.gif" border="0" width="11" height="19"></td>
+                        <td class="menback"><span class="sttitle">Browse</span></td>
+                    </tr>
+					<tr>
+                   	    <td class="genspace">&nbsp;</td>
+                    	<td class="genlist"><a class="menu" href="/general/background.html">Background Documents</a></td>
+       	            </tr>
+        	        <tr>
+   	        	        <td class="genspace">&nbsp;</td>
+       	        	    <td class="genlist"><a class="menu" href="/general/board.html">Board of Directors</a></td>
+           	    	</tr>
+                  	<tr>
+	                    <td class="genspace">&nbsp;</td>
+       		            <td class="genlist"><a class="menu" href="/minutes/">Board Meetings</a></td>
+               		</tr>
+					<tr>
+        		        <td class="genspace">&nbsp;</td>
+                        <td class="genlist"><a class="menu" href="/general/calendar/">Calendar</a></td>
+		            </tr>
+        		    <tr>
+                        <td class="genspace">&nbsp;</td>
+                   		<td class="genlist"><a class="menu" href="/general/contact.htm">Contact</a></td>
+		            </tr>
+        		    <tr>
+                		<td class="genspace">&nbsp;</td>
+                        <td class="genlist"><a class="menu" href="/general/corporate.html">Corporate Documents</a></td>
+		            </tr>
+        	        <tr>
+            	        <td class="genspace">&nbsp;</td>
+                   		<td class="genlist"><a class="menu" href="/correspondence/">Correspondence</a></td>
+		            </tr>
+					<tr>
+        	            <td class="genspace">&nbsp;</td>
+                   		<td class="genlist"><a class="menu" href="/general/financial.html">Financial Information</a></td>
+		            </tr>
+					<tr>
+						<td class="genspace">&nbsp;</td>
+                   		<td class="genlist"><a class="menu" href="/general/staff.html">ICANN Staff</a></td>
+		            </tr>
+                    <tr>
+                        <td class="genspace">&nbsp;</td>
+                        <td class="genlist"><a class="menu" href="/general/links.htm">Links</a></td>
+                    </tr>
+        		    <tr>
+                        <td class="genspace">&nbsp;</td>
+                   		<td class="genlist"><a class="menu" href="/general/litigation.htm">Litigation Documents</a></td>
+		           </tr>
+        		   <tr>
+						<td class="genspace">&nbsp;</td>
+                        <td class="genlist"><a class="menu" href="/general/agreements.htm">Major Agreements</a></td>
+		           </tr>
+        		   <tr>
+						<td class="genspace">&nbsp;</td>
+						<td class="genlist"><a class="menu" href="/ombudsman">Ombudsman</a></td>
+		           </tr>
+        		   <tr>
+						<td class="genspace">&nbsp;</td>
+						<td class="genlist"><a class="menu" href="/general/icann-org-chart.htm">Organizational Chart</a></td>
+		           </tr>
+        	       <tr>
+            	        <td class="genspace">&nbsp;</td>
+                       	<td class="genlist"><a class="menu" href="/general/policy.html">Policy Documents</a></td>
+		           </tr>
+					<tr>
+						<td class="genspace">&nbsp;</td>
+						<td class="genlist"><a class="menu" href="/general/jobs.htm">Staff Opportunities</a></td>
+		           </tr>
+                    <!--tr>
+                        <td class="genspace">&nbsp;</td>
+                        <td class="genlist"><a class="menu" href="/strategic-plan/">Strategic Plan</a></td>
+                   </tr-->
+             </table>
+
+
+            	</td>
+            </tr>
+		</table>
+		</td>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top">
+			<div id="doctitle">
+				<p class="title">Contact ICANN</p>
+			</div>
+
+          <p>Internet Corporation for 
+            Assigned Names and Numbers (ICANN)</p>
+
+			<p><b>Marina del Rey, CA, USA</b></p>
+            <p>4676 Admiralty Way, Suite 330 <br>
+            Marina del Rey, CA 90292-6601 <br>
+            USA</p>
+
+          <p>Phone: +1.310.823.9358 
+            <br>
+            FAX: +1.310.823.8649</p>
+
+			<p><b>Belgium</b></p>
+			<p>6 Rond Point Schuman<br>
+			Bt. 5<br>
+			Brussels B-1040 Belgium</p>
+
+			<p>Phone: +32 2 234 7872<br>
+				FAX: +32 2 234 7848</p>
+          <p>General Email: <a HREF="mailto:&#105;&#099;&#097;&#110;&#110;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;">&#105;&#099;&#097;&#110;&#110;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;</a></p>
+          <ul>
+            <li>For questions and comments 
+              about the website, <a HREF="mailto:&#119;&#101;&#098;&#109;&#097;&#115;&#116;&#101;&#114;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;">&#119;&#101;&#098;&#109;&#097;&#115;&#116;&#101;&#114;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;</a> 
+            </li>
+
+            <li>For questions concerning 
+              operations and content, <a HREF="mailto:&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;">&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;</a> 
+            </li>
+            <li>For comments and submitting 
+              community feedback, <a HREF="mailto:&#099;&#111;&#109;&#109;&#101;&#110;&#116;&#115;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;">&#099;&#111;&#109;&#109;&#101;&#110;&#116;&#115;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;</a> 
+            </li>
+            <li>For complaints about 
+              accredited registrars, go to the <a href="http://www.internic.net/cgi/registrars/problem-report.cgi">InterNIC 
+              website</a>.</li>
+            <li>For questions about 
+              registrar accreditation, email <a HREF="mailto:&#097;&#099;&#099;&#114;&#101;&#100;&#105;&#116;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;">&#097;&#099;&#099;&#114;&#101;&#100;&#105;&#116;@&#105;&#099;&#097;&#110;&#110;&#046;&#111;&#114;&#103;</a> 
+            </li>
+
+          </ul>
+        </td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="4" cellspacing="0" width="100%">	
+<tr>
+		<td>
+		<HR>
+		
+		<div class="copytext">This file last modified 23-Mar-2004</br>
+		&copy; 2005 Internet Corporation For Assigned Names and Numbers</div>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,514 @@
+<DOC>
+<DOCNO>g00254</DOCNO>
+<DOCHDR>http://www.vote-smart.org/program_contactus.php</DOCHDR>
+<html>
+<head>
+<title>Project Vote Smart - </title>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="resource-type" content="document">
+<meta name="description" content="Project Vote Smart">
+<meta name="keywords" content="PVS, Project Vote Smart, candidates, presidential, politics, election, campaign, president, congress, senate, voting, ratings, issues, legislation, presidential candidiates, house, government, campaign finances, governor, special interest groups, PACS, political action, get involved, issue group ratings, NPAT, National Political Awareness Test, electorate">
+<meta name="distribution" content="global">
+<link rel="stylesheet" href="styles.css" type="text/css">
+<script language="JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<script src="/__utm.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#003366" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" vlink="#003366">
+<!-- DHTML QuickMenu, Copyright (c) 2001, OpenCube Inc. All Rights Reserved - www.opencube.com -->
+<!--  Permission granted to SimplytheBest.net to feature script in its DHTML script collection at http://simplythebest.net/info/dhtml_scripts.html -->
+<script language="JavaScript1.2" type="text/javascript" src="pulldowns/menu_data.js"></script>
+<script language="JavaScript1.2" type="text/javascript" src="pulldowns/dqm_script.js"></script>
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr height="82"> 
+    <!-- logo cell -->
+    <td width="206" valign="top" rowspan="2"> 
+      <table border="0" cellpadding="0" cellspacing="0" width="206" height="100%">
+        <tr> 
+          <td colspan=2 valign="top" ><a href="index.htm"><img src="img/masthead/logo.gif" width="206" height="136" border="0" alt="Project Vote Smart"></a></td>
+        </tr>
+
+
+<!--
+
+	<tr>
+          <form name="formSearch" method="post" action="index.htm">
+            <fieldset style="border: 0px";> 
+            <td colspan=2 background="img/masthead/background_left.gif" bgcolor="#FFFFFF" class="textbottom"> 
+                &nbsp; <input type="text" name="textSearch" size=13 class="textsmall" id="Search">              
+              <INPUT type=image name="go" src="img/go_blue.gif" border="0" width="20" height="19" align="top">
+              <br>
+                &nbsp; <a href=""><font color="#B2B2C9"><label for="Search">Advanced 
+                Search</label></font></a><br><img src="img/spacer.gif" height=5 alt=" "></td>
+            </fieldset> 
+          </form>
+        </tr>        -->
+
+	
+        <tr> 
+          <td bgcolor="#EEEEEE" width=180 colspan=1> 
+            <table border="0" cellspacing="0" cellpadding="0" height="100%" width=180 bgcolor="#B2B2C9" style="border-top-width: 0px; border-right-width: 0px;border-bottom-width: 0px">
+              <tr> 
+                <td> 
+		
+		<script language="JavaScript">
+<!--
+function popupform(myform, windowname)
+{
+if (! window.focus)return true;
+window.open('', windowname, 'height=450,width=600,scrollbars=yes');
+myform.target=windowname;
+return true;
+}
+
+function test9Zip(text)
+{
+      var reg9Zip=/^\d{5}-\d{4}$/
+      if (!reg9Zip.test(text)){
+	    alert("9-digit zip code needs to be in the format of 00000-0000")
+	    return false
+      }
+}
+function testName(text)
+{
+if (text.length == 0)
+{
+	alert ("Please enter a valid name")
+	return false
+}
+}
+//-->
+</script>
+
+            <!--// table for candidate lookup //-->
+            <table border="0" cellspacing="0" cellpadding="0" width=180 bgcolor="#B2B2C9" style="border-top-width: 0px; border-right-width: 0px;border-bottom-width: 0px">
+              <tr> 
+                <td> 
+                  <table border="0" cellspacing="1" cellpadding="3" width=180 style="border-top-width: 0px; border-right-width: 0px;border-bottom-width: 0px">
+                    <tr> 
+                      	<td valign="middle" bgcolor="#003366" class="leftnav_cellhed" height=20> 
+                        	<span class="leftnav_texthed">Find Your Representative:</span>
+			</td>
+                    </tr>
+                    <tr> 
+		  	<form name="lastNameForm" method="get" action="search_lastname.php" onsubmit="return testName(this.lastname.value);">
+                        <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'"> 
+
+                          <span class="leftnav_text"><label for="lastname">Enter 
+                          Last Name of<br>
+                          Candidate or Official:</label></span><br>
+			<input type="text" name="lastname" size=14 class="textsmall" id="lastname">
+                          &nbsp; <INPUT type=image name="go" src="img/go_grey.gif" border="0" width="20" height="19"> 
+                        </td>
+  		      </form>
+                    </tr>
+                    <tr> 
+		  <form name="zip9Form" method="get" action="search_zipcode.php" onsubmit="return test9Zip(this.zip.value);">
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'"> 
+		      	
+			  <label for="zip">Enter Your 9-Digit ZIP Code:
+                          xxxxx-xxxx </label><br>
+			  
+			  <input type="text" name="zip" size="14" maxlength="10" class="textsmall" id="zip">
+			  
+                          &nbsp; <INPUT type=image name="go" src="img/go_grey.gif" border="0" width="20" height="19">
+                        </td>
+			</form>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'"> 
+		      
+			<A HREF="search_addr2zip4.php" class="leftnav_text" target="new">Don't Know Your 9-Digit ZIP?</A>
+
+                      </td>
+                    </tr>
+
+		    <!-- begin 5 category links-->
+		    
+
+		
+                 <tr>
+		         <td class="leftnav_cellhed">
+		              <span class="leftnav_texthed">Basic Categories:</span></td>
+		 </tr>
+
+		 <tr>
+			<td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+		              <a href="official_five_categories.php?dist=bio.php" class="leftnav_text">Biographical Information</a></td>
+		 </tr>
+
+                 <tr>
+                       <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+                          <a href="official_five_categories.php?dist=finance.php" class="leftnav_text">Campaign Finances</a></td>
+                 </tr>                                                                                                          <tr>
+			<td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+			  <a href="official_five_categories.php?dist=npat.php" class="leftnav_text">Issue Positions (NPAT)</a></td>                                 </tr>
+	         <tr>                                                                                                                 <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">                                                                                                           <a href="official_five_categories.php?dist=issue_rating_category.php" class="leftnav_text">Interest Group Ratings</a></td>                                                                                           </tr>
+		 
+		 <tr>
+		       <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+		       <a href="official_five_categories.php?dist=voting_category.php" class="leftnav_text">Voting Records</a></td>
+		 </tr>
+		<tr>                                                                                                                    <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">                                                                                                          <a href="official_five_categories.php?dist=speech.php" class="leftnav_text">Public Statements</a></td>                                                                                                            </tr>
+
+
+		    <!-- end 5 category links-->
+		    
+                  </table>
+                </td>
+              </tr>
+	      
+            </table>
+
+
+
+
+            <!--// break with star background //-->
+            <table border="0" cellspacing="0" cellpadding="0" width=180 bgcolor="#B2B2C9" style="border-top-width: 0px; border-right-width: 0px;border-bottom-width: 0px">
+              <tr> 
+                <td background="img/masthead/background_left.gif" class="textbottom">&nbsp;</td>
+              </tr>
+            </table>
+
+            <table border="0" cellspacing="1" cellpadding="3" width=180 style="border-top-width: 0px; border-right-width: 0px;border-bottom-width: 0px">
+
+
+                   <tr> 
+                      <td class="leftnav_cellhed">
+					  <span class="leftnav_texthed">General 
+                        Information:</span></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_about_pvs.php" class="leftnav_text">About 
+                        PVS</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_publications.php" class="leftnav_text">Publications</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_request_materials.php" class="leftnav_text">Request Materials</a></td>
+                    </tr>
+	       	    <tr>
+		       <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+			               <a href="video.php" class="leftnav_text">PVS Video</a></td>
+		    </tr>
+													   
+                    <tr> 
+                      <td class="leftnav_cellhed">
+					  <span class="leftnav_texthed">Programs:</span></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_library_partnership.php" class="leftnav_text">Library 
+                        Programming</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_news_room.php" class="leftnav_text">News Room</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_media_partners.php" class="leftnav_text">News 
+                        Media Partnership</a> </td>
+                    </tr>
+                    <tr>
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+                                          <a href="program_hotline.php" class="leftnav_text">Voters Research Hotline</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cellhed">
+					  <span class="leftnav_texthed">Get 
+                        Involved:</span></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_donations_index.php" class="leftnav_text">Become 
+                        a Member</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_visit_us.php" class="leftnav_text">Visit 
+                        Us in Montana</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_internships.php" class="leftnav_text">Internships/Volunteer</a></td>
+                    </tr>
+                 <!--    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_ambassador.php" class="leftnav_text">Ambassador Program</a></td>
+                    </tr>-->
+		    
+		    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_jobs.php" class="leftnav_text">Job 
+                        Opportunities</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_tell_friend.php" class="leftnav_text">Tell 
+                        a Friend About This Site</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_link2us.php" class="leftnav_text">Link to Us</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cellhed">
+					  <span class="leftnav_texthed">Site 
+                        Features:</span></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="tour/index.htm" class="leftnav_text" onClick="popupform(this, 'tourwindow')">Interactive 
+                        Tour</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_sitemap.php" class="leftnav_text">Site 
+                        Map</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_site_help.php" class="leftnav_text">Site 
+                        Help/FAQ</a></td>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="http://forums.vote-smart.org" target="_new" class="leftnav_text">Forums</a></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cellhed">
+					  <span class="leftnav_texthed">For 
+                        Candidates:</span></td>
+                    </tr>
+                    <tr> 
+                      <td class="leftnav_cell" bgcolor="#EEEEEE" onMouseOver="this.bgColor='#CCCCCC'" onMouseOut="this.bgColor='#EEEEEE'">
+					  <a href="program_for_candidates.php" class="leftnav_text">How 
+                        to send information about yourself for inclusion on the 
+                        site</a></td>
+                    </tr>
+                  </table>
+    <!--        // table for PVS general links //-->
+
+           <!-- Membership Banner ad -->
+               <TABLE 
+                 style="BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                        cellSpacing=0 cellPadding=0 width=180 border=0 bgColor=#b2b2c9 height=10>
+                 <TBODY>
+                    <TR> 
+                       <TD class=textbottom background="img/masthead/background_left.gif">&nbsp;</TD>
+												                               </TR>
+                 </TBODY>
+               </TABLE>
+
+
+		<TABLE  style="BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+		    cellSpacing=0 cellPadding=0 width=180 bgColor=#b2b2c9 border=0>
+		  <TBODY>
+		    <TR> 
+		      <!--<TD class=textbottom><img src="img/Member_179Ad1.gif" width="179" height="53"></TD>-->
+		      <TD class=textbottom><a href="program_donations_index.php?src=home_banner"><img src="img/Member_179Ad1.gif" width="179" height="53" border="0"></a></TD>
+		      <!---->
+		     </TR>
+		  </TBODY>
+		  </TABLE>
+		 <!-- End of Membership Banner Ad -->
+
+<table border="0" cellspacing="0" cellpadding="0" width=180 bgcolor="#B2B2C9" style="border-top-width: 0px; border-right-width: 0px;border-bottom-width: 0px">
+              <tr> 
+                <td> 
+
+	<table border="0" cellspacing="1" cellpadding="3" width=180 style="border-top-width: 0px; border-right-width: 0px;border-bottom-width: 0px">
+        </table>   	
+
+    </td>
+   </tr>
+ </table>
+
+
+		</td>
+              </tr>
+            </table>
+          </td>
+          <td bgcolor="#FFFFFF" width=26 colspan=1>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan=2 valign="top" background="img/masthead/background_left.gif" bgcolor="#FFFFFF" height="100%" class="textbottom"> 
+            <p><br>
+            <p>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="470" height="82" valign="top">
+      
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" height=82 background="img/masthead/background_flag.gif">
+	<tr>
+	  <td width="32" height="82" valign="top" rowspan="4"><img src="img/masthead/flag.gif" width="32" height="82" alt=" "></td>
+	  <td height="18" align=right nowrap width="446">
+	    <table border="0" cellpadding="0" cellspacing="0" height=18 width="446">
+	      <tr>
+		<td width=291 class="textsmall"><img src="img/spacer.gif" width="4" height="18" alt=" "></td>
+		<td width=38 class="textsmall"><a href="index.htm" name="Top"><img src="pulldowns/pvstype_home_off.gif" border="0" width=37 height="18" alt="Home"></a></td>
+		<td width=3 class="textsmall"><img src="pulldowns/pvstype_separator.gif" width="3" height="18" alt=" "></td>
+		<td width=57 class="textsmall"><a href="program_about_pvs.php"><img src="pulldowns/pvstype_about.gif" width="57" height="18" border="0"  alt="About Us"></a></td>
+		<td width=3 class="textsmall"><img src="pulldowns/pvstype_separator.gif" width="3" height="18" alt=" "></td>
+		<td width=44 class="textsmall"><a href="program_donations_index.php"><img src="pulldowns/pvstype_donate.gif" width="44" height="18" border="0" alt="Donate"></a></td>
+	      </tr>
+	    </table>
+	  </td>
+	      <td width="100%" height="18"></td>
+	</tr>
+	<tr>
+	  <td height="18" align=center nowrap>
+	    <table border="0" cellpadding="0" cellspacing="0" height=18 width="446">
+	      <tr>
+		<td width=106 background="img/FFFFFF.gif"><img src="img/spacer.gif" width="4" height="18" alt=" "></td>
+		<td width=154 background="img/FFFFFF.gif" class="textsmall" nowrap><a href="official_president.php"><img src="pulldowns/pvstype_currelect.gif" width="154" height="18" border="0" name="menu0" id="menu0" onmouseover="showMenu(event)" onmouseout="hideMenu(event)" alt="Current Elected Officials"></a></td>
+		<td width=127 background="img/FFFFFF.gif" class="textsmall"><a href="election_president.php"><img src="pulldowns/pvstype_cands.gif" width="127" height="18" border="0" name="menu1" id="menu1" onmouseover="showMenu(event)" onmouseout="hideMenu(event)" alt="Candidates for Elections"></a></td>
+		<td width=106 background="img/FFFFFF.gif"><img src="img/spacer.gif" width="4" height="18" alt=" "></td>
+	      </tr>
+	    </table>
+	  </td>
+
+		  <td width="100%" height="18"></td>
+
+	</tr>
+	<tr height="19">
+	  <td valign="top" width="446" height="19" align=center nowrap background="img/CC0000.gif">
+	    <table border="0" cellpadding="0" cellspacing="0" height="18" align=center>
+	      <tr>
+		<td width="3"></td>
+		<td class="textsmall"><a href="issue_keyvote.php"><img src="pulldowns/pvstype_issues.gif" width="132" height="19" name="menu2" border="0" id="menu2" onmouseover="showMenu(event)" onmouseout="hideMenu(event)" alt="Issues and Legislation"></a></td>
+		<td class="textsmall"><img src="pulldowns/pvstype_separator.gif" width="3" height="19" alt=" "></td>
+		<td class="textsmall"><a href="mystate_government_resources.php"><img src="pulldowns/pvstype_mystate.gif" width="55" border="0" height="19" name="menu3" id="menu3" onmouseover="showMenu(event)" onmouseout="hideMenu(event)" alt="My State"></a></td>
+		<td class="textsmall"><img src="pulldowns/pvstype_separator.gif" width="3" height="19" alt=" "></td>
+		<td class="textsmall"><a href="voter_registration_resources.php"><img src="pulldowns/pvstype_voterreg.gif" width="112" height="19" border="0" name="menu4" id="menu4" onmouseover="showMenu(event)" onmouseout="hideMenu(event)" alt="Voter Registration"></a></td>
+
+		<td class="textsmall"><img src="pulldowns/pvstype_separator.gif" width="3" height="19" alt=" "></td>
+		<td class="textsmall"><a href="resource_govt101_01.php"><img src="pulldowns/pvstype_resources.gif" width="115" height="19" border="0" name="menu5" id="menu5" onmouseover="showMenu(event)" onmouseout="hideMenu(event)" alt="Political Resources"></td>
+		<td width="11"></td>
+
+	      </tr>
+	    </table>
+	  </td>
+
+		  <td width="100%" height="19"></td>
+	</tr>
+	<tr height="27">
+		  <td height="27" width="446" background="img/FFFFFF.gif">&nbsp;</td>
+		  <td width="100%" height="27" background="img/FFFFFF.gif"></td>
+	</tr>
+      </table>
+
+      
+    </td>
+    <!-- end flag / pulldowns cell //-->
+    <!-- autospace cell //-->
+    <td width="100%" height="82" valign="top"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" height=55>
+        <tr height="55"> 
+          <td height="55" background="img/masthead/background_flag.gif">&nbsp;</td>
+        </tr>
+        <tr height="27"> 
+          <td height="27" background="img/FFFFFF.gif">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="470" valign="top" class="text">
+      <table width="470" border=0 cellpadding=0 cellspacing=2>
+				    
+	<td width="470" valign="top" class="text"> 
+
+
+<p class="hed_large" align="left"><b>Contact Us</b></p>
+
+<p class="text" align="left">
+Project Vote Smart (PVS) is a citizen's organization dedicated to serving all Americans with accurate and unbiased information for electoral decision-making. Its policies, procedures and structure are designed to guarantee absolute impartiality and standards of excellence in fulfillment of its mission.</p>
+
+<table>
+<tr>
+<td width="60%">
+<font class="hedsmall">General Email and Site Content:</font></td><td width="40%" class="text"><a href="mailto:comments@vote-smart.org">comments@vote-smart.org</a></td></tr> 
+<tr><td width="60%">
+<font class="hedsmall">Membership Inquiries:</font></td><td width="40%" class="text"><a href="mailto:membership@vote-smart.org">membership@vote-smart.org</a></td></tr> 
+
+<tr><td width="60%">
+<font class="hedsmall">NPAT Email:</font></td><td width="40%" class="text"><a href="mailto:npat@vote-smart.org">npat@vote-smart.org</a></td></tr>
+
+<tr>
+<td width="60%">
+<font class="hedsmall">Internship Inquiries:</font></td><td width="40%" class="text"><a href="mailto:intern@vote-smart.org">intern@vote-smart.org</a></td></tr>
+
+<tr>
+<td width="60%">
+<font class="hedsmall">Employment Inquiries:</font></td><td width="40%" class="text"><a href="mailto:jobs@vote-smart.org">jobs@vote-smart.org</a></td></tr>
+
+
+<tr>
+<td width="60%">
+<font class="hedsmall">Technical Questions and Problems:</font></td><td width="40%" class="text"><a href="mailto:webmaster@vote-smart.org">webmaster@vote-smart.org</a></td></tr>
+</table>
+
+<br><br>
+<table>
+<tr><td width="58%"><font class="hedsmall">Mailing Address:</font></td><td width="42%" class="text">Project Vote Smart<br>
+One Common Ground<br>
+Philipsburg, MT 59858<br>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<table>
+<tr>
+<td width="45%"><font class="hedsmall">General Phone:</font></td><td width="55%" class="text">406-859-8683</td></tr>
+<tr>
+<td width="45%"><font class="hedsmall">Candidate/NPAT Phone:</font></td><td width="55%" class="text">406-859-8692</td></tr>
+<td class="45%"><font class="hedsmall">Voter's Research Hotline:</font></td><td width="55%" class="text">1-888-VOTE-SMART (1-888-868-3762)</td></tr>
+</table>
+
+
+      </table>
+      <p>&nbsp;</p>
+     
+      <table>
+      <tr>
+      		<td colspan='2' align='center'>
+			<p><span class="textbottom"><a href="program_contactus.php">Contact Us</a> | <a href="program_about_pvs.php">About Us</a> | <a href="program_tell_friend.php">E-mail this page to a Friend</a><br></p>
+			
+		</td>
+      </tr>
+      <tr>
+      <td>
+      <img SRC=img/pvsguy.gif WIDTH=60 HEIGHT=48 VSPACE=4 HSPACE=16 ALIGN=LEFT VALIGN=TOP>
+      </td>
+      <td>
+      <span class="textsmall">All content &copy; 2002-2004 Project Vote Smart<br>
+      <b>Project Vote Smart</b><br> One Common Ground, Philipsburg, MT 59858, 406-859-8683<br>
+      Questions? Need help? Call our Voter's Research Hotline toll-free 1-888-VOTE-SMART (1-888-868-3762).<br>     
+      <br><i>Legislative Demographic Data provided by <a href="http://www.lds-inc.com/" target="_new">Legislative Demographic Services, Inc.</a></i>
+      </span>
+      </td>
+      </tr>
+      </table>
+    </td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,1198 @@
+<DOC>
+<DOCNO>f00565</DOCNO>
+<DOCHDR>http://www.aanp.org/Practice+Policy+and+Legislation/Office+of+Health+Policy+Contact+Information.htm</DOCHDR>
+
+
+
+<HTML>
+<HEAD>
+
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<TITLE>AANP  |  Office of Health Policy Contact Information</TITLE>
+<link href="/NR/System/ClientUI/CSS/aanp.css" rel="stylesheet" type="text/css">
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+var isDHTML = 0;
+var isLayers = 0;
+var isAll = 0;
+var isID = 0;
+var domSMenu = null;
+var oldDomSMenu = null;
+var t = 0;
+var lDelay = 20;
+var lCount = 0;
+var pause = 100;
+var banner_num = 0;
+var openId="none";
+var doCheck = (document.all!=null);
+var action= "none";
+
+if (document.getElementById) {isID = 1; isDHTML = 1;}
+else {
+browserVersion = parseInt(navigator.appVersion);
+if ((navigator.appName.indexOf('Netscape') != -1) && (browserVersion == 4)) {isLayers = 1; isDHTML = 1;}
+else {
+if (document.all) {isAll = 1; isDHTML = 1;}
+}}
+
+function findDOM(objectID,withStyle) {
+	var menuArea = "menuArea";
+	if (withStyle == 1) {
+		if (isID) { return (document.getElementById(objectID).style) ; }
+		else { 
+			if (isAll) { return (document.all[objectID].style); }
+		else {
+			if (isLayers) { return (document.layers[menuArea].layers[objectID]); }
+		};}
+	}
+	else {
+		if (isID) { return (document.getElementById(objectID)) ; }
+		else { 
+			if (isAll) { return (document.all[objectID]); }
+		else {
+			if (isLayers) { return (document.layers[menuArea].layers[objectID]); }
+		};}
+	}
+}
+function showMenuFlyout(menuName,x,y) {
+
+	//hide last menu
+	
+	if (oldDomSMenu) {
+		oldDomSMenu.visibility = 'hidden'; 
+	}
+
+	var domSMenu = findDOM(menuName,1);
+	
+	if (x) {
+		moveObjectTo(menuName,x,y);
+	}
+	
+	domSMenu.visibility = 'visible';
+	domSMenu.zIndex = 0;
+	
+	oldDomSMenu = domSMenu;
+
+}
+
+function hideMenuFlyout(menuName) {
+	var domSMenu = findDOM(menuName,1);
+	domSMenu.visibility = 'hidden'; 
+}
+
+function moveObjectTo(objectID,x,y) {
+	var domStyle = findDOM(objectID,1);
+		domStyle.position = 'absolute'; 
+		domStyle.left = x;
+		domStyle.top = y;
+		domStyle.zIndex = 0;
+		
+}
+
+
+</SCRIPT>
+
+<!-------------- Start Search Block ------------------>
+<style type="text/css">
+
+	#SiteSearch {
+		position:	absolute;
+		top:		90;
+		left:		620;
+	}
+
+	.searchtext{
+		FONT-SIZE: 8pt;
+		FONT-WEIGHT: bolder;
+		FONT-FAMILY: Verdana;
+	}
+	
+</style>
+
+<div id="SiteSearch">
+ 
+	<form action="http://www.aanp.org/search/search" method="get" name="search">
+			<table name="tblSearch" border="0">
+			<tr>
+				<td class="searchtext" align="center">
+					Search:
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr align="top" height="5">
+				<td>
+					<INPUT type="text" name="query" size="10" maxlength="100">
+				</td>
+				<td>
+					<INPUT type="submit" value="Go" name="cmdSearch_Go">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</div>
+<!--------------- End Search Block ------------------->
+
+
+
+
+<!-- Inserted by Content Management Server: BEGIN EmbedTmplHeadHook -->
+
+		<link rel="stylesheet"
+				href="/NR/System/WBC/Customizable/WBC.css">
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/WBCFuncPagesConfig/UIStringConstants/JavaScriptUIStrings.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/OptionsClient.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Dates.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Windows.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/CommonClient.js"
+				type="text/javascript"></script>
+	<META name="ROBOTS" content="FOLLOW,INDEX">
+
+<!-- Inserted by Content Management Server: END EmbedTmplHeadHook -->
+</HEAD>
+<BODY BGCOLOR=#FFFFFF text="#333333" link="#003366" vlink="#336699" alink="#CCCCCC" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyBeginHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyBeginHook -->
+
+<TABLE WIDTH="755" BORDER=0 align="left" CELLPADDING=0 CELLSPACING=0 height="222" valign="top">
+	
+  <TR align="left" valign="top"> 
+    <TD WIDTH="100%" COLSPAN=5>
+		
+		<map name="FPMap0">
+			<area href="/NR/System/Access/ManualLogin.asp?NEXTURL=%2fPractice%2bPolicy%2band%2bLegislation%2fOffice%2bof%2bHealth%2bPolicy%2bContact%2bInformation%2ehtm" shape="circle" coords="567, 43, 5">
+		    <area href="/Default.asp" shape="rect" coords="13, 124, 148, 142">
+            <area href="/AANPPublicPages/Login.asp?NEXTURL=%2FMembers+Only%2F" shape="rect" coords="13, 105, 148, 122">
+		    <area href="/About+AANP/" shape="rect" coords="15, 86, 148, 104" onMouseOver="showMenuFlyout('About_AANPDiv',14,102);" onMouseOut="hideMenuFlyout('About_AANPDiv');">
+		    <area href="/Education+and+Research/" shape="rect" coords="153, 124, 288, 142" onMouseOver="showMenuFlyout('Education_and_ResearchDiv',151,141);" onMouseOut="hideMenuFlyout('Education_and_ResearchDiv');">
+		    <area href="/Conferences/" shape="rect" coords="153, 107, 285, 123" onMouseOver="showMenuFlyout('ConferencesDiv',151,121);" onMouseOut="hideMenuFlyout('ConferencesDiv');">
+		    <area href="/online+services/" shape="rect" coords="154, 86, 286, 104">
+            <area href="/Resources+and+Links/" shape="rect" coords="292, 125, 428, 142">
+		    <area href="/Publications/" shape="rect" coords="293, 106, 425, 124" onMouseOver="showMenuFlyout('PublicationsDiv',291,121);" onMouseOut="hideMenuFlyout('PublicationsDiv');">
+		    <area href="/Practice+Policy+and+Legislation/" shape="rect" coords="293, 85, 426, 103" onMouseOver="showMenuFlyout('Practice_Policy_and_LegislationDiv',291,102);" onMouseOut="hideMenuFlyout('Practice_Policy_and_LegislationDiv');">
+		    <area href="/Certification/" shape="rect" coords="433, 123, 568, 141" onMouseOver="showMenuFlyout('CertificationDiv',430,141);" onMouseOut="hideMenuFlyout('CertificationDiv');">
+		    <area href="/Foundation/" shape="rect" coords="432, 104, 567, 123" onMouseOver="showMenuFlyout('FoundationDiv',430,121);" onMouseOut="hideMenuFlyout('FoundationDiv');">
+		</map>
+		<IMG SRC="/NR/rdonlyres/evk6v4gx652duojo6qidulcip3rd2mlfg22366xnucrnrtkboe4nhc7kxauafl2hrapjojzxstm6tn26z66zidju6zb/AANP+Header+Aliasing.jpg" height="149" border="0" usemap="#FPMap0">
+    </TD>
+	</tr>
+
+  </TR>
+  <TR align="left" valign="top"> 
+    <TD COLSPAN=5>
+    <table width="720" border="0" align="left" cellpadding="0" cellspacing="15">
+        <tr> 
+          <td colspan="2" align="left" valign="top" width="100%" height="19"> <div align="left">
+            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber3">
+              <tr>
+                <td width="100%">            
+	                <span class="grantsheadersm"><font color="#336699">
+<a href = "/Practice+Policy+and+Legislation/">legislation and practice</a>
+    	      		</font>
+        	  		</span>
+            	</td>
+                <td>		
+                	<font face="Verdana,Arial,sans-serif" size="3"><b></b></font> &nbsp; 
+				</td>
+              </tr>
+            </table>
+			</td>
+        </tr>
+        <tr> 
+          <td align="left" valign="top" class="contentcopy">
+          <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="95%" id="AutoNumber2">
+            <tr height="420">
+              <td width="100%" valign="top">
+              <P><STRONG><FONT size=5>Office of Health Policy Contact Information</FONT></STRONG></P>
+<P>American Academy of Nurse Practitioners<BR>Office of Health Policy<BR><GEO TYPE="US">PO Box 40130<BR>Washington, DC 20016</GEO><BR>Phone: 202-966-6414<BR>Fax: 202-966-2856<BR>Email: <A href="mailto:dcoffice@aanp.org">dcoffice@aanp.org</A><BR>Director of Health Policy<BR>Jan Towers, PhD, NP-C, CRNP, FAANP</P>
+<P><FONT face="Times New Roman"></FONT>&nbsp;</P>
+<P><FONT face="Times New Roman"></FONT>&nbsp;</P>
+<P>&nbsp;</P></td>
+            </tr>
+            <tr>
+              <td width="100%">
+              &nbsp;</td>
+            </tr>
+            <tr>
+              <td width="100%">
+              <p align="center"><font face="Arial Narrow" size="2"><strong>© 
+              American Academy of Nurse Practitioners.
+              <a href="/About+AANP/CONDITIONS+OF+USE.asp">All rights reserved</a>.</strong></font></p>
+              <p align="center"><font face="Arial Narrow" size="1"><strong>Email 
+              Comments, Corrections &amp; Questions to:
+              <a href="mailto:webmaster@aanp.org">webmaster@aanp.org</a></strong></font>
+              </p>
+&nbsp;</td>
+            </tr>
+          </table>
+          </td>
+        </tr>
+      </table></TD>
+	</TR>
+	
+	
+</TABLE>
+<div align="center"> 
+</div>
+
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyEndHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyEndHook -->
+</BODY>
+</HTML>
+
+
+<!-- START MENU DIVS-->
+
+
+	
+	
+<div id="2004ConferenceMaterialsDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('2004ConferenceMaterialsDiv',0,0);" onMouseOut="hideMenuFlyout('2004ConferenceMaterialsDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/2004ConferenceMaterials/Friday%2c+June+11%2c+2004+%28Pre-Conference%29.htm>
+					friday, june 11, 2004 (pre-conference)
+					</a><br>
+							
+				<a href=/2004ConferenceMaterials/Saturday%2c+June+12%2c+2004+%28Pre-Conference%29.htm>
+					saturday, june 12, 2004 (pre-conference)
+					</a><br>
+							
+				<a href=/2004ConferenceMaterials/Sunday+June+13%2c+2004.htm>
+					sunday june 13, 2004
+					</a><br>
+							
+				<a href=/2004ConferenceMaterials/Monday%2c+June+14%2c+2004.htm>
+					monday, june 14, 2004
+					</a><br>
+							
+				<a href=/2004ConferenceMaterials/Tuesday%2c+June+15%2c+2004.htm>
+					tuesday, june 15, 2004
+					</a><br>
+							
+				<a href=/2004ConferenceMaterials/Wednesday%2c+June+16%2c+2004.htm>
+					wednesday, june 16, 2004
+					</a><br>
+							
+				<a href=/2004ConferenceMaterials/Posters.htm>
+					posters
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="AANPHousingDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('AANPHousingDiv',0,0);" onMouseOut="hideMenuFlyout('AANPHousingDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="About_AANPDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('About_AANPDiv',0,0);" onMouseOut="hideMenuFlyout('About_AANPDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="265" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="265" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/About+AANP/AANP+Contact+Information.htm>
+					aanp contact information
+					</a><br>
+							
+				<a href=/About+AANP/Membership/>
+					membership
+					</a><br>
+							
+				<a href=/About+AANP/AANP+Information/>
+					aanp information
+					</a><br>
+							
+				<a href=/About+AANP/Corporate+Advisory+Council/>
+					corporate advisory council (acac)
+					</a><br>
+							
+				<a href=/About+AANP/Career+Resources/>
+					career resources
+					</a><br>
+							
+				<a href=/About+AANP/Fellows/>
+					fellows program (faanp)
+					</a><br>
+							
+				<a href=/About+AANP/Group+Members/>
+					group members
+					</a><br>
+							
+				<a href=/About+AANP/International/>
+					international information
+					</a><br>
+							
+				<a href=/About+AANP/Marketing+and+PR/>
+					marketing and pr
+					</a><br>
+							
+				<a href=/About+AANP/Partnerships%2c+Alliances+and+Coalitions.htm>
+					partnerships, alliances and coalitions
+					</a><br>
+							
+				<a href=/About+AANP/State+Awards+for+Excellence/>
+					state awards for excellence
+					</a><br>
+							
+				<a href=/About+AANP/Press+Releases/>
+					press releases
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="227" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="227" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="227" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="227" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="265" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="CertificationDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('CertificationDiv',0,0);" onMouseOut="hideMenuFlyout('CertificationDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="210" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="210" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/Certification/Program+Description.htm>
+					program description
+					</a><br>
+							
+				<a href=/Certification/Application+Process/>
+					application process
+					</a><br>
+							
+				<a href=/Certification/Certification+Application.htm>
+					certification application
+					</a><br>
+							
+				<a href=/Certification/Computer+Based+Testing+Now+Available.htm>
+					computer based testing now available
+					</a><br>
+							
+				<a href=/Certification/Qualification+of+Candidates.htm>
+					qualification of candidates
+					</a><br>
+							
+				<a href=/Certification/Recertification/>
+					recertification
+					</a><br>
+							
+				<a href=/Certification/Reciprocity.htm>
+					reciprocity
+					</a><br>
+							
+				<a href=/Certification/Continuing+Education.htm>
+					continuing education
+					</a><br>
+							
+				<a href=/Certification/Nurse+Practitioner+Data.htm>
+					nurse practitioner data
+					</a><br>
+							
+				<a href=/Certification/Scholarships+and+Grants.htm>
+					scholarships and grants
+					</a><br>
+							
+				<a href=/Certification/NP+Primary+Care+Compentencies+in+Specialty+Areas+.htm>
+					np primary care compentencies in specialty areas 
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="172" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="172" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="172" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="172" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="210" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="ConferencesDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('ConferencesDiv',0,0);" onMouseOut="hideMenuFlyout('ConferencesDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="200" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="200" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/Conferences/2005+Conference/>
+					2005 conference
+					</a><br>
+							
+				<a href=/Conferences/AANP+Conference+Abstract+Submission%2c+Review%2c+and+Acceptance+Frequently+Asked+Questions.htm>
+					aanp conference abstract submission, review, and acceptance frequently asked questions
+					</a><br>
+							
+				<a href=/Conferences/AANP+Conference+Speaker+Frequently+Asked+Questions.htm>
+					aanp conference speaker frequently asked questions
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="162" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="162" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="162" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="162" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="200" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="DEVDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('DEVDiv',0,0);" onMouseOut="hideMenuFlyout('DEVDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/DEV/Search.htm>
+					search
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="FoundationDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('FoundationDiv',0,0);" onMouseOut="hideMenuFlyout('FoundationDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="245" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="245" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/Foundation/Foundation+Store.htm>
+					foundation store
+					</a><br>
+							
+				<a href=/Foundation/Support+the+Foundation.htm>
+					support the foundation
+					</a><br>
+							
+				<a href=/Foundation/AANP+Foundation+2nd+Funding+Cycle+2004+Scholarships+and+Grants.htm>
+					aanp foundation 2nd funding cycle 2004 scholarships and grants
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="207" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="207" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="207" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="207" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="245" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="Health_and_IndustryDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('Health_and_IndustryDiv',0,0);" onMouseOut="hideMenuFlyout('Health_and_IndustryDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="INP_APN_NetworkDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('INP_APN_NetworkDiv',0,0);" onMouseOut="hideMenuFlyout('INP_APN_NetworkDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="Practice_Policy_and_LegislationDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('Practice_Policy_and_LegislationDiv',0,0);" onMouseOut="hideMenuFlyout('Practice_Policy_and_LegislationDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="280" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="280" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/Practice+Policy+and+Legislation/Legislation/>
+					legislation
+					</a><br>
+							
+				<a href=/Practice+Policy+and+Legislation/Regulation/>
+					regulation
+					</a><br>
+							
+				<a href=/Practice+Policy+and+Legislation/Practice/>
+					practice
+					</a><br>
+							
+				<a href=/Practice+Policy+and+Legislation/Political+Action+Committee/>
+					political action committee (pac)
+					</a><br>
+							
+				<a href=/Practice+Policy+and+Legislation/Congressional+Legislative+Committees/>
+					congressional legislative lists and committees
+					</a><br>
+							
+				<a href=/Practice+Policy+and+Legislation/Legislative+Action+Site/>
+					legislative action site
+					</a><br>
+							
+				<a href=/Practice+Policy+and+Legislation/Office+of+Health+Policy+Contact+Information.htm>
+					office of health policy contact information
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="242" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="242" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="242" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="242" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="280" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="membersurveyDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('membersurveyDiv',0,0);" onMouseOut="hideMenuFlyout('membersurveyDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="Online_ServicesDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('Online_ServicesDiv',0,0);" onMouseOut="hideMenuFlyout('Online_ServicesDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="PublicationsDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('PublicationsDiv',0,0);" onMouseOut="hideMenuFlyout('PublicationsDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/Publications/JAANP/>
+					journal (jaanp)
+					</a><br>
+							
+				<a href=/Publications/AANP+Position+Statements/>
+					position statements/papers
+					</a><br>
+							
+				<a href=/Publications/AANP+Publications/>
+					publications
+					</a><br>
+							
+				<a href=/Publications/AANP+Monographs/>
+					monographs/books
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="Education_and_ResearchDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('Education_and_ResearchDiv',0,0);" onMouseOut="hideMenuFlyout('Education_and_ResearchDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="100" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="100" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/Education+and+Research/Research/>
+					research
+					</a><br>
+							
+				<a href=/Education+and+Research/AANPNR+Network/>
+					aanpnr network
+					</a><br>
+							
+				<a href=/Education+and+Research/AANP+Reports+about+NPs/>
+					aanp reports about nps
+					</a><br>
+							
+				<a href=/Education+and+Research/Grant+Information/>
+					grant information
+					</a><br>
+							
+				<a href=/Education+and+Research/Research+Resources/>
+					research resources
+					</a><br>
+							
+				<a href=/Education+and+Research/Education/>
+					education
+					</a><br>
+							
+				<a href=/Education+and+Research/Nurse+Practitioner+Preparation/>
+					nurse practitioner preparation
+					</a><br>
+							
+				<a href=/Education+and+Research/Continuing+Education/>
+					continuing education
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="62" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="62" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="62" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="62" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="100" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="Resources_and_LinksDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('Resources_and_LinksDiv',0,0);" onMouseOut="hideMenuFlyout('Resources_and_LinksDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="230" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="230" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/Resources+and+Links/Professional+Organizations.htm>
+					professional organizations
+					</a><br>
+							
+				<a href=/Resources+and+Links/International.htm>
+					international
+					</a><br>
+							
+				<a href=/Resources+and+Links/Governmental+and+Health+Related.htm>
+					governmental and health related
+					</a><br>
+							
+				<a href=/Resources+and+Links/Publications+and+References.htm>
+					publications and references
+					</a><br>
+							
+				<a href=/Resources+and+Links/Practice+Resources.htm>
+					practice resources
+					</a><br>
+							
+				<a href=/Resources+and+Links/National+Health+Organizations.htm>
+					national health organizations
+					</a><br>
+							
+				<a href=/Resources+and+Links/Educational+Resources.htm>
+					educational resources
+					</a><br>
+							
+				<a href=/Resources+and+Links/Legislative+Resources.htm>
+					legislative resources
+					</a><br>
+							
+				<a href=/Resources+and+Links/Health+Specific+Resources.htm>
+					health specific resources
+					</a><br>
+							
+				<a href=/Resources+and+Links/Resources+and+Links.htm>
+					resources and links
+					</a><br>
+							
+				<a href=/Resources+and+Links/Consumer+and+Support+Organizations.htm>
+					consumer and support organizations
+					</a><br>
+							
+				<a href=/Resources+and+Links/Links+to+General+Health+Resources.htm>
+					general health
+					</a><br>
+							
+				<a href=/Resources+and+Links/Population+Specific.htm>
+					population specific
+					</a><br>
+							
+				<a href=/Resources+and+Links/Specific+Conditions.htm>
+					specific conditions
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="192" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="192" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="192" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="192" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="230" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="SearchDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('SearchDiv',0,0);" onMouseOut="hideMenuFlyout('SearchDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/Search/Search.htm>
+					search
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+	
+	
+<div id="Urgent_AlertsDiv" style="position: absolute; z-index: 0; visibility: hidden;" onMouseOver="showMenuFlyout('Urgent_AlertsDiv',0,0);" onMouseOut="hideMenuFlyout('Urgent_AlertsDiv');">
+
+	<table cellpadding=0 cellspacing=0 border=0 width="150" bgcolor=#eeeeee>
+	<noindex>
+		<tr>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>  
+			<td colspan=3 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></td>
+			<td rowspan=9 bgcolor=#000066>
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=1 height=1></td>
+		</tr>
+		<tr>
+			<td colspan=3 align=right>
+	      	</td>
+	    </tr>
+		<tr height="14" valign="middle">
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width=4 height=4></td>
+			<td class="menucopy" height="14" valign="middle">
+				<!--Child links start here-->
+							
+				<a href=/Urgent+Alerts/URGENT%3a+EXPANDED+PRODUCT+RECALL+4-7-04.htm>
+					urgent: expanded product recall 4-7-04
+					</a><br>
+
+				<!--Child links end here-->
+			</td>
+			<td rowspan=6 valign="middle">
+            <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif" width=4 height=4></td>
+		<!--</tr>-->
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=1></td></tr>
+		<tr><td><img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="112" height=3></td></tr>
+		<tfoot><tr><th bgcolor=#000066 colspan=5>
+          <img SRC="/NR/rdonlyres/elviljhtbh32z2nuodoynooesbgaknecthp5mhhto7frziaf67otjgoxxmuoi7ohjhni7wghl3r5io/_TemplateResource1.gif" ALT="clear_dot.gif"  width="150" height=1></th></tr></tfoot>
+	</noindex>
+	</table>
+</div>			
+
+<!-- end MENU DIVS-->
+
+

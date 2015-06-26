@@ -1,0 +1,677 @@
+<DOC>
+<DOCNO>g00073</DOCNO>
+<DOCHDR>http://www.americanscientist.org/template/ContactUs</DOCHDR>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title> American Scientist Online - Contact <i>American Scientist</i> </title>
+
+         <link rel="stylesheet" href="http://www.americanscientist.org/template/Stylesheet;jsessionid=aaa9pu1-lnLpXT" type="text/CSS" media="screen" />
+     <link rel="stylesheet" href="http://www.americanscientist.org/template/StylesheetPrint;jsessionid=aaa9pu1-lnLpXT" type="text/CSS" media="print" />
+        <SCRIPT Language="JavaScript">
+
+	function popWindow(url, windowName, windowHeight, windowWidth, windowXpos, windowYpos, scrollBars)	{
+
+		//alert('In popwindow' + '\n' + url + '\n' + windowName + '\n' + windowHeight + '\n' + windowWidth + '\n');
+		browser_name = navigator.appName;
+		browser_version = parseFloat(navigator.appVersion);
+
+		if (scrollBars == ""){
+
+			scrollBars = 'no';
+		}
+
+        //ignore windownane since it's not used for the page title
+        windowName = 'newWin';
+
+
+		//Set features string based on browser type
+
+		if (browser_name == "Netscape" && browser_version >= 4){
+
+			features = 'resizable=yes,scrollbars=' + scrollBars + ',width=' + windowWidth + ',height=' + windowHeight + ',status=no,toobar=no,menubar=no,screenX=' + windowXpos
+			features += ' , screenY='+ windowYpos
+		}
+		else if	(browser_name == "Netscape" && browser_version <= 4){
+
+			features = 'resizable=yes,scrollbars=' + scrollBars + ',width=' + windowWidth + ',height=' + windowHeight + ',status=no,toobar=no,menubar=no,left=' + windowXpos
+			features += ',top=' + windowYpos
+		}
+
+		else						{
+
+			features = 'resizable=yes,scrollbars=' + scrollBars + ',width=' + windowWidth + ',height=' + windowHeight + ',status=no,toobar=no,menubar=no,left=' + windowXpos
+			features += ',top=' + windowYpos
+		}
+
+	//alert(features)
+
+	//Mac
+	if (navigator.appVersion.indexOf("Mac")!=-1) {
+		//IE
+		if (browser_name == "Microsoft Internet Explorer") 	{
+			newwin = window.open(url,windowName,features);
+		}
+		//Netscape 3.0
+		if (browser_name == "Netscape" && browser_version < 4.01)	{
+			newwin = window.open(url,windowName,features);
+		}
+		 //Netscape 4.0+
+		 else {
+		 		newwin = window.open(url,windowName,features);
+				newwin.focus();
+		}
+	}
+	//PCs
+	else if (browser_name == "Microsoft Internet Explorer" && browser_version <= 4) {
+			//IE 3,4 for somereason 6 is falling into here as well
+
+			newwin = window.open(url,windowName,features);
+			newwin.focus();
+	}
+
+	else if (browser_name == "Netscape" && browser_version < 4.01) {
+				//Netscape 3
+				newwin = window.open(url,windowName,features);
+				newwin.focus();
+				newwin.refer = self;
+	}
+	else {
+				//Netscape 4.0+, IE 5
+					newwin = window.open(url,windowName,features);
+					newwin.opener=window;
+					newwin.focus();
+	}
+
+	return false;//false;
+	}
+
+</SCRIPT>
+
+    <meta NAME="description" CONTENT="AmericanScientist.org  Science magazine of Sigma Xi, The Scientific
+Research Society, presenting illustrated articles on research in
+biology, chemistry, Physics, earth sciences, ecology, astronomy,
+computing, mathematics, engineering and technology, and book reviews for
+professional scientists, engineers, students and amateur scientists.
+
+">
+    <meta NAME="keywords" CONTENT="  Ethics and Policy, Scientists, Professional Ethics, Science and Society,
+Psychology, General Science, History, Ludy T. Benjamin, Jr. ">
+    <meta NAME="copyright" CONTENT="Copyright 1913-2003 American Scientist, Sigma Xi. All Rights Reserved.
+
+">
+    <meta NAME="author" CONTENT="Science is a great adventure. American Scientist is the 90-year-old
+magazine of science and technology published by Sigma Xi, The Scientific
+Research Society. We are proud to work with distinguished contributors,
+photographers, researchers, academics and illustrators as chroniclers of
+that adventure. Contact editors@amsci.org
+
+">
+    <meta NAME="robots" CONTENT="index,follow,">
+</head>
+
+<body marginleft="0" margintop="0" marginwidth="0" marginheight="0" bgcolor="#bebebe">
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="white">
+
+
+<tr>
+    <td colspan="3" height="94" style="height: 94; background: url( /content/AMSCI/AMSCI/Static/images/masthead_background.png )">
+        <table class="masthead" width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+				<map name="masthead">
+					<area shape="rect" coords="0,0 21,94" href="http://www.americanscientist.org/template/Index;jsessionid=aaa9pu1-lnLpXT" />
+					<area shape="rect" coords="21,0 361,67" href="http://www.americanscientist.org/template/Index;jsessionid=aaa9pu1-lnLpXT" />
+					<area shape="rect" coords="21,80 361,94" href="http://www.americanscientist.org/template/Index;jsessionid=aaa9pu1-lnLpXT" />
+					<area shape="rect" coords="361,0 469,94" href="http://www.americanscientist.org/template/Index;jsessionid=aaa9pu1-lnLpXT" />
+					
+					<area shape="rect" coords="21,67 361,80" href="http://www.sigmaxi.org" />
+				</map>
+                <td valign="middle" align="left">
+                <img src="/content/AMSCI/AMSCI/Static/images/masthead_text.png" alt="American Scientist Online. The Magazine of Sigma Xi, the Scientific Research Society" border="0" ISMAP USEMAP="#masthead"></td>
+                <td valign="middle" align="right"> <div class="ad"> <SCRIPT LANGUAGE=JavaScript>
+<!--
+var plugin = 0;
+if (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"] && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin)
+{
+if (navigator.plugins && navigator.plugins["Shockwave Flash"])plugin = 1;
+}
+else if (navigator.userAgent && navigator.userAgent.indexOf("MSIE")>=0
+&& (navigator.userAgent.indexOf("Windows 95")>=0 || navigator.userAgent.indexOf("Windows 98")>=0 || navigator.userAgent.indexOf("Windows NT")>=0)) {
+document.write('<SCRIPT LANGUAGE=VBScript>\n');
+document.write('on error resume next \n');
+document.write('plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.3")))\n');
+document.write('if ( plugin <= 0 ) then plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.4")))\n');
+document.write('if ( plugin <= 0 ) then plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.5")))\n');
+document.write('if ( plugin <= 0 ) then plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6")))\n');
+document.write('<\/SCRIPT> \n');
+}
+if ( plugin )
+{
+document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
+document.write('  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=3,0,0,0" ');
+document.write(' ID=ad_banner_example WIDTH=234 HEIGHT=60>');
+document.write(' <PARAM NAME=movie VALUE="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba004.swf?clickTAG=http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/4684/Top/American_Scientist/SigmaPlot_9/ba004.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55"><PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=WHITE>  ');
+document.write(' <EMBED src="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba004.swf?clickTAG=http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/4684/Top/American_Scientist/SigmaPlot_9/ba004.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55" menu=false quality=high bgcolor=WHITE  ');
+document.write(' swLiveConnect=FALSE WIDTH=234 HEIGHT=60');document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">');document.write(' </EMBED>');
+document.write(' </OBJECT>');
+}
+else if (!(navigator.appName && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("2.")>=0))
+{document.write('<a target="_blank" href="http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/4684/Top/American_Scientist/SigmaPlot_9/ba004.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55"><IMG SRC="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba004g_HB_08-26-04.gif" WIDTH=234 HEIGHT=60 BORDER=0></a>');
+}
+//-->
+</SCRIPT>
+<NOEMBED>
+<a target="_blank" href="http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/4684/Top/American_Scientist/SigmaPlot_9/ba004.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55"><IMG SRC="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba004g_HB_08-26-04.gif" WIDTH=234 HEIGHT=60 BORDER=0></a>
+</NOEMBED>
+<NOSCRIPT><a target="_blank" href="http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/4684/Top/American_Scientist/SigmaPlot_9/ba004.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55"><IMG SRC="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba004g_HB_08-26-04.gif" WIDTH=234 HEIGHT=60 BORDER=0></a>
+</NOSCRIPT>
+ </div> </td>
+             </tr>
+        </table>
+    </td>
+</tr>
+
+
+<tr>
+    <td colspan="3">
+        <table class="topMenu" style="font-size: 80%" width="100%" cellspacing="0" cellpadding="4">
+            <tr>
+
+                
+                    
+                    
+                                        
+                    
+                                        
+                    
+                    <td class="topMenuItem" style="">
+                            
+        
+                        <a href="http://www.americanscientist.org/template/Index;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Home</a>
+
+    
+    
+
+                    </td>
+
+                
+                    
+                    
+                                        
+                    
+                                        
+                    
+                    <td class="topMenuItem" style="border-left: solid white 1px;">
+                            
+        
+                        <a href="http://www.americanscientist.org/template/CurrentIssue;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Current Issue</a>
+
+    
+    
+
+                    </td>
+
+                
+                    
+                    
+                                        
+                    
+                                        
+                    
+                    <td class="topMenuItem" style="border-left: solid white 1px;">
+                            
+        
+                        <a href="http://www.americanscientist.org/template/ArchiveLanding;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Archives</a>
+
+    
+    
+
+                    </td>
+
+                
+                    
+                    
+                                        
+                    
+                                        
+                    
+                    <td class="topMenuItem" style="border-left: solid white 1px;">
+                            
+        
+                        <a href="http://www.americanscientist.org/template/BookshelfLanding;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Bookshelf</a>
+
+    
+    
+
+                    </td>
+
+                
+                    
+                    
+                                        
+                    
+                                        
+                    
+                    <td class="topMenuItem" style="border-left: solid white 1px;">
+                            
+        
+                        <a href="http://www.americanscientist.org/template/OnlineFeaturesLanding;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Online Features</a>
+
+    
+    
+
+                    </td>
+
+                
+                    
+                    
+                                        
+                    
+                                        
+                    
+                    <td class="topMenuItem" style="border-left: solid white 1px;">
+                            
+        
+                        <a href="http://www.americanscientist.org/template/MarketplaceLanding;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Marketplace</a>
+
+    
+    
+
+                    </td>
+
+                
+                    
+                    
+                                        
+                    
+                                        
+                    
+                    <td class="topMenuItem" style="border-left: solid white 1px;">
+                            
+        
+                        <a href="http://www.americanscientist.org/template/SubscriptionLanding;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Subscribe</a>
+
+    
+    
+
+                    </td>
+
+                
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+
+    
+    <td class="leftCol" rowspan="2" width="18%" valign="top" style="font-size: 80%; background-color: #cccc99;">
+
+                                
+        
+        
+        <table class="searchBox" style="border-bottom: solid white 1px;" width="100%" cellspacing="0" cellpadding="8">
+            <tr>
+                <td class="searchBoxTitle"> Site Search </td>
+            </tr>
+            <tr>
+                <td>
+                    <form name="quickSearch" action="http://www.americanscientist.org/template/AdvancedSearchResult;jsessionid=aaa9pu1-lnLpXT" method="post">
+                   <div style="padding-right: 8px;"><input type="text" style="width: 100%;" name="queryText"></div>
+                   <div style="margin-top: 10px;"><input type="image" src="/content/AMSCI/AMSCI/Static/images/comp/search-go-2.png" value="Search"></div>
+                   <div style="margin-top: 10px;"><a style="color: #666633;" href="http://www.americanscientist.org/template/AdvancedSearch;jsessionid=aaa9pu1-lnLpXT">Advanced Search</a></div>
+                   </form>
+                </td>
+            </tr>
+        </table>
+
+        
+                                                            
+            <table class="loginBox" style="color: white; border-bottom: solid white 1px;" width="100%" cellspacing="0" cellpadding="8">
+    <tr>
+        <td bgcolor="#336699" style="padding-top: 4px; padding-bottom: 4px; font-weight: bold;"> Visitor Login </td>
+    </tr>
+    <tr>
+        <td bgcolor="#6699CC" style="">
+
+            
+            
+           <form name="quicklogin" method="post" action="http://www.americanscientist.org/template/ContactUs;jsessionid=aaa9pu1-lnLpXT">
+            <input type="hidden" name="action" value="amsci.membership.Login">
+            <input type="hidden" name="nextPage" value="ContactUs"/>
+            
+           <div>Username</div>
+           <div style="padding-right: 8px;"><input type="text" name="member_id" value="" style="width: 100%;"></div>
+           <div style="margin-top: 10px;">Password</div>
+           <div style="padding-right: 8px;"><input type="password" name="last_name" style="width: 100%;"></div>
+           <div style="margin-top: 10px;"><input type="image" src="/content/AMSCI/AMSCI/Static/images/comp/sign-in-button-2.png" value="Login"></div>
+           <div style="margin-top: 10px;"><a style="color: white;" href="https://www.sigmaxi.org/4lane/loginform.php">Help with login</a></div>
+           <div style="margin-top: 10px;"><a style="color: white;" href="https://www.sigmaxi.org/4lane/forgot.php">Forgot your password?</a></div>
+           <div style="margin-top: 10px;"><a style="color: white;" href="https://www.sigmaxi.org/4lane/loginform.php#change">Change your username</a></div>
+
+          </form>
+
+
+        </td>
+    </tr>
+</table>
+
+        
+        <div style="text-align: center">
+                                          <div class="ad"><a href="http://service.bfast.com/bfast/click?bfmid=43945&sourceid=0040348489&categoryid=homepage" target="_blank"><img border="0" src="/content/AMSCI/AMSCI/Static/images/bookstore_button.png"/></a></div>
+            <div class="ad"><a href="http://www.americanscientist.org/template/EnewsletterLanding;jsessionid=aaa9pu1-lnLpXT"><img border="0" src="/content/AMSCI/AMSCI/Static/images/enews_button.png"/></a></div>
+        </div>
+
+        
+
+
+
+    </td>
+
+    
+    <td valign="top" style="padding: 10px;">
+
+        
+                                            
+
+                    <div class="pageHeader">
+                Contact <i>American Scientist</i>
+            </div>
+            
+        
+                      <!-- no banner -->
+    
+
+
+    
+    
+    
+    
+
+<div>
+    <p>Please send questions or suggestions regarding our Web site to <a
+    href="mailto:online@amsci.org">online@amsci.org</a>.</p>  <p
+        class="Heading2">Mailing Address</p>  P.O. Box 13975<br> 3106
+    East NC Highway 54<br> Research Triangle Park, NC 27709<br>  <p
+    class="Heading2">Telephone</p>  (919) 549-0097<br> (800)
+    282-0444<br>  <p class="Heading2">Fax</p>  (919) 549-0090<br>  <p
+    class="Heading2">E-mail</p>  Advertising: <a
+    href="mailto:ads@amsci.org">ads@amsci.org</a>  <br> Subscription
+    inquiries: <a href="mailto:subs@amsci.org">subs@amsci.org</a>  <br>
+    Reprint permissions: <a
+    href="mailto:perms@amsci.org">perms@amsci.org</a>  <br> Editors'
+    Mailbox: <a href="mailto:editors@amsci.org">editors@amsci.org</a>
+    <br> AUTHORS: Please note that we cannot accept e-mailed article
+    submissions. Consult our <a href="/template/Guidelines">submission
+    guidelines</a>  for more information.<br>
+    <!--pagebreak--><p class="Heading1">Frequently Asked Questions</p>
+        <p class="Heading2">How can I log in to American Scientist
+    Online?</p>  <p class="Heading3">Sigma Xi Members:</p>  <p>Username
+        = your member number<br>Password = your last name</p>  <p
+        class="Heading3">American Scientist Subscribers:</p>
+        <p>Username = your subscriber number<br>Password = your last
+    name</p>  <p>You can change your username and password <a
+    href="https://www.sigmaxi.org/4lane/loginform.php#change">here</a>.</p>
+        <p class="Heading2">Where can I find my Sigma Xi member
+    number?</p>  <p>This number is on your membership card, dues notices
+        and your         <em>American Scientist</em> mailing label.</p>
+        <p class="Heading2">How do I find my <em>American Scientist</em>
+        subscriber number?</p>  <p>This number is on your magazine
+    label.</p>  <p class="Heading2">If I subscribe to <em>American
+        Scientist</em>     today, can I get online access now?</p>
+        <p>Yes. You will receive a temporary ID number to access
+            <em>American         Scientist Online</em>. Your permanent
+        subscriber number will be     e-mailed to you within 10 business
+    days.</p>  <p class="Heading2">I am unable to locate <em>American
+        Scientist</em>     articles from issues published before
+    1998.</p>  <p>Our online archive currently dates back to the
+        January-February 1998     issue.&nbsp; If you need access to an
+        older issue, please send your     request to the <em>American
+        Scientist</em> marketing department at         <a
+    href="mailto:subs@amsci.org">subs@amsci.org</a>.</p>  <p
+        class="Heading2">We have an institutional print subscription,
+        but     are not able to view online journal content.</p>  <p>If
+        you have an institutional print subscription or company print
+        subscription, you need to purchase a site license. For more
+        information on site licenses, please contact Katie Lord at <a
+    href="mailto:klord@amsci.org">klord@amsci.org</a>.</p>  <p
+        class="Heading2">The bookmarks I have on my computer are not
+    working.</p>  <p>     <em>American Scientist Online</em> relaunched
+        on May 6, 2003, but     old links should redirect you to the new
+        site. Please go to <a
+        href="http://www.americanscientist.org">http://www.americanscientist.org</a>
+        and look for the new page. If you are unable to find the
+        information     you are looking for, please send the URL of the
+        page you are trying     to load to Greg Ross at <a
+    href="mailto:gross@amsci.org">gross@amsci.org</a>.</p>  <p
+        class="Heading2">I have problems linking to ...</p>  <p>Send an
+        e-mail to Greg Ross at <a
+    href="mailto:gross@amsci.org">gross@amsci.org</a>.</p>  <p
+        class="Heading2">Why do I have to log in to <em>American
+            Scientist Online</em>?</p>  <p>Members of Sigma Xi who log
+        in can access all articles in the     current issue as well as
+        the archives.</p>  <p>Subscribers to <em>American Scientist</em>
+        magazine can access all     articles in the current issue and
+        the archives for the period for     which they&rsquo;ve
+    subscribed.</p>  <p>In addition, Sigma Xi members and American
+        Scientist subscribers are     entitled to an additional 5%
+        discount at the Scientists' Bookstore     (a benefit provided in
+        conjunction with Barnes & Noble) when     they are logged in
+        to the site and click through to the Scientists' Bookstore.</p> </div>
+
+
+
+    </td>
+
+    
+    
+    <td class="rightCol" rowspan="2" width="15%" valign="top" align="center" style="background-color: #ebebd8;">
+
+        <div style="font-size: 70%; margin: 10px;"> ADVERTISEMENTS </div>
+
+        <div class="ad">
+            <A HREF="http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/2888/Right1/American_Scientist/Employment_Classifieds/EmploymentSqButtonAd.jpg/30613530303630313432323737623930" target="_new"><IMG SRC="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/Employment_Classifieds/EmploymentSqButtonAd.jpg"  ALT="Visit our Career Opportunities Listings!"  BORDER="0"></A>
+        </div>
+
+        <div class="ad">
+            <A HREF="http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/19158/Right2/American_Scientist/Bio-IT_Conference/Bio-ITWorld_Weblogo_125x55-.gif/30613530303630313432323737623930" target="_new"><IMG SRC="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/Bio-IT_Conference/Bio-ITWorld_Weblogo_125x55-.gif"  ALT="Bio-IT World Conference & Expo, May 17-19"  BORDER="0"></A>
+        </div>
+
+
+    </td>
+
+    
+</tr>
+<tr>
+    <td valign="bottom"> <div class="ad" style="text-align: center;"> <SCRIPT LANGUAGE=JavaScript>
+<!--
+var plugin = 0;
+if (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"] && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin)
+{
+if (navigator.plugins && navigator.plugins["Shockwave Flash"])plugin = 1;
+}
+else if (navigator.userAgent && navigator.userAgent.indexOf("MSIE")>=0
+&& (navigator.userAgent.indexOf("Windows 95")>=0 || navigator.userAgent.indexOf("Windows 98")>=0 || navigator.userAgent.indexOf("Windows NT")>=0)) {
+document.write('<SCRIPT LANGUAGE=VBScript>\n');
+document.write('on error resume next \n');
+document.write('plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.3")))\n');
+document.write('if ( plugin <= 0 ) then plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.4")))\n');
+document.write('if ( plugin <= 0 ) then plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.5")))\n');
+document.write('if ( plugin <= 0 ) then plugin = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6")))\n');
+document.write('<\/SCRIPT> \n');
+}
+if ( plugin )
+{
+document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
+document.write('  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=3,0,0,0" ');
+document.write(' ID=ad_banner_example WIDTH=468 HEIGHT=60>');
+document.write(' <PARAM NAME=movie VALUE="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba003_amsci.swf?clickTAG=http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/32517/Bottom/American_Scientist/SigmaPlot_9/ba003.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55"><PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=WHITE>  ');
+document.write(' <EMBED src="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba003_amsci.swf?clickTAG=http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/32517/Bottom/American_Scientist/SigmaPlot_9/ba003.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55" menu=false quality=high bgcolor=WHITE  ');
+document.write(' swLiveConnect=FALSE WIDTH=468 HEIGHT=60');document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">');document.write(' </EMBED>');
+document.write(' </OBJECT>');
+}
+else if (!(navigator.appName && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("2.")>=0))
+{document.write('<a target="_blank" href="http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/32517/Bottom/American_Scientist/SigmaPlot_9/ba003.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55"><IMG SRC="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba003g_amsci_SigmaPlot_FB_0.gif" WIDTH=468 HEIGHT=60 BORDER=0></a>');
+}
+//-->
+</SCRIPT>
+<NOEMBED>
+<a target="_blank" href="http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/32517/Bottom/American_Scientist/SigmaPlot_9/ba003.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55"><IMG SRC="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba003g_amsci_SigmaPlot_FB_0.gif" WIDTH=468 HEIGHT=60 BORDER=0></a>
+</NOEMBED>
+<NOSCRIPT><a taget="_blank" href="http://adserver.4lane.com/RealMedia/ads/click_lx.ads/www.americanscientist.org/ContactUs/32517/Bottom/American_Scientist/SigmaPlot_9/ba003.html/30613530303630313432323737623930?http://www.systat.com/go/?id=55"><IMG SRC="http://adserver.4lane.com/RealMedia/ads/Creatives/American_Scientist/SigmaPlot_9/ba003g_amsci_SigmaPlot_FB_0.gif" WIDTH=468 HEIGHT=60 BORDER=0></a>
+</NOSCRIPT>
+ </div> </td>
+</tr>
+
+</table>
+
+
+    <table class="topMenu" style="font-size: 80%" width="100%" cellspacing="0" cellpadding="4">
+        <tr>
+
+            
+                
+                
+                                
+                
+                                
+                
+                <td class="topMenuItem" style="">
+                        
+        
+                        <a href="http://www.americanscientist.org/template/AboutAmSci;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                About <em>American Scientist</em></a>
+
+    
+    
+
+                </td>
+
+            
+                
+                
+                                
+                
+                                
+                
+                <td class="topMenuItem" style="border-left: solid white 1px;">
+                        
+        
+                        <a href="http://www.americanscientist.org/template/SiteMap;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Site Map</a>
+
+    
+    
+
+                </td>
+
+            
+                
+                
+                                
+                
+                                
+                
+                <td class="topMenuItem" style="border-left: solid white 1px;">
+                        
+        
+                        <a href="http://magazine-archive.americanscientist.org" class="navLink">
+                Text Archive</a>
+
+    
+    
+
+                </td>
+
+            
+                
+                
+                                
+                
+                                
+                
+                <td class="topMenuItem" style="border-left: solid white 1px;">
+                        
+        
+                        <a href="http://www.americanscientist.org/template/AdvertisingLanding;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Advertise</a>
+
+    
+    
+
+                </td>
+
+            
+                
+                
+                                
+                
+                                
+                
+                <td class="topMenuItem" style="border-left: solid white 1px;">
+                        
+        
+                        <a href="http://www.americanscientist.org/template/Policies;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Policies</a>
+
+    
+    
+
+                </td>
+
+            
+                
+                
+                                
+                
+                                
+                
+                <td class="topMenuItem" style="border-left: solid white 1px;">
+                        
+        
+                        <a href="http://www.sigmaxi.org/index.shtml" class="navLink">
+                Sigma Xi</a>
+
+    
+    
+
+                </td>
+
+            
+                
+                
+                                
+                
+                                
+                
+                <td class="topMenuItem" style="border-left: solid white 1px;">
+                        
+        
+                        <a href="http://www.americanscientist.org/template/ContactUs;jsessionid=aaa9pu1-lnLpXT" class="navLink">
+                Contact Us</a>
+
+    
+    
+
+                </td>
+
+            
+        </tr>
+    </table>
+<div style="text-align: center">&copy; Sigma Xi, The Scientific Research Society</div>
+
+</body>
+</html>

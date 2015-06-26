@@ -1,0 +1,347 @@
+<DOC>
+<DOCNO>f00035</DOCNO>
+<DOCHDR>http://www.masshightech.com/contact.asp?misc_id=6</DOCHDR>
+<!--v1.1-->
+<Title>Mass High Tech</title>
+<HTML>
+<form name="homepage" onSubmit="Search(document.forms[0].searchbox.value);return false">
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<script language="javascript"><!--
+//Artem Loshak Internoded Inc. jan 30, 2001
+
+
+function ReplSubstr( sourceList, fromList, toList )
+	{
+	aStr=sourceList;
+	s1="";
+	s2="";
+	s3=""
+//	while (aStr.indexOf(fromList)>-1)
+//		{
+		s1=aStr.substring(0, aStr.indexOf(fromList)-0)
+		s2=aStr.substring(aStr.indexOf(fromList),aStr.indexOf(fromList)+fromList.length)
+		s3=aStr.substring(aStr.indexOf(fromList)+fromList.length, aStr.length)
+		aStr=s1+toList+s3
+//		}
+		return aStr
+	}
+
+
+
+	function redirect()
+	{
+		ff2=window.location.href;
+
+		if ((ff2.indexOf("https:")==-1) && (ff2.indexOf("dirpurchase.asp")!=-1) )
+		{
+			window.location.href=ReplSubstr(ff2,"http:","https:")
+		}		
+		if ((ff2.indexOf("https:")!=-1) && (ff2.indexOf("dirpurchase.asp")==-1) )
+		{
+			window.location.href=ReplSubstr(ff2,"https:","http:")
+		}
+
+	}
+
+//Paul Comtois Internoded Inc. jan 21, 2000
+
+	function SubscriptionWin(winURL)
+	{
+	newwin = window.open(winURL, "Subscription")
+	}
+	
+	function getCalendarDay(day)
+	{
+	//returns the weekday as a string//
+	
+	var dow = new Array(7);
+	dow[0] = "Sunday";
+	dow[1] = "Monday";
+	dow[2] = "Tuesday";
+	dow[3] = "Wednesday";
+	dow[4] = "Thursday";
+	dow[5] = "Friday";
+	dow[6] = "Saturday";
+	return dow[day]		
+	}
+	
+	
+	function getCalendarMonth(Month)
+	{
+	//Returns the month string//
+	var md = new Array(12);
+	md[0] = "January";
+	md[1] = "February";
+	md[2] = "March";
+	md[3] = "April";
+	md[4] = "May";
+	md[5] = "June";
+	md[6] = "July";
+	md[7] = "August";
+	md[8] = "September";
+	md[9] = "October";
+	md[10] = "November";
+	md[11] = "December";
+	
+	return md[Month]	
+	
+	}
+	
+
+	dte = new Date()	
+	result = dte.toGMTString()		
+    Day= dte.getDate();
+	Year = dte.getYear();
+	Month = dte.getMonth()+ 1;
+	MonthDay = getCalendarMonth(dte.getMonth());		
+	DayStr = getCalendarDay(dte.getDay());
+	fulldate = MonthDay + " " + Day
+// -->
+		</script>
+
+</HEAD>
+
+
+
+
+<SCRIPT Language=Javascript>
+function Vote(questionvalue){
+//This function is used for voting.
+x = 0
+id = 0
+while( x < document.forms[0].Question.length ) {
+     if (document.forms[0].Question[x].checked) {
+      break}
+     x ++
+};
+height = 290 + (document.forms[0].Question.length * 35);
+
+window.open('chart.asp?Option=' + questionvalue + '&questionid=' + document.forms[0].questionid.value,'popup', 'width=400,HEIGHT=' + height)
+}
+function Search(qry) {
+//This function is used to take the value from the textbox
+//and open the search page.
+word = ""
+
+for (var i = 0; i < qry.length; i++) {
+    letter = qry.substring(i,i+1);
+    if ( letter  == " " ) 
+		{word = word + "+"}
+	else
+		{word = word + letter};
+};
+
+searchurl = "search.asp?qrystr=" + word;
+window.location.href=searchurl;
+}
+</script>
+
+
+<BODY text=black BGCOLOR="#666633" LINK="#ff0000" ALINK="#660000" VLINK="#000000" MARGINWIDTH = "0" MARGINHEIGHT = "0" LEFTMARGIN="0" TOPMARGIN="0" FRAMBORDER = 0 onLoad="redirect()">
+<CENTER>
+<P>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="618" BGCOLOR="cccc99">
+<TBODY> 
+<TR>
+	<TD BGCOLOR="cccc99" WIDTH="137">
+		<FONT FACE="Verdana" SIZE="2">
+			<center>
+			<script language="javascript"><!--
+				document.write(DayStr)
+				// -->
+			</script>
+			<br>
+			<script language="javascript"><!--
+				document.write(fulldate)
+				// -->
+			</script>
+			</center>
+		</font>
+	</TD>
+							<TD  BGCOLOR="cccc99" WIDTH="472" VALIGN="top">
+		<FONT SIZE="1">
+			<BR>
+			<!--Inserted HTML code from MSASv1.0-->
+<A HREF="adredir.asp?ciid=132&url=http://www.eztrackz.com/tracking.aspx%3Fid=29373" TARGET="_top"><IMG SRC="/sponsors/trends_banner.jpg" WIDTH=468 HEIGHT=60 BORDER="0" Alt="Wireless Security Conference and Expo"></A>
+			<BR>
+			<BR>
+		</FONT>
+</TD>
+						</TR>
+<TR>
+							<TD WIDTH="618" COLSPAN="2" BGCOLOR="black">
+<!--- 		<IMG src="/images\tspacer.gif" WIDTH=1 HEIGHT=1> --->
+	</TD>
+						</TR>                           
+
+<tr>
+							<TD WIDTH="618" COLSPAN="2" BGCOLOR="white" HEIGHT="79" >
+	<table border=0 WIDTH="618" cellpadding=0 cellspacing=0>
+	<tr>
+
+	<td width=220>	
+	<img src="/images\mhtlogo.gif" >
+	<!--- Width="218" Height="79" --->
+	</td>
+	
+		<td valign="bottom" alighn="right">
+	<table border=0 cellspacing=0 cellpadding=0 width=400>
+	<tr height=45>
+	<td align=right valign=center>
+	<img src="/images\qualify_tag.gif"><a href="Javascript:SubscriptionWin('http://www.masshightech.com/subscribe.html')"><!--- <a href="subscribe.asp?misc_id= "> ---><img src=/images/go.gif border=0></a>
+
+
+<img src="/images\techflash_tag.gif"><a href="http://www.masshightech.com/enewslettersubscribe.asp" target=new><img src=/images/go.gif border=0></a>
+	</td>
+	</tr>
+	<tr valign="bottom" height="30">
+	<td align=right valign=bottom><img name="menu_home" src="/images\menu_home.gif" width="386" height="17" border="0" usemap="#m_menu_home" align="bottom" alt=""><map name="m_menu_home"><area shape="rect" coords="310,0,386,16" href="contact.asp?misc_id=6" ><area shape="rect" coords="215,0,310,16" href="searchArch.asp" ><area shape="rect" coords="137,0,215,16" href="advertising.asp?misc_id=7" ><area shape="rect" coords="50,0,137,16" href="http://www.masshightech.com/subscribe.html" target=_blank ><area shape="rect" coords="0,0,50,16" href="homepage.asp" ></map></td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	</table>
+	</TD>
+						</TR>
+<TR HEIGHT = "21">
+	<TD BGCOLOR="black" WIDTH="610" COLSPAN="3" VALIGN="top" HEIGHT="21">
+		<IMG src="/images\journal_bar.gif"  ALIGN="middle">
+<!--- 		WIDTH="609" HEIGHT="22" --->
+	</TD>
+</TR>
+<TR>
+							<TD BGCOLOR="cccc99" WIDTH="137" VALIGN="top">
+    <CENTER>
+<A HREF='dirpurchase.asp'><IMG SRC='/images/purchase.gif' border=0></A>
+    <FONT FACE="Verdana" SIZE="1">
+		   </FONT>
+    
+		<B>
+		<FONT FACE="Verdana" SIZE="1">
+			<A HREF='dirsplash.asp?misc_id=9'><IMG SRC='/images/WebAdGraphic.gif' border=0></A>
+		</FONT>
+		</B>
+  
+    </CENTER>
+
+		<FONT FACE="Verdana" SIZE="1">
+			<IMG src="/images\current.gif" WIDTH="137" HEIGHT="15">
+		</FONT>
+
+        <CENTER>  
+        
+        
+        <table width='137'><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=3'>Software</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=19'>Movers & Innovators</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=58'>From Maine</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=94'>Biotech</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=95'>Med Tech</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=97'>Internet</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=98'>Telecommunications</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=100'>Security</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=102'>Personnel</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=107'>Education</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=165'>Energy</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=172'>Community</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=197'>Meetings & Conferences</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=250'>Manager's Notebook</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=259'>Network Security</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=263'>Life Sciences</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=272'>Wireless</A></FONT></TD></tr><tr><TD BGCOLOR='cccc99' WIDTH='137' VALIGN='top'align='center'><FONT FACE='Verdana' SIZE='1'><A HREF='category.asp?cat_ID=274'>Pharma</A></FONT></TD></tr></Table>  
+		<P>
+        
+     
+        
+        <FONT FACE='Verdana' SIZE='1'><A HREF='section.asp?sec_ID=34'><img src=/images/sec_closeup.gif border=0></A></FONT><br><p><FONT FACE='Verdana' SIZE='1'><A HREF='section.asp?sec_ID=34'><FONT FACE='Verdana' SIZE='1'>Meetings & Conferences: Creative Events</A></FONT><br></p><FONT FACE='Verdana' SIZE='1'><A HREF='section.asp?sec_ID=35'><img src=/images/Dialogue.gif border=0></A></FONT><br><FONT FACE='Verdana' SIZE='1'><A HREF='section.asp?sec_ID=5'><img src=/images/calendar_button.gif border=0></A></FONT><br><FONT FACE='Verdana' SIZE='1'><A HREF='section.asp?sec_ID=41'><img src=/images/mover.gif border=0></A></FONT><br><FONT FACE='Verdana' SIZE='1'><A HREF='section.asp?sec_ID=36'><img src=/images/personal_button.gif border=0></A></FONT><br><FONT FACE='Verdana' SIZE='1'><A HREF='section.asp?sec_ID=42'><img src=/images/teckno.gif border=0></A></FONT><br>
+       
+
+        </P>
+		<!--Search
+        <FONT FACE="Verdana" SIZE="1">
+		Current Site Search
+		<font size=3>
+			<INPUT TYPE=TEXT NAME=searchbox size=7 >
+		</font>
+		<a href="JavaScript:Search(document.forms[0].searchbox.value)" border=0><IMG src="/images\go_small.gif" border=0></a>
+   		Search-->
+		
+		
+		<FONT FACE="Verdana" SIZE="1">
+			<IMG src="/images\other_tech.gif" WIDTH="137" HEIGHT="23">
+        </FONT>
+        </P>
+
+
+        <P>
+        <FONT FACE='Verdana' SIZE='1'><a href='//www.bizjournals.com'>American City Business Journals</a><br>(news from 41 Business publications around the country)</font><br><br>
+        <P>
+        </P>
+		<IMG src='/images/other_useful.gif' WIDTH='137' HEIGHT='23'><br><br><br>
+<a href="surveys.asp"><IMG src="/images\surveybtn.gif" border=0></a>		
+<A HREF='community.asp?misc_ID=11'><img src='/images/commlink_button.gif' border=0></A>
+        <br>
+		<a href="edcal2005.html" target="_blank">
+		<IMG src="/images\edcal_button.gif" border=0></a>
+
+       
+	<!-- stock index -->
+	   <a href="/stockindex/stock.asp"><img src=/images/netsi_button.gif border=0></a>
+	   <a href="allstars2004.asp"><img src=/images/as2004_button.gif border=0></a>
+	   <a href="tca2003.asp"><img src=/images/tca2002btn.gif border=0></a>
+	    <a href="specials.asp"><img src=/images/supps_btn.gif border=0></a>
+		<a href="fast50_03.asp"><img src=/images/fast50_03.gif border=0></a>
+	   
+        </CENTER>
+
+ 
+
+        </TD>
+						
+							
+						
+							
+						
+						
+						
+							
+						
+							
+						
+						
+	<TD BGCOLOR="white" colspan="2" VALIGN="top">
+    <center>
+
+
+
+
+    
+<!-- HTML STARTS HERE --->
+
+<P>			<br><blockquote>Following is a list of Mass High Tech's staff and their primary duties. Staff members can be reached by calling (617) 242-1224, by writing to: Mass High Tech, <GEO TYPE="US">529 Main Street, Suite 602, Boston, MA 02129</GEO>, or by e-mail below.</blockquote><br>	<center><br><p><h3>For directions to our office, <a href="#directions">click here.</a></h3></p><br>			<h3><br>			PUBLISHER</h3></center><center><br>			<p><a href="mailto:redelman@bizjournals.com">Rob Edelman</a><br><br>Direct line:  617-241-4361<br>			<br><br>			<HR width="270"></p></center>	<center><br>			<h3>EDITORIAL</h3><p><b>EDITOR<br><br>			</b><a href="mailto:jmalone@MassHighTech.com">James Malone</a><br><br>Direct line:  617-241-4331<br><br>			<br><b>Associate Editor<br><br>			</b><a href="mailto:mlingblom@MassHighTech.com">Marie Lingblom</a><br><br>Direct line:  617-241-4338<br><br><br><br><b>Copy Editor<br><br>			</b><a href="mailto:jrizoli@MassHighTech.com">Jay Rizoli</a><br><br>Direct line:  617-241-4339<br><br>			<br><b>Electronic Products Editor<br><br></b><a href="mailto:RBrown@MassHighTech.com">Rodney Brown</a><br><br>Direct line:  617-241-4333<br><br><br><b>REPORTERS</b></p><br><p><b>Senior staff writer<br></b><br><a href="mailto:dhendrickson@MassHighTech.com">Dyke Hendrickson</a><br><br>Direct line:  617-241-4330<br><br><p><b>Staff writer<br></b><br><a href="mailto:eforman@MassHighTech.com">Ethan Forman</a><br><br>Direct line:  617-241-4335<br><br><p><HR width="270"></p><br>			<h3>DIRECTORY/DATABASE</h3><p><b>Research Directors<br><br>			</b><br>			<a href="mailto:kcrowley@masshightech.com">Kelley Crowley</a><br><br>Direct line:  617-241-4352<br><br><br><b>Research Assistant</b><br><br><a href="mailto:tmcbride@MassHighTech.com">Tajah McBride-Bey</a><br><br>			Direct line:  617-241-4355</p><br><br><b>Researcher</b><br><br><a href="mailto:glesperance@MassHighTech.com">Gregory Lesperance</a><br><br>			Direct line:  617-241-4354</p><br><br><center><br><br>			</b><br><p><b>Account Executives</b><br></p><a href="mailto:pmarggraf@masshightech.com">Paula Marggraf</a><br><br>Direct line:  617-241-4350<br><br><a href="mailto:jnocella@masshightech.com">John Nocella</a><br><br>Direct line:  617-241-4375<br><br>			</p>			<p><HR width="270"></p><br>			<h3>PRODUCTION</h3><br>			<p><b>Production Manager<br><br>			</b><a href="mailto:MPierre@MassHighTech.com">Micheline Pierre</a><br><br>Direct line:  617-241-4324</p><br>					<h3>ADMINISTRATION<br></h3><br>			<p><b>Controller<br><br>			</b><a href="mailto:HLacey@masshightech.com">Heather Lacey</a><br><br>Direct line:  617-241-4360</p><br><br><b>Assistant Controller<br><br>			</b><a href="mailto:sgerson@masshightech.com">Stacey Gerson</a><br><br>Direct line:  617-241-4353<br><br><br>								<HR width="270"></p><br>		</center>	<br><br>		<center><h3>ADVERTISING</h3></center><center><br>			<p><b>Advertising Director</b></p><br>		</center>	<center><br><a href="mailto:jcohen@masshightech.com">Jill Cohen</a><br><br>Direct line:  617-241-4340<br></p><br>			<br><br>			<b>Senior Account Executive<br><br>			</b><a href="mailto:cjsmith@masshightech.com">Christopher Smith</a><br><br>Direct line:  617-241-4342</p><br>			<p><b>Account Executives<br><br>			</b><br><p><a href="mailto:gristaino@masshightech.com">Gloria Ristaino</a><br><br>Direct line:  617-241-4343<br><br><p><a href="mailto:rsmith@masshightech.com">Russell Smith</a><br><br>Direct line:  617-241-4345<br><br><br>			<br><p></p><br><p></p><br><center><a name="directions"><b>Directions to Mass High Tech- <br>Schrafft Center<br>Visitor Parking<br><GEO TYPE="US">529 Main St. Suite 602  Charlestown, MA 02129</GEO><br>Phone number- 617-242-1224</b></center><br><div align="left"><p></p><br><b>From I-93 Southbound</b> - Take Exit 28 and follow ramps down into Sullivan Square. Proceed under ramp to the Schrafft Center. <br><p></p><br><b>From I-93 Northbound</b> - Take the Sullivan Square exit, turn right at the bottom of the ramp on to Washington Street. At the rotary, take the second right and an immediate<br>left turn into the Schrafft Center.<br><p></p><br><b>From West of Boston</b> - Take Mass Pike East to its end. Stay left and take I-93 North. Take Exit 28 and follow ramps down into Sullivan Square. Proceed under ramp to the Schrafft Center. <br><p></p><br><b>From I-95 Southbound</b> - Over the Mystic Tobin Bridge, take Charlestown exit to Warren Street to Main Street to the Schrafft Center. <br><p></p><br><b>From Downtown Boston</b> - Take Storrow Drive East, follow Charlestown signs around rotary. Pass the Museum of Science on left. Take a right onto the Gillmore Bridge. Take left at Bunker Hill Community College onto Rutherford Avenue. Bear right to the Schrafft Center. <br><p></p><br><b>From Cambridge</b> - Take Memorial Drive, straight over the Gilmore Bridge. Take left at Bunker Hill Community College onto Rutherford Avenue. Bear right to the Schrafft Center. <br><p></p><br><b>From Logan Airport</b> - Exit Airport via Sumner Tunnel to Boston. Turn right onto Route 93 North. Take right onto first exit, Causeway Street. At bottom of ramp, take a right then left at first traffic light taking you across the Charlestown Bridge. Go through the next light, following signs for Sullivan Square. You'll see the Schrafft Center on your right at the rotary. <br><p></p><br><b>To reach Mass High Tech by Public Transit</b> <br>Take the Orange Line outbound to Sullivan Square, and then take the Schrafft Center's shuttle van to our offices.</div><br><br><br>
+</td>
+
+</td>
+</tr>
+							
+
+
+
+<!-- HTML ENDS HERE --->
+
+
+
+
+<tr>
+
+<TD BGCOLOR="cccc99" colspan="2" align="center" >
+	<FONT FACE="Verdana" SIZE="2">
+		<A HREF="homepage.asp">Home</A> | 
+		<a href="Javascript:SubscriptionWin('http://www.masshightech.com/subscribe.html')">Subscriptions</A>| 
+		<A HREF="contact.asp?MISC_ID=6">Contact Us</A> | 
+		<A HREF="advertising.asp?MISC_ID=7">Advertising</A>
+        <BR>All Rights Reserved. Mass High Tech 2000 
+    	<BR><A HREF="privacypolicy.asp">Privacy Policy</A> | <A HREF="useragreement.asp">User Agreement</a>
+	</FONT>
+    
+    
+        
+        
+
+
+</td>
+
+</tr>
+<TR>
+<TD BGCOLOR="cccc99" align="center"  ><br></td>
+<TD BGCOLOR="cccc99" align="center"  COLSPAN="2">
+
+<br><!--Inserted HTML code from MSASv1.0-->
+<A HREF="adredir.asp?ciid=79&url=http://www.masshightech.com/aboutdirectory.asp" TARGET="_top"><IMG SRC="/sponsors/leads_banner.gif" WIDTH=468 HEIGHT=60 BORDER="0" Alt="Find leads now!"></A>
+
+</td></tr>
+</TABLE>

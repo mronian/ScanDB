@@ -1,0 +1,166 @@
+<DOC>
+<DOCNO>g00205</DOCNO>
+<DOCHDR>http://www.jennycraig.com/corporate/company/contact.asp</DOCHDR>
+<!-- Server Side Scripting Variable Declarations -->
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Jenny Craig - Contact Us</title>
+<meta name="description" content="Jenny Craig wants you to have weight loss success so we have developed a program to help you lose weight, acquire a healthy relationship with food and achieve balance in your life. Contact us.">
+<meta name="keywords" content="Jenny Craig, jenny craig, weight loss, success, lose weight, loose weight, diet, dieting, diet programs, programs, management, jennycraig.com, maintenance, menu, planning, calories, low calorie, low fat, no fat, foods, food, meals, recipes, pregnancy pounds, slim down, shape up, exercise, reduce health risks, overweight, solutions, quick, long term, healthy, fat free, dining, cooking, low carbohydrates, no carbs, recipe search, breakfast, lunch, dinner, snacks.">
+<link rel="stylesheet" type="text/css" href="/css/style05.css">
+<script src="/js/scripts.js" type="text/javascript"></script>
+<script langauge="javascript">
+var pnavItems=Array('programs','success','recipes','shop','etools','planner');
+/*if (typeof(pnavItems) == "undefined") {
+    var pnavItems = new Array();
+}
+if (typeof(pnavSelected) == "undefined") {
+     var pnavSelected = "";
+}*/
+var pnavSelected = 'corporate';
+for(i=0;i<pnavItems.length;i++) {
+  eval("var "+pnavItems[i]+"_i=new Image();");
+  eval("var "+pnavItems[i]+"_a=new Image();");
+  eval(pnavItems[i]+"_i.src='/img/nav/"+pnavItems[i]+"_i.gif';");
+  eval(pnavItems[i]+"_a.src='/img/nav/"+pnavItems[i]+"_a.gif';");
+}
+
+function swap(n,act) {
+  if(document.images && pnavSelected != pnavItems[n]) {
+    eval("document."+pnavItems[n]+".src="+pnavItems[n]+"_"+act+".src;");
+  }
+}
+function clearBox(obj) {
+  obj.value = "";
+}
+</script>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+if(window.event + "" == "undefined") event = null;
+function HM_f_PopUp(){return false};
+function HM_f_PopDown(){return false};
+popUp = HM_f_PopUp;
+popDown = HM_f_PopDown;
+var ContentBodyWidth=780;
+var OuterOffset=Math.floor((getWW()-ContentBodyWidth)/2);	
+var InnerOffset=0;
+//-->
+</SCRIPT>
+<script language="javascript" src="/js/hm531_public/HM_Loader.js"></script>
+<script language="javascript" src="/js/scripts.js"></script>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" width="780" align="center" bgcolor="#FFFFFF">
+<tr>
+    <td><a href="/"><img src="/img/layout/logo.gif" alt="" width="398" height="100" border="0"></a></td>
+	<td align="right"><a href="/offer/offerscoupons.asp?offerid=2"><img src="/img/banner_home.jpg" alt="" width="297" height="71" border="0"></a></td>
+</tr>
+<tr>
+	<td colspan="2"><a href="/programs/" onMouseOver="popUp('elMenu1','a');" onMouseOut="popDown('elMenu1','i');"><img src="/img/nav/programs_i.gif" alt="" width="144" height="36" border="0" name="programs"></a><a href="/success/" onMouseOver="popUp('elMenu2','a');" onMouseOut="popDown('elMenu2','i');"><img src="/img/nav/success_i.gif" alt="" width="185" height="36" border="0" name="success"></a><a href="/recipes/" onMouseOver="popUp('elMenu3','a');" onMouseOut="popDown('elMenu3','i');"><img src="/img/nav/recipes_i.gif" alt="" width="97" height="36" border="0" name="recipes"></a><a href="/shop/" onMouseOver="popUp('elMenu4','a');" onMouseOut="popDown('elMenu4','i');"><img src="/img/nav/shop_i.gif" alt="" width="81" height="36" border="0" name="shop"></a><a href="/etools" onMouseOver="swap(4,'a');" onMouseOut="swap(4,'i');"><img src="/img/nav/etools_i.gif" alt="" width="98" height="36" border="0" name="etools"></a><a href="/myjenny/menu/" onMouseOver="swap(5,'a');" onMouseOut="swap(5,'i');"><img src="/img/nav/planner_i.gif" alt="" width="175" height="36" border="0" name="planner"></a></td>
+</tr>
+<tr>
+	<td align="right" bgcolor="#BEB298" colspan="2"><img src="/img/layout/myjen_login.gif" alt="" width="109" height="22" border="0"><a href="/account/login.asp?fp=myjenny/index.asp"><img src="/img/layout/btn_clickhere.gif" alt="" width="77" height="22" border="0"></a></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="780" align="center" bgcolor="#FFFFFF">
+<tr>
+	<td><table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td>&nbsp;</td>
+		<td>
+<!-- CONTENT AREA -->
+
+
+<div class="contentArea">
+
+<h1>Contact Us</h1>
+
+<img alt="Contact Us" src="/images/corporate/company_contact.jpg" height="154" width="152" border="0" align="right" hspace="8" />
+
+<p>At Jenny Craig, we want you to have weight loss success so we have developed a program to help you lose weight, acquire a healthy relationship with food and
+achieve balance in your life.</p>
+    
+<p>If you have a question that we have not answered on JennyCraig.com or in the Centre,
+ please refer to the list below and contact us.</p>
+
+  
+                <ul>
+                  <li><a href="mailto:jennycraig@tpli.com?subject=Centre%20Program">Centre 
+                    Program</a></li>
+                  <li><a href="mailto:jennycraig@tpli.com?subject=Customer%20Service">Customer 
+                    Service</a></li>
+                  <li><a href="mailto:jennycraig@tpli.com?subject=Food">Food-related 
+                    Issues</a></li>
+                  <!--<li><a href="mailto:jennycraig@tpli.com?subject=Franchise">Franchise 
+                    Information</a></li>-->
+                  <li><a href="mailto:jennycraig@tpli.com?subject=JD%20Program">Jenny 
+                    Direct Program</a></li>
+                  <li> <a href="mailto:jennycraig@tpli.com?subject=Nutrition">Nutrition 
+                    Questions</a></li>
+                  <li><a href="mailto:jennycraig@tpli.com?subject=Press">Press 
+                    or News Inquiries</a></li>
+                  <li><a href="/corporate/company/techproblems.asp">Technical 
+                    Issues</a></li>
+                  <li><a href="mailto:jennycraig@tpli.com?subject=others">Web 
+                    Site Suggestions </a></li>
+                  <li><a href="mailto:jennycraig@tpli.com?subject=Others">Others</a></li>
+                </ul>
+
+<h1>Corporate       Headquarters: </h1>
+				<blockquote>
+                  Jenny Craig International<BR />
+  5770 Fleet Street<br />
+  Carlsbad, CA 92008<BR />
+  (760) 696-4000<BR />
+                 </blockquote>
+
+<!-- END CONTENT AREA -->
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	</table></td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="780" align="center">
+<tr>
+    <td align="center"><br><span class="footsubnav">
+	<a href="/corporate/company/index.asp" class="footsubnav">Company Info</a> | <a href="/corporate/company/contact.asp" class="footsubnav">Contact Us</a> | <a href="/corporate/company/executiveteam.asp" class="footsubnav">Executive Team</a> | <a href="/corporate/franchise/" class="footsubnav">Franchise Information</a> | <a href="/corporate/company/jobopps.asp" class="footsubnav">Job Opportunities</a> | <a href="/corporate/news/index.asp" class="footsubnav">Press Room</a> | <a href="http://www.jennycraig.com.au/" target="_new" class="footsubnav">Australia</a>
+	<br></span><br>
+	<span class="footlink"><a href="/corporate/company/contact.asp" class="footlink">Contact Us</a>  ::  <a href="/corporate/" class="footlink">Corporate</a>  ::  <a href="/search/index.asp" class="footlink">Search</a>  ::  <a href="/programs/faqs.asp" class="footlink">Help</a>  ::  <a href="/corporate/franchise/index.asp" class="footlink">Franchise Info</a>  ::  <a href="/corporate/news/index.asp" class="footlink">Media Relations</a>   ::  <a href="/corporate/privacy.asp" class="footlink">Privacy Policy</a>  :: <a href="/corporate/aup.asp" class="footlink">Terms of Use</a><br>
+	<a href="http://www.jennycraig.com.au" class="footlink">Jenny Craig Australia</a>  ::  <a href="https://signup.cj.com/member/brandedPublisherSignUp.do?air_refmerchantid=1011215" class="footlink">Affiliate Program</a>  ::  <a href="/sitemap/" class="footlink">Site Map</a>  ::  <a href="/summary.asp" class="footlink">More Weight Loss Info</a>  ::  <a href="/account/login.asp?fp=myjenny/index.asp" class="footlink">myJenny</a>  ::  <a href="/corporate/company/jobopps.asp" class="footlink">Job Opportunities</a><br>
+	<a href="/programs/" class="footlink">LOSE WEIGHT</a>  ::  <a href="/success/" class="footlink">SUCCESS STORIES</a>  ::  <a href="/recipes/" class="footlink">RECIPES</a>  ::  <a href="/shop/" class="footlink">SHOP</a>  ::  <a href="/etools/" class="footlink">ETOOLS</a>  ::  <a href="/myjenny/menu/" class="footlink">MENU PLANNER</a><br></span><br></td>
+</tr>
+<tr>
+	<td><table cellpadding="0" cellspacing="0" border="0" align="center">
+	<tr>
+		<td><a href="http://www.cooperinst.org/" target="_blank"><img src="/img/layout/cooper.gif" alt="" width="230" height="65" border="0"></a></td>
+		<td><img src="/img/layout/foot_spacer.gif" alt="" width="33" height="44" border="0"></td>
+	    <td><a href="http://www.jennycraig.com.au/"><img src="/img/layout/jc_aus.gif" alt="" width="159" height="44" border="0"></a></td>
+		<td><img src="/img/layout/foot_spacer.gif" alt="" width="33" height="44" border="0"></td>
+		<td><table cellpadding="0" cellspacing="0" border="0">
+		<form name="gs" method="GET" action="/search/index.asp">
+		<tr>
+		    <td valign="top"><img src="/img/layout/search.gif" alt="" width="54" height="20" border="0" align="left"> <input type="text" name="q" maxlength="256" size="10" maxlength="" class="homeinput">&nbsp;</td>
+			<td><input type="image" src="/img/buttons/rstbtn_go_9cb3d7.gif" alt="" width="41" height="20" border="0" name="btnG"></td>
+		</tr>
+		<input type="hidden" name="restrict" value="Internet">
+		<input type="hidden" name="output" value="xml_no_dtd">
+		<input type="hidden" name="client" value="JennyCraig">
+		<input type="hidden" name="site" value="JennyCraig">
+		<input type="hidden" name="oe" value="UTF-8">
+		</form>
+		</table></td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr>
+	<td align="center"><span class="footlink" style="text-transform: none;">© 2005 Jenny Craig, Inc. All rights reserved.</span></td>
+</tr>
+</table>
+<br><br>
+</body>
+</html>

@@ -1,0 +1,989 @@
+<DOC>
+<DOCNO>g00524</DOCNO>
+<DOCHDR>http://www.kayak.com/h/hotel/id/64836</DOCHDR>
+
+
+
+<html>
+<script type="text/javascript">
+function onerror_show_callstack(func, stackDepth) {
+  var result = "";
+  var num = 0;
+  if (stackDepth == null) stackDepth  = 3;
+  var ANON_FUNC_LENGTH_MAX_TO_SHOW = 300;
+   while (func != null && num++ < stackDepth ) { // just print out the top
+    try {
+      var pattern = / [^ (]+/; //The func name will have a space before it.
+      var name = pattern.exec(func.toString())[0];
+      if (name == ' anonymous' || name == ' command' || name == ' commandOne' || name == ' commandTwo') {
+        var funcString = func.toString();
+        var code =    funcString.substring(funcString .indexOf("{"), funcString.length);
+        var label = " ANON: ";
+        if (name == ' command' || name == ' commandOne' || name == ' commandTwo')label = " CMD: ";
+        if (code.length < ANON_FUNC_LENGTH_MAX_TO_SHOW) {
+          result += label + code ;
+        } else {
+          result += label + code.substring(0, ANON_FUNC_LENGTH_MAX_TO_SHOW) + "...";
+        }
+      } else {
+        result += " FUNC:" + name;
+      }
+    } catch (e) {
+      result += " ???";
+    }
+    try {
+      func = func.caller;
+    } catch (e) {
+    }
+   }
+   if (func == null) result += " FUNC: window"; // not in a function
+   return result;
+}
+function handleJSError(msg, url, linenumber, stack)
+{
+    var callstack = 'not retrieved';
+    if (document.getElementById && document.createElement) {
+  // Advanced enough browser to merit reporting details
+  try{
+      callstack = (stack != null) ? stack : onerror_show_callstack(handleJSError.caller);
+  } catch (e){
+       //
+  }
+
+    } else {
+  // 2nd tier functional browser
+
+    }
+    // Event lookup, might only be in IE
+    var evt = (window.event) ? window.event: null;
+    var evttext = 'No event source.';
+    if (evt) {
+       if (evt.srcElement) {
+    if (window.event.srcElement.id != '') {
+      evttext = window.event.srcElement.id;
+    } else if (window.event.srcElement.name != '') {
+      evttext = window.event.srcElement.name;
+    }
+       } else if (evt.target) {
+    if (evt.srcElement.id != '') {
+      evttext = evt.srcElement.id;
+    } else if (evt.srcElement.name != '') {
+      evttext = evt.srcElement.name;
+    }
+       }
+       evttext += ':' + (evt.type) ? evt.type : 'notype';
+    }
+    if (msg != null) msg = msg.replace(/(.*)\r\n(.*)/g, "$1$2");
+    if (callstack != null) callstack = callstack.replace(/(.*)\n(.*)/g, "$1 $2");
+    var errorurl = 'url=' + escape(url) + '&line=' + escape(linenumber)  + '&msg=' + escape(msg) + '&evt=' + escape(evttext) + '&cstack=' + escape(callstack);
+    if (document.images) {
+  var errorImg = new Image(1,1);
+  errorImg.src = '/r9/logjs/images?' + errorurl ;
+    }
+    // Show error message to user
+    return false;
+}
+window.onerror = handleJSError;
+</script>
+<head>
+<title>Sheraton New York Hotel & Towers New York New York Reviews</title>
+<meta name="description" content="Find the lowest rate for the Sheraton New York Hotel & Towers at Kayak.com and learn more about the attractions in New York. You'll find discount travel information and the best travel options at Kayak.com ">
+<meta name="keywords" content="Sheraton New York Hotel & Towers, New York hotel, cheap hotel, cheap hotel reservation, discount hotel, discount hotel rate, best travel, Sheraton New York Hotel & Towers, discount hotel booking, discount travel information, hotel reservation, kayak, kayak.com">
+
+
+    <link rel="stylesheet" href="/v70/css/mozilla_r9.css" type="text/css" />
+  
+
+<link rel="shortcut icon" href="/kayak.ico"/>
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="/v70/css/mozilla_hoteldetailnew.css" type="text/css" />
+  
+<script type="text/javascript" src="/vR41/r9/nvtl/versionfunc.vtl"></script>
+<script type="text/javascript" src="/v70/js/r9.js"></script>
+<script type="text/javascript" src="/v70/js/xmlhttp.js"></script>
+<script type="text/javascript" src="/v70/js/hoteldetail.js"></script>
+<script type="text/javascript" src="/v70/js/dateutils.js"></script>
+
+
+        <link href="/v70/css/hoteldetailff.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/v70/css/mozilla_r9calendar.css" type="text/css" />
+   <script type="text/javascript" src="/v70/js/R9calendar.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+var calendar = new R9Calendar();
+var dteFirstValidDate = new Date();//defaults to todays date
+var dteFromMonth=parseInt(dteFirstValidDate.getMonth());
+var dteFromYear= dteFirstValidDate.getFullYear();
+var dteSecondValidDate = new Date(dteFirstValidDate.getTime() + (1000*60*60*24*14));
+var dteToMonth=parseInt(dteSecondValidDate.getMonth());
+var dteToYear= dteSecondValidDate.getFullYear();
+calendar.initialViewsToCreate=1;
+calendar.initialize();
+</script>
+
+</head>
+
+<body onLoad="initPage();">
+
+  <div id="commonheader">
+
+ <div id="logo">
+  <a href="/">
+    <img src="/images/kayak_logo_110x42.gif" border="0" alt="kayak.com"/>
+  </a>
+ </div>
+
+ <div id="tagline">
+  
+ </div>
+
+ <div id="headerlinks">
+   <a href="/h/kayaksearch.jsp?tab=flights">Flights</a>
+   &nbsp;|&nbsp;
+   <a href="/h/kayaksearch.jsp?tab=hotels">Hotels</a>
+   &nbsp;|&nbsp;
+  <a href="/h/kayaksearch.jsp?tab=cars">Cars</a>
+   &nbsp;|&nbsp;
+  <a href="/s/deals.jsp">Deals</a>
+   &nbsp;|&nbsp;
+  <a href="/h/buzz">Buzz</a>
+     &nbsp;|&nbsp;
+  <a href="/h/chatter">Forums</a>
+   </div>
+
+ <div id="signin" class="headertop">
+  <a href="https://www.kayak.com/k/ident/signin?redir=http%3A%2F%2Fwww.kayak.com%2Fh%2Fhotel%2Fid%2F64836" class="breadcrumbs">Sign In</a>&nbsp;| <a href="https://www.kayak.com/k/ident/register?redir=http%3A%2F%2Fwww.kayak.com%2Fh%2Fhotel%2Fid%2F64836" class="breadcrumbs">Register</a>
+ </div>
+
+</div>
+
+<div class="breadcrumbs">
+                &nbsp;<a class="breadcrumbs"
+		 href="http://www.kayak.com">Home</a>&nbsp;&raquo;&nbsp;
+
+                
+                                                        <a href="/h/destinations/regions/US">United States</a>&nbsp;&raquo;&nbsp;
+                        <a href="/h/destinations/citylist/US/NY">New York</a>&nbsp;&raquo;&nbsp;
+                        <a href="/h/destinations/info/US/NY/New_York">New York</a>&nbsp;&raquo;&nbsp;
+                        <a href="/h/destinations/hotels/US/NY/New_York">New York Hotels</a>&nbsp;&raquo;&nbsp;
+                                <span class="darker">Sheraton New York Hotel & Towers</span>
+</div>
+
+<div class="hotelnameheader">
+&nbsp;Sheraton New York Hotel & Towers&nbsp;&nbsp;<img src="/images/kstar4.gif">&nbsp;
+
+<span>
+                       $141.00 - $866.00
+                &nbsp;&nbsp;
+    </span>
+
+</div>
+<table class="hoteldetails">
+    <tr>
+              <td width="100%" valign="top" colspan="2">
+                                          <!-- Table to hold booking info -->
+
+
+<table class="searchbox" width="100%" cellspacing="0" cellpadding="0">
+<form onsubmit="return validatehotel()" name="hotels" action='/s/kayaksearch.jsp'>
+<tr>
+    <td class="organicUpsell" colspan="6">
+         We search over 100 online travel sites to find you the best hotel deals!
+    </td>
+</tr>
+<tr>
+    <td><label>Where</label></td>
+    <td><label>Check-in</label></td>
+    <td><label>Check-out</label></td>
+    <td><label>Rooms</label></td>
+    <td><label>Guests</label></td>
+    <td>&nbsp;</td>
+</tr>
+<tr>
+        <td style="padding-top: 8px" nowrap="nowrap">New York, NY</td>
+    <input type="hidden" name="location" value="New York, NY">
+    
+    <td nowrap="nowrap">
+                      <input class="calendar_dom" type="text" name="checkin_date_dom" id="checkin_date_dom" size="2" maxlength="2" value="" onChange="javascript: calendar.Text_validateChars(document.getElementById('checkin_date_dom'));" onBlur="javascript:  calendar.Date_validate('checkin_date_dom', 'checkin_date_my',  true); " />
+              <script type="text/javascript" language="JavaScript">
+                var setMonthFrom = "";
+                var setYearFrom = "";
+                var setDayFrom = "";
+                                document.write(calendar.generateSelect(setMonthFrom, setYearFrom, dteFromMonth,dteFromYear,"checkin_date_my","checkin_date_dom", true, null));
+                document.getElementById('checkin_date_dom').value = setDayFrom;
+              </script>
+              <a tabindex="-1" href="javascript:void(0)"
+                   onclick="javascript: calendar.popUp(dteFirstValidDate, document.getElementById('checkin_date_dom'), document.getElementById('checkin_date_my'), document.getElementById('checkin_cal'), null, null)" HIDEFOCUS>
+                  <img src="/images/calendar.gif" alt="Set departure date"
+                   class="calicon" id="checkin_cal" width="14" height="14" border="0" /></a>
+                    <div class="calendar_day_helptext" id="checkin_date_domlabel">&nbsp;</div>
+
+    </td>
+    <td nowrap="nowrap">
+                          <input class="calendar_dom" type="text" name="checkout_date_dom" id="checkout_date_dom" size="2" maxlength="2" value="" onChange="javascript: calendar.Text_validateChars(document.getElementById('checkout_date_dom'));" onBlur="javascript:  calendar.Date_validate('checkout_date_dom', 'checkout_date_my',  true);" />
+                  <script type="text/javascript" language="JavaScript">
+                    var setMonthOut = "";
+                    var setYearOut = "";
+                    var setDayOut = "";
+                                        document.write(calendar.generateSelect(setMonthOut, setYearOut, dteFromMonth,dteFromYear,"checkout_date_my","checkout_date_dom", true, null));
+                    document.getElementById('checkout_date_dom').value = setDayOut;
+                  </script>
+                  <a tabindex="-1" href="javascript:void(0)"
+                       onclick="javascript: calendar.popUp(dteFirstValidDate, document.getElementById('checkout_date_dom'), document.getElementById('checkout_date_my'), document.getElementById('checkout_cal'), null, null)" HIDEFOCUS>
+                      <img src="/images/calendar.gif" alt="Set departure date"
+                       class="calicon" id="checkout_cal" width="14" height="14" border="0" /></a>
+                   <div class="calendar_day_helptext" id="checkout_date_domlabel">&nbsp;</div>
+    </td>
+    <td>
+        <select class="selectbox" name="rooms">
+              	                    <option value="1" selected>1</option>
+              <option value="2" >2</option>
+        </select>
+    </td>
+    <td>
+         <select name="guests" id="guests">
+	      	                    <option value="1" selected>1</option>
+              <option value="2" >2</option>
+              <option value="3" >3</option>
+              <option value="4" >4</option>
+              <option value="5" >5</option>
+              <option value="6" >6</option>
+              <option value="7" >7</option>
+              <option value="8" >8</option>
+          </select>
+
+    </td>
+    <td align="right"><input id="getratesbutton" name="submit" type="submit" value="Get Rates"></td>
+    <td width="100%">&nbsp;</td>
+</tr>
+<input type="hidden" name="datelimit" value="">
+<input type="hidden" name="action" value="dohotels">
+<input type="hidden" name="tab" value="hotels">
+<input type="hidden" name="hid" value="64836">
+<input type="hidden" name="citycode" value="15830">
+
+</table> <!-- bookit table -->
+</form>
+<script>
+    var today = new Date();
+    document.hotels.datelimit.value = (today.getMonth() - 0 + 1) + "/" + today.getDate() + "/" + today.getFullYear();
+
+    function validatehotel()
+    {
+
+
+       if (document.hotels.checkout_date_dom.value.length > 0 || document.hotels.checkin_date_dom.value.length > 0) {
+            if (document.hotels.checkin_date_dom.value.length < 1) {
+                alert("Please enter a check-in date.");
+                return false;
+            }
+            if (document.hotels.checkout_date_dom.value.length < 1) {
+                alert("Please enter a check-out date.");
+                return false;
+            }
+            var checkin = calendar.Date_getDateFromFieldPair('checkin_date_dom', 'checkin_date_my');
+            var checkout = calendar.Date_getDateFromFieldPair('checkout_date_dom', 'checkout_date_my');
+            if (checkout <= checkin){
+                alert("The check-out date must be after the check-in date.");
+                return false;
+            }
+        }
+    }
+</script>
+                                </td>
+    </tr>
+</table>
+
+<table class="detailtabs" cellspacing="0" cellpadding="0">
+<tr>
+    <td>&nbsp;</td>
+
+    <td>
+            <table class="selectedtab" cellspacing="0" cellpadding="0">
+        <tr class="toprow">
+            <td><img height="2" width="2" alt="" src="/images/top_left_corner_4.gif"/></td>
+            <td height="2" style="width: 100%"></td>
+            <td><img height="2" width="2" alt="" src="/images/top_right_corner_4.gif"/></td>
+        </tr>
+        <tr>
+            <td class="content" colspan="3">Overview</td>
+        </tr>
+        </table>
+        </td>
+    <td>&nbsp;</td>
+    <td>
+            <table class="unselectedtab" cellspacing="0" cellpadding="0">
+        <tr class="toprow">
+            <td height="2"><img height="2" width="2" alt="" src="/images/top_left_corner_4.gif"/></td>
+            <td height="2" style="width: 100%"></td>
+            <td height="2"><img height="2" width="2" alt="" src="/images/top_right_corner_4.gif"/></td>
+        </tr>
+        <tr>
+            <td class="content" colspan="3"><a href="http://www.kayak.com/h/hotel/id/64836?page=details">Details</a></td>
+        </tr>
+        </table>
+        </td>
+    <td>&nbsp;</td>
+    <td>
+            <table class="unselectedtab" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="2"><img height="2" width="2" alt="" src="/images/top_left_corner_4.gif"/></td>
+            <td height="2" style="width: 100%"></td>
+            <td height="2"><img height="2" width="2" alt="" src="/images/top_right_corner_4.gif"/></td>
+        </tr>
+        <tr>
+            <td class="content" colspan="3"><a href="http://www.kayak.com/h/hotel/id/64836?page=map">Map</a></td>
+        </tr>
+        </table>
+        </td>
+    <td>&nbsp;</td>
+    <td>
+            <table class="unselectedtab" cellspacing="0" cellpadding="0">
+        <tr>
+            <td><img height="2" width="2" alt="" src="/images/top_left_corner_4.gif"/></td>
+            <td height="2" style="width: 100%"></td>
+            <td><img height="2" width="2" alt="" src="/images/top_right_corner_4.gif"/></td>
+        </tr>
+        <tr>
+            <td class="content" colspan="3"><a href="http://www.kayak.com/h/hotel/id/64836?page=photos">Photos</a></td>
+        </tr>
+        </table>
+        </td>
+
+
+    <td class="filler">
+       &nbsp;
+    </td>
+</tr>
+</table>
+
+
+
+
+<table class="hoteldetails">
+
+<tr>
+
+    <td valign="top" class="mainLeftCol" height="100%" valign="top">
+
+            
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+            <tr>
+
+                 
+                    <td nowrap="nowrap" valign="top">
+
+                            <table id="imageTable" cellspacing="0" cellpadding="0">
+
+                                                                            <tr>
+
+                                                <td>
+
+                                                 <a href="http://www.kayak.com/h/hotel/id/64836?page=photos"  id="imageFullLink"><img src="/images/1x1_blank.gif" alt="Click for fullsize" id="displayImage" border="0"></a>
+
+                                                </td>
+
+
+
+                                        </tr>
+    
+
+
+                                        
+                                            <tr>
+
+                                                <td align="center" class="viewphotos">
+
+                                                    <a  href="http://www.kayak.com/h/hotel/id/64836?page=photos">View Photos</a> (3)
+
+                                                </td>
+
+                                            </tr>
+
+                                                                                                                
+                            </table>
+
+                    </td>
+
+                    <td style="padding-left: 10px" width="100%" valign="top">
+
+                 
+                            <div>
+
+                                <span class="hotelname">Sheraton New York Hotel & Towers</span>&nbsp;
+
+                                <span class="ehoeedit">[<a href="/h/ehoe/edit?hid=64836&redirect=http%3A%2F%2Fwww.kayak.com%2Fh%2Fhotel%2Fid%2F64836%3Fpage%3Doverview">edit info</a>]<span>
+
+                            </div>
+
+                           
+                           
+                              
+                                <address>
+
+                                811 Seventh Ave, 
+                                
+                                (Midtown West, Times Square)
+
+                                
+                                </address>
+
+                              
+                                <address>
+
+                                New York,
+
+                              
+                                NY,
+
+                                US
+
+                              
+                                10019
+
+                                </address>
+
+                            
+                            
+                                <span class="hotelphone">212-581-1000</span>
+
+                            
+                            
+                                
+                                <span class="hotelwebsite"><a href="/k/redirect/out?url=http%3A%2F%2Fwww.sheraton.com">www.sheraton.com</a></span>
+
+                            
+
+
+                      </td>
+
+                    </tr>
+
+                    <tr><td class="spacer">&nbsp;</td></tr>
+
+                 </table>
+
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0">
+
+                                     <tr>
+                        <td colspan="2"  width="100%" class="detailsummary">
+                                                        <div style="padding-bottom: 10px" class="review_body">
+                            <span class="leadtext">Description : </span>
+                            Offers 1,747 rooms and is located in midtown Manhattan. Steps from: Broadway theatres, Radio City Music Hall, Fifth Avenue, Rockefeller Center and Central Park.  Public transportation is available.
+                                                             <a href="http://www.kayak.com/h/hotel/id/64836?page=details">more...</a>
+                                                                                         <span style="font-weight: normal" class="green"><br/>Pegasus</span>
+                            
+                            </div>
+                        </span>
+                        </td>
+                   </tr>
+                   <tr><td class="spacer">&nbsp;</td></tr>
+                                                       <tr>
+                        <td colspan="2"  width="100%" class="detailsummary">
+                        <span class="leadtext">Amenities <span class="ehoeedit">[<a href="/h/ehoe/amenity?hid=64836&redirect=http%3A%2F%2Fwww.kayak.com%2Fh%2Fhotel%2Fid%2F64836%3Fpage%3Doverview">edit info</a>]</span>:</span>
+                                                                                                                    Business center,&nbsp;Sprinklers,&nbsp;ATM/Bank,&nbsp;Pets allowed,&nbsp;Multi-lingual staff                                                              <a href="http://www.kayak.com/h/hotel/id/64836?page=details">more...</a>
+                                                     </span>
+                        </td>
+                   </tr>
+                   <tr><td class="spacer">&nbsp;</td></tr>
+                                                         <tr><td class="spacer">&nbsp;</td></tr>
+                   <tr>
+                        <td colspan="2" width="100%" class="detailsummary">
+                        <span class="leadtext">Activities <span class="ehoeedit">[<a href="/h/ehoe/amenity?hid=64836&redirect=http%3A%2F%2Fwww.kayak.com%2Fh%2Fhotel%2Fid%2F64836%3Fpage%3Doverview">edit info</a>]</span>:</span>
+                                                                                                                    Health club,&nbsp;Health spa,&nbsp;Health spa                                                     </span>
+                        </td>
+                   </tr>
+                   <tr><td class="spacer">&nbsp;</td></tr>
+                   
+
+	    <tr>
+	<td valign="top">
+	    <table class="overallRating" width="100%" cellspacing="0" cellpadding="0">
+		<tr>
+			    <td nowrap="nowrap">
+				 <b>Overall Rating</b> <span style="font-weight: normal" class="grey">(43 users)</span>			    </td>
+			    <td>&nbsp;</td>
+			    <td nowrap="nowrap">
+				<b>Ambiance</b>
+		    </tr>
+		    <tr>
+			    				<td nowrap valign="baseline">
+					<table cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+							    <span class="ratingBarRating green">4.0</span><br/>
+							    <span class="stdText green">out of 10</span><br/>
+							</td>
+						</tr>
+					</table>
+				</td>
+			    			    <td>&nbsp;</td>
+			    				 <td>
+				 <table cellspacing="0" cellpadding="0">
+								    					<tr>
+					    <td valign="top" nowrap="nowrap"><span class="stdText green">business</span></td>
+					    <td>&nbsp;&nbsp;&nbsp;</td>
+					    <td nowrap="nowrap">
+						<table valign="middle" style="height: 5px; width: 100px; border: 1px solid #999" cellspacing="0" cellpadding="0">
+						<tr>
+						    <td style="font-size: 5px; background-color: #008000; width: 100%">&nbsp;</td>
+						    <td style="font-size: 5px; background-color: #eeeeee; width: 0%">&nbsp;</td>
+						</tr>
+						</table>
+					   </td>
+					</tr>
+
+				    
+								</table>
+				</td>
+			    		    </tr>
+
+	    </table>
+	</td>
+    </tr>
+    </tr><td class="spacer">&nbsp;</td></tr>
+     <tr>
+    <td>
+          <table width="100%" class="memberRating" border="0" cellspacing="0" cellpadding="0">        
+	<tr>
+	  <td class="searchbox" width="100%">
+	    	    <table width="100%" cellspacing="0" cellpadding="0">
+	      	    	    <tr>
+	      <td nowrap="nowrap" style="padding-left: 4px;" width="100%"><b>Rate Sheraton New York Hotel & Towers</b> <span class="green" style="visibility: hidden; font-weight:normal" id="ratingSaved">&nbsp;&nbsp;Saved!</span></td>
+	    </tr>
+	    <tr>
+
+	      <td>
+		<table  cellspacing="0" cellpadding="0">
+		  <tr>
+		    <td class="ratingTDUnselected" id="userRating1" onclick="urc(this, 1, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">1</td>
+		    <td class="ratingTDUnselected" id="userRating2" onclick="urc(this, 2, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">2</td>
+		    <td class="ratingTDUnselected" id="userRating3" onclick="urc(this, 3, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">3</td>
+		    <td class="ratingTDUnselected" id="userRating4" onclick="urc(this, 4, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">4</td>
+		    <td class="ratingTDUnselected" id="userRating5" onclick="urc(this, 5, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">5</td>
+		    <td class="ratingTDUnselected" id="userRating6" onclick="urc(this, 6, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">6</td>
+		    <td class="ratingTDUnselected" id="userRating7" onclick="urc(this, 7, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">7</td>
+		    <td class="ratingTDUnselected" id="userRating8" onclick="urc(this, 8, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">8</td>
+		    <td class="ratingTDUnselected" id="userRating9" onclick="urc(this, 9, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">9</td>
+		    <td class="ratingTDUnselected" id="userRating10" onclick="urc(this, 10, '64836', '26-GpkcULYH_VrtF1FqKhdB')" onmouseover="uro(this)" onMouseOut="cur(this)">10</td>
+		  </tr>
+		</table>
+		<script type="text/javascript">
+		  		</script>
+	      </td>
+	    </tr>
+      </table>
+            <div id="keywordArea" style="display: none">
+	<form name="keywordForm">
+	  <table class="stdText" border="0" cellspacing="0" cellpadding="2" width="100%">
+	    <tr>
+	      <td style="padding-left: 2px" width="100%" class="stdText"><b>Describe Sheraton New York Hotel & Towers Ambiance</b>
+		<span class="grey">(choose up to 3)</span> <span class="green" style="display: none" id="keywordSaved">&nbsp;&nbsp;Saved!</span>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td colspan="2" width="100%">
+				<table cellpadding="5" cellspacing="0">
+		  		    		    <tr>		    <td class="stdText"><input type="checkbox" name="atmosphere" value="upscale" onclick="atmClick(this, '64836', '26-GpkcULYH_VrtF1FqKhdB')">upscale</td>
+		  		    		    		    <td class="stdText"><input type="checkbox" name="atmosphere" value="historic" onclick="atmClick(this, '64836', '26-GpkcULYH_VrtF1FqKhdB')">historic</td>
+		  		    		    		    <td class="stdText"><input type="checkbox" name="atmosphere" value="rustic" onclick="atmClick(this, '64836', '26-GpkcULYH_VrtF1FqKhdB')">rustic</td>
+		  		    		    		    <td class="stdText"><input type="checkbox" name="atmosphere" value="business" onclick="atmClick(this, '64836', '26-GpkcULYH_VrtF1FqKhdB')">business</td>
+		  		    		    		    <td class="stdText"><input type="checkbox" name="atmosphere" value="romantic" onclick="atmClick(this, '64836', '26-GpkcULYH_VrtF1FqKhdB')">romantic</td>
+		  		    </tr>		    <tr>		    <td class="stdText"><input type="checkbox" name="atmosphere" value="quiet" onclick="atmClick(this, '64836', '26-GpkcULYH_VrtF1FqKhdB')">quiet</td>
+		  		    		    		    <td class="stdText"><input type="checkbox" name="atmosphere" value="hip" onclick="atmClick(this, '64836', '26-GpkcULYH_VrtF1FqKhdB')">hip</td>
+		  		    		    		    <td class="stdText"><input type="checkbox" name="atmosphere" value="family" onclick="atmClick(this, '64836', '26-GpkcULYH_VrtF1FqKhdB')">family</td>
+		  		    		    		    <td class="stdText"><input type="checkbox" name="atmosphere" value="casual" onclick="atmClick(this, '64836', '26-GpkcULYH_VrtF1FqKhdB')">casual</td>
+		                  </table>
+	                   </td>
+         </tr>
+      </table>
+      </form>
+     </div>
+   </td>
+</tr>
+</table>
+    </td>
+    </tr>
+    <tr><td class="spacer">&nbsp;</td></tr>
+             <tr>
+    <td class="boxHeader">
+	    Reviews for Sheraton New York Hotel & Towers <span style="font-weight: normal">(showing 1 - 10 of 10)</span>    </td>
+    </tr>
+    <tr>
+        <td class="spacer">
+                &nbsp;
+        </td>
+    </tr>
+   <tr>
+     <td valign="top" class="mainLeftCol">
+	 <table class="stdText" width="100%" cellspacing="0" cellpadding="0">
+	   <tr>
+	     <td>
+	       	       	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Fwww.hotelshark.com%2Fnewyorkcity%2Fshe.htm" rel="nofollow">User Review: HotelShark</a></span><br/>
+		 		 <span class="review_body">The location of this hotel is wonderful. It is an easy 3 blocks or so to Times Square and also Carnegie Hall, ...</span><br/>
+		 		 <span class="review_url">www.hotelshark.com</span>
+
+	       </div>
+	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Fwww.epinions.com%2Fcontent_70156062340" rel="nofollow">Sheraton New York Hotel and Towers.....The Big Seventh Avenue Warehouse: Epinions</a></span><br/>
+		 		 <span class="review_body">The Sheraton New York Hotel and Towers is the sort of place many visitors settle for in New York. While not a mecca ...</span><br/>
+		 		 <span class="review_url">www.epinions.com</span>
+
+	       </div>
+	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Fwww.epinions.com%2Fcontent_130237828740" rel="nofollow">In this city you can do better: Epinions</a></span><br/>
+		 		 <span class="review_body">I recently attended a group event at the Sheraton. I was privy to a lot of the behind the scenes information on the ...</span><br/>
+		 		 <span class="review_url">www.epinions.com</span>
+
+	       </div>
+	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Figougo.com%2Fplanning%2FjournalEntryAccommodation.asp%3FjournalID%3D%26entryID%3D%26businesscardID%3D36106%26locationID%3D590%26n%3DSheraton%2520New%2520York%2520Hotel%2520and%2520Towers" rel="nofollow">User Review: IgoUgo</a></span><br/>
+		 		 <span class="review_body">I chose this hotel because of the location, within walking distance to Times Square, Central Park, the Theatre ...</span><br/>
+		 		 <span class="review_url">igougo.com</span>
+
+	       </div>
+	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Faolsvc.digitalcity.com%2Fnewyork%2Fentertainment%2Fvenue.adp%3Fsbid%3D106947540%26squery%3D%26uquery%3D%26skip%3D9" rel="nofollow">Professional Review: AOL CityGuide</a></span><br/>
+		 		 <span class="review_body">Designed by the late Morris Lapidus (whose Fontainebleu Hotel in Miami Beach is a kitsch cornerstone), this massive ...</span><br/>
+		 		 <span class="review_url">aolsvc.digitalcity.com</span>
+
+	       </div>
+	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Fnewyork.citysearch.com%2Freview%2F7142297%2Feditorial%2F%3Fcslink%3Dcs_profile_tabs_editorial_review" rel="nofollow">Sheraton New York Hotel &amp; Towers: Citysearch</a></span><br/>
+		 		 <span class="review_url">newyork.citysearch.com</span>
+
+	       </div>
+	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Fwguides.com%2Fcity%2F33%2F31_49278.cfm" rel="nofollow">Sheraton New York Hotel &amp; Towers: Wcities</a></span><br/>
+		 		 <span class="review_url">wguides.com</span>
+
+	       </div>
+	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Fwww.thisistravel.co.uk%2Ftravel%2Faccommodation%2Fhotel.html%3Fin_article_id%3D9821%26in_page_id%3D101" rel="nofollow">Sheraton Towers: This is Travel</a></span><br/>
+		 		 <span class="review_url">www.thisistravel.co.uk</span>
+
+	       </div>
+	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Fwww.gayot.com%2Fnewhotels%2Finfo.php%3Ftag%3DNYHOT021474-02%26code%3DNY" rel="nofollow">Sheraton New York Hotel &amp; Towers: Gayot.com</a></span><br/>
+		 		 <span class="review_url">www.gayot.com</span>
+
+	       </div>
+	       	       <div class="review">
+
+		 <span class="review_hdr"><a class="review_hdr" href="/k/redirect/out?url=http%3A%2F%2Fhotels.cnghotels.com%2Fhotels-na_us_ny_newyork_sheratonnewyork-hotels.html" rel="nofollow">Professional Review: CnG Hotels</a></span><br/>
+		 		 <span class="review_body">The Sheraton New York Hotel And Towers is a 3 Star hotel. Just steps from fine dining; attractions; and ...</span><br/>
+		 		 <span class="review_url">hotels.cnghotels.com</span>
+
+	       </div>
+	       	     </td>
+	   </tr>
+	   	   	   	   	 </table>
+	 	</td>
+      </tr>
+
+<tr valign="top"><td>&nbsp;</td></tr>
+<tr valign="top">
+  <td valign="top" class="mainLeftCol">
+    <table class="wideAdTable" width="100%">
+      <tr>
+	<td nowrap="nowrap" class="rsAdTD"><div class="wideAdHeader">Advertisements</div><div class='wideAdDiv' onmouseover="sStat('go to www.Woogo.co.uk/Hilton')" onmouseout="cStat()">
+<span class='wideAdLink'><a class='wideAdLink' target='_blank' id=pa1 href="/k/redirect/out?origin=HDest&url=http%3A%2F%2Fwww.google.com%2Fpagead%2Ficlk%3Fsa%3Dl%26ai%3DBwOtA0O_MRNaLEYOSaZ2iwN8DhpfQD_rQxvQB4v64tAaAzuABEAEYASCVue8CKAYwAUDMEEiLOVCP_rkZoAGGrp78A6oBCmNoZWFwaG90ZWzIAQGVAh4GGgo%26num%3D1%26adurl%3Dhttp%3A%2F%2Fwww.woogo.co.uk%2Fapartments%2Fnewyork%2Fhotels%2Findex.html%253Futm_id%253D1%2526utm_term%253DNew%252520york%252520hotel&terms=New York cheap hotel&adtype=text%2Fwide" onmouseover="return sStat('go to www.Woogo.co.uk/Hilton')" onmouseout="cStat()">
+70% Off New york hotel</a></span>
+<br/>
+<span class='adSiteName'>www.Woogo.co.uk/Hilton</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4 Star - From $99 Plaza Premier Hotels Free Upgrade 3rd Night Free
+</div>
+</td>
+      </tr>
+            <tr><td colspan="8" nowrap="nowrap" class="rsAdTD"><div class='wideAdDiv' onmouseover="sStat('go to www.hotelconxions.com')" onmouseout="cStat()">
+<span class='wideAdLink'><a class='wideAdLink' target='_blank' id=pa1 href="/k/redirect/out?origin=HDest&url=http%3A%2F%2Fwww.google.com%2Fpagead%2Ficlk%3Fsa%3Dl%26ai%3DBA7xT0O_MRNaLEYOSaZ2iwN8D5ICeFobEpK8BvMGjBdC0RxACGAIglbnvAigGQMwQSJg5UNGq6bAEoAGV7Zr_A6oBCmNoZWFwaG90ZWzIAQGVAkcaGgo%26num%3D2%26adurl%3Dhttp%3A%2F%2Fwww.hotelconxions.com&terms=New York cheap hotel&adtype=text%2Fwide" onmouseover="return sStat('go to www.hotelconxions.com')" onmouseout="cStat()">
+Cheap NYC Hotel Deals</a></span>
+<br/>
+<span class='adSiteName'>www.hotelconxions.com</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Book hotels in New York City from $115 per night plus taxes
+</div>
+</td></tr>
+                  <tr><td colspan="8" nowrap="nowrap" class="rsAdTD"><div class='wideAdDiv' onmouseover="sStat('go to www.riversidetowerhotel.com')" onmouseout="cStat()">
+<span class='wideAdLink'><a class='wideAdLink' target='_blank' id=pa1 href="/k/redirect/out?origin=HDest&url=http%3A%2F%2Fwww.google.com%2Fpagead%2Ficlk%3Fsa%3Dl%26ai%3DBFFwG0O_MRNaLEYOSaZ2iwN8D5oLhDb7c78gBguWjBYC9PxADGAMglbnvAigGQMwQSKo5UNvVq6oFoAG-wIX_A6oBCmNoZWFwaG90ZWzIAQGAAgGVAglRGgo%26num%3D3%26adurl%3Dhttp%3A%2F%2Fwww.riversidetowerhotel.com%2Flanding.htm%253Fgoto%253Dhttp%3A%2F%2Fwww.riversidetowerhotel.com%2526orig%253Dppc2n%2526kw%253Dcheap%252Bhotel%252Bnew%252Byork&terms=New York cheap hotel&adtype=text%2Fwide" onmouseover="return sStat('go to www.riversidetowerhotel.com')" onmouseout="cStat()">
+Cheap Manhattan Hotel</a></span>
+<br/>
+<span class='adSiteName'>www.riversidetowerhotel.com</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Riverside Towers - Discount hotel on the Upper West Side of Manhattan
+</div>
+</td></tr>
+                  <tr><td colspan="8" nowrap="nowrap" class="rsAdTD"><div class='wideAdDiv' onmouseover="sStat('go to www.redroof.com')" onmouseout="cStat()">
+<span class='wideAdLink'><a class='wideAdLink' target='_blank' id=pa1 href="/k/redirect/out?origin=HDest&url=http%3A%2F%2Fwww.google.com%2Furl%3Fsa%3DL%26ai%3DBmxsg0O_MRNaLEYOSaZ2iwN8DhpPOG7qguaMCguWjBZDmdRAEGAQglbnvAigGQMwQSJg5UJyD8cb5_____wGqAQpjaGVhcGhvdGVsyAEBlQJHGhoKyAKK-C4%26num%3D4%26q%3Dhttp%3A%2F%2Fs0b.bluestreak.com%2Fix.e%253Fhy%2526s%253D910501%2526a%253D912461%2526k%253D26054%2526u%253Dhttp%25253A%25252F%25252Fwww%25252Eredroof%25252Ecom%25252Freservations%25252FYourPlaceToStay%25252Easp%25253Fstate%25253DNY&terms=New York cheap hotel&adtype=text%2Fwide" onmouseover="return sStat('go to www.redroof.com')" onmouseout="cStat()">
+Cheap Hotel New York</a></span>
+<br/>
+<span class='adSiteName'>www.redroof.com</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Red Roof offers comfortable rooms at cheap rates nationwide.
+</div>
+</td></tr>
+                  <tr><td colspan="8" nowrap="nowrap" class="rsAdTD"><div class='wideAdDiv' onmouseover="sStat('go to www.roomproviders.com')" onmouseout="cStat()">
+<span class='wideAdLink'><a class='wideAdLink' target='_blank' id=pa1 href="/k/redirect/out?origin=HDest&url=http%3A%2F%2Fwww.google.com%2Furl%3Fsa%3DL%26ai%3DBLilk0O_MRNaLEYOSaZ2iwN8D6YulFIHsjcwCsbWJBrD6TxAFGAUglbnvAigGMAFAzBBIoTlQ87-8xQaqAQpjaGVhcGhvdGVsyAEBgAIBlQISLhoK%26num%3D5%26q%3Dhttp%3A%2F%2Fwww.roomproviders.com&terms=New York cheap hotel&adtype=text%2Fwide" onmouseover="return sStat('go to www.roomproviders.com')" onmouseout="cStat()">
+New York Hotels from $99</a></span>
+<br/>
+<span class='adSiteName'>www.roomproviders.com</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Cheap hotels in New York City from budget to luxury
+</div>
+</td></tr>
+                      </table>
+  </td>
+</tr>
+
+</table>
+
+</td>
+
+<td height="100%"  class="spacer" style="border-right: 1px solid #eee;" >&nbsp;</td>
+
+<td height="100%" valign="top" class="mainRightCol" valign="top">
+
+  
+<table cellspacing="0" cellpadding="0" width="100%">
+    <tr><td class="boxHeader">Advertisements</td></tr>
+        <tr><td nowrap="nowrap" class="rsAdTD"><span class='rsAdLink'><a onmouseover='return sStat("go to www.MarriottStayForBreakfast.com")' onmouseout='cStat()' class='rsAdLink' target='_blank' href='/s/clickthrough.jsp?ctyp=Booking&plid=16220&ptyp=O&orig=HDest:s&pid=16005&prv=298-www.MarriottStayForBreakfast.com&sid=26-GpkcULYH_VrtF1FqKhdB&srch=&cr=rO0ABXQABjEuMTB8MQ%3D%3D&url=http%3A%2F%2Fwww.MarriottStayForBreakfast.com&ts=1154281424239'>Marriott Summer Special</a></span><br/>
+Free breakfast for two adults
+<br/>
+and kids 12 and under!
+<br/>
+<span class='adSiteName'>www.MarriottStayForBreakfast.com</span>
+
+</td></tr>
+    <tr><td nowrap="nowrap" class="rsAdTD">&nbsp;</td></tr>
+            <tr><td nowrap="nowrap" class="rsAdTD"><span class='rsAdLink'><a onmouseover='return sStat("go to www.hotelconxions.com")' onmouseout='cStat()' class='rsAdLink' target='_blank' href='/s/clickthrough.jsp?ctyp=Booking&plid=14190&ptyp=O&orig=HDest:s&pid=13996&prv=335-www.hotelconxions.com&sid=26-GpkcULYH_VrtF1FqKhdB&srch=&cr=rO0ABXQABjAuMzZ8Mg%3D%3D&url=http%3A%2F%2Fwww.hotelconxions.com&ts=1154281424239'>Discounted NYC Hotels</a></span><br/>
+Hotels in NYC from $99 per night
+<br/>
+Book online or call 800 522 9991
+<br/>
+<span class='adSiteName'>www.hotelconxions.com</span>
+
+</td></tr>
+    <tr><td nowrap="nowrap" class="rsAdTD">&nbsp;</td></tr>
+            <tr><td nowrap="nowrap" class="rsAdTD"><span class='rsAdLink'><a onmouseover='return sStat("go to www.ORBITZ.com")' onmouseout='cStat()' class='rsAdLink' target='_blank' href='/s/clickthrough.jsp?ctyp=Booking&plid=10251&ptyp=O&orig=HDest:s&pid=10073&prv=245-www.ORBITZ.com&sid=26-GpkcULYH_VrtF1FqKhdB&srch=&cr=rO0ABXQABjAuNTB8Mw%3D%3D&url=http%3A%2F%2Fwww.orbitz.com%2FApp%2FPerformDatelessHotelSearch%3FkeywordPIB%3DNew%2520York%2CNY%26gcid%3DC11287x236%26gtkw%3DNew%2520York-NY&ts=1154281424240'>New York Discount Hotels</a></span><br/>
+Sort by Price Distance & Star Level
+<br/>
+Book Packages & More!
+<br/>
+<span class='adSiteName'>www.ORBITZ.com</span>
+
+</td></tr>
+    <tr><td nowrap="nowrap" class="rsAdTD">&nbsp;</td></tr>
+            <tr><td nowrap="nowrap" class="rsAdTD"><span class='rsAdLink'><a onmouseover='return sStat("go to www.BookingWiz.com")' onmouseout='cStat()' class='rsAdLink' target='_blank' href='/s/clickthrough.jsp?ctyp=Booking&plid=13272&ptyp=O&orig=HDest:s&pid=13089&prv=302-www.BookingWiz.com&sid=26-GpkcULYH_VrtF1FqKhdB&srch=&cr=rO0ABXQABjAuNzh8NA%3D%3D&url=http%3A%2F%2Fwww.BookingWiz.com%2Fdefault.asp%3Fmic%3Dve7ebra%26prod%3Dair_hotel&ts=1154281424240'>NY Fly+Hotel Save to $500</a></span><br/>
+Save up to $500 on Flight+Hotel to
+<br/>
+New York. Compare deals and save!
+<br/>
+<span class='adSiteName'>www.BookingWiz.com</span>
+
+</td></tr>
+    <tr><td nowrap="nowrap" class="rsAdTD">&nbsp;</td></tr>
+            <tr><td nowrap="nowrap" class="rsAdTD"><span class='rsAdLink'><a onmouseover='return sStat("go to www.motel6.com")' onmouseout='cStat()' class='rsAdLink' target='_blank' href='/k/redirect/out?origin=HDest&url=http%3A%2F%2Fwww.google.com%2Furl%3Fsa%3DL%26ai%3DBjaCB0O_MRNaLEYOSaZ2iwN8DhrXVG46j-qMCguWjBYDyVxAGGAYglbnvAigGQMwQSJw5UP3gieL7_____wGqAQpjaGVhcGhvdGVsyAEBlQI4PxoKyAKS9y4%26num%3D6%26q%3Dhttp%3A%2F%2Fs0b.bluestreak.com%2Fix.e%253Fhy%2526s%253D1807097%2526a%253D2090176%2526k%253D26520%2526u%253Dhttp%25253A%25252F%25252Fwww%25252Emotel6%25252Ecom%25252Freservations%25252FYourPlaceToStay%25252Easp%25253Fstate%25253DNY&terms=New York cheap hotel&adtype=text%2Fnarrow'>Cheap Hotel New York</a></span><br/>
+Motel 6 locations across the state
+<br/>
+with HBO, ESPN &amp; low rates.
+<br/>
+<span class='adSiteName'>www.motel6.com</span>
+
+</td></tr>
+    <tr><td nowrap="nowrap" class="rsAdTD">&nbsp;</td></tr>
+                        
+           <tr>
+        <td rowspan="3" valign="top">
+                    <table class="stdText" width="100%">
+                                        <tr>
+                            <td class="boxHeader">
+                                    Related Links
+                            </td>
+                        </tr>
+                                                                            <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwwwa.accuweather.com%2Fus-city-list.asp%3Fpartner%3Daccuweather%26zipcode%3DNew%2BYork%252C%2BNY" rel="nofollow">Current New York weather</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fweb.ask.com%2Fweb%3Fq%3Dclimate%2Bin%2BNew%2BYork%252CNY" rel="nofollow">Seasonal New York weather</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.openlist.com%2Fhotels-browse-new_york%7E.htm%3Fperpage%3D15" rel="nofollow">Openlist hotel guide: New York</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.openlist.com%2Frestaurants-browse-new_york%7E.htm%3Fperpage%3D15" rel="nofollow">Openlist restaurant guide: New York</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.google.com%2Fsearch%3Fsa%3DX%26oi%3Dfwp%26pb%3Df%26q%3DNew%2BYork%252CNY%2B10019" rel="nofollow">Phone Book</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.google.com%2Flocal%3Fq%3DConvenience%2BStore%26near%3D811%2BSeventh%2BAve%252CNew%2BYork%252CNY%2B10019" rel="nofollow">Convenience Stores</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.google.com%2Flocal%3Fq%3Ddrug%2BOR%2Bpharmacy%26near%3D811%2BSeventh%2BAve%252CNew%2BYork%252CNY%2B10019" rel="nofollow">Drug Stores</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.google.com%2Flocal%3Fq%3Dcategory%253A%2BSupermarkets%26near%3D811%2BSeventh%2BAve%252CNew%2BYork%252CNY%2B10019" rel="nofollow">Markets</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.google.com%2Flocal%3Fq%3Dcategory%253A%2Bmuseums%26near%3D811%2BSeventh%2BAve%252CNew%2BYork%252CNY%2B10019" rel="nofollow">Museums</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.google.com%2Flocal%3Fq%3Dcategory%253A%2BRestaurants%26near%3D811%2BSeventh%2BAve%252CNew%2BYork%252CNY%2B10019" rel="nofollow">Restaurants</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.google.com%2Flocal%3Fq%3Dcategory%253A%2Bshopping%26near%3D811%2BSeventh%2BAve%252CNew%2BYork%252CNY%2B10019" rel="nofollow">Shopping Malls</a>
+                                    </td>
+                            </tr>
+                                                    <tr>
+                                    <td width="100%" class="smLinks">
+                                        <a href="/k/redirect/out?url=http%3A%2F%2Fwww.google.com%2Flocal%3Fq%3Dcategory%253A%2Btransportation%26near%3D811%2BSeventh%2BAve%252CNew%2BYork%252CNY%2B10019" rel="nofollow">Taxis/Transportation</a>
+                                    </td>
+                            </tr>
+                                                <tr>
+                            <td class="spacer">&nbsp;</td>
+                        </tr>
+                        </tr>
+        <tr>
+        <td>
+            <table width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                        <td width="100%" class="boxHeader">
+                            Kayak.com Commitment
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        Kayak.com helps you search 100+ travel sites at once.<br/>
+                        <a href="/k/feedback">Tell us</a> if you find inaccuracies.
+                    </td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td>
+                        We strive to show you every hotel on earth, with accurate, traveler-verified information.<br/>
+                        <a href="/h/ehoe/add?redirect=http%3A%2F%2Fwww.kayak.com%2Fh%2Fhotel%2Fid%2F64836%3Fpage%3Doverview">Tell us</a> if we missed one.
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+
+</td>
+
+</tr>
+
+</table><br />
+<br />
+
+<div id="commonfooter">
+    <a href="http://corp.kayak.com/about.html">About</a>
+    <span>|</span>
+    <a href="https://network.kayak.com">Advertise</a>
+    <span>|</span>
+    <a href="http://corp.kayak.com/affiliate.html">Affiliate</a>
+    <span>|</span>
+    <a href="/h/destinations/countrylist">Destinations</a>
+    <span>|</span>
+    <a href="/k/feedback">Feedback</a>
+    <span>|</span>
+    <a href="/labs/">Labs</a>
+    <p class="copyright">&copy;2006 Kayak.com</p>
+</div>
+        
+
+
+
+
+
+<script type="text/javascript">
+<!--
+        var origTop;
+        var origLeft;
+        
+        var userRatingGiven = false;
+        
+        var clipTop = 0;
+        var clipWidth = 275;
+        var clipBottom = 73;
+
+        var topper = 450;
+        var lyrheight = 0;
+        var pictureArray = new Array();
+        var curImg;
+        var curPhotoIndex = 0;
+        
+        // Setup pictures
+        
+curImg = new Object(); curImg.url = '/himg/2f/7a/09/leonardo-137251-137251_REC_01_J-image.jpg'; curImg.thumburl = '/himg/2f/7a/09/leonardo-137251-137251_REC_01_A-thumb.jpg'; pictureArray.push(curImg);
+
+curImg = new Object(); curImg.url = '/himg/2f/7a/09/leonardo-137251-137251_REST_01_J-image.jpg'; curImg.thumburl = '/himg/2f/7a/09/leonardo-137251-137251_REST_01_A-thumb.jpg'; pictureArray.push(curImg);
+
+curImg = new Object(); curImg.url = '/himg/2f/7a/09/leonardo-137251-137251_ROOM_01_J-image.jpg'; curImg.thumburl = '/himg/2f/7a/09/leonardo-137251-137251_ROOM_01_A-thumb.jpg'; pictureArray.push(curImg);
+// 0 picture case if (pictureArray.lentgth == 0) { curImg = new Object(); curImg.url = ""; curImg.thumburl ="/photocomingsoon.gif"; pictureArray.push(curImg); } // Setup rating
+        var rawrating = 4.0;
+        var extra = 0;
+        if (rawrating - Math.floor(rawrating) >= 0.75) {
+            extra = 1;
+        } else if (rawrating - Math.floor(rawrating) >= 0.25) {
+            extra = 0.5;
+        }
+
+        var rating = Math.floor(rawrating) + extra;
+        
+        function initPage()
+        {
+                                initPhotos("64836");
+                
+                window.focus();  // bring to front if already minimized
+
+		        }
+-->
+</script>
+<iframe src="/emptycalbg.html" class="calendarShadow" id="frameCalendarView" style="border: none; position:absolute; top:202px; left:152px; visibility: hidden"></iframe>
+<div id="CalendarView" style="position:absolute; top:200px; left:150px; visibility:hidden "></div>
+<script type="text/javascript" language="JavaScript">
+calendar.createCalendar(dteFirstValidDate, 2, '' + (dteFirstValidDate.getMonth() - 0 + 1), ''+dteFirstValidDate.getFullYear());
+</script></body>
+</html>

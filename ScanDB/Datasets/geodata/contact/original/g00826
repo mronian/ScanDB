@@ -1,0 +1,284 @@
+<DOC>
+<DOCNO>g00826</DOCNO>
+<DOCHDR>http://dewine.senate.gov/request_form.htm</DOCHDR>
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#666666" link="#990000" vlink="#660000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<a name="top"></a> 
+<table width="550" border="0" cellspacing="1" cellpadding="1">
+  <tr align="left" valign="top"> 
+    <td align="right"><b><font face="Arial,Helvetica,Univers,Zurich BT"> 
+      <script language="JavaScript">
+
+//      
+whatDate = new Date();
+var whatDay = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var whatMonth = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+//
+
+</script>
+      <script language="JavaScript">
+<!--//
+document.write("");
+document.write(whatDay[whatDate.getDay()]+", "+whatMonth[whatDate.getMonth()]+" "+whatDate.getDate()+", "+whatDate.getFullYear()+"");
+//-->
+</script>
+      </font></b></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><img src="images/header_constservices.gif" width="323" height="35"></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td> 
+      <p><font face="Times New Roman, Times, serif" size="4"><b><font color="#003366">Information 
+        Request Form</font></b></font></p>
+      <FORM METHOD="POST"  ACTION="/cgi-bin/webform.ia2"> 
+<INPUT type=hidden name=mailto value="Senator_DeWine@exchange.senate.gov"> 
+<INPUT type=hidden name=url value="http://DeWine.senate.gov/main.htm">
+
+        
+        <input type=HIDDEN name="msg"
+         value="Your message has been sent.  Thank you very much.">
+        <table width="525" border="0" cellspacing="2" cellpadding="0">
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="2">Please fill 
+              out the following form.&nbsp; Fields marked with ( </font><font color="#CC3333" face="Arial, Helvetica, sans-serif" size="2">* 
+              </font><font face="Arial, Helvetica, sans-serif" size="2">) are 
+              required.&nbsp; </font></td>
+          </tr>
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">&nbsp;</font></td>
+          </tr>
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">Title</font><font color="#CC3333" face="Arial, Helvetica, sans-serif" size="1">*</font><font face="Arial, Helvetica, sans-serif" size="1">:</font>  
+              <select name="A01">
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Miss">Miss</option>
+                <option value="Mr. &amp; Mrs.">Mr. &amp; Mrs.</option>
+                <option value="Dr.">Dr.</option>
+              </select>
+              </font></td>
+          </tr>
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">First Name</font><font color="#CC3333" face="Arial, Helvetica, sans-serif" size="1">*</font><font face="Arial, Helvetica, sans-serif" size="1">:</font> 
+              <font face="Arial, Helvetica, sans-serif" size="1"><br>
+              <input name="B01" type=text size=30 maxlength=30>
+              </font></td>
+          </tr>
+		  <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">Last Name</font><font color="#CC3333" face="Arial, Helvetica, sans-serif" size="1">*</font><font face="Arial, Helvetica, sans-serif" size="1">:</font> 
+              <font face="Arial, Helvetica, sans-serif" size="1"><br>
+              <input name="C01" type=text size=30 maxlength=30>
+              </font></td>
+          </tr>
+        
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">Address</font><font color="#CC3333" face="Arial, Helvetica, sans-serif" size="1">*</font><font face="Arial, Helvetica, sans-serif" size="1">: 
+              <br>
+            <INPUT TYPE="text" NAME="D01" SIZE=30 MAXLENGTH="50" VALUE="">
+              </font></td>
+          </tr>
+		  <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">Address</font><font face="Arial, Helvetica, sans-serif" size="1">: 
+              <br>
+            <INPUT TYPE="text" NAME="E01" SIZE=30 MAXLENGTH="50" VALUE="">
+              </font></td>
+          </tr>
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">City</font><font color="#CC3333" face="Arial, Helvetica, sans-serif" size="1">*</font><font face="Arial, Helvetica, sans-serif" size="1">: 
+              <br>
+              <input name="F01" type=text size=15 maxlength=35>
+              <br>
+              State</font><font color="#CC3333" face="Arial, Helvetica, sans-serif" size="1">*</font><font face="Arial, Helvetica, sans-serif" size="1">:</font><br>
+              <font face="Arial, Helvetica, sans-serif" size="1"> 
+              <select name="G01" size="1">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option SELECTED value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+              <br>
+              Zip Code</font><font color="#CC3333" face="Arial, Helvetica, sans-serif" size="1">*</font><font face="Arial, Helvetica, sans-serif" size="1">:</font><br>
+              <font face="Arial, Helvetica, sans-serif" size="1"> 
+              <input name="H01" type=text size=10 maxlength=10>
+              <br>
+              Email</font><font color="#CC3333" face="Arial, Helvetica, sans-serif" size="1">*</font><font face="Arial, Helvetica, sans-serif" size="1">:</font><br> 
+              <font face="Arial, Helvetica, sans-serif" size="1"> 
+              <input name="I01" type=text size=30 maxlength=40>
+              </font><font face="Arial, Helvetica, sans-serif" size="1">&nbsp; 
+              <br>
+              </font></td>
+          </tr>
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">This is Concerning: 
+              <select name="J01">
+                <option value="" selected>Please Choose a Topic</option>
+                <option value="AB">Abortion</option>
+                <option value="AG">Agriculture</option>
+                <option value="AN">Animal Issues</option>
+                <option value="BA">Banking</option>
+                <option value="BUD">Budget</option>
+                <option value="BUS">Business</option>
+                <option value="CHILD">Children's Issues</option>
+                <option value="CRIME">Crime</option>
+                <option value="ED">Education</option>
+                <option value="EN">Energy</option>
+                <option value="ENV">Environment</option>
+                <option value="FOR">Foreign Relations</option>
+                <option value="GAY">Gay Issues</option>
+                <option value="GOV">Governmental Issues</option>
+                <option value="HEALTH">Health Issues</option>
+                <option value="IM">Immigration</option>
+                <option value="INS">Insurance Issues</option>
+                <option value="JUD">Judicial</option>
+                <option value="Labor">Labor</option>
+                <option value="MED">Medicare/Medicaid </option>
+                <option value="MIL">Military</option>
+                <option value="NASA">NASA</option>
+                <option value="Picture / Biography">Picture / Biography</option>
+                <option value="SR">Seniors</option>
+                <option value="SOC">Social Issues</option>
+                <option value="SS">Social Security</option>
+                <option value="TAX">Taxes</option>
+                <option value="TEL">Telecommunications</option>
+                <option value="Trade">Trade</option>
+                <option value="TRAN">Transportation</option>
+                <option value="VA">Veterans</option>
+                <option value="WEL">Welfare</option>
+                <option value="WOMEN">Women's Issues</option>
+				<option value="OTHER">Other</option>
+              </select>
+              </font></td>
+          </tr>
+         
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">Your Comments:<br>
+              </font> <font face="Arial, Helvetica, sans-serif" size="1"> 
+              <textarea wrap=virtual name="K01" rows=13 cols=61></textarea>
+              </font></td>
+          </tr>
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="1">&nbsp;</font></td>
+          </tr>
+          <tr> 
+            <td> <font face="Arial, Helvetica, sans-serif" size="1"> 
+			<input type=submit value="Submit Information">
+              <input name="" type=reset value="Reset Form Blank">
+                          </font></td>
+          </tr>
+        </table>
+        </form>
+    </td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td> 
+      <table border="0" cellspacing="0" cellpadding="0" width="550">
+        <tr> 
+          <td align="right" valign="middle" width="20"><img src="images/leftsubmenu.gif" width="11" height="20"></td>
+          <td align="center" valign="middle" width="510" bgcolor="#003366"><font face="Arial, Helvetica, sans-serif" size="1"><a href="#top" target="content"><font color="#FFFFFF">Back 
+            to the Top</font></a><a href="DeWinefamily.htm" target="content"><font color="#FFFFFF"></font></a></font></td>
+          <td align="left" valign="middle" width="20"><img src="images/rightsubmenu.gif" width="11" height="20"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="550" border="0" cellspacing="2" cellpadding="1">
+  <tr align="left" valign="top"> 
+    <td> 
+      <hr>
+    </td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2"><a href="main.htm" target="content">Home</a> 
+      | <a href="biography.htm" target="content">Biography</a> | <a href="ohioinfo.htm" target="content">Ohio 
+      Information</a> | <a href="pressroom.htm" target="content">Press Room</a> 
+      | <a href="constservices.htm" target="content">Constituent Services</a></font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2"><a href="issueinfo.htm" target="content">Issue 
+      Information</a> | <a href="contactinfo.htm" target="content">Contact Information</a><a href="issueinfo.htm" target="content"></a> 
+      | <a href="relatedlinks.htm" target="content">Related Links</a><a href="issueinfo.htm" target="content"></a> 
+      | <font color="#990000"><u><a href="Grants/grantsinfo.cfm">Grant Information</a> 
+      </u></font></font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><font size="1" face="Arial, Helvetica, sans-serif"><b>140 Russell Senate 
+      Building, Washington, DC 20510</b><br>
+      Phone: (202) 224-2315&nbsp; Fax: (202) 224-6519&nbsp; TDD: (202) 224-9921<br>
+      Casework Hotline (please, Ohio citizens only): 1-800-205-OHIO<br>
+      <a href="contactinfo.htm">More Ohio Contacts</a></font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<div id="Layer1" style="position:absolute; left:302px; top:1px; width:250px; height:20px; z-index:1"><a href="http://lcweb2.loc.gov/ammem/today/today.html" target="_blank"><img src="images/datelink.gif" width="250" height="20" border="0"></a></div>
+</body>
+</html>

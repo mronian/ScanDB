@@ -1,0 +1,1464 @@
+<DOC>
+<DOCNO>g00291</DOCNO>
+<DOCHDR>http://www.quikbook.com/GetProfile.asp?Code=166&Market=53</DOCHDR>
+
+
+
+<!-- CHECK AVAIL CODE-->
+
+<SCRIPT LANGUAGE=javascript>
+<!--
+// mimics the functionality of javascript's 1.3 split method
+// returns a javascript array
+function customSplit(sText, sDelimiter)
+{
+	if (sText.length > 0)
+	{
+		var sPos = sText.indexOf(sDelimiter,0);
+		if (sPos > 0)
+		{
+			var ary = new Array();
+			var i = 0;
+			var j = 0;
+			while (sPos > 0)
+			{
+				ary[i] = sText.substring(j, sPos);
+				i = i + 1;
+				j = sPos + 1;
+				sPos = sText.indexOf(sDelimiter,j+1);
+			}
+			// get the last part
+			if (j < sText.length)
+			{
+				ary[i] = sText.substring(j);
+			}
+			return ary;
+		}
+		return false;
+	}
+	return false;
+}
+	
+// gets the index of the clicked control in a collection ...
+// i.e. two or more checkboxes having the same name; 
+// proven to work in IE 3.x and Netscape 3.x
+function getIndex(optControl)
+{
+	var sVal = optControl.value;
+	var sName = optControl.name;
+	var idx;
+	var cnt = window.document.forms[0].elements.length;
+	var fld;
+	var j = 0;
+	for (var i = 0; i < cnt; i++)
+	{
+		if (document.forms[0].elements[i].name == sName)
+		{
+			fld = document.forms[0].elements[i];
+			if (fld.value == sVal)
+			{
+				idx = j;
+				break;
+			}
+				j = j + 1;
+		}
+	}
+	return idx;
+}	
+//-->
+</SCRIPT><script language=javascript>
+var alerted = false;
+var modNumber = 300;
+var timeToAlert = 900;
+var timeOut = 1210;
+var alertMessage = 'Your browser has been idle for ' + (timeToAlert/60) + ' minutes.\nThis session will time-out in ' + ((timeOut - timeToAlert - 10)/60) + ' minutes if no actions are taken.';
+var redirectTo, startday, clockStart;
+
+	redirectTo = "http://www.quikbook.com/main.asp?Time_Out=1";
+	
+
+//------------------------------------------------------
+//function UserTime()
+//{
+//  var d, s = "";
+//  var c = ":";
+//  d = new Date();
+//  s += d.getHours() + c;
+//  s += d.getMinutes() + c;
+//  s += d.getSeconds();
+// return(s);
+//}
+//------------------------------------------------------
+startday = new Date();
+clockStart = startday.getTime();
+
+function initStopwatch() 
+{ 
+ var myTime = new Date(); 
+        var timeNow = myTime.getTime();
+        var timeDiff = timeNow - clockStart; 
+        this.diffSecs = timeDiff/1000; 
+        return(this.diffSecs); 
+}
+//------------------------------------------------------
+function getSecs() 
+{ 
+    var mySecs = initStopwatch(); 
+    var mySecs1 = "" + mySecs;
+    var timeOut_NoMore = false;
+    mySecs1 = parseInt(mySecs1.substring(0,mySecs1.indexOf(".")),10);
+    
+	if (!isNaN(mySecs1) && mySecs1 > 0)
+	{
+		if (mySecs1 % modNumber == 0 && mySecs1 >= timeToAlert)
+		{
+			if (mySecs1 >= timeOut)
+			{
+				timeOut_NoMore = true;
+				window.location = redirectTo;
+			}
+			else
+			{
+				if (alerted == false)
+				{
+					alert(alertMessage);
+					alerted = true;
+					modNumber = 1;
+				}
+			}
+		}
+	}
+	if (timeOut_NoMore == false)
+	{
+    window.setTimeout('getSecs()',1000); 
+	}
+}
+//------------------------------------------------------
+</script>
+<script language="JavaScript1.2" type="text/javascript">
+
+function BookMarkThisPage(url, title) 
+{
+
+
+	if (window.sidebar) 
+	{ 
+		window.sidebar.addPanel(title, url,"");
+	} 
+	else if( window.external ) 
+	{ 
+		window.external.AddFavorite( url, title); 
+	} 
+	else if(window.opera && window.print) 
+	{ 
+		return true; 
+	}
+
+}
+
+</script>
+
+
+<script id="clienteventhandlersjs" language="javascript">
+<!--
+
+//Tom Lee IBM 3/6/03: Same day NR 9PM EST cut-off, next day Comm 12AM EST cut-off
+//Tom Lee IBM 7/1/03: Same day Comm 9PM EST cut-off
+//Tom Lee IBM 12/19/03: Same day NR 5PM EST cut-off, same day Comm 5PM EST cut-off
+	var curStatComm = false;
+	var curStatNR = false;
+	var sSysDiffComm = parseInt("26500") * 1000;
+	var sSysDiffNR = parseInt("26500") * 1000;
+	window.setTimeout("curStatComm = true;", sSysDiffComm);
+	window.setTimeout("curStatNR = true;", sSysDiffNR);
+
+
+function ViewCalender()
+{
+ 	winDate = window.open("calframe1.html","dateCal","status=yes,scrollbars=no,resizable=yes,width=375,height=500");
+ 	self.name = "mainWin";
+}
+					
+//--------------------------------------------------------------------------------
+//Abhijit Sen
+//--------------------------------------------------------------------------------
+function CheckDateValidity(Month, Day, Year)
+{
+   var daysinFeb;
+   var Today_Day = "28";
+   var Today_Month = "7";
+   var Today_Year = "2006";
+   var Default_Day = "29";
+   var Default_Month = "7";
+   var Default_Year = "2006";
+   
+   var dTodaysDate, dFirstResDate, dPassedDate;
+   
+   //In Javascript the month Jan is 00 so we subtract 1
+   dTodaysDate = new Date(Today_Year, (Today_Month - 1), Today_Day);
+   
+   //In Javascript the month Jan is 00 so we subtract 1
+   dFirstResDate = new Date(Default_Year, (Default_Month - 1), Default_Day);
+     
+   //Validating the date that the user selected and passed to this function  
+   if (Month == 2)
+   {
+		//Abhijit Sen - PWC
+		//Checking for leap year and 29/28 days for february
+		
+		//Feb cannot have more than 29 days for any given year
+		if (Day > 29)
+		{
+			alert("Invalid Arrival Date");
+			return false;
+		}
+		else
+		{
+			//If year mod 4 != 0 then use 28 days for Feb
+			if (((Year % 4) != 0))
+				daysinFeb = 28;
+			else
+			{	
+				//If year mod 400 = 0 then use 29 days for Feb
+				if (((Year % 400) == 0))
+					daysinFeb = 29;
+				else
+				{
+					//If year mod 100 = 0 then use 28 days for Feb
+					if (((Year % 100) == 0) && (Day >= 29))
+						daysinFeb = 28;
+					else
+						daysinFeb = 29;
+				}
+			}
+			if (Day > daysinFeb)
+			{
+				alert("Invalid Arrival Date");
+				return false;
+			}
+		}
+   }      
+   else
+   {
+      if (((Month == 4) || (Month == 6) || (Month == 9) || (Month == 11)) && (Day > 30))
+	  {
+			alert("Invalid Arrival Date");
+			return false;
+      }
+   }  
+
+   //Check to see the city. If it is NetRate then return true else return false
+   var bIsNetRate;
+   var sMarketType = "";
+   
+   if (sMarketType == "N")
+		bIsNetRate = true;
+	else
+		bIsNetRate = false;
+	
+
+   if (Year < Today_Year)
+   {
+	  if (bIsNetRate)
+	  {
+		alert ("Arrival Date has to be on or after " + Today_Month + "/" + Today_Day + "/" + Today_Year);
+		return false;
+	  }
+	  else
+	  {
+		alert ("Arrival Date has to be on or after " + Default_Month + "/" + Default_Day + "/" + Default_Year);
+		return false;	  
+	  }
+   }   
+      
+   if (Today_Year == Year && Month < Today_Month)
+   {
+	  if (bIsNetRate)
+	  {
+		alert ("Arrival Date has to be on or after " + Today_Month + "/" + Today_Day + "/" + Today_Year);
+		return false;
+	  }
+	  else
+	  {
+		alert ("Arrival Date has to be on or after " + Default_Month + "/" + Default_Day + "/" + Default_Year);
+		return false;	  
+	  }
+   }   
+    
+   //Tom Lee IBM 3/6/03: Same day NR 9PM EST cut-off
+   //Tom Lee IBM 12/19/03: Same day NR 5PM EST cut-off
+   if (Today_Year == Year && Today_Month == Month && Today_Day == Day && curStatNR)
+   {
+	  if (bIsNetRate)
+	  {
+		alert ("This same day reservation is valid only before 5PM EST");
+		return false;
+	  }
+   }   
+   
+   //Tom Lee IBM 3/6/03: Next day Comm 12AM EST cut-off
+   //Tom Lee IBM 7/1/03: Same day Comm 9PM EST cut-off
+   //Tom Lee IBM 12/19/03: Same day Comm 5PM EST cut-off
+//   if (Today_Year == Year && Today_Month == Month && Today_Day == Day - 1 && curStatComm)
+   if (Today_Year == Year && Today_Month == Month && Today_Day == Day && curStatComm)
+   {
+	  if (!bIsNetRate)
+	  {
+		alert ("This same day reservation is valid only before 5PM EST");
+		return false;
+	  }
+   }   
+   
+	//Modified by Abhijit Sen - PWC
+	//This has been modified to do same day reservations for net rate cities
+    //In Javascript the month Jan is 00 so we subtract 1
+    dPassedDate = new Date(Year, (Month -1), Day);
+
+	if (bIsNetRate)
+	{
+		//Same day reservation for net rate
+		if (dPassedDate >= dTodaysDate)
+			return true;
+		else
+		{
+			alert("Arrival Date has to be on or after " + Today_Month + "/" + Today_Day + "/" + Today_Year);
+			return false;
+		}
+	}
+	else
+	{
+		//PWC Abhijit Sen - May 15th 2002.
+		//Since autofaxing went into production they want reservations to be made for 
+		//any day >= (System day + 1) for commission hotels (Tom Lee 3/5/03: was + 2)
+		if (dPassedDate >= dFirstResDate)
+			return true;
+		else
+		{
+			//Tom Lee IBM 7/1/03: old
+			//if ((dPassedDate < dFirstResDate) && (dPassedDate >= dTodaysDate))
+			//Tom Lee IBM 7/1/03: new
+			if ((dPassedDate < dFirstResDate) && (dPassedDate > dTodaysDate))
+			{
+				alert('Because your arrival date is so near, we need to complete this reservation by phone to assure your satisfaction. Please call 800-789-9887 now and a Quikbook reservation agent will help you. (You can make online reservations for arrival on or after 7/29/2006. If your date is flexible click OK, enter the new date, and continue online.)');
+				return false;
+			}
+			else
+			{
+				//Tom Lee IBM 7/1/03
+				if (dPassedDate >= dTodaysDate)
+					return true;
+
+				if (dPassedDate < dTodaysDate)
+				{
+					alert ("Arrival Date has to be on or after " + Default_Month + "/" + Default_Day + "/" + Default_Year);
+					return false;
+				}	
+			}	
+		}
+	}
+}
+
+
+function submit1_onclick() 
+{
+	mm = window.document.frmBook.month.selectedIndex  ;
+	dd = window.document.frmBook.day.selectedIndex ;
+	yy = window.document.frmBook.year.selectedIndex ;
+	
+	Month = parseInt(window.document.frmBook.month.options[mm].value,10) ;
+	Day = parseInt(window.document.frmBook.day.options[dd].value,10) ;
+	Year  = parseInt(window.document.frmBook.year.options[yy].value,10) ;
+	
+	if (CheckDateValidity(Month, Day, Year) == true)
+	{
+		document.avail_search_mix.txtDate.value = Month + "/" + Day + "/" + Year
+		document.avail_search_mix.txtNights.value = document.frmBook.nights.options[document.frmBook.nights.selectedIndex].value
+		document.avail_search_mix.txtnoadults.value = document.frmBook.adults.options[document.frmBook.adults.selectedIndex].value
+		document.avail_search_mix.txtnochild.value = document.frmBook.children.options[document.frmBook.children.selectedIndex].value
+		document.avail_search_mix.txtRooms.value = document.frmBook.rooms.options[document.frmBook.rooms.selectedIndex].value
+		document.avail_search_mix.submit();
+	}
+}
+
+//-->
+</script>
+
+
+
+	<!--file="checkavailmixtoolbar.html"-->	
+
+<!-- // END CHECK AVAIL CODE-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Hotel Bijou in San Francisco.">
+<meta name="keywords" content="Hotel Bijou Profile and room description, San Francisco Hotels">
+
+	<title>San Francisco - Hotel Bijou - Hotel Profile</title>
+	
+	<script language="JavaScript">
+
+
+<!--
+// ut code:
+agent = navigator.userAgent;
+browserVer = 2;
+if (agent.substring(0,7) == "Mozilla")
+{
+    if (parseInt(agent.substring(8,9)) >= 3) {browserVer = 1;}
+}
+// preloads:
+if (browserVer == 1) {
+homeoff = new Image(187,18);
+homeoff.src = "images/bt_home_off.gif";
+homeon = new Image(187,18);
+homeon.src = "images/bt_home_on.gif";
+
+findoff = new Image(211,18);
+findoff.src = "images/bt_find_off.gif";
+findon = new Image(211,18);
+findon.src = "images/bt_find_on.gif";
+
+hoteloff = new Image(169,18);
+hoteloff.src = "images/bt_hotel_off.gif";
+hotelon = new Image(169,18);
+hotelon.src = "images/bt_hotel_on.gif";
+
+myoff = new Image(165,18);
+myoff.src = "images/bt_my_off.gif";
+myon = new Image(165,18);
+myon.src = "images/bt_my_on.gif";
+
+whyoff = new Image(250,16);
+whyoff.src = "images/bt_why_off.gif";
+whyon = new Image(250,16);
+whyon.src = "images/bt_why_on.gif";
+
+bookingoff = new Image(181,16);
+bookingoff.src = "images/bt_booking_off.gif";
+bookingon = new Image(181,16);
+bookingon.src = "images/bt_booking_on.gif";
+
+siteoff = new Image(190,16);
+siteoff.src = "images/bt_site_off.gif";
+siteon = new Image(190,16);
+siteon.src = "images/bt_site_on.gif";
+
+talkoff = new Image(111,16);
+talkoff.src = "images/bt_talk_off.gif";
+talkon = new Image(111,16);
+talkon.src = "images/bt_talk_on.gif";
+
+}
+function hiLite(imgDocID,imgObjName) {
+if (browserVer == 1) {
+document.images[imgDocID].src = eval(imgObjName + ".src")
+}
+}
+function submitform()
+{
+	document.form1.submit();
+}
+// -->
+
+</script>
+<link rel="Stylesheet" rev="Stylesheet" href="style.css" type="text/css">
+<!--google tracking code-->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-67705-1";
+urchinTracker();
+</script>
+<!--google tracking code end-->
+</head>
+
+<body bgcolor="#FFFFFF" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0" link="#000000" vlink="#000000">
+
+<!-- GREEN BACKBROUND TABLE -->
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="800" bgcolor="#666633">
+<tr>
+<td valign="TOP">
+	<!-- HEADER TABLE -->
+		<center>
+	<table border="0" cellpadding="0" cellspacing="2" width="739">
+	<tr>
+	<td valign="TOP">
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+		<td valign="TOP"><a href="main.asp" onmouseover="hiLite('home','homeon')" onmouseout="hiLite('home','homeoff')"><img src="images/bt_home_off.gif" width="187" height="18" border="0" name="home"></a></td>
+		<td valign="TOP"><img src="images/spacer.gif" width="2" height="1" border="0"></td>
+		<td valign="TOP"><a href="hotels.asp"><img src="images/bt_find_on.gif" width="211" height="18" border="0" name="find"></a></td>
+		<td valign="TOP"><img src="images/spacer.gif" width="2" height="1" border="0"></td>
+		<td valign="TOP"><a href="specials.asp" onmouseover="hiLite('hotel','hotelon')" onmouseout="hiLite('hotel','hoteloff')"><img src="images/bt_hotel_off.gif" width="169" height="18" border="0" name="hotel"></a></td>
+		<td valign="TOP"><img src="images/spacer.gif" width="2" height="1" border="0"></td>
+		<td valign="TOP"><a href="personalinfo.asp" onmouseover="hiLite('my','myon')" onmouseout="hiLite('my','myoff')"><img src="images/bt_my_off.gif" width="165" height="18" border="0" name="my"></a></td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+
+	<tr>
+	<td valign="TOP">
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+		<td valign="TOP"><a href="why_better.html" onmouseover="hiLite('why','whyon')" onmouseout="hiLite('why','whyoff')"><img src="images/bt_why_off.gif" width="250" height="16" border="0" name="why"></a></td>
+		<td valign="TOP"><img src="images/spacer.gif" width="2" height="1" border="0"></td>
+		<td valign="TOP"><a href="tips.html" onmouseover="hiLite('booking','bookingon')" onmouseout="hiLite('booking','bookingoff')"><img src="images/bt_booking_off.gif" width="181" height="16" border="0" name="booking"></a></td>
+		<td valign="TOP"><img src="images/spacer.gif" width="2" height="1" border="0"></td>
+		<td valign="TOP"><a href="sitemap.html" onmouseover="hiLite('site','siteon')" onmouseout="hiLite('site','siteoff')"><img src="images/bt_site_off.gif" width="190" height="16" border="0" name="site"></a></td>
+		<td valign="TOP"><img src="images/spacer.gif" width="2" height="1" border="0"></td>
+		<td valign="TOP"><a href="talktous.asp" onmouseover="hiLite('talk','talkon')" onmouseout="hiLite('talk','talkoff')"><img src="images/bt_talk_off.gif" width="111" height="16" border="0" name="talk"></a></td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	
+	<tr>
+	<td valign="TOP">
+	
+	
+	
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+		<td valign="TOP" bgcolor="#FFFFFF"><IMG src="images/qbgreat_logo.gif"  height="100" border="0" ALT="Luxury Hotels, Reservations, Best Affordable Rates - Quikbook"></td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+	</center>
+
+	<!-- END HEADER TABLE -->
+	<center>
+	<table border="0" cellpadding="0" cellspacing="0" width="739">
+	<tr>
+	<td valign="TOP" bgcolor="#666633"><img src="images/spacer.gif" width="200" height="2" border="0"></td>
+	</tr>
+	
+	<tr>
+	<td valign="TOP" bgcolor="#CEDB8C" width="613">
+		<table border="0" cellpadding="0" cellspacing="0" width="613">
+		<tr>
+		<td valign="TOP"><font face="Arial, Helvetica" size="-1"><img src="images/hd_hotelprofile.gif" border="0" width="180" height="26"><br>
+		&nbsp;&nbsp;&nbsp;<a href="main.asp">Home</a> &gt;&gt; <b>Hotels &amp; Reservations</b></font></td>
+		<td valign="MIDDLE" align="RIGHT"><img src="images/icon_email.gif" border="0" width="21" height="16" align="TOP">&nbsp;<a href="email.asp?GuestURL=http://www.quikbook.com:80/GetProfile.asp?Code%3D166%26Market%3D53"><font face="Arial, Helvetica" size="-1" color="#666633">Send this page to a friend</font></a>
+
+		&nbsp;&nbsp;
+
+		<br>
+
+		<a href="javascript:BookMarkThisPage('http://www.quikbook.com:80/GetProfile.asp?Code%3D166%26Market%3D53','Hotel Bijou - Quikbook Hotel Profile')" );"><font face="Arial, Helvetica" size="-1" color="#666633">Bookmark This Page</font></a>
+		
+		&nbsp;&nbsp;
+		
+		</td>
+		</tr>
+		
+		<tr>
+		<td valign="TOP" colspan="2"><img src="images/spacer.gif" width="613" height="5" border="0"></td>
+		</tr>
+		</table>
+		<!-- LIGHT YELLOW TABLE -->
+		<center>
+		<table cellpadding="0" cellspacing="0" width="583" border="0" bgcolor="#FFFFCC">
+		<tr>
+		<td valign="TOP"><img src="images/spacer.gif" width="1" height="28" border="0" align="left"><font face="Arial, Helvetica" size="+2">
+		Hotel Bijou                                 
+		</font><br><img src="images/red_line.gif" width="581" height="2"></td>
+		</tr>
+		
+		<tr>
+		<td valign="TOP">
+			<!-- MAIN CONTENT TABLE -->
+			<table border="0" cellpadding="0" cellspacing="0" width="583">
+			<tr>
+			<td valign="TOP" width="10"><img src="images/spacer.gif" width="10" border="0"></td>
+			<td valign="TOP" width="424" class="smallcomment">Click on a photo to enlarge:<br>
+			
+			
+			
+			
+				<!-- PHOTOS TABLE -->
+	
+	<table border="0" cellpadding="0" cellspacing="1" width="424">
+	<tr>     
+	
+   <td align="center"><a href="wrapper.asp?filename=53_0166_theater.jpg&amp;HotelCode=166&amp;Market=53"> 
+   <img src="pics/53_0166_theater.jpg"  alt="Theater" width="100" height="100" border="0"></a>
+   </td>
+   
+   <td align="center"><a href="wrapper.asp?filename=53_0166_room.jpg&amp;HotelCode=166&amp;Market=53"> 
+   <img src="pics/53_0166_room.jpg"  alt="Standard Room" width="100" height="100" border="0"></a>
+   </td>
+   
+   <td align="center"><a href="wrapper.asp?filename=53_0166_lobby.jpg&amp;HotelCode=166&amp;Market=53"> 
+   <img src="pics/53_0166_lobby.jpg"  alt="Lobby" width="100" height="100" border="0"></a>
+   </td>
+   
+	
+	</tr>
+	
+	<tr>     
+	
+	<td align="center"><i><font face="Arial, Helvetica" size="1">
+	Theater</font></i>
+	</td>
+	
+	<td align="center"><i><font face="Arial, Helvetica" size="1">
+	Standard Room</font></i>
+	</td>
+	
+	<td align="center"><i><font face="Arial, Helvetica" size="1">
+	Lobby</font></i>
+	</td>
+	
+</tr>
+</table>
+
+
+					
+		<!-- END PHOTOS TABLE -->	
+<br>
+<!-- CHECK AVAIL CODE-->
+
+<form action="avail_search_mix.asp" id="frmBook" name="frmBook">
+
+<center>
+<h4>Check rates and availability at Hotel Bijou                                 </h4>
+</center>
+
+					<table align="center" border="0" style="padding:5px;font-family:Verdana, Arial; font-size: 10px;">
+						
+					<tr>
+					<td valign="middle" align="right">Arrival Date:</td>
+					<td colspan="3">
+					
+					
+					<select id="month" name="month">
+					<option value="01">Jan</option><option value="02">Feb</option><option value="03">Mar</option><option value="04">Apr</option><option value="05">May</option><option value="06">Jun</option><option value="07" selected >Jul</option><option value="08">Aug</option><option value="09">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
+   					</select>
+
+   					<select id="day" name="day">
+        			<option value="100">
+					<option value="01">1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option><option value="09">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28" selected >28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+   					</select>
+
+   					<select id="year" name="year">
+					<option value="2006" selected >2006</option><option value="2007">2007</option>
+        			</select>
+
+        			
+        			<!--   					&nbsp;&nbsp;<a href="javascript:ViewCalender()"><img src="images/bt_viewcalendar.gif" border="0" WIDTH="105" HEIGHT="13"></a></font>   					-->
+   					
+   					</td>
+
+					<td valign="middle" align="right"># of Nights:</td>
+					<td valign="TOP">
+					<select id="nights" name="nights">
+					<option value="1" selected >1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option>
+   					</select>
+					</td>
+   					
+					</tr>
+					<tr>
+					<td valign="middle" align="right" width="100"># of Rooms:</td>
+					<td valign="TOP" width="40">
+					<select id="rooms" name="rooms">
+					<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>								
+   					</select>
+					</td>					
+					<td valign="middle" align="right" width="80"># of Adults:</td>
+					<td valign="TOP" width="50">
+					<select id="adults" name="adults">
+					<option value="01" selected >1</option><option value="02">2</option><option value="03">3</option><option value="04">4</option><option value="05">5</option><option value="06">6</option><option value="07">7</option><option value="08">8</option>				
+   					</select>
+					</td>
+	
+	
+					
+					<td valign="middle" align="right" width="80"># of Children:</td>
+					<td valign="TOP" width="40">
+
+				
+					<select id="children" name="children">
+					<option value="0" selected >0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option>								
+   					</select>
+					</td>
+					</tr>
+					</table>				
+<div id="submit" style="margin-left:350px;margin-top:10px;margin-bottom:10px;">
+<a href="javascript:submit1_onclick()"><img src="images/btn_search_green.gif" border="0" alt="submit"></a>
+</div>
+</form>
+<!-- // END CHECK AVAIL CODE-->					
+		
+			
+			
+			<!--Begin Hotel Detail //--->
+			<table border="0" cellpadding="0" cellspacing="1" width="424">
+				<tr>
+				<td valign="TOP" style="font-family:verdana,arial,sans-serif;line-height:13px;font-size:10px;">
+										Located one block west of Union Square, the Hotel Bijou was inspired by the cinematic history of San Francisco.  Public areas, decorated with Hollywood portraits and original movie stills, look like a movie palace, complete with rich velvet curtains and upholstery.  A small theater off the lobby plays movies filmed in the Bay Area and colorful guestrooms are themed after a motion picture shot in San Francisco.  The Bijou offers complete concierge services, room service from "Dine One One", valet parking and a 24-Hour Film Hotline announcing current filming locations and "extras" casting opportunities! Complimentary light breakfast of coffee, tea and pastries is available daily.<br><br> <b>Please note:</b><br>This is a <b> non-smoking </b> hotel <br><br>Standard Queen/2 Twins Room accommodates 2 persons total
+<br><br><b>
+<font color="#CE3100">Stay longer and save!</font><br>
+Stay 2 or more nights, receive 15% off<bR>
+Valid until 12/31/06 <font color=red>*</font></b>
+
+				
+				<!--added 071105 KD-->
+				<br>
+				<br>
+
+
+
+	<b>Book this hotel today; pay nothing until your checkout date.<br>
+	No prepayment is required!</b><br>
+
+
+				<img src="images/spacer.gif" width="424" height="1" border="0"><div align="RIGHT">
+				
+          				<form METHOD="POST" ACTION="checkavail_mix.asp" id="form1" name="form1">
+          				<input type="hidden" name="Market" value="ME4GCSsGAQQBgjdYA6BBMD8GCisGAQQBgjdYAwGgMTAvAgMCAAACAmgBAgIAgAQI%0D%0AAAAAAAAAAAAEEJ%2BiWeA9eaqR6j7YdhkJKmgEBOotwuk%3D%0D%0A">
+          				<input type="hidden" name="MarketName" value="MIGmBgkrBgEEAYI3WAOggZgwgZUGCisGAQQBgjdYAwGggYYwgYMCAwIAAAICaAEC%0D%0AAgCABAgAAAAAAAAAAAQQ0nEWwNLqXsk%2F6tpagudnJgRYa7X23jLV4wLBGTB2xymx%0D%0AoKMOKKTavghe8WViCcoExZoNAm%2Fei0YNwBmRiibkbJgM2OtN0It0s6Ht3Vd34Sdk%0D%0A7%2BaMNxu7Sty2XQsLrI68Dhm9rt1vNnxtpg%3D%3D%0D%0A">
+          				<input type="hidden" name="MarketType" value="C">
+          				<input type="hidden" name="HotelCode" value="166">
+          				<input type="hidden" name="HotelName" value="Hotel Bijou">
+						<input type="hidden" name="desired_date" value="7/28/2006">
+						<input type="hidden" name="desired_nights" value="1">
+						<input type="hidden" name="desired_rooms" value="5">
+						<input type="hidden" name="desired_adults" value="9">
+						<input type="hidden" name="desired_children" value="0">
+						<input type="hidden" name="txtmsg" value="MHIGCSsGAQQBgjdYA6BlMGMGCisGAQQBgjdYAwGgVTBTAgMCAAACAmgBAgIAgAQI%0D%0AAAAAAAAAAAAEEB7K8%2BvzAb%2BW2QJO3h6nR7AEKECKqpqyvefgNiRr2ZnsLVTYSdQ0%0D%0AMtpuzsygPZr12hO%2Br88cwwB5ZIs%3D%0D%0A">
+						</form>
+						
+						<!--<a href="javascript:submitform();"><img src="images/bt_makeresnow.gif" border="0" WIDTH="255" HEIGHT="17"></a>-->
+						
+	       			
+				<img src="images/spacer.gif" width="6" height="1" border="0"></div>
+				<!--<img src="images/spacer.gif" width="400" height="8" border="0">--></td>
+				</tr>
+				<!-- YELLOW TABLE ROW -->
+				<tr>
+				<td valign="TOP">
+				
+					<table border="0" cellpadding="0" cellspacing="0" width="424" bgcolor="#FFFF99">
+					<tr>
+					<td valign="TOP" width="93"><img src="images/qbrating_mark.gif" width="93" height="74"></td>
+					<td valign="TOP" width="331"><font face="Verdana, Arial" size="-1"><b>The Quikbook rating of this hotel:</b></font><br>
+					<font face="Verdana, Arial" size="-2">These rating are based on our own visits to the hotel and firsthand evaluations of its amenities and facilities.
+					<br>Find out <a href="qratings.asp">how QRatings are created</a>.</font></td>
+					</tr>
+					
+					<tr>
+					<td valign="TOP" align="CENTER" colspan="2">
+						<table border="0" cellpadding="0" cellspacing="0" width="400">
+						<tr>
+						<td valign="TOP" width="100"><font face="Verdana, Arial" size="-2"><b>Room Features:</b></font></td>
+						<td valign="TOP" width="75">
+						<font face="Verdana, Arial" size="-2">QQQ</font></td>
+						<td valign="TOP" rowspan="2" width="20"><img src="images/spacer.gif" width="20" height="1"></td>
+						<td valign="TOP" width="120"><font face="Verdana, Arial" size="-2"><b>Hotel Features:</b></font></td>
+						<td valign="TOP" width="85">
+						<font face="Verdana, Arial" size="-2">QQ</font></td>
+						</tr>
+						<tr>
+						<td valign="TOP"><font face="Verdana, Arial" size="-2"><b>Service Level:</b></font></td>
+						<td valign="TOP">
+						<font face="Verdana, Arial" size="-2">QQQ</font></td>
+						<td valign="TOP"><font face="Verdana, Arial" size="-2"><b>Business Features:</b></font></td>
+						<td valign="TOP">
+						<font face="Verdana, Arial" size="-2">QQQ</font></td>
+						</tr>
+						
+						<tr>
+						<td valign="TOP" colspan="5"><img src="images/spacer.gif" height="5"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+				
+	<!-- End Hotel Deatil/Ratings //--->	
+	</td>
+	</tr>
+				<!-- END YELLOW TABLE ROW -->
+				
+<tr>
+<td valign="TOP"><img src="images/spacer.gif" width="400" height="15" border="0"></td>
+</tr>
+				
+<tr>
+<td valign="TOP">
+	<!--photos go here KD 111605-->
+		</td>
+		</tr>
+				
+		<tr>
+		<td valign="TOP"><img src="images/spacer.gif" width="400" height="15" border="0"></td>
+		</tr>
+				
+		<!-- CLOSE TO -->
+		<tr>
+		<td valign="TOP">
+			<table border="0" cellpadding="0" cellspacing="1" width="424">
+			<tr>
+			<td valign="TOP" colspan="2"><font face="Verdana, Arial" size="-2" color="#310063">
+			<b>How close this hotel is to:</b></font></td>
+			</tr>				
+			
+					<tr>
+					<td valign="TOP" width="8"><img src="images/spacer.gif" width="8" height="1" border="0"></td>
+					<td valign="TOP" width="416">
+					
+					<li><font face="Verdana, Arial" size="-2" color="#000000">
+					Major Business District
+					:</font>
+					<font face="Verdana, Arial" size="-2" color="#000000">
+					Cab; Public Transport; Walking Distance;
+					</font>
+					<br>
+</td>
+</tr>
+			
+					<tr>
+					<td valign="TOP" width="8"><img src="images/spacer.gif" width="8" height="1" border="0"></td>
+					<td valign="TOP" width="416">
+					
+					<li><font face="Verdana, Arial" size="-2" color="#000000">
+					Shopping Areas
+					:</font>
+					<font face="Verdana, Arial" size="-2" color="#000000">
+					Adjacent; Cab; Public Transport; Walking Distance;
+					</font>
+					<br>
+</td>
+</tr>
+			
+					<tr>
+					<td valign="TOP" width="8"><img src="images/spacer.gif" width="8" height="1" border="0"></td>
+					<td valign="TOP" width="416">
+					
+					<li><font face="Verdana, Arial" size="-2" color="#000000">
+					Convention Venues
+					:</font>
+					<font face="Verdana, Arial" size="-2" color="#000000">
+					Adjacent; Cab; Walking Distance;
+					</font>
+					<br>
+</td>
+</tr>
+			
+					<tr>
+					<td valign="TOP" width="8"><img src="images/spacer.gif" width="8" height="1" border="0"></td>
+					<td valign="TOP" width="416">
+					
+					<li><font face="Verdana, Arial" size="-2" color="#000000">
+					Nightlife/Restaurants
+					:</font>
+					<font face="Verdana, Arial" size="-2" color="#000000">
+					Cab; Public Transport; Walking Distance;
+					</font>
+					<br>
+</td>
+</tr>
+			
+					<tr>
+					<td valign="TOP" width="8"><img src="images/spacer.gif" width="8" height="1" border="0"></td>
+					<td valign="TOP" width="416">
+					
+					<li><font face="Verdana, Arial" size="-2" color="#000000">
+					Major Tourist Attractions
+					:</font>
+					<font face="Verdana, Arial" size="-2" color="#000000">
+					Walking Distance;
+					</font>
+					<br>
+</td>
+</tr>
+									
+     </td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	<!-- END CLOSE TO -->
+	<tr>
+	<td valign="TOP"><img src="images/spacer.gif" width="400" height="15" border="0"></td>
+	</tr>
+	</table>
+
+				<!--Begin Services, Features of Hotel -->
+				<br>
+				<table border="0" cellpadding="0" cellspacing="1" width="429">
+				<tr>
+					
+						<tr> 
+							<td valign="TOP" colspan="3"><font face="Verdana, Arial" size="-2" color="#310063">
+								
+								<b>Business Features and Amenities:</b></font></td>
+						</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">AV Equipment Avail</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Copying Services</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Overnight/FedEx Svcs</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Banquet/Conf.  Rooms</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Fax Services</font>
+									</td>	
+				    
+						<tr> 
+							<td valign="TOP" colspan="3"><font face="Verdana, Arial" size="-2" color="#310063">
+								
+								<b>Hotel Features:</b></font></td>
+						</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Ice Machines On Floors</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Non Smoking Floors</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Parking Off-Site</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Wireless Internet in Lobby</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+						<tr> 
+							<td valign="TOP" colspan="3"><font face="Verdana, Arial" size="-2" color="#310063">
+								
+									<a name="RoomFeature"></a>
+								
+								<b>Room Features (Standard Room):</b></font></td>
+						</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">1 Phone</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Daily Newspaper Delivery</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Data Port</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Additional Tel Line</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Desk/Workspace</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Radio/Clock Radio</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Cable TV</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Hair Dryer</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Television</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Comp Breakfast</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Individual Climate Control</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Cots/Rollaways</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Iron & Ironing Board</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Voice Mail</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Cribs Available</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Wireless Internet</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+						<tr> 
+							<td valign="TOP" colspan="3"><font face="Verdana, Arial" size="-2" color="#310063">
+								
+								<b>Service Level:</b></font></td>
+						</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Room Service</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Laundry/Valet</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Concierge</font>
+									</td>	
+				    
+									<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+										<li><font color="#000000">Valet Parking</font>
+									</td>	
+				    
+							</tr>
+							<tr>
+					
+				</tr>
+				</table>
+	
+				<table border="0" cellpadding="0" cellspacing="1" width="429">		
+				<!--End Services, Features of Hotel  -->
+				<tr>
+				<td valign="TOP"><img src="images/spacer.gif" width="400" height="15" border="0"></td>
+				</tr>
+				
+				<!-- VITAL STATISTICS -->
+				<tr>
+				<td valign="TOP">
+					<table border="0" cellpadding="0" cellspacing="1" width="424">
+					<tr>
+					<td valign="TOP" colspan="3"><font face="Verdana, Arial" size="-2" color="#310063">
+					<b>Vital Statistics:</b></font></td>
+					</tr>
+					<tr>
+					<td valign="TOP" width="8"><img src="images/spacer.gif" width="8" height="1" border="0"></td>
+					<td valign="TOP" width="220"><font face="Verdana, Arial" size="-2" color="#310063">
+					<li><font color="#000000">Check-in: 3:00PM</font>		
+					<li><font color="#000000">Check-out: 12:00Noon</font>		
+					<li><font color="#000000">Credit Cards: AX,CB,DC,DS,JCB,MC,V</font>	
+					<li><font color="#000000">Chain Affiliation: Independent Hotels                          </font>
+					<li><font color="#000000">Last Renovation: 1998</font>
+					</font></td>
+					<td valign="TOP" width="196"><font face="Verdana, Arial" size="-2" color="#310063">
+					<li><font color="#000000">Number of Rooms: 65</font>
+					<li><font color="#000000">Number of Suites: 0</font>
+					<li><font color="#000000">Number of Floors: 6</font>
+					<li><font color="#000000">Year Built: 1911</font>
+					</font>
+					
+							<li><font face="Verdana, Arial" size="-2" color="#310063">Children under 12 stay free with existing bedding.</font> 
+					</td>
+					</tr>
+					</table>
+				</td>
+				</tr>
+				<!-- END VITAL STATISTICS -->
+				
+				<tr>
+				<td valign="TOP"><img src="images/spacer.gif" width="400" height="15" border="0"></td>
+				</tr>
+				
+				<tr>
+				<td valign="TOP"><font face="Verdana, Arial" size="-2">
+				Some hotels may charge an additional fee for EXTRA PEOPLE, certain services or 
+				features like rollaway beds, high-speed internet access, parking or access to the fitness center.
+				Please call your hotel directly to inquire about additional charges.</font><br><br></td>
+				</tr>
+				</table>
+			</td>
+			<td valign="TOP" width="149">
+				<table border="0" cellpadding="1" cellspacing="0" width="149">
+				<tr>
+				<td valign="TOP" width="11"><img src="images/spacer.gif" width="13" border="0"></td>
+				<td valign="TOP" width="138"><font face="Verdana, Arial" size="-2">
+				<b>Address:</b><br>
+				111 Mason Street                        at Eddy Street                          <br>
+				San Francisco, CA&nbsp;94102     
+				<br><br>
+				
+             			<a href="advantage.asp?transaction=locMap&amp;template=map&amp;address=111 Mason Street&amp;city=San Francisco&amp;stateProvince=CA&amp;postalCode=94102">             	
+             	<font color="#0000FF">Find this hotel on the map</font></a>
+				
+				<br><br>
+				<b>Neighborhood:</b><br>
+				 Union Square/Moscone Center
+				<br><br>
+				<b>Phone:</b>
+				4157711200          
+    			<br>
+				<b>Fax:</b>
+				4153463196          
+				<!---it was here --->
+				<br><br>
+				
+				<a href="HotelCancellationPolicy.asp?HotelCode=166"><font face="Verdana, Arial" size="-2" color="#0000FF">See this hotel's cancellation and<br>deposit policy</font></a>  
+				
+				<br><br>
+				<img src="images/red_line.gif" width="134" height="2">
+				<br>
+				<img src="images/hd_whatsay.gif" width="136" height="28">
+				<br>
+																					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</font>
+				
+				
+				<center>
+				<img src="images/black_line.gif" width="134" height="1">
+				</center>
+				<img src="images/spacer.gif" width="5" height="3"><br>
+				<font face="Verdana, Arial" size="-2">
+				Be a Quikbook hotel critic! If you've stayed at this hotel, we want to know what you think. Please 
+				<a href="mailto:hotelcritic@quikbook.com?subject=My comments about a Quikbook hotel">	<font face="Verdana, Arial" size="-2" color="#0000FF">email</font></a><font face="Verdana, Arial" size="-2"> us your feedback, including the hotel name and the approximate date of your stay.
+<br><br>
+				</font>
+
+				<img src="images/red_line.gif" width="134" height="2">
+				<br>
+				<!-- Promo disclaimer policy added 121304 KD -->
+	<font face="Verdana, Arial" size="-2">
+	<font color="red">*</font>All promotions, sales rates, and length of stay discounts are based on availability. Blackout dates may apply.</font><br>
+	<img src="images/spacer.gif" width="5" height="3"><br>
+	<img src="images/black_line.gif" width="134" height="1">
+	<br><br>
+	<!-- Promo disclaimer policy end 121304 KD -->
+				
+				<!--- cancellationpolicy was here --->
+				</font></td>
+				</tr>
+				</table>
+			</td>
+			</tr>
+			</table>
+			<!--MAIN CONTENT TABLE -->
+		</td>
+		</tr>
+		</table>
+		</center>
+		<!-- END LIGHT YELLOW TABLE -->
+	</td>
+
+		<td VALIGN="TOP" WIDTH="124" ALIGN="RIGHT">
+	
+
+<!--our best deals sidebar-->
+<table width="118" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border: 1px solid #000000;padding:5px;">
+
+<tr><td valign="top" align="center"><img src="images/ourbestdeals_sidebar.gif" border="0" width="90" height="45" alt="Our Best Deals In...">
+</td>
+</tr>
+<tr><td valign="top">
+<a class="citysmall" href="specials_10009.asp">New York</a><br>
+<span class="priceblue">from</span> <span class="pricered">$160</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10010.asp">Chicago</a><br>
+<span class="priceblue">from</span> <span class="pricered">$129</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10031.asp">Washington D.C.</a><br>
+<span class="priceblue">from</span> <span class="pricered">$108</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10011.asp">San Francisco</a><br>
+<span class="priceblue">from</span> <span class="pricered">$119</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10027.asp">Boston</a><br>
+<span class="priceblue">from</span> <span class="pricered">$199</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10019.asp">Los Angeles</a><br>
+<span class="priceblue">from</span> <span class="pricered">$136</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10012.asp">Miami</a><br>
+<span class="priceblue">from</span> <span class="pricered">$58</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_5000.asp">Las Vegas</a><br>
+<span class="priceblue">from</span> <span class="pricered">$47</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10028.asp">New Orleans</a><br>
+<span class="priceblue">from</span> <span class="pricered">$69</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10013.asp">Orlando</a><br>
+<span class="priceblue">from</span> <span class="pricered">$51</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10053.asp">Seattle</a><br>
+<span class="priceblue">from</span> <span class="pricered">$84</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10017.asp">Atlanta</a><br>
+<span class="priceblue">from</span> <span class="pricered">$39</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10034.asp">Philadelphia</a><br>
+<span class="priceblue">from</span> <span class="pricered">$99</span></td>
+</tr>
+<tr><td valign="top"><a class="citysmall" href="specials_10020.asp">Dallas/Ft. Worth</a><br>
+<span class="priceblue">from</span> <span class="pricered">$38</span><br></td>
+</tr>
+</table>
+
+<!--our best deals sidebar end--><br>
+	<img src="images/getawaysvert_fa03_good.gif" border="0" usemap="#getaways" WIDTH="120" HEIGHT="420"><br>
+
+<map name="getaways">
+<area shape="rect" alt="Golf Getaways" coords="5,145,104,182" href="906.asp">
+<area shape="rect" alt="Hip Hotels" coords="5,273,106,314" href="911.asp">
+<area shape="rect" alt="Seaside Favorites" coords="5,104,103,133" href="916.asp">
+<area shape="rect" alt="Spa Retreats" coords="4,192,119,228" href="926.asp">
+<area shape="rect" alt="Family Fun" coords="4,237,109,270" href="936.asp">
+<area shape="rect" alt="Premier Collection" coords="4,61,106,94" href="2060.asp">
+<area shape="rect" alt="Casino Hotels" coords="4,323,100,358" href="5012.asp">
+<area shape="rect" alt="Resorts" coords="6,369,97,410" href="2105.asp">
+<area shape="default" nohref>
+</map><br></td> 
+	</tr>
+	</table>
+<map name="getaways">
+<area shape="rect" alt="Golf Getaways" coords="5,145,104,182" href="906.asp">
+<area shape="rect" alt="Hip Hotels" coords="5,273,106,314" href="911.asp">
+<area shape="rect" alt="Seaside Favorites" coords="5,104,103,133" href="916.asp">
+<area shape="rect" alt="Spa Retreats" coords="4,192,119,228" href="926.asp">
+<area shape="rect" alt="Family Fun" coords="4,237,109,270" href="936.asp">
+<area shape="rect" alt="Premier Collection" coords="4,61,106,94" href="2060.asp">
+<area shape="rect" alt="Casino Hotels" coords="4,323,100,358" href="5012.asp">
+<area shape="rect" alt="Resorts" coords="6,369,97,410" href="2105.asp">
+<area shape="default" nohref>
+</map>
+	<!-- FOOTER TABLE -->
+	
+
+	<!-- FOOTER TABLE -->
+	<table border="0" width="739" cellpadding="0" cellspacing="0">
+	<tr>
+	<td valign="TOP"><img src="images/spacer.gif" width="500" height="5"></td>
+	</tr>
+	
+	<tr>
+	<td valign="TOP" align="CENTER" bgcolor="#DEDFA5" style="font-family:verdana,arial,sans-serif;font-size:11px;color:#000000;">
+	<a style="color:black;" href="http://www.quikbook.com/main.asp">Home</a> | <a style="color:black;" href="http://www.quikbook.com/hotels.asp">Find/Book a Hotel</a> | <a style="color:black;" href="http://www.quikbook.com/specials.asp">Hotel Specials</a> | <a style="color:black;" href="http://www.quikbook.com/personalinfo.asp">My Quikbook File</a><br>
+	<a style="color:black;" href="http://www.quikbook.com/why_better.html">Why Quikbook Is Better</a> | <a href="http://www.quikbook.com/tips.html">Booking Tips</a> | <a style="color:black;" href="talktous.asp">Talk to Us</a><br>
+	<a style="color:black;" href="http://www.headsinbeds.com" target="_blank">Want To Be A Quikbook Hotel</a> | <a href="companyinfo.html">Company Info</a> | <a href="affiliate.asp">Become an Affiliate</a><BR>
+	<a style="color:black;" href="http://www.quikbook.com/main.asp?LogMeout=1">Logout</a><br><br>
+	<a style="color:black;" href='javascript:var w=window.open("http://www.quikbook.com/ucc-input.html","popup_help","toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,copyhistory=0,width=750,height=490");'><b>Currency Converter</b></a> 
+	<br><br>
+	<b>Book online or call:</b><br>
+	800-789-9887; outside the U.S. call 212-779-7666 
+<br>Quikbook reservation agents are available 9am-8pm EST, M-F; Sat. 10am - 5pm EST
+
+<br>
+	Need help using our website?  Visit <a href="talktous.asp"><font color="#000000">here</font></a><br>
+	<a href="quik.asp" onClick="return false;"><font color="#000000">Copyright &copy; Quikbook, Inc. All Rights Reserved.</font></a><br>
+	<a href="legal.html"><font color="#000000">Our lawyers have their say</font></a><br>	
+	<a href="privacy.html"><font color="#000000">Our Privacy Policy</font></a><br><br>
+	Quikbook makes every effort to keep the information contained in this site current.<br>
+	However, we do not make warranties of any kind that the rates and hotels listed will be<br>
+	available at the time you make your reservation.
+	<br><br>
+	</td>
+	</tr>
+	
+	<tr>
+	<td valign="TOP"><img src="images/spacer.gif" width="500" height="10"></td>
+	</tr>
+	</table>
+	<!-- END FOOTER TABLE -->
+	
+<!--profile Category-->
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No.6,393,479B1 & 6,766,370. 
+
+INFO:http://websidestory.com/privacy-->
+<script language="javascript">
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0103u";hbx.gn="ehg-quikbook.hitbox.com";
+
+//BEGIN EDITABLE SECTION
+//CONFIGURATION VARIABLES
+hbx.acct="DM530702NKFD98EN3";//ACCOUNT NUMBER(S)
+hbx.pn="PUT+PAGE+NAME+HERE";//PAGE NAME(S)
+hbx.mlc="profile";//MULTI-LEVEL CONTENT CATEGORY
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg="";//VISITOR SEGMENTATION
+hbx.fnl="";//FUNNELS
+
+//CAMPAIGNS
+hbx.cmp="";//CAMPAIGN ID
+hbx.cmpn="";//CAMPAIGN ID IN QUERY
+hbx.dcmp="";//DYNAMIC CAMPAIGN ID
+hbx.dcmpn="";//DYNAMIC CAMPAIGN ID IN QUERY
+hbx.dcmpe="";//DYNAMIC CAMPAIGN EXPIRATION
+hbx.dcmpre="";//DYNAMIC CAMPAIGN RESPONSE EXPIRATION
+hbx.hra="";//RESPONSE ATTRIBUTE
+hbx.hqsr="";//RESPONSE ATTRIBUTE IN REFERRAL QUERY
+hbx.hqsp="att";//RESPONSE ATTRIBUTE IN QUERY
+hbx.hlt="";//LEAD TRACKING
+hbx.hla="";//LEAD ATTRIBUTE
+hbx.gp="";//CAMPAIGN GOAL
+hbx.gpn="";//CAMPAIGN GOAL IN QUERY
+hbx.hcn="";//CONVERSION ATTRIBUTE
+hbx.hcv="";//CONVERSION VALUE
+hbx.cp="null";//LEGACY CAMPAIGN
+hbx.cpd="";//CAMPAIGN DOMAIN
+
+//CUSTOM VARIABLES
+hbx.ci="";//CUSTOMER ID
+hbx.hc1="";//CUSTOM 1
+hbx.hc2="";//CUSTOM 2
+hbx.hc3="";//CUSTOM 3
+hbx.hc4="";//CUSTOM 4
+hbx.hrf="";//CUSTOM REFERRER
+hbx.pec="";//ERROR CODES
+
+//INSERT CUSTOM EVENTS
+
+//END EDITABLE SECTION
+
+//REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
+</script><script language="javascript1.1" defer src="http://www.quikbook.com/hbx.js"></script>
+<!--END WEBSIDESTORY CODE-->
+
+	<!-- END FOOTER TABLE -->
+	</center>
+</td>
+</tr>
+</table>
+</center>
+	
+	<!-- END GREEN TABLE -->
+	<!-- Logo TABLE -->
+	<center>
+<br>
+<table BORDER="0" WIDTH="800" CELLPADDING="0" CELLSPACING="0">
+	<tr>
+	<td VALIGN="TOP" width="33%" align="center"><script src=https://seal.verisign.com/getseal?host_name=www.quikbook.com&size=M&use_flash=NO&use_transparent=YES&lang=en></script></td>
+	<td VALIGN="top" width="34%" align="center"><!--<a href="http://www.redcross.org"><img src="images/ribbon_blk.gif" alt="Donate to the Hurricane Katrina relief effort" width="34" height="48" border="0"></a>--></td>
+	<td VALIGN="top" width="33%" align="center"><a href="http://www.headsinbeds.com"><img src="images/headsinbedsicon.gif" border="0"></a></td>
+	</tr>
+</table>
+</center>
+
+	<!-- END Logo TABLE -->
+
+
+</body>
+</html>
+
+
+
+<!-- CHECK AVAIL CODE-->
+
+<form action="avail_search_mix.asp" method="post" name="avail_search_mix">
+	<input type="hidden" name="txtMarketId" value="ME4GCSsGAQQBgjdYA6BBMD8GCisGAQQBgjdYAwGgMTAvAgMCAAACAmgBAgIAgAQI%0D%0AAAAAAAAAAAAEEGUaPOgMhBLAI9wgoF4xafAEBBYW0EM%3D%0D%0A">
+	<input type="hidden" name="txtMarketType" value="C">
+	<input type="hidden" name="txtDate" value>
+	<input type="hidden" name="txtnoadults" value>
+	<input type="hidden" name="txtnochild" value>
+	<input type="hidden" name="txtNights" value>
+	<input type="hidden" name="txtRooms" value>
+	<input type="hidden" name="txtPriceRangelow" value="-1">
+	<input type="hidden" name="txtPriceRangehigh" value="-1">
+	<input type="hidden" name="txtHotelKey" value="166">
+	<input type="hidden" name="txtHotelName" value="Hotel Bijou">
+	<input type="hidden" name="txtPageNo" value="1">
+	<input type="hidden" name="txtSortBy" value="0">
+	<input type="hidden" name="txtSortOrder" value="A">
+	<input type="hidden" name="txtNeighborhood" value="-1">
+	<input type="hidden" name="txtmsg" value="MHIGCSsGAQQBgjdYA6BlMGMGCisGAQQBgjdYAwGgVTBTAgMCAAACAmgBAgIAgAQI%0D%0AAAAAAAAAAAAEEB7K8%2BvzAb%2BW2QJO3h6nR7AEKECKqpqyvefgNiRr2ZnsLVTYSdQ0%0D%0AMtpuzsygPZr12hO%2Br88cwwB5ZIs%3D%0D%0A">
+	<input type="hidden" name="txtCallingPage" value="main.asp">
+</form>
+
+<!-- // END CHECK AVAIL CODE-->
+
+

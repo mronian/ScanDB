@@ -1,0 +1,1561 @@
+<DOC>
+<DOCNO>f00651</DOCNO>
+<DOCHDR>http://hotels.jake.com/us/ny/new-york-hotels.html</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>New York New York Hotels ... Jake.com  </title>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="ROBOTS" content="INDEX, FOLLOW">
+   <meta name="Author" content="jake.com">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (Win98; I) [Netscape]">
+   <meta name="Description" content="Jake.com offers a cool new way to search 
+for the perfect hotel for your trip to New York, New York.  If you need a hotel for Business, Family or just want to stay in the hippest hotels Jake.com will
+help you find what your looking for.">
+   <meta name="KeyWords" content="jake.com, jake, jakes rates, New York New York, New York New York hotels, New York, hotels,New York, United States hotels, hip hotels, business hotels, family hotels, cool, hip,
+luxury, rates, deals, discounts, cheap, discount travel, guide, guides,
+information, reservations,">
+
+<base HREF="http://www.jake.com">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link REL="SHORTCUT ICON" HREF="https://www.jake.com/images/favicon.ico">
+<!-- inserted new JS -->
+
+<script language="JavaScript">
+
+function initDate()
+{
+	
+	var thetitle = new String(document.title);
+	var thetitle2 = new Array();
+	var now = new Date();
+	var cityNameString = "";
+	var mth = now.getMonth();
+	var dd = now.getDate();
+	var yy = now.getFullYear();
+   var aryLimit = 0;
+   
+   thetitle2 = thetitle.split(" ");
+   
+   if (thetitle2[0] == "Cheap")
+   {
+   	for (j=0; j<thetitle2.length; j++)
+   	{
+   		thetitle2[j] = thetitle2[j+1];
+   	}
+   	 
+   	aryLimit = thetitle2.length - 5;
+   
+   }
+   else
+   {
+   	aryLimit = thetitle2.length - 5;
+   }
+   
+  
+   
+   for (i=0; i<aryLimit; i++)
+   {
+   	if (i != (aryLimit - 1) && i != (aryLimit - 2))
+   	{
+   	
+   		if (i == 0)
+   		{
+   			cityNameString = cityNameString + thetitle2[i];
+   		}
+   		else
+   		{
+   			cityNameString = cityNameString + " " + thetitle2[i];
+   		}
+   	}
+   	
+   }
+   
+   document.widgetForm.city.value = cityNameString;
+   
+	if (mth < 10)
+	{
+		mth == 0 + mth;
+	}
+	
+	if (dd < 10)
+	{
+		dd == 0 + dd;
+	}
+  
+	if ((mth==11) && (dd>=29)) 
+	{
+		document.widgetForm.arrivalDateMonth.selectedIndex = mth;
+		document.widgetForm.arrivalDateDay.selectedIndex = dd - 1;
+		document.widgetForm.arrivalDateYear.value= yy;
+		document.widgetForm.departureDateMonth.selectedIndex = mth-mth;
+		document.widgetForm.departureDateDay.selectedIndex = dd - dd;
+		document.widgetForm.departureDateYear.value= yy+1;
+	}
+   else if ((dd>=29))
+   {
+		document.widgetForm.arrivalDateMonth.selectedIndex = mth+1;
+		document.widgetForm.arrivalDateDay.selectedIndex = dd-dd;
+		document.widgetForm.arrivalDateYear.value= yy;
+		document.widgetForm.departureDateMonth.selectedIndex = mth + 1;
+		document.widgetForm.departureDateDay.selectedIndex = (dd-dd)+1;
+		document.widgetForm.departureDateYear.value= yy;
+	}
+	else
+	{
+		document.widgetForm.arrivalDateMonth.selectedIndex=mth;
+		document.widgetForm.arrivalDateDay.selectedIndex=dd+1;
+		document.widgetForm.arrivalDateYear.value= yy;
+		document.widgetForm.departureDateMonth.selectedIndex=mth;
+		document.widgetForm.departureDateDay.selectedIndex=dd+2;
+		document.widgetForm.departureDateYear.value= yy;
+	}
+}
+
+</script>
+
+<!-- end new JS insertion -->
+
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+MM_preloadImages('http://www.jake.com/images/nav/nav01_x.gif','http://www.jake.com/images/nav/nav02_x.gif','http://www.jake.com/images/nav/nav03_x.gif','http://www.jake.com/images/nav/nav04_x.gif','http://www.jake.com/images/nav/nav05_x.gif');		
+
+
+//-->
+</script>
+
+<SCRIPT language="javascript">
+   function spawnWindow(URL,name,width,height){
+      window.open(URL,name,"toolbar=no,menubar=no,menu=no,scrollbars=yes,status=no,resizable=yes,location=no,width="+width+",height="+height+",right=0,left=0,top=0,bottom=0")
+   }
+</SCRIPT>
+<script language="JavaScript"><!-- 
+var s_pageName="Jake.com :: New York Hotels"
+var s_server=""
+var s_channel=""
+var s_pageType=""
+var s_prop1=""
+var s_prop2=""
+var s_prop3=""
+var s_prop4=""
+var s_prop5=""
+var s_prop6=""
+var s_prop7=""
+var s_prop8=""
+var s_prop9=""
+var s_prop10=""
+var s_campaign=""
+var s_state=""
+var s_zip=""
+var s_events=""
+var s_products=""
+var s_purchaseID=""
+
+var s_eVar1=""
+var s_eVar2=""
+var s_eVar3=""
+var s_eVar4=""
+var s_eVar5=""
+var s_eVar6=""
+var s_eVar7=""
+var s_eVar8=""
+var s_eVar9=""
+var s_eVar10=""
+//--></script>
+
+<script language='javascript' src="javascript/popcalendar.js" type="text/javascript"></script>
+<script language='javascript' src="javascript/popamenities.js" type="text/javascript"></script>
+<SCRIPT LANGUAGE="JavaScript" SRC="javascript/lw_layers.js" type="text/javascript"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="javascript/lw_menu.js" type="text/javascript"></SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" background="images/bgtile.gif" text="#333333" link="#FF6633" vlink="#FF6633" alink="#FF6633" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="init();init();initDate();">
+<a name="top"></a><table width="799" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="28" align="right" valign="top" bgcolor="#FFFFFF"><img src="http://www.jake.com/images/topleft.gif" width="28" height="127"></td>
+    <td width="746" valign="top" bgcolor="#FFFFFF"><table width="746" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="228" rowspan="2" valign="bottom" background="images/bgbrown.gif"><a href="index.php"><img src="http://www.jake.com/images/logotop.gif" width="228" height="88" border="0"></a></td>
+          <td colspan="2" align="right" valign="bottom" background="images/bgbrown.gif" class="topnav"> 
+            <div style="padding-right:30px;padding-top:20px"><a href="http://www.jake.com/accounts/login.php" class="topnav">Login</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="http://www.jake.com/accounts/new_user.php" class="topnav">New User</a></div></td>
+        </tr>
+        <tr> 
+          <td width="518" height="34" colspan="2" align="right" valign="bottom" style="padding-right:30px;" background="images/bgbrown.gif"><img src="http://www.jake.com/images/spacer.gif" height="10" width="5"><a href="accounts/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('nav01','','http://www.jake.com/images/nav/nav01_x.gif',1)"><img src="http://www.jake.com/images/nav/nav01.gif" alt="My Account" name="nav01" width="135" height="34" border="0"></a><img src="http://www.jake.com/images/spacer.gif" height="10" width="8"><a href="customer/index.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('nav02','','images/nav/nav02_x.gif',1)"><img src="http://www.jake.com/images/nav/nav02.gif" alt="Customer Service" name="nav02" width="150" height="34" border="0"></a><a href="hiphotels.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('nav05','','http://www.jake.com/images/nav/nav05_x.gif',1)"><img src="http://www.jake.com/images/nav/nav05.gif" alt="Get Lost" name="nav05" width="83" height="34" border="0"></a><img src="http://www.jake.com/images/spacer.gif" height="10" width="18"><a href="about.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('nav04','','http://www.jake.com/images/nav/nav04_x.gif',1)"><img src="http://www.jake.com/images/nav/nav04.gif" name="nav04" width="82" height="34" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="228"> 
+              <table width="228" border="0" cellspacing="0" cellpadding="0"><form action="loading.php" name="widgetForm" method="POST">
+                <tr> 
+                  <td width="21" valign="top" background="images/searchbgleft.gif"><img src="images/searchtopleft.gif" width="21" height="240"></td>
+                  <td width="190" valign="top" background="images/searchbg.gif"><img src="images/logobottom.gif" width="190" height="75">
+		<div id="search" style="margin-left:7px">
+ 		<img src="images/searchtitle_city.gif" width="40" height="12"><BR>
+ 		<input type="text" name="city" value="" size="25" />
+  		<input type="hidden" name="cityExactMatchRequired" value="Y" />
+   		
+   		  		
+ 		<br>
+ 		<b><img src="images/searchtitle_from.gif" width="40" height="26"></b><br>
+					   		<select name="arrivalDateMonth" size="1" onChange="onChangeSequence1(0,1,1,this,document.widgetForm,1);">
+				<option value="01" >Jan</option>
+				<option value="02" >Feb</option>
+				<option value="03" >Mar</option>
+				<option value="04" >Apr</option>
+				<option value="05" >May</option>
+				<option value="06" >Jun</option>
+				<option value="07" >Jul</option>
+				<option value="08" >Aug</option>
+				<option value="09" >Sep</option>
+				<option value="10" >Oct</option>
+				<option value="11" >Nov</option>
+				<option value="12" >Dec</option>
+			</select> <select name="arrivalDateDay" size="1" onChange="onChangeSequence1(0,2,1,this,document.widgetForm,0);">
+		<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+ 
+				</select>, <select name="arrivalDateYear" size="1" onChange="onChangeSequence1(0,3,1,this,document.widgetForm,0);">
+		<option value="2004">'04</option>
+<option value="2005">'05</option><option value="2006">'06</option><option value="2007">'07</option><option value="2008">'08</option><option value="2009">'09</option>
+ 
+				</select>
+										<input type="hidden" name="arrivevalue" value="">
+
+						<script language='javascript'>
+
+						<!--
+
+							if (!document.layers) {
+							var stuff = "dd/mm/yyyy";	
+								document.write("<a href='javascript:hideCalendarSpecial(document.widgetForm.arrivalButton, document.widgetForm.arrivevalue,document.widgetForm.arrivalDateDay,document.widgetForm.arrivalDateMonth,document.widgetForm.arrivalDateYear,stuff,document.widgetForm);'><img name='arrivalButton' src='images/buttoncal.gif' border='0' width='18' height='14'></a>")
+							}
+
+						//-->
+
+						</script>					
+			
+			<br>
+			
+			<img src="images/searchtitle_to.gif" width="40" height="26"> <!--OR Number of Nights--><br>
+						<select name="departureDateMonth" size="1" onChange="onChangeSequence2(document.widgetForm,1);">
+				<option value="01" >Jan</option>
+				<option value="02" >Feb</option>
+				<option value="03" >Mar</option>
+				<option value="04" >Apr</option>
+				<option value="05" >May</option>
+				<option value="06" >Jun</option>
+				<option value="07" >Jul</option>
+				<option value="08" >Aug</option>
+				<option value="09" >Sep</option>
+				<option value="10" >Oct</option>
+				<option value="11" >Nov</option>
+				<option value="12" >Dec</option>
+			</select>
+						
+			
+			<select name="departureDateDay" size="1" onChange="onChangeSequence2(document.widgetForm,0);">
+		<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+ 
+				</select>, <select name="departureDateYear" size="1" onChange="onChangeSequence2(document.widgetForm,0);">
+		<option value="2004">'04</option>
+<option value="2005">'05</option><option value="2006">'06</option><option value="2007">'07</option><option value="2008">'08</option><option value="2009">'09</option>
+ 
+				</select> 
+				
+										<input type="hidden" name="departvalue" value="">
+
+						<script language='javascript'>
+
+						<!--
+
+							if (!document.layers) 
+							{
+
+								var stuff = "dd/mm/yyyy";
+								document.write("<a href='javascript:hideCalendarSpecial(document.widgetForm.departureButton, document.widgetForm.departvalue,document.widgetForm.departureDateDay,document.widgetForm.departureDateMonth,document.widgetForm.departureDateYear,stuff,document.widgetForm);'>");
+								document.write("<img name='departureButton' src='images/buttoncal.gif' border='0' width='18' height='14'></a>");
+
+							}
+
+						//-->
+
+						</script>	
+
+			<br>
+			<table border="0" cellpadding="0" cellspacing = "0" width="175">
+			  <tr>
+			    <td>
+				   	<img src="images/searchtitle_adults.gif" width="40" height="26"><br>
+				   	<select name="numberAdults">
+				   		<option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>				   	</select>
+				</td>
+			    <td>
+				   	<img src="images/searchtitle_child.gif" width="45" height="26"><br>
+				   	<select name="numberChildren">
+				   		<option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>				   	</select>
+				</td>
+			    <td>
+				   	<img src="images/searchtitle_rooms.gif" width="40" height="26"><br>
+				   	<select name="numberRooms">
+				   		<option value="1" selected>1</option><option value="2">2</option>				   	</select>
+				</td>
+			  </tr>
+			</table><br><img src="images/spacer.gif" width="10" height="2"><br>
+			<input type="hidden" name="submitSearch" value="1" />
+			<input type="hidden" name="chainCode" value="" />
+		
+			<input type='hidden' name='amenities132' value='' />
+<input type='hidden' name='amenities103' value='' />
+<input type='hidden' name='amenities106' value='' />
+<input type='hidden' name='amenities120' value='' />
+<input type='hidden' name='amenities105' value='' />
+<input type='hidden' name='amenities115' value='' />
+<input type='hidden' name='amenities127' value='' />
+<input type='hidden' name='amenities116' value='' />
+<input type='hidden' name='amenities107' value='' />
+<input type='hidden' name='amenities111' value='' />
+						<script language='javascript'>
+
+						<!--
+							
+							
+							document.getElementById('hotelchain').innerHTML = "<select name='selHotelChain' style='width:150px'><option value=''>-- Hotel Chains --</option><option value='AB'>ABBA Hotels</option><option value='AR'>AC Hotels</option><option value='IF'>Acc-Nifos Hotels</option><option value='RT'>Accor Hotels</option><option value='AM'>Adams Mark Hotels</option><option value='NY'>Affinia Hosp</option><option value='AA'>Americinns</option><option value='AE'>Amerihost</option><option value='MQ'>AmeriHost Inn Hotels</option><option value='AJ'>AmeriSuites</option><option value='AN'>ANA Hotels International</option><option value='AO'>ARCOTEL Hotels & Resorts</option><option value='AH'>Aston Hotels and Resorts</option><option value='AW'>Astra Worldwide</option><option value='AP'>Astron Hotels & Resorts</option><option value='AC'>Atel Hotels Network</option><option value='AT'>Atel Network</option><option value='AZ'>Axcess Hotels</option><option value='BN'>Barcelo Hotels</option><option value='BU'>Baymont Inn & Suites</option><option value='00050'>Beaufort Hotels</option><option value='00051'>Benchmark Hospitality</option><option value='BI'>Best Inns</option><option value='BV'>Best Value Inns</option><option value='BW'>Best Western International</option><option value='BO'>Boca Raton Resorts</option><option value='BA'>Boscolo Hotels</option><option value='00203'>Brisas Hotels & Resorts</option><option value='BZ'>C M Net Hotels</option><option value='CJ'>Caesar Park Hotels & Resorts</option><option value='QC'>Camberley Hotels</option><option value='CM'>Camino Real Hotels & Resorts</option><option value='00056'>Canadian Pacific Hotels</option><option value='YO'>Candlewood Suites</option><option value='00069'>Cavanaughs Hotels</option><option value='SP'>Centra Hotels & Resorts</option><option value='CU'>Charming Hotels</option><option value='00200'>Chase Suite Hotels by Woodfin</option><option value='CC'>Clarion</option><option value='IH'>Classic International Hotels</option><option value='KL'>ClubHouse Inn & Suites</option><option value='WX'>Coast Hotels & Resorts</option><option value='UC'>Coastal Hotels</option><option value='BX'>Columbus Reservation Service</option><option value='CI'>Comfort Inns</option><option value='CZ'>Comfort Suites</option><option value='CD'>Concorde Hotels</option><option value='00053'>Conrad International Hotels</option><option value='TH'>Constellation Group</option><option value='00161'>Country Escapes</option><option value='00168'>Country Hearth</option><option value='CX'>Country Inns & Suites</option><option value='CY'>Courtyard by Marriott</option><option value='00172'>Crossland</option><option value='CP'>Crowne Plaza Hotels and Resorts</option><option value='DZ'>Dan Hotels Corporation Ltd.</option><option value='DI'>Days Inn</option><option value='DV'>De Vere Hotels</option><option value='DE'>Delta Hotels</option><option value='DS'>Design Hotels</option><option value='DN'>Destination Hotels & Resorts</option><option value='DU'>Destination Unlimited</option><option value='DL'>Doral Resort & Conference Center</option><option value='DO'>Dorint Hotels</option><option value='DT'>DoubleTree</option><option value='DR'>Drury Hotels</option><option value='VE'>E Rez by VIP International</option><option value='ED'>E.D.S</option><option value='EO'>Econo Lodge</option><option value='00192'>El Cid</option><option value='ES'>Embassy Suites</option><option value='JP'>eRyokan</option><option value='EI'>Executive Hotels and Resorts</option><option value='00070'>Executive Inn Hotels and Suites</option><option value='RN'>Expotel Hotel Reservations</option><option value='EA'>Extended StayAmerica</option><option value='XH'>Extra Holidays</option><option value='FN'>Fairfield Inn by Marriott</option><option value='FA'>Fairmont Hotels</option><option value='FH'>Fiesta Americana Hotels & Resorts</option><option value='FW'>Flag Choice Hotels</option><option value='FP'>Four Points Hotels by Sheraton</option><option value='FS'>Four Seasons</option><option value='FZ'>Friendship Inn</option><option value='GX'>Global Conextions</option><option value='GT'>Golden Tulip</option><option value='GN'>Grand Bay Hotels and Resorts</option><option value='GH'>Grand Heritage Hotels</option><option value='GG'>Grand Hospitality</option><option value='GD'>Grand Tradition Hotels</option><option value='FT'>Grande Hotels & Resorts</option><option value='GW'>Great Hotels of the World</option><option value='GO'>Guesthouse</option><option value='HX'>Hampton Inn/Hampton Inn and Suites</option><option value='DJ'>Hard Rock Hotels</option><option value='HR'>Harrah's Hotels & Casinos</option><option value='HV'>Harvey Hotels</option><option value='BH'>Hawthorn Suites/Hawthorn Suites LTD.</option><option value='HH'>Hilton Hotels and Resorts(U. S.)</option><option value='HL'>Hilton International</option><option value='HE'>Historic Hotels of America</option><option value='EX'>Holiday Inn Express</option><option value='HI'>Holiday Inn Hotels and Resorts</option><option value='HF'>HomeGate</option><option value='BE'>Homestead Village Guest Studios</option><option value='HG'>Homewood Suites</option><option value='GR'>Hospitality Solutions</option><option value='HK'>Hot Key International</option><option value='HQ'>Hotel Des Governeurs</option><option value='HB'>HotelBook</option><option value='HA'>Hotusa</option><option value='HJ'>Howard Johnson</option><option value='HY'>Hyatt Hotels and Resorts</option><option value='TS'>I.T.S. Hotels</option><option value='SM'>InnLink</option><option value='IP'>Innpoints</option><option value='IC'>Inter-Continental Hotels and Resorts</option><option value='00197'>Jameson Inns</option><option value='JD'>Jurys Doyle Hotel Group</option><option value='KI'>Kempinski Hotels and Resorts</option><option value='KH'>Kerry Club Hotels</option><option value='KY'>Keytel</option><option value='KC'>Kimpton Boutique Hotels</option><option value='KG'>Knights Inn</option><option value='KO'>KSL Resorts</option><option value='LQ'>La Quinta Inns &amp; Suites</option><option value='MD'>Le Meridien</option><option value='LW'>Leading Hotels of the World</option><option value='00068'>Lexington Hotel Suites and Inns</option><option value='LM'>Lexington Services</option><option value='LZ'>Loews Hotels</option><option value='LR'>LRI</option><option value='LE'>Luxe Hotels</option><option value='GB'>Macdonald Hotels Group</option><option value='MZ'>MainStay Suites</option><option value='MO'>Mandarin Oriental Hotel Group</option><option value='MN'>Marc Resorts</option><option value='MH'>Marco Polo Hotels</option><option value='MM'>Maritim Hotels</option><option value='ET'>Marriott Conference Centers</option><option value='MC'>Marriott Hotels, Resorts, and Suites</option><option value='MB'>Marriott Vacation Club International</option><option value='00201'>Masters Inn</option><option value='MT'>Microtel Inns</option><option value='MU'>Millennium & Copthorne Hotels</option><option value='QM'>Moat House Hotels</option><option value='MW'>Moore Reservation Systems</option><option value='MR'>Morgans Hotel Management</option><option value='MK'>Movenpick Hotels & Resorts</option><option value='NT'>MyFidelio</option><option value='NS'>N H Hotels</option><option value='NO'>New Otani Hotels</option><option value='NK'>Nikko Hotels International</option><option value='NC'>Noble House Hotels</option><option value='NH'>Norlandia Hotels</option><option value='NF'>Novotel</option><option value='OB'>Oberoi Group of Hotels</option><option value='OC'>Okura Hotels & Resorts</option><option value='OM'>Omni Hotels</option><option value='OR'>Outrigger Hotels Hawaii</option><option value='PF'>Pan Pacific Hotels</option><option value='PP'>Pan Pacific Hotels and Resorts</option><option value='PD'>Park Inn</option><option value='PK'>Park Plaza International (Park Plaza Hotels & Resorts)</option><option value='00117'>Parkroyal Hotels & Resorts</option><option value='PG'>Philips Hotel Group</option><option value='PH'>Preferred Hotels&reg; and Resorts Worldwide</option><option value='PW'>Prima Hotels</option><option value='PT'>Prime Hotels and Resorts</option><option value='PJ'>Prince Resorts</option><option value='PL'>Principle Hotels</option><option value='QI'>Quality Inns</option><option value='QR'>Quality Reservations</option><option value='QL'>Queens Hotels Germany</option><option value='RD'>Radisson Hotels</option><option value='YR'>Raffles International Hotels and Resorts</option><option value='NR'>Ramada International</option><option value='RA'>Ramada Plazas, Limiteds, and Inns</option><option value='ON'>Reconline</option><option value='RL'>Red Lion Hotels</option><option value='RF'>Red Roof Inns</option><option value='RQ'>Regal Hotels International</option><option value='RE'>Regent International</option><option value='WB'>Relais & Chateaux</option><option value='BR'>Renaissance Hotels and Resorts</option><option value='00176'>Rendezvous Hotels International</option><option value='RC'>Residence Inn by Marriott</option><option value='ID'>Resnet Hotels</option><option value='RB'>Resort Bookings</option><option value='RR'>RIHGA Royal Hotels</option><option value='RX'>Ringhotels</option><option value='ZC'>Ritz-Carlton Club</option><option value='RZ'>Ritz-Carlton Hotels</option><option value='RS'>Rock Resorts</option><option value='RI'>Rodeway Inn</option><option value='RM'>Romantik Hotels International</option><option value='00059'>Rosewood Hotels & Resorts</option><option value='RG'>Rydges Hotel Group</option><option value='SA'>Sabre Exclusives</option><option value='VY'>Savoy Group of Hotels</option><option value='SH'>Scandic Hotels</option><option value='SC'>Sceptre Hospitality Resources</option><option value='SQ'>Select Marketing Hotels</option><option value='SG'>Shangri-La Hotels and Resorts</option><option value='SI'>Sheraton Hotels and Resorts</option><option value='ST'>Sheraton Inn</option><option value='BP'>Shilo Inns</option><option value='US'>Sierra Suites Hotels</option><option value='SJ'>Signature Inns</option><option value='SZ'>Sleep Inns</option><option value='LX'>Small Luxury Hotels</option><option value='00194'>Small Luxury Hotels of the World</option><option value='SF'>Sofitel Hotel & Resorts</option><option value='ME'>Sol Melia</option><option value='SO'>Sonesta Hotels</option><option value='00196'>SORAT Hotels</option><option value='XV'>SpringHill Suites</option><option value='YS'>Stamford Hotels & Resorts</option><option value='SY'>Starhotels</option><option value='SW'>Starwood Hotel Brands</option><option value='LV'>Station Casinos</option><option value='YZ'>Staybridge Suites</option><option value='SB'>Staybridge Suites by Holiday Inn</option><option value='WR'>Sterling Hotels and Resorts</option><option value='00171'>Studio Plus</option><option value='IL'>Suburban Lodge</option><option value='00195'>Suburban Lodge</option><option value='SS'>Summerfield Suites & Hotels</option><option value='XL'>Summit Hotels and Resorts</option><option value='OZ'>Super 8</option><option value='SE'>Super 8 Motels</option><option value='SR'>SuperClubs</option><option value='SX'>Supranational Hotels</option><option value='CE'>Susse Chalet</option><option value='UK'>Swallow Hotels</option><option value='SL'>Swissotel</option><option value='YX'>Synxis Corporation</option><option value='TJ'>Taj Group of Hotels</option><option value='00055'>The Oberoi Group of Hotels</option><option value='00198'>The Small Hotel Company</option><option value='00063'>The Sutton Place Hotels</option><option value='TI'>Thistle Hotels</option><option value='TK'>Tokyu Hotels</option><option value='TP'>TOP International Hotels</option><option value='TO'>TownePlace Suites</option><option value='TA'>TravAmerica</option><option value='TL'>Travelodge</option><option value='LT'>Travelodge Australia</option><option value='TG'>Travelodge UK and Europe</option><option value='LS'>Travelscape</option><option value='TX'>Treff Hotels</option><option value='00159'>Tropical Resorts & Vacations</option><option value='XX'>Unaffiliated Independent Hotels</option><option value='UZ'>Unirez</option><option value='UE'>Universal Orlando Suites</option><option value='UI'>Utell International</option><option value='VA'>Vagabond Inns</option><option value='00134'>Vienna Group of Hotels</option><option value='VG'>Villager</option><option value='VP'>VIP Hotels</option><option value='WH'>W Hotels</option><option value='DW'>Walt Disney World&#174; Resorts</option><option value='WK'>Warwick International Hotels</option><option value='WL'>Wellesley Inn and Suites</option><option value='WI'>Westin Hotels and Resorts</option><option value='WM'>Westmark Hotels</option><option value='00157'>Westminster Apartment Services Ltd.</option><option value='WG'>Wingate Inns</option><option value='WD'>Woodfin Suites</option><option value='WC'>World Class Hotels & Resorts</option><option value='WW'>World Hotels and Resorts</option><option value='WO'>WorldRes</option><option value='WY'>Wyndham Hotels and Resorts</option></select>";						//-->
+
+						</script>	
+		</div></td>
+                  <td valign="top" background="images/searchbgright.gif"><img src="images/searchtopright.gif" width="17" height="240"></td>
+                </tr>
+                <tr> 
+                  <td><img src="images/searchbottleft.gif" width="21" height="62"></td>
+                  <td valign="bottom" background="images/searchbg.gif"><table width="190" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><script language='javascript'>
+                      
+                		<!--
+							if (!document.layers) {
+								document.write("<a href='javascript:PopUpAmenities(document.widgetForm.amenButton);'><img src='images/buttonamen.gif' name='amenButton' width='124' height='34' border='0'>")
+							}
+							else{
+								document.write("<img src='images/buttonamenx.gif'>"); 
+							}
+						//-->
+						</script></td>
+                        <td align="right"><input type="image" src="images/buttongo.gif" name="goButton" onClick="setNewAmenities()"></td>
+                      </tr>
+                    </table>
+                    <img src="images/searchbottom.gif" width="190" height="28"></td>
+                  <td><img src="images/searchbottright.gif" width="17" height="62"></td>
+                </tr>
+            </form> </table>
+				<br>
+            	<table width="200" cellpadding="0" cellspacing="0">
+                	<tr>
+                		<td background="http://www.jake.com/images/callout_top_left.jpg" align="right"><img src="http://www.jake.com/images/callout_top_left.jpg" border="0"></td>
+                		<td background="http://www.jake.com/images/callout_top.jpg"><img src="http://www.jake.com/images/callout_top.jpg" border="0"></td>
+                		<td background="http://www.jake.com/images/callout_top_right.jpg" align="left"><img src="http://www.jake.com/images/callout_top_right.jpg" border="0"></td>
+                	</tr>
+						<tr>
+							<td background="http://www.jake.com/images/callout_left.jpg" align="right"><img src="http://www.jake.com/images/callout_left.jpg" border="0"></td>
+							<td bgcolor="#FFFFFF" width="190"><table><tr><td><span class="olive"><font size="+1"><b>New York Hotels</b></font></span></td></tr><tr><td>&nbsp;</td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11283825" class="boldunderline">414 Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11273789" class="boldunderline">60 Thompson</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11275901" class="boldunderline">70 Park Avenue Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10229399" class="boldunderline">Algonquin Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10001075" class="boldunderline">Americana Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10215916" class="boldunderline">Ameritania Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10001072" class="boldunderline">Amsterdam Court</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11282172" class="boldunderline">Amsterdam Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11288524" class="boldunderline">Apartments NY</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10205208" class="boldunderline">Arlington Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10214906" class="boldunderline">Avalon Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11280069" class="boldunderline">Barbizon A Melrose Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10030636" class="boldunderline">Bedford Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10074854" class="boldunderline">Beekman Tower Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11242733" class="boldunderline">Belleclaire Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000101" class="boldunderline">Belvedere Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10214572" class="boldunderline">Bentley Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11280383" class="boldunderline">Best Western Convention Center Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11291007" class="boldunderline">Best Western Hospitality House</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000018" class="boldunderline">Best Western President Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000019" class="boldunderline">Best Western Seaport Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11284236" class="boldunderline">Bridgestreet 85 John Street</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11299509" class="boldunderline">Broadway Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11244562" class="boldunderline">Broadway Plaza Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11248215" class="boldunderline">Broadway Tower</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11245836" class="boldunderline">Bryant Park</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11280309" class="boldunderline">Buckingham Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000102" class="boldunderline">Casablanca Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11272699" class="boldunderline">Chambers</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11267608" class="boldunderline">Chelsea Star</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11272642" class="boldunderline">Churchill Residence Suites</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11291433" class="boldunderline">City Club Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10228744" class="boldunderline">Clarion Hotel Fifth Avenue</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10203182" class="boldunderline">Clarion Hotel Park Avenue</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11293085" class="boldunderline">Comfort Inn Central Park West</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000342" class="boldunderline">Comfort Inn Manhattan</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10196473" class="boldunderline">Comfort Inn Midtown</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11241749" class="boldunderline">Cosmopolitan Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10198042" class="boldunderline">Courtyard By Marriott Midtown East</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10197998" class="boldunderline">Courtyard By Marriott Nyc Laguardia Airport</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10197747" class="boldunderline">Courtyard By Marriott Times Square South</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10060052" class="boldunderline">Crowne Plaza Hotel at the United Nations  NY</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10221704" class="boldunderline">Crowne Plaza Hotel Times Square Manhattan  NY</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10074793" class="boldunderline">Doubletree Guest Suites« Times Square New York City</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11278884" class="boldunderline">Doubletree« Club New York/Jfk Airport</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10074852" class="boldunderline">Eastgate Tower</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10217087" class="boldunderline">Edison Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10229501" class="boldunderline">Embassy Suites Hotel New York City</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11297597" class="boldunderline">Envoy Club</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10001076" class="boldunderline">Excelsior Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11277404" class="boldunderline">Executive Club at West Park</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11279324" class="boldunderline">F & J Pine Sports Gallery Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10215084" class="boldunderline">Fitzpatrick Grand Central Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10214213" class="boldunderline">Fitzpatrick Manhattan Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000092" class="boldunderline">Flatotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10215424" class="boldunderline">Four Seasons New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11293620" class="boldunderline">Franklin Hotel New York NY</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10015763" class="boldunderline">Gershwin Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10216277" class="boldunderline">Gramercy Park Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000597" class="boldunderline">Grand Hyatt New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11283729" class="boldunderline">Grand Union</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11243026" class="boldunderline">Helmsley Carlton</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11246197" class="boldunderline">Helmsley Middletowne Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10217230" class="boldunderline">Herald Square</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10008135" class="boldunderline">Hilton New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11241503" class="boldunderline">Hilton Times Square</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10060083" class="boldunderline">Holiday Inn Manhattan-downtown/Soho  NY</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10045373" class="boldunderline">Holiday Inn New York City-Midtown-57th St</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10060062" class="boldunderline">Holiday Inn New York City/Martinique on BR</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10226849" class="boldunderline">Holiday Inn Wall Street District</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000093" class="boldunderline">Hotel Beacon</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10205317" class="boldunderline">Hotel Elysee</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000168" class="boldunderline">Hotel Pennsylvania</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10207280" class="boldunderline">Hotel Plaza Athenee  New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11273901" class="boldunderline">Hotel Riverside Studios</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000096" class="boldunderline">Hotel Wolcott</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11283744" class="boldunderline">Howard Johnson Express Inn New York City</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11293079" class="boldunderline">Howard Johnson Inn New York City at Penn Station</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10203011" class="boldunderline">Howard Johnson Plaza-Hotel New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11242953" class="boldunderline">Hudson - an Ian Schrager Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11247396" class="boldunderline">Inn New York City</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000088" class="boldunderline">Inter-Continental the Barclay New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11300593" class="boldunderline">Jolly Hotel Madison Towers</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000160" class="boldunderline">Kitano New York Hotel A Summit Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000196" class="boldunderline">La Quinta Inn Manhattan-Midtown</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11277378" class="boldunderline">Le Marquis New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11278391" class="boldunderline">Le Parker Meridien</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11241735" class="boldunderline">Library Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10231892" class="boldunderline">Lombardy Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10001077" class="boldunderline">Lucerne Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11286684" class="boldunderline">Manhattan Broadway Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11281816" class="boldunderline">Mansfield</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10214326" class="boldunderline">Marcel Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10207487" class="boldunderline">Marriott Marquis New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10040466" class="boldunderline">Marriott New York East Side</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10207412" class="boldunderline">Marriott New York Financial Center</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10225375" class="boldunderline">Mayfair New York Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10228565" class="boldunderline">Mayflower on the Park</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10231656" class="boldunderline">Mercer Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10215272" class="boldunderline">Metro Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11271991" class="boldunderline">Metro Motel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10025745" class="boldunderline">Metropolitan Hotel/Formerly Loews New York Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000158" class="boldunderline">Michelangelo Hotel A Summit Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10012030" class="boldunderline">Milford Plaza</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10202789" class="boldunderline">Millenium Hilton</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10026041" class="boldunderline">Millennium Broadway Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000137" class="boldunderline">Millennium UN Plaza Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10205018" class="boldunderline">Moderne</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000150" class="boldunderline">Morgans - an Ian Schrager Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10231223" class="boldunderline">Murray Hill East Suites</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11282178" class="boldunderline">Murray Hill Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000395" class="boldunderline">New York City-Days Hotel Midtown</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10001080" class="boldunderline">Newton Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11279671" class="boldunderline">Oakwood at Cosmopolitan</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11279670" class="boldunderline">Oakwood at Sonoma</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11281512" class="boldunderline">Oakwood Battery Park</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11300581" class="boldunderline">Oakwood Chelsea</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11279669" class="boldunderline">Oakwood Midtown East</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11291725" class="boldunderline">Oakwood Upper East</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10216718" class="boldunderline">Off-Soho Suites Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10216022" class="boldunderline">Omni Berkshire Place</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10224317" class="boldunderline">On the Ave</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10215620" class="boldunderline">Pan American Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000089" class="boldunderline">Park Central New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11274445" class="boldunderline">Park South Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11274882" class="boldunderline">Phillips Club</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10215351" class="boldunderline">Pickwick Arms Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10091525" class="boldunderline">Plaza Fifty</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10216616" class="boldunderline">Portland Square Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10231213" class="boldunderline">Quality Hotel on Broadway</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10216207" class="boldunderline">Quality Hotel Times Square</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000493" class="boldunderline">Rad Lexington Hotel New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10208447" class="boldunderline">Ramada Inn New York  New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10237292" class="boldunderline">Ramada Plaza & Inn New Yorker Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10001294" class="boldunderline">Renaissance New York Times Square Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000138" class="boldunderline">Rihga Royal New York-A JW Marriott Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11276893" class="boldunderline">Ritz Carlton NY Battery Park</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11281817" class="boldunderline">Roger Williams</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10030635" class="boldunderline">Royalton - an Ian Schrager Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000151" class="boldunderline">Salisbury Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000149" class="boldunderline">San Carlos Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000808" class="boldunderline">Sheraton Manhattan Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10212981" class="boldunderline">Sheraton New York Hotel & Twr</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000807" class="boldunderline">Sheraton Russell Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11272051" class="boldunderline">Shoreham Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11288068" class="boldunderline">Signature Suites Greenwich Village</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000094" class="boldunderline">Skyline Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11246729" class="boldunderline">Sofitel New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10205782" class="boldunderline">Soho Grand Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10091526" class="boldunderline">Southgate Tower</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11285048" class="boldunderline">Stanford Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000732" class="boldunderline">Super 8 New York Times Square Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10091527" class="boldunderline">Surrey Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11288219" class="boldunderline">Sutton Place Suites</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000822" class="boldunderline">Swissotel the Drake  New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11303458" class="boldunderline">The Alex</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11264033" class="boldunderline">The Benjamin</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000098" class="boldunderline">The Carlton on Madison Avenue</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11258798" class="boldunderline">The Carlyle</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10214862" class="boldunderline">The Gorham</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11280405" class="boldunderline">The Hayden Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10207208" class="boldunderline">The Helmsley Park Lane</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10060073" class="boldunderline">The Iroquois</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11280072" class="boldunderline">The Kimberly Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10030643" class="boldunderline">The Lowell</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11290495" class="boldunderline">The Mark</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10207256" class="boldunderline">The Mark  New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11242291" class="boldunderline">The Muse</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10227695" class="boldunderline">The New York Palace</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10217019" class="boldunderline">The Paramount Hotel New York - Hard Rock Hotel New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11242162" class="boldunderline">The Peninsula New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10200937" class="boldunderline">The Plaza</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11281702" class="boldunderline">The Premier</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10207383" class="boldunderline">The Regency Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11276892" class="boldunderline">The Ritz-Carlton New York Central Park</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10232786" class="boldunderline">The Roger Smith</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11280075" class="boldunderline">The Roosevelt Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11244180" class="boldunderline">The Sherry Netherland</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11242251" class="boldunderline">The St. Regis Club at the Essex House  New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000119" class="boldunderline">The Stanhope  A Park Hyatt Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10233518" class="boldunderline">The Time</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000076" class="boldunderline">The Waldorf Astoria</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10202776" class="boldunderline">The Waldorf Towerstm  A Conradtm Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11282140" class="boldunderline">The Westin New York at Times Square</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11241960" class="boldunderline">Thirty Thirty Hotel New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11246292" class="boldunderline">Towers at the New Yorker</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000091" class="boldunderline">Travel Inn Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10236749" class="boldunderline">Tribeca Grand Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10000120" class="boldunderline">Trump International Hotel Towers</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11279509" class="boldunderline">Union Square Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10217583" class="boldunderline">W New York</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10217578" class="boldunderline">W New York the Court</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10217579" class="boldunderline">W New York the Tuscany</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11277684" class="boldunderline">W New York Times Square</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11243688" class="boldunderline">W New York Union Square</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11273888" class="boldunderline">Wall Street Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10217701" class="boldunderline">Warwick Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10205353" class="boldunderline">Washington Jefferson Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10216596" class="boldunderline">Washington Square Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10216900" class="boldunderline">Wellington Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=11246226" class="boldunderline">West Park Hotel</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10214879" class="boldunderline">West Side Inn</a></td></tr><tr><td><a href="http://www.jake.com/detail.php?hotelId=10217694" class="boldunderline">Westin Essex House on Central Park</a></td></tr></table></td>
+							<td background="http://www.jake.com/images/callout_right.jpg" align="left"><img src="http://www.jake.com/images/callout_right.jpg" border="0"></td>
+						</tr>
+                	<tr>
+                		<td background="http://www.jake.com/images/callout_bottom_left.jpg" align="right"><img src="http://www.jake.com/images/callout_bottom_left.jpg" border="0"></td>
+                		<td background="http://www.jake.com/images/callout_bottom.jpg" valign="top"><img src="http://www.jake.com/images/callout_bottom.jpg" border="0"></td>
+                		<td background="http://www.jake.com/images/callout_bottom_right.jpg" align="left"><img src="http://www.jake.com/images/callout_bottom_right.jpg" border="0"></td>
+                	</tr>
+                </table>
+            </td>
+          <td width="25" valign="top"><img src="http://www.jake.com/images/shadedspace.gif" width="25" height="316"> 
+          </td>
+          <td valign="top" width="493"><table width="493" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+              <tr> 
+                <td align="right" valign="top"> <img src="http://www.jake.com/images/rightcurve.gif" width="33" height="10"></td>
+              </tr>
+              <tr>
+              		<td valign="top">
+              			&nbsp;
+              		</td>
+              </tr>
+             
+              <tr> 
+                <td valign="top">
+                	<a href="http://hotels.jake.com/site_map.php" class="boldunderline">Home</a> >> <a href="http://hotels.jake.com/us/" class="boldunderline">United States</a> >> <a href="http://hotels.jake.com/us/ny/" class="boldunderline">New York</a> >> <span class="orange"><b>New York Hotels</b></span><br>
+<br>
+		<table border="0" cellspacing="0" cellpadding="0">
+<TR>
+<TD style="padding-right:1px">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="6" rowspan="2" valign="top" background="http://www.jake.com/images/results/tabbg_on.gif"><img src="http://www.jake.com/images/results/tableft1_on.gif" width="6" height="12"></td>
+<td valign="top" background="http://www.jake.com/images/results/tabbg_on.gif"><img src="http://www.jake.com/images/results/tableft2_on.gif" width="6" height="5"></td>
+<td align="right" valign="top" background="http://www.jake.com/images/results/tabbg_on.gif"><img src="images/results/tabright2_on.gif" width="6" height="5"></td>
+<td width="6" rowspan="2" align="right" valign="top" background="http://www.jake.com/images/results/tabbg_on.gif"><img src="http://www.jake.com/images/results/tabright1_on.gif" width="6" height="12"></td>
+</tr>
+<tr> 
+<td colspan="2" width="70" align="center" valign="top" background="images/results/tabbg_on.gif" style="padding-bottom:2px;">
+<a href="http://hotels.jake.com/us/ny/new-york-hotels.html" class="whitebold">All (203)</a> </td>
+</tr>
+</table>
+</TD>
+<TD style="padding-right:1px">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="6" rowspan="2" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft1_off.gif" width="6" height="12"></td>
+<td valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft2_off.gif" width="6" height="5"></td>
+<td align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="images/results/tabright2_off.gif" width="6" height="5"></td>
+<td width="6" rowspan="2" align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tabright1_off.gif" width="6" height="12"></td>
+</tr>
+<tr> 
+<td colspan="2" width="70" align="center" valign="top" background="images/results/tabbg_off.gif" style="padding-bottom:2px;">
+<a href="http://hotels.jake.com/us/ny/new-york-hip-hotels.html" class="whitebold">Hip Hotels (19)</a> </td>
+</tr>
+</table>
+</TD>
+<TD style="padding-right:1px">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="6" rowspan="2" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft1_off.gif" width="6" height="12"></td>
+<td valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft2_off.gif" width="6" height="5"></td>
+<td align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="images/results/tabright2_off.gif" width="6" height="5"></td>
+<td width="6" rowspan="2" align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tabright1_off.gif" width="6" height="12"></td>
+</tr>
+<tr> 
+<td colspan="2" width="70" align="center" valign="top" background="images/results/tabbg_off.gif" style="padding-bottom:2px;">
+<a href="http://hotels.jake.com/us/ny/new-york-jakes-rate-hotels.html" class="whitebold">Jake's Rates</a></td>
+</tr>
+</table>
+</TD>
+<TD style="padding-right:1px">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="6" rowspan="2" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft1_off.gif" width="6" height="12"></td>
+<td valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft2_off.gif" width="6" height="5"></td>
+<td align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="images/results/tabright2_off.gif" width="6" height="5"></td>
+<td width="6" rowspan="2" align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tabright1_off.gif" width="6" height="12"></td>
+</tr>
+<tr> 
+<td colspan="2" width="70" align="center" valign="top" background="images/results/tabbg_off.gif" style="padding-bottom:2px;">
+<a href="http://hotels.jake.com/us/ny/new-york-business-hotels.html" class="whitebold">Business (48)</a></td>
+</tr>
+</table>
+</TD>
+<TD style="padding-right:1px">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="6" rowspan="2" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft1_off.gif" width="6" height="12"></td>
+<td valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft2_off.gif" width="6" height="5"></td>
+<td align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="images/results/tabright2_off.gif" width="6" height="5"></td>
+<td width="6" rowspan="2" align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tabright1_off.gif" width="6" height="12"></td>
+</tr>
+<tr> 
+<td colspan="2" width="70" align="center" valign="top" background="images/results/tabbg_off.gif" style="padding-bottom:2px;">
+<a href="http://hotels.jake.com/us/ny/new-york-family-hotels.html" class="whitebold">Family (18)</a></td>
+</tr>
+</table>
+</TD>
+<TD style="padding-right:1px">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="6" rowspan="2" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft1_off.gif" width="6" height="12"></td>
+<td valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tableft2_off.gif" width="6" height="5"></td>
+<td align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="images/results/tabright2_off.gif" width="6" height="5"></td>
+<td width="6" rowspan="2" align="right" valign="top" background="http://www.jake.com/images/results/tabbg_off.gif"><img src="http://www.jake.com/images/results/tabright1_off.gif" width="6" height="12"></td>
+</tr>
+<tr> 
+<td colspan="2" width="70" align="center" valign="top" background="images/results/tabbg_off.gif" style="padding-bottom:2px;">
+<a href="http://hotels.jake.com/us/ny/new-york-airport-hotels.html" class="whitebold">Airport (200)</a></td>
+</tr>
+</table>
+</TD>
+</TR>
+</table>
+
+<table width="493" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td background="http://www.jake.com/images/results/tabbg_on.gif">&nbsp;</td>
+    <td background="http://www.jake.com/images/results/tabbg_on.gif" style="padding-top:10px" valign="bottom"><span class="titleWhite">New York Hotels</span></td>
+    <td background="http://www.jake.com/images/results/tabbg_on.gif">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10" valign="top" background="http://www.jake.com/images/results/tab_bottombg.gif"><img src="http://www.jake.com/images/results/tab_bottomleft.gif" width="10" height="17"></td>
+    <td background="http://www.jake.com/images/results/tab_bottombg.gif"><img src="http://www.jake.com/images/results/tab_bottombg.gif" width="1" height="17"></td>
+    <td width="9" align="right" valign="top" background="http://www.jake.com/images/results/tab_bottombg.gif"><img src="http://www.jake.com/images/results/tab_bottomright.gif" width="9" height="17"></td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/results/tableleft.gif" width="10">&nbsp;</td>
+    <td valign="top" background="http://www.jake.com/images/results/tablebg.gif">
+    <table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/grey_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=11283825" class="titleWhite">414 Inn</a><br></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/grey_bg.gif" nowrap>
+	Available From<br><b class="resultPrice"><SUP>$</SUP>210</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkgrey.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=11283825" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/grey_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=11283825"><img src="http://images.wctravel.com/images-logos/11283825.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">414 West 46 Street<BR>New York, NY 10036</GEO><BR>Year Built - 2000 Year Remodeled - 2000the 414 Inn is a Small, Intimate Boutique Style HotelWith Convenient Location and Personalized Service. TheHotel is Comprised of 2 Historical Townhouses, BuiltBehind Each Other, Separated...<a href="http://www.jake.com/detail.php?hotelId=11283825" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/grey_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=11273789" class="titleWhite">60 Thompson</a><br></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/grey_bg.gif" nowrap>
+	Available From<br><b class="resultPrice"><SUP>$</SUP>370</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkgrey.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=11273789" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/grey_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=11273789"><img src="http://images.wctravel.com/images-logos/11273789.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">60 Thompson Street<BR>New York, NY 10012</GEO><BR>Manhattan's new luxurious 100-room boutique hotel...60 Thompson. Located in the Fashionable Soho District, convenient to Midtown and the Financial District....<a href="http://www.jake.com/detail.php?hotelId=11273789" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/orange_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=11275901" class="titleWhite">70 Park Avenue Hotel</a><br></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/orange_bg.gif" nowrap>
+	Jake's Rate Hotel<br><b class="resultPrice"><SUP>$</SUP>219</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkorange.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=11275901" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/orange_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=11275901"><img src="http://images.wctravel.com/images-logos/11275901.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">70 Park Avenue<BR>New York, NY 10016</GEO><BR>70 Park Avenue Hotel is situated on prestigious Park Avenue in the Murray Hill area of Midtown Manhattan. With just 188 Rooms and 3 suites, the hotel...<a href="http://www.jake.com/detail.php?hotelId=11275901" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/orange_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=10229399" class="titleWhite">Algonquin Hotel</a><br><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/orange_bg.gif" nowrap>
+	Jake's Rate Hotel<br><b class="resultPrice"><SUP>$</SUP>499</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkorange.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=10229399" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/orange_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=10229399"><img src="http://images.wctravel.com/images-logos/10229399.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">59 West 44th Street<BR>New York, NY 10036</GEO><BR>Located in the midtown area of Manhattan, The Algonquin welcomes you to indulge in the splendor of its grand restoration. The intimate atmosphere of the...<a href="http://www.jake.com/detail.php?hotelId=10229399" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/grey_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=10001075" class="titleWhite">Americana Inn</a><br></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/grey_bg.gif" nowrap>
+	Available From<br><b class="resultPrice"><SUP>$</SUP>70</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkgrey.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=10001075" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/grey_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=10001075"><img src="http://images.wctravel.com/images-logos/10001075.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">69 West 38 Street<BR>New York, NY 10018</GEO><BR>The Americana Inn welcomes the budget-minded traveler with its warm, friendly service. Our great location puts you within walking distance to most top sights of New York City. Cheerful rooms with semi-private baths keep the traveler...<a href="http://www.jake.com/detail.php?hotelId=10001075" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/orange_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=10215916" class="titleWhite">Ameritania Hotel</a><br><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/orange_bg.gif" nowrap>
+	Jake's Rate Hotel<br><b class="resultPrice"><SUP>$</SUP>219</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkorange.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=10215916" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/orange_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=10215916"><img src="http://images.wctravel.com/images-logos/10215916.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">230 W 54th Street<BR>New York, NY 10019</GEO><BR>The Ameritania Hotel is a modern, first class, classic hotel with a high tech lobby. The hotel offers a full range of services including valet service,...<a href="http://www.jake.com/detail.php?hotelId=10215916" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/orange_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=10001072" class="titleWhite">Amsterdam Court</a><br><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/orange_bg.gif" nowrap>
+	Jake's Rate Hotel<br><b class="resultPrice"><SUP>$</SUP>209</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkorange.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=10001072" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/orange_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=10001072"><img src="http://images.wctravel.com/images-logos/10001072.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px">79</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkgrey.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=11282172" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/grey_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=11282172"><img src="http://images.wctravel.com/images-logos/11282172.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">340 Amsterdam Avenue<BR>New York, NY 10024</GEO><BR>Quaint 30 Room Inn Located in the Heart of Manhattan*SExciting Upper West Side. Close To Midtown and Downtownand a Short Walk To Central Park, Lincoln Center, AmericanMuseum of Natural History, Shopping, Restaurants, Nightlifeand...<a href="http://www.jake.com/detail.php?hotelId=11282172" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/grey_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=11288524" class="titleWhite">Apartments NY</a><br></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/grey_bg.gif" nowrap>
+	Available From<br><b class="resultPrice"><SUP>$</SUP>100</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkgrey.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=11288524" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/grey_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=11288524"><img src="http://images.wctravel.com/images-logos/11288524.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">30 West 46th Street<BR>New York, NY 10036</GEO><BR>...<a href="http://www.jake.com/detail.php?hotelId=11288524" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/grey_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=10205208" class="titleWhite">Arlington Hotel</a><br></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/grey_bg.gif" nowrap>
+	Available From<br><b class="resultPrice"><SUP>$</SUP>105</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkgrey.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=10205208" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/grey_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=10205208"><img src="http://images.wctravel.com/images-logos/10205208.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">18 West 25th Street<BR>New York, NY 10010</GEO><BR>Centrally located, the Arlington Hotel is just a 10 minute train ride from the World Trade Center, Rockefeller Center and Broadway theaters. The property...<a href="http://www.jake.com/detail.php?hotelId=10205208" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/orange_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=10214906" class="titleWhite">Avalon Hotel</a><br><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/orange_bg.gif" nowrap>
+	Jake's Rate Hotel<br><b class="resultPrice"><SUP>$</SUP>185</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkorange.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=10214906" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/orange_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=10214906"><img src="http://images.wctravel.com/images-logos/10214906.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">16 East 32nd Street<BR>New York, NY 10016</GEO><BR>Located off Madison Avenue, the Avalon Hotel incorporates European grandeur, boutique intimacy and top of the line business amenities. Half of the rooms...<a href="http://www.jake.com/detail.php?hotelId=10214906" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/orange_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=11280069" class="titleWhite">Barbizon A Melrose Hotel</a><br><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/orange_bg.gif" nowrap>
+	Jake's Rate Hotel<br><b class="resultPrice"><SUP>$</SUP>189</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkorange.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=11280069" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/orange_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=11280069"><img src="http://images.wctravel.com/images-logos/11280069.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">140 East 63rd Street<BR>New York, NY 10021</GEO><BR> Barbizon, a Conveniently Located Hotel Offers a Superior Service With an Excellent Price/ Product Ratio. Architectural Landmark With Available in All Rooms. An Oasis of Civilization. Equinox Fitness Club and...<a href="http://www.jake.com/detail.php?hotelId=11280069" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/grey_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif"><img src="http://www.jake.com/images/searchresults/grey_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/grey_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=10030636" class="titleWhite">Bedford Hotel</a><br></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/grey_bg.gif" nowrap>
+	Available From<br><b class="resultPrice"><SUP>$</SUP>179</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/grey_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkgrey.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=10030636" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/grey_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=10030636"><img src="http://images.wctravel.com/images-logos/10030636.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">118 East 40th Street<BR>New York, NY 10016</GEO><BR>A first class property with 136 rooms in the business tourist area. The hotel is within blocks from Broadway theatres/ Fifth and Madison Avenues/ the Empire...<a href="http://www.jake.com/detail.php?hotelId=10030636" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/orange_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=10074854" class="titleWhite">Beekman Tower Hotel</a><br><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/orange_bg.gif" nowrap>
+	Jake's Rate Hotel<br><b class="resultPrice"><SUP>$</SUP>304</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkorange.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=10074854" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/orange_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=10074854"><img src="http://images.wctravel.com/images-logos/10074854.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px">Three Mitchell Place <GEO TYPE="US">49th Street & 1st Avenue<BR>New York, NY 10017-1801</GEO><BR>Built In 1928, The Beekmans Distinctive Tower Is Considered An Art Deco Landmark. The Hotels Stylish Suites And Public Areas Make This Superior Hotel...<a href="http://www.jake.com/detail.php?hotelId=10074854" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/orange_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=11242733" class="titleWhite">Belleclaire Hotel</a><br><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/orange_bg.gif" nowrap>
+	Jake's Rate Hotel<br><b class="resultPrice"><SUP>$</SUP>107</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkorange.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=11242733" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/orange_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=11242733"><img src="http://images.wctravel.com/images-logos/11242733.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">250 West 77th Street<BR>New York, NY 10024</GEO><BR>The Belleclaire Hotel is a tourist class hotel. The hotel offers quality accommodations at reasonable prices. The hotel is decorated in a modern art deco...<a href="http://www.jake.com/detail.php?hotelId=11242733" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br><table width="473" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="16" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topleft.gif" width="16" height="12"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="12"></td>
+    <td width="12" align="right" valign="top"><img src="http://www.jake.com/images/searchresults/orange_topright.gif" width="12" height="12"></td>
+  </tr>
+
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif"><img src="http://www.jake.com/images/searchresults/orange_bg.gif" width="1" height="60"></td>
+    <td valign="top" background="http://www.jake.com/images/searchresults/orange_bg.gif" class="white"><b class="titleWhite"><a href="http://www.jake.com/detail.php?hotelId=10000101" class="titleWhite">Belvedere Hotel</a><br><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"><img src="http://www.jake.com/images/searchresults/orange_star.gif" width="14" height="11"></b><br>
+      <br>
+    </td>
+    <td align="right" valign="top" class="white" background="http://www.jake.com/images/searchresults/orange_bg.gif" nowrap>
+	Jake's Rate Hotel<br><b class="resultPrice"><SUP>$</SUP>225</b>
+</td>
+    <td background="http://www.jake.com/images/searchresults/orange_bg.gif">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<img src="http://www.jake.com/images/searchresults/darkorange.gif" width="1" height="30">
+    </td>
+    
+    <td colspan="2" background="http://www.jake.com/images/searchresults/darkgrey.gif">
+    	<table width="445" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="46%"></td>
+          <td width="22%" align="right" valign="middle" nowrap></td>
+          <td width="22%" align="right" valign="middle" nowrap><a href="http://www.jake.com/detail.php?hotelId=10000101" class="boldunderline">Check Hotel Rates <span class="orange"><b>>></b></span></a></td>
+        </tr>
+      </table>
+    </td>
+
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/darkgrey.gif"><img src="http://www.jake.com/images/searchresults/orange_bottom.gif" width="12" height="6"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" valign="top" bgcolor="#FFFFFF"><div style="margin-top:16px;"><table width="440" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="http://www.jake.com/detail.php?hotelId=10000101"><img src="http://images.wctravel.com/images-logos/10000101.jpg" border="0"/></a></td>
+          <td valign="top" width="473"><div style="margin-left:16px"><GEO TYPE="US">319 West 48 Street<BR>New York, NY 10036</GEO><BR>The Belvedere Hotel is located in the heart of NYC's Theater District, within walking distance to Times Square, Central Park, Radio City Music Hall, Saks...<a href="http://www.jake.com/detail.php?hotelId=10000101" class="orange">More Hotel Info</a></div></td>
+
+        </tr>
+      </table>
+		
+      </div></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomleft.gif" width="12" height="16"></td>
+    <td colspan="2" background="http://www.jake.com/images/searchresults/white_bottom.gif">&nbsp;</td>
+    <td align="right" valign="top" background="http://www.jake.com/images/searchresults/white_bottom.gif"><img src="http://www.jake.com/images/searchresults/white_bottomright.gif" width="12" height="16"></td>
+
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table><br>
+    </td>
+    <td align="right" valign="top" background="http://www.jake.com/images/results/tableright.gif" width="9">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" background="http://www.jake.com/images/results/tableleft.gif" width="10"><img src="http://www.jake.com/images/results/tablebottomleft.gif" width="10" height="10"></td>
+    <td valign="top" background="http://www.jake.com/images/results/tablebottom.gif"><img src="http://www.jake.com/images/results/tablebottom.gif" width="1" height="10"></td>
+    <td align="right" valign="top" background="http://www.jake.com/images/results/tableright.gif" width="9"><img src="http://www.jake.com/images/results/tablebottomright.gif" width="9" height="10"></td>
+  </tr>
+</table>
+                	
+                </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+    <td width="25" align="left" valign="top" bgcolor="#FFFFFF"><img src="http://www.jake.com/images/topright.gif" width="25" height="127"></td>
+  </tr>
+  <tr>
+    <td align="right" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+    <td align="right" valign="top" bgcolor="#FFFFFF">
+    
+<table width="499" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="24">&nbsp;</td>
+    <td width="381">&nbsp;</td>
+    <td width="22" align="right" valign="bottom">&nbsp;</td>
+    <td width="72" rowspan="3" align="right" valign="bottom"><img src="http://www.jake.com/images/footer/footer_logo.gif" width="72" height="84"></td>
+  </tr>
+  <tr> 
+    <td width="24" background="images/footer/footerbg.gif"><img src="http://www.jake.com/images/footer/footer_left.gif" width="24" height="53"></td>
+    <td align="center" background="images/footer/footerbg.gif" class="footer"> &copy; 2004 &nbsp;<a href="http://www.jake.com/index.php" class="footer">Home</a> | <a href="http://www.jake.com/footer_privacy.php" class="footer">Privacy</a> | <a href="http://www.jake.com/footer_terms.php" class="footer">Terms / Conditions</a> | <a href="http://www.jake.com/site_map.php" class="footer">Site Map</a> | <a href="http://www.jake.com/customer/index.php" class="footer">Customer 
+      Service</a></td>
+    <td width="22" align="right" valign="bottom" background="images/footer/footerbg.gif"><img src="http://www.jake.com/images/footer/footer_right.gif" width="22" height="53"></td>
+  </tr>
+  <tr> 
+    <td height="19"></td>
+    <td height="19"></td>
+    <td width="22" align="right" valign="top"><img src="http://www.jake.com/images/footer/footer_bottom.gif" width="22" height="19"></td>
+  </tr>
+</table>  
+    
+    </td>
+    <td align="left" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+    <td align="right" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+    <td align="left" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Overture Services, Inc
+var pm_tagname = "universalTag.txt";
+var pm_tagversion = "1.4";
+var pm_accountid = "AM9U748FJFN2KM2B78CVG78KJ4";
+var pm_scripthost = "srv.perf.overture.com";
+var pm_customargs = "";
+var pm_querystr = "?" + "ver=" + pm_tagversion + "&aid=" + pm_accountid + pm_customargs;
+var pm_tag = "<SCR" + "IPT LANGUAGE='JavaScript' " + "SRC=//" + pm_scripthost + "/collweb/ScriptServlet" + pm_querystr + "></SCR" + "IPT>";
+document.write(pm_tag);
+// -->
+</SCRIPT>
+<!-- www.hitslink.com/ web tools statistics hit counter code -->
+<script language="javascript" type="text/javascript">
+var data,nhp,ntz,rf,sr;document.cookie='__support_check=1';nhp='http';
+rf=document.referrer;sr=document.location.search;
+if(top.document.location==document.referrer
+|| (document.referrer == '' && top.document.location != ''))
+{rf=top.document.referrer;sr=top.document.location.search}
+ntz=new Date();if(location.href.substr(0,6).toLowerCase()=='https:')
+nhp='https';data='&an='+escape(navigator.appName)+ 
+'&sr='+escape(sr)+'&ck='+document.cookie.length+
+'&rf='+escape(rf)+ '&sl='+escape(navigator.systemLanguage)+
+'&av='+escape(navigator.appVersion)+ '&l='+escape(navigator.language)+
+'&pf='+escape(navigator.platform)+ '&pg='+escape(location.pathname);
+if(navigator.appVersion.substring(0,1)>'3') {data=data+'&cd='+
+screen.colorDepth+'&rs='+escape(screen.width+ ' x '+screen.height)+
+'&tz='+ntz.getTimezoneOffset()+'&je='+ navigator.javaEnabled()};
+document.write('<img border=0 hspace=0 '+
+ 'vspace=0 width=1 height=1 src="'+nhp+'://counter.hitslink.com/'+
+ 'statistics.asp?v=1&s=17&acct=jakecom'+data+'">');</script>
+<noscript>
+<img border=0 hspace=0 vspace=0 width=1 height=1 alt="" 
+src="http://counter.hitslink.com/stats-ns.asp?acct=jakecom&amp;v=1&amp;s=17">
+</noscript>
+<!-- End www.hitslink.com/ statistics web tools hit counter code -->
+<script language="JavaScript" src="http://www.jake.com/javascript/s_code_remote.js"></script> 
+
+</body>
+</html>

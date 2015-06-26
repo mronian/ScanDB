@@ -1,0 +1,854 @@
+<DOC>
+<DOCNO>g00135</DOCNO>
+<DOCHDR>http://national.unitedway.org/contact</DOCHDR>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Jerome Caron (jerome.caron@globetrotter.net) -->
+<!-- Modified for use on UWA site: Casey and Michael Pinck -->
+<!-- Begin
+subcategory = new Array(new Array(new Array("Corporate Donations", 103 ),new Array("Major Gifts", 101 ),new Array("Online Donations", 135 ),new Array("Other Donations", 113 ),new Array("Volunteer Your Time", 104 ),new Array("Wills and Estate Gifts", 102 )),new Array(new Array("All", 1 )),new Array(new Array("Delta SkyWish", 97 ),new Array("NFL", 96 ),new Array("Other", 100 ),new Array("Web Based", 99 )),new Array(new Array("Other", 119 ),new Array("September 11th Related", 118 )),new Array(new Array("All", 125 )),new Array(new Array("Funding Questions", 9 ),new Array("Other", 11 ),new Array("Payment Problems", 5 ),new Array("Referral to Assistance", 109 ),new Array("Request for More Information", 7 ),new Array("Voice Your Opinion", 110 )),new Array(new Array("Company/Workplace Giving", 92 ),new Array("Electronic Pledging", 95 ),new Array("General Information", 91 ),new Array("Government Campaigns", 94 ),new Array("National Corporate Leadership", 93 ),new Array("Other", 120 ),new Array("United-eWay", 133 )),new Array(new Array("All", 126 )),new Array(new Array("All", 127 )),new Array(new Array("Branding", 79 ),new Array("External Communications", 69 ),new Array("Financial Reporting", 98 ),new Array("Human Resources", 111 ),new Array("Information Technology", 78 ),new Array("Labor Participation", 90 ),new Array("Legal", 80 ),new Array("Major Gifts", 85 ),new Array("Member/Field Services", 81 ),new Array("National Corporate Leadership", 74 ),new Array("Office of the President", 86 ),new Array("Outcome Measurement", 72 ),new Array("Outcome Measurement - Publications", 123 ),new Array("Planned Giving", 84 ),new Array("Public Policy", 70 ),new Array("Research", 87 ),new Array("Training and Conferencing", 88 )),new Array(new Array("2-1-1 Initiative", 57 ),new Array("Charities Fund Transfer", 60 ),new Array("Community Fellows Program", 132 ),new Array("Delta Skywish", 61 ),new Array("Diversity", 67 ),new Array("Emergency Food and Shelter", 59 ),new Array("Emergency Response", 62 ),new Array("Other", 112 ),new Array("Project Blueprint", 66 ),new Array("State of Caring Index", 56 ),new Array("Success By 6", 129 ),new Array("Task Force on Organizational Transformation", 55 ),new Array("United-eWay", 134 ),new Array("VolunteerSolutions.org", 65 )),new Array(new Array("Boy Scouts", 106 ),new Array("Other", 108 ),new Array("September 11th Fund", 107 )),new Array(new Array("Agency Requests", 115 ),new Array("Day of Caring", 131 ),new Array("How to Volunteer", 114 ),new Array("Other", 124 ),new Array("VolunteerSolutions.org", 116 )),new Array(new Array("Browser/Operating System Issue", 3 ),new Array("Comments", 4 ),new Array("Errors", 2 ),new Array("Other", 122 ),new Array("Partnering Requests", 121 )));
+function fillSelectFromArray(selectCtrl, itemArray, goodPrompt, badPrompt, defaultItem) {
+var i, j;
+var prompt;
+// empty existing items
+for (i = selectCtrl.options.length; i >= 0; i--) {
+selectCtrl.options[i] = null; 
+}
+prompt = (itemArray != null) ? goodPrompt : badPrompt;
+if (prompt == null) {
+j = 0;
+}
+else {
+selectCtrl.options[0] = new Option(prompt);
+j = 1;
+}
+if (itemArray != null) {
+// add new items
+for (i = 0; i < itemArray.length; i++) {
+selectCtrl.options[j] = new Option(itemArray[i][0]);
+if (itemArray[i][1] != null) {
+selectCtrl.options[j].value = itemArray[i][1]; 
+}
+j++;
+}
+// select first item (prompt) for sub list
+selectCtrl.options[0].selected = true;
+   }
+}
+//  End -->
+</script>
+<script language="JavaScript">
+<!--
+function popstyle(theURL,winName,targetName,features) { 
+eval(winName+"=window.open('"+theURL+"','"+targetName+"','"+features+"')")
+}
+//-->
+</script>
+
+
+	
+			
+			<html>
+			<head>
+				
+					
+				
+				<script>window.name="uwa_main"</script>
+				<title>United Way of America - Contact United Way of America</title>
+				<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+				
+				
+					<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function popstyle(theURL,winName,targetName,features) { 
+eval(winName+"=window.open('"+theURL+"','"+targetName+"','"+features+"')")
+}
+
+// Browser Detection
+//
+var agt=navigator.userAgent.toLowerCase();
+
+isMac = (navigator.appVersion.indexOf('Mac')!=-1) ? true : false;
+var isMajor = parseInt(navigator.appVersion);
+   var isMinor = parseFloat(navigator.appVersion);
+var isNav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('spoofer')==-1)
+               && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera')==-1)
+               && (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1));
+
+NS4 = (document.layers) ? true : false;
+IEmac = ((document.all)&&(isMac)) ? true : false;
+IE4plus = (document.all) ? true : false;
+IE4 = ((document.all)&&(navigator.appVersion.indexOf('MSIE 4.')!=-1)) ? true : false;
+IE5 = ((document.all)&&(navigator.appVersion.indexOf('MSIE 5.')!=-1)) ? true : false;
+IE6 = ((document.all)&&(navigator.appVersion.indexOf('MSIE 6.')!=-1)) ? true : false;
+ver4 = (NS4 || IE4plus) ? true : false;
+
+// return the rv value of a Gecko user agent
+// as a floating point number. 
+// returns -1 for non-gecko browsers, 
+//          0 for pre Netscape 6.1/Gecko 0.9.1 browsers
+//          number > 0 where each portion of 
+//          the rv value delimited by . 
+//          will be treated as value out of 100.
+//          e.g. for rv: 3.12.42, 
+//          getGeckoRv() returns 3.1242
+//          http://devedge.netscape.com/viewsource/2002/browser-detection/
+function geckoGetRv()
+{
+  if (navigator.product != 'Gecko')
+  {
+    return -1;
+  }
+  var rvValue = 0;
+  var ua      = navigator.userAgent.toLowerCase();
+  var rvStart = ua.indexOf('rv:');
+  var rvEnd   = ua.indexOf(')', rvStart);
+  var rv      = ua.substring(rvStart+3, rvEnd);
+  var rvParts = rv.split('.');
+  var exp     = 1;
+
+  for (var i = 0; i < rvParts.length; i++)
+  {
+    var val = parseInt(rvParts[i]);
+    rvValue += val / exp;
+    exp *= 100;
+  }
+
+  return rvValue;
+}
+
+
+// determine if the browser is any Netscape Gecko
+// branch >= 1.0.1 or Netscape 6.2.x/CompuServe 7 
+// built after August 1, 2002
+
+var rv    = geckoGetRv();
+var found = false;
+
+if (rv >= 0)
+{
+  // Gecko browser
+  if (navigator.productSub > '20020801')
+  {
+    if (rv >= 1.0001)
+      var NS7 = true;
+  }
+  else var NS6 = true;
+}
+
+
+	
+IE5plus = IE5 || IE6;
+IEMajor = 0;
+
+if (IE4plus)
+{
+	var start = navigator.appVersion.indexOf('MSIE');
+	var end = navigator.appVersion.indexOf('.',start);
+	IEMajor = parseInt(navigator.appVersion.substring(start+5,end));
+	IE5plus = (IEMajor>=5) ? true : false;
+}
+
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Begin
+function right(e) {
+var msg = "Please go here to learn more about the United Way brand marks http://national.unitedway.org/aboutuwa/uw_logo.cfm.";
+if (navigator.appName == 'Netscape' && e.which == 3) {
+alert(msg);
+return false;
+}
+if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2) {
+alert(msg);
+return false;
+}
+else return true;
+}
+
+function trap() 
+  {
+  if(document.images)
+    {
+    for(i=0;i<document.images.length;i++)
+      {
+      document.images[i].onmousedown = right;
+      document.images[i].onmouseup = right;
+      }
+    }
+  }
+ 
+
+
+//-->
+</script>
+				
+				
+				
+
+
+
+
+<link rel="stylesheet" href="/c/styles/tables_new.css" type="text/css">
+
+	
+	
+	
+
+
+
+
+
+<link rel="stylesheet" href="/c/styles/default_new.css" type="text/css">
+				
+				
+					<meta name="Keywords" content="united way, impact, community, community impact, volunteer, 211, 2-1-1, success by six, success by 6, charity, nonprofit, " lang="en-us">
+				
+					
+			
+<script LANGUAGE=JAVASCRIPT TYPE="text/javascript" >
+<!--
+
+function _CF_onError(form_object, input_object, object_value, error_message)
+    {
+	alert(error_message);
+       	return false;	
+    }
+
+
+function _CF_hasValue(obj, obj_type)
+    {
+    if (obj_type == "TEXT" || obj_type == "PASSWORD")
+	{
+    	if (obj.value.length == 0) 
+      		return false;
+    	else 
+      		return true;
+    	}
+    else if (obj_type == "SELECT")
+	{
+        for (i=0; i < obj.length; i++)
+	    	{
+		if (obj.options[i].selected)
+			return true;
+		}
+
+       	return false;	
+	}
+    else if (obj_type == "SINGLE_VALUE_RADIO" || obj_type == "SINGLE_VALUE_CHECKBOX")
+	{
+
+		if (obj.checked)
+			return true;
+		else
+       		return false;	
+	}
+    else if (obj_type == "RADIO" || obj_type == "CHECKBOX")
+	{
+
+        for (i=0; i < obj.length; i++)
+	    	{
+		if (obj[i].checked)
+			return true;
+		}
+
+       	return false;	
+	}
+	}
+
+function  _CF_checkCFForm_1(_CF_this)
+    {
+    if  (!_CF_hasValue(_CF_this.sender_email, "TEXT" )) 
+        {
+        if  (!_CF_onError(_CF_this, _CF_this.sender_email, _CF_this.sender_email.value, "Please provide a valid email address."))
+            {
+            return false; 
+            }
+        }
+
+    if  (!_CF_hasValue(_CF_this.Zip, "TEXT" )) 
+        {
+        if  (!_CF_onError(_CF_this, _CF_this.Zip, _CF_this.Zip.value, "Please provide a valid Zip Code"))
+            {
+            return false; 
+            }
+        }
+
+    return true;
+    }
+
+//-->
+</script>
+</head>
+			
+			
+				<body bgcolor="aaaaaa" leftmargin=10 topmargin=10 onload="trap();MM_preloadImages('/c/images/mainnav/home_on.gif','/c/images/mainnav/aboutuwa_on.gif','/c/images/mainnav/give_on.gif','/c/images/mainnav/contact_on.gif','/c/images/mainnav/aboutuw_on.gif','/c/images/mainnav/programs_on.gif','/c/images/mainnav/media_on.gif','/c/images/mainnav/jobs_on.gif');MM_preloadImages('/images/mainnav/home_on.gif','/images/mainnav/myuw_on.gif','/images/mainnav/programs_on.gif','/images/mainnav/give_on.gif','/images/mainnav/contact_on.gif','/images/mainnav/search_on.gif','/images/mainnav/aboutuw_on.gif','/images/mainnav/aboutuwa_on.gif','/images/mainnav/help_on.gif','/images/mainnav/jobs_on.gif')"   >
+				
+		
+			
+			
+			
+			
+							
+
+	
+	
+	
+							
+			
+			
+			<table bgcolor="FFFFFF" width="750" border="0" cellspacing="0" cellpadding="0" align="left">
+			
+			<tr>
+			   	<td rowspan=2 bgcolor="666666"><img src="/c/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+				<td colspan=1 bgcolor="666666"><img src="/c/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+				<td rowspan=2 bgcolor="666666"><img src="/c/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+			</tr>
+			
+			<tr>
+			<td>
+			
+			<!--Begin main table  -->
+			<table width="750" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left">
+					
+	
+				
+					
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+			  <td height="19" bgcolor="#A1A3BC"></td>
+			</tr>
+			<tr>
+			  <td valign="top" bgcolor="#111580"><IMG src="/c/images/pagehead/topbannerimage_2.jpg" width="117" height="78" alt="Community Impact"><IMG src="/c/images/pagehead/topbannerimage_7.jpg" width="124" height="78" alt="2-1-1"><IMG src="/c/images/pagehead/topbannerimage_11.jpg" width="112" height="78" alt="Leadership"></TD>
+			</tr>
+			<tr>
+			  <td bgcolor="#575994" height="19">&nbsp;&nbsp;&nbsp;<IMG src="/c/images/pagehead/whatmatters.gif" align="absmiddle" alt="What Matters"></td>
+			</tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" align="right">
+			<tr>
+				<td bgcolor="#A1A3BC" height="19"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#111580" valign="center" height="78" align="right">
+				
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#575994" height="19"></td>
+			</tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td bgcolor="#A1A3BC" height="19"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#111580" height="78" align="right" valign="middle">
+				
+				
+					<a href="//national.unitedway.org"><img src="/c/images/pagehead/topbanner_new.jpg" alt="The United Way of America" border="0" id="BlockDownload"></a>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#575994" height="19"></td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+</table>		
+	
+				
+<table cellpadding="0" cellspacing="0" border="0">
+	
+		
+			
+<!--Begin main nav bar -->
+<tr> 
+		
+		
+		<td id="bttn1"><A href="/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button1','','/c/images/mainnav/home_on.gif',1)"><IMG name="button1" border="0" src="/c/images/mainnav/home_off.gif" alt="Home"></A></td>
+		
+		<td id="bttn2"><A href="/aboutuwa/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button2','','/c/images/mainnav/aboutuwa_on.gif',1)"><IMG name="button2" border="0" src="/c/images/mainnav/aboutuwa_off.gif" alt="United Way of America"></A></td>
+		
+		<td id="bttn3"><A href="/give/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button3','','/c/images/mainnav/give_on.gif',1)"><IMG name="button3" border="0" src="/c/images/mainnav/give_off.gif" alt="How to Give"></A></td>
+		
+		<td id="bttn4"><A href="/contact/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button4','','/c/images/mainnav/contact_on.gif',1)"><IMG name="button4" border="0" src="/c/images/mainnav/contact_off.gif" alt="Contact Us"></A></td>
+		 
+	</tr>
+	<tr> 
+		
+		
+		<td id="bttn5"><A href="/aboutuw/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button5','','/c/images/mainnav/aboutuw_on.gif',1)" ><IMG name="button5" border="0" src="/c/images/mainnav/aboutuw_off.gif" alt="The United Way System"></A></td>
+		
+		<td id="bttn6"><A href="/programs/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button6','','/c/images/mainnav/programs_on.gif',1)" ><IMG name="button6" border="0" src="/c/images/mainnav/programs_off.gif" alt="Programs and Services"></A></td>
+		
+		<td id="bttn7"><A href="/news/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button7','','/c/images/mainnav/media_on.gif',1)" ><IMG name="button7" border="0" src="/c/images/mainnav/media_off.gif" alt="Media Center"></A></td>
+		
+		<td id="bttn8"><A href="/jobs/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button8','','/c/images/mainnav/jobs_on.gif',1)" ><IMG name="button8" border="0" src="/c/images/mainnav/jobs_off.gif" alt="Job Opportunities"></A></td>
+		
+		
+</tr><!--End main nav bar -->
+
+
+		
+	 
+</table>
+			
+					
+					</td>
+				</tr>
+				
+				<tr valign="top">
+					
+					 
+					
+						
+						<td bgcolor="0F1680" width="136">
+						
+							<table cellpadding="0" cellspacing="0" border="0" >
+								<tr>
+									<td bgcolor="7C81B8">
+										
+ 						 
+									</td>
+								 </tr> 
+ 								
+									
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<tr>
+	<td bgcolor="0F1680" valign="top" align="left" width="136"> 		  
+	<!--Begin secondary navigation -->
+	<table border="0" cellspacing="0" cellpadding="0" align="left" width="136">
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	
+	 
+	 
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			<tr>
+			
+		  <form name="searchUSA" action="/myuw/postcode.cfm" method="POST">
+			<td>
+				<table width="100%" border="0" cellspacing="3" cellpadding="0"><tr><td>
+								<font class="secondnav"><font class="secondnavheader">Find a local:</font></font>
+
+							<font class="secondnav"><br><input type="Radio" name="find" value="UW" checked>United Way<br><input type="Radio" name="find" value="VS">Volunteer Opportunity</font>
+								<table cellspacing="0" cellpadding="0" width="100%" border="0"><tr>
+									<td><input type="text" name="postcode" size="6" maxlength="6" class="secondnav" border="0">&nbsp;<input type="submit" name="go" value="Go" class="secondnavsmall2" border="0"></td>
+									<td><font class="secondnavsmall">(postal<br>code)</font> </td>
+								</tr></table>
+					<a href="/myuw/"class="secondnav"><div class="secondnav"><b>&nbsp;[advanced search]</b></div></a>
+				</td></tr></table>
+			</td>
+		  </form>
+		</tr>
+		<tr>
+			<td><img src="/c/images/whitedot.gif" width="100%" height=1 border="0"></td>
+		</tr>
+		<tr>
+		 	<form action="/search/results.cfm" name="sitesearch" method="post">
+			  <td>
+			  	<table width="100%" border="0" cellspacing="3" cellpadding="2"><tr><td>
+					<p><font class="secondnav"><strong>Site Search:</strong></font><BR>
+					<table cellspacing="0" cellpadding="0"><tr>
+						<td><input type="text" name="searchentry" size="12" maxlength="60" class="secondnav">&nbsp;</td>
+						<td><input type="submit" name="go2" value="Go" class="secondnavsmall2"></td>
+					</tr></table>	 
+						 <INPUT TYPE="hidden" value="UWA" CHECKED name="related">
+						 <INPUT TYPE="hidden" value="rank" CHECKED name="sortorder">
+					  <a href="/search/"class="secondnav"><div class="secondnav"><b>[advanced search]</b></div></a>
+					</td></tr></table>
+				</td>
+			  </form>
+		 </tr> 
+		 <tr>
+			<td><img src="/c/images/whitedot.gif" width="100%" height=1 border="0"></td>
+		</tr>
+	
+	
+	</table>
+	
+	
+	<!--Spacer below maintains 400 px page size for short pages -->
+	  <img src="/c/images/spacer.gif" width="1" height="280">
+	  </td>
+	<!--End secondary navigation -->
+	
+
+
+
+
+
+								 
+							</table>
+						</td>
+					  
+					
+					<td>
+						<table border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tr align="left" valign="top">
+								
+									<td colspan="4" width="602">
+										
+									</td>
+									 
+							</tr>
+							
+							
+								
+									
+								
+							
+							
+								<tr valign="top">
+							 				
+				
+			
+	
+
+
+
+
+
+<td colspan="4" valign="top">
+<table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
+ <tr><td>&nbsp;</td></tr>
+
+ <tr><td>
+
+
+ 
+<span class="heading1">Contact United Way of America</span>
+ 
+
+
+  </td></tr>
+ <tr><td> 
+
+<table align="center" width="100%" cellspacing="2" cellpadding="2" border="0">
+<tr>
+<td valign="top">
+<img src="/images/clearpixel.gif" width="250" height="1" border="0" alt=""><br>
+
+<p>
+ 
+To contact a representative from United Way of America, please complete the form below and select a category that best describes the nature of your inquiry.</p>
+ 
+<p> 
+      <FORM NAME="CFForm_1" ACTION="send.cfm" METHOD=POST onSubmit="return _CF_checkCFForm_1(this)">
+        <table border="0">
+          <tr>
+            <td><b><font size=-1>Name:</font></b></td>
+            <td>
+				<table>
+				<tr>
+				<td><input type="text" name="sender_fname" size="13" value="First"
+							onFocus="if(this.value=='First')this.value='';" 		
+							onblur="if(this.value=='')this.value='First';"
+							> 
+					<input type="text" name="sender_lname" size="14" value="Last"
+							onFocus="if(this.value=='Last')this.value='';" 		
+							onblur="if(this.value=='')this.value='Last';"
+							>
+				</td>
+				</tr>
+            	</table>
+			</td>
+          </tr>
+          
+		  		  
+		  <tr>
+            <td><b><font size=-1>E-Mail:</font></b></td>
+            <td>
+              <table>
+			  <tr>
+			  <td valign="top"><INPUT TYPE="text" NAME="sender_email" SIZE="30"></td>
+              <td>&nbsp;</td> 
+			  </td>
+			  </table>
+			  </td>
+          </tr>
+          <tr>
+		  	<td colspan="3"><font size=-2><font color="#FF0000">Required:</font> Providing your e-mail address ensures a reply.</font></td>
+		  </tr> 
+		   
+		  <tr>
+            <td><b><font size=-1>Company:</font></b></td>
+            <td>
+              <table>
+			  <tr>
+			  <td valign="top"><input name="company" type="text" size=30></td>
+              <td>&nbsp;</td> 
+			  </td>
+			  </table>
+			  </td>
+          </tr>
+		  
+          <tr>
+            <td><b>Zip/Post Code:</b></td>
+            <td valign="top">
+				<table>
+				<tr>
+              <td><INPUT TYPE="text" NAME="Zip" SIZE="5" MAXLENGTH="6"></td>
+              <td>&nbsp;</td> 
+				</tr>
+				</table>
+            </td>
+          </tr>
+		  <tr>
+		  	<td colspan=3><font size=-2>Optional: Providing your zip/post code allows United Way of America to identify the Local United Way serving your area.</font></td>
+		  </tr>
+		  
+		  
+		  <tr>
+            <td valign="top"><b>Category:</b><br><br><b>Subcategory:</b></td>
+            <td valign="top">
+				<table>
+				<tr>
+				<td valign="top">
+				<SELECT NAME="Category" onChange="fillSelectFromArray(this.form.Subcategory, ((this.selectedIndex == -1) ? null : subcategory[this.selectedIndex-1]));">
+				<OPTION VALUE="-1">select category
+					
+						<option value="48">Donating to United Way 
+						<option value="1">General United Way questions 
+						<option value="47">Partnerships 
+						<option value="53">Request for Assistance 
+						<option value="54">Request for Funding 
+						<option value="3">September 11th 
+						<option value="46">United Way Campaigns 
+						<option value="55">United Way Canada 
+						<option value="56">United Way International 
+						<option value="45">UWA Departments 
+						<option value="44">UWA Programs and Initiatives 
+						<option value="49">Voice Your Opinion 
+						<option value="50">Volunteering 
+						<option value="2">Web Site 
+				</SELECT>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2" valign="top">
+				<SELECT NAME="Subcategory" size="6">
+				<OPTION>select subcategory</OPTION>
+				<OPTION></OPTION>
+				<OPTION></OPTION>
+				<OPTION></OPTION>
+				<OPTION></OPTION>
+				</SELECT>
+				</td>
+				</tr>
+				</table>
+			</td>
+          </tr>
+		   <tr>
+			<td colspan=2><font size=-2><font color="#FF0000">Required:</font> Selecting a category allows your message to be routed to the appropriate contact person at UWA.</font></td>
+		  </tr>
+		<tr>
+			<td>&nbsp;<img src="/images/spacer.gif" width="1" height="140" border="0" alt=""></td>
+			<td valign="top">	
+       		 <p> <b>Questions and Comments:</b> 
+        	 <br>
+          		<textarea name="message" cols="43" rows="8" wrap="virtual"></textarea>
+       		 </td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>	
+       		 <input name="Submit" type="submit" value="Send" align="MIDDLE">
+		     <input name="Reset" type="reset" value="Reset" align="MIDDLE">
+        	</td>
+		</tr>		
+	</table>
+	</FORM>
+    
+
+
+</td>
+
+<td>
+<img src="/images/clearpixel.gif" width="10" height="1" border="0" alt="">
+</td>
+
+<td valign="top" width="25%">
+<img src="/images/clearpixel.gif" width="250" height="1" border="0" alt=""><br>
+
+<b>Tips:</b>
+<br><img src="/images/bullet.gif" width="10" height="11" border="0" alt="">Most donation, funding and assistance issues, as well as many policy decisions are handled at the local level, and questions relating to these issues are best addressed to <a href="/myuw/">local United Ways</a>.
+<p>701 North Fairfax St.<br>
+Alexandria, VA 22314<br>
+(703) 836-7112<br>
+<a href="http://www.unitedway.org">www.unitedway.org</a>
+
+
+</td>
+</tr>
+</table>
+
+
+
+  </td></tr>
+ <tr><td>&nbsp;</td></tr>
+</table>
+</td>
+
+
+
+ 
+
+
+
+	
+	
+	
+
+
+							
+			 					
+			 				</td>
+			 			</tr>
+					</table>
+			 </tr>
+			 
+			 
+			 <tr>
+			 	
+					<td bgcolor="0F1680" align="center"><a href="/legal" class="unbold">Legal Notices</a></td>
+				
+				<td>
+					<table width="100%" border="0">
+						<tr>
+							
+								<td>
+									
+									
+								</td>
+						    
+							<td colspan=2>
+								
+					  	&nbsp;	
+					  
+							</td>
+							<td align="right" class="copyright">&copy;2005 United Way of America.<br>All Rights Reserved.</td>
+			 				
+						</tr>
+					</table>
+				</td>
+			 </tr>
+		</table>
+		
+		<!--End main table -->
+		</td>
+		</tr>
+		
+		
+		<tr>
+		<td colspan=3 bgcolor="666666"><img src="/c/images/spacer.gif" width="1" height="1" alt="" border="0"></td>
+		</tr>
+		</table>
+		</td></tr></table>
+		
+		
+		<!--End border for main table  -->
+		</body>
+		</html>
+		<br clear="all">
+		
+
+
+
+

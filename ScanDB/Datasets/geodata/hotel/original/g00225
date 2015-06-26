@@ -1,0 +1,1045 @@
+<DOC>
+<DOCNO>g00225</DOCNO>
+<DOCHDR>http://www.doubletreesanjose.com/localinformation.asp</DOCHDR>
+
+
+<html>
+<head>
+<!-- BEGIN: AdSolution-Tag 4.2: Global-Code -->
+<script type="text/javascript" language="javascript" src="http://a.as-us.falkag.net/dat/dlv/aslmain.js"></script>
+<!-- END: AdSolution-Tag 4.2: Global-Code -->
+
+<!-- No Tacoda Tag -->
+<title>DoubleTree Hotel San Jose</title>
+<META name="description" content="Local Information">
+<META name="keywords" content="things to do, Club Max, Double Tree,">
+<META name="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style TYPE="text/css">
+	#divNewsCont{position:absolute; width:154; height:230; overflow:hidden; top:167; left:606; clip:rect(0,154,230,0); visibility:hidden}
+	#divNewsText{position:absolute; top:0; left:0}
+</style>
+<script LANGUAGE="JavaScript">
+/*
+Copyright (C) 1999 Thomas Brattli
+This script is made by and copyrighted to Thomas Brattli at www.bratta.com
+Visit for more great scripts. This may be used freely as long as this msg is intact!
+I will also appriciate any links you could give me. 
+*/
+// Courtesy of SimplytheBest.net (http://simplythebest.net/info/dhtml_scripts.html)
+function checkBrowser(){
+	this.ver=navigator.appVersion
+	this.dom=document.getElementById?1:0
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+	this.ie4=(document.all && !this.dom)?1:0;
+	this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+	return this
+}
+bw=new checkBrowser()
+
+lstart=0
+loop=true 
+speed=200
+pr_step=3
+var the_timeout
+
+function makeObj(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+	this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0;
+  	this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0;
+	this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight
+	this.newsScroll=newsScroll;
+	this.moveIt=b_moveIt; this.x; this.y;
+    this.obj = obj + "Object"
+    eval(this.obj + "=this")
+    return this
+}
+
+function b_moveIt(x,y){
+	this.x=x;this.y=y
+	this.css.left=this.x
+	this.css.top=this.y
+}
+var nLastY
+
+function newsScroll(speed){
+	nLastY = this.y
+	if(this.y>-this.scrollHeight){
+		this.moveIt(0,this.y-pr_step)
+		the_timeout = setTimeout(this.obj+".newsScroll("+speed+")",speed)
+	}else if(loop) {
+		this.moveIt(0,lstart)
+		eval(this.obj+".newsScroll("+speed+")")
+	  }
+}
+
+function newsScrollInit(){
+	oNewsCont=new makeObj('divNewsCont')
+	oNewsScroll=new makeObj('divNewsText','divNewsCont')
+	oNewsScroll.moveIt(0,lstart)
+	oNewsCont.css.visibility='visible'
+	oNewsScroll.newsScroll(speed)
+}
+function newsScrollInit2(){
+	oNewsCont=new makeObj('divNewsCont')
+	oNewsScroll=new makeObj('divNewsText','divNewsCont')
+	oNewsScroll.moveIt(0,nLastY)
+	oNewsCont.css.visibility='visible'
+	oNewsScroll.newsScroll(speed)
+}
+onload=newsScrollInit;
+
+function stopScroll(){
+	clearTimeout(the_timeout);
+
+}
+function startScroll(){
+	newsScrollInit2()
+}
+if (window != top) top.location.href = location.href;
+
+
+//  End -->
+</script>
+<style id="Entire">
+A {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #661F03;	text-decoration: underline;} 
+.gBody {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #000000;	text-decoration: none;	background-color: #FFFFFF;}
+.gInputFields {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	height: 18px;}
+.gInputFieldsTextArea {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	height: 40px;	width:200px;}
+.gDropdown {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	color: #000000;	height: 18px;}
+.gCopyright {	font-family: Arial, Helvetica, sans-serif;	color: aaaaaa;	font-size: 10px;	text-decoration: none;}
+.gMemberText {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	color: #000000;	text-decoration: none;}
+.gSubmitButtons {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;}
+.fHeadline {	font-family: "Times New Roman", Times, serif;	font-size: 24px;	color: #004441;	text-decoration: none;}
+.fText {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #000000;	padding-top: 17px;	padding-right: 19px;	padding-bottom: 17px;}
+.fLinks {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #661F03;	text-decoration: underline;}
+.fLinks:visited {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #000000;	text-decoration: underline;}
+.fLinks:active {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	font-weight: bold;	color: #661F03;	text-decoration: none;}
+.fLinks:hover {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #661F03;	text-decoration: none;	background-color: #DAD5C9;	font-weight: bold;}
+.gNavText {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	color: #000000;	text-decoration: underline;}
+.gNavText:hover {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	color: #000000;	text-decoration: none;}
+.iPageTitles {	font-family: "Times New Roman", Times, serif;	font-size: 24px;	color: #004441;	text-decoration: none;}
+.iTextContent {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #000000;	padding-right: 19px;padding-bottom: 17px;}
+.iTextRequired{font-family: Arial, Helvetica, sans-serif;font-size: 11px;color: #004441; font-weight: bold;}
+.iText {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #000000;}
+.iHeadline  {	font-family: "Times New Roman", Times, serif;	font-size: 22px;	color: #004441;	text-decoration: none;}
+.iHeadlineELS  {	font-family: "Times New Roman", Times, serif;	font-size: 14px;	color: #004441;	text-decoration: none;}
+.iLinks {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #661F03;	text-decoration: underline;font-weight: bold;}
+.iLinks:visited {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #000000;	text-decoration: underline;font-weight: bold;}
+.iLinks:active {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	font-weight: bold;	color: #661F03;	text-decoration: none;}
+.iLinks:hover {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #661F03;	text-decoration: none;	background-color: #DAD5C9;	font-weight: bold;}
+.iDividersHR {	color: #661F03;}
+.cgBottomLinks {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	color: #000000;	text-decoration: underline;}
+.cgBottomText {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	color: #000000;	text-decoration: none;}
+.cgContactText {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	color: #FFFFFF;	text-decoration: none;	padding-right: 8px;}
+.cgSubmitButton45 {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	width: 45px;}
+.cfSpecials {	padding-right: 7px;	padding-bottom: 7px;	padding-left: 7px;	font-family: Arial, Helvetica, sans-serif;	font-size: 11px;	text-decoration: none;	color: #D7CAB0;	text-align: center;}
+.cfSvEHeadline {	font-family: Arial, Helvetica, sans-serif;	font-size: 15px;	text-decoration: none;	font-weight: bold;	color: #661F03;}
+.cfSvE {	padding-right: 7px;	padding-bottom: 7px;	padding-left: 7px;	font-family: Arial, Helvetica, sans-serif;	font-size: 11px;	text-decoration: none;}
+.cfSearch {	padding-right: 7px;	padding-top: 7px;}
+.cfSpecialsHeadline {	font-family: Arial, Helvetica, sans-serif;	font-size: 15px;	text-decoration: underline;	color: #FFFFFF;	text-align: center;	font-weight: bold;}
+.cfSpecialsBold {	font-family: Arial, Helvetica, sans-serif;	font-size: 11px;	text-decoration: none;	color: #FFFFFF;	text-align: center;	font-weight: bold;}
+.cfSpecialsLink {	font-family: Arial, Helvetica, sans-serif;	font-size: 11px;	text-decoration: underline;	color: #FFFFFF;	text-align: center;	font-weight: normal;}
+.cfSpecialsDisclaimer {	font-family: Arial, Helvetica, sans-serif;	font-size: 9px;	text-decoration: none;	color: #9F755A;	text-align: center;	font-weight: normal;}
+.ciSpecialsButton1 {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	height: 19px;	width: 36px;}
+.ciSpecialsButton2 {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	height: 19px;	width: 45px;	margin-right: 3px;	margin-left: 3px;}
+.ciSvEHeadline {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	text-decoration: none;	font-weight: bold;	color: #661F03;}
+.ciSvE {	padding-right: 7px;	padding-bottom: 7px;	padding-left: 7px;	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	text-decoration: none;	padding-top: 3px;}
+.ciFormLabel {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	font-weight: bold;	color: #661F03;	text-decoration: none;}
+.ciTextField {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;}
+.ciPhoto {	margin-right: 10px;	margin-bottom: 10px;	border: 1px solid #000000;}
+.cgDropdownGoout {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	color: #000000;	height: 18px;	margin-top: 6px;}
+.ceText2 {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	color: #000000;}
+.ceHeadline1 {	font-family: "Times New Roman", Times, serif;	font-size: 24px;	color: #004441;	text-decoration: none;}
+.ceHeadline2 {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	font-weight: bold;	color: #661F03;	text-decoration: none;	margin-bottom: 5px;}
+.ceLink1 {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	font-weight: normal;	color: #661F03;	text-decoration: underline;}
+.ceLink2 {	font-family: Arial, Helvetica, sans-serif;	font-size: 13px;	font-weight: normal;	color: #004441;	text-decoration: underline;}
+.ceSmallText1 {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	font-style: normal;	color: #000000;	text-decoration: none;}
+.ceSmallText2 {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;	font-weight: normal;	color: #661F03;	text-decoration: none;}
+.ceImage {	border: 1px solid #661F03;}
+.elsAlertMsg { font-family: arial; font-size: 13px; font-weight: bold; color: #004441; line-height: normal }
+.elsTable { border-style: solid; border-width: 1px; border-color: #000000; }
+.elsCellField { background-color: #FFFFFF; color: #004441; font-family: arial; font-size: 13px; }
+.elsCellData { background-color: #FFFFFF; color: #000000; font-family: arial; font-size: 13px; }
+A.elsCellField { color: #004441; }
+A.elsCellData { color: #000000; }
+.ListingBlock {
+	color:#000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+}
+.ListingBlock1 {
+	background-color:#F7F5F3;
+	color:#000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+}
+.ListingBlock2 {
+	background-color:#C9C1B0;
+	color:#000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+}
+.ListingBlock3 {
+	background-color:#D8D1C5;
+	color:#000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+}
+A.ListingBlock {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #661F03;
+	text-decoration: underline;
+}
+A.ListingBlock:VISITED {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+A.ListingBlock:HOVER {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #661F03;
+	text-decoration: none;
+}
+A.ListingBlock1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #661F03;
+	text-decoration: underline;
+}
+A.ListingBlock1:VISITED {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+A.ListingBlock1:HOVER {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #661F03;
+	text-decoration: none;
+}
+A.ListingBlock2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #661F03;
+	text-decoration: underline;
+}
+A.ListingBlock2:VISITED {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+A.ListingBlock2:HOVER {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #661F03;
+	text-decoration: none;
+}
+A.ListingBlock3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #661F03;
+	text-decoration: underline;
+}
+A.ListingBlock3:VISITED {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+A.ListingBlock3:HOVER {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #661F03;
+	text-decoration: none;
+}
+
+</style>
+
+
+<script LANGUAGE="JAVASCRIPT">
+<!--
+browser = (((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) >= 3 )) || ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 3 )))
+
+gNavHomeon = new Image();
+gNavHomeoff = new Image();
+gNavHomeup = new Image();
+gNavHomeoff.src = "/images/gNavHomeoff.gif";
+gNavHomeon.src = "/images/gNavHomeon.gif";
+gNavHomeup.src = "/images/gNavHomeup.gif";
+gNavReservationon = new Image();
+gNavReservationoff = new Image();
+gNavReservationup = new Image();
+gNavReservationoff.src = "/images/gNavReservationoff.gif";
+gNavReservationon.src = "/images/gNavReservationon.gif";
+gNavReservationup.src = "/images/gNavReservationup.gif";
+gNavAbouton = new Image();
+gNavAboutoff = new Image();
+gNavAboutup = new Image();
+gNavAboutoff.src = "/images/gNavAboutoff.gif";
+gNavAbouton.src = "/images/gNavAbouton.gif";
+gNavAboutup.src = "/images/gNavAboutup.gif";
+gNavAccommodationson = new Image();
+gNavAccommodationsoff = new Image();
+gNavAccommodationsup = new Image();
+gNavAccommodationsoff.src = "/images/gNavAccommodationsoff.gif";
+gNavAccommodationson.src = "/images/gNavAccommodationson.gif";
+gNavAccommodationsup.src = "/images/gNavAccommodationsup.gif";
+gNavDiningon = new Image();
+gNavDiningoff = new Image();
+gNavDiningup = new Image();
+gNavDiningoff.src = "/images/gNavDiningoff.gif";
+gNavDiningon.src = "/images/gNavDiningon.gif";
+gNavDiningup.src = "/images/gNavDiningup.gif";
+gNavMeetingson = new Image();
+gNavMeetingsoff = new Image();
+gNavMeetingsup = new Image();
+gNavMeetingsoff.src = "/images/gNavMeetingsoff.gif";
+gNavMeetingson.src = "/images/gNavMeetingson.gif";
+gNavMeetingsup.src = "/images/gNavMeetingsup.gif";
+gNavWeddingson = new Image();
+gNavWeddingsoff = new Image();
+gNavWeddingsup = new Image();
+gNavWeddingsoff.src = "/images/gNavWeddingsoff.gif";
+gNavWeddingson.src = "/images/gNavWeddingson.gif";
+gNavWeddingsup.src = "/images/gNavWeddingsup.gif";
+gNavPackageson = new Image();
+gNavPackagesoff = new Image();
+gNavPackagesup = new Image();
+gNavPackagesoff.src = "/images/gNavPackagesoff.gif";
+gNavPackageson.src = "/images/gNavPackageson.gif";
+gNavPackagesup.src = "/images/gNavPackagesup.gif";
+gNavPressGuideon = new Image();
+gNavPressGuideoff = new Image();
+gNavPressGuideup = new Image();
+gNavPressGuideoff.src = "/images/gNavPressGuideoff.gif";
+gNavPressGuideon.src = "/images/gNavPressGuideon.gif";
+gNavPressGuideup.src = "/images/gNavPressGuideup.gif";
+gNavAboutGeneralon = new Image();
+gNavAboutGeneraloff = new Image();
+gNavAboutGeneraloff.src = "/images/gNavAboutGeneral.gif";
+gNavAboutGeneralon.src = "/images/gNavAboutGeneralUp.gif";
+gNavAboutPhotoGalleryon = new Image();
+gNavAboutPhotoGalleryoff = new Image();
+gNavAboutPhotoGalleryoff.src = "/images/gNavAboutPhotoGallery.gif";
+gNavAboutPhotoGalleryon.src = "/images/gNavAboutPhotoGalleryUp.gif";
+gNavAboutEmploymenton = new Image();
+gNavAboutEmploymentoff = new Image();
+gNavAboutEmploymentoff.src = "/images/gNavAboutEmployment.gif";
+gNavAboutEmploymenton.src = "/images/gNavAboutEmploymentUp.gif";
+gNavAboutContactUson = new Image();
+gNavAboutContactUsoff = new Image();
+gNavAboutContactUsoff.src = "/images/gNavAboutContactUs.gif";
+gNavAboutContactUson.src = "/images/gNavAboutContactUsUp.gif";
+gNavAccomGeneralon = new Image();
+gNavAccomGeneraloff = new Image();
+gNavAccomGeneraloff.src = "/images/gNavAccomGeneral.gif";
+gNavAccomGeneralon.src = "/images/gNavAccomGeneralUp.gif";
+gNavDiningDiningon = new Image();
+gNavDiningDiningoff = new Image();
+gNavDiningDiningoff.src = "/images/gNavDiningDining.gif";
+gNavDiningDiningon.src = "/images/gNavDiningDiningUp.gif";
+gNavDiningClubMaxon = new Image();
+gNavDiningClubMaxoff = new Image();
+gNavDiningClubMaxoff.src = "/images/gNavDiningClubMax.gif";
+gNavDiningClubMaxon.src = "/images/gNavDiningClubMaxUp.gif";
+gNavDiningSpencerson = new Image();
+gNavDiningSpencersoff = new Image();
+gNavDiningSpencersoff.src = "/images/gNavDiningSpencers.gif";
+gNavDiningSpencerson.src = "/images/gNavDiningSpencersUp.gif";
+gNavMeetingsGeneralon = new Image();
+gNavMeetingsGeneraloff = new Image();
+gNavMeetingsGeneraloff.src = "/images/gNavMeetingsGeneral.gif";
+gNavMeetingsGeneralon.src = "/images/gNavMeetingsGeneralUp.gif";
+gNavMeetingsCateringon = new Image();
+gNavMeetingsCateringoff = new Image();
+gNavMeetingsCateringoff.src = "/images/gNavMeetingsCatering.gif";
+gNavMeetingsCateringon.src = "/images/gNavMeetingsCateringUp.gif";
+gNavMeetingsFloorplanson = new Image();
+gNavMeetingsFloorplansoff = new Image();
+gNavMeetingsFloorplansoff.src = "/images/gNavMeetingsFloorplans.gif";
+gNavMeetingsFloorplanson.src = "/images/gNavMeetingsFloorplansUp.gif";
+gNavMeetingsTechServiceson = new Image();
+gNavMeetingsTechServicesoff = new Image();
+gNavMeetingsTechServicesoff.src = "/images/gNavMeetingsTechServices.gif";
+gNavMeetingsTechServiceson.src = "/images/gNavMeetingsTechServicesUp.gif";
+gNavMeetingsPackageson = new Image();
+gNavMeetingsPackagesoff = new Image();
+gNavMeetingsPackagesoff.src = "/images/gNavMeetingsPackages.gif";
+gNavMeetingsPackageson.src = "/images/gNavMeetingsPackagesUp.gif";
+gNavWeddingsGeneralon = new Image();
+gNavWeddingsGeneraloff = new Image();
+gNavWeddingsGeneraloff.src = "/images/gNavWeddingsGeneral.gif";
+gNavWeddingsGeneralon.src = "/images/gNavWeddingsGeneralUp.gif";
+gNavWeddingsPackageson = new Image();
+gNavWeddingsPackagesoff = new Image();
+gNavWeddingsPackagesoff.src = "/images/gNavWeddingsPackages.gif";
+gNavWeddingsPackageson.src = "/images/gNavWeddingsPackagesUp.gif";
+gNavWeddingsRequestInfo2on = new Image();
+gNavWeddingsRequestInfo2off = new Image();
+gNavWeddingsRequestInfo2off.src = "/images/gNavWeddingsRequestInfo2.gif";
+gNavWeddingsRequestInfo2on.src = "/images/gNavWeddingsRequestInfo2Up.gif";
+
+
+	function imageOff(IMGName) {
+		  document[IMGName].src = eval(IMGName + "off.src"); 
+}
+	function imageOn(IMGName) {
+	
+		  if (browser) { 
+		  document[IMGName].src = eval(IMGName + "on.src");
+		   }
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+
+//SUBMENUS
+//Global variables
+var isNav, isIE, isNS6, isLoaded
+isLoaded = false
+if (document.all) {
+  isIE = true;
+  isNav = false;
+  isNS6 = false;
+}
+else if (document.layers) {
+  isNav = true;
+  isIE = false;
+  isNS6 = false;
+}
+else if (document.getElementById) {
+  isNS6 = true;
+  isIE = false;
+  isNav = false;
+}
+
+function doNothing() {
+  //Does Nothing
+}
+
+
+function getRealLeft() {
+	xPos = this.offsetLeft;
+	tempEl = this.offsetParent;
+  	while (tempEl != null) {
+  		xPos += tempEl.offsetLeft;
+  		tempEl = tempEl.offsetParent;
+  	}
+	return xPos;
+}
+
+function getRealTop() {
+	yPos = this.offsetTop;
+	tempEl = this.offsetParent;
+  	while (tempEl != null) {
+  		yPos += tempEl.offsetTop;
+  		tempEl = tempEl.offsetParent;
+  	}
+	return yPos;
+}
+
+function getImgX(whichImg){
+	var theImg, theImgX
+	theImg = eval("document." + whichImg);
+	{theImgWidth = theImg.width}
+	if (isIE){ theImg.getRealLeft = getRealLeft; }
+	if (isNS6){ theImg.getRealLeft = getRealLeft; }
+	if (isIE) {
+	theImgX = theImg.getRealLeft() 
+	}
+	if (isNav) {
+	theImgX = theImg.x
+	}
+	if (isNS6) {
+	theImgX = theImg.getRealLeft()
+	}
+	return theImgX
+}
+function getImgY(whichImg){
+	var theImg, theImgY
+	theImg = eval("document." + whichImg);
+	theImgHeight = theImg.height
+	if (isIE){ theImg.getRealTop = getRealTop; }
+	if (isNS6){ theImg.getRealTop = getRealTop; }
+	if (isIE) {
+	theImgY = theImg.getRealTop()
+	}
+	if (isNav) {
+	theImgY = theImg.y
+	}
+	if (isNS6) {
+	theImgY = theImg.getRealTop()
+	}
+	return theImgY
+}
+
+var overFront = false;
+var nNumLayers = 
+
+// Show SPECIAL's layers
+function showFront(x,imgX, imgY)
+{
+	for (var i = 0; i <= nNumLayers; i ++) {
+	  if (i != x) { hideAllFront(i);}
+	}
+	//alert (x);
+	overFront = true;
+	if (isNav) {
+		theObject = eval("document.front" + x); 
+		if (!theObject){
+			setTimeout("hideAllFront(" + x + ");", 100);
+		}
+		else {
+			theObject.left = imgX;
+			theObject.top = imgY + 50;
+			theObject.visibility = "visible";
+		}
+	}
+	if (isIE) {
+		theObject = eval("document.all.front" + x); 
+		if (!theObject){
+			setTimeout("hideAllFront(" + x + ");", 100);
+		}
+		else {
+			theObject.style.left = imgX;
+			theObject.style.top = imgY + 50;
+			theObject.style.visibility = "visible";
+
+		}
+	}
+	if (isNS6) {
+		theObject = eval("document.getElementById('front" + x +"')"); 
+		if (!theObject){
+			setTimeout("hideAllFront(" + x + ");", 100);
+		}
+		else {
+			theObject.style.left = imgX;
+			theObject.style.top = imgY + 50;
+			theObject.style.visibility = "visible";
+		}
+	}	
+}
+
+
+//Hide front Menu
+function hideFront(x)
+{
+	overFront = false;
+	if (isNav) {
+  	y = setTimeout("hideAllFront(" + x + ")",2000);}
+	if (isIE) {
+  	y = setTimeout("hideAllFront(" + x + ")",100);}
+	if (isNS6) {
+  	y = setTimeout("hideAllFront(" + x + ")",300);}
+}
+
+function hideAllFront(x)
+{
+  //if (!overFront) {
+	if (isNav) {
+		theObject = eval("document.front" + x); 
+		theObject.visibility = "hidden";
+	}
+	if (isIE) {
+		theObject = eval("document.all.front" + x); 
+		theObject.style.visibility = "hidden";
+	}
+	if (isNS6) {
+		theObject = eval("document.getElementById('front" + x +"')"); 
+		theObject.style.visibility = "hidden";
+	}	
+ // }
+}
+
+
+var numberMenus = 3; // the number of song-menus (zero based) 
+var overMenus = false;
+
+// Show song Menu
+function showText(x,nTop)
+{
+	for (var i = 0; i <= numberMenus; i ++) {
+	  if (i != x) { hideThem(i);	}
+	}
+	overMenus = true;
+	
+	if (isNav) {
+		theObject = eval("document.sub" + x); 
+		theObject.left = 129;
+		theObject.top = nTop;
+		theObject.visibility = "visible";
+	}
+	if (isIE) {
+		theObject = eval("document.all.sub" + x); 
+		theObject.style.left = 129;
+		theObject.style.top = nTop;
+		theObject.style.visibility = "visible";
+	}
+	if (isNS6) {
+		theObject = eval("document.getElementById('sub" + x +"')"); 
+		theObject.style.left = 129;
+		theObject.style.top = nTop;
+		theObject.style.visibility = "visible";
+	}	
+}
+
+
+//Hide sub Menu
+function hideText(x)
+{
+	overMenus = false;
+	if (isNav) {
+  	y = setTimeout("hideThem(" + x + ")",1000);}
+	if (isIE) {
+ 	y = setTimeout("hideThem(" + x + ")",1000);}
+ 	if (isNS6) {
+  	y = setTimeout("hideThem(" + x + ")",1000);}
+
+}
+function hideThem(x)
+{
+  if (!overMenus) {
+	if (isNav) {
+		theObject = eval("document.sub" + x); 
+		theObject.visibility = "hidden";
+	}
+	if (isIE) {
+		theObject = eval("document.all.sub" + x); 
+		theObject.style.visibility = "hidden";
+	}
+	if (isNS6) {
+		theObject = eval("document.getElementById('sub" + x +"')"); 
+		theObject.style.visibility = "hidden";
+	}	
+  }
+}
+
+
+
+//-->
+</script>
+<style TYPE="text/css">
+<!--
+	#sub0 {position:absolute; left:129; top:186; padding:0px; width:160; z-index:0; visibility:hidden}
+	#sub1 {position:absolute; left:129; top:224; padding:0px; width:160; z-index:0; visibility:hidden}
+	#sub2 {position:absolute; left:129; top:243; padding:0px; width:160; z-index:0; visibility:hidden}
+	#sub3 {position:absolute; left:129; top:262; padding:0px; width:160; z-index:0; visibility:hidden}
+
+//-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#661F03" alink="#661F03" vlink="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="160" valign="top"><table width="160" border="0" cellspacing="0" cellpadding="0">
+    <tr><td><img src="/images/gLogo.gif" width="160" height="148" border="0" usemap="#Logo"></td>
+    </tr>
+    <tr>
+		<td><a href="default.asp" onMouseover="document.gNavHomefront.src=gNavHomeon.src" onMouseout="document.gNavHomefront.src=gNavHomeoff.src"><img src="/images/gNavHomeoff.gif" border="0" name="gNavHomefront" alt="Home" WIDTH="160" HEIGHT="19"></a></td>
+    </tr>
+    <tr>
+		<td><a href="https://secure.hilton.com/en/dt/res/choose_dates.jhtml;jsessionid=JDTRV2XQ0ANZSCSGBIYM22QKIYFCXUUC?_requestid=408010&hotel=JOSE-DT" onMouseover="document.gNavReservationfront.src=gNavReservationon.src" onMouseout="document.gNavReservationfront.src=gNavReservationoff.src"><img src="/images/gNavReservationoff.gif" border="0" name="gNavReservationfront" alt="Make a Reservation" WIDTH="160" HEIGHT="19"></a></td>
+    </tr>
+    <tr>
+		<td><a href="/aboutthehotel.asp" onMouseover="document.gNavAboutfront.src=gNavAbouton.src;showText(0,186)" onMouseout="document.gNavAboutfront.src=gNavAboutoff.src;hideText(0)"><img src="/images/gNavAboutoff.gif" border="0" name="gNavAboutfront" alt="About The Hotel" WIDTH="160" HEIGHT="19"></a></td>
+    </tr>
+    <tr>
+		<td><a href="/accommodations.asp" onMouseover="document.gNavAccommodationsfront.src=gNavAccommodationson.src" onMouseout="document.gNavAccommodationsfront.src=gNavAccommodationsoff.src"><img src="/images/gNavAccommodationsoff.gif" border="0" name="gNavAccommodationsfront" alt="Accomodations & Amenities" WIDTH="160" HEIGHT="29"></a></td>
+    </tr>
+    <tr>
+		<td><a href="/dining.asp" onMouseover="document.gNavDiningfront.src=gNavDiningon.src;showText(1,234)" onMouseout="document.gNavDiningfront.src=gNavDiningoff.src;hideText(1)"><img src="/images/gNavDiningoff.gif" border="0" name="gNavDiningfront" alt="Dining and Entertainment" WIDTH="160" HEIGHT="19"></a></td>
+    </tr>
+    <tr>
+		<td><a href="/meetingsandevents.asp" onMouseover="document.gNavMeetingsfront.src=gNavMeetingson.src;showText(2,253)" onMouseout="document.gNavMeetingsfront.src=gNavMeetingsoff.src;hideText(2)"><img src="/images/gNavMeetingsoff.gif" border="0" name="gNavMeetingsfront" alt="Groups & Meetings" WIDTH="160" HEIGHT="19"></a></td>
+    </tr>
+    
+    <tr>
+		<td><a href="/weddings.asp" onMouseover="document.gNavWeddingsfront.src=gNavWeddingson.src;showText(3,272)" onMouseout="document.gNavWeddingsfront.src=gNavWeddingsoff.src;hideText(3)"><img src="/images/gNavWeddingsoff.gif" border="0" name="gNavWeddingsfront" alt="Weddings" WIDTH="160" HEIGHT="19"></a></td>
+    </tr>
+    <tr>
+		<td><a href="/allspecialsandpackages.asp" onMouseover="document.gNavPackagesfront.src=gNavPackageson.src" onMouseout="document.gNavPackagesfront.src=gNavPackagesoff.src"><img src="/images/gNavPackagesoff.gif" border="0" name="gNavPackagesfront" alt="Specials & Offers" WIDTH="160" HEIGHT="19"></a></td>
+    </tr>    
+    <tr><td><img src="/images/spacer.gif" width="160" height="14"></td>
+    </tr>
+    <tr><td><img src="/images/gNavBottom.gif" width="160" height="56" border="0" usemap="#BottomNav"></td>
+    </tr>
+    <tr><td><img src="/images/gNavHHonors.gif" width="160" height="90" border="0" usemap="#HHonors"></td>
+    </tr>
+</table></td>
+    <td width="600" valign="top"><table width="600" border="0" cellspacing="0" cellpadding="0">
+        
+	<script LANGUAGE="Javascript">
+	<!--
+	function ValidateKeyForm()
+	{
+		isOK = true;
+		if (isOK && (document.formKeyForm.keyword.value == "")) {
+			alert("Please enter a valid Keyword.");
+			document.formKeyForm.keyword.focus();
+			isOK = false;
+		}
+		else if (isOK && (document.formKeyForm.keyword.value == "Enter Keyword")) {
+			alert("Please enter a valid Keyword.");
+			document.formKeyForm.keyword.focus();
+			isOK = false;
+		}
+		else {
+		document.formKeyForm.submit();
+			isOK = true;
+		}
+		return isOK
+	}
+	//-->
+	</script>
+	<tr>
+      <td width="427"><img src="/images/gTagline.gif" width="427" height="63"></td>
+      <td width="190" align="right" background="/images/gSiteSearch.gif" class="cfSearch">
+      <form method=get action=/KeywordSearch.asp name=formKeyForm>
+      <input type=hidden name=search value=1>
+      <input name="keyword" type="text" class="gInputFields" value="Enter Keyword" size="12" onfocus="document.formKeyForm.keyword.value=''">
+        <input name="Submit" type="submit" class="gSubmitButtons" onclick="return ValidateKeyForm()" value="Go">
+      </td></form>
+    </tr>
+
+        <tr>
+          <td colspan="2"><table width="600" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="446" valign="top"><IMG height=17 src="/images/ibig3d.gif" width=446 useMap=#Map border=0>
+<MAP name=Map>
+  <AREA shape=RECT alt="Book a Room" coords=28,4,146,15 href="https://secure.hilton.com/en/dt/res/choose_dates.jhtml;jsessionid=JDTRV2XQ0ANZSCSGBIYM22QKIYFCXUUC?_requestid=408010&hotel=JOSE-DT">
+  <AREA shape=RECT alt="About the Hotel" coords=170,4,271,16 href="/aboutthehotel.asp">
+  <AREA shape=RECT alt="Groups & Meetings" coords=301,3,413,17 href="/meetingsandevents.asp">
+</MAP>
+                <table width="446" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="iTextContent" width="500">
+                      <font class=iText><P align=justify><IMG alt="" hspace=0 src="http://images.radcity.net/6001/620579.jpg" border=0><BR><BR>
+
+<FONT class=iPageTitles size=4><STRONG>Area Information</STRONG></FONT><BR><BR>
+
+Located right between downtown San Jose and Santa Clara, you'll enjoy full access to all of Silicon Valley. The hotel is less than a half-mile away from the San Jose International Airport; only 45 minutes from San Francisco, Monterey, and Carmel; and within walking distance to several notable high-tech corporations. </P><P align=justify>San Jose offers a world of diverse attractions. During your stay, visit the enigmatic Winchester Mystery House, The Tech Museum of Innovation, Paramount's Great America, and many other exciting destinations. Savor the fruits of California by visiting nearby regional wineries, or take day trips to San Francisco or idyllic Monterey and Carmel. </P><P align=justify>Several off-site venue options are available for group functions. Conventioneers can take advantage of our close proximity to The San Jose McEnery Convention Center, situated only four miles away. </P><P align=justify>With all this and unlimited choices for shopping, dining, and entertainment, Doubletree Hotel San Jose is your best choice for a productive and pleasant stay in the area. Book now! </P><P align=justify><HR>
+
+<FONT size=4>Contact us at 408.453.4000 for specific information on these area facilities and activities. </FONT><P></P></font><BR><BR>
+<TABLE BORDER=0 CELLPADDING=5 CELLSPACING=0 WIDTH="100%">
+<TR><TD colspan='2' class="ListingBlock"><B><FONT class=iPageTitles size=4><STRONG>Things To Do</STRONG></FONT></B><br>
+</TD></TR>
+<TR><TD colspan='2' class="ListingBlock"><A HREF=/goout.asp?u=http://www.dtsj.com/listingsEntry.asp?ID=212955&PT=Specials+and+Packages TARGET=_top class=ListingBlock>
+<B>Paramount's Great America</B></A><br>
+</TD></TR>
+<TR><TD colspan='2' class="ListingBlock"><A HREF=/goout.asp?u=http://www.dtsj.com/listingsEntry.asp?ID=212956&PT=Specials+and+Packages TARGET=_top class=ListingBlock>
+<B>Winchester Mystery House</B></A><br>
+</TD></TR>
+<TR><TD colspan='2' class="ListingBlock"><B><a href=/goout.asp?u=http://www.operasj.org>San Jose Opera</a></B><br>
+</TD></TR>
+<TR><TD colspan='2' class="ListingBlock"><B></B><br>
+Children's Discovery Museum, 4 MI SE
+<BR>Great Mall of the Bay Area - outlet shopping, 5 MI NE
+<BR>HP Pavilion, 3 MI S
+<BR>Monterey/Carmel, 50 MI SW
+<BR>Overfelt Chinese Cultural Garden, 3 MI SE
+<BR>Raging Waters, 3 MI S
+<BR>San Francisco, 40 MI NW
+<BR>San Jose McEnery Conv. Center, 4 MI SE
+<BR>San Jose Museum of Art, 4 MI SE
+<BR>San Jose State University, 2 MI S
+<BR>Santa Clara Convention Center, 3 MI NE
+<BR>Santa Clara University, 2 MI SW
+<BR>Santa Cruz Beach, 30 MI W
+<BR>Santana Row - shopping, dining, 4 MI SW
+<BR>Silicon Valley Conference Center, 1 MI NE
+<BR>Tech Museum of Innovation, 3 MI S
+<BR>Valley Fair Mall, 4 MI SW<br>
+</TD></TR>
+</TABLE><br>
+
+<TABLE BORDER=0 CELLPADDING=5 CELLSPACING=0 WIDTH="100%">
+<TR><TD COLSPAN=2><br><font class=iHeadline><B>Local Businesses</B></font><br></TD></TR>
+<TR><TD colspan='2' class="ListingBlock"><B></B><br>
+Adobe Systems Incorporated, 4 MI S
+<BR>Agilent Technologies, 2.2 MI NE
+<BR>Applied Materials, 5 MI N
+<BR>BEA Systems, 0.5 MI NE
+<BR>BMC Software, 0.5 MI N
+<BR>Boston Scientific, 1 MI NE
+<BR>Brocade, 2 BLK E
+<BR>Cisco Systems, 4 MI NE
+<BR>Ernst & Young, 3.3 MI N
+<BR>GE - Nuclear Energy, 5.7 MI N
+<BR>GE - Polymershapes, 1 MI W
+<BR>Hewlett-Packard, 4 MI W
+<BR>Hitachi Data Systems, 3 MI NW
+<BR>IBM, 10 MI S
+<BR>Intel, 2.4 MI S
+<BR>Mentor Graphics, 2 MI E
+<BR>Novell, 1 MI NE
+<BR>Philips Semiconductor, 3 MI NW
+<BR>Siemens, 0.5 MI NE
+<BR>Sun Microsystems, 1.5 MI N 
+<BR><br>
+</TD></TR>
+</TABLE><br>
+
+<TABLE BORDER=0 CELLPADDING=5 CELLSPACING=0 WIDTH="100%">
+<TR><TD COLSPAN=2><br><font class=iHeadline><B>Recreation</B></font><br></TD></TR>
+<TR><TD colspan='2' class="ListingBlock"><B></B><br>
+Almaden Lake Park
+<BR>Alum Rock Park
+<BR>Gold's Gym
+<BR>Golf - Cinnabar Hills Golf Club
+<BR>Golf - Coyote Creek Golf Club
+<BR>Golf - Santa Teresa Golf Club
+<BR>Golf - SJ Municipal Golf Course
+<BR>Lake Cunningham Regional Park<br>
+</TD></TR>
+</TABLE><br>
+
+</td>
+                    </tr></table></td>
+                <td width="155" valign="top" background="/images/iRightColBg.gif"><table width="154" border="0" cellspacing="0" cellpadding="0">
+                   <tr>
+                      <td><A href=/goout.asp?u=http://www.dtsj-spencers.com><img src="/images/iSpencers.gif" width="154" height="78" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="154" height="159" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td width="198" height="159" align="center" valign="top">
+                            <table width="154" border="0" cellspacing="0" cellpadding="0"  background="/images/iPackagesBg.gif">
+                                <tr>
+                                  <td height="26"><img src="/images/iSpecialsPackages.gif" width="154" height="25" name="specials"></td>
+                                </tr>
+                                </table><br>
+								<table width="154" border="0" cellspacing="0" cellpadding="0"  background="/images/iPackagesBg2.gif"><tr><td align="top">
+                                <img src="/images/trans.gif" width="154" height="224"><br><img src="/images/iSpecialsPackagesBase.gif" width="154" height="9"></td></tr>
+                                </table>
+
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td  valign="top"colspan="2"><img src="/images/spacer.gif" width="3" height="3"></td>
+        </tr>
+        <tr align="right" valign="middle">
+          <td height="19" colspan="2" bgcolor="#000000" class="cgContactText">Doubletree Hotel San Jose | 2050 Gateway Place | San Jose &nbsp;95110&nbsp;| 408.453.4000</td>
+        </tr>
+        <tr align="right" valign="middle">
+          <td height="38" colspan="2" class="cgBottomText"><a href="/default.asp" class="cgBottomLinks">Doubletree San Jose Home</a> | 
+<a href="https://secure.hilton.com/en/dt/res/choose_dates.jhtml;jsessionid=JDTRV2XQ0ANZSCSGBIYM22QKIYFCXUUC?_requestid=408010&hotel=JOSE-DT" class="cgBottomLinks">Book a Room</a> | 
+<a href="/aboutthehotel.asp" class="cgBottomLinks">About the Hotel</a> | 
+<a href="/meetingsandevents.asp" class="cgBottomLinks">Groups & Meetings</a><br>
+<a href="/accommodations.asp" class="cgBottomLinks">Accommodations & Amenities</a> | 
+<a href="/employment.asp" class="cgBottomLinks">Employment</a> | 
+<a href="/techservices.asp" class="cgBottomLinks">Technology Services</a> | 
+<a href="/allspecialsandpackages.asp" class="cgBottomLinks">Specials & Offers</a> |
+<a href="/aboutthissite.asp" class="cgBottomLinks">About This Site</a>
+</td>
+        </tr>
+        <tr align="right" valign="top">
+          <td colspan="2" class="gCopyright"><font class="gCopyright">Copyright © 2006 DoubleTree San Jose and <a class="gCopyright" href="Javascript:displayNotice();">MediaSpan</a><br><a class="gCopyright" target="_blank" href="http://www.mediaspanonline.com/poweredby/default.asp?d=www.doubletreesanjose.com">Powered by MediaSpan Online</a></font><script LANGUAGE="Javascript">
+<!--
+function displayNotice() {
+	noteWin = window.open("http://mediaspanonline.com/PopUpCopyrightNotice.asp?d=www.doubletreesanjose.com", "noteWindow", "location=no,status=no,toolbar=no,menubar=no,width=520,height=500,scrollbars=yes,resizable=yes");
+	noteWin.focus();
+}
+//-->
+</script>
+<br><a href="goout.asp?u=http://www.hilton.com/en/dt/info/privacy_security.jhtml " class="gCopyright">PRIVACY POLICY/YOUR CALIFORNIA PRIVACY RIGHTS</a>
+<br><a href="goout.asp?u=http://www.hilton.com/en/dt/info/site_usage.jhtml  " class="gCopyright">SITE USAGE AGREEMENT</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<br>
+<map name="HHonors">
+  <area shape="rect" coords="21,26,139,81" href="/goout.asp?u=http://www.hiltonhhonors.com" alt="Hilton HHonors">
+</map>
+<map name="BottomNav">
+  <area shape="rect" coords="34,3,127,16" href="/localinformation.asp" alt="Area Info">
+  <area shape="rect" coords="35,22,127,35" href="/mapanddirections.asp" alt="Directions & Transportation">
+  <area shape="rect" coords="35,40,128,54" href="/goout.asp?u=http://www.doubletree.com/en/dt/index.jhtml;jsessionid=32ZZAGAZCZKCUCSGBIYM22QKIYFCXUUC?_requestid=677325" alt="Doubletree Hotels">
+</map>
+<map name="Logo">
+  <area shape="rect" coords="11,28,151,135" href="/default.asp" alt="Home Page">
+</map>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Overture Services, Inc
+var pm_tagname = "universalTag.txt";
+var pm_tagversion = "1.4";
+var pm_accountid = "BBSFBJRMD941GM2B78CVG78KJ4";
+var pm_scripthost = "srv.perf.overture.com";
+var pm_customargs = "";
+var pm_querystr = "?" + "ver=" + pm_tagversion + "&aid=" + pm_accountid + pm_customargs;
+var pm_tag = "<SCR" + "IPT LANGUAGE='JavaScript' " + "SRC=//" + pm_scripthost + "/collweb/ScriptServlet" + pm_querystr + "></SCR" + "IPT>";
+document.write(pm_tag);
+// -->
+</SCRIPT>
+
+</body>
+</html>
+
+<div id="divNewsCont" onmouseover="stopScroll();" onmouseout="startScroll()">
+<div id="divNewsText" >
+
+		<table width="154" border="0" cellspacing="0" cellpadding="0"  background="/images/iPackagesBg2.gif">
+		
+			  <tr>
+			    <td class="cfSpecials"><font class=cfSpecialsHeadline><A HREF=/goout.asp?u=http://zdth.fimc.net/listingsEntry.asp?ID=264357&PT=Specials+and+Packages&div=nav7 TARGET=_top class=cfSpecialsHeadline>
+<IMG SRC="http://images.radcity.net/6001/622198-s.jpg" WIDTH=116 alt="Create Your Own Meeting Package!"><br>
+Create Your Own Meeting Package!</A></font><br>
+Doubletree Meeting Packages are the easiest and most convenient way to plan and maintain tight control over your meeting expenses – and get your money’s worth! <hr width=100% color=#9f755a noshade size=1>
+
+				</td>
+			  </tr>
+	
+			
+			  <tr>
+			    <td class="cfSpecials"><font class=cfSpecialsHeadline><A HREF=/goout.asp?u=http://www.dtsj.com/listingsEntry.asp?ID=212953&PT=Specials+and+Packages&div=nav7 TARGET=_top class=cfSpecialsHeadline>
+<IMG SRC="http://images.radcity.net/6001/629853-s.jpg" WIDTH=116 alt="Hotel-Park Package"><br>
+Hotel-Park Package</A></font><br>
+Deluxe overnight stay includes up to 7-days parking and airport/hotel shuttle service. <hr width=100% color=#9f755a noshade size=1>
+
+				</td>
+			  </tr>
+	
+			
+			  <tr>
+			    <td class="cfSpecials"><font class=cfSpecialsHeadline><A HREF=/goout.asp?u=http://www.dtsj.com/listingsEntry.asp?ID=212955&PT=Specials+and+Packages&div=nav7 TARGET=_top class=cfSpecialsHeadline>
+<IMG SRC="http://images.radcity.net/6001/658068-s.jpg" WIDTH=116 alt="Paramount's Great America Park Package"><br>
+Paramount's Great America Park Package</A></font><br>
+Deluxe overnight stay, adult admission tickets.
+<BR>(Admission is free the night before after 3pm)
+<BR><hr width=100% color=#9f755a noshade size=1>
+
+				</td>
+			  </tr>
+	
+			
+			  <tr>
+			    <td class="cfSpecials"><font class=cfSpecialsHeadline><A HREF=/goout.asp?u=http://www.dtsj.com/listingsEntry.asp?ID=212956&PT=Specials+and+Packages&div=nav7 TARGET=_top class=cfSpecialsHeadline>
+<IMG SRC="http://images.radcity.net/6001/672224-s.jpg" WIDTH=116 alt="Winchester Mystery House Package"><br>
+Winchester Mystery House Package</A></font><br>
+Deluxe overnight stay and two adult admission tickets to Winchester Mystery House. <hr width=100% color=#9f755a noshade size=1>
+
+				</td>
+			  </tr>
+	
+			
+			  <tr>
+			    <td class="cfSpecials"><font class=cfSpecialsHeadline><A HREF=/listingsEntry.asp?ID=291617&PT= class=cfSpecialsHeadline>
+<IMG SRC="http://images.radcity.net/6001/741394-s.jpg" WIDTH=116 alt="Dream Deal Package"><br>
+Dream Deal Package</A></font><br>
+The perfect family package - includes accommodations and breakfast for two adults and two children! <hr width=100% color=#9f755a noshade size=1>
+
+				</td>
+			  </tr>
+	
+			
+			  <tr>
+			    <td class="cfSpecials"><font class=cfSpecialsHeadline><A HREF=/listingsEntry.asp?ID=248105&PT=Specials+and+Packages TARGET=_top class=cfSpecialsHeadline>
+<IMG SRC="http://images.radcity.net/6001/886406-s.jpg" WIDTH=116 alt="Net Direct Rates"><br>
+Net Direct Rates</A></font><br>
+Advance purchase discounts off of our Best Available Rates.
+<BR><hr width=100% color=#9f755a noshade size=1>
+
+				</td>
+			  </tr>
+	
+			
+			</table>
+		
+</div>
+</div>
+
+<div ID="sub0" style="width:160px;height:115px;" onMouseOver="overMenus=true;document.gNavAboutfront.src=gNavAbouton.src" onMouseOut="overMenus=false;hideText(0);document.gNavAboutfront.src=gNavAboutoff.src"><layer onMouseOver="overMenus=true" onMouseOut="overMenus=false;hideText(0);"> 
+<table width="160" border="0" cellspacing="0" cellpadding="0">
+    
+	<tr><td align="center"><a href="/aboutthehotel.asp" onmouseover="imageOn('gNavAboutGeneral')" onmouseout="imageOff('gNavAboutGeneral')"><img src="images/gNavAboutGeneral.gif" width="120" height="18" border="0" name="gNavAboutGeneral"></a></td></tr>
+	
+	<tr><td align="center"><a href="/photowall.asp" onmouseover="imageOn('gNavAboutPhotoGallery')" onmouseout="imageOff('gNavAboutPhotoGallery')"><img src="images/gNavAboutPhotoGallery.gif" width="120" height="18" border="0" name="gNavAboutPhotoGallery"></a></td></tr>
+	
+	<tr><td align="center"><a href="/employment.asp" onmouseover="imageOn('gNavAboutEmployment')" onmouseout="imageOff('gNavAboutEmployment')"><img src="images/gNavAboutEmployment.gif" width="120" height="18" border="0" name="gNavAboutEmployment"></a></td></tr>
+	
+	<tr><td align="center"><a href="/contactus.asp" onmouseover="imageOn('gNavAboutContactUs')" onmouseout="imageOff('gNavAboutContactUs')"><img src="images/gNavAboutContactUs.gif" width="120" height="18" border="0" name="gNavAboutContactUs"></a></td></tr>
+	
+</table>
+</div></layer>
+<div ID="sub1" style="width:160px;height:115px;" onMouseOver="overMenus=true;document.gNavDiningfront.src=gNavDiningon.src" onMouseOut="overMenus=false;hideText(1);document.gNavDiningfront.src=gNavDiningoff.src"><layer onMouseOver="overMenus=true" onMouseOut="overMenus=false;hideText(1);"> 
+<table width="160" border="0" cellspacing="0" cellpadding="0">
+    
+	<tr><td align="center"><a href="/dining.asp" onmouseover="imageOn('gNavDiningDining')" onmouseout="imageOff('gNavDiningDining')"><img src="images/gNavDiningDining.gif" width="120" height="18" border="0" name="gNavDiningDining"></a></td></tr>
+	
+	<tr><td align="center"><a href="/goout.asp?u=http://www.dtsj-clubmax.com" onmouseover="imageOn('gNavDiningClubMax')" onmouseout="imageOff('gNavDiningClubMax')"><img src="images/gNavDiningClubMax.gif" width="120" height="18" border="0" name="gNavDiningClubMax"></a></td></tr>
+	
+	<tr><td align="center"><a href="/goout.asp?u=http://www.dtsj-spencers.com" onmouseover="imageOn('gNavDiningSpencers')" onmouseout="imageOff('gNavDiningSpencers')"><img src="images/gNavDiningSpencers.gif" width="120" height="18" border="0" name="gNavDiningSpencers"></a></td></tr>
+	
+</table>
+</div></layer>
+<div ID="sub2" style="width:160px;height:115px;" onMouseOver="overMenus=true;document.gNavMeetingsfront.src=gNavMeetingson.src" onMouseOut="overMenus=false;hideText(2);document.gNavMeetingsfront.src=gNavMeetingsoff.src"><layer onMouseOver="overMenus=true" onMouseOut="overMenus=false;hideText(2);"> 
+<table width="160" border="0" cellspacing="0" cellpadding="0">
+    
+	<tr><td align="center"><a href="/meetingsandevents.asp" onmouseover="imageOn('gNavMeetingsGeneral')" onmouseout="imageOff('gNavMeetingsGeneral')"><img src="images/gNavMeetingsGeneral.gif" width="120" height="18" border="0" name="gNavMeetingsGeneral"></a></td></tr>
+	
+	<tr><td align="center"><a href="/meetingscateringmenus.asp" onmouseover="imageOn('gNavMeetingsCatering')" onmouseout="imageOff('gNavMeetingsCatering')"><img src="images/gNavMeetingsCatering.gif" width="120" height="18" border="0" name="gNavMeetingsCatering"></a></td></tr>
+	
+	<tr><td align="center"><a href="/goout.asp?u=/floorplans/" onmouseover="imageOn('gNavMeetingsFloorplans')" onmouseout="imageOff('gNavMeetingsFloorplans')"><img src="images/gNavMeetingsFloorplans.gif" width="120" height="18" border="0" name="gNavMeetingsFloorplans"></a></td></tr>
+	
+	<tr><td align="center"><a href="/techservices.asp" onmouseover="imageOn('gNavMeetingsTechServices')" onmouseout="imageOff('gNavMeetingsTechServices')"><img src="images/gNavMeetingsTechServices.gif" width="120" height="18" border="0" name="gNavMeetingsTechServices"></a></td></tr>
+	
+	<tr><td align="center"><a href="/allspecialsandpackages.asp#MeetingsAnchor" onmouseover="imageOn('gNavMeetingsPackages')" onmouseout="imageOff('gNavMeetingsPackages')"><img src="images/gNavMeetingsPackages.gif" width="120" height="18" border="0" name="gNavMeetingsPackages"></a></td></tr>
+	
+</table>
+</div></layer>
+<div ID="sub3" style="width:160px;height:115px;" onMouseOver="overMenus=true;document.gNavWeddingsfront.src=gNavWeddingson.src" onMouseOut="overMenus=false;hideText(3);document.gNavWeddingsfront.src=gNavWeddingsoff.src"><layer onMouseOver="overMenus=true" onMouseOut="overMenus=false;hideText(3);"> 
+<table width="160" border="0" cellspacing="0" cellpadding="0">
+    
+	<tr><td align="center"><a href="/weddings.asp" onmouseover="imageOn('gNavWeddingsGeneral')" onmouseout="imageOff('gNavWeddingsGeneral')"><img src="images/gNavWeddingsGeneral.gif" width="120" height="18" border="0" name="gNavWeddingsGeneral"></a></td></tr>
+	
+	<tr><td align="center"><a href="/weddingscateringmenu.asp" onmouseover="imageOn('gNavWeddingsPackages')" onmouseout="imageOff('gNavWeddingsPackages')"><img src="images/gNavWeddingsPackages.gif" width="120" height="18" border="0" name="gNavWeddingsPackages"></a></td></tr>
+	
+	<tr><td align="center"><a href="/contactus.asp?w=yes" onmouseover="imageOn('gNavWeddingsRequestInfo2')" onmouseout="imageOff('gNavWeddingsRequestInfo2')"><img src="images/gNavWeddingsRequestInfo2.gif" width="120" height="18" border="0" name="gNavWeddingsRequestInfo2"></a></td></tr>
+	
+</table>
+</div></layer>

@@ -1,0 +1,349 @@
+<DOC>
+<DOCNO>g00256</DOCNO>
+<DOCHDR>http://www.worldalmanacforkids.com/info/contact.html</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"
+        "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+        
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var name = navigator.appName;
+var vers = navigator.appVersion;
+vers = vers.substring(0,1); // or 0,4  could return 4.5 instead of just 4
+
+if (name == "Microsoft Internet Explorer") 
+document.write('<LINK REL=stylesheet HREF="../style-ie.css" TYPE="text/css">');
+else 
+document.write('<LINK REL=stylesheet HREF="../style-ns.css" TYPE="text/css">');
+
+// This script will choose the CSS (stylesheet) to use based on browser
+// End -->
+</script>
+
+
+<title>World Almanac for Kids</title>
+<META  name="description" content="World Almanac for Kids: Facts, games and helpful stuff for kids ages 8 and up.">
+<META  name="keywords" content="education, reference, games, facts, historical, presidents, timeline, states, nations, sports, space, religion, population, inventions, environment, animals">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+function emailCheck (emailStr) {
+
+/* The following variable tells the rest of the function whether or not
+to verify that the address ends in a two-letter country or well-known
+TLD.  1 means check it, 0 means don't. */
+
+var checkTLD=1;
+
+/* The following is the list of known TLDs that an e-mail address must end with. */
+
+var knownDomsPat=/^(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum)$/;
+
+/* The following pattern is used to check if the entered e-mail address
+fits the user@domain format.  It also is used to separate the username
+from the domain. */
+
+var emailPat=/^(.+)@(.+)$/;
+
+/* The following string represents the pattern for matching all special
+characters.  We don't want to allow special characters in the address. 
+These characters include ( ) < > @ , ; : \ " . [ ] */
+
+var specialChars="\\(\\)><@,;:\\\\\\\"\\.\\[\\]";
+
+/* The following string represents the range of characters allowed in a 
+username or domainname.  It really states which chars aren't allowed.*/
+
+var validChars="\[^\\s" + specialChars + "\]";
+
+/* The following pattern applies if the "user" is a quoted string (in
+which case, there are no rules about which characters are allowed
+and which aren't; anything goes).  E.g. "jiminy cricket"@disney.com
+is a legal e-mail address. */
+
+var quotedUser="(\"[^\"]*\")";
+
+/* The following pattern applies for domains that are IP addresses,
+rather than symbolic names.  E.g. joe@[123.124.233.4] is a legal
+e-mail address. NOTE: The square brackets are required. */
+
+var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/;
+
+/* The following string represents an atom (basically a series of non-special characters.) */
+
+var atom=validChars + '+';
+
+/* The following string represents one word in the typical username.
+For example, in john.doe@somewhere.com, john and doe are words.
+Basically, a word is either an atom or quoted string. */
+
+var word="(" + atom + "|" + quotedUser + ")";
+
+// The following pattern describes the structure of the user
+
+var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+
+/* The following pattern describes the structure of a normal symbolic
+domain, as opposed to ipDomainPat, shown above. */
+
+var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+
+/* Finally, let's start trying to figure out if the supplied address is valid. */
+
+/* Begin with the coarse pattern to simply break up user@domain into
+different pieces that are easy to analyze. */
+
+var matchArray=emailStr.match(emailPat);
+
+if (matchArray==null) {
+
+/* Too many/few @'s or something; basically, this address doesn't
+even fit the general mould of a valid e-mail address. */
+
+alert("Email address seems incorrect (check @ and .'s)");
+return false;
+}
+var user=matchArray[1];
+var domain=matchArray[2];
+
+// Start by checking that only basic ASCII characters are in the strings (0-127).
+
+for (i=0; i<user.length; i++) {
+if (user.charCodeAt(i)>127) {
+alert("Ths username contains invalid characters.");
+return false;
+   }
+}
+for (i=0; i<domain.length; i++) {
+if (domain.charCodeAt(i)>127) {
+alert("Ths domain name contains invalid characters.");
+return false;
+   }
+}
+
+// See if "user" is valid 
+
+if (user.match(userPat)==null) {
+
+// user is not valid
+
+alert("The username doesn't seem to be valid.");
+return false;
+}
+
+/* if the e-mail address is at an IP address (as opposed to a symbolic
+host name) make sure the IP address is valid. */
+
+var IPArray=domain.match(ipDomainPat);
+if (IPArray!=null) {
+
+// this is an IP address
+
+for (var i=1;i<=4;i++) {
+if (IPArray[i]>255) {
+alert("Destination IP address is invalid!");
+return false;
+   }
+}
+return true;
+}
+
+// Domain is symbolic name.  Check if it's valid.
+ 
+var atomPat=new RegExp("^" + atom + "$");
+var domArr=domain.split(".");
+var len=domArr.length;
+for (i=0;i<len;i++) {
+if (domArr[i].search(atomPat)==-1) {
+alert("The domain name does not seem to be valid.");
+return false;
+   }
+}
+
+/* domain name seems valid, but now make sure that it ends in a
+known top-level domain (like com, edu, gov) or a two-letter word,
+representing country (uk, nl), and that there's a hostname preceding 
+the domain or country. */
+
+if (checkTLD && domArr[domArr.length-1].length!=2 && 
+domArr[domArr.length-1].search(knownDomsPat)==-1) {
+alert("The address must end in a well-known domain or two letter " + "country.");
+return false;
+}
+
+// Make sure there's a host name preceding the domain.
+
+if (len<2) {
+alert("This address is missing a hostname!");
+return false;
+}
+
+// If we've gotten this far, everything's valid!
+
+var form = document.forms[0];
+if(form.comments.value == "") {
+alert("Please fill in your comments.");
+return false;
+}
+
+return true;
+}
+
+//  End -->
+</script>
+
+</HEAD>
+
+<FORM METHOD="POST" ACTION="/cgi-sys/cgiemail/template-comments.txt" name=emailform onSubmit="return emailCheck(this.email.value)">
+<INPUT TYPE="hidden" NAME="success" VALUE="http://www.worldalmanacforkids.com/info/thankyou.html"> 
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#FFFFFF" text="#000000" background="../images/bkg.gif">
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" class="colorbar">
+<tr>
+<td><img src="../images/n_top.gif" alt="" width="174" height="5"></td>
+<td><img src="../images/clear.gif" alt="" width="1" height="5"></td>
+</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<!-- nav table -->
+<td width="168" valign="top">
+<table border="0" width="168" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#0B4099"><img src="../images/clear.gif" alt="" width="6" height="1"></td>
+<td><a href="https://ssl26.pair.com/walmanac/orderform.html"><img src="../images/n_logo.gif" alt="World Almanac for Kids Home" width="139" height="107" border="0"></a></td>
+<td valign="top" rowspan="35" class="colorbar"><img src="../images/n_logo-rt1.gif" alt="" width="7" height="107"></td>
+<td valign="top" rowspan="35"><img src="../images/n_logo-rt2.gif" alt="" width="22" height="107"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/index.html" class="navbig">EXPLORE</a></td></tr>
+
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/animals.html" class="nav">ANIMALS</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/environment.html" class="nav">ENVIRONMENT</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/birthdays.html" class="nav">HISTORICAL BIRTHDAYS</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/inventions.html" class="nav">INVENTIONS</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/nations.html" class="nav">NATIONS</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/population.html" class="nav">POPULATION</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/presidents.html" class="nav">PRESIDENTS</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/religion.html" class="nav">RELIGION</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/space.html" class="nav">SPACE</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/sports.html" class="nav">SPORTS</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/states.html" class="nav">STATES</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../explore/timeline.html" class="nav">U.S. HISTORY TIMELINE</a></td></tr>
+
+<tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="0" height="7" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../fun-games/index.html" class="navbig">FUN &amp; GAMES</a></td></tr>
+
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../fun-games/contest.html" class="nav">&#34;KIDS SPEAK OUT&#34;<br>CONTEST</a></td></tr><tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="1" height="4" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../fun-games/class-contest.html" class="nav">CLASSROOM<br>CONTEST</a></td></tr><tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="1" height="4" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../fun-games/gamecenter.html" class="nav">GAME CENTER</a></td></tr><tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="1" height="4" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../fun-games/polls.shtml" class="nav">POLLS</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../fun-games/printables.html" class="nav">PRINTABLE FUN</a></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../fun-games/quizzes.html" class="nav">QUIZZES</a></td></tr>
+
+<tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="0" height="7" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../info/index.html" class="navbig">INSIDER INFO</a></td></tr>
+
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../info/askeditor.html" class="nav">ASK THE EDITORS</a></td></tr><tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="1" height="2" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../info/contact.html" class="nav-selected">CONTACT US</a></td></tr><tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="1" height="2" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../info/mailing.html" class="nav">JOIN MAILING LIST</a></td></tr><tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="1" height="2" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../info/links.html" class="nav">LINKS</a></td></tr><tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="0" height="2" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="https://ssl26.pair.com/walmanac/orderform.html" class="nav">ORDER WORLD<BR>ALMANAC FOR KIDS</a></td></tr><tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="1" height="2" border="0"></td></tr>
+<tr><td align="right" bgcolor="#0B4099" colspan="2"><a href="../info/privacy.html" class="nav">PRIVACY</a></td></tr><tr><td bgcolor="#0B4099" colspan="2"><img src="../images/clear.gif" width="1" height="7" border="0"></td></tr>
+<tr><td colspan="2" bgcolor="#0B4099" align="right"><table border="0" cellspacing="0" cellpadding="0"><tr><td align="right"><a href="../index.html" class="nav-no">HOME</a></td><td><a href="../index.html"><img src="../images/home2.gif" hspace="2" width="32" height="26" border="0"></a></td></tr></table></td></tr>
+</table></td>
+
+<!-- content table -->
+
+
+
+<td valign="top">
+
+<!-- page head -->
+<BR>
+<table border="0" cellspacing="0" width="98%" cellpadding="0" bgcolor="#FFFFFF">
+<tr>
+<td align="left" valign="bottom" rowspan="2"><img src="../images/hd-contactus.gif" width="301" height="27" border="0"></td>
+<td align="right"><img src="../images/clear.gif" height="23" border="0"><nobr><a href="index.html" class="breadcrumb">insider info</a> . <a href="../index.html" class="breadcrumb">home</a> </nobr></td>
+</tr>
+
+<tr><td align="right"><img src="../images/clear.gif" height="4" border="0"></td></tr>
+
+<tr>
+<td align="left" bgcolor="#99CC00"><img src="../images/clear.gif" height="2" border="0"></td>
+<td bgcolor="#99CC00"><img src="../images/clear.gif" height="2" border="0"></td>
+</tr>
+
+<tr align="left"><td></td><td><img src="../images/clear.gif" height="5" border="0"></td></tr>
+
+<tr><td colspan="2"><img src="../images/clear.gif" width="520" height="15" border="0"></td></tr>
+
+</table>
+
+
+<!-- main content -->
+
+
+
+<table border="0" cellspacing="5" cellpadding="0" width="98%">
+<tr><td class="text" colspan="2">
+
+Got a question or comment? 
+<br>
+<b>Be sure to ask a parent or guardian if it's OK to write us.</b>
+<br><br>
+</td></tr>
+
+<tr><td class="text" colspan="2">Comments:<br><textarea wrap=virtual rows="7" cols="70" name="comments"></textarea></td>
+</tr>
+
+<tr>
+<td class="text">Email:<br><input type="TEXT" name="email" size="30" maxlength="40"></td>
+<td rowspan="2" valign="bottom" align="left"><input type="image" src="images/submit.gif" alt="" width="112" height="41" border="0" name="submit" value="submit"></td>
+</tr>
+
+<tr>
+<td class="text">Parent's Email:<br><input type="TEXT" name="pemail" size="30" maxlength="40"></td>
+</tr>
+
+<tr>
+<td class="text" colspan="3">
+<br>
+If you prefer you can alway write to us directly at: <br><br>
+
+S. DeVos<br>
+World Almanac For Kids<br>
+512 Seventh Ave. 22nd floor<br>
+New York, N.Y. 10018<br>
+
+
+</td>
+</tr>
+</table>
+
+<!-- end main content -->
+
+<br>
+<table border="0" cellspacing="0" width="98%" cellpadding="0">
+<tr><td colspan="2"><hr width="100%" size="1"></td></tr>
+<tr><td align="left" class="didyouknow">&#169; 2001-2003 World Almanac Education Group Inc.</td><td align="right"><a href="../info/privacy.html" class="didyouknow">privacy policy</a> &nbsp;&middot;&nbsp; <a href="../info/credits.html" class="didyouknow">credits</a></td></tr>
+</table>
+<br>
+
+</td>
+</tr>
+
+</table>
+</form>
+
+
+</body>
+</html>
+
+

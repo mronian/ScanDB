@@ -1,0 +1,476 @@
+<DOC>
+<DOCNO>f00137</DOCNO>
+<DOCHDR>http://www.lazoo.org/zooinfo1.html</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Welcome to the L.A. Zoo</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		zooinfonav_01_over = newImage("images/zooinfonav_01-over.gif");
+		zooinfonav_03_over = newImage("images/zooinfonav_03-over.gif");
+		zooinfonav_05_over = newImage("images/zooinfonav_05-over.gif");
+		zooinfonav_07_over = newImage("images/zooinfonav_07-over.gif");
+		zooinfonav_09_over = newImage("images/zooinfonav_09-over.gif");
+		zooinfonav_11_over = newImage("images/zooinfonav_11-over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<script type="text/javascript" language="JavaScript">
+<!--
+function checkFields() {
+	missinginfo = false;
+
+	if (document.drivedirections.address.value == ""){
+		missinginfo = true;
+	}
+	if (document.drivedirections.city.value == ""){
+		missinginfo = true;
+	}
+	if (document.drivedirections.state.value == ""){
+		missinginfo = true;
+	}
+	if (document.drivedirections.zip.value == ""){
+		missinginfo = true;
+	}
+
+	if (missinginfo != false) {
+		myalert = "Please complete all address fields.";
+		alert(myalert);
+		return false;
+	} else {
+		maptarget=
+'http://local.google.com/maps?saddr='+document.drivedirections.address.value+',+'+document.drivedirections.city.value+','+document.drivedirections.zip.value+'&daddr=5333+Zoo+Dr+,+Los+Angeles%2C+CA+90027-3922&hl=en'; 
+		window.open(maptarget);
+		return true;
+	}
+}
+
+//-->
+</script>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style3 {font-weight: bold}
+.style5 {
+	color: #3300FF;
+	font-weight: bold;
+}
+.style6 {color: #3300FF}
+.style7 {color: #660000}
+-->
+</style>
+</HEAD>
+
+<body bgcolor="#FFFFFF" background="images/zooinfobkgd.jpg" text="#000000" link="#663300" vlink="#663300" alink="#009900" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" ONLOAD="preloadImages();">
+ 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td background="images/navbkgd.gif">
+<TABLE WIDTH=800 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+        <TR> 
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=51 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=7 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=67 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=85 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=75 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=68 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=106 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=19 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=52 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=119 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=56 HEIGHT=1 ALT=""></TD>
+          <TD> <IMG SRC="images/spacer.gif" WIDTH=95 HEIGHT=1 ALT=""></TD>
+        </TR>
+        <TR> 
+          <TD> <IMG SRC="images/zoonav_01.gif" WIDTH=51 HEIGHT=96 ALT=""></TD>
+          <TD COLSPAN=7> <A HREF="./"
+				ONMOUSEOVER="window.status='Los Angeles Zoo';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_02.jpg" WIDTH=427 HEIGHT=96 BORDER=0 ALT="Los Angeles Zoo"></A></TD>
+          <TD COLSPAN=4> <A HREF="zoostars.html"
+				ONMOUSEOVER="window.status='Zoo of the Stars';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_03.gif" WIDTH=322 HEIGHT=96 BORDER=0 ALT="Zoo of the Stars"></A></TD>
+        </TR>
+        <TR> 
+          <TD COLSPAN=2> <A HREF="./"
+				ONMOUSEOVER="window.status='Home';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_04.gif" WIDTH=58 HEIGHT=16 BORDER=0 ALT="Home"></A></TD>
+          <TD> <A HREF="zooinfo.html"
+				ONMOUSEOVER="window.status='Zoo Info';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_05.gif" WIDTH=67 HEIGHT=16 BORDER=0 ALT="Zoo Info"></A></TD>
+          <TD> <A HREF="membership.html"
+				ONMOUSEOVER="window.status='Membership';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_06.gif" WIDTH=85 HEIGHT=16 BORDER=0 ALT="Membership"></A></TD>
+          <TD> <A HREF="education/index.html"
+				ONMOUSEOVER="window.status='Education';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_07.gif" WIDTH=75 HEIGHT=16 BORDER=0 ALT="Education"></A></TD>
+          <TD> <A HREF="calendar.asp"
+				ONMOUSEOVER="window.status='Calendar';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_08.gif" WIDTH=68 HEIGHT=16 BORDER=0 ALT="Calendar"></A></TD>
+          <TD> <A HREF="supportthezoo.html"
+				ONMOUSEOVER="window.status='Support the Zoo';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_09.gif" WIDTH=106 HEIGHT=16 BORDER=0 ALT="Support the Zoo"></A></TD>
+          <TD COLSPAN=2> <A HREF="volunteering.html"
+				ONMOUSEOVER="window.status='Volunteer';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_10.gif" WIDTH=71 HEIGHT=16 BORDER=0 ALT="Volunteer"></A></TD>
+          <TD><a href="botanicalgarden.html"
+				onMouseOver="window.status='Botanical Gardens';  return true;"
+				onMouseOut="window.status='';  return true;"><img src="images/zoonav_11.gif" width=119 height=16 border=0 alt="Botanical Gardens"></a></TD>
+          <TD> <A HREF="games.html"
+				ONMOUSEOVER="window.status='Games';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_12.gif" WIDTH=56 HEIGHT=16 BORDER=0 ALT="Games"></A></TD>
+          <TD> <A HREF="pressroom.asp"
+				ONMOUSEOVER="window.status='Press Room';  return true;"
+				ONMOUSEOUT="window.status='';  return true;"> <IMG SRC="images/zoonav_13.gif" WIDTH=95 HEIGHT=16 BORDER=0 ALT="Press Room"></A></TD>
+        </TR>
+      </TABLE></td>
+  </tr>
+</table>
+<br>
+<table width="600" border="0" align="center" cellpadding="10" cellspacing="0">
+  <tr> 
+    <td height="306"> <p align="center"><strong><img src="images/hoursadmission.gif" width="314" height="35"><br>
+&amp; GENERAL INFORMATION</strong></p>
+      <p align="center"><img src="images/frontentry.jpg" alt="Front Entrance" width="432" height="324" hspace="5" vspace="5" border="2"></p>
+      <p align="left"><strong>HOURS<br>
+      </strong>Summer Hours:</p>
+      <p align="left">Regular hours are 10 a.m. to 5 p.m. Special summer hours (July 1 through September 4, 2006) are 10 a.m. to 6 p.m. The Zoo is open every day of the year except December 25.  Please note that the Zoo starts putting animals in for the night at 4 p.m.  Ticket sales cease one hour prior to closing time. </p>
+      <p align="left"><strong>ZOO 
+      ADDRESS<br>
+      </strong>The 
+        Los Angeles Zoo is located at <strong><GEO TYPE="US">5333 Zoo Drive, Los Angeles, CA 
+      90027</GEO></strong>. The Zoo's phone number is <strong>323/644-4200</strong>. </p>
+      <!--<p align="center"><a href="http://www.mapquest.com/maps/map.adp?addtohistory=&address=5333 Zoo Dr&city=Los" target="_blank"><strong>Fill out the form below to get driving directions </strong></a>-->
+		  <h2>Driving Directions:		  </h2>
+		  <form name="drivedirections" onSubmit="checkFields();">
+
+			<table border="0" cellspacing="2" cellpadding="0">
+
+				<tr>
+					<td colspan="3" class="text">Street Address</td>
+				</tr>
+				<tr>
+					<td colspan="3"><input name="address" class="form" value="" size="45" alt=""></td>
+				</tr>
+				<tr>
+
+					<td class="text">City</td>
+
+					<td class="text">State</td>
+					<td class="text">Zip</td>
+				</tr>
+				<tr>
+					<td width="180" align="left"><input alt="" name="city" value="" class="form"></td>
+					<td width="35" align="left"><select name="state" size="1" class="form">
+                      <option value="" selected="selected">Please Choose... </option>
+
+					  <option value="AL">AL </option>
+					  <option value="AK">AK </option>
+					  <option value="AZ">AZ </option>
+					  <option value="AR">AR </option>
+					  <option value="CA">CA </option>
+					  <option value="CO">CO </option>
+
+					  <option value="CT">CT </option>
+					  <option value="DE">DE </option>
+					  <option value="DC">DC </option>
+					  <option value="FL">FL </option>
+					  <option value="GA">GA </option>
+					  <option value="HI">HI </option>
+
+					  <option value="ID">ID </option>
+					  <option value="IL">IL </option>
+					  <option value="IN">IN </option>
+					  <option value="IA">IA </option>
+					  <option value="KS">KS </option>
+					  <option value="KY">KY </option>
+
+					  <option value="LA">LA </option>
+					  <option value="ME">ME </option>
+					  <option value="MD">MD </option>
+					  <option value="MA">MA </option>
+					  <option value="MI">MI </option>
+					  <option value="MN">MN </option>
+
+					  <option value="MS">MS </option>
+					  <option value="MO">MO </option>
+					  <option value="MT">MT </option>
+					  <option value="NE">NE </option>
+					  <option value="NV">NV </option>
+					  <option value="NH">NH </option>
+
+					  <option value="NJ">NJ </option>
+					  <option value="NM">NM </option>
+					  <option value="NY">NY </option>
+					  <option value="NC">NC </option>
+					  <option value="ND">ND </option>
+					  <option value="OH">OH </option>
+
+					  <option value="OK">OK </option>
+					  <option value="OR">OR </option>
+					  <option value="PA">PA </option>
+					  <option value="RI">RI </option>
+					  <option value="SC">SC </option>
+					  <option value="SD">SD </option>
+
+					  <option value="TN">TN </option>
+					  <option value="TX">TX </option>
+					  <option value="UT">UT </option>
+					  <option value="VT">VT </option>
+					  <option value="VA">VA </option>
+					  <option value="WA">WA </option>
+
+					  <option value="WV">WV </option>
+					  <option value="WI">WI </option>
+					  <option value="WY">WY</option>
+                      <option>Other</option>
+                    </select></td>
+
+					<td align="left"><input name="zip" class="form" value="" size="8" maxlength="5" alt=""></td>
+
+				</tr>
+				<tr>
+					<td colspan="3"><input type="image" name="server_action:Subscribe" alt="Get Directions" src="images/getdirections.gif" width="136" height="28" hspace="0" vspace="0" border="0"></td>
+				</tr>
+			</table>
+		</form>
+		  
+		  </p>
+      <table width="500" border="0" cellspacing="1" cellpadding="1">
+        <tr> 
+          <td colspan="2" nowrap><p><strong>GENERAL 
+                ADMISSION PRICES<br>
+            </strong></p></td>
+        </tr>
+        <tr> 
+          <td width="195" nowrap><p>Adults 
+            (ages 13 - up)</p></td>
+          <td width="291" nowrap><p>$10</p></td>
+        </tr>
+        <tr> 
+          <td nowrap><p>Seniors 
+            (age 62 and up)</p></td>
+          <td nowrap><p>$7</p></td>
+        </tr>
+        <tr> 
+          <td nowrap><p>Children 
+            (ages 2 to 12)</p></td>
+          <td nowrap><p>$5</p></td>
+        </tr>
+        <tr> 
+          <td nowrap><p>Children 
+            (under 2) </p></td>
+          <td nowrap><p>Free</p></td>
+        </tr>
+        <tr> 
+          <td height="20" nowrap><p>Parking</p></td>
+          <td nowrap><p>Free</p></td>
+        </tr>
+      </table>
+      <p align="left"><strong>ANIMALS AT THE ZOO</strong><a href="zoo-animals.html"><strong><br>
+            <span class="style5">Click here for a list of animals in the zoo's collection</span></strong></a></p>
+      <p align="left"><strong>ITEMS 
+      NOT ALLOWED ON ZOO GROUNDS<br>
+      </strong>Alcohol<br>
+        Glass bottles<br>
+        Aluminum cans<br>
+        Pets<br>
+        Laser pointers<br>
+        Bicycles<br>
+        Scooters<br>
+        Skateboards<br>
+        Rollerskates<br>
+      Inline skates</p>
+      <p align="left">And 
+        if planning a picnic while visiting the Zoo, please do not bring any glass 
+        or otherwise breakable items such plates, bowls or cups. Also for the 
+        safety of the animals, no plastic lids or straws are allowed within the 
+        Zoo.<br>
+        <br>
+        <strong>ZOO TRIP TIPS</strong> <a href="tips.html" class="style5"><br>
+      Click Here for Informative Zoo Trip Tips</a></p>
+      <p align="left"><strong>GROUP 
+        DISCOUNTS<br>
+      </strong>If you'll be attending the Zoo with a party of 15 or more people, you 
+        can purchase group-rate tickets at the following amounts:</p>
+      <p align="left">Adults: 
+        $7 per person ($3 off regular admission)<br>
+Children (ages 2-12): $4 ($1 off regular admission)</p>
+      <p align="left">Group-rate 
+        tickets can be purchased in any combination totaling 15 or more tickets. 
+        You may purchase tickets at the gate on the day of your visit, or if you 
+        would like to receive them prior to your visit, <a href="https://www.lazoo.org/membershipgroupform.html"><strong>click 
+        here to purchase group discount tickets online.</strong></a></p>
+      <p align="left"><strong>SHOWS/ANIMAL 
+      CLOSE-UPS/TRAINING SESSIONS</strong><em>*<br>
+      </em><strong><span class="style7">World 
+        of Birds Show</span><br>
+              </strong>Weekdays 11:30 a.m. and 2 p.m. (closed 
+        Tuesdays)<br>
+Weekends 11:30 a.m., 2 p.m., and 3:30 p.m.</p>
+      <p align="left">  <strong><span class="style7">Sea Lion Training 
+    in the Aquatics Section</span>*<br>
+  </strong>Daily at 11:30 
+      a.m. and 2:30 p.m.</p>
+      <p align="left">          <strong><span class="style7">Animals &amp; 
+        You Program</span>*<br>
+        (These 15-minute long animal close-ups take place at stations <br>
+        in the Winnick Family Children&#8217;s Zoo; subject to availability)<br>
+                  </strong>Weekdays 
+        at 10:45 and 11:45 a.m.<br>
+      Weekends at 10:45 and 11:45 a.m., and 12: 45 p.m.</p>
+      <p align="left"> *All 
+        times and events are subject to change or cancellation </p>
+      <p align="left"><b>SAFARI 
+        SHUTTLE<br>
+      </b>While 
+        you're here, hop aboard Safari Shuttle for a quick trip from one end of 
+        the Zoo to the other. All day long, seven days a week (from 10 a.m. to 
+        5 p.m.), the Safari Shuttle picks up passengers, circles the Zoo, and 
+        returns to the main flamingo exhibit near the front entrance. You can 
+        get on and off the tram as often as you like at six different stops.</p>
+      <p>Safari 
+        Shuttle prices:<br>
+Adults: $4<br>
+Children (2 - 12): $2<br>
+Senior Citizens (55 and above): $1.50<br>
+Physically Disabled: $1.50<br>
+Children (under 2): Free </p>
+      <p align="left"><b>STROLLER 
+        RENTALS<br>
+      </b>Both single and double strollers are available for rental while you 
+        enjoy the Los Angeles Zoo. Stroller rentals are conveniently located at the International Marketplace. </p>
+      <p align="left">Single 
+        strollers: $7/day<br>
+Double strollers: $11/day</p>
+      <p><b>WHEELCHAIR 
+      RENTALS<br>
+      </b>Zoo visitors 
+        in need of a wheelchair can rent either a traditional wheelchair, or one 
+        of our electric wheelchairs. Wheelchair rentals are conveniently located 
+      at the International Marketplace, but can be requested at the front Admissions area and a staff member will bring the wheelchair down to you. </p>
+      <p align="left">Conventional 
+        wheelchair: $6/day<br>
+Electric wheelchair: $25/day</p>
+      <p align="left"><b>VISITORS 
+        WITH SPECIAL NEEDS:<br>
+      </b>Concurrent with ADA regulations the Los Angeles Zoo does allow fully trained service animals into the Zoo.  At this time we do not allow service animals in training.  A patron wishing to enter the Zoo with a service primate must show proof of a negative TB test for the primate within the last 12 months, and agree to be accompanied by a Zoo staff member or volunteer for the duration of their visit. </p>
+      <p>If the patron wishes to board their service animal while at the Zoo, clean and safe kennel facilities are available on Zoo grounds for the duration of the patron&rsquo;s visit.  The Los Angeles Zoo does not have facilities to house service primates.</p>
+      <p>All patrons wishing to enjoy the Zoo with their service animal will be accompanied by Zoo Admissions staff to the Zoo Security Office where they will be requested to <img src="images/acrobat.gif" width="20" height="19"> <a href="waiver.pdf">complete an admittance release waiver</a> (PDF file requires Adobe Acrobat Reader) and provided with a map of areas that are strictly off limits to service animals (aviary, contact yard, large cats, etc.)</p>
+      <p>Prior arrangements are encouraged, but not required. Please call 323/644-4258 for more information.  If you require other assistance, please call 323/644-4200 to give the Zoo the chance to make your visit comfortable and special.</p>
+      <p align="left"><b>GUIDED 
+        TOURS<br>
+      </b>All 
+        year around, guided tours are available for groups and families who make 
+        advance reservations. Request a variety of tours by calling 323/644-4211.</p>
+      <p><strong>PHONES<br>
+      </strong>Public phones are available next to each food stand within the 
+        Zoo. 
+      </p>
+      <p align="left"><strong>ATM<br>
+      </strong>A <span class="style3">Bank of America ATM</span> is conveniently located at the top of the mall between the International Marketplace 
+      shops.</p>
+      <p align="left"><strong>FOOD<br>
+        <span class="style7">Safari 
+        Cafe</span> (at the Zoo entrance)</strong> offers gourmet coffee, fresh-baked cookies, muffins, 
+        bagels, ice cream, and daily specials. Hours: Monday - Friday, 10 a.m. to 5:30 p.m.; Saturday-Sunday, 
+      10 a.m. to 5 p.m. Indoor seating. </p>
+      <p align="left">        <span class="style7"><strong>The Grill at Winnick Family Children's Zoo</strong></span> serves charbroiled hamburgers, sandwiches, salads, soft-serve 
+        ice cream, Icee drinks, and cold beer. This facility offers ample outdoor 
+        seating as well as indoor, air-conditioned dining. Hours: Monday - Friday, 
+      10:30 a.m. to 4:30 p.m.; Saturday-Sunday, 10:30 a.m. to 5 p.m.</p>
+      <p align="left"> <span class="style7"><strong>Gorilla Grill</strong></span> is the spot for grilled favorites, 
+        kids meals, refreshments, and ice cream. Hours: Monday - Friday, 10 a.m. 
+      to 3 p.m.; Saturday-Sunday, 10 a.m. to 4:30 p.m. Outdoor seating. </p>
+      <p align="left"> <span class="style7"><strong>La Casita</strong></span> serves a variety of Mexican food, 
+      refreshments. Hours: Monday - Sunday, 10:30 a.m. to 4:30 p.m.</p>
+      <p align="left"> <span class="style7"><strong>Silverback's Cafe</strong></span> offers ice cream treats, pretzels, popcorn, and refreshments. The menu 
+        changes seasonally. Hours: Monday - Friday, 10:30 a.m. to 4:30 p.m.; Saturday-Sunday, 
+      10:30 a.m. to 4:30 p.m. Covered outdoor seating. </p>
+      <p align="left"> <span class="style7"><strong>Mahale Cafe</strong></span> serves charbroiled burgers, chicken sandwiches, kids meals, French Fries, snacks, 
+        and other refreshments. Hours: Monday - Friday, 10 a.m. to 4:00 p.m.; 
+        Saturday-Sunday, 10 a.m. to 4:45 p.m. Outdoor seating.</p>
+      <p align="left"><span class="style7"><strong>South America</strong></span> serves pizza, snacks, refreshments, cold beer, ICEEs, sopes, and kids meals. Outdoor seating. Hours: Saturday - Sunday, 10:30 a.m. to 4:30 p.m. Weekday hours are seasonal.  </p>
+      <p align="left"><strong>GIFT 
+      SHOPS<br>
+      </strong><span class="style7"><strong>International 
+        Marketplace</strong></span> offers novelties, apparel, hats, toys, plush animals, jewelry, gifts, 
+        books, postcards, souvenirs, puzzles, videos, and music, interior decorations, 
+        and more. Hours: Monday - Friday, 10 a.m. to 5:30 p.m.; Saturday-Sunday, 
+      10 a.m. to 5:30 p.m.</p>
+      <p align="left"> <span class="style7"><strong>Safari Station</strong></span> sells African artifacts, gifts, 
+        apparel, and novelties, as well as film, hats, and sundries. Hours: Monday 
+        - Friday, 10 a.m. to 4 p.m.; Saturday-Sunday, 10 a.m. to 5 p.m.      </p>
+      <p align="left">Restaurant 
+        and gift shop hours are subject to change with business and weather conditions.</p></td>
+  </tr>
+  <tr> 
+    <td height="24">&nbsp;</td>
+  </tr>
+</table>
+<TABLE WIDTH=686 BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0>
+  <TR> 
+    <TD> <A HREF="zooinfo1.html"
+				ONMOUSEOVER="window.status='Hours and Admission'; changeImages('zooinfonav_01', 'images/zooinfonav_01-over.gif'); return true;"
+				ONMOUSEOUT="window.status=''; changeImages('zooinfonav_01', 'images/zooinfonav_01.gif'); return true;"> 
+      <IMG NAME="zooinfonav_01" SRC="images/zooinfonav_01.gif" WIDTH=157 HEIGHT=31 BORDER=0 ALT="Hours and Admission"></A></TD>
+    <TD> <IMG SRC="images/zooinfonav_02.gif" WIDTH=13 HEIGHT=31 ALT=""></TD>
+    <TD> <A HREF="zooinfo2.html"
+				ONMOUSEOVER="window.status='Directions'; changeImages('zooinfonav_03', 'images/zooinfonav_03-over.gif'); return true;"
+				ONMOUSEOUT="window.status=''; changeImages('zooinfonav_03', 'images/zooinfonav_03.gif'); return true;"> 
+      <IMG NAME="zooinfonav_03" SRC="images/zooinfonav_03.gif" WIDTH=97 HEIGHT=31 BORDER=0 ALT="Directions"></A></TD>
+    <TD> <IMG SRC="images/zooinfonav_04.gif" WIDTH=13 HEIGHT=31 ALT=""></TD>
+    <TD> <A HREF="zooinfo3.html"
+				ONMOUSEOVER="window.status='Zoo Map'; changeImages('zooinfonav_05', 'images/zooinfonav_05-over.gif'); return true;"
+				ONMOUSEOUT="window.status=''; changeImages('zooinfonav_05', 'images/zooinfonav_05.gif'); return true;"> 
+      <IMG NAME="zooinfonav_05" SRC="images/zooinfonav_05.gif" WIDTH=77 HEIGHT=31 BORDER=0 ALT="Zoo Map"></A></TD>
+    <TD> <IMG SRC="images/zooinfonav_06.gif" WIDTH=12 HEIGHT=31 ALT=""></TD>
+    <TD> <A HREF="contact.html"
+				ONMOUSEOVER="window.status='Contact Us'; changeImages('zooinfonav_07', 'images/zooinfonav_07-over.gif'); return true;"
+				ONMOUSEOUT="window.status=''; changeImages('zooinfonav_07', 'images/zooinfonav_07.gif'); return true;"> 
+      <IMG NAME="zooinfonav_07" SRC="images/zooinfonav_07.gif" WIDTH=92 HEIGHT=31 BORDER=0 ALT="Contact Us"></A></TD>
+    <TD> <IMG SRC="images/zooinfonav_08.gif" WIDTH=14 HEIGHT=31 ALT=""></TD>
+    <TD> <A HREF="zooinfo5.html"
+				ONMOUSEOVER="window.status='Zoo History'; changeImages('zooinfonav_09', 'images/zooinfonav_09-over.gif'); return true;"
+				ONMOUSEOUT="window.status=''; changeImages('zooinfonav_09', 'images/zooinfonav_09.gif'); return true;"> 
+      <IMG NAME="zooinfonav_09" SRC="images/zooinfonav_09.gif" WIDTH=103 HEIGHT=31 BORDER=0 ALT="Zoo History"></A></TD>
+    <TD> <IMG SRC="images/zooinfonav_10.gif" WIDTH=14 HEIGHT=31 ALT=""></TD>
+    <TD> <A HREF="http://www.cityofla.org" TARGET="_blank"
+				ONMOUSEOVER="window.status='City of L.A.'; changeImages('zooinfonav_11', 'images/zooinfonav_11-over.gif'); return true;"
+				ONMOUSEOUT="window.status=''; changeImages('zooinfonav_11', 'images/zooinfonav_11.gif'); return true;"> 
+      <IMG NAME="zooinfonav_11" SRC="images/zooinfonav_11.gif" WIDTH=94 HEIGHT=31 BORDER=0 ALT="City of L.A."></A></TD>
+  </TR>
+</TABLE>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

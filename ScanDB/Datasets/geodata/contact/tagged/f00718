@@ -1,0 +1,374 @@
+<DOC>
+<DOCNO>f00718</DOCNO>
+<DOCHDR>http://www.goldengate.org/contact</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+        "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html lang="en">
+<head>
+	<title>Golden Gate: Contact Information</title>
+	<link rel="stylesheet" href="/includes/ggstyle.css" type="text/css">
+
+	<script language = "JavaScript" type = "text/javascript">	<!--		function popUp(URL)		{			day = new Date();			id = day.getTime();			eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=440,height=200');");		}		enteredMenu = 0;		if(document.images)		{			//Top Menu Images			aboutus_top1 = new Image();			aboutus_top1.src = "/images/top/ggo/aboutus_up.gif";			aboutus_top2 = new Image();			aboutus_top2.src = "/images/top/ggo/aboutus_over.gif";			boardofdirectors_top1 = new Image();			boardofdirectors_top1.src = "/images/top/ggo/boardofdirectors_up.gif";			boardofdirectors_top2 = new Image();			boardofdirectors_top2.src = "/images/top/ggo/boardofdirectors_over.gif";			bridge_top1 = new Image();			bridge_top1.src = "/images/top/ggo/bridge_up.gif";			bridge_top2 = new Image();			bridge_top2.src = "/images/top/ggo/bridge_over.gif";			ferry_top1 = new Image();			ferry_top1.src = "/images/top/ggo/ferry_up.gif";			ferry_top2 = new Image();			ferry_top2.src = "/images/top/ggo/ferry_over.gif";			transit_top1 = new Image();			transit_top1.src = "/images/top/ggo/transit_up.gif";			transit_top2 = new Image();			transit_top2.src = "/images/top/ggo/transit_over.gif";			pressroom_top1 = new Image();			pressroom_top1.src = "/images/top/ggo/newsevents_up.gif";			pressroom_top2 = new Image();			pressroom_top2.src = "/images/top/ggo/newsevents_over.gif";			//Left Images			aboutus_left1 = new Image();			aboutus_left1.src = "/images/aboutus_up.gif";			aboutus_left2 = new Image();			aboutus_left2.src = "/images/aboutus_over.gif";			boardofdirectors_left1 = new Image();			boardofdirectors_left1.src = "/images/right/ggo/boardofdirectors_up.gif";			boardofdirectors_left2 = new Image();			boardofdirectors_left2.src = "/images/right/ggo/boardofdirectors_over.gif";			bridge_left1 = new Image();			bridge_left1.src = "/images/bridge_up.gif";			bridge_left2 = new Image();			bridge_left2.src = "/images/bridge_over.gif";			ferry_left1 = new Image();			ferry_left1.src = "/images/ferry_up.gif";			ferry_left2 = new Image();			ferry_left2.src = "/images/ferry_over.gif";			transit_left1 = new Image();			transit_left1.src = "/images/transit_up.gif";			transit_left2 = new Image();			transit_left2.src = "/images/transit_over.gif";			newsevents_left1 = new Image();			newsevents_left1.src = "/images/newsevents_up.gif";			newsevents_left2 = new Image();			newsevents_left2.src = "/images/newsevents_over.gif";			picosearch_left1 = new Image();			picosearch_left1.src = "/images/menuimages/searchl_up.gif";			picosearch_left2 = new Image();			picosearch_left2.src = "/images/menuimages/searchl_over.gif";		}		// Detect if the browser is IE or not.		// If it is not IE, we assume that the browser is NS.		var IE = document.all?true:false		// If NS -- that is, !IE -- then set up for mouse capture		if (!IE) document.captureEvents(Event.MOUSEMOVE)		// Set-up to use getMouseXY function onMouseMove		document.onmousemove = getMouseXY;		// Temporary variables to hold mouse x-y pos.s		var mPosX = 0;		var mPosY = 0;		// Main function to retrieve mouse x-y pos.s		function getMouseXY(e)		{			if (IE)			{				// grab the x-y pos.s if browser is IE				mPosX = event.clientX + document.body.scrollLeft;				mPosY = event.clientY + document.body.scrollTop;			}			else			{				// grab the x-y pos.s if browser is NS				mPosX = e.pageX;				mPosY = e.pageY;			}			// catch possible negative values in NS4			if (mPosX < 0)				mPosX = 0;			if (mPosY < 0)				mPosY = 0;		  return true;		}				function rollOnNoMenu(inName)		{			if(document.images)			{				document.images[inName].src = eval(inName + "2.src");			}		}				function rollOffNoMenu(inName)		{			if(document.images)			{				document.images[inName].src = eval(inName + "1.src");			}		}				function rollOn(inName)		{			if(enteredMenu != 0)			{				clearTimeout(myTimer);			}			if(document.images)			{				document.images[inName].src = eval(inName + "2.src");				hideOtherMenus(inName + "L");				showMenu(inName + "L");			}		}				function rollOff(inName)		{			if(document.images)			{				document.images[inName].src = eval(inName + "1.src");				myTimer = setTimeout("hideAllMenus()",1500);				enteredMenu = 1;			}		}		function setTimer()		{			myTimer = setTimeout("hideAllMenus()",1500);		}		function clearTimer()		{			clearTimeout(myTimer);		}		function showMenu(theMenu)		{			document.getElementById(theMenu).style.top = (mPosY - 10) + 'px';			document.getElementById(theMenu).style.visibility = 'visible';		}		function hideMenu(theMenu)		{			document.getElementById(theMenu).style.visibility = 'hidden';		}		function hideAllMenus()		{			document.getElementById("aboutus_leftL").style.visibility = 'hidden';			document.getElementById("boardofdirectors_leftL").style.visibility = 'hidden';			document.getElementById("bridge_leftL").style.visibility = 'hidden';			document.getElementById("ferry_leftL").style.visibility = 'hidden';			document.getElementById("transit_leftL").style.visibility = 'hidden';			document.getElementById("newsevents_leftL").style.visibility = 'hidden';		}		function hideOtherMenus(menuName)		{			if(menuName != "aboutus_leftL") document.getElementById("aboutus_leftL").style.visibility = 'hidden';			if(menuName != "boardofdirectors_leftL") document.getElementById("boardofdirectors_leftL").style.visibility = 'hidden';			if(menuName != "bridge_leftL") document.getElementById("bridge_leftL").style.visibility = 'hidden';			if(menuName != "ferry_leftL") document.getElementById("ferry_leftL").style.visibility = 'hidden';			if(menuName != "transit_leftL") document.getElementById("transit_leftL").style.visibility = 'hidden';			if(menuName != "newsevents_leftL") document.getElementById("newsevents_leftL").style.visibility = 'hidden';		}			//-->	</script>
+
+</head>
+<body background="/images/line_back.gif" bgcolor="#ffffff" link="#ff3300" vlink="#33cc00" marginwidth=0 marginheight=0 topmargin=0 leftmargin=0>
+
+	<table border=0 cellpadding=10 cellspacing=0 summary="This is a layout table for the page format.  The first cell is used for the domain graphic, or logo; the second cell is used for the top navigation links or the domain welcome image; the third cell is used for the section navigation links; and the forth cell is used for the page content.">
+		<tr valign="top">
+			<td width=160 align="left">
+				<p><a href="/"><img src="/images/ggnewdistrictlogosmall_rev.gif" alt="Golden Gate Bridge, Highway and Transportation District" width=140 height=102 border=0></a></p>
+
+				<a href="/organization/index.htm" onmouseover="rollOn('aboutus_left');self.status='About Us';return true;" onmouseout="rollOff('aboutus_left');self.status='';return true;" onclick="rollOff('aboutus_left');"><img name="aboutus_left" src="/images/aboutus_up.gif" width=160 height=20 border=0 alt="About Us"></a><br>
+				<a href="/organization/c/board/index.html" onmouseover="rollOn('boardofdirectors_left');self.status='Board of Directors';return true;" onmouseout="rollOff('boardofdirectors_left');self.status='';return true;" onclick="rollOff('boardofdirectors_left');"><img name="boardofdirectors_left" src="/images/right/ggo/boardofdirectors_up.gif" width=160 height=20 border=0 alt="Board of Directors"></a><br>
+				<a href="http://www.goldengatebridge.org/" onmouseover="rollOn('bridge_left');self.status='Golden Gate Bridge';return true;" onmouseout="rollOff('bridge_left');self.status='';return true;" onclick="rollOff('bridge_left');"><img name="bridge_left" src="/images/bridge_up.gif" width=160 height=20 border=0 alt="Golden Gate Bridge"></a><br>
+				<a href="http://www.goldengateferry.org/" onmouseover="rollOn('ferry_left');self.status='Golden Gate Ferry';return true;" onmouseout="rollOff('ferry_left');self.status='';return true;" onclick="rollOff('ferry_left');"><img name="ferry_left" src="/images/ferry_up.gif" width=160 height=20 border=0 alt="Golden Gate Ferry"></a><br>
+				<a href="http://www.goldengatetransit.org/" onmouseover="rollOn('transit_left');self.status='Golden Gate Transit';return true;" onmouseout="rollOff('transit_left');self.status='';return true;" onclick="rollOff('transit_left');"><img name="transit_left" src="/images/transit_up.gif" width=160 height=20 border=0 alt="Golden Gate Transit"></a><br>
+				<a href="/news/index.htm" onmouseover="rollOn('newsevents_left');self.status='News / Events';return true;" onmouseout="rollOff('newsevents_left');self.status='';return true;" onclick="rollOff('newsevents_left');"><img name="newsevents_left" src="/images/newsevents_up.gif" width=160 height=20 border=0 alt="News / Events"></a><br>
+				<a href="/contact/index.html" onmouseover="self.status='Contact Us';return true;" onmouseout="self.status='';return true;"><img src="/images/right/ggt/contactus_over.gif" width=160 height=20 border=0 alt="Contact Us"></a><br>
+
+				<a href="http://search.goldengate.org/" onmouseover="rollOnNoMenu('picosearch_left');self.status='Search Golden Gate';return true;" onmouseout="rollOffNoMenu('picosearch_left');self.status='';return true;" onclick="rollOffNoMenu('picosearch_left');"><img src="/images/menuimages/searchl_up.gif" border=0 width=160 height=20 alt="Search Golden Gate" name="picosearch_left"></a><br>
+
+				<form action="http://search.goldengate.org" target="_blank" method="post">
+					<input type="hidden" name="index" value=156574>
+
+					<table border=0 cellpadding=0 cellspacing=0 width=160>
+						<tr>
+							<td align="right"><input type="text" name="query" value="" size=15></td>
+							<td width="100%"><input type="image" src="/images/menuimages/search-button.gif" width=24 height=27 name="-token." border=0></td>
+						</tr>
+					</table>
+
+				</form>
+
+				<p align="center"><a href="index.html?version=text">Text Version</a></p>
+
+				<p align="center"><a href="http://www.goldengate.org/translations.html"><img src = "/images/flags/flags.gif" border = 0 width = 139 height = 39 alt = "translations" name = "flags"><br>Translations</a></p>
+
+				</td>
+			<td valign="top">
+
+				<center>
+				
+				<p class="navhead"><b><font color="#ff3300">Contact Us</font></b></p>
+				<a href="/organization/index.htm" onmouseover="rollOnNoMenu('aboutus_top');self.status='About Us';return true;" onmouseout="rollOffNoMenu('aboutus_top');self.status='';return true;" onclick="rollOffNoMenu('aboutus_top');"><img name="aboutus_top" src="/images/top/ggo/aboutus_up.gif" width=48 height=23 border=0 alt="About Us"></a>
+				<img src="/images/vert_bar.gif" alt="bar" border=0 width=2 height=23><a href="/organization/index.htm" onmouseover="rollOnNoMenu('boardofdirectors_top');self.status='Board of Directors';return true;" onmouseout="rollOffNoMenu('boardofdirectors_top');self.status='';return true;" onclick="rollOffNoMenu('boardofdirectors_top');"><img name="boardofdirectors_top" src="/images/top/ggo/boardofdirectors_up.gif" width=53 height=23 border=0 alt="Board of Directors"></a>
+				<img src="/images/vert_bar.gif" alt="bar" border=0 width=2 height=23><a href="http://www.goldengatebridge.org/" onmouseover="rollOnNoMenu('bridge_top');self.status='Golden Gate Bridge';return true;" onmouseout="rollOffNoMenu('bridge_top');self.status='';return true;" onclick="rollOffNoMenu('bridge_top');"><img name="bridge_top" src="/images/top/ggo/bridge_up.gif" width=65 height=23 border=0 alt="Golden Gate Bridge"></a>
+				<img src="/images/vert_bar.gif" alt="bar" border=0 width=2 height=23><a href="http://www.goldengateferry.org/" onmouseover="rollOnNoMenu('ferry_top');self.status='Golden Gate Ferry';return true;" onmouseout="rollOffNoMenu('ferry_top');self.status='';return true;" onclick="rollOffNoMenu('ferry_top');"><img name="ferry_top" src="/images/top/ggo/ferry_up.gif" width=65 height=23 border=0 alt="Golden Gate Ferry"></a>
+				<img src="/images/vert_bar.gif" alt="bar" border=0 width=2 height=23><a href="http://www.goldengatetransit.org/" onmouseover="rollOnNoMenu('transit_top');self.status='Golden Gate Transit';return true;" onmouseout="rollOffNoMenu('transit_top');self.status='';return true;" onclick="rollOffNoMenu('transit_top');"><img name="transit_top" src="/images/top/ggo/transit_up.gif" width=65 height=23 border=0 alt="Golden Gate Transit"></a>
+				<img src="/images/vert_bar.gif" alt="bar" border=0 width=2 height=23><a href="/news/index.htm" onmouseover="rollOnNoMenu('pressroom_top');self.status='News / Events';return true;" onmouseout="rollOffNoMenu('pressroom_top');self.status='';return true;" onclick="rollOffNoMenu('pressroom_top');"><img name="pressroom_top" src="/images/top/ggo/newsevents_up.gif" width=37 height=23 border=0 alt="News / Events"></a>
+			
+				</center>
+
+
+		<hr>
+				<h2 align = "center">CONTACT INFORMATION</h2>	
+
+
+<table border = "0">
+	<TR><TH colspan = "3" align = "center"><a href = "http://toll.goldengate.org">Toll Comments</a></th></TR>
+
+	<tr align = "left">
+		<th><a href = "#Transit">Golden Gate Transit/Golden Gate Ferry</a></th>
+		<th align = "left"><a href = "#Bridge">Golden Gate Bridge</a></th>
+		<th><a href = "#General">General</a></th>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	
+	
+	<tr>
+		<td colspan = "3" align = "center"><a name = "Transit"><h3><b>Golden Gate Transit/Golden Gate Ferry</b></h3></a></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+
+	<tr>
+		<td valign = "top"><b>Mailing Address:</b></td>
+		<td><GEO TYPE="US">1011 Andersen Drive<br>San Rafael, CA 94901</GEO><br>
+		<b>Fax:</b> Customer Relations 415-257-4411</td>
+		<td>&nbsp;</td>	
+
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+
+	<tr>
+		<td valign = "top"><b>Fare, Trip-Planning & Schedule Information:</b></td>
+		
+					<td>511 (toll-free) or<br>
+					415-455-2000 (Marin County)<br>
+					415-923-2000 (San Francisco)<br>
+					707-541-2000 (Sonoma County)<br>
+					711 (TDD) or California Relay</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td colspan = "2" align = "left"><b>Customer Service Center Hours:</b> <br>
+	Weekdays - 7 am to 7 pm<br>
+	Weekends - 8 am to 6 pm<br>
+	<b>Holidays:</b> Thanksgiving and Christmas Eve Days - 7 am to 5 pm.<br>
+	Closed Presidents', Christmas and New Year's Days.</td>
+	</tr>
+	<!--<tr>
+		<td colspan = "3" align = "center">Open daily 7 am to 7 pm, except Thanksgiving and Christmas Eve Days (7 am to 5 pm).<br> Closed Christmas and New Year's Days.</td>
+	</tr>-->
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td><b>Lost and Found</b>:</td>
+		<td>415-257-4476 (Bus)<br>
+					415-925-5565 (Ferry)</td>
+		<td>&nbsp;</td>	
+
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+	<tr>
+		<td valign = "top"><b>Online Comments/Inquiries:</b></td>
+		<td>					
+		&nbsp;
+
+		
+		<a href = "http://buscomments.goldengate.org">http://buscomments.goldengate.org</a>  (Bus)<br>
+		<a href = "http://ferrycomments.goldengate.org">http://ferrycomments.goldengate.org</a> (Ferry)</td>
+		<td>&nbsp;</td>	
+
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+
+	<!--<tr>
+		<td colspan = "3"><b>Online Comments on Potential Service Reductions:</b></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td><td><a href = "http://servicereview.goldengate.org/servicereviewform/">http://servicereview.goldengate.org/servicereviewform/</a></td>
+		<td>&nbsp;</td>	
+
+	</tr>-->
+
+	<tr>
+
+	<tr><td><b>E-mail ­ Special Events</b></td><td><a href = "mailto:events@goldengate.org">events@goldengate.org</a></td>
+		<td>&nbsp;</td>	
+
+	</tr>
+
+	 <tr>
+		<td>&nbsp;</td>
+	</tr>
+	 
+	 
+	 <tr>
+		<td colspan = "3" align = "center"><a name = "Bridge"><h3><b>Golden Gate Bridge</b></h3></td>
+	</tr>
+
+	<tr>
+		<td valign = "top"><b>Mailing Address:</b></td>
+		<td><GEO TYPE="US">P.O. Box 9000, Presidio Station<br>San Francisco, CA 94129-0601</GEO></td>
+		<td>&nbsp;</td>	
+
+</tr>
+<tr>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td  valign = "top"><b>General Information:</b></td>
+		<td>415-921-5858</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td><b>FasTrak:</b></td>
+		<td>1-877-442-8655</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td><b>Toll Comments:</b></td>
+		<td><a name = "Toll" href = "http://toll.goldengate.org">toll.goldengate.org</a></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><b>FasTrak E-mail:</b></td>
+		<td><a href = "mailto:FasTrak@goldengate.org">FasTrak@goldengate.org</a></td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td><b>General E-mail:</b></td>
+		<td><a href = "mailto:bridgecomments@goldengate.org">bridgecomments@goldengate.org</a></td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td><b>Filming and Photography Permits:</b></td>
+		<td valign="bottom"><a href = "mailto:bridgecomments@goldengate.org">bridgecomments@goldengate.org</a></td>
+		<td>&nbsp;</td>
+	</tr>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+	<tr>
+		<td colspan="3" align = "center"><a name = "General">&nbsp;</a><h3><b>GENERAL</b></h3></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+
+	<tr>
+		<td><b>E-mail - General Inquiries:</b></td><td><a href = "mailto:events@goldengate.org">events@goldengate.org</a></td>
+		<td>&nbsp;</td>	
+		</td>
+	</tr> 
+	</table>
+
+
+				
+				<hr>
+				
+				<p align="center"><a href="#Top">Top of Page</a></p>
+
+				<table border=0 cellspacing=10 align="center" summary="This table is used to format the footer information on every page. There are links to feedback, as well as links to the four different domains urls as well as a link to the web hosting business, MCN">
+					<tr>
+						<td>
+							<p class="subnav" align="center"><a href="http://search.goldengate.org">Search</a> | <a href="index.html?version=text">Text Version</a> | <a href="index.html?version=print">Printer Friendly Version</a> | <a href="http://www.goldengate.org/contact/index.html">Contact</a></p>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" width="100%">
+						
+							<table border=0 summary="This table formats the links for the four goldengate domains.">
+								<tr>
+									<td class="subnav" nowrap><a href="http://www.goldengate.org/">Golden<br>Gate</a></td>
+									<td class="subnav" nowrap><a href="http://www.goldengatebridge.org/">Golden Gate<br>Bridge</a></td>
+									<td class="subnav" nowrap><a href="http://www.goldengateferry.org/">Golden Gate<br>Ferry</a></td>
+									<td class="subnav" nowrap><a href="http://www.goldengatetransit.org/">Golden Gate<br>Transit</a></td>
+									<td class="subnav" nowrap><a href="http://store.goldengate.org/">Golden Gate<br>Store</a></td>
+								</tr>
+							</table>
+							
+						</td>
+					</tr>
+					<tr>
+						<td nowrap align="center">
+
+							<p class="copy">&copy; Copyright 2005 Golden Gate Bridge, Highway<br>and Transportation District.&nbsp; All Rights Reserved.</p>
+							
+							
+							<p class="copy"><a href="http://www.goldengate.org/privacy.html" target="_blank">Privacy Policy</a></p>
+							
+							
+							
+
+							<p><span style="font-size: 9px;"><a href="javascript:popUp('http://www.goldengate.org/website-notice.html')" onmouseover="status='Website Information';return true">About the Website</a></span></p>
+
+
+
+						</td>
+					</tr>
+				</table>
+			
+			</td>
+		</tr>
+	</table>
+
+	<div id="aboutus_leftL" name="aboutus_leftL" style="position: absolute; top: 140px; left: 172px; visibility: hidden;">
+		<ul class="divmenu" onMouseOut="setTimer();">
+			<li onMouseOver="clearTimer();"><a href="/organization/jobs/index.html" class="menu" onMouseOver="clearTimer();">Job Opportunities</a></li>
+			<li onMouseOver="clearTimer();"><a href="/contracts/index.html" class="menu" onMouseOver="clearTimer();">Contract Opportunities</a></li>
+			<li onMouseOver="clearTimer();"><a href="/organization/mission.html" class="menu" onMouseOver="clearTimer();">Mission Statement</a></li>
+			<li onMouseOver="clearTimer();"><a href="/organization/leadership.html" class="menu" onMouseOver="clearTimer();">Leadership</a></li>
+		</ul>
+	</div>
+
+	<div id="boardofdirectors_leftL" name="boardofdirectors_leftL" style="position: absolute; top: 160px; left: 172px; visibility: hidden;">
+		<ul class="divmenu" onMouseOut="setTimer();">
+			<li onMouseOver="clearTimer();"><a href="/organization/c/board/members.html" class="menu" onMouseOver="clearTimer();">Members</a></li>
+			<li onMouseOver="clearTimer();"><a href="/organization/c/board/calendar.html" class="menu" onMouseOver="clearTimer();">Calendar</a></li>
+			<li onMouseOver="clearTimer();"><a href="/organization/c/board/meetings.html" class="menu" onMouseOver="clearTimer();">Meetings</a></li>
+			<li onMouseOver="clearTimer();"><a href="/organization/c/board/2005_meetings/mtgs-public-h.html" class="menu" onMouseOver="clearTimer();">Public Hearings</a></li>
+			<li onMouseOver="clearTimer();"><a href="/organization/c/board/policies.html" class="menu" onMouseOver="clearTimer();">Board Policies</a></li>
+			<li onMouseOver="clearTimer();"><a href="/organization/c/board/BoardContact.html" class="menu" onMouseOver="clearTimer();">Contact</a></li>
+		</ul>
+	</div>
+
+	<div id="bridge_leftL" name="bridge_leftL" style="position: absolute; top: 180px; left: 172px; visibility: hidden;">
+		<ul class="divmenu" onMouseOut="setTimer();">
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatebridge.org/fastraktolls/index.html" class="menu" onMouseOver="clearTimer();">FasTrak & Tolls</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatebridge.org/trafficmanagement/index.html" class="menu" onMouseOver="clearTimer();">Traffic Management</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatebridge.org/bikesbridge/bikes.html" class="menu" onMouseOver="clearTimer();">Bikes on the Bridge</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatebridge.org/visitors/index.htm" class="menu" onMouseOver="clearTimer();">Visitors</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatebridge.org/research/index.htm" class="menu" onMouseOver="clearTimer();">Research Library</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatebridge.org/projects/index.htm" class="menu" onMouseOver="clearTimer();">Current Projects</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatebridge.org/photos/index.htm" class="menu" onMouseOver="clearTimer();">Photo Library</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatebridge.org/gift/index.htm" class="menu" onMouseOver="clearTimer();">Gift Center</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengate.org/news/bridgenews.html" class="menu" onMouseOver="clearTimer();">News / Events</a></li>
+		</ul>
+	</div>
+
+	<div id="ferry_leftL" name="ferry_leftL" style="position: absolute; top: 200px; left: 172px; visibility: hidden;">
+		<ul class="divmenu" onMouseOut="setTimer();">
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengateferry.org/schedules/index.html" class="menu" onMouseOver="clearTimer();">Schedules</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengateferry.org/fareprograms/cashfares.html" class="menu" onMouseOver="clearTimer();">Fare Programs</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengateferry.org/services/index.html" class="menu" onMouseOver="clearTimer();">Services</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatetransit.org/accessibility/index.html" class="menu" onMouseOver="clearTimer();">Accessibility</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengateferry.org/events/index.htm" class="menu" onMouseOver="clearTimer();">Special Events</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengateferry.org/researchlibrary/index.htm" class="menu" onMouseOver="clearTimer();">Research Library</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengate.org/contact/index.html" class="menu" onMouseOver="clearTimer();">Contact Us</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengate.org/news/ferrynews.html" class="menu" onMouseOver="clearTimer();">News / Events</a></li>
+		</ul>
+	</div>
+
+	<div id="transit_leftL" name="transit_leftL" style="position: absolute; top: 220px; left: 172px; visibility: hidden;">
+		<ul class="divmenu" onMouseOut="setTimer();">
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatetransit.org/Bus-Schedules.html" class="menu" onMouseOver="clearTimer();">Schedules</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatetransit.org/fareprograms/fareprograms_2002.html" class="menu" onMouseOver="clearTimer();">Fares Programs</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatetransit.org/services/typesdays.html" class="menu" onMouseOver="clearTimer();">Services</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatetransit.org/accessibility/index.html" class="menu" onMouseOver="clearTimer();">Accessibility</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengatetransit.org/researchlibrary/index.html" class="menu" onMouseOver="clearTimer();">Research Library</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengate.org/contact/index.html" class="menu" onMouseOver="clearTimer();">Contact Us</a></li>
+			<li onMouseOver="clearTimer();"><a href="http://www.goldengate.org/news/transitnews.html" class="menu" onMouseOver="clearTimer();">News / Events</a></li>
+		</ul>
+	</div>
+
+	<div id="newsevents_leftL" name="newsevents_leftL" style="position: absolute; top: 240px; left: 172px; visibility: hidden;">
+		<ul class="divmenu" onMouseOut="setTimer();">
+			<li onMouseOver="clearTimer();"><a href="/news/bridge/index.html" class="menu" onMouseOver="clearTimer();">Bridge News</a></li>
+			<li onMouseOver="clearTimer();"><a href="/news/ferry/index.html" class="menu" onMouseOver="clearTimer();">Ferry News</a></li>
+			<li onMouseOver="clearTimer();"><a href="/news/transit/index.html" class="menu" onMouseOver="clearTimer();">Transit News</a></li>
+			<li onMouseOver="clearTimer();"><a href="/news/newsarchives.html" class="menu" onMouseOver="clearTimer();">Archives</a></li>
+			<li onMouseOver="clearTimer();"><a href="/news/links.html" class="menu" onMouseOver="clearTimer();">Links</a></li>
+		</ul>
+	</div>
+
+
+
+</body>
+</html>

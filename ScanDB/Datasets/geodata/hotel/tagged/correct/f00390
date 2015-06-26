@@ -1,0 +1,509 @@
+<DOC>
+<DOCNO>f00390</DOCNO>
+<DOCHDR>http://reservations.hotelsatanywhere.com/servlet/reservations.PropertyInformationXML?propcode=GAL;37713&remote=imotels2&servepop=</DOCHDR>
+<html xmlns:mapurl="http://www.oracle.com/XSL/Transform/java/lodging.MapQUtils"><head><META http-equiv="Content-Type" content="text/html"><title>Layne Hotel&nbsp;San Francisco hotel reservations.
+       </title><meta name="keywords" content="Layne Hotel San Francisco, CA hotel reservations discount lodging hotels motels resorts travel hotels discount Layne Hotel in San Francisco, CA Reservations hotels motels discounts rooms accommodations bed breakfast bandb"><meta name="description" content="San Francisco hotel reservations for the Layne Hotel in San Francisco, CA. Click here to view property details, features, amenities and to book a hotel room online."><link href="/css/2004_spring.css" type="text/css" rel="stylesheet"><link rel="stylesheet" href="/css/2004_calendar.css" type="text/css"><style>
+body {
+   font: 13px Arial; color: #000000; BACKGROUND-COLOR: #FFFFFF;}
+</style><script type="text/javascript" src="/java/datebox.js"></script><script type="text/javascript" src="/java/calendar.js"></script><script type="text/javascript" src="/java/pop_up.js"></script><script type="text/javascript" src="/java/date_selector.js"></script><script language="JavaScript" type="text/JavaScript"><!--
+function openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+        function showInfoSection(n) {
+
+              var numGroups = 5;
+
+      	document.getElementById("info-group" + n).className = "isShown";
+		document.getElementById("info-tab" + n).className = "current";
+		for (i=1; i <= numGroups; i++) {
+		  if(n != i) {
+		      hideInfoSection(i);
+		  }
+		}
+      }
+
+      function hideInfoSection(i) {
+	      var groupName = 'info-group' + i;
+	      var tabName = "info-tab" + i;
+    		document.getElementById(groupName).className = "isHidden";
+    		document.getElementById(tabName).className = "notCurrent";
+      }
+
+      function displayLess(n) {
+        document.getElementById("short" + n).className = "isShown";
+        document.getElementById("long" + n).className = "isHidden";
+      }
+      function displayMore(n) {
+        document.getElementById("short" + n).className = "isHidden";
+        document.getElementById("long" + n).className = "isShown";
+      }
+
+      function showAllRooms(n) {
+        for(i=6; i <= n; i++) {
+          document.getElementById("rate" + i).className = 'isShown';
+
+        }
+          document.getElementById("allrates").className = 'isHidden';
+          document.getElementById("fewerrates").className = 'isShown';
+      }
+
+      function showFewerRooms(n) {
+        for (i=6; i<=n; i++) {
+          document.getElementById("rate" + i).className = 'isHidden';
+
+        }
+          document.getElementById("allrates").className = 'isShown';
+          document.getElementById("fewerrates").className = 'isHidden';
+      }
+
+      function resizeImage(photo) {
+       var curImg      = document.getElementById(photo);
+       var imgWidth  = curImg.width;
+       var imgHeight = curImg.height;
+
+       if(imgWidth > 668) {
+         var imgWidthDiff = 668/imgWidth;
+         imgWidth = 668;
+         imgHeight = Math.round(imgHeight*imgWidthDiff);
+
+         curImg.width = imgWidth;
+         curImg.height = imgHeight;
+       }
+     }
+
+
+  
+//--></script><style type="text/css">
+          #amenities ul {
+          	list-style-type: disc;
+          	margin-left: 2px;
+          	}
+          #amenities li {
+          	list-style-type: disc;
+           	}
+      .isHidden {display : none;}
+      .isShown {display : inline;}
+
+
+
+#slidingDoorsTabs {
+	height:47px; /* Must declare height or line across tab bottoms vanishes in NN6.2 + NN7 */
+	width:777px;
+  	background:url(/images/propavail/bg.gif) repeat-x bottom;
+  	font-size:14px;
+  	line-height:normal;
+  	}
+#slidingDoorsTabs ul {
+	margin:0 0 0 -40px;
+	list-style:none;
+	}
+#slidingDoorsTabs li {
+	float:left; /* Float makes LIs stand side by side */
+	background:url(/images/propavail/tab_left.gif) no-repeat left top;
+	margin:0;
+  	padding:0 0 0 10px;
+ 	}
+#slidingDoorsTabs a {
+	float:left;
+	display:block;
+	background:url(/images/propavail/tab_right.gif) no-repeat right top;
+	padding:26px 15px 4px 4px;
+	text-decoration:none;
+	color:#039;
+	font-size: 14px;
+   }
+/* Commented Backslash Hack
+   	hides rule from IE5-Mac \*/
+#slidingDoorsTabs a {
+	float:none;
+	font-size: 14px;
+}
+	/* End IE5-Mac hack - Turns float off to prevent IE5Mac from stacking the tabs vertically and creating a mess */
+
+#slidingDoorsTabs a:hover {
+	color:#337;
+	font-size: 14px;
+   }
+#slidingDoorsTabs .current {
+  	 background-image:url(/images/propavail/tab_left_on.gif);
+   	}
+#slidingDoorsTabs .current a {
+  	background-image:url(/images/propavail/tab_right_on.gif);
+   	padding-bottom:4px;
+   	font-weight:bold;
+   	}
+#slidingDoorsTabs .special a {
+   	background-image:url(/images/propavail/tab_right_special.gif);
+   	padding-bottom:5px;
+ 	}
+
+#slidingDoorsTabs .notCurrent {
+  	 background-image:url(/images/propavail/tab_left.gif);
+   	}
+#slidingDoorsTabs .notCurrent a {
+	background-image:url(/images/propavail/tab_right.gif);
+	color:#039;
+	padding-bottom:4px;
+	font-weight:normal;
+	font-size: 14px;
+   	}
+
+.group { border-left: 1px #2961AD solid; border-right: 1px #2961AD solid; }
+      .unSelected {
+          padding-bottom: 0 px;
+      }
+
+.info-group {
+
+    border-left: 1px #2961AD solid; border-right: 1px #2961AD solid; border-bottom: 1px #2961AD solid;
+
+}
+.unSelected { padding-bottom: 0 px;
+      }
+
+      .isSelected {
+        font-weight: bold;
+        padding-bottom; 5px;
+      }
+      .empty {border-bottom: 1px #2961AD solid; }
+}
+</style><meta name="DCSext.channel" content="Affiliate"><meta name="DCSext.chname" content="imotels2"><meta name="DCSext.online" content="Yes"><meta name="DCS.dcsuri" content="/PropInfo.html"><meta name="WT.ti" content="Property Information"></head><body bgcolor="#FFFFFF" text="#000000" leftmargin="2" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="setDates();showInfoSection('1')"><style type="text/css">
+ a:link     {color:#4A597A;text-decoration:none;}
+ a:visited  {color:#4A597A;text-decoration:none;}
+ a:hover    {color:#4A597A;text-decoration:underline;}
+ a:active   {color:#4A597A;text-decoration:none;}
+ a.topNav {font-family:arial,helvetica,sans-serif;font-size:8pt;color:4A597A;text-decoration:none;font-weight:bold;}
+ a.topNav:visited {font-family:arial,helvetica,sans-serif;font-size:8pt;color:4A597A;text-decoration:none;font-weight:bold;}
+ a.topNav:hover {font-family:arial,helvetica,sans-serif;font-size:8pt;color:00005d;text-decoration:underline;font-weight:bold;}
+ td {font-family:arial,helvetica,sans-serif;font-size:8pt;color:000000;font-weight:normal;}
+ body {background-color:#c0c0c0;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}
+</style>
+
+
+   <table cellpadding="0" cellspacing="0" width="800" border="0">
+    <tr>
+     <td width="350" height="110" valign="middle" bgcolor="BDC5D6">
+      <a href="http://www.hotelsatanywhere.com/"><img src="/affiliates/custom/imotels2/logo.gif" width="350" height="70" alt="Hotels at Anywhere" border="0"></a><br>
+      <h1 style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:7B8CAE;font-weight:bold;text-align:center;margin:0px">Cheap Hotels and Discount Hotel Reservations</h1>
+     </td>
+     <td width="275" height="110" valign="middle" align="center" bgcolor="BDC5D6">
+      <a href="http://reservations.hotelsatanywhere.com/auto/brg.cgi?remote=imotels2" target="_blank"><img src="/affiliates/custom/imotels2/lowest-rate-guarantee.gif" width="140" height="50" alt="" border="0"></a><br>
+      <a href="javascript:window.external.AddFavorite('http://www.hotelsatanywhere.com', 'Discount Hotel Reservations - HotelsAtAnywhere.com')"><img src="/affiliates/custom/imotels2/bookmark-this-page.gif" width="140" height="30" alt="" border="0"></a>
+     </td>
+     <td width="175" valign="middle" align="center" bgcolor="F69429" style="font-family:arial,helvetica,sans-serif;font-size:9pt;font-weight:bold;color:#ffffff;">
+      <span style="font-size:9pt;">Book by Phone!</span><br><img src="/affiliates/custom/imotels2/clear1x1.gif" width="1" height="5"><br> 
+      USA / Canada:<br>
+      <span style="font-size:11pt;">1.866.233.9330</span><br><br>
+      International Callers:<br>
+      <span style="font-size:11pt;">1.312.705.7017</span><br>
+     </td>
+    </tr>
+   </table>
+
+
+
+
+<table cellpadding="0" cellspacing="0" width="800" border="0">
+ <tr bgcolor="7B8CAE">
+  <td width="100%" valign="middle"><img src="/affiliates/custom/imotels2/clear1x1.gif" width="1" height="1"></td>
+ </tr>
+ <tr bgcolor="E7EBEF">
+  <td width="100%" height="22" valign="middle">
+   <table cellpadding="5" cellspacing="1" width="100%" border="0">
+    <tr>
+     <td valign="middle" align="center"><a href="http://www.hotelsatanywhere.com/hotels/index.html" style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:#4A597A;text-decoration:none;font-weight:bold;">Hotels</a></td>
+     <td valign="middle" align="center"><a href="http://info.hotelsatanywhere.com/auto/elp.cgi?page_type=luxury&remote=imotels2" style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:#4A597A;text-decoration:none;font-weight:bold;">Luxury Hotels</a></td>
+     <td valign="middle" align="center"><a href="http://www.hotelsatanywhere.com/airlines/index.html" style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:#4A597A;text-decoration:none;font-weight:bold;">Airlines</a></td>
+     <td valign="middle" align="center"><a href="http://www.hotelsatanywhere.com/car/index.html" style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:#4A597A;text-decoration:none;font-weight:bold;">Car&nbsp;Rentals</a></td>
+     <td valign="middle" align="center"><a href="http://www.hotelsatanywhere.com/vacation-packages/index.html" style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:#4A597A;text-decoration:none;font-weight:bold;">Vacation&nbsp;Packages</a></td>
+     <td valign="middle" align="center"><a href="http://www.hotelsatanywhere.com/vacation/index.html" style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:#4A597A;text-decoration:none;font-weight:bold;">Vacation&nbsp;Rentals</a></td>
+     <td valign="middle" align="center"><a href="http://www.hotelsatanywhere.com/cruises.html" style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:#4A597A;text-decoration:none;font-weight:bold;">Cruises</a></td>
+     <td valign="middle" align="center"><a href="http://www.hotelsatanywhere.com/airporthotels/" style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:#4A597A;text-decoration:none;font-weight:bold;">Airport Hotels</a></td>
+     <td valign="middle" align="center"><a href="http://www.hotelsatanywhere.com/contact.html" style="font-family:arial,helvetica,sans-serif;font-size:8pt;color:#4A597A;text-decoration:none;font-weight:bold;">Contact</a></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<table cellpadding="1" cellspacing="0" width="800" border="0">
+ <tr bgcolor="7B8CAE">
+  <td width="100%" valign="top">
+   <table cellpadding="10" cellspacing="0" width="100%" border="0">
+    <tr bgcolor="ffffff">
+     <td width="100%" valign="top" height="350">
+
+<!-- START OF SmartSource Data Collector TAG --><!-- (c) 1999-2003 NetIQ Corporation. All rights reserved. --><!-- V6.1 --><!-- $DateTime: 2003/09/30 11:23:29 $ --><!-- $Revision: 1.3 $ --><SCRIPT LANGUAGE="Javascript"><!--
+gVersion="1.0";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.1"><!--
+gVersion="1.1";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.2"><!--
+gVersion="1.2";
+var RE={"%09":/\t/g, "%20":/ /g, "%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g};
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.3"><!--
+gVersion="1.3";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.4"><!--
+gVersion="1.4";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.5"><!--
+gVersion="1.5";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="JavaScript"><!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+
+var gDomain="statse.webtrendslive.com";
+var gDcsId="dcsuy22seau4fibba68ia3qp2_7e5d";
+// Add customizations here
+//WT.sp="@@SPLITVALUE@@";
+// (c) 1999-2003 NetIQ Corporation. All rights reserved.
+// $DateTime: 2003/09/30 11:23:29 $
+// $Revision: 1.3 $
+function dcsMultiTrack(){
+	for (var i=0;i<arguments.length;i++){
+		if (arguments[i].indexOf('WT.')==0){
+				WT[arguments[i].substring(3)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCS.')==0){
+				DCS[arguments[i].substring(4)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCSext.')==0){
+				DCSext[arguments[i].substring(7)]=arguments[i+1];
+				i++;
+		}
+	}
+	var dCurrent=new Date();
+	DCS.dcsdat=dCurrent.getTime();
+	dcsTag();
+}
+
+
+function dcsVar(){
+	var dCurrent=new Date();
+	WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+	if (WT.tz==0){
+		WT.tz="0";
+	}
+	WT.bh=dCurrent.getHours();
+	WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+	if (typeof(screen)=="object"){
+		WT.cd=screen.colorDepth;
+		WT.sr=screen.width+"x"+screen.height;
+	}
+	if (typeof(navigator.javaEnabled())=="boolean"){
+		WT.jo=navigator.javaEnabled()?"Yes":"No";
+	}
+	if (document.title){
+		WT.ti=document.title;
+	}
+	WT.js="Yes";
+	if (typeof(gVersion)!="undefined"){
+		WT.jv=gVersion;
+	}
+	DCS.dcsdat=dCurrent.getTime();
+	DCS.dcssip=window.location.hostname;
+	DCS.dcsuri=window.location.pathname;
+	if (window.location.search){
+		DCS.dcsqry=window.location.search;
+	}
+	if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+		if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+			DCS.dcsref=window.document.referrer;
+		}
+	}
+}
+
+function A(N,V){
+	return "&"+N+"="+dcsEscape(V);
+}
+
+function dcsEscape(S){
+	if (typeof(RE)!="undefined"){
+		var retStr = new String(S);
+		for (R in RE){
+			retStr = retStr.replace(RE[R],R);
+		}
+		return retStr;
+	}
+	else{
+		return escape(S);
+	}
+}
+
+function dcsCreateImage(dcsSrc){
+	if (document.images){
+		gImages[gIndex]=new Image;
+		gImages[gIndex].src=dcsSrc;
+		gIndex++;
+	}
+	else{
+		document.write('<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+	}
+}
+
+function dcsMeta(){
+	var myDocumentElements;
+	if (document.all){
+		myDocumentElements=document.all.tags("meta");
+	}
+	else if (document.documentElement){
+		myDocumentElements=document.getElementsByTagName("meta");
+	}
+	if (typeof(myDocumentElements)!="undefined"){
+		for (var i=1;i<=myDocumentElements.length;i++){
+			myMeta=myDocumentElements.item(i-1);
+			if (myMeta.name){
+				if (myMeta.name.indexOf('WT.')==0){
+					WT[myMeta.name.substring(3)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCSext.')==0){
+					DCSext[myMeta.name.substring(7)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCS.')==0){
+					DCS[myMeta.name.substring(4)]=myMeta.content;
+				}
+			}
+		}
+	}
+}
+
+function dcsTag(){
+	var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?";
+	for (N in DCS){
+		if (DCS[N]) {
+			P+=A(N,DCS[N]);
+		}
+	}
+	for (N in WT){
+		if (WT[N]) {
+			P+=A("WT."+N,WT[N]);
+		}
+	}
+	for (N in DCSext){
+		if (DCSext[N]) {
+			P+=A(N,DCSext[N]);
+		}
+	}
+	if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+		P=P.substring(0,2040)+"&WT.tu=1";
+	}
+	dcsCreateImage(P);
+}
+
+dcsVar();
+dcsMeta();
+dcsTag();
+  
+//--></SCRIPT><NOSCRIPT><IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://statse.webtrendslive.com/dcsuy22seau4fibba68ia3qp2_7e5d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No"></NOSCRIPT>
+	<!--BEGIN ROI TRACKING Code -->
+	<script language="javascript" src="http://track.roiservice.com/track/track.aspx?ROIID=932444107000015"></script>
+	<script language="javascript"><!--
+	if (typeof(ROIID) + '' != 'undefined') {
+	      TrackEvent('PropPage', 0);
+	     }
+	//--></script>
+	<!--END ROI TRACKING Code-->
+	<br><table width="777" border="0" cellspacing="0" cellpadding="0"><tr><td width="2" valign="top"><img src="/images/results/result_header_left.gif" width="2" height="34"></td><td width="413" background="/images/results/result_header_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="8"><img src="/images/b.gif" width="1" height="1"></td><td width="618" class="results-header"><strong class="14BLUEdark">Layne Hotel</strong></td></tr></table></td><td align="center" background="/images/results/result_header_bg.gif"><table width="100" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" background="/images/results/star_empty.gif"><a href="#hotelrating" onclick="javascript: window.open('http://primary.lodging.com/ldcratings.html','rating','width=470,height=600,scrollbars')"><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""></a></td></tr></table></td><td align="left" background="/images/results/result_header_bg.gif">&nbsp;</td><td width="3" valign="top"><img src="/images/results/result_header_right.gif" width="3" height="34"></td></tr><tr><td width="2" valign="top"><img src="/images/results/result_fadeborder_left.gif" width="2" height="42"></td><td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="8"><tr><td width="100%" colspan="2"><p><GEO TYPE="US">545 Jones Street<br>San Francisco,&nbsp;
+				California
+        &nbsp;94102</GEO>&nbsp;&nbsp;
+              <strong> &nbsp;&nbsp;</strong><a onclick="showInfoSection('5');document.mapimage.src='http://mqmapgend.mapquest.com:80/mqmapgend?MQMapGenRequest=FDBnqeflmJI%2C3ii8drs-F3bP%10vk2g%26sdmH2h%108n%40FDJ%15_n%21y%40n%29NE%18%26Ivb2+VQK%3AFDJ%15_n%21y%40n%29NE%18%3D+1%2FXlm%2F167l+ur%7Cqf*2q+SF%17%26FDR2dmwjDE%3Butal0%24suv7iyM%16%136tmwlrs%3DTPS84bcV8hs%7C%17DOV*E%14H2h*x0zy01%40_n10rnlu%24%3A%26%40%24%3A%26z%245u6%24xu6%24%18%12%19%3AHOHQJ%3Bata5ya%3A%29ualqubn%26%40%24%3A%26%40%24%3A16b%3A*E%14JrblVkj3me%2CU%13N%15S%3DTPGy22sO2n*V%14GS'" href="#hotelinfo"><strong>Map</strong></a><br><br></p></td></tr></table></td><td width="168" align="center" valign="middle">
+&nbsp;
+</td><td width="191" align="center" valign="middle"><table width="170" border="0" cellspacing="0" cellpadding="0"><tr><td width="170" align="center" valign="top"><br></td></tr></table></td><td width="3" valign="top"><img src="/images/results/result_fadeborder_right.gif" width="3" height="46"></td></tr></table><a name="Getrates" id="Getrates"></a><br><table width="777" border="0" cellspacing="0" cellpadding="0"><form name="mainForm" action="/servlet/reservations.AvailabilityXML" method="post"><input type="hidden" name="propcode" value="GAL;37713"><input type="hidden" name="remote" value="imotels2"><input type="hidden" name="caller" value="propinfo"><tr><td width="2"><img src="/images/propavail/chkdates_bg_left.gif" width="2" height="81"></td><td valign="top" background="/images/propavail/chkdates_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr class="searchboxText"><td colspan="6" align="left" nowrap class="advancedsearchboxText"><b><font color="#FF6633">Check Rates for this Hotel</font></b></td></tr><tr class="searchboxText"><td width="29%" align="left" valign="top" nowrap class="searchboxText">Check-In<br><select name="inmonth" class="searchboxText" onChange="changeDates()"><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7" selected="">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="inday" class="searchboxText" onChange="changeDates()"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29" selected="">29</option><option value="30">30</option><option value="31">31</option></select><select name="inyear" onChange="changeDates()" class="searchboxText"><option value="2006" selected="">2006</option><option value="2007">2007</option></select><a href="javascript://" onclick="displayCalendar(true,'in')"><img src="/images/2004_calendar.gif" width="28" height="17" alt="View Calendar" border="0" align="absmiddle"></a></td><td width="30%" align="left" valign="top" nowrap class="searchboxText">Check-Out<span class="advancedsearchboxText"><br><select name="outmonth" class="searchboxText" onChange="checkOutDate()"><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7" selected="">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="outday" class="searchboxText" onChange="checkOutDate()"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30" selected="">30</option><option value="31">31</option></select><select name="outyear" onChange="checkOutDate()" class="searchboxText"><option value="2006" selected="">2006</option><option value="2007">2007</option></select><a href="javascript://" onClick="displayCalendar(true,'out')"><img src="/images/2004_calendar.gif" width="28" height="17" alt="View Calendar" border="0" align="absmiddle"></a></span></td><td width="9%" align="left" valign="top" nowrap class="searchboxText">Rooms<span class="advancedsearchboxText"><br><select name="numrooms" size="1" class="searchboxText"><option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select></span></td><td width="11%" align="left" valign="top" nowrap class="searchboxText">Adults/room<span class="advancedsearchboxText"><br><select name="numadults" class="searchboxText"><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option></select></span></td><td width="8%" align="left" valign="top" nowrap class="searchboxText">Children<br><select name="numchildren" id="numchildren" class="searchboxText"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></td><td width="13%" align="left" valign="bottom" nowrap class="searchboxText"><span class="advancedsearchboxText"><input type="image" src="/images/propavail/get_rates.gif" width="85" height="21" border="0"></span></td></tr></table></td><td width="2"><img src="/images/propavail/chkdates_bg_right.gif" width="2" height="81"></td></tr></form></table><br><a name="hotelinfo"></a><div style="width:777px;height:auto;float:left" name="wrapper"><div id="slidingDoorsTabs"><ul><li class="current" id="info-tab1"><a href="#info" onclick="showInfoSection('1'); return false;">Hotel Highlights</a></li><li class="notCurrent" id="info-tab2"><a onclick="showInfoSection('2'); return false;" href="#info">Policies &amp; Restrictions</a></li><li class="notCurrent" id="info-tab3"><a onclick="showInfoSection('3'); return false;" href="#info">General Information</a></li><li class="notCurrent" id="info-tab4"><a onclick="showInfoSection('4'); return false;" href="#info">Photos</a></li><li class="notCurrent" id="info-tab5"><a onclick="showInfoSection('5'); document.mapimage.src='http://mqmapgend.mapquest.com:80/mqmapgend?MQMapGenRequest=FDBnqeflmJI%2C3ii8drs-F3bP%10vk2g%26sdmH2h%108n%40FDJ%15_n%21y%40n%29NE%18%26Ivb2+VQK%3AFDJ%15_n%21y%40n%29NE%18%3D+1%2FXlm%2F167l+ur%7Cqf*2q+SF%17%26FDR2dmwjDE%3Butal0%24suv7iyM%16%136tmwlrs%3DTPS84bcV8hs%7C%17DOV*E%14H2h*x0zy01%40_n10rnlu%24%3A%26%40%24%3A%26z%245u6%24xu6%24%18%12%19%3AHOHQJ%3Bata5ya%3A%29ualqubn%26%40%24%3A%26%40%24%3A16b%3A*E%14JrblVkj3me%2CU%13N%15S%3DTPGy22sO2n*V%14GS'; return false;" href="#info">Map</a></li></ul></div><div style="clear:both;" name="clearer"></div><div class="isShown" id="info-group1"><table id="info-group1" class="info-group" cellpadding="5" cellspacing="0" bgcolor="#F7F9FD" border="0" width="777"><tr style="padding:10 px;"><td><b>Hotel Description:</b><br><br><br>Built in 1912 and recently restored  the layne<br>Hotel is a boutique hotel with modern amenities.<br>Our deluxe accommodations include art deco guest<br>Rooms and lobby.  this intimate property offers<br>40 rooms and suites all equipped with telephone<br>Wireless internet  clock radio  remote controlled<br>Tv w/cable  iron and ironing board  hairdryer<br>Microwave  refrigerator  electronic locks and a<br>Writing desk.<br><br><br><br><table width="100" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" background="/images/results/star_empty.gif"><a href="#hotelrating" onclick="javascript: window.open('http://primary.lodging.com/ldcratings.html','rating','width=470,height=600,scrollbars')"><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""></a></td></tr></table><br><br><b>Amenities:</b><div id="amenities"><ul style="margin-top: 5px;"><table width="550" cellspacing="0" cellpadding="2" border="0"><tr valign="top"><td><li>Air Conditioned</li><li>No Smoking Rooms/Facilities</li></td><td><li>Elevators</li><li>Phone Service</li></td><td><li>FAX</li></td></tr></table></ul></div><tr><td><strong>Room Information</strong>:&nbsp;<br>- superior 2bedrm suit -<br>Two bedroom suite with a king bed and two<br>Twin beds.  ideal for families<br>- superior view king -<br>Superior room with a downtown view<br>And a king bed<br>- whirlpool king room -<br>Superior room with a garden view<br>And a king bed<br>- superior 1 queen -<br>Superior room with 1 queen bed<br>- superior view 2 dbls -<br>Superior room with a downtown view<br>And two double beds<br>- standard view king -<br>Standard view king<br>- 3 twin -<br>3 twin beds with whirlpool bath<br>- 2sngl -<br>2 twin beds and whirlpool bath<br></td></tr><tr valign="top"><td height="10" colspan="2"></td></tr><tr><td><strong>Recreation</strong>:&nbsp;<br>Located nearby -<br>Beach<br>Bowling<br>Driving range<br>Fishing<br>Golf course<br>Hiking trail<br>Horseback riding<br>Jet skiing<br>Jogging track<br>Playground<br>Putting green<br>Raquetball<br>Scuba diving<br>Squash<br>Tennis court<br>Video arcade<br>Water skiing<br></td></tr><tr valign="top"><td height="10" colspan="2"></td></tr></td></tr></table></div><div id="info-group2" class="isHidden"><table id="info-group2" border="0" cellpadding="2" cellspacing="0" width="777" bgcolor="#F7F9FD" class="info-group"><tr valign="top"><td style="padding:10px;"><b>Cancel Policy:</b><br><br><br>For all reservations cancel 2 days prior to<br>Arrival date to avoid penalty of 1 nights room<br>Charge.<br><br><br><b>Guarantee Policy:</b><br><br><br>Guarantee information<br>  late arrival time:  not applicable<br>  guarantee required at time of booking<br>  acceptable forms of payment:<br>  credit cards:  see |hod/cred<br>Deposit information<br>  within country waiver period:    0 days<br>  outside country waiver period:    0 days<br>  deposit required:  at time of booking<br>  deposit amount:  01 nights of stay<br>  mail deposit to:<br>Acceptable forms of payment<br>Payment information<br>Acceptable forms of payment<br>  credit cards:  see |hod/cred<br><br><br><b>Check In:</b><br><br>3PM<br><br><b>Check Out:</b><br><br>11AM<br><br><b>Deposit Policy:</b><br><br><br>No deposit required at this time<br><br><br></td></tr></table></div><div id="info-group3" class="isHidden"><table id="info-group3" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td style="padding:10px;"><b>Directions</b><br><br><br>From sjc airport take the same route as above.<br>From oakland airport  -oak-<br>Take 880n exit 5th street go straight on 5th<br>Street left on ellis street right on taylor<br>Street left on geary street and left on jones<br>Street.<br><br><br></td></tr><tr valign="top"><td style="padding:10px;"><b>Location:</b><br><br><br>The hotel layne san francisco is situated in the<br>Heart of san franciscos vibrant union square<br>District. the layne hotel is the perfect choice<br>For both the leisure and business traveler. the<br>Layne is just moments from moscone convention<br>Center and financial district and the worlds<br>Finest shops and art galleries. from our ideal<br>Location you can walk to exotic chinatown quaint<br>North beach and bustling union square and theater<br>District or hop an historic cable car to<br>Fishermans wharf. this is also the perfect base<br>From which to visit the california wine country<br>Yosemite national park  lake tahoe  monterey and<br>Carmel.<br><br><br><b>Area Airports:</b><br><br>9 Mile(s) SE to JMC airport<br><br></td></tr></table></div><div id="info-group4" class="isHidden"><table id="info-group4" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td style="padding:10px;" align="center">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   </td></tr></table></div><div id="info-group5" class="isHidden"><table id="info-group5" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td align="center" style="padding:10px;"><img name="mapimage" src="/images/clear.gif"></td></tr></table></div></div><br><table width="777" border="0" cellpadding="5" cellspacing="0"><tr><td width="30" align="center">&nbsp;</td><td width="100" align="center" bgcolor="#FFFFCC"><a href="#Getrates"><strong>Check Rates for this Hotel </strong></a></td><td align="right">&nbsp;</td></tr></table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<table cellpadding="0" cellspacing="0" width="800" border="0">
+ <tr bgcolor="BDC5D6">
+  <td width="100%" height="75" valign="middle" align="center">
+   <img src="/affiliates/custom/imotels2/clear1x1.gif" width="1" height="10"><br>
+   <a title="cheap hotel reservations" href="http://www.hotelsatanywhere.com/hotels/">Hotels</a> . 
+   <a title="usa hotels" href="http://www.hotelsatanywhere.com/usa/">USA Hotels</a> . 
+   <a title="airline tickets" href="http://www.hotelsatanywhere.com/airlines/">Airline Tickets</a> . 
+   <a title="car rentals" href="http://www.hotelsatanywhere.com/car/">Discount Car Rentals</a> . 
+   <a title="Resources" href="http://www.hotelsatanywhere.com/resources.html">Travel Resources </a> . 
+   <a title="Vacation Packages" href="http://www.hotelsatanywhere.com/vacation-packages/">Vacation Packages</a> . 
+   <a title="Customer Service" href="http://www.hotelsatanywhere.com/customerservice.html">Customer Service</a> 
+   <br> 
+   <a title="Vacation Rentals" href="http://www.hotelsatanywhere.com/vacation/index.html">Vacation Rentals</a> . 
+   <a title="Reserve Hotels" href="http://www.hotelsatanywhere.com/hoteldeals/">Hotel Deals</a> . 
+   <a title="Cruises" href="http://www.hotelsatanywhere.com/cruises.html">Cruises</a> . 
+   <a href="http://www.hotelsatanywhere.com/">Discount Hotels and hotel reservations</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/">Cheap Hotel Rooms</a> . 
+   <a href="http://www.hotelsatanywhere.com/luggages.html">Luggage</a> . 
+   <a href="http://www.hotelsatanywhere.com/linktous.html">Link to Us</a> . 
+   <a href="http://www.hotelsatanywhere.com/sitemap.html">Site Map</a><br> 
+   <span style="color:#4A597A">Cheap Motels </span>
+   <br><img src="/affiliates/custom/imotels2/clear1x1.gif" width="1" height="10"><br>
+   <a href="http://www.hotelsatanywhere.com/usa/ca/anaheim-hotels/">Anaheim Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/ga/atlanta-hotels/">Atlanta Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/nj/atlantic-city-hotels/">Atlantic City Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/md/baltimore-hotels/">Baltimore Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/ma/boston-hotels/">Boston Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/il/chicago-hotels/">Chicago Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/oh/cleveland-hotels/">Cleveland Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/tx/dallas-hotels/">Dallas Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/co/denver-hotels/">Denver Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/fl/ft.-lauderdale-hotels/">Ft. Lauderdale Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/hi/">Hawaii Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/tx/houston-hotels/">Houston Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/fl/kissimmee-hotels/">Kissimmee Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/nv/las-vegas-hotels/">Las Vegas Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/ca/los-angeles-hotels/">Los Angeles Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/fl/miami-hotels/">Miami Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/la/new-orleans-hotels/">New Orleans Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/ny/new-york-hotels/">New York Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/fl/orlando-hotels/">Orlando Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/fl/palm-beach-hotels/">Palm Beach</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/ca/palm-springs-hotels/">Palm Springs Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/pa/philadelphia-hotels/">Philadelphia Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/az/phoenix-hotels/">Phoenix Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/nv/reno-hotels/">Reno Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/tx/san-antonio-hotels/">San Antonio Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/ca/san-diego-hotels/">San Diego Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/ca/san-francisco-hotels/">San Francisco Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/wa/seattle-hotels/">Seattle Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/fl/tampa-hotels/">Tampa Hotels</a> . 
+   <a href="http://www.hotelsatanywhere.com/usa/dc/washington-d.c.-hotels/">Washington DC Hotels</a>
+   <br><img src="/affiliates/custom/imotels2/clear1x1.gif" width="1" height="5"><br>
+   &#169; Hotelsatanywhere.com All rights reserved.<br>
+   We offer discounted business hotel rates & lowest prices. &nbsp; Reviews and guides around resorts and attractions.<br>
+   We offer Pet Friendly & All Inclusive Deals. Leading hotel chains - Hilton - Marriott - Best Western -  Sheraton
+   <br><img src="/affiliates/custom/imotels2/clear1x1.gif" width="1" height="10"><br>
+
+  </td>
+ </tr>
+ <tr bgcolor="7B8CAE">
+  <td width="100%" valign="top"><img src="/affiliates/custom/imotels2/clear1x1.gif" width="1" height="1"></td>
+ </tr>
+</table>
+<div id="CAL" name="CAL" style="position: absolute; top: 0; left: 0; width: 158; z-index: 100; visibility: hidden; border: 1 solid buttonface; border: 2 outset buttonhighlight; background-color: menu;"><span id="CAL_BODY" name="CAL_BODY"></span></div></body></html>

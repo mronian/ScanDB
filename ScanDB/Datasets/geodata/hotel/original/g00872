@@ -1,0 +1,1406 @@
+<DOC>
+<DOCNO>g00872</DOCNO>
+<DOCHDR>http://reservelodging.worldres.com/script/hotel_search.php?FE=7244&NI=5444</DOCHDR>
+<html><head>
+<title>Destination Reservations: Discount Hotel Reservations Online - Hotels and Lodging Worldwide</title>
+<META NAME="keywords" CONTENT=",,reservations,booking,accomodation,hotel,hotels,reservation,accommodation,discount,resort,travel,rates,information,world,discounts,bookings,inn,room,reservations,booking,accomodation,hotel,hotels,reservation,accommodation,discount,resort,travel,rates,information,world,discounts,bookings,inn,room">
+<META NAME="description" CONTENT="Find and reserve a room at a huge selection of hotels. Get the best discounts at accommodations - including distinctive hotels, inns and resorts worldwide! See detailed information and photos. Check rates and availability and reserve online with instant confirmation. Reserve a room online from participating hotels, inns, B&Bs, and resorts.">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-US">
+<META NAME="ISO-Language" CONTENT="en-US">
+<META NAME="copyright" CONTENT="1997-2006 by Worldres Inc.">
+<script language="Javascript"><!-- 
+var lang = 1;
+
+function openWindow() {
+myWin=window.open('','wr_ext','menubar=no,toolbar=no,scrollbars=yes,width=450,height=350,resizable=yes');
+myWin.focus();}
+function openWindow() {
+myWin=window.open('','wr_ext','menubar=no,toolbar=no,scrollbars=yes,width=450,height=350,resizable=yes');
+myWin.focus();}
+var lang = 1;
+
+//-->
+</script>
+<script language="Javascript" src="/calendarPopUp.js"></script>
+<script language="Javascript" src="/selectDate.js"></script>
+<link rel="stylesheet" type="text/css" href="/default.css">
+</head>
+<body bgcolor="#FFFFFF" link="#003399" vlink="#6699ff" alink="#ff0000" text="#000000">
+
+
+<head>
+<!--  INSERT IN HEAD  -->
+<SCRIPT LANGUAGE=JAVASCRIPT>
+<!--	
+function opensec()
+{
+window.open("https://html.worldres.com/security/security_1.html","my_new_window","width=500,height=375,location=no,directories=no,status=no,toolbar=no,menubar=no,scrollbars=yes,resizable=yes")
+}
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--	
+var url=window.location.href; 
+var resurl=url.substring(8,29);    
+var resurl2=url.substring(7,28);   
+var page="reservations.worldres"; 
+var onpage="<A HREF='javascript:opensec()'><img SRC='http://images.worldres.com/site_images/secure_message.gif' BORDER='0'></A>";   
+var offpage="&nbsp;";  
+//-->
+</SCRIPT>
+<!--  /INSERT IN HEAD  -->
+</head>
+
+<div align="right">
+<!-- IN BODY, Replace the packlock or now clear image and "all information is 100% secure" test with this  -->
+<SCRIPT>
+<!--	
+if (resurl==page || resurl2==page){
+document.write(offpage);
+document.close();
+}
+else{
+document.write(onpage);
+document.close();
+}
+//-->
+</SCRIPT>
+<!-- /IN BODY, Replace the packlock or now clear image with this  -->
+</div>
+
+<div><img src="http://www.worldres.com/dmo/callcenter.gif" border="0"></div>
+
+<style>
+#wait {
+	position:absolute;
+	width:480;
+	padding:35px;
+	background-color : #FFFFFF;
+	visibility : hidden;
+	z-index : 100;
+}
+.waittext {
+	font-family:arial,helvetica,sans-serif;
+	font-size:10pt;
+	color:#000000;
+}
+.waitbold {
+	font-size:12pt;
+ 	font-weight: bold
+}
+</style>
+<script>
+	var ns4=document.layers
+	var ie4=document.all
+	var ns6=document.getElementById&&!document.all
+	
+	function closeit(){
+		if (ie4)
+			document.all.wait.style.visibility="hidden"
+		else if (ns6)
+			document.getElementById("wait").style.visibility="hidden"
+		else if (ns4)
+			document.layers.wait.visibility="hide"
+	}
+
+	function showit(){
+		if (ie4)
+			document.all.wait.style.visibility="visible"
+		else if (ns6)
+			document.getElementById("wait").style.visibility="visible"
+		else if (ns4)
+			document.layers.wait.visibility="show"
+	}
+
+	function changeit(str1,styl1,str2,styl2) {
+		if (document.getElementById && navigator.userAgent.substr(0,7) == "Mozilla") {
+			document.getElementById("content1").firstChild.nodeValue = str1;
+			document.getElementById("content1").className = styl1;
+			document.getElementById("content2").firstChild.nodeValue = str2;
+			document.getElementById("content2").className = styl2;
+		}
+	}
+</script>
+<div id="wait" style="left:160px;top:120px">
+<table width="400" border="0" align="center" cellpadding="35" cellspacing="0">
+  <tr> 
+    <td align="center" class="WRTD_search_pleasewait"><span class="WRTD_search_pleasewait" id="headline">Please wait a moment...&nbsp;</span>
+	<br><br><img src="http://images.worldres.com/site_images/SHARED/standard/dots.gif"><br><br>
+      <span class="WRTXT_12px" id="content1">...we are searching&nbsp;</span><br>
+      <span class="WRTXT_12px" id="content2">to find just the right hotel for you.&nbsp;</span><br></td>
+  </tr>
+</table>
+</div>
+<script>showit()</script><script>changeit("Searching for hotels around","WRTXT_12px","Seattle Metro","WRTXT_12px_bold");</script>
+
+<table width="" border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="4" bgcolor="#FFFFFF"><IMG SRC="http://images.worldres.com/site_images/clear.gif" width="" height="3" border="0"></td></tr>
+<tr><td valign="top" width="200" bgcolor="#FFFFFF"><script>
+<!--
+        if (!lang) var lang = "1";
+
+		var txtBadCityArray = new Array(7);
+		txtBadCityArray[1] = " City is a required entry.";
+		txtBadCityArray[2] = " Ville est une entrée obligatoire.";
+		txtBadCityArray[3] = " Die Stadt muss eingegeben werden.";
+		txtBadCityArray[4] = " Es necesario introducir el nombre de la ciudad.";
+		txtBadCityArray[5] = " È necessario indicare una città.";
+		txtBadCityArray[6] = " De naam van uw stad is vereist.";
+		txtBadCityArray[7] = " É obrigatório introduzir a Cidade.";
+
+		var txtBadCheckInArray = new Array(7);
+		txtBadCheckInArray[1] = " Check-in date has already passed. \n Please enter a future date.";
+		txtBadCheckInArray[2] = " La date d'arrivée saisie a déjà expiré.";
+		txtBadCheckInArray[3] = " Sie haben ein vergangenes Datum als Ankunftsdatum eingegeben. \n Bitte geben Sie ein neues Datum ein.";
+		txtBadCheckInArray[4] = " La fecha de entrada que introdujo ya ha pasado.";
+		txtBadCheckInArray[5] = " La data di arrivo immessa è già trascorsa.";
+		txtBadCheckInArray[6] = " De aankomstdatum die u ingevoerd heeft, is reeds verstreken.";
+		txtBadCheckInArray[7] = " A data de Check-in introduzida está ultrapassada.";
+
+		var txtBadCheckOutArray = new Array(7);
+		txtBadCheckOutArray[1] = " Check-out date is prior to check-in date. \n Please adjust your dates. ";
+		txtBadCheckOutArray[2] = " La date que vous donnez est incorrecte";
+		txtBadCheckOutArray[3] = " Das Abreisedatum ist vor dem Ankunftsdatum. \n Bitte geben Sie ein neues Datum ein.";
+		txtBadCheckOutArray[4] = " La fecha es incorrecta";
+		txtBadCheckOutArray[5] = " La data non è esatta";
+		txtBadCheckOutArray[6] = " Ongeldige datum";
+		txtBadCheckOutArray[7] = " A data é incorrecta";
+
+        function validateForm(form) {
+	        today = new Date();
+			currDay = today.getDate();
+			if (form.CN) {
+		    	if (form.CN.value == ""){
+					alert(txtBadCityArray[lang]);
+                	return false;
+                }
+    		} 
+    		if (form.CD.selectedIndex > 0){
+	    		if((form.CMY.selectedIndex == 1) && (form.CD.options[form.CD.selectedIndex].value < currDay)) {
+	    			alert(txtBadCheckInArray[lang]);
+		                return false;
+	            	}
+	        }
+   	        return true;
+        }
+// -->
+</script>
+<!-- BEGIN TplDistChannel -->		<!-- END TplDistChannel -->
+
+<FORM NAME="Fsearch" ACTION="/script/hotel_search.php" METHOD="GET" onSubmit="return validateForm(Fsearch);">
+<input type="hidden" name="FE" value="7244"><input type="hidden" name="NI" value="5444"> 
+									     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr class="WRTD_lnav_datestab"> 
+                <td width="5" valign="top" class="WRTD_lnav_datestab"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_LNAV_tableft.jpg" width="5" height="5"></td>
+                <td width="99%" class="WRTD_lnav_datestab"> Enter Your Dates 		</td>
+                <td width="5" align="right" valign="top" class="WRTD_lnav_datestab"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_LNAV_tabright.jpg" width="5" height="5"></td>
+              </tr>
+            </table></td>
+        </tr>
+		
+        <tr> 
+          <td valign="top" class="WRTD_lnav_button"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  
+              <tr> 
+                <td class="WRTD_dates_body">Check-in Date:</td>
+              </tr>
+              <tr> 
+                <td class="WRTD_dates_body"> 
+                  <select name="CD">
+                  <OPTION VALUE="" selected class="WR_Select">day 
+	              
+							
+                    <OPTION VALUE="1"  class="WR_Select">1                  
+							
+                    <OPTION VALUE="2"  class="WR_Select">2                  
+							
+                    <OPTION VALUE="3"  class="WR_Select">3                  
+							
+                    <OPTION VALUE="4"  class="WR_Select">4                  
+							
+                    <OPTION VALUE="5"  class="WR_Select">5                  
+							
+                    <OPTION VALUE="6"  class="WR_Select">6                  
+							
+                    <OPTION VALUE="7"  class="WR_Select">7                  
+							
+                    <OPTION VALUE="8"  class="WR_Select">8                  
+							
+                    <OPTION VALUE="9"  class="WR_Select">9                  
+							
+                    <OPTION VALUE="10"  class="WR_Select">10                  
+							
+                    <OPTION VALUE="11"  class="WR_Select">11                  
+							
+                    <OPTION VALUE="12"  class="WR_Select">12                  
+							
+                    <OPTION VALUE="13"  class="WR_Select">13                  
+							
+                    <OPTION VALUE="14"  class="WR_Select">14                  
+							
+                    <OPTION VALUE="15"  class="WR_Select">15                  
+							
+                    <OPTION VALUE="16"  class="WR_Select">16                  
+							
+                    <OPTION VALUE="17"  class="WR_Select">17                  
+							
+                    <OPTION VALUE="18"  class="WR_Select">18                  
+							
+                    <OPTION VALUE="19"  class="WR_Select">19                  
+							
+                    <OPTION VALUE="20"  class="WR_Select">20                  
+							
+                    <OPTION VALUE="21"  class="WR_Select">21                  
+							
+                    <OPTION VALUE="22"  class="WR_Select">22                  
+							
+                    <OPTION VALUE="23"  class="WR_Select">23                  
+							
+                    <OPTION VALUE="24"  class="WR_Select">24                  
+							
+                    <OPTION VALUE="25"  class="WR_Select">25                  
+							
+                    <OPTION VALUE="26"  class="WR_Select">26                  
+							
+                    <OPTION VALUE="27"  class="WR_Select">27                  
+							
+                    <OPTION VALUE="28"  class="WR_Select">28                  
+							
+                    <OPTION VALUE="29"  class="WR_Select">29                  
+							
+                    <OPTION VALUE="30"  class="WR_Select">30                  
+							
+                    <OPTION VALUE="31"  class="WR_Select">31                  
+					
+                  </select> 
+                  <select name="CMY" class="WR_Select" style="onchange="javascript:checkAll (document.Fsearch.CMY, document.Fsearch.CD,document.Fsearch.OMY,document.Fsearch.OD,2);">
+                    <OPTION VALUE="" selected class="WR_Select">month/year 
+                   				   <OPTION VALUE="200607"  class="WR_Select">Jul 2006				   <OPTION VALUE="200608"  class="WR_Select">Aug 2006				   <OPTION VALUE="200609"  class="WR_Select">Sep 2006				   <OPTION VALUE="200610"  class="WR_Select">Oct 2006				   <OPTION VALUE="200611"  class="WR_Select">Nov 2006				   <OPTION VALUE="200612"  class="WR_Select">Dec 2006				   <OPTION VALUE="200701"  class="WR_Select">Jan 2007				   <OPTION VALUE="200702"  class="WR_Select">Feb 2007				   <OPTION VALUE="200703"  class="WR_Select">Mar 2007				   <OPTION VALUE="200704"  class="WR_Select">Apr 2007				   <OPTION VALUE="200705"  class="WR_Select">May 2007				   <OPTION VALUE="200706"  class="WR_Select">Jun 2007				   <OPTION VALUE="200707"  class="WR_Select">Jul 2007		
+        			</SELECT>   
+		      <A HREF="javascript:popUpCalendar('CD','CMY','Fsearch')"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_calendar.gif" width="37" height="20" border=0 alt="calendar" align="absmiddle"></A></td>
+              </tr>
+	
+              <tr> 
+                <td class="WRTD_dates_body"># of Nights</td>
+              </tr>
+              <tr> 
+                <td class="WRTD_dates_body">
+		  <select name="NN">
+		    
+                                                        
+                    <option value="1" >1</option>
+		    
+                                                        
+                    <option value="2" >2</option>
+		    
+                                                        
+                    <option value="3" >3</option>
+		    
+                                                        
+                    <option value="4" >4</option>
+		    
+                                                        
+                    <option value="5" >5</option>
+		    
+                                                        
+                    <option value="6" >6</option>
+		    
+                                                        
+                    <option value="7" >7</option>
+		    
+                                                        
+                    <option value="8" >8</option>
+		    
+                                                        
+                    <option value="9" >9</option>
+		    
+                                                        
+                    <option value="10" >10</option>
+		    
+                                                        
+                    <option value="11" >11</option>
+		    
+                                                        
+                    <option value="12" >12</option>
+		    
+                                                        
+                    <option value="13" >13</option>
+		    
+                                                        
+                    <option value="14" >14</option>
+		    
+                                                        
+                    <option value="15" >15</option>
+		    
+                                                        
+                    <option value="16" >16</option>
+		    
+                                                        
+                    <option value="17" >17</option>
+		    
+                                                        
+                    <option value="18" >18</option>
+		    
+                                                        
+                    <option value="19" >19</option>
+		    
+                                                        
+                    <option value="20" >20</option>
+		    
+                                                        
+                    <option value="21" >21</option>
+		    
+                                                        
+                    <option value="22" >22</option>
+		    
+                                                        
+                    <option value="23" >23</option>
+		    
+                                                        
+                    <option value="24" >24</option>
+		    
+                                                        
+                    <option value="25" >25</option>
+		    
+                                                        
+                    <option value="26" >26</option>
+		    
+                                                        
+                    <option value="27" >27</option>
+		    
+                                                        
+                    <option value="28" >28</option>
+		    
+                                                        
+                    <option value="29" >29</option>
+		    
+                                                        
+                    <option value="30" >30</option>
+		    
+                                                        
+                    <option value="31" >31</option>
+		    
+                                                        
+                    <option value="32" >32</option>
+		    
+                                                        
+                    <option value="33" >33</option>
+		    
+                                                        
+                    <option value="34" >34</option>
+		    
+                                                        
+                    <option value="35" >35</option>
+		    
+                                                        
+                    <option value="36" >36</option>
+		    
+                                                        
+                    <option value="37" >37</option>
+		    
+                                                        
+                    <option value="38" >38</option>
+		    
+                                                        
+                    <option value="39" >39</option>
+		    
+                                                        
+                    <option value="40" >40</option>
+		    
+                                                        
+                    <option value="41" >41</option>
+		    
+                                                        
+                    <option value="42" >42</option>
+		    
+                                                        
+                    <option value="43" >43</option>
+		    
+                                                        
+                    <option value="44" >44</option>
+		    
+                                                        
+                    <option value="45" >45</option>
+		    
+                                                        
+                    <option value="46" >46</option>
+		    
+                                                        
+                    <option value="47" >47</option>
+		    
+                                                        
+                    <option value="48" >48</option>
+		    
+                                                        
+                    <option value="49" >49</option>
+		    
+                                                        
+                    <option value="50" >50</option>
+		    
+                                                        
+                    <option value="51" >51</option>
+		    
+                                                        
+                    <option value="52" >52</option>
+		    
+                                                        
+                    <option value="53" >53</option>
+		    
+                                                        
+                    <option value="54" >54</option>
+		    
+                                                        
+                    <option value="55" >55</option>
+		    
+                                                        
+                    <option value="56" >56</option>
+		    
+                                                        
+                    <option value="57" >57</option>
+		    
+                                                        
+                    <option value="58" >58</option>
+		    
+                                                        
+                    <option value="59" >59</option>
+		    
+                                                        
+                    <option value="60" >60</option>
+		    
+                                                        
+                    <option value="61" >61</option>
+		    
+                                                        
+                    <option value="62" >62</option>
+		    
+                                                        
+                    <option value="63" >63</option>
+		    
+                                                        
+                    <option value="64" >64</option>
+		    
+                                                        
+                    <option value="65" >65</option>
+		    
+                                                        
+                    <option value="66" >66</option>
+		    
+                                                        
+                    <option value="67" >67</option>
+		    
+                                                        
+                    <option value="68" >68</option>
+		    
+                                                        
+                    <option value="69" >69</option>
+		    
+                                                        
+                    <option value="70" >70</option>
+		    
+                                                        
+                    <option value="71" >71</option>
+		    
+                                                        
+                    <option value="72" >72</option>
+		    
+                                                        
+                    <option value="73" >73</option>
+		    
+                                                        
+                    <option value="74" >74</option>
+		    
+                                                        
+                    <option value="75" >75</option>
+		    
+                                                        
+                    <option value="76" >76</option>
+		    
+                                                        
+                    <option value="77" >77</option>
+		    
+                                                        
+                    <option value="78" >78</option>
+		    
+                                                        
+                    <option value="79" >79</option>
+		    
+                                                        
+                    <option value="80" >80</option>
+		    
+                                                        
+                    <option value="81" >81</option>
+		    
+                                                        
+                    <option value="82" >82</option>
+		    
+                                                        
+                    <option value="83" >83</option>
+		    
+                                                        
+                    <option value="84" >84</option>
+		    
+                                                        
+                    <option value="85" >85</option>
+		    
+                                                        
+                    <option value="86" >86</option>
+		    
+                                                        
+                    <option value="87" >87</option>
+		    
+                                                        
+                    <option value="88" >88</option>
+		    
+                                                        
+                    <option value="89" >89</option>
+		    
+                                                        
+                    <option value="90" >90</option>
+		    
+                                                        
+                    <option value="91" >91</option>
+		    
+                                                        
+                    <option value="92" >92</option>
+		    
+                                                        
+                    <option value="93" >93</option>
+		    
+                                                        
+                    <option value="94" >94</option>
+		    
+                                                        
+                    <option value="95" >95</option>
+		    
+                                                        
+                    <option value="96" >96</option>
+		    
+                                                        
+                    <option value="97" >97</option>
+		    
+                                                        
+                    <option value="98" >98</option>
+		    
+                                                        
+                    <option value="99" >99</option>
+		    
+                                        
+                  </select></td>
+              </tr>
+	
+              <tr> 
+                <td height="5" class="WRTD_dates_body"><img src="http://images.worldres.com/site_images/SHARED/standard/clear.gif" width="5" height="5">&nbsp; </td>
+              </tr>
+
+              <tr> 
+                <td align="right" class="WRTD_dates_body"> <input name="Submit2" type="submit" class="WRBTN_check_avail" value="Check rates & availability"> &nbsp; </td>
+              </tr>
+
+              <tr> 
+                <td class="WRTD_dates_body"><img src="http://images.worldres.com/site_images/SHARED/standard/clear.gif" width="5" height="5"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td class="WRTD_lnav_button"><a href="/script/refine_search.php?FE=7244&NI=5444&STY=N&DNA=Seattle+Metro&PTY=1&PTY=3&PTY=4&PTY=9" class="WRLNK_nodeco_11px">&nbsp;<img src="http://images.worldres.com/site_images/SHARED/standard/arrow_11x11_forwd.gif" width="11" height="11" hspace="0" vspace="6" border="0" align="absmiddle">&nbsp;Refine your search</a></td>
+        </tr>
+        <tr> 
+          <td class="WRTD_lnav_button"><a href="http://reservelodging.worldres.com/index.php" class="WRLNK_nodeco_11px">&nbsp;<img src="http://images.worldres.com/site_images/SHARED/standard/arrow_11x11_back.gif" width="11" height="11" hspace="0" vspace="6" border="0" align="absmiddle">&nbsp;Begin a new search</a></td>
+        </tr>
+      </table>	  
+      <br>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr class="WRTD_lnav_datestab"> 
+                <td width="5" align="left" valign="top" class="WRTD_lnav_promotab"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_SRCH_tableft.jpg" width="5" height="5"></td>
+                <td width="95%" class="WRTD_lnav_promotab">Also in this destination</td>
+                <td width="5" align="right" valign="top" class="WRTD_lnav_promotab"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_SRCH_tabrightlite.jpg" width="5" height="5"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td class="WRTD_lnav_promobutton">&nbsp;&nbsp;<a href="/script/hotel_search.php?DC=2&FE=7244&NI=5444" class="WRLNK_nodeco_11px_bold"><img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" width="20" height="18" vspace="6" border="0" align="absmiddle"></a>&nbsp;<a href="/script/hotel_search.php?DC=2&FE=7244&NI=5444" class="WRLNK_nodeco_11px_bold">See Discounts only</a></td>
+        </tr>
+      </table>
+</FORM>
+
+</td><td width="10"><img src="http://images.worldres.com/site_images/clear.gif" width="10" height="10"></td><td valign="top" width="-201"><script>closeit();</script><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="5" valign="top" class="WRTD_search_locationname"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_SRCH_tableft.jpg" width="5" height="5"></td>
+          <td width="100%" height=30 class="WRTD_search_locationname">
+		  	 Hotels around Seattle Metro          </td>
+                  </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+
+      <!-- BEGIN TplRefineSearchTop -->		<FORM NAME="RTsearch" ACTION="/script/hotel_search.php" METHOD="GET">
+		<input type="hidden" name="FE" value="7244"><input type="hidden" name="NI" value="5444">		
+		<input type="hidden" name="CD" value="">
+		<input type="hidden" name="CMY" value="">
+		<input type="hidden" name="NN" value="">
+		
+				<tr class="WRTD_search_sortbar">
+		 
+															 		          <td width="50%" class="WRTD_search_sortbar"> 
+		 
+			<select NAME="OB" class="SRCH" onChange="{ document.RTsearch.submit();}">
+            <option selected>Sort by...</option>
+	        
+						
+	        <OPTION VALUE="quality" >Hotel Rating (5 star to 1 star)			
+						
+	        <OPTION VALUE="quality_des" >Hotel Rating (1 star to 5 star)			
+						
+	        <OPTION VALUE="property_name" >Name (A to Z)			
+						
+	        <OPTION VALUE="property_name_des" >Name (Z to A)			
+						
+	        <OPTION VALUE="offer" >Packages first			
+			        </SELECT>
+         
+          </td>
+         <td width="50%" align="right" class="WRTD_search_sortbar"> 
+         
+					</td>
+		        </tr>
+        </FORM>
+<!-- END TplRefineSearchTop -->
+
+        <tr class="WRTD_search_numberbar"> 
+          <td class="WRTD_search_numberbar">
+		  67 property(ies) found:</td>
+          <td class="WRTD_search_numberbar">&nbsp;</td>
+        </tr>
+		      </table> 
+      
+
+		
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=9570&FE=7244&NI=5444" class="WRTXT_13px_bold">Comfort Inn Federal Way</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=9570&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=9570&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a9500/9570/hotel_tn.jpg" alt="Comfort Inn Federal Way" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">31622 Pacific Hwy South, Federal Way, WA 98003<br> <span class="WRTXT_11px">Walking distance to health club, shopping, restaurants and Sea-Tac Mall. Indoor pool and spa.&nbsp;<a href="/script/property.php?hotel_id=9570&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/comfortinn_sm.gif" vspace="0" border="0" alt="Comfort"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=10149&FE=7244&NI=5444" class="WRTXT_13px_bold">Comfort Inn Kent</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=10149&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=10149&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a10000/10149/hotel_tn.jpg" alt="Comfort Inn Kent" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">22311 84th Ave. S, Kent, WA 98032<br> <span class="WRTXT_11px">Short distance to shopping. Seattle Kent & Tukuila Business Centers & Boeing Plant nearby. Walk to restaurants.&nbsp;<a href="/script/property.php?hotel_id=10149&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/comfortinn_sm.gif" vspace="0" border="0" alt="Comfort"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=10163&FE=7244&NI=5444" class="WRTXT_13px_bold">Rodeway Inn Seatac</a> 
+
+		
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=10163&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=10163&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a10000/10163/hotel_tn.jpg" alt="Rodeway Inn Seatac" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">2930 S. 176th St., Seatac, WA 98188<br> <span class="WRTXT_11px">24 hour courtesy van to/from airport. Airport adjacent to hotel. Restaurants within walking distance.&nbsp;<a href="/script/property.php?hotel_id=10163&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/rodewayinn_sm.gif" vspace="0" border="0" alt="Rodeway"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=10164&FE=7244&NI=5444" class="WRTXT_13px_bold">Comfort Inn Auburn</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=10164&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=10164&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a10000/10164/hotel_tn.jpg" alt="Comfort Inn Auburn" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">One -  16th Street NE, Auburn, WA 98002<br> <span class="WRTXT_11px">Close to casino, race track, and outlet supermall. FREE wireless internet access available.&nbsp;<a href="/script/property.php?hotel_id=10164&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/comfortinn_sm.gif" vspace="0" border="0" alt="Comfort"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=10172&FE=7244&NI=5444" class="WRTXT_13px_bold">Comfort Inn & Suites Sea-tac</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=10172&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=10172&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a10000/10172/hotel_tn.jpg" alt="Comfort Inn & Suites Sea-tac" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">19333 International Blvd, (Old Pacific Hwy S), Seatac, WA 98188<br> <span class="WRTXT_11px">Convenient to Sea-Tac Airport. Airport courtesy car 24 hours. Computers with Internet access in lobby.&nbsp;<a href="/script/property.php?hotel_id=10172&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/comfortinn_sm.gif" vspace="0" border="0" alt="Comfort"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=10177&FE=7244&NI=5444" class="WRTXT_13px_bold">Comfort Inn & Suites</a> 
+
+		
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=10177&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=10177&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a10000/10177/hotel_tn.jpg" alt="Comfort Inn & Suites" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">1414 228th St., S.E., Bothell, WA 98021<br> <span class="WRTXT_11px">Walking distance to shops & restaurants. Minutes to Seattle Center and Washington ferry to the San Juan Islands.&nbsp;<a href="/script/property.php?hotel_id=10177&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/comfortinn_sm.gif" vspace="0" border="0" alt="Comfort"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=10181&FE=7244&NI=5444" class="WRTXT_13px_bold">Econo Lodge Seatac Airport South</a> 
+
+		
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=10181&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=10181&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a10000/10181/hotel_tn.jpg" alt="Econo Lodge Seatac Airport South" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">19225 International Blvd, (Old Pacific Hwy S), Seatac, WA 98188<br> <span class="WRTXT_11px">0.5 miles south of airport. On bus line to Boeing, mall, downtown, bus & train depot & college. Walk to lake, shops.&nbsp;<a href="/script/property.php?hotel_id=10181&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/econolodge_sm.gif" vspace="0" border="0" alt="EconoLodge"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=18120&FE=7244&NI=5444" class="WRTXT_13px_bold">Sleep Inn Seatac Airport</a> 
+
+		
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=18120&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=18120&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a18000/18120/hotel_tn.jpg" alt="Sleep Inn Seatac Airport" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">20406 International Blvd, Seatac, WA 98198<br> <span class="WRTXT_11px">Meeting facility, exercise room, covered parking, guest laundry and airport shuttle. Coffee maker in all rooms.&nbsp;<a href="/script/property.php?hotel_id=18120&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/sleep_sm.gif" vspace="0" border="0" alt="Sleep"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=27014&FE=7244&NI=5444" class="WRTXT_13px_bold">Seatac Skyway Inn</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_1_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+		 &nbsp;&nbsp;
+		<img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" border="0" align="absmiddle" style="margin-right:5px;">
+		 	  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="/script/property.php?hotel_id=27014&FE=7244&NI=5444&INFO=rates " class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=27014&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a27000/27014/hotel_tn.jpg" alt="Seatac Skyway Inn" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">20045 Internation Blvd., Seatac, WA 98198<br> <span class="WRTXT_11px">Sea Tac, Washington&nbsp;<a href="/script/property.php?hotel_id=27014&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"></td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTXT_09px_grey">The lowest available rate is shown above. &nbsp;<a href="#all_rates.href#" class="WRLNK_deco_9px"><a href="/script/property.php?INFO=rates&hotel_id=27014&FE=7244&NI=5444" class="WRLNK_deco_9px">See all rates</a> for this property</a></td>
+        </tr>
+                <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=38752&FE=7244&NI=5444" class="WRTXT_13px_bold">Hilton Garden Inn Seattle/Renton</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=38752&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=38752&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a38500/38752/hotel_tn.jpg" alt="Hilton Garden Inn Seattle/Renton" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">1801 E. Valley Road, Renton, WA 98055<br> <span class="WRTXT_11px">5 miles east of Seattle - Tacoma International Airport, 10 miles south of downtown Seattle.  Renton/Tukwila/Kent busines&nbsp;<a href="/script/property.php?hotel_id=38752&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/HGI_RedBoxblueLet_sm.gif" vspace="0" border="0" alt="Hilton Garden Inn"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=41542&FE=7244&NI=5444" class="WRTXT_13px_bold">Best Western FW Executel</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=41542&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=41542&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a41500/41542/hotel_tn.jpg" alt="Best Western FW Executel" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">31611 20th Avenue South, Federal Way, WA 98003<br> <span class="WRTXT_11px">Located in the heart of Federal Way, Washington&nbsp;<a href="/script/property.php?hotel_id=41542&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/bestwestern_sm.gif" vspace="0" border="0" alt="Best Western"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=41549&FE=7244&NI=5444" class="WRTXT_13px_bold">Best Western Plaza</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=41549&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=41549&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a41500/41549/hotel_tn.jpg" alt="Best Western Plaza" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">24415 Russell Road, Kent, WA 98032<br> <span class="WRTXT_11px">Located in an idyllic setting overlooking the golf course, in Kent, WA.&nbsp;<a href="/script/property.php?hotel_id=41549&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/bestwestern_sm.gif" vspace="0" border="0" alt="Best Western"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=41563&FE=7244&NI=5444" class="WRTXT_13px_bold">Best Western Rivers Edge</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=41563&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=41563&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a41500/41563/hotel_tn.jpg" alt="Best Western Rivers Edge" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">15901 West Valley Highway, Seattle, WA 98188<br> <span class="WRTXT_11px">Enjoy the Pacific Ocean, Olympic Mountains, San Juan Islands, Puget Sound, Cascade Mountains and wine country.&nbsp;<a href="/script/property.php?hotel_id=41563&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/bestwestern_sm.gif" vspace="0" border="0" alt="Best Western"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=41573&FE=7244&NI=5444" class="WRTXT_13px_bold">Best Western Peppertree Auburn</a> 
+
+		
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=41573&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=41573&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a41500/41573/hotel_tn.jpg" alt="Best Western Peppertree Auburn" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">401 Eighth  Street Southwest, Auburn, WA 98001<br> <span class="WRTXT_11px">Located to Super Mall, Muckleshoot Casino and Washington National Golf Course&nbsp;<a href="/script/property.php?hotel_id=41573&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/bestwestern_sm.gif" vspace="0" border="0" alt="Best Western"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=42864&FE=7244&NI=5444" class="WRTXT_13px_bold">La Quinta Inn Seattle Bellevue</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=42864&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=42864&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a42500/42864/hotel_tn.jpg" alt="La Quinta Inn Seattle Bellevue" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">10530 NE Northup Way, Kirkland, WA 98033<br> <span class="WRTXT_11px">Close to the Space Needle.&nbsp;<a href="/script/property.php?hotel_id=42864&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/la_quinta_sm.gif" vspace="0" border="0" alt="La Quinta Inn"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=48653&FE=7244&NI=5444" class="WRTXT_13px_bold">Doubletree Hotel Bellevue</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=48653&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=48653&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a48500/48653/hotel_tn.jpg" alt="Doubletree Hotel Bellevue" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">300 112th Avenue SE, Bellevue, WA 98004-6412<br> <span class="WRTXT_11px">Directly off I-405 in the heart of Bellevue's premier business district.&nbsp;<a href="/script/property.php?hotel_id=48653&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/doubleTree_pms_sm.gif" vspace="0" border="0" alt="Double Tree Hotel"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=48806&FE=7244&NI=5444" class="WRTXT_13px_bold">Embassy Suites Hotel Seattle-Bellevue</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=48806&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=48806&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a48500/48806/hotel_tn.jpg" alt="Embassy Suites Hotel Seattle-Bellevue" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">3225 158th Avenue S.E., Bellevue, WA 98008<br> <span class="WRTXT_11px">We are in the Eastgate area of Bellevue, 1 mi. from I-405 and I-90, in a corporate business park close to Microsoft, T-M&nbsp;<a href="/script/property.php?hotel_id=48806&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/embassysuites_sm.gif" vspace="0" border="0" alt="Embassy Suites"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=48807&FE=7244&NI=5444" class="WRTXT_13px_bold">Homewood Suites by Hilton-Downtown Seatt</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=48807&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=48807&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a48500/48807/hotel_tn.jpg" alt="Homewood Suites by Hilton-Downtown Seatt" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">206 Western Avenue West, Seattle, WA 98119<br> <span class="WRTXT_11px">We are an all suite hotel near downtown Seattle with water view suites overlooking Puget Sound and the Olympic Mountains&nbsp;<a href="/script/property.php?hotel_id=48807&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/homewoodsuites_sm.gif" vspace="0" border="0" alt="Homewood Suites by Hilton"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=48808&FE=7244&NI=5444" class="WRTXT_13px_bold">Embassy Suites Hotel Seattle North-Lynnw</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=48808&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=48808&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a48500/48808/hotel_tn.jpg" alt="Embassy Suites Hotel Seattle North-Lynnw" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">20610 44th Ave West, Lynnwood, WA 98036<br> <span class="WRTXT_11px">Off I-5 at exit 181A, 15 mi. from Seattle, near Boeing Everett, Lynnwood Conv Ctr, & Alderwood Mall.  Guests must 21 or&nbsp;<a href="/script/property.php?hotel_id=48808&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/embassysuites_sm.gif" vspace="0" border="0" alt="Embassy Suites"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=48809&FE=7244&NI=5444" class="WRTXT_13px_bold">Doubletree Guest Suites Seattle Airport/</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=619&lang_id=1&front_end_id=7244&hotel_id=48809&capacity_type=1&price_id=1&NI=5444" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=48809&FE=7244&NI=5444"><img src="http://images.worldres.com/property/a48500/48809/hotel_tn.jpg" alt="Doubletree Guest Suites Seattle Airport/" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey">16500 Southcenter Parkway, Seattle, WA 98188-3388<br> <span class="WRTXT_11px">5 minutes to airport, complimentary shuttle and parking.  15 minutes to downtown Seattle.  5 minutes to Boeing and Alteo&nbsp;<a href="/script/property.php?hotel_id=48809&FE=7244&NI=5444" class="WRLNK_deco_11px">more</a>...<br>
+            </span>            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/doubleTree_pms_sm.gif" vspace="0" border="0" alt="DoubleTree Guest Suites"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool.gif" width="17" height="18" border="0" alt="Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+		    </td>
+  </tr>
+<tr>
+	<td>
+      
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td align="right" class="WRTD_search_paging">
+		  &nbsp;&nbsp;
+		  |
+		  		<span class="WRTXT_10px_bold">1</span>| <a href="/script/hotel_search.php?PG=1&FE=7244&NI=5444" class="WRLNK_deco_10px">2</a>| <a href="/script/hotel_search.php?PG=2&FE=7244&NI=5444" class="WRLNK_deco_10px">3</a>| <a href="/script/hotel_search.php?PG=3&FE=7244&NI=5444" class="WRLNK_deco_10px">4</a>&nbsp;&nbsp;&nbsp; 
+			 <a href="/script/hotel_search.php?PG=1&FE=7244&NI=5444" class="WRLNK_deco_10px_bold">Next</a> &nbsp;&nbsp;</td>         </tr>
+      </table> 
+	   	</td>
+</tr>
+
+<tr>
+	<td><br>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				</table>
+	</td>
+</tr>
+
+</table>
+</td><td valign="top" width="1" bgcolor="#FFFFFF">
+</td></tr></table>
+
+
+<p>
+<!--start WRI footer-->
+<table align="center" cellspacing="0" cellpadding="0" border="0">
+  <tr><td><img src="http://images.worldres.com/site_images/clear.gif" width="10" height="10" border="0"></td></tr>
+  <tr>
+    <td align="center"><font color="#000000" face="verdana" size="1"> | 
+	<a href="http://reservelodging.worldres.com/modresinterim.asp">Change/Cancel Reservation</A> | 
+	<a href="http://reservelodging.worldres.com/help/index.asp">Lodging Reservation Help</A> | 
+	<a href="http://www.worldres.com">Powered by Worldres</A> | </font></td>
+  </tr>
+  <tr><td><img src="http://images.worldres.com/site_images/clear.gif" width="10" height="10" border="0"></td></tr>
+  <tr>
+    <td align="center"><a href="http://images.worldres.com/site_images/wrfooter.map"><img src="http://images.worldres.com/site_images/wrfooter.gif" border="0" ismap></a></td>
+  </tr>
+</table>
+<!--end WRI footer-->
+</body></html>
+<!-- Cache: attpts03 July 29, 2006 13:14:04 script-hotel_search.php TTL: 60 -->

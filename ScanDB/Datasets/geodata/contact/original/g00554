@@ -1,0 +1,132 @@
+<DOC>
+<DOCNO>g00554</DOCNO>
+<DOCHDR>http://www.lewisclark.net/contact</DOCHDR>
+<html>
+<head><title>Contact Information</title>
+<script language="JavaScript">
+<!--
+
+if (document.images) {
+  image1on = new Image();
+  image1on.src = "../images/mapmenu2.gif";
+
+  image2on = new Image();
+  image2on.src = "../images/timemenu2.gif";
+
+  image3on = new Image();
+  image3on.src = "../images/biomenu2.gif";
+
+  image4on = new Image();
+  image4on.src = "../images/sdmenu2.gif";
+
+  image5on = new Image();
+  image5on.src = "../images/dykmenu2.gif";
+
+  image6on = new Image();
+  image6on.src = "../images/contactmenu2.gif";
+  
+  image7on = new Image();
+  image7on.src = "../images/homemenu2.gif";
+  
+  image8on = new Image();
+  image8on.src = "../images/jourmenu2.gif";
+
+  image1off = new Image();
+  image1off.src = "../images/mapmenu.gif";
+
+  image2off = new Image();
+  image2off.src = "../images/timemenu.gif";
+
+  image3off = new Image();
+  image3off.src = "../images/biomenu.gif";
+
+  image4off = new Image();
+  image4off.src = "../images/sdmenu.gif";
+
+  image5off = new Image();
+  image5off.src = "../images/dykmenu.gif";
+
+  image6off = new Image();
+  image6off.src = "../images/contactmenu.gif";
+  
+  image7off = new Image();
+  image7off.src = "../images/homemenu.gif";
+  
+  image8off = new Image();
+  image8off.src = "../images/jourmenu.gif";
+
+}
+
+function changeImages() {
+  if (document.images) {
+    for (var i=0; i<changeImages.arguments.length; i+=2) {
+      document[changeImages.arguments[i]].src = eval(changeImages.arguments[i+1] + ".src");
+    }
+  }
+}
+
+// -->
+</script>
+</head><body bgcolor="#ffffff" background="../images/back.gif">
+
+
+<table width="600" cellspacing="0" cellpadding="0" border="0">
+<tr><td width="110" valign="top" align="left">
+<img src="../images/theguys.gif" width="110" height="124" border="0"></td>
+<td width="490" valign="top" align="center">
+<img src="../images/contact.gif" width="269" height="124">
+</td>
+</tr>
+
+
+<tr><td width=158 valign="top"><a href="../index.html" onMouseOver="changeImages('image7', 'image7on')" onMouseOut="changeImages('image7', 'image7off')"><img name="image7" src="../images/homemenu.gif" alt="home" width=158 height=37 border=0></a><BR>
+<a href="../maps/index.html" onMouseOver="changeImages('image1', 'image1on')" onMouseOut="changeImages('image1', 'image1off')"><img name="image1" src="../images/mapmenu.gif" alt="map" width=158 height=37 border=0></a><BR>
+<a href="../timeline/index.html" onMouseOver="changeImages('image2', 'image2on')" onMouseOut="changeImages('image2', 'image2off')"><img name="image2" src="../images/timemenu.gif" alt="timeline" width=158 height=37 border=0></a><BR>
+<a href="../journals/index.html" onMouseOver="changeImages('image8', 'image8on')" onMouseOut="changeImages('image8', 'image8off')"><img name="image8" src="../images/jourmenu.gif" alt="journals" width=158 height=37 border=0></a><BR>
+<a href="../biography/index.html" onMouseOver="changeImages('image3', 'image3on')" onMouseOut="changeImages('image3', 'image3off')"><img name="image3" src="../images/biomenu.gif" alt="biography" width=158 height=37 border=0></a><BR>
+<a href="../sdtrail/index.html" onMouseOver="changeImages('image4', 'image4on')" onMouseOut="changeImages('image4', 'image4off')"><img name="image4" src="../images/sdmenu.gif" alt="south dakota" width=158 height=37 border=0></a><BR>
+<a href="../dyk/index.html" onMouseOver="changeImages('image5', 'image5on')" onMouseOut="changeImages('image5', 'image5off')"><img name="image5" src="../images/dykmenu.gif" alt="did you know" width=158 height=37 border=0></a><BR>
+<a href="index.html" onMouseOver="changeImages('image6', 'image6on')" onMouseOut="changeImages('image6', 'image6off')"><img name="image6" src="../images/contactmenu.gif" alt="contact" width=158 height=37 border=0></a><BR>
+</td>
+<td width="442" valign="top">
+<B>Yankton Daily Press & Dakotan</B><BR>
+319 Walnut<BR>
+Yankton, SD 57078<BR>
+605-665-7811<BR>
+<a href="mailto:webteam@yankton.net">webteam@yankton.net</a><BR><BR>
+
+<B>Yankton Convention & Visitors Bureau</B><BR>
+803 E. 4th St.<BR>
+Yankton, SD 57078<BR>
+605-665-3636<BR>
+<a href="mailto:visityankton@yanktonsd.com">visityankton@yanktonsd.com</a><BR><BR>
+For questions or comments, please fill out our <a href="feedback.html">feedback</a> form.<BR><BR>
+Contact the <a href="mailto:webteam@yankton.net">webmasters</a>
+
+
+</td>
+
+
+</tr></table>
+<BR><BR><BR><BR><BR><center><a href="../index.html">Home</A><BR>
+<a href="../maps/index.html">Maps</A> | <a href="../timeline/index.html">Timeline</a> | 
+<a href="../journals/index.html">Journals</a> |
+<a href="../biography/index.html">Biography</A> | <a href="../sdtrail/index.html">South Dakota Trail</A><BR>
+<a href="../dyk/index.html">Did You Know?</A> | Contact Information | 
+<a href="../credits/index.html">Credits/Links</A></center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

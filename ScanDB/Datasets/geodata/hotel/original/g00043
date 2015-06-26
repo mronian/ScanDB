@@ -1,0 +1,992 @@
+<DOC>
+<DOCNO>g00043</DOCNO>
+<DOCHDR>http://www.lawac.org</DOCHDR>
+<html>
+<script language=javascript>
+<!--
+out1 = new Image(); out1.src='images/oneout.gif';
+over1 = new Image(); over1.src='images/oneover.gif';
+out2 = new Image(); out2.src='images/twoout.gif';
+over2 = new Image(); over2.src='images/twoover.gif';
+out3 = new Image(); out3.src='images/threeout.gif';
+over3 = new Image(); over3.src='images/threeover.gif';
+out4 = new Image(); out4.src='images/fourout.gif';
+over4 = new Image(); over4.src='images/fourover.gif';
+
+function reDoPage(init) { 
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.pgW=innerWidth; document.pgH=innerHeight; onresize=reDoPage; }}
+else if (innerWidth!=document.pgW || innerHeight!=document.pgH) location.reload();}
+reDoPage(true);
+
+function showHide(){
+var a = showHide.arguments;
+if(a.length>0) a = new Array('sub'+a[0], 'close'+a[0],a[0]);
+if(!document.layerSet){
+if(a.length > 0){aLayers = new Array();for(i=0; i<a.length-1;i++)aLayers[i] = a[i];document.layerSet = true;}}
+else{theIndex = aLayers[0].charAt(3);
+if(document.layers){hideImage = document.layers['top'].document.images['trig'+theIndex];}
+else{hideImage = document.images['trig'+theIndex];}
+hideImage.src = eval('out' + theIndex + '.src');
+for(i=0;i<aLayers.length;i++){if(document.layers)document.layers[aLayers[i]].visibility='hide';
+else if(document.getElementById)document.getElementById(aLayers[i]).style.visibility='hidden';
+else if(document.all)document.all(aLayers[i]).style.visibility='hidden';}}
+if(a.length > 0){for(i=0; i<a.length-1;i++){aLayers[i] = a[i];
+if(document.layers)document.layers[aLayers[i]].visibility='show';
+else if(document.getElementById)document.getElementById(aLayers[i]).style.visibility='visible';
+else if(document.all)document.all(aLayers[i]).style.visibility='visible';}
+if(document.layers){document.layers['top'].document.images['trig'+a[2]].src=eval('over' + a[2] +'.src');}
+else{document.images['trig'+a[2]].src = eval('over' + a[2] +'.src');}}}
+//-->
+</script>
+
+<head>
+<meta name=vs_defaultClientScript content="JavaScript">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Los Angeles World Affairs Council</title>
+<style>
+<!--
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<base target="_blank">
+<meta name="Microsoft Border" content="tl">
+</head>
+
+<body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginheight="0" marginwidth="0" bgcolor="#FFFFEF" vlink="#0000FF"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="6" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="172%" height="159">
+	<tr>
+		<td width="100%" height="147">
+		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="846" height="146">
+			<tr>
+				<td width="322" height="103" bgcolor="#FFFFEF">
+				<img border="0" src="pictures/borders/logo-w-background-color-2.jpg" width="289" height="119"></td>
+				<td width="524" height="103" align="center" bgcolor="#FFFFEF">
+				<p style="margin: 0 17; "><font face="MS Sans Serif" size="1">
+				The Los Angeles World Affairs Council promotes greater under- 
+				standing of current global issues and their impact on the people 
+				of Southern California by inviting authoritative, influential 
+				figures in world affairs to Los Angeles, and providing them an 
+				open forum.</font></td>
+			</tr>
+			<tr>
+				<td width="846" height="24" bordercolor="#F6E6AA" bgcolor="#F6E6AA" colspan="2">
+				<p align="center"><font size="2">
+				<applet code="fphover.class" codebase="http://user688038.wx13.registeredsite.com/" width="82" height="24">
+					<param name="hovercolor" value="#0000FF">
+					<param name="target" value>
+					<param name="text" value="Home">
+					<param name="color" value="#F6E6AA">
+					<param name="textcolor" value="#0000FF">
+					<param name="font" value="Helvetica">
+					<param name="fontstyle" value="bold">
+					<param name="effect" value="bevelOut">
+					<param name="url" valuetype="ref" value="http://www.lawac.org/index.htm">
+					<param name="fontsize" value="10">
+				</applet><applet code="fphover.class" codebase="http://user688038.wx13.registeredsite.com/" width="82" height="24">
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			<param name="hovercolor" value="#0000FF">
+					<param name="target" value>
+					<param name="color" value="#F6E6AA">
+					<param name="textcolor" value="#0000FF">
+					<param name="font" value="Helvetica">
+					<param name="fontstyle" value="bold">
+					<param name="text" value="About Us">
+					<param name="effect" value="bevelOut">
+					<param name="url" valuetype="ref" value="http://www.lawac.org/about%20us.html">
+					<param name="fontsize" value="10">
+				</applet></font><applet code="fphover.class" codebase="http://user688038.wx13.registeredsite.com/" width="112" height="24">
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			<param name="target" value>
+					<param name="color" value="#F6E6AA">
+					<param name="textcolor" value="#0000FF">
+					<param name="font" value="Helvetica">
+					<param name="fontstyle" value="bold">
+					<param name="hovercolor" value="#E3F7AA">
+					<param name="text" value="Membership">
+					<param name="effect" value="bevelOut">
+					<param name="fontsize" value="10">
+					<param name="url" valuetype="ref" value="member%20benefits.htm">
+				</applet><applet code="fphover.class" codebase="http://user688038.wx13.registeredsite.com/" width="116" height="24">
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			<param name="hovercolor" value="#0000FF">
+					<param name="target" value>
+					<param name="color" value="#F6E6AA">
+					<param name="textcolor" value="#0000FF">
+					<param name="font" value="Helvetica">
+					<param name="fontstyle" value="bold">
+					<param name="text" value="Student Programs">
+					<param name="effect" value="bevelOut">
+					<param name="url" valuetype="ref" value="students/student%20programs.htm">
+					<param name="fontsize" value="10">
+				</applet><applet code="fphover.class" codebase="http://user688038.wx13.registeredsite.com/" width="114" height="24">
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			<param name="hovercolor" value="#0000FF">
+					<param name="target" value>
+					<param name="color" value="#F6E6AA">
+					<param name="textcolor" value="#0000FF">
+					<param name="font" value="Helvetica">
+					<param name="fontstyle" value="bold">
+					<param name="effect" value="bevelOut">
+					<param name="text" value="Young Associates">
+					<param name="fontsize" value="10">
+					<param name="url" valuetype="ref" value="YA.htm">
+				</applet><applet code="fphover.class" codebase="http://user688038.wx13.registeredsite.com/" width="113" height="24">
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			<param name="hovercolor" value="#0000FF">
+					<param name="target" value>
+					<param name="color" value="#F6E6AA">
+					<param name="textcolor" value="#0000FF">
+					<param name="font" value="Helvetica">
+					<param name="fontstyle" value="bold">
+					<param name="effect" value="bevelOut">
+					<param name="text" value="Travel Program">
+					<param name="url" valuetype="ref" value="Travel%20program/travel%20program.htm">
+					<param name="fontsize" value="10">
+				</applet><applet code="fphover.class" codebase="http://user688038.wx13.registeredsite.com/" width="76" height="24">
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			<param name="hovercolor" value="#0000FF">
+					<param name="target" value>
+					<param name="color" value="#F6E6AA">
+					<param name="textcolor" value="#0000FF">
+					<param name="font" value="Helvetica">
+					<param name="fontstyle" value="bold">
+					<param name="effect" value="bevelOut">
+					<param name="text" value="Directors">
+					<param name="url" valuetype="ref" value="directors.htm">
+					<param name="fontsize" value="10">
+				</applet><applet code="fphover.class" codebase="http://user688038.wx13.registeredsite.com/" width="103" height="24">
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			
+					
+          
+          			<param name="hovercolor" value="#0000FF">
+					<param name="target" value>
+					<param name="color" value="#F6E6AA">
+					<param name="textcolor" value="#0000FF">
+					<param name="font" value="Helvetica">
+					<param name="fontstyle" value="bold">
+					<param name="effect" value="bevelOut">
+					<param name="text" value="News Media">
+					<param name="url" valuetype="ref" value="news%20media%20resources.htm">
+					<param name="fontsize" value="10">
+				</applet></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+</td></tr><!--msnavigation--></table><!--msnavigation--><table dir="ltr" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
+<table border="0" cellspacing="0" width="165" height="723" cellpadding="4" style="border-collapse: collapse" bordercolor="#111111" align="left">
+	<tr>
+		<td width="190" height="392" valign="top" align="center" bgcolor="#FFFFEF">
+		<table border="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#F6E6AA" width="160" height="92" bgcolor="#E3F7AA" cellpadding="3">
+			<tr>
+				<td width="158" bgcolor="#EDCF58" height="46">
+				<p align="center"><b><font face="Verdana" color="#000080">
+				Read/Watch Recent&nbsp; Speeches</font></b></td>
+			</tr>
+			<tr>
+				<td width="158" bgcolor="#E3F7AA" height="73">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<font face="Verdana" style="font-size: 8pt" color="#000080">
+				Speeches open in Adobe .pdf formt and Windows Media Player 9</font></p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<a target="_blank" href="http://www.adobe.com/products/acrobat/readstep2.html">
+				<img border="0" src="pictures/get_adobe_reader.gif" width="88" height="31"></a></p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<a href="http://www.microsoft.com/windows/windowsmedia/player/download/">
+				<img border="0" src="pictures/wmp%209%20download.bmp" width="120" height="32"></a></td>
+			</tr>
+			<tr>
+				<td width="158" height="15" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+				<p align="center">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="158" height="32" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+				<p style="margin-top: 0; margin-bottom: 0">
+				<span style="font-weight: 700">
+				<font face="Verdana" size="2" color="#000080">Israel/Palestine: 
+				History is Undecided</font></span></td>
+			</tr>
+			<tr>
+				<td width="158" height="1" bordercolor="#FFFFFF" valign="baseline" bgcolor="#E3F7AA">
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<span style="color: #000080"><b>
+				<span style="font-family: Verdana"><font size="1">His Excellency
+				</font></span></b></span></p>
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<span style="color: #000080"><b>
+				<span style="font-family: Verdana"><font size="1">Safieh Afieh</font></span></b></span></p>
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<font size="1" color="#000080" face="Verdana">Head of the PLO 
+				Mission </font></p>
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<font size="1" color="#000080" face="Verdana">to the United 
+				States</font></td>
+			</tr>
+			<tr>
+				<td width="158" height="1" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+				<p align="center"><font color="#000080" size="1" face="Verdana">
+				watch&nbsp;&nbsp; </font>
+				<a target="_blank" href="http://la36.granicus.com/MediaPlayer.php?view_id=24&clip_id=1605">
+				<img border="0" src="pictures/wmp.gif" width="16" height="16"></a></td>
+			</tr>
+			<tr>
+				<td width="170" height="17" bordercolor="#FFFFFF" valign="baseline" bgcolor="#E3F7AA">
+				<hr color="#EDCF58" width="80%" noshade size="1"></td>
+			</tr>
+			<tr>
+				<td width="158" height="15" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+				<p align="center">
+				<img border="0" src="pictures/home%20page/Perry-Jones-pod-color.gif" width="155" height="118"></td>
+			</tr>
+			<tr>
+				<td width="158" height="32" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+				<p style="margin-top: 0; margin-bottom: 0">
+				<span style="font-weight: 700">
+				<font face="Verdana" size="2" color="#000080">The United 
+				Nations: An Essential Tool to confront today's Global Challenges</font></span></td>
+			</tr>
+			<tr>
+				<td width="158" height="1" bordercolor="#FFFFFF" valign="baseline" bgcolor="#E3F7AA">
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<span style="color: #000080"><b>
+				<span style="font-family: Verdana"><font size="1">His Excellency
+				</font></span></b></span></p>
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<span style="color: #000080"><b>
+				<span style="font-family: Verdana"><font size="1">Sir Emyr Parry 
+				Jones</font></span></b></span></p>
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<font size="1" color="#000080" face="Verdana">Permanent 
+				Representative of the United Kingdom to the United Nations</font></td>
+			</tr>
+			<tr>
+				<td width="158" height="1" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+				<p align="center"><font color="#000080" size="1" face="Verdana">
+				read </font>
+				<a target="_blank" href="speech/2005-2006/PARRY,%20Sir%20Emry%20Jones.pdf">
+				<img border="0" src="pictures/pdficon_small.gif" width="17" height="17"></a><font color="#000080" size="1" face="Verdana">&nbsp;&nbsp; 
+				watch&nbsp;&nbsp; </font>
+				<a target="_blank" href="http://la36.granicus.com/MediaPlayer.php?view_id=24&clip_id=1458">
+				<img border="0" src="pictures/wmp.gif" width="16" height="16"></a></td>
+			</tr>
+			<tr>
+				<td width="170" height="17" bordercolor="#FFFFFF" valign="baseline" bgcolor="#E3F7AA">
+				<hr color="#EDCF58" width="80%" noshade size="1"></td>
+			</tr>
+			<tr>
+				<td width="158" height="32" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+				<img border="0" src="pictures/home%20page/Klaus-pod-color.gif" width="154" height="179"></td>
+			</tr>
+			<tr>
+				<td width="158" height="32" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+				<p style="margin-top: 0; margin-bottom: 0">
+				<span style="font-weight: 700">
+				<font face="Verdana" size="2" color="#000080">The Czech 
+				Republic's Role in the New Europe</font></span></td>
+			</tr>
+			<tr>
+				<td width="158" height="1" bordercolor="#FFFFFF" valign="baseline" bgcolor="#E3F7AA">
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<span style="color: #000080"><b>
+				<span style="font-family: Verdana"><font size="1">His Excellency 
+				Vaclav Klaus</font></span></b></span></p>
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<font size="1" color="#000080" face="Verdana">President of the
+				</font></p>
+				<p style="margin-top: 0; margin-bottom: 0" align="right">
+				<font size="1" color="#000080" face="Verdana">Czech Republic</font></td>
+			</tr>
+			<tr>
+				<td width="158" height="1" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+				<p align="center"><font color="#000080" size="1" face="Verdana">
+				read </font>
+				<a target="_blank" href="speech/2005-2006/KLAUS,%20Vaclav.pdf">
+				<img border="0" src="pictures/pdficon_small.gif" width="17" height="17"></a><font color="#000080" size="1" face="Verdana">&nbsp;&nbsp; 
+				watch </font>
+				<a target="_blank" href="http://la36.granicus.com/MediaPlayer.php?view_id=24&clip_id=1485">
+				<img border="0" src="pictures/wmp.gif" width="16" height="16"></a><font color="#000080" size="1" face="Verdana">&nbsp;
+				</font></td>
+			</tr>
+			<tr>
+				<td width="170" height="1" bordercolor="#FFFFFF" valign="baseline" bgcolor="#E3F7AA">
+				<hr color="#EDCF58" width="80%" noshade size="1"></td>
+			</tr>
+		</table>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<table border="1" cellspacing="0" width="156" height="265" style="border-collapse: collapse" bordercolor="#008000" cellpadding="2">
+			<tr>
+				<td colspan="3" bgcolor="#EDCF58">
+				<p align="center"><b><font color="#000080" face="Verdana">
+				Archived Transcripts and Video</font></b></td>
+			</tr>
+			<tr>
+				<td bgcolor="#E3F7AA" colspan="3">
+				<p align="center"><font color="#000080" size="2" face="Verdana">
+				by surname</font></td>
+			</tr>
+			<tr>
+				<td bgcolor="#E3F7AA" colspan="3">
+				<table border="1" width="100%" id="table1">
+					<tr>
+						<td align="center"><font size="2" face="Verdana">
+						<a href="speech/indexes/allspeakers%20A-H.htm">A-H</a></font></td>
+						<td align="center"><font size="2" face="Verdana">
+						<a href="speech/indexes/allspeakers%20I-P.htm">I-P</a></font></td>
+						<td align="center"><font size="2" face="Verdana">
+						<a href="speech/indexes/allspeakers%20Q-Z.htm">Q-Z</a></font></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#E3F7AA" colspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td bgcolor="#E3F7AA" colspan="3">
+				<p align="center"><font color="#000080" size="2" face="Verdana">
+				by season/year</font></td>
+			</tr>
+			<tr>
+				<td bgcolor="#E3F7AA" colspan="3">
+				<table border="0" width="100%" id="table2">
+					<tr>
+						<td colspan="2" align="center">
+						<p style="margin-top: 0; margin-bottom: 0">
+						<font size="2" face="Verdana">
+						<a href="speech/indexes/2005-06%20index.htm">2005-06</a>
+						</font></p>
+						<p style="margin-top: 0; margin-bottom: 0">
+						<font size="1" face="Verdana">(current season)</font></td>
+					</tr>
+					<tr>
+						<td width="67" align="center">
+						<p style="margin-top: 0; margin-bottom: 0">
+						<font size="2" face="Verdana">
+						<a href="speech/indexes/2003-04%20speeches.htm">
+						2003-04</a></font></td>
+						<td align="center"><font size="2" face="Verdana">
+						<a href="speech/indexes/2004-05%20index.htm">2004-05</a></font></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" bgcolor="#E3F7AA">
+				<font size="2" face="Verdana">
+				<a href="speech/indexes/2001speeches.htm">2001</a></font></td>
+				<td align="center" bgcolor="#E3F7AA">
+				<font size="2" face="Verdana">
+				<a href="speech/indexes/2002speeches.htm">2002</a></font></td>
+				<td align="center" bgcolor="#E3F7AA">
+				<font size="2" face="Verdana">
+				<a href="speech/indexes/2003.htm">2003</a></font></td>
+			</tr>
+			<tr>
+				<td align="center" bgcolor="#E3F7AA">
+				<font size="2" face="Verdana">
+				<a href="speech/indexes/1998speeches.htm">1998</a></font></td>
+				<td align="center" bgcolor="#E3F7AA">
+				<font size="2" face="Verdana">
+				<a href="speech/indexes/1999speeches.htm">1999</a></font></td>
+				<td align="center" bgcolor="#E3F7AA">
+				<font size="2" face="Verdana">
+				<a href="speech/indexes/2000speeches.htm">2000</a></font></td>
+			</tr>
+			<tr>
+				<td align="center" bgcolor="#E3F7AA">
+				<font face="Verdana" size="2">
+				<a href="speech/indexes/1996speeches.htm">1996</a></font></td>
+				<td align="center" bgcolor="#E3F7AA">
+				<a href="speech/indexes/1997speeches.htm">
+				<font size="2" face="Verdana">1997</font></a></td>
+				<td align="center" bgcolor="#E3F7AA"></td>
+			</tr>
+		</table>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<table border="0" cellspacing="0" width="158" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" height="143">
+			<tr>
+				<td width="158" bgcolor="#EDCF58" height="29">
+				<p align="center"><b><font face="Arial" color="#000080">Contact 
+				Us</font></b></td>
+			</tr>
+			<tr>
+				<td width="158" bgcolor="#E3F7AA" height="114">
+				<p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+				<font face="Verdana" style="font-size: 10pt">call: (213) 
+				628-2333</font></p>
+				<p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+				<font face="Verdana" size="2">Fax: (213) 628-1057</font></p>
+				<p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+				<font face="Verdana" style="font-size: 10pt">
+				<a href="mailto:lawac@lawac.org">lawac@lawac.org</a></font></p>
+				<p style="margin-left: 4; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+				<p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+				<font face="Verdana" size="2">345 S. Figueroa St. Suite 313</font></p>
+				<p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+				<font face="Verdana" size="2">Los Angeles, CA 90071</font></p>
+				<p style="margin-left: 4; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+				<p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+				<font face="Verdana" size="2">
+				<a href="mailto:lhubbard@lawac.org">webmaster</a></font></td>
+			</tr>
+		</table>
+		<p align="left"><a href="email%20evening%20seminar.htm">.</a></td>
+	</tr>
+</table>
+
+</td><td valign="top" width="24"></td><!--msnavigation--><td valign="top">
+<div align="left">
+<table border="0" cellspacing="0" width="624" height="941" cellpadding="4" style="border-collapse: collapse" bordercolor="#111111" bgcolor="#FFFFEF">    
+  <tr>  
+    <td width="204" height="610" valign="top" align="center" bgcolor="#F9FDEA">
+   
+  <table border="0" width="465" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" height="47" colspan="3" bgcolor="#EDCF58" width="449">
+          <p><font face="Verdana" color="#000080" style="font-size: 16pt">&nbsp; 
+          Upcoming Events</font></td>
+      </tr>
+      <tr>
+        <td width="449" height="2" align="center" colspan="3">
+          </td>
+      </tr>
+		<tr>
+        <td width="449" height="29" align="left" colspan="3" bgcolor="#E3F7AA">
+           <p style="margin-left: 6"><b><font face="Verdana" color="#0000FF">
+			August</font></b></td>
+        </tr>
+		<tr>
+        <td width="449" height="29" align="left" colspan="3" bgcolor="#F9FDEA">
+           <p align="center" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+			<p align="center" style="margin-top: 0; margin-bottom: 0"><b>
+			<font color="#FF0000">SOLD OUT</font></b></p>
+			<p align="center" style="margin-top: 0; margin-bottom: 0">
+			<font color="#FF0000" size="2">reservations are no longer being 
+			accepted for this event</font></p>
+			<p align="center" style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+        </tr>
+		<tr>
+        <td width="327" height="61" align="center" colspan="2">
+        <p style="margin-top: 0; margin-bottom: 0">
+        <span style="color: #008000"><b>
+        <span style="font-family: Verdana"><font style="font-size: 11pt">The Rt. Hon. 
+		Tony Blair</font></span></b></span></p>
+        <p style="margin-top: 0; margin-bottom: 0">
+        <span style="font-size:7.5pt;font-family:Verdana;
+color:green">Prime Minister of the United Kingdom</span></p>
+        </td>
+        <td width="108" height="107" align="center" valign="top" rowspan="2">
+           <img border="0" src="pictures/home%20page/BlairL.gif" width="100" height="141"></td>
+      </tr>
+		<tr>
+        <td width="327" height="61" align="center" colspan="2">
+        <p style="margin-top: 0; margin-bottom: 0">
+		<span style="font-family: Verdana; color: #008000"><font size="2">A 
+		major policy address to be given on the occasion of the first visit of a 
+		sitting Prime Minister of the United Kingdom to Los Angeles</font></span></td>
+      </tr>
+		<tr>
+        <td width="202" height="68" align="center">
+          <align="left">
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        Luncheon</font></p>
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        Tuesday, 
+        August 1, 
+        12 noon</font></p>
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        Westin Bonaventure Hotel</font></p>
+			<p style="margin: 0 4" align="center">
+    <font face="Verdana" size="1">
+    		<a target="_blank" href="http://www.mapquest.com/maps/map.adp?city=los angeles&state=CA&address=404+South+figueroa+street&zip=90071&country=us&zoom=7">map</a></font></p>
+          </td>
+        <td width="263" height="68" align="center" colspan="2">
+          <p align="center" style="margin-top: 0; margin-bottom: 0"><b>
+			<font color="#FF0000">SOLD OUT</font></b></td>
+      </tr>
+		<tr>
+        <td height="55" align="center" colspan="3">
+
+    <p style="margin-top: 0; margin-bottom: 0" align="center">
+    <b><font color="#FF0000" style="font-size: 11pt" face="Verdana">Please read</font></b></p>
+	<p style="margin-top: 0; margin-bottom: 0" align="center">
+    <font size="2" face="Verdana">&nbsp;<a href="blair%20policies.htm">Full Ticket and Security 
+	Policies</a></font></p>
+
+        </td>
+        </tr>
+		<tr>
+        <td height="55" align="center" colspan="3">
+
+    <p style="margin-top: 0; margin-bottom: 0"><font size="2">Mr. Blair's 
+	address will be broadcast on cable channel LA36 </font></p>
+	<p style="margin-top: 0; margin-bottom: 0"><font size="2">at the following 
+	times:</font></p>
+	<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p style="margin-top: 0; margin-bottom: 0"><font size="2">Thursday, August 
+	3, 11 a.m. 2 p.m. 7 p.m.</font></p>
+	<p style="margin-top: 0; margin-bottom: 0"><font size="2">Saturday, August 
+	5, 8 a.m.</font></p>
+	<p style="margin-top: 0; margin-bottom: 0"><font size="2">Sunday, August 6, 
+	8 a.m.</font></p>
+	<p style="margin-top: 0; margin-bottom: 0"><font size="2">Monday, August 7, 
+	8 p.m.</font></p>
+	<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p style="margin-top: 0; margin-bottom: 0"><font size="2">The address will 
+	also be available to watch on our online </font></p>
+	<p style="margin-top: 0; margin-bottom: 0"><font size="2">
+	<a href="http://www.la36.org/lawac/lawac.html">video-on-demand</a> channel</font></td>
+        </tr>
+		<tr>
+        <td width="604" height="20" align="center" colspan="3">
+
+           &nbsp;</td>
+        </tr>
+      <tr>
+        <td width="449" height="36" align="left" colspan="3" bgcolor="#E3F7AA">
+           <p style="margin-left: 6"><b><font face="Verdana" color="#0000FF">
+           September</font></b></td>
+        </tr>
+      <tr>
+        <td width="358" height="32" align="center" colspan="2">
+        <b><font face="Verdana" color="#008000">Remembering 9/11</font></b></td>
+        <td width="108" height="151" align="center" valign="top" rowspan="3">
+           &nbsp;</td>
+      </tr>
+		<tr>
+        <td width="358" height="56" align="center" colspan="2">
+        <p style="margin-top: 0; margin-bottom: 0">
+        <span style="font-size: 11pt; color: #008000"><b>
+        <span style="font-family: Verdana">Panel of Senior Editors from the </span></b></span></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+        <span style="font-size: 11pt; color: #008000"><b>
+        <span style="font-family: Verdana">Los Angeles Times</span></b></span></p>
+        </td>
+      </tr>
+		<tr>
+        <td width="202" height="53" align="center">
+          <align="left">
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        Dinner</font></p>
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        Monday, 
+        September 11, </font></p>
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        7:30 p.m.</font></p>
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        Beverly Hills Hotel</font></p>
+          </td>
+        <td width="155" height="53" align="center">
+          <p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+          <font size="1" face="Verdana">Members: $45</font></p>
+          <p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+          <font size="1" face="Verdana">Guests of members: $55</font></p>
+          <p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+          <font size="1" face="Verdana">General admission: $60</font><p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+          <font face="Verdana" size="1">Tables of ten: $450</font></td>
+      </tr>
+		<tr>
+        <td width="202" height="28" align="center">
+
+    <p style="margin-top: 0; margin-bottom: 0" align="center">
+    <font face="Verdana" size="1">
+    <a target="_blank" href="http://www.mapquest.com/maps/map.adp?city=los angeles&state=CA&address=2151+avenue+of+the+stars&zip=90067&country=us&zoom=7">map</a></font></p>
+
+        </td>
+        <td width="155" height="28" align="center">
+          <align="left">
+          <font face="Verdana" size="1">
+          <a href="http://www.lawac.org/reservation.htm">make a reservation</a></font></td>
+        <td width="108" height="28" align="center" valign="top">
+           &nbsp;</td>
+      </tr>
+		<tr>
+        <td width="466" height="18" align="center" colspan="3">
+
+           <hr color="#EDCF58" width="90%" noshade size="3">
+
+        </td>
+      </tr>
+      <tr>
+        <td width="358" height="72" align="center" colspan="2">
+        <p style="margin-top: 0; margin-bottom: 0">
+        <span style="font-size: 11pt; color: #008000"><b>
+        <span style="font-family: Verdana">His Excellency Sergei V. Lavrov</span></b></span></p>
+        <p style="margin-top: 0; margin-bottom: 0">
+        <font size="1" color="#008000" face="Verdana">Foreign Minister of 
+		the Russian Federation</font></p></td>
+        <td width="108" height="140" align="center" valign="top" rowspan="2">
+           <img border="0" src="pictures/home%20page/lavrov.gif" width="100" height="153"></td>
+      </tr>
+      <tr>
+        <td width="202" height="68" align="center">
+          <align="left">
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        Dinner</font></p>
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        Monday, 
+        September 25, </font></p>
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        7:30 p.m.</font></p>
+        <p style="margin: 0 4" align="center"><font face="Verdana" size="1">
+        Beverly Hills Hotel</font></p>
+          </td>
+        <td width="155" height="68" align="center">
+          <p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+          <font size="1" face="Verdana">Members: $45</font></p>
+          <p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+          <font size="1" face="Verdana">Guests of members: $55</font></p>
+          <p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+          <font size="1" face="Verdana">General admission: $60</font><p style="margin-left: 4; margin-top: 0; margin-bottom: 0">
+          <font face="Verdana" size="1">Tables of ten: $450</font></td>
+      </tr>
+      <tr>
+        <td width="202" height="39" align="center">
+
+    <p style="margin-top: 0; margin-bottom: 0" align="center">
+    <font face="Verdana" size="1">
+    <a target="_blank" href="http://www.mapquest.com/maps/map.adp?city=los angeles&state=CA&address=2151+avenue+of+the+stars&zip=90067&country=us&zoom=7">map</a></font></p>
+
+        </td>
+        <td width="155" height="39" align="center">
+          <align="left">
+          <font face="Verdana" size="1">
+          <a href="http://www.lawac.org/reservation.htm">make a reservation</a></font></td>
+        <td width="108" height="39" align="center" valign="top">
+           &nbsp;</td>
+      </tr>
+      <tr>
+        <td width="466" height="29" align="center" colspan="3">
+
+           <hr color="#EDCF58" width="90%" noshade size="3">
+
+        </td>
+      </tr>
+      <tr>
+        <td width="202" height="36" align="center" valign="top">
+           </td>
+        <td width="155" height="36" align="center" valign="top">
+           </td>
+        <td width="108" height="36" align="center" valign="top">
+           </td>
+      </tr>
+      </table>
+     </td>
+    <td width="184" height="610" valign="top" align="center" bgcolor="#FFFFEF">
+    
+  <table border="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#F6E6AA" width="60" height="133" bgcolor="#E3F7AA" cellpadding="3">
+      <tr>
+        <td width="180" bgcolor="#EDCF58" height="35">
+          <p align="center"><b><font face="Verdana" color="#000080">
+          Video-on-Demand</font></b></td>
+      </tr>
+      <tr>
+        <td width="180" height="81" bordercolor="#FFFFFF" valign="top" bgcolor="#E3F7AA">
+          <font size="1" face="Verdana">Watch addresses to the Council online whenever you want 
+          from our <a href="speech/indexes/2005-06%20index.htm">
+          speech archives</a> or from our <a href="http://www.la36.org/lawac/lawac.html">Web Channel</a> 
+          on LA36 </font></td>
+      </tr>
+      <tr>
+        <td width="180" bgcolor="#EDCF58" height="35">
+          <p align="center"><b><font face="Verdana" color="#000080">Cable 
+          Broadcasts</font></b></td>
+      </tr>
+      <tr>
+        <td width="180" bgcolor="#E3F7AA" height="78">
+          <align="left"><align="justify">
+          <p align="center">
+          <a href="http://www.la36.org/lawac/lawac.html">
+          <img border="0" src="pictures/home%20page/LA36-circle-for-our-web.gif" width="100" height="98"></a><p align="center">
+          <align="left"><align="justify">
+          <font color="#111111" face="Verdana" style="font-size: 8pt">LA36 
+          broadcasts Council events at the regular time of 8 p.m. each Monday 
+          night and at other times as listed.</font><align="left"><align="justify"><align="left"><align="justify"><align="left"><align="justify"><align="left"><align="justify"><p align="center">
+          <align="left"><align="justify">
+          <align="left"><align="justify">
+          <align="left"><align="justify">
+          <align="left"><align="justify"><align="left"><align="justify">
+          <align="left"><align="justify">
+          <a href="http://www.adelphiachannel.com">
+          <img border="0" src="pictures/home%20page/adelphia-for-our-web-site.gif" width="150" height="71">&nbsp;
+          </a>
+          <align="left"><align="justify">
+          <align="left"><align="justify">
+          <align="left"><align="justify"><align="left"><align="justify">
+          <align="left"><align="justify">
+          <align="left"><align="justify">
+          <align="left"><align="justify"><align="left"><align="justify">
+          <align="left"><align="justify">
+          <font face="Verdana" style="font-size: 8pt">For broadcasts on Adelphia 
+          cable, please check your local listings</font></p>
+          </td>
+      </tr>
+      <tr>
+        <td width="180" height="44" valign="top" bordercolor="#FFFFFF" bgcolor="#E3F7AA">
+         <p align="center" style="margin-top: 0; margin-bottom: 0">
+         &nbsp;</p>
+         <p align="center" style="margin-top: 0; margin-bottom: 0">
+         <font face="Verdana" size="1">Cable broadcasts made </font></p>
+         <p align="center" style="margin-top: 0; margin-bottom: 0">
+         <font face="Verdana" size="1">possible by</font></p>
+        </td>
+       </tr>
+      <tr>
+        <td width="180" height="11" bordercolor="#FFFFFF" valign="baseline" bgcolor="#E3F7AA">
+          <p align="center">
+          <img border="0" src="pictures/home%20page/northrop_grumman-for-our-we.gif" width="160" height="30"></td>
+     </tr>
+      <tr>
+        <td width="180" height="26" bordercolor="#FFFFFF" valign="baseline" bgcolor="#E3F7AA">
+          <p align="center">
+          <img border="0" src="pictures/home%20page/Boeing-for-our-web-site.gif" width="150" height="33"></td>
+     </tr>
+      <tr>
+        <td width="180" height="26" bordercolor="#FFFFFF" valign="baseline" bgcolor="#E3F7AA">
+          &nbsp;</td>
+     </tr>
+    </table><p style="margin-top: 0; margin-bottom: 0">
+     &nbsp;<table border="0" cellpadding="3" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="60%" height="226">
+    <tr>
+      <td width="100%" bgcolor="#EDCF58" height="33">
+          <p align="center"><b><font face="Verdana" color="#000080">Travel 
+          Program</font></b></td>
+    </tr>
+    <tr>
+      <td width="100%" height="31" bgcolor="#E3F7AA">
+    <font SIZE="2" face="Verdana">
+    <p class="MsoNormal" style="margin:0 8; ">
+    <font face="Verdana" size="1">
+    <a href="Travel%20program/travel%20program.htm">The Travel 
+    Program</a> offers members the chance to  learn of the world’s cultures and 
+    countries by experiencing them first-hand and hearing from guest lecturers.</font></p>
+    <p class="MsoNormal" style="margin:0 8; ">
+    <font face="Verdana" size="1">&nbsp;</font></p>
+    <p class="MsoNormal" style="margin:0 8; ">
+    <font face="Verdana" size="1">The Council partners with select travel agents 
+    that offer members trips to all parts of the globe at various times of the 
+    year.</font></p>
+      </font></td>
+    </tr>
+    <tr>
+      <td width="100%" height="1" bgcolor="#E3F7AA">
+      <p style="text-autospace: none; margin-top: 0; margin-bottom: 0" align="left">
+      <font face="Verdana" size="1">
+      <span style="font-family: OfficinaSans-Book">&nbsp;</span></font><a href="Travel%20program/travel%20program.htm"><img border="0" src="Travel%20program/pictures%20maps%20pdfs/med-06-sidebar.gif" width="150" height="154"></a></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" height="18" bgcolor="#E3F7AA">
+      <p align="center" style="margin-top: 0; margin-bottom: 0">
+      <font size="1" face="Verdana">The Council is pleased to offer a selection 
+      of thirteen different cruises to the
+      <a href="Travel%20program/travel%20program.htm">Mediterranean</a> this 
+      year</font></p>
+      <p align="center" style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="100%" height="18" bgcolor="#E3F7AA">
+      <font color="#000080" size="2" face="Verdana">
+      <a href="Travel%20program/china%2006.htm">
+      <img border="0" src="Travel%20program/pictures%20maps%20pdfs/china%20side-bar.gif" width="150" height="143"></a></font></td>
+    </tr>
+    <tr>
+      <td width="100%" height="18" bgcolor="#E3F7AA">
+      <p style="margin-top: 0; margin-bottom: 0" align="center">
+      <font size="1" face="Verdana">In September members are invited to visit
+      <a href="Travel%20program/china%2006.htm">China</a></font></p>
+      </td>
+    </tr>
+  </table>
+  <p>
+     &nbsp;</td>
+
+  </tr>
+  </table>
+
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" height="1">
+  <tr>
+    <td width="100%" height="1">
+    <!--webbot bot="HitCounter" u-custom i-image="3" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="_vti_bin/fpcount.exe/?Page=index.htm|Image=3" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="14269" endspan --></td>
+  </tr>
+</table>
+
+<!--msnavigation--></td></tr><!--msnavigation--></table></body>
+
+</html>

@@ -1,0 +1,397 @@
+<DOC>
+<DOCNO>f00361</DOCNO>
+<DOCHDR>http://www.paintercreativity.com/courses/panache-master.htmli</DOCHDR>
+<html><!-- InstanceBegin template="/Templates/Courses.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>&lt;panache-master&gt;</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style2 {
+	color: #990000;
+	font-weight: bold;
+}
+.style8 {
+	color: #3366CC;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style9 {font-family: Arial, Helvetica, sans-serif}
+.style1 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+.style11 {font-size: 11px}
+.style3 {color: #CC0000}
+.style12 {font-family: Arial, Helvetica, sans-serif; font-style: italic; }
+-->
+</style>
+<!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function P7_Snap() { //v2.62 by PVII
+  var x,y,ox,bx,oy,p,tx,a,b,k,d,da,e,el,args=P7_Snap.arguments;a=parseInt(a);
+  for (k=0; k<(args.length-3); k+=4)
+   if ((g=MM_findObj(args[k]))!=null) {
+    el=eval(MM_findObj(args[k+1]));
+    a=parseInt(args[k+2]);b=parseInt(args[k+3]);
+    x=0;y=0;ox=0;oy=0;p="";tx=1;da="document.all['"+args[k]+"']";
+    if(document.getElementById) {
+     d="document.getElementsByName('"+args[k]+"')[0]";
+     if(!eval(d)) {d="document.getElementById('"+args[k]+"')";if(!eval(d)) {d=da;}}
+    }else if(document.all) {d=da;} 
+    if (document.all || document.getElementById) {
+     while (tx==1) {p+=".offsetParent";
+      if(eval(d+p)) {x+=parseInt(eval(d+p+".offsetLeft"));y+=parseInt(eval(d+p+".offsetTop"));
+      }else{tx=0;}}
+     ox=parseInt(g.offsetLeft);oy=parseInt(g.offsetTop);var tw=x+ox+y+oy;
+     if(tw==0 || (navigator.appVersion.indexOf("MSIE 4")>-1 && navigator.appVersion.indexOf("Mac")>-1)) {
+      ox=0;oy=0;if(g.style.left){x=parseInt(g.style.left);y=parseInt(g.style.top);
+      }else{var w1=parseInt(el.style.width);bx=(a<0)?-5-w1:-10;
+      a=(Math.abs(a)<1000)?0:a;b=(Math.abs(b)<1000)?0:b;
+      x=document.body.scrollLeft + event.clientX + bx;
+      y=document.body.scrollTop + event.clientY;}}
+   }else if (document.layers) {x=g.x;y=g.y;var q0=document.layers,dd="";
+    for(var s=0;s<q0.length;s++) {dd='document.'+q0[s].name;
+     if(eval(dd+'.document.'+args[k])) {x+=eval(dd+'.left');y+=eval(dd+'.top');break;}}}
+   if(el) {e=(document.layers)?el:el.style;
+   var xx=parseInt(x+ox+a),yy=parseInt(y+oy+b);
+   if(navigator.appName=="Netscape" && parseInt(navigator.appVersion)>4){xx+="px";yy+="px";}
+   if(navigator.appVersion.indexOf("MSIE 5")>-1 && navigator.appVersion.indexOf("Mac")>-1){
+    xx+=parseInt(document.body.leftMargin);yy+=parseInt(document.body.topMargin);
+    xx+="px";yy+="px";}e.left=xx;e.top=yy;}}
+}
+
+function P7_autoLayers() { //v1.2 by PVII
+ var g,b,k,f,args=P7_autoLayers.arguments;
+ var a = parseInt(args[0]);if(isNaN(a))a=0;
+ if(!document.p7setc) {p7c=new Array();document.p7setc=true;
+  for (var u=0;u<10;u++) {p7c[u] = new Array();}}
+ for(k=0; k<p7c[a].length; k++) {
+  if((g=MM_findObj(p7c[a][k]))!=null) {
+   b=(document.layers)?g:g.style;b.visibility="hidden";}}
+ for(k=1; k<args.length; k++) {
+  if((g=MM_findObj(args[k])) != null) {
+   b=(document.layers)?g:g.style;b.visibility="visible";f=false;
+   for(j=0;j<p7c[a].length;j++) {
+    if(args[k]==p7c[a][j]) {f=true;}}
+  if(!f) {p7c[a][p7c[a].length++]=args[k];}}}
+}
+//-->
+</script>
+
+</head>
+<body bgcolor="#999999" background="../images/interface/grid_808080.gif" text="#333333" link="#CC3300" vlink="#CC6600" alink="#FF9900" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="P7_Snap('TopImage','Navigation',0,-40,'FooterAnchor','NavigationFooter',0,10);P7_autoLayers(0,'Navigation','NavigationFooter')" onResize="P7_Snap('TopImage','Navigation',0,-40,'FooterAnchor','NavigationFooter',0,10);P7_autoLayers(0,'Navigation','NavigationFooter')">
+<table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="6" valign="top" bgcolor="#FFFFFF" class="TableRightLeft"><img src="../images/pcheader-courses.jpg" width="720" height="170"></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFFF">
+    <td width="20" class="TableLeft"><img src="../images/interface/spacer.gif" width="20" height="10"></td>
+    <td colspan="3" align="center"  bgcolor="#FFFFFF"><div id="Navigation" style="position:absolute; width:600px; height:40px; z-index:1; visibility: hidden;">
+<table border="0" align="center" cellpadding="2" cellspacing="3">
+   <tr valign="middle">
+    <td width="120" nowrap><a href="/articles/index.html" class="nav">articles & tutorials</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td><a href="/gallery/index.html" class="nav">gallery</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td><a href="/store/index.html" class="navOn">shop</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td><a href="/courses/index.html" class="nav">courses</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td><a href="/downloads/index.html" class="nav">downloads</a></td>
+    <td>&nbsp;&nbsp;</td>          
+    <td><a href="/links/index.html" class="nav">links</a></td>    
+	<td>&nbsp;&nbsp;</td>   
+    <td><a href="mailto:jeremy@paintercreativity.com" class="nav">contact</a></td>    
+	<td>&nbsp;&nbsp;</td>          
+    <td><a href="/index.html" class="nav">home</a></td>
+   </tr>
+</table>
+
+ </div>
+<img src="../images/interface/spacer.gif" width="620" height="2" name="TopImage" id="TopImage">
+	</td>
+    <td width="15" class="TableRight"><img src="../images/interface/spacer.gif" width="15" height="10"></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFFF">
+    <td class="TableLeft">&nbsp;</td>
+    <td width="500">
+	<img src="../images/interface/spacer.gif" width="498" height="1"><br>
+      <!-- InstanceBeginEditable name="Content" --> 
+      <h2 class="style9" style="margin-bottom: 0"><span class="style2">Painter Panache Master Seminars </span><em><br>
+        San Francisco </em></h2>
+      <h2 class="style8" style="margin-top: 0;">Feb. 19 - 22, 2007, &quot;Going for it with Color!&quot;<br>
+  Mar. 19 - 22, 2007, &quot;Painting Beyond the Digital Canvas&quot; (Pino Group) <br>
+  April 2 - 5, 2007, &quot;Exploring Styles &amp; Variations&quot; (PA Ladies et al) </h2>
+      <p class="style9"><a href="panache-master-reg.html">Registration 
+        Form.</a></p>
+      <p align="center" class="style9"><img src="images/momentintime-detail400.jpg" width="400" height="310"> 
+      </p>
+      <h2 class="style9">A Great Opportunity to Deepen 
+        Your Artistry </h2>
+      <p class="style9"> The Master Series Classes are 
+        designed for the experienced Painter user who is serious about further 
+        developing both their artistic and technical skills in Painter. Although 
+        the basis of many class projects is working from photographs, the principles 
+        discussed apply to all art, whether photo-based or not. This class is 
+        aimed at professional creatives from all fields, including photography, 
+        illustration and fine art. The classes are exciting, intensive, stimulating 
+        and challenging. The classes are part of an on-going program of annual 
+        Master level development. Each year there is a different theme. Between 
+        classes students keep in touch with each other via the Master Forum, an 
+        online community specially created for this purpose. 
+      <p class="style9">The picture shown above is a 
+        detail from Jeremy's <a href="http://jeremysutton.com/momentintime.html">Moment 
+        in Time</a>. 
+<h3 class="style9" style="margin-bottom: 0;">Class Themes</h3>
+      <p class="style9" style="margin-top: 0;">At the Master level each class involves some structured tutiion as well as time working with students on an individual level, helping them achieve their specific Painter-related goals. The themes provide a framework from which to structure the classes whilst still allowing each class to be adapted to the students needs and interests.</p>
+      <p class="style9">The &quot;Going for it with Color!&quot; class is a good starting point for those joining the master program for the first time, or for those who feel they'd like to immerse themselves in color and go beyond the color in their photographs. It is a week of working with, and understanding, the role of color in your imagery. One student who took this class, Linda Huddle Martin of Lancaster, PA, subsequently wrote to me:</p>
+<p class="style12">&quot;Hi Jeremy,</p>
+<p><em>Just wanted to let you know that since our class this year, every Painter image I have sold, and it has been about 12, I have done 2 versions, one the way I was doing them last year and one with more color added. In every single case my client has chosen the one with more color in them. I would never have predicted that.&nbsp;</em></p>
+<p><em>Regards,</em></p>
+      <p><em>Linda Huddle Martin&quot;</em></p>
+      <p class="style9">The &quot;Painting, Collage &amp; Beyond&quot; class will look at ways of capturing the essence of our subjects through use of painting, layering, and introducing collage elements into your work. We will also look at ways to paint on the canvas, seamlesslessly integrating analog brushwork and texture onto the digital print. </p>
+      <p class="style9" style="margin-bottom: 0;">
+<p class="style9" style="margin-top: 0;">The &quot;Exploring Styles &amp; Techniques&quot; class will developing your artistry and style through learning from other artists and styles. This will be an opportunity for students to stretch themselves in new directions, and further developing their mastery of the medium. 
+<p class="style9"><h3 style="margin-bottom: 0;">Photo Shoot in Beautiful San Francisco Mansion </h3>
+<p class="style9" style="margin-top: 0;">All Master Classes will include a photo shoot, with models, at <a href="http://www.cheneryhouse.com/">Chenery House</a>, the beautiful San Francisco mansion of Robert Pritikin which features a phenomenal collection of art and a spectacular sculpture garden. Weather allowing, we will shoot scenes in the grounds with the mansion in the background. The photo shoot will provide unique and atmospheric material for paintings that you can work on in class time. 
+<h3>Only in  San Francisco Photo Shoot</h3>
+<p class="style9">All Master Classes will offer an &quot;only in San Francisco&quot; photo shoot experience, which may be a Golden Gate Bridge view, the cityscape from Treasure Island, the Palace of Fine Arts or a cable car. This shoot will also provide unique and inspiring material for working on in Painter. 
+<p class="style9">
+<p class="style9"><h3 style="margin-bottom: 0;">Inspirational Field Trips
+</h3>
+<p class="style9" style="margin-top: 0;">Master Classes  may include inspirational field trips to local art galleries and museums, where the exhibitions are relevant to the class theme. <h3 style="margin-bottom: 0;">What You'll Take Home</h3>
+<ul style="margin-top: 0;">
+  <li>A beautiful canvas print (approximately 38&quot; in max direction) of a painting you create during the workshop.</li>
+  <li>Seminar binder with notes, resources and reference material. </li>
+  <li>An unforgettable educational and inspiring experience that will bring you pleasure for years to come...</li>
+</ul>
+<h3 class="style9">Structured Hands-on Learning 
+      </h3>
+      <p class="style9">The classes include technical 
+        updates, artistic exercises, a review of material, class critiques, technique 
+        demonstrations, and hands-on project assignments. 
+      <h3 class="style9">Small Class Size</h3>
+      <p class="style9">Small class sizes (no more than twelve) ensure a high 
+        level of personal attention. </p>
+      <p class="style9" style="margin-bottom: 0;"><img src="images/panachemastergroup03-09.jpg" width="450" height="304"> 
+<p class="style9" style="margin-top: 0;">A 2003 Painter Panache Master Series Class (on a rare break from their computers!)
+<p class="style9" style="margin-bottom: 0;"><img src="http://paintercreativity.com/courses/images/masterclasscolor-tadaa-mrch06-400.jpg" width="400" height="267"> 
+<p class="style9" style="margin-top: 0;">A 2006 Master Class after a hearty lunch at the Atlas Cafe.      
+<h3 class="style9">Intermediate to Advanced Level        </h3>
+      <p class="style9">This is a class aimed at people 
+        who are already familiar with Painter and are using it as a regular part 
+        of their creative work. A requirement for this class is to have completed 
+        a Painter Panache Intro Class and/or by portfolio review by Jeremy. You 
+        should also have worked through Jeremy's DVD set <a href="../store/painterIXsimplified.html">Painter 
+        IX Simplified for Photographers</a> and have his new book <a href="../store/painterIXcreativity.html">Painter 
+        IX Creativity: Digital Artist's Handbook</a>. If you are interested please 
+        email Jeremy some sample Painter images or a reference to a web site where 
+        he can view your Painter work. 
+      <h3 class="style9">Master Forum Membership</h3>
+      <p class="style9">Included as part of the Painter 
+        Panache Master Series Class is membership of the <a href="masterforum.html">Master 
+        Forum</a> online community. This is a discussion group which allows students 
+        to keep in touch with each other and continue their skills development.</p>
+<h2 class="style9">Venue</h2>
+<h4 class="style9" style="margin-bottom: 0;">Sutton Studios &amp; Gallery </h4>
+<p style="margin-top: 0;">Nestled in the heart of San Francisco's vibrant historic Mission Distric<span class="style1">t amidst a community of artists, architects, film makers and vintners, </span>Sutton Studios &amp; Gallery is a beautiful custom-designed 1,200 square foot multi-media facility with 13' ceilings, comfortable fully-adjustable ergonomic chairs, 10' wide projection screen, high fidelity sound system, wide format ink-jet printer, refreshment area, library corner and exhibition space. Enjoy learning in an atmospheric, creative environment surrounded by Jeremy's lively paintings (see photos from the <a href="http://www.jeremysutton.com/exhibitions-06-01-artsoiree.html">Grand Opening Art Soire&eacute;</a>). </p>
+<p style="margin-bottom: 0;"><img src="http://paintercreativity.com/courses/images/roomview400.jpg" width="400" height="294"></p>
+<p style="margin-top: 0;">Enjoy the comfortable creative environment of Sutton Studios &amp; Gallery.</p>
+<p style="margin-bottom: 0;"><img src="http://paintercreativity.com/courses/images/introclassfeb2006-roomview400.jpg" width="400" height="267"> </p>
+<p style="margin-top: 0;">Surrounded by art... </p>
+<p style="margin-bottom: 0;"><img src="http://paintercreativity.com/courses/images/mstrseriesmar06-lookingfrmgallery400.jpg" width="400" height="300"></p>
+<p style="margin-top: 0;">View from the studio door (Photo: Sam Gray) </p>
+<p style="margin-bottom: 0;"><img src="http://paintercreativity.com/courses/images/introclassfeb2006-ontheroof400.jpg" width="400" height="267"></p>
+<p style="margin-top: 0;">After a day of painting...sipping wine on the roof. </p>
+<p>Sutton Studios &amp; Gallery<br>
+  <GEO TYPE="US">1890 Bryant Street #306 (at Mariposa Street) <br>
+  San Francisco, CA 94110</GEO><br>
+  Phone 415.641.1221<br>
+  Fax 415.641.1648 </p>
+<ul>
+  <li>If driving from East Bay take 9th Street/Civic Center exit, keep in middle lane and follow Harrison Street to Mariposa, turn left on Mariposa and Bryant is three blocks up.</li>
+  <li>From the South Bay take Vermont Street exit off 101, left on Vermont, left on 17th, left on Bryant. The studio is on the right.</li>
+  <li>From the north take Golden gate Bridge to Lombard, then turn right on Van Ness. Follow Van Ness across Market until it becomes South Van Ness. Turn left on 17th, right on Bryant, studio is on the right.</li>
+  <li><a href="http://www.mapquest.com/maps/map.adp?country=US&countryid=250&addtohistory=&searchtab=address&searchtype=address&address=1890+Bryant+St&city=San+Francisco&state=CA&zipcode=94110-1407&search=++Search++&finditform=1">Click here for map and MapQuest directions.</a> </li>
+</ul>
+<p>The Studio is on the third floor of an industrial style building, adjacent to excellent cafes and restaurants and is ten to fifteen minutes from the city center. There is a freight elevator if needed. Please call the Studio at 415-641-1221 for assistance with the elevator if you need to use it. All facilities are wheel chair accessible. Unfortunately parking is not so easy on weekday mornings. Allow extra time to find street parking. Do not leave any valuables or bags on show in your car (a recommended precaution where ever you park in San Francisco).</p>
+<p style="margin-bottom: 0;">&nbsp;</p>
+<h2 class="style9" style="margin-top: 0; margin-bottom: 0;">Accommodation&mdash;Hotel Rex</h2>
+<p style="margin-top: 0; margin-bottom: 0;"><img src="http://paintercreativity.com/courses/images/hotellobby400_000.jpg"></p>
+<p style="margin-top: 0;"><span class="style9">If you're visiting from out of town I recommend you stay at the <a href="http://www.jdvhospitality.com/hotels/hotel/13">Hotel Rex</a> (the cosy lobby bar is shown above), a wonderful boutique historic hotel (it opened its doors in 1907) filled with beautiful original artwork, just one block from Union Square. I've toured the hotel, met the staff and checked out the rooms and facilities. If I didn't already live in the city I'd stay there myself! I have negotiated special room rates for my students:</span></p>
+<table width="428" border="0">
+  <tr valign="top">
+    <td width="112" height="38">Room Type </td>
+    <td width="42">&nbsp;</td>
+    <td width="83">Regular &quot;Rack&quot; Rate </td>
+    <td width="33">&nbsp;</td>
+    <td width="136">Jeremy Sutton Group Preferred Rate </td>
+  </tr>
+  <tr valign="top">
+    <td><span class="style11"></span></td>
+    <td><span class="style11"></span></td>
+    <td><span class="style11"></span></td>
+    <td><span class="style11"></span></td>
+    <td><span class="style11"></span></td>
+  </tr>
+  <tr valign="top">
+    <td>Queen Deluxe</td>
+    <td>&nbsp;</td>
+    <td>$249</td>
+    <td>&nbsp;</td>
+    <td><strong>$140</strong></td>
+  </tr>
+  <tr valign="top">
+    <td height="20">Two Doubles </td>
+    <td>&nbsp;</td>
+    <td>$269</td>
+    <td>&nbsp;</td>
+    <td><strong>$160</strong></td>
+  </tr>
+</table>
+<p> These special rates are <span class="style9">subject to availability, are valid until May 2007, and exclude hotel taxes. To book call 1-800-433-4434 and request the Jeremy Sutton Group preferred rate, or book at their <a href="http://www.jdvhospitality.com/hotels/hotel/13">web site</a> using promo code JERSUT. Book as soon as you can to ensure you get a room at that rate. The special room rate they are offering is better than you'll get by going through Expedia.com. The Hotel Rex is a ten minute taxi cab ride from the Sutton Studios &amp; Gallery. The Hotel offers wireless internet, complimentary wine for all guests each early evening in the atmospheric bar, complimentary <em>New York Times</em>, and a reduced daily membership at the <a href="http://www.clubone.com/?action=cl1pub_club_home&ClubID=47">Club One</a> fitness center. The hotel is in the heart of the theater and art gallery district of the city, within minutes of many excellent cafes and restaurants, one block from Union Square, the Powell Street Cable Car line and the downtown shopping district, and around the corner from my favorite Thursday night swing dance venue, <a href="http://www.lecolonialsf.com">Le Colonial</a>. </span></p>
+<h2 class="style9">Fees, Requirements &amp; Registration 
+      </h2>
+      <p class="style9">The course fee is $1,200. <span class="style3"> </span>To register, 
+        complete and send in the <a href="panache-master-reg.html">Registration 
+        Form.</a> 
+      <p class="style9">Students are responsible for 
+        their own travel, lodgings and meals. Students should bring their own 
+        computers, either Mac or Windows, either laptop or desktop, equipped with 
+        the latest version of Corel Painter and a tablet (I recommend the Wacom 
+        Intuos2 6x8). I highly recommend you have the latest version of your computer 
+        operating system, either Mac OS X or Windows 2000 or XP. Your computer 
+        should have enough RAM to run the software (128MB RAM minimum recommended), 
+        enough hard drive space to save project files generated during the week 
+        (12 GB hard drive or larger recommended - new high capacity external hard 
+        drives are excellent) and, ideally, a CD writer for backing up your files. 
+        The classroom is kept secure at all all times. 
+      <p class="style9">Besides bringing your computer and files to work on, you are encouraged to bring samples of your own work (digital and non-digital) to share with the class and inspiring books for the library (just make sure your name is clearly written in the books). 
+<h2 class="style9" style="margin-bottom: 0;">Class Hours</h2>
+<p class="style9" style="margin-top: 0; margin-bottom: 0;">Instruction hours 10am - 5pm
+<p class="style9" style="margin-top: 0;">Arrangements will be made for students who wish to have after-hours access to the classroom.       
+      <p class="style9" style="margin-bottom: 0;">
+      <p class="style9" style="margin-top: 0;">If you are flying it is recommended that you arrive on the Sunday and stay until the following Saturday. Naturally it is highly recommended that you also include at least one full weekend to enjoy the beautiful city of San Francisco and it's surroundings.
+      <h2 class="style9" style="margin-bottom: 0;">Restaurants (San Francisco) </h2>
+      <p class="style9" style="margin-top: 0; margin-bottom: 0;">San Francisco is a &quot;foodie&quot; city. You'll be spoilt for choice at all ends of the spectrum. A useful guide to restaurants is found at <a href="http://www.sfgate.com/">SFGate.com</a> or the <a href="http://www.kinggeorge.com/restaurants_print.htm">King George Hotel Restaurant Guide</a>. Some of my personal favorites are: </p>
+      <ul class="style9" style="margin-top: 0;">
+        <li><span style="font-style: italic"><strong>Chutney Restaurant</strong></span> - 511 Jones St (cross street Geary), San Francisco, 94102 - (415) 931-5541 - very casual, inexpensive, no thrills Indian</li>
+        <li><em><strong>Max's</strong></em>, 398 Geary Street (cross street Mason), San Francisco, CA 94102 - (415) 646-8600 - Matzah ball soup that's a meal in itself</li>
+        <li><strong><em><a href="http://www.cafeclaude.com">Cafe Claude</a></em></strong> - 425 Bush St # 444 (near Grant and Kearney), San Francisco, 94108 - (415) 392-3505 - French cafe style</li>
+        <li><span style="font-style: italic"><strong><a href="http://www.frjtzfries.com/information.htm">Fritz</a></strong></span> - 579 Hayes St (between Laguna and Octavia), San Francisco, CA 94102 - (415) 864-7654 - great crepes and Belgium fries</li>
+        <li><em><strong><a href="http://www.restaurantlulu.com/restaurants.html">LuLu's</a></strong></em> - 816 Folsom St. (cross street 4th) San Francisco, CA 94107 - (415) 495.5775 - medium to high prices but good food and atmosphere.</li>
+        <li><strong><em><a href="http://www.chezspencer.net">Chez Spencer</a></em></strong> - 82 14th St. (at Folsom), San Francisco, CA 94103 - (415) 864-2191 - great French restaurant tucked away, on pricey side but worth it </li>
+        <li><strong><em><a href="http://www.slowclub.com">Slow Club</a></em></strong> - 2501 Mariposa St. (at Hampshire), San Francisco, CA 94110 - (415) 241-9390 - great food, can be a little noisy</li>
+        <li><a href="http://www.stepsofrome.com"><strong><em>Steps of Rome Caffe</em></strong></a>, 348 Columbus - best tiramasu! </li>
+      </ul>
+      <h2 class="style9" style="margin-bottom: 0;">Great Places to Visit (and Photograph) in San Francisco </h2>
+      <p class="style9" style="margin-top: 0; margin-bottom: 0;">If you're visiting San Francisco from out of town I highly recommend you arrive in San Francisco at least the Saturday before class and give yourself the weekend to enjoy this beautiful city and its surrounds, and capture imagery that you can use in class. Here are some places to visit:</p>
+      <p class="style9" style="margin-top: 0; margin-bottom: 0;"><a href="http://www.ferrybuildingmarketplace.com/">Farmers Maket, Ferry Building (Saturday mornings) </a></p>
+      <p class="style9" style="margin-top: 0; margin-bottom: 0;"><a href="http://www.thinker.org/legion/index.asp">Legion of Honor Museum</a></p>
+      <p class="style9" style="margin-top: 0; margin-bottom: 0;">Baker Beach</p>
+      <p class="style9" style="margin-top: 0; margin-bottom: 0;"><a href="http://www.cliffhouse.com">Cliff House</a> (sunset over ocean) </p>
+      <p class="style9" style="margin-top: 0; margin-bottom: 0;"><a href="http://www.lindyinthepark.com">Lindy in the Park</a> (Sunday mornings) </p>
+      <p class="style9" style="margin-top: 0; margin-bottom: 0;"><a href="http://www.thinker.org/deyoung/index.asp">de Young Museum</a> </p>
+      <p class="style9" style="margin-top: 0; margin-bottom: 0;"><a href="http://www.conservatoryofflowers.org">Conservatory of Flowers </a></p>
+      <p class="style9" style="margin-top: 0;"><a href="http://www.palaceoffinearts.org">Palace of Fine Arts</a> (night time lighting) </p>
+      <p class="style9">&nbsp;</p>
+<p class="style9">&nbsp;</p>
+<p class="style9">&nbsp;</p>
+      <!-- InstanceEndEditable --> 
+      <p>&nbsp;</p></td>
+    <td width="20"><img src="../images/interface/spacer.gif" width="20" height="10"></td>
+    <td width="150"><img src="../images/interface/spacer.gif"  width="150" height="36" border="0"><br clear="all">
+	 
+<p class="SidebarboxMenuTitle" style="margin-bottom: 0">Courses Menu </p>
+<p style="margin-top: 0; margin-bottom: 0;"><a href="/courses/index.html"><br>
+  </a><a href="../courses/paintercreativityseminars.html">Painter Creativity Seminars</a><br>
+  <a href="../courses/panache-master.html">Painter Panache Master Seminars</a></p>
+<p style="margin-top: 0;"><a href="../courses/collage.html">Collage! Workshops</a> <br>
+  <a href="../courses/masterforum.html">Master Forum</a></p>
+
+      <!-- InstanceBeginEditable name="SidebarText" --> 
+      <p class="SidebarBoxBlue"><img src="images/PPA-CESlogo100_002.jpg" width="100" height="105"><br>
+        PPA members will earn one merit for attending this course.</p>
+      <p class="SidebarBoxBlue"><a href="http://list.paintercreativity.com/cgi-bin/lyris.pl?enter=masterforum"><img src="images/masterforumicon-100.jpg" width="100" height="60" border="0"><br>
+        </a>Learn more about the<br>
+        <a href="../courses/masterforum.html">Master Forum</a>.</p>
+      <p class="SidebarBoxBlue">You are effervescent! Your enthusiasm is contagious. 
+        You allow learning and experimenting to happen without fear or constraints.<br>
+        <em>Harvey Henningsen, Painter Panach&eacute; 2003 Alumnus </em></p>
+      <p class="SidebarBoxBlue">Thank you for a learning experience I can use 
+        for life. <br>
+        <em>Al Buschauer, Painter Panach&eacute; 2003 Alumnus </em></p>
+      <p class="SidebarBoxBlue">Absolutely fantastic and wonderful and awesome 
+        and great.<br>
+        <em>Peg Jackson, Painter Panache 2002 Alumnus </em></p>
+      <p class="SidebarBoxBlue">Exceeded my expectations. There were lots of ideas 
+        about how to find your creativity, without being hokey.<br>
+        <em>Kay Simon, Painter Panache 2002 Alumnus </em></p>
+      <p class="SidebarBoxBlue">Excellent teaching and presentation! Well organized 
+        and clean. It exceeded my expectations because Jeremy is so in tune and 
+        in touch with his students.<br>
+        <em>Lorraine Headrick, Painter Panache 2002 Alumnus </em><br>
+      </p>
+      <!-- InstanceEndEditable --></td>
+    <td class="TableRight">&nbsp;</td>
+  </tr>
+    <tr bgcolor="#FFFFFF">
+    <td bgcolor="#FFFFFF" class="TableLeft">&nbsp;</td>
+    <td bgcolor="#FFFFFF" align="center" colspan="3">&nbsp;
+	<div id="NavigationFooter" style="position:absolute; width:600px; height:40px; z-index:1; visibility: hidden;">
+	
+<table border="0" align="center" cellpadding="2" cellspacing="3">
+   <tr valign="middle">
+    <td width="120" nowrap><a href="/articles/index.html" class="nav">articles & tutorials</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td><a href="/gallery/index.html" class="nav">gallery</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td><a href="/store/index.html" class="navOn">shop</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td><a href="/courses/index.html" class="nav">courses</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td><a href="/downloads/index.html" class="nav">downloads</a></td>
+    <td>&nbsp;&nbsp;</td>          
+    <td><a href="/links/index.html" class="nav">links</a></td>    
+	<td>&nbsp;&nbsp;</td>   
+    <td><a href="mailto:jeremy@paintercreativity.com" class="nav">contact</a></td>    
+	<td>&nbsp;&nbsp;</td>          
+    <td><a href="/index.html" class="nav">home</a></td>
+   </tr>
+</table>
+
+ </div>
+<img src="../images/interface/spacer.gif" width="620" height="30" name="FooterAnchor" id="FooterAnchor"></td>
+    <td bgcolor="#FFFFFF" class="TableRight">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td class="TableBottomLeft">&nbsp;</td>
+    <td colspan="3" class="TableBottom"><div align="center" class="Footer">paintercreativity.com</div>
+    </td>
+    <td class="TableBottomRight">&nbsp;</td>
+  </tr>
+</table>
+<p style="margin-bottom: 0;">&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>

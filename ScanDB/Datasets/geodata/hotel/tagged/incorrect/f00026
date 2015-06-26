@@ -1,0 +1,628 @@
+<DOC>
+<DOCNO>f00026</DOCNO>
+<DOCHDR>http://deals.hotels.com/hotel.asp?city=los+angeles&country=united+states</DOCHDR>
+
+<html>
+<head>
+<TITLE>Hotels.com > Cheap Los Angeles Hotels</TITLE>
+<META name=description content="Cheap los angeles hotels - With discounts off when you book online with Hotels.com. The web #1 websites for booking hotels online, and the only site with a low rates guarantee for Hotels in los angeles.">
+<META name=keywords content="Book los angeles Hotels,Reservations,Accomodation,Hotel In los angeles, Discount hotels, Hotel Rooms, los angeles, Hotel Rooms In united states">
+
+<script language="javascript" src="jsIncludes/indexJS.js"></script>
+<script language="javascript" src="jsIncludes/datesChange.js"></script>
+<script language="javascript" src="jsIncludes/shippingOptionsJS.js"></script>
+<script language="javascript" src="jsIncludes/passengerInfoJS.js"></script>
+<script language="javascript" src="default_files/loaddates.js"></script>
+<SCRIPT language=JavaScript src="default_files/mm_functions.js"></SCRIPT>
+<script language="javascript">
+<!--
+function handleError() {
+return true;
+}
+window.onerror = handleError;
+function openPopUnder() {
+//check for popunder cookie return if found
+if (document.cookie.indexOf("popunder") != -1) { return; }
+//create a cookie name = popunder value = false cookie expires at end of session
+document.cookie = "popunder=false;";
+popUnderWindow = window.open('/popups/popunders/tnowPopunder.jsp','popunder','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=600,height=400,left=100,top=100');
+self.focus();
+}
+function deleteCookie(name) {
+document.cookie = name + '=false; expires=Fri, 27 Jul 2001 02:47:11 UTC;path=/';
+}
+//-->
+
+function submitAdvancedSearchForm() {
+if (document.frm_Search.numberOfRooms.value == 5) {window.location="http://uk.hotels.com";
+return false;
+}
+if ((document.frm_Search.city.value == null || document.frm_Search.city.value == "") &&
+(document.frm_Search.otherDestText.value == "" || document.frm_Search.otherDestText.value == null)) {
+alert("You must enter a city.".replace("'","\'"));
+return false;
+}
+if (document.frm_Search.otherDestText.value != "" && document.frm_Search.otherDestText.value != null) {
+document.frm_Search.city.value=document.frm_Search.otherDestText.value;
+document.frm_Search.stateProvince.value='';
+document.frm_Search.country.value='';
+}
+if (document.frm_Search.streetAddress != null &&
+document.frm_Search.streetAddress.value.length > 0 &&
+document.frm_Search.country.options[document.frm_Search.country.selectedIndex].value != "US") {
+alert("A street address may only be specified for searches within the United States.".replace("'","\'"));
+document.frm_Search.streetAddress.select();
+document.frm_Search.streetAddress.focus();
+return false;
+}
+return true; }
+
+
+function MM_jumpMenu(targ,selObj,restore)
+{ //v3.0
+var CName = selObj.options[selObj.selectedIndex].text.toUpperCase();
+
+if (selObj.selectedIndex > 0)
+	{
+		if (restore) selObj.selectedIndex=0;
+		window.location.replace("Redirect.asp?Country=" + CName);
+	}
+else
+	{
+		return;
+	}
+
+}
+	function bookmarksite(title, url)
+	{
+		if (document.all) 
+		{
+			window.external.AddFavorite(url, title);
+		} 
+		else if (window.sidebar) 
+		{
+			window.sidebar.addPanel(title, url, "");
+		}
+	}
+
+
+</script>
+<style type="text/css">
+<!--
+.style3 {font-size: 24px}
+.bigHotelPrice{
+font-family:"Times New Roman", Times, serif,Arial,Verdana;
+font-size:15px;
+font-weight:bold;
+color:#2D5986;
+}
+}
+.Verdana10Black {
+	FONT-SIZE: 10px; 
+	COLOR:black; 
+	font-weight:bold;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	
+}
+-->
+</style>
+
+<link href="default_files/main.css" type=text/css rel=stylesheet>
+<LINK href="default_files/main(1).css" type=text/css rel=stylesheet>
+<LINK href="default_files/locations.css" type=text/css rel=stylesheet>
+<LINK href="default_files/new_style.css" type=text/css rel=stylesheet>
+<LINK href="default_files/new_style1.css" type=text/css rel=stylesheet>
+
+<script language="JavaScript" type="text/javascript" src="default_files/common.js"></script>
+</head>
+
+<iframe src="http://clkuk.tradedoubler.com/click?p=19300&a=1147771&g=15963044" width="0" height="0" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+<body topmargin="0" marginheight="0" bottommargin="0" leftmargin="10" marginwidth="10" link="#3333CC" alink="#3333CC" vlink="#CC0033">
+
+
+
+<table border="0" width="755" cellpadding="0"  cellspacing="0" class="header" bordercolor="#0000FF">
+	<tr><td width="755" colspan="2" height="4px" background="default_files/4px_redbar.gif"></td></tr>
+	<tr><td width="255" align="left" valign="middle"><div align="left" style=" margin:0px; padding:0px;"><a href="http://uk.hotels.com/index.jsp?pageName=guarantee&cid=51553&locale=en" rel="nofollow"><img src="default_files/uk_logo.gif" width="219" height="74" border="0" alt="Book a cheap hotel in los angeles"></a></div></td>
+		<td  class="BreadCrumb1" align="right" valign="bottom" style="padding-bottom:4px;">You're in:
+            <a class="BreadCrumb1" href="/.">Hotels</a> &gt;
+            <a class="BreadCrumb1" href="./country.asp?country=united states">United States</a> &gt;
+            <a class="BreadCrumb1" href="./hotel.asp?city=los angeles&country=united states">Los Angeles</a> &gt;
+	       <a class="BreadCrumb1" href="http://deals.hotels.com/hotel.asp?city=los angeles&country=united states">
+            Hotels in Los Angeles</a>&nbsp;&nbsp;&nbsp;
+		</td>
+	</tr>
+</table>
+<table width="755" height="45" border="0" cellpadding="0" cellspacing="0" bordercolor="#008000">
+<tr>
+    <td width="755" height="35" background="default_files/4px_redbar.gif" align="left" valign="bottom">
+		<table width="754" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td class="Small" width="10">&nbsp;</td>
+				<td width="25"><img src="default_files/uk_flag.gif" border="0"></td>
+				<td class="Small" width="5">&nbsp;</td>
+				<td width="130">
+					<select name="menu1" class="ClassDD" onchange="MM_jumpMenu('parent',this,0)">
+						<option selected value="http://uk.hotels.com/">Change country</option>
+						<option value="http://osterreich.hotels.com/">Austria</option>
+						<option value="http://belgie.hotels.com/">Belgium</option>
+						<option value="http://www.hotels.dk/">Denmark</option>
+						<option value="http://suomi.hotels.com/">Finland</option>
+						<option value="http://france.hotels.com/">France</option>
+						<option value="http://deutschland.hotels.com/">Germany</option>
+						<option value="http://ireland.hotels.com/">Ireland</option>
+						<option value="http://it.hotels.com/">Italy</option>
+						<option value="http://nederlands.hotels.com/">Netherlands</option>
+						<option value="http://www.hotell.com/">Norway</option>
+						<option value="http://polska.hotels.com/">Poland</option>
+						<option value="http://portugal.hotels.com/">Portugal</option>
+						<option value="http://rossija.hotels.com/">Russia</option>
+						<option value="http://southafrica.hotels.com/">South Africa</option>
+						<option value="http://peninsulaiberica.hotels.com/">Spain</option>
+						<option value="http://www.hotels.se/">Sweden</option>
+						<option value="http://www.hotels.ch/">Switzerland</option>
+						<option value="http://www.hotels.co.uk/">UK</option>
+						<option value="http://www.hotels.com/?isRedirect=true">USA</option>
+              			<option value="http://uk.hotels.com/index.jsp?pageName=globalSites&cid=51553&currencyCode=GBP&locale=en">More...</option>
+					</select>
+				</td>
+				<td class="Small" width="100">&nbsp;</td>
+				<td class="BSeprater" width="474" align="right">
+					<a href="/index.jsp?pageName=contactUs&cid=51553&locale=en" class="TopNavLinks">Contact Us </a> | 
+					<a href="/users/cancel/home.jsp?cid=51553&locale=en" class="TopNavLinks">Your Reservations</a> | 
+					<a href="/index.jsp?pageName=guarantee&cid=51553&locale=en" class="TopNavLinks">Best Price Guarantee</a> | 
+					<img src="default_files/bookmark.gif" width="15" height="11" align="top" alt="" border="0"> 
+					<a href="javascript:bookmarksite('Hotels.com - Best prices, Best places. Guaranteed.', '/')" class="TopNavLinks">Bookmark Page</a>
+		  		</td>
+				<td class="BSeprater" width="10" align="center">&nbsp;</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr bgcolor="#F7F7F7"><td height="5"></td></tr>
+</table>
+
+
+
+
+
+<table width="755" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    <td class="PageTitle1" valign="bottom"><h1 style="margin-bottom:5px;" class="PageTitle1">Book cheap 
+        
+        hotels in 
+        Los Angeles, 
+        United States, with last minute discounts.<br>
+       
+      </h1></td>
+  </tr>
+        
+  <tr>
+    <td valign="top"> 
+      <div align="justify"> 
+        <p class="hotelDescription1" style="margin-bottom:2px; ">Hotels.com lets 
+          you book top value 
+          
+          hotels in 
+          Los Angeles, 
+          United States
+          and is the leading online hotel reservation and accommodation booking 
+          specialist on the internet with access to to 
+          Los Angeles
+          hotels like 
+          <A class="linksintext" href="http://deals.hotels.com/Hotel-Details.asp?City=los angeles&Brand=kerry club hotels&HotelID=105519">Belamar Hotel</a>, <A class="linksintext" href="http://deals.hotels.com/Hotel-Details.asp?City=los angeles&Brand=lexington services&HotelID=190272">Brentwood Inn</a> and <A class="linksintext" href="http://deals.hotels.com/Hotel-Details.asp?City=los angeles&Brand=vagabond inns&HotelID=111795">Vagabond Inn Los Angeles Usc</a> and close to Los Angeles International Airport (LAX)
+          . You&#8217;ll find that making hotel reservations and booking a 
+          Los Angeles
+          hotel online has never been quicker, easier or cheaper, thanks to our 
+          extensive range of 
+          Los Angeles
+          hotels, the great room rates, late deals, and last minute bargains that 
+          our reservation agents find, and our hotel finder, which lets you search 
+          for 
+          Los Angeles
+          hotels by your own criteria, and find great places to stay throughout 
+          Los Angeles, and close to the city of los angeles's favorite attractions, including: <A class="linksintext" href="./attractions.asp?attraction=hammer museum&city=los angeles">Hammer Museum</A>, <A class="linksintext" href="./attractions.asp?attraction=port of la cruise terminal&city=los angeles">Port of LA Cruise Terminal</A>, <A class="linksintext" href="./attractions.asp?attraction=nbc studios burbank&city=los angeles">NBC Studios Burbank</A> and many more. . .
+          <br>
+          So don&#8217;t delay - book online now with Hotels.com, and snap up 
+          a great offer on rooms at a 
+          
+          Hotel in 
+          Los Angeles.
+         </p>
+    </div></td>
+  </tr>
+   
+</table>
+<font style="font-size:5px"><br></font>
+
+<table width="755" cellpadding="0" cellspacing="0" border="0" bordercolor="red"><!-- Start of table for Search Form and Dynamic Drop-Downs -->
+<tr>
+	<td width="420" valign="top"><!-- Search Form TD Started -->
+	
+		<table border="0" width="420" cellpadding="0" cellspacing="0" class="bbartabl0e">
+			<tr>
+			  <td valign="top" width="100%"> 
+			  <table  class="index-select-dest-bg" border="0" cellpadding="0" cellspacing="0" width="420">
+				  <tr>
+					<td width="100%"  valign="top" background="default_files/uk-header-title_b1.gif" style="padding-top:4px;padding-left:8px;color:#FFFFFF;font-family:Arial;font-size:14px;font-weight:bold">
+					Search for more 
+				    Los Angeles Hotel Deals</td>
+				  </tr>
+				  <tr>
+					<td style="border:1px solid #336699;"  valign="top">
+					  <FORM name=frm_Search onsubmit="return submitAdvancedSearchForm();" action="http://uk.hotels.com/index.jsp" method=post style="margin:0px; padding:0px; ">
+						<INPUT type=hidden value=true name=validateCity>
+						<INPUT type=hidden value=true name=validateDates>
+						<INPUT type=hidden value=true name=submitted>
+						<INPUT type=hidden value=true name=passThrough>
+						<INPUT type=hidden value=2 name=mode>
+						<INPUT type=hidden value=true name=advanced>
+						<INPUT type=hidden value=true name=newAdvancedSearch>
+						<INPUT type=hidden value=true name=showPopUp>
+						<INPUT type=hidden value=en_UK name=locale>
+						<INPUT type=hidden value=list name=fc>
+						<INPUT type=hidden value=hotSearch name=pageName>
+						<INPUT type=hidden value=GBP name=currencyCode>
+						<INPUT type=hidden value=51553 name=cid>
+						<INPUT type=hidden value=vrBookingSource|index name=additionalDataString>
+						<INPUT type=hidden name=city2>
+						<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr><td colspan="3" class="Small" height="4px"></td></tr>
+						  <tr>
+							<td width="45%"><span class="hotelAddress"><b>Where would
+							  you like to stay?</b></span><br> <input name="city" type="text" class="select" onclick="emptyBox(this);" value="Los Angeles , ca, United States " size="28" />
+							</td>	
+								  <td width="45%"  valign="top" align="center"><div align="center"><span class="hotelAddress"><b> &nbsp;&nbsp;Arrive</b></span><br>
+									  <select class="select" onchange="amadChange(document.myform.arrivalMonth, document.myform.arrivalDay, document.myform.departureMonth, document.myform.departureDay)" name="arrivalDay">
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									  </select>
+									  <SELECT class="select" onchange="amadChange(document.myform.arrivalMonth, document.myform.arrivalDay, document.myform.departureMonth, document.myform.departureDay)" name=arrivalMonth>
+										<OPTION value=0 selected>January</OPTION>
+										<OPTION value=1>Februar</OPTION>
+										<OPTION value=2>March</OPTION>
+										<OPTION value=3>April</OPTION>
+										<OPTION value=4>May</OPTION>
+										<OPTION value=5>June</OPTION>
+										<OPTION value=6>July</OPTION>
+										<OPTION value=7>August</OPTION>
+										<OPTION value=8>September</OPTION>
+										<OPTION value=9>October</OPTION>
+										<OPTION value=10>November</OPTION>
+										<OPTION value=11>December</OPTION>
+									  </SELECT>
+									  <a href="javascript:OpenCalendar('arrivalDay',%20document.myform.arrivalDay.options[document.myform.arrivalDay.selectedIndex].value,%20'arrivalMonth',%20document.myform.arrivalMonth.options[document.myform.arrivalMonth.selectedIndex].value,%20null,%20null%20)"><img src="default_files/cc0000_calendar.gif" alt="Calendar" width="18" height="18" border="0"align="top" /></a> </div></td>                              
+								  <td align=center valign="top"> 
+									  
+						    </td>                         
+						  </tr>   
+						  <tr><td colspan="3" class="Small" height="4px"></td></tr>             
+						  <tr>
+							<td><TABLE width="100%" height="5" border=0 cellPadding=0 cellSpacing=0>
+								<TBODY>
+								  <TR>
+									<TD noWrap><div id="hot-search-params">
+										<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+										  <TBODY>
+											<TR>
+											  <TD height="1" valign="top" class=index-select-dest-bg>
+												<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+												  <TBODY>
+													<TR>
+													  <TD class="hotelAddress" noWrap><b>Rooms:&nbsp;</b><br> 
+														<SELECT size=1 name=numberOfRooms Class="index-select-options-text">
+														  <OPTION value=1 selected>1</OPTION>
+														  <OPTION value=2>2</OPTION>
+														  <OPTION value=3>3</OPTION>
+														  <OPTION value=4>4</OPTION>
+														  <OPTION value=5>5+</OPTION>
+														</SELECT> </TD>
+													  <TD class=index-select-dest-bg width=5>&nbsp;</TD>
+													  <TD class="hotelAddress" noWrap><b>Adults
+														per Room:&nbsp; </b><br><center>
+														<SELECT size=1 name=numberOfAdults style Class="index-select-options-text">
+														  <OPTION value=1>1</OPTION>
+														  <OPTION value=2 selected>2</OPTION>
+														  <OPTION value=3>3</OPTION>
+														  <OPTION value=4>4</OPTION>
+														</SELECT> </center></TD>                                                                                      
+													</TR>
+												  </TBODY>
+												</TABLE></TD>                                            
+											</TR>
+										  </TBODY>
+										</TABLE>
+									  </div></TD>                                      
+								  </TR>
+								</TBODY>
+							  </TABLE>
+							  
+						    </td>  
+							  <td align="center">
+							  	<div align="center">&nbsp;&nbsp;<span class="hotelAddress"><b>Depart</b></span><br>
+									  <select class="select" onchange="dmddChange(document.myform.departureMonth,document.myform.departureDay);" name="departureDay">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3" selected>3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									  </select>
+									  <SELECT class="select" onchange=dmddChange(document.myform.departureMonth,document.myform.departureDay) name=departureMonth>
+										<OPTION value=0 selected>January</OPTION>
+										<OPTION value=1>Februar</OPTION>
+										<OPTION value=2>March</OPTION>
+										<OPTION value=3>April</OPTION>
+										<OPTION value=4>May</OPTION>
+										<OPTION value=5>June</OPTION>
+										<OPTION value=6>July</OPTION>
+										<OPTION value=7>August</OPTION>
+										<OPTION value=8>September</OPTION>
+										<OPTION value=9>October</OPTION>
+										<OPTION value=10>November</OPTION>
+										<OPTION value=11>December</OPTION>
+									  </SELECT>
+									  <a href="javascript:OpenCalendar('departureDay',%20document.myform.departureDay.options[document.myform.departureDay.selectedIndex].value,%20'departureMonth',%20document.myform.departureMonth.options[document.myform.departureMonth.selectedIndex].value,%20null,%20null%20%20)">
+									  <img src="default_files/cc0000_calendar.gif" alt="Calendar" width="18" height="18" border="0" align="top" /></a> </div>
+							  </td>                        
+							 <td align=center><input name="image2" type="image" src="default_files/en_big_go.gif" alt="Go" width="58" height="29"/></td>                  
+						  </tr>
+						  <tr><td colspan="3" class="Small" height="4px"></td></tr>
+							<!--<tr>
+							<td><div align="right">
+							<input name="image2" type="image" src="default_files/en_big_go.gif" alt="Go" width="58" height="29" />
+							</div></td>
+							</tr>
+							<tr>							
+							<td colspan=3 align=right><input name="image2" type="image" src="default_files/en_big_go.gif" alt="Go" width="58" height="29" /></td>
+							</tr>-->
+						</table>
+						<script language="JavaScript" src="default_files/search.js"></script>
+					  </form></td>
+				  </tr>
+				</table>
+		</table>   
+	
+	</td><!-- Search Form TD End -->
+	<td width="300" valign="middle"><!-- Dynamic Drop-Downs TD Started -->
+		
+		      
+			<table width="300"  border="0" cellspacing="0" cellpadding="0">
+					<tr>
+					  <td width="100%"  valign="top" align="center"><A onclick="buttonMouseover(event, 'brand');" ><img src="default_files/hotel-brands.gif" width="162" height="20"></a>
+						<DIV class=menu id=brand  valign="top" align="left" onmouseover=menuMouseover(event)>
+						  <ul><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=accor hotels&city=los angeles&country=united states">&nbsp;&nbsp;Accor Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=best value inns&city=los angeles&country=united states">&nbsp;&nbsp;Best Value Inns in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=best western international&city=los angeles&country=united states">&nbsp;&nbsp;Best Western International in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=classic international hotels&city=los angeles&country=united states">&nbsp;&nbsp;Classic International Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=comfort inns&city=los angeles&country=united states">&nbsp;&nbsp;Comfort Inns in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=courtyard by marriott&city=los angeles&country=united states">&nbsp;&nbsp;Courtyard By Marriott in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=days inn&city=los angeles&country=united states">&nbsp;&nbsp;Days Inn in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=doubletree hotels&city=los angeles&country=united states">&nbsp;&nbsp;Doubletree Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=e rez by vip international&city=los angeles&country=united states">&nbsp;&nbsp;E Rez By Vip International in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=econolodges&city=los angeles&country=united states">&nbsp;&nbsp;Econolodges in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=embassy suites&city=los angeles&country=united states">&nbsp;&nbsp;Embassy Suites in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=extend stay america&city=los angeles&country=united states">&nbsp;&nbsp;Extend Stay America in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=four seasons hotels&city=los angeles&country=united states">&nbsp;&nbsp;Four Seasons Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=guesthouse international&city=los angeles&country=united states">&nbsp;&nbsp;Guesthouse International in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=hampton inns&city=los angeles&country=united states">&nbsp;&nbsp;Hampton Inns in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=hilton hotels&city=los angeles&country=united states">&nbsp;&nbsp;Hilton Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=hotelbank&city=los angeles&country=united states">&nbsp;&nbsp;Hotelbank in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=howard johnson&city=los angeles&country=united states">&nbsp;&nbsp;Howard Johnson in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=hyatt hotels and resorts&city=los angeles&country=united states">&nbsp;&nbsp;Hyatt Hotels And Resorts in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=ihotelier&city=los angeles&country=united states">&nbsp;&nbsp;Ihotelier in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=innpoints&city=los angeles&country=united states">&nbsp;&nbsp;Innpoints in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=kerry club hotels&city=los angeles&country=united states">&nbsp;&nbsp;Kerry Club Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=le meridien&city=los angeles&country=united states">&nbsp;&nbsp;Le Meridien in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=leading hotels&city=los angeles&country=united states">&nbsp;&nbsp;Leading Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=lexington services&city=los angeles&country=united states">&nbsp;&nbsp;Lexington Services in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=loews hotels&city=los angeles&country=united states">&nbsp;&nbsp;Loews Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=luxe worldwide hotels&city=los angeles&country=united states">&nbsp;&nbsp;Luxe Worldwide Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=marriott hotels&city=los angeles&country=united states">&nbsp;&nbsp;Marriott Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=millennium copthorne htls&city=los angeles&country=united states">&nbsp;&nbsp;Millennium Copthorne Htls in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=new otani hotels&city=los angeles&country=united states">&nbsp;&nbsp;New Otani Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=omni hotels&city=los angeles&country=united states">&nbsp;&nbsp;Omni Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=quality inns and suites&city=los angeles&country=united states">&nbsp;&nbsp;Quality Inns And Suites in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=radisson htls worldwide&city=los angeles&country=united states">&nbsp;&nbsp;Radisson Htls Worldwide in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=ramada inns&city=los angeles&country=united states">&nbsp;&nbsp;Ramada Inns in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=renaissance hotels&city=los angeles&country=united states">&nbsp;&nbsp;Renaissance Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=reservhotel international&city=los angeles&country=united states">&nbsp;&nbsp;Reservhotel International in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=residence inns&city=los angeles&country=united states">&nbsp;&nbsp;Residence Inns in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=sceptre hospitality svcs&city=los angeles&country=united states">&nbsp;&nbsp;Sceptre Hospitality Svcs in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=sheraton hotels&city=los angeles&country=united states">&nbsp;&nbsp;Sheraton Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=super 8&city=los angeles&country=united states">&nbsp;&nbsp;Super 8 in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=synxis corporation&city=los angeles&country=united states">&nbsp;&nbsp;Synxis Corporation in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=travelodge&city=los angeles&country=united states">&nbsp;&nbsp;Travelodge in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=unirez&city=los angeles&country=united states">&nbsp;&nbsp;Unirez in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=utell international&city=los angeles&country=united states">&nbsp;&nbsp;Utell International in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=vagabond inns&city=los angeles&country=united states">&nbsp;&nbsp;Vagabond Inns in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=w hotels&city=los angeles&country=united states">&nbsp;&nbsp;W Hotels in Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/brand.asp?brand=westin hotels&city=los angeles&country=united states">&nbsp;&nbsp;Westin Hotels in Los Angeles</A></li></ul>
+						</DIV></td>
+						
+					  <td width="100%" align="center" valign="top"><A onclick="buttonMouseover(event, 'worlddestinations');" ><IMG src="default_files/topworlddestinations.gif" alt="Top Hotel Destinations" width="162" height="20" border=0></A>
+						<DIV class=menu valign=top align=left width=162	id=worlddestinations onmouseover=menuMouseover(event)>
+						  <ul><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=aberdeen&country=united kingdom">&nbsp;&nbsp;Aberdeen Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=acapulco&country=mexico">&nbsp;&nbsp;Acapulco Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=amsterdam&country=netherlands">&nbsp;&nbsp;Amsterdam Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=atlanta&country=united states">&nbsp;&nbsp;Atlanta Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=belfast&country=ireland">&nbsp;&nbsp;Belfast Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=benidorm&country=spain">&nbsp;&nbsp;Benidorm Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=boston&country=united states">&nbsp;&nbsp;Boston Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=bournemouth&country=united kingdom">&nbsp;&nbsp;Bournemouth Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=buenos aires&country=argentina">&nbsp;&nbsp;Buenos Aires Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=california&country=united states">&nbsp;&nbsp;California Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=cancun&country=mexico">&nbsp;&nbsp;Cancun Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=devon&country=united kingdom">&nbsp;&nbsp;Devon Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=geneva&country=switzerland">&nbsp;&nbsp;Geneva Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=glasgow&country=united kingdom">&nbsp;&nbsp;Glasgow Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=hanover&country=germany">&nbsp;&nbsp;Hanover Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=houston&country=united states">&nbsp;&nbsp;Houston Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=indianapolis&country=united states">&nbsp;&nbsp;Indianapolis Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=isle of wight&country=united kingdom">&nbsp;&nbsp;Isle Of Wight Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=kaiserslautern&country=germany">&nbsp;&nbsp;Kaiserslautern Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=kuala lumpur&country=malaysia">&nbsp;&nbsp;Kuala Lumpur Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=madrid&country=spain">&nbsp;&nbsp;Madrid Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=miami&country=united states">&nbsp;&nbsp;Miami Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=newcastle&country=united kingdom">&nbsp;&nbsp;Newcastle Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=nice&country=france">&nbsp;&nbsp;Nice Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=prague&country=czech republic">&nbsp;&nbsp;Prague Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=seattle&country=united states">&nbsp;&nbsp;Seattle Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=tampa&country=united states">&nbsp;&nbsp;Tampa Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=tenerife&country=spain">&nbsp;&nbsp;Tenerife Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=venice&country=italy">&nbsp;&nbsp;Venice Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=alicante&country=spain">&nbsp;&nbsp;Alicante Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=atlantic city&country=united states">&nbsp;&nbsp;Atlantic City Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=bangkok&country=thailand">&nbsp;&nbsp;Bangkok Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=barcelona&country=spain">&nbsp;&nbsp;Barcelona Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=birmingham&country=united kingdom">&nbsp;&nbsp;Birmingham Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=cairo&country=egypt">&nbsp;&nbsp;Cairo Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=cardiff&country=united kingdom">&nbsp;&nbsp;Cardiff Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=cologne&country=germany">&nbsp;&nbsp;Cologne Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=dallas&country=united states">&nbsp;&nbsp;Dallas Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=denver&country=united states">&nbsp;&nbsp;Denver Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=dublin&country=ireland">&nbsp;&nbsp;Dublin Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=florence&country=italy">&nbsp;&nbsp;Florence Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=fort lauderdale&country=united states">&nbsp;&nbsp;Fort Lauderdale Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=ibiza&country=spain">&nbsp;&nbsp;Ibiza Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=los angeles&country=united states">&nbsp;&nbsp;Los Angeles Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=mallorca&country=spain">&nbsp;&nbsp;Mallorca Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=manchester&country=united kingdom">&nbsp;&nbsp;Manchester Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=manhattan&country=united states">&nbsp;&nbsp;Manhattan Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=milan&country=italy">&nbsp;&nbsp;Milan Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=montreal&country=canada">&nbsp;&nbsp;Montreal Hotels</A></li><li><A class=menu_item href="http://deals.hotels.com/hotel.asp?city=new york&country=united states">&nbsp;&nbsp;New York Hotels</A></li></ul>
+						</DIV></td>
+						</tr>
+						<tr><td class="Small" height="20px"></td></tr>
+						<tr>
+					  <td width="100%" align="center"> <A onclick="buttonMouseover(event, 'otherhotels');" ><img src="default_files/other-hotels-inthis-city.gif" width="162" height="20"></a>
+						<DIV class=menu valign=top id=otherhotels onmouseover=menuMouseover(event)>
+						  <ul><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=travelodge&hotelID=125208"> Travelodge Hotel At Lax Airport</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=synxis corporation&hotelID=128851"> Best Western Carlyle Inn-beverly Hills Area</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=sceptre hospitality svcs&hotelID=140333"> Furama Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=ramada inns&hotelID=114242"> Ramada Limited Los Angeles</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=kerry club hotels&hotelID=214289"> Farmer's Daughter</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=days inn&hotelID=134053"> Days Inn Downtown</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=le meridien&hotelID=124152"> Le Meridien Beverly Hills</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=best western international&hotelID=208697"> Best Western Westwood Pacific</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=howard johnson&hotelID=129114"> Howard Johnson Los Angeles</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=utell international&hotelID=131679"> Miyako Hotel Los Angeles</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=synxis corporation&hotelID=112916"> Wilshire Grand Hotel</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=sheraton hotels&hotelID=105687"> Sheraton Gateway Hotel Los Angeles Airport</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=unirez&hotelID=218157"> Royal Palace Westwood</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=hyatt hotels and resorts&hotelID=116389"> Park Hyatt Los Angeles At Century City</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=best western international&hotelID=175973"> Best Western Royal Palace Inn And Suites</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=best western international&hotelID=162772"> Best Western Dragon Gate Inn</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=radisson htls worldwide&hotelID=129339"> Radisson Wilshire Plaza</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=omni hotels&hotelID=131769"> Omni Los Angeles</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=accor hotels&hotelID=118511"> Sofitel Los Angeles</a></li><li><a class="menu_item" href="http://deals.hotels.com/hotel-details.asp?city=los angeles&brand=westin hotels&hotelID=105304"> Westin Century Plaza Hotel & Spa</a></li></ul>
+						</DIV></td>
+						
+					  <td valign="top" align="center" width="100%"> <A onclick="buttonMouseover(event, 'placesofinterest');" ><IMG src="default_files/placesofinterest.gif" alt="Hotels of Interest" width="162" height="20" border=0></A>
+						<DIV class=menu valign=top align="left" id=placesofinterest onmouseover=menuMouseover(event)>
+						  <ul><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=hammer museum&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Hammer Museum</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=commerce amtrak&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Commerce Amtrak</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=burbank pasadena airport&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Burbank Pasadena Airport</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=port of la cruise terminal&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Port of LA Cruise Terminal</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=burbank airport amtrak&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Burbank Airport Amtrak</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=nbc studios burbank&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near NBC Studios Burbank</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=los angeles county museum of art&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Los Angeles County Museum of Art</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=rose bowl&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Rose Bowl</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=west hollywood&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near West Hollywood</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=santa monica venice&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Santa Monica Venice</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=los angeles  art and science center&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Los Angeles  Art and Science Center</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=ventura amtrak station&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Ventura Amtrak Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=santa monica pier&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Santa Monica Pier</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=long beach airport&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Long Beach Airport</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=huntington library&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Huntington Library</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=natural history museum&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Natural History Museum</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=oxnard amtrak station&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Oxnard Amtrak Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=la brea tar pits&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near La Brea Tar Pits</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=university of southern california&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near University of Southern California</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=pantages theatre&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Pantages Theatre</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=moorpark amtrak station&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Moorpark Amtrak Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=van nuys amtrak station&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Van Nuys Amtrak Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=downtown la convention centre&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Downtown LA Convention Centre</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=getty museum&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Getty Museum</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=los angeles airport lax&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Los Angeles Airport LAX</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=los angeles amtrak station&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Los Angeles Amtrak Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=queen mary&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Queen Mary</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=camarillo amtrak station&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Camarillo Amtrak Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=cerritos centre performing arts&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Cerritos Centre Performing Arts</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=chandler pavilion&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Chandler Pavilion</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=magic mountain&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Magic Mountain</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=hermosa beach&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Hermosa Beach</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=redondo beach&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Redondo Beach</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=disney concert hall&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Disney Concert Hall</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=cbs television city&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near CBS Television City</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=cruise line terminal&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Cruise Line Terminal</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=pasadena&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Pasadena</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=century city&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Century City</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=chatsworth amtrak station&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Chatsworth Amtrak Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=manhattan beach pier&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Manhattan Beach Pier</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=hollywood&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Hollywood</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=universal studios&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Universal Studios</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=museum contemporary art&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Museum Contemporary Art</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=beverly hills rodeo dr&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Beverly Hills Rodeo Dr</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=simon museum of art&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Simon Museum of Art</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=exposition park&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Exposition Park</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=sports arena&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Sports Arena</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=west los angeles&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near West Los Angeles</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=burbank&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Burbank</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=glendale amtrak station&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Glendale Amtrak Station</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=venice ocean front walk&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Venice Ocean Front Walk</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=malibu&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Malibu</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=staples center&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Staples Center</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=san fernando valley&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near San Fernando Valley</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=dodger stadium&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Dodger Stadium</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=la coliseum&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near LA Coliseum</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=westwood university of california&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Westwood University of California</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=ventura county history museum&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Ventura County History Museum</A></li><li><A class=menu_item href="http://deals.hotels.com/attractions.asp?attraction=marina del rey yacht harbor&city=los angeles">&nbsp;&nbsp;Los Angeles Hotels, near Marina del Rey Yacht Harbor</A></li>/<ul>
+						</div></td>
+					</tr>
+				  
+			</table>
+			      
+	</td><!-- Dynamic Drop-Downs TD End -->
+</tr>
+</table><!-- End of table for Search Form and Dynamic Drop-Downs -->
+
+<font style="font-size:10px"><br></font>
+    
+    
+    
+      <table width="755" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="90%" height="4" valign="middle" background="default_files/uk-header-title_b.gif" style="padding-top:4px;padding-left:8px;color:#FFFFFF;font-family:Arial;font-size:14px;font-weight:bold">
+            Featured
+            Los Angeles
+          Hotel</td>
+        </tr>
+        <tr>
+          <td height="17" valign="middle">   <font style="font-size:8px"><br></font>       
+            <table width="100%" border="2" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFCC" bordercolor="#F7BE4C" style="border-width:0px;">
+              <tr>
+                <td valign="center">
+					<font style="font-size:3px"><br></font>
+                  <table width="100%"  border="0" cellspacing="0" cellpadding="0" bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="78" rowspan="4" align="center" valign="top" ><table width="78" border="0" cellpadding="0" cellspacing="0"><tr><td bgcolor="#FFFFCC" valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=kerry club hotels&hotelID=105519"><img src="http://images.travelnow.com/hotels/thumbs/LAX_BARN-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Belamar Hotel in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£98 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=kerry club hotels&hotelID=105519" class="hotelTitle">Belamar Hotel Los Angeles</a>&nbsp;&nbsp;<IMG alt="3 star hotels" src="default_files/stars_3_y.gif" border=0></a> </td><td width="30%" rowspan="2" align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=kerry club hotels&hotelID=105519"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of belamar hotel"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">3501 n sepulveda blvd / (Los Angeles)</GEO></td></tr><tr><td width="100%" valign="top" colspan="2" style="padding-left:2px;" class="hotelDescription1"> popular manhattan beach and los angeles airport. A charming boutique style hotel featuring original antiques, business friendly amenities and internet access. Valet parking and complimentary airport shuttle. Walking distance to shops, movies a</td></tr></table>
+</td>
+              </tr>
+            </table>
+         </td>
+        </tr>
+		
+		<!--
+		<tr><td valign="top" style=" border-bottom:1px solid #336699;">&nbsp;</td></tr>
+        <tr>
+          <td valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="100%" background="default_files/table-bottom-bg.gif"><img src="default_files/left-round-corner.gif" width="12" height="15"></td>
+                <td width="1%"><img src="default_files/right-round-corner.gif" width="12" height="15"></td>
+              </tr>
+            </table></td>
+        </tr>
+		-->
+      </table>      
+<font style="font-size:10px"><br></font>      
+
+
+<!-- Hotels details starts below -->
+
+
+
+	<table width="755" border="0" cellspacing="0" cellpadding="0" style="border-width:0px ">
+	  <tr>
+		<td width="755px" height="24" valign="top" background="default_files/uk-header-title_b.gif"><h2 class="boxTitle">Our Top Los Angeles  Hotels</h2></td>
+	  </tr>
+	  <tr>
+		<td width="755px">
+		<font style="font-size:8px"><br></font>
+				<table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=lexington services&hotelID=190272"><img src="http://images.travelnow.com/hotels/thumbs/LAX_BRET-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Brentwood Inn in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£98 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=lexington services&hotelID=190272" class="hotelTitle">Brentwood Inn Hotel in Los Angeles</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"><IMG alt="2 star hotels" src="default_files/stars_2_y.gif" border=0></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=lexington services&hotelID=190272"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of brentwood inn"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">12200 W Sunset Blvd / (Los Angeles)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">property type hotelyear built 1947 year remodeled 1995nestled among lush green landscaping and residentialgrandeur, the brentwood motor hotel is both an unexpectedgem and a piece of los angeles history. Built in 1947,this bungalow style, mostly sin</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=vagabond inns&hotelID=111795"><img src="http://images.travelnow.com/hotels/thumbs/LAX_VINN-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Vagabond Inn Los Angeles Usc in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£62 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=vagabond inns&hotelID=111795" class="hotelTitle">Vagabond Inn Los Angeles Usc Hotel</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"><IMG alt="2 star hotels" src="default_files/stars_2_y.gif" border=0></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=vagabond inns&hotelID=111795"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of vagabond inn los angeles usc"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">3101 S. Figueroa St / (Los Angeles)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1"></td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=loews hotels&hotelID=121701"><img src="http://images.travelnow.com/hotels/thumbs/LAX_RENA-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Loews Beverly Hills in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£115 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=loews hotels&hotelID=121701" class="hotelTitle">Loews Beverly Hills Hotel in Los Angeles</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"><IMG alt="5 star hotels" src="default_files/stars_5_y.gif" border=0></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=loews hotels&hotelID=121701"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of loews beverly hills"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">1224 Beverwil Dr / (Los Angeles)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1"> make you stay memorable stay at the renaissance beverly hills hotel and wrap yourself in eurpopean style sophistication, tempered by the whimsy of los angeles. Youll be surrounded by com fortable elegance interpreted with an eclectic twist f</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=renaissance hotels&hotelID=136897"><img src="http://images.travelnow.com/hotels/thumbs/LAX_RENL-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Renaissance Montura Hotel Los Angeles in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£63 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=renaissance hotels&hotelID=136897" class="hotelTitle">Renaissance Montura Hotel Los Angeles</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"><IMG alt="5 star hotels" src="default_files/stars_5_y.gif" border=0></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=renaissance hotels&hotelID=136897"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of renaissance montura hotel los angeles"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">9620 Airport Blvd / (Los Angeles)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1"> unforgettable city, magnificent accommodations one of the worlds most exciting and glamorous cities, los angeles beckons visitors from around the globe. Whether here on business or pleasure, discerning travelers choose the 499 room, renaissan</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=sheraton hotels&hotelID=121363"><img src="http://images.travelnow.com/hotels/thumbs/LAX_CONT-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Four Points By Sheraton Los Angeles International Airport in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£49 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=sheraton hotels&hotelID=121363" class="hotelTitle">Four Points By Sheraton Los Angeles International Airport Hotel</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=sheraton hotels&hotelID=121363"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of four points by sheraton los angeles international airport"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">9750 Airport Blvd / (Los Angeles)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">the four points sheraton los angeles airport is located 1/4 of a mile from lax airport. The sheraton is the newest business class hotel at lax, and the most unique. The hotel is three miles from hollywood park and loyola marymount university. The venice</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=luxe worldwide hotels&hotelID=163499"><img src="http://images.travelnow.com/hotels/thumbs/LAX_WILS-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Century Wilshire in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£58 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=luxe worldwide hotels&hotelID=163499" class="hotelTitle">Century Wilshire Hotel in Los Angeles</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=luxe worldwide hotels&hotelID=163499"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of century wilshire"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">10776 Wilshire Blvd / (Los Angeles)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">the century wilshire is a classic villa style hotel located near the wilshire and I 405 interchange, adjacent to the ucla campus and walking distance to ucla medical center. This hotel is only five miles from west hollywood and five miles east of santa mo</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=westin hotels&hotelID=114635"><img src="http://images.travelnow.com/hotels/thumbs/LAX_WESA-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book The Westin Los Angeles Airport in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£57 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=westin hotels&hotelID=114635" class="hotelTitle">The Westin Los Angeles Airport Hotel</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=westin hotels&hotelID=114635"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of the westin los angeles airport"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">5400 W Century Blvd / (Los Angeles)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">the westin los angeles is a deluxe hotel near los angeles international airport. This great hotel offers comfort and convenience for a moderate price and a great location. The westin is only a short distance from local beaches, hollywood park race track </td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=new otani hotels&hotelID=112854"><img src="http://images.travelnow.com/hotels/thumbs/LAX_OTAN-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book New Otani Hotel & Garden in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£50 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=new otani hotels&hotelID=112854" class="hotelTitle">New Otani Hotel & Garden Los Angeles</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=new otani hotels&hotelID=112854"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of new otani hotel & garden"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">120 S Los Angeles St / (Los Angeles)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">the new otani hotel is a deluxe hotel, located 30 minutes from the los angeles international airport, in the heart of downtown. Due to its wonderful location in the city center, this hotel makes an ideal lodging choice for those visiting the exciting city</td></tr></table></td></tr></table><font style="font-size:8px"><br></font><table border="1" cellpadding="0" cellspacing="0" width="100%" bordercolor="#F7BE4C" style="border-width:0px" bgcolor="#FFFFCC"><tr><td><font style="font-size:3px"><br></font><table width="100%" align="center"  border="0" cellspacing="0" cellpadding="0"  bordercolor=blue><tr><td rowspan="4" align="center" width="3px"></td><td width="80px" height="69" rowspan="4" align="center" valign="top" ><table width="80px" height="64" border="0" cellpadding="0" cellspacing="1"><tr><td valign=top align=center><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=utell international&hotelID=172659"><img src="http://images.travelnow.com/hotels/thumbs/LAX_ELAN-exter-1-thumb.jpg" width="64" height="64" border="0" alt="Book Elan Hotel Modern in Los Angeles "></a></td></tr></table><span align=left class="bigHotelPrice">£80 GBP</span></td><td width="69" rowspan="4" align="center">&nbsp;</td><td width="70%" class="redtext"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=utell international&hotelID=172659" class="hotelTitle">Elan Hotel Modern Los Angeles</a>&nbsp;&nbsp;<a href="http://uk.hotels.com/index.jsp?locale=en_UK&isCondos=false&pageName=legend&isHotels=true&currencyCode=GBP&cid=51553&additionalDataString=vrBookingSource%7ChotSearch%7C%7CadditionalData1%7Cxhp62101" class="redtext" rel="nofollow"></a> </td><td width="30%" rowspan="2"  align="center"><a href="http://deals.hotels.com/hotel-details.asp?City=los angeles&Brand=utell international&hotelID=172659"><img src="default_files/en_big_go.gif" width="58" height="29" border=0 alt="Check availability of elan hotel modern"></a></td></tr><tr><td style="padding-left:2px;" class="hotelAddress"><GEO TYPE="US">8435 Beverly Blvd / (Los Angeles)</GEO> </td></tr><tr><td colspan="2" style="padding-left:2px;" class="hotelDescription1">located at the cutting edge of west hollywood and beverly hills, less than 12 miles from los angeles international airport (lax), the ?lan hotel modern is los angeles' newest and most stylish boutique hotel. It offers guests style, intimacy, individuality</td></tr></table></td></tr></table><font style="font-size:8px"><br></font>
+		</td>
+		
+	  </tr>
+	  
+	  <!--
+	  <tr><td colspan="3" valign="top" style=" border-bottom:1px solid #336699;">&nbsp;</td></tr>
+	  <tr>
+		<td align="left" height="12px" width="12px" valign="top"><img src="default_files/left-round-corner.gif" width="12" height="15" border="0"></td>
+		<td valign="bottom" background="default_files/table-bottom-bg.gif"><font style=" font-size:0px">&nbsp;</font></td>
+		<td align="right" height="12px" width="12px"  valign="top"><img src="default_files/right-round-corner.gif" width="12" height="15" border="0"></td>
+	  </tr>
+	  -->
+	</table>
+	  
+<!-- Hotels details end here -->	
+  
+	  
+	  </td>
+  </tr>
+  <tr>
+    <td height="25px" valign="bottom" class="abartable">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+<table width=755 border=0 cellpadding=0 cellspacing=0 bgcolor="#EDCECD">
+	<tr><td>
+		<table width=100%" align=center border=0>
+		<tr><td align=center width=125>
+			<b>Page 1 of 11
+		</td>
+		<td align=left width="85%">
+				<a href="?city=los angeles&country=united states">1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=2">2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=3">3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=4">4</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=5">5</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=6">6</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=7">7</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=8">8</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=9">9</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=10">10</a>&nbsp;&nbsp;&nbsp;<a href="?city=los angeles&country=united states&page=11">11</a>&nbsp;&nbsp;&nbsp;
+		  <b> .&nbsp;.&nbsp;.&nbsp;</b> </td>
+		</tr>
+		</table>
+	</td></tr>
+</table>	
+
+<table style="margin-top:10px" width="755" border=0 bordercolor=green>
+	<tr>
+		<td align="right">
+			
+			<a class="Verdana10Black" href="?city=los angeles&country=united states&page=2">Next Los Angeles Hotels</a>
+			
+		 </td>
+	</tr>
+</table>
+
+<table width="755" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td class="abartable">
+	<!-- footer begin -->
+<IMG style="MARGIN-TOP: 0px" height=4 alt="" src="default_files/4px_redbar.gif" width=762 align=top> 
+<P class=foothead><SPAN class=footheadfloat>
+<A href="http://uk.hotels.com/index.jsp?pageName=addHotel&amp;country=UK&amp;locale=en&amp;cid=51553" class="Verdana10"><B>Add Your Hotel</B></A> | 
+<A href="http://affiliate.travelnow.com/affiliates/home.jsp" target=_blank class="Verdana10"><B>Affiliate With Us</B></A> | 
+<A href="http://uk.hotels.com/index.jsp?pageName=terms&amp;cid=51553&amp;locale=en" class="Verdana10">Terms &amp; Conditions</A> | 
+<A href="http://uk.hotels.com/index.jsp?pageName=privacy&amp;cid=51553&amp;locale=en" class="Verdana10">Privacy</A> | 
+<A style="CURSOR: help" href="http://uk.hotels.com/index.jsp?pageName=hotelFaq&amp;locale=en&amp;cid=51553" class="Verdana10">FAQs</A>
+</SPAN></P>
+<P class=footbody>© 2002-2006 Hotels.com, L.P. All rights reserved.<BR>Hotels, 
+hotels.com logo and bellman are trademarks and or service marks of Hotels.com, 
+L.P., a subsidiary of Hotels.com.<BR><BR><B>Partners</B><BR>
+<A href="http://www.expedia.co.uk/" target=_blank class=fade_text>Expedia (uk)</A> | 
+<A href="http://espana.hotels.com/" target=_blank class=fade_text>Hotel (es)</A> | 
+<A href="http://it.hotels.com/" target=_blank class=fade_text>Hotels (it)</A> | 
+<A href="http://www.hotell.com/" target=_blank class=fade_text>Hotels (no)</A> | 
+<A href="http://www.hotels.se/" target=_blank class=fade_text>Hotels (se)</A> | 
+<A href="http://www.hotels.dk/" target=_blank class=fade_text>Hotels (dk)</A> | 
+<A href="http://finland.hotels.com/" target=_parent class=fade_text>Hotels (fi)</A> | 
+<A href="http://nederland.hotels.com/" target=_blank class=fade_text>Hotels (nl)</A> | 
+<A href="http://www.hotels.co.uk/" target=_blank class=fade_text>Hotels (uk)</A> | 
+<A href="http://deutsch.hotels.com/" target=_blank class=fade_text>Hotels (de)</A> | 
+<A href="http://deals.hotels.com/" target=_blank class=fade_text>Hotels (EU)</A> | 
+<A href="http://osterreich.hotels.com/" target=_blank class=fade_text>Hotels (at)</A> | 
+<A href="http://belgie.hotels.com/" target=_blank class=fade_text>Hotels (be)</A> | 
+<A href="http://emea.hotels.com/" target=_blank class=fade_text>Hotels (EMEA)</A> | 
+<A href="http://israel.hotels.com/" target=_blank class=fade_text>Hotels (il)</A> | 
+<A href="http://polska.hotels.com/" target=_blank class=fade_text>Hotels (pl)</A> | 
+<A href="http://portugal.hotels.com/" target=_blank class=fade_text>Hotels (pt)</A> | 
+<A href="http://rossija.hotels.com/" target=_blank class=fade_text>Hotels (ru)</A> | 
+<A href="http://southafrica.hotels.com/" target=_blank class=fade_text>Hotels (sa)</A> | 
+<A href="http://www.hotels.ch/" target=_blank class=fade_text>Hotels (ch)</A> | 
+<A href="http://www.hotels.fr/" target=_blank class=fade_text>Hotels (fr)</A> | 
+<A href="http://www.hotels.ie/" target=_blank class=fade_text>Hotels (ie)</A> 
+</P>
+<!-- footer end -->
+
+</td>
+  </tr>
+</table>
+
+<IMG height=4 alt="" src="default_files/p(1).gif" width=1 onload=loadDates(); border=0>
+</body>
+</html>

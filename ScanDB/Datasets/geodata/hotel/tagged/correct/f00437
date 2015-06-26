@@ -1,0 +1,489 @@
+<DOC>
+<DOCNO>f00437</DOCNO>
+<DOCHDR>http://hotels.hotelsmax.net/servlet/reservations.PropertyInformationXML/ORB_25811/max</DOCHDR>
+<html xmlns:mapurl="http://www.oracle.com/XSL/Transform/java/lodging.MapQUtils"><head><META http-equiv="Content-Type" content="text/html"><title>Warwick Regis Hotel&nbsp;San Francisco hotel reservations.
+       </title><meta name="keywords" content="Warwick Regis Hotel San Francisco, CA hotel reservations discount lodging hotels motels resorts travel hotels discount Warwick Regis Hotel in San Francisco, CA Reservations hotels motels discounts rooms accommodations bed breakfast bandb"><meta name="description" content="San Francisco hotel reservations for the Warwick Regis Hotel in San Francisco, CA. Click here to view property details, features, amenities and to book a hotel room online."><link href="/css/2004_spring.css" type="text/css" rel="stylesheet"><link rel="stylesheet" href="/css/2004_calendar.css" type="text/css"><style>
+body {
+   font: 13px Arial; color: #000000; BACKGROUND-COLOR: #FFFFFF;}
+</style><script type="text/javascript" src="/java/datebox.js"></script><script type="text/javascript" src="/java/calendar.js"></script><script type="text/javascript" src="/java/pop_up.js"></script><script type="text/javascript" src="/java/date_selector.js"></script><script language="JavaScript" type="text/JavaScript"><!--
+function openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+        function showInfoSection(n) {
+
+              var numGroups = 5;
+
+      	document.getElementById("info-group" + n).className = "isShown";
+		document.getElementById("info-tab" + n).className = "current";
+		for (i=1; i <= numGroups; i++) {
+		  if(n != i) {
+		      hideInfoSection(i);
+		  }
+		}
+      }
+
+      function hideInfoSection(i) {
+	      var groupName = 'info-group' + i;
+	      var tabName = "info-tab" + i;
+    		document.getElementById(groupName).className = "isHidden";
+    		document.getElementById(tabName).className = "notCurrent";
+      }
+
+      function displayLess(n) {
+        document.getElementById("short" + n).className = "isShown";
+        document.getElementById("long" + n).className = "isHidden";
+      }
+      function displayMore(n) {
+        document.getElementById("short" + n).className = "isHidden";
+        document.getElementById("long" + n).className = "isShown";
+      }
+
+      function showAllRooms(n) {
+        for(i=6; i <= n; i++) {
+          document.getElementById("rate" + i).className = 'isShown';
+
+        }
+          document.getElementById("allrates").className = 'isHidden';
+          document.getElementById("fewerrates").className = 'isShown';
+      }
+
+      function showFewerRooms(n) {
+        for (i=6; i<=n; i++) {
+          document.getElementById("rate" + i).className = 'isHidden';
+
+        }
+          document.getElementById("allrates").className = 'isShown';
+          document.getElementById("fewerrates").className = 'isHidden';
+      }
+
+      function resizeImage(photo) {
+       var curImg      = document.getElementById(photo);
+       var imgWidth  = curImg.width;
+       var imgHeight = curImg.height;
+
+       if(imgWidth > 668) {
+         var imgWidthDiff = 668/imgWidth;
+         imgWidth = 668;
+         imgHeight = Math.round(imgHeight*imgWidthDiff);
+
+         curImg.width = imgWidth;
+         curImg.height = imgHeight;
+       }
+     }
+
+
+  
+//--></script><style type="text/css">
+          #amenities ul {
+          	list-style-type: disc;
+          	margin-left: 2px;
+          	}
+          #amenities li {
+          	list-style-type: disc;
+           	}
+      .isHidden {display : none;}
+      .isShown {display : inline;}
+
+
+
+#slidingDoorsTabs {
+	height:47px; /* Must declare height or line across tab bottoms vanishes in NN6.2 + NN7 */
+	width:777px;
+  	background:url(/images/propavail/bg.gif) repeat-x bottom;
+  	font-size:14px;
+  	line-height:normal;
+  	}
+#slidingDoorsTabs ul {
+	margin:0 0 0 -40px;
+	list-style:none;
+	}
+#slidingDoorsTabs li {
+	float:left; /* Float makes LIs stand side by side */
+	background:url(/images/propavail/tab_left.gif) no-repeat left top;
+	margin:0;
+  	padding:0 0 0 10px;
+ 	}
+#slidingDoorsTabs a {
+	float:left;
+	display:block;
+	background:url(/images/propavail/tab_right.gif) no-repeat right top;
+	padding:26px 15px 4px 4px;
+	text-decoration:none;
+	color:#039;
+	font-size: 14px;
+   }
+/* Commented Backslash Hack
+   	hides rule from IE5-Mac \*/
+#slidingDoorsTabs a {
+	float:none;
+	font-size: 14px;
+}
+	/* End IE5-Mac hack - Turns float off to prevent IE5Mac from stacking the tabs vertically and creating a mess */
+
+#slidingDoorsTabs a:hover {
+	color:#337;
+	font-size: 14px;
+   }
+#slidingDoorsTabs .current {
+  	 background-image:url(/images/propavail/tab_left_on.gif);
+   	}
+#slidingDoorsTabs .current a {
+  	background-image:url(/images/propavail/tab_right_on.gif);
+   	padding-bottom:4px;
+   	font-weight:bold;
+   	}
+#slidingDoorsTabs .special a {
+   	background-image:url(/images/propavail/tab_right_special.gif);
+   	padding-bottom:5px;
+ 	}
+
+#slidingDoorsTabs .notCurrent {
+  	 background-image:url(/images/propavail/tab_left.gif);
+   	}
+#slidingDoorsTabs .notCurrent a {
+	background-image:url(/images/propavail/tab_right.gif);
+	color:#039;
+	padding-bottom:4px;
+	font-weight:normal;
+	font-size: 14px;
+   	}
+
+.group { border-left: 1px #2961AD solid; border-right: 1px #2961AD solid; }
+      .unSelected {
+          padding-bottom: 0 px;
+      }
+
+.info-group {
+
+    border-left: 1px #2961AD solid; border-right: 1px #2961AD solid; border-bottom: 1px #2961AD solid;
+
+}
+.unSelected { padding-bottom: 0 px;
+      }
+
+      .isSelected {
+        font-weight: bold;
+        padding-bottom; 5px;
+      }
+      .empty {border-bottom: 1px #2961AD solid; }
+}
+</style><meta name="DCSext.channel" content="Affiliate"><meta name="DCSext.chname" content="max"><meta name="DCSext.online" content="Yes"><meta name="DCS.dcsuri" content="/PropInfo.html"><meta name="WT.ti" content="Property Information"></head><body bgcolor="#FFFFFF" text="#000000" leftmargin="2" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="setDates();showInfoSection('1')"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Worldwide Hotels and Hotel Reservations by Hotels Max </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="DESCRIPTION" content="All worldwide hotels and  hotel reservations.  Global travel, discount lodging and great hotel deals.">
+
+<meta name="KEYWORDS" content="Worldwide hotels, discounts travel, discount hotels, cheap hotels, hotel reservations, hotels, motels, travel, vacations, rooms, lodging.">
+
+<link href="http://www.hotelsmax.net/stylemax.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body link="#000000" vlink="#000000" alink="#000000">
+<table width="759" height="0" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="175" height="51" rowspan="2" valign="bottom" class="logo"> <div align="right"><a href="http://www.hotelsmax.net/" target="_top"><img src="/affiliates/custom/max/logo4.gif" alt="hotels, hotel reservations, accomodations &amp; Lodging" width="174" height="55" border="0"></a></div></td>
+    <td height="18" align="center" valign="middle" class="head"><b>Hotels and 
+      Hotel Reservations<br>
+      <b>80,000 accommodations<br>
+      and discount hotels worldwide!</b> </b></td>
+    <td height="18" align="center" valign="middle" class="head">
+<h1><b>All Travel, lodging and great accomodations by Hotels MAX.Net Only</b></h1></td>
+  </tr>
+  <tr> 
+    <td height="33" colspan="2" align="left" valign="middle" bordercolor="0" class="blacknav"> 
+      <div align="center" class="nav"> 
+        <p class="blacknav"><a href="http://www.hotelsmax.net" target="_top" class="navlinks"><b>Home</b></a></span><a href="http://www.hotelsmax.net/North_America/United_States/index.html" title="Book Hotels in USA" target="_top" class="navlinks"> 
+          | <b>United States Lodging</b></a><span class="navlinks"> |</span><a href="http://www.hotelsmax.net/worldwide.htm" title="Book Hotels Worldwide" target="_top" class="navlinks"> 
+          <b>International Lodging</b> </a><span class="navlinks"> |<a href="/" class="navlinks"> 
+          </a></span><a href="http://www.hotelsmax.net/hot-deals/index.htm" title="Check Special Rates" target="_top" class="navlinks"><b>Hot 
+          Rates</b></a> <span class="navlinks">|</span> <a href="http://www.hotelsmax.net/luxury-travel.htm" title="Book Luxury Travel" target="_top" class="navlinks"><b>Luxury 
+          Travel</b> </a><span class="navlinks">|<a href="/" class="navlinks"> 
+          </a></span><a href="http://www.hotelsmax.net/travel-guide.htm" title="Visit our Travel Guide" target="_top" class="navlinks"><b>Travel 
+          Guide</b><span class="navlinks"> </span></a><span class="navlinks">|</span> 
+          <a href="http://www.hotelsmax.net/help.htm" target="_top" class="navlinks"><b>Help</b></a></p>
+      </div></td>
+  </tr>
+  <tr> 
+    <td height="19" class="green">&nbsp;</td>
+    <td width="337" class="green2">&nbsp;</td>
+    <td width="247" class="orng">&nbsp;</td>
+  </tr>
+</table>
+<table width="759" border="0" cellpadding="0" cellspacing="0" class="bottom2">
+  <tr> 
+    <td width="6%" valign="top" class="green"> <div align="center"> 
+        <p class="green2">&nbsp;</p>
+      </div></td>
+    <td width="1%" valign="top"><img src="/affiliates/custom/max/rgt-fix.gif" width="8" height="6"></td>
+    <td width="93%" valign="top"> <div align="justify"><span class="dots"> </span> 
+        <span class="dots">
+<!-- START OF SmartSource Data Collector TAG --><!-- (c) 1999-2003 NetIQ Corporation. All rights reserved. --><!-- V6.1 --><!-- $DateTime: 2003/09/30 11:23:29 $ --><!-- $Revision: 1.3 $ --><SCRIPT LANGUAGE="Javascript"><!--
+gVersion="1.0";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.1"><!--
+gVersion="1.1";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.2"><!--
+gVersion="1.2";
+var RE={"%09":/\t/g, "%20":/ /g, "%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g};
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.3"><!--
+gVersion="1.3";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.4"><!--
+gVersion="1.4";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.5"><!--
+gVersion="1.5";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="JavaScript"><!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+
+var gDomain="statse.webtrendslive.com";
+var gDcsId="dcsuy22seau4fibba68ia3qp2_7e5d";
+// Add customizations here
+//WT.sp="@@SPLITVALUE@@";
+// (c) 1999-2003 NetIQ Corporation. All rights reserved.
+// $DateTime: 2003/09/30 11:23:29 $
+// $Revision: 1.3 $
+function dcsMultiTrack(){
+	for (var i=0;i<arguments.length;i++){
+		if (arguments[i].indexOf('WT.')==0){
+				WT[arguments[i].substring(3)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCS.')==0){
+				DCS[arguments[i].substring(4)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCSext.')==0){
+				DCSext[arguments[i].substring(7)]=arguments[i+1];
+				i++;
+		}
+	}
+	var dCurrent=new Date();
+	DCS.dcsdat=dCurrent.getTime();
+	dcsTag();
+}
+
+
+function dcsVar(){
+	var dCurrent=new Date();
+	WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+	if (WT.tz==0){
+		WT.tz="0";
+	}
+	WT.bh=dCurrent.getHours();
+	WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+	if (typeof(screen)=="object"){
+		WT.cd=screen.colorDepth;
+		WT.sr=screen.width+"x"+screen.height;
+	}
+	if (typeof(navigator.javaEnabled())=="boolean"){
+		WT.jo=navigator.javaEnabled()?"Yes":"No";
+	}
+	if (document.title){
+		WT.ti=document.title;
+	}
+	WT.js="Yes";
+	if (typeof(gVersion)!="undefined"){
+		WT.jv=gVersion;
+	}
+	DCS.dcsdat=dCurrent.getTime();
+	DCS.dcssip=window.location.hostname;
+	DCS.dcsuri=window.location.pathname;
+	if (window.location.search){
+		DCS.dcsqry=window.location.search;
+	}
+	if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+		if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+			DCS.dcsref=window.document.referrer;
+		}
+	}
+}
+
+function A(N,V){
+	return "&"+N+"="+dcsEscape(V);
+}
+
+function dcsEscape(S){
+	if (typeof(RE)!="undefined"){
+		var retStr = new String(S);
+		for (R in RE){
+			retStr = retStr.replace(RE[R],R);
+		}
+		return retStr;
+	}
+	else{
+		return escape(S);
+	}
+}
+
+function dcsCreateImage(dcsSrc){
+	if (document.images){
+		gImages[gIndex]=new Image;
+		gImages[gIndex].src=dcsSrc;
+		gIndex++;
+	}
+	else{
+		document.write('<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+	}
+}
+
+function dcsMeta(){
+	var myDocumentElements;
+	if (document.all){
+		myDocumentElements=document.all.tags("meta");
+	}
+	else if (document.documentElement){
+		myDocumentElements=document.getElementsByTagName("meta");
+	}
+	if (typeof(myDocumentElements)!="undefined"){
+		for (var i=1;i<=myDocumentElements.length;i++){
+			myMeta=myDocumentElements.item(i-1);
+			if (myMeta.name){
+				if (myMeta.name.indexOf('WT.')==0){
+					WT[myMeta.name.substring(3)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCSext.')==0){
+					DCSext[myMeta.name.substring(7)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCS.')==0){
+					DCS[myMeta.name.substring(4)]=myMeta.content;
+				}
+			}
+		}
+	}
+}
+
+function dcsTag(){
+	var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?";
+	for (N in DCS){
+		if (DCS[N]) {
+			P+=A(N,DCS[N]);
+		}
+	}
+	for (N in WT){
+		if (WT[N]) {
+			P+=A("WT."+N,WT[N]);
+		}
+	}
+	for (N in DCSext){
+		if (DCSext[N]) {
+			P+=A(N,DCSext[N]);
+		}
+	}
+	if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+		P=P.substring(0,2040)+"&WT.tu=1";
+	}
+	dcsCreateImage(P);
+}
+
+dcsVar();
+dcsMeta();
+dcsTag();
+  
+//--></SCRIPT><NOSCRIPT><IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://statse.webtrendslive.com/dcsuy22seau4fibba68ia3qp2_7e5d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No"></NOSCRIPT>
+	<!--BEGIN ROI TRACKING Code -->
+	<script language="javascript" src="http://track.roiservice.com/track/track.aspx?ROIID=932444107000015"></script>
+	<script language="javascript"><!--
+	if (typeof(ROIID) + '' != 'undefined') {
+	      TrackEvent('PropPage', 0);
+	     }
+	//--></script>
+	<!--END ROI TRACKING Code-->
+	<br><table width="777" border="0" cellspacing="0" cellpadding="0"><tr><td width="2" valign="top"><img src="/images/results/result_header_left.gif" width="2" height="34"></td><td width="413" background="/images/results/result_header_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="8"><img src="/images/b.gif" width="1" height="1"></td><td width="618" class="results-header"><strong class="14BLUEdark">Warwick Regis Hotel</strong></td></tr></table></td><td align="center" background="/images/results/result_header_bg.gif"><table width="100" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" background="/images/results/star_empty.gif"><a href="#hotelrating" onclick="javascript: window.open('http://primary.lodging.com/ldcratings.html','rating','width=470,height=600,scrollbars')"><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""></a></td></tr></table></td><td align="left" background="/images/results/result_header_bg.gif">&nbsp;</td><td width="3" valign="top"><img src="/images/results/result_header_right.gif" width="3" height="34"></td></tr><tr><td width="2" valign="top"><img src="/images/results/result_fadeborder_left.gif" width="2" height="42"></td><td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="8"><tr><td width="100%" colspan="2"><p><strong>Downtown/Union Square/Nob Hill<br></strong><br><GEO TYPE="US">490 Geary Street<br>San Francisco,&nbsp;
+				California
+        &nbsp;94102</GEO>&nbsp;&nbsp;
+              <strong> &nbsp;&nbsp;</strong><a onclick="showInfoSection('5');document.mapimage.src='http://mqmapgend.mapquest.com:80/mqmapgend?MQMapGenRequest=FDBnqeflmJI%2C3ii8drs-F3bP%10vk2g%26sdmH2h%108n%40FDJ%15_n%21y%40n%29NE%18%26Ivb2+VQK%3AFDJ%15_n%21y%40n%29NE%18%3D+1%2FXlm%2F167l+ur%7Cqf*2q+SF%17%26FDR2dmwjDE%3Butal0%249hdbTr%3D%2F%23%22V5au47%3DTPS84bcV8hs%7C%17DOV*E%14H2h*x0zya9%40_n10rn9w%24%3A%26%40%24%3A%26z%245u6%24xu6%24%18%12%19%3AHOHQJ%3Bata5z2%3A%29ualqu25%26%40%24%3A%26%40%24%3A16b%3A*E%14JrblVkj3me%2CU%13N%15S%3DTPGy22sO2n*V%14GS'" href="#hotelinfo"><strong>Map</strong></a><br><br>80 rooms in Louis XVI style, with four-poster or crown-canopy beds, antique armoires and writing desks, and Italian marble bathrooms.</p></td></tr></table></td><td width="168" align="center" valign="middle"><a onclick="showInfoSection('4')" href="#hotelinfo"><img src="http://www.orbitz.com/hotelimages/724/8724/73779/PROP0-20060117-120602-793.jpg" alt="" width="100" height="67" border="0"></a><br><a onclick="showInfoSection('4')" href="#hotelinfo"><strong>More Photos</strong></a><br><br></td><td width="191" align="center" valign="middle"><table width="170" border="0" cellspacing="0" cellpadding="0"><tr><td width="170" align="center" valign="top"><br><a href="http://info.hotelsmax.net/auto/brg.cgi?remote=max" target="_blank"><img src="/images/results/LPGicon.gif" alt="This hotel is RestEasy Guaranteed - Click for more info" width="79" height="53" border="0"></a><br></td></tr></table></td><td width="3" valign="top"><img src="/images/results/result_fadeborder_right.gif" width="3" height="46"></td></tr></table><a name="Getrates" id="Getrates"></a><br><table width="777" border="0" cellspacing="0" cellpadding="0"><form name="mainForm" action="/servlet/reservations.AvailabilityXML" method="post"><input type="hidden" name="propcode" value="ORB;25811"><input type="hidden" name="remote" value="max"><input type="hidden" name="caller" value="propinfo"><tr><td width="2"><img src="/images/propavail/chkdates_bg_left.gif" width="2" height="81"></td><td valign="top" background="/images/propavail/chkdates_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr class="searchboxText"><td colspan="6" align="left" nowrap class="advancedsearchboxText"><b><font color="#FF6633">Check Rates for this Hotel</font></b></td></tr><tr class="searchboxText"><td width="29%" align="left" valign="top" nowrap class="searchboxText">Check-In<br><select name="inmonth" class="searchboxText" onChange="changeDates()"><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7" selected="">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="inday" class="searchboxText" onChange="changeDates()"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29" selected="">29</option><option value="30">30</option><option value="31">31</option></select><select name="inyear" onChange="changeDates()" class="searchboxText"><option value="2006" selected="">2006</option><option value="2007">2007</option></select><a href="javascript://" onclick="displayCalendar(true,'in')"><img src="/images/2004_calendar.gif" width="28" height="17" alt="View Calendar" border="0" align="absmiddle"></a></td><td width="30%" align="left" valign="top" nowrap class="searchboxText">Check-Out<span class="advancedsearchboxText"><br><select name="outmonth" class="searchboxText" onChange="checkOutDate()"><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7" selected="">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="outday" class="searchboxText" onChange="checkOutDate()"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30" selected="">30</option><option value="31">31</option></select><select name="outyear" onChange="checkOutDate()" class="searchboxText"><option value="2006" selected="">2006</option><option value="2007">2007</option></select><a href="javascript://" onClick="displayCalendar(true,'out')"><img src="/images/2004_calendar.gif" width="28" height="17" alt="View Calendar" border="0" align="absmiddle"></a></span></td><td width="9%" align="left" valign="top" nowrap class="searchboxText">Rooms<span class="advancedsearchboxText"><br><select name="numrooms" size="1" class="searchboxText"><option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select></span></td><td width="11%" align="left" valign="top" nowrap class="searchboxText">Adults/room<span class="advancedsearchboxText"><br><select name="numadults" class="searchboxText"><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option></select></span></td><td width="8%" align="left" valign="top" nowrap class="searchboxText">Children<br><select name="numchildren" id="numchildren" class="searchboxText"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></td><td width="13%" align="left" valign="bottom" nowrap class="searchboxText"><span class="advancedsearchboxText"><input type="image" src="/images/propavail/get_rates.gif" width="85" height="21" border="0"></span></td></tr></table></td><td width="2"><img src="/images/propavail/chkdates_bg_right.gif" width="2" height="81"></td></tr></form></table><br><a name="hotelinfo"></a><div style="width:777px;height:auto;float:left" name="wrapper"><div id="slidingDoorsTabs"><ul><li class="current" id="info-tab1"><a href="#info" onclick="showInfoSection('1'); return false;">Hotel Highlights</a></li><li class="notCurrent" id="info-tab2"><a onclick="showInfoSection('2'); return false;" href="#info">Policies &amp; Restrictions</a></li><li class="notCurrent" id="info-tab3"><a onclick="showInfoSection('3'); return false;" href="#info">General Information</a></li><li class="notCurrent" id="info-tab4"><a onclick="showInfoSection('4'); return false;" href="#info">Photos</a></li><li class="notCurrent" id="info-tab5"><a onclick="showInfoSection('5'); document.mapimage.src='http://mqmapgend.mapquest.com:80/mqmapgend?MQMapGenRequest=FDBnqeflmJI%2C3ii8drs-F3bP%10vk2g%26sdmH2h%108n%40FDJ%15_n%21y%40n%29NE%18%26Ivb2+VQK%3AFDJ%15_n%21y%40n%29NE%18%3D+1%2FXlm%2F167l+ur%7Cqf*2q+SF%17%26FDR2dmwjDE%3Butal0%249hdbTr%3D%2F%23%22V5au47%3DTPS84bcV8hs%7C%17DOV*E%14H2h*x0zya9%40_n10rn9w%24%3A%26%40%24%3A%26z%245u6%24xu6%24%18%12%19%3AHOHQJ%3Bata5z2%3A%29ualqu25%26%40%24%3A%26%40%24%3A16b%3A*E%14JrblVkj3me%2CU%13N%15S%3DTPGy22sO2n*V%14GS'; return false;" href="#info">Map</a></li></ul></div><div style="clear:both;" name="clearer"></div><div class="isShown" id="info-group1"><table id="info-group1" class="info-group" cellpadding="5" cellspacing="0" bgcolor="#F7F9FD" border="0" width="777"><tr style="padding:10 px;"><td><b>Hotel Description:</b><br><br>Built in 1913, the Warwick Regis Hotel is one of San Francisco??s oldest and most exquisite hotels. Located in the heart of theater and shopping district, the hotel is just two blocks west of Union Square.  Recently renovated in 2002, the hotel features 80 rooms including 20 suites and is furnished with Louis XVI antiques from France and England.<br><br><br><table width="100" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" background="/images/results/star_empty.gif"><a href="#hotelrating" onclick="javascript: window.open('http://primary.lodging.com/ldcratings.html','rating','width=470,height=600,scrollbars')"><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""></a></td></tr></table><br><br><b>Amenities:</b><div id="amenities"><ul style="margin-top: 5px;"><table width="550" cellspacing="0" cellpadding="2" border="0"><tr valign="top"><td><li>Business Center</li><li>High Speed Internet</li><li>Room Service</li></td><td><li>Concierge</li><li>Wireless Internet</li></td><td><li>Handicapped rooms/facilities</li><li>Restaurant</li></td></tr></table></ul></div><tr><td><strong>Run of House</strong>:&nbsp;Renovated in 2002, our guest rooms feature one queen bed, an eclectic color scheme and classic furnishings such as antique armoires, hand carved headboards with crown canopy and Italian marble baths.  High speed Internet, in room safe, honor bar; cable and pay per view TV, hairdryer and robes.<center><img src="http://www.orbitz.com/hotelimages/724/8724/73779/ROOM0-20060117-120602-868.jpg" alt="" border="0" value="piImg"></center></td></tr><tr valign="top"><td height="10" colspan="2"></td></tr><tr><td><strong>LA Scene Cafe and Bar</strong>:&nbsp;Located onsite, LA Scene Cafe and Bar is open for breakfast and dinner and has a full bar. Serving California cuisine featuring local grown products, the restaurant was recently written up in Gourmet magazine. It is the ideal choice for both pre and post theater dining in an intimate and beautiful setting and has live music Thursday through Saturday nights.</td></tr><tr valign="top"><td height="10" colspan="2"></td></tr></td></tr></table></div><div id="info-group2" class="isHidden"><table id="info-group2" border="0" cellpadding="2" cellspacing="0" width="777" bgcolor="#F7F9FD" class="info-group"><tr valign="top"><td style="padding:10px;"><b>Cancel Policy:</b><br><br>Cancellation policies vary from hotel to hotel. Most current and accurate cancellation policies will appear on your confirmed reservation notification.<br><br><b>Guarantee Policy:</b><br><br>All reservations made via the Internet require a credit card to guarantee the reservation. Some reservations may require a credit card deposit.<br><br><b>Check In:</b><br><br>3 PM<br><br><b>Check Out:</b><br><br>Noon<br><br></td></tr></table></div><div id="info-group3" class="isHidden"><table id="info-group3" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td style="padding:10px;"></td></tr><tr valign="top"><td style="padding:10px;"><b>Location:</b><br><br>The Warwick Regis Hotel is located on the corner of Geary and Taylor streets in the heart of San Francisco's fashionable theater district, two blocks west of Union Square and the world famous cable cars. Within walking distance of Chinatown, the Financial District and San Francisco Museum of Modern Arts, the Warwick Regis Hotel is the perfect location in San Francisco.<br><br><b>Areas Served:</b><br><br>San Francisco International Airport - 13 milesOakland Airport - 20 miles<br><br><b>Area Airports:</b><br><br>San Francisco, California<br><br></td></tr></table></div><div id="info-group4" class="isHidden"><table id="info-group4" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td style="padding:10px;" align="center">
+      
+      
+      
+      
+      <img onload="resizeImage(this.id)" id="more-photos-10" hspace="3" vspace="3" src="http://www.orbitz.com/hotelimages/724/8724/73779/PROP0-20060117-120602-793.jpg"> 
+      <img onload="resizeImage(this.id)" id="more-photos-12" hspace="3" vspace="3" src="http://www.orbitz.com/hotelimages/724/8724/73779/REST0-20060117-120602-767.jpg"> 
+      
+      
+      
+      
+      
+      
+         <img onload="resizeImage(this.id)" id="more-photos-2" hspace="3" vspace="3" src="http://www.orbitz.com/hotelimages/724/8724/73779/ROOM0-20060117-120602-868.jpg"> 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   </td></tr></table></div><div id="info-group5" class="isHidden"><table id="info-group5" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td align="center" style="padding:10px;"><img name="mapimage" src="/images/clear.gif"></td></tr></table></div></div><br><table width="777" border="0" cellpadding="5" cellspacing="0"><tr><td width="30" align="center">&nbsp;</td><td width="100" align="center" bgcolor="#FFFFCC"><a href="#Getrates"><strong>Check Rates for this Hotel </strong></a></td><td align="right">&nbsp;</td></tr></table></span></div></td>
+  </tr>
+  <tr> 
+    <td class="green">&nbsp;</td>
+  </tr>
+</table>
+      
+<br>
+<table width="759" border="0" cellpadding="10" cellspacing="0" class="grbot">
+  <tr> 
+    <td><div align="center"> 
+        <p><b>&nbsp;Hotel Search Worldwide:</b><a href="http://www.hotelsmax.net/new-york-hotels.htm" target="_top"><br>
+          <br>
+          New York</a> <b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/los-angeles-hotels.htm" target="_top"> 
+          Los Angeles</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/las-vegas-hotels.htm" target="_top">Las 
+          Vegas</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/new-orleans-hotels.htm" target="_top">New 
+          Orleans</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/atlanta-hotels.htm" target="_top">Atlanta</a> 
+          <b>&nbsp;&middot;&nbsp;</b> <a href="http://www.hotelsmax.net/boston-hotels.htm" target="_top">Boston</a> 
+          <b>&nbsp;&middot;&nbsp;</b> <a href="http://www.hotelsmax.net/chicago-hotels.htm" target="_top">Chicago</a> 
+          <b>&nbsp;&middot;&nbsp;</b> <a href="http://www.hotelsmax.net/dallas-hotels.htm" target="_top">Dallas</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/honolulu-hotels.htm" target="_top">Honolulu</a><b> 
+          &middot;&nbsp;</b><a href="http://www.hotelsmax.net/miami-hotels.htm" target="_top">Miami</a> 
+          <b>&nbsp;&middot;&nbsp;</b> <a href="http://www.hotelsmax.net/orlando-hotels.htm" target="_top">Orlando</a><b><br>
+          </b><a href="http://www.hotelsmax.net/tampa-hotels.htm" target="_top">Tampa</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/san-antonio-hotels.htm" target="_top"> 
+          San Antonio</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/san-diego-hotels.htm" target="_top">San 
+          Diego</a> <b>&nbsp;&middot;&nbsp;</b> </a><a href="http://www.hotelsmax.net/san-francisco-hotels.htm" target="_top">San 
+          Francisco</a><b>&nbsp;&middot;</b>&nbsp;<a href="http://www.hotelsmax.net/washington-dc-hotels.htm" target="_top">Washington 
+          DC</a> <b>&nbsp;&middot; &nbsp;</b><a href="http://www.hotelsmax.net/barcelona-hotels.htm" target="_top">Barcelona</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/london-hotels.htm" target="_top">London</a> 
+          <b>&nbsp;&middot;&nbsp;</b> <a href="http://www.hotelsmax.net/paris-hotels.htm" target="_top">Paris</a> 
+          <b>&nbsp;&middot; </b><a href="http://www.hotelsmax.net/rome-hotels.htm" target="_top">Rome</a> 
+          <b>&nbsp;</b><br>
+          <b>&nbsp;&nbsp;</b><a href="http://www.hotelsmax.net/amsterdam-hotels.htm" target="_top">Amsterdam</a> 
+          <b>&nbsp;&middot;</b>&nbsp;<a href="http://www.hotelsmax.net/athens-hotels.htm" target="_top">Athens</a> 
+          <b>&nbsp;&middot;</b>&nbsp;<a href="http://www.hotelsmax.net/brussels-hotels.htm" target="_top"> 
+          Brussels</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/niagara-falls-hotels.htm" target="_top">Niagara 
+          Falls</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/vancouver-hotels.htm" target="_top">Vancouver</a> 
+          <b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/toronto-hotels.htm" target="_top">Toronto</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/montreal-hotels.htm" target="_top">Montreal</a> 
+          <b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/banff-hotels.htm" target="_top">Banff</a> </a> 
+          <b>&nbsp;&middot;</b> <a href="http://www.hotelsmax.net/calgary-hotels.htm" target="_top">Calgary</a><br>
+          <a href="http://www.hotelsmax.net/quebec-hotels.htm" target="_top">Quebec</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/victoria-hotels.htm" target="_top">Victoria</a> 
+          <b>&nbsp;&middot;&nbsp;</b> <a href="http://www.hotelsmax.net/whistler-hotels.htm" target="_top"> 
+          Whistler </a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/cairo-hotels.htm" target="_top">Cairo</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/morocco-hotels.htm" target="_top"> 
+          Morocco</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/south-africa-hotels.htm" target="_top">South 
+          Africa</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/china-hotels.htm" target="_top"> 
+          China</a><b>&nbsp;&middot;&nbsp;</b> <a href="http://www.hotelsmax.net/hong-kong-hotels.htm" target="_top">Hong 
+          Kong</a><b>&nbsp;&middot;&nbsp;</b><a href="http://www.hotelsmax.net/india-hotels.htm" target="_top">India</a><span class="dots"> 
+          </span></p>
+      </div></td>
+  </tr>
+</table>
+<p align="center" class="text">HotelsMAX.Net &reg; 2003-2005 All rights reserved.<br>
+  <br>
+  <a href="http://www.hotelsmax.net/"><img src="/affiliates/custom/max/discount-hotels.gif" alt="Discount Hotels and  Secure reservations" width="50" height="33" border="1"></a> 
+  <br>
+</p>
+<p>&nbsp;</p>
+      <p>&nbsp;</p></td>
+  </tr>
+</table>
+<p class="nav">&nbsp;</p>
+</body>
+</html>
+<div id="CAL" name="CAL" style="position: absolute; top: 0; left: 0; width: 158; z-index: 100; visibility: hidden; border: 1 solid buttonface; border: 2 outset buttonhighlight; background-color: menu;"><span id="CAL_BODY" name="CAL_BODY"></span></div></body></html>

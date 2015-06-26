@@ -1,0 +1,1429 @@
+<DOC>
+<DOCNO>g00241</DOCNO>
+<DOCHDR>http://www.veritas.com/contactus/ContactUsHome.jhtml</DOCHDR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TOP -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<title>VERITAS &gt;&gt; Contact Us</title>
+	<link href="/relaunch/new.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="/relaunch/new.js;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ"></script>
+	<script language="JavaScript"> onload = function() {setup_menu();} </script>		
+  <!-- SiteCatalyst code version: G.6.
+
+		Copyright 1997-2004 Omniture, Inc. More info available at
+
+		http://www.omniture.com --><script language="JavaScript"><!--
+
+		/* You may give each page an identifying name, server, and channel on
+
+		the next lines. */
+
+		var s_pageName=""
+		var s_server=""
+		var s_channel=""
+		var s_pageType=""
+		var s_prop1=""
+		var s_prop2=""
+		var s_prop3=""
+		var s_prop4=""
+		var s_prop5=""
+		var s_prop6=""
+		var s_prop7=""
+		var s_prop8=""
+		var s_prop9=""
+		var s_prop10=""
+		/* E-commerce Variables */
+		var s_campaign=""
+		var s_state=""
+		var s_zip=""
+		var s_events=""
+		var s_products=""
+		var s_purchaseID=""
+		var s_eVar1=""
+		var s_eVar2=""
+		var s_eVar3=""
+		var s_eVar4=""
+		var s_eVar5=""
+		var s_eVar6=""
+		var s_eVar7=""
+		var s_eVar8=""
+		var s_eVar9=""
+		var s_eVar10=""
+		var s_charSet="UTF-8"
+		/********* INSERT THE DOMAIN AND PATH TO YOUR CODE BELOW ************/
+
+		//--></script>		
+		<!-- End SiteCatalyst code version: G.6. -->
+
+
+</head>
+
+<body><div id="page">
+
+
+<script src="/js/StateLookup.js;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ"></script>
+<script>
+function changeUSStateName() {
+for (var i=0; i<document.locations_form.locationId.options.length; i++) {
+document.locations_form.locationId.options[i].text = getUSStateName(document.locations_form.locationId.options[i].text);
+}
+}
+</script>
+
+<script>
+var currForm;
+
+function checkFormElements(formName) {
+	if (document.DepartmentSearch.departmentId.selectedIndex==0 ) {
+		alert("Please select a department");
+	} else if (document.DepartmentSearch.departmentId.selectedIndex==1 ) {
+		alert("Please select a department");
+	} else {
+		document.DepartmentSearch.submit();
+	}
+}
+</script>
+
+<!-- HEADER -->
+
+	<!--  This page uses the header_1_html.tpl -->
+
+	<!-- Logo Bar Start -->
+	<table class="top" cellpadding="0" cellspacing="0">
+	<form action="/search/VSearchResults.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ" method="GET">
+	<tr>
+		<td style="width: 6px"></td>
+		<td class="logo"><a href="/;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ"><img class="logo" src="/relaunch/images/logo.gif" alt="VERITAS" width="137" height="56"></a></td>
+		<td style="width: 6px"></td>
+		<td class="bar"><div class="bar"><div class="search"><table class="search"><tr><td><input class="search" name="q" type="text"></td><td><input name="submit" value="search" class="go" type="image" src="/relaunch/images/go_03.gif"></td></tr><tr><td colspan="2" class="advanced"><a href="/search/advanced_search.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Advanced Search</a></td></tr></table></div>United States<span class="spacebar">|</span><a href="/Worldwide.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Global Sites</a>		
+		
+		</div></td>
+	</tr>
+	</form>
+	</table>
+	<!-- Logo Bar End -->
+
+
+
+	<!--  This page uses the header_2_html.tpl -->
+	<!-- Gray Bar Start -->
+	<div class="graybar">
+
+		
+				
+					<div id="subscribe-button" onClick="toggle_subscribe();"><a href="#">Subscribe <img src="/relaunch/images/expand_07.gif"></a></div>
+					<div id="subscribe-menu-container">
+					<div id="subscribe-menu"><div class="whiterule"></div>
+					<form onSubmit="return CheckOptOutStatus()" name="news_letter_subscribe" method="GET" action="/offer;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">
+					<div class="label">TECHNICAL NEWSLETTER</div>
+					<div style="color:black">Subscribe to our monthly technical newsletter. You will not be subscribed to any other mailing lists.</div><br>
+					<input type="hidden" name="a_id" value="6749">
+					<input type="hidden" name="p_id" value="http://www.veritas.com/newsletter/ThankYou.html">
+					<input type="hidden" name="st" value="TNEWS">
+					<input onfocus="this.select()" class="email" type="text" name="em" value="your e-mail">
+					<div class="subscribe-submit"><a href="javascript:clickingSubscribe()">SUBSCRIBE</a></div><div class="links"><a class="close right" onClick="toggle_subscribe()" href="#">Close Window <img src="/relaunch/images/close_sm.gif"></a></div>
+					</form></div>
+					</div>
+				
+			
+	
+		<span class="right"><form name="updateform" method="post" action="/Vrt/vrtcontroller;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ"><input type="hidden" name="a_id" value="-1"><script>document.write("<input type='hidden' name='p_id' value='" + location.href + "'>");</script></form><script src="/wwwcommon/welcomemsg;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ"></script></span>
+
+		<span class="phone"><script>if (location.href.indexOf('/services/education') >= 0) {	document.write("<a href='http://education.veritas.com/vena?ssp=/veritas/login.saba'>Register Online Now!</a>"); } else { document.write("1.800.327.2232");}</script></span><span class="spacebar">|</span><a href="javascript:veritasOpenWin('/webchat/prelaunch.jsp','prelaunchPage','resizable=no,width=700,height=400');">Chat with a Sales Rep</a><span class="spacebar">|</span><a href="/Productcenter/ProductCenter.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Download</a><span class="spacebar">|</span><a href="/buy/BuyHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">How To Buy</a>		
+
+		</div>
+		<!-- Gray Bar End -->
+
+
+
+	<!--  This page uses header_3_jhtml.tpl -->
+
+	<!-- Menu Bar Start -->
+	<div class="main-menu">
+	<div class="right">
+	<a href="javascript:void(printSpecial())">Print</a><a href="/plugin/;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Plug-ins</a>		
+	</div>
+
+	<a onMouseOver="showSubNav(1);" onMouseOut="hideSubNav(1);" href="/Products/www;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Products</a><a onMouseOver="showSubNav(2);" onMouseOut="hideSubNav(2);" href="/solutions/index.html;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Solutions</a><a onMouseOver="showSubNav(3);" onMouseOut="hideSubNav(3);" href="/services/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Services</a><a onMouseOver="showSubNav(4);" onMouseOut="hideSubNav(4);" href="http://support.veritas.com">Support</a><a onMouseOver="showSubNav(5);" onMouseOut="hideSubNav(5);" href="/customers/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Customers</a><a onMouseOver="showSubNav(6);" onMouseOut="hideSubNav(6);" href="/partner/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Partners</a><a onMouseOver="showSubNav(7);" onMouseOut="hideSubNav(7);" href="/aboutus/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">About VERITAS</a>		
+
+	</div>
+
+	<!-- SUBNAV -->
+	
+		
+				
+						
+						
+							
+									
+											
+													<div id="subnav1" class="subnav1" onMouseOver="showSubNav(1);" onMouseOut="hideSubNav(1);">
+													
+												
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/Products/www;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Products Home</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/Products/www;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?c=category&refId=148">Data Protection</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/Products/www;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?c=category&refId=149">High Availability</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/Products/www;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?c=category&refId=120">Storage & Server Automation</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/Products/www;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?c=category&refId=152">Application Service Management</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/Products/www;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?c=az">Products A-Z</a></div>
+											
+										
+								
+						
+						
+								</div>
+							
+					
+			
+	
+		
+				
+						
+						
+						
+					
+			
+	
+		
+				
+						
+						
+							
+									
+											
+													<div id="subnav3" class="subnav3" onMouseOver="showSubNav(3);" onMouseOut="hideSubNav(3);">
+													
+												
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/services/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Services Home</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/consulting/ConsultingHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Consulting</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/services/education/index.html;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Education</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="http://support.veritas.com/">Support</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/van/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Architect Network</a></div>
+											
+										
+								
+						
+						
+								</div>
+							
+					
+			
+	
+		
+				
+						
+						
+						
+					
+			
+	
+		
+				
+						
+						
+							
+									
+											
+													<div id="subnav5" class="subnav5" onMouseOver="showSubNav(5);" onMouseOut="hideSubNav(5);">
+													
+												
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/customers/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Customer Success Home</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="http://beta.veritas.com/">Beta Program</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="http://cap.veritas.com/">Customer Access Program</a></div>
+											
+										
+								
+						
+						
+								</div>
+							
+					
+			
+	
+		
+				
+						
+						
+							
+									
+											
+													<div id="subnav6" class="subnav6" onMouseOver="showSubNav(6);" onMouseOut="hideSubNav(6);">
+													
+												
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/partner/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Partners Home</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/partner/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Partner Programs</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="http://solutions.veritas.com/directory/">Partner Locator</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/PartnerNetwork/Login.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Partner Network Login</a></div>
+											
+										
+								
+						
+						
+								</div>
+							
+					
+			
+	
+		
+				
+						
+						
+							
+									
+											
+													<div id="subnav7" class="subnav7" onMouseOver="showSubNav(7);" onMouseOut="hideSubNav(7);">
+													
+												
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/aboutus/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">About VERITAS Home</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/aboutus/AboutUsDetail.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?id=1">Company Info</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/news/index.jsp;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">News Room</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/investors/InvestorsHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Investors</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/events/EventsHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Events</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/aboutus/foundation/Foundation.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Philanthropy</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/publishing/;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Publishing</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/Products/media;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Interactive</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/jobs/JobsHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Jobs</a></div>
+											
+										
+								
+						
+							
+									
+											
+											
+											<div class="subnav-item" onMouseOver="this.className = 'subnav-item subactive'" onMouseOut="this.className = 'subnav-item'"><a href="/contactus/ContactUsHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Contact Us</a></div>
+											
+										
+								
+						
+						
+								</div>
+							
+					
+			
+			
+	
+	<!-- Menu Bar End -->
+	<div id="printReady">
+
+
+
+<!-- SEARCH / GLOBAL NAV -->
+
+
+<!-- FILLER -->
+<!--startindex-->
+<table width="755" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+    <td width="155" valign="top"> 
+			<script>
+				if (location.href.indexOf("/pt/BR/") >= 0) {
+					document.write("<img border='0' src='/images/phone_br.gif'><br>");
+				}
+			</script>
+
+<!-- LEFT NAV -->
+<!--stopindex-->
+<img border="0" src="/images/phone.gif"><br>
+
+<table width="155" border="0" cellspacing="0" cellpadding="0">
+
+        <tr> 
+          <td colspan="2" align="left" valign="top"><img src="/images/spacer.gif" width="1" height="10"></td>
+        </tr>
+        <tr> 
+          <td colspan="2" align="left" valign="top"></td>
+        </tr>
+        <tr> 
+          <td width="10" align="left" valign="top">&nbsp;</td>
+          <td><span class="LeftNavTitle">CONTACT US</span></td>
+        </tr>
+	
+
+        <tr> 
+          <td width="10" align="left" valign="top"><img src="/images/nav_arrow.gif" width="10" height="20"></td>
+          <td width="144"><a href="/contactus/ContactUsHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ" class="LeftNavLevel1">Contact Us</a></td>
+        </tr>
+	
+
+
+</table>
+<!--startindex-->
+
+
+<!-- FILLER -->
+    </td>
+
+		<td width="2" background="/images/nav_rule.gif"><img src="/images/spacer.gif" width="2"></td>
+
+    <td width="444" valign="top">
+			<table border="0" cellspacing="8" cellpadding="0" width="444">
+				<tr>
+					<td>
+						<img src="/images/spacer.gif" height=2><br>
+
+
+<!-- BODY -->
+
+	<!--  This part uses the education/section/home_description.tpl -->
+	<span class="title">
+		Contact Us
+	</span>
+	<br><br>
+	<span class="bodytext">
+		If you have a question, need additional information, or would like to give us feedback, please contact VERITAS by selecting the appropriate department and/or location below.
+	</span>
+
+<br><br>
+<span class="subhdr2">Contact Directories</span><br><br>
+<!-- tool wrapper START -->
+
+<form name="DepartmentSearch" method="GET" action="/contactus/listing/DepartmentListing.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">
+
+	<!-- TOOLBOX HEADER -->
+	
+			<table width="100%" border="0" bgcolor="#999999" cellspacing="0" cellpadding="1">
+		
+	
+	<tr>
+		<td>
+			<table border="0" width="100%" bgcolor="white" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="20">
+						<span class="BodyToolboxHeader">&nbsp;Department Search</span>
+					</td>
+					<td align="right">
+						
+							&nbsp;
+								
+						
+							&nbsp;
+								
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2 height=1 bgcolor="#999999"><img src="/images/spacer.gif" height="1"></td>
+				</tr>
+				<tr>
+					<td colspan=2>
+						<table border="0" width="100%" bgcolor="white" cellpadding="6" cellspacing="0">
+							<tr>
+								<td>
+									<!-- TOOLBOX CONTENT -->
+
+
+<select name="departmentId">
+	<option value="0" selected>Select a Department</option>
+	<option value ="0">----------------------------------</option>
+	
+			<option value ="3100">Beta Program</option>
+		
+			<option value ="3101">Business Alliance</option>
+		
+			<option value ="3102">Consulting Services</option>
+		
+			<option value ="3103">Corporate</option>
+		
+			<option value ="3117">Corporate Communications</option>
+		
+			<option value ="3104">Education</option>
+		
+			<option value ="3105">Engineering</option>
+		
+			<option value ="3110">Facilities</option>
+		
+			<option value ="3111">Finance</option>
+		
+			<option value ="3106">Government</option>
+		
+			<option value ="3127">Headquarters</option>
+		
+			<option value ="3107">Human Resources</option>
+		
+			<option value ="3109">IT</option>
+		
+			<option value ="3108">Investor Relations</option>
+		
+			<option value ="3113">Manufacturing</option>
+		
+			<option value ="3114">Marketing</option>
+		
+			<option value ="3115">Order Management</option>
+		
+			<option value ="3116">Product Management</option>
+		
+			<option value ="3118">Purchasing</option>
+		
+			<option value ="3119">QA</option>
+		
+			<option value ="3120">Research and Development</option>
+		
+			<option value ="3121">Sales</option>
+		
+			<option value ="3122">Staffing</option>
+		
+			<option value ="3123">Technical Support</option>
+		
+			<option value ="3124">Training</option>
+		
+			<option value ="3130">VERITAS Software Foundation</option>
+		
+			<option value ="3129">VIP Program</option>
+		
+			<option value ="3126">Webmaster</option>
+		
+	</select>
+
+<!--
+<a href="javascript:checkFormElements();"><img src="/images/pro/tool_submit_button.gif" width="47" height="19" border="0" alt="Submit"></a>
+-->
+
+									
+
+									
+											<br><a href="#" onClick="checkFormElements(); return false;"><img border="0" align="right" src="/images/button_submit.gif"></a>
+										
+					
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>	
+	
+		
+
+</form>
+
+<form name="locations_form" method="GET" action="/contactus/listing/LocationList.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">
+
+	<!-- TOOLBOX HEADER -->
+	
+			<table width="100%" border="0" bgcolor="#999999" cellspacing="0" cellpadding="1">
+		
+	
+	<tr>
+		<td>
+			<table border="0" width="100%" bgcolor="white" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="20">
+						<span class="BodyToolboxHeader">&nbsp;Location Search</span>
+					</td>
+					<td align="right">
+						
+							&nbsp;
+								
+						
+							&nbsp;
+								
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2 height=1 bgcolor="#999999"><img src="/images/spacer.gif" height="1"></td>
+				</tr>
+				<tr>
+					<td colspan=2>
+						<table border="0" width="100%" bgcolor="white" cellpadding="6" cellspacing="0">
+							<tr>
+								<td>
+									<!-- TOOLBOX CONTENT -->
+
+
+<select name="locationId">
+	<option value ="0" selected>United States </option>
+	<option value ="0">----------------------------------</option>
+
+<script language ="javascript">
+function Location() {
+	var locationId;
+	var locationState;
+}
+LocationCollection = new Array();
+
+	
+			obj_3226 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3226;
+
+			obj_3226.locationId = 3226;
+			LocationCollection[LocationCollection.length - 1].state = "AR";
+	
+			obj_3136 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3136;
+
+			obj_3136.locationId = 3136;
+			LocationCollection[LocationCollection.length - 1].state = "AZ";
+	
+			obj_3143 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3143;
+
+			obj_3143.locationId = 3143;
+			LocationCollection[LocationCollection.length - 1].state = "CA";
+	
+			obj_3137 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3137;
+
+			obj_3137.locationId = 3137;
+			LocationCollection[LocationCollection.length - 1].state = "CA";
+	
+			obj_3145 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3145;
+
+			obj_3145.locationId = 3145;
+			LocationCollection[LocationCollection.length - 1].state = "CA";
+	
+			obj_3138 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3138;
+
+			obj_3138.locationId = 3138;
+			LocationCollection[LocationCollection.length - 1].state = "CA";
+	
+			obj_3189 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3189;
+
+			obj_3189.locationId = 3189;
+			LocationCollection[LocationCollection.length - 1].state = "CA";
+	
+			obj_3211 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3211;
+
+			obj_3211.locationId = 3211;
+			LocationCollection[LocationCollection.length - 1].state = "CA";
+	
+			obj_3192 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3192;
+
+			obj_3192.locationId = 3192;
+			LocationCollection[LocationCollection.length - 1].state = "CA";
+	
+			obj_3140 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3140;
+
+			obj_3140.locationId = 3140;
+			LocationCollection[LocationCollection.length - 1].state = "CA";
+	
+			obj_3146 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3146;
+
+			obj_3146.locationId = 3146;
+			LocationCollection[LocationCollection.length - 1].state = "CO";
+	
+			obj_3217 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3217;
+
+			obj_3217.locationId = 3217;
+			LocationCollection[LocationCollection.length - 1].state = "CO";
+	
+			obj_3147 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3147;
+
+			obj_3147.locationId = 3147;
+			LocationCollection[LocationCollection.length - 1].state = "CO";
+	
+			obj_3148 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3148;
+
+			obj_3148.locationId = 3148;
+			LocationCollection[LocationCollection.length - 1].state = "CT";
+	
+			obj_3149 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3149;
+
+			obj_3149.locationId = 3149;
+			LocationCollection[LocationCollection.length - 1].state = "FL";
+	
+			obj_3205 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3205;
+
+			obj_3205.locationId = 3205;
+			LocationCollection[LocationCollection.length - 1].state = "FL";
+	
+			obj_3151 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3151;
+
+			obj_3151.locationId = 3151;
+			LocationCollection[LocationCollection.length - 1].state = "GA";
+	
+			obj_3152 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3152;
+
+			obj_3152.locationId = 3152;
+			LocationCollection[LocationCollection.length - 1].state = "IL";
+	
+			obj_3230 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3230;
+
+			obj_3230.locationId = 3230;
+			LocationCollection[LocationCollection.length - 1].state = "IL";
+	
+			obj_3213 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3213;
+
+			obj_3213.locationId = 3213;
+			LocationCollection[LocationCollection.length - 1].state = "IN";
+	
+			obj_3214 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3214;
+
+			obj_3214.locationId = 3214;
+			LocationCollection[LocationCollection.length - 1].state = "KS";
+	
+			obj_3227 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3227;
+
+			obj_3227.locationId = 3227;
+			LocationCollection[LocationCollection.length - 1].state = "KS";
+	
+			obj_3200 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3200;
+
+			obj_3200.locationId = 3200;
+			LocationCollection[LocationCollection.length - 1].state = "KY";
+	
+			obj_3204 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3204;
+
+			obj_3204.locationId = 3204;
+			LocationCollection[LocationCollection.length - 1].state = "KY";
+	
+			obj_3228 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3228;
+
+			obj_3228.locationId = 3228;
+			LocationCollection[LocationCollection.length - 1].state = "MA";
+	
+			obj_3229 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3229;
+
+			obj_3229.locationId = 3229;
+			LocationCollection[LocationCollection.length - 1].state = "MD";
+	
+			obj_3264 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3264;
+
+			obj_3264.locationId = 3264;
+			LocationCollection[LocationCollection.length - 1].state = "MD";
+	
+			obj_3156 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3156;
+
+			obj_3156.locationId = 3156;
+			LocationCollection[LocationCollection.length - 1].state = "MI";
+	
+			obj_3157 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3157;
+
+			obj_3157.locationId = 3157;
+			LocationCollection[LocationCollection.length - 1].state = "MN";
+	
+			obj_3202 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3202;
+
+			obj_3202.locationId = 3202;
+			LocationCollection[LocationCollection.length - 1].state = "MO";
+	
+			obj_3160 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3160;
+
+			obj_3160.locationId = 3160;
+			LocationCollection[LocationCollection.length - 1].state = "NC";
+	
+			obj_3203 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3203;
+
+			obj_3203.locationId = 3203;
+			LocationCollection[LocationCollection.length - 1].state = "NC";
+	
+			obj_3158 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3158;
+
+			obj_3158.locationId = 3158;
+			LocationCollection[LocationCollection.length - 1].state = "NJ";
+	
+			obj_3159 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3159;
+
+			obj_3159.locationId = 3159;
+			LocationCollection[LocationCollection.length - 1].state = "NY";
+	
+			obj_3196 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3196;
+
+			obj_3196.locationId = 3196;
+			LocationCollection[LocationCollection.length - 1].state = "NY";
+	
+			obj_3265 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3265;
+
+			obj_3265.locationId = 3265;
+			LocationCollection[LocationCollection.length - 1].state = "NY";
+	
+			obj_3210 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3210;
+
+			obj_3210.locationId = 3210;
+			LocationCollection[LocationCollection.length - 1].state = "NY";
+	
+			obj_3199 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3199;
+
+			obj_3199.locationId = 3199;
+			LocationCollection[LocationCollection.length - 1].state = "NY";
+	
+			obj_3206 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3206;
+
+			obj_3206.locationId = 3206;
+			LocationCollection[LocationCollection.length - 1].state = "OH";
+	
+			obj_3207 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3207;
+
+			obj_3207.locationId = 3207;
+			LocationCollection[LocationCollection.length - 1].state = "OH";
+	
+			obj_3209 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3209;
+
+			obj_3209.locationId = 3209;
+			LocationCollection[LocationCollection.length - 1].state = "OH";
+	
+			obj_3161 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3161;
+
+			obj_3161.locationId = 3161;
+			LocationCollection[LocationCollection.length - 1].state = "OR";
+	
+			obj_3162 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3162;
+
+			obj_3162.locationId = 3162;
+			LocationCollection[LocationCollection.length - 1].state = "PA";
+	
+			obj_3212 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3212;
+
+			obj_3212.locationId = 3212;
+			LocationCollection[LocationCollection.length - 1].state = "PA";
+	
+			obj_3215 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3215;
+
+			obj_3215.locationId = 3215;
+			LocationCollection[LocationCollection.length - 1].state = "TN";
+	
+			obj_3163 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3163;
+
+			obj_3163.locationId = 3163;
+			LocationCollection[LocationCollection.length - 1].state = "TX";
+	
+			obj_3164 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3164;
+
+			obj_3164.locationId = 3164;
+			LocationCollection[LocationCollection.length - 1].state = "TX";
+	
+			obj_3165 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3165;
+
+			obj_3165.locationId = 3165;
+			LocationCollection[LocationCollection.length - 1].state = "TX";
+	
+			obj_3258 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3258;
+
+			obj_3258.locationId = 3258;
+			LocationCollection[LocationCollection.length - 1].state = "TX";
+	
+			obj_3198 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3198;
+
+			obj_3198.locationId = 3198;
+			LocationCollection[LocationCollection.length - 1].state = "UT";
+	
+			obj_3233 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3233;
+
+			obj_3233.locationId = 3233;
+			LocationCollection[LocationCollection.length - 1].state = "VA";
+	
+			obj_3167 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3167;
+
+			obj_3167.locationId = 3167;
+			LocationCollection[LocationCollection.length - 1].state = "WA";
+	
+			obj_3194 = new Location();
+			LocationCollection[LocationCollection.length] = obj_3194;
+
+			obj_3194.locationId = 3194;
+			LocationCollection[LocationCollection.length - 1].state = "WI";
+	
+
+	var str ="";
+	var sPrevStateName = "default";
+	var sNextStateName = "";
+
+	for(i=0;i<LocationCollection.length;i++){
+		sNextStateName  = LocationCollection[i].state;
+		if (sPrevStateName  != sNextStateName)	
+		{
+			str= str + "<option value='" + LocationCollection[i].locationId + "'>" + LocationCollection[i].state + "</option>";
+			sPrevStateName  = sNextStateName;
+		}
+
+	}
+	document.writeln(str);
+</script>
+
+	<option value ="0">----------------------------------</option>
+	<option value ="-1">International</option>
+	<option value ="-1">----------------------------------</option>
+	
+			<option value ="3102">Argentina</option>
+		
+			<option value ="3125">Australia</option>
+		
+			<option value ="3185">Austria</option>
+		
+			<option value ="3108">Belgium</option>
+		
+			<option value ="3103">Brazil</option>
+		
+			<option value ="3100">Canada</option>
+		
+			<option value ="3109">Denmark</option>
+		
+			<option value ="3174">Finland</option>
+		
+			<option value ="3110">France</option>
+		
+			<option value ="3111">Germany</option>
+		
+			<option value ="3128">Hong Kong</option>
+		
+			<option value ="3131">India</option>
+		
+			<option value ="3223">Israel</option>
+		
+			<option value ="3113">Italy</option>
+		
+			<option value ="3133">Japan</option>
+		
+			<option value ="3134">Malaysia</option>
+		
+			<option value ="3104">Mexico</option>
+		
+			<option value ="3116">Netherlands</option>
+		
+			<option value ="3232">New Zealand</option>
+		
+			<option value ="3118">Norway</option>
+		
+			<option value ="3127">Peoples Republic of China</option>
+		
+			<option value ="3177">Philippines</option>
+		
+			<option value ="3183">Poland</option>
+		
+			<option value ="3224">Russia</option>
+		
+			<option value ="3234">Singapore</option>
+		
+			<option value ="3123">South Africa</option>
+		
+			<option value ="3132">South Korea</option>
+		
+			<option value ="3119">Spain</option>
+		
+			<option value ="3121">Sweden</option>
+		
+			<option value ="3122">Switzerland</option>
+		
+			<option value ="3231">Taiwan</option>
+		
+			<option value ="3176">Thailand</option>
+		
+			<option value ="3262">United Arab Emirates</option>
+		
+			<option value ="3107">United Kingdom</option>
+		
+</select>
+<br>
+
+
+<input align=right type="image" value="submit" src="/images/button_submit.gif" border="0" alt="Submit">
+
+
+									
+
+									
+					
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>	
+	
+	
+
+</form>
+
+<script> changeUSStateName(); </script>
+<!-- tool wrapper END -->
+
+
+
+<table width="100%">
+<tr>
+<td valign="top" align="left" width="225">
+<span class="subhdr2">VERITAS Headquarters</span><br>
+	<span class="bodytext">350 Ellis Street</span><br>
+
+	
+
+	<span class="bodytext">Mountain View,
+	CA
+	94043</span><br>
+
+	
+	<span class="bodytext"><span class="subhdr2">Tel: </span>1-800-327-2232 (US) &amp; 1-650-527-8000 (outside US) </span><br>
+		
+
+	
+	<span class="bodytext"><span class="subhdr2">Fax: </span>650-527-2908</span><br>
+		
+
+	
+
+		
+<span class="bodytext"><a href="/contactus/Map.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?link=map_directions&streetaddress=350%20Ellis%20Street&city=Mountain%20View&state=CA&zip=94043&country=US&locationName=VERITAS%20Headquarters" class="link">Map and directions
+				
+				
+				
+				
+				
+				
+				
+			</a></span><br><br>
+			
+<br><br>
+</td>
+
+<td width="15"><img src="/images/nav/spacer.gif" width="10" height="1"></td>
+
+<td align="left" valign="top" width="220">
+<span class="subhdr2">Contact Shortcuts</span><br>
+
+		<span class="link"><li type="square"><a href="/contactus/listing/DepartmentListing.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?departmentId=3100" class="link">Beta Program
+		
+		</a></span><span>
+	
+		<span class="link"><li type="square"><a href="/contactus/listing/DepartmentListing.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?departmentId=3117" class="link">Corporate Communications
+		
+		</a></span><span>
+	
+		<span class="link"><li type="square"><a href="/contactus/listing/DepartmentListing.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?departmentId=3108" class="link">Investor Relations
+		
+		</a></span><span>
+	
+		<span class="link"><li type="square"><a href="/contactus/listing/DepartmentListing.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?departmentId=3121" class="link">Sales
+		
+		</a></span><span>
+	
+		<span class="link"><li type="square"><a href="/contactus/listing/DepartmentListing.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ?departmentId=3123" class="link">Technical Support
+		
+		</a></span><span>
+	
+<br></td>
+</tr>
+</table>
+
+<!-- FILLER -->
+	<!--stopindex-->
+				</td>
+				</tr>
+				<tr>
+					<td height="20"></td>
+				</tr>
+			</table>	
+		</td>
+
+		<td valign="top">
+			<table width="154" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					
+							<td height="34"></td>
+							
+				</tr>
+				<tr>
+					<td>
+
+
+<!-- MODULE CODE -->
+
+
+<!-- Here paramValue1 is hardcoded. Here it is the subjectId -->
+
+
+<!-- start module 7 template //-->
+
+	
+				<!-- MODULE TYPE #4 -->
+	<table width="100%" border="0" bgcolor="#666666" cellspacing="0" cellpadding="1">
+		<tr> 
+			<td>
+					<!-- MODULE HEADER -->
+	<table bgcolor="white" width="153" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td width="3" height="25" bgcolor="#CC0000"><img src="/images/spacer.gif" width="3"></td>
+			<td width="3" height="25"><img src="/images/spacer.gif" width="3"></td>
+			<td width="146" height="25"><span class="ModuleTitle">JOB SEEKERS</span></td>
+		</tr>
+		<tr>
+			<td colspan=3 height=1 bgcolor="#666666"><img src="/images/spacer.gif" height="1"></td>
+		</tr>	
+	</table>
+
+
+				<!-- MODULE BODY -->
+				<table width="100%" bgcolor="white" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+							<table bgcolor="white" border="0" cellspacing="7" cellpadding="0">
+									
+								<tr>
+									
+											<td valign="top">
+												<img src="/images/spacer.gif" height="4"><br>
+												<img width="40" height="40" src="/images/job/jobs_medv.jpg">
+											</td>
+											<td>
+										
+										<a href="/jobs/JobsHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ" class="ModuleLink">Join VERITAS Software's growing force of over 6,000 executives, engineers, and innovators.</a><br>
+									</td>	
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<img src="/images/spacer.gif" height="5"><br>
+
+
+		
+
+
+
+
+
+
+<!-- Here paramValue1 is hardcoded. Here it is the subjectId -->
+
+
+<!-- start module 7 template //-->
+
+	
+				<!-- MODULE TYPE #4 -->
+	<table width="100%" border="0" bgcolor="#666666" cellspacing="0" cellpadding="1">
+		<tr> 
+			<td>
+					<!-- MODULE HEADER -->
+	<table bgcolor="white" width="153" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td width="3" height="25" bgcolor="#CC0000"><img src="/images/spacer.gif" width="3"></td>
+			<td width="3" height="25"><img src="/images/spacer.gif" width="3"></td>
+			<td width="146" height="25"><span class="ModuleTitle">WORLDWIDE SITES</span></td>
+		</tr>
+		<tr>
+			<td colspan=3 height=1 bgcolor="#666666"><img src="/images/spacer.gif" height="1"></td>
+		</tr>	
+	</table>
+
+
+				<!-- MODULE BODY -->
+				<table width="100%" bgcolor="white" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>
+							<table bgcolor="white" border="0" cellspacing="7" cellpadding="0">
+									
+								<tr>
+									
+											<td valign="top">
+												<img src="/images/spacer.gif" height="4"><br>
+												<img width="40" height="40" src="/images/job/international_medv.jpg">
+											</td>
+											<td>
+										
+										<a href="/Worldwide.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ" class="ModuleLink">All around the globe, VERITAS has an office near you.</a><br>
+									</td>	
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<img src="/images/spacer.gif" height="5"><br>
+
+
+		
+
+
+
+
+
+		
+<!-- FILLER -->
+					</td>
+				</tr>
+				<tr>
+					<td height="20"></td>
+				</tr>
+			</table>
+		</td>
+
+	</tr>	
+</table>
+
+
+<!-- FOOTER -->
+
+	<!--  This page uses the footer_html.tpl -->
+	
+		</div> <!-- <div id="printReady"> -->
+		<script>
+		<!-- get 4-digit year for copyright
+		var today = new Date();
+		var thisYear = today.getFullYear();
+		-->
+		</script>
+
+		<!-- Footer Start -->
+		<DIV class="footer">
+	
+
+	<a href="/aboutus/foundation/Foundation.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Foundation</a>|<a href="/sitemap/SiteMap.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Site Map</a>|<a href="/privacypolicy/PolicyHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Revised Privacy Policy</a>|<a href="/privacypolicy/TermsOfUseHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Terms of Use</a>|<a href="/contactus/ContactUsHome.jhtml;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ">Contact Us</a>|<a href="mailto:webmaster@veritas.com">Give Us Your Feedback</a><br>
+		&nbsp;&copy; <script>document.write(thisYear)</script> VERITAS Software Corporation. All rights reserved.</DIV>
+		<!-- Footer End -->
+
+		</div>
+
+		<script type="text/javascript" src="/js/sitecatalyst_util.js;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ"></script>
+		<script type="text/javascript" src="/js/site_catalyst.js;vrtsid=NR3ZWBMIPNQ45QFIYBTCFEQ"></script>
+
+		</body>
+		</html>
+	
+

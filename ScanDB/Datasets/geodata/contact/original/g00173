@@ -1,0 +1,731 @@
+<DOC>
+<DOCNO>g00173</DOCNO>
+<DOCHDR>http://www.nationalmssociety.org/contactus/index.asp</DOCHDR>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head><link rel="STYLESHEET" type="text/css" href="/style/nmss.css">
+	<title>National Multiple Sclerosis Society - Contact</title>	
+
+<script language="javascript">
+<!--//
+var browser = navigator.appName;
+var version = parseInt(navigator.appVersion);
+
+var ns4 = (browser == "Netscape" && version >= 4);
+var ie4 = (browser == "Microsoft Internet Explorer" && version >= 4);
+var ns3 = (browser == "Netscape" && version < 4);
+var ie3 = (browser == "Microsoft Internet Explorer" && version < 4);
+
+var loaded = false
+
+if (document.images) {
+	// top images - on
+	icon1on = new Image()
+	icon1on.src = "/images/universal/top/top_donate_on.gif"
+	icon2on = new Image()
+	icon2on.src = "/images/universal/top/top_pledge_on.gif"
+	icon3on = new Image()
+	icon3on.src = "/images/universal/top/top_search_on.gif"
+	icon4on = new Image()
+	icon4on.src = "/images/universal/top/top_contact_on.gif"
+	icon5on = new Image()
+	icon5on.src = "/images/universal/top/top_member_on.gif"
+	// bottom images - on
+	icon6on = new Image()
+	icon6on.src = "/images/universal/bottom/bottom_donate_on.gif"
+	icon7on = new Image()
+	icon7on.src = "/images/universal/bottom/bottom_pledge_on.gif"
+	icon8on = new Image()
+	icon8on.src = "/images/universal/bottom/bottom_search_on.gif"
+	icon9on = new Image()
+	icon9on.src = "/images/universal/bottom/bottom_contact_on.gif"
+	icon10on = new Image()
+	icon10on.src = "/images/universal/bottom/bottom_member_on.gif"
+
+	// top images - off
+	icon1off = new Image()
+	icon1off.src = "/images/universal/top/top_donate_off.gif"
+	icon2off = new Image()
+	icon2off.src = "/images/universal/top/top_pledge_off.gif"
+	icon3off = new Image()
+	icon3off.src = "/images/universal/top/top_search_off.gif"
+	icon4off = new Image()
+	icon4off.src = "/images/universal/top/top_contact_off.gif"
+	icon5off = new Image()
+	icon5off.src = "/images/universal/top/top_member_off.gif"
+	// bottom images - off
+	icon6off = new Image()
+	icon6off.src = "/images/universal/bottom/bottom_donate_off.gif"
+	icon7off = new Image()
+	icon7off.src = "/images/universal/bottom/bottom_pledge_off.gif"
+	icon8off = new Image()
+	icon8off.src = "/images/universal/bottom/bottom_search_off.gif"
+	icon9off = new Image()
+	icon9off.src = "/images/universal/bottom/bottom_contact_off.gif"
+	icon10off = new Image()
+	icon10off.src = "/images/universal/bottom/bottom_member_off.gif"
+	
+	// faq, calendar, glossary - on
+	left1on = new Image()
+	left1on.src = "/images/universal/bottom/faqs_on.gif"
+	left2on = new Image()
+	left2on.src = "/images/universal/bottom/glossary_on.gif"
+	left3on = new Image()
+	left3on.src = "/images/universal/bottom/calendar_on.gif"
+	left4on = new Image()
+	left4on.src = "/images/contactus/chat_over.gif"
+	left5on = new Image()
+	left5on.src = "/images/contactus/bulletin_over.gif"
+	
+	// faq, calendar, glossary - off
+	left1off = new Image()
+	left1off.src = "/images/universal/bottom/faqs_off.gif"
+	left2off = new Image()
+	left2off.src = "/images/universal/bottom/glossary_off.gif"
+	left3off = new Image()
+	left3off.src = "/images/universal/bottom/calendar_off.gif"
+	left4off = new Image()
+	left4off.src = "/images/contactus/chat.gif"
+	left5off = new Image()
+	left5off.src = "/images/contactus/bulletin.gif"
+
+	// top and bottom nav - on
+	nav1on = new Image()
+	nav1on.src = "/images/universal/nav/home_over.gif"
+	nav2on = new Image()
+	nav2on.src = "/images/universal/nav/aboutus_over.gif"
+	nav3on = new Image()
+	nav3on.src = "/images/universal/nav/treatments_over.gif"
+	nav4on = new Image()
+	nav4on.src = "/images/universal/nav/research_over.gif"
+	nav5on = new Image()
+	nav5on.src = "/images/universal/nav/library_over.gif"
+	nav6on = new Image()
+	nav6on.src = "/images/universal/nav/headlines_over.gif"
+	nav7on = new Image()
+	nav7on.src = "/images/universal/nav/pressroom_over.gif"
+	nav8on = new Image()
+	nav8on.src = "/images/universal/nav/professionals_over.gif"
+	nav9on = new Image()
+	nav9on.src = "/images/universal/nav/programs_over.gif"
+	nav10on = new Image()
+	nav10on.src = "/images/universal/nav/mycommunity_over.gif"
+	nav11on = new Image()
+	nav11on.src = "/images/universal/nav/getinvolved_over.gif"
+	nav12on = new Image()
+	nav12on.src = "/images/universal/nav/events_over.gif"
+	nav13on = new Image()
+	nav13on.src = "/images/universal/nav/advocacy_over.gif"
+	nav14on = new Image()
+	nav14on.src = "/images/universal/nav/sitemap_over.gif"
+
+	// top and bottom nav - off
+	nav1off = new Image()
+	nav1off.src = "/images/universal/nav/home.gif"
+	nav2off = new Image()
+	nav2off.src = "/images/universal/nav/aboutus.gif"
+	nav3off = new Image()
+	nav3off.src = "/images/universal/nav/treatments.gif"
+	nav4off = new Image()
+	nav4off.src = "/images/universal/nav/research.gif"
+	nav5off = new Image()
+	nav5off.src = "/images/universal/nav/library.gif"
+	nav6off = new Image()
+	nav6off.src = "/images/universal/nav/headlines.gif"
+	nav7off = new Image()
+	nav7off.src = "/images/universal/nav/pressroom.gif"
+	nav8off = new Image()
+	nav8off.src = "/images/universal/nav/professionals.gif"
+	nav9off = new Image()
+	nav9off.src = "/images/universal/nav/programs.gif"
+	nav10off = new Image()
+	nav10off.src = "/images/universal/nav/mycommunity.gif"
+	nav11off = new Image()
+	nav11off.src = "/images/universal/nav/getinvolved.gif"
+	nav12off = new Image()
+	nav12off.src = "/images/universal/nav/events.gif"
+	nav13off = new Image()
+	nav13off.src = "/images/universal/nav/advocacy.gif"
+	nav14off = new Image()
+	nav14off.src = "/images/universal/nav/sitemap.gif"
+}
+
+// normal image rollovers
+function img_act(imgName) {
+	if (loaded && document.images) {
+		imgOn = eval(imgName + "on.src")
+		document [imgName].src = imgOn
+	}
+}
+
+function img_inact(imgName) {
+	if (loaded && document.images) {
+		imgOff = eval(imgName + "off.src")
+		document [imgName].src = imgOff
+	}
+}
+
+// navigation image rollovers
+function nav_act(imgName1,imgName2) {
+	if (loaded && document.images) {
+		imgOn = eval(imgName1 + "on.src")
+		document [imgName1].src = imgOn
+		document [imgName2].src = imgOn
+	}
+}
+
+function nav_inact(imgName1,imgName2) {
+	if (loaded && document.images) {
+		imgOff = eval(imgName1 + "off.src")
+		document [imgName1].src = imgOff
+		document [imgName2].src = imgOff
+	}
+}
+
+function donothing() {}
+
+function ready(){
+	loaded = true
+}
+//-->
+</script>
+<script language="javascript" src="/js/text.js"></script>
+<script language="javascript" src="/js/popwin.js"></script>
+
+<script language="javascript" type="text/javascript" src="../js/validation.js"></script>
+<script language="javascript">
+<!--//
+
+var gForm = "";
+var gErrorLog = "";
+var gOkDate = 0;
+
+function checkform(form) {
+
+    gForm = form;
+    validate("Salutation","Salutation","isSelected")
+    validate("FirstName","First Name","isEmpty")
+    validate("LastName","Last Name","isEmpty")
+	
+	if (gForm.poBox.value == "")
+	{
+	    validate("HouseNumber","House Number","isEmpty")
+	    validate("StreetName","Street Name","isEmpty")
+	}
+	else
+	{
+	    validate("poBox","PO Box","isAlphaNumeric")
+	}
+	
+	if ( gForm.poBox.value != "" && ( gForm.HouseNumber.value != "" || gForm.StreetName.value != "" ) )
+	{
+        gErrorLog += "- Either PO Box or House Number & Street Name must be entered but not both.\n"
+	}
+	
+    validate("City","City","isEmpty")
+    validate("Zip","Zip/Postal Code","isEmpty")
+    validate("Country","Country","isSelected")
+    validate("HomePhone","Home Phone","isEmpty")
+    validate("WorkPhone","Work Phone","isEmpty")
+    validate("Email","Email Address","isValidEmail")
+    validate("Message","Message","isEmpty")
+    validate("DirectTo","Message to the appropriate Society resource","isChecked")
+	
+    return showErrors()
+}
+
+//-->
+</script>
+
+</head>
+
+
+<body link="#333399" vlink="#990099" leftmargin=0 topmargin=0 marginwidth="0" marginheight="0" background="/images/universal/background.gif" onLoad="ready();MM_preloadImages('/images/universal/top_new/donate_on.gif','/images/universal/top_new/pledge_on.gif','/images/universal/top_new/search_on.gif','/images/universal/top_new/contact_on.gif','/images/universal/top_new/printing_on.gif','/images/universal/top_new/shortcuts_on.gif')">
+<!-- begin top navigation -->
+<!-- 2005-02-25
+  Saved original of this file as header20050224.asp
+  This file contained a misplaced title tag -- it's pulled into the body tag -- and 
+  an erroneous body tag.
+  
+  Try commenting them out.
+  
+  Also replaced the <center></center>tags with <div align="center"></div> tags.
+  
+  Check whether this JavaScript duplicates what's in the main asp page.
+-->
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<!-- This title tag does not belong here
+<title>National MS Society</title>
+-->
+<!--
+<body onLoad="MM_preloadImages('/Images/universal/nav/aboutms_on.gif','/Images/universal/nav/living_on.gif','/Images/universal/nav/research_on.gif','/Images/universal/nav/headlines_on.gif','/Images/universal/nav/spevents_on.gif','/Images/universal/nav/forpros_on.gif','/Images/universal/nav/treatments_on.gif','/Images/universal/nav/home_on.gif','/Images/universal/nav/find_on.gif','/Images/universal/nav/involved_on.gif','/Images/universal/nav/advocacy_on.gif','/Images/universal/nav/press_on.gif','/Images/universal/nav/society_on.gif','/Images/universal/nav/sitemap_on.gif','/Images/universal/nav/library_on.gif')">
+-->
+
+<div align="center">
+    
+  <table width="753" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+        
+      <td><a accesskey="x" href="http://www.nationalmssociety.org/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('home_off','','/Images/universal/nav/home_on.gif',1)"><img src="/Images/universal/nav/home_off.gif" width="53" height="18" name="home_off" border="0" alt="HOME"></a></td>
+        
+      <td><a accesskey="c" href="http://www.nationalmssociety.org/mycommunity/index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('find_off','','/Images/universal/nav/find_on.gif',1)"><img src="/Images/universal/nav/find_off.gif" width="129" height="18" name="find_off" border="0" alt="FIND YOUR CHAPTER- For support programs and event registration"></a></td>
+        
+      <td><a accesskey="i" href="http://www.nationalmssociety.org/get%20involved.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('involved_off','','/Images/universal/nav/involved_on.gif',1)"><img src="/Images/universal/nav/involved_off.gif" width="97" height="18" name="involved_off" border="0" alt="GET INVOLVED- Volunteerism, making financial contributions, and Society membership"></a></td>
+        
+      <td><a accesskey="a" href="http://www.nationalmssociety.org/advocacy.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('advocacy_off','','/Images/universal/nav/advocacy_on.gif',1)"><img src="/Images/universal/nav/advocacy_off.gif" width="201" height="18" name="advocacy_off" border="0" alt="GOVERNMENT AFFAIRS/ADVOCACY- Information on influencing legislative change in federal, state, and local government"></a></td>
+        
+      <td><a accesskey="p" href="http://www.nationalmssociety.org/press%20room.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('press_off','','/Images/universal/nav/press_on.gif',1)"><img src="/Images/universal/nav/press_off.gif" width="90" height="18" name="press_off" border="0" alt="PRESS ROOM- Contact information for journalists"></a></td>
+        
+      <td><a accesskey="n" href="http://www.nationalmssociety.org/about%20the%20society.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('society_off','','/Images/universal/nav/society_on.gif',1)"><img src="/Images/universal/nav/society_off.gif" width="126" height="18" name="society_off" border="0" alt="ABOUT THE NATIONAL MS SOCIETY- Our mission statement, highlights of our organization, financial reports, and our National Board of Directors"></a></td>
+        
+      <td><a accesskey="1" href="http://www.nationalmssociety.org/library.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sitemap_off','','/Images/universal/nav/sitemap_on.gif',1);MM_swapImage('library_off','','/Images/universal/nav/library_on.gif',1)"><img src="/Images/universal/nav/library_off.gif" width="65" height="18" border="0" name="library_off" alt="LIBRARY - Society publications, videos, and resources"></a></td>
+      </tr>
+    </table>
+    <table width="744" border="0" cellspacing="0" cellpadding="0">
+      <tr> 
+        <td><a accesskey="m" href="http://www.nationalmssociety.org/about%20ms.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('aboutms_off','','/Images/universal/nav/aboutms_on.gif',1)"><img src="/Images/universal/nav/aboutms_off.gif" width="87" height="22" name="aboutms_off" border="0" alt="ABOUT MS- What is multiple sclerosis? Who gets MS? Causes, diagnosis, and symptoms"></a></td>
+        
+      <td><a accesskey="l" href="http://www.nationalmssociety.org/living%20with%20ms.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('living_off','','/Images/universal/nav/living_on.gif',1)"><img src="/Images/universal/nav/living_off.gif" width="115" height="22" name="living_off" border="0" alt="LIVING WITH MS- Effects of MS on daily life and how to cope.  Includes webcasts and our library"></a></td>
+        <td><a accesskey="t" href="http://www.nationalmssociety.org/treatments.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('treatments_off','','/Images/universal/nav/treatments_on.gif',1)"><img src="/Images/universal/nav/treatments_off.gif" width="100" height="22" name="treatments_off" border="0" alt="TREATMENTS - Medications, symptom management, rehabiliation, treating exacerbations, and complementary &amp; alternative medicine"></a></td>
+        <td><a accesskey="r" href="http://www.nationalmssociety.org/research.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('research_off','','/Images/universal/nav/research_on.gif',1)"><img src="/Images/universal/nav/research_off.gif" width="84" height="22" name="research_off" border="0" alt="RESEARCH- The latest in MS research initiatives, clinical trials, and research funding"></a></td>
+        
+      <td><a accesskey="h" href="http://www.nationalmssociety.org/headlines.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('headlines_off','','/Images/universal/nav/headlines_on.gif',1)"><img src="/Images/universal/nav/headlines_off.gif" width="90" height="22" name="headlines_off" border="0" alt="HEADLINES- Breaking news about MS, the Society and the world.  Also, Spotlight archives"></a></td>
+        
+      <td><a accesskey="s" href="http://www.nationalmssociety.org/specialevents/index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('spevents_off','','/Images/universal/nav/spevents_on.gif',1)"><img src="/Images/universal/nav/spevents_off.gif" width="121" height="22" name="spevents_off" border="0" alt="SPECIAL EVENTS- MS Walk, MS Challenge Walk,  MS Bike Tour, and TeamMS"></a></td>
+        <td><a accesskey="f" href="http://www.nationalmssociety.org/prc.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('forpros_off','','/Images/universal/nav/forpros_on.gif',1)"><img src="/Images/universal/nav/forpros_off.gif" width="147" height="22" name="forpros_off" border="0" alt="FOR HEALTHCARE PROFESSIONALS-  Our Professional Resource Center"></a></td>
+      </tr>
+    </table>
+</div>
+
+<!-- end top navigation -->
+
+<!-- begin main content area-->
+<center>
+  <table width="744" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      
+    <td rowspan="2" width="177"><a href="/"><img src="/images/universal/nav/logo.gif" width="177" height="117" border="0" alt="National Multiple Sclerosis Society"></a></td>
+      <td> 
+        <table width="567" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="95"><img src="/images/universal/top_new/top_space.gif" width="94" height="51"></td>
+            <td width="137"><a accesskey="2" href="https://www.nationalmssociety.org/donate/donate.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('donate_off','','/images/universal/top_new/donate_on.gif',1)"><img src="/images/universal/top_new/donate_off.gif" width="138" height="51" alt="Donate to the Society" name="donate_off" border="0"></a></td>
+            <td width="172"><a accesskey="3" href="https://www.nationalmssociety.org/pledge/index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('pledge_off','','/images/universal/top_new/pledge_on.gif',1)"><img src="/images/universal/top_new/pledge_off.gif" width="172" height="51" alt="Pledge/Sponsor a Participant" border="0" name="pledge_off"></a></td>
+            <td width="63"><a accesskey="4" href="http://www.nationalmssociety.org/search/index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('search_off','','/images/universal/top_new/search_on.gif',1)"><img src="/images/universal/top_new/search_off.gif" width="63" height="51" alt="Search" border="0" name="search_off"></a></td>
+            <td width="100"><a accesskey="5" href="http://www.nationalmssociety.org/contactus/index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact_off','','/images/universal/top_new/contact_on.gif',1)"><img src="/images/universal/top_new/contact_off.gif" width="100" height="51" alt="Contact Us" border="0" name="contact_off"></a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <!-- begin section title -->
+      <td>
+        <table width="567" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="375"><img src="/images/contactus/title.gif" width="375" height="66" border="0" alt="Contact"></td>
+            <td width="92"><a href="http://www.nationalmssociety.org/printing_tips/print_tips.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print_off','','/images/universal/top_new/printing_on.gif',1)"><img src="/images/universal/top_new/printing_off.gif" width="92" height="66" alt="printing tips" name="print_off" border="0"></a></td>
+            <td width="100"><a href="http://www.nationalmssociety.org/shortcuts/index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('shortcuts_off','','/images/universal/top_new/shortcuts_on.gif',1)"><img src="/images/universal/top_new/shortcuts_off.gif" width="100" height="66" alt="keyboard shortcuts" border="0" name="shortcuts_off"></a></td>
+          </tr>
+        </table>
+      </td>
+      <!-- end section title -->
+    </tr>
+  </table>
+
+<center>
+<!-- begin main content area-->
+<table width="744" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td valign="top" bgcolor="#999999"><img src="/images/universal/spacer.gif" width="1" height="1" border="0" alt=""></td>
+		<!-- begin side nav -->
+		<td valign="top" bgcolor="#feecc9">
+		<img src="/images/contactus/top_links.gif" width="175" height="10" border="0" alt=""><br>
+		<center>
+		<img src="../images/universal/side_icons/big_email.gif" width="66" height="59" border="0" alt="">
+		<br>
+		<img src="/images/universal/spacer.gif" width="1" height="5" border="0" alt="">
+		<br>
+<!--Mailing Address-->
+<table width="175" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="3" align="center" bgcolor="#ffcc66"><font face="arial,helvetica,verdana" size="2"><b>Mailing Address</b></font></td>
+	</tr>
+	<tr>
+		<td colspan="3"><img src="/images/universal/spacer.gif" width="2" height="10" border="0" alt=""></td>
+	</tr>
+	<tr>
+		<td><img src="../images/universal/spacer.gif" width="4" height="1" border="0" alt=""></td>
+		<td><font face="arial,helvetica,verdana" size="2">
+		The National Multiple Sclerosis Society<br>
+		733 Third Avenue<br>
+		New York, NY 10017</font></td>
+		<td><img src="../images/universal/spacer.gif" width="4" height="1" border="0" alt=""></td>
+	</tr>
+</table>
+<p>
+<!--Other Contact info-->
+<table width="175" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="3" align="center" bgcolor="#ffcc66"><font face="arial,helvetica,verdana" size="2"><b>Local Contacts</b></font></td>
+	</tr>
+	<tr>
+		<td colspan="3"><img src="/images/universal/spacer.gif" width="2" height="10" border="0" alt=""></td>
+	</tr>
+	<tr>
+		<td><img src="../images/universal/spacer.gif" width="4" height="1" border="0" alt=""></td>
+		<td><font face="arial,helvetica,verdana" size="2">
+		<a href="/mycommunity/index.asp"><img src="/images/universal/bullet.gif" width="15" height="13" border="0" alt=""></a><a href="/mycommunity/index.asp">Local Chapter</a>
+		<p>
+		<a href="/Local%20PR%20Contacts.asp"><img src="/images/universal/bullet.gif" width="15" height="13" border="0" alt=""></a><a href="/Local%20PR%20Contacts.asp">Local PR Contacts</a></font>
+		</td>
+		<td><img src="../images/universal/spacer.gif" width="4" height="1" border="0" alt=""></td>
+	</tr>
+</table>
+</center>
+		</td>
+		<!-- end side nav -->
+		<td valign="top" bgcolor="#ffcc66" valign="top"><img src="/images/contactus/top_links2.gif" width="1" height="10" border="0" alt=""></td>
+		<td valign="top" rowspan="2" background="/images/universal/table_back.gif">
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td valign="top" colspan="2"><img src="/images/contactus/line.gif" width="398" height="10" border="0" alt=""></td>
+				<!-- side photo -->
+			</tr>
+			<tr>
+				<td valign="top"><img src="/images/universal/spacer.gif" width="10" height="1" border="0" alt=""></td>
+				<!-- begin content -->
+				<td valign="top"><font face="arial,helvetica,verdana" size="2">
+				<font size="5" color="ffcc66"><b>Tell Us What You Think</b></font><p>
+				<form name="Contact" method="post" action="index.asp?v=1" onsubmit="return checkform(this)">
+				<table width="500" border="0" cellspacing="0" cellpadding="3" align="center">
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana" size="3"><p>We invite your questions and comments.</p></font></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top" bgcolor="#ffcc66" width="500">
+						</td>
+					</tr>
+					<!-- General info -->
+
+						<td colspan="2" align="right"><font face="arial,helvetica,verdana" size="1" color="#cc3333"><font size="2"><b>**</b></font> = required info</font></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana"  color="#cc3333" size="2"><b><br><br></b></font>
+							<font face="arial,helvetica,verdana" size="2">Salutation<font color="#cc3333"><b>**</b></font><br>
+<select name="Salutation" size="1" ><option selected value="">-- Select --</option><option value="MR">Mr.</option><option value="MISS">Miss</option><option value="MS">Ms.</option><option value="MRS">Mrs.</option><option value="DR">Dr.</option></select>	
+						</font></td>
+					
+					</tr>
+					<tr>
+						<td valign="top" width="50%"><font face="arial,helvetica,verdana" size="2">
+						First Name <font color="#cc3333"><b>**</b></font><br>
+						<input type="text" name="FirstName" id="FirstName" size="25" maxlength="100" value="">
+						</font></td>
+						<td valign="top" width="50%"><font face="arial,helvetica,verdana" size="2">
+						Middle Initial<br>
+						<input type="text" name="MiddleInitial" id="MiddleIinitial" size="1" maxlength="1" value=""><b>.</b>
+						</font></td>
+					</tr>
+					<tr>
+						<td valign="top"><font face="arial,helvetica,verdana" size="2">
+						Last Name <font color="#cc3333"><b>**</b></font><br>
+						<input type="text" name="LastName" id="LastName" size="25" maxlength="100" value="">
+						</font></td>
+						<td valign="top"></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana" size="2">
+						Suffix<br>
+<select name="suffix" size="1" ><option selected value="">-- Select --</option><option value="Jr.">Jr.</option><option value="Sr.">Sr.</option><option value="II">II</option><option value="III">III</option><option value="Ph.D.">Ph.D.</option><option value="R.N.">R.N.</option><option value="L.P.N.">L.P.N.</option></select>	
+						</font></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana" size="2">
+						House Number <font color="#cc3333"><b>**</b></font><br>
+						<input type="text" name="HouseNumber" id="HouseNumber" size="25" maxlength="300" value=""><font color="666666">&nbsp; &nbsp; eg. <B><font color="666666">1209</font></B> Milton Avenue</font>	
+	</font>
+						</font></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana" size="2">
+						Street Name <font color="#cc3333"><b>**</b></font><br>
+						<input type="text" name="StreetName" id="StreetName" size="25" maxlength="300" value=""><font color="666666">&nbsp; &nbsp; eg. 1209 <B><font color="666666">Milton Avenue</font></B></font>
+	</font>
+						</font></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana" size="2">
+						PO Box<br>
+						<input type="text" name="poBox" id="poBox" size="25" maxlength="300" value="">
+						</font></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana" size="2">
+						City <font color="#cc3333"><b>**</b></font><br>
+						<input type="text" name="City" id="City" size="25" maxlength="100" value="">
+						</font></td>
+					</tr>
+					<tr>
+						<td valign="top"><font face="arial,helvetica,verdana" size="2">
+							<font face="arial,helvetica,verdana" size="2">
+							State/Province<br>
+<select name="state" size="1" ><option selected value="">-- Select --</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AB">Alberta</option><option value="AS">American Samoa</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="AA">Armed Forces Americas</option><option value="AE">Armed Forces Eur.,Mid.East,Africa,Canada</option><option value="AP">Armed Forces Pacific</option><option value="BC">British Columbia</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FM">Federated States of Micronesia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MB">Manitoba</option><option value="MH">Marshall Islands</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NB">New Brunswick</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NF">Newfoundland</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="MP">North Mariana Islands</option><option value="NT">Northwest Territories</option><option value="NS">Nova Scotia</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="ON">Ontario</option><option value="OR">Oregon</option><option value="PW">Palau Island</option><option value="PA">Pennsylvania</option><option value="PE">Prince Edward Island</option><option value="PR">Puerto Rico</option><option value="QU">Quebec</option><option value="RI">Rhode Island</option><option value="SK">Saskatchewan</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option><option value="YT">Yukon Territory</option></select>	
+							</font></td>
+						<td valign="top"><font face="arial,helvetica,verdana" size="2">
+						Zip/Postal Code <font color="#cc3333"><b>**</b></font><br>
+						<input type="text" name="Zip" id="Zip" size="15" maxlength="100" value=""> - <input type="text" name="ZipExtension" size="8" maxlength="8" value=""">
+						</font></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana" size="2">
+						Country <font color="#cc3333"><b>**</b></font><br>
+						<select name="Country" size="1" ><option selected value="">-- Select --</option><option value="AZE">Aberbaijan</option><option value="AFG">Afghanistan</option><option value="ALB">Albania</option><option value="ALCA">Alberta Canada</option><option value="ALG">Algeria</option><option value="AND">Andorra</option><option value="ANG">Angola</option><option value="ATG">Antigua and Barbuda</option><option value="ARG">Argentina</option><option value="ARM">Armenia</option><option value="ARU">Aruba</option><option value="AUS">Australia</option><option value="AIA">Austria</option><option value="AZOR">Azores</option><option value="BHR">Bahrain</option><option value="BNG">Bangladesh</option><option value="BAR">Barbados</option><option value="BEL">Belgium</option><option value="BLZ">Belize</option><option value="BLO">Belorussia</option><option value="BEN">Benin</option><option value="BER">Bermuda</option><option value="BHU">Bhutan</option><option value="BOL">Bolivia</option><option value="BOS">Bosnia-Herzegovina</option><option value="BOT">Botswana</option><option value="BRA">Brazil</option><option value="BCCA">British Canada</option><option value="BVI">British Virgin Islands</option><option value="BRU">Brunei Darussalam</option><option value="BUL">Bulgaria</option><option value="BKF">Burkina Faso</option><option value="BURM">Burma</option><option value="BND">Burundi</option><option value="CALE">Caledonia</option><option value="CAMB">Cambodia</option><option value="CAM">Cameroon</option><option value="CAN">Canada</option><option value="CNZ">Canal Zone</option><option value="CNI">Canary Islands</option><option value="CPV">Cape Verde</option><option value="CYI">Cayman Islands</option><option value="CAR">Central African Rep.</option><option value="CHD">Chad</option><option value="CHA">Channel Islands</option><option value="CHI">Chile</option><option value="COL">Colombia</option><option value="CMI">Comoros</option><option value="CON">Congo</option><option value="CKI">Cook Islands</option><option value="COS">Costa Rica</option><option value="CRO">Croatia</option><option value="CUB">Cuba</option><option value="CYP">Cyprus</option><option value="CZE">Czech Republic</option><option value="NKO">Democratic People's Republic of Korea</option><option value="DEN">Denmark</option><option value="DJB">Djibouti</option><option value="DMA">Dominica</option><option value="DOM">Dominican Republic</option><option value="ECU">Ecuador</option><option value="EGY">Egypt</option><option value="ELS">El Salvador</option><option value="ENG">England</option><option value="EQG">Equatorial Guinea</option><option value="EST">Estonia</option><option value="ETH">Ethiopia</option><option value="FAS">Faeroe Islands</option><option value="FLK">Falkland Islands</option><option value="FJI">Fiji</option><option value="FIN">Finland</option><option value="FRA">France</option><option value="FRG">French Guiana</option><option value="FRP">French Polynesia</option><option value="GAB">Gabon</option><option value="GEO">Georgia</option><option value="GRM">Germany</option><option value="GHA">Ghana</option><option value="GIB">Gibraltar</option><option value="GILB">Gilbert Islands</option><option value="GRE">Greece</option><option value="GRN">Greenland</option><option value="GDA">Grenada</option><option value="GUA">Guadeloupe</option><option value="GML">Guatemala</option><option value="GUI">Guinea</option><option value="GUB">Guinea-Bissau</option><option value="GUY">Guyana</option><option value="HAI">Haiti</option><option value="HON">Honduras</option><option value="HNK">Hong Kong</option><option value="HUN">Hungary</option><option value="ICE">Iceland</option><option value="IND">India</option><option value="IDA">Indonesia</option><option value="IRN">Iran</option><option value="IRQ">Iraq</option><option value="IRE">Ireland</option><option value="ISL">Isle of Man</option><option value="ISR">Israel</option><option value="ITA">Italy</option><option value="IVY">Ivory Coast</option><option value="JAM">Jamaica</option><option value="JPN">Japan</option><option value="JOR">Jordan</option><option value="KAM">Kampuchea</option><option value="KAZ">Kazakhstan</option><option value="KEN">Kenya</option><option value="KIR">Kiribati</option><option value="KYR">Kurgyzstan</option><option value="KUW">Kuwait</option><option value="LBCA">Labrador Canada</option><option value="LAO">Laos</option><option value="LAT">Latvia</option><option value="LEB">Lebanon</option><option value="LEE">Leeward Island</option><option value="LES">Lesotho</option><option value="LIB">Liberia</option><option value="LYA">Libya</option><option value="LIE">Liechtenstein</option><option value="LIT">Lithuania</option><option value="LUX">Luxembourg</option><option value="MAC">Macau</option><option value="MDA">Macedonia</option><option value="MAD">Madagascar</option><option value="MLW">Malawi</option><option value="MAL">Malaysia</option><option value="MLD">Maldives</option><option value="MLI">Mali</option><option value="MTA">Malta</option><option value="MBCA">Manitoba Canada</option><option value="MAR">Martinique</option><option value="MAU">Mauritania</option><option value="MTS">Mauritius</option><option value="MEX">Mexico</option><option value="MIQ">Miquelon Island</option><option value="MOL">Moldova</option><option value="MON">Monaco</option><option value="MOG">Mongolia</option><option value="MGO">Montenegro</option><option value="MNT">Montserrat Island</option><option value="MOR">Morocco</option><option value="MOZ">Mozambique</option><option value="MYM">Myanmar</option><option value="NTCA">N. W. Territories Canada</option><option value="NAM">Namibia</option><option value="NAU">Nauru</option><option value="NEP">Nepal</option><option value="NTH">Netherlands</option><option value="NTA">Netherlands Antilles</option><option value="NBCA">New Brunswick Canada</option><option value="NCL">New Caledonia</option><option value="NHEB">New Hebrides</option><option value="NZL">New Zealand</option><option value="NFCA">Newfoundland Canada</option><option value="NIC">Nicaragua</option><option value="NIG">Niger</option><option value="NRA">Nigeria</option><option value="NIU">Niue</option><option value="NIR">Northern Ireland, UK</option><option value="NOR">Norway</option><option value="NSCA">Nova Scotia Canada</option><option value="ONM">Oman</option><option value="ONCA">Ontario Canada</option><option value="PAC">Pacific Islands</option><option value="PAK">Pakistan</option><option value="PAN">Panama</option><option value="PAP">Papua New Guinea</option><option value="PAR">Paraguay</option><option value="YNS">People's Democratic Republic of Yemen</option><option value="CHN">People's Republic of China</option><option value="PER">Peru</option><option value="PHI">Philippines</option><option value="PIT">Pitcairn</option><option value="POL">Poland</option><option value="POR">Portugal</option><option value="PECA">Prince Edward Island Canada</option><option value="QAT">Qatar</option><option value="SKO">Republic of Korea</option><option value="MDV">Republic of Maldives</option><option value="REU">Reunion Islands</option><option value="RHO">Rhodesia</option><option value="ROU">Romania</option><option value="RUS">Russia</option><option value="RWA">Rwanda</option><option value="STL">Saint Lucia</option><option value="SMR">San Marino</option><option value="SAO">Sao Tome and Principe</option><option value="SKCA">Saskatchewan Canada</option><option value="SAU">Saudi Arabia</option><option value="SCO">Scotland</option><option value="SEN">Senegal</option><option value="SER">Serbia</option><option value="SEY">Seychelles</option><option value="SIC">Sicily</option><option value="SIE">Sierra Leone</option><option value="SIK">Sikkim</option><option value="SIN">Singapore</option><option value="SLV">Slovakia</option><option value="SLO">Slovenia</option><option value="SOL">Solomon Islands</option><option value="SOM">Somalia</option><option value="SOA">South Africa</option><option value="SPA">Spain</option><option value="SRI">Sri Lanka</option><option value="STH">St. Helena</option><option value="SKN">St. Kitts and Nevis</option><option value="STP">St. Pierre Island</option><option value="STV">St. Vincent and the Grenadines</option><option value="SUD">Sudan</option><option value="SUR">Suriname</option><option value="SWA">Swaziland</option><option value="SWE">Sweden</option><option value="SWI">Switzerland</option><option value="SYR">Syria</option><option value="TAI">Taiwan</option><option value="TAJ">Tajikstan</option><option value="TAN">Tanzania</option><option value="THA">Thailand</option><option value="BAH">The Bahamas</option><option value="GAM">The Gambia</option><option value="TIB">Tibet</option><option value="TIM">Timor</option><option value="TOG">Togo</option><option value="TON">Tonga</option><option value="TRI">Trinidad and Tobago</option><option value="TUN">Tunisian</option><option value="TUR">Turkey</option><option value="TRK">Turkmenistan</option><option value="TUC">Turks & Caicos</option><option value="TUV">Tuvalu</option><option value="UGA">Uganda</option><option value="UKR">Ukraine</option><option value="UAE">United Arab Emirates</option><option value="UK">United Kingdom</option><option value="USA">United States of America</option><option value="URU">Uruguay</option><option value="UZB">Uzbekistan</option><option value="VAU">Vanuatu</option><option value="VAT">Vatican City</option><option value="VEN">Venezuela</option><option value="VNM">Vietnam</option><option value="VOL">Volta</option><option value="WAL">Wales</option><option value="WALL">Wallis and Futuna</option><option value="SMW">Western Samoa</option><option value="WIND">WIND</option><option value="YAR">Yemen Arab Republic</option><option value="YUG">Yugoslavia</option><option value="YTCA">Yukon Territory Canada</option><option value="ZAI">Zaire</option><option value="ZAM">Zambia</option><option value="ZIM">Zimbabwe</option></select>	</td>
+					</tr>
+					<tr>
+						<td valign="top"><font face="arial,helvetica,verdana" size="2">
+						Phone (Home) <font color="#cc3333"><b>**</b></font><br>
+						<input type="text" name="HomePhone" id="HomePhone" size="25" maxlength="100" value="">
+						</font></td>
+						<td valign="top"><font face="arial,helvetica,verdana" size="2">
+						Phone (Work) <font color="#cc3333"><b>**</b></font><br>
+						<input type="text" name="WorkPhone" id="WorkPhone" size="25" maxlength="100" value="">
+						</font></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana" size="2">
+						Email Address <font color="#cc3333"><b>**</b></font><br>
+						<input type="text" name="Email" id="Email" size="25" maxlength="100" value=""></td>
+					</tr>
+					<!-- spacer -->
+					<tr>
+						<td colspan="2"><font face="arial,helvetica,verdana">&nbsp;</font></td>
+					</tr>
+					<!-- spacer -->
+					
+					<tr>
+						<td colspan="2" valign="top"><font face="arial,helvetica,verdana" size="2">
+						Message <font color="#cc3333"><b>**</b></font><br>
+						<textarea cols="35" rows="10" name="Message" id="Message" style="width: 300 px" wrap="physical"></textarea>
+						</font></td>
+					<tr>
+						<td colspan="2"><font face="arial,helvetica,verdana">&nbsp;</font></td>
+					</tr>
+					<!-- spacer -->
+					<tr> 
+      					<td colspan="2">
+						<P><font face="arial,helvetica,verdana" size="2">Please fill out the following information so we can forward your message to the appropriate Society resource and directly respond to your concerns. </font><font color="#cc3333"><b>**</b></font></p>
+        				<table width="95%" border="1" cellspacing="0" cellpadding="5" bordercolor="silver">
+          					<tr valign="top"> 
+            					<td width="10%"><font face="Arial, Helvetica, sans-serif"> 
+					            <input type="radio" name="DirectTo" value="Chapter" ></font></td>
+					            <td width="90%"> 
+					            <p><font face="Arial, Helvetica, sans-serif" size="2">You live in the United States and</font></p>
+					            <ul>
+									<li><font face="Arial, Helvetica, sans-serif" size="2">Have questions about MS; or</font>
+									<li><font face="Arial, Helvetica, sans-serif" size="2">Want to learn more about programs and services offered by the National MS Society in your community; or</font></li>
+									<li><font face="Arial, Helvetica, sans-serif" size="2">Need to change your street address; or</font></li>
+									<li><font face="Arial, Helvetica, sans-serif" size="2">Would like to request copies of our publications; or</font></li>
+					                <li><font face="Arial, Helvetica, sans-serif" size="2">Require MS-related support services; or</font>
+					                <li><font face="Arial, Helvetica, sans-serif" size="2">Have questions on bike, walk or other fund-raising events; or</font>
+									<li><font face="Arial, Helvetica, sans-serif" size="2">Would like information about making a donation</font></li>
+					            </ul>
+								<font face="Arial, Helvetica, sans-serif" size="2">(Note: Your email will be directed to the chapter that serves your area.)</font>
+					            </td>
+          					</tr>
+          					<tr valign="top"> 
+            					<td width="10%"><font face="Arial, Helvetica, sans-serif"> 
+             			 		<input type="radio" name="DirectTo" value="3" >
+              					</font></td>
+					            <td width="90%"><font face="Arial, Helvetica, sans-serif" size="2"><p>You have comments or questions about InsideMS or other Society publications (print or Web).</p>
+								<p>(Note: We cannot disclose the email addresses of our authors. If requested, we will forward questions to specific authors, but they are under no obligation to reply.)</p>
+								<p>InsideMS address: To change, be added, or drop your mailing address for InsideMS, please contact the chapter that serves your area.</p>
+								</font></td>
+          					</tr>
+				          	<tr valign="top"> 
+				            	<td width="10%"><font face="Arial, Helvetica, sans-serif"> 
+				              	<input type="radio" name="DirectTo" value="1" >
+				              	</font></td>
+				            	<td width="90%"><font face="Arial, Helvetica, sans-serif" size="2">You are a healthcare professional and would like to contact us about the diagnosis and treatment of MS.</font></td>
+				          	</tr>
+				          	<tr valign="top"> 
+				            	<td width="10%"><font face="Arial, Helvetica, sans-serif"> 
+				              	<input type="radio" name="DirectTo" value="2" >
+				              	</font></td>
+				            	<td width="90%"><font face="Arial, Helvetica, sans-serif" size="2">You have technical questions about this website.</font></td>
+				          	</tr>
+				          	<tr valign="top"> 
+				            	<td width="10%"><font face="Arial, Helvetica, sans-serif"> 
+				              	<input type="radio" name="DirectTo" value="4" > 
+				              	</font></td>
+				            	<td width="90%"><font face="Arial, Helvetica, sans-serif" size="2">All 
+				              	other inquiries</font></td>
+				          </tr>
+        			</table>
+      				</td>
+    			</tr>
+				<tr>
+					<td colspan="2"><font face="arial,helvetica,verdana">&nbsp;</font></td>
+				</tr>
+				<!-- spacer -->
+
+				<tr>
+					<td colspan="2"><font face="arial,helvetica,verdana">&nbsp;</font></td>
+				</tr>
+				<!-- spacer -->
+				<tr>
+					<td colspan="2"><font face="arial,helvetica,verdana" size="2">
+					<center><input type="submit" name="submit" id="submit" value="Submit"></center>
+					</font></td>
+				</tr>
+			</table>
+			<input type="hidden" name="NMSSSubject" id="NMSSSubject" value="New Contact Request">
+			<input type="hidden" name="NMSSFrom" id="NMSSFrom" value="info@nmss.org">
+			</form>
+			<p>
+			<img src="/images/universal/spacer.gif" width="530" height="1" border="0" alt="">
+			</font></td>
+			<td background="/images/universal/thirdlevel_back.gif"><img src="/images/universal/spacer.gif" width="27" height="1" border="0" alt=""></td>
+			<!-- end content -->
+		</tr>
+	</table>
+	</td>
+</tr>
+</table>
+<!-- end main content area-->
+</center><title>National MS Society</title>
+<body onLoad="MM_preloadImages('/images/universal/bottom_new/donate_on.gif','/images/universal/bottom_new/pledge_on.gif','/images/universal/bottom_new/search_on.gif','/images/universal/bottom_new/contact_on.gif','/images/universal/bottom_new/glossary_on.gif','/images/universal/bottom_new/faqs_on.gif')">
+<center>
+  <table width="744" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td valign="top" width="43"><a href="/faq.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('faqs_bottom_off','','/images/universal/bottom_new/faqs_on.gif',1)"><img src="/images/universal/bottom_new/faqs_off.gif" width="43" height="20" alt="FAQs" border="0" name="faqs_bottom_off"></a></td>
+      <td valign="top" width="134"><a href="/glossary.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('glossary_bottom_off','','/images/universal/bottom_new/glossary_on.gif',1)"><img src="/images/universal/bottom_new/glossary_off.gif" width="134" height="20" alt="Glossary" border="0" name="glossary_bottom_off"></a></td>
+      <td valign="top" rowspan="2" width="107"><img src="/images/universal/bottom_new/space.gif" width="94" height="107"></td>
+      <td valign="top" rowspan="2" width="411"> 
+  
+  
+        <table width="390" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td colspan="4"><img src="/images/universal/bottom_new/space2.gif" width="473" height="50"></td>
+          </tr>
+          <tr> 
+            <td valign="top" width="135"><a href="https://www.nationalmssociety.org/donate/donate.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('donate_off_bottom','','/images/universal/bottom_new/donate_on.gif',1)"><img src="/images/universal/bottom_new/donate_off.gif" width="135" height="57" border="0" alt="Donate to the Society" name="donate_off_bottom"></a></td>
+            <td valign="top" width="175"><a href="https://www.nationalmssociety.org/pledge/index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('pledge_off_bottom','','/images/universal/bottom_new/pledge_on.gif',1)"><img src="/images/universal/bottom_new/pledge_off.gif" width="175" height="57" border="0" alt="Pledge/Sponsor a Participant" name="pledge_off_bottom"></a></td>
+            <td valign="top" width="64"><a href="http://www.nationalmssociety.org/search/index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('search_off_bottom','','/images/universal/bottom_new/search_on.gif',1)"><img src="/images/universal/bottom_new/search_off.gif" width="64" height="57" border="0" alt="Search" name="search_off_bottom"></a></td>
+            <td valign="top" width="99"><a href="http://www.nationalmssociety.org/contactus/index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact_off_bottom','','/images/universal/bottom_new/contact_on.gif',1)"><img src="/images/universal/bottom_new/contact_off.gif" width="99" height="57" border="0" alt="Contact Us" name="contact_off_bottom"></a></td>
+          </tr>
+        </table>
+
+
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="2"> 
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td><a href="http://www.nationalmssociety.org//chat/index.asp" onMouseOver="img_act('left4')" onMouseOut="img_inact('left4')"><img src="/images/contactus/chat.gif" width="84" height="87" border="0" alt="chat" name="left4"></a></td>
+            <td><a href="http://www.nationalmssociety.org//boards/index.asp" onMouseOver="img_act('left5')" onMouseOut="img_inact('left5')"><img src="/images/contactus/bulletin.gif" width="93" height="87" border="0" alt="bulletin boards" name="left5"></a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+<!-- end main content area-->
+
+<!-- begin bottom navigation -->
+ 
+<body onLoad="MM_preloadImages('/Images/universal/nav/aboutms_on.gif','/Images/universal/nav/living_on.gif','/Images/universal/nav/research_on.gif','/Images/universal/nav/headlines_on.gif','/Images/universal/nav/spevents_on.gif','/Images/universal/nav/forpros_on.gif','/Images/universal/nav/treatments_on.gif')">
+<map name="changetext"> <!-- 
+<area alt="change text size" coords="107,5,27,33" href="#">
+--> <area alt="keyboard shortcuts" coords="114,5,191,34" href="http://www.nationalmssociety.org//shortcuts/index.asp" shape="RECT"> 
+</map>
+<br>
+<table width="744" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td align="center" bgcolor="#FFFFFF" width="738"><b><a href="http://www.nationalmssociety.org/about%20ms.asp"><font face="Arial, Helvetica, sans-serif" size="2"> 
+      ABOUT MS</font></a> | <a href="http://www.nationalmssociety.org/living%20with%20ms.asp"><font face="Arial, Helvetica, sans-serif" size="2">LIVING 
+      WITH MS</font></a> | <a href="http://www.nationalmssociety.org/treatments.asp"><font face="Arial, Helvetica, sans-serif" size="2">TREATMENTS</font></a> 
+      | <a href="http://www.nationalmssociety.org/research.asp"><font face="Arial, Helvetica, sans-serif" size="2">RESEARCH</font></a> | 
+      <a href="http://www.nationalmssociety.org/headlines.asp"><font face="Arial, Helvetica, sans-serif" size="2">HEADLINES</font></a> | 
+      <a href="http://www.nationalmssociety.org/specialevents/index.asp"><font face="Arial, Helvetica, sans-serif" size="2">SPECIAL 
+      EVENTS</font></a> | <a href="http://www.nationalmssociety.org/prc.asp"><font face="Arial, Helvetica, sans-serif" size="2">FOR PROFESSIONALS</font></a></b></td>
+    <td align="center" bgcolor="#FFFFFF" width="1"><img src="/Images/spacer.gif" width="1" height="22"></td>
+  </tr>
+  <tr> 
+    <td colspan="2" bgcolor="#999999"><img src="/Images/universal/spacer.gif" width="1" height="1"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td valign="top" bgcolor="D1D1D1" align="center"><a href="http://www.nationalmssociety.org/mycommunity/index.asp"><font face="Arial, Helvetica, sans-serif" size="1">FIND 
+      YOUR CHAPTER</font></a> <font size="1">&nbsp;&#149; &nbsp;</font><a href="http://www.nationalmssociety.org/get%20involved.asp"><font face="Arial, Helvetica, sans-serif" size="1">GET 
+      INVOLVED / WAYS TO GIVE</font></a> <font size="1">&nbsp;&#149;&nbsp;&nbsp;</font><a href="http://www.nationalmssociety.org/advocacy.asp"><font face="Arial, Helvetica, sans-serif" size="1">GOVERNMENT 
+      AFFAIRS / ADVOCACY</font></a> <font size="1">&nbsp;&#149;&nbsp;&nbsp;</font><a href="http://www.nationalmssociety.org/press%20room.asp"><font face="Arial, Helvetica, sans-serif" size="1">PRESS 
+      ROOM</font></a> <font size="1">&nbsp;&#149;&nbsp; </font><a href="http://www.nationalmssociety.org/about%20the%20society.asp"><font face="Arial, Helvetica, sans-serif" size="1">ABOUT 
+      THE SOCIETY</font></a> <font size="1">&nbsp;&#149;&nbsp; <a href="http://www.nationalmssociety.org/Library.asp"><font face="Arial, Helvetica, sans-serif" size="1">LIBRARY</font></a></font></td>
+  </tr>
+  <tr> 
+    <td valign="middle" align="center" bgcolor="#999999"><img src="/Images/universal/nav/spacer_hor.gif" width="753" height="1"></td>
+  </tr>
+</table>
+<center>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td colspan="8" bgcolor="#E0E0E0" height="12"><img src="/Images/universal/spacer.gif" width="1" height="12"></td>
+    </tr>
+    <tr bgcolor="#E0E0E0" valign="top"> 
+      <td colspan="8" align="center"> 
+        <p><b><font face="Arial, Helvetica, sans-serif" size="2">National Multiple 
+          Sclerosis Society </font></b><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;| 
+          <b>&nbsp;1-800-FIGHT-MS</b> (1-800-344-4867)<br>
+          <img src="/Images/universal/spacer.gif" width="1" height="12"><br>
+          </font><font size="1" face="Arial, Helvetica, sans-serif">&copy;</font><font size="1"> 
+          2005<font face="Arial, Helvetica, sans-serif"> 
+          The National Multiple Sclerosis Society. All rights reserved.</font>&nbsp; 
+          </font><a href="http://www.nationalmssociety.org/privacy.asp"><font size="1" face="Arial, Helvetica, sans-serif">Privacy 
+          Statement/ Legal Notice</font></a><br>
+          <img src="/Images/universal/spacer.gif" width="1" height="12"><br>
+          <font face="Arial, Helvetica, sans-serif" size="1"> </font><a href="http://www.nationalmssociety.org/"><font size="1" face="Arial, Helvetica, sans-serif">Home</font></a><font face="Arial, Helvetica, sans-serif" size="1">&nbsp;| 
+          </font><a href="http://www.nationalmssociety.org/"><font size="1" face="Arial, Helvetica, sans-serif"></font></a><a href="http://www.nationalmssociety.org/Webcasts%20and%20Conferences.asp"><font size="1" face="Arial, Helvetica, sans-serif">Webcasts 
+          and Conferences</font></a><font face="Arial, Helvetica, sans-serif" size="1"> 
+          | </font><a href="http://www.nationalmssociety.org/Informacion%20en%20Espanol.asp"><font size="1" face="Arial, Helvetica, sans-serif">Informaci&oacute;n 
+          en espa&ntilde;ol</font></a><font face="Arial, Helvetica, sans-serif" size="1"> 
+          | </font><a href="http://www.nationalmssociety.org/site%20map.asp"><font size="1" face="Arial, Helvetica, sans-serif">Site 
+          Map</font></a><br>
+          <img src="/Images/universal/spacer.gif" width="1" height="12"> </p>
+        </td>
+    </tr>
+  </table>
+</center>
+
+<!-- end bottom navigation -->
+</body>
+</html>

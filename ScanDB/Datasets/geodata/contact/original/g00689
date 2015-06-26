@@ -1,0 +1,505 @@
+<DOC>
+<DOCNO>g00689</DOCNO>
+<DOCHDR>http://www.co.washoe.nv.us/index/contact.html~color=grey&text_version=</DOCHDR>
+<!--color has a value of grey-->
+<HTML>
+
+<link rel=stylesheet href=/styles.css>
+
+<HEAD>
+<TITLE>County Contacts</TITLE>
+<script language="JavaScript">
+
+function showPrint(x, y) {
+  mystats='\'resize=on,scrollbars,width=780,height=500,left=5,top=5\'';
+  popupWin = window.open('/print_version.php?color=grey&text_version=&dept=' + x + '&file=' + y, 'print', mystats);
+}
+</script>
+</HEAD>
+
+
+<BODY BGCOLOR=#FFFFFF background="/images/bg_grey.jpg" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<!-- ImageReady Slices (template_04.psd) -->
+<map name=nav>
+<area shape=rect coords="0,0,188,30" href="/index/start.html~q_cat=chkCitizens&color=green" alt="Citizens">
+<area shape=rect coords="188,0,375,30" href="/index/start.html~q_cat=chkGovernment&color=grey" alt="Government">
+<area shape=rect coords="375,0,563,30" href="/index/start.html~q_cat=chkBusinesses&color=blue" alt="Businesses">
+<area shape=rect coords="563,0,750,30" href="/index/start.html~q_cat=chkVisitors&color=brown" alt="Visitors">
+</map>
+<table width=100% border=0 cellpadding=0 cellspacing=0><tr><td background="/images/header_grey.jpg" align=right><a href="/index/~color=grey&text_version="><IMG SRC="/images/template_04_01_grey.jpg" WIDTH=750 HEIGHT=73 ALT="Welcome to the website for Washoe County, Nevada" border=0></a></td></tr></table>
+<TABLE WIDTH=750 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+						<IMG SRC="/images/template_04_02_grey.jpg" WIDTH=750 HEIGHT=30 ALT="" border=0 usemap=#nav>
+					</TD>
+	</TR>
+	<TR>
+		<td>
+			<table width=750 align=center cellpadding=0 cellspacing=0 border=0>
+						<tr>
+				<td width=200 bgcolor=#CCCCCC valign=top>
+				<img src="/images/spacer.gif" width=200 height=1>
+									<div style="font-size: 85%; font-weight: bold;">
+					<div style="font-size: 85%; font-weight: bold; margin: 5;"><a href="/index/~color=grey&text_version=">County Home Page</a></div>
+					<div style="font-size: 85%; font-weight: bold; margin: 5;"><a href="/index/site_map.html~color=grey&text_version=">County Site Map</a></div>
+					<div style="font-size: 85%; font-weight: bold; margin: 5;"><a href="/index/site_help.html~color=grey&text_version=">Website Help</a></div>
+					<div>&nbsp;</div>
+					<!--menu code-->
+					<div style="font-size: 90%; margin-left: 5;">Washoe County Menu</div><hr color="#000000" size=1 width=100% align=center>
+<div style="padding: 7px;"><a href="/index/announcments.html~color=grey&text_version=">Announcements</a></div>
+<div style="padding: 7px;"><a href="/index/faq.html~color=grey&text_version=">FAQs</a></div>
+<div style="padding: 7px;"><a href="/index/forms.html~color=grey&text_version=">Find a Form</a></div>
+<hr color="#000000" size=1 width=70% align=center><div style="padding: 7px;"><a href="/index/boards.html~color=grey&text_version=">Boards / Commissions</a></div>
+<div style="padding: 7px;"><a href="/index/departments.html~color=grey&text_version=">Departments</a></div>
+<div style="padding: 7px;"><a href="/index/contact.html~color=grey&text_version=">Contact Information</a></div>
+<hr color="#000000" size=1 width=70% align=center><div style="padding: 7px;"><a href="/index/calendar.html~color=grey&text_version=">County Calendar</a></div>
+<div style="padding: 7px;"><a href="/index/site_map.html~color=grey&text_version=">Site Map</a></div>
+<div style="padding: 7px;"><a href="/index/site_help.html~color=grey&text_version=">Website Help</a></div>
+<hr color="#000000" size=1 width=70% align=center><div style="padding: 7px;"><a href="/index/index.html~color=grey&text_version=">County Home</a></div>
+					</div>
+					<div>&nbsp;</div>
+				</td>
+				<td width=550 bgcolor=#ffffff valign=top style="padding: 5px;">
+					<!--main code-->
+					<div style="font-size:70%; padding:2px; border:0px solid #aaaaaa; background-color:#EDEDED; width:100%;"><a href="/index/~color=grey&text_version=">County Home</a> => <a href="/index/~color=grey&text_version=">Washoe County</a> => <span style="font-weight: bold;">County Contacts</span></div>
+
+						<table width=100% cellspacing=3 border=0>
+							<tr>
+								<td valign=middle>
+								<form action="/index/search.php" method=post style="margin: 0px;">
+								<input type=hidden name=color value="grey">
+								<input type=hidden name=text_version value="">
+								<table cellpadding=0 cellspacing=0><tr>
+								<td valign=center><input type=text name=search size=15 style="font-size: 8pt; background-color: #CCCCCC"></td>
+								<td valign=center><input type=image name=go alt=go src="/images/go.gif"></td>
+								<td valign=center>&nbsp;&nbsp;<a href="/index/search_help.html" style="font-size: 7pt;">search help</a></td>
+								</tr></table>
+								</form>
+								</td>
+								<td valign=middle>
+								<a href="#" onclick="javascript:showPrint('index', 'contact.html');" style="font-size: 7pt;">print-friendly version</a>
+								</td>
+								<td valign=middle>
+								<a href="/index/contact.html~color=grey&text_version=&text_version=on" style="font-size: 7pt;">text version</a>
+								</td>
+							</tr>
+						</table><P>Below are contact numbers and addresses for departments in the County.</P>
+<P>For more information about a department, click on the department`s name below.</P>
+<P><table width=90% align=center border=0 cellpadding=0 cellspacing=4>
+<tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/assessor/~color=grey&text_version=">Assessor`s Office</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E 9th Street<br>
+	Reno, NV  89512<br>
+	775-328-2200<br>
+	<br>
+	Department Head: Bob McGowan
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/bcc/~color=grey&text_version=">Board of County Commissioners</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E. 9th Street<br>
+	Reno, NV  89512<br>
+	775.328.2000 Phone<br>
+	775.328.2037 Fax<br>
+	Department Head: Katy Singlaub
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/bldgsafety/~color=grey&text_version=">Building and Safety</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E 9th St<br>
+	Reno, NV  89512<br>
+	328-2020<br>
+	328-2018<br>
+	Department Head: Jess Traver, P.E.
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="http://www.washoecounty.us/clerks/?color=grey&text_version=">Clerk`s Office</a></div>
+
+	<div style="font-size: 90%;">
+	75 Court Street, Room 131<br>
+	Reno, NV  89501<br>
+	775.328.3260<br>
+	<br>
+	Department Head: Amy Harvey
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/comdev/~color=grey&text_version=">Community Development</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E. 9th Street, Suite A-275<br>
+	Reno, NV  89512<br>
+	775.328.3600<br>
+	775.328.6100<br>
+	Department Head: Adrian P. Freund
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/comptroller/~color=grey&text_version=">Comptroller</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E. Ninth St. Rm. D-120<br>
+	Reno, NV  89512<br>
+	(775) 328-2552<br>
+	<br>
+	Department Head: Kathy Garcia
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/coroner/~color=grey&text_version=">Coroner`s Office</a></div>
+
+	<div style="font-size: 90%;">
+	10 Kirman Avenue<br>
+	Reno, NV  89502<br>
+	775-785-6114<br>
+	<br>
+	Department Head: Vernon O. McCarty
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/da/~color=grey&text_version=">District Attorney</a></div>
+
+	<div style="font-size: 90%;">
+	75 Court Street, Room 214<br>
+	Reno, Nevada  89501<br>
+	(775) 328-3200<br>
+	<br>
+	Department Head: Richard A. Gammick
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/gis/~color=grey&text_version=">Geographic Information Systems</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E. 9th Street<br>
+	Reno, NV  89512<br>
+	775.328.3614<br>
+	<br>
+	Department Head: Thomas Lo
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/health/~color=grey&text_version=">Health</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E. 9th Street<br>
+	Reno, NV  89512<br>
+	775-328-2400 Phone<br>
+	775-328-2279 Fax<br>
+	Department Head: Barbara Hunt
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/humanresources/~color=grey&text_version=">Human Resources</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E Ninth Street, Building `A`, Suite 220<br>
+	Reno, NV  89520-0027<br>
+	328-2081 Phone<br>
+	328-6119 Fax<br>
+	Department Head: Joanne Ray
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/ijc/~color=grey&text_version=">Incline Village Justice Court</a></div>
+
+	<div style="font-size: 90%;">
+	865 Tahoe Blvd. #301<br>
+	Incline Village, NV  89451<br>
+	775.832.4100 phone<br>
+	775.832.4162 fax<br>
+	Department Head: Judge James Mancuso
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/it/~color=grey&text_version=">Information Technology</a></div>
+
+	<div style="font-size: 90%;">
+	1001 East Ninth Street, Second Floor, Suite C220<br>
+	Reno, NV  89512<br>
+	775-328-2350<br>
+	<br>
+	Department Head: Matthew Beckstedt
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/lawlib/~color=grey&text_version=">Law Library</a></div>
+
+	<div style="font-size: 90%;">
+	75 Court Street, Room 101<br>
+	Reno, NV  89502<br>
+	775.328.3250<br>
+	<br>
+	Department Head: Sandra Marz
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="http://www.washoe.lib.nv.us/?color=grey&text_version=">Library</a></div>
+
+	<div style="font-size: 90%;">
+	301 South Center Street<br>
+	Reno, NV  89501<br>
+	775-327-8349<br>
+	775-327-8341<br>
+	Department Head: Nancy Cummings
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/mgrsoff/~color=grey&text_version=">Manager`s Office</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E. 9th Street<br>
+	Reno, NV  89512<br>
+	775.328.2000 Phone<br>
+	775.328.2037 Fax<br>
+	Department Head: Katy Singlaub
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/parks/~color=grey&text_version=">Parks - Regional Parks and Open Space</a></div>
+
+	<div style="font-size: 90%;">
+	2601 Plumas St<br>
+	Reno, Nevada  89509<br>
+	775-828-6642<br>
+	<br>
+	Department Head: Karen Mullen
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/pubadmin/~color=grey&text_version=">Public Administrator</a></div>
+
+	<div style="font-size: 90%;">
+	P.O. Box 7360<br>
+	Reno, NV  89510-7360<br>
+	775-861-4000<br>
+	775-861-4041 fax<br>
+	Department Head: Donald L. Cavallo
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/Guardian/~color=grey&text_version=">Public Guardian</a></div>
+
+	<div style="font-size: 90%;">
+	P.O. Box 12310<br>
+	Reno, Nevada  89510<br>
+	(775) 343-4200<br>
+	<br>
+	Department Head: Kay Joslin
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/pubworks/~color=grey&text_version=">Public Works</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E 9th St<br>
+	Reno, NV  89520<br>
+	(775)328-2041<br>
+	(775)328-3667<br>
+	Department Head: Tom Gadd
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/purchasing/~color=grey&text_version=">Purchasing</a></div>
+
+	<div style="font-size: 90%;">
+	P.O. Box 11130<br>
+	Reno, NV  89520<br>
+	775-328-2280<br>
+	775-328-2285<br>
+	Department Head: John L. Balentine
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/recorder/~color=grey&text_version=">Recorder`s Office</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E. Ninth Street<br>
+	Reno, Nevada  89512<br>
+	775-328-3661<br>
+	<br>
+	Department Head: Kathryn L. Burke
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/voters/~color=grey&text_version=">Registrar of Voters</a></div>
+
+	<div style="font-size: 90%;">
+	P O Box 11130<br>
+	Reno, NV  89520<br>
+	775-328-3670 phone<br>
+	775-328-3747 fax<br>
+	Department Head: Daniel G Burk
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/rjc/~color=grey&text_version=">Reno Justice Court</a></div>
+
+	<div style="font-size: 90%;">
+	1 South Sierra Street<br>
+	Reno, NV  89501<br>
+	775.325.6500<br>
+	<br>
+	Department Head: Marie Etchemendy
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/seniorsrv/~color=grey&text_version=">Senior Services</a></div>
+
+	<div style="font-size: 90%;">
+	1155 E. 9th Street<br>
+	Reno, NV  89512<br>
+	775-328-2575<br>
+	<br>
+	Department Head: Marietta Bobba
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="http://www.washoesheriff.com/?color=grey&text_version=">Sheriff`s Office</a></div>
+
+	<div style="font-size: 90%;">
+	911 Parr Blvd <br>
+	Reno, NV  89512.1000<br>
+	775.328.2885<br>
+	<br>
+	Department Head: Dennis Balaam
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/socsrv/~color=grey&text_version=">Social Services</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E. 9th Street<br>
+	Reno, NV  89512<br>
+	775.328.2300<br>
+	<br>
+	Department Head: Michael Capello
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/sjc/~color=grey&text_version=">Sparks Justice Court</a></div>
+
+	<div style="font-size: 90%;">
+	630 Greenbrae Drive<br>
+	Sparks, NV  89431<br>
+	(775)352-3002<br>
+	(775)352-3000<br>
+	Department Head: Janine Baker
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/treas/~color=grey&text_version=">Treasurer`s Office</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E.  Ninth St. Bldg D Rm 140<br>
+	Reno, NV  89512<br>
+	775-328-2550<br>
+	775-328-2500<br>
+	Department Head: 
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/index/~color=grey&text_version=">Washoe County</a></div>
+
+	<div style="font-size: 90%;">
+	1001 E. 9th Street<br>
+	Reno, NV  89512<br>
+	775.328.2000<br>
+	<br>
+	Department Head: Katy Singlaub
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</tr><tr>
+	<td width=50% valign=top>
+	<div style="background-color: #CCCCCC; font-weight: bold; font-size: 90%;"><a href="/water/~color=grey&text_version=">Water Resources</a></div>
+
+	<div style="font-size: 90%;">
+	4930 Energy Way<br>
+	Reno, NV  89502<br>
+	775-954-4600<br>
+	775-954-4610 Fax<br>
+	Department Head: Steve Bradhurst
+	</div>
+	<div>&nbsp;</div>
+	</td>
+	</table></P>				<div>&nbsp;</div><div>&nbsp;</div><div class=tiny align=center>Copyright 2005, Washoe County. This page last modified on: 01/11/05</div>	
+				</td>
+			</tr>
+						</table>
+						<div>&nbsp;</div>
+			<div class=tiny align=center style="padding: 3;">1001 E. 9th Street :: Reno, NV  89512 :: 775.328.2000 :: </div>	
+			<div class=tiny align=center style="padding: 3;">For technical questions regarding this site, contact the <a href="mailto:cmatthews@mail.co.washoe.nv.us" style="font-size: 100%;">County Webmaster</a></div>
+			<div>&nbsp;</div>
+		</td>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>

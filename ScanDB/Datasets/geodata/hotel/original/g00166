@@ -1,0 +1,1701 @@
+<DOC>
+<DOCNO>g00166</DOCNO>
+<DOCHDR>http://www.sanfrancisco.com/hotels</DOCHDR>
+<html>
+<head>
+<title>San Francisco Hotels, Travel and Tourism Guide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="San Francisco, California hotel and travel guide, featuring hotel reviews and online hotel reservations.">
+<meta name="keywords" content="san francisco hotel guide san francisco california hotels reservations san francisco hotels fisherman's wharf marina district hotels lombard street nob hill hotels north beach chinatown hotels pacific heights japantown hotels south of market union square hotels financial district van ness hotels civic center opera hotels waterfront alamo square hotels haight ashbury ocean beach hotels san francisco budget hotels san francisco airport hotels north bay  wine country hotels south of san francisco hotels peninsula east bay hotels san jose silicon valley san francisco hotels dining visiting san francisco real estate music nightlife san francisco attractions san francisco theater san francisco locals guide san francisco california visitor information flights san francisco car rentals vacation rentals san francisco restaurant reservations san francisco maps brochures bay area guides san francisco restaurants san francisco dining map san francisco attractions theater san francisco club">
+
+<link rel="stylesheet" href="http://www.boulevards.com/styles/style-red.css" type="text/css">
+<script src="http://www.sanfrancisco.com/js/loadfunctions.js" language="JavaScript" type="text/javascript"></script>
+<script src="http://www.sanfrancisco.com/js/formfocus.js" language="JavaScript" type="text/javascript"></script>
+<script src="http://www.sanfrancisco.com/js/navroll.js" language="JavaScript" type="text/JavaScript"></script>
+<script src="http://www.sanfrancisco.com/js/resize.js" language="JavaScript" type="text/javascript"></script>
+<script src="http://www.sanfrancisco.com/js/calendarpop.js" language="JavaScript" type="text/javascript"></script>
+<script language="JavaScript">document.write(CalendarPopup_getStyles());</script>
+
+<script language="JavaScript">
+var cal = new CalendarPopup();
+
+cal.showYearNavigation();
+cal.setTodayText('');
+
+cal.setReturnFunction("setD");
+function setD(y,m,d) {
+	document.mpscheckaressrch.year.value=y;
+	document.mpscheckaressrch.month.selectedIndex=--m;
+	for (var i=0; i<document.mpscheckaressrch.day.options.length; i++) {
+		if (document.mpscheckaressrch.day.options[i].value==d) {
+			document.mpscheckaressrch.day.selectedIndex=i;
+			}
+		}
+	}
+
+function getDateString(y_obj,m_obj,d_obj) {
+	var y = y_obj.options[y_obj.selectedIndex].value;
+	var m = m_obj.options[m_obj.selectedIndex].value;
+	var d = d_obj.options[d_obj.selectedIndex].value;
+	if (y=="" || m=="") { return null; }
+	if (d=="") { d=1; }
+	return str= y+'-'+m+'-'+d;
+	}
+		</SCRIPT>
+		<SCRIPT LANGUAGE="JavaScript">
+var advancedDay = 2;
+
+function isLeapYear(yrVal)
+{
+	var leapYear=false;
+	var year = parseInt(yrVal, 10);
+
+	if (year%4 == 0)
+		{
+		leapYear=true;
+		}
+	return leapYear;
+}
+
+function getDaysInMonth(monthVal, YrVal)
+{
+	var maxDays=31
+	if (monthVal==1)
+	{
+		if (isLeapYear(YrVal))
+			{
+			maxDays=29;
+			}
+		else
+			{
+			maxDays=28;
+			}
+	}
+	if (monthVal==3 || monthVal==5 || monthVal==8 || monthVal==10)
+		{
+		maxDays=30;
+		}
+	return maxDays;
+}
+
+
+function init() {
+	var dt = new Date();
+
+	var yr = dt.getFullYear();
+	var curYr = dt.getFullYear();
+	var mo = dt.getMonth();
+
+	var da = dt.getDate();
+
+	var daysInCurrent = getDaysInMonth(mo, yr);
+
+	if (da + advancedDay > daysInCurrent)
+	{	da = ((da+advancedDay) % daysInCurrent);
+		if (mo == 11)
+		{	mo = 0;
+			yr++;	}
+		else
+		{	mo++;	}	}
+	else
+	{	da = da + advancedDay;	}
+	da--;
+
+	yr-=curYr;
+	document.mpscheckaressrch.month.selectedIndex = mo;
+	document.mpscheckaressrch.day.selectedIndex = da;
+	document.mpscheckaressrch.year.selectedIndex = yr;
+	return;  }	
+	
+
+		</script>
+		<script language="JavaScript">
+			function popup(url, param) {
+			emailWin=window.open(url,"win",param);
+			self.name = "mainWin"; }
+		</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" topmargin="0" onload="LoadFuncs()">
+
+<center>
+
+
+  
+
+
+
+
+
+<table width="750" border="0" cellpadding="0" cellspacing="0" class="layout">
+<!--DWLayoutTable-->
+<tr>
+
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="169" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="10" alt=""></td>
+<td height="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10" alt=""></td>
+
+</tr>
+<tr>
+<td colspan="11">
+
+<table width="750" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="169" rowspan="6" class="newnavdata"><img src="http://www.sanfrancisco.com/images/other/goldengatebridge.gif" width="169" height="109" alt="San Francisco Golden Gate Bridge"></td>
+<td width="21" class="newnavdata"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="21" height="1" alt=""></td>
+<td class="newnavdata"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="20" alt=""></td>
+</tr>
+<tr>
+<td width="21" class="newnavdata"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="21" height="1" alt=""></td>
+<td class="newnavdata">
+<p class="tagline">The Boulevards Guide to San Francisco, California</p>
+<img src="http://www.sanfrancisco.com/images/header/sanfranhead-new.gif" width="560" height="35" alt="San Francisco.com Hotels Restaurants Dining Real Estate">
+</td>
+</tr>
+<tr>
+<td colspan="2" height="13" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="13" alt=""></td>
+</tr>
+<tr>
+<td colspan="2" height="11" valign="top"><img src="http://www.boulevards.com/images/resc/greydot.gif" width="581" height="1" alt=""></td>
+</tr>
+<tr>
+<td width="21" class="newnavdata"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="21" height="1" alt=""></td>
+<td class="newnavdata">
+<span class="topnavlinkrevagain"><a href="http://www.sanfrancisco.com/">home</a> :: <a href="http://www.sanfrancisco.com/dining/">dining</a> :: <a href="http://www.sanfrancisco.com/hotels/">hotels</a> :: <a href="http://www.sanfrancisco.com/attractions/">attractions</a> :: <a href="http://www.sanfrancisco.com/visiting/">visiting</a> :: <a href="http://www.sanfrancisco.com/realestate/">real estate</a> :: <a href="http://www.sanfrancisco.com/nightlife/">nightlife</a> :: <a href="http://sanfranciscojobs.sanfrancisco.com/">jobs</a> :: <a href="http://sanfranciscoautos.sanfrancisco.com/">cars</a> :: <a href="http://www.sanfrancisco.com/locals/">resources</a></span>
+</td>
+</tr>
+<tr>
+<td colspan="2" height="3"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="581" height="3" alt=""></td>
+</tr>
+</table>
+
+
+
+</td>
+</tr>
+<tr>
+<td height="20" colspan="11" valign="top"><img src="../images/resc/cleardot.gif" width="750" height="20"></td>
+</tr>
+<tr>
+<td align="left" valign="top">
+
+<form action="http://www.secure-res.com/res/vn2/mp-3.asp" method="GET" id="Form2" name="mpscheckaressrch" style="margin-bottom: 10px">
+<input type="hidden" name="rooms" value="1" id="Select9">
+<input type="hidden" name="mps" value="sanf" id="Hidden2">
+<table cellspacing="0" cellpadding="0" border="0" class="hotelssearchnew" width="100%">
+<tr>
+<td align="center" colspan="3" style="padding: 10px 0 5px 0;">
+<img src="http://www.sanfrancisco.com/images/hotelbotnew/citylogo.gif" alt="Book a San Francisco Hotel Online and Save" width="162" height="15">
+</td>
+</tr>
+<tr>
+<td align="center" colspan="3" style="padding: 0 0 5px 0;">
+<img src="http://www.sanfrancisco.com/images/hotelbotnew/hotels.gif" alt="Call Toll Free 1.800.828.6544" width="162" height="56">
+</td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 0 7px;">
+<span class="caltext">Arrive:</span></td>
+<td></td>
+<td align="middle" style="padding: 0 7px 0 0;"><span class="caltext"><a href="#" onclick="cal.showCalendar('anchor',getDateString(document.mpscheckaressrch.year,document.mpscheckaressrch.month,document.mpscheckaressrch.day)); return false;" name="anchor" id="anchor">
+Calendar</a></span></td>
+</tr>
+<tr>
+<td style="padding: 0 0 3px 7px;">
+<select name="month" style="width:49px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<option value="1">Jan</option>
+<option value="2">Feb</option>
+<option value="3">Mar</option>
+<option value="4">Apr</option>
+<option value="5">May</option>
+<option value="6">Jun</option>
+<option value="7">Jul</option>
+<option value="8">Aug</option>
+<option value="9">Sep</option>
+<option value="10">Oct</option>
+<option value="11">Nov</option>
+<option value="12">Dec</option>
+</select>
+</td>
+<td style="padding: 0 0 3px 0;">
+<select name="day" style="width:45px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+</td>
+<td style="padding: 0 0 3px 0;">
+<select  style="width:45px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;" name="year">
+<option value="2006">06</option>
+<option value="2007">07</option>
+<option value="2008">08</option>
+</select>
+</td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 7px;">
+<span class="caltext">Nights:</span>
+</td>
+<td>
+<span class="caltext">Adults:</span>
+</td>
+<td>
+<span class="caltext">Children:</span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0 0 3px 7px;">
+<select style="width:49px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;" name="nights" id="Select6">
+<option value="1">1</option>
+<option value="2" selected>2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+</select>
+</td>
+<td style="padding: 0 0 3px 0;">
+<select style="width:45px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;" name="adults" id="Select8">
+<option value="1" selected>1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</td>
+<td style="padding: 0 0 3px 0;">
+<select style="width:45px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;"  name="children" id="Select7">
+<option value="0" selected>0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 5px 7px;">
+<span class="caltext">Search:<br></span>
+<select name="mpg" ID="Select5" style="width:90px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<option value="590">All Hotels</option>
+<option value="591">San Francisco</option>
+<option value="592">San Jose</option>
+<option value="594">Los Gatos/Saratoga</option>
+</select>
+</td>
+<td align="right" valign="bottom" style="padding: 0 7px 5px 7px;">
+<input type="image" name="B1" src="http://www.boulevards.com/images/resc/search_btn.gif" value="GO" id="Submit2">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</form>
+
+
+
+<div class="findBox">
+<span class="secondlinks"><font color="#999999">San Francisco businesses<br></font></span>
+<form style='margin:0;' target=_top name=sf method=get action="http://local.sanfrancisco.com/search.pg">
+<input name=z type=hidden maxlength=2048 value="San Francisco">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td><span class="bodytext">Enter any search words</span></td></tr>
+<tr>
+<td style="padding: 0 0 2px 0;">
+<input name=q class="form_elements" style='width:155px' type=text maxlength=2048 value="">
+</td>
+</tr>
+<tr>
+<td align="right"><input type=image src='http://www.boulevards.com/images/resc/search_btn.gif'></td>
+</tr>
+</table>
+</form>
+<span class="bodytext">Popular Searches<br></span>
+<span class="inlinelinks"><a
+href="http://local.sanfrancisco.com/San+Francisco/Day+Spas.zq.html">Day Spas</a>, <a href="http://local.sanfrancisco.com/San+Francisco/Restaurants.zq.html">Restaurants</a>, <a href="http://local.sanfrancisco.com/San+Francisco/Furniture+Stores.zq.html">Furniture</a>, <a href="http://local.sanfrancisco.com/San+Francisco/Dentists.zq.html">Dentists</a>, <a href="http://local.sanfrancisco.com/San+Francisco/Doctors+Physicians.zq.html">Doctors</a>, <a href="http://local.sanfrancisco.com/San+Francisco/Beauty+Salons.zq.html">Salons</a>, <a href="http://local.sanfrancisco.com/San+Francisco/Auto+Dealers.zq.html">Auto Dealers</a>, <a href="http://local.sanfrancisco.com/San+Francisco/Hospitals+Medical+Clinics.zq.html">Hospitals</a>, <a href="http://local.sanfrancisco.com/San+Francisco/Retail+Banks.zq.html">Banks</a>, <a href="http://local.sanfrancisco.com/">More...</a><br></span>
+</div>
+
+
+<img src="http://www.boulevards.com/images/resc/greydot.gif" width="168" height="1" alt="">
+
+
+
+
+
+
+
+
+
+
+<p class="bodytext"><span class="secondlinks">San Francisco Hotels<br></span>
+San Francisco is a city 7 miles square. You can walk from the San Francisco Bay to the Pacific Ocean in a few hours, and there are few neighborhoods in town where you wouldn't enjoy a stay. To find yourself at the epicenter of the Summer of Love, check out <!--<a href="../haightashbury.shtml">-->Haight-Ashbury<!--</a>--> and the nearby Golden Gate Park. For proximity to some of the best shopping in the country, try <!--<a href="../unionsquare.shtml">-->Union Square and the Financial District<!--</a>-->. Or stay along Lombard Street in the <!--<a href="../marinadistrict.shtml">-->Marina District<!--</a>--> and enjoy close proximity to the Bay, the Golden Gate Bridge and the Presidio. If a bowl of clam chowder is what you need, or a ferry to Alcatraz Island, the hotels around <!--<a href="../fishermans.shtml">-->Fisherman's Wharf<!--</a>--> will point you in the right direction.</p>
+
+<!--<p class="bodytext">All told, there are few wrong choices to make in the City by the Bay. Choose from one of the neighborhoods in the menu at right to begin your San Francisco Hotels search, or choose to search by rate and availability through our <a href="http://boulevards.com/ssi/redir/find.php?s=roadtrip&q=index.jsp?pageName=hotNetList&cid=54076&city=San+Francisco&stateProvince=CA&country=US&hotel=2" target="_blank">all-hotel search engine</a>.</p>-->
+
+
+
+<p>
+<span class="secondlinks"><font color="#999999">Visitor Information</font><br></span>
+<span class="bodytext"><a href="http://carrentals.sanfrancisco.com/">Car Rentals in San Francisco</a><br></span>
+<span class="bodytext"><a href="http://www.sanfrancisco.com/sfotransport/index.shtml">SFO Airport Shuttle Reservations</a><br></span>
+<span class="bodytext"><a href="http://www.boulevards.com/ssi/redir/find.php?s=dining&q=start.asp?ID=4&amp;ref=251" target="_blank">Restaurant Reservations</a><br></span>
+<span class="bodytext"><a href="http://boulevards.com/ssi/redir/find.php?s=maps&q=product.asp?pfid=SANF&amp;a=39" target="_blank">Bay Area Maps and Brochures</a><br></span>
+</p>
+
+
+<p><span class="secondlinks"><font color="#999999">Bay Area WebGuides</font><br></span>
+<span class="redcaltextlink"><a href="http://www.sanjose.com/" title="San Jose Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sanjose.com/" title="San Jose Hotels Real Estate Restaurants">San Jose</a><br></span>
+<span class="redcaltextlink"><a href="http://www.sanfrancisco.com/" title="San Francisco Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sanfrancisco.com/" title="San Francisco Hotels Real Estate Restaurants">San Francisco</a><br></span>
+<span class="redcaltextlink"><a href="http://www.oakland.com/" title="Oakland Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.oakland.com/" title="Oakland Hotels Real Estate Restaurants">Oakland</a><br></span>
+<span class="redcaltextlink"><a href="http://www.paloalto.net/" title="Palo Alto Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.paloalto.net/" title="Palo Alto Hotels Real Estate Restaurants">Palo Alto</a><br></span>
+<span class="redcaltextlink"><a href="http://www.santacruz.com/" title="Santa Cruz Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.santacruz.com/" title="Santa Cruz Hotels Real Estate Restaurants">Santa Cruz</a><br></span>
+<span class="redcaltextlink"><a href="http://www.scottsvalley.com/" title="Scotts Valley Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.scottsvalley.com/" title="Scotts Valley Hotels Real Estate Restaurants">Scotts Valley</a><br></span>
+<span class="redcaltextlink"><a href="http://www.alviso.com/" title="Alviso Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.alviso.com/" title="Alviso Hotels Real Estate Restaurants">Alviso</a><br></span>
+<span class="redcaltextlink"><a href="http://www.cupertino.com/" title="Cupertino Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.cupertino.com/" title="Cupertino Hotels Real Estate Restaurants">Cupertino</a><br></span>
+<span class="redcaltextlink"><a href="http://www.saratoga-california.com/" title="Saratoga Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.saratoga-california.com/" title="Saratoga Hotels Real Estate Restaurants">Saratoga</a><br></span>
+<span class="redcaltextlink"><a href="http://www.almadenvalley.com/" title="Almaden Valley Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.almadenvalley.com/" title="Almaden Valley Hotels Real Estate Restaurants">Almaden Valley</a><br></span>
+<span class="redcaltextlink"><a href="http://www.atherton-california.com/" title="Atherton Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.atherton-california.com/" title="Atherton Hotels Real Estate Restaurants">Atherton</a><br></span>
+<span class="redcaltextlink"><a href="http://blossomvalley.sanjose.com/" title="Blossom Valley Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://blossomvalley.sanjose.com/" title="Blossom Valley Hotels Real Estate Restaurants">Blossom Valley</a><br></span>
+<span class="redcaltextlink"><a href="http://www.bouldercreek-california.com/" title="Boulder Creek Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.bouldercreek-california.com/" title="Boulder Creek Hotels Real Estate Restaurants">Boulder Creek</a><br></span>
+<span class="redcaltextlink"><a href="http://www.campbell.net/" title="Campbell Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.campbell.net/" title="Campbell Hotels Real Estate Restaurants">Campbell</a><br></span>
+<span class="redcaltextlink"><a href="http://www.fremont-california.com/" title="Fremont Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.fremont-california.com/" title="Fremont Hotels Real Estate Restaurants">Fremont</a><br></span>
+<span class="redcaltextlink"><a href="http://www.gilroy-california.com/" title="Gilroy Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.gilroy-california.com/" title="Gilroy Hotels Real Estate Restaurants">Gilroy</a><br></span>
+<span class="redcaltextlink"><a href="http://www.halfmoonbay.com/" title="Half Moon Bay Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.halfmoonbay.com/" title="Half Moon Bay Hotels Real Estate Restaurants">Half Moon Bay</a><br></span>
+<span class="redcaltextlink"><a href="http://www.losaltos.net/" title="Los Altos Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.losaltos.net/" title="Los Altos Hotels Real Estate Restaurants">Los Altos</a><br></span>
+<span class="redcaltextlink"><a href="http://www.losaltoshills.com/" title="Los Altos Hills Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.losaltoshills.com/" title="Los Altos Hills Hotels Real Estate Restaurants">Los Altos Hills</a><br></span>
+<span class="redcaltextlink"><a href="http://www.losgatos.com/" title="Los Gatos Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.losgatos.com/" title="Los Gatos Hotels Real Estate Restaurants">Los Gatos</a><br></span>
+<span class="redcaltextlink"><a href="http://www.milpitas.com/" title="Milpitas Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.milpitas.com/" title="Milpitas Hotels Real Estate Restaurants">Milpitas</a><br></span>
+<span class="redcaltextlink"><a href="http://www.montesereno.com/" title="Monte Sereno Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.montesereno.com/" title="Monte Sereno Hotels Real Estate Restaurants">Monte Sereno</a><br></span>
+<span class="redcaltextlink"><a href="http://www.morganhill-california.com/" title="Morgan Hill Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.morganhill-california.com/" title="Morgan Hill Hotels Real Estate Restaurants">Morgan Hill</a><br></span>
+<span class="redcaltextlink"><a href="http://www.mountainview.net/" title="Mountain View Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.mountainview.net/" title="Mountain View Hotels Real Estate Restaurants">Mountain View</a><br></span>
+<span class="redcaltextlink"><a href="http://www.santa-clara.com/" title="Santa Clara Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.santa-clara.com/" title="Santa Clara Hotels Real Estate Restaurants">Santa Clara</a><br></span>
+<span class="redcaltextlink"><a href="http://www.silvercreekvalley.com/" title="Silver Creek Valley Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.silvercreekvalley.com/" title="Silver Creek Valley Hotels Real Estate Restaurants">Silver Creek Valley</a><br></span>
+<span class="redcaltextlink"><a href="http://www.sunnyvale.net/" title="Sunnyvale Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sunnyvale.net/" title="Sunnyvale Hotels Real Estate Restaurants">Sunnyvale</a><br></span>
+<span class="redcaltextlink"><a href="http://www.willow-glen.com/" title="Willow Glen Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.willow-glen.com/" title="Willow Glen Hotels Real Estate Restaurants">Willow Glen</a><br></span>
+<span class="redcaltextlink"><a href="http://www.woodside-california.com/" title="Woodside Hotels Real Estate Restaurants">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.woodside-california.com/" title="Woodside Hotels Real Estate Restaurants">Woodside</a></span></p>
+<p>
+<span class="secondlinks"><font color="#999999">Bay Area Hotel Specials</font><br></span>
+<span class="redcaltextlink"><a href="http://www.sanfrancisco.com/hotels/" title="San Francisco Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sanfrancisco.com/hotels/" title="San Francisco Hotels">San Francisco Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.monterey-carmel-bigsur.com/hotels/carmel/" title="Carmel Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.monterey-carmel-bigsur.com/hotels/carmel/" title="Carmel Hotels">Carmel Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.cupertino.com/hotels.shtml" title="Cupertino Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.cupertino.com/hotels.shtml" title="Cupertino Hotels">Cupertino Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.halfmoonbay.com/hotels/" title="Half Moon Bay Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.halfmoonbay.com/hotels/" title="Half Moon Bay Hotels">Half Moon Bay Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.losgatos.com/hotels/" title="Los Gatos Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.losgatos.com/hotels/" title="Los Gatos Hotels">Los Gatos Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.sanfrancisco.com/hotels/northbay.shtml" title="Marin Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sanfrancisco.com/hotels/northbay.shtml" title="MarinHotels">Marin Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.monterey-carmel-bigsur.com/hotels/" title="Monterey Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.monterey-carmel-bigsur.com/hotels/" title="Monterey Hotels">Monterey Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.oakland.com/hotels/" title="Oakland Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.oakland.com/hotels/" title="Oakland Hotels">Oakland Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.paloalto.net/hotels/" title="Palo Alto Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.paloalto.net/hotels/" title="Palo Alto Hotels">Palo Alto Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.sanjose.com/hotels/" title="San Jose Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sanjose.com/hotels/" title="San Jose Hotels">San Jose Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.santacruz.com/hotels/" title="Santa Cruz Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.santacruz.com/hotels/" title="Santa Cruz Hotels">Santa Cruz Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.saratoga-california.com/hotels/" title="Saratoga Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.saratoga-california.com/hotels/" title="Saratoga Hotels">Saratoga Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.sanjose.com/hotels/" title="Silicon Valley Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sanjose.com/hotels/" title="Silicon Valley Hotels">Silicon Valley Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.sanfrancisco.com/hotels/northbay.shtml" title="Wine Country Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sanfrancisco.com/hotels/northbay.shtml" title="Wine Country Hotels">Wine Country Hotels</a><br></span>
+</p>
+
+<p>
+<span class="secondlinks"><font color="#999999">Southern California Hotel Specials</font><br></span>
+<span class="redcaltextlink"><a href="http://www.anaheim-california.com/hotels/" title="Anaheim Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.anaheim-california.com/hotels/" title="Anaheim Hotels">Anaheim Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.losangeles.com/hotels/" title="Beverly Hills Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.losangeles.com/hotels/" title="Beverly Hills Hotels">Beverly Hills Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.losangeles.com/hotels/hollywood.shtml" title="Hollywood Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.losangeles.com/hotels/hollywood.shtml" title="Hollywood Hotels">Hollywood Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.losangeles.com/hotels/" title="Los Angeles Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.losangeles.com/hotels/" title="Los Angeles Hotels">Los Angeles Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.sandiego-california.com/hotels/" title="San Diego Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sandiego-california.com/hotels/" title="San Diego Hotels">San Diego Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.sanluisobispo-california.com/hotels/" title="San Luis Obispo Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.sanluisobispo-california.com/hotels/" title="San Luis Obispo Hotels">San Luis Obispo Hotels</a><br></span>
+<span class="redcaltextlink"><a href="http://www.santabarbara-ca.com/hotels/" title="Santa Barbara Hotels">&gt;</a></span><span class="caltext">&nbsp;&nbsp;&nbsp;<a href="http://www.santabarbara-ca.com/hotels/" title="Santa Barbara Hotels">Santa Barbara Hotels</a><br></span>
+<span class="caltext">[an error occurred while processing this directive]</span>
+</p>
+
+
+
+<p><img src="../images/resc/cleardot.gif" width="155" height="1"></p></td>
+<td width="10" valign="top"><img src="../images/resc/cleardot.gif" width="10" height="1"></td>
+<td width="1" valign="top" bgcolor="#999999"><img src="../images/resc/cleardot.gif" width="1" height="1"></td>
+<td width="10" valign="top"><img src="../images/resc/cleardot.gif" width="10" height="1"></td>
+<td colspan="5" valign="top">
+
+
+
+<span class="headline">San Francisco Hotels</span>
+
+
+<p><img src="../images/resc/greydot.gif" width="415" height="1"><br>
+<img src="../images/resc/cleardot.gif" width="2" height="5"><br>
+
+
+<span class="moreinfolink">
+<b><a href="http://boulevards.com/ssi/redir/find.php?s=roadtrip&q=index.jsp?pageName=hotNetList&cid=54076&city=San+Francisco&stateProvince=CA&country=US&hotel=2" target="_blank">SanFrancisco.com's hotel picks</a></b><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/fitzgerald/">Fitzgerald Hotel Union Square from $89</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/personalityhotels/">Personality Hotels on Union Square from $99</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/radisson-fishermans-wharf/">The Radisson Fisherman's Wharf Hotel from $129</a><br></span>
+
+
+<!--
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/starwood/">Best Available Rates at Starwood Hotels San Francisco: The Westin St. Francis, The Palace Hotel, W San Francisco, The Westin San Francisco Airport</a><br></span>
+-->
+
+<!--
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/alamo-square-inn/">The Alamo Square Inn from $50</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/savoy-hotel/">The Savoy Hotel from $109</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/hoteldesarts/">Hotel Des Arts from $59</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/panpacifichotel/">Pan Pacific Hotel from $169</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/warwick/">The Warwick Regis Hotel from $139</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/adantehotel/">The Adante Hotel from $69</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/majestic/">Hotel Majestic from $120</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/nobhill/">Nob Hill Hotel from $95</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/ramada/">Ramada Plaza Hotel from $89</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/archmansion/">Archbishop's Mansion from $175</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/edwardii/">Edward II Inn and Suites from $79</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/hoteldelsol/">Hotel del Sol from $149</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/petiteauberge/">Petite Auberge from $109</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/nobhilllambourne/">Nob Hill Lambourne from $169</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/radissonmiyako/">Radisson Miyako from $99.00</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/daysinnciviccenter/">Days Inn Civic Center from $80</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/super8/">Super 8 - Fisherman's Wharf from $79</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.sanfrancisco.com/millwoodinn/">Millwood Inn &amp; Suites from $79</a><br></span>
+-->
+
+
+
+<img src="../images/resc/cleardot.gif" width="2" height="5"><br>
+<img src="../images/resc/greydot.gif" width="415" height="1"></p>
+
+<!--
+<p>
+<form method="POST" action="cgi-bin/redirect.cgi" onsubmit="return false">
+<span class="plugtext">
+<b>Choose an area of San Francisco:</b></font>
+<br><img src="../images/resc/cleardot.gif" width="2" height="3"><br>
+
+        <select name="menu1" size=1 class="form_elements" onchange="MM_jumpMenu('parent',this,0)">
+<option selected>Where do you want to stay?</option>
+<option value="http://www.sanfrancisco.com/hotels/index.shtml">Hot San Francisco Hotel Deals</option>
+<option value="http://www.sanfrancisco.com/hotels/unionsquare.shtml">Union Square/Financial District</option>
+<option value="http://www.sanfrancisco.com/hotels/waterfront.shtml">Downtown Waterfront</option>
+<option value="http://www.sanfrancisco.com/hotels/soma.shtml">South of Market (SOMA)</option>
+<option value="http://www.sanfrancisco.com/hotels/fishermans.shtml">Fisherman's Wharf</option>
+<option value="http://www.sanfrancisco.com/hotels/northbeach.shtml">North Beach/Chinatown</option>
+<option value="http://www.sanfrancisco.com/hotels/nobhill.shtml">Nob Hill</option>
+<option value="http://www.sanfrancisco.com/hotels/pacificheights.shtml">Pacific Heights/Japantown</option>
+<option value="http://www.sanfrancisco.com/hotels/marinadistrict.shtml">Marina District/Lombard Street</option>
+<option value="http://www.sanfrancisco.com/hotels/vanness.shtml">Van Ness/Civic Center/Opera</option>
+<option value="">~~~~~~~~~~~~~~~~~~</option>
+<option value="http://www.sanfrancisco.com/hotels/alamosquare.shtml">Alamo Square</option>
+<option value="http://www.sanfrancisco.com/hotels/haightashbury.shtml">Haight Ashbury</option>
+<option value="http://www.sanfrancisco.com/hotels/oceanbeach.shtml">Ocean Beach</option>
+<option value="">~~~~~~~~~~~~~~~~~~</option>
+<option value="http://www.sanfrancisco.com/hotels/budget.shtml">San Francisco Budget Hotels</option>
+<option value="">~~~~~~~~~~~~~~~~~~</option>
+<option value="http://www.sanfrancisco.com/hotels/sfo.shtml">San Francisco Airport</option>
+<option value="http://www.sanfrancisco.com/hotels/northbay.shtml">Wine Country</option>
+<option value="http://www.sanfrancisco.com/hotels/peninsula.shtml">South of San Francisco/Peninsula</option>
+<option value="http://www.oakland.com/hotels/index.shtml">East Bay</option>
+<option value="http://www.sanfrancisco.com/hotels/berkeley.shtml">Berkeley</option>
+<option value="http://www.sanjose.com/hotels/index.shtml">San Jose / Silicon Valley</option>
+       </select><br>
+              </form>
+
+
+</p>
+-->
+
+<h1>Hot San Francisco Hotel Deals</h1>
+
+
+
+
+
+
+<img src="../starwood/gifs/lemeridean.gif" alt="Le Meridian" width="135" height="90" border="0" align="left"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/le-meridien/">Le M&eacute;ridien San Francisco</a><br></span>
+Located in San Francisco's vibrant Embarcadero district, Le M&eacute;ridien is close to all the best of San Francisco... just minutes away from the Bay Bridge, Fisherman's Wharf, Chinatown and Union Square. For a memorable ride though San Francisco, stroll straight from Le M&eacute;ridien's front steps to where San Francisco's famous Cable Cars are waiting to take visitors "halfway to the stars".<br>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/le-meridien/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="../starwood/gifs/westinstf.jpg" alt="The Westin St. Francis" width="135" height="90" border="0" align="left"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/westin-st-francis/">The Westin St. Francis</a><br></span>
+Overlooking Union Square, The Westin St. Francis Hotel has maintained its preeminence as one of San Francisco's top hotels since 1904. Enjoy sophistication at its best, combining a historical past with present-day luxuries in the heart of the city.<br>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/westin-st-francis/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="../starwood/gifs/palace2.jpg" alt="Palace Hotel" width="135" height="90" border="0" align="left"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/palace-hotel/">Palace Hotel</a><br></span>
+Experience the magnificence and beauty of this Luxury Collection San Francisco hotel, located blocks from Union Square, China Town and the Embarcadero. Treat yourself to an exclusive getaway at the Palace Hotel with unique dining, cultural exhibits and extravagant pampering.<br>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/palace-hotel/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="http://www.sanfrancisco.com/crowne-plaza-unionsquare/gifs/crowne-plaza-unionsquare.jpg" width="133" height="94" align="left" alt="Crowne Plaza Hotel Union Square"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/crowne-plaza-unionsquare/">Crowne Plaza Hotel Union Square</a> </span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/crowne-plaza-unionsquare/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext">480 Sutter St, San Francisco, California 94108<br></span>
+<span class="bodytext">The San Francisco Crowne Plaza Hotel Union Square is where your special San Francisco getaway or business trip begins. Leisure travelers will enjoy our breathtaking views and superb location -- Union Square is one of the top shopping areas in the world. Corporate and VIP Business travelers will enjoy our walking distance proximity to the Financial District and our convenient fitness and business center.<br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/crowne-plaza-unionsquare/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="gifs/orchard-garden-hotel.jpg" width="133" height="94" align="left" alt=" Orchard Garden Hotel"><p><span class="secondlinks"><a href="../orchard-garden-hotel/index.html"> Orchard Garden Hotel</a> </span><span class="hotdeallinks"><b><a href="../orchard-garden-hotel/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Union Square's GREEN Hotel - The Trendsetter in Comfort and Luxury</b></span><br>
+<span class="bodytext">466 Bush Street, San Francisco, CA 94108<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.688.9174<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../orchard-garden-hotel/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Welcome to San Francisco's newest and 'greenest' hotel&#8212;the Orchard Garden Hotel!Ý This trendsetting boutique hotel is the Union Square area's newest attraction. Set at the foot of Chinatown's graceful green-tile gate, The Orchard Garden Hotel offers the utmost in comfort and luxury. San Francisco's famous Chinatown and Union Square shops are just steps from the front door. This hotel provides business and pleasure travelers a unique experience not soon forgotten.<br></span>
+<span class="moreinfolink"><a href="../orchard-garden-hotel/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="gifs/marina-inn.jpg" width="133" height="94" align="left" alt="The Marina Inn"><p><span class="secondlinks"><a href="../marina-inn/index.html"> The Marina Inn</a> </span><span class="hotdeallinks"><b><a href="../marina-inn/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>The Marina District's charming, quaint and affordable B & B</b></span><br>
+<span class="bodytext">3110 Octavia St. @ Lombard, San Francisco, CA 94123<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.826.6555<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../marina-inn/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Marina Inn is tucked away in one of the most charming neighborhoods of San Francisco. The affordable B & B offers a unique stay away from the hustle and bustle of down town. The historic Marina District features majestic, colorful Victorian homes and pretty courtyard gardens.<br></span>
+<span class="moreinfolink"><a href="../marina-inn/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="gifs/wingate-inn.jpg" width="133" height="94" align="left" alt="The Wingate Inn"><p><span class="secondlinks"><a href="../wingate-inn/index.html"> The Wingate Inn</a> </span><span class="hotdeallinks"><b><a href="../wingate-inn/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Near SFO Airport - The perfect hotel for work and play!</b></span><br>
+<span class="bodytext">480 North Bayshore Boulevard, San Mateo, CA 94401<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.826.8323<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../wingate-inn/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Wingate Inn San Francisco Airport offers accommodations and services to make your stay feel like a real vacation. This San Mateo, California hotel is 6 miles from the airport and across from San Mateo's city golf course. Choose from a variety of great local attractions for everyone from serious shoppers to golfers.<br></span>
+<span class="moreinfolink"><a href="../wingate-inn/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+<img src="http://www.sanfrancisco.com/holiday-inn-civiccenter/gifs/holiday-inn-civiccenter.jpg" width="133" height="94" align="left" alt="San Francisco Holiday Inn Civic Center Hotel"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/holiday-inn-civiccenter/">San Francisco Holiday Inn Civic Center Hotel</a> </span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/holiday-inn-civiccenter/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext">50 Eighth St, San Francisco, California 94103<br></span>
+<span class="bodytext">San Francisco business and leisure travelers alike find themselves exactly where they want to be when they choose the San Francisco Holiday Inn Civic Center Hotel. The Holiday Inn Civic Center Hotel is located in the heart of San Francisco's Government and Performing Arts district, across from the Orpheum Theater and just blocks from City Hall, the Main Library, Bill Graham Auditorium, Davies Symphony Hall and San Francisco's Opera and Ballet. The Civic Center Holiday Inn is focused on superior hospitality and offer a full palette of contemporary services and amenities supported by a staff dedicated to personal service and 100% guest satisfaction.<br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/holiday-inn-civiccenter/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="http://www.sanfrancisco.com/holiday-inn-express/gifs/holiday-inn-express.jpg" width="133" height="94" align="left" alt="Holiday Inn Express Hotel & Suites at Fisherman's Wharf"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/holiday-inn-express/">Holiday Inn Express Hotel & Suites at Fisherman's Wharf</a> </span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/holiday-inn-express/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext">550 North Point St, San Francisco, California 94133<br></span>
+<span class="bodytext">The Holiday Inn Express Hotel & Suites at Fisherman's Wharf offers exceptional services including free broadband high speed internet throughout the hotel and free local phone calls. The daily Express Start Continental Breakfast and Business Center -- featuring computers, printer and high speed internet access -- are also complimentary. All guestrooms are beautifully appointed in a maritime Art Deco design. The hotel's prime location is within walking distance of Pier 39, Ghiradelli Square, the Alcatraz Ferry and historic San Francisco Cable Cars.<br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/holiday-inn-express/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="http://www.sanfrancisco.com/holiday-inn-fishermanswharf/gifs/holiday-inn-fishermanswharf.jpg" width="133" height="94" align="left" alt="Holiday Inn Hotel at San Francisco Fisherman's Wharf"><p><span class="secondlinks"><a href="	http://www.sanfrancisco.com/holiday-inn-fishermanswharf/">Holiday Inn Hotel at San Francisco Fisherman's Wharf</a> </span><span class="hotdeallinks"><b><a href="	http://www.sanfrancisco.com/holiday-inn-fishermanswharf/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext">1300 Columbus Avenue, San Francisco, California 94133<br></span>
+<span class="bodytext">The 4 Diamond AAA award winning Holiday Inn Hotel San Francisco-Fisherman's Wharf is within walking distance to all the popular attractions at the Wharf: Alcatraz, Pier 39, Ghirardelli Square and Maritime museum. Catch the famous San Francisco Cable Cars up Russian Hill for amazing views of the Golden Gate Bridge and the entire San Francisco Bay Area. Take advantage of the outdoor heated swimming pool, a Holiday Inn Hotel standard.<br></span>
+<span class="moreinfolink"><a href="	http://www.sanfrancisco.com/holiday-inn-fishermanswharf/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="http://www.sanfrancisco.com/intercontinental-mark-hopkins/gifs/intercontinental-mark-hopki.jpg" width="133" height="94" align="left" alt="InterContinental Mark Hopkins Hotel"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/intercontinental-mark-hopkins/">InterContinental Mark Hopkins Hotel</a> </span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/intercontinental-mark-hopkins/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext">Number One Nob Hill, San Francisco, California 94108<br></span>
+<span class="bodytext">Poised at the crest of Nob Hill, the InterContinental Mark Hopkins Hotel is considered one of San Francisco's finest hotels. This historic landmark hotel features 380 rooms, most with magnificent views of the City and Bay. Don't forget to visit the legendary Top Of The Mark sky-bar, a "must see" destination famed for its panoramic views of San Francisco and 100 Martinis menu.<br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/intercontinental-mark-hopkins/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="gifs/hoteldiva.jpg" width="133" height="94" align="left" alt="Hotel Diva"><p><span class="secondlinks"><a href="../hoteldiva/index.html">Hotel Diva</a> </span><span class="hotdeallinks"><b><a href="../hoteldiva/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"San Francisco's Dramatic Diva"</b></span><br>
+<span class="bodytext">440 Geary Street, San Francisco CA 94102<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.829.6150<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../hoteldiva/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">If you want the ultimate experience in high design and high service, the Hotel Diva will fit the role as headquarters for your San Francisco stay. Referred to as "the San Francisco trendsetter, in a city incandescent by motion, integrated by cultures, and inspired by lifestyles, the Hotel Diva epitomizes what a San Francisco experience should be."<br></span>
+<span class="moreinfolink"><a href="../hoteldiva/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+<img src="gifs/hotelunionsquare.jpg" width="133" height="94" align="left" alt="Hotel Union Square"><p><span class="secondlinks"><a href="../hotelunionsquare/index.html">Hotel Union Square</a> </span><span class="hotdeallinks"><b><a href="../hotelunionsquare/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Dynamic, Bold, Spectacular"</b></span><br>
+<span class="bodytext">114 Powell Street, San Francisco CA 94102<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.445.8089<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../hotelunionsquare/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Hotel Union Square, the City's first boutique hotel, is located directly on 
+San Francisco's historic antique cable car line, in the heart of Union Square, the City's shopping haven. All rooms are highly stylized in d&eacute;cor &#8212; from deluxe guest rooms to luxurious penthouse suites (each suite with a private rooftop deck overlooking the City's skyline) the Hotel Union Square offers all the modern day necessities.<br></span>
+<span class="moreinfolink"><a href="../hotelunionsquare/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+<img src="gifs/kensingtonparkhotel.jpg" width="133" height="94" align="left" alt="Kensington Park Hotel"><p><span class="secondlinks"><a href="../kensington/index.html">Kensington Park Hotel</a> </span><span class="hotdeallinks"><b><a href="../kensington/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"The Best Address on Union Square"</b></span><br>
+<span class="bodytext">450 Post Street, San Francisco CA 94109<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.829.6140<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../kensington/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Step through the Gothic entrance and pass from modern San Francisco 
+into the timeless beauty and elegance of the Kensington Park Hotel. Just steps from the Moscone and Yerba Buena Convention Centers, world-renowned shopping and the financial, theatre and Chinatown districts, the Kensington Park Hotel is the best address on Union Square, for both business and leisure travel.<br></span>
+<span class="moreinfolink"><a href="../kensington/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/metropolis.jpg" width="133" height="94" align="left" alt="Hotel Metropolis"><p><span class="secondlinks"><a href="../metropolis/index.html">Hotel Metropolis</a> </span><span class="hotdeallinks"><b><a href="../metropolis/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Dream in Color"</b></span><br>
+<span class="bodytext">25 Mason Street, San Francisco CA 94102<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.829.6151<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../metropolis/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The forces of nature come alive in this 1930's downtown landmark. The Hotel Metropolis gently balances earth, wind, fire and water  with symbolic color, design, graphics and artwork, from its sophisticated lobby to the finest detail in each guest room. Located just north of Market Street and one block west of the Powell Street Cable Car line at Union Square, the Hotel Metropolis is just steps from fabulous shopping, theatres and fine dining. Walk to Moscone Convention Center, Chinatown, the Embarcadero, SOMA and Yerba Buena Gardens.<br></span>
+<span class="moreinfolink"><a href="../metropolis/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+<img src="gifs/steinhart.jpg" width="133" height="128" align="left" alt="Steinhart Hotel"><p><span class="secondlinks"><a href="../steinhart/index.html">Steinhart Hotel</a><br></span>
+<span class="bodytext"><b>"For Longer Stays in San Francisco"</b></span><br>
+<span class="bodytext">952 Sutter Street, San Francisco CA 94109<br></span>
+<span class="secondlinks">Toll Free Reservations: 866.829.6163<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../steinhart/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Steinhart offers fully serviced and appointed accommodations 
+for longer-term stays in San Francisco. The hotel is centrally located in downtown San Francisco and convenient to shopping, public transportation and entertainment. The Steinhart retains its historic turn-of-the-century character while offering up-to-the-minute conveniences.<br></span>
+<span class="moreinfolink"><a href="../steinhart/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+<img src="gifs/edwardian-hotel.jpg" width="133" height="94" align="left" alt="Edwardian San Francisco Hotel"><p><span class="secondlinks"><a href="../edwardian-hotel/index.html">Edwardian San Francisco Hotel</a><br></span>
+<span class="bodytext"><b>"The New York Times Budget Choice for San Francisco!"</b></span><br>
+<span class="bodytext">1668 Market Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 888.410.2479<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../edwardian-hotel/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The recently revamped Edwardian San Francisco is a European style hotel located close to many of San Francisco's top attractions&#8212;Union Square, Moscone Center, Chinatown, and just a short walk to Symphony Davies Hall, the Opera House, ballet, museums, Civic Center, and the newly remodeled City Hall. Renovated in the Fall of 2005, the Edwardian San Francisco showcases the quaint ambience of a European style hotel. Each of the rooms are individually decorated and feature fresh flowers, direct dial telephones, cable TV and wireless Internet.<br></span>
+<span class="moreinfolink"><a href="../edwardian-hotel/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+<img src="gifs/wharf-inn.jpg" width="133" height="94" align="left" alt="The Wharf Inn"><p><span class="secondlinks"><a href="../wharf-inn/index.html">The Wharf Inn</a><br></span>
+<span class="bodytext"><b>"Consistently one of Frommer's Best Values at the Wharf!"</b></span><br>
+<span class="bodytext">2601 Mason Street, San Francisco, CA 94133<br></span>
+<span class="secondlinks">Toll Free Reservations: 866.257.4068<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../wharf-inn/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Located in the heart of San Francisco's world famous Fisherman's Wharf, the Wharf Inn's name really tells the whole story &#8212; and it's just a short stroll to some of San Francisco's most popular attractions. A ferry ride to Alcatraz or sunny Sausalito is literally just footsteps away. And just around the corner, Ghirardelli Square and Pier 39, offer a unique shopping experience along with some of San Francisco's finest dining establishments.<br></span>
+<span class="moreinfolink"><a href="../wharf-inn/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+<img src="gifs/white-swan-inn.jpg" width="133" height="94" align="left" alt="The White Swan Inn Hotel San Francisco"><p><span class="secondlinks"><a href="../white-swan-inn/index.html">The White Swan Inn</a> </span><span class="hotdeallinks"><b><a href="../white-swan-inn/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>English Charm in San Francisco's Backyard!</b></span><br>
+<span class="bodytext">845 Bush Street, San Francisco, California 94108<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.276.3887<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../white-swan-inn/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Located in San Francisco's Nob Hill area, the White Swan Inn offers guests a unique bed and breakfast experience while visiting the City by the Bay. This intimate little Inn, with its 26 guestrooms and suites, is the perfect place for locals and visitors alike looking to discover a bit of European charm in San Francisco's own backyard. With its dark wood paneling, rich floral carpets, comfortable furniture appointed with elegant fabrics and enchanting English art and collectables, the White Swan Inn captures the English theme to perfection.<br></span>
+<span class="moreinfolink"><a href="../white-swan-inn/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="gifs/radisson-fishermans-wharf.jpg" width="133" height="128" align="left" alt="Radisson Fisherman's Wharf Hotel San Francisco"><p><span class="secondlinks"><a href="../radisson-fishermans-wharf/index.html">Radisson Hotel Fisherman's Wharf</a> </span><span class="hotdeallinks"><b><a href="../radisson-fishermans-wharf/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>The Preferred Wharf Location</b></span><br>
+<span class="bodytext">250 Beach Street, San Francisco, California 94133<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.259.0434<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../radisson-fishermans-wharf/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Radisson Hotel Fisherman's Wharf is a first class hotel located in San Francisco's top visitor destination, Fisherman's Wharf! Views of Alcatraz and the Golden Gate Bridge are a photographers delight. Even the casual observer will be inspired by the beauty of this one-of-a kind visitor destination. The smell of fresh-caught crab, simmering clam chowder, and freshly baked sourdough bread is enough to make sane people crazy. And Pier 39 is home to some of the best dining options in the world &#151; all just outside the front door of the Radisson Fisherman's Wharf.<br></span>
+<span class="moreinfolink"><a href="../radisson-fishermans-wharf/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<!--
+<img src="http://www.sanfrancisco.com/renaissance-parc55/gifs/renaissance-parc55.jpg" width="133" height="94" align="left" alt="Renaissance Parc 55 Hotel"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=80">Renaissance Parc 55 Hotel</a> </span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=80">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>The Preferred Choice Of Downtown San Francisco Hotels</b></span><br>
+<span class="bodytext">55 Cyril Magnin Street San Francisco, CA 94102<br></span>
+<span class="bodytext">The AAA Four diamond rated Renaissance Parc 55 Hotel is a luxurious hotel located two blocks from Union Square in downtown San Francisco. The perfect location provides access to numerous attractions, dining and the financial district. All of the 1,010 newly renovated guestrooms have bay-style windows offering panoramic city views. The hotel also has 18 suites in its gorgeous 32 story tower.<br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=80">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="http://www.sanfrancisco.com/park-hyatt-sanfrancisco/gifs/park-hyatt-sanfrancisco.jpg" width="133" height="94" align="left" alt="Park Hyatt San Francisco"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=84">Park Hyatt San Francisco</a> </span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=84">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>An Enclave of Luxury in San Francisco's Financial District</b></span><br>
+<span class="bodytext">333 Battery Street, San Francisco, California 94111<br></span>
+<span class="bodytext">The Park Hyatt San Francisco is a gorgeous luxury hotel located in San Francisco's financial district. The hotel offers sweeping views of the city and bay and is connected by a pedestrian bridge to the Embarcadero Center. It is an ideal location for both business and leisure travelers. The hotel features 360 oversized guestrooms with many amenities. Guests may also choose from 35 suites with stunning views, VIP suites which feature living and conference areas or the Presidential Suite with a baby grand piano and fireplace.<br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=84">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="http://www.sanfrancisco.com/huntington-hotel/gifs/huntington-hotel.jpg" width="133" height="128" align="left" alt="Park Hyatt San Francisco"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=87">The Huntington Hotel</a> </span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=87">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>The Landmark Choice Of San Francisco Hotels</b></span><br>
+<span class="bodytext">1075 California Street, San Francisco, CA 94108<br></span>
+<span class="bodytext">The Huntington Hotel is one of the finest luxury hotels in San Francisco. Recent honors include Travel and Leisure's 2005 Award, as one of the world's 500 greatest hotels and Travel and Leisure's 2004 Award, 100 best hotels in North America. The hotel is ideally situated on the top of Nob Hill and offers spectacular views of the city skyline, Huntington Park and Grace Cathedral. Accommodations at this premier address include 135 guest rooms and suites. The hotel was originally constructed as a luxury apartment so all of the rooms are much larger than standard hotels.<br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=87">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="http://www.sanfrancisco.com/hyatt-regency/gifs/hyatt-regency.jpg" width="133" height="94" align="left" alt="Hyatt Regency San Francisco"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=83">Hyatt Regency San Francisco</a> </span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=83">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Extraordinary Luxury By The Bay</b></span><br>
+<span class="bodytext">5 Embarcadero Center, San Francisco, California 94111<br></span>
+<span class="bodytext">The Hyatt Regency San Francisco is located at the very heart of downtown San Francisco. Overlooking the bay on the Embarcadero waterfront, the hotel is within minutes of Fisherman's Wharf, Chinatown, Union Square, Moscone Convention Center and North Beach. This luxurious hotel offers panoramic views from its 805 newly renovated rooms, 26 Regency Suites and 20 specialty suites. All rooms have contemporary d&eacute;cor with large sliding doors that open onto the city or bay. The Hyatt Regency San Francisco is the ideal setting for business or pleasure! <br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=83">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+-->
+
+<!--
+<img src="gifs/alamo-square-inn.jpg" width="133" height="94" align="left" alt="The Alamo Square Inn"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/alamo-square-inn/">The Alamo Square Inn</a> </span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/alamo-square-inn/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>An Exquisite San Francisco Bed & Breakfast in Side-By-Side Mansions</b></span><br>
+<span class="bodytext">719 Scott Street, San Francisco, California<br></span>
+<!~~
+<span class="secondlinks">Toll Free Reservations: 1.866.259.0434<br></span>
+~~>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="http://www.sanfrancisco.com/alamo-square-inn/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Alamo Square Inn welcomes guests to a simpler time &#151; a getaway to another era. The adjacent Baum Mansion and Lucy House make up the exquisite Alamo Square Inn bed and breakfast on San Francisco's Alamo Square. Located in a hilltop neighborhood dotted with some of San Francisco's most fabulous Victorian Mansions, the Alamo Square Inn stands as an architectural tribute to the New Classical Revival movement.<br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/alamo-square-inn/">Special Rates: San Francisco B&Bs</a><br clear="left"></span></p>
+-->
+
+
+
+<img src="gifs/savoy-hotel.jpg" width="133" height="94" align="left" alt="Savoy Hotel San Francisco"><p><span class="secondlinks"><a href="../savoy-hotel/index.html">The Savoy Hotel</a> </span><span class="hotdeallinks"><b><a href="../savoy-hotel/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Elegance in the Theatre District</b></span><br>
+<span class="bodytext">580 Geary Street, San Francisco, California 94102<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.445.8102<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../savoy-hotel/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Travel & Leisure Magazine calls San Francisco's Savoy Hotel "One of the ten best small hotels in the city that invented them." Built in 1913, the Savoy Hotel exudes the charm and sophistication of the City on the Bay. It is a slice of old San Francisco tucked away in the heart of the theatre district, just 3 blocks from some of the finest shopping in the world at Union Square.<br></span>
+<span class="moreinfolink"><a href="../savoy-hotel/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<!--
+<img src="gifs/radissonmiyako.jpg" width="133" height="128" align="left" alt="The Americania"><p><span class="secondlinks"><a href="../radissonmiyako/index.html">Radisson Miyako Hotel</a> </span><span class="hotdeallinks"><b><a href="../radissonmiyako/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Japanese and Western Style in the Heart of San Francisco's Famous Japantown</b></span><br>
+<span class="bodytext">1625 Post Street, San Francisco, CA 94115<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.826.9274<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../radissonmiyako/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">With its prime location in the center of San Francisco's famous Japantown, and its unique blend of Eastern and Western influences, the Radisson Miyako Hotel San Francisco offers a calm and serene ambiance that is sure to please. Spacious guest rooms and suites at the Miyako Hotel San Francisco are quiet havens, featuring soft natural lighting through rice paper screens, deep Japanese tubs and elegant furnishings.<br></span>
+<span class="moreinfolink"><a href="../radissonmiyako/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+-->
+
+
+<img src="gifs/americania.jpg" width="133" height="94" align="left" alt="The Americania"><p><span class="secondlinks"><a href="../americania/index.html">The Americania</a> </span><span class="hotdeallinks"><b><a href="../americania/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>A Mediterranean Oasis in the Heart of the City</b></span><br>
+<span class="bodytext">121 Seventh Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.826.6441<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../americania/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Americania hotel offers a Mediterranean-style oasis &#151; right in the heart of San Francisco. Sun-drenched patios, tranquil fountain courtyards, and an inviting heated pool and sauna create an atmosphere brimming with warmth and relaxation. The Americania Hotel's 143 Superior and Deluxe Rooms and Suites are decorated in bright and colorful Mediterranean style &#151; each with original artwork, rich fabrics, and comfortable furnishings.<br></span>
+<span class="moreinfolink"><a href="../americania/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/britton.jpg" width="133" height="94" align="left" alt="Hotel Britton"><p><span class="secondlinks"><a href="../britton/index.html">Hotel Britton</a> </span><span class="hotdeallinks"><b><a href="../britton/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>A Boutique Hotel with European Accents</b></span><br>
+<span class="bodytext">112 Seventh Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.826.6472<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../britton/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">A delightful European-style boutique hotel located in the heart of San Francisco, the Hotel Britton is fast becoming the favorite lodging of experienced travelers from around the world. Plantation shutters, decorative ceiling fans, and antique-style furnishings provide the Hotel Britton with the charm and d&eacute;cor of an Old World hostelry. Guests enjoy both an evening wine tasting in The Hotel Britton's stylishly appointed lobby and the fabulous New York-style pizza served in the SOMA pizza caf&eacute;.<br></span>
+<span class="moreinfolink"><a href="../britton/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/carriageinn.jpg" width="133" height="94" align="left" alt="Carriage Inn"><p><span class="secondlinks"><a href="../carriageinn/index.html">Carriage Inn</a> </span><span class="hotdeallinks"><b><a href="../carriageinn/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Bed & Breakfast Charm &#151; Ideal Location</b></span><br>
+<span class="bodytext">140 Seventh Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.826.6481<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../carriageinn/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Enjoy Victorian grace in every detail of the Best Western Carriage Inn &#151; from finely crafted furnishings and nostalgic bay windows to a deluxe continental breakfast and local newspaper delivered to the room. Plush bathrobes, evening sherry served in the lobby and nightly turndown service are among the many exceptional guest services provided by the Carriage Inn. The Carriage Inn is ideally located just a few blocks from Union Square, Moscone Convention Center, San Francisco's theater district, SBC Park and the famous San Francisco cable car line.<br></span>
+<span class="moreinfolink"><a href="../carriageinn/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/flamingoinn.jpg" width="133" height="94" align="left" alt="Flamingo Inn"><p><span class="secondlinks"><a href="../flamingoinn/index.html">Flamingo Inn</a> </span><span class="hotdeallinks"><b><a href="../flamingoinn/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Vibrant and Lively Spanish Style in Downtown San Francisco</b></span><br>
+<span class="bodytext">114 Seventh Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.826.6499<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../flamingoinn/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Delightfully decorated rooms, free parking and a complimentary breakfast buffet are just a few of the amenities at the Flamingo Inn. Spacious and bright guest rooms blend beautifully with vibrant downtown San Francisco and its popular tourist and designer destinations &#151; Union Square, the San Francisco Design Center (SFDC), Moscone Convention Center, SBC Park and the theatre district. With complimentary shuttle service to Union Square, the Flamingo Inn is a favorite choice for tourists, shoppers and designers looking for value.<br></span>
+<span class="moreinfolink"><a href="../flamingoinn/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/daysinnciviccenter.jpg" width="133" height="94" align="left" alt="Days Inn Civic Center"><p><span class="secondlinks"><a href="../daysinnciviccenter/index.html">Days Inn Civic Center</a> </span><span class="hotdeallinks"><b><a href="../daysinnciviccenter/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>In the Heart of Downtown San Francisco's Civic Center</b></span><br>
+<span class="bodytext">465 Grove Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.800.4932<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../daysinnciviccenter/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Days Inn Downtown/Civic Center is located just a short stroll to San Francisco's Opera House, Ballet, the Orpheum Theater, Bill Graham Civic Auditorium and all the City's Civic buildings. All rooms have refrigerator, microwave, direct dial phone with dataport and voicemail, electronic locking system, iron/ironing board, hairdryer, clock radio, remote cable television with HBO, ESPN and FM radio station &#151; and all are individual air conditioned and heated. Even a complimentary continental breakfast, free limited parking, and 24/7 wireless internet are included.<br></span>
+<span class="moreinfolink"><a href="../daysinnciviccenter/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+<img src="gifs/super8.jpg" width="133" height="94" align="left" alt="Super 8 Motel Fisherman's Wharf"><p><span class="secondlinks"><a href="../super8/index.html">Super 8 &#151; Fisherman's Wharf</a> </span><span class="hotdeallinks"><b><a href="../super8/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"A San Francisco Treat - at a Real Value!"</b></span><br>
+<span class="bodytext">2440 Lombard Street, San Francisco, CA 94123<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.285.4107<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../super8/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Located on world-famous Lombard Street, just down from the the "Crookedest Street in the World," the Super 8 &#151; Fisherman's Wharf is the perfect place to stay for the value-minded traveler looking to explore all the splendors of the City by the Bay. The Super 8 is within walking distance to many of San Francisco's top visitor sites &#151; the Palace of Fine Arts, the Presidio, and the Exploratorium.<br></span>
+<span class="moreinfolink"><a href="../super8/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/edwardii.jpg" width="133" height="94" align="left" alt="Edward II Inn and Suites"><p><span class="secondlinks"><a href="../edwardii/index.html">Edward II Inn and Suites</a> </span><span class="hotdeallinks"><b><a href="../edwardii/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Voted top 3 "Best Romantic Hotels" in San Francisco</b></span><br>
+<span class="bodytext">3155 Scott Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.800.4908<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../edwardii/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Where San Francisco's world-famous "crooked street" straightens out, in San Francisco's charming Marina District, is the Edward II &#151; a bit of merry old England, in the B&B style. The elegant Edward II Inn & Suites provides a romantic getaway designed in old world style of England in the 1960's. With 32 rooms and 7 suites, most with Jacuzzi tub and some with kitchens, The Edward II offers every accommodation, from Classic Queen Rooms to Junior and Apartment-style Flat Suites &#151; every room blending beautifully with the hotel's traditional English decor.<br></span>
+<span class="moreinfolink"><a href="../edwardii/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/fitzgerald.jpg" width="133" height="94" align="left" alt="Fitzgerald Hotel Union Square"><p><span class="secondlinks"><a href="../fitzgerald/index.html">Fitzgerald Hotel Union Square</a> </span><span class="hotdeallinks"><b><a href="../fitzgerald/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Historic Elegance at Union Square"</b></span><br>
+<span class="bodytext">620 Post Street, San Francisco, CA 94941<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.302.3918<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../fitzgerald/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Fitzgerald Hotel Union Square&#151;established in 1910 and completely restored in 2003, this historic hotel offers unique and elegant guest rooms and a wonderful location in San Francisco's theatre district&#151;just two blocks from Union Square shopping, restaurants and nightlife. Artfully designed rooms offer oversized comforters, bed scarves, original paintings, hand painted walls with faux finish, designer and antique furnishings, data port, microwaves, mini-refrigerators, coffee makers, iron and ironing boards, hair dryers and CD stereo alarm clocks. Add a complimentary continental breakfast and free daily fitness passes, and your stay at San Francisco's Historic Fitzgerald Hotel will be both complete and unique.<br></span>
+<span class="moreinfolink"><a href="../fitzgerald/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/nobhilllambourne.jpg" width="133" height="94" align="left" alt="Nob Hill Lambourne"><p><span class="secondlinks"><a href="../nobhilllambourne/index.html">Nob Hill Lambourne</a> </span><span class="hotdeallinks"><b><a href="../nobhilllambourne/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Tranquil Hideaway on Nob Hill"</b></span><br>
+<span class="bodytext">725 Pine Street, San Francisco CA 94108<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.302.0899<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../nobhilllambourne/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">A tranquil hideaway and a wonderful urban retreat, the Nob Hill Lambourne is a hotel for the mind, body, and soul &#8212; a place where wellness and hospitality blend amidst an atmosphere of serene style. This luxurious and intimate hotel is perched atop the beauty of Nob Hill &#8212; steps from Union Square and the Financial District and just minutes to the Powell Street Cable Car, the Financial District, Union Square, Chinatown, North Beach and many of the City's finest restaurants. The small size of the Nob Hill Lambourne (just 20 rooms and suites), assures a high level of friendly, personalized service.<br></span>
+<span class="moreinfolink"><a href="../nobhilllambourne/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/hoteldesarts.jpg" width="133" height="128" align="left" alt="Hotel Des Arts"><p><span class="secondlinks"><a href="../hoteldesarts/index.html">Hotel Des Arts</a> </span><span class="hotdeallinks"><b><a href="../hoteldesarts/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"European Charm/Perfect Location. As low as $59."</b></span><br>
+<span class="bodytext">447 Bush Street, San Francisco, CA 94108<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.285.4104<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../hoteldesarts/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Located in the French Quarter, the Hotel des Arts is at the crossroads of Union Square, the Financial District and the Chinatown Gate -- perfectly situated for business or pleasure. Often acclaimed as one of the ultimate values in San Francisco, guests can forget they are staying at a value hotel while sipping complimentary coffee or tea, taking in the fantastic Victorian architecture or dining at Le Central, the unique French brasserie, just downstairs.<br></span>
+<span class="moreinfolink"><a href="../hoteldesarts/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/kinggeorge.jpg" width="133" height="94" align="left" alt="Hotel King George"><p><span class="secondlinks"><a href="../kinggeorge/index.html">King George Hotel</a> </span><span class="hotdeallinks"><b><a href="../kinggeorge/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Fit For A King"</b></span><br>
+<span class="bodytext">334 Mason Street at Geary, San Francisco, CA 94102<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.829.6143<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../kinggeorge/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The King George Hotel's Union Square location shares sidewalks 
+with fine dining, world class shopping and theatre. Traditions of charm and personal service have been the King George hallmark since first opening in 1912. The amenities are distinctly up-to-date, including complimentary in-room high speed Internet access, but the hospitality and rates are wonderfully old-fashioned. Experience the pleasure of a stay in one of 153 cozy rooms, where the ambiance is like that of an elegant old San Francisco home.<br></span>
+<span class="moreinfolink"><a href="../kinggeorge/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="gifs/archbishopsmansion.jpg" width="133" height="94" align="left" alt="Archbishop's Mansion"><p><span class="secondlinks"><a href="../archmansion/">Archbishop's Mansion</a> </span><span class="hotdeallinks"><b><a href="../archmansion/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"A Totally Unique Experience for the Discerning Traveler"</b></span><br><span class="bodytext">1000 Fulton Street, San Francisco CA  94117<br></span>
+<span class="secondlinks">Toll Free Reservations: 866.302.0862<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../archmansion/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Built in 1904, Archbishop's Mansion is now a grand bed and breakfast surrounded by San Francisco's most plentiful collection of Victorian architecture, including San Francisco's famous "Painted Ladies". Each of the 15 spectacular guestrooms and suites are individually decorated and named after an opera. All guestrooms feature either full or partial canopied beds, period antiques, phone with dataport, VCRs, cable TV, CD players and include a complimentary deluxe continental breakfast served to your room. Several rooms have whirlpool tubs, fireplaces and partial views of downtown. The Mansion's location, on Alamo Square in the south end of San Francisco, is one of the most photographed areas in all San Francisco.<br></span>
+<span class="moreinfolink"><a href="../archmansion/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<!--
+<img src="gifs/hoteldelsol.jpg" width="133" height="94" align="left" alt="Hotel Del Sol"><p><span class="secondlinks"><a href="../hoteldelsol/">Hotel Del Sol</a> </span><span class="hotdeallinks"><b><a href="../hoteldelsol/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Hot New Place On the San Francisco Marina"</b></span><br><span class="bodytext">3100 Webster Street,  San Francisco CA  94123<br></span>
+<span class="secondlinks">Toll Free Reservations: 866.259.0438<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../hoteldelsol/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Hotel Del Sol provides a unique stay in San Francisco. Designed to celebrate California's lively culture, the Hotel Del Sol is a cheerful explosion of the West Coast spirit. The hotel's spacious guestrooms evoke the bright and airy interior of a California beach house. The Hotel Del Sol is located in the heart of the picturesque Marina District just off Lombard Street. Nearby Ghirardelli Square, the Cannery, Fisherman's Wharf and fashionable Union Street and Chestnut Street offer some of the city's most charming restaurants, cafes, bars and great boutique shopping. A short walk or bike ride away is the Marina Green, Fort Mason, the Golden Gate Bridge and Presidio National Park. Chinatown, North Beach and downtown are just a short drive.<br></span>
+<span class="moreinfolink"><a href="../hoteldelsol/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+-->
+
+
+<img src="gifs/petiteauberge.jpg" width="133" height="94" align="left" alt="Petite Auberge"><p><span class="secondlinks"><a href="../petiteauberge/">Petite Auberge</a> </span><span class="hotdeallinks"><b><a href="../petiteauberge/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Small, Quaint, French Inn in the Heart of San Francisco"</b></span><br><span class="bodytext">863 Bush Street, San Francisco CA 94108<br></span>
+<span class="secondlinks">Toll Free Reservations: 866.302.0896<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../petiteauberge/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">With an ideal location between Nob Hill and Union Square, Petite Auberge is the perfect small hotel for a sightseeing trip to San Francisco or a special romantic getaway.  Rich and detailed design welcomes guests to a world of French provincial enchantment. French doors with beveled glass, a collection of French art, a cozy parlor with a crackling fire and afternoon wine and hors d'oeuvres are all part of the experience. Many of the 26 guestrooms and suites offer fireplaces. All guests receive a gourmet breakfast each morning. Honeymooners might want to select the &quot;Petite Suite&quot; with its private deck, hand painted king bed, tub, champagne and chocolates.<br></span>
+<span class="moreinfolink"><a href="../petiteauberge/">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+<img src="gifs/millwoodinn.jpg" width="133" height="94" align="left" alt="Millwood Inn"><p><span class="secondlinks"><a href="../millwoodinn/index.html">Millwood Inn &amp; Suites</a> </span><span class="hotdeallinks"><b><a href="../millwoodinn/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"SanFrancisco.com's Airport Hotel Pick"</b></span><br>
+<span class="bodytext">1375 El Camino Real, Millbrae CA 94030<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.301.8176<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../millwoodinn/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Nestled in the quiet little town of Millbrae, The Millwood Inn &amp; Suites Hotel is just a short walk to numerous restaurants, shops, and entertainment venues. Voted Independent Hotel of the Year, this stylish boutique Inn offers a casual and contemporary ambiance and impressive amenities, creating a superb value for both business and leisure traveler. One of the most charming and convenient hotels in the San Francisco International Airport area, the Millwood Inn &amp; Suites is centrally located to downtown San Francisco and the East Bay--and only a short drive from Silicon Valley, Santa Clara, and San Jose.<br></span>
+<span class="moreinfolink"><a href="../millwoodinn/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+<img src="gifs/nobhillhotel.jpg" width="133" height="94" align="left" alt="Nob Hill Hotel"><p><span class="secondlinks"><a href="../nobhill/index.html">Nob Hill Hotel</a> </span><span class="hotdeallinks"><b><a href="../nobhill/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Quaint Victorian Tucked Away on Nob Hill"</b></span><br>
+<span class="bodytext">835 Hyde Street, San Francisco, CA 94109<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.301.3520<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../nobhill/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Historic Nob Hill Hotel echoes the elegance of San Francisco's past. Beautifully restored marble floors, alabaster chandeliers, stained glass panels and an extensive collection of period paintings and antiques fill the interior. Each guest room is beautifully appointed with oversized comforters, silk bed scarves, antique furnishings, stained glass lamps and hand-painted walls. Some rooms have replica iron beds with half canopy, and suites feature Jacuzzi tubs, an English-style garden, and marble throughout the bath.<br></span>
+<span class="moreinfolink"><a href="../nobhill/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+<!--
+<img src="gifs/ramada.jpg" width="133" height="94" align="left" alt="Ramada Plaza Hotel San Francisco"><p><span class="secondlinks"><a href="../ramada/index.html">Ramada Plaza San Francisco</a> </span><span class="hotdeallinks"><b><a href="../ramada/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"San Francisco in Grand Style at a Value Price"</b></span><br>
+<span class="bodytext">1231 Market Street, San Francisco, CA<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.537.7556<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../ramada/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">When in San Francisco, stay in grand style, at the Ramada Plaza Hotel! The Ramada Plaza is a landmark hotel in the heart of San Francisco. A masterpiece of early 20th century architecture and d»cor, the Ramada Plaza Hotel features rare Janesero wood paneling, marble columns, exquisite Tiffany glass, and original Austrian crystal chandeliers. Visitors from around the world have enjoyed the friendly, helpful service of a friendly staff, as well as the combination of grand old style and modern-day luxuries offered by this world-class hotel.<br></span>
+<span class="moreinfolink"><a href="../ramada/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+-->
+
+
+<!--
+<img src="../starwood/gifs/westinstf.jpg" alt="The Westin St. Francis" width="135" height="90" border="0" align="left"><p><span class="secondlinks"><a href="http://www.sanfrancisco.com/westin-st-francis/">The Westin St. Francis</a></span><span class="hotdeallinks"><b><a href="http://www.sanfrancisco.com/westin-st-francis/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Fabulously gorgeous and extraordinarily rich in history</b></span><br>
+<span class="bodytext">335 Powell Street, San Francisco, California 94102<br></span>
+<span class="bodytext">Overlooking Union Square, The Westin St. Francis Hotel has maintained its preeminence as one of San Francisco's top hotels since 1904. Enjoy sophistication at its best, combining a historical past with present-day luxuries in the heart of the city.<br></span>
+<span class="moreinfolink"><a href="http://www.sanfrancisco.com/westin-st-francis/">Guaranteed Best Internet Rates: The Westin St. Francis</a><br clear="left"></span></p>
+-->
+
+
+
+
+<img src="gifs/chancellor.jpg" width="133" height="94" align="left" alt="Chancellor Hotel"><p><span class="secondlinks"><a href="../chancellor/index.html">Chancellor Hotel</a> </span><span class="hotdeallinks"><b><a href="../chancellor/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Ride the Cable Car "Halfway to the Stars"</b></span><br>
+<span class="bodytext">433 Powell Street, San Francisco, CA 94102<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.301.0522<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../chancellor/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Chancellor is a charming 137- room classic boutique hotel serving guests who want to be surrounded by world class shopping, restaurants and theatre &#8212; all at a good value. Every room (including the hotel's two-room suites) is decorated in the classic European motif, with all the amenities that discerning guests expect. Wired or Wireless... the lobby, lar, lining loom and leeting loom have free WiFi signal, and free high speed Internet access plug-ins are available.<br></span>
+<span class="moreinfolink"><a href="../chancellor/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+<!-- <img src="gifs/panpacific.jpg" width="133" height="94" align="left" alt="Pan Pacific Hotel San Francisco"><p><span class="secondlinks"><a href="../panpacifichotel/index.html">Pan Pacific San Francisco</a> </span><span class="hotdeallinks"><b><a href="../panpacifichotel/index.html">-Hot Rates-</a></b></span><br></span> -->
+<!-- <span class="bodytext"><b>"The Jewel of San Francisco Luxury Hotels"</b></span><br> -->
+<!-- <span class="bodytext">500 Post Street, San Francisco, California<br></span> -->
+<!-- <span class="secondlinks">Toll Free Reservations: 1.866.827.7933<br></span> -->
+<!-- <span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span> -->
+<!-- <span class="secondlinks"><a href="../panpacifichotel/index.html">Click Here To See Our Rates</a></strong><br></span> -->
+<!-- <span class="bodytext">Located at Union Square, San Francisco's center for shopping, restaurants and theatre, the AAA four diamond 338 room Pan Pacific San Francisco is a jewel amongst luxury hotels in California. Built in 1987, renovated in 2004 and located at Union Square's best address, the hotel is an oasis of architectural and artistic treasures.<br></span> -->
+<!-- <span class="moreinfolink"><a href="../panpacifichotel/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p> -->
+
+
+
+
+
+
+<img src="gifs/warwick.jpg" width="133" height="128" align="left" alt="The Warwick Regis Hotel San Francisco"><p><span class="secondlinks"><a href="../warwick/index.html">The Warwick Regis Hotel</a> </span><span class="hotdeallinks"><b><a href="../warwick/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"A Touch of European Elegance &#151; In Heart of San Francisco"</b></span><br>
+<span class="bodytext">480 Geary Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.320.8573<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../warwick/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Warwick Regis Hotel offers 80 classic rooms including 20 suites &#151; all tastefully appointed in the classic style of Louis XVI. The Warwick's extensive 2002 renovation has ensured that its European elegance and comfort were retained, whilst introducing new colour schemes that complement authentic Louis XVI antique armoires, four-poster and crown-canopied beds and hand-carved headboards. The Warwick Regis has also added new writing tables as well as wireless internet and two-line telephones.<br></span>
+<span class="moreinfolink"><a href="../warwick/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+
+<img src="gifs/adante.jpg" width="133" height="94" align="left" alt="The Adante Hotel Hotel San Francisco California"><p><span class="secondlinks"><a href="../adantehotel/index.html">The Adante Hotel</a> </span><span class="hotdeallinks"><b><a href="../adantehotel/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"In the Heart of San Francisco"</b></span><br>
+<span class="bodytext">480 Geary Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.320.8573<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../adantehotel/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Adante Hotel is a premier boutique hotel located in the heart of San Francisco &#151; just three blocks from Union Square and some of the best shopping in the City, including Neiman Marcus, Macy's, Saks Fifth Avenue and luxury stores such as Shreve, Tiffany's and Chanel. The Adante Hotel's 93 guest rooms are charmingly appointed and each is adorned with original hand painted European style murals. The staff is committed to assisting guests with every detail, sharing their knowledge of all the best that San Francisco has to offer &#151; from securing restaurant reservations and theatre tickets to arranging spa treatments or tours of the bay area, all in a setting featuring the warmth and comfort of home.<br></span>
+<span class="moreinfolink"><a href="../adantehotel/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+<img src="gifs/mosser-hotel.jpg" width="133" height="94" align="left" alt="Mosser Hotel"><p><span class="secondlinks"><a href="../mosser-hotel/index.html">The Mosser Hotel</a> </span><span class="hotdeallinks"><b><a href="../mosser-hotel/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Old World Charm with a Modern Twist"</b></span><br>
+<span class="bodytext">54 Fourth St. @ Market Street, San Francisco, California<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.353.8237<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../mosser-hotel/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Mosser Hotel is conveniently located between the city's renowned Moscone Convention Center and Union Square (shopping district). Both business and leisure travelers will find excellent shopping, touring and night life within blocks from their hotel room. Recently renovated, The Mosser Hotel is now the only San Francisco hotel to feature a State-of-the-Art Recording Studio!<br></span>
+<span class="moreinfolink"><a href="../mosser-hotel/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/grantplaza.jpg" width="133" height="94" align="left" alt="Grant Plaza Hotel"><p><span class="secondlinks"><a href="../grantplaza/index.html">Grant Plaza Hotel</a> </span><span class="hotdeallinks"><b><a href="../grantplaza/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Often recognized as one of the best values in all of San Francisco"</b></span><br>
+<span class="bodytext">465 Grant Ave, San Francisco, CA 94108<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.285.5419<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../grantplaza/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Grant Plaza Hotel was built in the 1920s, and is best known for its charm and convenience to many popular sites in San Francisco. Located just blocks from Union Square shopping district, within walking distance of the famous San Francisco cable cars, and at the gate to Chinatown, the Grant Plaza Hotel is the perfect place for a vacation getaway.<br></span>
+<span class="moreinfolink"><a href="../grantplaza/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+
+<!--
+
+
+
+<img src="gifs/cosmo.jpg" width="133" height="128" align="left" alt="Hotel Cosmo"><p><span class="secondlinks"><a href="../hotelcosmo/index.html">Hotel Cosmo</a> </span><span class="hotdeallinks"><b><a href="../hotelcosmo/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Architectural Beauty"</b></span><br>
+<span class="bodytext">761 Post Street, San Francisco, CA<br></span>
+<span class="secondlinks">Toll Free Reservations: In the US, dial 1.800.828.6544 (In Europe, call toll free: 00 800 1610 1690)<br></span>
+<!~~
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+~~>
+<span class="secondlinks"><a href="../hotelcosmo/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">A small, luxury boutique hotel near San Francisco's Union Square, the Hotel Cosmo embodies the spirit of the arts in San Francisco. The hotel is centrally located in downtown San Francisco, where you'll find exceptional art galleries, fine restaurants, renowned Union Square shopping, the Theatre District, cable cars, and San Francisco style entertainment~~all within a short stroll of the hotel.<br></span>
+<span class="moreinfolink"><a href="../hotelcosmo/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+-->
+
+<!--
+
+
+<img src="gifs/tuscan.jpg" width="133" height="94" align="left" alt="The Tuscan Inn"><p><span class="secondlinks"><a href="../bwtuscan/index.html">The Tuscan Inn</a> </span><span class="hotdeallinks"><b><a href="../bwtuscan/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"The Best of Fisherman's Wharf"</b></span><br>
+<span class="bodytext">425 Northpoint Street, Fisherman's Wharf, San Francisco CA 94109<br></span>
+<span class="secondlinks">Toll Free Reservations: In the US, dial 1.800.828.6544 (In Europe, call toll free: 00 800 1610 1690)<br></span>
+<!~~
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+~~>
+<span class="secondlinks"><a href="../bwtuscan/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Tuscan Inn is a full service European-style boutique hotel with 221 luxurious guest rooms and suites, located in the heart of San Francisco's most famous attraction: Fisherman's Wharf. Just steps from your doorway, enjoy a crab cocktail while watching the fishing boats arrive with their daily catch. Or catch a Cable Car over the hill to downtown, Union Square's fabulous shopping or San Francisco's Financial District. The Tuscan Inn has been noted as "the Best hotel in Fisherman's Wharf" for seven consecutive years by Frommer's Travel Guide.<br></span>
+<span class="moreinfolink"><a href="../bwtuscan/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+-->
+
+
+
+
+<img src="gifs/best-western-garden-inn.jpg" width="133" height="94" align="left" alt="Best Western Garden Inn Sonoma"><p><span class="secondlinks"><a href="../best-western-garden-inn/index.html">Best Western Garden Inn Santa Rosa</a> </span><span class="hotdeallinks"><b><a href="../best-western-garden-inn/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"A Garden Setting in Sonoma's Wine Country"</b></span><br>
+<span class="bodytext">1500 Santa Rosa Avenue, Santa Rosa, CA 95404<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.537.7790<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../best-western-garden-inn/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Experience the incredible beauty of California's Sonoma Wine Country and the warm hospitality at the Best Western Garden Inn of Santa Rosa. Recently remodeled and set in a quite, secluded, garden surrounding, this cozy Garden Inn is an AAA Three Diamond hotel close to all of the Wine Country attractions, tastes and flavors.<br></span>
+<span class="moreinfolink"><a href="../best-western-garden-inn/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+<img src="gifs/acqua.jpg" width="133" height="94" align="left" alt="Acqua Hotel"><p><span class="secondlinks"><a href="../acqua/index.html">Acqua Hotel</a> </span><span class="hotdeallinks"><b><a href="../acqua/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Inspired by the Elements of Sky and Water"</b></span><br>
+<span class="bodytext">555 Redwood Highway, Mill Valley, CA 94941<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.463.2932<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../acqua/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Aqua Hotel showcases an elegant simplicity punctuated by exotic touches and lavish comforts. Situated at the edge of San Francisco Bay, the Acqua Hotel subtly fuses the style of the East with the comforts and services of the West to create an inviting Pacific Rim atmosphere. All 50 guestrooms--including 25 Junior Suites, most with fireplaces and dramatic bay views--feature two-line phones with dataport, voicemail, high speed Internet access, cable TV, VCRs, CD players, air conditioning, honor bars, full tubs and showers, and lush spa robes. A complimentary deluxe continental breakfast and afternoon tea is provided for every guest.<br></span>
+<span class="moreinfolink"><a href="../acqua/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+<img src="gifs/millvalleyinn.jpg" width="133" height="128" align="left" alt="Mill Valley Inn"><p><span class="secondlinks"><a href="../millvalleyinn/index.html">Mill Valley Inn</a> </span><span class="hotdeallinks"><b><a href="../millvalleyinn/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Tucked Away in a Redwood Grove"</b></span><br>
+<span class="bodytext">165 Throckmorton Avenue, Mill Valley CA 94941<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.459.9789<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../millvalleyinn/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Whether Marin County is your destination, or you'd just like to relax only minutes from the hustle and bustle of San Francisco, the Mill Valley Inn should be your hotel of choice. The Mill Valley Inn, just across the Golden Gate Bridge in the quaint little town of Mill Valley, is an intimate hotel tucked away in a redwood grove at the foot of majestic Mt. Tamalpais, and just steps away from the bustling little Mill Valley town plaza, where galleries, fine restaurants, boutiques and theaters abound. The Mill Valley Inn's rooms are decorated with handcrafted furniture, and some boast fireplaces, soaking tubs, and private balconies. Room rates include a complimentary deluxe continental breakfast with espresso bar and evening wine reception, served on the Mill Valley Inn's Sun Terrace patio.<br></span>
+<span class="moreinfolink"><a href="../millvalleyinn/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+<img src="gifs/watersedge.jpg" width="133" height="128" align="left" alt="Waters Edge Hotel"><p><span class="secondlinks"><a href="../watersedge/index.html">Waters Edge Hotel</a> </span><span class="hotdeallinks"><b><a href="../watersedge/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"Floating Over the Water"</b></span><br>
+<span class="bodytext">25 Main Street, Tiburon CA 94920<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.463.2930<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../watersedge/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Stay just across the Golden Gate Bridge at Tiburon's Waters Edge Hotel and enjoy the panoramic view of San Francisco's 7 hills and majestic skyline rising out of the City's waterfront. Inspired by Eastern seaboard architecture and the exotic merchant trade of the San Francisco Bay, the Waters Edge brings an added ambience of global sophistication to this unique part of Northern California. Restful rooms feature crisp white feather beds, and comfy chaises with hand-knitted throws perfect for afternoon naps. Just steps from the door is the Tiburon Ferry, which carries pedestrians to Angel Island and San Francisco. And the Napa Valley wine region is less than an hour away.<br></span>
+<span class="moreinfolink"><a href="../watersedge/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+
+<img src="gifs/spaulding-hotel.jpg" width="133" height="94" align="left" alt="Waters Edge Hotel"><p><span class="secondlinks"><a href="../spaulding-hotel/index.html">Spaulding Hotel</a> </span><span class="hotdeallinks"><b><a href="../spaulding-hotel/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Union Square Hotel for the Budget Conscious Traveler</b></span><br>
+<span class="bodytext">240 O'Farrell Street, San Francisco, California 94102<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.806.4481<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../spaulding-hotel/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Spaulding Hotel is located in the heart of Union Square just off the Powell Street Cable Car line. The Spaulding Hotel's location makes for an easy walk to the Financial District, Chinatown or the Moscone Convention Center. Yerba Buena Gardens, a dynamic area that includes the San Francisco Museum of Modern Art (SF MoMa) and Sony Metreon, an entertaining diversion the entire family will enjoy, is also close to the Spaulding Hotel.<br></span>
+<span class="moreinfolink"><a href="../spaulding-hotel/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+
+
+
+
+
+
+<img src="gifs/park-hotel.jpg" width="133" height="94" align="left" alt="Waters Edge Hotel"><p><span class="secondlinks"><a href="../park-hotel/index.html">Park Hotel</a> </span><span class="hotdeallinks"><b><a href="../park-hotel/index.html">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>"A Budget Hotel in the Center of the City"</b></span><br>
+<span class="bodytext">325 Sutter Street, San Francisco, California 94108<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.806.4541<br></span>
+<span class="redsecondlinkstext">Exclusive SanFrancisco.com Discount!<br></span>
+<span class="secondlinks"><a href="../park-hotel/index.html">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Park Hotel located just 1 block northeast of Union Square and all it's fabulous shopping is a popular choice for the budget minded traveler. Both artists and students are frequent guests due to the close proximity to nearby schools and neighboring art galleries. The Park Hotel offers affordable accommodations in the center of some of San Francisco's top attractions.<br></span>
+<span class="moreinfolink"><a href="../park-hotel/index.html">Special Rates: San Francisco Hotels</a><br clear="left"></span></p>
+
+
+<h2>More San Francisco Hotels</h2>
+
+
+<p><span class="secondlinks"><a href="http://www.travelnow.com/index.jsp?pageName=hotInfo&cid=54076&hotelID=105573&hotnetrates=true&mode=1" target="_blank">San Francisco Airport Marriott</a><br></span>
+<span class="bodytext">1800 Old Bayshore Hwy, Burlingame, CA<br></span>
+<img src="../images/resc/cleardot.gif" width="10" height="3"><br>
+<span class="bodytext">For questions or to make a reservation call toll free in the US: 1.800.828.6544 (or call toll free in Europe: 00 800 1610 1690)<br></span>
+<span class="moreinfolink"><a href="http://www.travelnow.com/index.jsp?pageName=hotInfo&cid=54076&hotelID=105573&hotnetrates=true&mode=1" target="_blank">more info</a></span> | 
+<span class="checkrateslink"><a href="http://www.travelnow.com/index.jsp?pageName=hotAvail&cid=54076&hotelID=105573&hotnetrates=true&mode=1" target="_blank">Check rates &amp; availability</a></span></p>
+
+
+<br>
+<img src="../images/resc/cleardot.gif" width="415" height="1">
+
+</td>
+<td width="20" valign="top"><img src="../images/resc/cleardot.gif" width="20" height="1"></td>
+<td width="127" align="center" valign="top">
+
+<!--
+<a href="http://www.sanfrancisco.com/starwood/"><img src="http://www.sanfrancisco.com/images/ads/starwood.gif" width="125" height="88" border="0" alt="Starwood Hotels San Francisco California Westin St. Francis Palace Hotel W San Francisco The Westin San Francisco Airport"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/starwood/">Best Hotel Rates - Westin,  Palace, W San Francisco</a><br></span>
+
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+-->
+<a href="../hotelunionsquare/index.html"><img src="../images/ads/hotelunionsquare.gif" width="125" height="90" border="0"></a>
+<br>
+<span class="caltext"><a href="../hotelunionsquare/index.html">Dynamic, spectacular Hotel Union Square</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<!--
+<a href="http://www.sanfrancisco.com/westin-st-francis/"><img src="http://www.sanfrancisco.com/images/ads/westin-st-francis.gif" width="125" height="90" border="0" alt="Westin St. Francis Hotel San Francisco"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/westin-st-francis/">The historic Westin St. Francis Hotel</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+-->
+
+
+
+<a href="../palace-hotel/index.html"><img src="../images/ads/palace-hotel-sanfrancisco-n.gif" width="125" height="90" border="0" alt="Palace Hotel San Francisco"></a><br>
+<span class="caltext"><a href="../palace-hotel/index.html">Contemporary comfort, historic grandeur</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+<a href="../westin-st-francis/index.html"><img src="../images/ads/westin-st-francis-n.gif" width="125" height="90" border="0" alt="Westin St. Francis San Francisco"></a><br>
+<span class="caltext"><a href="../westin-st-francis/index.html">Westin St. Francis Hotel San Francisco</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+
+<a href="../le-meridien/index.html"><img src="../images/ads/le-meridian.gif" alt="Le Meridien Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../le-meridien/index.html">San Francisco's Contemporary Chic Hotel.</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+
+
+
+<a href="../chancellor/index.html"><img src="../images/ads/chancellor.gif" alt="Chancellor Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../chancellor/index.html">Where the cable cars stop at your doorstep.</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="../hoteldiva/index.html"><img src="../images/ads/diva.jpg" width="125" height="90" border="0"></a>
+<br>
+<span class="caltext"><a href="../hoteldiva/index.html">The Dramatic Diva<br>Featured-HIP Hotels: USA</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<!-- <a href="../panpacifichotel/index.html"><img src="../images/ads/panpacific.gif" alt="Pan Pacific San Francisco Hotel" width="125" height="90" border="0"></a><br> -->
+<!-- <span class="caltext"><a href="../panpacifichotel/index.html">The Jewel of San Francisco Luxury Hotels</a><br></span> -->
+<!--  -->
+<!-- <img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br> -->
+
+<a href="http://www.sanfrancisco.com/edwardian-hotel/"><img src="http://www.sanfrancisco.com/images/ads/edwardian-hotel.gif" width="125" height="90" border="0" alt="Edwardian San Francisco Hotel"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/edwardian-hotel/">The NY Times budget choice for San Francisco</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+
+<a href="../kensington/index.html"><img src="../images/ads/kensington_park.gif" width="125" height="90" border="0"></a>
+<br>
+<span class="caltext"><a href="../kensington/index.html">Kensington Park Hotel<br>Best address on Union Square</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="../orchard-garden-hotel/index.html"><img src="../images/ads/orchard-garden-hotel.gif" width="125" height="90" border="0" alt="Orchard Garden Hotel San Francisco"></a><br>
+<span class="caltext"><a href="../orchard-garden-hotel/index.html">The first GREEN hotel in San Francisco!</a><br></span>
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="../wingate-inn/index.html"><img src="../images/ads/wingate-inn.gif" width="125" height="90" border="0" alt="Orchard Garden Hotel San Francisco"></a><br>
+<span class="caltext"><a href="../wingate-inn/index.html">Near SFO - A perfect hotel for work and play!</a><br></span>
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="../marina-inn/index.html"><img src="../images/ads/marina-inn.gif" width="125" height="90" border="0" alt="Orchard Garden Hotel San Francisco"></a><br>
+<span class="caltext"><a href="../marina-inn/index.html">The Marina District's charming, affordable B & B</a><br></span>
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="http://www.sanfrancisco.com/radisson-fishermans-wharf/"><img src="http://www.sanfrancisco.com/images/ads/radisson-fishermans-wharf.gif" width="125" height="90" border="0" alt="Radisson Fisherman's Wharf Hotel San Francisco"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/radisson-fishermans-wharf/">The Preferred Fisherman's Wharf Location</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+
+<a href="http://www.sanfrancisco.com/wharf-inn/"><img src="../images/ads/wharf-inn.gif" width="125" height="90" border="0" alt="The Wharf Inn San Francisco"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/wharf-inn/">One of Frommer's Best Values at the Wharf</a><br></span>
+
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+<!--
+<a href="http://www.sanfrancisco.com/alamo-square-inn/"><img src="http://www.sanfrancisco.com/images/ads/alamo-square-inn.gif" width="125" height="90" border="0" alt="Alamo Square Inn B&amp;B San Francisco"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/alamo-square-inn/">Alamo Square Inn - A San Francisco B&amp;B</a><br></span>
+
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+-->
+<a href="http://www.sanfrancisco.com/savoy-hotel/"><img src="http://www.sanfrancisco.com/images/ads/savoy-hotel.gif" width="125" height="90" border="0" alt="Radisson Fisherman's Wharf Hotel San Francisco"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/savoy-hotel/">The Savoy - Elegance in the Theatre District</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+
+<a href="../warwick/index.html"><img src="../images/ads/warwick.gif" alt="The Warwick Regis San Francisco Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../warwick/index.html">Warwick Regis Hotel - European Elegance</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+<a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=82"><img src="../images/ads/hyatt-regency.gif" alt="Hyatt Regency San Francisco Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=82">Extraordinary Luxury By The San Francisco Bay</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+
+<a href="../metropolis/index.html"><img src="../images/ads/metropolis.gif" width="125" height="90" border="0"></a>
+<br>
+<span class="caltext"><a href="../metropolis/index.html">Indulge yourself on the wilder side. Only $85.</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+
+<a href="../adantehotel/index.html"><img src="../images/ads/adante.gif" alt="The Adante Hotel San Francisco" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../adantehotel/index.html">Premiere boutique hotel in the heart of San Francisco</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+
+<a href="../white-swan-inn/index.html"><img src="../images/ads/white-swan-inn.gif" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../white-swan-inn/index.html">English Charm in San Francisco's Backyard</a><br></span>
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=85"><img src="../images/ads/park-hyatt-sanfrancisco.gif" alt="Park Hyatt San Francisco Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=85">An enclave of luxury in the Financial District</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+<a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=86"><img src="../images/ads/huntington-hotel.gif" alt="Huntington Hotel San Francisco Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/ssi/ccount/click.php?id=86">The landmark choice of San Francisco hotels</a><br></span>
+
+<img src="../images/resc/cleardot.gif" alt="" width="125" height="10"><br>
+
+
+<!--
+<a href="../radissonmiyako/index.html"><img src="../images/ads/radissonmiyako.gif" alt="Radisson Miyako Hotel San Francisco" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../radissonmiyako/index.html">Japanese, Western Style in the Heart of Japantown</a><br></span>
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+-->
+
+
+<a href="../americania/index.html"><img src="../images/ads/americania.gif" alt="Americania Hotel San Francisco" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../americania/index.html">A Mediterranean Oasis in the Heart of the City</a><br></span>
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="../britton/index.html"><img src="../images/ads/britton.gif" alt="Hotel Britton San Francisco" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../britton/index.html">A Boutique Hotel with European Accents</a><br></span>
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="../carriageinn/index.html"><img src="../images/ads/carriageinn.gif" alt="Carriage Inn San Francisco Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../carriageinn/index.html">Bed & Breakfast Charm<br>Ideal Location</a><br></span>
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="../flamingoinn/index.html"><img src="../images/ads/flamingoinn.gif" alt="Flamingo Inn San Francisco" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../flamingoinn/index.html">Lively Spanish Style in Downtown San Francisco</a><br></span>
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="http://www.sanfrancisco.com/archmansion/index.html"><img src="http://www.sanfrancisco.com/images/ads/archmansion.gif" alt="Archbishop's Mansion" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/archmansion/index.html">A Unique Experience for the Discerning Traveler</a><br></span>
+
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="http://www.sanfrancisco.com/edwardii/index.html"><img src="../images/ads/edwardii.gif" alt="Edward II" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/edwardii/index.html">One of San Francisco's Best Romantic Hotels</a><br></span>
+
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="http://www.sanfrancisco.com/nobhill/index.html"><img src="http://www.sanfrancisco.com/images/ads/nobhillhotel.gif" alt="Nob Hill Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/nobhill/index.html">Small, Quaint Victorian Tucked Away on Nob Hill</a><br></span>
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<!--
+<a href="http://www.sanfrancisco.com/ramada/index.html"><img src="http://www.sanfrancisco.com/images/ads/ramada.gif" alt="Ramada Plaza Hotel San Francisco" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/ramada/index.html">San Francisco in Grand Style at a Value Price</a><br></span>
+
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+-->
+
+
+<!--
+<a href="http://www.sanfrancisco.com/hoteldelsol/index.html"><img src="http://www.sanfrancisco.com/images/ads/hoteldelsol.gif" alt="Hotel Del Sol" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/hoteldelsol/index.html">Hot new hotel on the San Francisco Marina</a><br></span>
+
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+-->
+
+
+
+<a href="http://www.sanfrancisco.com/fitzgerald/index.html"><img src="http://www.sanfrancisco.com/images/ads/fitzgerald.gif" alt="Fitzgerald Hotel Union Square" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/fitzgerald/index.html">Historic Elegance<br>at Union Square</a><br></span>
+
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+
+
+<a href="http://www.sanfrancisco.com/petiteauberge/index.html"><img src="http://www.sanfrancisco.com/images/ads/petiteauberge.gif" alt="Petite Auberge" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/petiteauberge/index.html">Quaint French inn in the heart of San Francisco</a><br></span>
+
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+
+<a href="http://www.sanfrancisco.com/nobhilllambourne/index.html"><img src="http://www.sanfrancisco.com/images/ads/nobhilllambourne.gif" alt="Nob Hill Lambourne" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/nobhilllambourne/index.html">A Tranquil Hideaway on Nob Hill in San Francisco</a><br></span>
+
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+
+<a href="../millwoodinn/index.html"><img src="../images/ads/millwoodinn.gif" alt="Millwood Inn" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../millwoodinn/index.html">SanFrancisco.com's<br>Airport Hotel Pick</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="../hoteldesarts/index.html"><img src="../images/ads/hoteldesarts.gif" alt="Alisa Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../hoteldesarts/index.html">Central, attractive hotel.<br>As low as $59!</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+
+
+<a href="../mosser-hotel/index.html"><img src="../images/ads/mosser-hotel.gif" alt="Mosser Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../mosser-hotel/index.html">Old World Charm with a Modern Twist</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="../grantplaza/index.html"><img src="../images/ads/grant_plaza.gif" alt="Grant Plaza Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../grantplaza/index.html">Historic, Budget Priced.<br>Central Location.</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="../kinggeorge/index.html"><img src="../images/ads/kinggeorge.gif" alt="King George Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../kinggeorge/index.html">Fit For A King<br>At Pleasant Rates</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="../daysinnciviccenter/index.html"><img src="../images/ads/daysinnciviccenter.gif" alt="Days Inn Civic Center" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="../daysinnciviccenter/index.html">In the Heart of San Francisco's Civic Center</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="../steinhart/index.html"><img src="../images/ads/steinhart.gif" width="125" height="90" border="0"></a>
+<br>
+<span class="caltext"><a href="../steinhart/index.html">Steinhart Hotel - For longer stays</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="http://www.sanfrancisco.com/super8/"><img src="http://www.sanfrancisco.com/images/ads/super8.gif" alt="Super 8 Motel Fisherman's Wharf San Francisco" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/super8/">Super 8 Fisherman's Wharf - A Real Value</a><br></span>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="http://www.sanfrancisco.com/intercontinental/"><img src="http://www.boulevards.com/images/ads/holidayinngeneric.gif" alt="san francisco InterContinental Hotels Holiday Inn san francisco" width="125" height="270" border="0"></a><br>
+<img src="../images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="http://www.sanfrancisco.com/best-western-garden-inn/"><img src="http://www.sanfrancisco.com/images/ads/best-western-garden-inn.gif" alt="Best Western Garden Inn Sonoma Wine Country" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/best-western-garden-inn/">A garden setting in Sonoma's Wine Country</a><br></span>
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="http://www.sanfrancisco.com/intercontinental-mark-hopkins/"><img src="http://www.sanfrancisco.com/images/ads/intercontinental-mark-hopkins.jpg" width="125" height="90" border="0" alt="InterContinental Mark Hopkins Hotel San Francisco"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/intercontinental-mark-hopkins/">InterContinental Mark Hopkins - A top SF hotel</a><br></span>
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="http://www.sanfrancisco.com/acqua/index.html"><img src="http://www.sanfrancisco.com/images/ads/acqua.gif" alt="Acqua Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/acqua/index.html">Inspired by the Elements of Sky and Water</a><br></span>
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="http://www.sanfrancisco.com/watersedge/index.html"><img src="http://www.sanfrancisco.com/images/ads/watersedge.gif" alt="Waters Edge Hotel" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/watersedge/index.html">Floating Over the Water.<br>Panoramic Views.</a><br></span>
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="http://www.sanfrancisco.com/millvalleyinn/index.html"><img src="http://www.sanfrancisco.com/images/ads/millvalleyinn.gif" alt="Mill Valley Inn" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/millvalleyinn/index.html">Tucked Away in a<br>Redwood Grove</a><br></span>
+<img src="http://www.sanfrancisco.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="http://www.sanfrancisco.com/spaulding-hotel/index.html"><img src="http://www.sanfrancisco.com/images/ads/spaulding-hotel.gif" alt="Spaulding Hotel San Francisco" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/spaulding-hotel/index.html">Union Square hotel for the budget conscious traveler</a><br></span>
+
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+<a href="http://www.sanfrancisco.com/holiday-inn-fishermanswharf/"><img src="../images/ads/holidayinn-fishermanswharf.gif" alt="Holiday Inn Hotel at San Francisco Fisherman's Wharf" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/holiday-inn-fishermanswharf/">Holiday Inn Hotel at Fisherman's Wharf</a><br></span>
+
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<a href="http://www.sanfrancisco.com/park-hotel/index.html"><img src="http://www.sanfrancisco.com/images/ads/park-hotel.gif" alt="Park Hotel San Francisco" width="125" height="90" border="0"></a><br>
+<span class="caltext"><a href="http://www.sanfrancisco.com/park-hotel/index.html">A budget hotel in the center of the city</a><br></span>
+
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+ctxt_ad_partner = "9215279790";
+ctxt_ad_section = "38022";
+ctxt_ad_bg = "";
+ctxt_ad_width = 120;
+ctxt_ad_height = 600;
+ctxt_ad_bc = "FFFFFF";
+ctxt_ad_cc = "FFFFFF";
+ctxt_ad_lc = "0253b7";
+ctxt_ad_tc = "000000";
+ctxt_ad_uc = "999999";
+// -->
+</script>
+<script language="JavaScript" src="http://ypn-js.overture.com/partner/js/ypn.js">
+</script>
+
+
+<img src="../images/resc/cleardot.gif" width="125" height="10"></td>
+</tr>
+
+
+
+
+
+<tr>
+<td height="1" colspan="11" valign="top" bgcolor="#999999"><img src="../images/resc/cleardot.gif" width="750" height="1"></td>
+</tr>
+<tr>
+<td height="20" colspan="11" valign="top"><img src="../images/resc/cleardot.gif" width="750" height="20"></td>
+</tr>
+<tr>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="155"></td>
+<td valign="top" colspan=3><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" 
+width="21"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="125"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="20"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="125"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="20"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="125"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="20"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="125"></td>
+</tr>
+<tr>
+<td colspan="4">&nbsp;</td>
+<td valign="top" colspan="7" height="20">
+<p><span class="caltext">Copyright &copy; 2006 Boulevards New Media &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="redcaltextlink"><a href="contact/index.shtml">&gt;</a> </span><a href="../../contact/index.shtml">Contact Us</a></span></p></td></tr>
+
+<tr>
+<td height="20" colspan="11" valign="top"><img src="../images/resc/cleardot.gif" width="750" height="20"></td>
+</tr>
+<tr>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="169" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="1" alt=""></td>
+</tr>
+
+
+</table>
+</center>
+</body>
+</html>

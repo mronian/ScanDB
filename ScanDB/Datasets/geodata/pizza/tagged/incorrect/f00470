@@ -1,0 +1,367 @@
+<DOC>
+<DOCNO>f00470</DOCNO>
+<DOCHDR>http://www.underdogseattle.com/Locations.asp?locchoice=6&loctype=Sponsor_Bari</DOCHDR>
+<link rel="stylesheet" type="text/css" href="/Master.css">
+<html>
+
+
+<SCRIPT LANGUAGE="Javascript">
+function area(field){
+	if((field.length < 3) || (isNaN(field))) {
+		alert("Enter 3 digit area code")
+	}
+}
+
+function phonepre(field){
+	if((field.length < 3) || (isNaN(field))) {
+		alert("Enter 3 digit prefix")
+	}
+}
+function phonenum(field){
+	if((field.length < 4) || (isNaN(field))) {
+		alert("Enter last 4 digits of your number")
+	}
+}
+</script>
+
+
+<SCRIPT language="JavaScript">
+function agecheck(intAge){
+	if (intAge != ""){
+		if((parseInt(intAge)!= intAge) || (isNaN(intAge))){
+			alert("Please enter a valid age");
+			this.focus();
+		}else{
+			if((intAge < 21) || (intAge > 99)){
+				alert('You must be at least 21 to sign up')
+				this.focus();
+			}
+		}
+	}
+}
+</script>
+
+<script language="javascript">
+
+function valemail(emailad){
+	if (emailad != ""){
+		var exclude=/[^@\-\.\w]|^[_@\.\-]|[\._\-]{2}|[@\.]{2}|(@)[^@]*\1/;
+		var check=/@[\w\-]+\./;
+		var checkend=/\.[a-zA-Z]{2,3}$/;
+		if(((emailad.search(exclude) != -1)||(emailad.search(check)) == -1)||(emailad.search(checkend) == -1)){
+			alert("Invalid Email Address");
+			this.focus();
+		}
+	}
+}
+</script>
+
+
+<script language="javascript">
+	function PopUp1(url){
+		window.parent.open(url,"PopUp1","toolbar=no,location=no,directories=no,status=no,scrollbars=yes,menubar=no,resizable=yes,height=550,width=550");
+	}
+	function PopUp2(url){
+		window.parent.open(url,"PopUp2","toolbar=yes,location=yes,directories=yes,status=yes,scrollbars=yes,menubar=yes,resizable=yes,height=600,width=800");
+	}
+</script>
+
+
+<script language="JavaScript">
+//<!--
+function linkto(targ){
+	if(targ.value != "")
+		window.location = targ.value;
+}
+//-->
+</script>
+
+
+<body bgcolor="#F9F9F9" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<title>Underdog Sports Leagues | Co-Rec Sports in Seattle - League Locations and Sponsor Bars</title>
+
+<table width="95%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="3"><head>
+<title>Underdog Sports Leagues Co-Rec Sports in Seattle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL="SHORTCUT ICON" HREF="http://www.underdogseattle.com/Uicon.ico">
+<link rel="stylesheet" type="text/css" href="/Master.css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script language="JavaScript1.2" src="/BD_sample_data2.js"></script>
+<script language="JavaScript1.2" src="/dqm_script.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+barlogo=new Image();
+barlogo.src="/SiteGraphics/Bar_Logo.gif";
+mainlogo=new Image();
+mainlogo.src="/SiteGraphics/Main_Logo.gif";
+headerbg=new Image();
+headerbg.src="/SiteGraphics/Hdr_Bgrnd.gif";
+headerlogo=new Image();
+headerlogo.src="/SiteGraphics/Hdr_Logo.gif";
+menulogo=new Image();
+menulogo.src="/SiteGraphics/Menu_Logo.gif";
+leaguepages=new Image();
+leaguepages.src="/SiteGraphics/League_Pages.gif"
+aboutoff=new Image();
+aboutoff.src="/SiteGraphics/about_OFF.gif";
+corpoff=new Image();
+corpoff.src="/SiteGraphics/corp_OFF.gif";
+contactoff=new Image();
+contactoff.src="/SiteGraphics/contact_OFF.gif";
+spacer=new Image();
+spacer.src="/SiteGraphics/spacer.gif";
+headerrt=new Image();
+headerrt.src="/SiteGraphics/Hdr_Right3.gif";
+barbg=new Image();
+barbg.src="/SiteGraphics/Bar_Bgrnd.gif";
+bararrow=new Image();
+bararrow.src="/SiteGraphics/bar_arrow.gif";
+barabout=new Image();
+barabout.src="/SiteGraphics/Bar_about_OFF.gif";
+bardiv=new Image();
+bardiv.src="/SiteGraphics/Bar_divider.gif";
+barfaq=new Image();
+barfaq.src="/SiteGraphics/Bar_FAQs_OFF.gif";
+barsignup=new Image();
+barsignup.src="/SiteGraphics/Bar_signup_OFF.gif";
+barrequest=new Image();
+barrequest.src="/SiteGraphics/Bar_requestinfo_OFF.gif";
+bboff=new Image();
+bboff.src="/SiteGraphics/BB_OFF.gif"
+bowloff=new Image();
+bowloff.src="/SiteGraphics/BWL_OFF.gif";
+buttondiv=new Image();
+buttondiv.src="/SiteGraphics/Button_Divider.gif";
+ffoff=new Image();
+ffoff.src="/SiteGraphics/FF_OFF.gif";
+sboff=new Image();
+sboff.src="/SiteGraphics/SB_OFF.gif";
+socceroff=new Image();
+socceroff.src="/SiteGraphics/soccer-off.gif";
+vboff=new Image();
+vboff.src="/SiteGraphics/VB_OFF.gif";
+addbg=new Image();
+addbg.src="/SiteGraphics/add_bgrnd.gif"
+//-->
+</script>
+
+<META NAME ="keywords" CONTENT="sports leagues, co-ed sports, co ed sports leagues, softball leagues, volleyball leagues, flag football, flag leagues, kickball leagues, soccer leagues, short-sided soccer, co ed mini golf leagues, co ed bowling leagues"><META NAME="description" CONTENT="Underdog Sports Leagues provides ‘laid back leagues for everyday players’ in Seattle and beyond.">
+
+</head>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+			<SCRIPT LANGUAGE="JavaScript">
+			<!--
+			document.write('<td background='+headerbg.src+' width=148><div align="left"><a href="http://www.underdogseattle.com/index.asp"><img src='+headerlogo.src+' alt="Underdog Sports Leagues Logo" width="148" height="56"></a></div></td>');
+			document.write('<td valign="top" background="'+headerbg.src+'" nowrap><div align=right><img src="'+aboutoff.src+'" alt="About Underdog Sports Leagues" name="menu0" width="80" height="21" border="0"  id="menu0" onMouseOver="showMenu(event)" onMouseOut="hideMenu(event)">');
+			document.write('<img src="'+corpoff.src+'" alt="Corporate Services" width="108" height="21" border="0" name="menu1" id="menu1" onMouseOver="showMenu(event)" onMouseOut="hideMenu(event)"><img src="'+contactoff.src+'" alt="contact USL" name="menu2" id="menu2" onMouseOver="showMenu(event)" onMouseOut="hideMenu(event)" width="85" height="21" border="0">');
+			document.write('<img src="'+spacer.src+'" alt="" width="50" height="21"></div>');
+			document.write('<div align=left><table width=100% border=0 cellspacing=0 cellpadding=0><tr><td align=left valign=top width=477 ><a href="http://www.underdogseattle.com/Leagueindexspg.asp?sportchoice=Flag_Football"><span class="HeaderSports">Flag Football</span></a><font color="#C9C9C9"> |</font><a href="http://www.underdogseattle.com/bigturkey/index.asp"><span class="HeaderSports">Bowling</span></a><font color="#C9C9C9"> |</font><a href="http://www.underdogseattle.com/Leagueindexspg.asp?sportchoice=Softball">');
+			document.write('<span class="HeaderSports">Softball</span></a><font color="#C9C9C9"> |</font><a href="/basketball"><span class="HeaderSports">Basketball</span></a><font color="#C9C9C9"> |</font><a href="http://www.underdogseattle.com/Kickball/index.asp"><span class="HeaderSports">Kickball</span></a><font color="#C9C9C9"> |</font><a href="http://www.underdogseattle.com/DOTL/index.asp"><span class="HeaderSports">Mini Golf</span></a><font color="#C9C9C9"> |</font><a href="http://www.underdogseattle.com/shamrock-soccer/index.asp"><span class="HeaderSports">Soccer</span></a><font color="#C9C9C9"> |</font><a href="http://www.underdogseattle.com/Leagueindexspg.asp?sportchoice=Volleyball"><span class="HeaderSports">Volleyball</span></a></div>');
+			document.write('</td><td align=right class=HeaderContact><font color=#C9C9C9><strong><a href=mailto:info@underdogseattle.com><span class=HeaderContact	><font color=#C9C9C9>info@underdogseattle.com</font></span></a> -  (206) 320-TEAM</strong></font></td></tr></table></div></td><td width="7" background="'+headerbg.src+'"><div align="right"><img src="'+headerrt.src+'" alt="" width="8" height="56"></div></td></tr></table>');
+			// -->
+			</SCRIPT>
+			<NOSCRIPT>
+			    <td background="/SiteGraphics/Hdr_Bgrnd.gif" width=148>
+			    <div align="left"><a href="http://www.underdogseattle.com/index.asp"><img src="/SiteGraphics/Hdr_Logo.gif" alt="Underdog Sports Leagues Logo" width="148" height="56"></a></div></td>
+			    <td valign="top" background="/SiteGraphics/Hdr_Bgrnd.gif" nowrap><div align=right><a href=http://www.underdogseattle.com/about.asp><img src="/SiteGraphics/about_OFF.gif" alt="About USL" name="menu0" width="80" height="21" border="0"  id="menu0" onMouseOver="showMenu(event)" onMouseOut="hideMenu(event)"></a><a href=http://www.underdogseattle.com/Corporate_Leagues.asp><img src="/SiteGraphics/corp_OFF.gif" alt="Corporate Services" width="108" height="21" border="0" name="menu1" id="menu1" onMouseOver="showMenu(event)" onMouseOut="hideMenu(event)"></a><a href=http://www.underdogseattle.com/contact.asp><img src="/SiteGraphics/contact_OFF.gif" alt="Contact USL" name="menu2" id="menu2" onMouseOver="showMenu(event)" onMouseOut="hideMenu(event)" width="85" height="21" border="0"></a><img src="/SiteGraphics/spacer.gif" alt="" width="50" height="21"></div>
+			    <div align=left><table width=100% border=0 cellspacing=0 cellpadding=0><tr>
+            <td align=left valign=top width=477 ><a href="http://www.underdogseattle.com/Leagueindexspg.asp?sportchoice=Flag_Football"><span class="HeaderSports">Flag
+              Football</span></a><font color="#C9C9C9"> |</font><a href="http://www.underdogseattle.com/bigturkey/index.asp"><span class="HeaderSports">Bowling</span></a><font color="#C9C9C9">
+              |</font><a href="http://www.underdogseattle.com/Leagueindexspg.asp?sportchoice=Softball">
+              <span class="HeaderSports">Softball</span></a><font color="#C9C9C9">
+              |</font><a href="/basketball"><span class="HeaderSports">Basketball</span></a><font color="#C9C9C9">
+              |</font><a href="http://www.underdogseattle.com/Kickball/index.asp"><span class="HeaderSports">Kickball</span></a><font color="#C9C9C9">
+              |</font><a href="http://www.underdogseattle.com/DOTL/index.asp"><span class="HeaderSports">Mini
+              Golf</span></a><font color="#C9C9C9"> |</font><a href="http://www.underdogseattle.com/shamrock-soccer/index.asp"><span class="HeaderSports">Soccer</span></a>
+              <font color="#C9C9C9"> |</font><a href="http://www.underdogseattle.com/Leagueindexspg.asp?sportchoice=Volleyball"><span class="HeaderSports">Volleyball</span></a>
+            </td>
+            <td align=right class=HeaderContact><font color=#C9C9C9><strong><a href=mailto:info@underdogseattle.com><span class=HeaderContact><font color=#C9C9C9>info@underdogseattle.com</font></span></a>
+              | (206) 320-TEAM</strong></font></td>
+          </tr></table></div>
+			    </td><td width="7" background="/SiteGraphics/Hdr_Bgrnd.gif"><div align="right"><img src="/SiteGraphics/Hdr_Right3.gif" alt="" width="8" height="56"></div></td>
+			  	</tr>
+				</table>
+			</NOSCRIPT></td>
+
+  </tr>
+	<tr>
+    <td colspan="2" width="100%">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+					<SCRIPT LANGUAGE="JavaScript">
+					<!--
+					document.write('<td height="17" background="'+barbg.src+'"><a href="http://www.underdogseattle.com/index.asp"><img src="'+barlogo.src+'" alt="Underdog Sports Leagues Logo" width="152" height="17"></a></td>');
+					document.write('<td width="299" height="17" background="'+barbg.src+'"><div align="right"><img src="'+bararrow.src+'" alt=""><a href=http://www.underdogseattle.com/about.asp><img src="'+barabout.src+'" alt="About Underdog Sports Leagues" name="bar_about" width="71" height="17" border="0"></a><img src="'+bardiv.src+'" alt=""><a href=http://www.underdogseattle.com/about.asp#FAQ><img src="'+barfaq.src+'" alt="Frequently Asked Questions" name="Faqs" width="39" height="17" border="0"></a><img src="'+bardiv.src+'" alt=""><a href=http://www.underdogseattle.com/MemberLogin.asp><img src="'+barsignup.src+'" alt="sign up for leagues" name="sing-up" width="57" height="17" border="0"></a><img src="'+bardiv.src+'" alt=""><a href="http://www.underdogseattle.com/Requestinfo.asp" ><img src="'+barrequest.src+'" alt="request info about Underdog Sports Leagues" name="request info" width="89" height="17" border="0"></a><img src="'+bardiv.src+'" alt=""><img src="'+spacer.src+'" alt="" width="3" height="17"></div></td>');
+					// -->
+					</SCRIPT>
+					<NOSCRIPT>
+						<td height="17" background="/SiteGraphics/Bar_Bgrnd.gif"><a href="http://www.underdogseattle.com/index.asp"><img src="/SiteGraphics/Bar_Logo.gif" alt="Underdog Sports Leagues Logo" width="152" height="17"></a></td>
+						<td nowrap width="299" height="17" background="/SiteGraphics/Bar_Bgrnd.gif"><div align="right"><img src="/SiteGraphics/bar_arrow.gif" alt=""><a href=http://www.underdogseattle.com/about.asp><img src="/SiteGraphics/Bar_about_OFF.gif" alt="About Underdog Sports Leagues" name="bar_about" width="71" height="17" border="0"></a><img src="/SiteGraphics/Bar_divider.gif" alt=""><a href=http://www.underdogseattle.com/about.asp#FAQ><img src="/SiteGraphics/Bar_FAQs_OFF.gif" alt="Frequently Asked Questions" name="Faqs" width="39" height="17" border="0"></a><img src="/SiteGraphics/Bar_divider.gif" alt=""><a href=http://www.underdogseattle.com/MemberLogin.asp><img src="/SiteGraphics/Bar_signup_OFF.gif" alt="sign up for leagues" name="sing-up" width="57" height="17" border="0"></a><img src="/SiteGraphics/Bar_divider.gif" alt=""><a href="http://www.underdogseattle.com/Requestinfo.asp" ><img src="/SiteGraphics/Bar_requestinfo_OFF.gif" alt="request info" name="request info" width="89" height="17" border="0"></a><img src="/SiteGraphics/Bar_divider.gif" alt=""><img src="/sitegraphics/spacer.gif" alt="" width="3" height="17"></div></td>
+					</NOSCRIPT>
+  </tr>
+</table>
+</td>
+    <td width="191" rowspan="3" valign="top" background="../SiteGraphics/add_bgrnd.gif" bgcolor="#F9F9F9"><link rel="stylesheet" type="text/css" href="/Master.css">
+
+<table width="190"  height="496" border="0" cellpadding="0" cellspacing="0" background="/SiteGraphics/add_bgrnd.gif">
+  <!--DWLayoutTable-->
+  <tr valign="top" background="/SiteGraphics/add_bgrnd.gif">
+    <td height="334" colspan="2" valign="top" bgcolor="#FFFFFF">
+      <table width="190" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="/SiteGraphics/Add_Upcoming.gif" alt="upcoming leagues and events in seattle" width="190" height="17"></td>
+          <td width="1" rowspan="2" bgcolor="#000000"><img src="/SiteGraphics/Spacer.gif" alt="" width="1" height="1"></td>
+        </tr>
+        <tr>
+          <td height="311" valign="top" background="/SiteGraphics/add_bgrnd.gif"><div align="center"> 
+              <p><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><strong><a href="/dotl"><br>
+                <img src="/Sitegraphics/DOTL-right.gif" width="172" height="62" border="0"></a></strong></span></span></font></span></span></span></font></font></font></span></span></span></font></font></font></span></span></span></font></font></font></span></span></span></font></font><span class="text80"><span class="text80"><strong><br>
+                <br>
+                It's Not Too Late for Putt-Putt<br>
+                this Summer! <br>
+                <br>
+                </strong>Leagues Starting in August:<strong><br>
+                <br>
+                <font color="#38739E">Wednesday Evenings</font><br>
+                </strong>Begins August 9th<strong><br>
+                <br>
+                </strong><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><strong><font color="#38739E">Tuesday 
+                Evenings</font><br>
+                </strong>Begins August 15th</span></span></font></span></span></span></font></font></font></font></font></span></font></span></font></span></font></font></font></font></font></span></font></span></font> 
+                </span></span></font></span></span></span></font></font></font></font></font></span></font></span></font></span></font></font></font></font></font></span></font></span><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><strong><br>
+                <br>
+                </strong><a href="/dotl"><font color="#38739E"><u>Info and Sign-Up</u></font></a></span></span></font></span></span></span></font></font></font></font></font></span></font><span class="text80"><span class="text80"><span class="text80"><strong><br>
+                <br>
+                </strong><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font color="#38739E"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font color="#666666" size="1"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font color="#38739E"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font color="#666666" size="1"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font color="#38739E"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font color="#666666" size="1"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font color="#38739E"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font color="#666666" size="1"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><strong><img src="/kickball/graphics/TabsBar.gif" alt="" width="184" height="1"></strong></span></font></span></font></span></font></span></font></font></span></font></span></font></span></font></span></font></font></span></font></span></font></span></font></span></font></span></font></span></span></span></font></span></font></span></font></font></span></font></font></span></font></span></font></span></font></font></span></font></span></font></span></font></span></font></font></span></font></span></font></span></font></span></font></span></font></span></span></span></font></span></font></span></font></font></span></font></font></span></font></span></font></span></font></font></span></font></span></font></span></font></span></font></font></span></font></span></font></span></font></span></font></span></font></span></span></span></font></span></font></span></font></font></span></font></font></span></font></span></font></span></font></font></span></font></span></font></span></font></span></font></font></span></font></span></font></span></font></span></font></span></font></span></span></span></font></span></font></span></font></font></span></font></font></span></span></span></font></font></font></font></font></span></font></span></font><strong> 
+                <br>
+                <a href="http://www.statdog.com"><img src="/SiteGraphics/statdog-sports-services.gif" alt="underdog store" width="188" height="44" border="0"></a></strong></span></span></span></span></font></span></font></font></font></font></span></font></span></font></font></span><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font color="#666666" size="1"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font color="#666666" size="1"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font face="Arial,Helvetica,sans-serif" size="3"><font color="#666666" size="1"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><font color="#666666" size="1"><span class="text80"><font face="Arial,Helvetica,sans-serif" size="3"><span class="text80"><span class="text80"><span class="text80"><em><font color="#666666" size="1"><strong><br>
+                for your next Corporate Event</strong></font></em></span></span></span></font></span></font></font></span></font></font></font></span></font></span></font></span></font></span></font></span></span></font></span></font></font></span></font></font></font></span></font></span></font></span></font></p>
+              </div>
+            </font></span></a></td>
+        </tr>
+        <tr>
+          <td height="6" colspan="2"><img src="/SiteGraphics/add_rnd.gif" alt="" width="190" height="6"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr valign="top">
+    <td width="5" height="162"  background="/SiteGraphics/add_bgrnd.gif" bgcolor="#f9f9f9">
+      <div align="center"></div>
+      <img src="/SiteGraphics/Spacer.gif" alt="" width="5"></td>
+    <td width="160" height="159" valign="bottom" bgcolor="#f9f9f9"> <div align="center">
+        <p><font color="#CCCCCC" size="1" face="Arial, Helvetica, sans-serif"><strong><br>
+          USL League Partners:</strong></font></p>
+        <p align="center"><img src="/SiteGraphics/logos/redhook_main.gif" alt="redhook logo" width="120" height="63"><br>
+          <br>
+          <br>
+          <img src="/SiteGraphics/logos/adidas_Seattle_Add.gif" alt="adidas seattle logo" width="176" height="55"><br>
+          <font color="#CCCCCC" size="1" face="Arial, Helvetica, sans-serif"><strong>
+          <br>
+          </strong></font></p>
+        <p><br>
+          <font color="#f9f9f9" size="1">portland leagues big turkey bowling sports
+          entertainment coed underdog <a href="http://www.underdogportland.com"><font color="#f9f9f9">underdogportland</font></a></font>
+        </p>
+        </div></td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td width="93" height="100%" rowspan="2" valign="top" bgcolor="#FFFFFF"> 
+<table width="93" height="660" border="0" cellpadding="0" cellspacing="0" valign="top">
+  <tr><td valign="top" align="center"><a href="/index.asp"><img src="/SiteGraphics/Menu_Logo.gif" alt="Underdog Sports Leagues Logo" width="93" height="17" border="0" valign="top"></a><br>
+  <a href="https://secure.underdogseattle.com/Captains/CaptainsLounge.asp"><img src="/SiteGraphics/captainslounge_login_button.gif" alt="Captains Lounge" width="84" height="55" border="0"><br></a><img src="/SiteGraphics/League_Pages.gif" alt="league pages" width="93" height="10"><br>
+        <a href="http://www.underdogseattle.com/bigturkey/"><img src=/SiteGraphics/BWL_OFF.gif alt="click for bowling info" name=menu3 id=menu3 onMouseOver=showMenu(event) onMouseOut=hideMenu(event) width=84 height=55 border=0 onClick="window.location='http://www.underdogseattle.com/bigturkey/';"></a><br><a href="http://www.underdogseattle.com/leagueindexspg.asp?sportchoice=Flag_Football"><img src=/SiteGraphics/FF_OFF.gif alt="click for flag football info" name=menu4 id=menu4 onMouseOver=showMenu(event) onMouseOut=hideMenu(event) width=84 height=55 border=0 onClick="window.location='http://www.underdogseattle.com/leagueindexspg.asp?sportchoice=Flag_Football';"></a><br><a href="http://www.underdogseattle.com/kickball"><img src=/sitegraphics/DodgeBall_OFF.gif alt="click for kickball info" name=menu9 id=menu9 onMouseOver=showMenu(event) onMouseOut=hideMenu(event) width=84 height=55 border=0 onClick="window.location='http://www.underdogseattle.com/Kickball';"></a><br><a href="http://www.underdogseattle.com/kickball"><img src=/sitegraphics/KB_OFF.gif alt="click for kickball info" name=menu7 id=menu7 onMouseOver=showMenu(event) onMouseOut=hideMenu(event) width=84 height=55 border=0 onClick="window.location='http://www.underdogseattle.com/Kickball';"></a><br><a href="http://www.underdogseattle.com/dotl"><img src=/SiteGraphics/drinks-on-the-links-off.gif alt="click to view mini golf info" name=menu10 id=menu10 onMouseOver=showMenu(event) onMouseOut=hideMenu(event) width=84 height=55 border=0 onClick="window.location='http://www.underdogseattle.com/dotl';"></a><br><a href="http://www.underdogseattle.com/shamrock-soccer"><img src=/SiteGraphics/Soccer-OFF.gif alt="click to view soccer info" name=menu8 id=menu8 onMouseOver=showMenu(event) onMouseOut=hideMenu(event) width=84 height=55 border=0 onClick="window.location='http://www.underdogseattle.com/shamrock-soccer';"></a><br><a href="http://www.underdogseattle.com/leagueindexspg.asp?sportchoice=Volleyball"><img src=/SiteGraphics/VB_OFF.gif alt="click for volleyball info" name=menu6 id=menu6 onMouseOver=showMenu(event) onMouseOut=hideMenu(event) width=84 height=55 border=0 onClick="window.location='http://www.underdogseattle.com/leagueindexspg.asp?sportchoice=Volleyball';"></a><br><a href="http://www.underdogseattle.com/leagueindexspg.asp?sportchoice=Softball"><img src=/SiteGraphics/SB_OFF.gif alt="click to view softball info" name=menu5 id=menu5 onMouseOver=showMenu(event) onMouseOut=hideMenu(event) width=84 height=55 border=0 onClick="window.location='http://www.underdogseattle.com/leagueindexspg.asp?sportchoice=Softball';"></a><br>
+
+<!--         <a href="/basketball"><span class="menuNew" onMouseOver="this.style.color='#5A98C5'" onMouseOut="this.style.color='#9D9D9D'">Basketball</span></a> -->
+		<img src="/SiteGraphics/Spacer.gif" width="50" height="5" alt="">
+
+		<table align="center" style="border: 1px solid #CCCCCC;" width="85"><tr><td align="center"><img src="/sitegraphics/icons/weatherstatus.gif" alt="weather status" width="63" height="40"><br><span class="texttiny">Games are ON. Check back<br>for updates. </span></td></tr></table>
+      <img src="/SiteGraphics/Spacer.gif" alt="" width="80" height="8">
+<div align="center"><a href="http://www.underdogseattle.com/starbucks/"><img src="/SiteGraphics/logos/StarbucksSM.gif" alt="starbucks partner connection" border="0"></a><br>
+        <font color="#999999" size="1" face="Arial, Helvetica, sans-serif"><strong><font color="127042">Work
+        for<br>
+        Starbucks?</font><br>
+        <em> Play for Less</em><a href="http://www.underdogseattle.com/starbucks/"><font color="#666666"><br>
+        <u>Program Info</u></font></a><br>
+        <br>
+        <a href="http://www.pugetsoundbasketball.com"><img src="/SiteGraphics/logos/PSB_small.gif" width="90" height="89" border="0"></a><br>
+        <em><font color="#666666">Looking for a Hoops League?</font><br>
+        </em><a href="http://www.pugetsoundbasketball.com"><font color="#003399"><u>Visit PSB online</u></font></a>
+        <br><img src="/SiteGraphics/Spacer.gif" alt="" width="80" height="8">
+        <br><img src="/SiteGraphics/Spacer.gif" alt="" width="80" height="8">
+		<br>
+        <a href="/store"><img src="/SiteGraphics/icons/U_store.gif" alt="Click for the Underdog Store" width="90" height="43" border="0"><br>
+        <br>
+        </a></strong></font></div>
+	  </td>
+  </tr>
+</table>
+ </td>
+    <td width="100%" valign="top" bgcolor="#FFFFFF"> <img src="/SiteGraphics/Main_Logo.gif" width="55" height="17">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" bgcolor="#FFFFFF" class=ContentBody height="850">
+<table width="100%" valign="top"><tr>
+          <td valign="top"> <font color="38739E" size="2" face="Arial, Helvetica, sans-serif"><strong>
+            
+            <img src="/SiteGraphics/locations.gif" width="149" height="29"> <br>
+            <font size="1">Check out some of USL's regular fields and facilities:</font></strong></font><br>
+            <table valign=top width=100% cellspacing=0 cellpadding=0 border=0><tr><td class=potwbody align=left><span class=contenttitle>Olympia Pizza</span><br><br><span class=contentbody>South Greenlake eatery with great food and bevs!</span></td><td width=30>&nbsp;</td><td class=potwbody align=center nowrap><br><br>45th</td><td width=30>&nbsp;</td><td width=0>&nbsp;</td></tr></table><br><br><br><table width=300 align=center><tr bgcolor=#000000 class=wtschedheading><td>League Sites</td><td>Sponsor Bars</td></tr><tr><td valign=top><br><a href=Locations.asp?locchoice=27&loctype=League_Site ><span class=largelink>Alki Beach</span></a><br><a href=Locations.asp?locchoice=108&loctype=League_Site ><span class=largelink>Ballard Boys & Girls Club</span></a><br><a href=Locations.asp?locchoice=63&loctype=League_Site ><span class=largelink>Ballard Playfields</span></a><br><a href=Locations.asp?locchoice=53&loctype=League_Site ><span class=largelink>BF Day School</span></a><br><a href=Locations.asp?locchoice=58&loctype=League_Site ><span class=largelink>Brunswick Majestic Lanes</span></a><br><a href=Locations.asp?locchoice=100&loctype=League_Site ><span class=largelink>Cascade Playfield</span></a><br><a href=Locations.asp?locchoice=39&loctype=League_Site ><span class=largelink>Cleveland HS</span></a><br><a href=Locations.asp?locchoice=64&loctype=League_Site ><span class=largelink>Delridge Playfields</span></a><br><a href=Locations.asp?locchoice=33&loctype=League_Site ><span class=largelink>Denny Park</span></a><br><a href=Locations.asp?locchoice=78&loctype=League_Site ><span class=largelink>Emerald City Academy</span></a><br><a href=Locations.asp?locchoice=54&loctype=League_Site ><span class=largelink>Everett Boys & Girls Club</span></a><br><a href=Locations.asp?locchoice=42&loctype=League_Site ><span class=largelink>Evergreen Playfields - MLT</span></a><br><a href=Locations.asp?locchoice=61&loctype=League_Site ><span class=largelink>First Baptist - Capitol Hill</span></a><br><a href=Locations.asp?locchoice=38&loctype=League_Site ><span class=largelink>Genesee Park</span></a><br><a href=Locations.asp?locchoice=51&loctype=League_Site ><span class=largelink>Golden Gardens</span></a><br><a href=Locations.asp?locchoice=31&loctype=League_Site ><span class=largelink>Greenlake - Flag Football</span></a><br><a href=Locations.asp?locchoice=25&loctype=League_Site ><span class=largelink>Greenlake - Softball</span></a><br><a href=Locations.asp?locchoice=77&loctype=League_Site ><span class=largelink>Imperial Lanes</span></a><br><a href=Locations.asp?locchoice=4&loctype=League_Site ><span class=largelink>Ingraham HS</span></a><br><a href=Locations.asp?locchoice=24&loctype=League_Site ><span class=largelink>Interbay</span></a><br><a href=Locations.asp?locchoice=21&loctype=League_Site ><span class=largelink>Juanita HS</span></a><br><a href=Locations.asp?locchoice=17&loctype=League_Site ><span class=largelink>Key Arena</span></a><br><a href=Locations.asp?locchoice=81&loctype=League_Site ><span class=largelink>Kirkland Boys & Girls Club</span></a><br><a href=Locations.asp?locchoice=65&loctype=League_Site ><span class=largelink>Lake Washington High School</span></a><br><a href=Locations.asp?locchoice=1&loctype=League_Site ><span class=largelink>Leilani Lanes</span></a><br><a href=Locations.asp?locchoice=26&loctype=League_Site ><span class=largelink>Lower Woodland</span></a><br><a href=Locations.asp?locchoice=3&loctype=League_Site ><span class=largelink>Loyal Heights</span></a><br><a href=Locations.asp?locchoice=46&loctype=League_Site ><span class=largelink>Magnolia Playfield</span></a><br><a href=Locations.asp?locchoice=48&loctype=League_Site ><span class=largelink>Maple Wood</span></a><br><a href=Locations.asp?locchoice=35&loctype=League_Site ><span class=largelink>Marymoor Park</span></a><br><a href=Locations.asp?locchoice=44&loctype=League_Site ><span class=largelink>McCollum Pioneer Park</span></a><br><a href=Locations.asp?locchoice=112&loctype=League_Site ><span class=largelink>Meadowbrook Playfield</span></a><br><a href=Locations.asp?locchoice=22&loctype=League_Site ><span class=largelink>Miller Park (Capitol Hill)</span></a><br><a href=Locations.asp?locchoice=110&loctype=League_Site ><span class=largelink>Montlake Playfield</span></a><br><a href=Locations.asp?locchoice=55&loctype=League_Site ><span class=largelink>Mukilteo Little League Complex</span></a><br><a href=Locations.asp?locchoice=23&loctype=League_Site ><span class=largelink>N. Seattle Community College</span></a><br><a href=Locations.asp?locchoice=43&loctype=League_Site ><span class=largelink>Nathan Hale HS</span></a><br><a href=Locations.asp?locchoice=113&loctype=League_Site ><span class=largelink>Newcastle</span></a><br><a href=Locations.asp?locchoice=68&loctype=League_Site ><span class=largelink>Northacres</span></a><br><a href=Locations.asp?locchoice=30&loctype=League_Site ><span class=largelink>NW Baseball Institute</span></a><br><a href=Locations.asp?locchoice=83&loctype=League_Site ><span class=largelink>Paramount Playfield</span></a><br><a href=Locations.asp?locchoice=36&loctype=League_Site ><span class=largelink>Qwest Field</span></a><br><a href=Locations.asp?locchoice=47&loctype=League_Site ><span class=largelink>Ravenna Park</span></a><br><a href=Locations.asp?locchoice=67&loctype=League_Site ><span class=largelink>Rogers PG</span></a><br><a href=Locations.asp?locchoice=52&loctype=League_Site ><span class=largelink>Ross Playfield</span></a><br><a href=Locations.asp?locchoice=2&loctype=League_Site ><span class=largelink>Seattle Center</span></a><br><a href=Locations.asp?locchoice=57&loctype=League_Site ><span class=largelink>Seattle Central Comm. College</span></a><br><a href=Locations.asp?locchoice=75&loctype=League_Site ><span class=largelink>Skyway Park Bowl</span></a><br><a href=Locations.asp?locchoice=50&loctype=League_Site ><span class=largelink>Sound View</span></a><br><a href=Locations.asp?locchoice=49&loctype=League_Site ><span class=largelink>Starfire Sports - Tukwilla</span></a><br><a href=Locations.asp?locchoice=37&loctype=League_Site ><span class=largelink>Sun Villa</span></a><br><a href=Locations.asp?locchoice=82&loctype=League_Site ><span class=largelink>Sunset Bowl</span></a><br><a href=Locations.asp?locchoice=32&loctype=League_Site ><span class=largelink>Tech City </span></a><br><a href=Locations.asp?locchoice=76&loctype=League_Site ><span class=largelink>The Garage</span></a><br><a href=Locations.asp?locchoice=56&loctype=League_Site ><span class=largelink>The Pier</span></a><br><a href=Locations.asp?locchoice=29&loctype=League_Site ><span class=largelink>University Playfield</span></a><br><a href=Locations.asp?locchoice=20&loctype=League_Site ><span class=largelink>USL Headquarters</span></a><br><a href=Locations.asp?locchoice=28&loctype=League_Site ><span class=largelink>W Queen Anne Playfield</span></a><br><a href=Locations.asp?locchoice=80&loctype=League_Site ><span class=largelink>Wallingford Boys & Girls Club</span></a><br><a href=Locations.asp?locchoice=79&loctype=League_Site ><span class=largelink>West Seattle Bowl</span></a><br><a href=Locations.asp?locchoice=34&loctype=League_Site ><span class=largelink>Willows Run (Eastside)</span></a><br><a href=Locations.asp?locchoice=66&loctype=League_Site ><span class=largelink>Woodinville CC</span></a><br></td><td valign=top><br><a href=Locations.asp?locchoice=2&loctype=Sponsor_Bar ><span class=largelink>Bamboo Bar & Grill</span></a><br><a href=Locations.asp?locchoice=38&loctype=Sponsor_Bar ><span class=largelink>Beacon Pub</span></a><br><a href=Locations.asp?locchoice=21&loctype=Sponsor_Bar ><span class=largelink>Bill's Off Broadway</span></a><br><a href=Locations.asp?locchoice=16&loctype=Sponsor_Bar ><span class=largelink>Canyon’s Restaurant in MLT</span></a><br><a href=Locations.asp?locchoice=19&loctype=Sponsor_Bar ><span class=largelink>Jillian's</span></a><br><a href=Locations.asp?locchoice=33&loctype=Sponsor_Bar ><span class=largelink>Just Left Pub & Grill</span></a><br><a href=Locations.asp?locchoice=34&loctype=Sponsor_Bar ><span class=largelink>Leny's Tavern</span></a><br><a href=Locations.asp?locchoice=30&loctype=Sponsor_Bar ><span class=largelink>Liquid Lime</span></a><br><a href=Locations.asp?locchoice=1&loctype=Sponsor_Bar ><span class=largelink>Lucky 7 Sports Bar</span></a><br><a href=Locations.asp?locchoice=6&loctype=Sponsor_Bar ><span class=largelink>Olympia Pizza</span></a><br><a href=Locations.asp?locchoice=37&loctype=Sponsor_Bar ><span class=largelink>Pinehurst Pub</span></a><br><a href=Locations.asp?locchoice=31&loctype=Sponsor_Bar ><span class=largelink>Sport Restaurant and Bar</span></a><br><a href=Locations.asp?locchoice=12&loctype=Sponsor_Bar ><span class=largelink>Tacos Guaymas</span></a><br><a href=Locations.asp?locchoice=20&loctype=Sponsor_Bar ><span class=largelink>The Garage</span></a><br><a href=Locations.asp?locchoice=3&loctype=Sponsor_Bar ><span class=largelink>the Lockspot</span></a><br><a href=Locations.asp?locchoice=17&loctype=Sponsor_Bar ><span class=largelink>The Sloop Tavern</span></a><br><a href=Locations.asp?locchoice=4&loctype=Sponsor_Bar ><span class=largelink>Triangle Lounge</span></a><br></td></tr></table>
+
+</td>
+</tr>
+</table>
+</td></tr></table>
+</body>
+</html>
+<table width="785" bgcolor="#F9F9F9" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td bgcolor="ff9900"><img src="/SiteGraphics/Spacer.gif" border ="0" width="1" height="3"></td>
+    <td bgcolor="ff9900"><img src="/SiteGraphics/Spacer.gif" border ="0" width="1" height="3"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><img src="/SiteGraphics/Spacer.gif" border ="0" width="1" height="11"></td>
+    <td bgcolor="#000000"><div align="right"><img src="/SiteGraphics/Spacer.gif" border ="0" width="1" height="11"><img src="/SiteGraphics/Footer_Corner.gif" width="9" height="11"></div></td>
+  </tr>
+  <tr>
+
+    <td class="footer" style="padding-left:12px;">Copyright &copy;2001-2005 Underdog
+      Sports Leagues Inc. - All rights reserved.<br>
+      For more information about leagues and events, call (206) 320-TEAM or email
+      <a href="mailto:info@underdogseattle.com"><font color="#999999">info@underdogseattle.com</font></a>.<br>
+      <GEO TYPE="US">2013 4th Ave Suite 201 - Seattle, WA 98121</GEO><br> <br> <br> </td>
+      <td align="right" style="padding-right:15px;padding-top:4px;" valign="top"><a href="/privacy.htm" target="_blank"><span class="footer">Privacy Policy</span></a></td>
+  </tr>
+</table>

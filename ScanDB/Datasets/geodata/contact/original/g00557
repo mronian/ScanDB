@@ -1,0 +1,1894 @@
+<DOC>
+<DOCNO>g00557</DOCNO>
+<DOCHDR>http://www.spe.org/spe/jsp/basic/0,2396,1104_1936_0,00.html</DOCHDR>
+<!-- Vignette V6 Tue Mar 01 13:25:41 2005 -->
+
+<!-- ------------------------------- BEGIN BASIC HTML --------------------------------- -->
+ 
+
+
+
+
+
+
+
+
+
+  
+  
+ 
+	
+	
+ <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" href="/spe/includes/site.css" type="text/css" >
+<link rel="stylesheet" href="/spe/includes/spe_menu.css" type="text/css" >
+
+<!-- scripts for swaping images -->
+<script language="JavaScript" type="text/JavaScript" src="/spe/includes/image_swap.js"></script>
+<!-- script language="JavaScript" type="text/JavaScript" src="/spe/includes/spe_menu_td.js"></script> -->
+ 
+<!-- include the site header -->
+<!-- Vignette V6 Fri Mar 04 11:24:55 2005 -->
+
+<!-- -------------------------------- BEGIN HEADER ------------------------------------- -->
+<META content=all name=robots><!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
+<SCRIPT type=text/javascript></SCRIPT>
+ 
+
+
+
+
+
+
+
+   
+
+ 
+
+<script language="JavaScript" type="text/JavaScript" src="/spe/includes/browser.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="/spe/includes/menu.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="/spe/includes/utils.js"></script>
+
+<!-- link rel="stylesheet" href="/spe/includes/site.css" type="text/css" -->
+<link rel="stylesheet" href="/spe/includes/spe_menu.css" type="text/css" >
+
+
+
+
+<!-- define the image maps for the different header images that we can have -->
+<map name="map_top_header">
+<area shape="rect" coords="132,19,187,40" href="/spe/jsp/basic_sitemap/0,2396,1104_12134_0,00.html">
+<area shape="rect" coords="190,19,278,40" href="/spe/jsp/basic/0,2396,1104_1896_0,00.html">
+<area shape="rect" coords="282,19,354,40" href="/spe/jsp/basic/0,2396,1104_1864_0,00.html">
+<area shape="rect" coords="357,19,432,40" href="/spe/jsp/basic/0,2396,1104_1936_0,00.html">
+</map>
+<map name="map_top_header_logout">
+<area shape="rect" coords="132,19,187,40" href="/spe/jsp/basic_sitemap/0,2396,1104_12134_0,00.html">
+<area shape="rect" coords="190,19,278,40" href="/spe/jsp/basic/0,2396,1104_1896_0,00.html">
+<area shape="rect" coords="282,19,354,40" href="/spe/jsp/basic/0,2396,1104_1864_0,00.html">
+<area shape="rect" coords="357,19,432,40" href="/spe/jsp/basic/0,2396,1104_1936_0,00.html">
+<area shape="rect" coords="365,42,432,60" href="/spe/util/siteminder/logout">
+</map>
+<map name="map_top_header_home">
+<area shape="rect" coords="132,19,187,40" href="/spe/jsp/basic_sitemap/0,2396,1104_12134_0,00.html">
+<area shape="rect" coords="190,19,278,40" href="/spe/jsp/basic/0,2396,1104_1896_0,00.html">
+<area shape="rect" coords="282,19,354,40" href="/spe/jsp/basic/0,2396,1104_1864_0,00.html">
+<area shape="rect" coords="357,19,432,40" href="/spe/jsp/basic/0,2396,1104_1936_0,00.html">
+<area shape="rect" coords="89,19,127,40" href="/spe/jsp/homepage">
+</map>
+<map name="map_top_header_home_logout">
+<area shape="rect" coords="132,19,187,40" href="/spe/jsp/basic_sitemap/0,2396,1104_12134_0,00.html">
+<area shape="rect" coords="190,19,278,40" href="/spe/jsp/basic/0,2396,1104_1896_0,00.html">
+<area shape="rect" coords="282,19,354,40" href="/spe/jsp/basic/0,2396,1104_1864_0,00.html">
+<area shape="rect" coords="357,19,432,40" href="/spe/jsp/basic/0,2396,1104_1936_0,00.html">
+<area shape="rect" coords="89,19,127,40" href="/spe/jsp/homepage">
+<area shape="rect" coords="365,42,432,60" href="/spe/util/siteminder/logout">
+</map>
+
+<!-- Header Table Begin -->
+<table class="component" cellpadding="0" cellspacing="0" border = 0>
+  <tr> 
+    <td width="340" height="60">
+			<img src="/spe/images/speorg_logo.gif" width="340" height="60" border="0" 
+				onclick=window.location='/spe/jsp/homepage' 
+				onMouseOver=style.cursor='hand' 
+				onMouseOut=style.cursor='default'>
+		</td>
+    <td><div align="right">
+			<img src="/spe/images/top_header_home.jpg" width="435" height="60" border="0" usemap="#map_top_header_home">
+		</div></td>
+  </tr>
+</table>
+
+<!-- Discipline Nav Begin -->
+
+
+<table class="mbr" border=1>
+	<tr>
+	<!-- dynamically building discipline links --> 
+
+
+	<td class="menubar_discipline" 
+		onmouseover="td_mouseover(this, '#999999', '/spe/jsp/discipline/0,,1104_1768_0_1,00.html');"
+		onMouseOut="td_mouseout(this, '#003366');"
+		onClick="window.location='/spe/jsp/discipline/0,,1104_1768_0_1,00.html'">
+	Drilling and Completions
+	</td>
+
+
+	<td class="menubar_discipline" 
+		onmouseover="td_mouseover(this, '#999999', '/spe/jsp/discipline/0,,1104_1770_0_2,00.html');"
+		onMouseOut="td_mouseout(this, '#003366');"
+		onClick="window.location='/spe/jsp/discipline/0,,1104_1770_0_2,00.html'">
+	Facilities and Construction
+	</td>
+
+
+	<td class="menubar_discipline" 
+		onmouseover="td_mouseover(this, '#999999', '/spe/jsp/discipline/0,,1104_1772_0_3,00.html');"
+		onMouseOut="td_mouseout(this, '#003366');"
+		onClick="window.location='/spe/jsp/discipline/0,,1104_1772_0_3,00.html'">
+	Health, Safety and Environment
+	</td>
+
+
+	<td class="menubar_discipline" 
+		onmouseover="td_mouseover(this, '#999999', '/spe/jsp/discipline/0,,1104_1774_0_4,00.html');"
+		onMouseOut="td_mouseout(this, '#003366');"
+		onClick="window.location='/spe/jsp/discipline/0,,1104_1774_0_4,00.html'">
+	Management and Information
+	</td>
+
+
+	<td class="menubar_discipline" 
+		onmouseover="td_mouseover(this, '#999999', '/spe/jsp/discipline/0,,1104_1776_0_5,00.html');"
+		onMouseOut="td_mouseout(this, '#003366');"
+		onClick="window.location='/spe/jsp/discipline/0,,1104_1776_0_5,00.html'">
+	Production and Operations
+	</td>
+
+
+	<td class="menubar_discipline" 
+		onmouseover="td_mouseover(this, '#999999', '/spe/jsp/discipline/0,,1104_1778_0_6,00.html');"
+		onMouseOut="td_mouseout(this, '#003366');"
+		onClick="window.location='/spe/jsp/discipline/0,,1104_1778_0_6,00.html'">
+	Reservoir Description and Dynamics
+	</td>
+
+	<!-- end dynamically building discipline links -->
+<!-- Discipline Nav End -->
+</tr>
+</table>
+<!-- Top Main Nav Begin -->
+<!-- NOTE: must set border to 1 to get the css borders to show -->
+
+<table class="menubar" border=1>
+  <tr> 
+	<td id="btn_search" class="mbr_button" width="150">
+		<img src="/spe/images/search.gif" name="Image1" width="150" height="38" border="0" id="Image1"
+			onmouseover="MM_swapImage('Image1','','/spe/images/search_down.gif',1);style.cursor='hand'"
+			onmouseout="MM_swapImgRestore();style.cursor='default'"
+			onClick="window.location='/mainsearch/basicSearch.do'"/>
+	</td>
+	<!-- dynamically building main links -->
+
+				<td class="mbr_button"
+					onmouseover="td_mouseover(this, '#999999', '/spe/jsp/basic/0,,1104_1543,00.html');return show_menu(this, 'mb_1543');"
+					onmouseout="td_mouseout(this, '#CCCCCC');return false;"
+					onClick="window.location='/spe/jsp/basic/0,,1104_1543,00.html'">
+				Meetings and Conferences
+				</td>
+				
+				<td class="mbr_button"
+					onmouseover="td_mouseover(this, '#999999', '/spe/jsp/basic/0,,1104_1559,00.html');return show_menu(this, 'mb_1559');"
+					onmouseout="td_mouseout(this, '#CCCCCC');return false;"
+					onClick="window.location='/spe/jsp/basic/0,,1104_1559,00.html'">
+				Technical Resources
+				</td>
+				
+				<td class="mbr_button"
+					onmouseover="td_mouseover(this, '#999999', '/spe/jsp/basic/0,,1104_1609,00.html');return show_menu(this, 'mb_1609');"
+					onmouseout="td_mouseout(this, '#CCCCCC');return false;"
+					onClick="window.location='/spe/jsp/basic/0,,1104_1609,00.html'">
+				Career Development
+				</td>
+				
+				<td class="mbr_button"
+					onmouseover="td_mouseover(this, '#999999', '/spe/jsp/basic/0,,1104_1649,00.html');return show_menu(this, 'mb_1649');"
+					onmouseout="td_mouseout(this, '#CCCCCC');return false;"
+					onClick="window.location='/spe/jsp/basic/0,,1104_1649,00.html'">
+				Young Members
+				</td>
+				
+				<td class="mbr_button"
+					onmouseover="td_mouseover(this, '#999999', '/spe/jsp/basic/0,,1104_1678,00.html');return show_menu(this, 'mb_1678');"
+					onmouseout="td_mouseout(this, '#CCCCCC');return false;"
+					onClick="window.location='/spe/jsp/basic/0,,1104_1678,00.html'">
+				Sections
+				</td>
+				
+				<td class="mbr_button"
+					onmouseover="td_mouseover(this, '#999999', '/spe/jsp/basic/0,,1104_1708,00.html');return show_menu(this, 'mb_1708');"
+					onmouseout="td_mouseout(this, '#CCCCCC');return false;"
+					onClick="window.location='/spe/jsp/basic/0,,1104_1708,00.html'">
+				About Oil and Natural Gas
+				</td>
+				
+				<td class="mbr_button"
+					onmouseover="td_mouseover(this, '#999999', '/spe/jsp/basic/0,,1104_1760,00.html');return show_menu(this, 'mb_1760');"
+					onmouseout="td_mouseout(this, '#CCCCCC');return false;"
+					onClick="window.location='/spe/jsp/basic/0,,1104_1760,00.html'">
+				About SPE
+				</td>
+				
+				<td class="mbr_button"
+					onmouseover="td_mouseover(this, '#999999', '/spe/jsp/basic/0,,1104_1762,00.html');return show_menu(this, 'mb_1762');"
+					onmouseout="td_mouseout(this, '#CCCCCC');return false;"
+					onClick="window.location='/spe/jsp/basic/0,,1104_1762,00.html'">
+				Products and Services
+				</td>
+				
+	<!-- end dynamically building main links -->
+  </tr>
+</table>
+<!-- Top Main Nav End -->
+<!-- Header Table End -->
+
+<!-- build all menus -->
+<!-- Vignette V6 Tue Mar 01 13:13:26 2005 -->
+
+
+
+
+
+
+<!-- working on the mb_ menus now -->
+<!-- mb_1543Meetings and Conferences -->
+<div id='mb_1543' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1545 : Search For Meeting -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/meetingsearch">
+				Search For Meeting
+
+				</a>
+				<!-- 1547 : ATCE -->
+
+				<a class="mnu_item"
+					href="/atce/2005">
+				ATCE
+
+				</a>
+				<!-- 1549 : OTC -->
+
+				<a class="mnu_item"
+					href="http://www.otcnet.org">
+				OTC
+
+				</a>
+				<!-- 2793482 : IPTC -->
+
+				<a class="mnu_item"
+					href="http://www.iptcnet.org">
+				IPTC
+
+				</a>
+				<!-- 1551 : Calls For Papers -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/callforpaperlist/0,,1104_1551,00.html">
+				Calls For Papers
+
+				</a>
+				<!-- 1553 : Exhibitor Center -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/exhibitorcenter/0,,1104_1553,00.html">
+				Exhibitor Center
+
+				</a>
+				<!-- 1555 : Event Types -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1555,00.html">
+				Event Types
+
+				</a>
+				</div>
+<!-- mb_1559Technical Resources -->
+<div id='mb_1559' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1561 : eLibrary (Papers) -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1561,00.html">
+				eLibrary (Papers)
+
+				</a>
+				<!-- 1546362 :  OTC Papers Online -->
+
+				<a class="mnu_item"
+					href="http://www.otcnet.org/otcnet/otclibrary/index.html">
+				 OTC Papers Online
+
+				</a>
+				<!-- 1571 : Technical Summaries / Presentations -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1571,00.html">
+				Technical Summaries / Presentations
+
+				</a>
+				<!-- 1583 : SPE Online Store -->
+
+				<a class="mnu_item"
+					href="/web/store/index.shtml">
+				SPE Online Store
+
+				</a>
+				<!-- 1585 : JPT Online -->
+
+				<a class="mnu_item"
+					href="/spe/jpt/jsp/jpttoc/0,,1104_1585,00.html">
+				JPT Online
+
+				</a>
+				<!-- 1587 : SPE Technical Journals -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1587,00.html">
+				SPE Technical Journals
+
+				</a>
+				<!-- 1603 : Technical Interest Groups -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1603,00.html">
+				Technical Interest Groups
+
+				</a>
+				<!-- 1607 : Link to Other Resources -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,2396,1104_1736_0,00.html">
+				Link to Other Resources
+
+				</a>
+				</div>
+<!-- mb_1609Career Development -->
+<div id='mb_1609' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1611 : Membership Salary Survey -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1611,00.html">
+				Membership Salary Survey
+
+				</a>
+				<!-- 1633 : Career Center -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1633,00.html">
+				Career Center
+
+				</a>
+				<!-- 1613 : Continuing Education -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1613,00.html">
+				Continuing Education
+
+				</a>
+				<!-- 2749897 : Training Marketplace -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_2749897,00.html">
+				Training Marketplace
+
+				</a>
+				<!-- 1639 : Professional Competency -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1639,00.html">
+				Professional Competency
+
+				</a>
+				<!-- 2559187 : Professional Networks -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_2559187,00.html">
+				Professional Networks
+
+				</a>
+				<!-- 1647 : About Petroleum Engineers -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,2396,1104_1728_0,00.html">
+				About Petroleum Engineers
+
+				</a>
+				</div>
+<!-- mb_1649Young Members -->
+<div id='mb_1649' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1654 : Student Chapters -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1654,00.html">
+				Student Chapters
+
+				</a>
+				<!-- 1664 : Student News -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic_studentnews/0,,1104_1664,00.html">
+				Student News
+
+				</a>
+				<!-- 2665507 : Regional Student Councils -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_2665507,00.html">
+				Regional Student Councils
+
+				</a>
+				<!-- 1670 : Student Member Application -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1670,00.html">
+				Student Member Application
+
+				</a>
+				<!-- 2756403 : Virtual Student Expo -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_2756403,00.html">
+				Virtual Student Expo
+
+				</a>
+				<!-- 12209 : Student Paper Contests -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_12209,00.html">
+				Student Paper Contests
+
+				</a>
+				<!-- 2631606 : Graduating Seniors -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_2631606,00.html">
+				Graduating Seniors
+
+				</a>
+				<!-- 1619894 : Emerging Leaders -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1619894,00.html">
+				Emerging Leaders
+
+				</a>
+				<!-- 3722828 : The Way Ahead -->
+
+				<a class="mnu_item"
+					href="/web/twa/index.html">
+				The Way Ahead
+
+				</a>
+				<!-- 1037799 : Petroleum Scholarships -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,2396,1104_12167_0,00.html">
+				Petroleum Scholarships
+
+				</a>
+				<!-- 1672 : Petroleum Engineering and Technical Schools -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1672,00.html">
+				Petroleum Engineering and Technical Schools
+
+				</a>
+				<!-- 1676 : Energy Education -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,2396,1104_1720_0,00.html">
+				Energy Education
+
+				</a>
+				</div>
+<!-- mb_1678Sections -->
+<div id='mb_1678' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1680 : Find a Section - Map -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1680,00.html">
+				Find a Section - Map
+
+				</a>
+				<!-- 12321 : Find a Section - List -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/sectionlist/0,,1104_12321,00.html">
+				Find a Section - List
+
+				</a>
+				<!-- 1684 : Section News -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic_sectionnews/0,,1104_1684,00.html">
+				Section News
+
+				</a>
+				<!-- 1690 : Section Membership Contest -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1690,00.html">
+				Section Membership Contest
+
+				</a>
+				<!-- 1686 : Section Resources -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1686,00.html">
+				Section Resources
+
+				</a>
+				<!-- 1700 : Distinguished Lecturer Program -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1700,00.html">
+				Distinguished Lecturer Program
+
+				</a>
+				</div>
+<!-- mb_1708About Oil and Natural Gas -->
+<div id='mb_1708' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1712 : Oil and Gas Basics -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1712,00.html">
+				Oil and Gas Basics
+
+				</a>
+				<!-- 1710 : Glossary of Industry Terms -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1710,00.html">
+				Glossary of Industry Terms
+
+				</a>
+				<!-- 1718 : Industry Statistics -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1718,00.html">
+				Industry Statistics
+
+				</a>
+				<!-- 1720 : Energy Education -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1720,00.html">
+				Energy Education
+
+				</a>
+				<!-- 1726 : Petroleum Careers -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1726,00.html">
+				Petroleum Careers
+
+				</a>
+				<!-- 1730 : Petroleum Reserves & Resources Definitions -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1730,00.html">
+				Petroleum Reserves & Resources Definitions
+
+				</a>
+				<!-- 1732 : Unit Conversions -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1732,00.html">
+				Unit Conversions
+
+				</a>
+				<!-- 1736 : Links to Other Resources -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1736,00.html">
+				Links to Other Resources
+
+				</a>
+				</div>
+<!-- mb_1760About SPE -->
+<div id='mb_1760' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1816 : Leadership -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1816,00.html">
+				Leadership
+
+				</a>
+				<!-- 1832 : Membership -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1832,00.html">
+				Membership
+
+				</a>
+				<!-- 1850 : Media Center -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/mediacenter/0,,1104_1850,00.html">
+				Media Center
+
+				</a>
+				<!-- 1866 : Honors and Awards -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1866,00.html">
+				Honors and Awards
+
+				</a>
+				<!-- 1870 : Volunteers -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1870,00.html">
+				Volunteers
+
+				</a>
+				<!-- 1886 : Governance -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1886,00.html">
+				Governance
+
+				</a>
+				<!-- 1924 : Members Only -->
+
+				<a class="mnu_item"
+					href="/spe/secure/basic/0,,1104_1924,00.html">
+				Members Only
+
+				</a>
+				<!-- 12197 : Publications -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_12197,00.html">
+				Publications
+
+				</a>
+				<!-- 1918 : SPE Foundation -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1918,00.html">
+				SPE Foundation
+
+				</a>
+				<!-- 1936 : Contact Us -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1936,00.html">
+				Contact Us
+
+				</a>
+				</div>
+<!-- mb_1762Products and Services -->
+<div id='mb_1762' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1764 : eLibrary -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,2396,1104_1561_0,00.html">
+				eLibrary
+
+				</a>
+				<!-- 1546364 : OTC Papers Online -->
+
+				<a class="mnu_item"
+					href="http://www.otcnet.org/otcnet/otclibrary/index.html">
+				OTC Papers Online
+
+				</a>
+				<!-- 1766 : SPE Online Store -->
+
+				<a class="mnu_item"
+					href="/web/store/index.shtml">
+				SPE Online Store
+
+				</a>
+				<!-- 2217 : E&P Software Toolbox -->
+
+				<a class="mnu_item"
+					href="/web/eandptoolbox/index.html">
+				E&P Software Toolbox
+
+				</a>
+				<!-- 1509976 : E&P Consultants Directory -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1509976,00.html">
+				E&P Consultants Directory
+
+				</a>
+				<!-- 3697910 : R&D Providers Directory -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_3697910,00.html">
+				R&D Providers Directory
+
+				</a>
+				<!-- 1257896 : Engineering Tools -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1257896,00.html">
+				Engineering Tools
+
+				</a>
+				<!-- 1874487 : Alumni in Touch -->
+
+				<a class="mnu_item"
+					href="/spe/jsp/basic/0,,1104_1874487,00.html">
+				Alumni in Touch
+
+				</a>
+				</div>
+<!-- working on the regular menus now -->
+<div id='1551' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1030708 : Writing Guidelines -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1030708,00.html">Writing Guidelines
+     </a>
+</div>
+<div id='1555' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 2259978 : Forum Series -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_2259978,00.html">Forum Series
+     </a>
+<!-- 2259980 : Applied Technology Workshops -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_2259980,00.html">Applied Technology Workshops
+     </a>
+<!-- 1102468 : ATW Guidelines -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1102468,00.html">ATW Guidelines
+     </a>
+</div>
+<div id='1561' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1563 : Search eLibrary -->
+     <a class="mnu_item" href="/elibrary/app/search.do">Search eLibrary
+     </a>
+<!-- 1565 : Frequently Asked Questions -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1565,00.html">Frequently Asked Questions
+     </a>
+<!-- 1567 : Subscription Options -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1567,00.html">Subscription Options
+     </a>
+<!-- 1569 : Ordering, Delivery Options, Price -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1569,00.html">Ordering, Delivery Options, Price
+     </a>
+</div>
+<div id='1571' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1573 : Special Presentations -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1573,00.html">Special Presentations
+     </a>
+<!-- 1575 : Workshop Summaries -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1575,00.html">Workshop Summaries
+     </a>
+<!-- 1577 : Executive Speeches -->
+     <a class="mnu_item" href="/spe/jsp/executivespeechlist/0,2404,1104_1856_0,00.html">Executive Speeches
+     </a>
+<!-- 1579 : Distinguished Lecturer Presentations -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1579,00.html">Distinguished Lecturer Presentations
+     </a>
+</div>
+<div id='1583' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1256963 : How to Order -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1256963,00.html">How to Order
+     </a>
+</div>
+<div id='1587' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1589 : SPE Journal -->
+     <a class="mnu_item" href="/spe/jsp/journal/0,,1104_1589,00.html">SPE Journal
+     </a>
+<!-- 1591 : SPE Drilling & Completion -->
+     <a class="mnu_item" href="/spe/jsp/journal/0,,1104_1591,00.html">SPE Drilling & Completion
+     </a>
+<!-- 1593 : SPE Production & Facilities -->
+     <a class="mnu_item" href="/spe/jsp/journal/0,,1104_1593,00.html">SPE Production & Facilities
+     </a>
+<!-- 1595 : SPE Reservoir Evaluation & Engineering -->
+     <a class="mnu_item" href="/spe/jsp/journal/0,,1104_1595,00.html">SPE Reservoir Evaluation & Engineering
+     </a>
+<!-- 1597 : Peer Review  -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,2396,1104_1198383_0,00.html">Peer Review 
+     </a>
+<!-- 1599 : Subscription Information -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1599,00.html">Subscription Information
+     </a>
+</div>
+<div id='1633' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1635 : Employment Opportunities -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1635,00.html">Employment Opportunities
+     </a>
+<!-- 1637 : Resume / Career Links -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1637,00.html">Resume / Career Links
+     </a>
+</div>
+<div id='1613' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1615 : Short Courses -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1615,00.html"          onmouseover="menuItemMouseover(event, '1615');">
+          <span class="mnu_label">Short Courses</span><span class="mnu_arrow">&#9654;</span>
+     </a>
+<!-- 1623 : Distance Learning -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1623,00.html"          onmouseover="menuItemMouseover(event, '1623');">
+          <span class="mnu_label">Distance Learning</span><span class="mnu_arrow">&#9654;</span>
+     </a>
+<!-- 1037201 : Continuing Education Committee -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1037201,00.html">Continuing Education Committee
+     </a>
+</div>
+<div id='1639' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1641 : Advancement of Petroleum Professionals -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1641,00.html">Advancement of Petroleum Professionals
+     </a>
+<!-- 1643 : Competency Matrix: General Petroleum Engineering -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1643,00.html">Competency Matrix: General Petroleum Engineering
+     </a>
+<!-- 1053394 : Competency Matrix: Drilling Engineering -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1053394,00.html">Competency Matrix: Drilling Engineering
+     </a>
+<!-- 1053396 : Competency Matrix: Production Engineering -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1053396,00.html">Competency Matrix: Production Engineering
+     </a>
+<!-- 1053398 : Competency Matrix: Reservoir Engineering -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1053398,00.html">Competency Matrix: Reservoir Engineering
+     </a>
+<!-- 1053400 : Competency Matrix: Formation Evaluation -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1053400,00.html">Competency Matrix: Formation Evaluation
+     </a>
+<!-- 2649486 : Continuing Education Units -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_2649486,00.html">Continuing Education Units
+     </a>
+<!-- 1645 : Guide for Professional Conduct -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1645,00.html">Guide for Professional Conduct
+     </a>
+</div>
+<div id='1654' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1656 : Find a Chapter - Map -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1656,00.html">Find a Chapter - Map
+     </a>
+<!-- 12207 : Find a Chapter - List -->
+     <a class="mnu_item" href="/spe/jsp/chapterlist/0,,1104_12207,00.html">Find a Chapter - List
+     </a>
+<!-- 1660 : Starting a Chapter -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1660,00.html">Starting a Chapter
+     </a>
+<!-- 1662 : Student Chapter Resources -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1662,00.html">Student Chapter Resources
+     </a>
+<!-- 1037804 : Outstanding Student Chapter -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1037804,00.html">Outstanding Student Chapter
+     </a>
+</div>
+<div id='12209' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1037795 : International Contest -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1037795,00.html">International Contest
+     </a>
+<!-- 1037797 : Regional Contests -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1037797,00.html">Regional Contests
+     </a>
+<!-- 1260494 : Papers Presented -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1260494,00.html">Papers Presented
+     </a>
+</div>
+<div id='1672' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1674 : List of Schools -->
+     <a class="mnu_item" href="/spe/jsp/petschoollist/0,,1104_1674,00.html">List of Schools
+     </a>
+</div>
+<div id='1686' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1688 : Best Practices -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1688,00.html">Best Practices
+     </a>
+<!-- 1072393 : President's Award for Section Excellence -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1072393,00.html">President's Award for Section Excellence
+     </a>
+<!-- 1694 : Operations Manual -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1694,00.html">Operations Manual
+     </a>
+<!-- 1696 : Guidelines for Section Websites / Publications -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1696,00.html">Guidelines for Section Websites / Publications
+     </a>
+<!-- 1698 : Section Awards -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1698,00.html">Section Awards
+     </a>
+</div>
+<div id='1700' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008526 : Program Description -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008526,00.html">Program Description
+     </a>
+<!-- 1702 : Current Lecturers / Topics -->
+     <a class="mnu_item" href="/web/dl/topics.html">Current Lecturers / Topics
+     </a>
+<!-- 1704 : Schedule -->
+     <a class="mnu_item" href="/web/dl/calendar.html">Schedule
+     </a>
+<!-- 1706 : Prior Lecturers / Topics -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1706,00.html">Prior Lecturers / Topics
+     </a>
+</div>
+<div id='1712' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008218 : Introduction to Oil and Gas -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008218,00.html">Introduction to Oil and Gas
+     </a>
+<!-- 1714 : Frontiers in Technology -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1714,00.html">Frontiers in Technology
+     </a>
+<!-- 3229384 : Technology Videos -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_3229384,00.html">Technology Videos
+     </a>
+<!-- 1716 : Petroleum History -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1716,00.html">Petroleum History
+     </a>
+<!-- 1008232 : Petroleum Museums -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008232,00.html">Petroleum Museums
+     </a>
+</div>
+<div id='1720' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1722 : Learn About Energy -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1722,00.html">Learn About Energy
+     </a>
+<!-- 1724 : Teaching Materials -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1724,00.html">Teaching Materials
+     </a>
+<!-- 1008238 : Getting Involved -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008238,00.html">Getting Involved
+     </a>
+<!-- 1111017 : Magic Suitcase -->
+     <a class="mnu_item" href="/web/suitcase/index.html">Magic Suitcase
+     </a>
+</div>
+<div id='1726' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008240 : Industry Career Choices -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008240,00.html">Industry Career Choices
+     </a>
+<!-- 1728 : Importance of Petroleum Engineers -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1728,00.html">Importance of Petroleum Engineers
+     </a>
+<!-- 12163 : Engineering Careers -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12163,00.html">Engineering Careers
+     </a>
+<!-- 12165 : Petroleum Engineering Schools -->
+     <a class="mnu_item" href="/spe/jsp/petschoollist/0,2399,1104_1674_0,00.html">Petroleum Engineering Schools
+     </a>
+<!-- 12167 : Petroleum Scholarships -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12167,00.html">Petroleum Scholarships
+     </a>
+</div>
+<div id='1730' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008242 : Development of Definitions -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008242,00.html">Development of Definitions
+     </a>
+<!-- 12169 : Petroleum Reserves Definitions -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12169,00.html">Petroleum Reserves Definitions
+     </a>
+<!-- 12171 : Petroleum Resources Classifications -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12171,00.html">Petroleum Resources Classifications
+     </a>
+<!-- 3306579 : Glossary of Terms Used -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_3306579,00.html">Glossary of Terms Used
+     </a>
+<!-- 12173 : Auditing Standards for Reserves -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12173,00.html">Auditing Standards for Reserves
+     </a>
+</div>
+<div id='1736' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1738 : News Sources -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1738,00.html">News Sources
+     </a>
+<!-- 1740 : Geological Surveys -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1740,00.html">Geological Surveys
+     </a>
+<!-- 1742 : Government Agencies -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1742,00.html">Government Agencies
+     </a>
+<!-- 1744 : Professional Organizations -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1744,00.html">Professional Organizations
+     </a>
+<!-- 1746 : Research Institutes and Consortia -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1746,00.html">Research Institutes and Consortia
+     </a>
+<!-- 1750 : Oil and Gas Companies -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1750,00.html">Oil and Gas Companies
+     </a>
+<!-- 1752 : Environmental / Public Interest Groups -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1752,00.html">Environmental / Public Interest Groups
+     </a>
+</div>
+<div id='1816' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1818 : Board Of Directors -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1818,00.html"          onmouseover="menuItemMouseover(event, '1818');">
+          <span class="mnu_label">Board Of Directors</span><span class="mnu_arrow">&#9654;</span>
+     </a>
+<!-- 12111 : Board Actions -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12111,00.html">Board Actions
+     </a>
+<!-- 1824 : Standing Committees -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1824,00.html">Standing Committees
+     </a>
+<!-- 1828 : Annual Reports -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,2396,1104_1858_0,00.html">Annual Reports
+     </a>
+<!-- 1822 : Executive Speeches -->
+     <a class="mnu_item" href="/spe/jsp/executivespeechlist/0,2404,1104_1856_0,00.html">Executive Speeches
+     </a>
+</div>
+<div id='1832' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1834 : Join SPE -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1834,00.html"          onmouseover="menuItemMouseover(event, '1834');">
+          <span class="mnu_label">Join SPE</span><span class="mnu_arrow">&#9654;</span>
+     </a>
+<!-- 1840 : Member Benefits -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1840,00.html"          onmouseover="menuItemMouseover(event, '1840');">
+          <span class="mnu_label">Member Benefits</span><span class="mnu_arrow">&#9654;</span>
+     </a>
+<!-- 1836 : Membership Directory -->
+     <a class="mnu_item" href="/mbrservices/directory/index.cfm">Membership Directory
+     </a>
+<!-- 1838 : Update Member Information -->
+     <a class="mnu_item" href="https://speonline.spe.org/mbrservices/index.cfm">Update Member Information
+     </a>
+<!-- 1844 : Pay Dues Online -->
+     <a class="mnu_item" href="https://speonline.spe.org/mbrservices/index.cfm">Pay Dues Online
+     </a>
+<!-- 1846 : Recruit New Members -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1846,00.html"          onmouseover="menuItemMouseover(event, '1846');">
+          <span class="mnu_label">Recruit New Members</span><span class="mnu_arrow">&#9654;</span>
+     </a>
+<!-- 1848 : Membership Demographics -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1848,00.html">Membership Demographics
+     </a>
+<!-- 1004814 : Member Recognition -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1004814,00.html"          onmouseover="menuItemMouseover(event, '1004814');">
+          <span class="mnu_label">Member Recognition</span><span class="mnu_arrow">&#9654;</span>
+     </a>
+<!-- 1072705 : Join AAPG / SEG -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1072705,00.html">Join AAPG / SEG
+     </a>
+</div>
+<div id='1850' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1852 : Press Releases -->
+     <a class="mnu_item" href="/spe/jsp/pressreleaselist/0,,1104_1852,00.html">Press Releases
+     </a>
+<!-- 1854 : Executive Bios -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1854,00.html">Executive Bios
+     </a>
+<!-- 1856 : Executive Speeches -->
+     <a class="mnu_item" href="/spe/jsp/executivespeechlist/0,,1104_1856,00.html">Executive Speeches
+     </a>
+<!-- 1858 : Annual Reports -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1858,00.html">Annual Reports
+     </a>
+<!-- 1198005 : SPE Global Link -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1198005,00.html">SPE Global Link
+     </a>
+<!-- 1862 : Archive -->
+     <a class="mnu_item" href="/spe/jsp/mediacenterarchive/0,,1104_1862,00.html">Archive
+     </a>
+<!-- 1860 : SPE Logos Images -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1860,00.html">SPE Logos Images
+     </a>
+<!-- 1864 : Advertising Info -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1864,00.html">Advertising Info
+     </a>
+</div>
+<div id='1866' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008528 : List of Honors and Awards -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008528,00.html">List of Honors and Awards
+     </a>
+<!-- 1868 : Award Criteria and Nomination Procedures -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1868,00.html">Award Criteria and Nomination Procedures
+     </a>
+</div>
+<div id='1870' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1872 : Volunteer Recognition -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1872,00.html">Volunteer Recognition
+     </a>
+<!-- 1882 : Volunteer Opportunities -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1882,00.html">Volunteer Opportunities
+     </a>
+<!-- 1880 : Distinguished Lecturer Program -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1880,00.html">Distinguished Lecturer Program
+     </a>
+<!-- 1884 : Submit Your Ideas -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1884,00.html">Submit Your Ideas
+     </a>
+</div>
+<div id='1886' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1888 : Mission -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1888,00.html">Mission
+     </a>
+<!-- 1890 : History -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1890,00.html">History
+     </a>
+<!-- 1894 : Policies and Procedures -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1894,00.html"          onmouseover="menuItemMouseover(event, '1894');">
+          <span class="mnu_label">Policies and Procedures</span><span class="mnu_arrow">&#9654;</span>
+     </a>
+<!-- 1910 : Guide for Professional Conduct -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1910,00.html">Guide for Professional Conduct
+     </a>
+<!-- 1916 : OneSPE -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1916,00.html">OneSPE
+     </a>
+<!-- 1912 : Long Range Plan 2000 -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1912,00.html">Long Range Plan 2000
+     </a>
+<!-- 1914 : Leadership Conference -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1914,00.html">Leadership Conference
+     </a>
+<!-- 12187 : Discipline Categories -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12187,00.html">Discipline Categories
+     </a>
+</div>
+<div id='1924' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1926 : Membership Directory -->
+     <a class="mnu_item" href="/mbrservices/directory/index.cfm">Membership Directory
+     </a>
+<!-- 1928 : Technical Interest Groups -->
+     <a class="mnu_item" href="http://communities.spe.org/metadot/index.pl?iid=2143">Technical Interest Groups
+     </a>
+<!-- 1930 : New Member Information -->
+     <a class="mnu_item" href="/spe/secure/basic/0,,1104_1930,00.html">New Member Information
+     </a>
+<!-- 1932 : SPE Email -->
+     <a class="mnu_item" href="http://www.spemail.org">SPE Email
+     </a>
+<!-- 1934 : Online Communities -->
+     <a class="mnu_item" href="/communities/metadot/index.pl">Online Communities
+     </a>
+<!-- 1051066 : SPE Staff Contacts -->
+     <a class="mnu_item" href="/spe/secure/basic/0,,1104_1051066,00.html">SPE Staff Contacts
+     </a>
+</div>
+<div id='12197' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 12199 : JPT Online -->
+     <a class="mnu_item" href="/spe/jpt/jsp/jpttoc/0,2441,1104_1585_0,00.html">JPT Online
+     </a>
+<!-- 12201 : SPE Technical Journals -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,2396,1104_1587_0,00.html">SPE Technical Journals
+     </a>
+<!-- 1198383 : Peer Review -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1198383,00.html">Peer Review
+     </a>
+<!-- 1046807 : Books, Monographs, Reprints -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1046807,00.html">Books, Monographs, Reprints
+     </a>
+<!-- 1198381 : Author Information -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1198381,00.html">Author Information
+     </a>
+</div>
+<div id='1918' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1920 : Gus Archie Scholarship -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1920,00.html">Gus Archie Scholarship
+     </a>
+<!-- 1499392 : Tomorrow's SPE: Investing in SPE.org -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1499392,00.html">Tomorrow's SPE: Investing in SPE.org
+     </a>
+<!-- 1673167 : Recognition of Contributors -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1673167,00.html">Recognition of Contributors
+     </a>
+<!-- 3042404 : Omega Association -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_3042404,00.html">Omega Association
+     </a>
+</div>
+<div id='1936' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008262 : Contact Information -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008262,00.html">Contact Information
+     </a>
+<!-- 12195 : Frequently Asked Questions -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12195,00.html">Frequently Asked Questions
+     </a>
+<!-- 1938 : Feedback Form -->
+     <a class="mnu_item" href="/weblocked/feedback/index.shtml">Feedback Form
+     </a>
+<!-- 2319691 : SPE Logos/Images -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_2319691,00.html">SPE Logos/Images
+     </a>
+</div>
+<div id='1615' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1617 : Courses Offered -->
+     <a class="mnu_item" href="/spe/jsp/shortcourselist/0,,1104_1617_0_alpha,00.html">Courses Offered
+     </a>
+<!-- 1619 : Course Schedule -->
+     <a class="mnu_item" href="/spe/jsp/shortcourseschedulelist/0,,1104_1619_0_alpha,00.html">Course Schedule
+     </a>
+<!-- 1621 : Instructors -->
+     <a class="mnu_item" href="/spe/jsp/courseinstructorlist/0,,1104_1621,00.html">Instructors
+     </a>
+</div>
+<div id='1623' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1625 : Courses Offered -->
+     <a class="mnu_item" href="/spe/jsp/distancelearninglist/0,,1104_1625,00.html">Courses Offered
+     </a>
+<!-- 1627 : Demo Course -->
+     <a class="mnu_item" href="http://www.spe.org/learning/demo_sm/index.html">Demo Course
+     </a>
+<!-- 1629 : Frequently Asked Questions -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1629,00.html">Frequently Asked Questions
+     </a>
+<!-- 1631 : Registration -->
+     <a class="mnu_item" href="/weblocked/learning/register.shtml">Registration
+     </a>
+</div>
+<div id='1818' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008244 : Current Board Roster -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008244,00.html">Current Board Roster
+     </a>
+<!-- 12175 : Former Presidents -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12175,00.html">Former Presidents
+     </a>
+<!-- 1820 : Nomination / Election Procedures -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1820,00.html">Nomination / Election Procedures
+     </a>
+</div>
+<div id='1834' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008248 : Why Join SPE? -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008248,00.html">Why Join SPE?
+     </a>
+<!-- 12181 : Membership Requirements -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12181,00.html">Membership Requirements
+     </a>
+<!-- 1121937 : Dues Structure -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1121937,00.html">Dues Structure
+     </a>
+<!-- 1506341 : Dues Payment Options -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1506341,00.html">Dues Payment Options
+     </a>
+<!-- 12183 : Online Application -->
+     <a class="mnu_item" href="/weblocked/join/join.shtml">Online Application
+     </a>
+<!-- 1072703 : Section Affiliation Form -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1072703,00.html">Section Affiliation Form
+     </a>
+</div>
+<div id='1840' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008250 : Benefits of Membership -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1008250,00.html">Benefits of Membership
+     </a>
+<!-- 12177 : Insurance Program -->
+     <a class="mnu_item" href="http://www.speinsurance.com/">Insurance Program
+     </a>
+<!-- 12179 : Discounts / Other Benefits -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12179,00.html">Discounts / Other Benefits
+     </a>
+</div>
+<div id='1846' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1008252 : Member Recruitment Contest -->
+     <a class="mnu_item" href="/web/membership/index.html">Member Recruitment Contest
+     </a>
+<!-- 12185 : Recruiting Tips -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_12185,00.html">Recruiting Tips
+     </a>
+<!-- 1002801 : Development Appreciation Awards -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1002801,00.html">Development Appreciation Awards
+     </a>
+</div>
+<div id='1004814' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1004816 : Century Club Members -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1004816,00.html">Century Club Members
+     </a>
+<!-- 1004822 : Legion of Honor Members -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1004822,00.html">Legion of Honor Members
+     </a>
+<!-- 1004820 : Senior Members -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1004820,00.html">Senior Members
+     </a>
+<!-- 1004818 : 25 Year Club Members -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1004818,00.html">25 Year Club Members
+     </a>
+</div>
+<div id='1894' class='menu' onmouseover='menuMouseover(event);'>
+<!-- 1896 : Privacy Policy -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1896,00.html">Privacy Policy
+     </a>
+<!-- 1902 : Links Policy -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1902,00.html">Links Policy
+     </a>
+<!-- 1904 : Data Use Policy -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1904,00.html">Data Use Policy
+     </a>
+<!-- 1906 : Terms of Service -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1906,00.html">Terms of Service
+     </a>
+<!-- 1553056 : Guidelines for Online Communities -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1553056,00.html">Guidelines for Online Communities
+     </a>
+<!-- 1900 : Permissions Policy -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1900,00.html">Permissions Policy
+     </a>
+<!-- 1046084 : Editorial Policy -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1046084,00.html">Editorial Policy
+     </a>
+<!-- 1898 : Antitrust Policy -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1898,00.html">Antitrust Policy
+     </a>
+<!-- 1131706 : Conflict of Interest Statement -->
+     <a class="mnu_item" href="/spe/jsp/basic/0,,1104_1131706,00.html">Conflict of Interest Statement
+     </a>
+<!-- 1908 : Meetings Policy -->
+     <a class="mnu_item" href="/specma/binary/files/1048507MeetingsPolicy-RevSep02.pdf">Meetings Policy
+     </a>
+</div>
+
+<iframe id="if_0" name="if_0" class="blocker"></iframe>
+<!-- end all menus -->
+
+<!-- shadow backdrop begin -->
+<table width="100%" border=0 cellspacing="0" cellpadding="0" border=0>
+  <tr>     
+		<td width="160" height="8" background="/spe/images/shadow_top.gif"><img src="/spe/images/spacer.gif" width="160" height="1"></td>
+		<td width="8" height="8"><img src="/spe/images/shadow_top_corner.gif" width="8" height="8"></td>
+		<td width="100%" height="8" background="/spe/images/shadow_top.gif"><img src="/spe/images/spacer.gif"></td>
+  </tr>
+</table>
+<!-- shadow backdrop end -->
+<!-- ------------------------------- END HEADER -------------------------------------- -->
+
+<!-- include the page keywords -->
+
+<!-- ------------------------------- BEGIN KEYWORDS -------------------------------------- -->
+ 
+
+
+
+
+
+
+  
+
+<meta name="keywords" content="Society of Petroleum Engineers, SPE, petroleum, oil, natural gas, crude oil, exploration and production, E&P">
+<meta name="description" content="Society of Petroleum Engineers">
+<!-- ------------------------------- END KEYWORDS -------------------------------------- -->
+  
+<!-- include the page title -->
+ 
+
+
+
+
+
+
+
+
+<title>Contact Us</title>
+
+</head>
+   
+<body>
+<!-- build the content area workspace -->
+<table class="component" cellpadding="0" cellspacing="0">
+<tr>
+	<td class="navcomponent" border=1 width="150">
+	<!-- include the left nav -->
+	<!-- Vignette V6 Tue Mar 01 13:25:43 2005 -->
+ 
+<!-- ------------------------------- BEGIN NAV -------------------------------------- -->
+ 
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/JavaScript" src="/spe/includes/browser.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="/spe/includes/menu.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="/spe/includes/utils.js"></script>
+
+<link rel="stylesheet" href="/spe/includes/spe_menu.css" type="text/css" >
+<link rel="stylesheet" href="/spe/includes/site.css" type="text/css" >
+<link rel="stylesheet" href="/ewebeditpro/spe_body_styles.css" type="text/css" >
+
+<!-- Left column content area Begin -->
+<table class="menubar_left" cellspacing="0">
+	<!-- dynamically building left nav links -->
+
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/basic/0,,1104_1816,00.html');show_menu(this, '1816');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/jsp/basic/0,,1104_1816,00.html'">
+			Leadership
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/basic/0,,1104_1832,00.html');show_menu(this, '1832');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/jsp/basic/0,,1104_1832,00.html'">
+			Membership
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/mediacenter/0,,1104_1850,00.html');show_menu(this, '1850');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/jsp/mediacenter/0,,1104_1850,00.html'">
+			Media Center
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/basic/0,,1104_1866,00.html');show_menu(this, '1866');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/jsp/basic/0,,1104_1866,00.html'">
+			Honors and Awards
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/basic/0,,1104_1870,00.html');show_menu(this, '1870');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/jsp/basic/0,,1104_1870,00.html'">
+			Volunteers
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/basic/0,,1104_1886,00.html');show_menu(this, '1886');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/jsp/basic/0,,1104_1886,00.html'">
+			Governance
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/secure/basic/0,,1104_1924,00.html');show_menu(this, '1924');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/secure/basic/0,,1104_1924,00.html'">
+			Members Only
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/basic/0,,1104_12197,00.html');show_menu(this, '12197');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/jsp/basic/0,,1104_12197,00.html'">
+			Publications
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/basic/0,,1104_1918,00.html');show_menu(this, '1918');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/jsp/basic/0,,1104_1918,00.html'">
+			SPE Foundation
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+			<tr>
+			<td class="mbr_button_left"
+			onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/basic/0,,1104_1936,00.html');show_menu(this, '1936');"
+			onmouseout="td_mouseout(this, 'white');"
+			onClick="window.location='/spe/jsp/basic/0,,1104_1936,00.html'">
+			Contact Us
+			</td>
+			<td class="navcomponent" align='top' width='8' background='/spe/images/shadow_left.gif'></td>
+			</tr>
+			
+	<!-- end dynamically building left nav links -->
+	<!-- begin site links  -->
+	<tr>
+		<td class="leftnav"><img src="/spe/images/spacer.gif" width="151" height="1"></td>
+		<td width="8" background="/spe/images/shadow_left.gif">&nbsp;</td>	
+	</tr>	
+	<tr>
+		<td class="leftnav">
+			<table width="95%" class="divider" border=0 cellpadding=0 cellspacing="0"><tr>
+				<td class="greydivider">Site Links</td>
+			</tr></table>
+		</td>
+		<td width="8" background="/spe/images/shadow_left.gif">&nbsp;</td>	
+	</tr>
+	<tr>
+		<td class="menubar_left" onmouseover="td_mouseover(this, '#CCCCCC', '/spe/jsp/basic/0,2396,1104_1008248_0,00.html')" onMouseOut="td_mouseout(this, 'white')" onClick="window.location='/spe/jsp/basic/0,2396,1104_1008248_0,00.html'">
+			Join SPE
+		</td>
+		<td width="8" background="/spe/images/shadow_left.gif">&nbsp;</td>	
+	</tr>		
+	<tr>
+		<td class="menubar_left" onmouseover="td_mouseover(this, '#CCCCCC', 'https://www.spe.org/mbrservices/index.cfm')" onMouseOut="td_mouseout(this, 'white')" onClick="window.location='https://www.spe.org/mbrservices/index.cfm'">
+			Pay Dues Online                                       
+		</td>
+		<td width="8" background="/spe/images/shadow_left.gif">&nbsp;</td>	
+	</tr>		
+	<tr>
+		<td class="menubar_left" onmouseover="td_mouseover(this, '#CCCCCC', '/mbrservices/directory/index.cfm')" onMouseOut="td_mouseout(this, 'white')" onClick="window.location='/mbrservices/directory/index.cfm'">
+			Membership Directory                                  
+		</td>
+		<td width="8" background="/spe/images/shadow_left.gif">&nbsp;</td>	
+	</tr>		
+	<tr>
+	<td class="menubar_left" onmouseover="td_mouseover(this, '#CCCCCC', 'https://www.spe.org/mbrservices/index.cfm')" onMouseOut="td_mouseout(this, 'white')" onClick="window.location='/mbrservices/index.cfm'">
+			Update Information                                  
+		</td>
+		<td width="8" background="/spe/images/shadow_left.gif">&nbsp;</td>	
+	</tr>		
+	<!-- end site links  -->
+	<!-- shadow backdrop begin -->
+	<tr>
+    <td height="8" align="right" valign="top" background="/spe/images/shadow_top.gif"></td>
+    <td height="8" align="right" valign="top" background="/spe/images/shadow_end.gif"></td>
+	</tr>
+	<!-- shadow backdrop end -->
+</table>
+<!-- Left column content area End -->
+<!-- ------------------------------- END NAV ---------------------------------------- -->
+
+	</td>
+	<!-- include the breadcrumb -->
+	<td width="100%" class="content">
+	<!-- we have to make a table since we want the printer friendly version on the right of breadcrumb -->
+	<table width="100%" cellspacing="0">
+		<tr>
+			<td>
+			<!-- Vignette V6 Tue Mar 01 14:20:00 2005 -->
+
+<!-- ------------------------------- BEGIN BREADCRUMB -------------------------------------- -->
+ 
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/spe/includes/site.css" type="text/css" >
+
+<!-- Breadcrumb Nav Begin -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr><td> 
+	<!-- dynamically building breadcrumb links -->
+<!-- starting breadcrumb call -->
+<!-- got menus List back -->
+<!-- generating iterator -->
+<!-- has items -->
+  <a class="breadcrumb" href="/spe/jsp/basic/0,,1104_1760,00.html">About SPE</a>
+
+<!-- has items -->
+ |   <a class="breadcrumb" href="/spe/jsp/basic/0,,1104_1936,00.html">Contact Us</a>
+
+
+	<!-- end dynamically building breadcrumb links -->
+	</td></tr>
+</table>
+<!-- ------------------------------- END BREADCRUMB -------------------------------------- -->
+<!-- do not delete this comment: used by spider to know when to start getting content -->
+<!-- SPIDERSTART -->
+
+			 
+
+
+
+
+
+
+
+
+<title>Contact Us</title>
+			</td>
+			<td align="right">
+				<!-- include printer friendly version link -->
+				<img src="/spe/images/printer_friendly.gif" name="pf" width="145" height="35" border="0" id="pf"
+					onMouseOver="style.cursor='hand'" 
+					onMouseOut="style.cursor='default'" 
+					onClick="window.open('/spe/jsp/basic_pf/0,,1104_1936_0,00.html', 'pfwin')"/>
+			</td>
+		</tr>
+	</table>
+	<!-- place content -->
+	<!---------------------- INSERT TEMPLATE CONTENT AREA HERE ----------------------------- -->
+	
+<!-- ------------------------------- BEGIN HTMLBLOCK -------------------------------------- -->
+ 
+
+
+
+
+
+
+
+
+
+
+	
+
+<link rel="stylesheet" href="/ewebeditpro/spe_body_styles.css" type="text/css" >
+<br><br><div class="maroontitle">Contact Us</div><br><br>
+<table cellpadding="0" width="100%" border="0">
+<tbody>
+<tr>
+<td width="49%" bgcolor="#cccccc"><strong>Americas&#160;Office - SPE Headquarters</strong> </td>
+<td width="2%">&#160;</td>
+<td width="49%" bgcolor="#cccccc"><strong>Houston Office</strong> </td>
+</tr>
+
+<tr>
+<td valign="top" width="49%" height="122">
+<p><em>Office Hours</em> : 0730 to 1930 CST Monday-Friday<br />
+Mail: P.O. Box 833836, Richardson, TX 75083-3836, U.S.A.<br />
+Shipping: 222 Palisades Creek Dr., Richardson, TX 75080, U.S.A.<br />
+Phone: 1.972.952.9393<br />
+Phone: 1.800.456.6863 (toll free in North America)<br />
+Fax: 1.972.952.9435<br />
+Email:&#160;<a href="mailto:spedal@spe.org">spedal@spe.org</a><br />
+</p>
+</td>
+<td width="2%" height="122">&#160;</td>
+<td valign="top" width="49%" height="122">
+<p><em>Office Hours</em> : 0830 to 1700 CST<br />
+Mail: 10777 Westheimer<br />
+Suite #335<br />
+Houston, TX 77042<br />
+Phone: 1.713.779.9595<br />
+Fax: 1.713.779.4216<br />
+Email:&#160;<a href="mailto:spehou@spe.org">spehou@spe.org</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table cellpadding="1" width="100%" border="0">
+<tbody>
+<tr>
+<td width="32%" bgcolor="#cccccc"><strong>Middle East&#160;Office</strong></td>
+<td width="2%"></td>
+<td width="32%" bgcolor="#cccccc"><strong>Asia Pacific&#160;Office</strong> </td>
+<td width="2%">&#160;</td>
+<td width="32%" bgcolor="#cccccc"><strong>Europe and Russia&#160;Office</strong> </td>
+</tr>
+
+<tr>
+<td valign="top"><em>Office Hours:</em> 0900 to 1800 (Sunday through Thursday)<br />
+Mail: P.O. Box 502217<br />
+Shipping: Office G23, Block 2B<br />
+Dubai Knowledge Village, TECOM Free-Zone<br />
+Dubai<br />
+UAE<br />
+Tel: 971.4.390.3540<br />
+Fax: 971.4.366.4648<br />
+Email: <a href="mailto:spedub@spe.org">spedub@spe.org</a></td>
+<td></td>
+<td valign="top"><em>Office Hours</em> : 0830 to 1730<br />
+Mail: Suite B-11-11<br />
+Level 11, Block B, Plaza Mont'Kiara<br />
+Jalan Bukit Kiara, Mont'Kiara<br />
+50480 Kuala Lumpur<br />
+Malaysia<br />
+Tel: 60.3.6201.2330<br />
+Fax: 60.3.6201.3220<br />
+Email:&#160;<a href="mailto:spekl@spe.org">spekl@spe.org</a></td>
+<td>&#160;</td>
+<td valign="top">
+<p><em>Office Hours</em> : 0900 to 1700<br />
+Mail: Part Third Floor East<br />
+Portland House<br />
+4 Great Portland Street<br />
+London W1W 8QJ<br />
+United Kingdom<br />
+Tel: 44.20.7299.3300<br />
+Fax: 44.20.7299.3309<br />
+Email:&#160;<a href="mailto:spelon@spe.org">spelon@spe.org</a><br />
+<a href="/specma/binary/files/1948683SPELondon_Map.pdf">Map</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table cellpadding="0" width="100%" align="center" border="0">
+<tbody>
+<tr>
+<td width="49%" bgcolor="#003366">&#160;<span class="header3_white">Customer Service</span> </td>
+<td width="2%">&#160;</td>
+<td bgcolor="#003366">&#160;<span class="header3_white">Email Contacts</span></td>
+</tr>
+
+<tr>
+<td valign="top">
+<table cellpadding="1" width="100%" align="center" border="0">
+<tbody>
+<tr>
+<td>
+<p>To provide the best possible service to our customers, calls are handled around the clock by the SPE offices. While some inquiries may only be able to be handled by staff in the Dallas office, staff from the Dubai, Kuala Lumpur or London office will make every effort to assist you if you call during their business hours.&#160;<span class="header3_burg">SPE&#160;Customer Service&#160;staff are dedicated to prompt response.&#160;They can handle most customer inquiries.&#160;Other SPE staff may be traveling or otherwise unable to respond as promptly as Customer Service.</span>&#160;If you need assistance, please contact <a href="mailto:service@spe.org">service@spe.org</a> or 1.972.952.9393.</p>
+
+<p>You can update your SPE.org log-in profile, email, phone and address information online.&#160;&#160;&#160; <a href="https://speonline.spe.org/mbrservices/index.cfm">Update information</a></p>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#003366">&#160;<span class="header3_white">President's Mailbox</span></td>
+</tr>
+
+<tr>
+<td>
+<p>&#160;If you have issues or concerns that you wish to bring to the attention of the SPE President, you may send your email to <a href="mailto:president@spe.org">president@spe.org</a>.&#160; You may contact SPE's Executive Director at <a href="mailto:execdir@spe.org">execdir@spe.org</a>.</p>
+
+<p><a href="/spe/jsp/basic/0,2396,1104_1008244_0,00.html">SPE Board of Directors Listing</a><br />
+</p>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#003366">&#160;<span class="header3_white">Feedback Form</span></td>
+</tr>
+
+<tr>
+<td>Instead of sending an email, you may prefer to complete our&#160;<a href="/weblocked/feedback/index.shtml">online feedback form</a>. We welcome your comments and input on our operations.</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>&#160;</td>
+<td valign="top">
+<p>Advertising Information - <a href="mailto:sales@spe.org">sales@spe.org</a><br />
+ATWs - <a href="mailto:atw@spe.org">atw@spe.org</a><br />
+Awards - <a href="mailto:awards@spe.org">awards@spe.org</a><br />
+Board and Committee Liaison - <a href="mailto:bd_liaison@spe.org">bd_liaison@spe.org</a><br />
+Book/Paper Orders - <a href="mailto:books@spe.org">books@spe.org</a><br />
+Conference Programming/Abstract Submittal - <a href="mailto:tech-prog@spe.org">tech-prog@spe.org</a><br />
+Customer Service - <a href="mailto:service@spe.org">service@spe.org</a><br />
+Distinguished Lecturer Program - <a href="mailto:disting_lect@spe.org">disting_lect@spe.org</a><br />
+Dues Inquiries/Membership Application - <a href="mailto:service@spe.org">service@spe.org</a><br />
+Exhibit Space Sales - <a href="mailto:sales@spe.org">sales@spe.org</a><br />
+Journal of Petroleum Technology - <a href="mailto:jpt@spe.org">jpt@spe.org</a><br />
+Manuscripts - <a href="mailto:paper_admin@spe.org">paper_admin@spe.org</a><br />
+Member Services - <a href="mailto:service@spe.org">service@spe.org</a><br />
+Peer Review - <a href="mailto:peer_review@spe.org">peer_review@spe.org</a><br />
+Professional Development/Student Services - <a href="mailto:professionaldevelopment@spe.org">professionaldevelopment@spe.org</a><br />
+Publications Advertising - <a href="mailto:robg@oilonline.com">robg@oilonline.com</a><br />
+Section Services - <a href="mailto:sections@spe.org">sections@spe.org</a><br />
+SPE Forum Series - <a href="mailto:forums@spe.org">forums@spe.org</a><br />
+SPE Technical Journals - <a href="mailto:journals@spe.org">journals@spe.org</a><br />
+Subscriptions - <a href="mailto:service@spe.org">service@spe.org</a><br />
+Web advertising - <a href="mailto:sales@spe.org">sales@spe.org</a><br />
+Website - <a href="mailto:web@spe.org">web@spe.org</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+<!-- ------------------------------- END HTMLBLOCK -------------------------------------- -->
+	<!---------------------- INSERT TEMPLATE CONTENT AREA HERE ----------------------------- -->
+	</td>
+	<td class="component">
+	<!-- include the ads and related links -->
+	<!-- Vignette V6 Thu Mar 03 14:44:01 2005 -->
+
+<!-- ------------------------------- BEGIN ADS -------------------------------------- -->
+ 
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/spe/includes/site.css" type="text/css" >
+
+<!-- Right column ad area Begin -->
+<br><br>
+<table class="ads" cellspacing="0" border=0>
+	<!-- dynamically building add links -->
+	
+<!-- ad count: 0 -->
+
+	<!-- end dynamically building add links -->
+	<!-- building related links -->
+	
+	
+
+	
+	<!-- end related links-->
+</table>
+<!-- Right column ad area End -->
+<!-- ------------------------------- END ADS -------------------------------------- -->
+
+	</td>
+</tr>
+</table>
+   
+<!-- include the footer -->
+<!-- Vignette V6 Tue Feb 22 10:43:40 2005 -->
+
+<!-- ------------------------------- BEGIN FOOTER -------------------------------------- -->
+ 
+
+
+
+
+
+
+<link rel="stylesheet" href="/spe/includes/site.css" type="text/css" >
+
+<!-- site_id: 1104 -->
+<!-- channel_id: 1539 -->
+
+
+<!-- do not delete this comment: used by spider to know when to stop getting content -->
+<!-- SPIDERSTOP -->
+
+
+<table class="normal" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+		<td>
+		<!-- footer will be pulled as a content item -->
+		
+		 
+		
+<!-- ------------------------------- BEGIN HTMLBLOCK -------------------------------------- -->
+ 
+
+
+
+
+
+
+
+
+
+	<link rel="stylesheet" href="/ewebeditpro/spe_body_styles.css" type="text/css" >
+<table bordercolor="#ffffff" cellspacing="0" cellpadding="0" width="100%" bgcolor="#660000" border="2">
+<tbody>
+<tr valign="center" align="middle">
+<td style="FONT-WEIGHT: bold; COLOR: #ffffff" width="20%" bgcolor="#660000"><span class="header3_white"><a href="/spe/jsp/homepage"><span class="header3_white">Home</span></a><a href="http://www.spe.org/"></a></span></td>
+<td style="FONT-WEIGHT: bold; COLOR: #ffffff" width="20%" bgcolor="#660000"><a href="/spe/jsp/basic_sitemap/0,2396,1104_12134_0,00.html"><span class="header3_white">Site Map</span></a> </td>
+<td style="FONT-WEIGHT: bold; COLOR: #ffffff" width="20%" bgcolor="#660000"><a href="/spe/jsp/basic/0,2396,1104_1896_0,00.html"><span class="header3_white">Privacy Policy</span></a> </td>
+<td style="FONT-WEIGHT: bold; COLOR: #ffffff" width="20%" bgcolor="#660000"><a href="/spe/jsp/basic/0,2396,1104_1864_0,00.html"><span class="header3_white">Advertising</span></a></td>
+<td style="FONT-WEIGHT: bold; COLOR: #ffffff" width="20%" bgcolor="#660000"><a href="/spe/jsp/basic/0,2396,1104_1936_0,00.html"><span class="header3_white">Contact Us</span></a> </td>
+</tr>
+</tbody>
+</table>
+
+		
+
+<!-- ------------------------------- END HTMLBLOCK -------------------------------------- -->
+
+		<!-- end footer pull -->
+ 		</td>
+  </tr>
+</table>
+<!-- shadow backdrop begin -->  
+<table width="100%" height="8" border="0" cellpadding="0" cellspacing="0">
+	<tr> 
+    	<td width="100%"align="right" background="/spe/images/shadow_top.gif"></td>
+	</tr>
+</table>
+<!-- shadow backdrop end -->
+<p align="center" class="copyright">&copy; 2003 - 2004 Society of Petroleum Engineers, All Rights Reserved</p>
+<p>&nbsp;</p>
+<script language="JavaScript" type="text/JavaScript">clear_menus();</script>
+<!-- ------------------------------- END FOOTER -------------------------------------- -->
+
+</body>
+</html>
+<!-- ------------------------------- END BASIC HTML ------------------------------------ -->

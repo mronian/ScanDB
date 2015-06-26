@@ -1,0 +1,526 @@
+<DOC>
+<DOCNO>f00123</DOCNO>
+<DOCHDR>http://www.3com.com/corpinfo/en_US/contactus</DOCHDR>
+          <html>
+<head>
+
+<!-- *********************************************************************** -->
+<!-- SET DOCUMENT TITLE                                                      -->
+<title>3Com Contact Us</title>
+<!-- *********************************************************************** -->
+
+<!-- *********************************************************************** -->
+<!-- SET DOCUMENT META TAGS                                                  -->
+<meta name="TEMPLATE" content="Layout H version 2.0"/>
+<meta name="CONTENT_OWNER" content="Jeffrey McClain, Karin Bakis"/>
+<meta name="KEYWORDS" content="3Com, Contact Us"/>
+<meta name="DESCRIPTION" content="Contact Us"/>
+<!-- *********************************************************************** -->
+
+<!-- *********************************************************************** -->
+<!-- START GLOBAL JAVASCRIPT -- DO NOT CHANGE                                -->
+<!-- *********************************************************************** -->
+
+<script type="text/javascript" language="JavaScript1.1">
+	<!-- hide script content from old browsers
+	// If setting environment and preview variables, you should place server side tags here.
+	// REMEMBER: You must comment out corresponding variables in NavObjects.js
+	
+	// Initialize environment
+	var gintEnvironment = 2;
+	var gblnPreview = false;
+	
+	// Initialize paths to stylesheets and javascript directories
+	var gstrCSSPath = "/stylesheets/common/en_US/";
+	var gstrJSPath = "/scripts/common/en_US/";
+	
+
+	// end hiding -->
+</script>
+
+<!-- Load javascript libraries for template initialization                   -->
+<script type="text/javascript" language="JavaScript1.1" src="/scripts/common/en_US/start.js">
+</script>
+<script type="text/javascript" language="JavaScript1.1" src="/scripts/common/en_US/NavObjects.js">
+</script>
+<script type="text/javascript" language="JavaScript1.1" src="/scripts/common/en_US/NavFunctions.js">
+</script>
+<script type="text/javascript" language="JavaScript1.1" src="/scripts/common/en_US/BuildHTMLFunctions.js">
+</script>
+<script type="text/javascript" language="JavaScript1.1" src="/scripts/common/en_US/Country.js">
+</script>
+<script type="text/javascript" language="JavaScript1.1" src="/scripts/infra/corpinfo/en_US/ContactUtilities.js">
+</script>
+
+<!-- For Search Spider to go through NavObject defined links -->
+<a href="/solutions/en_US/solutionslab/index.html"></a>
+<a href="/products/en_US/prodlist.jsp?tab=tech&pathtype=purchase"></a>
+<a href="/corpinfo/en_US/investor/index.jsp"></a>
+<a href="/corpinfo/en_US/3comradio/index.jsp"></a>
+<a href="/corpinfo/en_US/vendorredir/hr-jobsearch.html"></a>
+<a href="/corpinfo/en_US/pressbox/index.jsp"></a>
+
+<!-- *********************************************************************** -->
+<!-- END GLOBAL JAVASCRIPT                                                   -->
+<!-- *********************************************************************** -->
+
+<!-- *********************************************************************** -->
+<!-- START LOCAL JAVASCRIPT -- TO BE MODIFIED BY IMPLEMENTATION TEAMS        -->
+<!-- *********************************************************************** -->
+
+<script type="text/javascript" language="JavaScript1.1">
+	<!-- hide script content from old browsers
+	
+	var gobjLayout = new objLayout("H");
+	gobjLayout.bannerimage = "/images/infra/corpinfo/en_US/bnr_contact.gif";
+	gobjLayout.bgcolorextension = "#CC9966";
+	gobjLayout.localnav = 2;
+	gobjLayout.localnavwidth = 58;
+	gobjLayout.localnavgutter = 34;
+	gobjLayout.searchbar = 2;	
+	
+	gobjLayout.selectedparentnav = 20;
+	
+	// end hiding -->
+</script>
+<script type="text/javascript" language="JavaScript1.1">
+	<!-- hide script content from old browsers
+	// Store local navigation elements into object array
+	gobjNavArray[19] = new objNav(3, "Corporate<br>Information", "/corpinfo/en_US/index.html", "/corpinfo/en_US/index.html", gobjJ2EEProject);
+	gobjNavArray[20] = new objNav(3, "Contact<br>Us", "/corpinfo/en_US/contactus/index.html", "/corpinfo/en_US/contactus/index.html", gobjJ2EEProject);
+	gobjNavArray[21] = new objNav(3, "Investor<br>Information", "/corpinfo/en_US/investor/index.jsp", "/corpinfo/en_US/investor/index.jsp", gobjJ2EEProject);
+	gobjNavArray[22] = new objNav(3, "Careers", "/corpinfo/en_US/vendorredir/hr-jobsearch.html", "/corpinfo/en_US/vendorredir/hr-jobsearch.html", gobjJ2EEProject);
+	gobjNavArray[23] = new objNav(3, "Press Box", "/corpinfo/en_US/pressbox/index.jsp", "/corpinfo/en_US/pressbox/index.jsp", gobjJ2EEProject);
+
+//Start local left nav rollover
+	
+//Start content area animated button rollover
+	
+	myRollover = new objRollover("/images/common/en_US/btn_3gy_on.gif", "/images/common/en_US/btn_3gy.gif");
+	gobjNavArray[24] =  new objNav(0, "Directions From San Fransisco", "/corpinfo/en_US/contactus/sfodirections.html", "/corpinfo/en_US/contactus/sfodirections.html", gobjJ2EEProject, "button1", myRollover);
+	gobjNavArray[25] =  new objNav(0, "Directions From San Jose", "/corpinfo/en_US/contactus/sjdirections.html", "/corpinfo/en_US/contactus/sjdirections.html", gobjJ2EEProject, "button2", myRollover);
+	gobjNavArray[26] =  new objNav(0, "Product Support Inquiries", "http://csoweb4.3com.com/contactus/", "http://csoweb4.3com.com/contactus/", gobjDummyProject, "button3", myRollover);
+	gobjNavArray[27] =  new objNav(0, "Go To Federal Purchasing Support", "/solutions/en_US/government/federal/contacts.html", "/solutions/en_US/government/federal/contacts.html", gobjJ2EEProject, "button4", myRollover);
+	
+	
+	function disClaimer(){
+			alert("Technical  Questions Sent to the Solution Office Will Not Be Answered\r\rPlease use the following phone numbers to contact technical support:\rHome user products call 1-800-527-8677\rService contracts call 1-877-493-9562\rCorporate networking products call 1-800-876-3266\rAll other support questions please call 1-800-NET-3COM");
+		}
+	function disClaimerIR(){
+			strTemp = "Technical or Web Site questions sent to Investor Relations will not be answered.\r\rPlease use the following email addresses for Technical or Web Site help.\r\r";
+			strTemp += "Web Site Questions: webmaster@3com.com\rSupport Questions: http://www.3com.com/products/en_US/supportindex.jsp\rU.S. Robotics: www.usr.com\rPalm: www.palm.com\rCommWorks: www.commworks.com\r";
+			alert(strTemp);
+		}
+		
+	// end hiding -->
+</script>
+
+<!-- *********************************************************************** -->
+<!-- END LOCAL JAVASCRIPT                                                    -->
+<!-- *********************************************************************** -->
+
+<!-- *********************************************************************** -->
+<!-- Redirect to error page for browsers with Javascript turned off          -->
+<noscript>
+	
+</noscript>
+<!-- *********************************************************************** -->
+
+</head>
+
+<!-- Set default background and link colors for old browsers in <body> tag   -->
+<!-- Onload, execute function for capturing & handling events                -->
+<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" bgcolor="#FFFFFF" link="#5A5A5A" vlink="#5A5A5A" alink="#E85900" onLoad="fncCaptureEvents();">
+
+<!-- *********************************************************************** -->
+<!-- HEADER include virtualS                                                    -->
+<!-- Implementation teams:                                                   -->
+<!-- Replace HTML includes with equivalent JSP or Dynabase include format    -->
+<!-- *********************************************************************** -->
+
+<!-- 3Com logo section of page header, including search bar and header links -->
+        <!-- *********************************************************************** -->
+<!-- START: BUILD HEADER -- 3COM LOGO, SEARCH, HEADER LINKS          -->
+<!-- *********************************************************************** -->
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td width="270"><img src="/images/common/en_US/clear.gif" width="270" height="1"></td>
+		<td width="100%"><img src="/images/common/en_US/clear.gif" width="500" height="1"></td>
+	</tr>
+	<tr>
+			<!-- Build 3Com logo -->
+			<script type="text/javascript" language="JavaScript">
+				<!-- hide script content from old browsers
+				fncBuildLogo();
+				// end hiding -->
+			</script>
+		<td valign="top" width="100%">
+		<!--DisLevel=6-->
+			<table cellpadding="0" cellspacing="0" border="0" width="500">
+				<tr>
+					<td width="1"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+					<td width="499"><img src="/images/common/en_US/clear.gif" width="499" height="1"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#5A5A5A" rowspan="3"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<!-- Search bar configuration is determined by global variables defined in HEAD section of page -->
+					<script type="text/javascript" language="JavaScript">
+					<!-- hide script content from old browsers
+						fncBuildSearchBar();
+					// end hiding -->
+					</script>
+				</tr>
+				<tr>
+					<td height="5"></td>
+				</tr>
+			</table>
+			<!--ShowLevel=6-->
+			<!--ShowLevel=5-->
+			<!--ShowLevel=4-->
+			<!--ShowLevel=3-->
+			<!--ShowLevel=2-->
+			<!--ShowLevel=1-->
+
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<!--DisLevel=6-->
+				<tr>
+					<td bgcolor="#5A5A5A" width="100%"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+				</tr>
+				<tr>
+					<td align="left">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+						<td bgcolor="#5A5A5A"><img src="/images/common/en_US/clear.gif" width="1" height="2"></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+				<!--ShowLevel=6-->
+				<!--ShowLevel=5-->
+				<!--ShowLevel=4-->
+				<!--ShowLevel=3-->
+				<!--ShowLevel=2-->
+				<!--ShowLevel=1-->
+<!--DisLevel=3-->
+					<td bgcolor="#5A5A5A" width="100%"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+				</tr>
+
+				<script type="text/javascript" language="JavaScript">
+				<!-- Header link configuration is determined by global variables defined in HEAD section of page -->
+					fncBuildHeaderLinks();
+				// end hiding -->
+				</script>
+<!--ShowLevel=3-->
+<!--ShowLevel=2-->
+<!--ShowLevel=1-->
+				</table>
+<!--DisLevel=3-->
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td width="498"><img src="/images/common/en_US/clear.gif" width="498" height="1"></td>
+					<td width="100%"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+				</tr>
+				<tr>
+					<td height="47" valign="bottom"></td>
+					<td valign="bottom"></td>
+				</tr>
+			</table>
+<!--ShowLevel=3-->
+<!--ShowLevel=2-->
+<!--ShowLevel=1-->
+		</td>
+	</tr>
+</table>
+
+<!-- *********************************************************************** -->
+<!-- END: BUILD HEADER -- 3COM LOGO, SEARCH, HEADER LINKS            		-->
+<!-- *********************************************************************** -->
+
+<!-- *********************************************************************** -->
+<!-- START: BANNER -- DYNAMIC LINKS AND BANNER IMAGE            			-->
+<!-- *********************************************************************** -->
+
+<!-- start banner and link information table -->
+<script type="text/javascript" language="JavaScript">
+<!-- hide script content from old browsers
+	fncBuildBannerLeft();
+// end hiding -->
+</script>
+<script type="text/javascript" language="JavaScript">
+<!-- hide script content from old browsers
+	fncBuildBannerMiddle();
+// end hiding -->
+</script>
+<script type="text/javascript" language="JavaScript">
+<!-- hide script content from old browsers
+	fncBuildBannerRight();
+// end hiding -->
+</script>
+<!-- end start banner and link information table -->
+
+<!-- *********************************************************************** -->
+<!-- END: BANNER -- DYNAMIC LINKS AND BANNER IMAGE            				-->
+<!-- *********************************************************************** -->
+
+<!-- *********************************************************************** -->
+<!-- START: LOCAL NAV (5 ELEMENTS )											 -->
+<!-- *********************************************************************** -->
+	<script>
+	<!-- hide script content from old browsers
+		fncBuildLocalNav();
+	// end hiding -->
+	</script>
+<!-- *********************************************************************** -->
+<!-- END: LOCAL NAV (5 ELEMENTS )											 -->
+<!-- *********************************************************************** -->
+
+<!-- *********************************************************************** -->
+<!-- START: SUB NAV OF LOCAL NAV (5 ELEMENTS -->
+<!-- *********************************************************************** -->
+		<script>
+		<!-- hide script content from old browsers
+			fncBuildLocalSubNav();
+		// end hiding -->
+		</script>
+<!-- *********************************************************************** -->
+<!-- END: SUB NAV OF LOCAL NAV (5 ELEMENTS -->
+<!-- *********************************************************************** -->
+
+
+<!-- *********************************************************************** -->
+<!-- START LOCAL CONTENT BY IMPLEMENTATION TEAMS                             -->
+<!-- *********************************************************************** -->
+
+<!-- Implementation teams:                                                   -->
+<!-- Replace following filler content with your code                         -->
+
+<!-- DO NOT EDIT ABOVE THIS LINE -->
+
+<!-- Content Table 1:2:1 -->
+
+<!-- wrapper table to create/FIX left margin in Netscape-->
+<table>
+<tr>
+<td>
+<SCRIPT LANGUAGE="JavaScript">
+if (navigator.appName=="Netscape")
+  document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp");
+</SCRIPT>
+</td>
+<td>
+
+<!-- content table start -->
+<table cellpadding="0" cellspacing="0" border="0" width="778">
+	<tr>
+		<td width="129" rowspan="99"><img src="/images/common/en_US/clear.gif" width="1" height="1" alt="" border="0"></td>
+		<td width="306" height="23"><img src="/images/common/en_US/clear.gif" width="306" height="1" alt="" border="0"></td>
+		<td width="23" rowspan="99"><img src="/images/common/en_US/clear.gif" width="23" height="1" alt="" border="0"></td>
+		<td width="306" height="23"><img src="/images/common/en_US/clear.gif" width="306" height="1" alt="" border="0"></td>
+		<td width="15"><img src="/images/common/en_US/clear.gif" width="1" height="1" alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td valign="top">
+		<font face="arial" size="2" class="headlineOrange">Corporate Headquarters</font><br><br>
+
+		<font class="normal"><GEO TYPE="US">350 Campus Drive<br>
+		Marlborough, MA 01752-3064</GEO>
+		<br><br>
+		phone: 508-323-5000
+		<br>
+		fax: 508-323-1111</font><br><br>
+		
+		<a class="normal" href="/corpinfo/en_US/contactus/hq_directions.html">Directions to Corporate Headquarters</a>
+
+		<br><br>
+		<font class="headlineOrange">3Com Office Locator</font><br>
+		<form name="frmSelectCountry" action="/corpinfo/en_US/contactus/contact_detail.html" method="get">
+		
+		<script type="text/javascript" language="JavaScript">
+		<!-- hide script content from old browsers
+			
+			fncSelectCountry("Select A Country");
+		
+		// end hiding -->
+		</script>
+		
+		</form>
+	</td>
+	<td valign="top">
+	    <font class="normal">
+		<font face="arial" size="2" class="headlineOrange">Product Support Inquiries</font><br><br>
+		<script type="text/javascript" language="javascript1.1">
+			<!-- hide script content from old browsers
+			
+			document.write('<a href="' + gobjNavArray[26].href + '" onmouseover="fncSwitch(-1,26,1);" onmouseout="fncSwitch(-1,26,0);"><img src="' + gobjNavArray[26].rollover.off.src + '" border="0" name="' + gobjNavArray[26].rollovername +'"><img src="/images/infra/corpinfo/en_US/btn_gotoprodsupp_gy.gif" width="100" height="16" alt="'+ gobjNavArray[26].label + '" border="0"></a>');
+			
+			// end hiding -->
+		</script>
+		<br><br>
+		
+		
+		<font class="normal">
+		<font face="arial" size="2" class="headlineOrange">Product Sales Inquiries</font>
+		<br><br>
+		1-800-NET-3Com<br>
+		(1-800-638-3266)
+		</font><br><br><br>
+		
+		<font class="headlineOrange">Federal Purchasing Support</font><br><br>
+		<script type="text/javascript" language="javascript1.1">
+			<!-- hide script content from old browsers
+			
+			document.write('<a href="' + gobjNavArray[27].href + '" onmouseover="fncSwitch(-1,27,1);" onmouseout="fncSwitch(-1,27,0);"><img src="' + gobjNavArray[27].rollover.off.src + '" border="0" name="' + gobjNavArray[27].rollovername +'"><img src="/images/legacy/en_US/btn_gotofedpurch_gy.gif" width="125" height="16" alt="'+ gobjNavArray[27].label + '" border="0"></a>');
+			
+			// end hiding -->
+		</script>
+		<br><br><br>	
+		
+		<font face="arial" size="2" class="headlineOrange">Contact 3Com Webmaster</font>
+		<br><br><font class="normal">Contact the 3Com Webmaster for items related to the design and function of the 3Com web site. Please note that the Webmaster is not qualified to assist with technical support issues. Technical support issues must be handled through Customer Support.</font><br>
+		<a href="/corpinfo/en_US/contactus/webmasterform.html"><font class="hdrGrey"><b>Go to Webmaster Form</a> >></b></font>
+		<br><br><br>
+		
+		<font face="arial" size="2" class="headlineOrange">Professional Services</font>
+		<br><br>
+        <font class="hdrGrey">Call the 3Com Service Quote Desk at 866-326-6222 to put you in touch with a consultant to discuss your requirements.</font>
+		<br><br><br>
+		
+
+		<font class="headlineOrange">Investor Relations</font>
+		<br><br>
+		 (508) 323-1198<br>
+		<a href="mailto:investor_relations@3com.com" onClick="disClaimerIR()" >investor_relations@3com.com</a><br>
+		<a href="http://www.3com.com/corpinfo/en_US/investor/index.jsp">Investor Relations Home</a> >><br><br><br>
+		
+	</font>
+		</td>
+	</tr>
+</table>	
+<!-- Content Table 1:2:1 -- END -->
+
+</td>
+</table>
+<!-- wrapper table to create left margin END -->
+
+<!-- DO NOT EDIT BELOW THIS LINE -->
+
+<!-- *********************************************************************** -->
+<!-- END LOCAL CONTENT BY IMPLEMENTATION TEAMS                               -->
+<!-- *********************************************************************** -->
+
+<!-- *********************************************************************** -->
+<!-- FOOTER include virtual                                                  -->
+<!-- Implementation teams:                                                   -->
+<!-- Replace HTML include with equivalent JSP or Dynabase include format     -->
+<!-- *********************************************************************** -->
+
+<!-- Page footer, including country dropdown and footer links                -->
+        <!-- *********************************************************************** -->
+<!-- START INCLUDE: BUILD FOOTER                                             -->
+<!-- Modified by:	Stacie Benton											 -->
+<!-- Modify date:	March 6, 2001											 -->
+<!-- Description:	Comprises bottom part of template with FooterLinks and	 -->
+<!--  Dropdowns for Country and Language									 -->
+<!-- *********************************************************************** -->
+
+<form name="frmFooter" action="#">
+	<!--start table -->
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="270"><img src="/images/common/en_US/clear.gif" width="270" height="1"></td>
+			<td width="100%"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td bgcolor="#5A5A5A" width="100%"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+					</tr>
+					<tr>
+					<script type="text/javascript" language="JavaScript">
+					<!-- hide script content from old browsers
+						fncBuildFooterLinks();
+					// end hiding -->	
+					</script>
+					</tr>
+					<tr>
+						<td bgcolor="#5A5A5A" width="100%"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+					</tr>
+					<tr>
+						<td align="left">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td bgcolor="#5A5A5A"><img src="/images/common/en_US/clear.gif" width="1" height="2"></td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#5A5A5A" width="100%"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+					</tr>
+				</table>
+				
+				<table cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td width="1" bgcolor="#5A5A5A"><img src="/images/common/en_US/clear.gif" width="1" height="4"></td>
+						<td width="399"><img src="/images/common/en_US/clear.gif" width="399" height="4"></td>
+						<td width="50"><img src="/images/common/en_US/clear.gif" width="50" height="4"></td>
+						<td width="50"><img src="/images/common/en_US/clear.gif" width="50" height="4"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#5A5A5A"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+						<td valign="middle" height="25">&nbsp;
+							<script type="text/javascript" language="JavaScript">
+							<!-- hide script content from old browsers
+								fncBuildCountryDropdowns();
+							// end hiding -->
+							</script>
+							&nbsp;
+						</td>
+						<td valign="middle" align="right" nowrap>
+							<script type="text/javascript" language="JavaScript">
+							<!-- hide script content from old browsers
+								fncBuildLegalPrivacy();
+							// end hiding -->
+							</script>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td bgcolor="#5A5A5A"><img src="/images/common/en_US/clear.gif" width="1" height="1"></td>
+						<td valign="top" nowrap colspan="2" align="right">
+						<script type="text/javascript" language="JavaScript">
+						<!-- hide script content from old browsers
+							fncBuildCopyright();
+						// end hiding -->
+						</script>
+						</td>
+						<td></td>
+					</tr>
+					
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</form>
+
+<SCRIPT LANGUAGE="JavaScript1.2"
+        SRC="/scripts/common/en_US/HM_Loader.js"
+        TYPE='text/javascript'></SCRIPT>
+
+
+<!-- *********************************************************************** -->
+<!-- END INCLUDE: BUILD FOOTER                                               -->
+<!-- *********************************************************************** -->
+
+
+</body>
+</html>

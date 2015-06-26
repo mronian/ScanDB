@@ -1,0 +1,501 @@
+<DOC>
+<DOCNO>g00945</DOCNO>
+<DOCHDR>http://www9.seattle.gov/council/rasmussen/news/news0509.htm</DOCHDR>
+<html>
+<head>
+<script language="JavaScript" type="text/javascript" src="/council/openwin.js"></script>
+<meta name="description" content="Seattle City Councilmember Tom Rasmussen's home page">
+<meta name="keywords" content="Seattle City Council, Tom Rasmussen, Rasmussen">
+<link REL="stylesheet" href="/council/council_main.css" TYPE="text/css">
+<title>Seattle City Councilmember Tom Rasmussen</title>
+</head>
+
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+<div align="center"><!-- CityofSeattle.net main navbar (on all pages) --><noindex>
+<script language="javascript">
+function changeFilter(whichCol){
+  if(whichCol == "Dept"){
+    document.forms[0].site.value = whichDept
+    document.forms[0].proxystylesheet.value = whichStyle 
+  }else{
+    document.forms[0].site.value = "default_collection"
+    document.forms[0].proxystylesheet.value = "cos_frontend" 
+  }
+}
+</script>
+<script language="javascript" src="/js/ypSlideOutMenusA.js"></script>
+<script language="javascript">
+whichDept = ""  //this var is used to pass a unique department identifier to the Google search toggle 
+whichStyle = "services_frontend"
+</script>
+<style type="text/css">
+.menuCont .options {
+		border-left:1px solid #333333;				
+		background-color:#E9E9E9;
+	}
+.menu a {
+		color:#666666;
+		display:block;		
+		padding-left:2px;
+		padding-top:2px;
+		padding-bottom:2px;
+		border-bottom:1px solid #333333;
+		font-family: arial, verdana;
+		font-size: 11px;
+		text-decoration:none;
+		font-weight: bold;
+		layer-background-color:#203945;
+	}
+.menu a:hover {
+		background-color:#ADCFEB;
+		layer-background-color:#99CCFF;
+		color:#000000;
+	}
+</style>
+<script language="javascript">
+IE = document.all?1:0;
+NAV6 = document.getElementById?1:0;
+
+if(IE || NAV6){writeDept()}
+function writeCSS(){
+if(IE || NAV6){
+document.write('<td width="86" height="23" style="position:relative;" align="center" id="DeptName" background="/2004_IMG/top_button.gif" onmouseover="ypSlideOutMenu.showMenu(\'dept\');this.style.backgroundImage=\'url(/2004_IMG/top_button_on.gif)\'" onmouseout="ypSlideOutMenu.hideMenu(\'dept\');this.style.backgroundImage=\'url(/2004_IMG/top_button.gif)\'"><a style="color:#666666;font-family:Arial;font-size:9pt;font-weight:bold;text-decoration:none;" href="/html/citizen/departments.htm">Departments</a></td>');
+} else {
+document.write('<td align="center" id="DeptName" background="/2004_IMG/top_button.gif"><a style="color:#666666;font-family:Arial;font-size:9pt;font-weight:bold;text-decoration:none;" href="/html/citizen/departments.htm">Departments</a></td>');
+}
+}
+function testBrowser(){
+  if(document.all){
+  document.write('<input onclick="this.value=\'\'" style="font-size:9px;width:125px" value="Seattle.Gov" name="sp_q">&nbsp;<input style="font-size:9px" type="submit" value="Go">')
+  }else{
+  document.write('<input style="font-size:9px;" size="15" name="sp_q">&nbsp;<input style="font-size:9px;" type="submit" value="Go">')
+  }
+}
+
+function writeCSS_NEW(){
+if(IE || NAV6){
+document.write('<td width="78" style="position:relative;" id="DeptName" onmouseover="ypSlideOutMenu.showMenu(\'dept\');" onmouseout="ypSlideOutMenu.hideMenu(\'dept\');"><a href="/html/citizen/departments.htm"><img src="/2004_img/btn_dept.gif" alt="City Departments" width="78" height="23" border="0"></a></td>');
+} else {
+document.write('<td width="78"><img src="/2004_img/btn_dept.gif" alt="City Departments" width="78" height="23" border="0"></td>');
+}
+}
+
+//function testBrowser(){
+//  if(document.all){
+//  document.write('<input onclick="this.value=\'\'" style="font-size:9px;width:125px" value="Seattle.Gov" name="sp_q">&nbsp;<input style="font-size:9px" type="submit" value="Go">')
+//  }else{
+//  document.write('<input style="font-size:9px;" size="15" name="sp_q">&nbsp;<input style="font-size:9px;" type="submit" value="Go">')
+//  }
+//}
+function video(id){
+loC = "http://www2.seattlechannel.org/media/video.asp?ID="+id
+//alert (loC)
+window.open(loC,"viewer","location=no,status=yes,scrollbars=no,resizable=no,width=675,height=472")
+}
+
+function videoContent(id){
+loC = "http://www2.seattlechannel.org/media/video.asp?ID="+id+"&content=1"
+window.open(loC,"viewer","location=no,status=yes,scrollbars=no,resizable=no,width=675,height=472")
+}
+
+</script>
+
+
+<div align="center">
+<table width="775" cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td width="81"><A href="http://www.seattle.gov/"><img src="/2004_img/btn_home.gif" alt="Seattle.gov Home Page" width="81" height="23" border="0"></a></td>
+  <td width="81"><A href="http://www.seattle.gov/html/citizen/services.htm"><img src="/2004_img/btn_services.gif" alt="City Services" width="81" height="23" border="0"></a></td>
+  <script language="Javascript">writeCSS_NEW()</script>
+  <td width="86"><A href="http://www.seattle.gov/directory/"><img src="/2004_img/btn_staff.gif" alt="Staff Directory" width="86" height="23" border="0"></a></td>
+  <td width="86"><img src="/2004_img/bar_grey_dept.gif" alt="[WEB GRAPHIC]" height="23" border="0"></td>  
+  <td width="83"><A href="http://www.seattle.gov/html/citizen/about.htm"><img src="/2004_img/btn_about.gif" alt="About Seattle" width="83" height="23" border="0"></a></td>
+  <td width="75"><A href="http://www.seattle.gov/html/feedback.htm"><img src="/2004_img/btn_contacts.gif" alt="City Contacts" width="75" height="23" border="0"></a></td>
+</tr>  
+</table>
+<table width="775" cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td width="540"><A href="http://www.seattle.gov"><img src="/2004_img/seattle_headerleg.jpg" alt="Seattle.gov Home Page" width="540" height="59" border="0"></a></td>
+  <td width="235" HEIGHT="59" bgcolor="#EDF7FF" background="/2004_img/search_bkg.gif" style="color:#666666;font-family:Arial;font-size:9pt;font-weight:bold;text-decoration:none;">
+  <form style="MARGIN:0px;PADDING:-10px;" method="get" action="http://find.seattle.gov/search">
+  &nbsp;SEARCH:&nbsp;<input style="font-size:9px;width:125px;background-color:#FFFFFF;" type="text" name="q" size="18" maxlength="255" value=""/>
+  <input type="submit" name="btnG" value="Go" style="font-size:9px;width:25px"/>
+  <input type="hidden" name="site" value="default_collection"/>
+  <input type="hidden" name="client" value="cos_frontend"/>
+  <input type="hidden" name="proxystylesheet" value="cos_frontend"/>
+  <input type="hidden" name="output" value="xml_no_dtd"/>
+  </form>
+  <div style="font-size:11px">
+  <form style="MARGIN:0px;PADDING:-10px;" name="toggle"><input onclick="changeFilter('Seattle')" type="radio" checked name="searchToggle" value="main">Seattle.gov <input onclick="changeFilter('Dept')" type="radio" name="searchToggle" value="dept">This Department</form>
+  </div>
+  </td>
+</tr>
+</table>
+</div>
+<script language="javascript"> 
+var _menus = [	
+	new ypSlideOutMenu("dept", "down", rePosx(), rePosy(), 190, 200, null)
+	]
+	document.write('<style type="text/css">' + ypSlideOutMenu.styleMod + '</style>');
+	
+	for (var i = 0; i < _menus.length; i++) {
+		_menus[i].onactivate = new Function("document.getElementById('act" + i + "').className='active';");
+		_menus[i].ondeactivate = new Function("document.getElementById('act" + i + "').className='';");
+	}
+</script>
+</noindex>
+<!-- Council main navbar (on all council pages) --><table width="775" cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td width="520" valign="top"><A href="/council/"><img src="/council/includes/council_titlebar.jpg" alt="Seattle City Council" width="520" height="33" border="0"></a></td>
+  <td width="255" valign="top">
+  <table width="255" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td width="62"><A href="/council/"><img src="/council/includes/home_button.gif" alt="Council Home" width="62" height="26" border="0"></a></td>
+    <td width="2"><img src="/council/includes/buffer1.gif" alt="" width="2" height="26" border="0"></td>
+    <td width="84"><A href="/council/guide.htm"><img src="/council/includes/about_button.gif" alt="About Us" width="84" height="26" border="0"></a></td>
+    <td width="2"><img src="/council/includes/buffer2.gif" alt="" width="2" height="26" border="0"></td>
+    <td width="100"><A href="/council/councilcontact.htm"><img src="/council/includes/contact_button.gif" alt="Contact Us" width="100" height="26" border="0"></a></td>
+    <td width="5"><img src="/council/includes/buffer3.gif" alt="" width="5" height="26" border="0"></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top"><img src="/council/includes/blue_bar.gif" alt="web graphic" width="255" height="7" border="0"></td>
+  </tr>
+  </table>
+  </td>
+</tr>
+</table>
+<script language="javascript">
+whichDept = "Council"  //this var is used to pass a unique department identifier to the Google search toggle 
+whichStyle = "council_frontend"
+</script>  
+<table width="775" cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td style="border:1px solid #898989;" height="26" background="/council/includes/topnav_bkg.gif" align="center"><A style="font-size:12px;font-family:Arial;color:#666666" href="http://www2.cityofseattle.net/council/EventSearchCouncil.asp"><strong>Council Calendar</strong></a></td>
+  <td style="border:1px solid #898989;" background="/council/includes/topnav_bkg.gif" align="center"><A style="font-size:12px;font-family:Arial;color:#666666" href="/council/issues.htm"><strong>Current Issues</strong></a></td>
+  <td style="border:1px solid #898989;" background="/council/includes/topnav_bkg.gif" align="center"><A style="font-size:12px;font-family:Arial;color:#666666" href="/council/newsrelease.asp"><strong>News Releases</strong></a></td>
+  <td style="border:1px solid #898989;" background="/council/includes/topnav_bkg.gif" align="center"><A style="font-size:12px;font-family:Arial;color:#666666" href="/council/com_assign.htm"><strong>Committees & Agendas</strong></a></td>
+  <td style="border:1px solid #898989;" background="/council/includes/topnav_bkg.gif" align="center"><A style="font-size:12px;font-family:Arial;color:#666666" href="http://www2.cityofseattle.net/council/EventSearchCouncil_videoTEST.asp"><strong>Council Live</strong></a></td>
+  <td style="border:1px solid #898989;" background="/council/includes/topnav_bkg.gif" align="center"><A style="font-size:12px;font-family:Arial;color:#666666" href="/council/legdb.htm"><strong>Legislative Research</strong></a></td>
+<!--  <td style="border:1px solid #898989;" background="/council/includes/topnav_bkg.gif" align="center"><A style="font-size:12px;font-family:Arial;color:#666666" href="/council/members.htm"><strong>Councilmembers</strong></a></td>-->
+  </tr>  
+</table>
+
+
+
+<!-- Councilmember header -- For each councilmember:
+1. Modify member_header.inc to reflect the COUNCILMEMBER name
+2. Save as LASTNAME.inc to the /council/LASTNAME/ folder
+3. Modify the following line to:  /council/LASTNAME/LASTNAME_header.inc--><div align="center">
+<table width="775" cellspacing="0" cellpadding="0" border="0">
+<tr>
+  <td width="185" rowspan="2"><img src="/council/includes/rasmussen_photo.jpg" alt="Councilmember Tom Rasmussen" border="0"></td>
+  <td width="590" valign="top"><img src="/council/includes/rasmussen_title.jpg" alt="Councilmember Tom Rasmussen" width="590" height="66" border="0"></td>
+</tr>
+<tr>
+  <td valign="top" width="590" bgcolor="#F4F4F4">
+  <table height="28" width="590" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td width="19">&nbsp;</td>
+    <td width="190"><b>Email:</b> <A href="mailto:tom.rasmussen@seattle.gov">Tom Rasmussen</a></td>
+    <td width="190"><b>Phone:</b> (206) 684-8808</td>
+    <td width="190"><b>Fax:</b> (206) 684-8587</td>
+  </tr>
+  </table>
+  </td>
+</tr>
+</table>
+</div>
+<table bgcolor="#ffffff" width="775" cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td width="183" valign="top" align="left"><!-- Councilmember Specific Sidebar Menu -- For each councilmember:
+    1. Modify member_menu.inc to reflect the councilmember's color scheme and menu items
+    2. Save as LASTNAME_menu.inc to the /council/COUNCILMEMBER/ folder
+    3. Modify the following line to:  /council/COUNCILMEMBER/COUNCILMEMBER_menu.inc-->
+  <!-- Councilmember Specific Sidebar Menu -->
+<table border="0" width="185" cellpadding="0" cellspacing="0" bordercolor="003300">
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/">Rasmussen Home</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/bio.htm">About Tom</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/committees.htm">Committees</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/forums.htm">Community Forums</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/links.htm">Important Links</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/innews.htm">In the News</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/interviews.htm">Interviews and Videos</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/legislation.htm">Legislation and<br>Upcoming Issues</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/newsletter.htm">Newsletter</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/releases.htm">News Releases</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/speeches.htm">Op Eds & Speeches</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/gallery/index.htm">Photo Gallery</A></td>
+</tr>
+<tr>
+  <td class="TIERTWO"><A href="/council/rasmussen/staff_bios.htm">Staff Bios</A></td>
+</tr>
+</table>
+<table border="0" width="183" cellpadding="0" cellspacing="0">
+<tr>
+  <td width="183" valign="middle"><img src="/council/includes/leftnav_bot.gif" border="0"></td>
+</tr>
+</table>
+
+  </td><!-- *******************************Page Specific Text ***********************-->
+  <td width="592" valign="top" >
+  <table width="95%" cellpadding="5">
+  <tr>
+    <td valign="top">
+    <table width="570" cellspacing="0" cellpadding="3">
+ <TBODY>
+<tr>
+<td width="555">
+<!-- ******************TITLE Starts here******************* -->	
+ <P><DIV align="right"><A href="http://www.seattle.gov/council/rasmussen/newsletter_previous.htm">
+ <FONT Color="#ce9e4e"><B>For Previous Editions Click Here</B></DIV></A></FONT><BR>
+ <FONT SIZE="+3" Color="#1f3668">Point of View</FONT><BR></P>
+
+
+<!-- ******************Start here******************* -->		
+<p><b><font Color="#1f3668">September<!--month--> 2005 - Issue No. 16<!-- # --><br>
+City Hall perspectives <BR>from Councilmember Tom Rasmussen</b></FONT></p>
+
+<P><font Color="#000000">Dear Friends,</P>
+<P>With the arrival of fall, work at City Hall becomes very intense. You'll see the lights on late into the evening for the next two months as we prepare the 2006 City Budget.</P>  
+<P>I am always impressed by the level of community involvement in our budget deliberations.  Thousands of Seattle residents will weigh in on their priorities for city funding.  I will keep you informed about the budget as it develops.  In this edition of Point of View, I will share with you some highlights from the Mayor's proposed budget and issues I am focused on addressing.</P> 
+<P>Besides working on city-wide issues like the budget I have also been assisting specific neighborhoods with their issues earlier this year, residents of in the Madison/Miller Park and the Alki neighborhoods sought my assistance with public safety issues.  In addition, I'll tell you where I'll be in the community this month and share information about the excellent work being carried out by the King County Long Term Care Ombudsman and how you can help with their efforts.</P>   
+<P>Please contact me if you have any questions.  Thanks for reading!</P>
+ 
+<p>Best wishes,<BR> 
+<IMG src="http://www.seattle.gov/council/rasmussen/gallery/signature.jpg"><BR>
+Tom Rasmussen<br>
+Seattle City Councilmember<br>
+Chair, Housing, Human Services and Health Committee<br>
+<a href="http://www.seattle.gov/council/rasmussen">http://www.seattle.gov/council/rasmussen</a></p>
+
+
+<!-- SUBSCRIBE BUTTON-->
+<BR>
+<FORM ACTION="http://www.mailermailer.com/x" METHOD="post">
+<INPUT TYPE=hidden NAME="oid" VALUE="19893t">
+<TABLE BACKGROUND="http://www.mailermailer.com/images/joinbox_styleb/styleb_3-background.png" WIDTH="234" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+  <TR><TD><IMG SRC="http://www.mailermailer.com/images/joinbox_styleb/styleb_3-background.png" WIDTH="3" ALT=""><IMG WIDTH="234" HEIGHT="21" SRC="http://www.mailermailer.com/images/joinbox_styleb/styleb_3.png" ALT="Get Our Newletter"></TD></TR>
+  <TR><TD><IMG SRC="http://www.mailermailer.com/images/joinbox_styleb/styleb_3-background.png" HEIGHT="3" ALT=""></TD></TR>
+  <TR><TD><IMG SRC="http://www.mailermailer.com/images/joinbox_styleb/styleb_3-background.png" WIDTH="3" ALT=""><INPUT name="email" value="Enter Email" size ="18" onFocus="if (this.value == 'Enter Email') { this.value='' }"><INPUT TYPE="image" WIDTH="116" HEIGHT="18" SRC="http://www.mailermailer.com/images/joinbox_styleb/styleb_3a.png" ALT="Join"></TD></TR>
+  <TR><TD><IMG SRC="http://www.mailermailer.com/images/joinbox_styleb/styleb_3-background.png"HEIGHT="3" ALT=""></TD></TR>
+</TABLE>
+</FORM> 
+
+
+<BR>
+<P><A NAME="index"></A><h3>In this issue:</h3></p>
+<BR>
+
+<P><FONT Color="#1f3668"><B>
+<ul>
+<li><A href="#1">A Look at the 2006 City Budget<!-- TITLE 1 --></A>
+<li><A href="#2">Improving Public Safety in Madison/Miller Park Neighborhood<!-- TITLE 2 --></A>
+<li><A href="#3">Slowing Down Traffic on Beach Drive SW<!-- TITLE 3 --></A>
+<li><A href="#4">Community Cause:  King County Long-Term Care Ombudsman <!-- TITLE 4 --></A>
+<li><A href="#working">In Your Neighborhood<!-- TITLE working --></A> 
+<!--<li><A href="#comm causes">Making a Difference in our Community</A> TITLE comm causes -->
+</li></ul></B></FONT>
+<BR></P>
+
+<!-- 1 -->
+<p><a name="1"></a><b><font Color="#1f3668">A Look at the 2006 City Budget<!-- TITLE 1 --></font></b></p>
+<P>On Monday the Mayor submitted his proposed 2006 budget to the Council.  We must adopt a balanced budget by December 1, for the following year.  The past four years the City has had to cut the budget because of declining tax revenues due to the economic recession and voter approved initiatives.</P>
+<P>Fortunately, our budget office is projecting a revenue increase for 2006.  Sales and Business & Occupation tax revenues are up by nearly $11 million and tax revenue from real estate transactions are up roughly $10 million (those dollars are available for capital use only).  Given this increase, Mayor Nickels has funded a mix of new ongoing expenditures, one-time programs and restored some cuts made during the last few years.  Here are some highlights:
+<UL>
+<LI>25 new police officers;
+<LI>15 new firefighters;
+<LI>operating funds for the new homeless service center in downtown;
+<LI>new funding to help low-income families in the South Park community;
+<LI>expanded hours for the Animal Shelter and restored off-leash enforcement in parks;
+<LI>more cameras in police vehicles;
+<LI>support for the waterfront streetcar trolley barn;
+<LI>studying the expanding of broadband communications to city residents and businesses; 
+<LI>create a new pilot program for sidewalks; and
+<LI>increased  funding for street paving.
+</UL></P>
+<P>My first impression is the Mayor has done a nice job of prioritizing public safety, social services and our transportation infrastructure in the 2006 budget.  I am particularly pleased that a $1 million commitment has been made to operate the new homeless service center (called "Connections") which I have worked for during the last year.</P>
+<P>With the Mayor's budget in hand, it is now time for the Council to delve into the details and establish our own priorities.  A priority for me is to improve our ability to protect and support Seattle's senior citizens.  There are two issues I intend to raise awareness on during the budget process:</P>
+<P>Last year I authored a budget action directing the Police Department to develop a report on its performance in elder abuse investigations and to develop a plan to strengthen our response to this serious crime.  Seattle is experiencing a surge in crimes against seniors that often take the form of physical abuse and financial exploitation.  As of July of this year, the number of reported cases for 2005 is about 12% over 2004.  Yet, there remains only one detective devoted to elder abuse cases.  I am working to secure new resources or a reallocation of existing detectives to reduce a backlog of cases and reduce elder abuse in our community.</P>
+<P>With the state of Social Security and rising heath care costs, many older Americans are finding it necessary to continue working past standard retirement ages.  In addition, many seniors are interested in continued employment and want to sharpen their skills and receive training to gain jobs in today's workforce.</P>
+<P>Seattle has a program called the "Age 55+ Employment Resource Center."  This program helps seniors gain new skills and find jobs.  In 2003, 417 seniors obtained livable wage jobs with assistance from the program (a 20% increase from the previous year).  This year, job placements are already at 436, with four months left.  There are more than 160 people on the current list waiting for access to the training.  I am working hard to help more seniors get the employment assistance they need to earn a living wage and live independently in Seattle.</P>
+<P>For more information and a timeline of the Council's budget review, <A HREF="http://www.seattle.gov/council/Committees/committee_budget.htm#issues"><B>click here</B></A>.</P>
+<p align=center><A href="#index"><B>Return to Index</A></B><BR>&nbsp;</p>
+ 
+<!-- 2 -->
+<p><a name="2"></a><b><font Color="#1f3668">Improving Public Safety in Madison/Miller Park Neighborhood<!-- TITLE 2 --></font></b>
+<P><IMG SRC="http://www.seattle.gov/council/rasmussen/gallery/news/200509newsletter1.jpg" align="left" border="0"></p>
+<P>Over the last few months, I have been working closely with the Miller Park Neighborhood Association (MPNA) to improve public safety. After touring the neighborhood, and hearing the stories of drug dealing and drug use in public, I worked with the neighborhood to develop a plan for improvements in the neighborhood designed to discourage crime.</P>
+<P>I contacted Seattle City Light about improving lighting on the streets to deter criminal activity. I asked Seattle Department of Transportation to examine traffic flow changes that could reduce the number of "drive through drug deals". In addition, I contacted King County Metro about redesigning bus shelters that act as havens for drug use and I am working with police officers from the East Precinct to develop a strategy to combat illegal activity in this Neighborhood.</P>
+<P>All of these City/County Departments were essential in making the changes necessary to make this neighborhood safer for residents. Here's a summary of the accomplishments to date : 
+<UL>
+<LI>Seattle City Light installed new lights, trimmed light blocking trees, and adjusted streetlights to better illuminate sidewalks where crime was often committed ;
+<LI>The Seattle Department of Transportation is currently working with the community to prohibit left turns onto 22nd Avenue E., making it less accessible to those who quickly turn onto the street to engage in illegal activity; 
+<LI>King County Metro has removed benches and glass walls from bus shelters, making them less desirable places to engage in illegal activity. Metro will also redesign and move other shelters in the coming year; and 
+<LI>The Seattle Police Department is helping to address the factors that lead individuals to crime by bringing services such as mental health and drug counseling and organizations that help people address housing and job barriers into the area, as well as performing their usual functions as law enforcers. This "carrot and stick" approach is a new way to help this neighborhood which has seen the cycle of crime play itself out for years. 
+</UL></P>
+<P>The work accomplished is a big step in the right direction. I want to thank the residents of this neighborhood and the City and County employees who responded to our ideas and who worked so hard for the Madison/Miller Neighborhood: Drew Robinson and Sharon Slebodnick of King County Metro; Theresa Cayetano Smith of the Seattle Department of Transportation; David Smith from Seattle City Light, and Lt. John Hayes and Officer Tyrone Davis from the East Precinct. Without them, we would not have been able to make these changes so quickly. There is still work to do and I look forward to continuing to work with this neighborhood to improve the quality of life in Seattle.</P>
+<p align=center><A href="#index"><B>Return to Index</A></B><BR>&nbsp;</p>
+
+<!-- 3 -->
+<p><a name="3"></a><b><font Color="#1f3668">Slowing Traffic on Beach Drive SW<!-- TITLE 3 --></font></b></p>
+<P><IMG SRC="http://www.seattle.gov/council/rasmussen/gallery/news/200509newsletter2.jpg" align="left" border="0"></p>
+<P>Last year a resident of Beach Drive SW in West Seattle was injured when he sought to stop a drag race that was starting in front of his house. After that incident, several people asked me for help in stopping the drag races and excessive speeding on Beach Drive.</P>
+<P>Both the police department and the Seattle Department of Transportation (SDOT) agreed that there is a speeding problem and I have worked with them to identify strategies to slow down traffic on this street.</P>
+<P>The Transportation Department installed speed cushions in two places along Beach Drive SW in a six month pilot project which is also being tested in a few other neighborhoods.</P>
+<P>Speed cushions were proposed because they do not reduce parking and have a negligible effect on emergency vehicle response times.  After six months, the City will conduct traffic studies to determine if the speed cushions are effective in reducing vehicle speeds (and whether they have any effect on overall volumes). They will report those findings and comments from the neighborhood as well as feedback from the Seattle Fire Department.</P>
+<P>I also worked with Captain Michael Fann of the SW police precinct to request additional enforcement by the police on this busy street in the evenings when the excessive speeding occurs most frequently. Captain Fann has scheduled additional police officers and will report the results of this enforcement to me.</P>
+<P>I am optimistic we have made major improvements to solve this safety issue and want to thank both our Transportation and Police Departments. Both of these departments worked closely with me to identify practical solutions to this problem.</P>
+<p align=center><A href="#index"><B>Return to Index</A></B><BR>&nbsp;</p>
+
+<!-- 4 -->
+<p><a name="4"></a><b><font Color="#1f3668">Community Cause:  Fremont Public Association's Long-Term Care Ombudsman Program <!-- TITLE 4 --></font></b>
+<P>In September, I held a town hall forum on elder abuse at City Hall.  I was extremely moved by the stories about the tremendous work taking place on behalf of older adults in our community.  These programs are making a difference in the lives of seniors all across Seattle and I want to bring to your attention one in particular.</P>
+<P>The <A target="_blank" HREF="http://www.ltcop.org"><B>Fremont Public Association's Long-Term Care Ombudsman Program</B></A> links volunteers with residents in long-term care facilities.  Volunteers listen to the concerns and questions of residents living in nursing homes, assisted living facilities, or adult family homes and work to resolve their problems or answer questions.</P>
+<P>The program is unique in that its main goal is to empower residents and give them a voice.  Volunteers with the Ombudsman program receive state-certified training and learn about the rights of residents in order to speak for them.  Ultimately, they give seniors information about their rights and help preserve their dignity and safety by ensuring a better quality of life in long-term care facilities.</P>
+<P>The need for volunteers has escalated recently, especially for long-term care facilities throughout King County.  More than 1,000 facilities currently need Ombudsman volunteers to protect the rights of residents and staff.  Volunteers are required to make a one-year commitment and spend an average of four hours per week at an assigned long-term care facility.</P>
+<P>The program is non-profit with the majority of its work facilitated by volunteers.  Ombudsmen can be utilized free of charge by residents, family members, friends and staff of long-term care facilities.</P>
+<P>To get involved with the King County Long Term Care Ombudsman Program or for more information about residents' rights, call Volunteer Coordinator Jennifer Haller at 206-694-6703 or visit <A target="_blank" HREF="http://www.ltcop.org"><B>www.ltcop.org</B></A>.</P>
+<p align=center><A href="#index"><B>Return to Index</A></B><BR>&nbsp;</p>
+
+<!-- working -->
+<p><a name="working"></a><b><font Color="#1f3668">In Your Neighborhood</font></b></p>
+<P><IMG SRC="http://www.seattle.gov/council/rasmussen/gallery/news/200509newsletter3.jpg" align="left" border="0"></p>
+<P>I hope to see you at one of these events.  If you would like me to visit your neighborhood, just contact my office at (206) 684-8808 or email me at <A HREF="mailto:tom.rasmussen@seattle.gov"><B>tom.rasmussen@seattle.gov</B></A>
+<BR><BR><BR><BR><BR><BR><BR>&nbsp;</P>
+
+<TABLE border="1">
+<TR>
+<TD>
+<P>
+<UL>
+<LI>Tuesday, October 4 from 7:30-8:45am: Jubilee Women's Center Benefit Breakfast at the Sheraton Hotel
+<LI>Tuesday, October 4 from 5:30 - 6:30pm: Pioneer Square Community Association Monthly Meeting at the Klondike Gold Rush Museum Auditorium
+<LI>Saturday, October 8 from 11:30am - 1:30pm: Holy Names Academy 125th Birthday Luncheon at 728 21st Avenue E
+<LI>Saturday, October 8 from 5:30 - 7pm: Casa Latina Dinner and Auction at the Grand Hyatt Hotel
+<LI>Monday, October 10 from 11:30am - 1:30pm: Mayor's End Hunger Awards at the Palace Kitchen, 2060 Fifth Avenue
+<LI>Friday, October 14 from 6-10pm: Seattle Police Department Annual Awards Banquet at the Westin Hotel, Grand Ballroom
+<LI>Wednesday, October 19 from 7:30-9am: Washington Conservation Voters Annual Breakfast at the Westin Hotel
+<LI>Thursday, October 27 from 11:30am - 1pm: Child Care Resources Annual Luncheon at the Washington State Convention Center
+<LI>Thursday, October 27 from 4:30pm - 6:30pm: Take Action Against Domestic Violence Awards Reception at City Hall in the Bertha Knight Landes Room
+<LI>Sunday, October 30 from 4-8:30pm: League of Women Voters Party and Auction at the Red Lion Hotel
+</LI></UL></P>
+</TD>
+</TR>
+</TABLE>
+
+
+<p align=center><A href="#index"><B>Return to Index</A></B><BR>&nbsp;</p>
+
+<!-- comm causes
+<p><a name="comm causes"></a><b><font Color="#1f3668">Making a Difference in our Community</font></b></p>
+<P></P>
+<p align=center><A href="#index"><B>Return to Index</A></B><BR>&nbsp;</p> -->
+
+<P><B>
+Last year, we updated our newsletter distribution list and created a listserv to automate subscription and removal requests.</B>  If you have received this newsletter in error, I apologize for any inconvenience.  Point of View subscription and removal requests may be found at the end of this newsletter.</P>
+<p>Other questions or comments about <I>Point of View</I> ? Please email <A HREF="mailto:tom.rasmussen@seattle.gov"><B>tom.rasmussen@seattle.gov</B></A> or call (206) 684-8808. 
+<!-- ******************End******************* -->		
+
+
+</td>
+</tr>
+</table>
+
+</td>
+  </tr>
+  </table></TD></TR>
+<tr>
+<td width="100%" valign="top" colspan="2" align="middle">
+<br><!-- Council Web Manager contact info. -->
+
+</td>
+</tr>
+<tr>
+<td width="100%" valign="top" colspan="2" align="middle">&nbsp;</td>
+</tr>
+</table>
+<table width="775" cellpadding="3" cellspacing="0" border="0" bgcolor="#ffffff">
+<tr>
+  <td align="center"><a href="mailto:council.web@seattle.gov">For technical assistance contact our web team here</a></td>
+</tr>
+</table>
+<table width="775" cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td width="78" background="/council/includes/footer_red.gif"><img src="/council/includes/footer_top.gif" alt="Seattle City Hall"></td>
+  <td width="697" class="whitetxt" align="center" bgcolor="#0e1b65"><a href="/council/default.htm" style="font-size:10px;font-family:Arial;color:#ffffff"><B>Council Home</B></a> | <a href="/council/guide.htm" style="font-size:10px;font-family:Arial;color:#ffffff"><B>About Us</B></a> | <a href="/council/councilcontact.htm" style="font-size:10px;font-family:Arial;color:#ffffff"><B>Contact Us</B></a> | <a href="http://www.cityofseattle.net/council/newsrelease.asp" style="font-size:10px;font-family:Arial;color:#ffffff"><B>News Releases</B></a> | <a href="/council/legdb.htm" style="font-size:10px;font-family:Arial;color:#ffffff"><B>Legislation</B></a> | <a href="/council/issues.htm" style="font-size:10px;font-family:Arial;color:#ffffff"><B>Issues</B></a> | <a href="/council/com_assign.htm" style="font-size:10px;font-family:Arial;color:#ffffff"><B>Committees & Agenda</B></a> | <a href="http://www2.cityofseattle.net/council/EventSearchCouncil.asp" style="font-size:10px;font-family:Arial;color:#ffffff"><B>Calendar</B></a></td>
+</tr>
+</table>
+<table bgcolor="#99ccff" width="775" cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td width="118" valign="top"><img src="/council/includes/hall.jpg" alt="Seattle City Hall"></td>
+  <td width="656">
+  <table width="100%" cellpadding="2" cellspacing="0" border="0">
+  <tr>
+    <td width="33%" valign="top" align="center"><p style="font-size:11px;font-family:Arial;color:#333333"><strong>Seattle City Hall</strong><br>600 4th Ave. 2nd Floor<br>Seattle, WA</td>
+    <td width="33%" valign="top" align="center"><p style="font-size:11px;font-family:Arial;color:#333333"><strong>Mailing Address:</strong><br>PO Box 34025<br>Seattle, WA 98124-4025</td>
+    <td width="33%" valign="top" align="right"><p style="font-size:11px;font-family:Arial;color:#333333;padding-right:15px">Phone: 206.684.8888<br>Fax: 206.684.8587<br>TTY/TDD: 206.233.0025<br>Listen Line: 206.684.8566<br>Weekly Agenda Info: 206.684.8889</td>
+  </tr>
+  </table>
+  </td>
+  <td width="1" bgcolor="#000000" valign="top"><img src="/council/images/pixel.gif"></td>
+</tr>
+</table>  
+<MAP NAME="council_titleNEW_Map">
+<AREA SHAPE="poly" ALT="Richard Conlin" COORDS="603,67, 527,67, 525,62, 534,57, 548,53, 549,50, 547,48, 542,40, 541,35, 539,26, 536,22, 536,17, 541,10, 546,6, 553,2, 559,2, 565,4, 571,7, 575,14, 574,24, 575,25, 574,33, 572,38, 574,45, 579,51, 591,57, 598,60, 602,63" HREF="/council/conlin">
+<AREA SHAPE="poly" ALT="David Della" COORDS="527,67, 525,63, 516,57, 509,51, 505,48, 506,40, 507,38, 509,34, 509,27, 507,24, 508,17, 507,12, 505,9, 501,7, 499,4, 492,3, 489,2, 485,3, 479,6, 473,16, 473,24, 472,30, 473,39, 476,41, 478,48, 480,52, 466,57, 458,60, 456,67" HREF="/council/della/">
+<AREA SHAPE="poly" ALT="Nick Licata" COORDS="456,67, 456,64, 459,60, 466,57, 463,55, 456,52, 453,50, 450,50, 445,43, 442,39, 443,36, 445,35, 447,28, 447,23, 446,21, 444,21, 443,12, 438,6, 433,4, 428,2, 421,2, 414,6, 410,15, 410,25, 409,28, 412,35, 413,38, 416,44, 419,47, 419,50, 411,52, 400,56, 398,59, 395,64, 395,67" HREF="/council/licata/">
+<AREA SHAPE="poly" ALT="Jim Compton" COORDS="395,67, 395,63, 397,59, 399,56, 398,52, 395,49, 385,45, 377,39, 376,33, 377,30, 377,23, 375,21, 374,16, 372,12, 368,7, 364,5, 362,3, 351,3, 344,6, 339,14, 338,19, 339,27, 339,31, 344,43, 346,46, 338,48, 334,51, 331,61, 332,67" HREF="/council/compton/">
+<AREA SHAPE="poly" ALT="Jean Godden" COORDS="331,67, 331,63, 324,58, 317,54, 312,48, 315,43, 317,36, 316,26, 316,20, 314,14, 308,6, 297,2, 294,3, 291,2, 287,3, 276,9, 275,13, 272,18, 272,24, 273,30, 275,33, 275,37, 278,43, 281,44, 284,50, 282,50, 275,55, 267,61, 267,67" HREF="/council/godden/">
+<AREA SHAPE="poly" ALT="Tom Rasmussen" COORDS="267,67, 266,62, 260,57, 251,54, 243,52, 243,48, 246,43, 247,39, 249,38, 251,32, 252,26, 251,24, 252,19, 251,14, 248,8, 243,5, 240,3, 231,2, 224,6, 218,13, 218,20, 218,22, 216,23, 216,29, 217,35, 219,38, 221,38, 221,42, 221,43, 217,48, 202,55, 198,58, 196,67" HREF="/council/Rasmussen/">
+<AREA SHAPE="poly" ALT="Richard McIver" COORDS="196,67, 198,58, 201,55, 199,52, 190,48, 183,43, 179,41, 178,36, 178,32, 180,27, 180,23, 178,21, 177,14, 175,10, 170,7, 166,4, 159,3, 154,3, 148,7, 145,12, 144,18, 144,26, 145,29, 144,33, 145,38, 147,44, 150,49, 140,53, 135,56, 130,61, 130,67" HREF="/council/mciver/">
+<AREA SHAPE="poly" ALT="Peter Steinbrueck" COORDS="66,53, 73,50, 76,46, 84,40, 84,34, 81,30, 79,26, 79,22, 81,22, 81,15, 83,9, 90,3, 95,1, 103,1, 108,4, 111,7, 116,10, 117,17, 116,25, 115,26, 114,36, 112,41, 108,48, 120,54, 126,58, 130,62, 130,67, 67,67, 67,56" HREF="/council/steinbrueck/">
+<AREA SHAPE="poly" ALT="Jan Drago" COORDS="67,67, 66,54, 64,51, 53,46, 48,46, 53,39, 53,25, 54,23, 54,15, 50,7, 45,2, 35,0, 28,3, 18,15, 15,19, 15,22, 11,26, 9,36, 8,40, 6,45, 9,51, 4,54, 0,57, 0,67" HREF="/council/drago/">
+</MAP>
+
+<noindex>
+<div align="center">
+<table bgcolor="#000000" width="775" cellpadding="3" cellspacing="0" border="0">
+<tr>
+  <td style="font-family:Verdana;font-size:85%;color:#FFFFFF;font-weight:bold"><a style="font-family:Verdana;font-size:85%;color:#FFFF66;font-weight:bold" href="/">Seattle.gov</a>:  <a style="font-family:Verdana;font-size:90%;color:#ffffff" href="/html/citizen/services.htm">Services</a> | <a style="font-family:Verdana;font-size:90%;color:#ffffff" href="/html/citizen/departments.htm">Departments</a> | <a style="font-family:Verdana;font-size:90%;color:#ffffff" href="/directory/">Staff Directory</a> | <a style="font-family:Verdana;font-size:90%;color:#ffffff ! important" href="http://www.seattle.gov/mayor/">Mayor</a> | <a style="font-family:Verdana;font-size:90%;color:#ffffff ! important" href="http://www.seattle.gov/council/">City Council</a></td>
+</tr>
+</table>
+<table bgcolor="#000000" width="775" cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td><img src="/2004_IMG/footer_blue.gif" alt="" width="775" height="8" border="0"></td>
+</tr>
+</table>
+<table width="775" cellpadding="2" cellspacing="0" border="0">
+<tr>
+  <td style="font-family:Verdana;font-size:70%;color:#666666">Copyright &copy; 1995-2006 City of Seattle</td>
+  <td align="right" style="font-family:Verdana;font-size:70%;color:#666666"><A href="/CitizenService/">Questions/Complaints</a> | <A href="/pan/privacypol.htm">Privacy & Security Policy</a></td>
+</tr>
+</table>
+<br>  
+</div>
+</noindex>
+</div>
+</body>
+</html>

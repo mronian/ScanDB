@@ -1,0 +1,1082 @@
+<DOC>
+<DOCNO>g00694</DOCNO>
+<DOCHDR>http://www.americanheart.org/presenter.jhtml?identifier=11205</DOCHDR>
+
+
+<!-- IMPORTBEAN BEAN="/org/heart/presenter/CheckDeletion" -->
+
+
+
+
+
+
+<!-- CHECK TO SEE IF PAGE EXISTS EARLY ON. 
+     REDIRECT USER TO ERROR PAGE WITH PROPER MESSAGE IF PAGE
+     IS CONFIRMED TO BE DELETED. THIS WILL STOP THE ERROR PAGE
+     ITSELF FROM TRYING TO FIND OUT THE DELETION STATUS FOR ITSELF.
+     ---------------------------------------------->  
+
+	  
+              <!-- DO NOTHING, LET USER SURF ON ...  --->
+          
+       </DROPLET>
+	  
+
+<!-- END OF CHECK FOR DELETION .... ------------------------------------->  
+
+
+
+
+
+<html>   
+<head>
+<script language="javascript">
+  // THIS METHOD IS USED BY HITBOX-WEB-REPORTING ... 
+  var searchTerm = ""; 
+  var searchItmCnt = ""; 
+  function hbxStrip(a) { 
+     a = a.split("|").join(""); 
+     a = a.split("&").join("_"); 
+     a = a.split("'").join(""); 
+     a = a.split("#").join(""); 
+     a = a.split("$").join(""); 
+     a = a.split("%").join(""); 
+     a = a.split("^").join(""); 
+     a = a.split("*").join(""); 
+     a = a.split(":").join(""); 
+     a = a.split("!").join(""); 
+     a = a.split(">").join(""); 
+     a = a.split("<").join(""); 
+     a = a.split("~").join(""); 
+     a = a.split(";").join(""); 
+     a = a.split(" ").join("+"); 
+     return a; 
+  }
+</script>
+<script language="javascript">
+function createBookmark(){
+	var params = read_querystring();
+
+	var url = "http://"+location.host+"/presenter.jhtml?"
+	var pos= url.indexOf("?identifier=");
+	if (pos<0){
+		url = url + "identifier="+params["identifier"];
+	}
+	var pos= url.indexOf("&dynamicPage=");
+	if (pos<0){
+		url = url + "&dynamicPage=/quizzes/quizResults.jhtml";
+	}
+	var pos= url.indexOf("&dynamicPageNumber=");
+	if (pos<0){
+		url = url + "&dynamicPageNumber="+params["dynamicPageNumber"];
+	}
+	var pos= url.indexOf("&stashId=");
+	if (pos<0){
+		url = url + "&stashId="+params["stashId"];
+	}
+	pos= url.indexOf("&quizName=");
+	if (pos<0){
+		url = url + "&quizName="+params["quizName"];
+	}
+
+	if (window.sidebar) { 
+		window.sidebar.addPanel("AHA - Learn and Live Quiz Results", url,""); 
+	}
+	else{		
+		window.external.AddFavorite(url,"AHA - Learn and Live Quiz Results");
+	}
+//	window.location.reload();
+}
+
+function read_querystring()
+   {
+   var a_out = new Object();
+   var s_loc = String(location.href);
+
+   if(s_loc.indexOf('?')>0)
+     {
+     var p;
+     var s_query = s_loc.substr(s_loc.indexOf('?')+1);
+     var a_query = s_query ? s_query.split('&') : new Array();
+
+     for(var i=0; i<a_query.length; i++)
+       {
+       p = a_query[i].split('=');
+       a_out[p[0]] = p[1].replace(/\+/g, ' ');
+       }
+     }
+   return a_out;
+   }
+</script>
+
+ 
+ 
+ 
+ 
+ 
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252"> 
+ 
+		 
+				 
+						<title>Research Contact Information</title> 
+					 
+						<meta name="keywords" content="research;,research;"> 
+					 
+						<meta name="portal_search_category" content="1"> 
+					 
+						<meta name="description" content="Research contact information for National Center and Affiliates."> 
+					 
+						<meta name="localization_code" content="global"> 
+					 
+			 
+		 
+
+
+
+<!-- droplet src="getTitle.jhtml"/ -->
+<!--nashk.sn dir=heart-->
+<!--nashk.sn sessionsStrokeDir=-->
+
+<!--nashk.en-->
+    <LINK REL=stylesheet HREF="includes/heart/fonts.css" TYPE="text/css">
+    <script language="javascript" src="includes/heart/standard.js;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ"></script>
+    <script language="javascript" src="includes/heart/primary_menu_builder.js;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ"></script>
+    <script language="javascript" src="includes/heart/secondary_menu_builder.js;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ"></script>
+
+
+
+
+
+	<STYLE TYPE="text/css">
+
+	#primarymenu {position:absolute; left:0; top:
+53
+       ; width:97; height:150; z-index:0; visibility:hidden;}
+
+	#patch {position:absolute; left:0; top:0; width:12; height:36; z-index:1;}
+ 
+
+
+	
+		
+			
+			   
+			       #primarymenuchoice1 {position:absolute; left:133; top:52; width:136; height:29; z-index:1; visibility:hidden;}
+		    
+			
+			   
+			       #primarymenuchoice2 {position:absolute; left:133; top:96; width:136; height:29; z-index:1; visibility:hidden;}
+		    
+			
+			   
+			       #primarymenuchoice3 {position:absolute; left:133; top:140; width:136; height:29; z-index:1; visibility:hidden;}
+		    
+			
+			   
+			       #primarymenuchoice4 {position:absolute; left:133; top:184; width:136; height:29; z-index:1; visibility:hidden;}
+		    
+	
+
+	</style>
+
+	
+<script language="javascript">
+
+
+function hideAll() { visibility('primarymenuchoice1',0); visibility('primarymenuchoice2',0); visibility('primarymenuchoice3',0); visibility('primarymenuchoice4',0);  }
+
+
+function setgoSite()
+{
+    // This will be overridden when admin page is present.
+    // It must be here or calling below in BODY onLoad will result in error
+    // when admin page is not present.
+    // This sets the "not valid user" message to visible.
+    var layerObject;
+    if (document.all) {
+        layerObject = notvalid.style;
+    }
+    else if (document.getElementById) {
+        layerObject = document.getElementById('notvalid').style;
+    }
+    else {
+        layerObject = document.notvalid;
+    }
+    layerObject.visibility= "visible";
+}
+</script>
+</head>
+<body bgcolor="FFFFFF" topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 onload="visibility('primarymenu',1);loaded=1;">
+
+
+<!--------- BEGIN TEST CODE --------------------------------------------------------->
+  
+
+
+<!-- NEW CHECK (BEGIN) ...------------------>
+<!-- NEW CHECK (END) ...-------------------->
+
+
+
+<!--------- END OF CODE TO CHECK WHETHER PAGE IS DELETED OR NOT ----------------------------->
+
+
+<!-- Begin auto-localization --> 
+
+<!-- 
+    THIS INCLUDE FILE WILL MANAGE THE AUTO-LOCALIZATION PROCESS
+    IF THERE EXISTS A ZIP-CODE IN A COOKIE SET BY PRIOR SESSIONS.
+    MODIFICATION ON 06/11/2003 : 
+         THIS JHTML RETRIEVES ZIP-CODE FROM COOKIE, AND STORES THE
+         DATA IN SESSION OBJECT. THAT DATA WILL LATER BE USED BY
+         "zipfinder.jhtml" TO CUSTOMIZE DISPLAY OF ZIP-FINDER 
+         PROMO WIDGET.  
+    -------------------------------------------------------------->
+    
+<!-- THE FOLLOWING JAVASCRIPT CODE PROVIDES THE MEANS TO ADD COOKIES VIA JAVASCRIPT
+     INSTEAD OF ATG-API, FOR COMPATIBILITY WITH OLDER VERSIONS OF IE. 
+    -------------------------------------------------------------->
+
+<SCRIPT LANGUAGE="JavaScript">
+
+   function SetCookie (name, value) {
+      var argv = SetCookie.arguments;
+      var argc = SetCookie.arguments.length;
+      var expires = (argc > 2) ? argv[2] : null;
+      var path = (argc > 3) ? argv[3] : null;
+      var domain = (argc > 4) ? argv[4] : null;
+      var secure = (argc > 5) ? argv[5] : false;
+      var expires = new Date();
+      expires.setTime(expires.getTime() + (360*24*60*60*1000));
+      document.cookie = name + "=" + escape (value) +
+      "; value=" + escape (value)  +
+      "; expires=" + expires.toGMTString() +
+      ((path == null) ? "" : ("; path=" + path)) +
+      ((domain == null) ? "" : ("; domain=" + domain)) +
+      ((secure == true) ? "; secure" : "");
+   }
+
+</script>
+
+
+
+
+
+     
+
+<!-- End auto-localization --> 
+
+	<!--begin the header-->
+	<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="245" rowspan="2" background="/images/heart/interface/topleft.gif" valign="top">
+			<form method="get" action="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ">
+				<img src="/images/heart/interface/spacer.gif" width="245" height="1" border="0"><br>
+				<img src="/images/heart/interface/spacer.gif" width="20" height="11" border="0">
+				<input type="hidden" name="identifier" value="10000015">
+				<input type="hidden"  value="inter" name="/org/heart/inktomi/ParamMapper.col"><input type="hidden" name="_D:/org/heart/inktomi/ParamMapper.col" value=" ">
+				<input type="text"  size="13" value="" name="/org/heart/inktomi/ParamMapper.qt"><input type="hidden" name="_D:/org/heart/inktomi/ParamMapper.qt" value=" "><input type="image" src="/images/heart/interface/search.gif" width="57" height="20" border="0"><br>
+				<img src="/images/heart/interface/spacer.gif" width="7" height="11" border="0">
+				<a href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=10000015&adv=1"><img src="/images/heart/interface/advancedsearch.gif" width="115" height="13" alt="" border="0"></a>
+			<input type="hidden" name="_DARGS" value="/heartheader.jhtml"></form>
+		</td>
+		<td valign="top"><a href="https://donate.americanheart.org/ecommerce/aha/aha_index.jsp" onmouseover="document.nav01.src='/images/heart/interface/ondonate.gif'" onmouseout="document.nav01.src='/images/heart/interface/offdonate.gif'"><img 		name="nav01" src="/images/heart/interface/offdonate.gif" alt="Donate" width="58" height="28" border="0"></a></td>
+		<td valign="top"><a href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=10000055" onmouseover="document.nav02.src='/images/heart/interface/onhelp.gif'" 		onmouseout="document.nav02.src='/images/heart/interface/offhelp.gif'"><img 		name="nav02" src="/images/heart/interface/offhelp.gif"			alt="Help"  width="42" height="28" border="0"></a></td>
+		<td valign="top"><a href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=10000023" onmouseover="document.nav03.src='/images/heart/interface/oncontact.gif'" 		onmouseout="document.nav03.src='/images/heart/interface/offcontact.gif'"><img 		name="nav03" src="/images/heart/interface/offcontact.gif" 		alt="Contact" width="62" height="28" border="0"></a></td>
+		<td valign="top"><a href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=10000052" onmouseover="document.nav04.src='/images/heart/interface/onsiteindex.gif'"	onmouseout="document.nav04.src='/images/heart/interface/offsiteindex.gif'"><img 	name="nav04" src="/images/heart/interface/offsiteindex.gif"	alt="Site Index"  width="68" height="28" border="0"></a></td>
+		<td valign="top"><a href="/;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ" onmouseover="document.nav05.src='/images/heart/interface/onhome.gif'" 		onmouseout="document.nav05.src='/images/heart/interface/offhome.gif'"><img 		name="nav05" src="/images/heart/interface/offhome.gif" 		alt="Home" width="51" height="28" border="0"></a></td>
+		<td valign="top"><img src="/images/heart/interface/middletopright.gif" width="54" height="28" border="0"></td>
+		<td rowspan="2"><img src="/images/heart/interface/logo.gif" width="195" height="75" border="0" alt="American Heart Association"></td>
+	</tr>
+	<tr>
+		<td valign="top" colspan="8">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+				<td valign="top"><img src="/images/heart/interface/middleleft.gif" width="145" height="36" border="0"><br><img src="/images/heart/interface/spacer.gif" width="1" height="11" border="0"></td>
+				<td valign="top" align="center"><img src="/images/heart/interface/dkbluepixel.gif" width="117" height="1" alt="" border="0"><br><img src="/images/heart/interface/spacer.gif" width="117" height="10" border="0" alt=""><br><font class="timetext"><script language="JavaScript" type="text/javascript">
+					<!--
+					var now = new Date();
+					var year = now.getYear();
+					if (year < 2000) {year = year + 1900;}
+					var monthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+					document.write(monthNames[now.getMonth()] + " " + now.getDate() + ", " + year);
+					// -->
+					</script></FONT></td>
+				<td valign="top"><img src="/images/heart/interface/middleright.gif" width="72" height="36" border="0"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+		
+	<!--end the header-->
+
+<table border="0" cellpadding="0" cellspacing="0" width="770">
+   <tr>
+      <td valign="top">
+         <!--this td is always blank-->
+         <img src="/images/interface/spacer.gif" alt="" border="0" width="10" 
+              height="288">
+      </td>
+      <td valign="top">
+        <img src="/images/interface/spacer.gif" alt="" border="0" width="10" height="15"><br>
+        <!-- begin content area include-->
+        <!-- Addition by Salman Qureshi - McFadyen Consulting -->
+        
+		           
+			                  <?xml version="1.0" encoding="UTF-8"?>
+<font class="title"><p><b>Research Contact Information</b></p></font><font class="content">
+
+<p>Direct all inquiries regarding eligibility and technical support to&#160;your funding component.&#160; Texas applicants contact<br />
+the <a href="#western_states">Western States Affiliate</a> for electronic submission help and after the deadline.</p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="400">
+<tbody>
+<tr>
+<td class="content" bgcolor="#e8f9f4" valign="top">
+<p><b>Funding Component</b></p>
+</td>
+<td class="content" bgcolor="#e8f9f4" valign="top">
+<p><b>Phone/Fax/E-mail</b></p>
+</td>
+<td class="content" bgcolor="#e8f9f4" valign="top">
+<p><b>Mailing Address for Paper Copies of Application and Reference Reports</b></p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><strong>National Center</strong></p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><strong>Phone:<br />
+</strong>(214) 706-1158<br />
+(214) 706-1744<br />
+(214) 706-1457<br />
+<strong>Fax:&#160;</strong><br />
+(214) 706-1341<br />
+<strong>E-mail</strong>:<br />
+<a href="mailto:ncrp@heart.org">ncrp@heart.org</a> or<br />
+<a href="mailto:promo@heart.org">promo@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p>Director,<br />
+Division of Research Administration<br />
+National Center<br />
+7272 Greenville Avenue<br />
+Dallas, TX 75231-4596</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#f7f7f7" valign="top"><strong>Florida/Puerto Rico Affiliate<br />
+</strong>(Florida, Puerto Rico)</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><b>Phone:</b><br />
+(800) 275-0448<br />
+(727) 570-8809<br />
+<b>Fax:</b><br />
+(727) 578-9746<br />
+<b>E-mail:</b><br />
+<!-- begin-conversion-info id=8385 type=link action=include status=1 status2=6 --><a href="mailto:src@heart.org"><!-- end-conversion-info -->src@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p>Attn: Research Administration<br />
+American Heart Association<br />
+Southern & Ohio Valley Research Consortium<br />
+9900 Dr. Martin Luther King Jr. St. North<br />
+St. Petersburg, FL 33716-3801</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><b>*Greater Midwest Affiliate</b><br />
+(Illinois, Indiana, Michigan, Minnesota, N. Dakota, S. Dakota, Wisconsin)</p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><strong>Phone:<br />
+</strong>(214) 706-1158<br />
+(214) 706-1744<br />
+(214) 706-1457<br />
+<strong>Fax:&#160;<br />
+</strong> (214) 706-1341<br />
+<strong>E-mail:<br />
+</strong><a href="mailto:ncrp@heart.org">ncrp@heart.org</a> or<br />
+<a href="mailto:promo@heart.org">promo@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p>American Heart Association<br />
+Attn: Affiliate Research Services<br />
+7272 Greenville Avenue<br />
+Dallas, TX 75231-4596</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><b>Heartland Affiliate</b><br />
+(Arkansas, Iowa, Kansas, Missouri, Nebraska, Oklahoma)</p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><strong>Phone:<br />
+</strong>(214) 706-1158<br />
+(214) 706-1744<br />
+(214) 706-1457<br />
+<strong>Fax:&#160;<br />
+</strong> (214) 706-1341<br />
+<strong>E-mail:<br />
+</strong><a href="mailto:ncrp@heart.org">ncrp@heart.org</a> or<br />
+<a href="mailto:promo@heart.org">promo@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p>American Heart Association<br />
+Attn: Affiliate Research Services<br />
+7272 Greenville Avenue<br />
+Dallas, TX 75231-4596</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><b>Heritage Affiliate</b><br />
+(Connecticut, New Jersey, New York City)</p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><strong>Phone:<br />
+</strong>(214) 706-1158<br />
+(214) 706-1744<br />
+(214) 706-1457<br />
+<strong>Fax:&#160;<br />
+</strong> (214) 706-1341<br />
+<strong>E-mail:<br />
+</strong><a href="mailto:ncrp@heart.org">ncrp@heart.org</a> or<br />
+<a href="mailto:promo@heart.org">promo@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p>American Heart Association<br />
+Attn: Affiliate Research Services<br />
+Northeast Research Consortium<br />
+7272 Greenville Avenue<br />
+Dallas, TX 75231-4596</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><b>Mid-Atlantic Affiliate</b><br />
+(Maryland, Nation's Capitol, North Carolina, South Carolina, Virginia)</p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top"><strong>Phone:<br />
+</strong>(410) 685-7074<br />
+(410) 637-4539<br />
+(410) 637-4540<br />
+<b>Fax:</b><br />
+(410) 468-4219<br />
+<b>E-mail:</b> <!-- begin-conversion-info id=8392 type=link action=include status=1 status2=6 --><a href="mailto:dianne.cooper@heart.org"><!-- end-conversion-info -->dianne.cooper@heart.org</a> <a href="mailto:lora.wong@heart.org">lora.wong@heart.org</a> </td>
+<td class="content" bgcolor="#f7f7f7" valign="top">American Heart Association<br />
+Attn: Affiliate Research Services<br />
+Mid-Atlantic Research Consortium<br />
+415 N. Charles Street<br />
+Baltimore, MD 21201</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><b>Northeast</b>&#160;<strong>Affiliate</strong><br />
+(Maine, Massachusetts, New Hampshire, New York State, Rhode Island, Vermont)</p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><strong>Phone:<br />
+</strong>(214) 706-1158<br />
+(214) 706-1744<br />
+(214) 706-1457<br />
+<strong>Fax:&#160;<br />
+</strong> (214) 706-1341<br />
+<strong>E-mail:<br />
+</strong><a href="mailto:ncrp@heart.org"><strong>ncrp@heart.org</strong></a> or<br />
+<a href="mailto:promo@heart.org"><strong>promo@heart.org</strong></a></p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p>American Heart Association<br />
+Attn: Affiliate Research Services<br />
+Northeast Research Consortium<br />
+7272 Greenville Avenue<br />
+Dallas, TX 75231-4596</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#f7f7f7" valign="top"><strong>Ohio Valley Affiliate<br />
+</strong>(Kentucky, Ohio, West Virginia)</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><b>Phone:</b><br />
+(800) 275-0448<br />
+(727) 570-8809<br />
+<b>Fax:</b><br />
+(727) 578-9746<br />
+<b>E-mail:</b><br />
+<!-- begin-conversion-info id=8403 type=link action=include status=1 status2=6 --><a href="mailto:src@heart.org"><!-- end-conversion-info -->src@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p>Attn: Research Administration<br />
+American Heart Association<br />
+Southern & Ohio Valley Research Consortium<br />
+9900 Dr. Martin Luther King Jr. St. North<br />
+St. Petersburg, FL 33716-3801</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><strong>Pacific Mountain Affiliate<br />
+</strong>(Alaska, Arizona, Colorado, Hawaii, Idaho, Montana, New Mexico, Oregon, Washington, Wyoming)</p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><strong>Phone:<br />
+</strong>(214) 706-1158<br />
+(214) 706-1744<br />
+(214) 706-1457<br />
+<strong>Fax:&#160;<br />
+</strong> (214) 706-1341<br />
+<strong>E-mail:<br />
+</strong><a href="mailto:ncrp@heart.org">ncrp@heart.org</a> or<br />
+<a href="mailto:promo@heart.org">promo@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p>American Heart Association<br />
+Attn: Affiliate Research Services<br />
+7272 Greenville Avenue<br />
+Dallas, TX 75231-4596</p>
+
+<p>&#160;</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><b>Pennsylvania Delaware Affiliate</b><br />
+(Pennsylvania, Delaware)</p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top"><strong>Phone:<br />
+</strong>(410) 685-7074<br />
+(410) 637-4539<br />
+(410) 637-4540<br />
+<strong>Fax:<br />
+</strong>(410) 468-4219<br />
+<b>E-mail:</b> <!-- begin-conversion-info id=8392 type=link action=include status=1 status2=6 --><a href="mailto:dianne.cooper@heart.org"><!-- end-conversion-info -->dianne.cooper@heart.org</a> <a href="mailto:lora.wong@heart.org">lora.wong@heart.org</a>&#160;</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">American Heart Association<br />
+Attn: Affiliate Research Services<br />
+Mid-Atlantic Research Consortium<br />
+415 N. Charles Street<br />
+Baltimore, MD 21201</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#ffffff" valign="top"><b>Southeast Affiliate</b> <br />
+(Alabama, Georgia, Louisiana, Mississippi, Tennessee)</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p><b>Phone:</b><br />
+(800) 275-0448<br />
+(727) 570-8809<br />
+<b>Fax:</b><br />
+(727) 578-9746<br />
+<b>E-mail:</b><br />
+<!-- begin-conversion-info id=8405 type=link action=include status=1 status2=6 --><a href="mailto:src@heart.org"><!-- end-conversion-info -->src@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#ffffff" valign="top">
+<p>Attn: Research Administration<br />
+American Heart Association<br />
+Southern & Ohio Valley Research Consortium<br />
+9900 Dr. Martin Luther King Jr. St. North<br />
+St. Petersburg, FL 33716-3801</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><strong>Texas Affiliate</strong><br />
+<em>(prior to deadline)<br />
+<br />
+for questions regarding eligibility; for electronic submission help contact the Western States Affiliate</em></p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><b>Phone:</b><br />
+(512) 433-7108<br />
+<b>Fax:</b><br />
+(512) 433-7260<br />
+<b>E-mail:</b><br />
+<!-- begin-conversion-info id=8406 type=link action=include status=1 status2=6 --><a href="mailto:texresearch@heart.org">texresearch@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top"></td>
+</tr>
+
+<tr>
+<td class="content" valign="top">
+<p><strong>Texas Affiliate</strong><br />
+<em>(after deadline)<br />
+<br />
+for paper copy submission, reference reports,<br />
+and electronic submission help</em></p>
+</td>
+<td class="content" valign="top">
+<p><strong>Phone:<br />
+</strong>(650) 259-6700<br />
+<strong>Fax:<br />
+</strong>(650) 259-6891<br />
+<strong>E-mail:<br />
+</strong><a href="mailto:research@heart.org">research@heart.org</a></p>
+</td>
+<td class="content" valign="top">
+<p>Attn: Research Department<br />
+American Heart Association<br />
+Western States Affiliate<br />
+1710 Gilbreth Road<br />
+Burlingame, CA 94010-1317</p>
+</td>
+</tr>
+
+<tr>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><b><a id="western_states" name="western_states"></a>Western States Affiliate</b><br />
+(California, Nevada, Utah)</p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p><b>Phone:</b><br />
+(650) 259-6700<br />
+<b>Fax:</b><br />
+(650) 259-6891<br />
+<b>E-mail:</b><br />
+<!-- begin-conversion-info id=8407 type=link action=include status=1 status2=6 --><a href="mailto:research@heart.org"><!-- end-conversion-info -->research@heart.org</a></p>
+</td>
+<td class="content" bgcolor="#f7f7f7" valign="top">
+<p>Attn: Research Department<br />
+American Heart Association<br />
+Western States Affiliate<br />
+1710 Gilbreth Road<br />
+Burlingame, CA 94010-1317</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br />
+* Formerly Midwest and Northland&#160;Affiliates
+
+
+</font>
+			        
+	    	
+        
+		<!-- Addition by Salman Qureshi - McFadyen Consulting -->
+		<!-- end content area include-->
+</td>
+<td valign="top"><img src="/images/interface/spacer.gif" alt="" border="0" width="15" height="1"></td>
+<td valign="top"><img src="/images/interface/spacer.gif" width="10" height="20" border="0" alt="">
+<br>
+<!-- begin features zone.jthml-->
+<!-- let dynamic pages take over this portion of the screen..-->
+
+	
+
+
+<table border="0">
+  <tr>
+<td valign="top">
+
+
+
+
+
+
+
+
+
+    <!-- zipfinder page will be shown on the page when it is an internet page -->
+    
+
+
+
+
+
+
+<!--Display the weather-->
+
+
+
+<!--Display Related Links-->
+
+
+
+
+	
+			
+                                        
+                                        
+					<img src="/images/heart/interface/spacer.gif" width="163" height="10" border="0"><br>
+					<table border="0" cellpadding="0" cellspacing="0" width="180">
+					<tr><td colspan="5"><img src="/images/heart/modules/toprelateditems.gif" width="180" height="27" border="0"></td></tr>
+					<tr><td width="13" colspan="2"><img src="/images/heart/modules/topleft.gif" width="3" height="6" border="0"></td><td width="154"><img src="/images/heart/modules/spacer.gif" width="154" height="1" border="0"></td><td width="13" colspan="2" align="right"><img src="/images/heart/modules/topright.gif" width="3" height="6" border="0"></td></tr>
+					<tr><td bgcolor="99CCFF"><img src="/images/heart/modules/ltbluepixel.gif" width="1" height="1" border="0"></td><td><img src="/images/heart/modules/spacer.gif" width="15" height="1" border="0"></td>
+					<td valign="top">
+					
+					        <font class="features" color="666666"><b>Links on This Site</b></font><br>
+							
+									<A CLASS="features" HREF="/presenter.jhtml?identifier=10808">Contact Information for Grants and Fiscal Officers</A><br>
+                                         
+<!-- img src="/images/`request.getParameter("dir")`/interface/spacer.gif" 
+     width="5" height="6" border="0"><br -->
+<img src="/images/heart/interface/spacer.gif" 
+     width="5" height="6" border="0"><br>									
+								
+									<A CLASS="features" HREF="/presenter.jhtml?identifier=3006454">Contact Information -- Peer Review</A><br>
+                                         
+<!-- img src="/images/`request.getParameter("dir")`/interface/spacer.gif" 
+     width="5" height="6" border="0"><br -->
+<img src="/images/heart/interface/spacer.gif" 
+     width="5" height="6" border="0"><br>									
+								
+							<br>					
+  					
+                                        
+					</td>
+					<td><img src="/images/heart/modules/spacer.gif" width="9" height="1" border="0"></td><td bgcolor="99CCFF"><img src="/images/heart/modules/ltbluepixel.gif" width="1" height="1" border="0"></td></tr>
+					<tr><td colspan="5"><img src="/images/heart/modules/bottom.gif" width="180" height="19" border="0"></td></tr>
+					</table>
+				
+			
+		
+
+
+	
+<!--Display Did You Knows-->
+
+
+
+
+<!--Display Promo Widgets-->
+
+
+
+    
+            
+
+                                        
+                    <table border="0" cellpadding="0" cellspacing="0" width="180">
+                    <tr><td colspan="5"><img src="images/heart/modules/topblank.gif" width="180" height="27" border="0"></td></tr>
+                    <tr><td width="13" colspan="2"><img src="images/heart/modules/topleft.gif" width="3" height="6" border="0"></td><td width="154"><img src="images/heart/modules/spacer.gif" width="154" height="1" border="0"></td><td width="13" colspan="2" align="right"><img src="images/heart/modules/topright.gif" width="3" height="6" border="0"></td></tr>
+                    <tr><td bgcolor="99CCFF"><img src="images/heart/modules/ltbluepixel.gif" width="1" height="1" border="0"></td><td><img src="images/heart/modules/spacer.gif" width="15" height="1" border="0"></td>
+                    <td valign="top">
+                                        
+                    <font class="features" color="666666"><p>Dr. Michael Kontos was supported early in his career with an American Heart Association &#8211; Mid-Atlantic Affiliate Fellowship award.</p>
+
+<p>He has developed a blood test to help diagnose heart attacks in people with chest pain.&#160; The test detects elevated protein levels associated with dying heart cells.</p></font><br>
+                                        
+                                                
+                    <a href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=242" class="features">learn more...</a>
+                                                    
+                                            
+                    </td>
+                    <td><img src="images/heart/modules/spacer.gif" width="9" height="1" border="0"></td><td bgcolor="99CCFF"><img src="images/heart/modules/ltbluepixel.gif" width="1" height="1" border="0"></td></tr>
+                    <tr><td colspan="5"><img src="images/heart/modules/bottom.gif" width="180" height="19" border="0"></td></tr>
+                    </table>
+            
+        
+
+
+</td>
+  </tr>
+
+
+<!-- end the login droplet condition -->
+
+
+</table>
+
+
+
+
+
+
+
+<!-- on the other hand..if the dynpage value is llIntroPage, then we do want to see the feature zone-->
+
+
+<!-- end features zone.jthml-->
+</td>
+</tr>
+<tr><!--bottom row spacers row-->
+   <td><img src="images/interface/spacer.gif" width="163" height="1" border="0"></td>
+   <td><img src="images/interface/spacer.gif" width="402" height="1" border="0"></td>
+   <td><img src="images/interface/spacer.gif" width="15" height="1" border="0"></td>
+   <td><img src="images/interface/spacer.gif" width="195" height="1" border="0"></td>
+</tr>
+</table> 
+
+<!--begin contents of footer.jthml-->
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td><img src="images/interface/spacer.gif" width="163" height="11" border="0"></td><td colspan="2"><br><br><font class="comment"><a class="content" href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=11405">Privacy Statement</a>  |  <a class="content" href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=11404">Use of Personal Information</a>  |  <a class="content" href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=11406">Copyright</a>  |  <a class="content" href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=3023721">Ethics Policy</a>  |  <a class="content" href="/presenter.jhtml;jsessionid=3KP2L5CLMMZHNWFZOAGSCZQ?identifier=3023759">Conflict of Interest Policy</a><br>
+<font color="999999">&copy;2005 American Heart Association, Inc.  All rights reserved. Unauthorized use prohibited.</font></font></td></tr>
+<tr><td><img src="images/interface/spacer.gif" width="163" height="11" border="0"></td><td><img src="images/interface/spacer.gif" width="417" height="11" border="0"></td><td><img src="images/interface/spacer.gif" width="195" height="11" border="0"></td></tr>
+</table>
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
+<script language="javascript">
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="ehg-aha.hitbox.com";
+
+//BEGIN EDITABLE SECTION
+//CONFIGURATION VARIABLES
+//QA:   hbx.acct="DM531113D4DD58EN3";//ACCOUNT NUMBER(S)
+//PROD: hbx.acct="DM531113GBRV58EN3";//ACCOUNT NUMBER(S)
+hbx.acct="DM531113GBRV58EN3";//ACCOUNT NUMBER(S)
+// DEFINED IN PRESENTER.JHTML FURTHER DOWN IN THE PAGE. 
+// hbx.pn="PUT+PAGE+NAME+HERE";//PAGE NAME(S)
+// DEFINED IN PRESENTER.JHTML FURTHER DOWN IN THE PAGE. 
+// hbx.mlc="CONTENT+CATEGORY";//MULTI-LEVEL CONTENT CATEGORY
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto_pos";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg="";//VISITOR SEGMENTATION
+hbx.fnl="";//FUNNELS
+
+//CAMPAIGNS
+hbx.cmp="";//CAMPAIGN ID
+hbx.cmpn="";//CAMPAIGN ID IN QUERY
+hbx.dcmp="";//DYNAMIC CAMPAIGN ID
+hbx.dcmpn="";//DYNAMIC CAMPAIGN ID IN QUERY
+hbx.dcmpe="";//DYNAMIC CAMPAIGN EXPIRATION
+hbx.dcmpre="";//DYNAMIC CAMPAIGN RESPONSE EXPIRATION
+hbx.hra="";//RESPONSE ATTRIBUTE
+hbx.hqsr="";//RESPONSE ATTRIBUTE IN REFERRAL QUERY
+hbx.hqsp="";//RESPONSE ATTRIBUTE IN QUERY
+hbx.hlt="";//LEAD TRACKING
+hbx.hla="";//LEAD ATTRIBUTE
+hbx.gp="";//CAMPAIGN GOAL
+hbx.gpn="";//CAMPAIGN GOAL IN QUERY
+hbx.hcn="";//CONVERSION ATTRIBUTE
+hbx.hcv="";//CONVERSION VALUE
+hbx.cp="null";//LEGACY CAMPAIGN
+hbx.cpd="";//CAMPAIGN DOMAIN
+
+//CUSTOM VARIABLES
+hbx.ci="";//CUSTOMER ID
+hbx.hc1="";//CUSTOM 1
+hbx.hc2="";//CUSTOM 2
+hbx.hc3="";//CUSTOM 3
+hbx.hc4="";//CUSTOM 4
+hbx.hrf="";//CUSTOM REFERRER
+hbx.pec="";//ERROR CODES
+
+//INSERT CUSTOM EVENTS
+var ev1 = _hbEvent("search");
+// ev1.keywords = "Information+on+heart+diseases"; // Keyword(s) searched upon
+// ev1.results = "9";         // Number of results
+ev1.keywords = hbxStrip( searchTerm ); // Keyword(s) searched upon
+ev1.results = "" + searchItmCnt + "";         // Number of results
+ev1.attr1 = "COLUMN+3";    // Used for advanced searches; such
+ev1.attr2 = "COLUMN+4";    //   as, search by category, movie, 
+ev1.attr3 = "COLUMN+5";    //   etc...
+ev1.attr4 = "COLUMN+6";
+
+//END EDITABLE SECTION
+
+//REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
+</script><script language="javascript1.1" defer src="http://www.americanheart.org/includes/hitbox/hbx.js"></script>
+<!--END WEBSIDESTORY CODE-->
+
+
+<!--end contents of footer.jthml-->
+ <!--nashk.sn-->
+
+<script language="javascript">
+  
+          
+menubegin(1);
+                  writeitem("section1menu","1","/presenter.jhtml?identifier=3053","Warning Signs","1");
+
+
+writeitem("section1menu","1","http://www.strokeassociation.org/","American Stroke Association","2");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=1200002","Diseases &amp; Conditions","3");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=1477","Children's Health","4");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=3011764","CPR &amp; ECC","5");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=3015971","En español","6");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=1200009","Healthy Lifestyle","7");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=2945","Advocacy: You're the Cure","8");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=1200018","Fund Raising","9");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=1200020","Publications &amp; Resources","10");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=10000056","Heart &amp; Stroke Encyclopedia","11");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=1200030","News","12");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=1200029","About Us","13");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=1200033","Science &amp; Professional","14");
+
+
+writeitem("section1menu","1","/presenter.jhtml?identifier=10000028","Local Info","15");
+
+
+
+menuend();
+              
+      
+          
+menubegin(2);
+                  writeitem("section2menu","1","http://my.americanheart.org","My AmericanHeart for Professionals","1");
+
+
+writeitem("section2menu","1","/presenter.jhtml?identifier=3004002","Member Services","2");
+
+
+writeitem("section2menu","1","/presenter.jhtml?identifier=3002973","Conferences and Events","3");
+
+
+writeitem("section2menu","1","/presenter.jhtml?identifier=1722","Continuing Education","4");
+
+
+writeitem("section2menu","1","/presenter.jhtml?identifier=1200409","Library","5");
+
+
+writeitem("section2menu","1","/presenter.jhtml?identifier=1200050","Research","6");
+
+
+writeitem("section2menu","1","/presenter.jhtml?identifier=3004200","Patient Information","7");
+
+
+writeitem("section2menu","1","/presenter.jhtml?identifier=1165","Get With The Guidelines","8");
+
+
+writeitem("section2menu","1","/presenter.jhtml?identifier=3015493","Quality Initiatives","9");
+
+
+
+menuend();
+              
+      
+          
+menubegin(3);
+                  writeitem("section3menu","1","/presenter.jhtml?identifier=138","About Research","1");
+
+
+writeitem("section3menu","1","/presenter.jhtml?identifier=11341","Peer Review","2");
+
+
+writeitem("section3menu","1","/presenter.jhtml?identifier=3004140","Applicant Information","3");
+
+
+writeitem("section3menu","1","/presenter.jhtml?identifier=3004144","Awards Administration","4");
+
+
+
+menuend();
+              
+      
+          
+menubegin(4);
+                  writeitem("section4menu","1","/presenter.jhtml?identifier=9713","Funding Opportunities","1");
+
+
+writeitem("section4menu","1","/presenter.jhtml?identifier=10813","Application Deadlines","2");
+
+
+writeitem("section4menu","1","/presenter.jhtml?identifier=12175","Application Forms and Instructions","3");
+
+
+writeitem("section4menu","1","/presenter.jhtml?identifier=270","Electronic Application Submission","4");
+
+
+writeitem("section4menu","1","/presenter.jhtml?identifier=11205","Research Contact Information","5");
+
+
+
+menuend();
+              
+      
+
+  
+          
+                  document.write("<div id=primarymenu>");
+              
+                  primaryitem("Main Menu","/presenter.jhtml?identifier=1200000","1");              
+                      
+              
+                  primaryitem("Science &amp; Professional","/presenter.jhtml?identifier=1200033","2");              
+                      
+              
+                  primaryitem("Research","/presenter.jhtml?identifier=1200050","3");              
+                      
+              
+                  primaryitem("Applicant Information","/presenter.jhtml?identifier=3004140","4");              
+                      
+              
+      
+
+      separator("Research Contact Information", "/presenter.jhtml?identifier=11205");
+   
+document.write("</div>");
+</script>
+ <!-- nashk.n -->
+
+
+
+<!--<a href="/presenter.jhtml"> 
+<param name="dynamicPage" value="/quizzes/llIntroPage.jhtml">
+<param name="identifier" value="param:identifier">
+<param name="dynamicPageNumber" value="1">Take Quiz</a>-->
+
+<!--<a href="/presenter.jhtml"> 
+<param name="identifier" value="3018118">Take Quiz</a>-->
+
+<!-- THE FOLLOWING IS NOT FOR DEBUGING.
+     IT IS FOR AUTO-MONITORING OF THE SITE. 
+     DO NOT DELETE ! ...........................  --> 
+<!-- #PRESENTER.JHTML# -->
+
+
+
+<!-- CODE ADDED FOR HITBOX [BEGIN]
+     ................................................... --->
+</script>
+<script>hbx.mlc=hbxStrip('/Main Menu/Science & Professional/Research/Applicant Information/Research Contact Information');</script>
+<script>hbx.pn=hbxStrip(document.title+'_11205');</script>
+
+<!-- CODE ADDED FOR HITBOX [END]
+     ................................................... --->
+
+</body>
+     <!-- close the droplet LeftNav -->
+</html>
+

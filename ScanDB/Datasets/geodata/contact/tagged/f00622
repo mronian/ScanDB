@@ -1,0 +1,464 @@
+<DOC>
+<DOCNO>f00622</DOCNO>
+<DOCHDR>http://www.senate.leg.state.mn.us/members</DOCHDR>
+
+
+<html>
+<head>
+<meta http-equiv="pragma" content="no-cache">
+
+<META http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for
+"http://www.senate.leg.state.mn.us" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for
+"http://www.senate.leg.state.mn.us" r (n 0 s 0 v 0 l 0))'> 
+
+<title>Minnesota Senate Members</title>
+<script type="text/javascript" src="/incls82/main.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.senate.leg.state.mn.us/styles/main.css">
+
+<SCRIPT language=JavaScript>
+<!--
+
+function formHandler( boxname ){
+var URL = boxname.options[boxname.selectedIndex].value;
+window.location.href = URL; }
+
+//-->
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<!---Top Banner--->
+<TABLE id ="title" cellPadding="0" cellSpacing="0"><form name="seek1" accept-charset=iso-8859-1 method="get" action="http://search.state.mn.us/leg/query.html">
+<tr>
+<TD id="title" class="banner"><img alt="Minnesota Senate Image" src="/graphics/capitolimagesenate.jpg"></td>
+
+<td id="title" class="search">
+<center><table id="topnav">
+	<tr><td id="topnav" class="lnk"><A href="http://www.leg.state.mn.us/">Legislature Home</A>&nbsp;| <a href="http://www.leg.state.mn.us/lrl/links/links.asp">Links to the World</a>&nbsp;| <a href="http://www.leg.state.mn.us/leg/help.asp">Help</a>&nbsp;| <A href="http://search.state.mn.us/leg/index.html?ql=a&charset=iso-8859-1&col=state">Advanced Search</A></td>
+	</tr></table>
+	</center>
+	<label for="Search Legislature"><b>Search Legislature:</b>&nbsp;&nbsp;</label>
+		
+		<input type=text name=qt id="search" size="15" value=" " maxlength=1991><input type="hidden" name="qp" value="site:www.leg.state.mn.us site:house.leg.state.mn.us site:senate.leg.state.mn.us site:www.commissions.leg.state.mn.us site:www.auditor.leg.state.mn.us"><input type=hidden name=col value="state"> <INPUT align="top" alt="Go" border="0" hspace="0" name="Go" src="/graphics/newgoblue.jpg" type="image" value="Search">
+
+</td>
+</tr>
+
+		</form>
+		
+<tr><td id="title" class="dropdowns" colspan="2">
+<!-- DROP DOWN BOXES---------------------------------------------------------- -->
+<!-- Primary Navigation -->
+<table id="navigation2" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="HouseNav" class="shorttab1">
+		<a href="http://www.house.leg.state.mn.us/">House</a>
+	</td>
+
+	<td id="SenateNav" class="shorttab">
+		<a href="http://www.senate.leg.state.mn.us/">Senate</a>
+	</td>
+
+	<td id="LegNav" class="longtab">
+		<a href="http://www.commissions.leg.state.mn.us/depts.htm">Joint Departments and Commissions</a>
+	</td>
+	<td class="datedisplay"> Today is 
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+  function GetDay(intDay){
+    var DayArray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", 
+                         "Thursday", "Friday", "Saturday")
+    return DayArray[intDay]
+    }
+
+  function GetMonth(intMonth){
+    var MonthArray = new Array("January", "February", "March",
+                               "April", "May", "June",
+                               "July", "August", "September",
+                               "October", "November", "December") 
+    return MonthArray[intMonth] 	  	 
+    }
+  function getDateStrWithDOW(){
+    var today = new Date()
+    var year = today.getYear()
+    if(year<1000) year+=1900
+    var todayStr = GetDay(today.getDay()) + ", "
+    todayStr += GetMonth(today.getMonth()) + " " + today.getDate()
+    todayStr += ", " + year
+    return todayStr
+    }
+//-->
+</SCRIPT>
+
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+    document.write(getDateStrWithDOW())
+//-->
+</SCRIPT>
+
+	</td>
+
+	
+	
+</tr>
+</table>
+<table id="navigation" cellpadding="0" cellspacing="0">
+<tr>
+	<td id="LawsNav" class="mediumtab">
+		<a href="http://www.leg.state.mn.us/leg/statutes.asp">Statutes, Laws, and Rules</a>
+	</td>
+	
+	<td id="BillsNav" class="regulartab1">
+		<a href="http://www.leg.state.mn.us/leg/legis.asp">Bill Search and Status</a>
+	</td>
+	
+	
+	<td id="SchedulesNav" class="regulartab">
+		<a href="http://www.senate.leg.state.mn.us/schedule/">Schedules</a>
+		<ul id="SchedulesMenu" class="navMenu">
+			<li><a href="http://www.senate.leg.state.mn.us/schedule/">Senate Schedules</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/hinfo/hinfosched.asp">House Schedules</a></li>
+			<li><a href="http://www.senate.leg.state.mn.us/departments/secretary/sendesk/orders/index.shtml#header">Order of Business</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/htv/htv.asp">Television Schedules</a></li>
+		</ul>
+	</td>
+	
+		<td id="PubsNav" class="regulartab">
+		<a href="http://www.senate.leg.state.mn.us/departments/secretary/pub/publications/index.shtml#header">Publications</a>
+		<ul id="PubsMenu" class="navMenu">
+			<!-----<li><a href="http://www.house.leg.state.mn.us/hrd/actsum.asp">Act Summaries</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/hrd/billsum.asp">Bill Summaries</a></li>   
+			<li><a href="http://www.house.leg.state.mn.us/hrd/issinfo/issinfo.htm">Issues & Information</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/hinfo/2003nulaw.htm">New Laws</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/hinfo/sdaily.asp">Session Daily</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/hinfo/swmain.asp">Session Weekly</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/hinfo/hsepix.htm">Capitol Area Photos</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/fiscal/tracking.htm">Session tracking sheets</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/fiscal/moneymatters.htm">Money Matters</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/fiscal/Issuebriefs.htm">Issue Briefs</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/fiscal/generalinfo.htm">Fiscal Information</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/cco/journals/journl.htm">House Journal</a></li> 
+			<li><a href="http://www.house.leg.state.mn.us/bills/hotlist.asp?ls_year=83&session_number=0">Hotlist</a></li>
+			<li><a href="http://www.leg.state.mn.us/leg/publicat.asp">Other Publications</a></li>----->
+			<li><a href="http://www.senate.leg.state.mn.us/departments/secretary/pub/publications/index.shtml#header">Publications List</a>
+			<li><a href="http://www.senate.leg.state.mn.us/departments/scr/billsumm/index.htm">Bill Summaries</a></li>
+			<li><a href="http://www.house.leg.state.mn.us/hinfo/2003nulaw.htm">New Laws (compiled by the House of Representatives)</a></li>
+			<li><a href="http://www.senate.leg.state.mn.us/briefly/">Senate Briefly</a></li> 
+			<li><a href="http://www.senate.leg.state.mn.us/departments/secretary/media/photos/index.shtml#header">Capitol Area Photos</a></li>
+			<li><a href="http://www.senate.leg.state.mn.us/departments/fiscalpol/tracking/2004/index.shtml#header">Session Tracking Sheets</a></li>
+			<li><a href="http://www.senate.leg.state.mn.us/departments/fiscalpol/reports/index.shtml#header">Budget Analysis and Fiscal Issue Briefs</a></li>
+			<li><a href="http://www.senate.leg.state.mn.us/journals/index.htm">Senate Journal</a></li>
+			<li><a href="http://www.senate.leg.state.mn.us/departments/secretary/info/publications/popularbills.pdf">Hotlist (PDF)</a></li>
+			<li><a href="http://www.leg.state.mn.us/leg/publicat.asp">Other Publications</a></li>
+		</ul>
+	</td>
+	
+	<td id="DepartmentNav" class="rightcol">
+		<a href="http://www.senate.leg.state.mn.us/departments/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senate Offices</a>
+		<ul id="DepartmentMenu" class="navMenu">
+			<li><a href="http://www.senate.leg.state.mn.us/departments/">All Senate Offices</a></li>
+			<li><a href="http://www.senate.leg.state.mn.us/departments/fiscalpol/">Office of Fiscal Policy Analysis</a></li>
+			<li><a href="http://www.senate.leg.state.mn.us/departments/scr/">Senate Counsel and Research</a></li>
+			<li><a href="http://www.senate.leg.state.mn.us/departments/secretary/index.shtml#functionsandservices">Secretary of the Senate (All Offices)</a></li>
+		</ul>
+	</td>
+		
+
+</tr>
+
+</table>
+<!--End Dropdowns-->
+
+
+
+
+
+
+<!-- LEFT NAVIGATION COLUMN------------------------------------------------------нн------>
+</td></tr>
+</TABLE>
+
+
+<DIV>
+<table cellPadding="0" cellSpacing="0">
+<TR>
+<td id="topblueline"></td>
+
+</TR>
+</table>
+
+<TABLE border="0" cellPadding="0" cellSpacing="0">
+
+
+<TR>
+<td id="sidenav">
+<!--  General Info Section     -->
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><form method="post" action="http://www.senate.leg.state.mn.us/perl/billinf.pl" name="billform"> 
+<P><br>Legislation<br>
+
+<SELECT NAME="special_session">
+<Option Selected>Regular Session</Option>
+</SELECT>
+
+<br>Get bill 
+	<INPUT id="FormsEditField8" type=TEXT name=billnum value="" size="4" maxlength="7"> <INPUT align="top" alt="Go" border="0" hspace="0" name="Go" src="http://www.senate.leg.state.mn.us/graphics/goblue.jpg" type="image" value="Submit"><br>
+	<!-----<INPUT type=hidden name=ls_year value=83  size=7>----->
+	<!-----<INPUT type=hidden name=session_year value=2004  size=7>----->
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(e.g. sf1)
+</FORM>
+</td>
+</tr>
+<tr>
+<td>
+Senate Members<br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.senate.leg.state.mn.us/members/index.htm#header">
+Member Information</a><br>
+<!-----<a href="http://www.senate.leg.state.mn.us/members/majority03.htm">
+Majority Leadership</a><br>
+<a href="http://www.senate.leg.state.mn.us/members/minority03.htm">
+Minority Leadership</a><br>----->
+&nbsp;&nbsp;&nbsp;<a href="http://www.leg.state.mn.us/leg/districtfinder.htm">
+Who represents you?</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.senate.leg.state.mn.us/caucus/">
+Caucuses</a><br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+Senate Committees<br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.senate.leg.state.mn.us/committee/index.htm#header">
+Committee Information</a><br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+Senate Offices<br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.senate.leg.state.mn.us/departments/">
+All Senate Offices</a><br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+Audio &amp; Video<br>
+&nbsp;&nbsp;&nbsp;<A href="http://senators.video.state.mn.us:8080/ramgen/encoder/Senate-A.rm">
+Watch Live Video</A><br>
+&nbsp;&nbsp;&nbsp;<A href="http://www.senate.leg.state.mn.us/media/">
+Audio &amp; Video Archives</A><br>
+<br>
+</td>
+
+<tr>
+<td>
+<P>
+Senate Rules<br>
+&nbsp;&nbsp;&nbsp;<A href="
+http://www.senate.leg.state.mn.us/departments/secretary/sendesk/rules/index.shtml#senaterules">
+Rules of the Senate</A><br>
+&nbsp;&nbsp;&nbsp;<A href="http://www.senate.leg.state.mn.us/departments/secretary/sendesk/rules/index.shtml#jointrules">
+Joint Rules</A><br>
+<br>
+</P>
+</td>
+</tr>
+<!-----<tr>
+<td>
+<a href="http://www.house.leg.state.mn.us/cco/stats.asp">
+Session Statistics</a><br>
+<br>
+</td>
+</tr>----->
+<tr>
+<td>
+<P>
+Appointments<br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.senate.leg.state.mn.us/departments/secretary/sendesk/engrossing/confirmations/index.htm#header">
+Confirmations</a><br>
+<br>
+</td>
+</tr>
+</table>
+<!---SideBar End--->
+
+</td>
+
+<td id="curvleft">
+</td>
+
+<!--CENTER TEXT BODY ------------------------------------------------------------------>
+<td id="pagebody">
+
+<table cellPadding="0" cellSpacing="0" id="pagebody1" width="100%">
+	<tr>
+		<td valign="top">
+<table id="listsmall">
+<tr>
+<td valign="top" class="list100">
+<b>Minnesota Senate</b>
+<br><b>Secretary of the Senate</b> <img alt="red diamond image" src="/graphics/reddiamond.gif"> <b>Senate Information Office</b>
+<br><GEO TYPE="US">75 Rev. Dr. Martin Luther King Jr. Blvd., Room 231 <img alt="red diamond image" src="/graphics/reddiamond.gif"> St. Paul, MN 55155-1606</GEO> 
+<br>Phone: 651.296.0504 <img alt="red diamond image" src="/graphics/reddiamond.gif"> Toll-free: 888.234.1112 <img alt="red diamond image" src="/graphics/reddiamond.gif"> Fax: 651.296.6511
+<br><a href="http://www.senate.leg.state.mn.us/departments/all_offices/frequent_call_list.htm#generalcontact">General Contact (including TTY)</a> <img alt="red diamond image" src="/graphics/reddiamond.gif"> <a href="http://www.senate.leg.state.mn.us/departments/all_offices/frequent_call_list.htm">Frequently Called Numbers</a>  
+<br>For additional contact information:
+<br><a href="http://www.senate.leg.state.mn.us/members/">Visit Senators</a> <img alt="red diamond image" src="/graphics/reddiamond.gif"> <a href="http://www.senate.leg.state.mn.us/committee/">Visit Senate Committees</a> <img alt="red diamond image" src="/graphics/reddiamond.gif"> <a href="http://www.senate.leg.state.mn.us/departments/">Visit Senate Offices</a> <img alt="red diamond image" src="/graphics/reddiamond.gif"> <a href="http://www.senate.leg.state.mn.us/caucus/">Visit Senate Caucuses</a>
+<br><i>For general Senate information, contact the number above.</i>
+<br><i>For specific information, contact offices listed by services available.</i>
+</td>
+</tr>
+</table>	
+		</td>
+	</tr>
+
+	<tr>
+	   <td valign="top"><a name="header">&nbsp;</a></td>
+	</tr>
+
+	<tr>
+	   <td valign="top"><hr color="#3353bb"></td>
+	</tr>
+
+	<tr>
+	   <td valign="top"><p><b>Minnesota Senate Members</b></td>
+	</tr>
+
+	<tr>
+	   <td valign="top"><hr color="#3353bb"></td>
+	</tr>
+
+	<tr>
+	   <td valign="top">
+	   		<table id="list">
+				<tr>
+					<td valign="top" colspan=3 class=list1><img src="/graphics/arrow_blue.gif" height=12>  <a href="http://www.leg.state.mn.us/leg/Districtfinder.asp">Find your Senator or District:  Who represents you?</a></td>
+				</tr>
+				<tr>
+					<td valign="top" colspan=3><b>Member Information</b></td>
+				</tr>
+				<tr>
+					<td valign="top" class=list1><b>All Senators</b></td>
+					<td valign="top" class=list0>&nbsp;</td>
+					<td valign="top" class=list2><a href="http://www.senate.leg.state.mn.us/members/info/alpha.htm#header">Senator Alphabetical List</a>
+					<br><a href="http://www.senate.leg.state.mn.us/members/info/district.htm#header">Senator District Order List</a></td>
+				</tr>
+				<tr>
+					<td valign="top" class=list1><b>Caucus Leadership</b> <br><b>and Members</b></td>
+					<td valign="top" class=list0>&nbsp;</td>
+					<td valign="top" class=list2><!-----<a href="http://www.senate.leg.state.mn.us/members/info/alpha_dfl.htm#header">DFL Senator Alphabetical List</a>
+					<br><a href="http://www.senate.leg.state.mn.us/members/info/alpha_r.htm#header">Republican Senator Alphabetical List</a>
+					<br><a href="http://www.senate.leg.state.mn.us/members/info/alpha_ind.htm#header">Independent Senator Alphabetical List</a>----->
+					<a href="http://www.senate.leg.state.mn.us/members/info/alpha_dfl_leaders.htm">Majority Leadership</a>
+					<br><a href="http://www.senate.leg.state.mn.us/members/info/alpha_r_leaders.htm">Minority Leadership</a>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" class=list1><b>Directories and</b> <br><b>Senator Details</b></td>
+					<td valign="top" class=list0>&nbsp;</td>
+					<td valign="top" class=list2><a href="http://www.senate.leg.state.mn.us/members/info/electiondir_senate.pdf">2005 Election Directory</a>* (PDF Document) - Complete version including details about the Minnesota Senate and House of Representatives including Leadership, Demographics, Name Pronunciation Guide, All Members Roster, Legislative Offices, and Committee Assignments.
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.senate.leg.state.mn.us/members/info/electiondir_senate.pdf">Senate Section</a> (PDF Document) - Excerpt of the 2005 Election Directory including Senate details only. 
+					</td>
+				</tr>			
+				
+				<tr>
+					<td valign="top" class=list1>&nbsp;</td>
+					<td valign="top" class=list0>&nbsp;</td>
+					<td valign="top" class=list2>&nbsp;</td>
+				</tr>		
+				
+				<tr>
+					<td valign="top" class=list1>&nbsp;</td>
+					<td valign="top" class=list0>&nbsp;</td>
+					<td valign="top" class=list2><a href="http://www.senate.leg.state.mn.us/members/info/gbalt04.pdf">2004 Green Book</a> (PDF Document) - Alternative version, excerpt of the 2004 Green Book including Senate details only. 
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.senate.leg.state.mn.us/members/info/gbalt04_1.pdf">Senate Members Section</a> (PDF Document) - Excerpt of the 2004 Green Book alternative version including Senate Members details only.
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.senate.leg.state.mn.us/members/info/gbalt04_2.pdf">Staff and Committees Section</a> (PDF Document) - Excerpt of the 2004 Green Book alternative version including Senate Office and Committee details only.
+					</td>
+				</tr>		
+				
+				<tr>
+					<td valign="top" class=list1>&nbsp;</td>
+					<td valign="top" class=list0>&nbsp;</td>
+					<td valign="top" class=list2>&nbsp;</td>
+				</tr>		
+				
+				
+				<tr>
+					<td valign="top" class=list1>&nbsp;</td>
+					<td valign="top" class=list0>&nbsp;</td>
+					<td valign="top" class=list2><a href="http://www.senate.leg.state.mn.us/members/info/demographics.htm#header">Senator Demographics</a> - Statistics detailing the composition of the Minnesota Senate.
+					<br><a href="http://www.senate.leg.state.mn.us/members/info/pronounce.htm#header">Senator Name Pronunciation Guide</a> - A list of Senator names and appropriate pronunciation.
+					<br><a href="http://www.senate.leg.state.mn.us/members/info/roster.pdf">All Members Roster</a> (PDF Document) - Quick reference of Senate Members and House of Representatives including affiliated party and contact information.</td>
+				</tr>
+				<tr>
+					<td valign="top" class=list1><b>Chamber</b></td>
+					<td valign="top" class=list0>&nbsp;</td>
+					<td valign="top" class=list2><a href="http://www.senate.leg.state.mn.us/members/info/seating.pdf">Senate Chamber Seating Chart</a> (PDF Document)</td>
+				</tr>
+				<tr>
+					<td valign="top" class=list1><b>Committees</b></td>
+					<td valign="top" class=list0>&nbsp;</td>
+					<td valign="top" class=list2><a href="http://www.senate.leg.state.mn.us/committee/">View Senate Committees</a> for information regarding Committee structure, chairs and membership, schedules, and more.</td>
+				</tr>
+		</td>
+	</tr>
+</table>
+<P><br></P>
+
+
+<table id=listsmall>
+<tr>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">* <i>Compiled by the Minnesota House of Representatives</i></td>
+</tr>
+</table>
+
+
+<table width="100%">
+<tr>
+<td valign="top" colspan=2>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" colspan=2><a name="pdfinfo">&nbsp;</a></td>
+</tr>
+<tr>
+<td valign="top" class=order colspan=2 align="center">
+	<table border=2 bordercolor="#3353bb" width="40%">
+		<tr>
+			<td valign="top" class=note><a href="http://www.adobe.com/products/acrobat/readstep2.html" class=note>NOTE:  You will need the Adobe Acrobat Reader to view PDF formatted documents.  If you do not have it installed in your system, you may download it for free from the Adobe website.  CLICK HERE.  This may take a few minutes to load.</a></td>
+		</tr>
+	</table></td>
+</tr>
+</table>
+
+
+
+<table id="footer">
+	<tr><td class="comments">
+		<HR>
+		<P>Please direct all comments concerning issues or legislation<BR> to your <A href="http://ww3.house.leg.state.mn.us/members/hmem.asp">House Member</A> or <A href="http://www.senate.leg.state.mn.us/members/">State Senator</A>.</P>
+
+<p>For legislative staff or for directions to the capitol, visit the <a href="http://www.leg.state.mn.us/leg/legdir.asp">Contact Us</a> page.
+		
+<p align="center"><a href="http://www.leg.state.mn.us/leg/comments.asp" target="_blank">Questions? Comments?</a></p>
+
+</td>
+</tr>
+</table>
+
+
+<P><br></P>
+	</td>
+	</tr>
+  </TABLE>
+  
+</div>
+
+</BODY>
+</html>

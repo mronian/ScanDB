@@ -1,0 +1,623 @@
+<DOC>
+<DOCNO>f00164</DOCNO>
+<DOCHDR>http://www.twincities.com/mld/twincities/contact_us</DOCHDR>
+
+
+
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+
+var rm = false;
+
+</script>
+<title>Contact Us -- TwinCities.com</title>
+<link rel='stylesheet' type='text/css' href='/css/palette/twincities/en/global.css'/><script type="text/javascript" language="javascript">
+
+_krdDartOrd = new Date().getTime();
+
+_krdDartInc = 0;
+var navReady = false;
+var toolsReady = false;var onLoadScript="";function Browser() {var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+// I have disabled the following line, but something similar might be useful later,
+// but launching a popup window is more polite than this alert.
+//if (!b) alert(''Unidentified browser./nThis browser is not supported,'');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.ns=(this.b=="ns" && this.v>=4);
+this.ns4=(this.b=="ns" && this.v==4);
+this.ns6=(this.b=="ns" && this.v==5);
+this.ie=(this.b=="ie" && this.v>=4);
+this.ie4=(this.version.indexOf('MSIE 4')>0);
+this.ie4up = (this.ie && this.v>= 4);
+this.ns5up = (this.ns && this.v>= 5);
+this.ie5=(this.version.indexOf('MSIE 5')>0);
+this.ie5up = (this.ie5);
+this.ie55=(this.version.indexOf('MSIE 5.5')>0);
+this.opera=(this.b=="opera");
+this.def=(this.ie||this.dom);var ua=navigator.userAgent.toLowerCase();
+this.mac = (ua.indexOf("mac")!=-1);if (ua.indexOf("win")>-1) this.platform="win32";
+else if (ua.indexOf("mac")>-1) this.platform="mac";
+else this.platform="other";
+}
+var is = new Browser();
+// tiny extra css. these are ONLY used by old browsers.
+// VAST majority of users will NEVER request these files.
+// Even NS4 is around 7% of market and falling
+if (is.ns4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/twincities/en/browser/ns4.css'>\n";
+document.write(css);
+}
+if (((is.ns4)||(is.ie4))&&( is.mac)) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/twincities/en/browser/ns4mac.css'>\n";
+document.write(css);
+}
+if (is.ie4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/twincities/en/browser/ie4.css'>\n";
+document.write(css);
+}
+
+function LayerObject(divId) {
+this.name = divId;
+if (is.ns4) this.ob = eval("document." +divId);
+else if (is.ie4) this.ob = document.all(divId);
+else this.ob = document.getElementById(divId);
+this.x = 0;
+this.y = 0;
+this.width = this.getWidth();
+this.height = this.getHeight();
+}
+LayerObject.prototype.px = (is.version>=5)?"px":"";
+LayerObject.prototype.hideSyntax = (is.ns4)? "hide":"hidden";
+LayerObject.prototype.showSyntax = "visible";// NS4::  Unbelievable, but document.layername.document.imgname works for img-in-layer-in document
+// and it works for img in layer in table in document.
+// but it doesnt work for img in layer in table in table in document.
+// Maybe a workaround exists, but it seems unlikely at this point.
+// The images MUST therefore be nested only one deep....
+LayerObject.prototype.getInlineLeft = function() {
+if (is.ns4) return this.ob.pageX;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var xPos = 0;
+var yPos = 0;
+while (elem.offsetParent != null) {
+xPos += elem.offsetLeft;
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) xPos += 2;
+return xPos;
+}
+else return (this.ob.offsetLeft + document.body.offsetLeft);
+}
+
+LayerObject.prototype.getInlineTop = function() {
+if (is.ns4) return this.ob.pageY;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var yPos=0;
+while (elem.offsetParent != null) {
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) yPos += 2;
+return yPos;
+}
+else return (this.ob.offsetTop+ document.body.offsetTop);
+}
+
+//getWidth and getHeight works for both inline and positioned divs.
+LayerObject.prototype.getWidth = function () {
+if (is.ns4) return this.ob.clip.width;
+else if (is.opera) return this.ob.style.pixelWidth;
+else return this.ob.offsetWidth;
+}
+LayerObject.prototype.getHeight = function () {
+if (is.ns4) return this.ob.clip.height;
+else if (is.opera) return this.ob.style.pixelHeight;
+else return this.ob.offsetHeight;
+}
+LayerObject.prototype.hide = function() {
+if (is.ns4) this.ob.visibility = this.hideSyntax;
+else this.ob.style.visibility = this.hideSyntax;
+}
+LayerObject.prototype.show = function() {
+if (is.ns4) this.ob.visibility = this.showSyntax;
+else this.ob.style.visibility = this.showSyntax;
+}
+LayerObject.prototype.moveLayerTo = function(toX, toY) {
+this.x = toX;
+this.y = toY;
+}
+LayerObject.prototype.updateLayer = function() {
+if (is.ns4) {
+this.ob.left = Math.round(this.x) + this.px;
+this.ob.top = Math.round(this.y)+ this.px ;
+}
+else {
+this.ob.style.left = Math.round(this.x) + this.px;
+this.ob.style.top = Math.round(this.y) + this.px;
+}
+}
+//-----------------
+function roll(divName, imgName, which) {
+var suffix = (which==1)?"on":"off"
+if ((is.ns4)&&(divName!=0)) {
+var imgObject = eval("document." + divName +".document.images['"+imgName +"']");
+imgObject.src = eval(imgName + "_" + suffix + ".src");
+}
+else {
+document.images[imgName].src = eval(imgName + "_" + suffix + ".src");
+}
+}
+
+function init() {
+if (onLoadScript) eval(onLoadScript);
+}
+
+// Workaround for the netscape resize problem --
+// namely, on resize ns looses div positioning and
+// styles from css files.
+// This checks to see if the window''s dimensions have
+// actually changed (because Netscape often fires a
+// false onResize event when it forms scrollbars);
+// if the dimensions have changed, page is reloaded
+function resizefix(){
+if((document.resizeFix.initWidth != window.innerWidth) ||
+(document.resizeFix.initHeight != window.innerHeight))
+{
+document.location = document.location;
+}
+}
+
+// This code creates a new object with properties
+// to hold the current window width & height to be
+// used in the event of a netscape resize
+document.resizeFix = new Object();
+if(is.ns4){
+document.resizeFix.initWidth = window.innerWidth;
+document.resizeFix.initHeight = window.innerHeight;
+window.onresize=resizefix;
+}
+
+
+
+
+
+
+
+function initMenus(){
+}
+
+
+
+function showResults(siteSurveyKey) {
+var url="/mld/templates/contentModules/poll-results-popup.jsp"+ "?siteSurveyKey=" + siteSurveyKey;
+window.open(url, 'Title');
+}
+
+function openWin(URL) {
+aWindow = window.open(URL,
+'thewindow','width=500,height=400,resizable=yes,scrollbars=yes');
+}
+function getSite(){
+foundSite = false;
+site=document.location.hostname;
+endPos=site.indexOf(".com");
+if (endPos>= 1) {
+foundSite = true;
+site = site.substr(0, endPos);
+startPos = site.lastIndexOf(".");
+site = site.substr(startPos + 1);
+}
+return site;
+}
+function getPublication(){
+publication=document.location.pathname;
+startPos=publication.indexOf("/mld/");
+publication=publication.substr(startPos+5);
+endPos=publication.indexOf("/");
+publication=publication.substr(0,endPos);
+return publication;
+}
+function openSlideshow(url,width,height) {
+y=Math.floor((screen.availHeight-height)/2);
+x=Math.floor((screen.width-width)/2);
+window.open(url,'slideshow','width='+width+',height='+height+',top='+y+',left='+x+',scrollbars=yes,resizable=yes').focus();
+}
+
+
+
+</script>
+</head>
+<body class="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CDS : SDP2.5.0_full_02072005_100000 : production --><table width="768" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:5px;">
+<tr><td class="header1">
+
+
+<a HREF="http://pioneerpress.npsubscriptions.twincities.com/"><img SRC="/images/logos/site/twincities/twincities/mediapartners/sm_logo_pioneerpress.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a>
+
+
+
+</td><td class="header2">
+<a href="/"><img src="/images/logos/site/twincities/twincities/site_logo_340x60.gif" width="340" height="60" alt="" hspace="0" vspace="0" border="0"/></a>
+</td><td class="header3">
+
+
+
+<a href="http://weather.twincities.com"><img src="http://banners.wunderground.com/banner/krd_cond/language/www/US/MN/St_Paul.gif" alt="Weather" hspace="0" vspace="0" border="0"></a>
+<br>
+
+
+
+<a href="http://weather.twincities.com">Complete Forecast</a>
+
+
+
+</td><td class="header4">
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/twincities.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;dcopt=ist;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/twincities.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109857412882?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/twincities.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109857412882?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+</td></tr></table>
+
+
+
+
+
+<script id="search_box_center_jsp_script" language="javascript" type="text/javascript">
+function searchFormSubmit(form) {
+if (form.searchSelect[1].checked == true) {
+window.location = "http://www.newslibrary.com/nlsearch.asp?forceTheme=RealCities&s_site=twincities&search_mode=all&action=search&date_mode=year&year=last+180+days&sort=d%3Ah&nitems=10&region=pd&dbquery=" + form.query.value;
+return false;
+}
+return true;
+}
+</script><table cellspacing="0" cellpadding="0" border="0" width="768"><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr><tr><td align="center" class="navbg1">
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/twincities.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/twincities.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109857412885?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/twincities.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109857412885?" BORDER="0" ></A>
+</NOSCRIPT>
+
+</td></tr><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr></table><table cellspacing="0" cellpadding="0" border="0" width="768">
+<form action="http://www.twincities.com/mld/twincities/search/search_results.htm" method="get" name="SearchForm_top" onsubmit="return searchFormSubmit(this)">
+<input type=hidden name="pubName" value="twincities">
+<input type=hidden name="orderBy" value="date">
+<input type=hidden name="pageStart" value="1">
+
+
+<input type="hidden" name="sitesToSearch" value="twincities,pioneerpress,realcities">
+
+
+
+<input type=hidden name="pageSize" value="10">
+<input type=hidden name="fieldsToSearch" value="HEADLINE,FORSEARCH,LEAD,BYLINE">
+<input type=hidden name="queryType" value="all">
+<tr style="background-color:#f2f2f2;">
+<td class="newsearch">
+
+<b>Search</b>&nbsp;
+
+
+<input name="searchSelect" value="article" type="radio" checked>Recent News&nbsp;
+
+
+
+<input name="searchSelect" value="archives" type="radio">Archives&nbsp;
+
+
+
+
+<input name="searchSelect" value="web" type="radio">Web&nbsp;&nbsp;
+
+
+
+<b>for&nbsp;&nbsp;</b><input name="query" size="25" maxlength="256" type="text">&nbsp;&nbsp;<input value="Go" type="submit">
+
+</td><script language="javascript" type="text/javascript">
+document.write('<td class="newregbox">');
+if (rm) {
+document.write('Welcome <b>' + rname + '</b><br>');
+
+document.write('	<a href="https://secure.twincities.com/listit/myclassifieds/">My Classifieds</a>&nbsp;|&nbsp;');
+
+document.write('<a href="https://registration.twincities.com/reg/myAccount.do">My Account</a>&nbsp;|&nbsp;');
+document.write('<a href="https://registration.twincities.com/reg/logout.do">Sign Out</a>');
+} else {
+document.write('	Welcome <b>Guest</b><br />');
+document.write('	<a href="https://registration.twincities.com/reg/createAccount.do">Sign Up</a>&nbsp;|&nbsp;<a href="https://registration.twincities.com/reg/login.do">Sign In</a>&nbsp;|&nbsp;');
+document.write('	<a href="https://registration.twincities.com/reg/memberBenefits.do">Member Benefits</a>');
+}
+document.write('</td>');
+</script>
+</tr></form>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="columndiv" width="134"><img src="/images/common/spacer.gif" width="134" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="472"><img src="/images/common/spacer.gif" width="472" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="160"><img src="/images/common/spacer.gif" width="160" height="1"></td></tr><tr>
+<td class="leftrail" valign="top" align="center" width="134">
+
+
+
+<div style="text-align:left;"> 
+
+<!-- classifieds -->
+<div style="border-left:4px solid #185E9E; text-align:left; margin-top:-2px;">
+<div class="contentnav" style="border-top:1px solid #cccccc;"><img src="http://www.twincities.com/multimedia/twincities/images/twincities_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/twincities/classifieds/employment/"><B>Jobs</B></A></div>
+<div class="contentnav"><img src="http://www.twincities.com/multimedia/twincities/images/twincities_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/twincities/classifieds/automotive/"><B>Cars</B></A></div>
+<div class="contentnav"><img src="http://www.twincities.com/multimedia/twincities/images/twincities_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/twincities/classifieds/real_estate/"><B>Real Estate</B></A></div>
+<div class="contentnav"><img src="http://www.twincities.com/multimedia/twincities/images/twincities_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.apartments.com/search/oasis.dll?p=stpaul&Area3=Y&page=SubArea&state=MN&rgn2=38&partner=stpaul&prvpg=3"><B>Apartments</B></A></div>
+<div class="contentnav"><img src="http://www.ohio.com/multimedia/twincities/images/twincities_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.shoplocal.com/twincities/new_user_entry.aspx?CityStateZip=55101&AdRef=link03"><B>Local Shopping</B></A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/twincities/new_user_entry.aspx?CityStateZip=55101&AdRef=link03">Find Sales &amp; Deals</A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/twincities/new_user_entry.aspx?CityStateZip=55101&AdRef=link03">Shop Local Stores</A><BR /></div>
+<div class="contentnav"><img src="http://www.twincities.com/multimedia/twincities/images/twincities_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/twincities/classifieds/"><B>All Classifieds</B></A></div>
+<div class="contentnav"><img src="http://www.twincities.com/multimedia/twincities/images/twincities_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/twincities/classifieds/personals/"><B>Personals</B></A></div>
+</div>
+
+<!-- site services -->
+<div class="navtitlebar">SITE SERVICES</div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/contact_us/about/"><B>About</B></A><br>
+&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="http://www.twincities.com/mld/twincities/contact_us/about/">About online</A><br>
+&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="http://www.twincities.com/mld/twincities/contact_us/about_np1/">About newspaper</A></div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/contact_us/advertise/"><B>Advertise</B></A></div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/contact_us/contact_list/"><B>Contact list</B></A><br>
+&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="http://www.twincities.com/mld/twincities/contact_us/contact_list/newspaper_staff_np1/">Newsroom contacts</A></div>
+
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/contact_us/copyright/"><B>Copyright</B></A></div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/contact_us/feedback/"><B>Feedback</B></A></div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/contact_us/help/"><B>Help</B></A><br>
+&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="http://www.twincities.com/mld/twincities/contact_us/help/faq/">Online help</A><br>
+&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="http://www.twincities.com/mld/twincities/contact_us/help/faq_np1/">Newspaper help</A></div>
+<div class="contentnav"><A HREF="http://www.ppnie.com/"><B>NIE</B></A></div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/contact_us/terms_of_use/"><B>Privacy policy</B></A></div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/contact_us/advertise_np1/"><B>Rate cards</B></A></div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/contact_us/rc_sites/"><B>Real Cities network</B></A></div>
+
+<div class="contentnav"><A HREF="http://pioneerpress.npsubscriptions.twincities.com/"><B>Subscriptions</B></A></div>
+			
+<!-- site nav -->
+<div class="navtitlebar">SECTIONS</div>
+<div class="contentnav"><A HREF="/mld/twincities/news/"><B>News</B></A><BR />
+&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/twincities/news/local/">Local &amp; Community</A><BR />	
+&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/twincities/news/nation/">Nation &amp; World</A><BR /></div>	
+<div class="contentnav"><A HREF="/mld/twincities/news/columnists/"><B>Columnists</B></A><BR /></div>
+
+<div class="contentnav"><A HREF="/mld/twincities/news/editorial/"><B>Opinion</B></A><BR /></div>
+<div class="contentnav"><A HREF="/mld/twincities/news/politics/"><B>Politics</B></A><BR /></div>
+<div class="contentnav"><A HREF="/mld/twincities/business/"><B>Business</B></A></div>
+<div class="contentnav"><A HREF="/mld/twincities/sports/"><B>Sports</B></A></div>
+<div class="contentnav"><A HREF="/mld/twincities/living/"><B>Life &amp; Home</B></A><BR /></div>
+<div class="contentnav"><A HREF="/mld/twincities/entertainment/"><B>Entertainment</B></A></div>
+<div class="contentnav"><A HREF="/mld/twincities/sports/outdoors/"><B>Outdoors &amp; Leisure</B></B></A></div>
+
+<div class="contentnav"><A HREF="/mld/twincities/living/travel/"><B>Travel</B></A><BR /></div>
+<div class="contentnav"><A HREF="http://www.legacy.com/twincities/LegacyHome.asp"><B>Obituaries</B></A><BR /></div>
+			
+
+<!-- online extras -->
+<div class="navtitlebar">ONLINE EXTRAS</div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/news/columnists/citizen_watchdog/"><B>Watchdog</B></A><BR /></div>	
+<div class="contentnav"><A HREF="/mld/twincities/archives/"><B>Archives</B></A></div>
+<div class="contentnav"><A HREF="http://customcoupon.com/cgi-bin/valuecenter.cgi?config=KRSTPAUL"><B>Coupons</B></A></div>
+<div class="contentnav"><A HREF="http://maps.twincities.com/jump.cgi/refsrc=KR.1230"><B>Maps &amp; Directions</B></A></div>
+
+<div class="contentnav"><A HREF="https://registration.twincities.com/reg/updateSubscriptions.do?url=http://www.twincities.com/mld/twincities/"><B>Newsletters</B></A></div>
+<div class="contentnav"><A HREF="http://www.twincities.com/mld/twincities/news/transportation/"><B>Traffic Reports</B></A></div>
+<div class="contentnav"><A HREF="http://www.wunderground.com/auto/twincities/MN/Twin_Cities.html"><B>Weather</B></A></div>			
+<div class="contentnav"><A HREF="http://yp.twincities.com/bin/cgidir.dll?&MEM=1201"><B>Yellow Pages</B></A></div>			
+<div class="contentnav"><A HREF="http://forums.realcities.com/dir-app/nav/forumdirectory.aspx?webtag=kr-twincitiesz&byName=y"><B>Discussion Boards</B></A></div>
+<div class="contentnav"><A HREF="/mld/pioneerpress/"><B>Print Edition</B></A></div>
+<div class="contentnav"><A HREF="http://newspaperads.twincities.com/"><B>Newspaper ads</B></A></div>
+<br />
+</div>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td>
+<td class="centerrail" valign="top" align="center" width="472">
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td><td><style type="text/css">
+<!--
+.style1 {font-size: x-large}
+.style2 {color: #333333}
+-->
+</style>
+<table width="90%" border="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><P align="center" class=MsoNormal><SPAN class=style1 style1><FONT face=Arial color=black>Contact Us</FONT></SPAN></P>
+      <P align="justify" class=MsoBodyTextIndent2><FONT face=Arial color=black 
+size=2><SPAN>&nbsp;</SPAN></FONT><FONT face=Arial color=black size=2><SPAN>The
+            Pioneer Press, a Knight Ridder newspaper and the winner of three
+            Pulitzer Prizes, serves readers and advertisers in the Twin Cities&rsquo; East
+            Metro region and Western Wisconsin. The newspaper also is available
+            at more than 1,300 West Metro and Minneapolis locations, including
+            both newspaper boxes and retail store newsstands. The Pioneer Press &ndash; with
+            its increasingly familiar bulldog brand &ndash; reflects the journalism
+            excellence, distinctive personalities and tenacious, loyal and dependable
+      spirit readers and advertisers find in Minnesota&rsquo;s First Newspaper.</SPAN></FONT></P>
+      <P class=MsoBodyTextIndent2><B><FONT face=Arial color=black 
+size=2><SPAN>Subscriber Service:</SPAN></FONT></B></P>
+      <blockquote>
+        <p class="MsoNormal"><FONT face=Arial color=black size=2><SPAN>To start/stop
+                delivery or receive help with billing questions: <SPAN class=EmailStyle19><FONT 
+color=black>1 (800) 678-7737<br>
+                </FONT></SPAN></SPAN><a href="http://pioneerpress.npsubscriptions.twincities.com/">Circulation/Subscription
+            Services</a> <SPAN>&nbsp;</SPAN></FONT></p>
+      </blockquote>      <P class=MsoBodyTextIndent2><B><FONT face=Arial color=black 
+size=2><SPAN>Customer Service:</SPAN></FONT></B></P>
+      <blockquote>
+        <p class="MsoBodyTextIndent2"><FONT face=Arial color=black size=2><SPAN>The
+                Customer Service Center is the one-stop gateway to all departments
+                at the Pioneer Press: Call (651) 222-1111 <SPAN class=EmailStyle19><FONT color=black>or
+                1 (800) 950-9080 or e-mail: <A 
+href="mailto:infodesk@pioneerpress.com">infodesk@pioneerpress.com</A></FONT></SPAN></SPAN></FONT></p>
+      </blockquote>      <P class=MsoBodyTextIndent2><SPAN class=EmailStyle19><B><FONT face=Arial color=black 
+size=2><SPAN>Mailing address: </SPAN></FONT></B></SPAN></P>
+      <blockquote>
+        <p class="MsoNormal"><SPAN class=EmailStyle19><FONT face=Arial color=black 
+size=2><SPAN>Pioneer Press, <GEO TYPE="US">345 Cedar Street, St. Paul, MN 55101</GEO></SPAN></FONT></SPAN></p>
+      </blockquote>      <P class=MsoNormal><SPAN class=EmailStyle19><B><FONT face=Arial color=black 
+size=2><SPAN>To advertise:</SPAN></FONT></B></SPAN></P>
+      <blockquote>
+        <p class="MsoNormal"><SPAN class=EmailStyle19><FONT face=Arial color=black 
+size=2><SPAN>Call the Customer Service Center at </SPAN></FONT></SPAN><FONT 
+face=Arial color=black size=2><SPAN>(651) 222-1111 <SPAN 
+class=EmailStyle19><FONT color=black>or 1 (800) 950-9080<br>
+        </FONT></SPAN></SPAN><SPAN class=EmailStyle19><SPAN><a href="http://newspaperads.twincities.com/">View
+        print ads online</a><br>
+        </SPAN><SPAN><a href="http://www.twincities.com/mld/twincities/contact_us/advertise_np1/">View advertising rate information</a></SPAN></SPAN></FONT></p>
+      </blockquote>      
+      <P class=MsoNormal><SPAN class=EmailStyle19><FONT face=Arial color=black 
+size=2></FONT></SPAN><B><FONT face=Arial color=black size=2><SPAN>To
+              reach the Pioneer Press newsroom:</SPAN></FONT></B></P>
+      <blockquote>
+        <p class="MsoNormal"><FONT face=Arial color=black size=2><SPAN>Reader Advocate:
+                To discuss concerns or questions about news content, if you spot
+                a possible error in the newspaper, or if you&rsquo;re not sure about
+                the appropriate contact for story ideas, call (651) 228-5446 or e-mail <A 
+href="mailto:readers@pioneerpress.com">readers@pioneerpress.com</A></SPAN></FONT></p>
+        <p class="MsoNormal"><FONT face=Arial color=black size=2><SPAN>Breaking news
+              tips and story ideas: Call (651) 228-5490</SPAN></FONT></p>
+        <p class="MsoNormal"><FONT face=Arial color=black size=2><SPAN>Whistle-Blower&rsquo;s
+              Hot Line: If you know of something that should be investigated, call
+              (651) 228-5181 or by e-mail <A 
+href="mailto:jkummer@pioneerpress.com">jkummer@pioneerpress.com</A></SPAN></FONT></p>
+      </blockquote>      
+      <P class=MsoNormal style2 
+style="MARGIN-RIGHT: 0.5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><B><FONT 
+face=Arial size=2><SPAN 
+style="FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: Arial">To submit a news release or contact a member of the newsroom staff:</SPAN></FONT><o:p></o:p></B></P>      
+      <blockquote>
+        <p class="MsoNormal"><font color="black" size="2" face="Arial"><a href="http://www.twincities.com/mld/twincities/contact_us/contact_list/newspaper_staff_np1/">Newsroom contact list</a> (phone numbers and e-mail addresses) </font></p>
+    <!--  </blockquote>      <P class=MsoNormal><B><span class="style2"><FONT face=Arial size=2>Visit the
+              newsroom:&nbsp;</FONT></span></B></P>
+      <blockquote>
+        <p class="MsoNormal"><span class="style2"><FONT face=Arial size=2><SPAN 
+style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">News meetings: Visitors are welcome at meetings held daily at 2:30 and 4:30 p.m. to plan the following day&rsquo;s coverage. Fore more information or to make an appointment, call (651) 228-5490.</SPAN></FONT></span><FONT face=Arial size=2></FONT></p>
+      </blockquote>-->      
+      <p class="MsoNormal"><B><FONT face=Arial color=black size=2><SPAN>Letters
+          to the Editor:</SPAN></FONT></B></p>      <blockquote>
+        <p class="MsoNormal"><FONT face=Arial color=black size=2><SPAN>Letters
+              from readers are accepted:<br>
+        </SPAN></FONT><FONT face=Arial color=black size=2><SPAN>By
+              mail: <SPAN 
+class=EmailStyle19><FONT color=black>Pioneer Press, <GEO TYPE="US">345 Cedar Street, St. Paul,
+                    MN 55101</GEO><br>
+              </FONT></SPAN></SPAN></FONT><FONT face=Arial color=black size=2><SPAN>By
+                    fax: (651) 228-5564. <br>
+              </SPAN></FONT><FONT face=Arial color=black size=2><SPAN>By
+                    e-mail: <A 
+href="mailto:letters@pioneerpress.com">letters@pioneerpress.com</A>.</SPAN></FONT></p>
+      </blockquote>      <P class=MsoNormal><B><FONT face=Arial color=black size=2><SPAN>Media Inquiries:</SPAN></FONT></B></P>
+      <blockquote>
+        <p class="MsoNormal"><FONT face=Arial color=black size=2><SPAN><A 
+href="mailto:peffenberger@pioneerpress.com">E-mail</A> or call (651)
+                228-5016</SPAN></FONT></p>
+        <p class="MsoNormal"><FONT face=Arial color=black size=2><SPAN><a href="http://www.twincities.com/mld/twincities/news/special_packages/press_releases/">Pioneer
+              Press and TwinCities.com Press Releases</a></SPAN></FONT></p>
+      </blockquote>      <P class=MsoNormal><SPAN class=EmailStyle23><B><FONT face=Arial color=black 
+size=2><SPAN>Employment:</SPAN></FONT></B></SPAN></P>
+      <blockquote>
+        <p class="MsoNormal"><SPAN class=EmailStyle23><FONT face=Arial color=black 
+size=2><SPAN>For information on employment opportunities at the Pioneer Press,
+                  call (651) 228-5002. Job Line of current openings: (651) 228-5008.
+                  Send resumes via e-mail to: <A 
+href="mailto:resumes@pioneerpress.com">resumes@pioneerpress.com</A></SPAN></FONT></SPAN></p>
+      </blockquote>      <P class=MsoNormal><SPAN class=EmailStyle23><B><FONT face=Arial color=black 
+size=2><SPAN>Newspapers in Education:</SPAN></FONT></B></SPAN></P>
+      <blockquote>
+        <p class="MsoNormal"><FONT face=Arial size=2><SPAN><span class="style2">Through
+                this program, students of all ages are provided with innovative
+                learning tools, including the most up-to-date tool available,
+        the Pioneer Press.&nbsp;Call (651) 228-5144 or e-mail </span><A 
+href="mailto:nie@pioneerpress.com"></A></SPAN></FONT><FONT face=Arial color=navy size=2><SPAN><A 
+href="mailto:nie@pioneerpress.com">nie@pioneerpress.com</A></SPAN></FONT></p>
+    </blockquote></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</td><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td></tr></table>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="rightrail" valign="top" align="center" width="160">
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/twincities.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/twincities.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109857413451?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/twincities.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109857413451?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/twincities.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/twincities.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109857413451?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/twincities.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109857413451?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="leftrail" width="134">
+<img src="/images/common/spacer.gif" width="134" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="centerrail" width="100%" align="center">
+<img src="/images/common/spacer.gif" width="450" height="1"/><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/twincities.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/twincities.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109857413451?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/twincities.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109857413451?" BORDER="0" ></A>
+</NOSCRIPT>
+
+<br/><br/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="rightrail" width="160">
+<img src="/images/common/spacer.gif" width="160" height="1"/></td></tr></table>
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="768"><tr><td rowspan="2" valign="top" class="footer"><a href="http://www.realcities.com" target="_blank"><img src="/images/palette/twincities/realcities_logo.gif" width="155" height="57" alt="RealCities" border="0"/></a>
+</td><td align="left" class="footer">
+<span class="lightgreylinks"><a href="/mld/twincities/news/"> News  |</a> <a href="/mld/twincities/business/"> Business  |</a> <a href="/mld/twincities/sports/"> Sports  |</a> <a href="/mld/twincities/entertainment/"> Entertainment  |</a> <a href="/mld/twincities/living/">Living  |</a> <a href="http://www.shoplocal.com/twincities/new_user_entry.aspx?CityStateZip=55401&AdRef=link02">Shop Local |</a> <a href="/mld/twincities/classifieds/"> Classifieds  |</a> <a href="/mld/twincities/classifieds/employment/"> Jobs  |</a> <a href="/mld/twincities/classifieds/automotive/"> Cars  |</a> <a href="/mld/twincities/classifieds/real_estate/"> Homes   </a><br><a href="/mld/twincities/contact_us/about">About TwinCities.com |</a> <a href="/mld/twincities/contact_us/rc_sites/">About the Real Cities Network |</a> <a href="/mld/twincities/contact_us/terms_of_use">Terms of Use & Privacy Statement |</a> <a href="http://www.knightridder.com">About Knight Ridder |</a> <a href="/mld/twincities/contact_us/copyright">Copyright  </a><br></span>
+</td></tr></table>
+
+</body>
+</html>
+
+
+

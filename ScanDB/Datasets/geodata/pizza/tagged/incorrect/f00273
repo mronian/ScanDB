@@ -1,0 +1,665 @@
+<DOC>
+<DOCNO>f00273</DOCNO>
+<DOCHDR>http://www.sanfrancisco.com/britton</DOCHDR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+<title>Hotel Britton, San Francisco, California</title>
+<meta name="keywords" content="Hotel Britton san francisco california boutique hotel discount rates hotel room reservations">
+<meta name="description" content="The Hotel Britton in San Francisco, California, featuring online hotel room reservations and discounted hotel room rates.">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="http://www.boulevards.com/styles/style-red-htb.css" type="text/css">
+<script src="http://www.sanfrancisco.com/js/calendarpop.js" language="JavaScript" type="text/javascript"></script>
+<script language="JavaScript">document.write(CalendarPopup_getStyles());</script>
+
+<script language="JavaScript">
+var cal = new CalendarPopup();
+
+cal.showYearNavigation();
+cal.setTodayText('');
+
+cal.setReturnFunction("setD");
+function setD(y,m,d) {
+	document.mpscheckaressrch.year.value=y;
+	document.mpscheckaressrch.month.selectedIndex=--m;
+	for (var i=0; i<document.mpscheckaressrch.day.options.length; i++) {
+		if (document.mpscheckaressrch.day.options[i].value==d) {
+			document.mpscheckaressrch.day.selectedIndex=i;
+			}
+		}
+	}
+
+function getDateString(y_obj,m_obj,d_obj) {
+	var y = y_obj.options[y_obj.selectedIndex].value;
+	var m = m_obj.options[m_obj.selectedIndex].value;
+	var d = d_obj.options[d_obj.selectedIndex].value;
+	if (y=="" || m=="") { return null; }
+	if (d=="") { d=1; }
+	return str= y+'-'+m+'-'+d;
+	}
+		</script>
+		<script language="JavaScript">
+var advancedDay = 2;
+
+function isLeapYear(yrVal)
+{
+	var leapYear=false;
+	var year = parseInt(yrVal, 10);
+
+	if (year%4 == 0)
+		{
+		leapYear=true;
+		}
+	return leapYear;
+}
+
+function getDaysInMonth(monthVal, YrVal)
+{
+	var maxDays=31
+	if (monthVal==1)
+	{
+		if (isLeapYear(YrVal))
+			{
+			maxDays=29;
+			}
+		else
+			{
+			maxDays=28;
+			}
+	}
+	if (monthVal==3 || monthVal==5 || monthVal==8 || monthVal==10)
+		{
+		maxDays=30;
+		}
+	return maxDays;
+}
+
+
+function init() {
+	var dt = new Date();
+
+	var yr = dt.getFullYear();
+	var curYr = dt.getFullYear();
+	var mo = dt.getMonth();
+
+	var da = dt.getDate();
+
+	var daysInCurrent = getDaysInMonth(mo, yr);
+
+	if (da + advancedDay > daysInCurrent)
+	{	da = ((da+advancedDay) % daysInCurrent);
+		if (mo == 11)
+		{	mo = 0;
+			yr++;	}
+		else
+		{	mo++;	}	}
+	else
+	{	da = da + advancedDay;	}
+	da--;
+
+	yr-=curYr;
+	document.mpscheckaressrch.month.selectedIndex = mo;
+	document.mpscheckaressrch.day.selectedIndex = da;
+	document.mpscheckaressrch.year.selectedIndex = yr;
+	return;  }	
+	
+
+		</script>
+		<script language="JavaScript">
+			function popup(url, param) {
+			emailWin=window.open(url,"win",param);
+			self.name = "mainWin"; }
+		</script>
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000" onload="init();">
+
+
+
+<center>
+<table cellspacing="0" cellpadding="0" width="600" border="0">
+<tbody>
+<tr>
+<td width="600" align="left" valign="top"> 
+
+
+
+
+
+<table width="600" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left" valign="bottom"><img src="gifs/logo.gif" alt="Hotel Britton San Francisco" border="0"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="5"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><h1>Hotel Britton</h1></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="htbphonenumber">A Boutique Hotel with European Accents</span></td>
+</tr>
+</table>
+<hr size="1" color="red" width="600" align="left">
+<span class="plugtext"><GEO TYPE="US">112 Seventh Street, San Francisco, California</GEO>; Tel. 1.866.826.6472<br></span>
+
+
+<br>
+
+
+
+
+<table cellspacing="0" cellpadding="0" width="600" border="0">
+<tr>
+
+<td align="left" valign="top"> 
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="0" height="0" align="left" border="0">
+
+
+<span class="plugtext">A delightful European-style boutique hotel located in the heart of San Francisco, the Hotel Britton is fast becoming the favorite lodging of experienced travelers from around the world.  Plantation shutters, decorative ceiling fans, and antique-style furnishings provide the Hotel Britton with the charm and d&eacute;cor of an Old World hostelry.</span></p>
+
+<p>Guests enjoy both an evening wine tasting in The Hotel Britton's stylishly appointed lobby and the fabulous New York-style pizza served in the SOMA pizza caf&eacute;.</p>
+
+<p>An ideal location for San Francisco visitors, the Hotel Britton is just a short walk to Union Square, Yerba Buena Gardens, the Moscone Convention Center, and first class restaurants and shopping. The world famous Fishermen's Wharf, Golden Gate Bridge, cable cars, and Chinatown are all just minutes away. Add a friendly, attentive staff and the Britton becomes one of San Francisco's most inviting boutique hotels.</p>
+
+
+
+</td>
+
+<td width="10"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="10" height="5"></td>
+
+
+<td width="180" valign="top">
+<form action="http://www.secure-res.com/res/vn2/mp-3.asp" method="GET" id="Form2" name="mpscheckaressrch">
+<input type="hidden" name="rooms" id="Select9" value="1">
+<input type="hidden" name="mps" value="sanf">
+<input type="hidden" name="mpg" value="610">
+<table cellspacing="0" cellpadding="0" border="0" class="hotelssearchtable" width="180">
+<tr>
+<td rowspan="15"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="1"></td>
+
+<td colspan="3"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="10"></td>
+<td rowspan="15"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="1"></td>
+
+</tr>
+<tr>
+<td align="center" colspan="3">
+<span class="bookonline">Reserve a Room</span>
+</td>
+</tr>
+<tr>
+<td align="center" colspan="3">
+<span class="secondlinks">Book Online and Save!</span>
+</td>
+</tr>
+<tr>
+<td colspan="3"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="3"></td>
+</tr>
+<tr>
+<td align="center" colspan="3">
+<span class="phonetext">Or call toll free</span>
+</td>
+</tr>
+<tr>
+<td nowrap="nowrap" colspan="3" align="center">
+<span class="phoneplug">1.866.826.6472</span>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="center"><span class="phonetext">and request the<br>San Francisco.com discount</td>
+</tr>
+<tr>
+<td colspan="3"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="5"></td>
+</tr>
+<tr>
+<td nowrap="nowrap" colspan="3">
+
+<table width="100%" border="0">
+<tr>
+<td valign="bottom">
+<span class="bodytext">Arrive:<br></span>
+<select name="month" style="width:50px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<OPTION value=1>Jan</OPTION>
+<OPTION value=2>Feb</OPTION>
+<OPTION value=3>Mar</OPTION>
+<OPTION value=4>Apr</OPTION>
+<OPTION value=5>May</OPTION>
+<OPTION value=6>Jun</OPTION>
+<OPTION value=7>Jul</OPTION>
+<OPTION value=8>Aug</OPTION>
+<OPTION value=9>Sep</OPTION>
+<OPTION value=10>Oct</OPTION>
+<OPTION value=11>Nov</OPTION>
+<OPTION value=12>Dec</OPTION>
+</select>
+</td>
+<td valign="bottom">
+<select name="day" style="width:45px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<OPTION value=1>1</OPTION>
+<OPTION value=2>2</OPTION>
+<OPTION value=3>3</OPTION>
+<OPTION value=4>4</OPTION>
+<OPTION value=5>5</OPTION>
+<OPTION value=6>6</OPTION>
+<OPTION value=7>7</OPTION>
+<OPTION value=8>8</OPTION>
+<OPTION value=9>9</OPTION>
+<OPTION value=10>10</OPTION>
+<OPTION value=11>11</OPTION>
+<OPTION value=12>12</OPTION>
+<OPTION value=13>13</OPTION>
+<OPTION value=14>14</OPTION>
+<OPTION value=15>15</OPTION>
+<OPTION value=16>16</OPTION>
+<OPTION value=17>17</OPTION>
+<OPTION value=18>18</OPTION>
+<OPTION value=19>19</OPTION>
+<OPTION value=20>20</OPTION>
+<OPTION value=21>21</OPTION>
+<OPTION value=22>22</OPTION>
+<OPTION value=23>23</OPTION>
+<OPTION value=24>24</OPTION>
+<OPTION value=25>25</OPTION>
+<OPTION value=26>26</OPTION>
+<OPTION value=27>27</OPTION>
+<OPTION value=28>28</OPTION>
+<OPTION value=29>29</OPTION>
+<OPTION value=30>30</OPTION>
+<OPTION value=31>31</OPTION>
+    </select>
+</td>
+<td valign="bottom">
+<span class="bodytext"><a href="#" onclick="cal.showCalendar('anchor',getDateString(document.mpscheckaressrch.year,document.mpscheckaressrch.month,document.mpscheckaressrch.day)); return false;" name="anchor" id="anchor">Calendar</a><br></span>
+<select name="year" style="width:45px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<OPTION value=2006>06</OPTION>
+<OPTION value=2007>07</OPTION>
+<OPTION value=2008>08</OPTION>
+   </select>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+<table width="100%" border="0">
+<tr><td>
+
+<span class="bodytext">Nights:
+<br /></span>
+<select name="nights" style="width:50px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;" id="Select6">
+<OPTION value=1>1</OPTION>
+<OPTION selected value=2>2</OPTION>
+<OPTION value=3>3</OPTION>
+<OPTION value=4>4</OPTION>
+<OPTION value=5>5</OPTION>
+<OPTION value=6>6</OPTION>
+<OPTION value=7>7</OPTION>
+<OPTION value=8>8</OPTION>
+<OPTION value=9>9</OPTION>
+<OPTION value=10>10</OPTION>
+<OPTION value=11>11</OPTION>
+<OPTION value=12>12</OPTION>
+<OPTION value=13>13</OPTION>
+<OPTION value=14>14</OPTION>
+</select>
+</td>
+
+<td>
+
+<span class="bodytext">Adults:
+<br /></span>
+<select name="adults" style="width:45px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;" id="Select8">
+<OPTION selected value=1>1</OPTION>
+<OPTION value=2>2</OPTION>
+<OPTION value=3>3</OPTION>
+<OPTION value=4>4</OPTION>
+<OPTION value=5>5</OPTION>
+<OPTION value=6>6</OPTION>
+<OPTION value=7>7</OPTION>
+<OPTION value=8>8</OPTION>
+<OPTION value=9>9</OPTION>
+</select>
+</td>
+
+
+<td>
+
+<span class="bodytext">Kids:
+<br /></span>
+<select name="children" style="width:45px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;" id="Select7">
+<option selected value=0>0</option>
+<option value=1>1</option>
+<option value=2>2</option>
+<option value=3>3</option>
+<option value=4>4</option>
+<option value=5>5</option>
+<option value=6>6</option>
+<option value=7>7</option>
+<option value=8>8</option>
+<option value=9>9</option>
+</select>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="3"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="3"></td>
+</tr>
+<tr>
+<td colspan="3" align="right"><input type="submit" value="Check Availability" class="form_elements" name="B1" id="Submit2"></td>
+</tr>
+<tr>
+<td colspan="3"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="5"></td>
+</tr>
+<tr>
+<td colspan="3" align="left"><span class="caltext"><a href="http://www.secure-res.com/res/vn2/modify.asp?hotelid=1417">Modify an existing reservation</a></span></td>
+</tr>
+<tr>
+<td colspan="3"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="5"></td>
+</tr>
+</table>
+</form>
+
+</td>
+
+
+</tr></table>
+
+
+
+<br>
+
+<table cellspacing="0" cellpadding="0" width="600" border="0">
+<tbody>
+<tr> 
+<td valign="top">
+
+
+
+
+
+
+
+<img src="gifs/room-top.jpg" width="300" height="195" align="left" alt="Hotel Britton San Francisco">
+
+<span class="plugtext">The Britton Hotel offers 79 charming boutique guest rooms and suites, each with lovely pewter headboards, plantation shutters, and a unique personality.</span>
+
+<p>Dine at the City's most unique pizza restaurant and enjoy original New York style pizza that's crunchy on the outside and chewy on the inside. Homemade crust, special spice blend, and fresh quality ingredients make SOMA Pizza a San Francisco favorite. The fabulous three-dimensional "ceiling of San Francisco" and mouth-watering food make this an unforgettable San Francisco dining experience.<br clear="left"></p>
+
+<p><b>Britton Hotel Features:</b><p>
+
+<ul class="plugtext">
+<li> In-room coffee maker</li>
+<li> Pay-per-view movies and Nintendo 64 video games</li>
+<li> Hairdryer and iron available</li>
+<li> Data port telephone with voice mail</li>
+</ul>
+
+<br>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="gifs/tb1-room.jpg" alt="Hotel Britton San Francisco" border="0"></td>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="10"></td>
+<td><img src="gifs/tb2-restaurant.jpg" alt="Hotel Britton San Francisco" border="0"></td>
+</tr>
+<tr>
+<td valign="top"><span class="caltext">Britton Hotel Standard Room</span></td>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="10"></td>
+<td valign="top"><span class="caltext">SOMA Pizza — A San Francisco favorite</span></td>
+</tr>
+</table>
+
+
+
+<p><span class="htbheadline">Hotel Britton</span><br>
+<span class="htbredsecondlinks">San Francisco.com Special Rates!<br></span>
+<span class="htbphonenumber">Toll Free Information/Reservations: 1.866.826.6472<br></span>
+<span class="caltext">Note: This toll-free number goes directly to the Hotel Britton in San Francisco!</span></p>
+
+
+<br>
+
+
+<table cellspacing="0" cellpadding="8" width="600" border="1" class="normaltable">
+<tbody>
+<tr align="center" bgcolor="#ffffff"> 
+<td align="center"><span class="redsecondlinkstext"><strong>Hotel Britton<br>Special Rates<br></strong></span></td>
+<td><span class="bodytext"><b>Mon-Thu<br>Regular Rate</b><br></span></td>
+<td> <span class="secondlinks">Mon-Thu<br></span> <span class="redsecondlinkstext">San Francisco.com<br>Special Rate<br></span></td>
+<td><span class="bodytext"><b>Fri-Sun<br>Regular Rate</b><br></span></td>
+<td><span class="secondlinks">Fri-Sun<br></span><span class="redsecondlinkstext">San Francisco.com<br>Special Rate<br></span></td>
+</tr>
+<tr align="center" bgcolor="#cccccc"> 
+<td colspan="5"><p align="center" class="secondlinks">Rates for April-September</p></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Standard Two Twin Beds or One Double Bed</p></td>
+<td><span class="secondlinks">$135</span></td>
+<td><nobr><span class="htbrednumbers">$95!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$135</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$95!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Superior Queen</p></td>
+<td><span class="secondlinks">$145</span></td>
+<td><nobr><span class="htbrednumbers">$105!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$145</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$105!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Superior Double Double</p></td>
+<td><span class="secondlinks">$145</span></td>
+<td><nobr><span class="htbrednumbers">$105!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$145</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$105!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#cccccc"> 
+<td colspan="5"><p align="center" class="secondlinks">Rates for October</p></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Standard Two Twin Beds or One Double Bed</p></td>
+<td><span class="secondlinks">$125</span></td>
+<td><nobr><span class="htbrednumbers">$85!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$125</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$85!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Superior Queen</p></td>
+<td><span class="secondlinks">$135</span></td>
+<td><nobr><span class="htbrednumbers">$95!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$135</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$95!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Superior Double Double</p></td>
+<td><span class="secondlinks">$135</span></td>
+<td><nobr><span class="htbrednumbers">$95!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$135</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$95!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#cccccc"> 
+<td colspan="5"><p align="center" class="secondlinks">Rates for November-December</p></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Standard Two Twin Beds or One Double Bed</p></td>
+<td><span class="secondlinks">$109</span></td>
+<td><nobr><span class="htbrednumbers">$69!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$109</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$69!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Superior Queen</p></td>
+<td><span class="secondlinks">$119</span></td>
+<td><nobr><span class="htbrednumbers">79!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$119</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$79!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Superior Double Double</p></td>
+<td><span class="secondlinks">$139</span></td>
+<td><nobr><span class="htbrednumbers">$99!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$139</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$99!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#cccccc"> 
+<td colspan="5"><p align="center" class="secondlinks">Rates for January-March</p></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Standard Two Twin Beds or One Double Bed</p></td>
+<td><span class="secondlinks">$115</span></td>
+<td><nobr><span class="htbrednumbers">$75!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$115</span></td>
+<td width="109"><nobr><span class="htbrednumbers">75!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Superior Queen</p></td>
+<td><span class="secondlinks">$125</span></td>
+<td><nobr><span class="htbrednumbers">$85!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$125</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$85!</span></nobr></td>
+</tr>
+<tr align="center" bgcolor="#ffffff"> 
+<td><p align="center">Superior Double Double</p></td>
+<td><span class="secondlinks">$129</span></td>
+<td><nobr><span class="htbrednumbers">$99!</span> </nobr> </td>
+<td width="74"><span class="secondlinks">$129</span></td>
+<td width="109"><nobr><span class="htbrednumbers">$99!</span></nobr></td>
+</tr>
+</tbody>
+</table>
+<br>
+<span class="plugtext"><i> Be sure to request the San Francisco.com 
+Rate when making your Hotel Britton reservation! Note: Do not simply ask for the Internet rate.</i><br>
+</span> 
+<p class="caltext">  Not valid with any other discounts, holidays 
+and special events. San Francisco.com Special Rates 
+subject to change without notice. San Francisco.com 
+Special Rates subject to availability. Special events and holidays 
+may be extra.</p>
+
+<br>
+
+<table width="600" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left" valign="bottom"><img src="gifs/logo.gif" alt="Hotel Britton San Francisco" border="0"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="5"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><h1>Hotel Britton</h1></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="htbphonenumber">A Boutique Hotel with European Accents</span></td>
+</tr>
+</table>
+<hr size="1" color="red" width="600" align="left">
+<span class="plugtext">112 Seventh Street, San Francisco, California; Tel. 1.866.826.6472</span><br>
+<span class="htbphonenumber">To reserve a room, call 1.866.826.6472 and request the San Francisco.com discount.<br></span>
+<span class="caltext">Note: This toll-free number goes directly to the Hotel Britton in San Francisco!<br></span>
+
+<br>
+
+
+
+
+<table cellspacing="0" cellpadding="0" width="600" border="0">
+<tbody>
+<tr>
+<td align="left"><span class="caltext"><a href="http://www.sanfrancisco.com">Return to San Francisco.com</a></span></td>
+<td align="right"> <span class="caltext">All contents copyright &copy;2006 San Francisco.com</span> </td>
+</tr>
+</tbody>
+</table>
+
+
+
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,567 @@
+<DOC>
+<DOCNO>g00871</DOCNO>
+<DOCHDR>http://bachus.house.gov/HoR/AL06/Home.htm</DOCHDR>
+<!-- Microsoft Content Management Server template file -->
+<html>
+<head>
+<title>Congressman Spencer Bachus - Representing Alabama's 6th District</title>
+<link rel="stylesheet" href="/Include/HoR/AL06/al06_style.css" type="text/css">
+
+<style type="text/css">
+.subMenuItemLink{
+	font-weight: bold;
+	font-size: 10pt;
+	color: #636500;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+}
+
+.subMenuItem{
+	border-right: 1 solid black;
+	border-top: 1 solid black;
+	border-bottom: 1 solid black;
+	visibility: hidden;
+	position: absolute;
+	left: 203px;
+	top: -5px;
+	padding: 5px;
+	background-color: #C6C3C6;
+	width: 150px;
+}
+</style>
+
+<script language="javascript">
+
+var timeout0;
+var lastElement = '';
+var lastElement2 = '';
+
+function getObj(name)
+{
+ if (document.getElementById){
+	   this.obj = document.getElementById(name);
+	   this.style = document.getElementById(name).style;
+ }
+ else if (document.all){
+	   this.obj = document.all[name];
+	   this.style = document.all[name].style;
+ }
+ else if (document.layers)
+ {
+	   if (document.layers[name]){
+	   	this.obj = document.layers[name];
+	   	this.style = document.layers[name];
+	   }
+	   else{
+	    this.obj = document.layers.testP.layers[name];
+	    this.style = document.layers.testP.layers[name];
+	   }
+ }
+}
+
+function findPosX(obj)
+{
+	var curleft = 0;
+	if (obj.offsetParent){
+		while (obj.offsetParent){
+			curleft += obj.offsetLeft
+			obj = obj.offsetParent;
+		}
+	}
+	else if (obj.x)
+		curleft += obj.x;
+	return curleft;
+}
+
+function findPosY(obj)
+{
+	var curtop = 0;
+	if (obj.offsetParent){
+		while (obj.offsetParent){
+			curtop += obj.offsetTop
+			obj = obj.offsetParent;
+		}
+	}
+	else if (obj.y)
+		curtop += obj.y;
+	return curtop;
+}
+
+function setPosition(parent,target){
+	var newX = findPosX(parent);
+	var newY = findPosY(parent);
+
+	var e = new getObj(target);
+	e.style.top = newY - 5;
+	e.style.left = newX + 204;
+}
+
+function getElement(x){
+	var temp;
+	if(document.getElementById){
+		var temp = document.getElementById(x);
+		temp = temp.style;
+	}else if(document.all){
+		var temp = eval('document.all.' + x);
+		temp = temp.style;
+	}else{
+		var temp = eval('document.' + x);
+	}
+	return temp;
+}
+
+function hideNow(){
+	var hidden = 'hidden';
+	clearTimeout(timeout0);
+	if(lastElement!=''){
+		var element = getElement(lastElement);
+		element.visibility = hidden;
+		lastElement = '';
+	}
+	if(lastElement2!=''){
+		unHiliteBackground(lastElement2);
+		lastElement2 = '';
+	}
+}
+
+function show(x,y){	
+	var visible = 'visible';
+	if (document.layers) visible = 'show';
+	
+	if (lastElement!=x){
+		if (lastElement!='') hideNow();
+		var element = getElement(x);
+		element.visibility = visible;	
+		lastElement = x;
+		hiliteBackground(y);
+		lastElement2 = y;
+	}else{
+		clearTimeout(timeout0);
+	}
+}
+
+function hide(x,y){
+	lastElement = x;
+	lastElement2 = y;
+	timeout0 = setTimeout('hideNow()',500);
+}
+
+function hiliteBackground(y){
+	if(y!=''){
+		var temp = getElement(y);
+		if(temp!=null){
+			temp.backgroundColor = '#C6C3C6';
+		}
+	}
+}
+
+function unHiliteBackground(y){
+	if(y!=''){
+		var temp = getElement(y);
+		if(temp!=null){
+			temp.backgroundColor = 'transparent';
+		}
+	}
+}
+
+</script>
+
+
+<!-- Inserted by Content Management Server: BEGIN EmbedTmplHeadHook -->
+
+		<link rel="stylesheet"
+				href="/NR/System/WBC/Customizable/WBC.css">
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/WBCFuncPagesConfig/UIStringConstants/JavaScriptUIStringsNR.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/OptionsClient.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Dates.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Windows.js"
+				type="text/javascript"></script>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+			var IDS_FRAMEWORK_VIRTUAL_PATH =  "/NR/System/WBC";
+		// -->
+		</script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/CommonClient.js"
+				type="text/javascript"></script>
+	<META name="ROBOTS" content="FOLLOW,INDEX">
+
+<!-- Inserted by Content Management Server: END EmbedTmplHeadHook -->
+</head>
+<body bgcolor="#CCCCCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyBeginHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyBeginHook -->
+
+
+<table width="615" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#CCCCCC">
+<tr>
+	<td align="left" valign="top">
+		<table width="615" border="0" cellspacing="0" cellpadding="0">
+        	<tr> 
+          	<td class="cellbordertop"><img SRC="/Include/HoR/AL06/al06_header_home.jpg" width="613" height="150" ALT="Congressman Spencer Bachus Representing Alabama’s 6th District, photo of the Cahaba River National Wildlife Refuge"></td>
+        	</tr>
+      	</table>
+    	</td>
+</tr>
+
+<TR><TD HEIGHT="12"><SMALL><SMALL>&nbsp;</SMALL></SMALL></TD></TR>
+
+<tr> 
+	<td align="left" valign="top" height="220">
+		<TABLE WIDTH="615" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+		<TR>
+			<TD valign="top" align="left" width="405">
+		     	<table width="405" border="0" cellspacing="0" cellpadding="0">
+		        	<tr> 
+		          	<td class="cellbordertop"><img SRC="/Include/HoR/AL06/site_navigation.jpg" width="406" height="25" ALT="Site Navigation"></td>
+		        	</tr>
+		        	
+		        	<tr> 
+		          	<td class="cellborderbottom" height="220" bgcolor="#FFFFFF" width="405">
+		          		<TABLE WIDTH="405" height="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		          		<TR>
+		          			<TD align="left" width="197" valign="middle" style="border-right: 1 solid black"><img SRC="/Include/HoR/AL06/bachus_pic.jpg" border="0" ALT="Photo of Congressman Spencer Bachus"></TD>
+							<TD align="left" valign="middle" width="208" background="/Include/HoR/AL06/gradient.gif">
+			              			<TABLE BORDER="0" CELLPADDING="5" CELLSPACING="0" width="208">
+					              	<TR><TD ID="menu1"><A HREF="/HoR/AL06/About+Spencer/" class="sitenav" onMouseOver="setPosition(this,'submenu1');show('submenu1','menu1')" onMouseOut="hide('submenu1','menu1')">About Spencer</A></TD></TR>
+<TR><TD ID="menu2"><A HREF="/HoR/AL06/Press+Room/" class="sitenav" onMouseOver="setPosition(this,'submenu2');show('submenu2','menu2')" onMouseOut="hide('submenu2','menu2')">Press Room</A></TD></TR>
+<TR><TD ID="menu3"><A HREF="/HoR/AL06/Helping+You/" class="sitenav" onMouseOver="setPosition(this,'submenu3');show('submenu3','menu3')" onMouseOut="hide('submenu3','menu3')">Helping You</A></TD></TR>
+<TR><TD ID="menu4"><A HREF="/HoR/AL06/The+6th+District/" class="sitenav" onMouseOver="setPosition(this,'submenu4');show('submenu4','menu4')" onMouseOut="hide('submenu4','menu4')">The 6th District</A></TD></TR>
+<TR><TD ID="menu5"><A HREF="/HoR/AL06/Contact+Me/" class="sitenav" onMouseOver="hiliteBackground('menu5')" onMouseOut="unHiliteBackground('menu5')">Contact Me</A></TD></TR>
+<TR><TD ID="menu6"><A HREF="/HoR/AL06/Issues/" class="sitenav" onMouseOver="setPosition(this,'submenu6');show('submenu6','menu6')" onMouseOut="hide('submenu6','menu6')">Issues</A></TD></TR>
+
+					              	</TABLE>
+							</TD>
+						</TR>
+						</TABLE>
+		          	</td>
+		        	</tr>
+		      	</table>
+		    	</td>
+		    	
+		    	<TD WIDTH="15">&nbsp;</TD>
+		    	
+			<td width="197" align="left" valign="top" height="220"> 
+		     	<table width="197" border="0" cellspacing="0" cellpadding="0">
+		        	<tr> 
+		          	<td class="cellbordertop"><img SRC="/Include/HoR/AL06/headlines.jpg" width="197" ALT="Headlines" height="25"></td>
+		        	</tr>
+		        	<tr> 
+		          	<td class="cellborderbottom" style="border: 1 solid black" bgcolor="#A7A8BB" height="220" width="197">
+		            		<TABLE WIDTH="198" CELLPADDING="0" CELLSPACING="0" BORDER="0" height="220">
+<TR>
+	<TD width="10"></TD>
+	<TD>
+		<style type="text/css">
+		A.newsLinkHeadLine{ 
+			font-family: arial;
+			font-size: 10pt;
+			text-align: left;
+			text-decoration: none;
+			color: #9C0000;
+			font-weight: bold;
+			width: 100%;
+		}
+		A.newsLink{
+			font-family: arial;
+			font-size: 10pt;
+			text-align: left;
+			color: #000000;
+			text-decoration: none;
+		}
+		</style>
+	
+		
+		<script language="javascript">		
+		//ENTER CONTENT TO SCROLL BELOW.
+		var content='<A HREF=\'/HoR/AL04/Newsroom/\' class=\'newsLinkHeadline\'>Latest News...</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2005/Adger+Fire+Award.htm\' class=\'newsLinkHeadline\'>3/2/2005</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2005/Adger+Fire+Award.htm\' class=\'newsLink\'>Adger FIre Department Awarded $135,000</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2005/House+Passes+Immigration+and+Identification+Reforms.htm\' class=\'newsLinkHeadline\'>2/10/2005</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2005/House+Passes+Immigration+and+Identification+Reforms.htm\' class=\'newsLink\'>House Passes Immigration and Identification Reforms</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2005/President+Supports+Bachus+Provision.htm\' class=\'newsLinkHeadline\'>2/1/2005</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2005/President+Supports+Bachus+Provision.htm\' class=\'newsLink\'>President Bush Includes Bachus and Moore Bill Provision in His 2006 Budget</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2005/Military+Death+Benefit.htm\' class=\'newsLinkHeadline\'>1/20/2005</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2005/Military+Death+Benefit.htm\' class=\'newsLink\'>Bachus Reintroduces Bill To Raise Military Death Benefit</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/National+Cemetert+EA.htm\' class=\'newsLinkHeadline\'>11/30/2004</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/National+Cemetert+EA.htm\' class=\'newsLink\'>National Cemetery One Step Closer to Reality at American Village</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/NCAA+Hearing+Reveals+Clear+Disregard+for+Due+Process.htm\' class=\'newsLinkHeadline\'>9/14/2004</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/NCAA+Hearing+Reveals+Clear+Disregard+for+Due+Process.htm\' class=\'newsLink\'>NCAA Hearing Reveals Clear Disregard for Due Process</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/Bachus+Calls+for+Changes+in+Airline+Passenger+Screening+Process.htm\' class=\'newsLinkHeadline\'>8/25/2004</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/Bachus+Calls+for+Changes+in+Airline+Passenger+Screening+Process.htm\' class=\'newsLink\'>Bachus Calls for Changes in Airline Passenger Screening Process</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/House+Passes+National+Marriage+Protection+Act.htm\' class=\'newsLinkHeadline\'>7/23/2004</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/House+Passes+National+Marriage+Protection+Act.htm\' class=\'newsLink\'>House Passes National Marriage Protection Act</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/SUPREME+COURT+DECISION.htm\' class=\'newsLinkHeadline\'>6/29/2004</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/SUPREME+COURT+DECISION.htm\' class=\'newsLink\'>Bachus Deeply Concerned by Supreme Court Decision Regarding Internet Pornography</A><BR><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/Pledge+of+Allegiance+is+Safe-+For+Now.htm\' class=\'newsLinkHeadline\'>6/14/2004</a><BR><A HREF=\'/HoR/AL06/Press+Room/Press+Releases/2004/Pledge+of+Allegiance+is+Safe-+For+Now.htm\' class=\'newsLink\'>Pledge of Allegiance is Safe- For Now</A><BR><BR>';
+		
+		var boxheight=220;        // BACKGROUND BOX HEIGHT IN PIXELS.
+		var boxwidth=190;         // BACKGROUND BOX WIDTH IN PIXELS.
+		var boxcolor="#E2E2E2";   // BACKGROUND BOX COLOR.
+		var speed=35;             // SPEED OF SCROLL IN MILLISECONDS (1 SECOND=1000 MILLISECONDS)..
+		var pixelstep=1;          // PIXELS "STEPS" PER REPITITION.
+		var godown=false;         // TOP TO BOTTOM=TRUE , BOTTOM TO TOP=FALSE
+		var pauseOnmouseover=true; //SET TO "true" TO ENABLE PAUSE WHEN MOUSEOVER, "false" TO DISABLE IT.
+		
+		// DO NOT EDIT BEYOND THIS POINT
+		var outer,inner,elementheight,ref,refX,refY;
+		var w3c=(document.getElementById)?true:false;
+		var ns4=(document.layers)?true:false;
+		var ie4=(document.all && !w3c)?true:false;
+		var ie5=(document.all && w3c)?true:false;
+		var ns6=(w3c && navigator.appName.indexOf("Netscape")>=0)?true:false;
+		var txt='';
+		var goscroll=true;
+		if(ns4){
+		txt+='<table cellpadding=0 cellspacing=0 border=0 height='+boxheight+' width='+boxwidth+'><tr><td>';
+		txt+='<ilayer name="ref" bgcolor="'+boxcolor+'" width='+boxwidth+' height='+boxheight+'></ilayer>';
+		txt+='</td></tr></table>'
+		txt+='<layer name="outer" bgcolor="'+boxcolor+'" visibility="hidden" width='+boxwidth+' height='+boxheight+' '+((pauseOnmouseover)? 'onmouseover="goscroll=false" onmouseout="goscroll=true"':'')+'>';
+		txt+='<layer  name="inner"  width='+(boxwidth-4)+' height='+(boxheight-4)+' visibility="hidden" left="2" top="2" >'+content+'</layer>';
+		txt+='</layer>';
+		}else{
+		txt+='<div id="ref" style="z-index: -1; position:relative; width:'+boxwidth+'; height:'+boxheight+';"></div>';
+		txt+='<div id="outer" style="position:absolute; width:'+boxwidth+'; height:'+boxheight+'; visibility:hidden; overflow:hidden"  '+((pauseOnmouseover)? 'onmouseover="goscroll=false" onmouseout="goscroll=true"':'')+'>';
+		txt+='<div id="inner"  style="position:absolute; visibility:hidden; left:2px; top:2px; width:'+(boxwidth-4)+'; overflow:hidden; cursor:default;" '+((pauseOnmouseover)? 'onmouseover="goscroll=false" onmouseout="goscroll=true"':'')+'>'+content+'</div>';
+		txt+='</div>';
+		}
+		document.write(txt);
+		txt='';
+		
+		function getElHeight(el){
+		if(ns4)return (el.document.height)? el.document.height : el.clip.bottom-el.clip.top;
+		else if(ie4||ie5)return (el.style.height)? el.style.height : el.clientHeight;
+		else return (el.style.height)? parseInt(el.style.height):parseInt(el.offsetHeight);
+		}
+		
+		function getPageLeft(el){
+		var x;
+		if(ns4)return el.pageX;
+		if(ie4||w3c){
+		x = 0;
+		while(el.offsetParent!=null){
+		x+=el.offsetLeft;
+		el=el.offsetParent;
+		}
+		x+=el.offsetLeft;
+		return x;
+		}}
+		
+		function getPageTop(el){
+		var y;
+		if(ns4)return el.pageY;
+		if(ie4||w3c){
+		y=0;
+		while(el.offsetParent!=null){
+		y+=el.offsetTop;
+		el=el.offsetParent;
+		}
+		y+=el.offsetTop;
+		return y;
+		}}
+		
+		function scrollbox(){
+		if(goscroll){
+		if(ns4){
+		inner.top+=(godown)? pixelstep: -pixelstep;
+		if(godown){
+		if(inner.top>boxheight)inner.top=-elementheight;
+		}else{
+		if(inner.top<2-elementheight)inner.top=boxheight+2;
+		}}else{
+		inner.style.top=parseInt(inner.style.top)+((godown)? pixelstep: -pixelstep)+'px';
+		if(godown){
+		if(parseInt(inner.style.top)>boxheight)inner.style.top=-elementheight+'px';
+		}else{
+		if(parseInt(inner.style.top)<2-elementheight)inner.style.top=boxheight+2+'px';
+		}}}}
+		
+		window.onresize=function(){
+		if(ns4)setTimeout('history.go(0)', 400);
+		else{
+		outer.style.left=getPageLeft(ref)+'px';
+		outer.style.top=getPageTop(ref)+'px';
+		}}
+		
+		window.onload=function(){
+		outer=(ns4)?document.layers['outer']:(ie4)?document.all['outer']:document.getElementById('outer');
+		inner=(ns4)?outer.document.layers['inner']:(ie4)?document.all['inner']:document.getElementById('inner');
+		ref=(ns4)?document.layers['ref']:(ie4)?document.all['ref']:document.getElementById('ref');
+		elementheight=getElHeight(inner);
+		if(ns4){
+		outer.moveTo(getPageLeft(ref),getPageTop(ref));
+		outer.clip.width=boxwidth;
+		outer.clip.height=boxheight;
+		inner.top=(godown)? -elementheight : boxheight-2;
+		inner.clip.width=boxwidth-4;
+		inner.clip.height=elementheight;
+		outer.visibility="show";
+		inner.visibility="show";
+		}else{
+		outer.style.left=getPageLeft(ref)+'px';
+		outer.style.top=getPageTop(ref)+'px';
+		inner.style.top=((godown)? -elementheight : boxheight)+'px';
+		inner.style.clip='rect(0px, '+(boxwidth-4)+'px, '+(elementheight)+'px, 0px)';
+		outer.style.visibility="visible";
+		inner.style.visibility="visible";
+		}
+		setInterval('scrollbox()',speed);
+		}
+		
+		</script>
+	</TD>
+	<!--<TD WIDTH="0"></TD>-->
+</TR>
+</TABLE>
+		          	</td>
+		        	</tr>
+		      	</table>
+		    	</td>
+		</TR>
+		</TABLE>
+	</TD>
+</tr>
+  
+<TR><TD HEIGHT="12"><SMALL><SMALL>&nbsp;</SMALL></SMALL></TD></TR>  
+  
+<tr> 
+	<TD valign="top" align="left">
+		<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="615">
+		<TR>
+		    	<td width="197" align="left" valign="top">
+		     	<table width="197" border="0" cellspacing="0" cellpadding="0">
+		        	<tr> 
+		          	<td class="cellbordertop"><img SRC="/Include/HoR/AL06/legislative_activity.jpg" ALT="Legislative Activity" width="197" height="25"></td>
+		        	</tr>
+		        	<tr> 
+		          	<td class="cellborderbottom" style="border: 1 solid black; padding: 5px" background="/NR/HoR/Resources/AL06/columns.jpg" height="294" width="197">
+		          		<p class="contenttitlebold">
+		            		<DIV><STRONG><A href="http://thomas.loc.gov/cgi-bin/bdquery/R?d108:FLD003:@1(rep+bachus+spencer):" target="Custom">Legislation Sponsored by Congressman Bachus</A>&nbsp;(108th Congress)</STRONG></DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG><A href="http://thomas.loc.gov/cgi-bin/bdquery/R?d108:FLD004:@1(rep+bachus+spencer):" target="Custom">Legislation Co-Sponsored by Congressman Bachus</A>&nbsp;(108th Congress)</STRONG></DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG><A href="http://thomas.loc.gov/" target="Custom">Thomas Legislative Information Search</A></STRONG></DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG><A href="http://www.gop.gov/committeecentral/" target="Custom">gop.gov Committee Central</A></STRONG></DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG><A href="/HoR/AL06/Hidden+Content/Legislation+Page.htm">Other Legislative Links</A></STRONG></DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+		          		</p>
+		          	</td>
+		        	</tr>
+		      	</table>
+		    	</td>
+		    	
+		    	<TD WIDTH="12">&nbsp;</TD>
+		    	
+		    	<td width="197" align="left" valign="top">
+		      	<table width="197" border="0" cellspacing="0" cellpadding="0">
+		        	<tr> 
+		          	<td class="cellbordertop"><img SRC="/Include/HoR/AL06/snapshots.jpg" ALT="Snapshots" width="197" height="25"></td>
+		        	</tr>
+		        	<tr> 
+			          <td class="cellborderbottom" style="border: 1 solid black; padding: 5px" background="/NR/HoR/Resources/AL06/flower_back.jpg" height="294" width="197">
+		            		<P align="center"><STRONG><U><FONT color="#0000ff"><A href="/HoR/AL06/About+Spencer/Photos/photo+album+page.htm">CLICK HERE TO VIEW COMPLETE PHOTO ALBUM</A></FONT></U></STRONG></P>
+<P align="center"><STRONG><U><FONT color="#0000ff"></FONT></U></STRONG>&nbsp;</P><STRONG><U><FONT color="#0000ff"></FONT></U></STRONG>
+<P align="center"><FONT size="3"><STRONG><IMG alt="View from Flower Hill at the University of Montevallo" src="/NR/rdonlyres/E61B63E4-CC00-40DC-9552-04CE14DB8577/0/FlowerHill.jpg" border="0"></STRONG></FONT></P>
+<P align="center"><FONT size="2">View from Flower Hill at the University of Montevallo</FONT></P>
+<P align="center"><STRONG><FONT size="3"></FONT></STRONG>&nbsp;</P>
+<P align="center">&nbsp;</P>
+		          	</td>
+		        	</tr>
+		      	</table>
+		    	</td>
+		    	
+		    	<TD WIDTH="13">&nbsp;</TD>
+		    	
+		    	<td width="196" align="left" valign="top"> 
+		      	<table width="197" border="0" cellspacing="0" cellpadding="0">
+		        	<tr> 
+		          	<td class="cellbordertop" width="197"><img SRC="/Include/HoR/AL06/hot_topics.jpg" ALT="Alabama" width="197" height="25"></td>
+		        	</tr>
+		        	<tr> 
+		          	<td class="cellborderbottom" style="border: 1 solid black; padding: 5px" background="/NR/HoR/Resources/AL06/capitol_bg.jpg" height="294" width="197">
+		            		<DIV align="center">
+<DIV align="center"><STRONG><FONT size="2"><A href="http://boss.streamos.com/real/hjudiciary/constitution/constitution09142004.smi">CLICK HERE TO VIEW WEBCAST OF NCAA HEARING ON 9/14/04</A></FONT></STRONG></DIV>
+<DIV align="center"><STRONG><FONT size="1">(HIGH SPEED INTERNET &amp; REAL PLAYER REQUIRED)</FONT></STRONG></DIV>
+<DIV align="center"><STRONG><FONT size="2"><A href="http://www.fvap.gov/"></A></FONT></STRONG>&nbsp;</DIV>
+<DIV align="center"><STRONG><FONT size="2"></FONT></STRONG>&nbsp;</DIV>
+<DIV align="center"><STRONG><FONT size="2"><A href="/HoR/AL06/Issues/Medicare/Issues+Mediare.htm" target="Custom">CLICK HERE FOR IMPORTANT INFORMATION ABOUT THE NEW MEDICARE PLAN</A></FONT></STRONG></DIV></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><A href="http://www.house.gov/htbin/leave_site?ln_url=http://www.ftc.gov/ftc/consumer.htm&amp;ln_desc=Federal+Trade+Commission" target="Custom"><IMG alt="graphical link to Federal Trade Commision web site" src="/NR/rdonlyres/E6C26282-6E2C-4CCE-8D49-998D5957DAA5/0/FTClogo.jpg" border="0"></A></DIV>
+<DIV align="center">Consumer Services: National "Do Not Call" Registry, ID Theft, etc...</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><A href="/HoR/AL06/About+Spencer/National+Conservative+Groups.htm">National Conservative Groups: Representative Ratings</A></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+		          	</td>
+		        	</tr>
+		      	</table>
+		    	</td>
+		</TR>
+		</TABLE>
+	</TD>
+</tr>
+  
+<TR><TD HEIGHT="12"><SMALL><SMALL>&nbsp;</SMALL></SMALL></TD></TR>
+  
+<tr align="left" valign="top"> 
+	<td align="left" valign="top">
+     	<table width="615" border="0" cellspacing="0" cellpadding="0">
+        	<tr> 
+          	<td class="cellbordertop" colspan="4"><img SRC="/Include/HoR/AL06/contact_information.jpg" ALT="Contact Information" width="613" height="25"></td>
+        	</tr>
+        	<tr> 
+	          <td class="cellborderbottomleft" bgcolor="#FFFFFF" valign="top" align="left" width="154"> 
+            		<p class="contentaddress"><br>
+              		<b>Washington, D.C. Office</b><br>
+              		442 Cannon Building<br>
+              		Washington, D.C. 20515<br>
+              		202 225-4921 phone<br>
+              		202 225-2082 fax</p>
+            		<p><br>
+            		</p>
+            	</td>
+          	<td class="cellborderbottomonly" bgcolor="#FFFFFF" valign="top" align="left" width="154"> 
+            		<p class="contentaddress"><br>
+              		<b>Northport Office</b><br>
+              		3500 McFarland Blvd.<br>
+              		Post Office Drawer 569<br>
+              		Northport, AL 35476<br>
+              		205 333-9894 phone<br>
+              		205 333-9812 fax</p>
+            	</td>
+          	<td class="cellborderbottomonly" bgcolor="#FFFFFF" valign="top" align="left" width="154">
+            		<p class="contentaddress"><br>
+              		<b>Birmingham Office</b><br>
+              		1900 International Park Dr.<br>
+              		Suite 107<BR>
+              		Birmingham, AL 35243<br>
+              		205 969-2296 phone<br>
+              		205 969-3958 fax </p>
+            	</td>
+          	<td class="cellborderbottomright" bgcolor="#FFFFFF" valign="top" align="left" width="153"> 
+            		<p class="contentaddress"><br>
+              		<b>Clanton Office</b><br>
+              		703 2nd Avenue North<br>
+              		P.O. Box 502<br>
+              		Clanton, AL 35046<br>
+              		205 280-0704 phone<br>
+            		205 280-3060 fax</p>
+            	</td>
+        	</tr>
+      	</table>      
+    	</td>
+</tr>
+</table>
+
+<br>
+
+<DIV class="submenuItem" style="z-index: 99" ID="submenu1" onMouseOver="show('submenu1','menu1')" onMouseOut="hide('submenu1','menu1')"><A HREF="/HoR/AL06/About+Spencer/Biography/" class="submenuItemLink">Biography</A><BR><A HREF="/HoR/AL06/About+Spencer/Committees/" class="submenuItemLink">Committees</A><BR><A HREF="/HoR/AL06/About+Spencer/Photos/" class="submenuItemLink">Photos</A><BR><A HREF="/HoR/AL06/About+Spencer/Awards/" class="submenuItemLink">Awards</A><BR></DIV>
+<DIV class="submenuItem" style="z-index: 99" ID="submenu2" onMouseOver="show('submenu2','menu2')" onMouseOut="hide('submenu2','menu2')"><A HREF="/HoR/AL06/Press+Room/Press+Releases/" class="submenuItemLink">Press Releases</A><BR><A HREF="/HoR/AL06/Press+Room/Floor+Statements/" class="submenuItemLink">Floor Statements</A><BR><A HREF="/HoR/AL06/Press+Room/Opinion+Editorials/" class="submenuItemLink">Opinion Editorials</A><BR><A HREF="/HoR/AL06/Press+Room/Spencer+In+the+News/" class="submenuItemLink">Spencer In the News</A><BR></DIV>
+<DIV class="submenuItem" style="z-index: 99" ID="submenu3" onMouseOver="show('submenu3','menu3')" onMouseOut="hide('submenu3','menu3')"><A HREF="/HoR/AL06/Helping+You/Order+a+US+Flag/" class="submenuItemLink">Order a US Flag</A><BR><A HREF="/HoR/AL06/Helping+You/Tour+Request/" class="submenuItemLink">Tour Request</A><BR><A HREF="/HoR/AL06/Helping+You/Intern+and+Page+Opportunities/" class="submenuItemLink">Intern and Page Opportunities</A><BR><A HREF="/HoR/AL06/Helping+You/Presidential+Greetings/" class="submenuItemLink">Presidential Greetings</A><BR><A HREF="/HoR/AL06/Helping+You/Service+Academy+Nominations/" class="submenuItemLink">Service Academy Nominations</A><BR><A HREF="/HoR/AL06/Helping+You/Federal+Agencies/" class="submenuItemLink">Federal Agencies</A><BR><A HREF="/HoR/AL06/Helping+You/Federal+Grants/" class="submenuItemLink">Federal Grants</A><BR><A HREF="/HoR/AL06/Helping+You/Educational+Loans/" class="submenuItemLink">Educational Loans</A><BR><A HREF="/HoR/AL06/Helping+You/Business/" class="submenuItemLink">Business</A><BR><A HREF="/HoR/AL06/Helping+You/Consumer+Information/" class="submenuItemLink">Consumer Information</A><BR></DIV>
+<DIV class="submenuItem" style="z-index: 99" ID="submenu4" onMouseOver="show('submenu4','menu4')" onMouseOut="hide('submenu4','menu4')"><A HREF="/HoR/AL06/The+6th+District/Alabama+State+Website/" class="submenuItemLink">Alabama State Website</A><BR><A HREF="/HoR/AL06/The+6th+District/Bibb/" class="submenuItemLink">Bibb</A><BR><A HREF="/HoR/AL06/The+6th+District/Chilton/" class="submenuItemLink">Chilton</A><BR><A HREF="/HoR/AL06/The+6th+District/Coosa/" class="submenuItemLink">Coosa</A><BR><A HREF="/HoR/AL06/The+6th+District/Jefferson/" class="submenuItemLink">Jefferson</A><BR><A HREF="/HoR/AL06/The+6th+District/Shelby/" class="submenuItemLink">Shelby</A><BR><A HREF="/HoR/AL06/The+6th+District/St+Clair/" class="submenuItemLink">St Clair</A><BR><A HREF="/HoR/AL06/The+6th+District/Tuscaloosa/" class="submenuItemLink">Tuscaloosa</A><BR></DIV>
+<DIV class="submenuItem" style="z-index: 99" ID="submenu6" onMouseOver="show('submenu6','menu6')" onMouseOut="hide('submenu6','menu6')"><A HREF="/HoR/AL06/Issues/Abortion/" class="submenuItemLink">Abortion</A><BR><A HREF="/HoR/AL06/Issues/Birmingham+Northern+Beltline/" class="submenuItemLink">Birmingham Northern Beltline</A><BR><A HREF="/HoR/AL06/Issues/Internet+Gambling/" class="submenuItemLink">Internet Gambling</A><BR><A HREF="/HoR/AL06/Issues/Jobs+and+Economic+Growth/" class="submenuItemLink">Jobs and Economic Growth</A><BR><A HREF="/HoR/AL06/Issues/Medicare/" class="submenuItemLink">Medicare</A><BR><A HREF="/HoR/AL06/Issues/No+Child+Left+Behind+-+Education+Reform/" class="submenuItemLink">No Child Left Behind - Education Reform</A><BR><A HREF="/HoR/AL06/Issues/Tornado+Shelters/" class="submenuItemLink">Tornado Shelters</A><BR><A HREF="/HoR/AL06/Issues/Veterans/" class="submenuItemLink">Veterans</A><BR><A HREF="/HoR/AL06/Issues/Rebuilding+Iraq+and+the+War+on+Terror/" class="submenuItemLink">Rebuilding Iraq and the War on Terror</A><BR><A HREF="/HoR/AL06/Issues/Defending+Marriage/" class="submenuItemLink">Defending Marriage</A><BR></DIV>
+
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyEndHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyEndHook -->
+</body>
+</html>

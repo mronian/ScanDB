@@ -1,0 +1,215 @@
+<DOC>
+<DOCNO>g00270</DOCNO>
+<DOCHDR>http://www.movingideas.org/content/en/contact_us.htm</DOCHDR>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="submission" content="http://www.aitoc.com">
+    <meta name="author" content="aitoc.com">
+    <meta name="copy right" content="aitoc.com 2001-2003">
+    <meta name="robots" content="all">
+    <meta name="revisit-after" content="30 Days">
+    <meta name="title" content="Moving Ideas">
+<meta name="keywords" content="Moving Ideas">
+<meta name="description" content="Moving Ideas">
+<meta name="subject" content="Moving Ideas">
+<meta name="abstract" content="Moving Ideas">
+    <title>Contact Moving Ideas</title>
+    <base href="http://www.movingideas.org/">
+    <link href="design/style.css" rel="styleSheet" type="text/css">
+    <script language="JavaScript" src="js/check.js"></script>
+    <script language="JavaScript" src="js/check_form.js"></script>
+    <script language="JavaScript" src="js/menu.js"></script>
+    <script language="JavaScript" src="js/common.js"></script>
+  </head>
+  <body>
+    <TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD noWrap width="30%"></TD>
+<TD vAlign=top noWrap width=747>
+<TABLE height=595 cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=head_link_separator noWrap align=right width=747 height=14><A class="head_link" href="http://www.movingideas.org/content/en/about.htm">About Us</A> | <A class="head_link" href="http://www.movingideas.org/content/en/contact_us.htm">Contact Us </A>| <A class="head_link" href="http://www.movingideas.org/content/en/join.htm">Join</A> | <A class="head_link" href="http://www.movingideas.org/content/en/rss.htm">RSS</A> | <A class="head_link" href="http://www.movingideas.org/minblog/">Blog</A> </TD></TR>
+<TR>
+<TD noWrap height=90>
+<TABLE cellSpacing=0 cellPadding=0 width=747 border=0>
+<TBODY>
+<TR>
+<TD class=head_td_project onclick="window.location='/'" vAlign=bottom noWrap width=477 background=http://www.movingideas.org/image/1.jpg>A project of <A class="head_link_prospect" href="http://www.prospect.org/">The American Prospect</A></TD>
+<TD noWrap align=left width=90><IMG src="http://www.movingideas.org/image/36.gif" border=0></TD>
+<TD noWrap width=2></TD>
+<TD noWrap align=right width=90><IMG src="http://www.movingideas.org/image/3.gif" border=0></TD>
+<TD noWrap width=2></TD>
+<TD noWrap align=right width=90><IMG src="http://www.movingideas.org/image/4.gif" border=0></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD noWrap height=2></TD></TR>
+<TR>
+<TD class=border_menu noWrap width="100%" height=23>
+<TABLE class=menu_table height="100%" cellSpacing=0 cellPadding=0 width="100%" background=http://www.movingideas.org/image/21.gif>
+<TBODY>
+<TR>
+<TD>
+<table cellspacing="0" cellpadding="0"><tr><td>
+<script type="text/javascript">
+
+var code = "code";
+var url = "url";
+var sub = "sub";
+var color = {"border":"#D0E9FE", "shadow":"#D0E9FE"};
+var tcss = {"ON":"topOn", "OVER":"topOver", "ONP":"topOn_parents", "OVERP":"topOver_parents"};
+var scss = {"ON":"topSelected", "OVER":"topSelected", "ONP":"topSelected_parents", "OVERP":"topSelected_parents"};
+var css = {"ON":"subOn", "OVER":"subOver"};
+var border = 0;
+var shadow = 0;
+var TOP_LEFT = {"border":border, "borders":[0,0,0,0], "shadow":shadow, "color":color, "css":tcss};
+var TOP_MIDDLE = {"border":border, "borders":[0,0,0,0], "shadow":shadow, "color":color, "css":tcss};
+var TOP_RIGHT = {"border":border, "borders":[0,0,0,0],"shadow":shadow, "color":color, "css":tcss};
+var TOP_LEFT_SELECTED = {"border":border, "borders":[0,0,0,0], "shadow":shadow, "color":color, "css":scss};
+var TOP_MIDDLE_SELECTED = {"border":border, "borders":[0,0,border,0], "shadow":shadow, "color":color, "css":scss};
+var TOP_RIGHT_SELECTED = {"border":border, "borders":[0,0,0,0],"shadow":shadow, "color":color, "css":scss};
+var STYLE = {"border":border, "borders":[border,border,border,border], "shadow":shadow, "color":color, "css":css};
+var STYLE_TOP = {"border":border, "borders":[border,border,border,border], "shadow":shadow, "color":color, "css":css};
+var STYLE_MIDDLE = {"border":border, "borders":[border,border,border,border], "shadow":shadow, "color":color, "css":css};
+var STYLE_BOTT = {"border":border, "borders":[border,border,border,border], "shadow":shadow, "color":color, "css":css};
+var width = subwidth = 80;
+var height = 24;
+var subheight = 24;
+var left2right = 1;
+var direction = 2; //1-vertical,2-horizontal
+var item = (direction == 1)?"[height-1,0]":"[0,width-1]";
+var offsetwidth=(left2right == 2)?(-width):(width-1);
+var leveloffsety=(left2right == 2)?(-subwidth):(subwidth-1);
+var level = (direction == 1)?"[0,offsetwidth]":"[height-1,0]";
+var is_arrow = (direction == 2)?'"arrow":"/pic/arr.gif"':"";
+var BLANK_IMAGE = "/pic/0.gif";
+var MENU_ITEMS =
+[
+    {"pos":"relative", "size":[height ,width], "itemoff":eval(item), "leveloff":eval(level), "delay":600, "arrow":"/pic/arr.gif", "oarrow":"/pic/arr_d.gif", "arrsize":[7,10],  "style":TOP_MIDDLE}
+,{code:"Action Center ", url:"content/en/action_center_list.htm", click:"setMenuCookie(3)", "format":{"size":[height, 94], "itemoff":[0,0], "arrow":null,  "style":TOP_LEFT}}
+,{code:"Member Organizations ", url:"content/en/member_organizations.htm", click:"setMenuCookie(1)", "format":{"size":[height, 138], "itemoff":[0,94], "arrow":null,  "style":TOP_MIDDLE}}
+,{code:"Issues ", url:"content/en/issues.htm", click:"setMenuCookie(2)", "format":{"size":[height, 51], "itemoff":[0,138], "arrow":null,  "style":TOP_MIDDLE}}
+,{code:"For the Press ", url:"content/en/for_the_press.htm", click:"setMenuCookie(4)", "format":{"size":[height, 90], "itemoff":[0,51], "arrow":null,  "style":TOP_MIDDLE}}
+,{code:"Jobs ", url:"content/en/jobs.htm", click:"setMenuCookie(6)", "format":{"size":[height, 42], "itemoff":[0,90], "arrow":null,  "style":TOP_MIDDLE}}
+,{code:"Events ", url:"content/en/events.htm", click:"setMenuCookie(7)", "format":{"size":[height, 55], "itemoff":[0,42], "arrow":null,  "style":TOP_MIDDLE}}
+,{code:"Donate ", url:"content/en/donate_go.htm", click:"setMenuCookie(8)", "format":{"size":[height, 58], "itemoff":[0,55], "arrow":null,  "style":TOP_MIDDLE}}
+,{code:"Links ", url:"content/en/link_category.htm", click:"setMenuCookie(5)", "format":{"size":[height, 44], "itemoff":[0,58], "arrow":null,  "style":TOP_RIGHT}}
+
+];
+var mainmenu = new AdvancedMenu("mainmenu",MENU_ITEMS);
+mainmenu.show();
+</script>
+</td></tr></table></TD>
+<TD class=menu_item_search vAlign=center width="22%"><FORM action="http://www.movingideas.org/content/en/search_result.htm" class="form_padding_off" name="g_search" onSubmit="if (document.g_search.query.value.length==0){alert('Please fill field');document.g_search.query.focus();return false;}" method="post"><input type="hidden" name="PHPSESSID" value="e75d6d2c439871797ee751da58555cf9" /><TABLE cellSpacing=0 cellPadding=0 width="100%" border="0"><TR><TD class="menu_item">Search </TD><TD width="85"><INPUT class="input_text" size="11" name="query"></TD><TD><input type="image" src="/image/5.gif" border="0"></TD></TR></TABLE></FORM></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD noWrap height=1></TD></TR>
+<TR>
+<TD noWrap bgColor=#dbe6fa height=13></TD></TR>
+<TR>
+<TD vAlign=top>
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD noWrap width=10 bgColor=#dbe6fa></TD>
+<TD vAlign=top noWrap bgColor=#dbe6fa><TABLE class=block_content cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD noWrap width=12 height=23><IMG src="http://www.movingideas.org/image/22.gif"></TD>
+<TD class=block_content_header>Contact Moving Ideas Network </TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD class=block_content_block height="100%">
+<P class=block_content_content>2000 L Street NW, Suite 717<BR>Washington DC, 20036<BR>Phone: 202/776-0730<BR>Fax: 202/776-0740</P>
+<P class=block_content_content><A href="mailto:movingideas@movingideas.org">movingideas@movingideas.org</A></P>
+<P class=block_content_content>&nbsp;</P>
+<P class=block_content_content>The Moving Ideas Network is a project of <EM>The American Prospect</EM> magazine, and we are located in their offices.</P>
+<P class=block_content_content>&nbsp;</P>
+<P class=block_content_content><STRONG>Moving Ideas Staff</STRONG></P>
+<P class=block_content_content><A href="mailto:malston-akers@prospect.org">Melanie H. Alston-Akers</A>, Director, x109<BR><A href="mailto:donken@prospect.org">Diana Onken</A>, Strategy Director, x103<BR><A href="mailto:rwiegand@prospect.org">Rebecca Wiegand</A>, Outreach Coordinator, x119<BR><A href="mailto:dgreenhalgh@prospect.org">Diane Greenhalgh</A>, Managing Editor, x105</A></P>
+<P class=block_content_content><BR><BR>&nbsp;</P></TD></TR></TBODY></TABLE></TD>
+<TD noWrap width=9 bgColor=#dbe6fa></TD>
+<TD vAlign=top noWrap width=180 bgColor=#f0f7fe>
+<TABLE class=for_other_browsers borderColor=#47a8ed height="100%" cellSpacing=0 cellPadding=0 width="100%" border=1>
+<TBODY>
+<TR>
+<TD vAlign=top noWrap bgColor=#e6f2fc height=105>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD noWrap width=40 bgColor=#bde0fe height=40><IMG src="http://www.movingideas.org/image/16.gif" border=0></TD>
+<TD noWrap align=right bgColor=#bde0fe height=40><IMG src="http://www.movingideas.org/image/19.gif" border=0></TD></TR>
+<TR>
+<TD vAlign=center noWrap align=right height=39></TD>
+<TD vAlign=center noWrap align=left height=39>
+<FORM name="data" action="http://www.democracyinaction.org/dia/processEditValues.jsp" method="post"><input type="hidden" name="PHPSESSID" value="e75d6d2c439871797ee751da58555cf9" /><INPUT type=hidden value=117 name=organization_KEY> <INPUT type=hidden value=true name=noKey> <INPUT type=hidden value=supporter name=table> <INPUT type=hidden value=groups|562 name=link> <INPUT type=hidden value=true name=updateRowValues> <INPUT type=hidden value=http://www.demaction.org/movingideas/signUp.jsp?key=86&t=join.dwt&Email=[[Email]] name=redirect><INPUT size=17 value="your email" name=Email></INPUT> 
+<TD></TD>
+<TR>
+<TD vAlign=top noWrap align=right height=26></TD>
+<TD vAlign=top noWrap align=right height=26><INPUT type=image src="http://www.movingideas.org/image/13.gif"> </FORM>&nbsp;&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top noWrap bgColor=#ffffff height=98>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top noWrap align=middle width=25><IMG height=14 src="http://www.movingideas.org/image/18.gif" width=15 vspace=5></TD>
+<TD class=right_block_link vAlign=center align=left><A class="right_block_link" href="http://www.movingideas.org/content/en/join.htm">Join Moving Ideas <BR>Network</A></TD></TR>
+<TR>
+<TD vAlign=top></TD>
+<TD class=right_block_content vAlign=top>Find out more about Moving Ideas membership for your organization</TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top noWrap bgColor=#ffffff height=64>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top noWrap align=middle width=25><IMG height=14 src="http://www.movingideas.org/image/18.gif" width=15 vspace=6></TD>
+<TD class=right_block_link vAlign=center align=left><A class="right_block_link" href="http://www.movingideas.org/content/en/member_organizations.htm">Our Members</A></TD></TR>
+<TR>
+<TD vAlign=top></TD>
+<TD class=right_block_content vAlign=top>Browse our members' web sites </TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top noWrap bgColor=#ffffff height=71>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top noWrap align=middle width=25><IMG height=14 src="http://www.movingideas.org/image/18.gif" width=15 vspace=5></TD>
+<TD class=right_block_link vAlign=center align=left><A class="right_block_link" href="https://secure.democracyinaction.org/dia/organizations/movingideas/shop/custom.jsp?donate_page_KEY=99&t=donate.dwt">Support Moving Ideas</A></TD></TR>
+<TR>
+<TD vAlign=top></TD>
+<TD class=right_block_content vAlign=top>Support our work with a tax deductible donation.</TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top bgColor=#ffffff>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top noWrap align=middle width=25><IMG height=14 src="http://www.movingideas.org/image/18.gif" width=15 vspace=5></TD>
+<TD class=right_block_link vAlign=center align=left><A class="right_block_link" href="http://www.movingideas.org/content/en/contact_us.htm">Contact Us</A></TD></TR>
+<TR>
+<TD vAlign=top></TD>
+<TD class=right_block_content vAlign=top>Who's who at Moving Ideas Network, and how to contact us </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD noWrap bgColor=#dbe6fa height=18></TD></TR>
+<TR>
+<TD noWrap height=1></TD></TR>
+<TR>
+<TD noWrap bgColor=#fe9900 height=1></TD></TR>
+<TR>
+<TD vAlign=top noWrap height=18>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=copyrigth rowSpan=2>Copyright © 2005 by Moving Ideas Network | <A class="head_link" href="http://www.movingideas.org/content/en/privacy_policy.htm">Privacy Policy</A> </TD>
+<TD noWrap width=14 height=9><IMG height=9 src="http://www.movingideas.org/image/10.gif" width=14></TD>
+<TD noWrap width=392 bgColor=#fe9900></TD></TR>
+<TR>
+<TD noWrap height=13></TD>
+<TD></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+<TD width="30%"></TD></TR>
+<TR>
+<TD height="100%"></TD>
+<TD></TD>
+<TD></TD></TR></TBODY></TABLE>  </body>
+</html>

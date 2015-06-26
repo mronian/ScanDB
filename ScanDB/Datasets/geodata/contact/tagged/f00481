@@ -1,0 +1,503 @@
+<DOC>
+<DOCNO>f00481</DOCNO>
+<DOCHDR>http://www.cityofboston.gov/contact/default.asp</DOCHDR>
+
+
+<HTML>
+<HEAD>
+
+
+<link rel="shortcut icon" href="http://www.cityofboston.gov/favicon.ico">
+<!--Comment the asp code from here to the end of this comment in case something is wrong with BSMetas-->
+
+
+<title>City of Boston - Contact</title>
+
+<META name="keywords" content="department head, departments, city departments, directory, phone numbers">
+
+<META name="description" content="Search for a City of Boston contact by selecting either a Department OR a Person from the lists below.">
+
+<!--End of the comment-->
+
+<link rel="stylesheet" href="http://www.cityofboston.gov/includes/css/standart.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 6000;
+// Duration of crossfade (seconds)
+var crossFadeDuration = 7;
+// Specify the image files
+var Pic = new Array();
+// to add more images, just continue
+// the pattern, adding to the array below
+var Links = new Array();
+
+Pic[0] = '/images/banner/animalcontrol_BANNER.gif'
+Pic[1] = '/images/banner/whoami_banner.gif'
+Pic[2] = '/images/banner/video_library.gif'
+Pic[3] = '/images/banner/mygov.gif'
+Pic[4] = '/images/banner/vol_intern.gif'
+Pic[5] = '/images/banner/esl.gif'
+Pic[6] = '/images/banner/citystore.gif'
+Pic[7] = '/images/banner/bwm.gif'
+
+
+<!--Comment: all links have to go thru /banner.asp for redirection to the destination so that user's choice of a banner can be captured in IIS logs-->
+Links[0]="/banner.asp?goto=http://www.cityofboston.gov/animalcontrol";
+Links[1]="/banner.asp?goto=http://www.cityofboston.gov/whoami";
+Links[2]="/banner.asp?goto=http://www.cityofboston.gov/cable/video_library.asp";
+Links[3]="/banner.asp?goto=http://mygov.cityofboston.gov";
+Links[4]="/banner.asp?goto=http://www.cityofboston.gov/vi_opportunities";
+Links[5]="/banner.asp?goto=http://www.cityofboston.gov/newbostonians/search.asp";
+Links[6]="/banner.asp?goto=http://www.cityofboston.gov/citystore";
+Links[7]="http://www.cityofboston.gov/women/memorial.asp";
+
+
+// do not edit anything below this line
+var t;
+var j = 0;
+var p = Pic.length;
+var preLoad = new Array();
+for (i = 0; i < p; i++) {
+preLoad[i] = new Image();
+preLoad[i].src = Pic[i];
+}
+function runSlideShow() 
+{
+	if (document.all) 
+	{
+		document.images.SlideShow.style.filter="blendTrans(duration=2)";
+		document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)";
+		document.images.SlideShow.filters.blendTrans.Apply();
+	}
+	
+	document.images.SlideShow.src = preLoad[j].src;
+	document.getElementsByName("showlink").item(0).href=Links[j];
+	
+	if (document.all) 
+	{
+		document.images.SlideShow.filters.blendTrans.Play();
+	}
+	
+	j = j + 1;
+	
+	if (j > (p - 1)) j = 0;
+	
+	t = setTimeout('runSlideShow()', slideShowSpeed);
+}
+//  End -->
+</script>
+</HEAD>
+<BODY  marginheight="0" marginwidth="0" topmargin="0" leftmargin="0"  link="#ffff99" vlink="#cccc66" bgcolor="white" background="http://www.cityofboston.gov/images/level3background.gif" style="background-repeat: repeat-y" onLoad="runSlideShow()">
+<a name="top">
+<table border="0"  width="548" cellpadding="0" cellspacing="0">
+	<tr>
+		<td valign="top">
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr bgcolor="#646499">
+					<td>
+						<a href="http://www.cityofboston.gov/default.asp"><img src="http://www.cityofboston.gov/includes/images/city_of_boston.gif" border="0" alt="city of boston" vspace="0" hspace="0" align="middle"></a>
+					</td>
+					<td width="200" height="72"><a href="excise/default.asp" name="showlink"><img src="http://www.cityofboston.gov/images/blank.gif" border="0" alt="banner image" name='SlideShow'></a></td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" colspan="5" height="31">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr align="left" valign="top">
+								<td>
+									
+										<a href="http://www.cityofboston.gov/mayor/default.asp" onmouseover="document.images['mayor'].src='http://www.cityofboston.gov/includes/images/mayor2lgr.jpg'" onmouseout="document.images['mayor'].src='http://www.cityofboston.gov/includes/images/mayor3dgr.jpg'"><img src="http://www.cityofboston.gov/includes/images/mayor3dgr.jpg" border="0" alt="mayor" name="mayor"></a></td>
+									
+								<td align="left" valign="top">
+									
+										<a href="http://www.cityofboston.gov/citycouncil/default.asp" onmouseover="document.images['city'].src='http://www.cityofboston.gov/includes/images/city2.gif'" onmouseout="document.images['city'].src='http://www.cityofboston.gov/includes/images/city1.gif'"><img src="http://www.cityofboston.gov/includes/images/city1.gif" border="0" alt="city council" name="city"></a></td>
+									
+								<td align="left" valign="top">
+									
+										<a href="http://www.cityofboston.gov/calendar/calendar.asp" onmouseover="document.images['calendar'].src='http://www.cityofboston.gov/includes/images/calendar2.gif'" onmouseout="document.images['calendar'].src='http://www.cityofboston.gov/includes/images/calendar1.gif'"><img src="http://www.cityofboston.gov/includes/images/calendar1.gif" border="0" alt="calendar" name="calendar"></a></td>
+									
+								<td align="left" valign="top">
+									
+										<a href="http://www.cityofboston.gov/transactions/default.asp" onmouseover="document.images['transactions'].src='http://www.cityofboston.gov/includes/images/transactions2.gif'" onmouseout="document.images['transactions'].src='http://www.cityofboston.gov/includes/images/transactions1.gif'"><img src="http://www.cityofboston.gov/includes/images/transactions1.gif" border="0" alt="e-services" name="transactions"></a></td>
+									
+								<td align="left" valign="top">
+									
+										<a href="http://www.cityofboston.gov/contact/default.asp"><img src="http://www.cityofboston.gov/includes/images/contact2.gif" border="0" alt="contact" name="contact"></a></td>
+									
+							</tr>
+						</table>						
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" colspan="5" height="40">
+						&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="top" align="left">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td valign="top" align="left">
+												<a href="http://www.cityofboston.gov/residents/default.asp" onmouseover="document.images['residents'].src='http://www.cityofboston.gov/includes/images/residents2.gif'" onmouseout="document.images['residents'].src='http://www.cityofboston.gov/includes/images/residents1.gif'"><img src="http://www.cityofboston.gov/includes/images/residents1.gif" name="residents" border="0" alt="residents"></a>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" align="left">
+												<a href="http://www.cityofboston.gov/businesses/default.asp" onmouseover="document.images['business'].src='http://www.cityofboston.gov/includes/images/business2.gif'" onmouseout="document.images['business'].src='http://www.cityofboston.gov/includes/images/business1.gif'"><img src="http://www.cityofboston.gov/includes/images/business1.gif" name="business" border="0" alt="businesses"></a>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" align="left">
+												<a href="http://www.cityofboston.gov/visitors/default.asp" onmouseover="document.images['visitors'].src='http://www.cityofboston.gov/includes/images/visitors2.gif'" onmouseout="document.images['visitors'].src='http://www.cityofboston.gov/includes/images/visitors1.gif'"><img src="http://www.cityofboston.gov/includes/images/visitors1.gif" name="visitors" border="0" alt="visitors"></a>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" align="center">
+												
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td valign="top" align="left">
+									<table border="0" cellpadding="5" cellspacing="0" width="400">
+										<tr>
+											<td>
+
+<h4>Contact</h4>
+<b>Boston City Hall, <GEO TYPE="US">One City Hall Plaza, Boston, MA 02201</GEO><br>
+City Hall Operator: (617) 635-4000</i></b>
+<hr width="400" size="3" color="white" align="left">
+<br>
+Search for a City of Boston contact by selecting either a <i>Department <b>OR</b> a Person</i> from the lists below.
+
+<form action="default.asp" method="post" name="frmContact">
+<table border="0" cellpadding="0" cellspacing="2">
+
+	<tr>
+		<td valign="top"><b>Department:</b><br>
+			<select name="selDepartment"  size="1" onChange="document.frmContact.submit()">
+			<option value="">--Select One--
+			
+			<option value="91">2 to 6 Initiative
+			<option value="120">Access Boston
+			<option value="58">Allston/Brighton
+			<option value="51">Animal Control
+			<option value="135">Archives and Records
+			<option value="47">Arts, Tourism & Special Events
+			<option value="78">Assessing Department
+			<option value="24">Auditing Department
+			<option value="67">Back Bay, Beacon  Hill, Fenway & Mission Hill
+			<option value="111">Board of Appeal
+			<option value="99">Boston Centers for Youth and Families
+			<option value="131">Boston Main Streets Initiative
+			<option value="54">Boston Public Health Commission
+			<option value="112">Boston Residents Jobs Policy Program
+			<option value="88">Boston Youth Fund
+			<option value="108">BRA/EDIC
+			<option value="34">Budget Management
+			<option value="35">Cable Communications
+			<option value="130">Can Share
+			<option value="62">Charlestown
+			<option value="38">Chief Financial Officer
+			<option value="86">Chief of Basic City Services
+			<option value="154">Chief of Policy and Planning
+			<option value="83">Chief Operating Officer
+			<option value="36">City Clerk
+			<option value="138">City Council
+			<option value="136">City of Boston Scholarship Fund
+			<option value="4">Civil Rights
+			<option value="7">Consumer Affairs and Licensing
+			<option value="3">Department of Neighborhood Development
+			<option value="81">Deputy Chief Operating Officer
+			<option value="64">Dorchester
+			<option value="63">Downtown/Chinatown
+			<option value="66">East Boston
+			<option value="44">Elderly Affairs
+			<option value="33">Election Department
+			<option value="6">Emergency Shelter Commission
+			<option value="113">Employment Commission
+			<option value="32">Environment Department
+			<option value="121">Historic Burial Grounds Initiative
+			<option value="27">Human Resources
+			<option value="84">Human Services
+			<option value="73">Hyde Park/Readville & Roslindale
+			<option value="98">Inspectional Services Department
+			<option value="26">Intergovernmental Relations
+			<option value="110">Jamaica Plain
+			<option value="37">Labor Relations
+			<option value="153">Liaison to the Gay & Lesbian Communities
+			<option value="105">Licensing Board
+			<option value="29">Management and Information Services
+			<option value="55">Mayor's Office
+			<option value="31">Mayor's Press Office
+			<option value="52">Mayor's Youth Council
+			<option value="148">Mid Dorchester
+			<option value="126">MyGov
+			<option value="70">N. Dorchester/Mattapan & Hyde Park
+			<option value="72">North End, West End
+			<option value="150">Office of Homeland Security
+			<option value="103">Office of Neighborhood Services
+			<option value="118">Office of New Bostonians
+			<option value="39">Parking Clerk
+			<option value="80">Parks and Recreation
+			<option value="106">Police Department
+			<option value="2">Public Works
+			<option value="23">Purchasing Division
+			<option value="57">ReadBoston
+			<option value="115">Recycling
+			<option value="45">Registry Division
+			<option value="5">Rental Housing Resource Center
+			<option value="128">Retirement Board
+			<option value="74">Roxbury, South End
+			<option value="28">Small and Local Business Enterprise Office
+			<option value="75">South Boston
+			<option value="76">South End
+			<option value="152">Strand Theatre
+			<option value="50">Taxpayer Referral & Assistance Center
+			<option value="1">Transportation Department
+			<option value="102">Treasury
+			<option value="133">Urban Forestry
+			<option value="132">Urban Wilds
+			<option value="40">Veteran's Services
+			<option value="56">Web Team
+			<option value="77">West Roxbury
+			<option value="30">Women's Commission
+			<option value="48">Worker's Compensation Service
+			</select>
+			<br><br>Or<br><br>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top"><b>Contact Person:</b><br>
+			<select name="selName" size="1" onChange="document.frmContact.submit()">
+			<option value="">--Select One--
+			
+			<option value="120">Access Boston Manager
+			<option value="110">Allison Rogers
+			<option value="80">Antonia Pollak
+			<option value="28">Brooke E. Woodson
+			<option value="39">Bruce Graubart
+			<option value="32">Bryan Glasscock
+			<option value="150">Carlo Boccia
+			<option value="3">Charlotte Golar Richie
+			<option value="138">City Council, Main Office
+			<option value="135">City of Boston Archivist
+			<option value="105">Daniel F. Pokaski
+			<option value="111">Darryl Smith
+			<option value="73">Dave McNulty
+			<option value="83">Dennis DiMarzio
+			<option value="63">Denny Ching
+			<option value="26">Dina Siegal
+			<option value="44">Eliza Greenberg
+			<option value="131">Emily Haber
+			<option value="40">Eugene Vaillancourt
+			<option value="70">Freda Brasfield
+			<option value="33">Geraldine Cuddyer
+			<option value="113">Jay Lacroix
+			<option value="103">Jay Walsh
+			<option value="136">Jeanette Cassidy
+			<option value="6">Jim Green
+			<option value="54">John Auerbach
+			<option value="66">John Forbes
+			<option value="37">Joseph A. Sarno
+			<option value="2">Joseph Casazza
+			<option value="75">Joseph Rull
+			<option value="45">Judy A. McCarthy
+			<option value="153">Karen Fried
+			<option value="76">Karen Fried
+			<option value="148">Karine Querido
+			<option value="106">Kathleen O'Toole
+			<option value="91">Kathleen Traphagen
+			<option value="74">Keith Williams
+			<option value="121">Kelly Thomas
+			<option value="130">Kim Fernandes
+			<option value="84">Larry Mayes
+			<option value="51">Lina Cabrera
+			<option value="48">Linda T. Kelly
+			<option value="34">Lisa Signori (Budget)
+			<option value="38">Lisa Signori (CFO)
+			<option value="102">Lisa Signori (Treasury)
+			<option value="30">Marie A. Turley
+			<option value="108">Mark Maloney
+			<option value="86">Michael Galvin
+			<option value="62">Michael Killoran
+			<option value="154">Michael Kineavy
+			<option value="152">Michelle Baxter
+			<option value="35">Mike Lynch
+			<option value="64">Molly Dunford
+			<option value="72">Nicole Leo
+			<option value="67">Nikko Mendoza
+			<option value="112">Ola Fields
+			<option value="7">Patricia Malone, Esq.
+			<option value="81">Patrick Harrington
+			<option value="52">Patty McMahon
+			<option value="58">Paul Holloway
+			<option value="132">Paul Sutton
+			<option value="57">Pierrette Lassiter 
+
+			<option value="5">Rental Housing  Administrator
+			<option value="118">Reverend Cheng Imm Tan
+			<option value="99">Robert Lewis, Jr.
+			<option value="78">Ronald W. Rakow
+			<option value="36">Rosaria Salerno
+			<option value="77">Ryan Fitzgerald
+			<option value="24">Sally D. Glora
+			<option value="31">Seth Gitell
+			<option value="115">Susan Cascino, Marie Louissaint
+			<option value="47">Susan Hartnett
+			<option value="55">Thomas M. Menino
+			<option value="88">Timothy McCarthy
+			<option value="128">Tom Smith
+			<option value="50">TRAC
+			<option value="1">Transportation Commissioner's Office
+			<option value="133">Urban Forestry
+			<option value="4">Victoria L. Williams
+			<option value="27">Vivian Leonard
+			<option value="56">Web Team 
+			<option value="126">Web Team (MyGov)
+			<option value="98">William Good
+			<option value="29">William Holland
+			<option value="23">William J. Hannon
+			</select>
+		</td>
+	</tr>
+	<!--<tr>
+
+		<td><center>
+			<br><input type="image" alt="submit request" border="0" src="../images/new_buttons/submit_butn.jpg" width="125" height="16"><br><br></center>
+		</td>
+	</tr>-->
+
+</form>
+	<tr>
+		<td colspan="2" width="400" valign="top">
+		<hr width="400" color="#ffffff" size="1" align="left"><br>
+		Contact <a href="../contact/default.asp?ID=55">Mayor Thomas M. Menino</a>.
+		<br><br>
+		<a href="../mayor/mayor24.asp">Mayor's 24 Hour Constituent Service</a> is available to accept requests and complaints 24 hours a day via this form or by calling 617-635-4500.
+		<br><br>
+		To browse a list of departments and cabinets, go to the <a href="../cityservices_new">City Services</a> page, click on the department or cabinet that interests you and then click their "contact" link on the menu to the right.
+		<br><br>
+
+		Contact the <a href="../contact/default.asp?ID=56">WebTeam</a>.
+		<br><br>
+
+		If you are a visitor and are traveling to Boston and wish to find out more information about our city, check out the
+		<a href="../visitors/">Visitors</a> page or visit the <a href="http://www.bostonusa.com" target="newWindow">Greater Boston Convention &amp; Vistors Bureau web site.</a><p>
+
+		<!--If you are a business owner and need  more information about our city, go to our
+		<a href="../businesses/">Businesses</a> section.-->
+
+		If you have a question about our website, please go to our <a href="../copyright/credits.asp">credits page</a>
+		or contact <a href="mailto:webmaster@cityofboston.gov"> the webmaster.</a>
+		<br><br>
+
+		<u>Unsolicited email, spam, viruses, abuse:</u><br>
+		If you believe such actions originate from the City of Boston networks, please contact
+		<a href="mailto:postmaster@cityofboston.gov"> the postmaster</a> or
+		<a href="mailto:abuse@cityofboston.gov"> abuse</a> unit.
+		<td>
+	</tr>
+</table>
+
+<br><br>
+
+
+<br>
+
+</td>
+</tr>
+	
+<tr>
+<td valign="left" valign="top">
+
+<!--
+<p>
+<font face="arial" size="2" color="white">
+<b>key word search (<a href="http://www.cityofboston.gov/cityservices_new/advanced.asp">Advanced</a>)</b>
+</font>
+<br>
+<form name="seek" method="get" action="http://search.cityofboston.gov/query.html">
+<input style="font-family:arial; font-size:10pt" type="text" size="25" maxlength="60" name="qt">
+<align="right">
+<input type="image" src="http://www.cityofBoston.gov/images/search_button.jpg"  alt ="search" width="30" height="15" border="0">
+</form>
+</p>
+<br><br>
+<table border="0">
+<tr><td align="left"><img src="http://www.cityofboston.gov/images/keyword_search_d.jpg" border="0"><img src="http://www.cityofboston.gov/images/line.jpg" border="0"><a href="http://www.cityofboston.gov/search/default.asp"><img src="http://www.cityofboston.gov/images/comprehensive_search_l.jpg" border="0"></td></tr>
+<tr><td align="left"><form name="seek" method="get" action="http://search.cityofboston.gov/query.html">&nbsp;&nbsp;<input style="font-family:arial; font-size:8pt" type="text" size="46" maxlength="40" name="qt">&nbsp;<input type="image" src="http://www.cityofboston.gov/images/search_button.jpg"  alt="search" width="30" height="14" id=image1 name=image1></td></tr>
+</table>-->
+
+
+
+	
+<br><br>
+<table border="0">
+<tr><td align="left"><img src="http://www.cityofboston.gov/images/keyword_search_d.jpg" alt="keyword search" border="0"><img src="http://www.cityofboston.gov/images/line.jpg" border="0"><a href="http://www.cityofboston.gov/search/default.asp"><img src="http://www.cityofboston.gov/images/comprehensive_search_l.jpg" alt="comprehensive search" border="0"></td></tr>
+<tr><td align="left"><form name="seek" method="get" action="http://search.cityofboston.gov/query.html">&nbsp;&nbsp;<input style="font-family:arial; font-size:8pt" type="text" size="46" maxlength="40" name="qt">&nbsp;<input type="image" src="http://www.cityofboston.gov/images/search_button.jpg"  alt="search" width="30" height="14" id=image1 name=image1></td></tr>
+
+</table>
+<font face="arial" size="1"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cityofboston.gov/copyright/default.asp">&copy; Copyright 2005 City of Boston. All rights reserved.</a><br><br>
+</font>
+</td>
+</tr>				
+</table>
+								
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table> 
+</td>
+
+<td bgcolor="#9999cc" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" bgcolor="#9999cc">
+<tr>
+<td align="center" valign="top">
+<img src="http://www.cityofboston.gov/includes/images/seal.jpg" border="0" alt="City of Boston Seal" name="seal">
+</td>
+</tr>
+
+<tr>
+<td width="20" valign="top" align=center>
+
+</td>
+</tr>
+<tr>
+<td align="left">
+						
+<!-- put right links here -->
+					
+					<table cellpadding="5">
+	<tr>
+		<td>
+<a href="../contact/default.asp"><b>Contact</b></a><br><br>
+<a href="../contact/directions.asp">Hours & Directions to Boston City Hall</a><br><br>
+<a href="/bra/maps/maps.asp">BRA's Maps and Aerial Photographs of Boston</a><br><br>
+<a href="../mayor/mayor24.asp">Mayor's On-Line Constituent Service</a>
+
+		</td>
+	</tr>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="260">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</font>
+</BODY>
+
+						
+					

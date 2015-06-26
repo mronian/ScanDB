@@ -1,0 +1,276 @@
+<DOC>
+<DOCNO>g00476</DOCNO>
+<DOCHDR>http://www.arlis.org/contact.php3</DOCHDR>
+<!DOCTYPE HTML PUBLIC0"-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>ARLIS Contact Information</title>
+
+<!-- Init Style Sheet -->
+
+<LINK rel="stylesheet" type="text/css" href="/include/style_sheet.css">
+
+</head>
+
+<body class="standard">
+
+<table summary="for layout" width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#ffffff">
+<tr valign="top">
+	<td width="215">
+  		<a href="/index.php3"><img src="/images/arlisbutton3.gif" width="213" height="73" 
+			alt="Alaska Resources Library &amp; Information Services" align="left" border="0"></a>
+  	</td>
+
+	<td width="80%" align=left>
+		<table class="white" bgcolor="teal" border="2" width="100%" summary="For Layout">
+ 		<tr align="center"> 
+			<td width="80%"> 
+    				<a href="/about.php3">About ARLIS|</a> 
+				<a href="/faq.php3">FAQs |</a>
+				<a href="/contact.php3">Contact Information |</a>
+				<a href="/news/articles.php3">News</a><br /> 
+				<a href="/founders.php3">Founders |</a> 
+				<a href="/public.php3">Public |</a>
+				<a href="/otherlibs.php3">Libraries |</a>
+				<a href="/forms.php3">Forms</a><br />
+				<a href="/links.php3">Pathfinders &amp; Links |</a>
+				<a href="/siteindex.php3">Site Index |</a>
+				<a href="/">Home</a>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+<tr valign="top">
+	<td colspan="2">
+	<table class="maroon" cellpadding="8" cellspacing="0" border="2" summary="For Layout" bgcolor="#ffffff" width="100" align="left">
+   			<tr bgcolor="#ffffff">
+   			<td bgcolor="#fffccc">
+ 			<form name="Search" class="standard" ACTION="http://lexicon.ci.anchorage.ak.us/web2/tramp2.exe/do_keyword_search/guest" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return translate(Search)">
+				<INPUT TYPE="hidden" NAME="hitlist_screen" VALUE="HitList.html">
+				<INPUT TYPE="hidden" NAME="record_screen" VALUE="Record.html">
+				<INPUT TYPE="hidden" NAME="servers" VALUE="aml">
+				<INPUT TYPE="hidden" NAME="setting_key" VALUE="site">
+				<INPUT TYPE="hidden" NAME="index" VALUE="default">
+				<input TYPE="hidden" NAME="*search_option" VALUE="more">
+				<input type="hidden" name="setting_key" value="ARLlogin">
+
+		<b><a href="http://lexicon.ci.anchorage.ak.us/web2/tramp2.exe/log_in?setting_key=
+			site&setting_key=ARLlogin&servers=aml&screen=home.html&*
+			search_option=more">Search the Catalog</a></b><br />
+
+		<input name="query" type="text" size="13" class="sm"><br />
+		<select name="search_button">
+			<option value="ti">Start of Title    
+			<option value="au">Author Name
+			<option value="su">Subject Headings
+			<option value="keyword" selected>Keywords
+			<option value="kti">Words in Title
+			<option value="kau">Words in Author
+			<option value="ksu">Words in Subject
+			<option value="kex">Expert Boolean
+			<option value="callno">Call Number
+			<option value="kDBCN">DBCN
+		</select>
+
+<br />
+
+		<SELECT NAME="material_filter">
+			<option value="all">
+			all materials 
+			<option value="am,bm,aa">
+			Book
+			<option value="im">
+			CD/Tape-Book
+			<option value="jm">
+			CD/Tape-Music
+			<option value="mm">
+			Computer File
+			<option value="om,rm">
+			Kit/Object
+			<option value="em,es,fm">
+			Map
+			<option value="as,ab">
+			Serial
+			<option value="cm,cs,dm">
+			Sheet Music
+			<option value="gm">
+			Video/Film
+		</SELECT>
+<br />
+		<select name="date_filter">
+			<option value="all">all dates
+			<option value="2002">2002
+			<option value="2000-2002">2000-2002
+			<option value="1990-1999">1990-1999
+			<option value="1980-1989">1980-1989
+			<option value="1970-1979">1970-1979
+			<option value="1960-1969">1960-1969
+			<option value="1950-1959">1950-1959
+			<option value="1900-1949">1900-1949
+			<option value="-1899">Before 1900
+		</select>
+<br />
+	<input type="submit" name="search" value="Search">
+</form>   
+
+
+<form class="standard">
+<b><input type="button" value="Renew Materials" onClick="location.href='/renew.php3'"></b>
+</form>
+
+<form method="POST" class="standard" action="/illiad/founderlogin.php3" style="font-size: 8pt;">
+<b><a href="/illiad/founderlogin.php3">Founder's Login</a></b><br />
+   <b><span style="font-family: 'arial narrow'; font-size: 10pt;">ID:</span></b>
+                <input type="text" maxlength="14" size="14" name="Username"><br />
+    <b><span style="font-family: 'arial narrow'; font-size: 10pt;"><b>PIN:</b>
+                <input type="password" size="4" maxlength="4" name="Password"><br />
+<input type=submit value="&nbsp;&nbsp;Login"><br />
+</form>
+
+<br />
+&nbsp;<A HREF="ask.php3">Ask a Librarian</A><BR>
+&nbsp;<A HREF="contact.php3#comment">Suggestion Box</A><BR>
+&nbsp;<A HREF="journals.php3">Journal List</A><BR>
+&nbsp;<A HREF="list.php3">New Book List</A><BR>
+<BR><br />
+&nbsp;<A HREF="http://www.adobe.com/products/acrobat/readstep.html">Get Acrobat</A><BR>
+&nbsp;<A HREF="http://www.lizardtech.com/cgi-bin/products/products.pl">Get MrSid</A><BR>
+</td>
+</tr>
+</table>
+
+<div>
+
+
+<!-- Insert Contents -->
+
+<h3>Contact Information:</h3>
+
+<blockquote>
+
+Located in the Library Building on the UAA Campus <a href="images/map.jpg">(See map)</a><br /><br />
+<b>Mailing Address: </b>
+<blockquote>
+	ARLIS<br />
+	Room 111, Library Building<br />
+	3211 Providence Drive<br />
+	Anchorage AK 99508<br />
+</blockquote>
+
+<b>ARLIS Main Phone:</b> 27-ARLIS or (907) 272-7547<br /><br />
+<b>Fax:</b> (907) 786-7652<br /><br />
+<b>Interlibrary Loan Phone:</b> (907) 786-7677<br /><br />
+<b>Interlibrary Loan Fax:</b> (907) 786-7680<br /><br />
+<i>Reference assistance is available from 8:00-5:00 Monday-Friday</i>
+
+</blockquote>
+
+
+<form action="suggestion.php3" method="POST"></p>
+
+<a name="comment"></a><h4>Suggestion Box:</h4>
+
+<blockquote>
+<b>NAME:</b><input type="text" name="name" size="30" maxlength="80"><br />
+<b>E-MAIL:</b><input type="text" name="email" size="30" maxlength="150"><br /> 
+<b>Suggestion:</b><br />
+<textarea cols="35" rows="5" name="suggestion"></textarea>
+
+<br /><br />
+<input type="submit" value="Send My Suggestion"><br />
+</form>
+</blockquote>
+
+<h4>Directory of Management Team:</h4>
+
+<blockquote>
+
+<table summary="Staff Directory" cellpadding="10" cellspacing="0" border="1">
+
+<tr>
+
+<td><b>Name</b></td>
+<td><b>Affiliation</b></td>
+<td><b>E-mail</b></td>
+
+</tr>
+
+<tr valign="top">
+
+<td>Juli Braund-Allen</td>
+<td>Environment and Natural Resources Institute<br />
+University of Alaska Anchorage
+</td>
+<td><a href="mailto:anjb1@uaa.alaska.edu">anjb1@uaa.alaska.edu</a>
+
+</tr>
+
+
+<tr valign="top">
+
+<td>Carrie Holba</td>
+<td>Exxon Valdez Oil Spill Trustee Council</td>
+<td><a href="mailto:carrie@arlis.org">carrie@arlis.org</a>
+
+</tr>
+
+<tr valign="top">
+
+<td>Tina Huffaker</td>
+<td>Minerals Management Service</td>
+<td><a href="mailto:christine.huffaker@mms.gov">christine.huffaker@mms.gov</a>
+
+</tr>
+
+<tr valign="top">
+
+<td>Celia Rozen</td>
+<td>Alaska Department of Fish &amp; Game</td>
+<td><a href="mailto:celia@arlis.org">celia@arlis.org</a>
+
+</tr>
+
+
+
+<tr valign="top">
+
+<td>Nancy Tileston</td>
+<td>U.S. Fish &amp; Wildlife Service</td>
+<td><a href="mailto:nancy@arlis.org">nancy@arlis.org</a>
+
+</tr>
+
+
+
+<tr valign="top">
+
+<td>Cathy Vitale</td>
+<td>Bureau of Land Management</td>
+<td><a href="mailto:cathy@arlis.org">cathy@arlis.org</a>
+
+</tr>
+
+</table>
+
+<p><i>For employees of the National Park Service or the U.S. Geolgical Survey, please contact any
+member of the Management Team.</i></p>
+
+</blockquote>
+
+
+<!-- End Contents -->
+
+</div>
+</table>
+
+<table align="center">
+	<div class="standard" style="background:#FFFFFF" align="center">
+		<br/ ><br /><hr width=500>
+		Send Comments To: <a href="mailto:webteam@arlis.org">webteam@arlis.org</a><br />
+
+Last modified: October 22, 2004.</table>
+</body>
+</html>
+

@@ -1,0 +1,1086 @@
+<DOC>
+<DOCNO>g00784</DOCNO>
+<DOCHDR>http://www.blr.com/about/contactus.cfm</DOCHDR>
+ 
+
+
+	
+	
+		
+	
+
+
+
+		
+	    
+	<!DOCTYPE html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+	
+	
+
+
+<HTML>
+<HEAD>
+
+	
+
+	<TITLE>Business & Legal Reports, Inc - Human resources, compensation, environmental, and safety compliance and training</TITLE>
+<LINK href="/custom.css" rel="stylesheet" type="text/css">
+
+<META name="keywords" content="Business & Legal Reports, BLR, state, human resources, compliance, training, HR, compensation, safety, environmental, environmental regulations, online services, handbooks, newsletters, training meetings, employee booklets, plain-English, PowerPoint, full-line catalog">
+
+	<META name="description" content="BLR online product catalog featuring human resources, compensation, safety, and environmental regulation compliance and training products.">
+
+<META name="robots" content="index,follow">
+<META name="Author" content="Business & Legal Reports">
+<META name="Abstract" content="Business & Legal Reports state-specific human resources, compensation, safety, and environmental regulatory compliance and training products.">
+
+
+<script language="JavaScript">
+
+function validRequired(formField,fieldLabel)
+{
+	var result = true;
+	
+	if (formField.value == "")
+	{
+		alert('Please enter a value for the "' + fieldLabel +'" field.');
+		formField.focus();
+		result = false;
+	}
+	
+	return result;
+}
+
+
+function allDigits(str)
+{
+	return inValidCharSet(str,"0123456789");
+}
+
+function inValidCharSet(str,charset)
+{
+	var result = true;
+	
+	for (var i=0;i<str.length;i++)
+		if (charset.indexOf(str.substr(i,1))<0)
+		{
+			result = false;
+			break;
+		}
+	
+	return result;
+}
+
+function isValidExpDate(formField,fieldLabel,required)
+{
+	var result = true;
+	var formValueStr = new String(formField);
+	//var formValue = formField.value;
+
+	if (required && !validRequired(formField,fieldLabel))
+		result = false;
+  
+ 	if (result && (formValueStr.length>0))
+ 	{
+ 		var elems = formValueStr.split("/");
+ 		
+ 		result = (elems.length == 2); // should be two components
+ 		var expired = false;
+ 		
+ 		if (result)
+ 		{
+ 			var month = parseInt(elems[0],10);
+ 			var year = parseInt(elems[1],10);
+ 			
+ 			if (elems[1].length == 2)
+ 				year += 2000;
+ 			
+ 			var now = new Date();
+ 			
+ 			var nowMonth = now.getMonth() + 1;
+ 			var nowYear = now.getFullYear();
+ 			
+ 			expired = (nowYear > year) || ((nowYear == year ) && (nowMonth > month));
+ 			
+			result = allDigits(elems[0]) && (month > 0) && (month < 13) &&
+					 allDigits(elems[1]) && ((elems[1].length == 2) || (elems[1].length == 4));
+ 		}
+ 		
+  		if (!result)
+ 		{
+ 			alert('Please enter a date in the format MM/YY for the "' + fieldLabel +'" field.');
+			formField.focus();
+		}
+		else if (expired)
+		{
+ 			result = false;
+ 			alert('The date for "' + fieldLabel +'" has expired.');
+			formField.focus();
+		}
+	} 
+	
+	return result;
+}
+
+
+function isValidCreditCardNumber1(formField,ccType,fieldLabel,required)
+{
+	//alert("isValidCreditCardNumber called");
+	var result = true;
+ 	var ccNum = formField;
+
+	if (required && !validRequired(formField,fieldLabel))
+		result = false;
+ 
+  	if (result && (formField.length>0))
+ 	{ 
+ 		if (!allDigits(ccNum))
+ 		{
+ 			alert('Please enter only numbers (no dashes or spaces) for the "' + fieldLabel +'" field.');
+			result = false;
+		}	
+
+		if (result)
+ 		{ 
+ 			
+ 			if (!LuhnCheck(ccNum) || !validateCCNum(ccType,ccNum))
+ 			{
+ 				alert('Please enter a valid card number for the "' + fieldLabel +'" field.');
+				result = false;
+			}	
+		} 
+
+	} 
+	
+	return result;
+}
+
+
+function LuhnCheck(str) 
+{
+  var result = true;
+
+  var sum = 0; 
+  var mul = 1; 
+  var strLen = str.length;
+  
+  for (i = 0; i < strLen; i++) 
+  {
+    var digit = str.substring(strLen-i-1,strLen-i);
+    var tproduct = parseInt(digit ,10)*mul;
+    if (tproduct >= 10)
+      sum += (tproduct % 10) + 1;
+    else
+      sum += tproduct;
+    if (mul == 1)
+      mul++;
+    else
+      mul--;
+  }
+  if ((sum % 10) != 0)
+    result = false;
+    
+  return result;
+}
+
+
+
+function GetRadioValue(rArray)
+{
+	for (var i=0;i<rArray.length;i++)
+	{
+		if (rArray[i].checked)
+			return rArray[i].value;
+	}
+	
+	return null;
+}
+
+
+function validateCCNum(cardType,cardNum)
+{
+	var result = false;
+	cardType = cardType.toUpperCase();
+	
+	var cardLen = cardNum.length;
+	var firstdig = cardNum.substring(0,1);
+	var seconddig = cardNum.substring(1,2);
+	var first4digs = cardNum.substring(0,4);
+
+	switch (cardType)
+	{
+		case "VISA":
+			result = ((cardLen == 16) || (cardLen == 13)) && (firstdig == "4");
+			break;
+		case "AMEX":
+			var validNums = "47";
+			result = (cardLen == 15) && (firstdig == "3") && (validNums.indexOf(seconddig)>=0);
+			break;
+		case "MASTERCARD":
+			var validNums = "12345";
+			result = (cardLen == 16) && (firstdig == "5") && (validNums.indexOf(seconddig)>=0);
+			break;
+		case "DISCOVER":
+			result = (cardLen == 16) && (first4digs == "6011");
+			break;
+		case "DINERS":
+			var validNums = "068";
+			result = (cardLen == 14) && (firstdig == "3") && (validNums.indexOf(seconddig)>=0);
+			break;
+	}
+	return result;
+}
+
+//function validCCForm(ccTypeField,ccNumField,ccExpField)
+//{
+//	var result = isValidCreditCardNumber(ccNumField,ccTypeField.value,"Credit Card Number",true) &&
+//		isValidExpDate(ccExpField,"Expiration Date",true);
+//	return result;
+//} 
+
+
+function validCCForm1(ccNumField,ccExpField)
+{
+
+	whatType(ccNumField + "");
+	var ccTypeField = cardType; // return from whatType is cardType var
+	
+	var result = isValidCreditCardNumber1(ccNumField,ccTypeField,"Credit Card Number",true) &&
+		isValidExpDate(ccExpField,"Expiration Date",true);
+	return result;
+}
+
+
+function callwhatType(cardNum)
+{
+whatType(cardNum);
+alert (cardType);
+}
+
+function whatType(xcardNum)
+{
+
+	cardType = "OTHER";
+	
+	var cardLen = xcardNum.length;
+	var firstdig = xcardNum.substring(0,1);
+	var seconddig = xcardNum.substring(1,2);
+	var firsttwodig = xcardNum.substring(0,2);
+	var first4digs = xcardNum.substring(0,4);
+
+	if (firsttwodig == "51" || firsttwodig=="52" || firsttwodig=="53" || firsttwodig=="54" || firsttwodig=="55")
+	{
+		cardType = "MASTERCARD";
+	}
+	if (firstdig == "4" )
+	{
+		cardType = "VISA";
+	}	
+	if (firsttwodig == "34" || firsttwodig=="37"  )
+	{
+		cardType = "AMEX";
+	}	
+	if (first4digs == "6011"  )
+	{
+		cardType = "DISCOVER";
+	}			
+
+	//alert("card type is: " + cardType);
+	return cardType;
+	// call this function, get back a cardType variable
+
+}
+
+
+</script>
+<SCRIPT type="text/javascript"><!--
+	function popup(url, name, height, width, scrollbars)
+	{
+	  var popwin;
+	  var opts = 
+	"toolbar=no,status=no,location=no,menubar=no,resizable=no";
+	opts += ",height=" + height + ",width=" + width + 
+	",scrollbars=" + scrollbars;
+	 
+	  popwin = window.open("", name, opts);
+	  popwin.focus();
+	  popwin.location = url;
+	
+	  return false;
+	}
+	
+	function closepopup()
+	{
+	 if(false == NewWin.closed) 
+	 {
+	    NewWin.close ();
+	 }
+	}
+	self.name = 'mainwin';
+	// -->
+</SCRIPT>
+<SCRIPT language="JavaScript"><!--
+	function MM_openBrWindow(theURL,winName,features) { //v2.0
+	  window.open(theURL,winName,features);
+	}
+	//-->
+</SCRIPT>
+<link rel="shortcut icon" href="/BLR_Shared/favicon.ico">
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="2" topmargin="0" marginwidth="0" marginheight="0">
+
+	<TABLE width="750" cellspacing="0" cellpadding="0" border="0">
+		<TR>
+			<TD align="right" width="750" bgcolor="#006699" class="white8" colspan="2"><A href="http://www.blr.com/" class="noDecorWhite">BLR Home</a> | <A href="http://hr.blr.com" class="noDecorWhite">HR.BLR.com</A>  |  <A href="http://compensation.blr.com" class="noDecorWhite">Compensation.BLR.com</A>  |  <A href="http://safety.blr.com" class="noDecorWhite">Safety.BLR.com</A>  |  <A href="http://enviro.blr.com" class="noDecorWhite">Enviro.BLR.com</A>  &nbsp;&nbsp;
+			</TD>
+		</TR>
+		<TR>
+			<TD colspan="2"><A href="http://www.blr.com/"><IMG src="/images/blrcom_header.gif" height="67" width="750" alt="BLR -- Business & Legal Reports -- Plain-English Compliance and Training Tools" border="0"></A><br></TD>
+		</TR>
+		<TR>
+			<TD width="161"><IMG src="/images/blrcom_header_2.gif" height="17" width="161" alt=""></TD>
+			<TD width="589" class="blue8" align="right"><A href="http://www.blr.com/fastorder/" class="noDecorBlue">Catalog Fast Order</A>   |   <a href="http://account.blr.com" class="noDecorBlue">My Account</a>   |   <a href="/about/contact/" class="noDecorBlue">Contact Us</a>   |   <A href="http://www.blr.com/cart/view_cart.cfm" class="noDecorBlue">Shopping Cart</A>   |   <A href="https://www.blr.com/cart/create_account.cfm" class="noDecorBlue">Check Out</A> | <a href="http://www.blr.com/blr_shared/login/index.cfm" class="noDecorBlue">Login</a><br></TD>
+		</TR>
+	</TABLE>
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+	<tr>
+		<td colspan="5">
+			<img src="/blr_shared/images/spacer_white.GIF" alt="" width="1" height="10" border="0">
+		</td>
+	</tr>
+	<tr>
+
+		<td width="150" valign="top">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="top">
+
+
+	<tr>
+		<td><img src="/images/prod_locator.gif" height="23" width="150" alt=""></td>
+	</tr>
+	<tr>
+		<td width="150" bgcolor="#F1F1E3">
+			<table width="100%" cellspacing="3" cellpadding="1">
+					<tr height="18">
+						<td width="15" align="center"><img src="/images/arrow_pl.gif" height="10" width="10"></td>
+						<td width="130" class="black8"><a href="http://www.blr.com/topics.cfm" class="noDecorBlack">By Topic</a></td>
+					</tr>
+					<tr>
+						<td width="15" align="center"><img src="/images/arrow_pl.gif" height="10" width="10"></td>
+						<td width="130" class="black8"><a href="http://www.blr.com/formats.cfm" class="noDecorBlack">By Format</a></td>
+					</tr>
+					<tr>
+						<td width="15" align="center" valign="top"><img src="/BLR_Shared/images/spacer.gif" height="5" width="1"><br><img src="/images/arrow_pl.gif" height="10" width="10"></td>
+						
+						<td width="130">
+							<form action="http://www.blr.com/search/index.cfm" method="post" style="margin-top: 0; margin-bottom: 0;">	
+							<input type="text" name="search_terms" value="By Keyword" class="black8" onFocus="this.value=''">
+							
+							<div align="right"><input type="image" name="submit" src="/images/search.gif">&nbsp;&nbsp;</div>
+							</form>
+						</td>
+					</tr>
+					
+			</table>
+		</td>
+	</tr>
+
+
+	<tr>
+		<td><img src="/images/blrproducts.gif" height="23" width="150" alt=""></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td><a href="http://www.blr.com/market.cfm/market/2"><img src="/images/humanresource_head.gif" height="23" width="150" alt="Human Resources" border="0"></a></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor="#F1F1E3">
+			<table width="150" class="black8" cellpadding="0">
+				<tr>
+					<td width="15" valign="top"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/product.cfm/product/4200XX00" class="noDecorBlack">HR.BLR.com</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/1/" class="noDecorBlack">Benefits</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/2/" class="noDecorBlack">Compliance</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/3/" class="noDecorBlack">Policy &amp; Practice</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/4/" class="noDecorBlack">Training</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/5/" class="noDecorBlack">Best Practices</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/6/" class="noDecorBlack">Time Savers</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/topics.cfm/market/2" class="noDecorBlack">Full Topic List</a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td><a href="http://www.blr.com/market.cfm/market/4"><img src="/images/comp_head.gif" height="23" width="150" alt="Compensation" border="0"></a></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor="#F1F1E3">
+			<table width="150" class="black8" cellpadding="0">
+				<tr>
+					<td width="15" valign="top"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/product.cfm/product/5202XX00" class="noDecorBlack">Comp.BLR.com</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/7/" class="noDecorBlack">Best Practices</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/8/" class="noDecorBlack">Salaries</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/9/" class="noDecorBlack">Compliance</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/topics.cfm/market/4" class="noDecorBlack">Full Topic List</a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td><a href="http://www.blr.com/market.cfm/market/3"><img src="/images/safety_head.gif" height="23" width="150" alt="Safety" border="0"></a></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor="#F1F1E3">
+			<table width="150" class="black8" cellpadding="0">
+				<tr>
+					<td width="15" valign="top"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/product.cfm/product/53100100" class="noDecorBlack">Safety.BLR.com</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/10/" class="noDecorBlack">Compliance</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/11/" class="noDecorBlack">Training</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/12/" class="noDecorBlack">Best Practices</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/topics.cfm/market/3" class="noDecorBlack">Full Topic List</a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	
+	
+	<tr>
+		<td><a href="http://www.blr.com/market.cfm/market/1"><img src="/images/enviro_head.gif" height="23" width="150" alt="Environmental" border="0"></a></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor="#F1F1E3">
+			<table width="150" class="black8" cellpadding="0">
+				<tr>
+					<td width="15" valign="top"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/product.cfm/product/5120XX00" class="noDecorBlack">Enviro.BLR.com</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/13/" class="noDecorBlack">Compliance</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/14/" class="noDecorBlack">Training</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/category.cfm/category/15/" class="noDecorBlack">Best Practices</a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><img src="/images/tanrule.gif" height="1" width="100%"></td>
+				</tr>
+				<tr>
+					<td width="15"><img src="/images/tan_arrow.gif" height="12" width="11" alt=""></td>
+					<td width="135"><a href="http://www.blr.com/topics.cfm/market/1" class="noDecorBlack">Full Topic List</a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+
+	<tr>
+		<td><a href="http://www.blr.com/about/"><img src="/images/aboutblr.gif" height="23" width="150" alt="" border="0"></a></td>
+	</tr>
+	<tr>
+		<td><img src="/blr_shared/images/spacer_light_tan.gif" height="1" width="150" border="0" alt=""></td>
+	</tr>
+	<tr>
+		<td><img src="/images/needhelp.gif" height="23" width="150" alt=""></td>
+	</tr>
+	<tr>
+		<td bgcolor="#F1F1E3">
+			<table width="150" class="black8" cellpadding="1" cellspacing="2">
+				<tr>
+					<td class="black10" colspan="2"><strong>&nbsp;1-800-727-5257</strong></td>
+				</tr>
+				<tr>
+					<td width="15" align="center">&#149;</td><td width="135"><a href="/about/contact/" class="noDecorBlack">Contact Us</a></td>
+				</tr>
+				<tr>
+					<td width="15" align="center">&#149;</td><td width="135"><a href="/about/products/faqs.cfm" class="noDecorBlack">FAQ's</a></td>
+				</tr>
+				<tr>
+					<td width="15" align="center">&#149;</td><td width="135"><a href="/about/sitemap.cfm" class="noDecorBlack">Site Map</a></td>
+				</tr>
+				<tr>
+					<td width="15" align="center">&#149;</td><td width="135"><a href="http://www.blr.com/about/contact/vip_tour.cfm" class="noDecorBlack">VIP Tours</a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+</table></td>
+		<td width="20">
+			&nbsp;
+		</td>
+
+
+<td width="580" valign="top">
+	<table border="0" cellpadding="0" cellspacing="0" width="480">
+		<tr>
+			<td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="4" color="#CC0000"><b>Contact Us</b></td>
+		</tr>
+		<tr>
+			<td colspan="2"><img src="/blr_shared/images/rule_red.gif" width="440" height="1" alt="" border="0"></td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">This section is designed to help you find the answers to your questions. Choose the area below that best suits your needs.</font></td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="10" alt="" border="0"></td>
+		</tr>
+
+ 		<tr>
+			<td width="192">
+				<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="192">
+					<tr>
+						<td>
+							<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="185">
+								<tr><td colspan="2" width="100%" height="15"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;<b>Technical Support</b></font></td></tr>
+							</table>	
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="280" valign="bottom">
+				<table border="0" bgcolor="##FFFFFF" cellspacing="0" cellpadding="0" width="400">
+					<tr>
+						<td width="480"><img src="/blr_shared/images/rule_tan.gif" width="400" height="1" alt="" border="0"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Have a technical question concerning a BLR product? Contact Technical Support using one of the methods below.</font></td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="1">
+ 					<tr>
+ 						<td valign="top" width="20"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Email:</b></font></td>
+						<td><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="mailto:techsupport@blr.com">techsupport@blr.com</a></font></td>
+					</tr>
+			 		<tr>
+			 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+					</tr>
+ 					<tr>
+ 						<td valign="top" width="20"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Phone:</b></font></td>
+						<td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">800-727-5257</font></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="10" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="1">
+ 					<tr>
+						<td valign="top" align="right" width="5"><img src="/images/shared/arrow.gif"></td>
+						<td valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="techsup.cfm"><b>Online Technical Support Center</b></a> - provides online help for resolving technical problems with BLR software products.</font></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+
+ 		<tr>
+			<td width="192">
+				<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="192">
+					<tr>
+						<td>
+							<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="185">
+								<tr><td colspan="2" width="100%" height="15"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;<b>Customer Service</b></font></td></tr>
+							</table>	
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="280" valign="bottom">
+				<table border="0" bgcolor="##FFFFFF" cellspacing="0" cellpadding="0" width="400">
+					<tr>
+						<td width="480"><img src="/blr_shared/images/rule_tan.gif" width="400" height="1" alt="" border="0"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+		
+		
+		<tr>
+			<td colspan="2">
+				<table border="0">
+					<tr>
+						<td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Have a question about one of our products or an order? Contact Customer Service using one of the methods below.</font></td>
+						<td valign="top" rowspan="3"><a href="##" onClick="MM_openBrWindow('http://www.blr.com/liveperson/index.cfm','second','status=yes,width=520,height=470')"><img src="/blr_shared/images/live1.gif" width="144" height="175" alt="" border="0"></a></td>
+					</tr>
+					<tr>
+			 			<td><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+					</tr>
+					<tr>
+						<td>
+							<table width="100%" border="0" cellpadding="1">
+			 					<tr>
+			 						<td valign="top" width="20"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Email:</b></font></td>
+									<td><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="mailto:service@blr.com">service@blr.com</a></font></td>
+								</tr>
+						 		<tr>
+						 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+								</tr>
+			 					<tr>
+			 						<td valign="top" width="20"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Phone:</b></font></td>
+									<td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">800-727-5257 or 860-510-0100<br><i>Available Monday through Friday 8:00 a.m. to 5:30 p.m. EST.</i></font></td>
+								</tr>
+						 		<tr>
+			 						<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+								</tr>
+			 					<tr>
+			 						<td valign="top" width="20"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Mail:</b></font></td>
+									<td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Business &amp; Legal Reports, Inc.<br>141 Mill Rock Road East<br>Old Saybrook, CT 06475</font></td>
+								</tr>
+							</table>
+						</td>
+					</tr>				
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="10" alt="" border="0"></td>
+		</tr>
+
+ 		<tr>
+			<td width="192">
+				<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="192">
+					<tr>
+						<td>
+							<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="185">
+								<tr><td colspan="2" width="100%" height="15"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;<b>General Contact Information</b></font></td></tr>
+							</table>	
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="280" valign="bottom">
+				<table border="0" bgcolor="##FFFFFF" cellspacing="0" cellpadding="0" width="400">
+					<tr>
+						<td width="580"><img src="/blr_shared/images/rule_tan.gif" width="100%" height="1" alt="" border="0"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="1">
+ 					<tr>
+ 						<td valign="top" width="20"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Email:</b></font></td>
+						<td><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="mailto:service@blr.com">service@blr.com</a></font></td>
+					</tr>
+			 		<tr>
+			 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+					</tr>
+ 					<tr>
+ 						<td valign="top" width="20"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Phone:</b></font></td>
+						<td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">800-727-5257 or 860-510-0100<br><i>Available Monday through Friday 8:00 a.m. to 5:30 p.m. EST.</i></font></td>
+					</tr>
+			 		<tr>
+ 						<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+					</tr>
+ 					<tr>
+ 						<td valign="top" width="20"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Mail:</b></font></td>
+						<td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Business &amp; Legal Reports, Inc.<br>141 Mill Rock Road East<br>Old Saybrook, CT 06475</font></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+ 		<tr>
+ 			<td width="580" colspan="2"><img src="/blr_shared/images/rule_tan.gif" width="580" height="1" alt="" border="0"></td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Department Contacts:</b></font></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0">
+ 					<tr>
+ 						<td>
+							<table width="50%">
+								<tr>
+									<td valign="top" align="right" width="5"><img src="/images/shared/arrow.gif"></td>
+									<td nowrap valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Editor in Chief</b><br>Peggy Carter-Ward</font></td>
+								</tr>
+							</table>
+						</td>
+ 						<td>
+							<table width="50%">
+								<tr>
+									<td valign="top" align="right" width="5"><img src="/images/shared/arrow.gif"></td>
+									<td nowrap valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Vice President, Marketing</b><br>Kathy Long</font></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+ 					<tr>
+ 						<td>
+							<table width="50%">
+								<tr>
+									<td valign="top" align="right" width="5"><img src="/images/shared/arrow.gif"></td>
+									<td nowrap valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Vice President, Operations</b><br>Lou Musante</font></td>
+								</tr>
+							</table>
+						</td>
+ 						<td>
+							<table width="50%">
+								<tr>
+									<td valign="top" align="right" width="5"><img src="/images/shared/arrow.gif"></td>
+									<td nowrap valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Vice President, New Product Development</b><br>Brian Gurnham</font></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+ 					<tr>
+ 						<td>
+							<table width="50%">
+								<tr>
+									<td valign="top" align="right" width="5"><img src="/images/shared/arrow.gif"></td>
+									<td nowrap valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Purchasing</b><br>Chuck Drube</font></td>
+								</tr>
+							</table>
+						</td>
+ 						<td>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="10" alt="" border="0"></td>
+		</tr>
+
+ 		<tr>
+			<td width="40%">
+				<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td>
+							<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="185">
+								<tr>
+									<td colspan="2" width="100%" height="15"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;<b>Product Suggestions</b></font></td>
+								</tr>
+							</table>	
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="280" valign="bottom">
+				<table border="0" bgcolor="##FFFFFF" cellspacing="0" cellpadding="0" width="400">
+					<tr>
+						<td width="480"><img src="/blr_shared/images/rule_tan.gif" width="400" height="1" alt="" border="0"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">We value your feedback and suggestions and encourage you to send us new product ideas and product enhancement requests.<br><br><a href="mailto:ckilbourne@blr.com?subject=Product Suggestions">Send us your suggestions.</a></font></td>
+		</tr>
+
+
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="10" alt="" border="0"></td>
+		</tr>
+ 		<tr>
+			<td width="40%">
+				<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td>
+							<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="185">
+								<tr>
+									<td colspan="2" width="100%" height="15"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;<b>Site Feedback</b></font></td>
+								</tr>
+							</table>	
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="280" valign="bottom">
+				<table border="0" bgcolor="##FFFFFF" cellspacing="0" cellpadding="0" width="400">
+					<tr>
+						<td width="480"><img src="/blr_shared/images/rule_tan.gif" width="400" height="1" alt="" border="0"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Let us know your comments about our site, <a href="feedback.cfm">click here</a>.</font></td>
+		</tr>
+
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="10" alt="" border="0"></td>
+		</tr>
+ 		<tr>
+			<td width="40%">
+				<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td>
+							<table border="0" bgcolor="#CCCC99" cellspacing="0" cellpadding="0" width="185">
+								<tr>
+									<td colspan="2" width="100%" height="15"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;<b>Syndication</b></font></td>
+								</tr>
+							</table>	
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="280" valign="bottom">
+				<table border="0" bgcolor="##FFFFFF" cellspacing="0" cellpadding="0" width="400">
+					<tr>
+						<td width="480"><img src="/blr_shared/images/rule_tan.gif" width="400" height="1" alt="" border="0"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><img src="/blr_shared/images/spacer_white.GIF" width="1" height="5" alt="" border="0"></td>
+		</tr>
+ 		<tr>
+ 			<td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">If you are interested in syndicating BLR's content, please send an e-mail to <a href="mailto:syndication@blr.com">syndication@blr.com</a></font></td>
+		</tr>
+
+	</table>
+</td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="/blr_shared/images/spacer_white.GIF" alt="" width="1" height="10" border="0">
+		</td>
+	</tr>
+</table>
+
+<table width="750" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td align="left" valign="top" background="/blr_shared/images/bkg.gif">
+<!-- ezine footer include -->
+
+	
+	<!-- servername=www.blr.com-->
+	
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" background="/blr_shared/images/bkg.gif">
+	   	 
+		 
+	<form action="http://www.blr.com/blr_shared/elert/page2_new.cfm" name="ezinefooter"
+	method="post" target="_new" onSubmit='if(document.ezinefooter.email_address.value == "Your Email Address" || document.ezinefooter.email_address.value == "" || (ezinefooter.ezine[0].checked == false &&ezinefooter.ezine[1].checked == false &&ezinefooter.ezine[2].checked== false &&ezinefooter.ezine[3].checked== false ) || (document.ezinefooter.email_address.value.indexOf("@") < 1) || (document.ezinefooter.email_address.value.indexOf(".") < 1) ){alert("Please chose at least one ezine, and use a valid email address"); return false;} else { document.ezinefooter.submit(); return true;}'>
+	
+		
+	
+		
+	
+		
+	
+	<input type="hidden" name="resize" value="true">
+	<input type="hidden" name="referrer" value="...">
+   	<input type="hidden" name="SOURCE" value="">
+  	<input type="hidden" name="EFFORT" value="">
+       <tr>
+		   
+	         <td align="left" valign="top" width="200"><img src="/blr_shared/images/freeenews_head.gif"
+			 width="190" height="25" border="0">
+			 <br>
+			 <span class="black8"><em><strong>&nbsp;Plain-English... Practical... FREE!</strong></em></span>
+	         </td>
+			 <td align="left" width="558" valign="bottom">
+			 <table border="0"  cellpadding="0" cellspacing="0" >
+			 
+			 <tr>
+			 	<td>&nbsp;</td>
+			 	<td align="left">
+				
+				<span class="black8"><input name="ezine" type="checkbox" value="hrnext" class="black9">HR Ezine</span>
+				<br>
+				<span class="black8"><input name="ezine" type="checkbox" value="Comp">Compensation Ezine</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+				<span class="black8"><input name="ezine" type="checkbox" value="SafetyEzine">Safety Ezine</span>
+				<br>
+				<span class="black8"><input name="ezine" type="checkbox" value="Enviro">Environmental Ezine</span>
+				</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td align="right"><table border="0" cellpadding="0" cellspacing="0"><tr>
+				<td valign="top" align="right"><input name="email_address" type="text" class="black11" size="18"
+				 value="Your Email Address" size="24"
+				 class="email_text" onFocus="javascript:document.ezinefooter.email_address.value='';">
+				<span class="smallspacer1"><br></span>
+				<span class="black8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We respect your <a target="_blank" href="/about/privacy.cfm"><span class="black8">Privacy</a></span></td>
+				<td valign="top" align="left"><span class="privacy_tellafriend"><input
+				 type="image" src="/blr_shared/images/subscribe_button.gif" name="pictureezine"  border="0" width="86" height="26">
+				<span class="smallspacer"><br></span></td>
+				</tr></table>
+				</td>
+			 </tr>
+	 		 </table></td>
+	       </tr>
+	<input type="hidden" name="site" value="blr">
+	<input type="hidden" name="origin" value="bot">
+  </form>
+</table></td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#FFFFFF">
+			<table width="750" cellpadding="2">
+				<tr>
+					<td align="center" class="black8">
+						<a href="/index.cfm" class="noDecorBlack">BLR Home</a> | <a href="/market.cfm/market/2" class="noDecorBlack">Human Resources</a> | <a href="/market.cfm/market/4" class="noDecorBlack">Compensation</a> | <a href="/market.cfm/market/3" class="noDecorBlack">Safety</a> | <a href="/market.cfm/market/1" class="noDecorBlack">Environmental</a><br>
+						<A href="http://hr.blr.com" class="noDecorBlack">HR.BLR.com</A>  |  <A href="http://compensation.blr.com" class="noDecorBlack">Compensation.BLR.com</A>  |  <A href="http://safety.blr.com" class="noDecorBlack">Safety.BLR.com</A>  |  <A href="http://enviro.blr.com" class="noDecorBlack">Enviro.BLR.com</A><br>
+						<a href="/fastorder/" class="noDecorBlack">Catalog Fast Order</a> | <a href="http://account1.blr.com" class="noDecorBlack">My Account</a> | <a href="/cart/view_cart.cfm" class="noDecorBlack">Shopping Cart</a> | <a href="https://www.blr.com/cart/create_account.cfm" class="noDecorBlack">Check Out</a> | <a href="/about/sitemap.cfm" class="noDecorBlack">Site Map</a> | <a href="/about/policies/privacy.cfm" class="noDecorBlack">Privacy Statement</a><br><a href="/about/" class="noDecorBlack">About BLR </a>| <a href="/about/press/news.cfm" class="noDecorBlack">Corporate News</a> | <a href="/about/careers.cfm" class="noDecorBlack">Careers</a> | <a href="/about/press/" class="noDecorBlack">Press Room</a> | <a href="/about/divisions/" class="noDecorBlack">Divisions & Affiliates</a> | <a href="/about/contact/" class="noDecorBlack">Contact Us</a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+<DOC>
+<DOCNO>g00167</DOCNO>
+<DOCHDR>http://www.quantum.com/AM/about/contact/default.htm</DOCHDR>
+
+
+<html>
+<!-- CMS TEMPLATE: 00_empty -->
+<head>
+<script language="JavaScript" type="text/javascript">
+    var agt=navigator.userAgent.toLowerCase();
+    var is_major = parseInt(navigator.appVersion);
+    var is_minor = parseFloat(navigator.appVersion);
+    var is_nav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('spoofer')==-1)
+                && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera')==-1)
+                && (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1));
+    var is_nav2 = (is_nav && (is_major == 2));
+    var is_nav3 = (is_nav && (is_major == 3));
+    var is_nav4 = (is_nav && (is_major == 4));
+    var is_nav4up = (is_nav && (is_major >= 4));
+    var is_navonly      = (is_nav && ((agt.indexOf(";nav") != -1) ||
+                          (agt.indexOf("; nav") != -1)) );
+    var is_nav6 = (is_nav && (is_major == 5));
+    var is_nav6up = (is_nav && (is_major >= 5));
+
+    var is_ie     = ((agt.indexOf("msie") != -1) && (agt.indexOf("opera") == -1));
+    var is_ie3    = (is_ie && (is_major < 4));
+    var is_ie4    = (is_ie && (is_major == 4) && (agt.indexOf("msie 4")!=-1) );
+    var is_ie4up  = (is_ie && (is_major >= 4));
+    var is_ie5    = (is_ie && (is_major == 4) && (agt.indexOf("msie 5.0")!=-1) );
+    var is_ie5_5  = (is_ie && (is_major == 4) && (agt.indexOf("msie 5.5") !=-1));
+    var is_ie5up  = (is_ie && !is_ie3 && !is_ie4);
+    var is_ie5_5up =(is_ie && !is_ie3 && !is_ie4 && !is_ie5);
+    var is_ie6    = (is_ie && (is_major == 4) && (agt.indexOf("msie 6.")!=-1) );
+    var is_ie6up  = (is_ie && !is_ie3 && !is_ie4 && !is_ie5 && !is_ie5_5);
+
+//--> end hide JavaScript
+</script>
+
+<script>
+<!--
+
+// Navigator 6 and up
+if (is_nav6up) {
+  document.write('<link rel="stylesheet" type="text/css" href="/css2/quantum_ns7.css">');
+  document.write('<link rel="stylesheet" type="text/css" href="/css2/quantum_ns7_frame.css">');
+}
+// Navigator 4
+else if (is_nav4) {
+  document.write('<link rel="stylesheet" type="text/css" href="/css2/quantum_ns.css">');
+  document.write('<link rel="stylesheet" type="text/css" href="/css2/quantum_ns_frame.css">');
+
+}
+// IE 5 and up
+else if (is_ie5up) {
+  document.write('<link rel="stylesheet" type="text/css" href="/css2/quantum_frame.css"> ');
+  document.write('<link rel="stylesheet" type="text/css" href="/css2/quantum_main.css"> ');
+document.write('<link rel="stylesheet" type="text/css" <p><br></p"> ');
+}
+// IE 4
+else if (is_ie4) {
+  document.write('<link rel="stylesheet" type="text/css" href="/css2/quantum_frame.css"> />');
+  document.write('<link rel="stylesheet" type="text/css" href="/css2/quantum_frame.css"> />');
+document.write('<link rel="stylesheet" type="text/css" <p><br></p"> ');
+}
+// -->
+
+</script> 
+
+<title>Contact Us - Quantum Resources - Contact Information</title>
+
+<meta name="Description" content="Quantum Resources - Our Data Management Services combine the most reliable and cost-effective technologies with ease of integration.">
+<meta name="Keywords" content="quantum resources, quantum sales support, support services, backup solutions support, Quantum services, Quantum technology, NAS server, server support, Maxtor support, office locations, department information, support contact, Quantum support, Quantum hard drive support, Maxtor hard drive support, hard drive support">
+
+
+
+<script language="javascript" type="text/javascript" src="/js/thing.js"></script>
+<script language="javascript" type="text/javascript" src="/js/nav_def.js"></script>
+
+<script language="javascript" type="text/javascript1.2" src="/js/thing.js"></script>
+<script language="javascript" type="text/javascript1.2" src="/js/nav_def.js"></script>
+
+
+<!-- BEGIN WEBSIDESTORY CODE v9.1.1 -->
+<!-- COPYRIGHT 1997-2003 WEBSIDESTORY, INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479 B1. Privacy notice at: http://websidestory.com/privacy -->
+<script language="javascript">
+var _acct="DM520222L9SC28EN3"; 	//account number(s)
+var _pn="PUT+PAGE+NAME+HERE"; 	//page name(s)
+var _mlc="CONTENT+CATEGORY";	//multi-level content category
+var _seg=""; // visitor segmentation
+var _cmp=""; // campaign id
+var _gp="";  // campaign goal
+var _cmpn="";// campaign id in query
+var _gpn=""; // campaign goal in query
+var _fnl=""; // funnels
+var _pec=""; // error codes
+var _fv="";  // form validation function name
+var _dcmp="";// dynamic campaign id
+var _dcmpn="";//dynamic campaign id in query
+var _hra=""; // response attribute
+var _hcn=""; // conversion
+var _hcv=""; // conversion value
+var _hlt=""; // lead tracking
+var _hla=""; // lead attribute
+var _hqsr="";// response attribute in referral query
+var _hqsp="";// response attribute in query
+var _hc1=""; // custom 1
+var _hc2=""; // custom 2
+var _hc3=""; // custom 3
+var _hc4=""; // custom 4
+var _lt="none";// link tracking
+var _ci="";  //customer id
+var _cp="null";//campaign
+var _cpd="";//campaign domain
+var _pndef="title";	//default page name
+var _ctdef="full"; 	//default content category
+var _dlf="n"; // download filter
+var _elf="n"; // exit link filter
+var _dft="n"; // download file tracker variable, set to y to use the name reference
+var _hrf=""; // custom referrer. use valid url or param name
+var _epg="n"; // event page identifier
+var _vpc="090101u"; //page code version
+var _gn="ehg-quantumcorp.hitbox.com"; //gateway name
+function $a(v){return escape(v)};var _sv=10,_bn=navigator.appName,_mn="we85",
+_bv=parseInt(navigator.appVersion),_rf=$a(document.referrer),_bnN=(_bn=="Netsc"+
+"ape");function $ii(a,b,c){return a.indexOf(b,c?c:0)};if($ii(_bn,"Microsoft")==0
+)_bn="MSIE";if(_bn=="MSIE"&&_bv==2)_bv=3;function $is(a,b, c){return b>a.length?
+"":a.substring(b,c!=null?c:a.length)};function $l(a,b){return(a=="/")?a:(($ii(a,
+"/")?"/":"")+(a.lastIndexOf("/")==b?$is(a,0,b):a)) };function $n(a,b){return(a==
+""|| a=="/")?"/": $is( a,(_ctdef!="full")?a.lastIndexOf("/",b-2):$ii(a,"/"),b)};
+function $o(a,b,c){ var d=location.pathname,e=$is(d,d.lastIndexOf("/")+1);if(a&&
+b==c){return(_pndef == "title"&&document.title!=""&&document.title!=location&&!(
+_bnN&&$ii(document.title,"http")>0))?document.title:e?e:_pndef}else{return b==c?
+$n(d,d.lastIndexOf("/")): $l( b,b.length-1)}};function $p(a,b,c,d){return ""+(c>
+-1?$o(b,$is(a,0,c),d)+";"+$p($is(a,c+1),b,$ii($is(a,c+1),";")):$o(b,a,d))};_mlc=
+$p(_mlc,0, $ii( _mlc, ";"), "CONTEN"+"T+CAT"+"EGORY");_pn=$p(_pn,1,$ii(_pn,";"),
+"PUT+PA" + "GE+NAME+HERE") </script><script language="javascript1.1">_sv=11
+</script><script language="javascript1.1" defer src="http://www.quantum.com/includes/hbe.js">
+</script><script language="javascript"> if( _sv+0<11 ){ if( ( document.cookie)&&
+$ii(document.cookie,"CP=")>-1){_ce="y"}else{document.cookie="CP=null*; path=/;"+
+(_cpd!=""?(" domain=."+_cpd+"; "):"")+"expires=Wed, 1 Jan 2020 00:00:00 GMT";if(
+($ii(document.cookie,"CP="))+0>-1){_ce="y"}else{_ce="n"}}if((_rf==null)||( _rf==
+""))_rf="bookmark"; document.write( "<img src='"+( location.protocol== 'https:'?
+'https://':'http://') + _gn+"/HG?hc="+_mn+"&hb="+$a(_acct)+"&n="+$a(_pn)+(_bnN?(
+"&bn="+$a(_bn)):"")+ "&ce="+ _ce + "&ss=na&sc=na&dt=" + (new Date()).getHours()+
+"&sv="+_sv+"&con=&vcon="+$a(_mlc)+"&epg="+_epg+"&hv=6&cd=1&pl=&hp=u&cy=u&ja=na"+
+"&ln=na&cp="+$a(_cp)+ "&seg="+ _seg+ "&dcmp="+$a(_dcmp)+"&cmp="+_cmp+"&gp="+_gp+
+"&fnl="+$a(_fnl)+"&pec="+$a(_pec)+"&ra="+$a(_hra)+"&gn="+$a(_hcn)+"&ld="+$a(_hlt
+)+"&la="+$a(_hla)+"&cv="+$a(_hcv)+"&c1="+$a(_hc1)+"&c2="+$a(_hc2)+"&c3="+$a(_hc3
+)+"&c4="+$a(_hc4)+"&customerid="+$a(_ci)+"&rf="+_rf+"' border=0 height=1 widt"+
+"h=1>")}if(_bnN&&_bv==4)document.write("<\!"+"--")</script><noscript><img 
+src="http://ehg-quantumcorp.hitbox.com/HG?hc=we85&cd=1&hv=6&ce=u&hb=DM520222L9SC28EN3&n=PUT+PAGE+NAME+HERE&vcon=CONTENT+CATEGORY&seg=&cmp=&gp=&fnl=&pec=&dcmp=&ra=&gn=&ld=&la=&cv=&c1=&c2=&c3=&c4=&customerid=vpc=090101un" border="0" width="1" height="1">
+</noscript><!--//-->
+<!-- END WEBSIDESTORY CODE  -->
+
+
+
+
+
+
+
+
+<!-- Inserted by Content Management Server: BEGIN EmbedTmplHeadHook -->
+
+		<link rel="stylesheet"
+				href="/NR/System/WBC/Customizable/WBC.css">
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/WBCFuncPagesConfig/UIStringConstants/JavaScriptUIStrings.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/OptionsClient.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Dates.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Windows.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/CommonClient.js"
+				type="text/javascript"></script>
+	<META name="ROBOTS" content="FOLLOW,INDEX">
+
+<!-- Inserted by Content Management Server: END EmbedTmplHeadHook -->
+</head>
+<body>
+	
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyBeginHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyBeginHook -->
+<noscript>&lt;h1&gt;&lt;font size="2"&gt;Quantum Resources - Contact Information&lt;/font&gt;&lt;/h1&gt;<BR>Quantum Resources - Our Data Management Services combine the most reliable and cost-effective technologies with ease of integration.<BR>"</noscript>
+<a name="top"></a>
+
+
+
+
+
+
+
+	<div class="quantumLogo">
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td valign="top"><a href="http://www.quantum.com/am/default.htm"><img src="/images/nav/quantumLogo.gif" title="Data Storage - Data Storage Solutions" alt="Data Storage - Data Storage Solutions" width="147" height="22" border="0" vspace="20"></a></td>
+			<td valign="top"></td>
+		</tr>
+		</table>
+	</div>	
+	<div class="topLinks">
+		<table border="0" cellpadding="0" cellspacing="8" width="387">
+
+		<tr>
+			<td align="right"><br>
+              </a><br><form method="get" action="http://search.atomz.com/search/"> <input type=hidden name="sp-f" value="ISO-8859-1"><input type=hidden name="sp-p" value="all"><input type=hidden name="sp-a" value="sp10027758"><img border="0" src="/images/search.gif" align="center"  alt="Search Data Storage Information" width="40" height="14"><input type="text" name="sp-q" size="10" class="searchInput" onFocus="if(this.value == 'ENTER KEYWORDS') this.value = '';"><INPUT TYPE="image" NAME="I12" SRC="/images/submit.gif" ALT="Search Now" align="center"></form></td>
+			<td width="281" align="right" class="internationalSites"><a 
+				href="http://phx.corporate-ir.net/phoenix.zhtml?c=69905&p=irol-IRHome" onmouseover="mouseover('newsImg2')" onmouseout="mouseout('newsImg2')"><img src="http://www.quantum.com/AM/images/nav/investors_off.gif" width="56" vspace="6" height="10" alt="Investors" name="newsImg2" border="0"></a><img src="/images/vert_dash.gif" width="1" height="10" vspace="4" alt="" border="0"><a 
+				href="/AM/partners/default.htm" onmouseover="mouseover('partnersImg')" onmouseout="mouseout('partnersImg')"><img src="http://www.quantum.com/AM/images/nav/partners_off.gif" alt="Partners" name="partnersImg" id="partnersImg" width="58" height="10" vspace="6" border="0"></a><a 
+				href="/AM/about/careers/default.htm" onmouseover="mouseover('careers')" onmouseout="mouseout('careers')"><img src="http://www.quantum.com/AM/images/nav/careers_off.gif" width="50" height="10" vspace="6" alt="Careers" name="careers" border="0"></a><br>
+<form name="jump">
+<span class="internationalSites"><select name="menu" onChange="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;" value="GO" size="1">
+<option selected>I want to ..</option>
+<option value="/AM/about/contact/default.htm">contact a Quantum sales rep</option>
+<option value="/am/service_support/default.htm">view support information</option>
+<option value="/am/service_support/registration/default.htm">register a product</option>
+<option value="/am/service_support/downloads/default.htm ">download software</option>
+<option value="/am/service_support/compatibility/default.htm">check library software compatibility</option>
+  <option value="/am/service_support/compatibility/default.htm">check
+  drive software compatibility</option>
+<option value="/AM/about/contact/hard_drive_support.htm">get hard drive support</option>
+</select></span></form>
+            </td></tr>
+
+        </table>
+	</div>
+	
+	
+	
+	
+	<div class="blueNav" style="width: 787; height: 22">
+		<table border="0" cellpadding="0" cellspacing="0" width="788">
+
+	   	<tr valign="top" class="blueNav">
+			<td width="87"><img src="/images/nav/leftEdge.gif" width="10" height="20" alt="" border="0"></td>	
+			<td width="590" valign="top" align="left" nowrap><a 
+					href="/AM/products/default.htm" onmouseover="mouseover('productsImg')" onmouseout="mouseout('productsImg')"><img name="productsImg" src="http://www.quantum.com/AM/images/nav/products_off.gif" width="74" height="20" alt="Data Storage Solution Products and Services" border="0"></a><a 
+					href="/AM/solutions/default.htm" onmouseover="mouseover('solutionsImg')" onmouseout="mouseout('solutionsImg')"><img name="solutionsImg" src="http://www.quantum.com/AM/images/nav/solutions_off.gif" alt="Data Protection Solutions" border="0"></a><a 
+					href="/AM/service_support/default.htm" onmouseover="mouseover('supportImg')" onmouseout="mouseout('supportImg')"><img name="supportImg" src="http://www.quantum.com/AM/images/nav/support_off.gif" width="138" height="20" alt="Data Protection Support" border="0"></a><a 
+					href="/AM/wheretobuy/default.htm" onmouseover="mouseover('wheretobuyImg')" onmouseout="mouseout('wheretobuyImg')"><img name="wheretobuyImg" src="http://www.quantum.com/AM/images/nav/whereToBuy_off.gif" width="98" height="20" alt="Where to Buy Our Data Storage Solutions" border="0"></a><a 
+					href="/AM/news/default.htm" onmouseover="mouseover('newsImg')" onmouseout="mouseout('newsImg')"><img name="newsImg" src="http://www.quantum.com/AM/images/nav/news_off.gif" width="120" height="20" alt="News and Events" border="0"></a><a 
+					href="/AM/about/default.htm" onmouseover="mouseover('aboutImg')" onmouseout="mouseout('aboutImg')"><img name="aboutImg" src="http://www.quantum.com/AM/images/nav/about_off.gif" width="74" height="20" alt="About Us" border="0"></a></td>
+			<td width="56">
+              <p align="right">&nbsp;</p>
+            </td>
+			<td width="29" bgcolor="#FFFFFF"><img src="/images/nav/rightEdge.gif" width="10" height="20" alt="" border="0"></td>
+		</tr>
+
+	    </table>
+	</div>
+
+	
+	<div id="mainTableDiv">
+		<div class="breadcrumb">
+	
+		<a href="/AM/email+page.htm?guid={066BD9CB-8BCA-481C-A854-0CC455726A36}" onmouseover="mouseover('emailPageImg');" onmouseout="mouseout('emailPageImg')"><img src="/images/emailPage_off.gif" alt="Email This Page" name="emailPageImg" id="emailPageImg" width="76" height="11" hspace="0" vspace="0" border="0" align="right"></a>
+	
+		<a href="/AM/print+page.htm?guid={066BD9CB-8BCA-481C-A854-0CC455726A36}" target="_new" onmouseover="mouseover('printPageImg');" onmouseout="mouseout('printPageImg')"><img src="/images/printPage_off.gif" alt="Print This Page" name="printPageImg" id="printPageImg" width="84" height="11" hspace="0" vspace="0" border="0" align="right"></a>
+	
+	<script language="javascript" type="text/javascript" src="/js/nav_breadcrumb.js"></script>
+</div>
+		<table width="784" border="0" cellpadding="0" cellspacing="8">
+		<tr>
+			<td id="left" valign="top"><script language="javascript" type="text/javascript" src="/js/nav_leftnav.js"></script></td>
+			<td id="main" width="100%" valign="top">
+
+
+
+
+<div class="bodyText">
+
+<H1>Contact Us</H1>
+<DIV><IMG height="25" src="/NR/rdonlyres/066BD9CB-8BCA-481C-A854-0CC455726A36/692/sales_support_bar.gif" width="611" border="0"></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>Please select&nbsp;a product family and geographic region in the chart below for Sales or Support department contact information:</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><MAP name="FPMap0"><AREA shape="RECT" coords="392,34,481,45" href="/am/whereToBuy/Americas_Media_Sales.htm"><AREA shape="RECT" coords="394,73,484,83" href="/am/whereToBuy/EMEA_Media_Sales.htm"><AREA shape="RECT" coords="397,113,485,124" href="/am/whereToBuy/APAC_Media_Sales.htm"><AREA shape="RECT" coords="388,48,494,58" href="/am/about/contact/dlt_support/dlt_support_americas.htm"><AREA shape="RECT" coords="385,87,489,98" href="/am/about/contact/dlt_support/dlt_support_emea.htm"><AREA shape="RECT" coords="387,127,491,138" href="/am/about/contact/atl_support/atl_support_apac.htm"><AREA shape="RECT" coords="157,33,265,45" href="/am/whereToBuy/Americas_Sales.htm"><AREA shape="RECT" coords="152,48,263,59" href="/am/about/contact/atl_support/atl_support_americas.htm"><AREA shape="RECT" coords="159,73,250,84" href="/am/whereToBuy/EMEA_Sales.htm"><AREA shape="RECT" coords="153,85,258,98" href="/am/about/contact/atl_support/atl_support_emea.htm"><AREA shape="RECT" coords="159,113,255,124" href="/am/whereToBuy/APAC_Sales.htm"><AREA shape="RECT" coords="151,128,255,139" href="/am/about/contact/atl_support/atl_support_apac.htm"><AREA shape="RECT" coords="502,35,598,46" href="/am/whereToBuy/Americas_Sales.htm"><AREA shape="RECT" coords="501,49,604,59" href="/am/about/contact/ebs_support/ebs_support_americas.htm"><AREA shape="RECT" coords="503,73,596,83" href="/am/whereToBuy/EMEA_Sales.htm"><AREA shape="RECT" coords="500,87,605,98" href="/am/about/contact/ebs_support/ebs_support_emea.htm"><AREA shape="RECT" coords="505,115,603,124" href="/am/whereToBuy/APAC_Sales.htm"><AREA shape="RECT" coords="504,128,609,138" href="/am/about/contact/ebs_support/ebs_support_apac.htm"><AREA shape="RECT" coords="276,35,373,44" href="/am/whereToBuy/Americas_Sales.htm"><AREA shape="RECT" coords="268,48,376,57" href="/am/about/contact/atl_support/atl_support_americas.htm"><AREA shape="RECT" coords="274,73,369,85" href="/am/whereToBuy/EMEA_Sales.htm"><AREA shape="RECT" coords="269,87,375,100" href="/am/about/contact/atl_support/atl_support_emea.htm"><AREA shape="RECT" coords="275,113,372,124" href="/am/whereToBuy/APAC_Sales.htm"><AREA shape="RECT" coords="269,128,376,137" href="/am/about/contact/atl_support/atl_support_apac.htm"></MAP><IMG height="146" src="/NR/rdonlyres/066BD9CB-8BCA-481C-A854-0CC455726A36/1505/contact_rev3.gif" width="612" useMap="#FPMap0" border="0"></DIV>
+<P>&nbsp;</P>
+<TABLE cellSpacing="0" cellPadding="0" width="624" border="0">
+<TBODY>
+<TR>
+<TD width="100%" colSpan="3"><IMG height="25" src="/NR/rdonlyres/066BD9CB-8BCA-481C-A854-0CC455726A36/693/Resource19.gif" width="611" border="0"></TD></TR>
+<TR>
+<TD width="33%">&nbsp;</TD>
+<TD width="33%"></TD>
+<TD width="34%">&nbsp;</TD></TR>
+<TR>
+<TD vAlign="top" width="33%">
+<P><FONT size="2"><STRONG>Corporate Headquarters</STRONG></FONT></P>
+<P><FONT size="2">Quantum Corporation<BR>1650 Technology Drive<FONT color="#dc143c"><BR></FONT>Suite 800<BR>San Jose, CA 95110-1382<BR></FONT><FONT size="2">Tel:&nbsp; 408-944-4000<BR>Fax:&nbsp;408-944-4040<BR></FONT></P>
+<P><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_L.gif" width="8" border="0"><FONT size="1"><A href="/am/about/contact/locations/sanjose_directions.htm"><STRONG>Get Driving Directions</STRONG></A></FONT><FONT size="1"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_R.gif" width="8" border="0"><BR></FONT></FONT><FONT size="1"><BR><IMG class="bracket" height="12" alt="" src="/images/linkBracket_L.gif" width="8" border="0"><B><A href="/am/about/contact/locations/offices_americas.htm">More Offices in the <BR>Americas</A></B><IMG class="bracket" height="12" alt="" src="/images/linkBracket_R.gif" width="8" border="0"></FONT></P>
+<P>&nbsp;</P></TD>
+<TD vAlign="top" width="33%"><SPAN>
+<P><FONT size="2"><STRONG>Europe, Middle East, Africa</STRONG></FONT></P></SPAN>
+<P><FONT size="2"><SPAN>3 Bracknell Beeches<BR>Old Bracknell Lane West<BR>Bracknell<BR>Berkshire RG12 7BW<BR>United Kingdom<BR>Tel: +44 (0) 1344-353500<BR>Fax:+44 (0) 1344-353510</SPAN></FONT></P>
+<P><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_L.gif" width="8" border="0"><B><A href="/am/about/contact/locations/offices_emea.htm">More Offices in EMEA</A></B><IMG class="bracket" height="12" alt="" src="/images/linkBracket_R.gif" width="8" border="0"></FONT></P>
+<P><IMG class="bracket" height="12" alt="" src="/images/linkBracket_L.gif" width="8" border="0"><FONT size="1"><STRONG><A href="/NR/rdonlyres/BCC1F79C-7F0F-4F6D-A025-DDD6ECF2736D/0/QuantumUKmap.pdf">Get a Map</A></STRONG></FONT><FONT size="1"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_R.gif" width="8" border="0"></FONT></P></TD>
+<TD vAlign="top" width="34%"><SPAN>
+<P><FONT size="2"><STRONG>Asia Pacific</STRONG></FONT></P></SPAN>
+<P><FONT size="2"><SPAN>9 Temasek Boulevard<BR>#08-03 Suntec Tower Two<BR>Singapore 038989<BR>Tel: +65-6334-0660<BR>Fax: +65-6432-2870</SPAN></FONT></P>
+<P><SPAN><BR></SPAN><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_L.gif" width="8" border="0"><B><A href="/am/about/contact/locations/offices_apac.htm">More Offices in APAC</A></B><IMG class="bracket" height="12" alt="" src="/images/linkBracket_R.gif" width="8" border="0"></FONT></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P></TD></TR>
+<TR>
+<TD width="33%"></TD>
+<TD width="33%"></TD>
+<TD width="34%"></TD></TR>
+<TR>
+<TD width="100%" colSpan="3"><IMG height="25" src="/NR/rdonlyres/066BD9CB-8BCA-481C-A854-0CC455726A36/694/Resource26.gif" width="611" border="0"></TD></TR>
+<TR>
+<TD width="33%">&nbsp;</TD>
+<TD width="33%"></TD>
+<TD width="34%"></TD></TR>
+<TR>
+<TD width="33%">
+<P><FONT size="2"><STRONG>Departmental Information</STRONG></FONT></P>
+<P><B><A href="/am/news/press/Contacts.htm"><FONT size="2">Public Relations</FONT></A></B></P>
+<P><STRONG><U><A href="/am/about/contact/departments/departments_ir.htm"><FONT size="2">Investor Relations</FONT></A></U></STRONG></P>
+<P><STRONG><U><A href="/am/about/careers/jobs/default.htm"><FONT size="2">Human Resources</FONT></A></U></STRONG></P>
+<P>&nbsp;</P></TD>
+<TD width="33%">
+<P><FONT size="2"><STRONG>Hard Drive Support</STRONG></FONT></P>
+<P><FONT size="2"><SPAN>Quantum hard drives are now supported by Maxtor Corporation</SPAN></FONT></P>
+<P><SPAN><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_L.gif" width="8" border="0"></FONT><A href="http://www.maxtor.com/en/support/contact/" target="_blank"><FONT size="2"><STRONG>Maxtor Support</STRONG></FONT></A><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_R.gif" width="8" border="0"></FONT></SPAN></P>
+<P><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_L.gif" width="8" border="0"></FONT><A href="/am/about/contact/hard_drive_support.htm"><FONT size="2"><STRONG>Learn More</STRONG></FONT></A><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_R.gif" width="8" border="0"></FONT></P>
+<P>&nbsp;</P></TD>
+<TD width="34%"><SPAN>
+<P><FONT size="2"><STRONG>NAS Server Support</STRONG></FONT></P></SPAN>
+<P><FONT size="2"><SPAN>NAS Servers are now sold and supported by Snap Appliance, Inc.</SPAN></FONT></P>
+<P><SPAN><BR></SPAN><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_L.gif" width="8" border="0"><B><A href="http://www.snapappliance.com/redirect.cfm?rid=1032">Snap Appliance Support</A></B><IMG class="bracket" height="12" alt="" src="/images/linkBracket_R.gif" width="8" border="0"></FONT></P>
+<P><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_L.gif" width="8" border="0"></FONT><A href="/am/about/contact/nas_support/default.htm"><FONT size="2"><STRONG>Learn More</STRONG></FONT></A><FONT size="2"><IMG class="bracket" height="12" alt="" src="/images/linkBracket_R.gif" width="8" border="0"></FONT></P>
+<P>&nbsp;</P></TD></TR></TBODY></TABLE>
+</div>
+
+
+
+
+		</tr>
+		<tr><td class="empty" colspan="3">&nbsp;</td></tr>
+		<tr>
+			<td class="empty">&nbsp;</td>
+			<td id="footer" valign="bottom" colspan="2"><p align="center"><a 
+	class="footer" href="/AM/about/contact/default.htm">Contact Us</a>&nbsp;| <a 
+class="footer" href="http://quantum.treehousei.com/Surveys/publishing/survey_173/survey2.asp">Feedback</a><a 
+	class="footer" href="/AM/about/contact/default.htm"></a>&nbsp;| <a	
+class="footer" href="/AM/terms.htm">By using this site you accept our terms of use</a><a 
+	class="footer" href="/AM/about/contact/default.htm"></a>&nbsp;|&nbsp; <a 
+	class="footer" href="/AM/safeHarbor.htm">Safe Harbor</a><a 
+	class="footer" href="/AM/about/contact/default.htm"></a>&nbsp;&nbsp; <a href="/AM/about/contact/default.htm"><img border="0" src="http://146.174.30.43/images/phone_number.gif" width="106" height="14"> 
+</a><a 
+	class="footer" href="/AM/privacy.htm"><br>
+Privacy Policy</a><a 
+	class="footer" href="/AM/about/contact/default.htm"></a>&nbsp;| <a 
+	class="footer" href="/AM/sitemap.htm">Site Map</a>&nbsp;&nbsp;&nbsp; 
+</p><p align="center"><a 
+	class="footer" >©2005 Quantum Corp</a> </p></td>
+		</tr>
+		</table>
+	</div>
+	
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyEndHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyEndHook -->
+
+</body>
+</html>

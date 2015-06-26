@@ -1,0 +1,2049 @@
+<DOC>
+<DOCNO>f00172</DOCNO>
+<DOCHDR>http://www.healthcentral.com/contact/contact.cfm</DOCHDR>
+ <!-- cookie 0--><!-- referer: --> <!-- IT'S 408 --><!--HTTP_REFERER = --> <!-- healthscout02 -->
+		
+
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;CHARSET=iso-8859-1">
+
+
+<meta name="keywords" content="consumer health information, consumer health news">
+<meta name="Description" content="HealthCentral provides the latest consumer health information including news, mini-checkups, health library, encyclopedia, quizzes, tools. Medical health search on allergies, cancer, prescription drugs, cholesterol, digestive, men’s health, women’s health, skin, sexual health.">
+
+	
+	<title>HealthCentral.com - Contact us</title>
+	
+
+
+
+
+
+		
+	
+			
+		<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+
+//setting cookies
+
+
+
+function setCookie(name, value, expire) 
+
+        {
+
+   document.cookie =  name + "=" + escape(value) + ";domain=.healthcentral.com ;path=/" +
+
+   ((expire == null) ? "" : ("; expires=" + expire.toGMTString()));
+
+}
+
+
+
+
+
+//Notice the use of escape to encode special characters (semicolons, commas,
+
+//spaces) in the value string. This function assumes that cookie names do not have any
+
+//special characters.
+
+
+
+//The following function returns a cookie value, given the name of the cookie:
+
+
+
+function getCookie(Name) {
+
+
+
+   var search = Name + "="
+
+   if (document.cookie.length > 0) { // if there are any cookies
+
+      offset = document.cookie.indexOf(search) 
+
+      if (offset != -1) { // if cookie exists 
+
+         offset += search.length 
+
+
+
+         // set index of beginning of value
+
+         end = document.cookie.indexOf(";", offset) 
+
+         // set index of end of cookie value
+
+
+
+         if (end == -1) 
+
+            end = document.cookie.length
+
+         return unescape(document.cookie.substring(offset, end))
+
+      } 
+
+   }
+
+}
+
+
+
+var HealthCentralCookieID = "HealthCentralUserID";
+
+
+
+var uniqueid = getCookie(HealthCentralCookieID);
+
+var     time = new Date();
+
+if (uniqueid == null)
+
+        {
+
+        var expires = new Date();
+
+        expires.setTime(time.getTime() + (1000*60*60*24*365)*8);
+
+        setCookie(HealthCentralCookieID, time.getTime(), expires);
+
+        }
+
+
+
+function ShowCookie()
+
+{
+
+ document.CookieForm.CookieString.value = document.cookie;
+
+ var    today = new Date();
+
+ document.CookieForm.NumberString.value = today.getTime();
+
+}
+
+
+
+// -->
+
+</SCRIPT>
+	
+	
+	
+	
+	
+	
+
+	
+	<link rel="stylesheet" href="/css/hc_stylesheet.css" type="text/css">
+		
+	</head>
+	
+	<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" topMargin="0" leftMargin="0" alink="#006600" vlink="#660066">
+	
+	
+	
+	
+
+	
+		
+		
+	
+	
+		
+		<table width="775" rows="2" columns="6" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+ 		      <table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				<td width="5" height="67" rowspan="2" bgcolor="#FFFFFF"><a name="top"></a><img src="/images/spacer/sp.gif" width="5" height="1" border="0" align="top"></td> 
+				
+					 
+
+	
+<td width="160" rowspan="2" background="/images/background/_bl_bkgd_top.gif" valign="top" align="center">
+
+	
+	
+
+
+<table width="160" border="0" cellspacing="0" cellpadding="0" background="" align="center">
+	<tr><td width="8"><img src="/images/sp.gif" height="5" width="8" border="0" alt=""></td>
+	
+		<td width="152" valign="top"><img src="/images/sp.gif" height="10" width="50" border="0" alt=""><br><font class="btxt12wh"><b>WELCOME!</b></font>
+		<br><font class="txt10wh">&#149;</font>&nbsp;<font color="#FFFFFF"><a href="/newsletters/newsletters.cfm" class="lnku10wh">Receive Free Newsletters</a></font>
+
+
+	
+	</tr>
+</table>
+
+<img src="/images/sp.gif" height="1" width="160" border="0" alt="">
+
+
+</td>
+
+				
+
+				<!--<td width="5" rowspan="2"><img src="/images/spacer/sp.gif" width="5" height="1"></td>-->
+
+<!--				<td width="5" rowspan="3"><img src="/images/spacer/sp.gif" width="1" height="1"></td>-->
+
+
+	
+
+
+				<td width="225" rowspan="3"><a href="/home/home.cfm"><img src="/images/common/hc_logo.gif" width="225" height="72" border="0" align="left" alt="HealthCentral"></a></td>
+
+				<td colspan="2" valign="bottom"><font class="txt10bk">
+				    <table border="0" cellspacing="0" cellpadding="0">
+						
+							
+      <table border="0" cellspacing="0" cellpadding="0" height="1">
+
+	
+        <tr> 
+	          <td width="2" nowrap><img src="/images/spacer/sp.gif" width="2" height="16" align="absmiddle" alt=""></td>
+
+ <!--begin search table --> 
+          <td>
+            <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+				<TR bgcolor="#9CCF9C"><td><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;<BR></font><b></font>&nbsp;&nbsp;SEARCH FOR:</b></font></td></tr>
+                <TR bgcolor="#9CCF9C"> 
+                 <TD WIDTH="100">
+                  <TABLE border="0" cellspacing="0" cellpadding="0">
+				  <TR>
+					
+					
+					<FORM method="get" action="http://search.healthcentral.com/search.asp">
+
+                    <TD width="95">&nbsp;<INPUT type="text" name="query" size="9"></TD>
+                     <TD width="40" nowrap valign="middle" align="right"> 
+                        <INPUT type="image" border="0" src="/images/buttons/gogreen.gif" width="40" height="19" alt="" name="GO!"></TD>
+						</form>
+              </TR>
+            </TABLE></TD>
+                </TR>
+				  <TR bgcolor="#9CCF9C" valign="bottom">
+	              <td height="5"><IMG src="/images/spacer/sp.gif" width="124" height="5" border="0"></td>
+				  </tr>
+            </TABLE>
+           </td>
+
+
+
+          <td width="5" nowrap><img src="/images/spacer/sp.gif" width="5" height="8" alt=""></td>
+          <td nowrap>
+            <TABLE border="0" cellspacing="0" cellpadding="0" height="100%">
+              <FORM Name="getcenters" ACTION="/centers/OneCenter.cfm" METHOD="get" ondblclick="Javascript:submit();">
+				
+				<tr bgcolor="#9CCF9C"><td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">&nbsp;CONSUMER HEALTH INFORMATION<BR></font><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b></font>&nbsp;TOPIC CENTERS</b></font></td></tr>
+                <TR> 
+				  <TD bgcolor="#9CCF9C">&nbsp;<FONT face="verdana" size="1"><SELECT name="center" class="form" onchange="javascript:submit()"><option value="">Choose a topic</option><OPTION value="Acne">Acne</OPTION><OPTION value="Alcohol">Alcohol</OPTION><OPTION value="Allergies">Allergies</OPTION><OPTION value="OtherAlternativePractices">Alternative Medicine</OPTION><OPTION value="Alzheimers">Alzheimer's</OPTION><OPTION value="Anemia">Anemia</OPTION><OPTION value="Arthritis">Arthritis</OPTION><OPTION value="Asthma">Asthma</OPTION><OPTION value="Baby_and_Toddler_Health">Baby and Toddler Health</OPTION><OPTION value="BackCare">Back Care</OPTION><OPTION value="Bipolar">Bipolar Disorder</OPTION><OPTION value="BirthControl">Birth Control</OPTION><OPTION value="Bodywork">Bodywork and Mind/Body</OPTION><OPTION value="Bowel">Bowel</OPTION><OPTION value="BreastCancer">Breast Cancer</OPTION><OPTION value="CancerOverview">Cancer Overview</OPTION><OPTION value="Caregiving">Caregiving</OPTION><OPTION value="Chemotherapy">Chemotherapy</OPTION><OPTION value="ChildrensHealth">Children's Health</OPTION><OPTION value="Cholesterol">Cholesterol</OPTION><OPTION value="circumcision">Circumcision</OPTION><OPTION value="Flus_Colds">Colds and Flus</OPTION><OPTION value="ColonCancer">Colon Cancer</OPTION><OPTION value="Cosmetic_Surgery">Cosmetic Surgery</OPTION><OPTION value="ChronsDisease">Crohn's Disease</OPTION><OPTION value="Dental">Dental</OPTION><OPTION value="Depression">Depression</OPTION><OPTION value="Diabetes">Diabetes</OPTION><OPTION value="diet_drugs">Diet Drugs</OPTION><OPTION value="Digestion">Digestion</OPTION><OPTION value="Disabilities">Disabilities</OPTION><OPTION value="Drugs_medication">Drugs and Medications</OPTION><OPTION value="EatingDisorders">Eating Disorders</OPTION><OPTION value="Eczema">Eczema</OPTION><OPTION value="Erectile_Dysfunction">Erectile Dysfunction</OPTION><OPTION value="Vision">Eye and Vision</OPTION><OPTION value="Fitness">Fitness</OPTION><OPTION value="FootCare">Foot Care</OPTION><OPTION value="GerdHeartburn">GERD/Heartburn</OPTION><OPTION value="HairLoss">Hair Loss</OPTION><OPTION value="Hearing">Hearing</OPTION><OPTION value="Heart">Heart and Circulation</OPTION><OPTION value="Hepatitis">Hepatitis</OPTION><OPTION value="Herbal_Remedies">Herbs</OPTION><OPTION value="Herpes">Herpes</OPTION><OPTION value="Hypertension">High Blood Pressure</OPTION><OPTION value="HIV_AIDS">HIV and AIDS</OPTION><OPTION value="HomeRemedies">Home Remedies</OPTION><OPTION value="Attention_Deficit_Di">Hyperactivity and ADD</OPTION><OPTION value="Immunizations_Vaccin">Immunizations/Vaccines</OPTION><OPTION value="Impotence">Impotence</OPTION><OPTION value="IncontBladder">Incontinence/Bladder</OPTION><OPTION value="Infertility">Infertility</OPTION><OPTION value="Leukemia">Leukemia</OPTION><OPTION value="LungCancer">Lung Cancer</OPTION><OPTION value="MedicalBreakthroughs">Medical Breakthroughs</OPTION><OPTION value="Medical_Expenses">Medical Expenses</OPTION><OPTION value="Marijuana">Medical Marijuana</OPTION><OPTION value="MensHealth">Men's Health</OPTION><OPTION value="Menopause">Menopause</OPTION><OPTION value="MentalHealth">Mental Health</OPTION><OPTION value="Migraines">Migraines and Headaches</OPTION><OPTION value="MultipleSclerosis">Multiple Sclerosis</OPTION><OPTION value="Nutraceuticals">Nutraceuticals</OPTION><OPTION value="Nutrition">Nutrition and Healthy Eating</OPTION><OPTION value="Osteoporosis">Osteoporosis</OPTION><OPTION value="PainManagement">Pain Management</OPTION><OPTION value="Parenting">Parenting</OPTION><OPTION value="Parkinsons">Parkinson's</OPTION><OPTION value="Pregnancy">Pregnancy and Childbirth</OPTION><OPTION value="ProstateCancer">Prostate Cancer</OPTION><OPTION value="Prostate_Disorders">Prostate Disorders</OPTION><OPTION value="Psoriasis">Psoriasis</OPTION><OPTION value="Rheumatoid">Rheumatoid Arthritis</OPTION><OPTION value="Safety_and_First_Aid">Safety and First Aid</OPTION><OPTION value="Schizophrenia">Schizophrenia</OPTION><OPTION value="SeniorHealth">Senior Health</OPTION><OPTION value="Sex_Relationships">Sex and Relationships</OPTION><OPTION value="SexualHealth">Sexual Health</OPTION><OPTION value="Skin">Skin and Hair</OPTION><OPTION value="Sleep">Sleep Disorders</OPTION><OPTION value="Smoking">Smoking</OPTION><OPTION value="Stress">Stress Reduction</OPTION><OPTION value="Stroke">Stroke</OPTION><OPTION value="SubstanceAbuse">Substance Abuse and Addiction</OPTION><OPTION value="TeenHealth">Teen Health</OPTION><OPTION value="Thyroid_Disorders">Thyroid Disorders</OPTION><OPTION value="TravelHealth">Travel Health</OPTION><OPTION value="Vitamin_Supp">Vitamins and Supplements</OPTION><OPTION value="Weight">Weight Loss</OPTION><OPTION value="WomensHealth">Women's Health</OPTION><OPTION value="OvarianCancer">Women's Reproductive Cancers</OPTION><OPTION value="YeastInfection">Yeast Infection</OPTION><OPTION value="Yoga">Yoga</OPTION></SELECT></FONT>&nbsp;</TD>
+                </TR>
+              </FORM>
+            </TABLE>
+          </TD>
+          <td width="1" nowrap><img src="/images/spacer/sp.gif" width="1" height="2"></td>
+        </tr>
+		<tr>
+          <td width="2" nowrap><img src="/images/spacer/sp.gif" width="1" height="2"></td>
+		  <td colspan="4">
+	        <table border="0" cellspacing="0" cellpadding="0">	  
+				<tr>
+					<td height="13" colspan="6" valign="top" align="left"><font class="txt10bk">
+			<a href="/search/search_tips.cfm"><font class="lnku10bl">Search Tips</font></a></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	    </table>
+
+						
+					</table>
+				</td>
+				</tr>
+	
+		</table>
+		</tr></table>
+		
+
+		
+		
+		<table width="775" rows="5" columns="6" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="5" rowspan="3" bgcolor="#FFFFFF" nowrap><img src="/images/spacer/sp.gif" width="5" height="1"></td>
+
+				
+				<td width="160" rowspan="3" background="/images/background/_bl_bkgd_top2.gif" nowrap>
+
+
+
+
+
+
+
+
+
+			
+				
+			
+			
+			
+
+			
+				
+				<table width="152" border="0" cellspacing="0" cellpadding="0" align="center" background=""  bgcolor="#003399">
+					<tr>
+						<td width="152" bgcolor="#003399" align="center" valign="bottom" height="100" valign="top"><a href="/contact/contact.cfm"><img src="/images/background/cid_contact.gif" width="152" height="73" border="0" alt="contact channel"></a></td>
+					</tr>
+				</table>
+				
+			</td>
+
+ 			<td width="5" rowspan="2"><img src="/images/spacer/sp.gif" width="5" height="1"></td> 
+
+			<td width="604" height="2" colspan="4"><img src="/images/background/separator_bl_.gif" width="604" height="7"><br>
+				<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+			
+			
+			
+				
+
+			
+			
+			<td width="468" valign="middle" align="center" ><img src="/images/spacer/sp.gif" width="5" height="3"><br>
+			
+			
+				
+
+
+
+	
+	
+	  
+	   
+	  
+	
+
+
+
+ 
+		
+
+	
+
+
+	
+
+
+		
+			
+		
+	
+
+
+	
+
+
+	
+  	  
+		
+		<CENTER><IMG SRC='/images/adtext.gif'></CENTER>
+		
+	  
+	
+	
+	
+
+
+
+	
+	
+		
+		
+	
+
+
+	<iframe width=470 height=62 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://www.healthscout.com/ads/rm_ad.asp?adtag=www%2Ehealthcentral%2Ecom%2Fap%3D408%40Top%3Ftopic%3Dt00%26&topic=t00&width=470&height=62"></iframe>
+
+
+
+	
+
+
+
+
+
+			
+			</td>
+			<td width="5"><img src="/images/spacer/sp.gif" width="5" height="67"></td>
+			<td width="131" valign="middle" align="right">
+			
+			
+				
+
+
+
+	
+	
+	  
+	
+
+
+
+ 
+		
+
+	
+
+
+	
+
+
+		
+			
+		
+	
+
+
+	
+
+
+	
+  	  
+		
+		<CENTER><IMG SRC='/images/adtext.gif'></CENTER>
+		
+	  
+	
+	
+	
+
+
+
+	
+	
+		
+		
+	
+
+
+	<iframe width=122 height=62 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://www.healthscout.com/ads/rm_ad.asp?adtag=www%2Ehealthcentral%2Ecom%2Fap%3D408%40TopRight%3Ftopic%3Dt00%26&topic=t00&width=122&height=62"></iframe>
+
+
+
+	
+
+
+
+
+
+			
+			</td>
+			
+			</tr>
+		</table>
+		</td>
+		</tr>
+	</table>
+	
+
+	
+		
+			
+
+
+
+
+<table width="775" rows="2" columns="8" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="5" rowspan="2"><img src="/images/spacer/sp.gif"width="5" height="1"></td>
+		<td width="160" rowspan="2"  valign="top" align="left">
+		<table cellspacing="0" cellpadding="0" border=0 width="100%">
+			<tr><td background="/images/background/_bl_bkgd_long.gif">
+
+
+				<table width="152" rows="34" columns="2" border="0" cellspacing="0" cellpadding="0" align="center" background="">
+
+		
+
+
+
+
+
+
+
+
+	<tr>
+		<td height="4" bgcolor="003399"><img src="/images/spacer/sp.gif" width="1" height="1"></td>
+		<td width="129" height="4" bgcolor="003399"><img src="/images/spacer/sp.gif" width="1" height="1"></td>
+	</tr> 
+
+	<tr>
+		<td height="4" align="right"><img src="/images/sp.gif" height="4" width="5" border="0" alt=""><br></td>
+		<td width="129" height="4"><img src="/images/sp.gif" height="4" width="5" border="0" alt=""><br></td>
+	</tr>
+
+
+
+
+<!-- RXLIST -->
+
+<!-- END RXLIST -->
+
+
+
+
+
+<tr>
+<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+<td bgcolor="003399"><font class="lnknu12wh"><b>Consumer Health Information</b></font></td>
+</tr>
+<tr>
+	<td width="8" height="2" align="right"></td>
+	<td width="144" height="2"></td>
+</tr>
+
+				
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/home/home.cfm" class="lnknu12wh">Home</a></font></td>
+				</tr> 
+						
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+		
+
+				
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/news/news.cfm" class="lnknu12wh">News</a></font></td>
+				</tr>
+
+
+				
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+				
+
+				
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/drdean/drdean.cfm" class="lnknu12wh">Dr. Dean Edell</a></font></td>
+				</tr>
+
+
+				
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+
+
+   			<tr>
+ 					<td colspan="2" valign="middle" align="center">		
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+							<td valign="top" align="center"><img src="/images/spacer/sp.gif" width="5" height="3">
+							
+								
+
+
+
+	
+	
+	  
+	
+
+
+
+ 
+		
+
+	
+
+
+	
+
+
+		
+			
+		
+	
+
+
+	
+
+
+	
+  	  
+		
+		<CENTER><IMG SRC='/images/adtext.gif'></CENTER>
+		
+	  
+	
+	
+	
+
+
+
+	
+	
+		
+		
+	
+
+
+	<iframe width=122 height=62 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://www.healthscout.com/ads/rm_ad.asp?adtag=www%2Ehealthcentral%2Ecom%2Fap%3D408%40Left1%3Ftopic%3Dt00%26&topic=t00&width=122&height=62"></iframe>
+
+
+
+	
+
+
+
+
+
+							
+							<img src="/images/spacer/sp.gif" width="5" height="3"><br>
+							</td>
+						  </td>
+						</tr>
+					  </table>
+				  </td>
+			  </tr>
+
+
+
+ 				
+
+<tr>
+	<td width="2" height="2"  bgcolor="99CCFF">&nbsp;</td>
+	<td width="144" height="2" bgcolor="99CCFF"><br></td>
+</tr>
+
+<tr>
+	<td width="2" height="2"  bgcolor="99CCFF">&nbsp;</td>
+	<td width="144" height="20" bgcolor="99CCFF"><font class="btxt14bk">&nbsp;&nbsp;<b>Special Offers</b><br></font></td>
+</tr>
+
+<tr><td colspan=2>
+<SCRIPT LANGUAGE="Javascript" TYPE="text/javascript" SRC="http://www.healthscout.com/external/hs_SpecialOffers.js"></SCRIPT>
+<SCRIPT LANGUAGE="javascript">
+<!--
+
+   HealthScoutSpecialOfferMain("www.healthcentral.com","408");
+
+//-->
+</SCRIPT>
+</td></tr>
+
+
+
+
+
+<!-- start: TV Specials -->
+<tr>
+  <td width="2" height="2"  bgcolor="99CCFF">&nbsp;
+<!-- 1x1 pixel pageview tracker -->
+			
+
+
+
+
+	
+	
+	  
+	
+
+
+
+ 
+		
+
+	
+
+
+	
+
+
+		
+			
+		
+	
+
+
+	
+
+
+	
+	
+	
+
+
+
+	
+	
+		
+		
+	
+
+
+	<iframe width=1 height=1 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://www.healthscout.com/ads/rm_ad.asp?adtag=www%2Ehealthcentral%2Ecom%2Fap%3D408%40Bottom3%3Ftopic%3Dt00%26&topic=t00&width=1&height=1"></iframe>
+
+
+
+	
+
+
+
+
+
+			</td>
+
+
+</td>
+  <td width="144" height="20" bgcolor="99CCFF"><font class="btxt14bk">&nbsp;</font></td>
+</tr>
+
+<tr>
+  <td width='2' height='2'  bgcolor='99CCFF'>&nbsp;</td>
+  <td width='144' height='20' bgcolor='99CCFF'><font class='btxt14bk'><b>TV Specials</b><br></font></td>
+</tr>
+
+
+	<TR>
+	<TD VALIGN=TOP bgcolor='#99CCFF'>&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor='#99CCFF' ALIGN='LEFT'>
+	<a href="http://www.healthcentral.com/bcp/main.asp?ap=408&brand=27" CLASS='lnknu12bl' TARGET="_BLANK">Chronic Pain</A>
+	</TD></TR>
+	
+	<TR>
+	<TD VALIGN=TOP bgcolor='#99CCFF'>&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor='#99CCFF' ALIGN='LEFT'>
+	<a href="http://www.healthcentral.com/bcp/main.asp?ap=408&brand=28" CLASS='lnknu12bl' TARGET="_BLANK">Erectile Dysfunction</A>
+	</TD></TR>
+	
+	<TR>
+	<TD VALIGN=TOP bgcolor='#99CCFF'>&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor='#99CCFF' ALIGN='LEFT'>
+	<a href="http://www.healthcentral.com/bcp/main.asp?ap=408&brand=22" CLASS='lnknu12bl' TARGET="_BLANK">Back & Neck Pain</A>
+	</TD></TR>
+	
+	<TR>
+	<TD VALIGN=TOP bgcolor='#99CCFF'>&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor='#99CCFF' ALIGN='LEFT'>
+	<a href="http://www.healthcentral.com/bcp/main.asp?ap=408&brand=24" CLASS='lnknu12bl' TARGET="_BLANK">Diabetes</A>
+	</TD></TR>
+	
+	<TR>
+	<TD VALIGN=TOP bgcolor='#99CCFF'>&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor='#99CCFF' ALIGN='LEFT'>
+	<a href="http://www.healthcentral.com/bcp/main.asp?ap=408&brand=21" CLASS='lnknu12bl' TARGET="_BLANK">Invisible Braces</A>
+	</TD></TR>
+	
+	<TR>
+	<TD VALIGN=TOP bgcolor='#99CCFF'>&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor='#99CCFF' ALIGN='LEFT'>
+	<a href="http://www.healthcentral.com/bcp/main.asp?ap=408&brand=23" CLASS='lnknu12bl' TARGET="_BLANK">Heart Disease</A>
+	</TD></TR>
+	
+
+	<TR>
+	<TD VALIGN=TOP bgcolor='#99CCFF'>&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor='#99CCFF' ALIGN='LEFT'>
+	<a href="/news/video.cfm?id=13001" CLASS='lnknu12bl' TARGET="_BLANK">Lupus</A>
+	</TD></TR>
+
+
+	<TR>
+	<TD VALIGN=TOP bgcolor='#99CCFF'>&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor='#99CCFF' ALIGN='LEFT'>
+	<a href="/news/video.cfm?id=13002" CLASS='lnknu12bl' TARGET="_BLANK">Destiny: Is it in your Genes?</A>
+	</TD></TR>
+
+	<TR>
+	<TD VALIGN=TOP bgcolor='#99CCFF'>&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor='#99CCFF' ALIGN='LEFT'>
+	<a href="/news/video.cfm?id=13003" CLASS='lnknu12bl' TARGET="_BLANK">Poisons in our World</A>
+	</TD></TR>
+
+<!-- end: TV Specials -->
+
+
+		  		<tr>
+		  			<td width="2" height="2"  bgcolor="99CCFF">&nbsp;</td>
+		  			<td width="144" height="20" bgcolor="99CCFF"><font class="btxt14bk">&nbsp;</font></td>
+		  		</tr>
+
+		  		<tr>
+		  			<td width="2" height="2"  bgcolor="99CCFF">&nbsp;</td>
+		  			<td width="144" height="20" bgcolor="99CCFF"><font class="btxt14bk"><b>Top Features</b><br></font></td>
+		  		</tr>
+
+
+
+
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=Schizophrenia" TARGET="_top">
+	Schizophrenia
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=Bipolar" TARGET="_top">
+	BiPolar Disorder
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=FootCare" TARGET="_top">
+	Foot Care
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=Arthritis" TARGET="_top">
+	Arthritis
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=CancerOverview" TARGET="_top">
+	Cancer
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=Depression" TARGET="_top">
+	Depression
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=Digestion" TARGET="_top">
+	Digestive
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=Heart" TARGET="_top">
+	Heart
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=Diabetes" TARGET="_top">
+	Diabetes
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/mhc/top/000205.cfm" TARGET="_top">
+	Liver Disease
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=Skin" TARGET="_top">
+	Skin
+	</A></FONT>
+	</TD>
+</TR>
+
+<TR>
+
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="http://www.healthcentral.com/centers/OneCenter.cfm?center=Migraines" TARGET="_top">
+	Headaches
+	</A></FONT>
+	</TD>
+</TR>
+
+
+
+
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+
+
+ 				
+		  		<tr>
+		  			<td colspan="2" width="144" height="5" bgcolor="99CCFF"><img src="/images/pixel.gif" height="5"></td>
+		  		</tr>
+
+		  		<tr>
+		  			<td width="144" height="20" bgcolor="99CCFF" colspan="2" align="center"><font class="btxt14bk"><b>Dr. Dean Specials</b><br></font></td>
+		  		</tr>
+
+
+
+
+<TR>
+<TD VALIGN=TOP bgcolor="#99CCFF">&nbsp;&#149;&nbsp;</TD>
+	<TD VALIGN=TOP bgcolor="#99CCFF" ALIGN="LEFT"><FONT FACE="Arial" SIZE="2">
+	<A CLASS="lnknu12bl" HREF="/drdean/deanbook/deanbook.cfm" TARGET="_self">Books and Tapes</A></FONT>
+	</TD>
+</TR>
+
+		  		<tr>
+		  			<td colspan="2" width="144" height="5" bgcolor="99CCFF"><img src="/images/pixel.gif" height="5"></td>
+		  		</tr>
+
+
+
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+
+
+
+
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/mhc/index/diseidxa.cfm" class="lnknu12wh">Health Encyclopedia</a></font></td>
+				</tr>
+
+		
+		
+				
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+
+				
+
+
+
+
+
+
+
+
+
+				<tr>
+					<td width="8" height="38" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="38" bgcolor="003399"><font color="#FFFFFF"><a href="/fitorfat/fitorfat.cfm" class="lnknu12wh">Fit&nbsp;or&nbsp;Fat<img src="/images/sp.gif" width="2" height="1" border="0" align="top">: Nutrition&nbsp;&&nbsp;Exercise</a></font></td>
+				</tr>
+
+
+			
+				
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/news/video.cfm" class="lnknu12wh">Health Videos</a></font></td>
+				</tr>
+
+
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/bestdoctors/bestdoctors.cfm" class="lnknu12wh">Best Doctors</a></font></td>
+				</tr>
+
+
+			
+				
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+				
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/columnists/columnists.cfm" class="lnknu12wh">Columnists</a></font></td>
+				</tr>
+
+					
+				
+				
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+				
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/cooltools/cooltools.cfm" class="lnknu12wh">Cool Tools</a></font></td>
+				</tr>
+
+
+
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+				
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/healthview/healthview.cfm" class="lnknu12wh">Health Profiles</a></font></td>
+				</tr>
+
+
+
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/myhealth/myhealth.cfm" class="lnknu12wh">My Health Page</a></font></td>
+				</tr>
+
+
+
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+				
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/library/library.cfm" class="lnknu12wh">Library</a></font></td>
+				</tr>
+
+		
+		
+				
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+
+				
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/centers/centers.cfm" class="lnknu12wh">Topic Centers</a></font></td>
+				</tr>
+
+					
+				
+				
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+				
+
+
+					
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+				
+	
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/newsletters/newsletters.cfm" class="lnknu12wh">Newsletters</a></font></td>
+				</tr>
+
+					
+					
+				
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+			
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/aboutus/aboutus.cfm" class="lnknu12wh">About&nbsp;<br> HealthCentral.com</a></font></td>
+				</tr>
+
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>			
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="0066FF"><img src="/images/background/bpointer_bl_.gif" width="9" height="12" border="0" align="top"><img src="/images/sp.gif" width="3" height="1" border="0" align="top"></td>
+					<td width="144" height="20" bgcolor="0066FF"><font color="#FFFFFF"><a href="/contact/contact.cfm" class="lnknu12wh">Contact Us</a></font></td>
+				</tr>
+
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="/terms/privacypolicy/privacypolicy.cfm" class="lnknu12wh">Privacy Policy</a></font></td>
+				</tr>
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>			
+
+
+
+<!--				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>-->
+
+
+
+				
+				<tr>
+					<td width="8" height="38" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="38" bgcolor="003399"><font color="#FFFFFF"><a href="/peoplespharmacy/peoplespharmacy.cfm" class="lnknu12wh">People's&nbsp;Pharmacy<img src="/images/sp.gif" width="2" height="1" border="0" align="top">: Drugs&nbsp;&&nbsp;Herbs</a></font></td>
+				</tr>
+
+
+				<tr>
+					<td width="8" height="2" align="right"></td>
+					<td width="144" height="2"></td>
+				</tr>			
+
+
+				<tr>
+					<td width="8" height="20" align="right" bgcolor="003399">&nbsp;</td>
+					<td width="144" height="20" bgcolor="003399"><font color="#FFFFFF"><a href="http://www.drugs.com/data/channel/md/healthcentral.cfm" class="lnknu12wh" target="_blank">Drug Search</a></font></td>
+				</tr>
+
+
+
+
+
+
+
+
+			
+				
+
+
+			</table>
+			
+				
+			
+			<table width=100% cellspacing=1 cellpadding=0>
+				<tr><td bgcolor="0066FF"></td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+
+
+			
+
+
+
+			
+
+
+
+
+
+<br>
+	
+
+
+
+	
+	
+	
+	
+
+
+
+ 
+ 			<table width="160" rows="2" columns="1" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				<tr>
+					<td width="11" height="20" bgcolor="0099FF" valign="top" align="left"><img src="/images/curves/_bl_curvetl.gif" border="0" align="top"></td>
+					<td width="138" height="20" bgcolor="0099FF"><font class="btxt12wh"><b>CONSUMER HEALTH INFORMATION</b></font></td>
+					<td width="11" height="20" bgcolor="0099FF"  valign="top" align="right"><img src="/images/curves/_bl_curvetr.gif" border="0" align="top"></td>
+				</tr>
+				<tr>
+					<td width="11"><img src="/images/spacer/sp.gif" width="1" height="1"></td>
+					<td width="138"><font class="txt11bk">Get the latest health news in your e-mail for FREE!</font></td>
+					<td width="11"><img src="/images/spacer/sp.gif" width="1" height="1"></td>
+				</tr>
+				<tr>
+					<td width="11"><img src="/images/spacer/sp.gif" width="1" height="1"></td>
+					<td colspan=2 valign="middle">
+					<a href="/newsletters/newsletters.cfm">
+					<IMG src="/images/buttons/signup.gif" border="0" align="top" alt="Sign Up!"></a>
+					</td>
+				</tr>
+			</table>
+			
+
+<br>
+
+
+
+<!--
+
+-->
+
+
+
+
+</td> 
+		
+	
+	
+	
+
+	
+
+	
+	
+
+	
+
+
+		
+		
+
+		<td width="5" rowspan="2"><img src="/images/spacer/sp.gif" width="1" height="1"></td>
+		<td width="604" height="4" colspan="3" valign="top"><img src="/images/background/separator_bl_2.gif" width="604" height="4" border="0" align="bottom"></td>
+	</tr>
+	<tr>
+		<td width="401" valign="top">
+			<table width="401" rows="1" columns="1" border="0" cellspacing="0" cellpadding="0">
+
+				<tr>
+					<td align="top"><img src="/images/promo/yhdln_trnsp.gif" width="195" height="17" border="0" align="bottom"></td>
+				</tr>
+
+			</table>
+			<br>
+			<table width="401" rows="1" columns="1" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="3" bgcolor="#FFFFFF">&nbsp;</td>
+					<td width="403" bgcolor="#FFFFFF" valign="top">
+
+					<font class="btxt16dkyl">Contact Us</font><p>
+					<table border="0" cellpadding="0" cellspacing="0" width="401">
+						<tr><td><br>
+	<!--				<table border="0" cellpadding="0" cellspacing="0" width="401">
+							<tr>
+							<td width="9" height="9" bgcolor="#cc9900"><img src="/images/cooltools/y_md_curvetl.gif"></td>
+							<td width="383" height="9" bgcolor="#cc9900"><font class="btxt12wh"><b>SITE FIXES</b></font></td>
+							<td width="9" height="9"><img src="/images/cooltools/y_md_curvetr.gif"></td>
+							</tr>
+							<tr><td colspan="3">
+								<table border="0" cellpadding="10" cellspacing="0" align="center" width="100%">
+									<tr><td><font class="txt11bk">If you want to report a broken link or technical problems with our site,
+e-mail <a href="mailto:help@HealthCentral.com" class="lnku11bl">help@healthcentral.com</a>.</font><p>
+									</td></tr>
+								</table>
+							</td></tr>
+							<tr>
+								<td width="9" height="1"><img src="/images/spacer/sp.gif" width="9" height="1"></td>
+								<td width="383"><img src="/images/spacer/sp.gif" width="383" height="1"></td>
+								<td width="9"><img src="/images/spacer/sp.gif" width="9" height="1"></td>
+							</tr>
+						</table>
+						<table border="0" cellpadding="0" cellspacing="0" width="401">
+						<tr>
+							<td width="9" height="9" bgcolor="#cc9900"><img src="/images/cooltools/y_md_curvetl.gif"></td>
+							<td width="383" height="9" bgcolor="#cc9900"><font class="btxt12wh"><b>EDITORIAL FEEDBACK</b></font></td>
+							<td width="9" height="9"><img src="/images/cooltools/y_md_curvetr.gif"></td>
+						</tr>
+						<tr><td colspan="3">
+							<table border="0" cellpadding="10" cellspacing="0" align="center" width="100%">
+								<tr><td><font class="txt11bk">We want to hear your thoughts on our news coverage and information.
+E-mail us at</font> <a href="mailto:editorial@HealthCentral.com" class="lnku11bl">editorial@healthcentral.com</font></A>.<br>
+								</td></tr>
+							</table>
+						</td></tr>
+						<tr>
+							<td width="9" height="1"><img src="/images/spacer/sp.gif" width="9" height="1"></td>
+							<td width="383"><img src="/images/spacer/sp.gif" width="383" height="1"></td>
+							<td width="9"><img src="/images/spacer/sp.gif" width="9" height="1"></td>
+						</tr>
+						</table><br>
+						<table border="0" cellpadding="0" cellspacing="0" width="401">
+						<tr>
+							<td width="9" height="9" bgcolor="#cc9900"><img src="/images/cooltools/y_md_curvetl.gif"></td>
+							<td width="383" height="9" bgcolor="#cc9900"><font class="btxt12wh"><b>ADVERTISING</b></font></td>
+							<td width="9" height="9"><img src="/images/cooltools/y_md_curvetr.gif"></td>
+						</tr>
+						<tr><td colspan="3">
+							<table border="0" cellpadding="10" cellspacing="0" align="center" width="100%">
+								<tr><td><font class="txt11bk">Want to advertise with us? <a href="Advertise.cfm">Click here</a> for opportunities.</font><br>
+								</td></tr>
+							</table>
+						</td></tr>
+						<tr>
+							<td width="9" height="1"><img src="/images/spacer/sp.gif" width="9" height="1"></td>
+							<td width="383"><img src="/images/spacer/sp.gif" width="383" height="1"></td>
+							<td width="9"><img src="/images/spacer/sp.gif" width="9" height="1"></td>
+						</tr>
+						</table><br>
+						<table width="401" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+						<tr><td width="401" height="2" colspan="3" bgcolor="#cc9900"><img src="/images/spacer/sp.gif" width="2" height="1">
+						</td></tr>
+						<tr>
+							<td bgcolor="#cc9900"><img src="/images/spacer/sp.gif" width="2" height="1"></td>		<td align="left" valign="top">
+								<table border="0" cellpadding="4" cellspacing="0" width="100%">
+									<tr><td><font class="btxt11bk"><b>Note: </b></font><font class="txt11bk">We may publish your e-mail in our best posts section in Centers and in Discussions. If you do not wish to see your message published, please let us know in your e-mail.</font></td></tr>
+								</table>
+							</td>
+							<td width="2" height="2" bgcolor="#cc9900"><img src="/images/spacer/sp.gif" width="2" height="2"></td>
+						</tr>
+						<tr><td width="401" height="2" colspan="3" bgcolor="#cc9900"><img src="/images/spacer/sp.gif" width="2" height="1">
+						</td></tr>
+					</table><p>
+					<table border="0" cellpadding="0" cellspacing="0" width="401">
+						<tr>
+							<td width="9" height="9" bgcolor="#cc9900"><img src="/images/cooltools/y_md_curvetl.gif"></td>
+							<td width="383" height="9" bgcolor="#cc9900"><font class="btxt12wh"><b>COMPANY HEADQUARTERS</b></font></td>
+							<td width="9" height="9"><img src="/images/cooltools/y_md_curvetr.gif"></td>
+						</tr>
+						<tr><td colspan="3">
+							<table border="0" cellpadding="10" cellspacing="0" align="center" width="100%">
+								<tr><td><font class="btxt11bk">Company Headquarters</font><br>
+								<font class="txt11bk">HealthCentral.com<br>
+								<GEO TYPE="US">6005 Shellmound St., Suite 250<br>
+								Emeryville, CA 94608</GEO><br>
+								Phone: 510.250.2500<br>
+								E-mail:</font> <a href="mailto:communications@healthcentral.com" class="lnku11bl">communications@healthcentral.com</a></font><p><a href="/aboutus/companyoverview/directions.cfm" class="lnku11bl"><b>Driving Directions</b></a><p>
+<font class="btxt11bk">Investor Relations</font><BR>
+<font class="txt11bk">Diane Jankiewicz<BR>
+Manager of Investor Relations and Shareholders Relations<BR>
+HealthCentral.com<BR>
+Phone: 510.250.2658<BR>
+<a href="mailto:diane.jankiewicz@healthcentral.com">diane.jankiewicz@healthcentral.com</a><BR>
+<a href="http://www.ir.healthcentral.com">www.ir.healthcentral.com</a>
+</font>
+<P>
+<font class="btxt11bk">Press Contact</font><BR>
+<font class="txt11bk">Melanie Hilario<BR>
+HealthCentral.com<BR>
+Phone: 510.250.3806<BR>
+<a href="mailto:melanie.hilario@healthcentral.com">melanie.hilario@healthcentral.com</a>
+</font>
+								</td></tr>
+							</table>
+						</td></tr> -->
+					<table border="0" cellpadding="0" cellspacing="0" width="401">
+						<tr><td colspan="3">
+							<table border="0" cellpadding="10" cellspacing="0" align="center" width="100%">
+								<tr><td><font class="txt11bk">Send us your comments about the Site: <br><a href="mailto:comments@healthcentral.com" class="lnku11bl">comments@healthcentral.com</a></font><p>
+
+<font class="txt11bk">Partner with Healthcentral.com: <br><a href="mailto:partner@healthcentral.com" class="lnku11bl">partner@healthcentral.com</a></font><p>
+
+<font class="txt11bk">Advertise to our targeted audience: <br><a href="mailto:advertising@healthcentral.com" class="lnku11bl">advertising@healthcentral.com</a></font><p>
+
+<font class="txt11bk">For Technical Support: <br><a href="mailto:webmaster@healthcentral.com" class="lnku11bl">webmaster@healthcentral.com</a></font><p>
+
+<font class="txt11bk">To license content: <br><a href="mailto:license@healthcentral.com" class="lnku11bl">license@healthcentral.com  </a></font><br><font class="txt11bk">Is there any content you would license?</font><p>
+
+<font class="txt11bk">For information about our affiliate program: <br><a href="mailto:affmgr@healthcentral.com" class="lnku11bl">affmgr@healthcentral.com</a></font><p>
+
+<font class="txt11bk">To contact The People's Pharmacy: <br><a href="mailto:pharmacy@healthcentral.com" class="lnku11bl">pharmacy@healthcentral.com</a></font><p>
+
+<font class="txt11bk">To contact Dr. Dean Edell: </font><br><a href="mailto:askdrdean@healthcentral.com" class="lnku11bl">askdrdean@healthcentral.com</a><br> <font class="txt11bk"><i>Due to the large number of submissions, only a few questions will be
+addressed on air. Dr. Edell does not respond directly to emailed questions.  Please feel free to search Healthcentral.com for information.</i></font><p>
+
+
+
+<!-- <font class="txt11bk">To contact Dr. Dean Edell: <br><a href="mailto:askdrdean@healthcentral.com" class="lnku11bl">askdrdean@healthcentral.com</a></font><p> -->
+
+								</td></tr>
+							</table>
+						</td></tr>
+					</table>
+				</td></tr>
+			</table>
+					
+
+			</td>
+			<td width="3" bgcolor="#FFFFFF">&nbsp;</td>
+		</tr>
+	</table><br>
+	</td>
+	<td width="5"><img src="/images/spacer/spacer1x1.gif" width="1" height="1"></td>
+	<td width="190" bgcolor="#FFFFFF" valign="top">
+
+	
+      <table width="120" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+		
+        <tr> 
+          <td bgcolor="#FFFFFF" colspan="3"><img src="/images/sp.gif" width="1" height="5" border="0"></td>
+        </tr>
+	
+	<tr>
+		<td valign="top" align="right"><img src="/images/spacer/sp.gif" width="5" height="3">
+			
+
+
+
+	
+	
+	  
+	
+
+
+
+ 
+		
+
+	
+
+
+	
+
+
+		
+			
+		
+	
+
+
+	
+
+
+	
+  	  
+
+<SCRIPT LANGUAGE="Javascript" TYPE="text/javascript">
+<!--
+var ap = "408";
+var topics='t00';
+//-->
+</SCRIPT>
+		<CENTER><IMG SRC='/images/adtext.gif'></CENTER>
+	  
+	
+	
+	
+
+
+
+	
+	
+		
+		
+	
+
+
+	<iframe width=122 height=800 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://www.healthscout.com/ads/rm_ad.asp?adtag=www%2Ehealthcentral%2Ecom%2Fap%3D408%40Middle%3Ftopic%3Dt00%26&topic=t00&width=122&height=800"></iframe>
+
+
+
+	
+
+
+
+
+
+			<br><br>
+			
+
+
+
+	
+	
+	  
+	
+
+
+
+ 
+		
+
+	
+
+
+	
+
+
+		
+			
+		
+	
+
+
+	
+
+
+	
+  	  
+
+<SCRIPT LANGUAGE="Javascript" TYPE="text/javascript">
+<!--
+var ap = "408";
+var topics='t00';
+//-->
+</SCRIPT>
+		<CENTER><IMG SRC='/images/adtext.gif'></CENTER>
+	  
+	
+	
+	
+
+
+
+	
+	
+		
+		
+	
+
+
+	<iframe width=122 height=62 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://www.healthscout.com/ads/rm_ad.asp?adtag=www%2Ehealthcentral%2Ecom%2Fap%3D408%40Middle2%3Ftopic%3Dt00%26&topic=t00&width=122&height=62"></iframe>
+
+
+
+	
+
+
+
+
+<br>
+
+
+		  </td>
+      </tr>
+     </table>
+		
+			<br>			
+
+	
+
+
+	
+			
+
+
+
+			<br>			
+
+
+
+
+
+
+	</td>
+
+	</tr>
+</table>
+
+
+
+
+	
+	
+
+	
+		
+
+
+
+
+
+
+<img src="/images/spacer/sp.gif" width="1" height="1" border="0"><br>
+
+
+<table width="775" columns="3" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="775" colspan="3"><img src="/images/spacer/sp.gif" width="1" height="1"></td>
+	</tr>
+
+	<tr>
+		
+		<td width="5" rowspan="3" bgcolor="#FFFFFF" nowrap><img src="/images/spacer/sp.gif" width="5" height="1"></td>
+
+		<td width="160">&nbsp;<!-- remoevd by rt until it is fixed (2002.02.15) -->
+			<!--
+ 
+
+			<table width="160" rows="3" columns="3" border="0" cellspacing="0" cellpadding="0" bgcolor="#99CCFF"> 
+		
+				<tr>
+					<td width="11" height="20" valign="top" align="left"><img src="/images/curves/lt_bl_curvetl.gif" width="11" height="12" border="0" align="top"></td>
+					<td width="138" height="20"><font class="btxt12bk"><b>POLL</b></font></td>
+					<td width="11" height="20" valign="top" align="right"><img src="/images/curves/lt_bl_curvetr.gif" width="11" height="12" border="0" align="top"></td>
+				</tr>
+				<tr><form action="/news/newspoll/VoteResults.cfm" method="get">
+					<td width="11" rowspan="4"><img src="/images/spacer/sp.gif" width="1" height="1" border="0"></td>
+					<td >
+					<font class="txt10bk"><a href="/news/newspoll/newspoll.cfm">If you were to travel to Europe next week, would you eat beef, or avoid it because of the mad cow disease scare? 
+
+
+</a></font>
+					</td>
+					<td width="11" rowspan="4"><img src="/images/spacer/sp.gif" width="1" height="1" border="0"></td>					
+				</tr>
+				<tr>
+					<td  height="3"><img src="/images/spacer/sp.gif" width="1" height="1" border="0"></td>
+				</tr>
+				<tr>
+					<td >
+					<input type="radio" name="vote_news_beefscare101" value="YesIdeatbe1"> Yes, I'd eat beef<br> <input type="radio" name="vote_news_beefscare101" value="Nowouldntt2"> No, wouldn't touch it<br> <input type="radio" name="vote_news_beefscare101" value="Maybedepen3"> Maybe, depends on the country<br> 
+
+
+					</td>
+				<tr>
+					<td  height="3"><img src="/images/spacer/sp.gif" width="1" height="1" border="0"></td>
+				</tr>
+				<tr>
+					<td width="11" height="26" valign="bottom" align="left"><img src="/images/curves/lt_bl_curvebl.gif" width="11" height="12" border="0" align="top"></td>
+					<td  height="26" valign="top"><input type="image" name="voteselected" src="/images/buttons/bu_vote.gif" width=49 height=23 alt="Vote" border="0">
+					<br>
+					<a href="/news/newspoll/voteresults.cfm">Click here</a> to see the result of this poll without voting.
+					</form></td>
+					<td width="11" height="26" valign="bottom" align="right"><img src="/images/curves/lt_bl_curvebr.gif" width="11" height="12" border="0" align="top"></td>
+				</tr>
+			</table>
+			
+	-->
+		</td>		
+  		<td width="5" bgcolor="#FFFFFF"><img src="/images/spacer/sp.gif" width="5" height="1"></td> 
+		
+		<td width="604">
+		     <TABLE border="0" cellspacing="0" cellpadding="0" width="593">
+
+<TR>
+<TD COLSPAN=3>
+
+	
+
+
+<SCRIPT LANGUAGE="Javascript" TYPE="text/javascript">
+<!--
+var ap = "408";
+var topics='t00';
+//-->
+</SCRIPT>
+<SCRIPT TYPE='text/javascript' LANGUAGE="JavaScript1.1" SRC="http://ads.mdchoice.com/RealMedia/ads/adstream_jx.cgi/www.healthcentral.com/ap=408@Bottom2?topic=t00&"></SCRIPT>
+
+
+</TD></TR>
+<tr><td colspan=3><img src='/images/spacer/sp.gif' height='5'></td></tr>
+
+       			<TR> 
+					<td width="468" valign="middle" align="center"><img src="/images/spacer/sp.gif" width="5" height="3"><br>
+						
+						
+							
+
+
+
+	
+	
+	  
+	
+
+
+
+ 
+		
+
+	
+
+
+	
+
+
+		
+			
+		
+	
+
+
+	
+
+
+	
+  	  
+		
+		<CENTER><IMG SRC='/images/adtext.gif'></CENTER>
+		
+	  
+	
+	
+	
+
+
+
+	
+	
+		
+		
+	
+
+
+	<iframe width=470 height=62 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://www.healthscout.com/ads/rm_ad.asp?adtag=www%2Ehealthcentral%2Ecom%2Fap%3D408%40Bottom%3Ftopic%3Dt00%26&topic=t00&width=470&height=62"></iframe>
+
+
+
+	
+
+
+
+
+
+						
+					</td>
+					<td width="5"><img src="/images/spacer/sp.gif" width="5" height="67"></td>
+					<td width="131" valign="middle" align="right">
+						
+						
+							
+
+
+
+	
+	
+	  
+	
+
+
+
+ 
+		
+
+	
+
+
+	
+
+
+		
+			
+		
+	
+
+
+	
+
+
+	
+  	  
+		
+		<CENTER><IMG SRC='/images/adtext.gif'></CENTER>
+		
+	  
+	
+	
+	
+
+
+
+	
+	
+		
+		
+	
+
+
+	<iframe width=122 height=62 hspace=0 vspace=0 frameborder=0 scrolling=no src="http://www.healthscout.com/ads/rm_ad.asp?adtag=www%2Ehealthcentral%2Ecom%2Fap%3D408%40BottomRight%3Ftopic%3Dt00%26&topic=t00&width=122&height=62"></iframe>
+
+
+
+	
+
+
+
+
+
+						
+				  </td>
+		        </TR>
+			</TABLE>
+			<br><br>
+			
+
+					
+			<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="604" bgcolor="#FFFFFF" valign="top" align="center">
+						<table border="0" cellspacing="2" cellpadding="0" align="center">
+							<tr>
+								<td valign="middle" align="right"><A HREF="http://www.hon.ch/HONcode/Conduct.html?HONConduct345456"><img src="/Images/common/coc_cobs.gif" width="45" height="50" border="0"></A></td>
+								<td valign="middle"><font  face="Verdana, Arial, Helvetica, sans-serif" size="-2"><span class="txt10bk">We subscribe to the <A HREF="http://www.hon.ch/HONcode/Conduct.html?HONConduct345456">HONcode principles</A><BR> of the  <A HREF="http://www.hon.ch/">Health On the Net Foundation</A></span></font></td><td>&nbsp;&nbsp;&nbsp;</td>
+							</tr>
+						</table>
+						<br>
+					</td>
+				</tr>
+
+				<tr>
+				    <td colspan=2><font class='txt10bk'>Please visit our partner sites:<br>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.depressionissues.com' target='_blank' class='honcodeLink'>www.depressionissues.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.digestivefacts.com' target='_blank' class='honcodeLink'>www.digestivefacts.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.alzheimersissues.com' target='_blank' class='honcodeLink'>www.alzheimersissues.com</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.bipolardepressioninfo.com' target='_blank' class='honcodeLink'>www.bipolardepressioninfo.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.liverfacts.com' target='_blank' class='honcodeLink'>www.liverfacts.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.allergy-information.com' target='_blank' class='honcodeLink'>www.allergy-information.com</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.myallergies.org' target='_blank' class='honcodeLink'>www.myallergies.org</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.arthritisIssues.com' target='_blank' class='honcodeLink'>www.arthritisIssues.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.diabeticdiets.org' target='_blank' class='honcodeLink'>www.diabeticdiets.org</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.diabeticlife.org' target='_blank' class='honcodeLink'>www.diabeticlife.org</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.menssexhealth.com' target='_blank' class='honcodeLink'>www.menssexhealth.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.erectilefacts.com' target='_blank' class='honcodeLink'>www.erectilefacts.com</a><br>
+
+
+				  </td>
+				</tr>
+
+			</table>
+				
+			<TABLE border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td><img src="/images/spacer/sp.gif" width="1" height="1"></td>
+					<td width="604" height="37" bgcolor="#FFFFFF" valign="top" align="center">		
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td align="CENTER"><font  face="Verdana, Arial, Helvetica, sans-serif" size="-2"><span class="txt10bk">By using this service, you accept our <A href="/terms/terms.cfm">Terms of Use </A>. Please read them. The consumer health information on HealthCentral.com is for informational purposes only and is not a substitute for medical advice or treatment for any medical conditions. You should promptly seek professional medical care if you have any concern about your health, and you should always consult your physician  before starting a fitness regimen.</font><br><br></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		    </TABLE>  
+		</td>
+	</tr>
+</table>
+
+<SPAN ID="test" STYLE="position: absolute;"></SPAN>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+var NS4 = (document.layers) ? 1 : 0;
+var IE4 = (document.all) ? 1 : 0;
+
+function clearEl() {}
+
+// -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!--
+
+var style = ((NS4 && document.test) || IE4) ? 1 : 0;
+
+var timerID = null;
+
+var padding = 3; // < 4 recommended
+var bgcolor = "#ffffff";
+
+var borWid = 2; // for no border, assign null
+var borCol = "#B7B8C9";
+var borSty = "solid";
+
+var str = "<STYLE TYPE='text/css'>";
+str += ".tooltip {";
+str += "position: absolute;";
+str += "visibility: hidden;";
+str += "left: 0; top: 0;";
+if (borWid > 0) { // if a border is specified
+  str += "border-width: " + borWid + ";";
+  str += "border-color: " + borCol + ";";
+  str += "border-style: " + borSty + ";";
+}
+if (NS4) {
+  if (borWid > 0 && padding <= 3) {
+    str += "padding: 0;";
+    str += "layer-background-color: " + bgcolor + ";";
+  } else if (borWid > 0 && padding > 3) {
+    str += "padding: " + (padding - 3) + ";";
+    str += "background-color: " + bgcolor + ";";
+  } else if (borWid == 0) {
+    str += "padding: " + padding + ";";
+    str += "layer-background-color: " + bgcolor + ";";
+  }
+} else {
+  str += "padding: " + padding + ";";
+  str += "background-color: " + bgcolor + ";";
+}
+str += "}";
+str += "</STYLE>";
+
+if (style) {
+  document.write(str);
+  if (NS4) window.onload = init;
+}
+makeEl("drdean", 115, "<font face=verdana size=-2><B>News from America's Doctor </b></font>");
+makeEl("nutrition", 115, "<font face=verdana size=-2><B>Fit or Fat with Covert Bailey </b></font>");
+makeEl("druginfo", 100, "<font face=verdana size=-2><B>From People's Pharmacy and RxList </b></font>");
+makeEl("althealth", 115, "<font face=verdana size=-2><B>From acupunture to yoga </b></font>");
+makeEl("topnews", 115, "<font face=verdana size=-2><B>Latest health headlines </b></font>");
+makeEl("topiccenters", 115, "<font face=verdana size=-2><B>In-depth info on health conditions & topics </b></font>");
+makeEl("communities", 115, "<font face=verdana size=-2><B>Join the conversation!</b></font>");
+makeEl("cooltools", 115, "<font face=verdana size=-2><B>Take a health quiz!</b></font>");
+makeEl("columnists", 115, "<font face=verdana size=-2><B>Search tips, humor, future of health care</b></font>");
+makeEl("bestdoctors", 115, "<font face=verdana size=-2><B>Top experts answer your questions</b></font>");
+makeEl("library", 115, "<font face=verdana size=-2><B>Look up drugs, herbs, diseases </b></font>");
+makeEl("myhealth", 115, "<font face=verdana size=-2><B>Personalize your health experience</b></font>");
+function init() {
+  setTimeout("window.onresize = redo", 1000);
+}
+
+function redo() {
+  window.location.reload();
+}
+
+function makeEl(id, width, code) {
+  if (!style) return;
+  var str = "<STYLE TYPE='text/css'>";
+  str += "#" + id + " {";
+  str += "width: " + width + ";";
+  str += "}";
+  str += "</STYLE>";
+  str += "<DIV CLASS='tooltip' ID='" + id + "'>" + code + "</DIV>";
+  document.write(str);
+}
+
+function displayEl(left, top) {
+  if (NS4) document.releaseEvents(Event.MOUSEMOVE);
+  document.onmousemove = null;
+  var whichEl = (NS4) ? document[active] : document.all[active].style;
+  whichEl.left = left;
+  whichEl.top = top;
+  whichEl.visibility = (NS4) ? "show" : "visible";
+}
+
+function clearEl() {
+  if (!style) return;
+  var whichEl = (NS4) ? document[active] : document.all[active].style;
+  whichEl.visibility = (NS4) ? "hide" : "hidden";
+  active = null;
+  if (timerID) clearTimeout(timerID);
+  if (NS4) document.releaseEvents(Event.MOUSEMOVE);
+  document.onmousemove = null;
+}
+
+function activateEl(id, e) {
+  if (!style) return;
+  active = id;
+  if (NS4) document.captureEvents(Event.MOUSEMOVE);
+  document.onmousemove = checkEl;
+  checkEl(e);
+}
+
+function checkEl(e) {
+  if (timerID) clearTimeout(timerID);
+  var left = (NS4) ? e.pageX : event.clientX + document.body.scrollLeft;
+  var top = (NS4) ? e.pageY + 20 : event.clientY + document.body.scrollTop + 20;
+  timerID = setTimeout("displayEl(" + left + ", " + top + ")", 100);
+}
+
+// -->
+</SCRIPT>
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	</BODY></HTML>
+	

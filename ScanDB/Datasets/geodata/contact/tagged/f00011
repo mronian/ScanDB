@@ -1,0 +1,757 @@
+<DOC>
+<DOCNO>f00011</DOCNO>
+<DOCHDR>http://www.miami.com/mld/miamiherald/contact_us</DOCHDR>
+
+
+
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+
+var rm = false;
+
+</script>
+<title>Contact Us -- Herald.com</title>
+<link rel='stylesheet' type='text/css' href='/css/palette/miamiherald/en/global.css'/><script type="text/javascript" language="javascript">
+
+_krdDartOrd = new Date().getTime();
+
+_krdDartInc = 0;
+var navReady = false;
+var toolsReady = false;var onLoadScript="";function Browser() {var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+// I have disabled the following line, but something similar might be useful later,
+// but launching a popup window is more polite than this alert.
+//if (!b) alert(''Unidentified browser./nThis browser is not supported,'');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.ns=(this.b=="ns" && this.v>=4);
+this.ns4=(this.b=="ns" && this.v==4);
+this.ns6=(this.b=="ns" && this.v==5);
+this.ie=(this.b=="ie" && this.v>=4);
+this.ie4=(this.version.indexOf('MSIE 4')>0);
+this.ie4up = (this.ie && this.v>= 4);
+this.ns5up = (this.ns && this.v>= 5);
+this.ie5=(this.version.indexOf('MSIE 5')>0);
+this.ie5up = (this.ie5);
+this.ie55=(this.version.indexOf('MSIE 5.5')>0);
+this.opera=(this.b=="opera");
+this.def=(this.ie||this.dom);var ua=navigator.userAgent.toLowerCase();
+this.mac = (ua.indexOf("mac")!=-1);if (ua.indexOf("win")>-1) this.platform="win32";
+else if (ua.indexOf("mac")>-1) this.platform="mac";
+else this.platform="other";
+}
+var is = new Browser();
+// tiny extra css. these are ONLY used by old browsers.
+// VAST majority of users will NEVER request these files.
+// Even NS4 is around 7% of market and falling
+if (is.ns4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/miamiherald/en/browser/ns4.css'>\n";
+document.write(css);
+}
+if (((is.ns4)||(is.ie4))&&( is.mac)) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/miamiherald/en/browser/ns4mac.css'>\n";
+document.write(css);
+}
+if (is.ie4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/miamiherald/en/browser/ie4.css'>\n";
+document.write(css);
+}
+
+function LayerObject(divId) {
+this.name = divId;
+if (is.ns4) this.ob = eval("document." +divId);
+else if (is.ie4) this.ob = document.all(divId);
+else this.ob = document.getElementById(divId);
+this.x = 0;
+this.y = 0;
+this.width = this.getWidth();
+this.height = this.getHeight();
+}
+LayerObject.prototype.px = (is.version>=5)?"px":"";
+LayerObject.prototype.hideSyntax = (is.ns4)? "hide":"hidden";
+LayerObject.prototype.showSyntax = "visible";// NS4::  Unbelievable, but document.layername.document.imgname works for img-in-layer-in document
+// and it works for img in layer in table in document.
+// but it doesnt work for img in layer in table in table in document.
+// Maybe a workaround exists, but it seems unlikely at this point.
+// The images MUST therefore be nested only one deep....
+LayerObject.prototype.getInlineLeft = function() {
+if (is.ns4) return this.ob.pageX;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var xPos = 0;
+var yPos = 0;
+while (elem.offsetParent != null) {
+xPos += elem.offsetLeft;
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) xPos += 2;
+return xPos;
+}
+else return (this.ob.offsetLeft + document.body.offsetLeft);
+}
+
+LayerObject.prototype.getInlineTop = function() {
+if (is.ns4) return this.ob.pageY;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var yPos=0;
+while (elem.offsetParent != null) {
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) yPos += 2;
+return yPos;
+}
+else return (this.ob.offsetTop+ document.body.offsetTop);
+}
+
+//getWidth and getHeight works for both inline and positioned divs.
+LayerObject.prototype.getWidth = function () {
+if (is.ns4) return this.ob.clip.width;
+else if (is.opera) return this.ob.style.pixelWidth;
+else return this.ob.offsetWidth;
+}
+LayerObject.prototype.getHeight = function () {
+if (is.ns4) return this.ob.clip.height;
+else if (is.opera) return this.ob.style.pixelHeight;
+else return this.ob.offsetHeight;
+}
+LayerObject.prototype.hide = function() {
+if (is.ns4) this.ob.visibility = this.hideSyntax;
+else this.ob.style.visibility = this.hideSyntax;
+}
+LayerObject.prototype.show = function() {
+if (is.ns4) this.ob.visibility = this.showSyntax;
+else this.ob.style.visibility = this.showSyntax;
+}
+LayerObject.prototype.moveLayerTo = function(toX, toY) {
+this.x = toX;
+this.y = toY;
+}
+LayerObject.prototype.updateLayer = function() {
+if (is.ns4) {
+this.ob.left = Math.round(this.x) + this.px;
+this.ob.top = Math.round(this.y)+ this.px ;
+}
+else {
+this.ob.style.left = Math.round(this.x) + this.px;
+this.ob.style.top = Math.round(this.y) + this.px;
+}
+}
+//-----------------
+function roll(divName, imgName, which) {
+var suffix = (which==1)?"on":"off"
+if ((is.ns4)&&(divName!=0)) {
+var imgObject = eval("document." + divName +".document.images['"+imgName +"']");
+imgObject.src = eval(imgName + "_" + suffix + ".src");
+}
+else {
+document.images[imgName].src = eval(imgName + "_" + suffix + ".src");
+}
+}
+
+function init() {
+if (onLoadScript) eval(onLoadScript);
+}
+
+// Workaround for the netscape resize problem --
+// namely, on resize ns looses div positioning and
+// styles from css files.
+// This checks to see if the window''s dimensions have
+// actually changed (because Netscape often fires a
+// false onResize event when it forms scrollbars);
+// if the dimensions have changed, page is reloaded
+function resizefix(){
+if((document.resizeFix.initWidth != window.innerWidth) ||
+(document.resizeFix.initHeight != window.innerHeight))
+{
+document.location = document.location;
+}
+}
+
+// This code creates a new object with properties
+// to hold the current window width & height to be
+// used in the event of a netscape resize
+document.resizeFix = new Object();
+if(is.ns4){
+document.resizeFix.initWidth = window.innerWidth;
+document.resizeFix.initHeight = window.innerHeight;
+window.onresize=resizefix;
+}
+
+function initMenus(){ //alert("DEBUG = not use nav channel") ;
+}
+
+
+
+function showResults(siteSurveyKey) {
+var url="/mld/templates/contentModules/poll-results-popup.jsp"+ "?siteSurveyKey=" + siteSurveyKey;
+window.open(url, 'Title');
+}
+
+function openWin(URL) {
+aWindow = window.open(URL,
+'thewindow','width=500,height=400,resizable=yes,scrollbars=yes');
+}
+function getSite(){
+foundSite = false;
+site=document.location.hostname;
+endPos=site.indexOf(".com");
+if (endPos>= 1) {
+foundSite = true;
+site = site.substr(0, endPos);
+startPos = site.lastIndexOf(".");
+site = site.substr(startPos + 1);
+}
+return site;
+}
+function getPublication(){
+publication=document.location.pathname;
+startPos=publication.indexOf("/mld/");
+publication=publication.substr(startPos+5);
+endPos=publication.indexOf("/");
+publication=publication.substr(0,endPos);
+return publication;
+}
+function openSlideshow(url,width,height) {
+y=Math.floor((screen.availHeight-height)/2);
+x=Math.floor((screen.width-width)/2);
+window.open(url,'slideshow','width='+width+',height='+height+',top='+y+',left='+x+',scrollbars=yes,resizable=yes').focus();
+}
+
+
+
+</script>
+</head>
+<body class="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CDS : SDP2.5.0_full_02072005_100000 : production --><table width="768" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:5px;">
+<tr><td class="header1">
+
+
+<a HREF="http://subscriptions.herald.com/"><img SRC="/images/logos/site/miami/miamiherald/mediapartners/sm_logo_miamiherald.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a>
+
+
+
+</td><td class="header2">
+<a href="/"><img src="/images/logos/site/miami/miamiherald/site_logo_340x60.gif" width="340" height="60" alt="" hspace="0" vspace="0" border="0"/></a>
+</td><td class="header3">
+
+
+
+<a href="http://weather.herald.com"><img src="http://banners.wunderground.com/banner/krd_cond/language/www/US/FL/Miami.gif" alt="Weather" hspace="0" vspace="0" border="0"></a>
+<br>
+
+
+
+<a href="http://weather.herald.com">Complete Forecast</a>
+
+
+
+</td><td class="header4">
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/miamiherald.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;dcopt=ist;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/miamiherald.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109852767557?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/miamiherald.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109852767557?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+</td></tr></table>
+
+
+
+
+
+<script id="search_box_center_jsp_script" language="javascript" type="text/javascript">
+function searchFormSubmit(form) {
+if (form.searchSelect[1].checked == true) {
+window.location = "http://www.newslibrary.com/nlsearch.asp?forceTheme=RealCities&s_site=miami&search_mode=all&action=search&date_mode=year&year=last+180+days&sort=d%3Ah&nitems=10&region=mh&dbquery=" + form.query.value;
+return false;
+}
+return true;
+}
+</script><table cellspacing="0" cellpadding="0" border="0" width="768"><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr><tr><td align="center" class="navbg1">
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/miamiherald.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/miamiherald.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109852767558?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/miamiherald.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109852767558?" BORDER="0" ></A>
+</NOSCRIPT>
+
+</td></tr><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr></table><table cellspacing="0" cellpadding="0" border="0" width="768">
+<form action="http://www.miami.com/mld/miamiherald/search/search_results.htm" method="get" name="SearchForm_top" onsubmit="return searchFormSubmit(this)">
+<input type=hidden name="pubName" value="miamiherald">
+<input type=hidden name="orderBy" value="date">
+<input type=hidden name="pageStart" value="1">
+
+
+<input type="hidden" name="sitesToSearch" value="miamiherald,realcities">
+
+
+
+<input type=hidden name="pageSize" value="10">
+<input type=hidden name="fieldsToSearch" value="HEADLINE,FORSEARCH,LEAD,BYLINE">
+<input type=hidden name="queryType" value="all">
+<tr style="background-color:#f2f2f2;">
+<td class="newsearch">
+
+<b>Search</b>&nbsp;
+
+
+<input name="searchSelect" value="article" type="radio" checked>Recent News&nbsp;
+
+
+
+<input name="searchSelect" value="archives" type="radio">Archives&nbsp;
+
+
+
+
+<input name="searchSelect" value="web" type="radio">Web&nbsp;&nbsp;
+
+
+
+<b>for&nbsp;&nbsp;</b><input name="query" size="25" maxlength="256" type="text">&nbsp;&nbsp;<input value="Go" type="submit">
+
+</td><script language="javascript" type="text/javascript">
+document.write('<td class="newregbox">');
+if (rm) {
+document.write('Welcome <b>' + rname + '</b><br>');
+
+document.write('	<a href="https://secure.miami.com/listit/myclassifieds/">My Classifieds</a>&nbsp;|&nbsp;');
+
+document.write('<a href="https://registration.miami.com/reg/myAccount.do">My Account</a>&nbsp;|&nbsp;');
+document.write('<a href="https://registration.miami.com/reg/logout.do">Sign Out</a>');
+} else {
+document.write('	Welcome <b>Guest</b><br />');
+document.write('	<a href="https://registration.miami.com/reg/createAccount.do">Sign Up</a>&nbsp;|&nbsp;<a href="https://registration.miami.com/reg/login.do">Sign In</a>&nbsp;|&nbsp;');
+document.write('	<a href="https://registration.miami.com/reg/memberBenefits.do">Member Benefits</a>');
+}
+document.write('</td>');
+</script>
+</tr></form>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="columndiv" width="134"><img src="/images/common/spacer.gif" width="134" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="472"><img src="/images/common/spacer.gif" width="472" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="160"><img src="/images/common/spacer.gif" width="160" height="1"></td></tr><tr>
+<td class="leftrail" valign="top" align="center" width="134">
+
+
+
+<!-- classifieds -->
+<div style="border-left:4px solid #2C4C94; text-align:left; margin-top:-2px;">
+<div class="contentnav" style="border-top:1px solid #cccccc;"><img src="http://www.miami.com/multimedia/miami/images/miami_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/miamiherald/classifieds/employment/"><B>Jobs</B></A></div>
+<div class="contentnav"><img src="http://www.miami.com/multimedia/miami/images/miami_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/miamiherald/classifieds/automotive/"><B>Cars</B></A></div>
+<div class="contentnav"><img src="http://www.miami.com/multimedia/miami/images/miami_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/miamiherald/classifieds/real_estate/"><B>Real Estate</B></A></div>
+<div class="contentnav"><img src="http://www.miami.com/multimedia/miami/images/miami_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.apartments.com/herald"><B>Apartments</B></A></div>
+<div class="contentnav"><img src="http://www.miami.com/multimedia/miami/images/miami_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.shoplocal.com/miamiherald/new_user_entry.aspx?CityStateZip=33125&AdRef=link04"><B>Local Shopping</B></A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/miamiherald/new_user_entry.aspx?CityStateZip=33125&AdRef=link04">Find Sales &amp; Deals</A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/miamiherald/new_user_entry.aspx?CityStateZip=33125&AdRef=link04">Shop Local Stores</A><BR /></div>
+<div class="contentnav"><img src="http://www.miami.com/multimedia/miami/images/miami_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/miamiherald/classifieds/"><B>All Classifieds</B></A></div>
+<div class="contentnav"><img src="http://www.miami.com/multimedia/miami/images/miami_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/miamiherald/classifieds/personals/"><B>Personals</B></A></div>
+</div>
+
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0><TR><TD>
+
+<!-- site nav -->
+<div class="navtitlebar"></div>
+<div class="contentnav"><A HREF="/mld/miamiherald/news/" title="Looking for more news such as 5-minute Herald, local news, Action Line or Lottery? Please click here"><B>News</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/miamiherald/news/obituaries/">Obituaries</A></div>
+<div class="contentnav"><A HREF="/mld/miamiherald/sports/" title="Click here for more sports including Dolphins, Canes, Heat, Marlins and more"><B>Sports</B></A></div>
+<div class="contentnav"><A HREF="/mld/miamiherald/entertainment/" title="Comics, Movies, Dining, Music, Stage and more"><B>Entertainment</B></A></div>
+<div class="contentnav"><A HREF="/mld/miamiherald/business/"><B>Business</B></A></div>
+<div class="contentnav"><A HREF="/mld/miamiherald/living/"><B>Tropical Life &amp; Home</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/miamiherald/living/health/">Health</A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/miamiherald/living/travel/">Travel</A> </div>
+<div class="contentnav"><A HREF="/mld/miamiherald/news/opinion/"><B>Opinion</B></A><BR />				
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/miamiherald/news/columnists/" title="Dave Barry, Carl Hiaasen, Leonard Pitts and more">Columnists</A></div>
+<div class="contentnav"><A HREF="/mld/miamiherald/entertainment/visitors_guide/"><B>Visitor's Guide</B></A></div>
+
+</TD></TR></TABLE>
+
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No.6,393,479B1 & 6,766,370. INFO:http://websidestory.com/privacy-->
+<script language="javascript">
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0103u";hbx.gn="ehg-knightridder.hitbox.com";
+
+
+function _hbxStrip(a){
+ a = a.split("|").join("");
+ a = a.split("&").join("");
+ a = a.split("'").join("");
+ a = a.split("#").join("");
+ a = a.split("$").join("");
+ a = a.split("%").join("");
+ a = a.split("^").join("");
+ a = a.split("*").join("");
+ a = a.split(":").join("");
+ a = a.split("!").join("");
+ a = a.split("<").join("");
+ a = a.split(">").join("");
+ a = a.split("~").join("");
+ a = a.split(";").join("");
+ a = a.split(" ").join("+");
+ a = a.split("++").join("+");
+ return a;    
+}
+
+//KRD: Page Name and Content Category
+var _hbxPath = document.location.pathname;
+var _hbxPN = _hbxPath.substring((_hbxPath.lastIndexOf("/"))+1);
+var _hbxArticleID = _hbxPN.replace('.htm','');
+if (_hbxArticleID) _hbxArticleID = ' - ' + _hbxArticleID;
+if (_hbxArticleID.indexOf(".") >= -1) _hbxArticleID = "";
+_hbxPN = _hbxStrip(document.title + _hbxArticleID);
+var _hbxMLC = _hbxPath.replace(_hbxPath.substring((_hbxPath.lastIndexOf("/"))+1),'');
+_hbxMLC = "/" + document.domain + _hbxMLC.replace('/mld','');
+
+//KRD: Custom Metric
+if (_hbxArticleID) var _hbxArticleID = _hbxPN; else _hbxArticleID= "";
+
+//BEGIN EDITABLE SECTION
+//CONFIGURATION VARIABLES
+hbx.acct="DM541105J6DD79EN3;DM55013049AA";//ACCOUNT NUMBER(S)
+hbx.pn=_hbxPN;//PAGE NAME(S)
+hbx.mlc=_hbxMLC;//MULTI-LEVEL CONTENT CATEGORY
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg="";//VISITOR SEGMENTATION
+hbx.fnl="";//FUNNELS
+
+//CAMPAIGNS
+hbx.cmp="";//CAMPAIGN ID
+hbx.cmpn="";//CAMPAIGN ID IN QUERY
+hbx.dcmp="";//DYNAMIC CAMPAIGN ID
+hbx.dcmpn="";//DYNAMIC CAMPAIGN ID IN QUERY
+hbx.dcmpe="";//DYNAMIC CAMPAIGN EXPIRATION
+hbx.dcmpre="";//DYNAMIC CAMPAIGN RESPONSE EXPIRATION
+hbx.hra="";//RESPONSE ATTRIBUTE
+hbx.hqsr="";//RESPONSE ATTRIBUTE IN REFERRAL QUERY
+hbx.hqsp="";//RESPONSE ATTRIBUTE IN QUERY
+hbx.hlt="";//LEAD TRACKING
+hbx.hla="";//LEAD ATTRIBUTE
+hbx.gp="";//CAMPAIGN GOAL
+hbx.gpn="";//CAMPAIGN GOAL IN QUERY
+hbx.hcn="";//CONVERSION ATTRIBUTE
+hbx.hcv="";//CONVERSION VALUE
+hbx.cp="null";//LEGACY CAMPAIGN
+hbx.cpd="";//CAMPAIGN DOMAIN
+
+//CUSTOM VARIABLES
+hbx.ci="";//CUSTOMER ID
+hbx.hc1=_hbxArticleID;//CUSTOM 1
+hbx.hc2="";//CUSTOM 2
+hbx.hc3="";//CUSTOM 3
+hbx.hc4="";//CUSTOM 4
+hbx.hrf="";//CUSTOM REFERRER
+hbx.pec="";//ERROR CODES
+
+//INSERT CUSTOM EVENTS
+
+//END EDITABLE SECTION
+
+//REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
+</script>
+<script language="javascript1.1" defer src="http://www.miami.com/html/miamiherald/hbx.js"></script>
+<!--END WEBSIDESTORY CODE-->
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td>
+<td class="centerrail" valign="top" align="center" width="472">
+
+
+
+
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="2" width="97%">
+<tr><td valign="middle"><a href="/mld/miamiherald/" class="related">Back to Home</a>&nbsp;&gt;&nbsp;
+</td><td align="right" class="byline">Thursday, Mar 03, 2005</td></tr><tr><td colspan="2" align="center" bgcolor="#ffffff"> <img src="/images/common/spacer.gif" width="1" height="1" /><br></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="97%">
+<tr> <td align="center" class="pagetitle" width="100%">Contact Us</td><td align="right" width="1" valign="top"><img src="/images/common/spacer.gif" width="1" height="1" /></td><td align="right"  valign="top">
+
+</td></tr></table><table border="0" cellpadding="0" cellspacing="0" width="97%" align="center">
+<tr><td align="center">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center" bgcolor="#bbbbbb">
+<img src="/images/common/spacer.gif" width="1" height="1" /><br></td></tr><tr><td align="center">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center" bgcolor="#2B4E9D">
+<img src="/images/common/spacer.gif" width="1" height="3" /><br></td></tr></table><img src="/images/common/spacer.gif" width="100%" height="5" /><br></div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td><td><p align="center">
+<b>Miami Herald</b><br />
+305-350-2111 or 1-800-HERALD5 (1-800-437-2535)<br />
+<GEO TYPE="US">One Herald Plaza<br />
+Miami, FL 33132</GEO><br />
+</p>
+<DIV align=center>
+
+<!-- BEGIN CONTACT US -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr> 
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+    <td nowrap class="largetitle" valign="bottom"><b>CONTACT US&nbsp;&nbsp;</b></td>
+    <td width="100%"> 
+      <hr size="1" color="cccccc" width="100%" />
+    </td>
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> Contact the major departments at The Miami Herald, Herald.com and the Real Cities network. <br />
+      <img src="/images/common/spacer.gif"
+
+width="100%" height="8" alt="" border="0" /><br />
+      <img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left" /><b><a href="http://www.miami.com/mld/miamiherald/contact_us/contact_list/">Contact list</a></b> </td>
+  </tr>
+</table>
+<!-- END CONTACT US -->
+<br />
+<br />
+<!-- BEGIN ABOUT US -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr> 
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+
+    <td nowrap class="largetitle" valign="bottom"><b>ABOUT US&nbsp;&nbsp;</b></td>
+    <td width="100%"> 
+      <hr size="1" color="cccccc" width="100%" />
+    </td>
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> All about The Miami Herald, with links to newspaper services online <b>(<a href="http://subscriptions.herald.com/" target="_blank">subscriptions</a>, <a href="http://www.miamiheraldadvertising.com/" target="_blank">advertising</a>, <a href="/mld/miamiherald/classifieds/">classifieds</a>, <a href="http://www.heraldstore.com/" target="_blank">the Herald Store</a>, <a href="http://nieonline.com/miami/" target="_blank">Newspaper in Education</a>, <a href="http://www.nfb.org/newsline1.htm" target="_blank">Newsline for the Blind</a>),</b> as well as a guide to key executives, a history of the Miami Herald, our ethics guidelines and information about the community we serve.<br />
+      <img src="/images/common/spacer.gif"
+
+width="100%" height="8" alt="" border="0" /><br />
+      <img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left" /><b><a href="http://www.miami.com/mld/miamiherald/contact_us/about/">About us</a></b> </td>
+  </tr>
+</table>
+<!-- END ABOUT US -->
+<br />
+<br />
+<!-- BEGIN SEARCH -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr> 
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+    <td nowrap class="largetitle" valign="bottom"><b>SEARCH&nbsp;&nbsp;</b></td>
+    <td width="100%"> 
+      <hr size="1" color="cccccc" width="100%" />
+    </td>
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> Depending on when the story was published, you should search 
+      either the Seven Day Archives or the News Library Archive. If you know the 
+      section and date of publication, you can browse the Seven Day Archives by 
+      date and section. Articles published from 1985 until seven days ago can 
+      be found in the NewsBank Archive. If you are still unable to locate the 
+      story you are searching for, contact our staff for assistance.<br />
+      <img src="/images/common/spacer.gif"
+
+width="100%" height="8" alt="" border="0" /><br />
+      <img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left" /><b><a href="/mld/miamiherald/archives">Search 
+      our Archives</a></b> </td>
+  </tr>
+</table>
+<!-- END SEARCH -->
+<br />
+<br />
+<!-- BEGIN REGISTRATION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr> 
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+    <td nowrap class="largetitle" valign="bottom"><b>REGISTRATION&nbsp;&nbsp;</b></td>
+    <td width="100%"> 
+      <hr size="1" color="cccccc" width="100%" />
+    </td>
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> Register for full access to Herald.com and sign up for e-mail newsletters. <br />
+<img src="/images/common/spacer.gif" width="100%" height="8" alt="" border="0" /><br />
+<img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left" /><b><a href="https://registration.miami.com/reg/createAccount.do">Register</a></b> | <b><a href="https://registration.miami.com/reg/login.do">Login</a></b> | <b><a href="https://registration.miami.com/reg/help.do">Help / FAQ</a></b></td>
+  </tr>
+</table>
+<!-- END REGISTRATION -->
+
+<br />
+<br />
+<!-- BEGIN ADVERTISE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr> 
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+    <td nowrap class="largetitle" valign="bottom"><b>ADVERTISE&nbsp;&nbsp;</b></td>
+    <td width="100%"> 
+      <hr size="1" color="cccccc" width="100%" />
+    </td>
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+  </tr>
+  <tr> 
+    <td colspan="2">Place a display or classified ad in The Miami Herald or on Herald.com.<br />
+      <img src="/images/common/spacer.gif"
+
+width="100%" height="8" alt="" border="0" /><br />
+      <img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left" /><b><a href="http://www.miami.com/mld/miamiherald/contact_us/advertise/">Advertise with us</a></b> </td>
+  </tr>
+</table>
+<!-- END ADVERTISE -->
+<br />
+<br />
+
+
+<!-- BEGIN SUBSCRIBE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr> 
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+    <td nowrap class="largetitle" valign="bottom"><b>SUBSCRIPTIONS&nbsp;&nbsp;</b></td>
+    <td width="100%"> 
+      <hr size="1" color="cccccc" width="100%" />
+    </td>
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> Receive The Miami Herald at your home or office. <br />
+      <img src="/images/common/spacer.gif"
+
+width="100%" height="8" alt="" border="0" /><br />
+      <img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left" /><b><a href="http://subscriptions.herald.com/">Subscribe to The Miami Herald</a></b> </td>
+  </tr>
+</table>
+<!-- END SUBSCRIBE -->
+<br />
+<br />
+
+
+<!-- BEGIN FEEDBACK -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr> 
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+    <td nowrap class="largetitle" valign="bottom"><b>FEEDBACK&nbsp;&nbsp;</b></td>
+    <td width="100%"> 
+      <hr size="1" color="cccccc" width="100%" />
+    </td>
+    <td width="10" rowspan="2"><img src="/images/common/spacer.gif"
+
+width="10" height="1" alt="" border="0" /></td>
+  </tr>
+  <tr> 
+    <td colspan="2">Share your thoughts. Tell us what you think. Ask us a question.<br />
+      <img src="/images/common/spacer.gif"
+
+width="100%" height="8" alt="" border="0" /><br />
+      <img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left" /><b><a href="http://www.miami.com/mld/miamiherald/contact_us/feedback/">Send us your feedback</a></b> </td>
+  </tr>
+</table>
+<!-- END FEEDBACK -->
+<br />
+<br />
+</td><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td></tr></table>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="rightrail" valign="top" align="center" width="160">
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/miamiherald.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/miamiherald.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109852768228?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/miamiherald.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109852768228?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/miamiherald.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/miamiherald.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109852768229?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/miamiherald.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109852768229?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="leftrail" width="134">
+<img src="/images/common/spacer.gif" width="134" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="centerrail" width="100%" align="center">
+<img src="/images/common/spacer.gif" width="450" height="1"/><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/miamiherald.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/miamiherald.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109852768229?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/miamiherald.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109852768229?" BORDER="0" ></A>
+</NOSCRIPT>
+
+<br/><br/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="rightrail" width="160">
+<img src="/images/common/spacer.gif" width="160" height="1"/></td></tr></table>
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="768"><tr><td rowspan="2" valign="top" class="footer"><a href="http://www.realcities.com" target="_blank"><img src="/images/palette/miamiherald/realcities_logo.gif" width="155" height="57" alt="RealCities" border="0"/></a>
+</td><td align="left" class="footer">
+<span class="lightgreylinks"><br><a href="/mld/miamiherald/contact_us/about/">About Herald.com |</a> <a href="/mld/miamiherald/contact_us/rc_sites/">About the Real Cities Network |</a> <a href="/mld/miamiherald/contact_us/terms_of_use/">Terms of Use & Privacy Statement |</a> <a href="http://www.knightridder.com">About Knight Ridder |</a> <a href="/mld/miamiherald/contact_us/copyright/">Copyright  </a><br></span>
+</td></tr></table>
+
+</body>
+</html>
+
+
+

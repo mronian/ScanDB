@@ -1,0 +1,770 @@
+<DOC>
+<DOCNO>f00815</DOCNO>
+<DOCHDR>http://chris.pirillo.com/2006/02</DOCHDR>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+
+     <title>   2006   February ~ Chris Pirillo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Chris Pirillo - Geek, Internet Entrepreneur, Hardware Addict, Software Junkie, Book Author, Once TV Show Host, Technology Enthusiast, Shameless Self-Promoter, Tech Conference Coordinator, Early Adopter, Idea Evangelist, Tech Support Blogger, Bootstrapper, Media Personality, Technology Consultant, Thicker Quicker Picker Upper." />
+          <meta name="generator" content="WordPress 2.0.4" /> <!-- leave this for stats -->
+     <link title="Chris Pirillo" type="application/opensearchdescription+xml" rel="search" href="http://chris.pirillo.com/os-description.php" />
+	<link rel="alternate" type="application/rss+xml" title="Chris Pirillo" href="http://feeds.pirillo.com/ChrisPirillo" />
+	<link rel="pingback" href="http://chris.pirillo.com/xmlrpc.php" />
+
+	<style type="text/css" media="screen">
+		@import url( http://chris.pirillo.com/wp-content/themes/Qwilm/style.css );
+	</style>
+
+	<link rel='archives' title='July 2006' href='http://chris.pirillo.com/2006/07/' />
+	<link rel='archives' title='June 2006' href='http://chris.pirillo.com/2006/06/' />
+	<link rel='archives' title='May 2006' href='http://chris.pirillo.com/2006/05/' />
+	<link rel='archives' title='April 2006' href='http://chris.pirillo.com/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://chris.pirillo.com/2006/03/' />
+	<link rel='archives' title='February 2006' href='http://chris.pirillo.com/2006/02/' />
+	<link rel='archives' title='January 2006' href='http://chris.pirillo.com/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://chris.pirillo.com/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://chris.pirillo.com/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://chris.pirillo.com/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://chris.pirillo.com/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://chris.pirillo.com/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://chris.pirillo.com/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://chris.pirillo.com/2005/06/' />
+	<link rel='archives' title='May 2005' href='http://chris.pirillo.com/2005/05/' />
+	<link rel='archives' title='April 2005' href='http://chris.pirillo.com/2005/04/' />
+	<link rel='archives' title='March 2005' href='http://chris.pirillo.com/2005/03/' />
+	<link rel='archives' title='February 2005' href='http://chris.pirillo.com/2005/02/' />
+	<link rel='archives' title='January 2005' href='http://chris.pirillo.com/2005/01/' />
+	<link rel='archives' title='December 2004' href='http://chris.pirillo.com/2004/12/' />
+	<link rel='archives' title='November 2004' href='http://chris.pirillo.com/2004/11/' />
+	<link rel='archives' title='October 2004' href='http://chris.pirillo.com/2004/10/' />
+	<link rel='archives' title='September 2004' href='http://chris.pirillo.com/2004/09/' />
+	<link rel='archives' title='August 2004' href='http://chris.pirillo.com/2004/08/' />
+	<link rel='archives' title='July 2004' href='http://chris.pirillo.com/2004/07/' />
+	<link rel='archives' title='June 2004' href='http://chris.pirillo.com/2004/06/' />
+	<link rel='archives' title='May 2004' href='http://chris.pirillo.com/2004/05/' />
+	<link rel='archives' title='April 2004' href='http://chris.pirillo.com/2004/04/' />
+	<link rel='archives' title='March 2004' href='http://chris.pirillo.com/2004/03/' />
+	<link rel='archives' title='February 2004' href='http://chris.pirillo.com/2004/02/' />
+	<link rel='archives' title='January 2004' href='http://chris.pirillo.com/2004/01/' />
+	<link rel='archives' title='December 2003' href='http://chris.pirillo.com/2003/12/' />
+	<link rel='archives' title='November 2003' href='http://chris.pirillo.com/2003/11/' />
+	<link rel='archives' title='October 2003' href='http://chris.pirillo.com/2003/10/' />
+	<link rel='archives' title='September 2003' href='http://chris.pirillo.com/2003/09/' />
+	<link rel='archives' title='August 2003' href='http://chris.pirillo.com/2003/08/' />
+	<link rel='archives' title='July 2003' href='http://chris.pirillo.com/2003/07/' />
+	<link rel='archives' title='June 2003' href='http://chris.pirillo.com/2003/06/' />
+	<link rel='archives' title='May 2003' href='http://chris.pirillo.com/2003/05/' />
+	<link rel='archives' title='April 2003' href='http://chris.pirillo.com/2003/04/' />
+	<link rel='archives' title='March 2003' href='http://chris.pirillo.com/2003/03/' />
+	<link rel='archives' title='February 2003' href='http://chris.pirillo.com/2003/02/' />
+	<link rel='archives' title='January 2003' href='http://chris.pirillo.com/2003/01/' />
+	<link rel='archives' title='December 2002' href='http://chris.pirillo.com/2002/12/' />
+	<link rel='archives' title='November 2002' href='http://chris.pirillo.com/2002/11/' />
+	<link rel='archives' title='October 2002' href='http://chris.pirillo.com/2002/10/' />
+	<link rel='archives' title='September 2002' href='http://chris.pirillo.com/2002/09/' />
+	<link rel='archives' title='August 2002' href='http://chris.pirillo.com/2002/08/' />
+	<link rel='archives' title='July 2002' href='http://chris.pirillo.com/2002/07/' />
+	<link rel='archives' title='June 2002' href='http://chris.pirillo.com/2002/06/' />
+	<link rel='archives' title='May 2002' href='http://chris.pirillo.com/2002/05/' />
+	<link rel='archives' title='April 2002' href='http://chris.pirillo.com/2002/04/' />
+	<link rel='archives' title='March 2002' href='http://chris.pirillo.com/2002/03/' />
+	<link rel='archives' title='February 2002' href='http://chris.pirillo.com/2002/02/' />
+	<link rel='archives' title='January 2002' href='http://chris.pirillo.com/2002/01/' />
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://chris.pirillo.com/xmlrpc.php?rsd" />
+<script src="http://chris.pirillo.com/wp-content/plugins/UltimateTagWarrior/ultimate-tag-warrior-ajax-js.php?ajaxurl=http://chris.pirillo.com/wp-content/plugins/UltimateTagWarrior/ultimate-tag-warrior-ajax.php" type="text/javascript"></script><script src="http://chris.pirillo.com/wp-content/plugins/UltimateTagWarrior/ultimate-tag-warrior-js.php" type="text/javascript"></script><script type="text/javascript">
+var parent_location = new String(parent.location);
+if ( ( top.location != location )
+  && parent_location.indexOf('http://chris.pirillo.com') != 0 )
+top.location.href = document.location.href;
+</script>
+<link rel="stylesheet" href="http://chris.pirillo.com/wp-content/plugins/ig_syntax_hilite/css/syntax_hilite_css.css" type="text/css" media="all" />
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div class="headerwrapper"><img src="http://static.flickr.com/68/197564057_74662d7d74_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/78/196972670_20db7be7ec_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/71/196971618_42922b6230_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/64/196970551_cdb421d26d_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/44/193798136_3fea8c5194_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/60/193473021_f7c2d4bed2_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/52/192738369_0567c04de4_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/44/189252711_42e8808ad8_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/77/189252549_e2ae12b8e2_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/51/189252414_c6dc5abc84_s.jpg" width="75" height="75" border="0">
+
+<img src="http://static.flickr.com/64/189252314_d145b1b41b_s.jpg" width="75" height="75" border="0">
+
+<div id="wicket">Chris Pirillo</div><div id="pixie"><a href="http://chris.pirillo.com/">Chris Pirillo</a></div>
+     <div id="mini-nav">
+     <a href="http://chris.pirillo.com"><img src="http://chris.pirillo.com/wp-content/themes/Qwilm/imagenes_qwilm/home_icon.gif" alt="Home" /></a>
+     <a href="mailto:chris@pirillo.com"><img src="http://chris.pirillo.com/wp-content/themes/Qwilm/imagenes_qwilm/email_icon.gif" alt="Mail Me!" /></a>
+     <a href="http://chris.pirillo.com/wp-stats.php"><img src="http://chris.pirillo.com/wp-content/themes/Qwilm/imagenes_qwilm/stats_icon.gif" alt="My Stats" /></a>	
+     <a href="http://feeds.pirillo.com/ChrisPirillo"><img src="http://chris.pirillo.com/wp-content/themes/Qwilm/imagenes_qwilm/rss_icon.gif" alt="Subscribe" /></a>	
+     </div>
+
+</div>
+
+<div id="content">
+
+
+		
+				
+                    
+				<h1>Archive for February, 2006</h1>
+
+						
+		
+     			<div class="post-frontpage" id="post-3342">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/28/pirillo_063jpg/" rel="bookmark" title=" pirillo_063">pirillo_063</a></h1>
+				<p class="postmeta">February 28, 2006 at 3:36 pm &#183; in <a href="http://chris.pirillo.com/category/photos/" title="View all posts in Photos" rel="category tag">Photos</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/28/pirillo_063jpg/#respond" class="commentslink" title="Comment on pirillo_063">Comments</a></span></p>
+									<p><img src="http://chris.pirillo.com/_photos/pirillo_063.jpg" />
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3341">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/28/pirillo_062jpg/" rel="bookmark" title=" pirillo_062">pirillo_062</a></h1>
+				<p class="postmeta">February 28, 2006 at 2:31 pm &#183; in <a href="http://chris.pirillo.com/category/photos/" title="View all posts in Photos" rel="category tag">Photos</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/28/pirillo_062jpg/#respond" class="commentslink" title="Comment on pirillo_062">Comments</a></span></p>
+									<p><img src="http://chris.pirillo.com/_photos/pirillo_062.jpg" />
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3340">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/28/googlefasting-day-5/" rel="bookmark" title=" Googlefasting: Day 5">Googlefasting: Day 5</a></h1>
+				<p class="postmeta">February 28, 2006 at 1:57 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/28/googlefasting-day-5/#comments" class="commentslink" title="Comment on Googlefasting: Day 5">Comments (4)</a></span></p>
+									<p>Continued from <a href="http://chris.pirillo.com/blog/_archives/2006/2/23/1780165.html">Day 1</a>, <a href="http://channels.lockergnome.com/windows/archives/20060223_googlefasting_day_15.phtml">Day 1.5</a>, <a href="http://chris.pirillo.com/blog/_archives/2006/2/24/1782094.html">Day 2</a>, <a href="http://chris.pirillo.com/blog/_archives/2006/2/25/1783102.html">Day 3</a>, <a href="http://chris.pirillo.com/blog/_archives/2006/2/26/1784733.html">Day 4</a>&#8230;
+<ul>
+<li>Needed to lookup location for tonight&#39;s Ask party. Decided to ask <a href="http://wwww.ask.com/">Ask&#39;s</a> new Local service. Everything was all well and good until I got to the mapping page, which choked in IE7. Had to flip back to Yahoo! Maps, which also choked when I tried to enter in the club&#39;s name and its city. Apparently, it needed the specific address, too. Kinda silly, if you ask me - especially if they already have the data.
+</li>
+<li>Needed to find Gary Price&#39;s email address, but I couldn&#39;t remember his name (don&#39;t ask). Went to Yahoo, remembering he wrote a great article on Gada.be in SearchEngineWatch. Found his name, then was able to find his email through Copernic on my desktop.
+</li>
+<li>Realized the sweet irony of doing this &#8220;fast&#8221; while attending SES, the definitive search engine conference. Even so, nobody here really knows that I&#39;m doing what I&#39;m doing. By the time they do realize they could have told me about their alternatives to Google, I&#39;ll probably be back on the juice.
+</li>
+<li>Got hungry. Wanted to find &#8220;good italian nearby,&#8221; and IceRocket pulled up my room at the Hilton as the number one search result. Wow, that&#39;s an amazing engine you got there, Mr. Cuban. [just kidding, this experience didn&#39;t really happen]
+</li>
+<li>There is (seriously) no peer restaurant recommendation engine out there. I wanna know what my friends have to say about these local food joints - or their friends. Why can&#39;t anybody do this? Why can&#39;t they connect the dots for me? I&#39;m still hungry, dammit - and I don&#39;t trust the conceirge at this hotel anymore.
+</li>
+<li>Got phoned by an ABC affiliate in Australia. They found out about this tale of woe via <a href="http://www.micropersuasion.com/">Steve</a>. On the call, which was quite playful, I upped the ante and decided to keep fasting for another week - for a total of 14 days without using Google. I believe most of my emotional attachment has been burned away, although I&#39;m still struggling to find a close second. You heard it here first.</li>
+</ul>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3339">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/28/pirillo_061jpg/" rel="bookmark" title=" pirillo_061">pirillo_061</a></h1>
+				<p class="postmeta">February 28, 2006 at 12:58 am &#183; in <a href="http://chris.pirillo.com/category/photos/" title="View all posts in Photos" rel="category tag">Photos</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/28/pirillo_061jpg/#respond" class="commentslink" title="Comment on pirillo_061">Comments</a></span></p>
+									<p><img src="http://chris.pirillo.com/_photos/pirillo_061.jpg" />
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3338">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/28/pirillo_058jpg/" rel="bookmark" title=" pirillo_058">pirillo_058</a></h1>
+				<p class="postmeta">February 28, 2006 at 12:57 am &#183; in <a href="http://chris.pirillo.com/category/photos/" title="View all posts in Photos" rel="category tag">Photos</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/28/pirillo_058jpg/#respond" class="commentslink" title="Comment on pirillo_058">Comments</a></span></p>
+									<p><img src="http://chris.pirillo.com/_photos/pirillo_058.jpg" />
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3337">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/28/im-giving-away-my-4th-free-xbox-360/" rel="bookmark" title=" I&#39;m Giving Away My 4th Free Xbox 360">I&#39;m Giving Away My 4th Free Xbox 360</a></h1>
+				<p class="postmeta">February 28, 2006 at 12:50 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/28/im-giving-away-my-4th-free-xbox-360/#comments" class="commentslink" title="Comment on I&#39;m Giving Away My 4th Free Xbox 360">Comments (4)</a></span></p>
+									<p>Hey all. As you very well know by now, I&#39;ve been generating leads for <a href="http://go.lockergnome.com/625">TextPayMe</a> at a pretty steady pace - to the point where I&#39;m not deleting comments with self-referential links in them. I&#39;ve built up enough requests to receive four Xbox 360s for free - but two of those will be going to friends of mine. Yes, that&#39;s right - I&#39;m giving away two of my free Xbox 360s. Which friends, you might ask? Why, they&#39;ll go to my friends who have signed up for <a href="http://www.gnomedex.com/">Gnomedex 6</a>. How&#39;s that for an added bonus? Chances of winning will increase, the more Xbox 360s I win. Right now, odds are 1 in 150 that you (as a pre-registered Gnomedexer) will get one of my free Xbox 360s for free. I realize the event isn&#39;t until late June, but we&#39;ll likely sell out long before then - and that&#39;s when the drawing begins. So, to recap - the more Xbox 360s I receive by referring people to <a href="http://go.lockergnome.com/625">sign up for TextPayMe</a>, the more I&#39;ll be able to give away to registered Gnomedex 6 attendees. That&#39;s potentially a win-win-win-win proposition.
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3336">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/27/pirillo_051jpg/" rel="bookmark" title=" pirillo_051">pirillo_051</a></h1>
+				<p class="postmeta">February 27, 2006 at 7:13 pm &#183; in <a href="http://chris.pirillo.com/category/photos/" title="View all posts in Photos" rel="category tag">Photos</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/27/pirillo_051jpg/#respond" class="commentslink" title="Comment on pirillo_051">Comments</a></span></p>
+									<p><img src="http://chris.pirillo.com/_photos/pirillo_051.jpg" />
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3335">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/27/spyware-enabler-up-for-industry-award/" rel="bookmark" title=" Spyware Enabler up for Industry Award!?!?">Spyware Enabler up for Industry Award!?!?</a></h1>
+				<p class="postmeta">February 27, 2006 at 5:48 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/27/spyware-enabler-up-for-industry-award/#comments" class="commentslink" title="Comment on Spyware Enabler up for Industry Award!?!?">Comments (1)</a></span></p>
+									<p>Uh&#8230; since when is <a href="http://myweb2.search.yahoo.com/search?p=loudeye+spyware&amp;vst=0&amp;fl=0&amp;ei=ISO-8859-1&amp;vm=p&amp;n=20">ruining people&#39;s machines</a> considered worthy of an<br />
+award? The Washington Software Association has named Loudeye a finalist for &#8220;<a href="http://www.wsa.org/events/tab.asp?EventID=566&amp;eventTabID=477">Entertainment Product of the Year</a>&#8221; in 2006. Who at the WSA is doing research on this? Are they only paying attention to theoretical business practices instead of what users are actually saying about them (ya know, in real life)? This has to be a mistake.
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3334">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/27/my-three-free-xbox-360s/" rel="bookmark" title=" My Three Free Xbox 360s">My Three Free Xbox 360s</a></h1>
+				<p class="postmeta">February 27, 2006 at 5:23 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/27/my-three-free-xbox-360s/#comments" class="commentslink" title="Comment on My Three Free Xbox 360s">Comments (4)</a></span></p>
+									<p>I actually attained the third Xbox 360 from the <a href="http://go.lockergnome.com/625">TextPayMe promotion</a> the other day, but didn&#39;t have much time to write about it. As of this moment, I&#39;m 9 referrals away from winning my fourth free Xbox 360. I&#39;d like to believe that there are nine of you out there who have not yet signed up for their free service - and I&#39;d encourage you to do so (largely because I&#39;m planning on giving away the extra Xbox 360s that I win in this promotion at some point in the near future). The TextPayMe gang will be stopping by my house in a couple of weeks for our <a href="http://www.thechrispirilloshow.com/">live broadcast</a> - where we&#39;ll be promoting it again, although I&#39;m not likely to get credit for those referrals (as I really don&#39;t care to share my mobile number with everybody and their grandmother). If you want a free $5 and a chance to win your own Xbox 360, you have to <a href="http://go.lockergnome.com/625">sign up for TextPayMe</a> before March 18th. I only need nine more referrals to break my record. You know you wanna do it.
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3333">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/27/googlefasting-day-4/" rel="bookmark" title=" Googlefasting: Day 4">Googlefasting: Day 4</a></h1>
+				<p class="postmeta">February 27, 2006 at 5:04 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/27/googlefasting-day-4/#respond" class="commentslink" title="Comment on Googlefasting: Day 4">Comments</a></span></p>
+									<p>Continued from <a href="http://chris.pirillo.com/blog/_archives/2006/2/23/1780165.html">Day 1</a>, <a href="http://channels.lockergnome.com/windows/archives/20060223_googlefasting_day_15.phtml">Day 1.5</a>, <a href="http://chris.pirillo.com/blog/_archives/2006/2/24/1782094.html">Day 2</a>, <a href="http://chris.pirillo.com/blog/_archives/2006/2/25/1783102.html">Day 3</a>&#8230;<br />
+Didn&#39;t visit a single search engine today. About the only thing I might have done remotely close to searching was firing up MSN&#39;s Virtual Earth Mobile application (well worth getting if you have a Windows Mobile device). I&#39;d point you to where you can get it on the Web, but I wanna keep today&#39;s inadvertent search abstinence standing. Jake looked for it using Gada.be when we were on the boat at Liberty island. However, the right result was blocked by Yahoo! - who still hasn&#39;t gotten back to us on requested proper usage of their APIs (and, vicariously, the sweetheart del.icio.us which has been blocking us for months). Guess that&#39;s one small strike for and against &#39;em? Web 2.0 isn&#39;t what you think it is, folks.
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3332">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/27/i-heart-nyc/" rel="bookmark" title=" I Heart NYC">I Heart NYC</a></h1>
+				<p class="postmeta">February 27, 2006 at 4:55 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/27/i-heart-nyc/#comments" class="commentslink" title="Comment on I Heart NYC">Comments (3)</a></span></p>
+									<p>We took the JetBlue redeye from Seattle last night at 1am PST, arriving at JFK just after 8am EST. It was a four-hour flight, but it truly felt like ten. A quick drive later, the Hilton welcomed us with open arms. This is where Search Engine Strategies is taking place - and we&#39;re once again covering this conference for MSN. Jake and I will be walking around with a microphone, video camera, and other assorted recording gear. If you&#39;re gonna be here, let me know via email or whatnot; we&#39;d love to interview you and get your take on the whole event (hey, that&#39;s free promotion I&#39;m offering).<br />
+After a power nap, we drove to see the Statue of Liberty - whooshing past Ground Zero on the way there and the way back, planning on returning when Ponzi gets into town on Tuesday. It was cold today - bitter cold. I was mostly prepared for the weather (except I apparently ripped part of my left pocket, and I forgot my stocking caps at home). Take a look at my Flickr stream for photos of today&#39;s <a href="http://www.flickr.com/photos/lockergnome/sets/72057594071096626/">NYC adventure</a>. Don&#39;t plan on doing much sightseeing this time around, though. Might take in a Broadway show - Spamalot! There are wild parties happening every night, but neither Jake or myself are real party animals. &#8220;CHECK IT OUT, I&#39;VE GOT SOMTEHING TO SAY. MAN, IT&#39;S SO LOUD IN HERE.&#8221; And now, we&#39;re in search of the best pastrami sandwich in Manhattan.<br />
+This is my second time in New York. The city is starting to grow on me.
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3331">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/27/pirillo_048jpg/" rel="bookmark" title=" pirillo_048">pirillo_048</a></h1>
+				<p class="postmeta">February 27, 2006 at 12:41 am &#183; in <a href="http://chris.pirillo.com/category/photos/" title="View all posts in Photos" rel="category tag">Photos</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/27/pirillo_048jpg/#respond" class="commentslink" title="Comment on pirillo_048">Comments</a></span></p>
+									<p><img src="http://chris.pirillo.com/_photos/pirillo_048.jpg" />
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3330">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/27/pirillo_050jpg/" rel="bookmark" title=" pirillo_050">pirillo_050</a></h1>
+				<p class="postmeta">February 27, 2006 at 12:40 am &#183; in <a href="http://chris.pirillo.com/category/photos/" title="View all posts in Photos" rel="category tag">Photos</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/27/pirillo_050jpg/#respond" class="commentslink" title="Comment on pirillo_050">Comments</a></span></p>
+									<p><img src="http://chris.pirillo.com/_photos/pirillo_050.jpg" />
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3329">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/27/pirillo_049jpg/" rel="bookmark" title=" pirillo_049">pirillo_049</a></h1>
+				<p class="postmeta">February 27, 2006 at 12:39 am &#183; in <a href="http://chris.pirillo.com/category/photos/" title="View all posts in Photos" rel="category tag">Photos</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/27/pirillo_049jpg/#respond" class="commentslink" title="Comment on pirillo_049">Comments</a></span></p>
+									<p><img src="http://chris.pirillo.com/_photos/pirillo_049.jpg" />
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3328">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/26/googlefasting-day-3/" rel="bookmark" title=" Googlefasting: Day 3">Googlefasting: Day 3</a></h1>
+				<p class="postmeta">February 26, 2006 at 4:22 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/26/googlefasting-day-3/#comments" class="commentslink" title="Comment on Googlefasting: Day 3">Comments (2)</a></span></p>
+									<p>Continued from <a href="http://chris.pirillo.com/blog/_archives/2006/2/23/1780165.html">Day 1</a>, <a href="http://channels.lockergnome.com/windows/archives/20060223_googlefasting_day_15.phtml">Day 1.5</a>, <a href="http://chris.pirillo.com/blog/_archives/2006/2/24/1782094.html">Day 2</a>&#8230;
+<ul>
+<li>Had to get directions to the W Hotel in downtown Seattle. Yahoo! gave me a map link for &#8220;W Hotel Seattle&#8221; as well as an &#8220;availability&#8221; link for reservations. Cool! But when I clicked on Yahoo!&#39;s map link, I got a map of downtown and *ALL* the hotels in the area (as well as tourist spots). Overkill for this task. Also frustrating that I can&#39;t dynamically drag their maps yet (only available in a difficult-to-find beta).
+</li>
+<li>For grins, I try &#8220;W Hotel Seattle&#8221; in MSN. I can get routed to an astoundingly outdated &#8220;MSN Maps &amp; Directions&#8221; site, or I can find &#8220;Local listings: &#39;w hotel&#39; near Seattle, WA.&#39;&#8221; Clicking on the former link, I can drill down further to specific destinations, with the first one being the W. Doesn&#39;t have the &#8220;reservations&#8221; feature, which I found rather nice (although it should be linked to a rate comparison tool).
+</li>
+<li>I try the same initial query in Snap.com. Indeed, it brings me to a page that has the proper results. Although, I&#39;m mildy annoyed by the &#8220;click click click click click click click&#8221; sounds on the front page as I key in my query. Par for the course, the way Snap has this thing set up (here&#39;s where AJAX would come in handy).
+</li>
+<li>Moderated a panel discussion in front of a good-sized group of public radio figures, including panel member Maria Thomas, VP and GM of NPR Online. When I needed to illustrate a point, I had to ask her to drive (after explaining why) - and I think there may be a story to come out of this experience.
+</li>
+<li>Needed to find the Peet&#39;s in Seattle&#39;s Freemont district for a lunch meeting. Typed &#8220;peet&#39;s freemont seattle&#8221; and found the address (to copy and paste) into a new query from the sixth query down. &#8220;<GEO TYPE="US">3401 Fremont ave N. Seattle, WA 98103</GEO>&#8243; gave me a direct map, and instant way to start mapping TO the location. Nice. The directions pages gives you the option to use the new Yahoo! beta mapping service, but the info I had already entered was not pre-populated if I switch from Classic to Beta (major bug).
+</li>
+<li>Forwarded a funny image to a friend, who asked where he might be able to buy one (or two) of the items pictured. A quick Yahoo! search for &#8220;boob mouse pads&#8221; gave me the site I was looking for in the #1 slot. There&#39;s something you don&#39;t see every day.
+</li>
+<li>Needed to find &#8220;Seattle Influencers&#8221; and was suprised by the #1 result on Yahoo!.
+</li>
+<li>Was on the go (meeting a friend in Fremont). Ponzi wanted me to stop by a shop that she didn&#39;t know the name of! What the hell is lettuce soap!? Anyway, I only had my 2125 with me, so I fired into lettuce-soap-fremont.gada.be - and it kicked back a list of results, including posts from Ponzi&#39;s blog about it. One article on IceRocket lead me to Burnt Sugar - where they were out of lettuce soap. Gada.be worked thanks to IceRocket.
+</li>
+<li>Not related to search necessarily, but I learned that I could drag &amp; drop any string of text into Maxthon and have it open up. For example, I highlighted a non-hyperlinked URL in Firefox and dropped it into Maxthon and the page opened in a new tab. I love Maxthon.</li>
+</ul>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3327">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/25/move-over-blogebrity/" rel="bookmark" title=" Move over, Blogebrity?">Move over, Blogebrity?</a></h1>
+				<p class="postmeta">February 25, 2006 at 11:21 pm &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/25/move-over-blogebrity/#respond" class="commentslink" title="Comment on Move over, Blogebrity?">Comments</a></span></p>
+									<p>Hey Nick, I still loves ya (<a href="http://www.thechrispirilloshow.com/help/20051031_internet_famous_on_blogebrity.phtml">always have, always will</a>) - but there seems to be a new game in town: <a href="http://www.theblog50.com/">The Blog 50</a>. I tried to leave a comment along the lines of &#8220;expecting to get shoved out of the top 50 by someone on MySpace,&#8221; but the comment form barfed with a Fatal error: Call to undefined function: blc_latest_comments()&#8230; blah blah blah. That, and there&#39;s no easy way to contact the people on the Blog 50 - so, either they have to fix their comments form, or I&#39;ll be forced to write on my chest again.
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3326">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/25/googlefasting-day-2/" rel="bookmark" title=" Googlefasting: Day 2">Googlefasting: Day 2</a></h1>
+				<p class="postmeta">February 25, 2006 at 7:20 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/25/googlefasting-day-2/#comments" class="commentslink" title="Comment on Googlefasting: Day 2">Comments (5)</a></span></p>
+									<p>Well, I posted an interim update (<a href="http://channels.lockergnome.com/windows/archives/20060223_googlefasting_day_15.phtml">day 1.5</a>) to introduce the concept of Googlefasting to Lockergnomies. Didn&#39;t use search for the better part of the morning, as I was out and about (including <a href="http://www.seattlepodcasting.net/?p=47">speaking at the Podcast Hotel</a> over lunch).
+<ul>
+<li>Need to stop mail from coming to us while we&#39;re gone on vacation. I try &#8220;stop mail&#8221; in Yahoo! and MSN - don&#39;t find what I need. I try &#8220;stop postal service&#8221; in both, again, with no useful results (as in, a direct link to the USPS page). I try &#8220;vacation postal service&#8221; and finally get a #1 result in Yahoo! - I should&#39;ve used that keyword in the first place, and attribute this round to PEBKAC.
+</li>
+<li>Starting to realize I have an emotional attachment to Google - a somewhat unhealthy co-dependency thing. It&#39;s not that the other search engines don&#39;t work, it&#39;s just that I&#39;ve been treated so well by Google&#39;s search for so long that I&#39;m comparing&#8230; my old girlfriend to my new girlfriend. Sorry, that&#39;s the only analogy that comes to mind.
+</li>
+<li>Set up a Ning account for grins. Needed to find a Dog Breed list (preferrably, separated by commas). Tried &#8220;Dog Breeds&#8221; to no easy avail. &#8220;dog breeds list&#8221; yeilded many more workable results. I probably would have to do the same thing in Google - it just doesn&#39;t seem to be as painful (largely because I&#39;m used to seeing what it is I want to see - or don&#39;t feel bad if I can&#39;t find something).
+</li>
+<li>Searched for &#8220;vista virtual pc&#8221; in the hopes of finding instructions for setting up Windows Vista on Microsoft&#39;s Virtual PC. No matter what keyword combinations I used, I couldn&#39;t find one decent set of instructions. Gave up after 10 tries. This is where all search engines could learn a lesson - especially if I use keywords like &#8220;instructions&#8221; in my query. Gimme the help first!
+</li>
+<li>Needed to find Microsoft&#39;s tool to mount ISO files, so I used &#8220;mount iso windows microsoft&#8221; in Yahoo! and&#8230; the first hit wasn&#39;t for Microsoft&#39;s official page. Again, it&#39;d be nice if search engines could recognize that I was looking to download a file, possibly, and filter out the EXE links (even scan &#39;em for viruses automatically, and tell me whether or not they&#39;ve been flagged as spyware).
+</li>
+<li>Still can&#39;t figure out how to work MSN Search. The results are just&#8230; not relevant. I must be doing something wrong.
+</li>
+<li>Did several other searches centered around trying to find updated information about Vista beta 2 on Virtual PC (and its ghastly performance). Can&#39;t say that Google would have fared any better, as I&#39;m not using it - which is really putting a crimp on my productivity (even though that crimp may be half mental).</li>
+</ul>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3325">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/25/otterbox-for-the-ipod/" rel="bookmark" title=" OtterBox for the iPod">OtterBox for the iPod</a></h1>
+				<p class="postmeta">February 25, 2006 at 2:35 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/25/otterbox-for-the-ipod/#comments" class="commentslink" title="Comment on OtterBox for the iPod">Comments (4)</a></span></p>
+									<p>When I was asking around for iPod case suggestions, a few folks told me about <a href="http://www.otterbox.com/">OtterBox</a>. It&#39;s not the most lightweight iPod case on the planet, but I&#39;d go as far as to say that it&#39;s one of the strongest. Indeed, the sample I&#39;ve received is quite sturdy - your iPod ain&#39;t gonna suffer in da Otter. You flip open the hard case (which has soft layers atop the screen and wheel) then insert your iPod into the open space. The back of the OtterBox has a removable belt clip attachment, which I&#39;m quite fond of (although, if I remember correctly, Ponzi requested that I no longer wear anything on my belt unless I plan on turning into a superhero). The OtterBox isn&#39;t necessarily for the casual iPod user - it&#39;s for the rugged enthusiast. Waterproof, drop protection - what more could you want in an iPod case?<br />
+Ponzi remarked that the case was too heavy - but I would assert that you wouldn&#39;t trust your $400 investment inside of something that weighed less than air. Dunno. Maybe I&#39;ve suffered from too many crushed and scratched pocket devices to trust them in anything that isn&#39;t tried and true. OtterBox has other cases for other gadgets, too - and if you play hard, you need a case that can keep up with you. Adopt an otter - it&#39;s more fun than saving the whales.<br />
+Well, this is just the first one I&#39;ve had a chance to look at. If you know of any others that might be just as nice as the OtterBox, send those suggestions my way. <a href="http://www.gearlive.com/">Andru</a>, what was it you recommended? I couldn&#39;t consider protection that lacked a non-scratching cover for both the wheel and the screen, mind you. I&#39;m saddled with a 60gb 5G iPod, too - making it much more difficult to find a case that really works.
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3324">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/25/dogstars/" rel="bookmark" title=" Dogstars">Dogstars</a></h1>
+				<p class="postmeta">February 25, 2006 at 1:05 am &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/25/dogstars/#comments" class="commentslink" title="Comment on Dogstars">Comments (1)</a></span></p>
+									<p>Eh. I&#39;m not sure if <a href="http://dogstars.ning.com/">this is going to work</a>. I don&#39;t think people care enough about their dogs to shoot videos of &#39;em doing stupid things. Or, if they do, I don&#39;t think the owners would be crazy enough to share &#39;em with the world. Then again&#8230;? Well, here&#39;s <a href="http://dogstars.ning.com/">Dogstars</a> (if you think your dog(s) have what it takes).
+</p>
+							</div>
+				
+		
+     			<div class="post-frontpage" id="post-3323">
+				<h1 class="title"><a href="http://chris.pirillo.com/2006/02/24/the-mitosis-waltz/" rel="bookmark" title=" The Mitosis Waltz">The Mitosis Waltz</a></h1>
+				<p class="postmeta">February 24, 2006 at 11:27 pm &#183; in <a href="http://chris.pirillo.com/category/general/" title="View all posts in General" rel="category tag">General</a> 				&#183; <span class="comentarios-link"><a href="http://chris.pirillo.com/2006/02/24/the-mitosis-waltz/#respond" class="commentslink" title="Comment on The Mitosis Waltz">Comments</a></span></p>
+									<p>Dude! I found an old recording of one of my distant relatives this morning. Couldn&#39;t believe it. He was singing about mitosis and meiosis&#8230; what an oddball. Methinks he had too much Moxy on the brain. His name? Klaus der Fruvous.</p>
+							</div>
+				
+		
+     <div align="center"><div class="pagebar"> <span class="this-page">1</span> <a href="http://chris.pirillo.com/2006/02/page/2/" title="Page 2">2</a>  <a href="http://chris.pirillo.com/2006/02/page/3/" title="Page 3">3</a>  <span class="break">...</span> <a href="http://chris.pirillo.com/2006/02/page/6/" title="Page 6">6</a> <a href="http://chris.pirillo.com/2006/02/page/2/" title="Page 2">&#9658;</a> </div></div>
+
+	
+    </div>
+    <div id="sidebar-1" class="sidebar">
+      <ul>
+                <li>
+        <h2>C:\PIRILLO.EXE</h2>
+          <form method="get" action="/index.php">
+<p>
+<input type="text" value="" size="17" name="s" id="s" />
+<input type="submit" value="Search" />
+</p>
+</form>
+        </li>
+         <!-- ?php sm_list_popular_searches('<li><h2>Popular Searches</h2>', '</li>') ? -->
+        <ul><li>
+            <script type="text/javascript">
+          //<![CDATA[
+          <!--
+          google_ad_client = "pub-7561297527511227";
+          google_ad_width = 120;
+          google_ad_height = 90;
+          google_ad_format = "120x90_0ads_al_s";
+          google_ad_channel ="3311953626";
+          google_color_border = "ffffff";
+          google_color_bg = "ffffff";
+          google_color_link = "0000ff";
+          google_color_url = "0000ff";
+          google_color_text = "000000";
+          //-->
+          //]]>
+          </script> 
+          <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+          </script>
+        </li></ul>
+
+        <li>
+          <h2>
+            Recent Discussion
+          </h2>
+          <ul>
+            <li>Pete Mauro: <a href="http://chris.pirillo.com/2006/07/18/bar-tag/" title="I really love the idea of...">Bar Tag with Wiffiti</a></li>
+<li>Ugh: <a href="http://chris.pirillo.com/2006/07/26/tonights-dinner/" title="I wouldn&#8217;t eat that &#8220;chi chi&#8221;...">Tonight&#8217;s Dinner</a></li>
+<li>Pranav: <a href="http://chris.pirillo.com/2006/07/18/windows-vista-lipstick-on-a-pig/" title="I think many people just dont...">Windows Vista: Lipstick on a Pig</a></li>
+<li>Brett Nordquist: <a href="http://chris.pirillo.com/2006/07/28/exclusive-registry-booster-coupon/" title="This free product from Abexo does...">Exclusive Registry Booster Coupon</a></li>
+<li>Aryeh Goretsky: <a href="http://chris.pirillo.com/2006/07/26/google-true-or-false/" title="Hello,
+I believe this is &#8220;true.&#8221;
+Of course,...">Google: True or False?</a></li>
+<li>Karamvir Singh Raj: <a href="http://chris.pirillo.com/2006/05/24/windows-vista-feedback/" title="When I had tested the Windows...">Windows Vista Feedback</a></li>
+<li>Alicia: <a href="http://chris.pirillo.com/2006/04/29/import-between-outlook-express-hotmail-and-outlook/" title="Well, I think you should always...">Import Between Outlook Express, Hotmail, and Outlook</a></li>
+<li>Courtney: <a href="http://chris.pirillo.com/2006/07/26/the-pc-de-crapifier/" title="Too many incentives from these 3rd...">The PC De-Crapifier</a></li>
+<li>Brandon Paddock: <a href="http://chris.pirillo.com/2006/07/26/my-birthday/" title="Happy two-days-after-your-birthday!  =)
+
+">My Birthday</a></li>
+<li>hobbithob: <a href="http://chris.pirillo.com/2006/07/25/links-worth-loading/" title="heyee! Technorati led me here. Thanks...">Links Worth Loading</a></li>
+<li>AListReview: <a href="http://chris.pirillo.com/2006/07/27/wtf-is-the-long-tail/" title="Chris Pirillo Admits He&#8217;s Puzzled by...">WTF is The Long Tail?</a></li>
+<li>audio: <a href="http://chris.pirillo.com/2006/02/14/your-voice-in-the-gnomedex-song/" title="[&#8230;]       ...">Your Voice in the Gnomedex Song</a></li>
+<li>T. Longren: <a href="http://chris.pirillo.com/2006/07/26/the-pc-de-crapifier/" title="The PC De-Crapifier&#8230;
+This has got to...">The PC De-Crapifier</a></li>
+<li>ire: <a href="http://chris.pirillo.com/2005/07/22/microsoft-windows-vista/" title="i want you guys to send...">Microsoft Windows Vista</a></li>
+<li>James: <a href="http://chris.pirillo.com/2006/07/27/chest-based-word-clouds-work/" title="Mine R cheapr!  :D
+blogtagcloud.com ...">Chest-based Word Clouds Work</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>
+            Recent Entries
+          </h2>
+          <ul>
+            	<li><a href='http://chris.pirillo.com/2006/07/29/looking-for-a-reason-to-believe/' title='Looking for a Reason to Believe'>Looking for a Reason to Believe</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/28/exclusive-registry-booster-coupon/' title='Exclusive Registry Booster Coupon'>Exclusive Registry Booster Coupon</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/27/wtf-is-the-long-tail/' title='WTF is The Long Tail?'>WTF is The Long Tail?</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/27/chest-based-word-clouds-work/' title='Chest-based Word Clouds Work'>Chest-based Word Clouds Work</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/26/the-pc-de-crapifier/' title='The PC De-Crapifier'>The PC De-Crapifier</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/26/google-true-or-false/' title='Google: True or False?'>Google: True or False?</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/26/tagging-technorati/' title='Tagging Technorati'>Tagging Technorati</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/26/tonights-dinner/' title='Tonight&#8217;s Dinner'>Tonight&#8217;s Dinner</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/26/my-birthday/' title='My Birthday'>My Birthday</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/25/links-worth-loading/' title='Links Worth Loading'>Links Worth Loading</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/25/what-made-techtv-different/' title='What Made TechTV Different'>What Made TechTV Different</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/24/rent-my-chest-20/' title='Rent My Chest 2.0'>Rent My Chest 2.0</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/24/boob-suits-on-youtube/' title='Boob Suits on YouTube'>Boob Suits on YouTube</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/24/colorado-springs-travel-tips/' title='Colorado Springs Travel Tips'>Colorado Springs Travel Tips</a></li>
+	<li><a href='http://chris.pirillo.com/2006/07/24/techtv-rebuilt-by-community/' title='TechTV: Rebuilt by Community?'>TechTV: Rebuilt by Community?</a></li>
+          </ul>
+        </li>
+        <ul><li>
+          <script type="text/javascript"><!--
+          google_ad_client = "pub-7561297527511227";
+          google_ad_width = 120;
+          google_ad_height = 240;
+          google_ad_format = "120x240_as";
+          google_ad_type = "text_image";
+          google_ad_channel ="";
+          google_color_border = "FFFFFF";
+          google_color_bg = "FFFFFF";
+          google_color_link = "0000FF";
+          google_color_text = "000000";
+          google_color_url = "0000FF";
+          //--></script>
+          <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+          </script>
+        </li></ul>
+        <li>
+          <h2>
+            Categories          </h2>
+            <p>
+              <form action="" method="get">
+                <select name='cat' class='postform'>
+	<option value='0'>All</option>
+	<option value="1">General</option>
+	<option value="2">Photos</option>
+	<option value="9">Podcast</option>
+	<option value="10">Health</option>
+	<option value="11">Gnomedex</option>
+	<option value="12">Emails</option>
+	<option value="13">Technology</option>
+	<option value="14">Games</option>
+	<option value="15">Video</option>
+	<option value="16">Audio</option>
+	<option value="17">Software</option>
+	<option value="18">Fun</option>
+	<option value="19">Hardware</option>
+	<option value="20">Programming</option>
+	<option value="21">Microsoft</option>
+	<option value="22">Seattle</option>
+	<option value="23">Personal</option>
+	<option value="24">TagJag</option>
+	<option value="25">Search</option>
+	<option value="26">Internet</option>
+	<option value="27">Comic</option>
+	<option value="28">Strange</option>
+</select>
+<input type="submit" name="submit" value="Go" />
+              </form>
+            </p>
+        </li>
+        <li>
+          <h2>
+            Email Newsletters
+          </h2>
+              <form style="margin: 0px" action="http://www.whatcounts.com/bin/listctrl" method="post">
+           <p>
+                <input type="checkbox" class="checkbox" name="slid_1" value="160001062211170864" /> <a title="Freeware, useful Web sites, original PC tips &amp; tricks, critical updates, jargon definitions, and general help for consumers. Tech support with a personal touch!" href="http://channels.lockergnome.com/windows/">Windows Fanatics</a><br />
+                <input type="checkbox" class="checkbox" name="slid_2" value="160001065558236421" /> <a title="Here's the latest word from the Linux galaxy, open source projects, command line assistance, desktop environment downloads, distribution revisions, cross-platform tools, and general help for those exploring this fantastic OS!" href="http://channels.lockergnome.com/linux/">Linux Fanatics</a><br />
+                <input type="checkbox" class="checkbox" name="slid_3" value="160001065558341000" /> <a title="Dedicated to the world of OS X, Carbonized and Cocoa downloads, terminal tips, GUI tweaks, cross-platform help, application skins, new fonts, and anything else we care to share with the Apple community-at-large." href="http://channels.lockergnome.com/osx/">OS X Fanatics</a><br />
+                <input type="checkbox" class="checkbox" name="slid_4" value="160001065485575820" /> <a title="Information Technology aid for Windows, Linux, and OS X users, solid SysAdmin advice, troubleshooting links, job assistance, and more for technology pros." href="http://channels.lockergnome.com/it/">IT Professionals</a><br />
+                <input type="checkbox" class="checkbox" name="slid_5" value="160001063066753202" /> <a title="HTML basics, PHP and MySQL tips, design discussions, Webmaster tool reviews, topical discussions, and a forum spotlight. Perfect for the novice or expert!" href="http://channels.lockergnome.com/web/">Web Developers</a><br />
+                <input type="checkbox" class="checkbox" name="slid_6" value="160001085882921672" /> <a title="Here's your chance to ask and answer questions within our community. Topics include security, hardware, networking, gaming, programming, digital audio and video, and more!" href="http://help.lockergnome.com/">Problem Solvers</a><br />
+                <input type="checkbox" class="checkbox" name="slid_7" value="160001065558366820" /> <a title="The latest industry headlines, news scoops, reviews, opinions, press releases, virus alerts, security updates, and other time-sensitive information." href="http://channels.lockergnome.com/news/">Tech News Watch</a><br />
+                <input type="checkbox" class="checkbox" name="slid_8" value="160001082658265871" /> <a title="What the heck is RSS? Find out what's happening in the world of content syndication with the latest news, tips, software, services, opinions, and live feeds!" href="http://channels.lockergnome.com/rss/">RSS &amp; Atom Tips</a><br />
+                <input type="checkbox" class="checkbox" name="slid_9" value="160001065733118871" /> <a title="Every week, receive the latest links to live downloads. Auction Tools, Finance, Games, Graphics, Internet, Screen Savers, System Utilities, Video, Web Development, and more!" href="http://windows.fileoftheday.com/">New Downloads</a><br />
+                <input type="checkbox" class="checkbox" name="slid_10" value="160001080587608941" /> <a title="Our Exclusive Focus channel is used primarily for partners who want the complete attention of our audience. As such, it is published on-demand - and we attempt to adhere to a weekly schedule." href="http://channels.lockergnome.com/exclusive/">Exclusive Focus</a><br />
+                <input type="checkbox" class="checkbox" name="slid_11" value="160001086038971013" /> <a title="Coupons and discounts for all kinds of products! Automotive, Beauty, Books, Clothing, Computer, Electronics, Food, Health, and more!" href="http://deals.lockergnome.com/">Bargain Hunter</a><br />
+                <input type="checkbox" class="checkbox" name="slid_12" value="160001085763728209" /> <a title="Every day, you'll find the lowest prices on the hottest new DVDs right here! Never miss out on another fantastic DVD bargain again. Forget about renting videos at the store - grab your own original copies today!" href="http://channels.lockergnome.com/dvd/">DVD Deals</a><br />
+                <input type="checkbox" class="checkbox" name="slid_13" value="160001088727317014" /> <a title="Every weekday, our guide to the Web takes care of business, tackling tech topics that really matter to everybody. From topic definitions to topical rants, Dan Gray's pieces inform as much as they entertain." href="http://channels.lockergnome.com/technobabble/">Technobabble</a><br />
+                <input type="checkbox" class="checkbox" name="slid_14" value="160001077740239191" /> <a title="Have Joystick, will travel! For Action and Adventure, Classic and Retro, RPG, Sports, Strategy and Simulation - we'll provide you with the latest releases, tips, updates, and advice for the PC and console gaming world." href="http://channels.lockergnome.com/game/">Game Invasion</a><br />
+                <input type="checkbox" class="checkbox" name="slid_15" value="160928801091306036876" /> <a title="From Hard Drives to Printers, Scanners to RAM, we're here to explain and demystify how computer hardware can work for you. With our skilled approach, we assist tech novices with their own systems in simple terms. Curiousity is welcomed, and the floor is always open for questions." href="http://channels.lockergnome.com/hardware/">Hardware Help</a><br />
+                <input type="checkbox" class="checkbox" name="slid_16" value="160929001091306078616" /> <a title="MP3s, audio and video destinations, online radio stations, skins, interesting multimedia hardware and software, desktop wallpaper, Webcam pages, DVD reviews, and anything remotely entertaining." href="http://channels.lockergnome.com/media/">Media Center</a><br />
+                <input type="checkbox" class="checkbox" name="slid_17" value="160001065733065011" /> <a title="Palm devices, Pocket PCs, cell phones, and other assorted gadgets and gizmos - whatever makes you go, on the go, this is where you need to go. We don't just talk about mobile tech - we live it!" href="http://channels.lockergnome.com/mobile/">Mobile Lifestyle</a><br />
+                <input type="checkbox" class="checkbox" name="slid_19" value="160928901091306056936" /> <a title="Are you a small business person or Internet wannabe searcher? Here's a daily update to maintain your current awareness in information retrieval, information extraction, bots, knowledge discovery and harvesting, data and web mining, artificial intelligence and general research and search sources on the Internet." href="http://channels.lockergnome.com/search/">Search Engineer</a><br />
+                <input type="checkbox" class="checkbox" name="slid_20" value="160950801092474984833" /> <a title="Does the Internet have any effect on the way we live? Is the Web influencing society, religion, politics, even the way we interact? What does the future hold for our increasingly connected world? Are we in danger of losing our humanity or will technology end up enhancing it? We'll bring you stories and sites that illustrate, illuminate and make you think about the profound, sometimes sublime, ways that the Internet touches our lives." href="http://channels.lockergnome.com/political/">Political Geeks</a><br />
+                <input type="checkbox" class="checkbox" name="slid_21" value="1602863201147904417371" /> <a href="http://help.lockergnome.com/office/">Office Help</a><br />
+                <input type="checkbox" class="checkbox" name="slid_22" value="1602863101147903974837" /> <a href="http://help.lockergnome.com/security/">Computer Security</a><br />
+                <br />
+                <input type="hidden" name="cmd" value="subscribe" /> <input type="hidden" name="goto" value="http://sub.lockergnome.com/thanks.phtml" /> <input type="hidden" name="multiadd" value="1" /> <input type="hidden" name="format" value="html" /> <input type="text" name="email" id="inside-sub-email" size="18" value="E-mail Address" onfocus="this.value='';" />&nbsp;<input type="submit" value="Go" />
+          </p>
+              </form>
+        </li>
+        	<li id="linkcat-3"><h2>Feeds</h2>
+	<ul>
+<li><a href="http://blaugh.com" rel="me" title="We love to laugh - so now we&#039;re preparing the world to bLaugh! We&#039;ve launched the (un)Official comic of the blogosphere - colorful, satirical, and comical. Expect parodies of &quot;A-List&quot; bloggers all the way down to the meme of the day - no holds barred. Bra">bLaugh - The (un)Official Comic of the Blogosphere</a>
+We love to laugh - so now we&#039;re preparing the world to bLaugh! We&#039;ve launched the (un)Official comic of the blogosphere - colorful, satirical, and comical. Expect parodies of &quot;A-List&quot; bloggers all the way down to the meme of the day - no holds barred. Bra</li>
+
+	</ul>
+</li>
+      </ul>
+    </div>
+    <div id="sidebar-2" class="sidebar">
+      <ul>
+                <li>
+          <h2>
+            Other Searches
+          </h2>
+          <ul>
+            <li>
+              <form style="margin: 0px" method="get" action='http://www.google.com/custom'>
+                <input type="hidden" name="domains" value='lockergnome.com' /><input onfocus="this.value='';" value=" Google Search" type="text" name="q" size="20" maxlength="255" /><input type="hidden" name="sitesearch" value='' /><input type="hidden" name="cof" value='GALT:#000000;GL:1;DIV:#F1F1F1;VLC:336633;AH:center;BGC:FFFFFF;LBGC:FFFFFF;ALC:000000;T:000000;GFNT:666666;GIMP:666666;FORID:1;' /><input type="hidden" name="hl" value='en' /><input type="hidden" name="client" value='pub-7561297527511227' /><input type="hidden" name="forid" value='1' /><input type="hidden" name="ie" value='ISO-8859-1' />&nbsp;<input type="submit" name="sa" value="Go" class="button" />
+              </form>
+            </li>
+            <li>
+              <form style="margin: 0px" method="get" action='http://www.google.com/custom'>
+                <input type="hidden" name="domains" value='lockergnome.com' /><input onfocus="this.value='';" value=" Lockergnome Search" type="text" name="q" size="20" maxlength="255" /><input type="hidden" name="sitesearch" value='lockergnome.com' /><input type="hidden" name="cof" value='GALT:#000000;GL:1;DIV:#F1F1F1;VLC:336633;AH:center;BGC:FFFFFF;LBGC:FFFFFF;ALC:000000;T:000000;GFNT:666666;GIMP:666666;FORID:1;' /><input type="hidden" name="hl" value='en' /><input type="hidden" name="client" value='pub-2221554147803931' /><input type="hidden" name="forid" value='1' /><input type="hidden" name="ie" value='ISO-8859-1' />&nbsp;<input type="submit" name="sa" value="Go" class="button" />
+              </form>
+            </li>
+            <li>
+              <form style="margin: 0px" method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php">
+                <input type="hidden" name="topcat_search" value="1" /><input value=" Price Search" onfocus="this.value='';" size="20" type="text" name="form_keyword" />&nbsp;<input type="SUBMIT" value="Go" class="button" name="search" />
+              </form>
+            </li>
+            <li>
+              <form style="margin: 0px" method="get" action="http://www.amazon.com/exec/obidos/external-search">
+                <input type="text" name="keyword" size="20" onfocus="this.value='';" value=" Amazon Search" /><input type="hidden" name="mode" value="blended" /><input type="hidden" name="tag" value="lockergnome" />&nbsp;<input type="submit" value="Go" class="button" name="Search" />
+              </form>
+            </li>
+            <li>
+              <form style="margin: 0px" method="post" action="https://gnomedomains.securenow.com/registerdomain.cgi">
+                <input type="hidden" name="action" value="lookup" /><input type="text" name="domain" size="20" onfocus="this.value='';" value=" Domain Search" />&nbsp;<input type="submit" value="Go" class="button" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <form style="margin: 0px" name="searchForm" action="http://gada.be/logic/searchParse.php" method="get" id="searchForm">
+            <h2>
+              Tag Metasearch
+            </h2>
+              <p style="margin-bottom: -10px">
+               Click the first field to enter your keywords, then select a category below it to select a category. Press the 'Go' button to launch a search powered by <a href="http://gada.be/">Gada.be</a>:
+              </p>
+            <ul>
+              <li>
+                <input size="20" onfocus="this.value='';" value=" Your Keyword(s)" id="search" alt="Search" name="search" />
+              </li>
+              <li>
+                <select id="catDropDown" onchange="changeCategory(this.value);" name="slug">
+                  <option value="b">
+                    blogs
+                  </option>
+                  <option value="_def" selected="selected">
+                    general
+                  </option>
+                  <option value="e">
+                    entertainment
+                  </option>
+                  <option value="g">
+                    geeky
+                  </option>
+                  <option value="h">
+                    health
+                  </option>
+                  <option value="j">
+                    jobs
+                  </option>
+                  <option value="m">
+                    multimedia
+                  </option>
+                  <option value="n">
+                    news
+                  </option>
+                  <option value="p">
+                    photos
+                  </option>
+                  <option value="ran">
+                    random
+                  </option>
+                  <option value="r">
+                    research
+                  </option>
+                  <option value="s">
+                    shopping
+                  </option>
+                  <option value="o">
+                    social
+                  </option>
+                </select> <input type="submit" value="Go" />
+              </li>
+            </ul>
+          </form>
+        </li>
+        <li>
+          <div align="center">
+            <a href="http://chris.pirillo.com"><img src="/images/cpcomicwhite.gif" alt="Chris!" vspace="15" /></a>
+          </div>
+        </li>
+        <li>
+          <h2>
+            About Me
+          </h2>
+            <p>
+             Geek, Internet Entrepreneur, Hardware Addict, Software Junkie, Book Author, Once TV Show Host, Technology Enthusiast, Shameless Self-Promoter, Tech Conference Coordinator, Early Adopter, Idea Evangelist, Tech Support Blogger, Bootstrapper, Media Personality, Technology Consultant, Thicker Quicker Picker Upper.            </p>
+        </li>
+        <li>
+          <h2>
+            Meta          </h2>
+          <ul>
+              <li><a href="http://chris.pirillo.com/wp-register.php">Register</a></li>            <li>
+              <a href="http://chris.pirillo.com/wp-login.php">Login</a>            </li>
+            <li>
+              <a href="http://chris.pirillo.com/index.xml" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a>
+            </li>
+            <li>
+              <a href="http://chris.pirillo.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a>
+            </li>
+            <li>
+              <a href="http://oriol.f2o.org/">Qwilm! Themespiration</a>
+            </li>          </ul>
+          <ul>
+            <li>
+              <a href="http://www.lockergnome.com/">Technology News</a>
+            </li>
+            <li>
+              <a href="http://www.pirillo.com/">Curriculum Vitae</a>
+            </li>
+            <li>
+              <a href="http://www.rentmychest.com/">Tag Cloud</a>
+            </li>
+            <li>
+              <a href="http://www.gnomedex.com/">Tech Conference</a>
+            </li>
+            <li>
+              <a href="http://tutorials.lockergnome.com/">New eBooks</a>
+            </li>
+            <li>
+              <a href="http://help.lockergnome.com/">Tech Support</a>
+            </li>
+            <li>
+              <A HREF="http://www.lockergnome.com/buy/">Online Shopping</A>
+            </li>
+            <li>
+              <A HREF="http://chris.pirillo.com/">Tech Blogger</A>
+            </li>
+            <li>
+              <A HREF="http://www.lockergnome.com/coupons/">Coupon Codes</A>
+            </li>
+            <li>
+              <A HREF="http://www.lockergnome.com/arcade/">Arcade Games</A>
+            </li>
+            <li>
+              <A HREF="http://download.lockergnome.com/">Download Software</A>
+            </li>
+            <li>
+              <A HREF="http://blaugh.com/">Comic Strip</A>
+            </li>
+            <li>
+              <A HREF="http://www.thechrispirilloshow.com/">Our Podcast</A>
+            </li>
+            <li>
+              <a href="http://tagjag.com/">Search Engine</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>
+            Archives          </h2>
+          <ul>
+            
+	<li><a href="http://chris.pirillo.com/2006/" title="Archives: 2006">2006</a>
+	<ul>
+			<li><a href='http://chris.pirillo.com/2006/07/' title='July'>July</a>&nbsp;(63)</li>
+			<li><a href='http://chris.pirillo.com/2006/06/' title='June'>June</a>&nbsp;(105)</li>
+			<li><a href='http://chris.pirillo.com/2006/05/' title='May'>May</a>&nbsp;(143)</li>
+			<li><a href='http://chris.pirillo.com/2006/04/' title='April'>April</a>&nbsp;(66)</li>
+			<li><a href='http://chris.pirillo.com/2006/03/' title='March'>March</a>&nbsp;(92)</li>
+			<li><a href='http://chris.pirillo.com/2006/02/' title='February'>February</a>&nbsp;(118)</li>
+			<li><a href='http://chris.pirillo.com/2006/01/' title='January'>January</a>&nbsp;(48)</li>
+	</ul>
+	</li>
+
+	<li><a href="http://chris.pirillo.com/2005/" title="Archives: 2005">2005</a>
+
+	</li>
+
+	<li><a href="http://chris.pirillo.com/2004/" title="Archives: 2004">2004</a>
+
+	</li>
+
+	<li><a href="http://chris.pirillo.com/2003/" title="Archives: 2003">2003</a>
+
+	</li>
+
+	<li><a href="http://chris.pirillo.com/2002/" title="Archives: 2002">2002</a>
+
+	</li>
+          </ul>
+        </li>        <li>
+          <h2>
+            Translate
+          </h2>
+          <ul>
+            <li><table border='0'>
+                <tr>
+                  <td><a href='http://chris.pirillo.com/wp-content/plugins/translator.php?l=de&amp;u=http://chris.pirillo.com/2006/02/' title='Deutsch'><img src='http://chris.pirillo.com/wp-content/plugins/flags/flag_de.gif' alt='German Flag' border='0' width='18' height='12' /></a></td>
+                  <td><a href='http://chris.pirillo.com/wp-content/plugins/translator.php?l=es&amp;u=http://chris.pirillo.com/2006/02/' title='Spanish'><img src='http://chris.pirillo.com/wp-content/plugins/flags/flag_es.gif' alt='Spanish Flag' border='0' width='18' height='12' /></a></td>
+                  <td><a href='http://chris.pirillo.com/wp-content/plugins/translator.php?l=fr&amp;u=http://chris.pirillo.com/2006/02/' title='French'><img src='http://chris.pirillo.com/wp-content/plugins/flags/flag_fr.gif' alt='French Flag' border='0' width='18' height='12' /></a></td>
+                  <td><a href='http://chris.pirillo.com/wp-content/plugins/translator.php?l=it&amp;u=http://chris.pirillo.com/2006/02/' title='Italian'><img src='http://chris.pirillo.com/wp-content/plugins/flags/flag_it.gif' alt='Italian Flag' border='0' width='18' height='12' /></a></td>
+                  <td><a href='http://chris.pirillo.com/wp-content/plugins/translator.php?l=pt&amp;u=http://chris.pirillo.com/2006/02/' title='Portuguese'><img src='http://chris.pirillo.com/wp-content/plugins/flags/flag_pt.gif' alt='Portuguese Flag' border='0' width='18' height='12' /></a></td>
+                </tr>
+                <tr>
+                  <td><a href='http://chris.pirillo.com/wp-content/plugins/translator.php?l=ja&amp;u=http://chris.pirillo.com/2006/02/' title='Japanese'><img src='http://chris.pirillo.com/wp-content/plugins/flags/flag_ja.gif' alt='Japanese Flag' border='0' width='18' height='12' /></a></td>
+                  <td><a href='http://chris.pirillo.com/wp-content/plugins/translator.php?l=ko&amp;u=http://chris.pirillo.com/2006/02/' title='Korean'><img src='http://chris.pirillo.com/wp-content/plugins/flags/flag_ko.gif' alt='Korean Flag' border='0' width='18' height='12' /></a></td>
+                  <td><a href='http://chris.pirillo.com/wp-content/plugins/translator.php?l=zh-CN&amp;u=http://chris.pirillo.com/2006/02/' title='Chinese (Simplified)'><img src='http://chris.pirillo.com/wp-content/plugins/flags/flag_zh-CN.gif' alt='Chinese Flag' border='0' width='18' height='12' /></a></td>
+                  <td colspan='2'><a href='http://chris.pirillo.com/2006/02/' title='English'><img src='http://chris.pirillo.com/wp-content/plugins/flags/flag_en.gif' alt='British Flag' border='0' width='18' height='12' /></a></td>
+                </tr>
+              </table></li>          </ul>
+          <ul>
+           <div align="center"><A title="Rent My Chest" href="http://www.rentmychest.com/"><IMG height=78 alt="Rent My Chest 2.0" src="http://static.flickr.com/68/197564057_74662d7d74_t.jpg" width=100 align=center></a></div>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-97431-4";
+urchinTracker();
+</script>
+
+<script src="http://1221.hittail.com/mlt.js" type="text/javascript"></script>
+
+
+<!-- KRAMER DEBUG INFO 
+
+No post ID found for http://chris.pirillo.com/2006/02/
+
+
+ -->
+
+</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 4.629 seconds -->
+<!-- Cached page served by WP-Cache -->

@@ -1,0 +1,357 @@
+<DOC>
+<DOCNO>f00067</DOCNO>
+<DOCHDR>http://www.macromedia.com/macromedia/contact</DOCHDR>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<!-- Template $Revision: 2.7 $ applied. -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />  
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<!-- InstanceBeginEditable name="head" -->
+
+<title>Macromedia - Contact Macromedia</title>
+
+<link rel="stylesheet" rev="stylesheet" href="/css/print.css" type="text/css" media="print" charset="utf-8" />
+<link rel="stylesheet" rev="stylesheet" href="/css/mm_import.css" type="text/css" media="screen" charset="utf-8" />
+
+<!-- InstanceEndEditable -->
+
+<script src="/js/global.js" type="text/javascript" language="Javascript1.2" charset="utf-8"></script>
+<script src="/js/globalnav.js" type="text/javascript" language="Javascript1.2" charset="utf-8"></script>
+
+<!-- InstanceParam name="ssi_syntax" type="text" value="#include virtual=" -->
+<!-- InstanceParam name="MMlocale" type="text" value="en_us" -->
+<!-- InstanceParam name="flashdetection" type="boolean" value="true" -->
+<!-- InstanceParam name="fma" type="boolean" value="false" -->
+<!-- InstanceParam name="pod" type="boolean" value="true" -->
+<!-- InstanceParam name="promo" type="boolean" value="false" -->
+<!-- InstanceParam name="fullwidth" type="boolean" value="false" -->
+</head>
+
+<body>
+<!-- accessibility link --><a href="/help/accessibility.html" tabindex="1"><img src="/images/pixel.gif" width="1" height="1" border="0" alt="Accessibility" style="position:absolute; top:0px; left:0px; z-index:0; visibility:hidden;" /></a><!-- end accessibility link -->
+
+<!-- $RCSfile: FlashDetection2k.pm,v $ $Revision: 1.71 $ :  server can't tell if your browser has Flash;  you have a Netscape-like browser, here is some client-side JavaScript to detect if you have Flash. --><script type="text/javascript" language="JavaScript">
+<!-- start JS detection
+FlashMode = 0;
+if (navigator.plugins && navigator.plugins.length > 0)
+{
+	if (navigator.plugins["Shockwave Flash"])
+	{
+		var plugin_version = 0;
+		var words = navigator.plugins["Shockwave Flash"].description.split(" ");
+
+		for (var i = 0; i < words.length; ++i)
+		{
+			if (isNaN(parseInt(words[i])))
+			continue;
+			plugin_version = words[i];
+		}
+		if (plugin_version >= 6)
+		{
+			var plugin = navigator.plugins["Shockwave Flash"];
+			var numTypes = plugin.length;
+			for (j = 0; j < numTypes; j++)
+			{
+				mimetype = plugin[j];
+				if (mimetype)
+				{
+					if (mimetype.enabledPlugin && (mimetype.suffixes.indexOf("swf") != -1))
+						FlashMode = 1;
+					// Mac wierdness
+					if (navigator.mimeTypes["application/x-shockwave-flash"] == null)
+						FlashMode = 0;
+				}
+			}
+		}
+	}
+}
+do_dw_var = FlashMode;
+browser_flash_version = plugin_version;
+// end JS detection -->
+</script><script type="text/javascript" language="JavaScript" src="/jsdw/ubi/globalnav/en_us/flash.iota"></script><script type="text/javascript" language="JavaScript" src="/jsnodw/ubi/globalnav/en_us/no_flash.iota"></script><noscript><!-- $Source: /source/ubi/globalnav/en_us/no_flash.iota,v $ $Revision: 1.17.2.1 $ -->
+<!--googleoff: index-->
+<div id="globalnav">
+	<!-- macromedia -->
+	<div id="macromedia"><a href="/go/gnav_home" class="noHover" tabindex="1"><img src="/images/globalnav/macromedia.gif" width="118" height="16" alt="Macromedia" /></a></div>
+	
+	<!-- Help menu -->
+	<ul id="globalnav-helpmenu">
+		<li id="help" class="last"><a href="/go/gnav_help" tabindex="4">Help</a></li>
+		<li id="international"><a href="/go/gnav_intl" tabindex="3">International</a></li>
+		<li id="globalnav-cart"><a href="/go/gnav_cart" tabindex="2">Cart</a> <span id="cartItems">0</span></li>
+		<!-- membership -->
+		<li id="signout" class="first"><a href="/go/gnav_sign_out" tabindex="2">Sign Out</a></li>
+		<li id="signin" class="first"><a href="/cfusion/membership/index.cfm" tabindex="2">Sign In</a></li>
+		<li id="account" class="first"><a href="/go/gnav_your_account" tabindex="2">Your Account</a></li>
+		<li id="greeting" class="first">Welcome, <span id="screenName">Guest</span></li>
+	</ul>
+	
+	<div id="globalnavbar">
+		<!-- primary globalnav menu -->
+		<ul id="globalnav-menu">
+			<li id="home" class="first"><a href="/go/gnav_home" tabindex="5">Home</a></li>
+			<li id="products"><a href="/go/gnav_products" tabindex="6">Products</a></li>
+			<li id="showcase"><a href="/go/gnav_showcase" tabindex="7">Showcase</a></li>
+			<li id="support"><a href="/go/gnav_support" tabindex="8">Support</a></li>
+			<li id="devnet"><a href="/go/gnav_devnet" tabindex="9">Developers</a></li>
+			<li id="solutions"><a href="/go/gnav_solutions" tabindex="10">Solutions</a></li>
+			<li id="downloads"><a href="/go/gnav_downloads" tabindex="11">Downloads</a></li>
+			<li id="company"><a href="/go/gnav_company" tabindex="12">Company</a></li>
+			<li id="store"><a href="/go/gnav_store" tabindex="13">Store</a></li>
+		</ul>
+		<!-- Search -->
+		<form id="globalnav-search" class="en" name="globalnav-search" method="get" action="/go/gnav_search" accept-charset="utf-8"><input type="hidden" name="loc" value="en_us" /><input type="text" id="search-input" name="term" tabindex="14" /><div id="searchDIV">Search<input type="image" id="search" src="/images/alpha/blank.gif" alt="Search" tabindex="15" /></div></form>
+	</div>
+	
+	<!-- submenu :: global messaging area -->
+	<div id="globalmessaging"><span id="getFlashIcon"><a href="/go/gnav_sitereqs"><img src="/images/globalnav/site_requirements.gif" width="23" height="14" alt="Site Requirements" /></a></span>You may not have everything you need to view certain sections of Macromedia.com. <span id="site-requirements"><a href="/go/gnav_sitereqs">Please see our site requirements</a></span>.</div>
+	
+	<!-- submenu :: Products -->
+	<ul id="products-submenu" class="globalnav-submenu">
+		<li class="first"><a href="/go/gnavtray_products_home" tabindex="6">Products Home</a></li>
+		<li><a href="/go/gnavtray_studiomx_home" tabindex="6">Studio</a></li>
+		<li><a href="/go/gnavtray_dwmx_home" tabindex="6">Dreamweaver</a></li>
+		<li><a href="/go/gnavtray_flashmx_home" tabindex="6">Flash</a></li>
+		<li><a href="/go/gnavtray_cfmx_home" tabindex="6">ColdFusion</a></li>
+		<li><a href="/go/gnavtray_contribute_home" tabindex="6">Contribute</a></li>
+		<li><a href="/go/gnavtray_breeze_home" tabindex="6">Breeze</a></li>
+		<li><a href="/go/gnavtray_dirmx_home" tabindex="6">Director</a></li>
+		<li><a href="/go/gnavtray_flex_home" tabindex="6">Flex</a></li>
+		<li><a href="/go/gnavtray_products_buy" tabindex="6">Buy</a></li>
+		<li class="last"><a href="/go/gnavtray_products_more" tabindex="6">More &#8250;</a></li>
+	</ul>
+	<!-- submenu :: Showcase -->
+	<ul id="showcase-submenu" class="globalnav-submenu">
+		<li class="first"><a href="/go/gnavtray_showcase_home" tabindex="7">Showcase Home</a></li>
+		<li><a href="/go/gnavtray_show_sodarchive" tabindex="7">Site of the Day Archive</a></li>
+		<li><a href="/go/gnavtray_show_sub" tabindex="7">Showcase Submissions</a></li>
+		<li><a href="/go/gnavtray_show_csp" tabindex="7">Customer Success Program</a></li>
+		<li class="last"><a href="/go/gnavtray_showcase_more" tabindex="7">More &#8250;</a></li>
+	</ul>
+	<!-- submenu :: Support -->
+	<ul id="support-submenu" class="globalnav-submenu">
+		<li class="first"><a href="/go/gnavtray_supp_home" tabindex="8">Support Home</a></li>
+		<li><a href="/go/gnavtray_supp_cs_home" tabindex="8">Customer Service</a></li>
+		<li><a href="/go/gnavtray_supp_train_home" tabindex="8">Training Programs</a></li>
+		<li><a href="/go/gnavtray_supp_programs" tabindex="8">Support Programs</a></li>
+		<li><a href="/go/gnavtray_supp_forums_home" tabindex="8">Forums</a></li>
+		<li><a href="/go/gnavtray_supp_knowledgebase" tabindex="8">Knowledge Base</a></li>
+		<li class="last"><a href="/go/gnavtray_supp_more" tabindex="8">More &#8250;</a></li>
+	</ul>
+	<!-- submenu :: Developers -->
+	<ul id="devnet-submenu" class="globalnav-submenu">
+		<li class="first"><a href="/go/gnavtray_devnet" tabindex="9">Developers Home</a></li>
+		<li><a href="/go/gnavtray_dev_forums" tabindex="9">Forums</a></li>
+		<li><a href="/go/gnavtray_dev_exchange_home" tabindex="9">Exchange</a></li>
+		<li><a href="/go/gnavtray_dev_sample_apps" tabindex="9">Sample Applications</a></li>
+		<li class="last"><a href="/go/gnavtray_devnet_more" tabindex="9">More &#8250;</a></li>
+	</ul>
+	<!-- submenu :: Solutions -->
+	<ul id="solutions-submenu" class="globalnav-submenu">
+		<li class="first"><a href="/go/gnavtray_sol_home" tabindex="10">Solutions Home</a></li>
+		<li><a href="/go/gnavtray_sol_partners" tabindex="10">Partners</a></li>
+		<li><a href="/go/gnavtray_sol_bus" tabindex="10">Business</a></li>
+		<li><a href="/go/gnavtray_sol_mobile" tabindex="10">Mobile</a></li>
+		<li><a href="/go/gnavtray_sol_edu_home" tabindex="10">Education</a></li>
+		<li><a href="/go/gnavtray_sol_students" tabindex="10">Students</a></li>
+		<li><a href="/go/gnavtray_sol_govt" tabindex="10">Government</a></li>
+		<li><a href="/go/gnavtray_sol_access" tabindex="10">Accessibility</a></li>
+		<li><a href="/go/gnavtray_sol_elearning" tabindex="10">eLearning</a></li>
+		<li class="last"><a href="/go/gnavtray_sol_more" tabindex="10">More &#8250;</a></li>
+	</ul>
+	<!-- submenu :: Downloads -->
+	<ul id="downloads-submenu" class="globalnav-submenu">
+		<li class="first"><a href="/go/gnavtray_dl_home" tabindex="11">Downloads Home</a></li>
+		<li><a href="/go/gnavtray_dl_trials" tabindex="11">Free Trials</a></li>
+		<li><a href="/go/gnavtray_dl_updates" tabindex="11">Updates</a></li>
+		<li><a href="/go/gnavtray_dl_flashpl" tabindex="11">Get Flash Player</a></li>
+		<li><a href="/go/gnavtray_dl_ex_home" tabindex="11">Exchange</a></li>
+		<li class="last"><a href="/go/gnavtray_dl_more" tabindex="11">More &#8250;</a></li>
+	</ul>
+	<!-- submenu :: Company  -->
+	<ul id="company-submenu" class="globalnav-submenu">
+		<li class="first"><a href="/go/gnavtray_company_home" tabindex="12">Company Home</a></li>
+		<li><a href="/go/gnavtray_company_news" tabindex="12">News Room</a></li>
+		<li><a href="/go/gnavtray_company_community" tabindex="12">Community Affairs</a></li>
+		<li><a href="/go/gnavtray_company_jobs" tabindex="12">Jobs</a></li>
+		<li><a href="/go/gnavtray_company_events" tabindex="12">Events</a></li>
+		<li><a href="/go/gnavtray_company_investor" tabindex="12">Investor Relations</a></li>
+		<li><a href="/go/gnavtray_company_contact" tabindex="12">Contact</a></li>
+		<li class="last"><a href="/go/gnavtray_company_more" tabindex="12">More &#8250;</a></li>
+	</ul>
+	<!-- submenu :: Store -->
+	<ul id="store-submenu" class="globalnav-submenu">
+		<li class="first"><a href="/go/gnavtray_store_home" tabindex="13">Store Home</a></li>
+		<li><a href="/go/gnavtray_store_software" tabindex="13">Software</a></li>
+		<li><a href="/go/gnavtray_store_books" tabindex="13">Books</a></li>
+		<li><a href="/go/gnavtray_store_training" tabindex="13">Training</a></li>
+		<li><a href="/go/gnavtray_store_programs" tabindex="13">Support Programs</a></li>
+		<li><a href="/go/gnavtray_store_your_hist" tabindex="13">Order History</a></li>
+		<li><a href="/go/gnavtray_store_purchase_options" tabindex="13">Purchase Options</a></li>
+		<li class="last"><a href="/go/gnavtray_store_mvlp" tabindex="13">Volume Licensing &#8250;</a></li>
+	</ul>
+</div>
+<!--googleon: index--></noscript>
+
+<div id="layoutLogic" class="partial-width with-pod">
+
+<div id="gecko">
+<!-- InstanceBeginEditable name="header" -->
+      <div id="depthpath"><a href="/">Home</a> / <a href="/macromedia/"><strong>Company</strong></a> /</div>
+      <h1 class="macromedia">Contact Macromedia</h1>
+    <!-- InstanceEndEditable -->
+
+<div id="contentBody">
+<!-- InstanceBeginEditable name="content" --> 
+    
+			<div class="columns-2-AB-A">
+				<h2>Get Help</h2>
+				<h3><a href="/support/service/">Customer Service </a></h3>
+				<p>To find contact information and answers to your questions, 
+                    please visit the Customer Service Center.</p>
+				<h3><a href="/support/">Technical Support</a></h3>
+				<p>Find technical support for your Macromedia products.</p>
+				<h3><a href="/buy/">Purchase Products</a></h3>
+				<p>How to purchase Macromedia products around the globe.</p>
+				<h3><a href="/support/training/">Training</a></h3>
+				<p>Find classes, seminars, and other training.</p>
+				<p>&nbsp;</p>
+				<h2>Give Feedback</h2>
+				<h3><a href="/go/report_piracy">Report Piracy</a></h3>
+				<p>Tell us if you know of an instance of software piracy.</p>
+				<h3><a href="../usability/">Customer Participation Program</a></h3>
+				<p>Sign up to participate in usability studies and beta programs.</p>
+				<h3><a href="/bin/webfeedback.cgi">Macromedia.com Website Feedback</a></h3>
+				<p>Send feedback about our website.</p>
+			</div>
+			<div class="columns-2-AB-B">
+				<h2>Get Information</h2>
+				<h3><a href="/international/offices/">Macromedia Offices</a></h3>
+				<p>Find Macromedia around the world.</p>
+				<h3><a href="/macromedia/proom/contacts/">Press</a></h3>
+				<p>Macromedia Public Relations contacts.</p>
+				<h3><a href="/macromedia/ir/macr/services/contact.html">Investor Relations</a></h3>
+				<p>Request financial literature.</p>
+				<h3><a href="http://partners.macromedia.com/">Partners</a></h3>
+				
+        <p>Macromedia partners with industry-leading companies.</p>
+				<h3><a href="/macromedia/hr/">Jobs</a></h3>
+				<p>Find work you love.</p>			
+			</div>
+			<br class="clear-both" />
+			
+			
+		<!-- InstanceEndEditable -->
+</div>
+</div>
+
+<div id="pod">
+<!-- InstanceBeginEditable name="podContent" --> 
+    	<div class="rMod">
+		  <h3>Corporate Headquarters</h3> 
+		  <p>
+		    Macromedia, Inc.<br />
+            <GEO TYPE="US">600 Townsend Street<br />
+            San Francisco, CA 94103</GEO><br />
+            Tel: (415) 252-2000<br />
+            Fax: (415) 626-0554
+			</p>
+            <ul class="link-list">
+				<li><a href="/macromedia/mmdirections.html">Directions to Macromedia</a></li>
+				<li><a href="/international/offices/">Find offices worldwide</a></li>
+			</ul>
+		  <div class="hr"></div>
+			<h3>Customer Service</h3>
+			<p>
+			  US and Canada:<br />
+              800-470-7211 (Toll Free) <br />
+              Outside US and Canada:<br />
+              +1-415-553-7186
+            </p>  
+            <ul class="link-list">
+				<li><a href="/support/email/cscontact/">E-mail Customer Service </a></li>
+			</ul>
+		  <div class="hr"></div>
+		</div>
+		<!-- InstanceEndEditable -->
+</div>
+
+<div class="clear-both">&nbsp;</div>
+<br /><!-- extra break for opera 7 bug -->
+</div>
+<div id="capBottom" class="with-pod">&nbsp;</div>
+
+<!--googleoff: index--><!-- global footer $Revision: 1.9.60.1 $ -->
+<div id="contentFooter">
+	<img id="mmfooterlogo" src="/images/master/logo_macromedia.gif" width="41" height="20" alt="macromedia" />
+	<div id="copyright-terms">
+		<p><a href="/macromedia/">Company</a> | <a href="/sitemap/">Site Map</a> | <a href="/help/privacy.html">Privacy &amp; Security</a> | <a href="/macromedia/contact/">Contact Us</a> | <a href="/help/accessibility.html">Accessibility</a> | <a href="/go/report_piracy">Report Piracy</a> | <a href="/go/sendfeedback">Send Feedback</a></p>
+		<p>©1995-2005 Macromedia, Inc. <a href="/help/copyright.html">All rights reserved</a>.<br />
+			Use of this website signifies your agreement to the <a href="/help/copyright.html">Terms of Use</a>.</p>
+		<p>Search powered by<a href="http://www.google.com/" target="new"><img class="googlelogo" src="/images/master/logo_google.gif" width="43" height="18" alt="Powered by Google" /></a></p>
+	</div>	
+	<br class="clear-both" />
+</div>
+<!--googleon: index-->
+
+
+<!-- InstanceBeginEditable name="analytics" -->
+<div style="display: none;"><!-- SiteCatalyst code version: F.3.
+Copyright 2002 Omniture, Inc. More info available at
+http://www.omniture.com --><script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+var s_pageName=""
+var s_server=""
+var s_channel=""
+var s_pageType=""
+var s_prop1=""
+var s_prop2=""
+var s_prop3=""
+var s_prop4=""
+var s_prop5=""
+var s_prop7=""
+/* E-commerce Variables */
+var s_campaign=""
+var s_state=""
+var s_zip=""
+var s_events=""
+var s_products=""
+var s_purchaseID=""
+var s_eVar1=""
+var s_eVar2=""
+var s_eVar3=""
+var s_eVar4=""
+var s_eVar5=""
+/********* INSERT THE DOMAIN AND PATH TO YOUR CODE BELOW ************/
+/********** DO NOT ALTER ANYTHING ELSE BELOW THIS LINE! *************/
+var s_code=' '//--></script>
+<script language="JavaScript" src="/uber/js/omniture_s_code.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript"><!--
+//make account name an easily changed variable
+var s_accountName="mxmacromedia";
+var s_wd=window,s_tm=new Date;if(s_code!=' '){s_code=s_dc(
+s_accountName);if(s_code)document.write(s_code)}else
+document.write('<im'+'g src="http://192.168.112.2O7.net/b/ss/'+s_accountName+'/1/F.3-fb/s'+s_tm.getTime()+'?[AQB]'
++'&pageName='+escape(s_wd.s_pageName?s_wd.s_pageName:(s_wd.pageName?s_wd.pageName:''))
++'&server='+escape(s_wd.s_server?s_wd.s_server:(s_wd.server?s_wd.server:''))
++'&ch='+escape(s_wd.s_channel?s_wd.s_channel:(s_wd.channel?s_wd.channel:''))
++'&[AQE]" height="1" width="1" border="0" alt="" />')
+//send all requests through an interface method in case any checking needs to be done
+function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=","+str;void(s_gs(ns));}
+//--></script><noscript><img
+src="http://192.168.112.2O7.net/b/ss/mxmacromedia/1/F.3-XELvs"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: F.3. -->
+</div>
+<!-- InstanceEndEditable -->
+<img id="flash_pixel" name="flash_pixel" src="/images/pixel.gif" width="1" height="1" alt="" />
+</body>
+<!-- InstanceEnd --></html>

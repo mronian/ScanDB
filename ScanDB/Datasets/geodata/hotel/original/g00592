@@ -1,0 +1,2431 @@
+<DOC>
+<DOCNO>g00592</DOCNO>
+<DOCHDR>http://www.orbitz.com/App/ViewSpecificHotelLP?masterId=19491</DOCHDR>
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+        
+     
+
+
+
+	
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+	
+	
+		
+		
+	
+	
+	
+		
+		
+		
+	
+	
+	
+		
+		
+		
+		
+	
+	
+	
+	
+		
+		
+			
+		
+		
+				
+			
+
+	
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Orbitz: Hotel Details</title>
+
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="en" />
+<meta name="revisit-after" content="5 days" />
+
+
+
+
+<!-- WT Meta -->
+
+<!-- end WT Meta -->
+
+
+
+<style type="text/css">
+	@import url("/shared/css/global.css.jsp?cache=20041122");
+	
+		@import url("/shared/css/hotelDetails.css.jsp?cache=20041122");
+	
+</style>
+
+	<script type="text/javascript" language="JavaScript" src="/shared/js/global.js?cache=20041122"></script>
+	<script language="javascript" charset="windows-1252"> custom_var = "ELhP0SDIWW!806437857!183181347!7001!-1!1154179407162" </script>
+
+	<script type="text/javascript" language="JavaScript" src="/shared/js/behaviors.js?cache=20041122"></script>
+
+	<script type="text/javascript" language="JavaScript" src="/shared/js/hotelDetails.js?cache=20041122"></script>
+
+
+
+
+
+
+	
+		
+
+
+<style type="text/css">
+	#overview, #overviewScores, #address, #map, #area, #features, #photosAndTours, #rooms, #reviews, #rateMod1, #rateMod2, #rateMod3 {display:none;}
+
+	
+	
+	
+	
+	
+	#overview, #overviewScores, #rateMod1, #ratesHR {display:block;}
+
+
+
+
+	#datelessOrbot, #detailSearchBot{}
+	.blackout {color:#666;font-size:10px;}
+</style>
+
+	
+		
+
+
+<script type="text/javascript" language="Javascript">
+
+
+
+var bNextLink = eval('false');
+var bPrevLink = eval('false');
+var bHasVisualMedia = eval('false');
+var mapUrl = '/App/GetHotelMap?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=debf&r=1';
+
+var iInitTab = parseInt('0');
+if (iInitTab == NaN) {
+	iInitTab = 0;
+}
+
+
+
+function getSiteAdvURL(imgTag,bPhotoCt) {
+	if(bPhotoCt) {
+		var sStr = '%3Bpgurl';
+		imgTag = imgTag.replace(sStr, '_' + iPhotoCt + sStr);
+	}
+	return imgTag.replace("<img src='","").replace("' width=1 height=1 border=0>","");
+}
+
+var tabNames = 'Overview,Map &amp; area info,Features,Photos,Rooms,Reviews'.split(',');
+
+var aPhotoSrc = [];
+
+	aPhotoSrc[0] = '/hotelimages/069/4069/88740/PROP0-20060707-012311-368.jpg';
+	
+
+	aPhotoSrc[1] = '/hotelimages/069/4069/88740/ROOM0-20060707-012311-344.jpg';
+	
+
+	aPhotoSrc[2] = '/hotelimages/069/4069/88740/REST0-20060707-012311-447.jpg';
+	
+
+	aPhotoSrc[3] = '/hotelimages/069/4069/88740/REST1-20060707-012311-308.jpg';
+	
+
+	aPhotoSrc[4] = '/hotelimages/069/4069/88740/AMEN0-20060707-012311-423.jpg';
+	
+
+	aPhotoSrc[5] = '/hotelimages/069/4069/88740/AMEN1-20060707-012311-397.jpg';
+	
+
+
+
+
+var iPhotoCt = 6;
+
+
+
+var iPhoto = 0;
+
+var aPhotos = [];
+for (var i = 0; i < aPhotoSrc.length; i++) {
+	aPhotos[i] = new Image;
+	aPhotos[i].src = aPhotoSrc[i];
+}
+
+var bIsPopup = false;
+
+
+var aContentDivs = [
+	  ['overview','overviewScores','rateMod1','ratesHR']
+	, ['address','map','area','rateMod1','ratesHR']
+	, ['features','rateMod1','ratesHR']
+	, ['photosAndTours','rateMod1','ratesHR']
+	, ['rooms','rateMod2','roomsHR']
+	, ['reviews','rateMod2','ratesHR']
+	, ['rateMod3']
+];
+</script>
+
+	
+		
+
+
+<script language="JavaScript" type="text/javascript">
+function doGRPopLink(sLink) {
+	var bReturn;
+	if (bIsPopup == undefined) {
+		bIsPopup = false;
+	}
+	sLink += "&isPopup=" + (bIsPopup ? "true" : "false");
+	if (!bIsPopup) {
+		var sWin = 'guestReviewsOrbitz'.substr(0,16);
+		popUpGen(sLink,'480','600',sWin,false,"oGRPop");
+	} else {
+		document.location.href = sLink;
+	}
+	return false;
+}
+function doGRPopReview(s) {
+	return doGRPopLink('/App/ViewGuestReviews?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec0&r=2&reviewSelectedIndex='+s);
+}
+function doGRPopReviewFromResults(s) {
+	return doGRPopLink('/App/PrepareGuestReviews?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec1&r=3&hotelEntryKey='+s);
+}
+function doGRPopReviewAll() {
+	return doGRPopLink('/App/ViewGuestReviews?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec2&r=4');
+}
+function doGRPopReviewSegment(s) {
+	return doGRPopLink('/App/PerformHotelGuestReviewFilter?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec3&r=5&segmentType='+s);
+}
+function doGRPopReviewSort(s) {
+	return doGRPopLink('/App/PerformHotelGuestReviewDetailSort?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec4&r=6&sorttype='+s);
+}
+function doGRPopExpert() {
+	return doGRPopLink('/App/ViewExpertReview?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec5&r=7');
+}
+function doGRPopExpertFromResults(s) {
+	return doGRPopLink('/App/PrepareExpertReview?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec6&r=8&hotelEntryKey='+s);
+}
+function doGRPopHint() {
+	return doGRPopLink('/App/ViewHints?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec7&r=9');
+}
+function doGRPopHintSort(s) {
+	return doGRPopLink('/App/PerformHotelGuestHintsSort?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec8&r=a&sorttype='+s);
+}
+function doGRPopHintCategory(s) {
+	return doGRPopLink('/App/PerformHotelGuestHintFilter?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dec9&r=b&categoryType='+s);
+}
+</script>
+	
+		
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+oGRPop = false;
+function grPopKiller() {
+	if (oGRPop) {
+		oGRPop.close();
+	} else if (parent.oGRPop) {
+		parent.oGRPop.close();
+	}
+}
+addEvent(window, "unload", grPopKiller, false);
+</script>
+	
+
+	
+
+	
+</head>
+<body onload="init();onLoadActivity();" onUnLoad="unLoadActivity();" class="dpHeader">
+<a name="top"></a>
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+<map name="myStuffTab">
+	<area shape="rect" coords="0,0,58,40" href="http://www.orbitz.com/App/PerformDisplayMyTrips?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=deca&r=c&shadowing=false" alt="My Trips" />
+	<area shape="rect" coords="60,0,140,40" href="http://www.orbitz.com/App/ViewMyAccount?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=decb&r=d&shadowing=false" alt="My Account" />
+</map>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<!-- begin pop-up blocker check -->
+<script type="text/javascript">
+	function closeBlockedPUMesgBox() {
+		document.getElementById("blockedPUMesgBox").style.display = "none";
+	}
+</script>
+<style type="text/css">
+	#blockedPUMesgBox { display:none; width:770px; background:url(/img/corners/ffffc5_br.gif) no-repeat bottom right #FFFFC5;}
+	#blockedPUMesg { padding:6px; text-align:left; }
+</style>
+
+<div id="blockedPUMesgBox">
+	<div id="blockedPUMesg">
+		<p class="alert"><b>Your pop-up blocker is preventing you from viewing this content.</b>  Override the program by holding the Control key while clicking the link.
+		</p>
+	</div>
+</div>
+<!-- end pop-up blocker check -->
+
+<div id="orbitzHeader">
+	<div id="leftNav">
+		<div><a href="http://www.orbitz.com/App/Home?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&reset=true&z=decc&r=e"><img src="/site/img/chrome/nav/logo.gif" alt="Orbitz and go!" width="425" height="52" border="0" /></a></div>
+		<div class="tabs">
+		<ul>
+
+			
+			
+				<li><a href="http://www.orbitz.com/App/Home?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&reset=true&z=decd&r=f" id="tabqs" onClick="return submitWithActionFromHrefBots(this,false);noEA()"><img src="/site/img/chrome/nav/tab_qs.gif" width="52" height="40" alt="Quick Search" ></a></li>
+				
+
+			
+			
+				<li><a href="http://www.orbitz.com/App/PrepareVacationsHome?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dece&r=g" id="tabpackage" onClick="return submitWithActionFromHrefBots(this,false);noEA()"><img src="/site/img/chrome/nav/tab_v.gif" width="67" height="40" alt="Vacations" /></a></li>
+				
+
+			
+			
+				
+				
+					
+					<li><a href="http://www.orbitz.com/App/ViewHotelSearch?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=decf&r=h" id="tabhotel" onClick="return submitWithActionFromHrefBots(this,false);noEA()"><img src="/site/img/chrome/nav/tab_h_o.gif" width="49" height="40" alt="Hotels" /></a></li>
+
+					
+					<li><a href="http://www.orbitz.com/App/PrepareFlightsTab?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=ded0&r=i" id="tabair" onClick="return submitWithActionFromHrefBots(this,false);noEA()" ><img src="/site/img/chrome/nav/tab_fl.gif" width="50" height="40" alt="Flights" /></a></li>
+				
+			
+
+			
+			<li><a href="http://www.orbitz.com/App/DisplayCarSearch?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=ded1&r=j" id="tabcar" onClick="return submitWithActionFromHrefBots(this,false);noEA()"><img src="/site/img/chrome/nav/tab_r.gif" width="43" height="40" alt="Cars" /></a></li>
+
+			
+			
+
+			
+			
+				<li><a href="http://www.orbitz.com/App/PartnerTracking?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&partnerUrl=CRUISES&z=ded2&r=k"><img src="/site/img/chrome/nav/tab_cr.gif" width="54" height="40" alt="Cruises" /></a></li>
+			
+
+			
+			
+				<li><a href="http://www.orbitz.com/App/PrepareActivitiesHome?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=ded3&r=l"><img src="/site/img/chrome/nav/tab_ac.gif" width="64" height="40" alt="Activities" /></a></li>
+			
+
+		</ul>
+		</div><!-- tabs -->
+	</div><!-- leftNav -->
+
+	<div id="rightNav">
+		<div class="links" id="rightNavNotSignedIn">
+			<ul>
+				
+		
+			
+				<li>Welcome to Orbitz.</li>
+			
+			
+			
+				
+					
+					
+						<li class="signIn"><a href="https://www.orbitz.com/Secure/SignIn?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=ded4&r=m">Sign in</a></li>
+						<li class="register"><a href="https://www.orbitz.com/Secure/ViewNewMemberReg?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=ded5&r=n&signInType=explicit">Register now</a></li>
+					
+				
+			
+			</ul>
+				
+				
+				<div class="feedback"><a href="javascript:O_LC();">Site feedback</a></div>
+			
+			
+		</div><!-- rightNavNotSignedIn -->
+		
+		<div class="links" id="rightNavSignedIn">
+			<ul>
+				<li>Welcome to Orbitz.</li>
+				<li class="signOut"><a href="http://www.orbitz.com/Secure/SignOut">Sign out</a></li>
+			</ul>
+			<div class="feedback"><a href="javascript:O_LC();">Site feedback</a></div>
+		</div><!-- rightNavSignedIn -->
+
+		<div class="tabs">
+			<ul>
+				<li><a href="http://www.orbitz.com/App/ViewMyStuff?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=ded6&r=o"><img src="/site/img/chrome/nav/tab_ms.gif" width="140" height="40" usemap="#myStuffTab" alt="My Stuff" /></a></li>
+				
+					<li><a href="http://www.orbitz.com/App/PrepareDealsHome?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=ded7&r=p"><img src="/site/img/chrome/nav/tab_d.gif" width="44" height="40" alt="Deals" /></a></li>
+				
+				<li><a href="http://www.orbitz.com/App/PartnerTracking?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&partnerUrl=FAQHOME&z=ded8&r=q"><img src="/site/img/chrome/nav/tab_cs.gif" width="67" height="40" alt="Customer Service" /></a></li>
+				<li class="tlc"><a href="http://www.orbitz.com/App/ViewTravelWatchHome?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=ded9&r=r"><img src="/site/img/chrome/nav/tab_tlc.gif" width="68" height="50" alt="TLC" /></a></li>
+			</ul>
+		</div><!-- tabs -->
+	</div><!-- rightNav -->
+	<br class="clear" />
+</div><!-- orbitzHeader -->
+
+
+<div id="body">
+
+	<h1 id="pageHeader">
+
+		
+			
+				
+			
+			
+		
+
+		
+		<div id="rightSideWrapper">
+			<div id="container" class="withRail">
+				
+					
+
+
+
+	
+
+			
+			
+
+
+
+
+
+
+
+		
+	
+		<a class="eaEnabled" href="/App/ViewHotelPrintDetails?popupsDisabled=false" target="_blank" onclick="return popUpPrintItin('/App/ViewHotelPrintDetails?popupsDisabled=false');" >Printer-friendly version</a>
+	
+	
+
+		
+
+				
+			</div>
+		</div>
+		
+		
+			
+				Hotel details
+			
+			
+		
+	</h1>
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" id="summary" width="770">
+<tr>
+<td width="620" class="detailsText">
+	
+	
+		
+		
+	
+
+	
+    
+    
+    
+
+    
+    
+    
+
+    
+        <input type="hidden" id="nextHotelUrl" value="/App/ViewHotelDetails?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=deda&r=s&amp;hotelEntryKey="/>
+        <input type="hidden" id="prevHotelUrl" value="/App/ViewHotelDetails?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dedb&r=t&amp;hotelEntryKey="/>
+
+    
+		
+			
+			
+		
+		
+		
+		
+	
+
+	
+	<p class="major" id="topLink">
+        <a href="/App/ValidateHotelSearch?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&keywordPIB=Las+Vegas&amp;monthInPIB=Aug&amp;dayInPIB=5&amp;monthOutPIB=Aug&amp;dayOutPIB=7&amp;adults=1&z=dedc&r=u">Choose another hotel</a>
+    </p>
+	
+	
+	
+	
+		
+		
+		
+	
+	
+	
+		<p><span class="box2" style="margin-bottom:16px;">
+			<span class="boxtr">
+			<span class="boxbr">
+			<span class="boxtl">
+			<span class="boxbl">
+			<span class="contents">
+	
+	
+		
+			<div class="labelContainer" >
+				From: 
+			</div>
+		
+		<div class="priceContainer">
+			<strong>
+			
+			
+			$79
+			
+			*
+			</strong>
+			<br />
+			
+
+	
+
+	
+		
+		
+	
+				
+			
+			
+		</div>
+		
+			<span style="clear:both;float:left; margin-right:8px;">*rate found for check-in Aug 24, check-out Aug 25<br />
+			<a href="#orbot" id="changeSearchLink">Check prices and availability</a></span>
+		
+		
+		
+		
+	
+	
+	
+				</span>
+			</span>
+			</span>
+			</span>
+			</span>
+		</span></p>
+        
+	<h3>
+		
+          
+             
+                  New York-New York Hotel & Casino
+              
+              
+          
+		
+		
+				<br/><table cellspacing="5" cellpadding="0" border="0"><tr><td style="background-image:none;">
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/pagedef/content/hotel/popupStarRatingGuide.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/pagedef/content/hotel/popupStarRatingGuide.jsp?popupsDisabled=false');" ><img src="/site/img/icons/stars/12px_4_fff.gif"  border="0"/></a>
+	
+
+		
+		</td><td style="background-image:none;padding-top:4px;">Las Vegas, NV</td></tr></table>
+	</h3>
+
+
+    
+
+
+	
+	
+	
+
+
+    
+
+	
+	
+</td>
+<td class="right" rowspan="2">
+
+    
+    &nbsp;
+
+</td>
+</tr>
+	<tr>
+		<td width="620" style="background:none;">
+			<div id="dTabs">
+				<ul class="tabs">
+					
+						<li class="active" id="dTab0"><a href="#" onClick="return dTab(0)" class="novisit">Overview</a></li>
+					
+						<li class="a" id="dTab1"><a href="#" onClick="return dTab(1)" class="novisit">Map & area info</a></li>
+					
+						<li class="a" id="dTab2"><a href="#" onClick="return dTab(2)" class="novisit">Features</a></li>
+					
+						<li class="a" id="dTab3"><a href="#" onClick="return dTab(3)" class="novisit">Photos</a></li>
+					
+						<li class="a" id="dTab4"><a href="#" onClick="return dTab(4)" class="novisit">Rooms</a></li>
+					
+						<li class="a" id="dTab5"><a href="#" onClick="return dTab(5)" class="novisit">Reviews</a></li>
+					
+				</ul>
+			</div>
+		</td>
+	</tr>
+</table>
+
+	
+		
+
+
+
+
+	
+		
+	
+	
+	
+
+
+
+
+<!--QL2: 19491-->
+
+<!-- ORT  -->
+
+<table border="0" cellspacing="0" cellpadding="0" width="770" class="detail">
+	<tr>
+		<td width="620">
+			<div id="tabContent">
+
+				
+				<div id="overview" class="twoCol">
+					
+						<div class="photoHolder"><img src="/hotelimages/069/4069/88740/PROP0-20060707-012311-368.jpg" alt="" class="hotelPhoto" /></div>
+					
+					<p>From its towering skyline to round-the-clock excitement, New York-New York Hotel & Casino truly lives up to its reputation as The Greatest City in Las Vegas. Experience the Big Apple thrills of New York City and the magic of Las Vegas all in one incredible location.  From the entertainment, restaurants, architecture, gaming, and attractions to the unparalleled sights and sounds of this incredible city, you will experience the energy and exhilaration of one of the most unforgettable places in the world – New York-New York Hotel & Casino
+
+** Guests must be 21 to check in. Conventioneers will be charged convention rate by hotel if room is booked online. **</p>
+					<div class="horizontal-list">
+						<a href="#" onClick="return dTab(1);">Plot this hotel on a map</a> |
+						
+							<a href="#" onClick="return dTab(3);">See more photos</a> |
+						
+						<a href="#" onClick="return dTab(2);">View hotel features and amenities</a>
+					</div>
+				</div>
+				
+
+				
+				<div id="overviewScores" class="twoCol">
+					
+						<div class="grShell">
+	
+							<hr class="hr">
+		
+							<h3>Reviews from our users</h3>
+		
+							
+
+
+
+	
+	
+		
+		
+	
+
+
+<div class="grSnapshot">
+	<div class="grScoreLg">
+		<div class="corner">
+			<p class="grScoreMsg" onclick="return doGRPopReviewAll();">Overall score</p>
+			<p class="grScore" onclick="return doGRPopReviewAll();">
+				
+					
+						4.5
+					
+					
+				
+				<span>out of 5</span>
+			</p>
+			<p class="grAboutScores">
+				(332 reviews)<br />
+				
+				
+					
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/shared/pagedef/content/hotel/aboutHotelReviews.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/shared/pagedef/content/hotel/aboutHotelReviews.jsp?popupsDisabled=false','450','300');" >About the scores</a>
+	
+
+				
+			</p>
+		</div>
+	</div>
+	<div class="grGraph">
+		<div class="corner">
+
+			
+				
+					<div class="grLegend">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+					</div>
+				
+				
+			
+
+			
+				<div class="grItem">
+					<div class="grLabel">Amenities</div>
+					<div class="grRating">
+						
+						<div style="width: 82.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Maintenance</div>
+					<div class="grRating">
+						
+						<div style="width: 92.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Hotel Staff</div>
+					<div class="grRating">
+						
+						<div style="width: 92.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Room Comfort</div>
+					<div class="grRating">
+						
+						<div style="width: 92.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Location</div>
+					<div class="grRating">
+						
+						<div style="width: 96.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Value</div>
+					<div class="grRating">
+						
+						<div style="width: 84.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</div>
+
+		
+							
+
+
+
+
+<div class="grLinks">
+	
+	<h6>See scores and reviews by these travelers:</h6>
+
+	<ul>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('A');">
+					
+					
+				
+
+				All travelers (4.5 of
+				5)</a>
+
+			</li>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('L');">
+					
+					
+				
+
+				Leisure (4.5 of
+				5)</a>
+
+			</li>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('B');">
+					
+					
+				
+
+				Business (4.2 of
+				5)</a>
+
+			</li>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('F');">
+					
+					
+				
+
+				Family (4.6 of
+				5)</a>
+
+			</li>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('C');">
+					
+					
+				
+
+				Couples (4.6 of
+				5)</a>
+
+			</li>
+		
+		<br class="clear" />
+	</ul>
+</div>
+
+	
+							<br class="clear" />
+	
+						</div>
+					
+				</div>
+				
+
+				
+				<p id="address">
+					<b>Hotel address:</b>
+					3790 Las Vegas Boulevard South,
+					Las Vegas, NV&nbsp;
+					89109&nbsp;&nbsp;
+				</p>
+				
+
+				
+				<div id="map">
+					<iframe allowtransparency="true" frameborder="0" width="580" height="346" scrolling="no" src="/d.gif" id="mapFrame" name="mapFrame"></iframe>
+					<div id="mapBottom">&nbsp;</div>
+				</div>
+				
+			
+				
+				<div class="twoCol" id="area">
+					
+
+
+	<h4>Area served</h4>
+	<p>McCarran International Airport *LAS* is located 4 Mi. NW</p>
+
+
+	<h4>Area airports</h4>
+	<p>Las Vegas, Henderson</p>
+
+
+
+				</div>
+				
+
+				
+				<div id="features">
+					
+
+
+	<div id="amenities">
+		<h3>Amenities</h3>
+		
+		
+			<ul>
+				
+					<li>Health Club</li>
+				
+					<li>Concierge</li>
+				
+					<li>Handicapped rooms/facilities</li>
+				
+					<li>Spa Services</li>
+				
+			</ul>
+			<ul>
+				
+					<li>High Speed Internet</li>
+				
+					<li>Business Center</li>
+				
+					<li>Restaurant</li>
+				
+					<li>Free Parking</li>
+				
+			</ul>
+			<ul>
+				
+					<li>Conference Facilities</li>
+				
+					<li>Room Service</li>
+				
+					<li>Pool</li>
+				
+			</ul>
+			<br class="clear" />
+		
+	</div>
+
+          			
+					<div class="twoCol">
+						
+							<h3>Dining</h3>
+							
+								<div class="photoHolder"><img src="/hotelimages/069/4069/88740/REST0-20060707-012311-447.jpg" alt="" class="hotelPhoto" /></div>
+							
+							
+								<h4>America Restaurant</h4>
+								<p>America, open 24-hours, is a restaurant that takes you on a road trip around the country. The menu escorts you on a culinary tour and is complimented by wines and beers from coast to coast. America showcases a 90x20 ft. map of the Unites States, complete with mountains, rivers and amber waves of grain. Find your hometown... and eat there too.</p>
+							
+								<h4>Big Apple Bar</h4>
+								<p>With the coolest cocktails and the best live bands in town, the Big Apple Bar is truly a hot spot. Our specially trained mixologists pour unique, New York City-inspired cocktails in an elegantly hip atmosphere, while nightly live entertainment keeps the energy flowing.</p>
+							
+								<h4>Chin Chin</h4>
+								<p>With its exhibition kitchen, Chin Chin allows guests to watch skilled chefs prepare a variety of Chinese dishes, from the signature Classic Shredded Chicken Salad to a delectable assortment of Dim Sum appetizers and entrees.</p>
+							
+								<h4>Coyote Ugly</h4>
+								<p>They bump and grind on top of the bar…and breathe fire from flaming shots. And they’re the bartenders. Welcome to Coyote Ugly, New York-New York’s very own dancing saloon. Belly up for a body shot. Dodge seltzer spray from the bar. Or help decorate by hanging a bra or tie from the ceiling. Because at Coyote Ugly, customer participation is strongly encouraged.</p>
+							
+								<h4>Coney Island Pavilion</h4>
+								<p>Home of the famous Nathan's Hot Dogs and Haagen-Dazs ice cream.</p>
+							
+								<h4>Village Eateries</h4>
+								<p>New York has a flavor all its own. Fortunately, you can taste it right here, at The Village Eateries. Choose from a mouth-watering array offer of tempting City foods, from vendor-style hotdogs and pretzels to overstuffed deli sandwiches and New York-style pizza. How about a cup of espresso, a frozen treat or a fresh fruit smoothie? It’s all there for the tasting, for appetites large or small, at the Village Eateries.</p>
+							
+								<h4>Gonzalez Y Gonzalez</h4>
+								<p>Like its real-life namesake, New York-New York is a melting pot…and one of its tastiest ingredients is Mexican. Welcome to Gonzalez y Gonzalez, a lively café in the center of the city, featuring an authentic tequila bar and outdoor courtyard, replete with lanterns and piñatas. Buenos nochés, amigo!</p>
+							
+								<h4>Il Fornaio</h4>
+								<p>Savor the delicate flavors of Northern Italy while you admire the foliage of Central Park. Il Fornaio offers an intimate setting, where you can bask in the warm glow of a wood-fired oven flickering from the nearby exhibition kitchen. Enjoy wood-fired rotisserie chicken, homemade pasta, and a mouth-watering selection of pizzas, to name just a few signature dishes. Bon appetito.</p>
+							
+								<h4>ESPN Zone</h4>
+								<p>The seventh ESPN Zone, the premier sports-themed dining and entertainment complex, is a great addition to New York-New York Hotel & Casino. More than 165 television monitors are located throughout the facility so you’ll never miss a moment of action. The Screening Room offers multi-game viewing and features tiered seating and custom “Zone Throne” viewing stations. The Sports Arena challenges fans with interactive and competitive attractions, including several proprietary games developed exclusively for ESPN Zone. The Studio Grill serves guests generous portions of American grill food while the SportsCenter Studio Store sells official ESPN merchandise.</p>
+							
+								<h4>America</h4>
+								<p>Take a culinary road trip around the greatest country in the world. Welcome to America, with a 24-hour menu of traditional classics complemented by select wines and beer from coast to coast. America showcases a 90’ x 20’ map of the U.S., complete with purple mountains’ majesty and amber waves of grain. Find your hometown. And eat there.</p>
+							
+								<h4>Gallaghers</h4>
+								<p>Welcome to Gallagher’s Steakhouse. Since 1927, this legendary New York eatery has specialized in savory sirloin, prime rib, and porterhouse. Come and relish the finest USDA prime, dry-aged beef and freshest seafood anywhere.</p>
+							
+								<h4>Nine Fine Irishmen</h4>
+								<p>This authentic Irish pub was built in Ireland for the Irish at heart.  Serves fine Irish fare and fine Irish drink. Gather in a snug and enjoy the entertainment. It’s the Irish pub of Irish pubs. Live Free. Dine Well. Drink Good Beer.</p>
+							
+						
+						
+							<h3>Meeting facilities</h3>
+							<p>New York-New York Hotel & Casino™ offers diverse meeting space and configurations. For your group's special needs, you may also utilize the theater, any of our excellent restaurants, as well as our distinctive pool area. A professional catering staff offers extensive experience in coordinating your special occasion with other services including flowers, decorations, audio/visual equipment and entertainment.</p>
+						
+					</div>
+				</div>
+				
+			
+				
+				<div id="photosAndTours">
+					
+						<div id="photos">
+							
+								
+								
+									<div class="photoBox">
+							
+								<center>
+									<table border="0" cellspacing="0" cellpadding="0" id="photoNav" align="center">
+										<tr>
+											<td><a href="#" onClick="return changePhoto(-1);"><img src="/site/img/hotel/details/photo_prev.gif" width="27" height="27" alt="previous photo" /></a></td>
+											<td id="photoLabel"><span id="photoNum">1</span> of 6</td>
+											<td><a href="#" onClick="return changePhoto(1);"><img src="/site/img/hotel/details/photo_next.gif" width="27" height="27" alt="next photo" /></a></td>
+										</tr>
+									</table>
+								</center>
+							
+							
+								<div id="thePhotoDiv"><img alt="" id="thePhoto" src="/hotelimages/069/4069/88740/PROP0-20060707-012311-368.jpg" /></div>
+							
+									</div>
+								
+							
+						</div>
+					
+					
+				</div>
+				<br />
+				
+
+
+				
+				<div class="twoCol" id="rooms">
+					
+						<div class="photoHolder"><img src="/hotelimages/069/4069/88740/ROOM0-20060707-012311-344.jpg" alt="" /></div>
+					
+					
+						<h4>Players Suite</h4>
+						<p>The Players Suite measures a generous 700 square feet and features a beautiful marble tile entryway, two queen size, Royal Plush beds, relaxing hot tub, chaise lounge and small table. This distinctive “L” shaped room has a private sitting area complete with a television and is ideal for families or guests needing additional space. The stylish bathroom has upgraded marble countertops and an enclosed bathtub/shower combination.</p>
+					
+						<h4>Broadway Deluxe</h4>
+						<p>Newly remodeled deluxe room furnished with 1 king or 2 queen size beds. Approximately 400 square feet. Marble counters in bath with glass tub/shower enclosure. Maximum number of guests per room is 5.</p>
+					
+						<h4>Marquis Suite</h4>
+						<p>With 700 square feet, The Marquis Suite gives you plenty of room to stretch. The room features a lovely, marble tile entryway, a king size, Royal Plush bed, tranquilizing hot tub, and a separate sitting area with a chaise lounge, table and two chairs.  The tasteful bathroom includes handsome marble countertops, and an enclosed bathtub/shower combination.</p>
+					
+						<h4>Jacuzzi Deluxe</h4>
+						<p>The Jacuzzi Deluxe room offers one king-sized bed and a large clover shaped Jacuzzi tub. The bathroom contains a vanity area and an oversized shower. This spacious room offers approximately 400-500 square feet of living space. This is perfect for a romantic getaway or for a relaxing time in the city.</p>
+					
+						<h4>Ziggurat Suite</h4>
+						<p>With nearly 1,100 square feet of living space, this is one of the largest rooms available. Its unique “stair-step” design offers intimate corners and sprawling views all at once. Featuring a king-sized bed, his/her closets, a wet bar, a separate sitting area and a relaxing Jacuzzi tub surrounded by mirrors, the Ziggurat is luxury at its finest. The bathroom includes an oversized shower, dual sinks, and a separate vanity area, while the unique floor-to-ceiling emerald green windows provide an air of privacy and elegance.</p>
+					
+						<h4>Skyline</h4>
+						<p>Standard room furnished with 1 king or 2 queen size beds. Approximately 300 square feet decorated in a 1930's art deco decor. Maximum number of guests per room is 5.</p>
+					
+						<h4>Park Avenue</h4>
+						<p>The Park Avenue Deluxe is a newly renovated accommodation featuring 300-400 square feet of living space with your choice of one king or two queen size beds. The bathrooms have been beautifully upgraded with marble countertops and flooring along with a glass enclosed bathtub/shower combination. The new decor throughout the room is contemporary, simple and sophisticated. Welcome to Park Avenue!</p>
+					
+				</div>
+				
+
+
+				
+				<div class="twoCol" id="reviews">
+					
+						<div class="grShell">
+							<div class="grLeft">
+						
+								<h3>Reviews from our users</h3>
+						
+								<div class="grLeftContent">
+	
+									
+
+
+
+	
+	
+		
+		
+	
+
+
+<div class="grSnapshot">
+	<div class="grScoreLg">
+		<div class="corner">
+			<p class="grScoreMsg" onclick="return doGRPopReviewAll();">Overall score</p>
+			<p class="grScore" onclick="return doGRPopReviewAll();">
+				
+					
+						4.5
+					
+					
+				
+				<span>out of 5</span>
+			</p>
+			<p class="grAboutScores">
+				(332 reviews)<br />
+				
+				
+					
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/shared/pagedef/content/hotel/aboutHotelReviews.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/shared/pagedef/content/hotel/aboutHotelReviews.jsp?popupsDisabled=false','450','300');" >About the scores</a>
+	
+
+				
+			</p>
+		</div>
+	</div>
+	<div class="grGraph">
+		<div class="corner">
+
+			
+				
+					<div class="grLegend">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+					</div>
+				
+				
+			
+
+			
+				<div class="grItem">
+					<div class="grLabel">Amenities</div>
+					<div class="grRating">
+						
+						<div style="width: 82.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Maintenance</div>
+					<div class="grRating">
+						
+						<div style="width: 92.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Hotel Staff</div>
+					<div class="grRating">
+						
+						<div style="width: 92.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Room Comfort</div>
+					<div class="grRating">
+						
+						<div style="width: 92.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Location</div>
+					<div class="grRating">
+						
+						<div style="width: 96.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+			
+				<div class="grItem">
+					<div class="grLabel">Value</div>
+					<div class="grRating">
+						
+						<div style="width: 84.0%;">&nbsp;</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</div>
+
+
+									
+										
+
+											
+
+
+
+
+<div class="grLinks">
+	
+	<h6>See scores and reviews by these travelers:</h6>
+
+	<ul>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('A');">
+					
+					
+				
+
+				All travelers (4.5 of
+				5)</a>
+
+			</li>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('L');">
+					
+					
+				
+
+				Leisure (4.5 of
+				5)</a>
+
+			</li>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('B');">
+					
+					
+				
+
+				Business (4.2 of
+				5)</a>
+
+			</li>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('F');">
+					
+					
+				
+
+				Family (4.6 of
+				5)</a>
+
+			</li>
+		
+			<li>
+				
+					
+					
+					
+						
+					
+				
+
+				
+					
+						<a href="#" onclick="return doGRPopReviewSegment('C');">
+					
+					
+				
+
+				Couples (4.6 of
+				5)</a>
+
+			</li>
+		
+		<br class="clear" />
+	</ul>
+</div>
+
+						
+											<h6 class="grRecent">Most recent user reviews</h6>
+	
+											
+												
+												
+												
+											
+
+
+
+
+	
+	
+		
+	
+
+
+<div class="grReview" id="review0">
+	<div class="grScoreHint" onclick="return doGRPopReview('0');">
+		<div class="grScoreSm">
+			<div><div><div><div>
+				<p><strong>Score</strong></p>
+				<p class="grScore">
+					5
+					<span>out of 5</span>
+				</p>
+			</div></div></div></div>
+		</div>
+		
+		
+			<p class="grTripHintIcon">Quick tip</p>
+		
+	</div>
+
+	<div class="grSingleReview">
+
+		<p class="grQuote">very much like new york</p>
+
+		<p class="grPerson">Eileen, New York, NY Jul 4, 2006</p>
+
+		
+			<h6 class="grRecommend">Would recommend to a friend!</h6>
+		
+
+		
+			<p>
+				I loved this hotel. I was so happy . The food here was great. We had a perfect view of the strip from our hotel window. Room
+				<span class="grElipses">...</span>
+				
+			</p>
+		
+
+		
+
+
+
+
+		
+			
+			
+				<a href="#" onclick="return doGRPopReview('0');" class="grExpand">View full review</a>
+			
+		
+
+	</div>
+</div>
+
+								
+											
+												
+												
+												
+											
+
+
+
+
+	
+	
+		
+	
+
+
+<div class="grReview" id="review1">
+	<div class="grScoreHint" onclick="return doGRPopReview('1');">
+		<div class="grScoreSm">
+			<div><div><div><div>
+				<p><strong>Score</strong></p>
+				<p class="grScore">
+					5
+					<span>out of 5</span>
+				</p>
+			</div></div></div></div>
+		</div>
+		
+		
+			<p class="grTripHintIcon">Quick tip</p>
+		
+	</div>
+
+	<div class="grSingleReview">
+
+		<p class="grQuote">Great Service</p>
+
+		<p class="grPerson">GREG, Dallas, TX Jul 4, 2006</p>
+
+		
+			<h6 class="grRecommend">Would recommend to a friend!</h6>
+		
+
+		
+			<p>
+				we liked the way staff were atentive to our needs , the room was very spacius , and clean, military clean, former USMC here. 
+				<span class="grElipses">...</span>
+				
+			</p>
+		
+
+		
+
+
+
+
+		
+			
+			
+				<a href="#" onclick="return doGRPopReview('1');" class="grExpand">View full review</a>
+			
+		
+
+	</div>
+</div>
+
+								
+											
+												
+												
+												
+											
+
+
+
+
+	
+	
+		
+	
+
+
+<div class="grReview" id="review2">
+	<div class="grScoreHint" onclick="return doGRPopReview('2');">
+		<div class="grScoreSm">
+			<div><div><div><div>
+				<p><strong>Score</strong></p>
+				<p class="grScore">
+					5
+					<span>out of 5</span>
+				</p>
+			</div></div></div></div>
+		</div>
+		
+		
+			<p class="grTripHintIcon">Quick tip</p>
+		
+	</div>
+
+	<div class="grSingleReview">
+
+		<p class="grQuote">Awesome stay !</p>
+
+		<p class="grPerson">Ashley, Seattle, WA Jul 4, 2006</p>
+
+		
+			<h6 class="grRecommend">Would recommend to a friend!</h6>
+		
+
+		
+			<p>
+				This was our first visit to New York New York and I have to say that we will defintely be going back.  It has beautiful,
+				<span class="grElipses">...</span>
+				
+			</p>
+		
+
+		
+
+
+
+
+		
+			
+			
+				<a href="#" onclick="return doGRPopReview('2');" class="grExpand">View full review</a>
+			
+		
+
+	</div>
+</div>
+
+								
+											
+
+											<br class="clear" />
+					
+											<a href="/App/ViewGuestReviews?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dedd&r=v" onclick="return doGRPopReviewAll();" class="grSeeAll">See all 332 user reviews</a>
+
+											<p class="grDisclaimer">Reviews represent the opinions of Orbitz customers, not of Orbitz or its staff.</p>
+
+										
+										
+									
+						
+								</div>
+							</div>
+							<div class="grRight">
+						
+								<div class="grIntroducing">
+									<h3>Introducing hotel reviews!</h3>
+						
+									<p>Don't just take our word for it. Now you can see what fellow travelers have to say about this hotel and thousands of others, including:
+										<ul>
+											<li>Opinions, insight and first-hand observations, sorted by traveler type.</li>
+											<li>Customer ratings for service, comfort, location, amenities and value.</li>
+											<li>Practical, money-saving tips on what to do, where to eat and how to get around.</li>
+										</ul>
+									</p>
+
+									
+
+								</div>
+						
+								
+
+								
+									<div class="grHintBlock">
+
+										<h3>Quick tips from our users</h3>
+
+										
+											
+								
+											
+
+
+
+
+
+
+<h6 class="grHintHead">Entertainment tip, <span class="grHintDistance">Short Walk</span></h6>
+
+
+
+<p>There's entertainment, nightlife, dining, shopping, in every hotel . It was so much fun.</p>
+
+
+	<p class="grPerson">--Eileen, New York, NY Jul 4, 2006</p>
+
+
+	
+										
+											
+								
+											
+
+
+
+
+
+
+<h6 class="grHintHead">Entertainment tip, <span class="grHintDistance">In Hotel</span></h6>
+
+
+
+<p>GREAT SHOWS , AND ATRACTIONS , IN THE CENTER OF EVERTHING</p>
+
+
+	<p class="grPerson">--GREG, Dallas, TX Jul 4, 2006</p>
+
+
+	
+										
+											
+								
+											
+
+
+
+
+
+
+<h6 class="grHintHead">Nightlife tip, <span class="grHintDistance">Short Walk</span></h6>
+
+
+
+<p>there are awesome night clubs at the MGM and the Luxor, all very close.</p>
+
+
+	<p class="grPerson">--Ashley, Seattle, WA Jul 4, 2006</p>
+
+
+	
+										
+
+									</div>
+						
+									<a class="grSeeAllHints" href="#" onclick="return doGRPopHint();">See all quick tips from our users</a>
+
+								
+						
+							</div>
+						</div>
+	
+					
+				</div>
+				
+
+
+				
+				
+			
+					<hr class="hr">
+			
+					
+					
+					
+							
+		
+					<a name="orbot"></a>
+					
+
+
+<div id="datelessOrbot">
+<div class="botBox" >
+	<div class="botTop">
+		<h2>&nbsp;</h2>
+	</div>
+	<div class="botBody">
+		<div class="hr">&nbsp;</div>
+		<div class="bots">
+		
+			<h4>For prices and availability, please enter dates below.</h4>
+		
+		
+		     
+		          <form method="POST" name="sidehotelsearchform" action="/App/HotelPropertySearch?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dede&r=w">
+		          <input type="hidden" name="origin" value="hotel.search.propertylanding" />
+		          <input type="hidden" name="masterId" value="19491">
+		          <input type="hidden" name="tabIndex" value="4">
+		     
+		     
+			
+			<input type="hidden" name="postingPage" value="search" />
+			
+			<input type="hidden" name="keywordPIB" value="Las Vegas" />
+			
+			
+			
+			
+            
+            
+			
+			
+			
+			
+			<div class="dates">
+				<fieldset>
+				<label class="legend">Check-in</label>
+				<select name="monthInPIB" id="monthInPIB" onChange="changeDate(dateDDs,1)">
+	              
+				    <OPTION value="Jul">Jul</OPTION>
+	              
+				    <OPTION selected value="Aug">Aug</OPTION>
+	              
+				    <OPTION value="Sep">Sep</OPTION>
+	              
+				    <OPTION value="Oct">Oct</OPTION>
+	              
+				    <OPTION value="Nov">Nov</OPTION>
+	              
+				    <OPTION value="Dec">Dec</OPTION>
+	              
+				    <OPTION value="Jan">Jan</OPTION>
+	              
+				    <OPTION value="Feb">Feb</OPTION>
+	              
+				    <OPTION value="Mar">Mar</OPTION>
+	              
+				    <OPTION value="Apr">Apr</OPTION>
+	              
+				    <OPTION value="May">May</OPTION>
+	              
+				    <OPTION value="Jun">Jun</OPTION>
+	              
+				</select>
+				<select name="dayInPIB" id="dayInPIB" onChange="changeDate(dateDDs,2)">
+	               
+				    <OPTION value="1">1</OPTION>
+	              
+				    <OPTION value="2">2</OPTION>
+	              
+				    <OPTION value="3">3</OPTION>
+	              
+				    <OPTION value="4">4</OPTION>
+	              
+				    <OPTION selected value="5">5</OPTION>
+	              
+				    <OPTION value="6">6</OPTION>
+	              
+				    <OPTION value="7">7</OPTION>
+	              
+				    <OPTION value="8">8</OPTION>
+	              
+				    <OPTION value="9">9</OPTION>
+	              
+				    <OPTION value="10">10</OPTION>
+	              
+				    <OPTION value="11">11</OPTION>
+	              
+				    <OPTION value="12">12</OPTION>
+	              
+				    <OPTION value="13">13</OPTION>
+	              
+				    <OPTION value="14">14</OPTION>
+	              
+				    <OPTION value="15">15</OPTION>
+	              
+				    <OPTION value="16">16</OPTION>
+	              
+				    <OPTION value="17">17</OPTION>
+	              
+				    <OPTION value="18">18</OPTION>
+	              
+				    <OPTION value="19">19</OPTION>
+	              
+				    <OPTION value="20">20</OPTION>
+	              
+				    <OPTION value="21">21</OPTION>
+	              
+				    <OPTION value="22">22</OPTION>
+	              
+				    <OPTION value="23">23</OPTION>
+	              
+				    <OPTION value="24">24</OPTION>
+	              
+				    <OPTION value="25">25</OPTION>
+	              
+				    <OPTION value="26">26</OPTION>
+	              
+				    <OPTION value="27">27</OPTION>
+	              
+				    <OPTION value="28">28</OPTION>
+	              
+				    <OPTION value="29">29</OPTION>
+	              
+				    <OPTION value="30">30</OPTION>
+	              
+				    <OPTION value="31">31</OPTION>
+	              
+				</select>
+				<a onclick="return popUpCal(1);"><img src="/site/img/buttons/searchBots/calendar.gif" alt="calendar" border="0" class="calbtn" /></a>
+				</fieldset>
+				<fieldset>
+				<label class="legend">Check-out</label>
+				<select name="monthOutPIB" id="monthOutPIB" onChange="changeDate(dateDDs,3)">
+	               
+				    <OPTION value="Jul">Jul</OPTION>
+	              
+				    <OPTION selected value="Aug">Aug</OPTION>
+	              
+				    <OPTION value="Sep">Sep</OPTION>
+	              
+				    <OPTION value="Oct">Oct</OPTION>
+	              
+				    <OPTION value="Nov">Nov</OPTION>
+	              
+				    <OPTION value="Dec">Dec</OPTION>
+	              
+				    <OPTION value="Jan">Jan</OPTION>
+	              
+				    <OPTION value="Feb">Feb</OPTION>
+	              
+				    <OPTION value="Mar">Mar</OPTION>
+	              
+				    <OPTION value="Apr">Apr</OPTION>
+	              
+				    <OPTION value="May">May</OPTION>
+	              
+				    <OPTION value="Jun">Jun</OPTION>
+	              
+				</select>
+				<select name="dayOutPIB" id="dayOutPIB" onChange="changeDate(dateDDs,4)">
+	              
+				    <OPTION value="1">1</OPTION>
+	              
+				    <OPTION value="2">2</OPTION>
+	              
+				    <OPTION value="3">3</OPTION>
+	              
+				    <OPTION value="4">4</OPTION>
+	              
+				    <OPTION value="5">5</OPTION>
+	              
+				    <OPTION value="6">6</OPTION>
+	              
+				    <OPTION selected value="7">7</OPTION>
+	              
+				    <OPTION value="8">8</OPTION>
+	              
+				    <OPTION value="9">9</OPTION>
+	              
+				    <OPTION value="10">10</OPTION>
+	              
+				    <OPTION value="11">11</OPTION>
+	              
+				    <OPTION value="12">12</OPTION>
+	              
+				    <OPTION value="13">13</OPTION>
+	              
+				    <OPTION value="14">14</OPTION>
+	              
+				    <OPTION value="15">15</OPTION>
+	              
+				    <OPTION value="16">16</OPTION>
+	              
+				    <OPTION value="17">17</OPTION>
+	              
+				    <OPTION value="18">18</OPTION>
+	              
+				    <OPTION value="19">19</OPTION>
+	              
+				    <OPTION value="20">20</OPTION>
+	              
+				    <OPTION value="21">21</OPTION>
+	              
+				    <OPTION value="22">22</OPTION>
+	              
+				    <OPTION value="23">23</OPTION>
+	              
+				    <OPTION value="24">24</OPTION>
+	              
+				    <OPTION value="25">25</OPTION>
+	              
+				    <OPTION value="26">26</OPTION>
+	              
+				    <OPTION value="27">27</OPTION>
+	              
+				    <OPTION value="28">28</OPTION>
+	              
+				    <OPTION value="29">29</OPTION>
+	              
+				    <OPTION value="30">30</OPTION>
+	              
+				    <OPTION value="31">31</OPTION>
+	              
+				</select>
+				<a  onclick="return popUpCal(2);"><img src="/site/img/buttons/searchBots/calendar.gif" alt="calendar" border="0" class="calbtn" /></a>
+				</fieldset>
+			</div>
+			<div class="guestInfo">
+	        
+				<fieldset class="rooms">
+					<label for="numberOfRoomsPIB">Rooms</label>
+	                
+	                    
+	                
+					<select name="numberOfRooms" id="numberOfRoomsPIB">
+	               
+				    <OPTION selected value="1">1</OPTION>
+	               
+				    <OPTION value="2">2</OPTION>
+	               
+					</select>
+				</fieldset>
+	        
+	
+	           
+					<fieldset class="guests">
+					<label for="numberOfGuestsPIB">Guests</label>
+			           
+			              
+			           
+							<select name="adults" id="numberOfGuestsPIB">
+					               
+										<OPTION selected value="1">1</OPTION>
+					               
+										<OPTION value="2">2</OPTION>
+					               
+										<OPTION value="3">3</OPTION>
+					               
+										<OPTION value="4">4</OPTION>
+					               
+										<OPTION value="5">5</OPTION>
+					               
+										<OPTION value="6">6</OPTION>
+					               
+										<OPTION value="7">7</OPTION>
+					               
+										<OPTION value="8">8</OPTION>
+					               
+							</select>
+			           <span class="note">&nbsp;(Total # in all rooms)</span>
+					</fieldset>
+	           
+			</div>
+			<div class="action">
+				<button type="submit" class="sysTxtBtn submit xxs" name="Search"  onclick="noEA();" ><span><span><span><span><span><span class="label">Find</span></span></span></span></span></span></button>
+			</div>
+		</form>
+		</div>
+	</div>
+	<div class="botBottom"> 
+		&nbsp;
+	</div>
+</div>
+</div>
+
+
+				
+				
+				
+				<hr class="hr">
+	
+				
+				<div id="terms" class="twoCol">
+					<h3>Hotel policies</h3>
+					<p class="major">
+						<b>Check-in:</b> 3:00PM<br />
+						<b>Check-out:</b> 11:00AM<br />
+						<b>Local currency:</b> USD
+					</p>
+					<br />
+					<h3>Terms and conditions</h3>
+					<p>
+					
+						
+							Rates displayed reflect the lowest rate found over the next 30 days. This rate is subject to change. Rates may not include service charges, extra person charges, fees or incidental charges (such as room service).
+						
+						
+					
+					</p>
+					<p>Converted rates (shown in parentheses) are provided for your convenience. They are based on today&#039;s exchange rate, but the hotel will charge you in the local currency.</p>
+					<p>The amenities and/or facilities may not be located at this hotel, but within a reasonable distance and additional charges may apply for use. All information has been provided by this hotel.</p>
+		            <br />
+				</div>
+				
+
+			</div>
+		</td>
+		<td class="right">
+			<div style="margin:10px 0 0 16px; "><script language="JavaScript1.1" src="/html.ng/channel=hotel&Section=results&adsize=134x130&CookieName=OSC&sessionID=ELhP0SDIWW!806437857!183181347!7001!-1!1154179407162&secure=false&site=orbitz&"></script></div>
+			<div style="margin-top: 10px; "><iframe allowtransparency="true" height="600" width="120" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" src="/html.ng/channel=hotel&Section=results&adsize=120x600&CookieName=OSC&sessionID=ELhP0SDIWW!806437857!183181347!7001!-1!1154179407162&secure=false&site=orbitz&"><script language="JavaScript1.1" src="/js.ng/Params.richmedia=yes&channel=hotel&Section=results&adsize=120x600&CookieName=OSC&sessionID=ELhP0SDIWW!806437857!183181347!7001!-1!1154179407162&secure=false&site=orbitz&"></script><noscript><a href="/click.ng/Params.richmedia=yes&channel=hotel&Section=results&adsize=120x600&CookieName=OSC&sessionID=ELhP0SDIWW!806437857!183181347!7001!-1!1154179407162&secure=false&site=orbitz&"><img src="/image.ng/Params.richmedia=yes&channel=hotel&Section=results&adsize=120x600&CookieName=OSC&sessionID=ELhP0SDIWW!806437857!183181347!7001!-1!1154179407162&secure=false&site=orbitz&" height="600" width="120" border="0"></a></noscript></iframe></div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="background-color:#cef"><img src="/d.gif" width="1" height="10"></td>
+	</tr>
+</table>
+
+<img src="/d.gif" width="1" height="1" alt="" id="orbitzPixel" />
+
+<script language="JavaScript" type="text/javascript">
+	setFirstTab();
+</script>
+
+	
+
+ 
+
+ 
+
+</div>
+
+
+
+
+
+
+<div id="ftr">
+	<div class="nav">
+		<a href="http://www.orbitz.com/App/PerformDisplayMyTrips?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dedf&r=x&shadowing=false">My Trips</a> |
+		<a href="http://www.orbitz.com/App/ViewMyAccount?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dee0&r=y&shadowing=false">My Account</a> |
+		
+			<a href="http://www.orbitz.com/App/ViewTravelWatchHome?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dee1&r=z#flightStatus">Flight status</a> |
+		
+		<a href="http://www.orbitz.com/App/Sitemap?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dee2&r=10">Site map</a> |
+		
+			
+			
+				<a href="http://www.orbitz.com/App/ContactUs?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dee3&r=11">Contact Us</a> |
+			
+		
+		
+			<a href="javascript:O_LC()">Site feedback</a> |
+		
+		<a href="http://www.orbitz.com/App/AboutUs?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dee4&r=12">About Orbitz</a> |
+		<a href="http://www.cendantcorporatetravel.com">Corporate Travel Solutions</a> |
+		
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/pagedef/content/legal/advertise.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/pagedef/content/legal/advertise.jsp?popupsDisabled=false','790','400');" >Advertise on Orbitz</a>
+	
+
+		<br />
+
+		<a href="http://www.orbitz.com/App/Affiliate?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dee5&r=13">Become an affiliate</a> |
+		<a href="http://www.orbitz.com/App/Careers?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dee6&r=14">Careers</a> |
+		
+
+
+
+
+
+
+
+	
+		<a class="eaEnabled" href="http://pressroom.orbitz.com?popupsDisabled=false" target="_blank" onClick="return popUpGen('http://pressroom.orbitz.com?popupsDisabled=false','790','389','Investors','resizable=yes,menubar=yes,status=yes,scrollbars=yes,toolbar=yes,directories=yes,location=yes');" >Media</a>
+		
+	
+	
+ |
+		
+			
+				
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/shared/pagedef/content/legal/lowFarePromise.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/shared/pagedef/content/legal/lowFarePromise.jsp?popupsDisabled=false');" >Low Fare Promise</a>
+	
+ |
+			
+		
+		
+				
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/pagedef/content/legal/bestPriceGuarantee.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/pagedef/content/legal/bestPriceGuarantee.jsp?popupsDisabled=false','500','600');" >Low Price Guarantee</a>
+	
+ |
+		
+		
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/pagedef/content/legal/terms05.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/pagedef/content/legal/terms05.jsp?popupsDisabled=false');" >Terms and conditions</a>
+	
+ |
+		
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/pagedef/content/legal/privacy05.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/pagedef/content/legal/privacy05.jsp?popupsDisabled=false');" >Your Privacy Rights</a>
+	
+
+	</div>
+
+	<div class="nav2">
+		<a href="http://www.orbitz.com/flight-info/">Flights</a> |
+		<a href="http://www.orbitz.com/hotel-info/">Hotels</a> |
+		<a href="http://www.orbitz.com/car-info/">Car Rental</a>
+		
+			 | <a href="http://www.orbitz.com/App/PrepareVacationsHome">Vacation Packages</a> |
+			<a href="http://www.orbitz.com/App/PrepareDealsHome">Travel Deals</a>
+		
+		
+			 | <a href="http://www.orbitz.com/App/ViewTravelWatchHome">Travel Guides</a>
+		
+		
+			 | <a href="http://www.orbitz.com/cruise-info/">Cruises</a> |
+			
+				<a href="http://www.orbitz.com/App/PrepareActivitiesHome?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&z=dee7&r=15">Activities</a> |
+			
+			<a href="http://www.orbitzgames.com">Orbitz Games</a> |
+			<a href="http://sports.espn.go.com/travel/index">Sports Travel</a>
+		
+		
+			<span>
+				<a href="http://www.orbitz.com/App/ViewRSSHelpPage?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&source=ft&type=l&z=dee8&r=16">Add Orbitz feeds</a>
+				<a href="http://www.orbitz.com/App/ViewRSSHelpPage?OSC=ELhP0SDIWW!806437857!183181347!7001!-1&source=ft&type=bt&z=dee9&r=17"><img src="/site/img/logos/rss.gif" /></a>
+			</span>
+		
+	</div>
+
+	<div id="ftrMid">
+		<div class="left">
+			<p>Orbitz guards your privacy and security. We're certified by TRUSTe and Verisign.<br />
+			<em>&copy; 2001 - 2006, Orbitz, LLC. All rights reserved.</em><br />
+			<em>CST 2063530-50; 
+			Hawaii TAR-5627; 
+			Iowa 644; 
+			<strong>Nevada 2003-0387</strong>; 
+			Washington 602-102-724</em></p>
+		</div>
+
+		
+			
+			
+				<div id="ftrSecurity">
+					
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/pagedef/content/legal/privacy05.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/pagedef/content/legal/privacy05.jsp?popupsDisabled=false');" ><img src="/shared/img/logos/security/finalmark.gif" alt="Truste" /></a>
+	
+
+					<script type="text/javascript" src="/site/js/getverisignsealimage.js"></script>
+				</div>
+			
+		
+	</div>
+
+	<div id="ftrAwards">
+		
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/shared/pagedef/content/legal/customer_respect_award.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/shared/pagedef/content/legal/customer_respect_award.jsp?popupsDisabled=false');" ><img src="/site/img/logos/awardOCR.gif" alt=""/></a>
+	
+
+		
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/shared/pagedef/content/legal/biz_travel_mag_award.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/shared/pagedef/content/legal/biz_travel_mag_award.jsp?popupsDisabled=false');" ><img src="/site/img/logos/awardBTM.gif" alt="" class="middle"/></a>
+	
+
+		
+
+
+
+
+
+
+
+		
+	
+	
+		<a class="eaEnabled" href="/pagedef/content/hotel/jdPower2005.jsp?popupsDisabled=false" target="_blank" onClick="return popUpGen('/pagedef/content/hotel/jdPower2005.jsp?popupsDisabled=false','549','568');" ><img src="/site/img/logos/awardJDP.gif" alt=""/></a>
+	
+
+	</div>
+
+</div>
+
+
+
+
+	<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2005 WebTrends Inc.  All rights reserved. -->
+<!-- $DateTime: 2006/03/09 14:15:22 $ -->
+<script type="text/javascript"><!--
+var gDomain="ctix8.cheaptickets.com";
+var gDcsId="dcs4mzzicc2ep3maahjx8kl5c_7e2i";
+var gFpc="WT_FPC";
+var gConvert=true;
+if ((typeof(gConvert)!="undefined")&&gConvert&&(document.cookie.indexOf(gFpc+"=")==-1)&&(document.cookie.indexOf("WTLOPTOUT=")==-1)){
+	document.write("<SCR"+"IPT TYPE='text/javascript' SRC='"+"http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js"+"'><\/SCR"+"IPT>");
+}
+//-->
+</script>
+
+<script src="/site/js/tracking/webtrends.js" type="text/javascript"></script>
+
+<noscript>
+<img alt="" border="0" name="DCSIMG" width="1" height="1" src="http://ctix8.cheaptickets.com/dcs4mzzicc2ep3maahjx8kl5c_7e2i/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" />
+</noscript>
+
+<!-- END OF SmartSource Data Collector TAG -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+ 

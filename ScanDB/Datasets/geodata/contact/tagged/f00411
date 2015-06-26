@@ -1,0 +1,1682 @@
+<DOC>
+<DOCNO>f00411</DOCNO>
+<DOCHDR>http://www.mercurynews.com/mld/mercurynews/contact_us</DOCHDR>
+
+
+
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+
+var rm = false;
+
+</script>
+<title>Contact Us -- MercuryNews.com</title>
+<link rel='stylesheet' type='text/css' href='/css/palette/mercurynews/en/global.css'/><script type="text/javascript" language="javascript">
+
+_krdDartOrd = new Date().getTime();
+
+_krdDartInc = 0;
+var navReady = false;
+var toolsReady = false;var onLoadScript="";function Browser() {var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+// I have disabled the following line, but something similar might be useful later,
+// but launching a popup window is more polite than this alert.
+//if (!b) alert(''Unidentified browser./nThis browser is not supported,'');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.ns=(this.b=="ns" && this.v>=4);
+this.ns4=(this.b=="ns" && this.v==4);
+this.ns6=(this.b=="ns" && this.v==5);
+this.ie=(this.b=="ie" && this.v>=4);
+this.ie4=(this.version.indexOf('MSIE 4')>0);
+this.ie4up = (this.ie && this.v>= 4);
+this.ns5up = (this.ns && this.v>= 5);
+this.ie5=(this.version.indexOf('MSIE 5')>0);
+this.ie5up = (this.ie5);
+this.ie55=(this.version.indexOf('MSIE 5.5')>0);
+this.opera=(this.b=="opera");
+this.def=(this.ie||this.dom);var ua=navigator.userAgent.toLowerCase();
+this.mac = (ua.indexOf("mac")!=-1);if (ua.indexOf("win")>-1) this.platform="win32";
+else if (ua.indexOf("mac")>-1) this.platform="mac";
+else this.platform="other";
+}
+var is = new Browser();
+// tiny extra css. these are ONLY used by old browsers.
+// VAST majority of users will NEVER request these files.
+// Even NS4 is around 7% of market and falling
+if (is.ns4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/mercurynews/en/browser/ns4.css'>\n";
+document.write(css);
+}
+if (((is.ns4)||(is.ie4))&&( is.mac)) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/mercurynews/en/browser/ns4mac.css'>\n";
+document.write(css);
+}
+if (is.ie4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/mercurynews/en/browser/ie4.css'>\n";
+document.write(css);
+}
+
+function LayerObject(divId) {
+this.name = divId;
+if (is.ns4) this.ob = eval("document." +divId);
+else if (is.ie4) this.ob = document.all(divId);
+else this.ob = document.getElementById(divId);
+this.x = 0;
+this.y = 0;
+this.width = this.getWidth();
+this.height = this.getHeight();
+}
+LayerObject.prototype.px = (is.version>=5)?"px":"";
+LayerObject.prototype.hideSyntax = (is.ns4)? "hide":"hidden";
+LayerObject.prototype.showSyntax = "visible";// NS4::  Unbelievable, but document.layername.document.imgname works for img-in-layer-in document
+// and it works for img in layer in table in document.
+// but it doesnt work for img in layer in table in table in document.
+// Maybe a workaround exists, but it seems unlikely at this point.
+// The images MUST therefore be nested only one deep....
+LayerObject.prototype.getInlineLeft = function() {
+if (is.ns4) return this.ob.pageX;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var xPos = 0;
+var yPos = 0;
+while (elem.offsetParent != null) {
+xPos += elem.offsetLeft;
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) xPos += 2;
+return xPos;
+}
+else return (this.ob.offsetLeft + document.body.offsetLeft);
+}
+
+LayerObject.prototype.getInlineTop = function() {
+if (is.ns4) return this.ob.pageY;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var yPos=0;
+while (elem.offsetParent != null) {
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) yPos += 2;
+return yPos;
+}
+else return (this.ob.offsetTop+ document.body.offsetTop);
+}
+
+//getWidth and getHeight works for both inline and positioned divs.
+LayerObject.prototype.getWidth = function () {
+if (is.ns4) return this.ob.clip.width;
+else if (is.opera) return this.ob.style.pixelWidth;
+else return this.ob.offsetWidth;
+}
+LayerObject.prototype.getHeight = function () {
+if (is.ns4) return this.ob.clip.height;
+else if (is.opera) return this.ob.style.pixelHeight;
+else return this.ob.offsetHeight;
+}
+LayerObject.prototype.hide = function() {
+if (is.ns4) this.ob.visibility = this.hideSyntax;
+else this.ob.style.visibility = this.hideSyntax;
+}
+LayerObject.prototype.show = function() {
+if (is.ns4) this.ob.visibility = this.showSyntax;
+else this.ob.style.visibility = this.showSyntax;
+}
+LayerObject.prototype.moveLayerTo = function(toX, toY) {
+this.x = toX;
+this.y = toY;
+}
+LayerObject.prototype.updateLayer = function() {
+if (is.ns4) {
+this.ob.left = Math.round(this.x) + this.px;
+this.ob.top = Math.round(this.y)+ this.px ;
+}
+else {
+this.ob.style.left = Math.round(this.x) + this.px;
+this.ob.style.top = Math.round(this.y) + this.px;
+}
+}
+//-----------------
+function roll(divName, imgName, which) {
+var suffix = (which==1)?"on":"off"
+if ((is.ns4)&&(divName!=0)) {
+var imgObject = eval("document." + divName +".document.images['"+imgName +"']");
+imgObject.src = eval(imgName + "_" + suffix + ".src");
+}
+else {
+document.images[imgName].src = eval(imgName + "_" + suffix + ".src");
+}
+}
+
+function init() {
+if (onLoadScript) eval(onLoadScript);
+}
+
+// Workaround for the netscape resize problem --
+// namely, on resize ns looses div positioning and
+// styles from css files.
+// This checks to see if the window''s dimensions have
+// actually changed (because Netscape often fires a
+// false onResize event when it forms scrollbars);
+// if the dimensions have changed, page is reloaded
+function resizefix(){
+if((document.resizeFix.initWidth != window.innerWidth) ||
+(document.resizeFix.initHeight != window.innerHeight))
+{
+document.location = document.location;
+}
+}
+
+// This code creates a new object with properties
+// to hold the current window width & height to be
+// used in the event of a netscape resize
+document.resizeFix = new Object();
+if(is.ns4){
+document.resizeFix.initWidth = window.innerWidth;
+document.resizeFix.initHeight = window.innerHeight;
+window.onresize=resizefix;
+}
+
+function initMenus(){ //alert("DEBUG = not use nav channel") ;
+}
+
+
+
+function showResults(siteSurveyKey) {
+var url="/mld/templates/contentModules/poll-results-popup.jsp"+ "?siteSurveyKey=" + siteSurveyKey;
+window.open(url, 'Title');
+}
+
+function openWin(URL) {
+aWindow = window.open(URL,
+'thewindow','width=500,height=400,resizable=yes,scrollbars=yes');
+}
+function getSite(){
+foundSite = false;
+site=document.location.hostname;
+endPos=site.indexOf(".com");
+if (endPos>= 1) {
+foundSite = true;
+site = site.substr(0, endPos);
+startPos = site.lastIndexOf(".");
+site = site.substr(startPos + 1);
+}
+return site;
+}
+function getPublication(){
+publication=document.location.pathname;
+startPos=publication.indexOf("/mld/");
+publication=publication.substr(startPos+5);
+endPos=publication.indexOf("/");
+publication=publication.substr(0,endPos);
+return publication;
+}
+function openSlideshow(url,width,height) {
+y=Math.floor((screen.availHeight-height)/2);
+x=Math.floor((screen.width-width)/2);
+window.open(url,'slideshow','width='+width+',height='+height+',top='+y+',left='+x+',scrollbars=yes,resizable=yes').focus();
+}
+
+
+
+</script>
+</head>
+<body class="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CDS : SDP2.5.0_full_02072005_100000 : production --><table width="768" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:5px;">
+<tr><td class="header1">
+
+
+<a HREF="http://mercurynews.npsubscriptions.bayarea.com/"><img SRC="/images/logos/site/mercurynews/mercurynews/mediapartners/sm_logo_mercurynews.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a>
+
+
+
+</td><td class="header2">
+<a href="/"><img src="/images/logos/site/mercurynews/mercurynews/site_logo_340x60.gif" width="340" height="60" alt="" hspace="0" vspace="0" border="0"/></a>
+</td><td class="header3">
+
+
+
+<a href="http://weather.mercurynews.com"><img src="http://banners.wunderground.com/banner/krd_cond/language/www/US/CA/San_Jose.gif" alt="Weather" hspace="0" vspace="0" border="0"></a>
+<br>
+
+
+
+<a href="http://weather.mercurynews.com">Complete Forecast</a>
+
+
+
+</td><td class="header4">
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/mercurynews.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;dcopt=ist;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/mercurynews.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109897140509?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/mercurynews.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109897140509?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+</td></tr></table>
+
+
+
+
+
+<script id="search_box_center_jsp_script" language="javascript" type="text/javascript">
+function searchFormSubmit(form) {
+if (form.searchSelect[1].checked == true) {
+window.location = "http://www.newslibrary.com/nlsearch.asp?forceTheme=RealCities&s_site=mercurynews&search_mode=all&action=search&date_mode=year&year=last+180+days&sort=d%3Ah&nitems=10&region=sj&dbquery=" + form.query.value;
+return false;
+}
+return true;
+}
+</script><table cellspacing="0" cellpadding="0" border="0" width="768"><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr><tr><td align="center" class="navbg1">
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/mercurynews.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/mercurynews.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109897140511?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/mercurynews.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109897140511?" BORDER="0" ></A>
+</NOSCRIPT>
+
+</td></tr><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr></table><table cellspacing="0" cellpadding="0" border="0" width="768">
+<form action="http://www.mercurynews.com/mld/mercurynews/search/search_results.htm" method="get" name="SearchForm_top" onsubmit="return searchFormSubmit(this)">
+<input type=hidden name="pubName" value="mercurynews">
+<input type=hidden name="orderBy" value="date">
+<input type=hidden name="pageStart" value="1">
+
+
+<input type="hidden" name="sitesToSearch" value="mercurynews,realcities">
+
+
+
+<input type=hidden name="pageSize" value="10">
+<input type=hidden name="fieldsToSearch" value="HEADLINE,FORSEARCH,LEAD,BYLINE">
+<input type=hidden name="queryType" value="all">
+<tr style="background-color:#f2f2f2;">
+<td class="newsearch">
+
+<b>Search</b>&nbsp;
+
+
+<input name="searchSelect" value="article" type="radio" checked>Recent News&nbsp;
+
+
+
+<input name="searchSelect" value="archives" type="radio">Archives&nbsp;
+
+
+
+
+<input name="searchSelect" value="web" type="radio">Web&nbsp;&nbsp;
+
+
+
+<b>for&nbsp;&nbsp;</b><input name="query" size="25" maxlength="256" type="text">&nbsp;&nbsp;<input value="Go" type="submit">
+
+</td><script language="javascript" type="text/javascript">
+document.write('<td class="newregbox">');
+if (rm) {
+document.write('Welcome <b>' + rname + '</b><br>');
+
+document.write('	<a href="https://secure.mercurynews.com/listit/myclassifieds/">My Classifieds</a>&nbsp;|&nbsp;');
+
+document.write('<a href="https://registration.mercurynews.com/reg/myAccount.do">My Account</a>&nbsp;|&nbsp;');
+document.write('<a href="https://registration.mercurynews.com/reg/logout.do">Sign Out</a>');
+} else {
+document.write('	Welcome <b>Guest</b><br />');
+document.write('	<a href="https://registration.mercurynews.com/reg/createAccount.do">Sign Up</a>&nbsp;|&nbsp;<a href="https://registration.mercurynews.com/reg/login.do">Sign In</a>&nbsp;|&nbsp;');
+document.write('	<a href="https://registration.mercurynews.com/reg/memberBenefits.do">Member Benefits</a>');
+}
+document.write('</td>');
+</script>
+</tr></form>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="columndiv" width="134"><img src="/images/common/spacer.gif" width="134" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="472"><img src="/images/common/spacer.gif" width="472" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="160"><img src="/images/common/spacer.gif" width="160" height="1"></td></tr><tr>
+<td class="leftrail" valign="top" align="center" width="134">
+
+
+
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0><TR><TD>
+<!-- classifieds -->
+<div class="classnav"><A HREF="/mld/mercurynews/classifieds/"><b>Classifieds</b></A></div>
+<div class="contentnav"><IMG style="padding:0px 3px 0px 1px;" SRC="/images/palette/mercurynews/utility_arrow.gif" ALT="" WIDTH="11" HEIGHT="11" HSPACE="2" BORDER="0">&nbsp;<A HREF="http://www.mercurynews.com/mld/mercurynews/classifieds/employment/"><B>Jobs</B></A></div>
+<div class="contentnav"><IMG style="padding:0px 3px 0px 1px;" SRC="/images/palette/mercurynews/utility_arrow.gif" ALT="" WIDTH="11" HEIGHT="11" HSPACE="2" BORDER="0">&nbsp;<A HREF="http://www.mercurynews.com/mld/mercurynews/classifieds/automotive/"><B>Cars</B></A></div>
+<div class="contentnav"><IMG style="padding:0px 3px 0px 1px;" SRC="/images/palette/mercurynews/utility_arrow.gif" ALT="" WIDTH="11" HEIGHT="11" HSPACE="2" BORDER="0">&nbsp;<A HREF="http://www.mercurynews.com/mld/mercurynews/classifieds/real_estate/"><B>Real Estate</B></A></div>
+<div class="contentnav"><IMG style="padding:0px 3px 0px 1px;" SRC="/images/palette/mercurynews/utility_arrow.gif" ALT="" WIDTH="11" HEIGHT="11" HSPACE="2" BORDER="0">&nbsp;<A HREF="http://www.apartments.com/search/oasis.dll?p=ccn&rgn9=23&page=Area&state=CA&prvpg=2&partner=sjm"><B>Rentals</B></A></div>
+<div class="contentnav"><IMG style="padding:0px 3px 0px 1px;" SRC="/images/palette/mercurynews/utility_arrow.gif" ALT="" WIDTH="11" HEIGHT="11" HSPACE="2" BORDER="0">&nbsp;<A HREF="http://www.mercurynews.com/mld/mercurynews/classifieds/"><B>Stuff</B></A></div>
+<div class="contentnav"><IMG style="padding:0px 3px 0px 1px;" SRC="/images/palette/mercurynews/utility_arrow.gif" ALT="" WIDTH="11" HEIGHT="11" HSPACE="2" BORDER="0">&nbsp;<A HREF="http://www.mercurynews.com/mld/mercurynews/classifieds/personals/"><B>Personals</B></A></div>
+<div class="classnav"><A HREF="http://www.shoplocal.com/mercurynews/new_user_entry.aspx?CityStateZip=95113&AdRef=link03"><b>Shop Local</b></A></div>
+
+<!-- site nav -->
+<div class="navtitlebar"></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/news/"><B>News</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/mercurynews/living/education/">Education</A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/mercurynews/news/obituaries/">Obituaries</A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/mercurynews/living/health/">Health / Science</A><BR /></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/news/opinion/"><B>Opinion</B></A><BR />				
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/mercurynews/news/columnists/">Columnists</A></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/business/"><B>Business</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/mercurynews/business/technology/">Technology</A><BR /></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/sports/"><B>Sports</B></A></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/entertainment/"><B>Entertainment</B></A></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/living/"><B>Life & Style</B></A><BR />
+	&nbsp;&nbsp;&#149;&nbsp;&nbsp;<A HREF="/mld/mercurynews/living/travel/">Travel</A> </div>
+
+<!-- online extras -->
+<div class="navtitlebar">ONLINE EXTRAS</div>
+<div class="contentnav"><A HREF="/mld/mercurynews/archives/"><B>Archives</B></A></div>
+<div class="contentnav"><A HREF="https://registration.mercurynews.com/reg/updateSubscriptions.do?url=http://www.mercurynews.com/mld/mercurynews/"><B>Newsletters</B></A></div>
+<div class="contentnav"><A HREF="http://newspaperads.mercurynews.com/RopCategory.aspx"><B>Newspaper Ads Online</B></A></div>
+<div class="contentnav"><A HREF="http://customcoupon.com/cgi-bin/valuecenter.cgi?config=SANJOSE"><B>Coupons</B></A></div>
+<div class="contentnav"><A HREF="http://maps.bayarea.com/jump.cgi/refsrc=KR.1201"><B>Maps &amp; Directions</B></A></div>
+<div class="contentnav"><A HREF="http://www.mercurynews.com/mld/mercurynews/news/transportation/"><B>Traffic Reports</B></A></div>
+<div class="contentnav"><A HREF="http://www.wunderground.com/auto/mercurynews/CA/San_Jose.html"><B>Weather</B></A></div>			
+<div class="contentnav"><A HREF="http://yp.bayarea.com/bin/cgidir.dll?&MEM=1201"><B>Yellow Pages</B></A></div>			
+<div class="contentnav"><A HREF="http://forums.prospero.com/n/mb/listsf.asp?webtag=kr-mercurynews"><B>Discussion Boards</B></A></div>
+<div class="contentnav"><A HREF="http://www.sportsflea.com/cgi-bin/snapshot/merc/front/page1a.cgi"><B>Today's Front Page</B></A></div>
+
+<!-- site services -->
+<div class="navtitlebar">SITE SERVICES</div>
+<div class="contentnav"><A HREF="/mld/mercurynews/contact_us/"><B>Help</B></A></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/contact_us/feedback/"><B>Feedback</B></A></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/contact_us/site_index/"><B>Site Map</B></A></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/contact_us/advertise/"><B>Advertise</B></A></div>
+<div class="contentnav"><A HREF="http://www.mercurynews.com/subscriberservices"><B>Print Services</B></A></div>
+<div class="contentnav"><A HREF="http://www.pictopia.com/gallery/sjm"><B>Photo Store</B></A></div>
+<div class="contentnav"><A HREF="/mld/mercurynews/contact_us/about/9723906.htm"><B>Ethics Policy</B></A></div>
+<div class="contentnav"><a href="/mld/mercurynews/contact_us/about/"><b>About us</span></b></A></div>
+<div class="contentnav"><a href="/mld/mercurynews/contact_us/contact_list/"><b>Contact a staff member</b></A></div>
+<div class="contentnav"><a href="/mld/mercurynews/contact_us/help/faq/"><b>FAQ</b></A></div>
+<div class="contentnav"><a href="/mld/mercurynews/contact_us/terms_of_use/"><b>Privacy Policy</b></A></div>
+</TD></TR></TABLE>
+<BR />
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td>
+<td class="centerrail" valign="top" align="center" width="472">
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td><td><!--  BEGIN INLINE HEADER component 44 -->
+<DIV align=center>
+<TABLE cellSpacing=2 cellPadding=0 width="97%" border=0>
+  <TBODY>
+  <TR><!--  Breadcrumb -->
+    <TD class=bcrumb vAlign=center><A class=related 
+      title="MercuryNews.com home page" 
+      href="http://www.mercurynews.com/mld/mercurynews/">Back to Home</A> &gt; 
+    </TD>
+    <TD class=byline align=right>&nbsp; </TD></TR>
+  <TR>
+    <TD align=middle bgColor=#ffffff colSpan=2><IMG height=1 alt="" src="contact_us_files/spacer.gif" width=1><BR></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="97%" border=0>
+  <TBODY>
+  <TR><!--  the graphic page title may be replaced by text, the graphic dimensions need to be flexible -->
+    <TD class=pagetitle align=middle width="100%">Contact Us</TD>
+    <TD vAlign=top align=right width=1><IMG height=35 alt="" src="contact_us_files/spacer.gif" width=1> </TD>
+    <TD vAlign=top align=right width=56></TD></TR></TBODY></TABLE>
+<FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>
+<P align=left> To send feedback on the site, go to our <A href="/mld/mercurynews/contact_us/feedback/">Feedback page</A>.<P>
+<P align=left> If you are having a problem registering for the site, please email <A href="mailto:memberservices@support.mercurynews.com">memberservices@support.mercurynews.com</A> or call 1-877-2ad-sell between 6 a.m. and 6 p.m. PST.
+<P align=left> For questions on the billing or vacation stops for your newspaper subscription please email <A href="mailto:circ@mercurynews.com">circ@mercurynews.com</A>. 
+<P align=left> For questions about newspaper delivery and print subscriptions, use our <A href="http://mercurynews.npsubscriptions.bayarea.com/">subscription information page.</A></P>
+<P align=left> For questions or problems with classified ads, email <A href="mailto:e-adhelp@mercurynews.com">e-adhelp@mercurynews.com</A>.<P>
+<P align=left> For questions and comments on newspaper delivery and newspaper racks, please email <A href="mailto:orderflow@mercurynews.com">Customer Service</A>.<P>
+<P align=left> Send letters to the editor to <A href="mailto:letters@mercurynews.com">letters@mercurynews.com</A>.<P>
+<P align=left> For questions about online reprints, email <A href="mailto:jklem@knightridder.com">jklem@knightridder.com</A>.<P>
+<P align=left> For questions about back issues of the paper, call the Mercury News front desk at 408.920.5000. To order, call 408.920.5277.<P>
+<P align=left> If you know the name of a staff member, in most cases you can send them e-mail by typing his or her first initial and last name followed by @mercurynews.com. You also can check our <A href="/mld/mercurynews/contact_us/contact_list/contact_list/">staff list</A>. </FONT>
+<P></P></DIV>
+<H4 align=center><FONT face="Verdana, Arial, Helvetica, sans-serif"><FONT size=1>For question and comments about the San Jose Mercury News and coverage: </FONT></FONT></H4>
+<TABLE border=0>
+<TR vAlign=top><TD>
+      <DIV align=center>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+         <TR>
+          <TD vAlign=top align=left width="50%" height=394>
+            <P><FONT size=2> 
+<A href="#ACTION LINE"><FONT face="Verdana, Arial, Helvetica, sans-serif">ACTION LINE</FONT></A><FONT face="Verdana, Arial, Helvetica, sans-serif"><BR> 
+<A href="#ADMINISTRATION">ADMINISTRATION</A><BR>
+<A href="#ALAMEDA COUNTY NEWS">ALAMEDA 
+COUNTY NEWS</A><BR> 
+<A href="#ARTS &amp; ENTERTAINMENT">ARTS &amp; ENTERTAINMENT</A><BR> 
+<A href="#BREAKING NEWS">BREAKING NEWS</A><BR>  
+<A href="#BACK ISSUES">BACK ISSUES</A> <BR> 
+<A href="/html/mercurynews/contact_us.html#BIRTH LISTINGS">BIRTH LISTINGS</A> <BR>
+<A href="/html/mercurynews/contact_us.html#BOOKS">BOOKS</A><BR>
+<A href="#BUSINESS NEWS">BUSINESS NEWS</A><BR>
+<A href="#CALENDARS">CALENDARS</A><BR>
+<A href="#CALIFORNIA NEWS">CALIFORNIA NEWS</A><BR>
+<A href="#CAREERS">CAREERS</A><BR>
+<A href="#CELEBRATIONS">CELEBRATIONS TRIBUTES</A> <BR>
+<A href="#COLUMNISTS">COLUMNISTS</A><BR>
+<A href="#CORRECTIONS">CORRECTIONS</A> <BR>
+<A href="#DRIVE">DRIVE</A><BR>
+<A href="#E-MAIL">E-MAIL</A><BR>
+<A  href="#EYE">EYE</A>  <BR>
+<A  href="#FAMILY">FAMILY</A><BR>
+<A  href="#FOOD">FOOD</A><BR>
+<A  href="#FOREIGN NEWS">FOREIGN  NEWS</A> <BR>
+<A href="#GRAPHICS">GRAPHICS</A><BR>
+<A href="#HOME DELIVERY">HOME DELIVERY</A> <BR>
+<A href="#HOME &amp; GARDEN">HOME &amp; GARDEN</A> <BR>
+<A href="#LETTERS TO EDITOR">LETTERS TO EDITOR</A> <BR>
+<A href="#LOCAL BUREAUS">LOCAL BUREAUS</A><BR>
+<A href="#MAILING ADDRESS"><FONT face="Verdana, Arial, Helvetica, sans-serif">MAILING ADDRESS</FONT></A><BR>
+<A href="#BAY AREA.COM">MERCURYNEWS.COM</A><BR></P></TD>
+
+<TD vAlign=top align=left width="50%" height=394><FONT size=2><FONT face="Verdana, Arial, Helvetica, sans-serif">
+<A href="#NATIONAL NEWS">NATIONAL NEWS</a><BR>
+<A href="#NEWSROOM MANAGEMENT">NEWSROOM MANAGEMENT</A><BR>
+<A href="#NUEVO MUNDO">NUEVO MUNDO</A><BR>
+<A href="#OBITUARIES">OBITUARIES</A> <BR>
+<A href="#PLACING AN AD">PLACING AN AD</A><BR>
+<A href="#OPINION">OPINION</A><BR>
+<A href="#PENINSULA NEWS">PENINSULA NEWS</A><BR>
+<A href="#PERSONAL FINANCE">PERSONAL FINANCE</A><BR>
+<A href="#COMPUTING">PERSONAL TECHNOLOGY</A><BR>
+<A href="#PERSPECTIVE">PERSPECTIVE</A><BR>
+<A href="#PHOTOGRAPHS">PHOTOGRAPHS</A><BR>
+<A href="#PUBLICITY">PUBLICITY</A><BR>
+<A href="#REAL ESTATE">REAL ESTATE</A> <BR>
+<A href="#RELIGION">RELIGION</A> <BR>
+<A href="#REPRINTS">REPRINTS</A><BR>
+<A href="#RESEARCH SERVICE">RESEARCH SERVICES</A><BR> 
+<A href="#SACRAMENTO BUREAU">SACRAMENTO BUREAU</A><BR>
+<A href="#SAN FRANCISCO BUREAU">SAN FRANCISCO BUREAU</A><BR>
+<A href="#SAN JOSE NEWS">SAN JOSE NEWS</A><BR>
+<A href="#SANTA CRUZ NEWS">SANTA CRUZ NEWS</A> <BR>
+<A href="#SCHOOLS">SCHOOLS</A> <BR>
+<A href="#SPORTS">SPORTS</A><BR>
+<A href="#STYLE">STYLE</A><BR>
+<A href="#TEENS">TEENS</A><BR> 
+<A href="#TRAVEL">TRAVEL</A><BR>
+<A href="#VIET MERCURY">VIET  MERCURY</A><BR>
+<A href="#WEDDINGS AND ANNIVERSARIES">WEDDINGS, ANNIVERSARIES, ENGAGEMENTS, TRIBUTES AND BIRTH  ANNOUNCEMENTS</A></FONT></FONT> </TD></TR></TBODY></TABLE></DIV>
+<DIV align=center><BR>
+
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>
+<A name="MAILING ADDRESS"><B>MAILING ADDRESS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Unless 
+      otherwise noted, send all mail to: </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>San Jose 
+      Mercury News<BR><GEO TYPE="US">750 Ridder Park Drive<BR>San Jose, CA 95190</GEO><BR>Main fax 
+      number: (408) 288-8060<BR>Sports fax number: (408) 920-5244 </FONT>
+      <P align=center>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="LOCAL BUREAUS"><B>LOCAL BUREAUS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>On mail, note 
+      the person or department on the lower left corner of the envelope. On 
+      faxes, name the person and department you want to reach on the first page. 
+      </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For our 
+      Peninsula office, send mail to:<BR>San Jose Mercury News<BR><GEO TYPE="US">310 University 
+      Ave. Suite 200<BR>Palo Alto, CA 94301</GEO><BR>(650) 688-7575<BR>Fax number: 
+      (650) 688-7555 </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For our 
+      Alameda County office, send mail to:<BR>San Jose Mercury News<BR><GEO TYPE="US">3890 
+      Mowry Ave.<BR>Fremont, CA 94538</GEO><BR>(510) 790-7300<BR>Fax number: (510) 
+      790-7332 </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For our Santa 
+      Cruz office, send mail to:<BR>Reporters: David Beck and Ken 
+      McLaughlin.<BR>Phone: (831) 423-3234.<BR>Fax: (831) 423-3119.<BR>Address: 
+      <GEO TYPE="US">1205 Pacific Ave. Suite 201, Santa Cruz, CA 95060</GEO>. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For our 
+      MercuryNews.com office at Knight Ridder Digital headquarters, send mail 
+      to:<BR>General manager: Regan Senkarik<BR>Phone: (408) 938-6000.<BR>Fax: 
+      (831) 938-6040.<BR>Address: <GEO TYPE="US">35 South Market Street, San Jose, CA 95113</GEO>. 
+      </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>In addition 
+      to the local offices listed in this guide, the Mercury News maintains its 
+      own bureaus in Sacramento, Seattle, Washington, D.C. and Hanoi. Address 
+      letters to these bureaus c/o our main office.</FONT>
+      <P>
+      <TABLE width=127>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="ACTION LINE"><B>ACTION LINE</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily<BR>Action Line can help solve consumer problems. For quick access to 
+      our most requested information, or to leave a message, call the Action 
+      Line Information Hotline: <BR>1-(888) 688-6400. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>You can also 
+      mail, e-mail or fax a letter with details of your problem. Include 
+      photocopies of appropriate documents if possible, DO NOT send originals. 
+      Be sure to include your name, address and daytime telephone number. 
+</FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Mail: Action 
+      Line, San Jose Mercury News, <GEO TYPE="US">750 Ridder Park Drive, San Jose, CA 
+      95190</GEO>.<BR>Fax: (408) 271-3786<BR>E-mail: <A 
+      href="mailto:actionline@mercurynews.com">actionline@mercurynews.com</A><BR>Web 
+      site: <A 
+      href="http://www.mercurynews.com/mld/mercurynews/news/columnists/action_line/">mercurynews.com/mld/mercurynews/news/columnists/action_line/</A> 
+      </FONT>
+      <P>
+      <TABLE width=153>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="ALAMEDA COUNTY NEWS"><B>ALAMEDA COUNTY NEWS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily<BR>Bureau chief: Dennis Akizuki (510) 790-7306<BR>Address: <GEO TYPE="US">3890 
+      Mowry Ave., Suite 202<BR>Fremont, CA 94538</GEO><BR>Fax number: (510) 790-7332 
+      </FONT>
+      <P>
+      <TABLE width=149>
+
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="ARTS &amp; ENTERTAINMENT"><B>ARTS &amp; ENTERTAINMENT</B></A> 
+      </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily<BR>Assistant managing editor: Katharine Fong (408) 
+      278-3448.<BR>
+Features Editor: <a href="mailto:jthomas@mercurynews.com">Jeff Thomas</a>, 408-920-5892 <BR>
+Deputy Features Editor: <a href="mailto:rkitagawa@mercurynews.com">Ron Kitagawa</a>, 408-920-5027.<BR>
+E-mail: <A 
+      href="mailto:features@mercurynews.com">features@mercurynews.com</A> 
+</FONT>
+      <P>
+      <TABLE width=149>
+ 
+        <TR><TD align=left><FONT size=-1><A href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO  TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="BACK ISSUES"><B>BACK ISSUES</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Back issues 
+      of the Mercury News are kept for 60 days, when available (individual 
+      issues may sell out before then). You may buy complete issues for the 
+      cover price at the cashier's counter of the Mercury News building, 750 
+      Ridder Park Drive, between 8 a.m. and 5 p.m. weekdays. To check for 
+      availability call (408) 920-5489. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>You also may 
+      order a back issue by telephone and charge it to a credit card by calling 
+      (408) 920-5277 or by sending a check or money order to: Back Issues Desk, 
+      San Jose Mercury News, <GEO TYPE="US">750 Ridder Park Drive, San Jose, CA 95190</GEO>. </FONT>
+      <TABLE width=142>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="BIRTH LISTINGS"><B>BIRTH ANNOUNCEMENTS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>This paid 
+      advertising feature is published each Wednesday in the Family 
+      section.</FONT> 
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>To have a 
+      submission form sent to you, call the Celebrations Coordinator at (408) 
+      920-5984, or email <A 
+      href="mailto:celebrations@mercurynews.com">celebrations@mercurynews.com</A>.
+      <P>
+      <P>To get the forms now, click on the link below. This file requires Adobe 
+      Acrobat (get the free download <B><A 
+      href="http://www.adobe.com/products/acrobat/readstep2.html" 
+      target=new>here</A></B>). 
+      <P><B><A 
+      href="http://www.mercurynews.com/multimedia/mercurynews/archive/birthform.pdf" 
+      target=_blank>Birth Announcement Form</A></B></FONT> 
+      <P>
+      <TABLE width=139>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name=BOOKS><B>BOOKS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Book reviews 
+      are published Sundays in the Arts and Books section.<BR>Editor: Charles 
+      Matthews, (408) 920-5748.<BR>E-mail: <A  href="features@mercurynews.com">features@mercurynews.com</A><BR></FONT>
+      <P>
+      <TABLE width=159>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="BREAKING NEWS"><B>BREAKING NEWS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For a breaking news story, call our main newsroom: (408) 920-5444 after 7:30 a.m. weekdays and after 10 a.m. weekends. </FONT>
+      <TABLE width=159>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO  TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="BUSINESS NEWS"><B>BUSINESS NEWS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily<BR>Editor: Vindu Goel<BR>Main Business Desk: (408) 920-5980, 9 a.m. 
+      to 5 p.m. weekdays.<BR>Fax: (408) 920-5917.<BR>E-mail: <A 
+      href="mailto:business@mercurynews.com">business@mercurynews.com</A><BR>Items 
+      for Memo (promotions and other new jobs) and Journal (new businesses and 
+      other brief items) should be sent to <A 
+      href="mailto:svpeople@mercurynews.com">svpeople@mercurynews.com</A> or 
+      call (408) 920-5545. </FONT>
+      <P>
+      <TABLE width=180>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name=CALENDARS><B>CALENDARS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>All sections   in this guide marked with an asterisk (*) include calendars related to those subjects. Venture's calendar, for example, includes recreational  events and participatory sports. We list events in our calendars free of  charge as a community service. Because of space limitations, we give  preference to timely items. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Calendar  items must be submitted three weeks in advance in written form, with   complete details and a phone number readers may call for more information.  Be sure to include a complete street address for your event. Include your  own name and daytime phone in case we need to contact you. Be sure to  write on the envelope which section is supposed to receive it. 
+      <P>For entertainment listings, please email information (by category)  three weeks in advance to:<BR><A 
+      href="mailto:auditions@mercurynews.com">auditions@mercurynews.com</A><BR><A 
+      href="mailto:attractions@mercurynews.com">attractions@mercurynews.com</A><BR><A 
+      href="mailto:benefits@mercurynews.com">benefits@mercurynews.com</A><BR><A 
+      href="mailto:childrens@mercurynews.com">childrens@mercurynews.com</A><BR><A 
+      href="mailto:comedy@mercurynews.com">comedy@mercurynews.com</A><BR><A 
+      href="mailto:dance@mercurynews.com">dance@mercurynews.com</A><BR><A 
+      href="mailto:events@mercurynews.com">events@mercurynews.com</A><BR><A 
+      href="mailto:fairsfestivals@mercurynews.com">fairsfestivals@mercurynews.com</A><BR><A 
+      href="mailto:filmseries@mercurynews.com">filmseries@mercurynews.com</A><BR><A 
+      href="mailto:galleries@mercurynews.com">galleries@mercurynews.com</A><BR><A 
+      href="mailto:museums@mercurynews.com">museums@mercurynews.com</A><BR><A 
+      href="mailto:music@mercurynews.com">music@mercurynews.com</A><BR><A 
+      href="mailto:theater@mercurynews.com">theater@mercurynews.com</A><BR><A 
+      href="mailto:thingstodo@mercurynews.com">thingstodo@mercurynews.com</A><BR><BR></FONT>
+      <TABLE width=137>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="CALIFORNIA NEWS"><B>CALIFORNIA NEWS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily<BR>National News Desk<BR>E-mail: <A 
+      href="mailto:state@mercurynews.com">state@mercurynews.com</A><BR>For San 
+      Francisco, Sacramento, Los Angeles and other California news. </FONT>
+      <P>
+      <TABLE width=159>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=CELEBRATIONS><B>CELEBRATIONS TRIBUTES</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Wednesday.<BR>This paid advertising feature is published each Wednesday in 
+      the Family section. In addition to celebrations of life, weddings, 
+      anniversaries, engagements and birth announcements are included in this 
+      feature.
+      <P>To have a submission form sent to you, call the Celebrations 
+      Coordinator at (408) 920-5984, or email <A 
+      href="mailto:celebrations@mercurynews.com">celebrations@mercurynews.com</A> 
+
+      <P>To get the forms now, click on the links below. These files require 
+      Adobe Acrobat (get the free download <B><A 
+      href="http://www.adobe.com/products/acrobat/readstep2.html" 
+      target=new>here</A></B>). 
+      <P><B><A 
+      href="http://www.mercurynews.com/multimedia/mercurynews/archive/tributeform.pdf" 
+      target=_blank>Tributes Form</A></B></FONT> 
+      <P>
+      <TABLE width=129>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=COLUMNISTS><B>COLUMNISTS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Phone numbers 
+      and addresses for Mercury News columnists -- and fax numbers and e-mail 
+      addresses, where applicable - appear at the end of each column. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For 
+      columnists not based at the Mercury News (also indicated at the end of the 
+      column), as well as syndicated comics and features, send letters to their 
+      attention c/o Mercury News at 750 Ridder Park Drive, San Jose, Calif., 
+      95190. </FONT>
+      <P>
+      <TABLE width=137>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=COMPUTING><B>PERSONAL TECHNOLOGY</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: Monday</FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Editor: <A 
+      href="mailto:twoody@mercurynews.com">Todd Woody</A>.<BR>Fax: (408) 
+      920-5917.<BR>Items for Computing Calendar may be sent via mail at our main 
+      address, business fax (above) or e-mail: <A 
+      href="mailto:svcalendar@mercurynews.com">svcalendar@mercurynews.com</A> 
+</FONT>
+      <P>
+      <TABLE width=164>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=CORRECTIONS><B>CORRECTIONS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>(Setting the 
+      Record Straight)<BR>The Mercury News corrects all significant errors that 
+      are brought to the editors' attention. Corrections appear on page 2A. If 
+      you believe we have made such an error, please call us at (408) 920-5835 
+      and include the date and page number of the error. </FONT>
+      <P>
+<TABLE width=165><TR><TD align=left><FONT size=-1><A href="#TOP"><FONT  face="Verdana, Arial, Helvetica, sans-serif">RETURN TO  TOP</FONT></A></FONT></TD></TR></TABLE>
+<HR align=center width="50%" noShade>
+<DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=DRIVE><B>DRIVE</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Friday<BR>Editor: Matt Nauman (408) 920-5701.<BR>E-mail: <A 
+      href="mailto:drive@mercurynews.com">drive@mercurynews.com</A><BR>Web site: 
+      <A href="http://www.mercurynews.com/mld/mercurynews/business/industries/automotive/">Drive 
+      section</A> </FONT>
+      <P>
+<TABLE width=165><TR><TD align=left><FONT size=-1><A href="#TOP"><FONT  face="Verdana, Arial, Helvetica, sans-serif">RETURN TO  TOP</FONT></A></FONT></TD></TR></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name=E-MAIL><B>E-MAIL</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Individual 
+      Mercury News staff members and many departments have their <A 
+      href="http://www.mercurynews.com/mld/mercurynews/contact_us/contact_list">own 
+      e-mail addresses.</A> </FONT>
+      <P>
+<TABLE width=165><TR><TD align=left><FONT size=-1><A href="#TOP"><FONT  face="Verdana, Arial, Helvetica, sans-serif">RETURN TO  TOP</FONT></A></FONT></TD></TR></TABLE>
+<HR align=center width="50%" noShade>
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=EYE><B>EYE</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Friday<BR>Editor: Bruce Manuel (408) 920-5600. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For eye's 
+      nightclub listings, write "Attn. EYE Nightclub Calendar" on the envelope. 
+      For questions about nightclub listings, call (408) 920-5919. <BR>E-mail: 
+      <A 
+      href="mailto:features@mercurynews.com">features@mercurynews.com</A><BR>Web 
+      site: <A 
+      href="http://www.mercurynews.com/mld/mercurynews/entertainment/eye/">mercurynews.com/mld/mercurynews/entertainment/eye/</A> 
+      </FONT>
+      <P>
+<TABLE width=160><TR>  <TD align=left><FONT size=-1><A href="#TOP"><FONT face="Verdana, Arial, Helvetica,  sans-serif">RETURN TO TOP</FONT></A></FONT></TD></TR></TABLE>
+<HR align=center width="50%" noShade>
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=FAMILY><B>FAMILY</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: Wednesdays<BR>Section Editor: <A href="mailto:kcasto@mercurynews.com">Karen Casto</A> (408) 920-5924.<BR>Section Editors:</FONT>
+      <P>
+
+<TABLE width=160><TR>  <TD align=left><FONT size=-1><A href="#TOP"><FONT face="Verdana, Arial, Helvetica,  sans-serif">RETURN TO TOP</FONT></A></FONT></TD></TR></TABLE>
+<HR align=center width="50%" noShade>
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=FOOD><B>FOOD</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Wednesday<BR>Section Editor: <A 
+      href="mailto:rsalner@mercurynews.com">Rebecca Salner</A> (408) 
+      920-5998.<BR>Section Editors: <A 
+      href="mailto:cjung@mercurynews.com">Carolyn Jung</A> (408) 920-5451.<BR><A 
+      href="mailto:jkaufmann@mercurynews.com">Julie Kaufmann</A> (408) 278-3447. 
+      </FONT>
+      <P>
+      <TABLE width=139>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="FOREIGN NEWS"><B>FOREIGN NEWS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily<BR>Foreign News Desk: (408) 920-5704.<BR>E-mail: <A 
+      href="mailto:world@mercurynews.com">world@mercurynews.com</A><BR>Editor: 
+      <A href="mailto:jhoeffel@mercurynews.com">John Hoeffel</A> (408) 
+      920-5549.</FONT> 
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For our 
+      overseas bureaus:<BR>Assistant Editor: <A 
+      href="mailto:mwinter@mercurynews.com">Michael Winter</A> (408) 920-5700. 
+      </FONT>
+      <P>&nbsp; 
+      <TABLE width=159>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <P>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=GRAPHICS><B>GRAPHICS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Interim Art 
+      Director: <A href="mailto:pwei@mercurynews.com">Paiching Wei</A> (408) 
+      920-5456<BR></FONT>
+      <P>
+      <TABLE width=159>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <P>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="HOME &amp; GARDEN"><B>HOME &amp; GARDEN</B></A> 
+      </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Friday<BR>Section Editor: <A href="mailto:kcasto@mercurynews.com">Karen 
+      Casto</A> (408) 920-5924.<BR>Garden writer: <A 
+      href="mailto:hhayes@mercurynews.com">Holly Hayes</A>.<BR>Fax: (408) 
+      271-3786.<BR></FONT>
+      <P>
+      <TABLE width=129>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="LETTERS TO EDITOR"><B>LETTERS TO THE EDITOR</B></A> 
+      </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily<BR>Letters for our editorial page must include the writer's name, 
+      address and phone number. We do not give out letter writers' phone numbers 
+      or addresses. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Mail: Write 
+      "Letters to the Editor" on the envelope and send it to our main 
+      address.<BR>Fax: (408) 271-3792.<BR>E-mail: <A 
+      href="mailto:letters@mercurynews.com">letters@mercurynews.com</A><BR>For 
+      questions about Letters to the Editor, call John Swartley at (408) 
+      920-5476.<BR>Many individual sections of the Mercury News also publish 
+      letters to the editor. Write the name of the section on the envelope and 
+      send it to our main address. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Also see 
+      Opinion. </FONT>
+      <P>
+      <TABLE width=168>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT> </TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name=MERCURYNEWS.COM><B>MERCURYNEWS.COM</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>The 
+      MercuryNews.com site is a joint effort by the San Jose Mercury News and 
+      Knight Ridder Digital.<BR>General manager: Regan Senkarik (408) 
+      938-6159.<BR>FAX: (408) 938-6040<BR>E-mail: <A 
+      href="mailto:bayareafeedback@knightridder.com">bayareafeedback@knightridder.com</A></FONT> 
+
+      <P>
+      <TABLE width=142>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="NATIONAL NEWS"><B>NATIONAL NEWS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily<BR>National News Desk: (408) 920-5706.<BR>Assistant Editor: Michael 
+      Winter (408) 920-5700.<BR>E-mail: <A 
+      href="mailto:nation@mercurynews.com">nation@mercurynews.com</A> </FONT>
+      <P>
+      <TABLE width=146>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="NUEVO MUNDO"><B>NUEVO MUNDO</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Fridays<BR>Spanish language news, information and entertainment 
+      guide.<BR>Publisher: <A href="mailto:mhinestrosa@mercurynews.com">Marina 
+      Hinestrosa</A> (408) 920-5896.<BR>Suggestions and comments: (408) 
+      920-5289<BR>Web site: <A 
+      href="http://www.mercurynews.com/mld/nuevomundo/">mercurynews.com/nuevomundo</A></FONT> 
+
+      <TABLE width=142>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=OBITUARIES><B>OBITUARIES</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: Daily<BR>
+There are two ways to place a notice of death in the Mercury News.<BR>
+Obituary notices: These paid notices announce services and let family members write their own remembrances. Information is accepted from mortuaries only. The Classified Advertising Department handles obituary  notices for a fee based on length. Photos may be delivered 8 a.m. to 5 p.m. weekdays. Call 408 920-5276, fax (408) 288-9972 or email <a href="mailto:obits@mercurynews.com">obits@mercurynews.com</a> weekdays for details.<BR>
+Obituaries: These are stories written by reporters at the Mercury News. Because these are news, we aim to publish them within a week of a death. We judge each potential obituary based on news value and other factors. If you think you have a story, tell us about it briefly at (408) 920-5256. Both types of obituaries can be found at <A href="http://www.mercurynews.com/mld/mercurynews/news/obituaries/">www.mercurynews.com/mld/mercurynews/news/obituaries/</A>.</FONT>
+      <P>
+      <TABLE width=172>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=OPINION><B>OPINION</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily<BR>Editor: David Yarnold, (408) 920-5254.<BR>Associate Editor: 
+      Jeanne Mariani-Belding.<BR>E-mail: <A 
+      href="mailto:opinions@mercurynews.com">opinions@mercurynews.com</A><BR>Direct 
+      questions and submissions for the commentary page to Jim Braly, (408) 
+      920-5475.<BR>If you'd like to send a letter for publication, see Letters 
+      to the Editor and Perspective. </FONT>
+      <P>
+      <P>
+      <P>
+      <TABLE width=175>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="PENINSULA NEWS"><B>PENINSULA NEWS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Bureau chief: 
+      Elizabeth Howton, (650) 688-7552. <BR>Assistant bureau chief: Peter 
+      Delevtt (650) 688-7556.<BR>Address: <GEO TYPE="US">310 University Ave. Suite 200, Palo 
+      Alto, CA 94301</GEO>. <BR>Fax: (650) 688-7555. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>The Mercury 
+      News publishes a daily Peninsula edition. It covers San Mateo County and 
+      northern Santa Clara County, including Palo Alto, Mountain View, Los 
+      Altos, East Palo Alto, Menlo Park, Atherton and Redwood City, among other 
+      communities. Calendar items appear in the Peninsula section on Fridays. 
+      Send calendar listings to <A 
+      href="mailto:pencalendar@mercurynews.com">pencalendar@mercurynews.com</A>, 
+      or fax them to the number above. If you have a news tip or story idea, 
+      send it to <A 
+      href="mailto:communitynews@mercurynews.com">communitynews@mercurynews.com</A> 
+      or call (650) 688-7575. </FONT>
+      <P>
+      <TABLE width=180>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="PERSONAL FINANCE"><B>PERSONAL FINANCE</B></A> 
+</FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Saturdays<BR>News and information about personal finance, careers and the 
+      workplace.<BR>Reporter: <A 
+      href="mailto:%20mschwanhausser@mercurynews.com">Mark Schwanhausser,</A> 
+      (408) 920-5543. </FONT>
+      <P>
+      <TABLE width=176>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=PERSPECTIVE><B>PERSPECTIVE</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Sunday<BR>Editor: Kim Fararo (408) 920-5270.<BR>Send commentary and 
+      opinion articles to our main office.<BR>E-mail: <A 
+      href="mailto:perspective@mercurynews.com">perspective@mercurynews.com</A>.<BR></FONT>
+      <P>
+      <TABLE width=152>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=PHOTOGRAPHS><B>PHOTOGRAPHS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>If you have 
+      an idea for a newsworthy photo, call our Photo Desk at (408) 920-5262. 
+      </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>If you wish 
+      to buy a print of a staff photo we've published, call our Illustrations 
+      Library between noon and 2 p.m. weekdays, (408) 920-5668. (Note: We do not 
+      sell copies of unpublished photos or photos not taken by our own staff.) 
+      </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>To order 
+      photos, use the following forms. These files require Adobe Acrobat (free 
+      download <B><A href="http://www.adobe.com/products/acrobat/readstep2.html" 
+      target=new>here</A></B>).</FONT></P><FONT 
+      face="Verdana, Arial, Helvetica, sans-serif" size=1>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><B><A 
+      href="http://www.mercurynews.com/multimedia/mercurynews/mercurynews/archive/PhotoReq.pdf">Photo 
+      Order Request Form</A></B><BR><B><A 
+      href="http://www.mercurynews.com/multimedia/mercurynews/mercurynews/archive/PhotoOrder.pdf">Photo 
+      Order</A></B></FONT></P><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1>
+      <TABLE width=154>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=PUBLICITY><B>PUBLICITY</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>When sending 
+      a publicity release, be sure to include your name and a daytime phone 
+      number so we can call you for more information. Send it at least two weeks 
+      before the desired publication date. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>If you're 
+      doing a lot of publicity for your group or business, you might want to 
+      pick up a how-to book at a bookstore or library. But the main thing is to 
+      make your announcement as readable as possible: clear, complete and 
+      concise. Be sure to include a complete street address and city for your 
+      event. Put the most important facts in the first paragraph. And remember: 
+      neatness counts. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>We can't 
+      return photos, so <B>never</B> send your only copy. Write your name and 
+      phone number on the back, and identify the people in the picture. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>You can mail, 
+      fax or hand-deliver your release. Some departments accept e-mail (call 
+      first). Be sure to name a specific department on the envelope. Study the 
+      paper and decide which section or feature is most appropriate for your 
+      news. </FONT>
+      <P>
+      <TABLE width=152>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="REAL ESTATE"><B>REAL ESTATE</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Saturday<BR>Real estate writer: Susan McAllister (408) 
+      920-5833.<BR>E-mail: <A 
+      href="mailto:realestate@mercurynews.com">realestate@mercurynews.com</A> 
+      </FONT>
+      <P>
+
+<TABLE width=152><TR><TD align=left><FONT size=-1><A href="#TOP"><FONT face="Verdana, Arial, Helvetica, sans-serif">RETURN TO TOP</FONT></A></FONT></TD></TR></TABLE>
+<HR align=center width="50%" noShade>
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A name="RELIGION"><B>RELIGION</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: Saturdays<BR>Religion writer: <A href="mailto:revans@mercurynews.com">Robin Evans</a>, (408) 920-5508.<BR></FONT><P>
+
+      <TABLE width=163><TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="RESEARCH SERVICE"><B>RESEARCH SERVICE</B></A> 
+</FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Address 
+      general inquiries that pertain to finding articles in our archives or how 
+      to gain permission to reprint articles on the web or other media to the 
+      general News Search and Permissions line at (408) 938-6128. </FONT>
+      <P>
+      <TABLE width=128>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=REPRINTS><B>REPRINT PERMISSION</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For glossy 
+      reprints or e-prints of articles written by Mercury News staff writers, 
+      please send an e-mail to <A 
+      href="mailto:mercurynews@reprintbuyer.com">mercurynews@reprintbuyer.com</A>. 
+      Include the headline, date the article appeared and the author. A 
+      representative of Reprint Buyer will contact you with pricing 
+      information.</FONT> 
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For a link to 
+      an article written by a Mercury News staff writer, please send an e-mail 
+      to <A href="mailto:jklem@knightridder.com">John Klem</A>. Include the URL, 
+      headline, date the article appeared and the author.</FONT> 
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For all other 
+      requests, including permission to republish articles written by Mercury 
+      News staff writers in books, newspapers and magazines, please send an 
+      e-mail to <A href="mailto:rramirez@mercurynews.com">Rich Ramirez</A> at 
+      the Mercury News. Include the headline, date the article appeared, the 
+      author and reason for the reprint. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For wire 
+      services stories and syndicated material (columns, comics), you must get 
+      permission from the original source.</FONT> 
+      <P>
+      <TABLE width=133>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <P>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="SACRAMENTO BUREAU"><B>SACRAMENTO BUREAU</B></A> 
+      </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Bureau chief: 
+      Mark Gladstone<BR>(916) 325-4314</FONT> 
+      <P>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1>Reporters:<BR>Kate Folmar<BR>Phone: (916) 441-4602.<BR>Ann E. 
+      Marimow<BR>Phone: (916) 325-4315<BR>Dion Nissenbaum<BR>Phone: (916) 
+      441-4603<BR>Address: <GEO TYPE="US">1215 K St., Suite 920, Sacramento, CA 95814</GEO>. </FONT>
+      <P>
+      <TABLE width=170>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="SAN JOSE NEWS"><B>SAN JOSE AREA NEWS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>The main 
+      edition of the paper covers San Jose, Santa Clara, Sunnyvale, Cupertino, 
+      Milpitas, Los Gatos, Saratoga, Monte Sereno and Campbell. For other local 
+      news, see the appropriate heading. Also see Valley Log for special events. 
+      <BR>Published: Daily<BR>E-mail: <A 
+      href="mailto:local@mercurynews.com">local@mercurynews.com</A>
+      <P>Metro Editor, News: Randy Keith (408) 271-3747.<BR>Metro Editor, 
+      Enterprise: Elisabeth Rubinfien (408) 920-5055.<BR>Metro Editor, Planning: 
+      Marc Brown (408) 920-5446.<BR></FONT></FONT>
+      <TABLE width=126>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="SANTA CRUZ NEWS"><B>SANTA CRUZ COUNTY 
+      BUREAU</B></A></FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Reporters: 
+      David Beck and Ken McLaughlin.<BR>Phone: (831) 423-3234.<BR>Fax: (831) 
+      423-3119.<BR>Address: <GEO TYPE="US">1205 Pacific Ave. Suite 201, Santa Cruz, CA 95060</GEO>. 
+      </FONT>
+      <P>
+      <TABLE width=163>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=SCHOOLS><B>SCHOOLS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For 
+      school-related story ideas, call Education Editor Luis Zaragoza at (408) 
+      920-5803.<BR>For Mercury News Newspapers in Education, call (408) 
+      920-5535.<BR>The Mercury News provides the newspaper for classroom use at 
+      a substantial discount - or for free, thanks to generous sponsors. Mercury 
+      News in Education includes a wide range of supplementary materials at no 
+      extra charge. Call for information about services or to learn about 
+      sponsoring a class. </FONT>
+      <P>
+      <TABLE width=141>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name=SPORTS><B>SPORTS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Daily </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Main Sports Line: (408) 
+      920-5354.<BR>E-mail: <A 
+      href="mailto:sports@mercurynews.com">sports@mercurynews.com</A><BR>Fax: 
+      (408) 920-5244.<BR>
+To report results of high school and community sports, call (408) 920-5354 after 5 p.m. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Press releases of general interest should be addressed to Craig Lancaster. Releases concerning high school and community sports should be sent to high schools editor. All press releases can be faxed. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Send letters 
+      for The Fans Speak Out column to the Sports Department. Include your name, 
+      address and phone number. </FONT>
+      <P>
+      <TABLE width=162><TR><TD align=left><FONT size=-1><A  href="#TOP"><FONT face="Verdana, Arial, Helvetica, sans-serif">RETURN TO  TOP</FONT></A></FONT></TD></TR></TABLE><P>
+<DIV align=center>
+<HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A name=STYLE><B>STYLE</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Sunday<BR>
+Section editor: <a href="mailto:cchow@mercurynews.com">Crystal Chow</a>, (408) 920-5954.<BR>
+Fashion editor: <a href="mailto:dkato@mercurynews.com">Donna Kato</a>, (408) 920-5393.<BR></FONT>
+      <P>
+
+<TABLE width=152><TR><TD align=left><FONT size=-1><A href="#TOP"><FONT face="Verdana, Arial, Helvetica, sans-serif">RETURN TO TOP</FONT></A></FONT></TD></TR></TABLE>
+<HR align=center width="50%" noShade>
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A name="TEENS"><B>TEENS</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: Tuesdays<BR>Editor: <A href="mailto:nmartinez@mercurynews.com">Natalie Martinez</a>, (408) 920-5965.<BR></FONT><P>
+
+
+      <TABLE width=162>
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <P>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name=TRAVEL><B>TRAVEL</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Sunday<BR>Editor: <A href="mailto:lzavoral@mercurynews.com">Linda Zavoral</a>, (408) 920-5960.<BR>
+</FONT><P>
+      <TABLE width=164>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <HR align=center width="50%" noShade>
+
+      <DIV align=center><FONT face="Verdana, Arial, Helvetica, sans-serif" 
+      size=1><A name="VIET MERCURY"><B>VIET MERCURY</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Friday<BR>Vietnamese language news, information and 
+      entertainment.<BR>Publisher: De Tran, (408) 271-3707.<BR>Web site: <A 
+      href="http://www.mercurynews.com/mld/vietmerc/">mercurynews.com/vietmerc</A><BR></FONT>
+      <TABLE width=159>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="WEDDINGS AND ANNIVERSARIES"><B>WEDDINGS, ANNIVERSARIES, ENGAGEMENTS, 
+      TRIBUTES AND BIRTH ANNOUNCEMENTS</B></A></FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Published: 
+      Wednesday 
+      <P>This paid advertising feature is published each Wednesday in the Family 
+      section.</FONT> 
+      <P>To have a submission form sent to you, call the Celebrations 
+      Coordinator at (408) 920-5984, or email <A 
+      href="mailto:celebrations@mercurynews.com">celebrations@mercurynews.com</A> 
+
+      <P>To get the forms now, click on the links below. These files require 
+      Adobe Acrobat (get the free download <B><A 
+      href="http://www.adobe.com/products/acrobat/readstep2.html" 
+      target=new>here</A></B>). 
+      <P><B>Forms: <A 
+      href="http://www.mercurynews.com/multimedia/mercurynews/archive/weddingform.pdf" 
+      target=_blank>Wedding</A> | <A 
+      href="http://www.mercurynews.com/multimedia/mercurynews/archive/anniverform.pdf" 
+      target=_blank>Anniversary</A> | <A 
+      href="http://www.mercurynews.com/multimedia/mercurynews/archive/engagementform.pdf" 
+      target=_blank>Engagement</A> | <A 
+      href="http://www.mercurynews.com/multimedia/mercurynews/archive/tributeform.pdf" 
+      target=_blank>Tributes</A> | <A 
+      href="http://www.mercurynews.com/multimedia/mercurynews/archive/birthform.pdf" 
+      target=_blank>Birth Announcement</A></B></FONT> 
+      <P> 
+      <P>
+      <TABLE width=180>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="NEWSROOM MANAGEMENT"><B>NEWSROOM MANAGEMENT</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Chairman and Publisher:  George Riggs, (408) 920-5575<BR>Responsible for all aspects of the Mercury News. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Executive Editor and Vice President: Susan Goldberg, (408) 920-5456.<BR>Responsible for all sections, except editorial/commentary pages and advertising. 
+      </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Editor and Senior Vice President / Opinion: David Yarnold, (408) 920-5254.<BR>Responsible for the editorial and opinion pages. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Managing Editor: David Satterfield, (408) 920-5352<BR>Responsible for day-to-day newsroom operations.</FONT> 
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Assistant Managing Editor/Weekend: Herschel Kenner, (408) 278-3478. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Deputy Managing Editor/Visuals: Matt Mansfield, (408) 920-5298. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Deputy Managing Editor/Convergence: Steve Wright, (408) 920-5325. <BR>Responsible for Business, budget, training and development.</FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Assistant Managing Editor/Metro: Bert Robinson, (408) 920-5970.<BR>Responsible for San Jose area and statewide news coverage. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>National Editor: John Hoeffel, (408) 920-5549.<BR>Responsible for national and foreign news coverage. </FONT><P>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Assistant Managing Editor/Features: Katharine Fong, (408) 278-3448.</FONT> 
+      <TABLE width=162>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT face="Verdana, Arial, Helvetica, sans-serif">RETURN TO TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name=ADMINISTRATION><B>OTHER ADMINISTRATION</B></A> </FONT></DIV><P>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Senior Vice President/Productions/Distribution:  Glen Nardi, (408) 920-5553<BR><BR></FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Vice President/Technology: Dave Bauer, (408) 920-5323<BR><BR></FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Vice President Human Resources/Labor Relations: Kathleen Slattery Hall  (408) 920-5095.<BR></FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Vice President and Chief Financial Officer: Lisa Buckingham, (408) 920-5255.</FONT>
+<P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Vice President/Advertising: Jeff Kiel, (408) 920-5649. <BR></FONT>
+   <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Vice President/Circulation: David Rounds, (408) 920-5674.</FONT>
+      <P>
+      <TABLE width=150>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="HOME DELIVERY"><B>HOME DELIVERY</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>To start or 
+      change a subscription to the Mercury News, call (800) 870-NEWS. </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>E-mail: <A 
+      href="mailto:circulation@mercurynews.com">circulation@mercurynews.com</A><BR>Web 
+      site: <A 
+      href="http://www.mercurynews.com/mld/mercurynews/contact_us/subscriptions/">www.mercurynews.com/mld/mercurynews/contact_us/subscriptions/</A> 
+      </FONT>
+      <P>
+      <TABLE width=130>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1><A 
+      name="PLACING AN AD"><B>PLACING AN AD</B></A> </FONT></DIV>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Complete 
+      information and rates for Mercury News Classified appears daily at the 
+      beginning of the Classified ads. To place an ad by phone, call (408) 
+      920-5111 inside the San Jose calling area, or 1-(800) 287-7878 outside. 
+      </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Web 
+      site:<BR><A 
+      href="http://www.mercurynews.com/mld/mercurynews/contact_us/advertise/">www.mercurynews.com/mld/mercurynews/contact_us/advertise/</A> 
+      </FONT>
+      <P><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>For display 
+      advertising, call (408) 920-5725 for rates and information about our many 
+      advertiser services or visit <A 
+      href="http://www.mercurynews.info/advertising">http://www.mercurynews.info/advertising</A></FONT>
+      <P>
+      <TABLE width=151>
+ 
+        <TR>
+          <TD align=left><FONT size=-1><A 
+            href="#TOP"><FONT 
+            face="Verdana, Arial, Helvetica, sans-serif">RETURN TO 
+            TOP</FONT></A></FONT></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <HR align=center width="50%" noShade>
+      <FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>Contact names 
+      and numbers may change. For an updated version, send a stamped, 
+      pre-addressed envelope to READER'S GUIDE, c/o Mercury News MarCom Dept., 
+      <GEO TYPE="US">750 Ridder Park Drive, San Jose, CA 95190</GEO>.<BR></FONT><FONT 
+      face="Verdana, Arial, Helvetica, sans-serif" 
+      size=2></FONT></DIV></FONT></FONT>
+      <P><BR><B>More information:</B><BR>Mercury News and MercuryNews.com: <A 
+      href="http://www.mercurynews.com/mld/mercurynews/contact_us/about">About 
+      Us</A> | <A 
+      href="http://www.mercurynews.com/mld/mercurynews/contact_us/advertise/">Advertise</A> 
+      | <A 
+      href="http://www.mercurynews.com/mld/mercurynews/contact_us/help/faq/">FAQ</A> 
+      | <A 
+      href="http://www.mercurynews.com/mld/mercurynews/contact_us/contact_list/">Staff 
+      List</A> | <A 
+      href="http://www.mercurynews.com/mld/mercurynews/contact_us/subscriptions_np1/">Subscriptions</A> 
+      | <A 
+      href="http://www.mercurynews.com/mld/mercurynews/contact_us/about/community_relations/">Community 
+      Relations</A><BR>Knight Ridder Real Cities: <A 
+      href="http://www.knightridderdigital.com/network/index.html">About Us</A> 
+      | <A href="http://www.knightridderdigital.com/press/index.html">Press 
+      Center</A><BR><BR></P></TD></TR></TBODY></TABLE>
+</td><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td></tr></table>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="rightrail" valign="top" align="center" width="160">
+
+
+
+
+<!-- Beginning of Top Jobs -->
+<table class="relatedborder" align="center" width="100%" cellspacing="2" cellpadding="0" border="0">
+<tr>
+<td class="relatedborder"><span style="position:relative; left:.3em" class="relatedtitle"><b>Bay Area Top Jobs</b></span></td>
+</tr>
+<tr>
+<td style="padding-bottom:5px" class="relatedbkg" width="100%">
+<ul style="list-style-type:disc; padding:4px 2px 0px 22px; margin:0px;" id="topJobs"></ul>
+<center>
+
+<span id="all-jobs"><a href="/mld/mercurynews/classifieds/employment/top_jobs/" class="nav2">All Top Jobs</a> <span class="arrow">&#187;</span></span>
+</center>
+</td>
+</tr>
+</table>
+<script>
+function Job(employer, title, id, idType)  {
+  this.title = title;
+  this.employer = employer;
+  this.id = id;
+  this.idType = idType;
+
+  function getURL() {
+    url = "http://www.careerbuilder.com/";
+    if (this.idType == 1) {
+      url += "JobSeeker/Jobs/JobDetails.aspx?Job_DID=";
+    }
+    else {
+      url += "pli/webidv1.asp?webid=";
+    }
+    url += this.id + "&lr=cbcb_ba&siteid=ckrba066";
+    return url;
+  }
+  function getListing() {
+    return "<li style='padding-bottom:5px'>" +
+    (this.employer.length > 0 ? "<span class='nav2'>" + this.employer + "</span><br />" : "") +
+    "<a class='link' href='javascript:openTopJobsWin(\"" + this.url() + "\")'>" + this.title + "</a></li>\n";
+  }
+  this.url = getURL;
+  this.listing = getListing;
+}
+function openTopJobsWin(url) {
+  x=Math.max(1, screen.width-798);
+  y=1;
+  h=Math.min(640, screen.availHeight);
+  windowName='topjobs';
+  if (self.name=='topjobs') {
+    x=1;
+    y=40;
+    windowName='topjobs2';
+  }
+  window.open(url, windowName,	 'width=788,height='+h+',top='+y+',left='+x+',scrollbars=yes,toolbar=yes,status=yes,menubar=yes,location=yes,resizable=yes').focus();
+}
+jobs = new Array(
+new Job("Bascom Animal Hospital","Veterinary Tech","J3W4SS702LWK8NPGV2G",1),
+new Job("SeeCommerce","Applications Engineer","J3X80C6H29C2B3WC0BF",1),
+new Job("Crossroads Trading Co.","Assistant Manager","J3W3W76GK5W4H5K6MJ7",1),
+new Job("WyoTech Of Fremont","Automotive Techs/Instructors","J3W7CH5YFVMXHC68Y9V",1),
+new Job("Sylvan Learning Center","Director of Education","MN1219265",0),
+new Job("California State University Stanislaus","Director of Network & Communication Services","J3W5BC6V1VL5MN54MYN",1),
+new Job("Sigma Designs","Engineers","J3X29S72HHZQY9CS5ZK",1),
+new Job("International Aviation Services Company","Human Resources Coordinator","J3X59P5W5JZT4H3K2HL",1),
+new Job("East Bay Municipal Utilities","Industrial Electrician","J3X4NW6VDWZCQDQXBX7",1),
+new Job("Marquez Brothers International, Inc.","Junior Accountant","J3W0LD6JX8CXL9LVX18",1),
+new Job("","Programmer","J3X3L377FJVFYNQNHQ5",1),
+new Job("Paver Depot","Project Manager/Engineer","J3X13S622CHX68ZFVDR",1),
+new Job("Valley Yellow Pages","Sales","J3X619631L29RLY86JY",1),
+new Job("Via Technologies","Software Engineer","J3X058775C7FWGTFFY4",1),
+new Job("Pacific Motor Trucking Co.","Terminal Supervisor/Dispatch Supervisor","J3W23S61LTK3RVKB8FP",1),
+new Job("Infortrend Corporation","Test Engineer","J3W55Q6DKKJMLHX6D10",1),
+new Job("AgileTV Corporation","Computers","J3W3P565VYPYFFV8BNY",1),
+new Job("Vezers Precision Industrial Contractors","Industrial Construction","J3W29C6PV5KBHT119NV",1),
+new Job("Arista Corp.","Inside Sales/Industrial Computers","J3X4JP70SSBBRK20S5X",1)
+);
+
+jobsToShow = 6;
+firstJob = new Date().getTime() % jobs.length;
+
+if (document.location.pathname.indexOf("/top_jobs") >= 0) {
+  jobsToShow = jobs.length;
+  firstJob = 0;
+  document.getElementById("all-jobs").innerHTML = "";
+}
+
+jobsList = new String();
+
+for (count = 0; count < jobsToShow && count < jobs.length; count++) {
+  index = (firstJob + count) % jobs.length;
+  jobsList += jobs[index].listing();
+}
+document.getElementById("topJobs").innerHTML = jobsList;
+</script>
+<!-- End of Top Jobs -->
+
+
+
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="leftrail" width="134">
+<img src="/images/common/spacer.gif" width="134" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="centerrail" width="100%" align="center">
+<img src="/images/common/spacer.gif" width="450" height="1"/><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/mercurynews.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/mercurynews.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109897140542?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/mercurynews.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109897140542?" BORDER="0" ></A>
+</NOSCRIPT>
+
+<br/><br/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="rightrail" width="160">
+<img src="/images/common/spacer.gif" width="160" height="1"/></td></tr></table>
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="768"><tr><td rowspan="2" valign="top" class="footer"><a href="http://www.realcities.com" target="_blank"><img src="/images/palette/mercurynews/realcities_logo.gif" width="155" height="57" alt="RealCities" border="0"/></a>
+</td><td align="left" class="footer">
+<span class="lightgreylinks"><br><a href="/mld/mercurynews/contact_us/about">About The Mercury News |</a> <a href="/mld/mercurynews/contact_us/rc_sites/">About the Real Cities Network |</a> <a href="/mld/mercurynews/contact_us/terms_of_use/">Terms of Use & Privacy Statement |</a> <a href="http://www.knightridder.com">About Knight Ridder |</a> <a href="/mld/mercurynews/contact_us/copyright/">Copyright  </a><br></span>
+</td></tr></table>
+
+</body>
+</html>
+
+
+

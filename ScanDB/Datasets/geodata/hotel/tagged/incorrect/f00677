@@ -1,0 +1,1312 @@
+<DOC>
+<DOCNO>f00677</DOCNO>
+<DOCHDR>http://www.seattle.com/hotels</DOCHDR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+
+<title>Seattle Hotels : Travel : Tourism Guide : Downtown Seattle Hotels</title>
+<meta name="description" content="Seattle, Washington hotel and travel guide, featuring hotel reviews and online hotel reservations.">
+<meta name="keywords" content="Seattle hotel guide Seattle washington hotels reservations Seattle hotels downtown seattle hotels seattle center queen anne hotels capitol hill lake union hotels university district hotels seatac airport hotels bellevue hotels tacoma hotels dining visiting Seattle real estate music nightlife Seattle attractions Seattle theater Seattle locals guide Seattle washington visitor information flights Seattle car rentals vacation rentals Seattle restaurant reservations Seattle maps brochures guides Seattle restaurants Seattle dining map Seattle attractions theater Seattle club">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" href="http://www.boulevards.com/styles/style-red.css" type="text/css">
+
+
+<script language="JavaScript">
+function LoadFuncs() {
+loadDates(document.forms['frm_Searches'].arrivalMonth, document.forms['frm_Searches'].arrivalDay, document.forms['frm_Searches'].departureMonth, document.forms['frm_Searches'].departureDay);
+MM_preloadImages('http://www.boulevards.com/images/nav/nav-home-roll.gif','http://www.boulevards.com/images/nav/nav-hotels-roll.gif','http://www.boulevards.com/images/nav/nav-dining-roll.gif','http://www.boulevards.com/images/nav/nav-visiting-roll.gif','http://www.boulevards.com/images/nav/nav-realestate-roll.gif','http://www.boulevards.com/images/nav/nav-nightlife-roll.gif','http://www.boulevards.com/images/nav/nav-attractions-roll.gif','http://www.boulevards.com/images/nav/nav-theater-roll.gif','http://www.boulevards.com/images/nav/nav-localsonly-roll.gif');
+document.email.login_username.focus();
+ }
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!-- Begin
+ function putFocus(formInst, elementInst) {
+  if (document.forms.length > 0) {
+   document.forms[formInst].elements[elementInst].focus();
+  }
+ }
+// The second number in the "onLoad" command in the body
+// tag determines the form's focus. Counting starts with '0'
+//  End -->
+</script>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+<script language="JavaScript" type="text/JavaScript">
+function loadDates(arrivalMonthSelect,  arrivalDaySelect, departureMonthSelect, departureDaySelect)
+{
+
+	var calendar = new Date();
+	var calendar2 = new Date();
+	var cal
+	var cal2
+	var date;
+	var month;
+	var year;
+	var date2;
+	var month2;
+	var year2;
+
+	//Here is the variable to change for to advance the arrival Date
+	 var advanceArrival = 14;
+	//Here is the variable to change for to advance the departure Date
+	 var advanceDeparture = 16;
+
+
+	//Set the arrival Days
+	calendar.setDate(calendar.getDate()+ advanceArrival);
+	date = calendar.getDate();
+	month = calendar.getMonth();	
+
+	//Set the Departure Days
+	calendar2.setDate(calendar2.getDate()+advanceDeparture);
+	date2 = calendar2.getDate();
+	month2 = calendar2.getMonth();
+
+	arrivalMonthSelect.value=month;
+	arrivalDaySelect.value=date;
+	departureMonthSelect.value=month2;
+	departureDaySelect.value=date2;
+}	
+	</script>
+
+
+
+
+    <script language="javascript" type="text/JavaScript">
+    <!--
+        function openCalendar(formName,type) {
+            document.cookie = 'formName=' + formName;
+            document.cookie = 'inputType=' + type;
+            window.open('http://www.seattle.com/travelnowcal/calendar.html','dates','width=300,height=300,resizable=1,status=1,menubar=0,location=0');
+        }
+    //-->
+    </script>
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function Atomz_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<script language="Javascript" type="text/JavaScript">
+
+        <!-- Begin
+        function alter(x,y){
+            var browser = new Object();
+            browser.version = parseInt(navigator.appVersion);
+                if(parseInt(navigator.appVersion)>3){
+                  document.myform.action = x;
+                  document.myform.submit();
+                }else{
+                    location= y;
+                }
+        }
+        // End -->
+    
+
+</script>
+
+
+<script type="text/javascript" language="javascript" src="http://a.as-us.falkag.net/dat/dlv/aslmain.js"></script>
+<script type="text/javascript" language="javascript" src="http://a.as-us.falkag.net/dat/dlv/aslsubs111.js"></script>
+
+
+
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000" topmargin="0" onload="LoadFuncs()">
+
+
+
+<center>
+
+<table width="750" border="0" cellpadding="0" cellspacing="0">
+<!--DWLayoutTable-->
+<tr>
+<td height="20" colspan="11" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="750" height="20"></td>
+</tr>
+
+<tr>
+<td width="169" rowspan="3" valign="bottom"><a href="http://www.seattle.com"><img src="../images/other/citytop.jpg" width="169" height="109" alt="Seattle Hotels Dining Attractions Real Estate" border="0"></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td colspan="10">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="layout">
+<tr>
+<td width="21" class="newnavdata"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="21" height="1" alt=""></td>
+<td class="newnavdata"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="10" alt=""></td>
+</tr>
+<tr>
+<td width="21" class="newnavdata"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="21" height="1" alt=""></td>
+<td class="newnavdata" align="left">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="newnavdata" style="padding: 0 10px 0 0;">
+<p class="tagline">The Boulevards Guide to Seattle, Washington</p>
+<a href="http://www.seattle.com/"><img src="http://www.seattle.com/images/header/seattlehead-newer.gif" width="229" height="35" alt="Seattle Hotels Dining Attractions Real Estate" border="0"></a>
+</td>
+<td valign="bottom" align="right">
+
+<p class="emaillinks"><a href="http://mail.seattle.com/">Seattle.com Mail</a></p>
+
+
+</td>
+</tr>
+</table>
+
+
+
+</td>
+</tr>
+<tr>
+<td colspan="2" height="13" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="13" alt=""></td>
+</tr>
+<tr>
+<td colspan="2" height="11" valign="top"><img src="http://www.boulevards.com/images/resc/greydot.gif" width="581" height="1" alt=""></td>
+</tr>
+<tr>
+<td width="21" class="newnavdata"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="21" height="1" alt=""></td>
+<td class="newnavdata" colspan="2">
+<span class="topnavlinkrevagain"><a href="http://www.seattle.com/">home</a> :: <a href="http://www.seattle.com/dining/">dining</a> :: <a href="http://www.seattle.com/hotels/">hotels</a> :: <a href="http://www.seattle.com/attractions/">attractions</a> :: <a href="http://www.seattle.com/visiting/">visiting</a> :: <a href="http://www.seattle.com/realestate/">real estate</a> :: <a href="http://www.seattle.com/nightlife/">nightlife</a> :: <a href="http://seattlejobs.seattle.com/">jobs</a> :: <a href="http://seattleautos.seattle.com/">cars</a> :: <a href="http://www.seattle.com/locals/">resources</a></span>
+</td>
+</tr>
+<tr>
+<td colspan="2" height="3"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="581" height="3" alt=""></td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr><td colspan="11" height="0"></td></tr>
+<tr><td colspan="11" height="0"></td>
+
+</tr>
+
+
+<tr>
+<td height="20" colspan="11" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="750" height="20"></td>
+</tr>
+<tr>
+<td align="left" valign="top">
+
+
+<form action="http://www.travelnow.com/index.jsp?pageName=hotSearch&cid=56234&validateCity=true&validateDates=true" method="POST" name="frm_Searches" id="frm_Searches" style="margin-bottom: 10px">
+<input type="hidden" name="numberOfAdults" value="1">
+<input type="hidden" name="numberOfChildren" value="0">
+<input type="hidden" name="room-0-adult-total" value="1">
+<input type="hidden" name="numberOfRooms" value="1">
+<input type="hidden" name="destinationID" value="978b18cc-db28-469f-9c7d-93777c712afa">
+<input type="hidden" name="city" value="Seattle">
+<input type="hidden" name="stateProvince" value="Wa">
+<input type="hidden" name="country" value="US">
+<input type="hidden" name="isHotels" value="true">
+<input type="hidden" name="showCondos" value="true">
+<input type="hidden" name="showHotels" value="true">
+<input type="hidden" name="isAdvancedSearch" value="false">
+<input type="hidden" name="mode" value="2">
+<input type="hidden" name="includeSurrounding" value="true">
+<input type="hidden" name="avail" value="true">
+<input type="hidden" name="submitted" value="true">
+<input type="hidden" name="validateDates" value="true">
+<input type="hidden" name="cid" value="56234">
+<input type="hidden" name="showPopUp" value="true">
+<table cellspacing="0" cellpadding="0" border="0" class="hotelssearchnew" width="100%">
+<tr>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="10"></td>
+</tr>
+<tr>
+<td align="center">
+<img src="http://www.seattle.com/images/hotelbotnew/citylogo.gif" alt="Book a Seattle Hotel Online and Save" width="162" height="19">
+</td>
+</tr>
+<tr>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="5" alt=""></td>
+</tr>
+<tr>
+<td align="center">
+<img src="http://www.seattle.com/images/hotelbotnew/hotels.gif" alt="Call Toll Free 1.800.252.6304" width="162" height="56">
+</td>
+</tr>
+<tr>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="5"></td>
+</tr>
+<tr>
+<td align="center">
+<img src="http://www.seattle.com/images/hotelbotnew/phonenumber.gif" alt="Call Toll Free 1.800.250.1978" width="162" height="40">
+</td>
+</tr>
+<tr>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="3"></td>
+</tr>
+<tr>
+<td nowrap="nowrap">
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="1"><span class="bodytext">Arrive:
+<br /></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="1"><select name="arrivalMonth" style="width:50px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<option value="0">Jan</option>
+<option value="1">Feb</option>
+<option value="2">Mar</option>
+<option value="3">Apr</option>
+<option value="4">May</option>
+<option value="5">Jun</option>
+<option value="6">Jul</option>
+<option value="7">Aug</option>
+<option value="8">Sep</option>
+<option value="9">Oct</option>
+<option value="10">Nov</option>
+<option value="11">Dec</option>
+</select> 
+<select name="arrivalDay" style="width:50px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<a href="javascript:openCalendar('frm_Searches','arrival');">
+<img src="http://images.ian.com/images/calendar.gif" border="0" height="18" width="20" alt="Calendar" align="top" />
+</a>
+<br />
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="3" alt=""><br />
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="1" alt=""><span class="bodytext">Leave:
+<br /></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="1"><select name="departureMonth" style="width:50px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<option value="0">Jan</option>
+<option value="1">Feb</option>
+<option value="2">Mar</option>
+<option value="3">Apr</option>
+<option value="4">May</option>
+<option value="5">Jun</option>
+<option value="6">Jul</option>
+<option value="7">Aug</option>
+<option value="8">Sep</option>
+<option value="9">Oct</option>
+<option value="10">Nov</option>
+<option value="11">Dec</option>
+</select>
+<select name="departureDay" style="width:50px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+    </select>
+<a href="javascript:openCalendar('frm_Searches','departure');">
+<img src="http://images.ian.com/images/calendar.gif" border="0" height="18" width="20" alt="Calendar" align="top" />
+</a>
+</td>
+</tr>
+<tr>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="3"></td>
+</tr>
+<tr>
+<td>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="1"><span class="bodytext">Show Properties Near:
+<br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="1"><select name="landmarkDestinationID" style="width:130px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">
+<option value="">
+All locations
+</option>
+<option value="ab7c26cc-3c78-4ae6-acad-12e97c3b25ad">Mukilteo/Boeing Factory</option>
+<option value="736c1e49-20ae-46dd-9da0-9b145c2981d4">Pike Street Market</option>
+<option value="4c34681d-2eb7-4590-9b53-f8372ffb5bd2">Seattle Art Museum</option>
+<option value="c071b976-0d67-4afb-85a2-558b68454db7">Children's Hospital</option>
+<option value="2288f002-3420-4e10-8490-b589b2de7844">Renton WA</option>
+<option value="44a04d31-7d46-4ea9-8f52-c39677576b4b">Key Arena</option>
+<option value="5d9bb380-94b4-43a7-bb11-6511d986fbf1">Everett Amtrak Station</option>
+<option value="0ff2a3f2-d1ff-4ac4-982e-21732e2e7efa">Experience Music Project</option>
+<option value="9b11e0e3-f059-4109-8f26-106f6cd43e71">Tacoma WA</option>
+<option value="4fdad90d-6d21-4c70-bf9a-f939ca160bc9">Kent WA</option>
+<option value="21cf36bf-3f14-48f5-bc7e-ec07c853e935">Bellevue</option>
+<option value="2df8c2f8-e5ba-4d71-b5b3-c2ea480ab8fa">Mercer Island</option>
+<option value="f803c13a-ee38-41c9-8a27-8a75550ac4be">King St/Seattle Amtrak</option>
+<option value="9acaf4a4-4a79-4dfa-9657-3eab7173d478">Waterfront Park</option>
+<option value="0ceeec9c-b4dd-4794-8e45-6d5e3da885ee">Seattle-Tacoma Int'l Airport</option>
+<option value="128b029b-3740-4c77-a98f-4f8bda5ad1f0">Space Needle</option>
+<option value="45a718e1-92ba-4bd5-bde5-b17549a9e1c8">Pioneer Square</option>
+<option value="dc0d51fe-959b-4610-8601-e7995a654c54">Terminal 30 Cruise Terminal</option>
+<option value="7d0e5e7d-0aaf-4b52-ad58-3743c40da214">Everett WA</option>
+<option value="ac108ac3-aae8-6e9f-8032-343bc8908000">Downtown Seattle</option>
+<option value="ac108ac3-c546-6b9f-8ad2-b8a752907fb3">Seattle Amtrak</option>
+<option value="082184b9-a02c-4728-850e-6264257555af">Auburn WA</option>
+<option value="3433579d-5c96-4374-81ca-dc2810cf5a92">Boeing Field/King Cty Airport</option>
+<option value="781e012e-c4d9-49ec-9268-0f9a8907ff9e">Seahawks Stadium</option>
+<option value="2444167b-3b9d-456a-99cc-5011abdd05f4">Tacoma Amtrak Station</option>
+<option value="617365cb-5773-4679-b811-d1f3e8f2d2fa">Seattle RepertoryTheatre</option>
+<option value="6cbb4953-caf6-4c8b-a480-bffdcb392ed6">Univ. of Washington</option>
+<option value="3b37e11c-33d2-458f-8aa9-edeca26f5707">Arboretum</option>
+<option value="c4ce4767-6a58-44ff-8488-a2c1df22bf40">Safeco Field</option>
+<option value="b103837d-6235-4fb4-8d32-fa5323ee847c">Bell St Cruise Terminal</option>
+<option value="81b195cf-2cc2-4846-b060-223d57222669">Seattle Center</option>
+<option value="eec9e702-f43a-430b-9ce0-3e9824f0cf13">Northwest Hospital</option>
+<option value="204beb70-e2ea-4f5e-b9ad-64d6806375d4">Virginia Mason Med Ctr</option>
+<option value="992684af-e8b3-416d-889f-0d54266d8480">Kirkland WA</option>
+<option value="f59f9d12-559b-4f79-bf0a-bba87ba90dc5">Woodland Park Zoo</option>
+<option value="f3f5be5b-6cb2-4010-8aec-26a3f1b21c18">Harborview Medical</option>
+<option value="ed3b6416-4a4f-4e58-906e-17f02dc25d6a">Seattle Aquarium</option>
+<option value="efbb38a9-1d50-4c3c-add5-17bc8165e2df">Renton, WA</option>
+<option value="341a5d6b-2d5d-4964-8186-a4202e4893ce">Edmonds WA</option>
+<option value="5c765a5d-4193-4716-9c06-00f232cce45b">Pacific Science Center</option>
+<option value="02ba9fe2-328a-40b8-93ca-94b3a7bc23af">Federal Way WA</option>
+<option value="59ea2179-d16e-457e-abbb-1ae1918f2bf0">Seattle Asian Art Museum</option>
+<option value="1d547972-feab-4e40-ab49-d889709bb718">5th Avenue Theater</option>
+<option value="9989017f-5d69-42e0-84c6-14e9a091e554">Convention Center</option>
+<option value="63e198ad-80b3-4a8d-beb3-589a1ef4d093">Volunteer Park/Capitol Hill</option>
+<option value="3f80ddb6-adb8-4521-9070-4ce9f9e695a2">Odyssey Maritime Discovery</option>
+<option value="3318b12c-f95a-4bdd-8c9b-677f808bef27">Husky Stadium</option>
+<option value="432d6950-d8f7-471d-a2f7-04426bc5cdd1">Edmonds Amtrak</option>
+<option value="35f81f66-80d6-49a6-ad53-4a44733c3e62">UW Medical Center</option>
+<option value="162e5566-a6bb-4c4a-addb-d3f23c8f99c0">Chateau St. Michelle</option>
+<option value="ccc2d793-2305-4626-9770-32874b589918">Seattle University</option>
+<option value="7af31232-0646-4a1d-a064-6a52d89e76c0">UW Main Campus</option>
+<option value="1eecfe50-9734-438b-8f42-2f48159b964b">Swedish Medical Center</option>
+<option value="4de9b63d-f2b3-4f09-8c86-af5957240218">Redmond, WA</option>
+<option value="5e9cbe36-8600-4992-aad0-389d90249e9c">McCaw Hall</option>
+<option value="979a1cfc-94f2-48bb-8ea3-a0d6531b2a65">Emerald Downs</option>
+<option value="9030224f-05d7-43c5-8f25-ae510f3785b1">Redmond Town Center</option>
+<option value="856ea82a-28de-42d5-b9ac-fa22238cab74">Burke Museum</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="3"></td>
+</tr>
+<tr>
+<td align="right">
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td align="right" valign="bottom">
+<input type="image" name="Submit" src="http://www.boulevards.com/images/resc/search_btn.gif" alt="Click to get rates"><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="1">
+</td>
+</tr>
+<tr>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="5" alt=""></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="center">
+<span class="inlinelinks"><a href="http://www.boulevards.com/hotels/hotel-specials.html">Worldwide Hotel Specials</a><br></span>
+</td>
+</tr>
+<tr>
+<td><img src="http://www.boulevards.com/images/resc/cleardot.gif" alt="" width="7" height="3"></td>
+</tr>
+</table>
+</form>
+
+
+
+
+
+
+
+<p class="caltext"><b>Seattle Hotels</b><br>Seattle is a town with a penchant for strong coffee, tasty microbrews and amazing seafood. Seattle hotels can put you smack in the heart of things, or on a quiet tree-lined residential street. If you're looking for a hotel located within walking distance of most attractions, try those near <a href="http://www.seattle.com/hotels/seattlecenter.html">Seattle Center</a> -- where the Space Needle, Pacific Science Center and Experience Music Project loom large and offer hours of fascinating entertainment. Or try <a href="http://www.seattle.com/hotels/downtown.html">downtown Seattle</a>, where you can shop for books at Elliot Bay, fish at the Pike Place Market or Gucci shoes at Nordstrom. For a bit of the flavor that made Seattle a music mecca in the early '90s, stay on <a href="http://www.seattle.com/hotels/capitolhill.html">Capitol Hill</a> and stroll along Broadway, or near the <a href="http://www.seattle.com/hotels/university.html">U-District</a>, where many a rock star began (but may not have finished) their college education. If you're heading to Microsoft, <a href="http://www.seattle.com/hotels/bellevue.html">Bellevue</a> may be your best bet.
+<br><br>
+But wherever you stay, the charm and personality of Seattle will keep you so laid back you'll be almost horizontal. Choose from one of the neighborhoods in the menu on the right to begin your Seattle hotels search.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</a>
+
+
+<p>
+<span class="secondlinks"><font color="#999999">Visitor Information</font><br></span>
+<span class="bodytext"><a href="http://carrentals.seattle.com/">Car Rentals in Seattle</a><br></span>
+<span class="bodytext"><a href="http://www.boulevards.com/ssi/redir/find.php?s=dining&q=start.asp?ID=2&ref=251" target="_blank">Restaurant Reservations</a><br></span>
+<span class="bodytext"><a href="http://boulevards.com/ssi/redir/find.php?s=maps&q=product.asp?pfid=SEAT&a=39" target="_blank">Seattle Maps and Brochures</a><br></span>
+</p>
+
+<p>
+<span class="redcaltextlink"><a href="http://www.saltlakecity.com/">&gt;</a></span><span class="bodytext">&nbsp;&nbsp;&nbsp;<a href="http://www.saltlakecity.com/">Salt Lake City</a><br></span>
+<span class="redcaltextlink"><a href="http://www.sanfrancisco.com/">&gt;</a></span><span class="bodytext">&nbsp;&nbsp;&nbsp;<a href="http://www.sanfrancisco.com/">San Francisco</a><br></span>
+<span class="redcaltextlink"><a href="http://www.seattle.com/">&gt;</a></span><span class="bodytext">&nbsp;&nbsp;&nbsp;<a href="http://www.seattle.com/">Seattle</a><br></span>
+<span class="redcaltextlink"><a href="http://www.losangeles.com/">&gt;</a></span><span class="bodytext">&nbsp;&nbsp;&nbsp;<a href="http://www.losangeles.com/">Los Angeles</a><br></span>
+<span class="redcaltextlink"><a href="http://www.denver.com/">&gt;</a></span><span class="bodytext">&nbsp;&nbsp;&nbsp;<a href="http://www.denver.com/">Denver</a><br></span>
+<span class="redcaltextlink"><a href="http://www.anchorage-alaska.com/">&gt;</a></span><span class="bodytext">&nbsp;&nbsp;&nbsp;<a href="http://www.anchorage-alaska.com/">Anchorage</a><br></span>
+<span class="redcaltextlink"><a href="http://www.portland-oregon.com/">&gt;</a></span><span class="bodytext">&nbsp;&nbsp;&nbsp;<a href="http://www.portland-oregon.com/">Portland</a><br></span>
+<span class="redcaltextlink"><a href="http://www.vancouver.com/" target="_blank">&gt;</a></span><span class="bodytext">&nbsp;&nbsp;&nbsp;<a href="http://www.vancouver.com/" target="_blank">Vancouver, BC</a><br></span>
+</p>
+
+<br>
+<p><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="155" height="1"></p></td>
+<td width="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="1"></td>
+<td width="1" valign="top" bgcolor="#999999"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="1"></td>
+<td width="10" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="1"></td>
+<td colspan="5" valign="top">
+
+<h1>
+Seattle Hotels
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><img src="http://www.boulevards.com/images/resc/greydot.gif" width="415" height="1"><br>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="2" height="5"><br>
+
+<span class="moreinfolink">
+<b>Hot Deals on Seattle Hotels</a></b><br></span>
+
+<span class="hotlinks">
+<a href="http://www.seattle.com/starwood/">Best rates guaranteed on Seattle Sheraton, Westin & W Hotels</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.seattle.com/acehotel/">Ace Hotel from $76.50</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.seattle.com/coastgateway/">The Coast Gateway Hotel from $85.00</a><br></span>
+
+<span class="hotlinks">
+<a href="http://www.seattle.com/universitytowerhotel/">Best Western University Tower Hotel from $99.00</a><br></span>
+
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="2" height="5"><br>
+<img src="http://www.boulevards.com/images/resc/greydot.gif" width="415" height="1"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><form method="POST" action="cgi-bin/redirect.cgi" onsubmit="return false">
+<span class="bodytext">
+<b><SCRIPT LANGUAGE="JavaScript">var tcdacmd="cc=aee; dt";</SCRIPT> <SCRIPT SRC="http://an.tacoda.net/an/12043/slf.js" LANGUAGE="JavaScript"></SCRIPT>Choose an area of Seattle:</b><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="2" height="3"><br>
+
+<select name="menu1" size=1 class="form_elements" onchange="Atomz_jumpMenu('parent',this,0)">
+<option selected>Where do you want to stay?</option>
+
+<option value="http://www.seattle.com/hotels/index.html">Downtown Seattle</option>
+<option value="http://www.seattle.com/hotels/downtown.html">Downtown Seattle</option>
+<option value="http://www.seattle.com/hotels/seattlecenter.html">Seattle Center/Queen Anne</option>
+<option value="http://www.seattle.com/hotels/capitolhill.html">Lake Union</option>
+<option value="http://www.seattle.com/hotels/university.html">University District</option>
+<option value="http://www.seattle.com/hotels/seatac.html">Sea-Tac Airport</option>
+<option value="http://www.seattle.com/hotels/bellevue.html">Bellevue</option>
+<option value="http://www.seattle.com/hotels/tacoma.html">Tacoma</option>
+
+
+</select><br>
+</form>
+</p>
+
+
+<h2>Seattle.com Featured Hotels</h2>
+
+<img src="../crowne-plaza-downtown/gifs/crowne-plaza-downtown.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/crowne-plaza-downtown/">Crowne Plaza Hotel<br>Seattle-Downtown Area</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/crowne-plaza-downtown/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><GEO TYPE="US">1113 Sixth Avenue, Seattle, Washington 98101</GEO> 1.800.240.8085<br></span>
+<span class="bodytext">The Crowne Plaza Seattle Hotel offers a superb location close to the waterfront and everything great in the Pacific Northwest. Just a few blocks from the hotel, you can explore the historic Pike Place Market or the brand new Central Seattle Library; catch a Mariners game at Safeco Field or a Seahawks game at Qwest Field in Pioneer Square. Walk two blocks to your meeting at the Washington Convention & Trade Center, then indulge yourself at hundreds of downtown stores, including Westlake Center and Pacific Place shopping malls. Explore the local waterways on an Argosy Cruise or take a longer voyage on any of the major cruise lines.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/crowne-plaza-downtown/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../best-western-loyal-inn/gifs/best-western-loyal-inn.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/best-western-loyal-inn/">Best Western Loyal Inn</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/best-western-loyal-inn/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>A Real Value in the Heart of Seattle!<br>With a Good Morning Seattle Breakfast</b><br></span>
+<span class="bodytext"><GEO TYPE="US">2301 8th Avenue, Seattle, Washington</GEO>; Tel. 1.866.259.0438<br></span>
+<span class="secondlinks">Toll Free Reservations: 866.259.0438<br></span>
+<span class="redsecondlinkstext">Exclusive Seattle.com Discount!<br></span>
+<span class="secondlinks"><a href="http://www.seattle.com/best-western-loyal-inn/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Located in the heart of Seattle, just across the street from historic Denny Park and a short walk to both the Space Needle and downtown shopping, the Best Western Loyal Inn offers it's guests some impressive conveniences not normally found at a value hotel. At these rates, and with a Good Morning Seattle breakfast and newspaper thrown in, the Best Western Loyal Inn is a great find. They'll even provide a complimentary shuttle to and from any downtown Seattle location, making it a favorite hotel for experiencing all that Seattle has to offer.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/best-western-loyal-inn/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../mayflowerpark/gifs/mayflowerpark.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/mayflowerpark/">Mayflower Park Hotel</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/mayflowerpark/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Stay in Seattle "Style"</b><br></span>
+<span class="bodytext"><GEO TYPE="US">405 Olive Way, Seattle, Washington</GEO>; Tel. 1.866.800.4933<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.800.4933<br></span>
+<span class="redsecondlinkstext">Exclusive Seattle.com Discount!<br></span>
+<span class="secondlinks"><a href="http://www.seattle.com/mayflowerpark/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The historic, elegantly appointed Mayflower Park Hotel occupies one of Seattle's finest shopping and business locations. The hotel is centrally-located in the heart of Seattle and opens directly into Westlake Center, where you can jump aboard Seattle's Monorail for a fun ride through downtown to the Seattle Center, the Space Needle, the world-famous Experience Music Project. Or just step out the door for a short stroll to the Pike Place Market, Seattle's Waterfront and the Seattle Art Museum. The Hotel offers 171 classic and elegantly styled guest rooms including 19 luxury suites.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/mayflowerpark/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../universitytowerhotel/gifs/universitytowerhotel.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/universitytowerhotel/">University Tower Hotel</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/universitytowerhotel/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Seattle's "Best Moderately Priced" Boutique</b><br></span>
+<span class="bodytext"><GEO TYPE="US">4507 Brooklyn Avenue, Seattle, Washington</GEO>; Tel. 1.866.800.3135<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.800.3135<br></span>
+<span class="redsecondlinkstext">Exclusive Seattle.com Discount!<br></span>
+<span class="secondlinks"><a href="http://www.seattle.com/universitytowerhotel/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The University Tower is a stylish, 16-story full service "boutique" hotel with 155 designer rooms and panoramic views, right in the heart of Seattle's unique University Village &#151; a Seattle attraction itself. Noted travel authority Frommer's votes the University Tower <i>Seattle's Best Moderately Priced Hotel</i>, saying that the "University Tower Hotel is surprisingly reasonably priced for what you get, which is one of the most stylish contemporary accommodations in Seattle."<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/universitytowerhotel/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../westin-seattle/gifs/westin-seattle.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/westin-seattle/">The Westin Seattle</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/westin-seattle/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Centerpiece to the Seattle Skyline!</b><br></span>
+<span class="bodytext"><GEO TYPE="US">1900 5th Avenue, Seattle, Washington</GEO><br></span>
+<span class="bodytext">Located in the heart of downtown Seattle &#151; close to Pike Place Market and the Space Needle &#151; The Westin Seattle is the prime leisure destination in the city.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/westin-seattle/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../westin-bellevue/gifs/westin-bellevue.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/westin-bellevue/">The Westin Bellevue</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/westin-bellevue/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Bellevue's Grand New Hotel!</b><br></span>
+<span class="bodytext"><GEO TYPE="US">600 Bellevue Way NE, Bellevue, Washington 98004</GEO><br></span>
+<span class="bodytext">The Westin Bellevue is located in downtown Bellevue, Washington.  The hotel is just 20 minutes from downtown Seattle and close to the Microsoft, Cingular and Expedia.com corporate offices.  Located in Lincoln Square in the heart of Bellevue &#8212; The Westin Bellevue offers the best location for shopping and entertainment on the Eastside and is just across the street from Bellevue Square.  Spend the night in Bellevue and enjoy amazing views of Lake Washington, Mt. Rainier and the Seattle skyline.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/westin-bellevue/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../sheraton-seattle/gifs/sheraton-seattle.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/sheraton-seattle/">The Sheraton Seattle Hotel</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/sheraton-seattle/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>AAA Four-diamond Hotel Towering Above the Seattle View!</b><br></span>
+<span class="bodytext"><GEO TYPE="US">1400 6th Avenue, Seattle, Washington</GEO><br></span>
+<span class="bodytext">Stay in the heart of downtown at The Sheraton Seattle Hotel & Tower &#151; just steps from Pike Place Market, Seattle's top shopping and world-class restaurants.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/sheraton-seattle/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../eighth-avenue-inn/gifs/eighth-avenue-inn.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/eighth-avenue-inn/">Eighth Avenue Inn</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/eighth-avenue-inn/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Downtown Seattle, and What a View!</b><br></span>
+<span class="bodytext"><GEO TYPE="US">2213 8th Avenue, Seattle, Washington</GEO>; Tel. 1.866.284.8018<br></span>
+<span class="secondlinks">Toll Free Reservations: 866.284.8018<br></span>
+<span class="redsecondlinkstext">Exclusive Seattle.com Discount!<br></span>
+<span class="secondlinks"><a href="http://www.seattle.com/eighth-avenue-inn/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">In the heart of Seattle's business and entertainment district, the Eighth Avenue Inn is the ideal hotel for both the corporate and leisure traveler visiting Seattle. With fantastic views of the city, in the midst of some of Seattle's excellent dining, shopping, culture and entertainment venues, the Eighth Avenue Inn is a great location for seeing all Seattle has to offer.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/eighth-avenue-inn/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../coastgateway/gifs/coastgateway.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/coastgateway/">The Coast Gateway Hotel</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/coastgateway/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Seattle.com’s "Pick" — Best & Closest Hotel at the Airport</b><br></span>
+<span class="bodytext"><GEO TYPE="US">18415 International Boulevard, Seattle, Washington</GEO>; Tel. 1.866.302.4032<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.302.4032<br></span>
+<span class="redsecondlinkstext">Exclusive Seattle.com Discount!<br></span>
+<span class="secondlinks"><a href="http://www.seattle.com/coastgateway/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">The Coast Gateway Hotel is Seattle.com's "Pick" as the best airport hotel, because it's a great value and closest hotel to the airport. You'd virtually touch the planes on the tarmac if it weren't for the oversized soundproofed windows that give the best view of airport activity you'll ever see. Add the fact that your stay includes a complimentary Belgian waffle continental breakfast with all the trimmings, and that most newly refurbished rooms come with microwave, refrigerator coat rack, an electric shoes shine machine and lush terry robes.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/coastgateway/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../best-western-executive-inn/gifs/best-western-executive-inn.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/best-western-executive-inn/">Best Western Executive Inn</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/best-western-executive-inn/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>One Block From the Space Needle</b><br></span>
+<span class="bodytext"><GEO TYPE="US">200 Taylor Ave N., Seattle, Washington</GEO>; Tel. 1.866.537.7556<br></span>
+<span class="secondlinks">Toll Free Reservations: 866.537.7556<br></span>
+<span class="redsecondlinkstext">Exclusive Seattle.com Discount!<br></span>
+<span class="secondlinks"><a href="http://www.seattle.com/best-western-executive-inn/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Only a block from Seattle's famous Space Needle, a stay at the Best Western Executive Inn places the visitor and family close to great Seattle attractions like the Key Arena, Seattle shopping at Westlake Center and Pacific Place, the Seattle Aquarium and the Woodland Park Zoo. With 123 comfortable guest rooms equipped with all the modern amenities and conveniences, a good nights sleep is still the number one priority at the Best Western Executive Inn.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/best-western-executive-inn/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+<img src="../acehotel/gifs/acehotel.jpg" alt="" border="0" align="left"><p><span class="secondlinks"><a href="http://www.seattle.com/acehotel/">Ace Hotel</a> </span><span class="hotdeallinks"><b><a href="http://www.seattle.com/acehotel/">-Hot Rates-</a></b></span><br></span>
+<span class="bodytext"><b>Featured in Hip Hotels USA — For the “Fusion Conscious Urbanite”</b><br></span>
+<span class="bodytext"><GEO TYPE="US">2423 First Avenue, Seattle, Washington</GEO>; Tel. 1.866.302.4030<br></span>
+<span class="secondlinks">Toll Free Reservations: 1.866.302.4030<br></span>
+<span class="redsecondlinkstext">Exclusive Seattle.com Discount!<br></span>
+<span class="secondlinks"><a href="http://www.seattle.com/acehotel/">Click Here To See Our Rates</a></strong><br></span>
+<span class="bodytext">Today's "Fusion Conscious Urbanites" nest at Seattle's Ace Hotel. The Ace is not only hip, it's got the perfect location near all of Seattle's top restaurants, night spots and attractions &#151; like Pikes Market, Rainier Square shopping, and all of the fun of downtown Seattle's network of hipster cafes, art galleries, shops and cool clubs. The Ace's 28 guestrooms combine sleek, 21st Century futurism with the classic flavor and affordability of European lodging &#151; all in an historic building.<br></span>
+<span class="moreinfolink"><a href="http://www.seattle.com/acehotel/">Special rates: Seattle hotels</a></span>
+<br clear="left"></p>
+
+
+
+
+
+
+
+
+
+
+
+<p class="caltext" align="right"></p>
+
+
+<br>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="415" height="1">
+
+</td>
+<td width="20" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="1"></td>
+<td align="center" valign="top">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="http://www.seattle.com/starwood/"><img src="../images/ads/starwood.gif" width="125" height="88" alt="Starwood Hotels Seattle" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/starwood/">Best Rates: Sheraton Seattle, Westin Seattle</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/universitytowerhotel/"><img src="../images/ads/universitytowerhotel.gif" width="125" height="90" alt="University Tower Hotel, Seattle Washington" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/universitytowerhotel/">Seattle's Best Moderately Priced Boutique Hotel</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/eighth-avenue-inn/"><img src="../images/ads/eighth-avenue-inn.gif" width="125" height="90" alt="Eighth Avenue Inn Seattle Washington Hotel" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/eighth-avenue-inn/">Downtown Seattle Hotel<br>What a View!</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/hertz/"><img src="http://www.sanfrancisco.com/images/ads/hertz2.gif" width="125" alt="Seattle Car Rentals" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/hertz/">Rent a car in Seattle</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/acehotel/"><img src="../images/ads/acehotel.gif" width="125" height="90" alt="Ace Hotel Seattle Washington" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/acehotel/">Seattle Urban Cool<br>Featured in Hip Hotels USA</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/mayflowerpark/"><img src="../images/ads/mayflowerpark.gif" width="125" height="90" alt="Mayflower Park Hotel Seattle Washington" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/mayflowerpark/">Mayflower Park Hotel<br>Seattle "Style"</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/best-western-executive-inn/"><img src="../images/ads/best-western-executive-inn.gif" width="125" height="90" alt="Best Western Executive Inn Seattle Hotel" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/best-western-executive-inn/">One block from the Space Needle</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/coastgateway/"><img src="../images/ads/coastgateway.gif" width="125" height="90" alt="The Coast Gateway Hotel Seattle Washington" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/coastgateway/">Seattle.com Pick<br>Best Airport Hotel</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/intercontinental/"><img src="http://www.boulevards.com/images/ads/holidayinngeneric.gif" width="125" alt="seattle InterContinental Hotels Holiday Inn seattle" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/intercontinental/"></a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/best-western-loyal-inn/"><img src="../images/ads/best-western-loyal-inn.gif" width="125" height="90" alt="Best Western Loyal Inn Seattle Washington Hotel" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/best-western-loyal-inn/">Value hotel in the heart of Seattle - free breakfast</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/seahawks/"><img src="../images/ads/seahawks.jpg" width="125" height="90" alt="Seattle Seahawks Tickets and Merchandise" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/seahawks/">Seattle Seahawks<br>tickets, merchandise.</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.amazon.com/exec/obidos/ASIN/1570612560/boulevards-20/"><img src="../images/ads/strangerguide.gif" width="125" height="90" alt="Stranger Guide to Seattle" border="0"></a><br>
+<span class="caltext"><a href="http://www.amazon.com/exec/obidos/ASIN/1570612560/boulevards-20/">Buy it online!</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/seattlemariners/"><img src="../images/ads/seattlemariners.jpg" width="125" height="90" alt="Seattle Dodgers Tickets and Merchandise" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/seattlemariners/">Seattle Mariners<br>tickets, merchandise.</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.boulevards.com/meeting/meetingsites_seattle.html"><img src="http://www.boulevards.com/gifs/meetingplanners-new.jpg" width="125" alt="Meeting Planners--CLICK HERE" border="0"></a><br>
+<span class="caltext"><a href="http://www.boulevards.com/meeting/meetingsites_seattle.html">Complete, one-stop<br>meeting planning<br>directory and source.</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.qksrv.net/click-725654-1514634"><img src="http://www.boulevards.com/gifs/hotjobs-new.gif" width="125" alt="HotJobs" border="0"></a><br>
+<span class="caltext"><a href="http://www.qksrv.net/click-725654-1514634">Find a job, find employees.</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://www.seattle.com/realestate/rentals.shtml"><img src="../images/ads/houserental.jpg" width="125" height="90" alt="Seattle Apartment and House Rentals" border="0"></a><br>
+<span class="caltext"><a href="http://www.seattle.com/realestate/rentals.shtml">Search apartments for rent in Seattle</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+<a href="http://flowers.seattle.com/"><img src="http://www.boulevards.com/images/ads/flowers.jpg" width="125" alt="Flowers" border="0"></a><br>
+<span class="caltext"><a href="http://flowers.seattle.com/">Order flowers or gift baskets for any occasion</a><br></span>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10"><br>
+
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="10">
+
+
+
+</td>
+</tr>
+
+<tr>
+<td height="1" colspan="11" valign="top" bgcolor="#999999"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="750" height="1"></td>
+</tr>
+<tr>
+<td height="20" colspan="11" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="750" height="20"></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<tr>
+<td valign="top><img height=" 1 src="http://www.boulevards.com/images/resc/cleardot.gif" width="155"></td>
+<td valign="top" colspan="3"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="21"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="125"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="20"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="125"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="20"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="125"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="20"></td>
+<td valign="top"><img height="1" src="http://www.boulevards.com/images/resc/cleardot.gif" width="125"></td>
+</tr>
+
+
+<tr>
+<td colspan=4>&nbsp;</td>
+<td valign="top" colspan=7 height=20>
+<img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="20">
+</td>
+</tr>
+<tr>
+<td colspan=4>&nbsp;</td>
+<td valign=top colspan=7 height=20>
+<p><span class="caltext">Copyright &copy; 2006 Seattle.com &nbsp;&nbsp;&nbsp;<span class="redcaltextlink"><a href="http://www.seattle.com/contact/">&gt;</a> </span><a href="http://www.seattle.com/contact/">Photographers</a> &nbsp;&nbsp;&nbsp;<span class="redcaltextlink"><a href="http://www.seattle.com/contact/">&gt;</a> </span><a href="http://www.seattle.com/contact/">Become an Editor</a> &nbsp;&nbsp;&nbsp;<span class="redcaltextlink"><a href="http://www.seattle.com/contact/">&gt;</a> </span><a href="http://www.seattle.com/contact/">Contact Us</a> &nbsp;&nbsp;&nbsp;<span class="redcaltextlink"><a href="http://www.boulevards.com/advertise/">&gt;</a> </span><a href="http://www.boulevards.com/advertise/">Advertise</a></span></p>
+</td>
+</tr>
+
+<tr>
+<td height="19" colspan="11" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="750" height="19"></td>
+</tr>
+<tr>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="169" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="1" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="10" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="20" height="1" alt=""></td>
+<td height="1" valign="top"><img src="http://www.boulevards.com/images/resc/cleardot.gif" width="125" height="1" alt=""></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+
+
+

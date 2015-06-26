@@ -1,0 +1,901 @@
+<DOC>
+<DOCNO>g00081</DOCNO>
+<DOCHDR>http://www.hud.gov/assist/contactus.cfm</DOCHDR>
+ 
+<!-- Application build 01/27/2003 (EN) -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><!-- #BeginTemplate "/Templates/midlevel.dwt" -->
+<HEAD>
+<!-- #BeginEditable "doctitle" --> 
+ 
+<TITLE>Contact Us - HUD </title>
+
+
+	
+<!-- End HGVTITLE Tag -->
+
+
+	
+	<!-- HGVSETTOPIC Note: TOPICID is 06.25 -->
+	
+	
+
+
+ <!-- #EndEditable -->
+<!-- Begin_common_javascript -->
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+// This Macromedia function preloads images (used for rollovers)
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+// This Macromedia function restores images to their original (non-hover) version
+// Usually triggered by the MouseOut event
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+// This Macromedia function is used by the swap fuctions to identify the images object in the browser object model
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+// This Macromedia function is used to swap an image for a rollover effect
+// Usually triggered by the MouseOver or MouseClick events
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// Begin Foresee Survey Code
+// Everything below can be removed when survey period ends
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+/*
+	MSacks 8/11/2001: Wrap the Forsee code in a ColdFusion IF statement so that the survey will only
+	work in production.  Also, both the English and Spanish websites use this same .js file, so this also
+	tests which of the sites the user is coming from and displays the appropriate triggerParams.
+*/
+
+
+	
+		// Customer : HUD Housing Model
+// Version : Advance Trigger 1.4
+
+function cppUrlPatch(s) {
+	var translated = "";
+	var i; 
+	var found = 0;
+	for(i = 0; (found = s.indexOf(':', found)) != -1; ) {
+		translated += s.substring(i, found) + "|";
+		i = found + 1;
+		found++;
+	}
+	translated += s.substring(i, s.length);
+	return translated;
+}
+
+var triggerParms = new Array(); 
+var excludeList = new Array();
+triggerParms["dt"] = 0; // disable trigger if 1
+triggerParms["mid"] = "o1YNI5VUUNl91dspEFEAdA=="; // model instance id
+triggerParms["cid"] = "UU1kQpQE9kEMJNJ40Np4xA=="; // customer id
+triggerParms["lf"] = 3; // loyalty factor
+triggerParms["sp"] = 1.0; // sample percentage
+triggerParms["npc"] = 1; // no persistent cookies if 1
+triggerParms["rw"] = 129600; // resample wait (value in minutes)
+triggerParms["pu"] = 0; // pop-under control
+triggerParms["olpu"] = 1; // On Load pop-under control
+triggerParms["lfcookie"] = "ForeseeLoyalty_MID_o1YNI5VUUN";
+triggerParms["ascookie"] = "ForeseeSurveyShown_o1YNI5VUUN";
+triggerParms["width"] = 420; // survey width
+triggerParms["height"] = 500; // survey height
+triggerParms["domain"] = ".hud.gov"; // domain name
+triggerParms["omb"] = "1505-0186"; // OMB number
+//triggerParms["cmetrics"] = "90010257"; // coremetrics client id
+triggerParms["cpp_1"] = "userURL:"+ cppUrlPatch (window.location.protocol+"://" + window.location.host + window.location.pathname); // customer parameter 1 - user URL
+//triggerParms["cpp_2"] = "Browser:"+ cppUrlPatch (navigator.userAgent); // customer parameter 2 - Browser
+triggerParms["capturePageView"] = 1;
+//excludeList[0] = "/exclude/"; //trigger script will not work under this path
+
+		// Customer : HUD Housing Model
+// Version : Advance Trigger 1.4
+
+var popUpURL = "http://www.foreseeresults.com/survey/display"; // base URL to the survey 
+
+var ckAlreadyShown = triggerParms["ascookie"]; // name of the persistent/session cookie
+
+var ckLoyaltyCount = triggerParms["lfcookie"]; // name of the loyalty count cookie
+
+var persistentExpires = new Date(); // persistent cookie expiration 
+persistentExpires.setTime(persistentExpires.getTime() + (triggerParms["rw"]*60*1000));
+
+function ForeCStdGetCookie (name) {
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i, j) == arg) {
+			return ForeCStdGetCookieVal (j);
+		}
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0) {
+			break;
+		}
+	}
+	return null;
+}
+
+function ForeCStdSetCookie (name, value) {
+	var argv = ForeCStdSetCookie.arguments;
+	var argc = ForeCStdSetCookie.arguments.length;
+	var expires = (argc > 2) ? argv[2] : null;
+	var path = (argc > 3) ? argv[3] : null;
+	var domain = (argc > 4) ? argv[4] : null;
+	var secure = (argc > 5) ? argv[5] : false;
+	document.cookie = name + "=" + escape (value) +
+	((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+	((path == null) ? "" : ("; path=" + path)) +
+	((domain == null) ? "" : ("; domain=" + domain)) +
+	((secure == true) ? "; secure" : "");
+}
+
+function ForeCStdGetCookieVal(offset) {
+	var endstr = document.cookie.indexOf (";", offset);
+	if (endstr == -1) {
+		endstr = document.cookie.length;
+	}
+	return unescape(document.cookie.substring(offset, endstr));
+}
+
+function specialEscape(str) {
+	var translated = "";
+	var i; 
+	var found = 0;
+	for(i = 0; (found = str.indexOf('+', found)) != -1; ) {
+		translated += str.substring(i, found) + "%2B";
+		i = found + 1;
+		found++;
+	}
+	translated += str.substring(i, str.length);
+	return translated;
+}
+
+// this function checks to see if we are in path included in the excluded list. 
+function currentLocationExcluded() {	
+	var parentURLPath = window.location.pathname;//location path
+	for(key in excludeList) {
+		if(parentURLPath.indexOf(excludeList[key]) != -1) {
+			return true;
+		}
+	}
+	return false;
+}
+
+function Poll() { 
+	if(triggerParms["dt"] == 1) {
+		return;
+	}
+	//checks if we are in path included in the excluded list.
+	if(currentLocationExcluded()) {
+		return;
+	}
+	var stickyCounter = ForeCStdGetCookie(ckLoyaltyCount); // check counter cookie
+	var alreadyShown = ForeCStdGetCookie(ckAlreadyShown); // check if we already have shown survey
+	var pageCount;
+	var randNum = Math.random();
+	randNum *= 100;
+	if (stickyCounter == null) {
+		// create the loyalty factor cookie if we don't already have one
+		pageCount = 1; 
+		ForeCStdSetCookie(ckLoyaltyCount, pageCount, null,'/',triggerParms["domain"]);		
+		stickyCounter = ForeCStdGetCookie(ckLoyaltyCount);
+	}
+	if (stickyCounter != null) {
+		pageCount = stickyCounter;
+		if(pageCount >= triggerParms["lf"]) {
+			// apply the samplingPercentage algorithm
+			if(alreadyShown == null) {
+				if(randNum <= triggerParms["sp"]) {
+					var winOptions = "width= 1,height= 1,top= 4000,left= 4000,resizable=yes,scrollbars=yes";
+					var fullURL = popUpURL + "?" + "width=" + triggerParms["width"] +
+					"&height=" + triggerParms["height"] +
+					"&cid=" + specialEscape(escape(triggerParms["cid"])) + "&mid=" + specialEscape(escape(triggerParms["mid"]));
+					if ((triggerParms["omb"] ) != null) {
+						fullURL += "&omb=" + escape(triggerParms["omb"]);
+					}
+					
+					//Coremetrics support
+					if ((triggerParms["cmetrics"] ) != null) {
+						fullURL += "&cmetrics=" + escape(triggerParms["cmetrics"]);
+					}
+
+					// added for pop control after window is loaded
+					if (triggerParms["olpu"] == 1) {
+						fullURL += "&olpu=1";
+					}
+					// capturing Page Viewed in CPP
+					if (triggerParms["capturePageView"] == 1) {
+						triggerParms["cpp_3"] = "PageView:"+ pageCount; // customer parameter 3 - Page View
+					}
+					// extract customer passed parameters if any
+					var customerParams = "";
+					for(paramKey in triggerParms) {
+						if(paramKey.substring(0,3) == "cpp"){
+							fullURL += "&" + paramKey + "=" + escape(triggerParms[paramKey]);
+						}
+					}
+					// insure that we only pop up once during the lifetime of the cookie
+					if(triggerParms["npc"] == 1) {
+						ForeCStdSetCookie(ckAlreadyShown, 'true',null,'/',triggerParms["domain"]);
+					} else {
+						ForeCStdSetCookie(ckAlreadyShown, 'true', persistentExpires,'/',triggerParms["domain"]);
+					}
+					var myPopUp = window.open(fullURL, 'survey',winOptions);
+					if (triggerParms["pu"] == 1){
+						self.focus();
+					} else {
+						myPopUp.focus(); //focusing on survey window								
+					}
+				}
+			}
+		}	
+		// increment it and set the new cookie value
+		pageCount++;
+		ForeCStdSetCookie(ckLoyaltyCount, pageCount, null,'/',triggerParms["domain"]);		
+	}
+}
+		Poll();
+	
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// End Foresee Survey Code
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-->
+</script>
+<!-- End_common_javascript -->
+<!-- Begin_global_stylesheet --> 
+<STYLE TYPE="text/css" TITLE="Standard">
+<!--
+	A, A:LINK {
+		font-weight : bold;
+		color : #990000
+	}
+	A.leftnavitem, A.leftnavitem:ACTIVE, A.leftnavitem:VISITED {
+		text-decoration : none;
+		color : #ffffff;
+	}
+	A.leftnavitem:HOVER {
+		text-decoration : underline;
+		color : #ffffff;
+	}
+	A.leftnavparent, A.leftnavparent:VISITED, A.leftnavparent:ACTIVE {
+		text-decoration : none;
+		color : #ffffff;
+		font-weight : normal;
+	}
+	A.leftnavparent:HOVER {
+		text-decoration : underline;
+		color : #ffffff;
+		font-weight : normal;
+	}
+	A.leftnavhead, A.leftnavhead:ACTIVE, A.leftnavhead:VISITED {
+		text-decoration : none;
+		color : #FF9900;
+	}
+	A.leftnavhead:HOVER {
+		text-decoration : underline;
+		color : #FF9900;
+	}
+	A.bodynavitem {
+		text-decoration : underline;
+		color : #990000;
+		font-weight : normal;
+	}
+	A.crumbs {
+		text-decoration : underline;
+		font-weight : normal;
+	}
+	A:HOVER {
+		color : #CC0000;
+	}
+	A:ACTIVE {
+		color : #CC0000;
+	}
+	A.cfbutton {
+		text-decoration : none;
+	}
+	A.cfbutton:HOVER {
+		text-decoration : underline;
+	}
+	H1.print {
+		margin-bottom : 0px;
+	}
+	H2 {
+		color : #330066;
+		font-weight : bold;
+		font-size : 130%;
+	}
+	H3 {
+		color : #330066;
+		font-weight : bold;
+		font-size : 90%;
+	}
+	H4 {
+		font-weight : bold;
+		font-size : 90%;
+	}
+	A.alphatoc {
+		color : Black;
+		text-decoration : none;
+	}
+	A.alphatoc:HOVER {
+		background-color : #ffd590;
+		color : Black;
+	}
+
+-->
+</STYLE>
+<!-- End_global_stylesheet -->
+</HEAD>
+<BODY BGCOLOR="White" LINK="#FFAA00" VLINK="#FFAA00" ALINK="#330066" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH="0" MARGINHEIGHT="0" onLoad="MM_preloadImages('/images/common/hgv-bnr-text-hover.gif','/images/common/hgv-bnr-translate-hover.gif','/images/common/hgv-bnr-search-hover.gif')">
+<basefont size="2" face="Verdana,Geneva,Arial,Helvetica,sans-serif"> <A NAME="top"></A> 
+<!-- Begin Header Table --> 
+   
+
+<!-- Begin HGVBANNER Tag (2002-12-02) -->
+
+	
+	
+	
+		
+		
+			
+				 
+				
+				
+				
+				
+					
+					
+					
+					
+						
+					
+					
+					
+				
+			
+		
+	
+
+	
+		
+				
+			
+			
+			
+
+			
+			
+	
+
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		
+			<td width="171" height="61" bgcolor="#990000">
+				
+					<a href="/">
+						
+					
+							<img src="/images/common/hgv-bnr-logo2.gif" alt="[Logo: Homes and Communities: U.S. Department of Housing and Urban Development]" width="171" height="61" border="0">
+						
+					</a>
+				
+			</td>
+			<td width="377" height="61">
+				
+					<img src="/images/common/hgv-tab-help.gif" alt="Help" width="377" height="61" border="0">
+				
+			</td>
+		
+		<td width="287">
+			<table width="287" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					
+								<td width="75">
+									<a href="http://espanol.hud.gov/assist/contactus.cfm?&lang=es" onMouseOver="MM_swapImage('spanish','','/images/common/hgv-bnr-espanol-hover2.gif',1)" onMouseOut="MM_swapImgRestore()">
+										<img src="/images/common/hgv-bnr-espanol2.gif" alt="[Vea la versión en español de esta página]" name="spanish" id="spanish" width="75" height="51" border="0">
+									</a> 
+								</td>
+								<td width="58">
+									<a href="/utilities/textonly.cfm" onMouseOver="MM_swapImage('text','','/images/common/hgv-bnr-text-hover.gif',1)" onMouseOut="MM_swapImgRestore()">
+										<img src="/images/common/hgv-bnr-text.gif" alt="[Display the text version of this page]" name="text" id="text" width="58" height="51" border="0">
+									</a>
+								</td>
+								<td width="154">
+									<a href="/assist/siteindex.cfm" onMouseOver="MM_swapImage('search','','/images/common/hgv-bnr-search-hover.gif',1)" onMouseOut="MM_swapImgRestore()">
+										<img src="/images/common/hgv-bnr-search.gif" alt="[Search/Index]" name="search" id="search" width="154" height="51" border="0">
+									</a>
+								</td>
+							
+				</tr>
+				
+			</table>
+		</td>
+		<td width="100%" align="left" valign="top" bgcolor="white">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td height="51" bgcolor="#990000">&nbsp;</td>
+				</tr>
+			</table>
+			
+		</td>
+	</tr>
+</table>
+<!-- End HGVBANNER Tag -->
+
+    
+<!-- End Header Table --> <!-- Begin Main Table --> <TABLE WIDTH="760" BORDER="0" CELLSPACING="0" CELLPADDING="0"> 
+<TR VALIGN="top"> <!-- Begin Column 1 - Navigation --> <TD WIDTH="171" ROWSPAN="6" BGCOLOR="#990000" HEIGHT="525"><A HREF="/"><IMG SRC="/images/common/hgv-bnr-logo2a.gif" WIDTH="171" HEIGHT="21" BORDER="0" ALIGN="top" ALT="U.S. Department of Housing and Urban Development"></A> 
+<!-- Begin Navigation Area --> <TABLE border="0" CELLSPACING="0" CELLPADDING="0"> 
+<TR> <TD WIDTH="166"> <!-- Begin Navigation Content --> 
+   <!-- HGVtopics build 01/27/2003 -->
+
+		<!--Generated by: 12/13/200414:01:06--><!--Begin_Navigation_Content--><table cellspacing="3" cellpadding="0" BORDER="0"><tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b>HUD news</b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/news/index.cfm" CLASS="leftnavitem">Newsroom</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/initiatives/index.cfm" CLASS="leftnavitem">Priorities</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/about/index.cfm" CLASS="leftnavitem">About HUD</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><BR>Homes</b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/buying/index.cfm" CLASS="leftnavitem">Buying</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/owning/index.cfm" CLASS="leftnavitem">Owning</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/selling/index.cfm" CLASS="leftnavitem">Selling</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/renting/index.cfm" CLASS="leftnavitem">Renting</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/homeless/index.cfm" CLASS="leftnavitem">Homeless</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/improvements/index.cfm" CLASS="leftnavitem">Home improvements</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/homes/index.cfm" CLASS="leftnavitem">HUD homes</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/fheo/index.cfm" CLASS="leftnavitem">Fair housing</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/hsg/comp/refunds/index.cfm" CLASS="leftnavitem">FHA refunds</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/foreclosure/index.cfm" CLASS="leftnavitem">Foreclosure</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/consumer/index.cfm" CLASS="leftnavitem">Consumer info</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><BR>Communities</b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/community/index.cfm" CLASS="leftnavitem">About communities</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/volunteering/index.cfm" CLASS="leftnavitem">Volunteering</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/organizing/index.cfm" CLASS="leftnavitem">Organizing</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/economicdevelopment/index.cfm" CLASS="leftnavitem">Economic development</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><BR>Working with HUD</b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/grants/index.cfm" CLASS="leftnavitem">Grants</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/funds/index.cfm" CLASS="leftnavitem">Programs</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/cpo/index.cfm" CLASS="leftnavitem">Contracts</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/systems/index.cfm" CLASS="leftnavitem">Work online</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/jobs/index.cfm" CLASS="leftnavitem">HUD jobs</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/complaints/index.cfm" CLASS="leftnavitem">Complaints</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><BR>Resources</b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/library/index.cfm" CLASS="leftnavitem">Library</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/adm/handbks_forms/handbooks.cfm" CLASS="leftnavitem">Handbooks/ forms</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/faqs/faqbuying.cfm" CLASS="leftnavitem">Common questions</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><BR>Tools</b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/webcasts/index.cfm" CLASS="leftnavitem">Webcasts</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/subscribe/index.cfm" CLASS="leftnavitem">Mailing lists</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/assist/contactus.cfm" CLASS="leftnavitem">Contact us</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/assist/index.cfm" CLASS="leftnavitem">Help</a></font></td></tr><!--End of Navigation Content-->
+
+		</table>
+	
+	
+	
+
+
+
+<p align="center"><a href="http://www.firstgov.gov/"><img src="/images/common/hgv-tpc-firstgov.gif" alt="[FirstGov: Your First Click for the U.S. Government]" width="130" height="36" hspace="0" vspace="0" border="0"></a>
+&nbsp;<br>
+
+
+
+
+    <!-- End Navigation Content -->	
+</TD><TD WIDTH="5" ALIGN="left" VALIGN="top"></TD></TR> <!-- End Navigation Area -->	
+</TABLE><!-- End Column 1 - Navigation --> </TD><!-- Begin Column 2 - Whitespace Only --> 
+<TD WIDTH="20" ROWSPAN="6"><IMG SRC="/images/common/hgv-fmt-space.gif" WIDTH="20" HEIGHT="1" BORDER="0" ALIGN="top" ALT=" "></TD><!-- End Column 2 - Whitespace Only --> 
+<!-- Begin Content Area - Columns 3-5 --> <TD COLSPAN="3" VALIGN="top"> <!-- Begin Content Table --> 
+<TABLE WIDTH="560" CELLSPACING="1" CELLPADDING="0" BORDER="0"> <TR> <!-- Begin Crumb Trail Area - Spans Columns 3 through 5 --> 
+<TD COLSPAN="3" ALIGN="left" VALIGN="top"><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="1">
+   <!-- HGVcrumbs build 03/08/2002 -->
+
+   </FONT></TD><!-- End Crumb Trail Area  - Spans Columns 2 through 5 --> 
+</TR> <TR> <!-- Begin Spacer Cell To Ensure Minimum Vertical Spacing Between Crumbtrail and Title - Spans Columns 3 - 5 --> 
+<TD COLSPAN="3" ALIGN="left" VALIGN="top"><IMG SRC="/images/common/hgv-fmt-space.gif" WIDTH="1" HEIGHT="10" HSPACE="0" VSPACE="0" BORDER="0" ALIGN="top" ALT=" "></TD><!-- End Spacer Cell To Ensure Minimum Vertical Spacing Between Crumbtrail and Title - Spans Columns 3 - 5 --> 
+</TR> <TR> <!-- Begin Title Cell - Spans Columns 3 - 5 --> <TD COLSPAN="3" ALIGN="left" VALIGN="top"> 
+<H1><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="5" COLOR="#330066"><!-- #BeginEditable "title" --><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="5" COLOR="#330066">Contact 
+Us</FONT><!-- #EndEditable --></FONT></H1></TD><!-- End Title Cell - Spans Columns 3 - 5 -->	
+</TR> <TR> <!-- Begin Column 3 - Wide Content Area --> <TD WIDTH="560" VALIGN="top" COLSPAN="3" id="content-area"><!-- #BeginEditable "content-area" --><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="2">
+<!-- Begin HGVSIDEBAR Open Tag -->
+		<table border="0" cellspacing="0" cellpadding="0" align="right"><tr>
+			<td width="20" valign="top"><img src="/images/common/hgv-fmt-space.gif" width="20" height="1" border="0" alt=""></td>
+			<td width="212" valign="top">
+
+
+<!-- Begin HGVSENDTHIS Tag -->
+
+   
+
+<!-- Begin HGVTOOLBOX Tag build 09/24/02 -->
+
+
+
+	<table width="212" border="0" cellspacing="0" cellpadding="0" bgcolor="fff5dc">
+
+<tr>
+	<td width="6" align="left" valign="top"><img align="left" alt="" border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topleft.gif"></td>
+	
+		<td width="200" height="6" align="center" valign="middle"><img alt="" border="0" height="1" src="/images/common/hgv-fmt-space.gif" width=200 hspace="0" vspace="0"></td>
+	
+	<td width="6" align="right" valign="top"><img alt="" border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topright.gif"></td>
+</tr>
+<tr>
+	<td><img alt="" border="0" src="/images/common/hgv-fmt-space.gif" height="1" width="1" hspace="0" vspace="0"></td>
+	<td>
+		<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+			
+				      
+						<a href="/local/index.cfm"><img src="/images/common/hgv-icn-tools-map.gif" width="30" height="20" border="0" alt="" hspace="0" vspace="0" align="top"><span style="font-size: 9pt;" style="text-decoration:none;">&nbsp;</span>Information by State</a><br>
+					
+			
+	
+	
+	
+		
+		
+			
+				 
+				
+				
+				
+				
+					
+					
+					
+					
+						
+					
+					
+					
+				
+			
+		
+	
+
+	
+		
+		
+			
+			
+				<a href="http://espanol.hud.gov/assist/contactus.cfm?&lang=es"><img src="/images/common/hgv-icn-tools-translate.gif" width="30" height="20" border="0" alt="" hspace="0" vspace="0" align="top"><span style="font-size: 9pt;" style="text-decoration:none;">&nbsp;</span>Esta p&aacute;gina en espa&ntilde;ol</a><br>
+			
+			
+	
+
+
+
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<a href="/utilities/print/print.cfm?referer=http://www.hud.gov/assist/contactus.cfm"><img src="/images/common/hgv-icn-tools-print.gif" width="30" height="20" border="0" alt="" hspace="0" vspace="0" align="top"><span style="font-size: 9pt;" style="text-decoration:none;">&nbsp;</span>Print version</a><br>
+					
+						<a href="/utilities/send/sendlink.cfm"><img src="/images/common/hgv-icn-tools-send.gif" width="30" height="20" border="0" alt="" hspace="0" vspace="0" align="top"><span style="font-size: 9pt;" style="text-decoration:none;">&nbsp;</span>Email this to a friend</a><br>
+					
+		</font>
+	</td>
+	<td><img alt="" border="0" src="/images/common/hgv-fmt-space.gif" height="1" width="1" hspace="0" vspace="0"></td>
+</tr>
+<tr>
+	<td align="left" valign="bottom"><img align="left" alt="" border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-btmleft.gif"></td>
+	<td height="6"><img alt="" border="0" src="/images/common/hgv-fmt-space.gif" height="1" width="1" hspace="0" vspace="0"></td>
+	<td align="right" valign="bottom"><img alt="" border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-btmright.gif"></td>
+</tr>
+</table>
+&nbsp;<br>
+
+   
+
+<!-- End HGVSENDTHIS Tag -->
+
+
+   
+<!-- Begin HGVCONTENTBOX Open Tag -->
+
+	<table width=212 border="0" cellspacing="0" cellpadding="0" bgcolor="fff5dc"> 
+			<tr>
+				<td width="6" align="left" valign="top" bgcolor="336600"><IMG align="left" alt=" " border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topleft.gif"></td>
+				<td width=200 height="20" align="center" valign="middle" bgcolor="336600"><FONT color=white face=Verdana,Geneva,Arial,Helvetica,sans-serif size=2><IMG alt="" border="0" height="1" src="/images/common/hgv-fmt-space.gif" width=200 hspace="0" vspace="0"><br><B>  Looking for Something? 
+
+
+
+
+
+</B></FONT></td>
+				<td width="6" align="right" valign="top" bgcolor="336600"><IMG alt=" " border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topright.gif"></td>
+			</tr>
+		
+		<tr><td colspan="3">
+		
+			<table width=212 border="0" cellspacing="0" cellpadding="5">
+			<tr><td>
+			
+	  	
+		
+		<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+	
+
+	<!-- STheodore: End check for subpage -->
+	
+
+   
+ <table  border='0' cellspacing='4' cellpadding='0' class='hgvlist'> <tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"> <A HREF="/assist/siteindex.cfm">Site index</A> </font></td></tr><tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/faqs/faqbuying.cfm">Common 
+questions</A></font></td></tr><tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/buying/index.cfm">Homebuyer's kit</A></font></td></tr><tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/renting/index.cfm">Renters 
+kit</A></font></td></tr><tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="1"><A HREF="/offices/adm/handbks_forms/handbooks.cfm">Handbooks 
+and forms</A></FONT> </font></td></tr></table>
+
+   
+    <!-- Begin HGVCONTENTBOX Close Tag -->
+	<!-- STheodore: Begin check for subpage -->
+	
+
+		
+		</font></td></tr>
+	
+		
+		</table>
+		
+		</td></tr>
+		
+		</table>
+		<br>
+
+	<!-- STheodore: End check for subpage -->
+	
+	
+<!-- End HGVCONTENTBOX Tag -->
+
+
+   
+   
+<!-- Begin HGVCONTENTBOX Open Tag -->
+
+	<table width=212 border="0" cellspacing="0" cellpadding="0" bgcolor="fff5dc"> 
+			<tr>
+				<td width="6" align="left" valign="top" bgcolor="ff9900"><IMG align="left" alt=" " border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topleft.gif"></td>
+				<td width=200 height="20" align="center" valign="middle" bgcolor="ff9900"><FONT color=white face=Verdana,Geneva,Arial,Helvetica,sans-serif size=2><IMG alt="" border="0" height="1" src="/images/common/hgv-fmt-space.gif" width=200 hspace="0" vspace="0"><br><B>  HUD's Email Policy 
+
+
+
+
+
+</B></FONT></td>
+				<td width="6" align="right" valign="top" bgcolor="ff9900"><IMG alt=" " border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topright.gif"></td>
+			</tr>
+		
+		<tr><td colspan="3">
+		
+			<table width=212 border="0" cellspacing="0" cellpadding="5">
+			<tr><td>
+			
+	  	
+		
+		<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+	
+
+	<!-- STheodore: End check for subpage -->
+	
+
+   We 
+try to respond to email within 2 business days. If we have to do some research, 
+it may take us up to 2 weeks to reply. If you don't hear from us in 2 weeks, write 
+again. We'll do our best to respond quickly. 
+   
+    <!-- Begin HGVCONTENTBOX Close Tag -->
+	<!-- STheodore: Begin check for subpage -->
+	
+
+		
+		</font></td></tr>
+	
+		
+		</table>
+		
+		</td></tr>
+		
+		</table>
+		<br>
+
+	<!-- STheodore: End check for subpage -->
+	
+	
+<!-- End HGVCONTENTBOX Tag -->
+
+
+   
+   
+<!-- Begin HGVCONTENTBOX Open Tag -->
+
+	<table width=212 border="0" cellspacing="0" cellpadding="0" bgcolor="fff5dc"> 
+			<tr>
+				<td width="6" align="left" valign="top" bgcolor="990000"><IMG align="left" alt=" " border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topleft.gif"></td>
+				<td width=200 height="20" align="center" valign="middle" bgcolor="990000"><FONT color=white face=Verdana,Geneva,Arial,Helvetica,sans-serif size=2><IMG alt="" border="0" height="1" src="/images/common/hgv-fmt-space.gif" width=200 hspace="0" vspace="0"><br><B>  Tips 
+
+
+
+
+
+</B></FONT></td>
+				<td width="6" align="right" valign="top" bgcolor="990000"><IMG alt=" " border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topright.gif"></td>
+			</tr>
+		
+		<tr><td colspan="3">
+		
+			<table width=212 border="0" cellspacing="0" cellpadding="5">
+			<tr><td>
+			
+	  	
+		
+		<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+	
+
+	<!-- STheodore: End check for subpage -->
+	
+
+    
+
+ <table  border='0' cellspacing='4' cellpadding='0' class='hgvlist'> <tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">If you send us email, please include your city and state.</font></td></tr><tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">If 
+you're writing about a HUD property, include the address or location.</font></td></tr><tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">Include 
+your email address in the text of your message. We will use your email address 
+only to respond to you.</font></td></tr></table>
+
+   
+    <!-- Begin HGVCONTENTBOX Close Tag -->
+	<!-- STheodore: Begin check for subpage -->
+	
+
+		
+		</font></td></tr>
+	
+		
+		</table>
+		
+		</td></tr>
+		
+		</table>
+		<br>
+
+	<!-- STheodore: End check for subpage -->
+	
+	
+<!-- End HGVCONTENTBOX Tag -->
+
+
+   
+<!-- Begin HGVSIDEBAR Close Tag -->
+			</td>
+		</tr></table>
+<!-- End HGVSIDEBAR Tag -->
+
+ 
+
+
+
+	Got a question?  We'll help you get an answer.
+	<ul><li><a href="/offices/hsg/sfh/hcc/hccprof14.cfm">Buying or renting a home or apartment</a>:  contact a housing counseling agency</li>
+	<li><a href="/offices/pih/pha/contacts/index.cfm">Housing vouchers or public housing</a>, contact your local public housing agency</li>
+	<li><a href="/utilities/intercept.cfm?/complaints/housediscrim.cfm">Victim of housing discrimination</a>, complete our online complaint form. </li>
+	<li><a href="/directory/ascdir3.cfm">HUD's programs in your area</a>, contact your local HUD staff</li>
+	<li><a href="/assist/systems.cfm">Resetting a password or other problems with HUD systems</a>, contact the system manager</li>
+	<li><a href="/library/bookshelf15/webman/webman.cfm">Questions about the website</a>, contact a web manager</li>
+	<li><a href="/directory/ascdir3.cfm">Comments about the quality of service</a> you have received from HUD staff, contact your local office</li>
+	<li><a href="http://www5.hud.gov:63001/po/i/netlocator/">Reach a specific HUD employee</a>, use our phone book</li>
+	<li><a href="/offices/osdbu/">Find out about small business opportunities</a>, contact our Office of Small and Disadvantaged Business Utilization</li>
+	<li><a href="/offices/ogc/foia/index.cfm">File a request under the Freedom of Information Act (FOIA)</a>, contact our General Counsel</li>
+	<li><a href="/offices/adm/grants/qualityinfo/qualityinfo.cfm">Report a problem with data quality</a> under the Quality of Information Guidelines, contact our Office of Administration</li>
+	<li><a href="http://www.firstgov.gov">Don't know which government agency to ask</a>?  Visit FirstGov.gov or call 1-800-FED-INFO (1-800-333-4636)</li>
+</ul>
+
+</FONT><!-- #EndEditable --></TD><!-- End Column 3 - Wide Content Area --> </TR> 
+</TABLE><!-- End Content Table --> </TD><!-- End Content Area - Columns 3-5 -->	
+<!-- Begin Column 6 - Whitespace Only --> <TD ROWSPAN="6" WIDTH="9"><IMG SRC="/images/common/hgv-fmt-space.gif" WIDTH="9" HEIGHT="1" BORDER="0" ALIGN="top" ALT=" "></TD><!-- End Column 6 - Whitespace Only --> 
+</TR> <!-- Begin Footer Row --> <TR> <td colspan="3">&nbsp;</td></tr> <TR VALIGN="top"> 
+<TD COLSPAN="3"> <table border="0" cellspacing="0" cellpadding="0"> <TR> <TD WIDTH="312"> 
+ <FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+   
+
+   Content updated October 22, 2004
+   
+	
+	
+		<!-- Begin HGVDATE Tag -->
+		
+		
+		
+		
+			
+			
+
+
+
+			
+			
+			         
+		
+		<!-- End HGVDATE Tag -->
+	
+
+
+   </font> 
+</TD><TD WIDTH="38">&nbsp;</TD><TD ALIGN="right" WIDTH="210"><!-- Begin Back to Top --><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+   
+
+<!-- Begin HGVBUTTON Tag -->
+<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+	
+			
+			
+			
+			
+			
+			
+				
+			
+			
+		
+		<a href="#top" 
+			class="cfbutton" 
+			onmouseover="" 
+			onmouseout="" 
+			onmousedown="" 
+			onmouseup=""
+			>
+			<img src="/images/common/hgv-icn-btn-up.gif" width="16" height="16" border="0" alt="Follow this link to go" name="" id="button" hspace="0" vspace="0" align="top">
+			
+				<span style="font-size: 9pt; text-decoration: none;">&nbsp;</span>Back to Top
+			
+		</a>
+	&nbsp;&nbsp;
+</font>
+<!-- End HGVBUTTON Tag -->
+
+   </font><!-- End Back to Top --></TD></TR> 
+</table><!-- Begin Footer Table --> 
+   
+
+<!-- Begin HGVFOOTER Tag build 05/06/02 -->
+<table width="560" border="0" cellspacing="0" cellpadding="0">
+<TR>
+   <TD COLSPAN="4"><IMG SRC="/images/common/hgv-fmt-red.gif" WIDTH="560" HEIGHT="1" HSPACE="0" VSPACE="5" border="0" ALT="----------"><br><img src="/images/common/hgv-fmt-space.gif" alt="" width="1" height="5" border="0"></TD>
+</TR>
+
+      <TR>
+         <td width="67" valign="top"><img src="/images/common/hgv-icn-seal.gif" alt="[logo: HUD seal]" border="0"><img src="/images/common/hgv-fmt-space.gif" alt="" width="10" height="1" border="0"></td>
+         <td width="340" nowrap><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="1">
+            <nobr>U.S. Department of</nobr> <nobr>Housing and Urban Development</nobr><br>
+            <nobr>451 7th Street S.W.,</nobr> <nobr>Washington, DC 20410</nobr><br>
+            <nobr>Telephone: (202) 708-1112&nbsp;&nbsp;</nobr> <nobr>TTY: (202) 708-1455</nobr><br>
+            <a href="/directory/ascdir3.cfm" class="bodynavitem">Find the address of a HUD office near you</a>
+            </FONT>
+         </td>
+         <td width="44" valign="top"><img src="/images/common/hgv-fmt-space.gif" alt="" width="1" height="10" border="0"><br><a href="/library/bookshelf15/hudgraphics/fheologo.cfm"><IMG SRC="/images/common/hgv-icn-fheo.gif" WIDTH="29" HEIGHT="21" border="0" ALT="[logo: Fair Housing and Equal Opportunity]" vspace="2"></a><img src="/images/common/hgv-fmt-space.gif" alt="" width="15" height="1" border="0"></td>
+         <td width="109" align="left"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+            
+            <a href="/assist/privacy.cfm" class="bodynavitem">Privacy&nbsp;Policy</a><br>
+            
+      		   <a href="/" class="bodynavitem">Home</a>
+            <br>&nbsp;
+      		</font>
+         </td>
+      </TR>
+    
+</TABLE><br>
+<!-- End HGVFOOTER Tag -->
+    
+<!-- End Footer Table --> </TD></TR> <!-- End Footer Row --> </TABLE><!-- End Main Table --> 
+</BODY>
+<!-- #EndTemplate --></HTML>

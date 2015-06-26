@@ -1,0 +1,410 @@
+<DOC>
+<DOCNO>g00361</DOCNO>
+<DOCHDR>http://www.judysbook.com/members/1116/posts/2005/3/2298</DOCHDR>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	A New York Pizza Place - Seattle, WA - Review by Andy S. on Judy's Book
+</title>
+<script type="text/javascript" src="http://images.judysbook.com/members/js/prototype.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    function submitSignIn(signInForm)
+    {                      
+        new Ajax.Updater('commentAdd', '/controls/ajax/addcomment.aspx', {method: 'post', evalScripts: true, parameters:Form.serialize(signInForm)});
+    }
+    function submitComment(commentForm)
+    {
+        if(Form.Element.getValue('commentText').length == 0) {                 
+            new Ajax.Updater('commentAdd', '/controls/ajax/AddComment.aspx?error=Please fill out comment before submitting', {method: 'post', evalScripts: true});
+        }
+        else
+        {
+            $('commentError').style.display = "none";                    
+            new Ajax.Updater('commentBlock', '/controls/ajax/submitcomment.aspx', {method: 'post', evalScripts: true, insertion: Insertion.Bottom, parameters:Form.serialize(commentForm) + "&ciId=2298"});                                                             
+            $('commentText').value = "";                    
+        }
+    }    
+    function displayComment(commentId)
+    {
+        $('commentBlock').style.display = "";
+        var pars = 'ci=2298&m=1116';
+        new Ajax.Updater('contentItemFeedback', '/controls/ajax/submitcontentitemfeedback.aspx', {method:'post', evalScripts: true, parameters: pars});return false;       
+    }
+    function submitContentItemFeedback(ciId, rating)
+    {   
+        var pars = 'ci=' + ciId + '&rating=' + rating;
+        new Ajax.Updater('contentItemFeedback', '/controls/ajax/submitcontentitemfeedback.aspx', {method:'post', evalScripts: true, parameters: pars});return false;       
+    }
+    function setFavoriteContentItem(ciId, remove)
+    {   
+        var pars = 'ci=' + ciId;
+        if(remove)
+            pars += '&remove=' + remove;
+        new Ajax.Updater('addToFav', '/controls/ajax/setFavoriteContentItem.aspx', {method:'post', evalScripts: true, parameters: pars});return false;       
+    }
+    function sendToAFriend(stfForm)
+    {
+        if(Form.Element.getValue('stfEmail').length == 0 || $('stfEmail').value == 'Enter an email address') {
+            $('stfError').style.display = "";                    
+        }
+        else
+        {
+            $('stfError').style.display = "none";                    
+            new Ajax.Updater('sendtofriend', '/controls/ajax/sendtoafriendCI.aspx', {method: 'post', evalScripts: true, parameters:Form.serialize(stfForm) + "&ciId=2298"});                                                             
+            $('stfEmail').value = "";                    
+        }
+    }
+    function clearSTF()
+    {
+        if($('stfEmail').value == 'Enter an email address')
+            $('stfEmail').value = '';        
+    }
+    //]]>
+</script> 
+
+<link rel="SHORTCUT ICON" href="/judysbook.ico" />
+<link rel="stylesheet" type="text/css" href="http://images.judysbook.com/members/css/print.css" media="print" />
+<style type="text/css">
+    /*<![CDATA[*/
+
+    @import url("http://images.judysbook.com/members/css/common_23.css");
+    @import url("http://images.judysbook.com/members/css/static_19.css");
+    @import url("http://images.judysbook.com/members/css/merchant_12.css");
+
+    /*]]>*/
+</style>
+<script type="text/javascript" src="http://images.judysbook.com/members/js/static.js"></script>	
+<script type="text/javascript" src="http://images.judysbook.com/members/js/common_16.js"></script>	
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+	_uacct = "UA-76007-1";
+	_udn="judysbook.com";
+	_userv=2;
+	urchinTracker();
+</script>
+<meta name="description" content="A New York Pizza Place reviews at Judy's Book'The number one attribute of A New York Pizza Place...'" /></head>
+<body>
+
+<div id="header">
+    <div class="wrapper">
+	    <div id="logo">
+		    <a href="/"><img src="http://images.judysbook.com/members/judysbook.png" alt="A New York Pizza Place - Seattle, WA - Review by Andy S. on Judy's Book" title="" /></a>
+	    </div>
+	    <ul id="global-nav">	 
+             <li id="home"><a href="/" title="Home" rel="home">Home</a></li>		    <li id="mybook"><a href="/mybook/" title="My Book">MyBook</a></li>		    <li id="signin">
+                                    <a href="/login.aspx" title="Sign In">Sign In</a>                
+              </li>	    </ul>	    <div id="searchbox-wrapper">	        <form id="frmSearch" method="get" action="/search/">    	        <fieldset>  	        		<label for="searchbox_keyword" id="keyword_label">Search for:</label>	            <input type="text" id="searchbox_keyword" name="k" value="" />	            <span>e.g. restaurants, hair salons, doctors</span>  	        		<label for="searchbox_location" id="location_label">Location:</label>	            <input type="text" id="searchbox_location" name="l" value="seattle wa" />	            <input type="image" onclick="qBox.value=searchbox_keyword.value+' '+searchbox_location.value" src="http://images.judysbook.com/members/search.png" id="search_button" value="Search" />    	        <input type="hidden" id="qBox" name="q" />    	        </fieldset>            </form>	    </div>	    <hr />	</div>	</div>
+
+<div id="content-wrapper">
+	
+<div id="ctl00_PageMessage1_promoMessage" class="promoMessage">
+<div id="promoblock">
+       <p>Be recognized. Be rewarded. Become a City Editor. <a href="/promotions/cityeditor/" onClick="javascript:urchinTracker('/RM/cityeditor-CI')">Sign up now</a></p>    
+</div></div>
+
+
+	
+<div id="ci-page">
+
+	<div id="content" class="three-column-navright">
+		<div id="main">
+			
+<div id="ctl00_MainColumn_ContentItemControl">
+<div class="hreview">
+	<h1 class="item vcard"><a class="fn org summary" href="/cities/seattle/Pizza-Restaurants/2033/p1/A_New_York_Pizza_Place.htm">A New York Pizza Place</a></h1>
+	<img src="http://images.judysbook.com/members/stars/rate4_lg.gif" class="stars-big" alt="4 stars" />
+
+    <h3 class="title">Good New York Style Pizza In Seattle</h3>
+    <p class="details"><abbr class="dtreviewed" title="20050316">March 16, 2005 5:23 PM PST</abbr></p>
+    
+    <p class="description">New York Pizza Place on 5th in the Maple Leaf neighborhood is decent...I think its better than just about everything else in Seattle but that's really not saying a whole lot, in my opinion. Sadly, you won't find true NY-style pizza here although its still quite fun making the rounds in a valiant attempt! </p>
+	
+    
+</div>
+<div id="contentItemFeedback">
+	
+<ul class="helpful">
+   
+        <li><a href="/login.aspx?ReturnUrl=%2fmembers%2f1116%2fposts%2f2005%2f3%2f2298%2f"><img src="http://images.judysbook.com/members/thumbs_up_bl_count.gif" alt="Thumbs up" /><em>1</em></a></li>
+    
+        <li><a href="/login.aspx?ReturnUrl=%2fmembers%2f1116%2fposts%2f2005%2f3%2f2298%2f"><img src="http://images.judysbook.com/members/thumbs_down_bl.gif" alt="Thumbs down" /></a></li>
+      
+    <li><a href="/members/1116/posts/2005/3/2298/#commentAdd"><img src="http://images.judysbook.com/members/add_comment_bl_count.gif" alt="Add Comment" /><em>1</em></a></li>
+
+</ul>
+<hr />
+
+</div>
+
+<div class="" style="margin:10px; padding-left:0px">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-7564012199704606";
+    google_hints = "";
+    google_alternate_ad_url = "http://www.judysbook.com/controls/AlternateAdBlock.aspx?bc=FFFFFF&cc=FFFFFF&h=60&lc=0077aa&tc=777777&uc=0077aa&w=234";
+    google_ad_width = 234;
+    google_ad_height = 60;
+    google_ad_format = "234x60_as";
+    google_ad_type = "text";
+    google_ad_channel ="5474555522";
+    google_color_border = "FFFFFF";
+    google_color_bg = "FFFFFF";
+    google_color_link = "0077aa";
+    google_color_url = "0077aa";
+    google_color_text = "777777";
+    //--></script>
+    <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+
+<ul class="action">
+	<li><a href="/members/1116/posts/2005/3/2298/flag/">Flag this post</a></li>
+	<li>View all <a href="/cities/seattle/Pizza-Restaurants/2033/p1/A_New_York_Pizza_Place.htm">A New York Pizza Place</a> reviews</li>
+	<li>View more <a href="/cities/seattle/Pizza-Restaurants/">Pizza Restaurants reviews in Seattle</a></li>
+	<li>Andy's <a href="/members/1116/posts/">post archive</a></li>
+</ul>	
+
+
+</div>
+<div id="commentBlock" style="display:;">
+<h3>Comments:</h3>
+<div id="ctl00_MainColumn_comments">
+
+<div class="comment">
+    <dl>
+		<dt class="vcard commenter">
+		    <a href="/members/Diane/" id="ctl00_MainColumn_ctl00_ctl00_MemberLink" title="Diane O."><img src="http://images.judysbook.com/html/81/00/00/1000081_tn.jpg" id="ctl00_MainColumn_ctl00_ctl00_MemberImage" class="member-photo" alt="Diane O." /></a>
+<span class="degree"></span> 
+			<a href="/members/Diane/" title="Diane O.">Diane O.</a>
+		</dt>
+		<dd class="trustscore"><img src="http://images.judysbook.com/members/trustscore/ts_sm_7.gif" alt="TrustScore = 7" title="TrustScore = 7" /> </dd>  					
+		<dd class="pub-date">Posted: 3/20/2005 9:45:32 PM PST</dd>  					
+	</dl>    
+	<p class="description">I was going to say this place too. The pizza is delicious. And Todd, the owner, makes this place extra welcoming. </p>
+</div>
+    </div>
+</div>    
+<div class="cbb thought">
+<div id="commentAdd">
+
+<fieldset class="form stacked">    
+    <h3>Sign in to add a comment</h3>
+    <span id="commentSignInErrors"></span>
+    <form id="commentSignInForm" method="get" action="" onsubmit="submitSignIn(this);return false;">    
+	    <dl>
+				<dt><label for="login_email">Email address</label></dt>
+				<dd><input name="login_email" type="text" id="login_email" class="textbox" /></dd>
+				<dt><label for="login_password">Password</label></dt>
+				<dd><input name="login_password" type="password" id="login_password" class="textbox" /></dd>
+				<dt></dt>
+				<dd>
+				   <input name="login_chkautologin" type="checkbox" id="login_chkautologin" />&nbsp;
+					<label for="login_chkautologin">Sign me in automatically next time</label>
+				</dd>			
+			</dl>
+	    <p><input type="submit" class="button" value="Sign In" /> </p>
+    </form>
+</fieldset>
+
+
+Not a member?  <a href="/signup/">Sign up now!</a>
+
+</div>  
+</div>
+
+<div class="ci-list more">
+    <h3>More from Andy:</h3>  
+    <ul>
+    
+        
+<li><a href="/members/1116/posts/2006/3/265675/">Mattress expiration date</a></li>
+    
+        
+<li><a href="/members/1116/posts/2006/5/367086/">My ratings of places to live in seattle</a></li>
+    
+        
+<li><a href="/members/1116/posts/2006/6/386207/">I don't know about bindings</a></li>
+    
+    </ul>      
+</div>
+
+    <hr />
+
+		</div>
+		<div id="sub">
+			
+	
+<div class="degrees-container">
+  	<a href="/members/1116/" id="ctl00_SubColumn_Member_InfoColumn1_MemberImage1_MemberLink" title="Andy S."><img src="http://images.judysbook.com/html/20/00/00/1000020_lgsq.jpg" id="ctl00_SubColumn_Member_InfoColumn1_MemberImage1_MemberImage" class="member-photo" alt="Andy S." /></a>
+<span class="degree"></span> 
+</div>
+
+
+<div class="rounded-box">
+	<dl class="vcard">
+	  
+	  <dt class="fn"><a href="/members/1116/" title="More about Andy S.">Andy S.</a></dt>
+	    
+	  <dd class="adr"><a class="locality" href="/cities/seattle/">Seattle, WA</a></dd>
+	  <dd class="join-date">Member Since: April 18, 2004</dd>
+	  <dd class="trustscore">
+	  		<a id="what-is-ts" href="javascript:popUp('/about/trustscore.aspx','400','400')"><span>TrustScore<sup>SM</sup> = 9</span>
+	  		<img src="http://images.judysbook.com/members/trustscore/ts_lg_9.gif" alt="TrustScore = 9" title="TrustScore = 9" /></a> 
+	  </dd>
+	</dl>
+</div>
+
+	<hr />
+
+    <div id="ctl00_SubColumn_adBlock" class="adsensehoriz">
+        
+<div class="" style="margin:10px; padding-left:0px">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-7564012199704606";
+    google_hints = "Pizza Restaurants Restaurants Food Dining Seattle Washington";
+    google_alternate_ad_url = "http://www.judysbook.com/controls/AlternateAdBlock.aspx?bc=FFFFFF&cc=FFFFFF&h=600&lc=0077aa&tc=777777&uc=0077aa&w=120";
+    google_ad_width = 120;
+    google_ad_height = 600;
+    google_ad_format = "120x600_as";
+    google_ad_type = "text";
+    google_ad_channel ="0831579159";
+    google_color_border = "FFFFFF";
+    google_color_bg = "FFFFFF";
+    google_color_link = "0077aa";
+    google_color_url = "0077aa";
+    google_color_text = "777777";
+    //--></script>
+    <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+
+    </div>
+
+
+		</div>
+		<div id="nav">
+			  
+    <div id="ctl00_NavColumn_ciMoreInfo">
+
+<div class="map-wrapper">
+    
+<iframe src="http://maps.judysbook.com/minimap.aspx?lat=47.6893310000000&lng=-122.3228070000000&height=173&width=173&ZoomLevel=4&ShowTypeControl=False&ShowControls=True&EnableDrag=True" frameborder="0" width="175" height="175" scrolling="no"></iframe>
+    <a href="http://maps.judysbook.com/default.aspx?ri=2033" target="_blank">View Larger Map</a>
+    
+    <!--a href="#" class="directions"><img src="http://images.judysbook.com/members/get-directions.png" alt="Get Directions" /></a-->
+</div>    
+<dl class="item vcard">
+<dt class="fn org summary">A New York Pizza Place</dt>
+<dd class="adr">
+    <span class="street-address">8310 5th Ave NE</span>
+    <span class="locality">Seattle</span>, <span class="region">WA</span> <span class="postal-code">98115</span>
+    <span class="phone">866-242-3139 x2232</span>
+    
+        <span class="phone">(206) 524-1355</span>
+    
+</dd>
+</dl>
+
+<hr />
+
+</div>
+    <h4>To Do</h4>
+    <ul class="nav-list">
+        
+        <li><a href="/post/add/service.aspx?ri=2033">Write a Review of this Business</a></li>
+        
+        <li><a href="/tools/IsThisYourBusiness.aspx?ri=2033">Is this Business’s Information Incorrect?</a></li>    
+        
+        <li><a href="/mybook/tools/sendtoafriend.aspx?ci=2298">Send to a Friend</a></li>        
+    </ul>
+       
+    
+    <div class="ci-list">
+        <h4>More Reviews</h4>
+        <div class="ci-list">
+            
+	        <dl class="float70">
+		        <dt class="vcard reviewer">
+		            <a href="/members/Diane/" id="ctl00_NavColumn_rptrMoreReviews_ctl00_ctl00_MemberLink" title="Diane O."><img src="http://images.judysbook.com/html/81/00/00/1000081_tn.jpg" id="ctl00_NavColumn_rptrMoreReviews_ctl00_ctl00_MemberImage" class="member-photo" alt="Diane O." /></a>
+<span class="degree"></span> 
+		       	    <span class="fn">Diane O.</span>
+				 </dt>
+				    <dd class="description"><a href="/members/Diane/posts/2005/8/74352/">New York Pizza Done Right-- Yum</a></dd>
+			    </dl>
+	        
+	        <dl class="float70">
+		        <dt class="vcard reviewer">
+		            <a href="/members/16405/" id="ctl00_NavColumn_rptrMoreReviews_ctl01_ctl00_MemberLink" title="Emily M."><img src="http://images.judysbook.com/members/nomemberimagef-tn.gif" id="ctl00_NavColumn_rptrMoreReviews_ctl01_ctl00_MemberImage" class="member-photo" alt="Emily M." /></a>
+<span class="degree"></span> 
+		       	    <span class="fn">Emily M.</span>
+				 </dt>
+				    <dd class="description"><a href="/members/16405/posts/2005/9/167652/">Great Neighborhood Joint</a></dd>
+			    </dl>
+	        
+	        <dl class="float70">
+		        <dt class="vcard reviewer">
+		            <a href="/members/23492/" id="ctl00_NavColumn_rptrMoreReviews_ctl02_ctl00_MemberLink" title="Jeff B."><img src="http://images.judysbook.com/html/38/12/00/1001238_tn.jpg" id="ctl00_NavColumn_rptrMoreReviews_ctl02_ctl00_MemberImage" class="member-photo" alt="Jeff B." /></a>
+<span class="degree"></span> 
+		       	    <span class="fn">Jeff B.</span>
+				 </dt>
+				    <dd class="description"><a href="/members/23492/posts/2005/9/181235/">Just Buy Local</a></dd>
+			    </dl>
+	        
+	        <hr />
+    </div>
+    
+<div class="" style="margin:10px; padding-left:0px">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-7564012199704606";
+    google_hints = "Pizza Restaurants Restaurants Food Dining Seattle Washington";
+    google_alternate_ad_url = "";
+    google_ad_width = 160;
+    google_ad_height = 90;
+    google_ad_format = "160x90_0ads_al";
+    google_ad_type = "";
+    google_ad_channel ="0831579159";
+    google_color_border = "FFFFFF";
+    google_color_bg = "FFFFFF";
+    google_color_link = "0077aa";
+    google_color_url = "0077aa";
+    google_color_text = "777777";
+    //--></script>
+    <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+
+    
+		</div>
+	</div>    
+	
+</div>
+                  
+	
+<div id="footer">
+    <div class="wrapper">
+	    <ul>
+		    <li><a href="/about/">About us</a>::</li>
+		    <li><a href="/help/">Help</a>::</li>
+		    <li><a href="/merchant/">Businesses &amp; Professionals</a>::</li>
+		    <li><a href="/help/feedback/">Give us your feedback</a>::</li>
+		    <li><a href="/about/privacy/">Privacy policy</a>::</li>
+		    <li><a href="/about/terms/">Terms of use</a></li>
+	    </ul>
+	    <p class="copyright">Copyright 2004-2006 Judy's Book, Inc. All rights reserved.</p>
+    </div>
+</div>
+<script type="text/javascript">
+	addLoadEvent(focusLabels);
+	addLoadEvent(roundedCorners);
+</script> 
+</div>  
+</body>
+</html>

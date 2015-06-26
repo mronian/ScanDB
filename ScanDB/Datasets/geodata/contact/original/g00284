@@ -1,0 +1,666 @@
+<DOC>
+<DOCNO>g00284</DOCNO>
+<DOCHDR>http://www.terc.edu/TEMPLATE/contactus/index.cfm</DOCHDR>
+<!--***************************************************************************-->
+<!--       "TERC web site"-->
+<!--        Property of TERC, Inc. (Cambridge, MA)-->
+<!--        Web Developer: Melissa Wahl  (melissa_wahl@terc.edu)-->
+<!--        Copyright 2000.  All rights reserved.-->
+<!--***************************************************************************-->
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<!--***************************************************************************-->
+<!--       "TERC web site"-->
+<!--        Property of TERC, Inc. (Cambridge, MA)-->
+<!--        Web Developer: Melissa Wahl  (melissa_wahl@terc.edu)-->
+<!--        Copyright 2000.  All rights reserved.-->
+<!--***************************************************************************-->
+
+
+
+
+
+
+  
+
+
+
+<HTML>
+<HEAD>
+<TITLE>TERC: Contact Us</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+// function to allow Internet Explorer 4.5 for Mac to reload pages
+function nothing() { }
+
+<!-- Original: Alex Tu <boudha1@hotmail.com> -->
+<!-- Web Site:  http://www.geocities.com/MadisonAvenue/4368 -->
+
+//dropdown menu
+<!-- This script and many more are available online from -->
+<!-- The JavaScript Source!! http://javascriptsource.com -->
+
+<!-- Begin
+function formHandler(){
+var URL = document.form.site.options[document.form.site.selectedIndex].value;
+window.location.href = URL;
+}
+// End -->
+</SCRIPT>
+
+<script LANGUAGE=JAVASCRIPT>
+<!--
+function  _CF_checkCFForm_1(_CF_this)
+    {
+    return true;
+    }
+
+//-->
+</script>
+</HEAD>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  ++++++ Background.cfm ++++++ -->
+
+
+
+
+
+
+
+
+
+<BODY BACKGROUND="/IMAGES/background/OrangeBarBackground.gif" BGCOLOR="FFFFFF" TEXT="000000" LINK="339966" VLINK="339966">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  ++++++ DropDownMenu.cfm ++++++ -->
+
+
+
+
+
+
+
+
+<!--htdig_noindex-->
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=700>
+<TR><TD WIDTH=700 ALIGN=RIGHT>
+
+<FORM name = "form">
+<SELECT NAME="site" SIZE=1 onChange ="formHandler()">
+<OPTION VALUE="">Go to...
+<OPTION VALUE="">
+
+<OPTION VALUE="/index.cfm">TERC Home Page
+<OPTION VALUE="">---------------
+<OPTION VALUE="/TEMPLATE/About/index.cfm">About TERC
+<OPTION VALUE="/TEMPLATE/HandsOn/index.cfm">Hands On
+<OPTION VALUE="/TEMPLATE/ContactUs/index.cfm">Contact Us
+<OPTION VALUE="http://search.terc.edu/">Search
+<OPTION VALUE="">---------------
+<OPTION VALUE="/TEMPLATE/feature/index.cfm">Feature Archives
+<OPTION VALUE="/TEMPLATE/news/index.cfm">News Archives
+
+<OPTION VALUE="">
+<OPTION VALUE="">----TOPICS-----
+		<!-- from db -->
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=1">Curriculum
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=6">Mathematics Education
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=2">Earth & Space Science
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=8">Science Education
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=3">Equity
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=4">School Reform
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=12">Online Learning
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=11">Research
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=7">Professional Development
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=5">Informal & Home Learning
+			
+		
+			
+				<OPTION VALUE="/TEMPLATE/Topic/index.cfm?TopicID=13">Software & Tech Tools
+			
+		
+<OPTION VALUE="">
+<OPTION VALUE="">----FAST TRACK-----
+		
+		<!-- hard-coded -->
+		<OPTION VALUE="/TEMPLATE/Projects/index.cfm">Current Projects
+		<OPTION VALUE="/TEMPLATE/Websites/index.cfm">Project Web Sites
+		
+		<OPTION VALUE="/TEMPLATE/publications/index.cfm">Products & Publications
+		<OPTION VALUE="/TEMPLATE/people/index.cfm">People
+		<OPTION VALUE="/TEMPLATE/getinvolved/index.cfm">Get Involved
+		<OPTION VALUE="/TEMPLATE/jobs/index.cfm">Job Openings
+		<OPTION VALUE="/TEMPLATE/Projects_completed/index.cfm">Completed Projects
+		<OPTION VALUE="/TEMPLATE/faq/index.cfm">FAQ
+		
+<OPTION VALUE="">
+</SELECT>
+</FORM>
+<!--/htdig_noindex-->
+</TD>
+</TR>
+</TABLE>
+
+
+
+
+
+
+
+<!--***************************************************************************-->
+<!--       "TERC web site"-->
+<!--        Property of TERC, Inc. (Cambridge, MA)-->
+<!--        Web Developer: Melissa Wahl  (melissa_wahl@terc.edu)-->
+<!--        Copyright 2000.  All rights reserved.-->
+<!--***************************************************************************-->
+
+
+<!--  ++++++ navHeader.cfm ++++++  -->
+
+
+
+
+
+
+
+
+
+<!--htdig_noindex-->
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=700 BGCOLOR=660099>
+<TR>
+<TD WIDTH=700 ALIGN=RIGHT>
+<FONT SIZE=+0 FACE="Trebuchet MS, Helvetica, Arial, sans serif"><A HREF="/index.cfm"><FONT COLOR=FF9933>Home</FONT></A>&nbsp;&nbsp;<FONT COLOR=339966><B>|</B></FONT>&nbsp;&nbsp;<A HREF="/TEMPLATE/about/index.cfm"><FONT COLOR=FF9933>About TERC</FONT></A>&nbsp;&nbsp;<FONT COLOR=339966><B>|</B></FONT>&nbsp;&nbsp;<A HREF="/TEMPLATE/news/index.cfm"><FONT COLOR=FF9933>News</FONT></A>&nbsp;&nbsp;<FONT COLOR=339966><B>|</B></FONT>&nbsp;&nbsp;<A HREF="/TEMPLATE/handson/index.cfm"><FONT COLOR=FF9933>Hands On!</FONT></A>&nbsp;&nbsp;<FONT COLOR=339966><B>|</B></FONT>&nbsp;&nbsp;<A HREF="/TEMPLATE/contactus/index.cfm"><FONT COLOR=FF9933>Contact Us</FONT></A>&nbsp;&nbsp;<FONT COLOR=339966><B>|</B></FONT>&nbsp;&nbsp;<A HREF="http://search.terc.edu/"><FONT COLOR=FF9933>Search</FONT></A></FONT>&nbsp;&nbsp;<BR>
+</TD>
+</TR>
+</TABLE>
+<!--/htdig_noindex-->
+
+
+
+
+
+
+
+
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=700 BGCOLOR=FFFFFF>
+<TR>
+	<TD WIDTH=663 BGCOLOR=CC99FF><FONT SIZE=+3 FACE="Trebuchet MS, Helvetica, Arial, sans serif"><B>Contact Us</B></FONT><BR></TD>
+	<TD WIDTH=37 VALIGN=TOP ROWSPAN=2><IMG SRC="/IMAGES/logos/TERClogoSM.gif" ALT="TERC logo" ALIGN=TOP WIDTH="37" HEIGHT="42" BORDER="0"></TD>
+</TR>
+<TR>
+	<TD WIDTH=663 BGCOLOR=FFFFFF><IMG SRC="/IMAGES/general/spacer.gif" ALT="" ALIGN=TOP HEIGHT=1 WIDTH=20><BR><BR></TD>
+</TR>
+</TABLE>
+
+
+
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=700 BGCOLOR=FFFFFF>
+
+
+<TR>
+<TD WIDTH=20><IMG SRC="/IMAGES/general/spacer.gif" ALT="" ALIGN=TOP HEIGHT=3 WIDTH=20></TD>
+<TD WIDTH=680>
+	<FONT SIZE=+2 FACE="Trebuchet MS, Helvetica, Arial, sans serif">
+	
+	<P>
+	<B>Questions? Comments? Here's how to reach us. 
+	</B>
+	</P>
+	</FONT>
+	
+	<FONT SIZE=+0 FACE="Trebuchet MS, Helvetica, Arial, sans serif">
+	
+	
+	<MENU>
+		TERC<BR>
+		2067 Massachusetts Avenue<BR>
+		Cambridge, Massachusetts 02140<BR>
+		USA<BR>
+		(617) 547-0430<BR>
+		(617) 349-3535 fax<BR>
+		<A HREF="mailto:communications@terc.edu">communications@terc.edu</A><BR>
+		<A HREF="http://www.terc.edu">www.terc.edu</A><BR>
+	</MENU>
+	
+	<P>
+	You may find answers to some of your questions here:
+	</P>
+	
+	<MENU>
+	<A HREF="/TEMPLATE/faq/">Our FAQ Sheet</A><BR>
+	<A HREF="/TEMPLATE/contactus/directions.cfm">Directions to TERC</A><BR>
+	<A HREF="/TEMPLATE/people/">People at TERC</A><BR>
+	</MENU>
+	
+	
+	<P>
+	If you'd like to send us feedback, or if you have any questions about TERC's projects, products, or publications, please use the form below. We also want to hear from you about our web site. Does it tell you what you want to know about TERC? What other information would you like to find on the site? How easy is it to use? Take two minutes to <a href="http://www.terc.edu/Survey.cfm">respond to our web site feedback questionnaire</a>. 
+	</P>
+	
+	We also invite you to <A HREF="/TEMPLATE/handson/request.cfm">join our mailing list</A>.<BR>
+	
+	
+	
+		<FORM NAME="CFForm_1" ACTION="Reply.cfm" METHOD=POST onSubmit="return _CF_checkCFForm_1(this)" METHOD="POST">
+		<INPUT TYPE="hidden" NAME="name_required" VALUE="Please include your full name in the appropriate place on the form." >
+		<INPUT TYPE="hidden" NAME="city_required" VALUE="Please include your city in the appropriate place on the form." >
+		<INPUT TYPE="hidden" NAME="state_required" VALUE="Please include your state in the appropriate place on the form. Use n/a if outside of the United States." >
+		
+		<INPUT TYPE=HIDDEN NAME="emailto" VALUE="communications@terc.edu">
+	
+		  <INPUT TYPE=HIDDEN NAME="headerinfo" VALUE="
+		COMMENTS
+		forwarded from the TERC web site
+		---------------------------------------------------
+		">
+	
+	</FONT>
+	
+	<FONT FACE="Arial, Helvetica, sans-serif" SIZE=+2><B>Contact Us!</B></FONT>
+	
+	
+		<TABLE BORDER="0" CELLPADDING="5" CELLSPACING="0" WIDTH="0" BGCOLOR=FF9933>
+	
+
+			<TR>	
+				<TD VALIGN=TOP><FONT FACE="Arial, Helvetica, sans-serif" SIZE=+0>Name:</FONT></TD>
+				<TD VALIGN=TOP><INPUT TYPE="hidden" NAME="TEXTName" VALUE="
+		Name:"><INPUT TYPE="text" NAME="Name" SIZE=40><BR></TD>
+			</TR>
+	
+			<TR>	
+				<TD VALIGN=TOP><FONT FACE="Arial, Helvetica, sans-serif" SIZE=+0>City:</FONT></TD>
+				<TD VALIGN=TOP><INPUT TYPE="hidden" NAME="TEXTCity" VALUE="
+		City/State:"><INPUT TYPE="text" NAME="City" SIZE=25>
+				<FONT SIZE=+0 FACE="Trebuchet MS, Helvetica, Arial, sans serif">State: </FONT>&nbsp;<SELECT NAME="State">
+					
+					<OPTION VALUE="n/a">n/a
+					
+					<OPTION VALUE="AL">Alabama
+					
+					<OPTION VALUE="AK">Alaska
+					
+					<OPTION VALUE="AS">American Samoa
+					
+					<OPTION VALUE="AZ">Arizona
+					
+					<OPTION VALUE="AR">Arkansas
+					
+					<OPTION VALUE="CA">California
+					
+					<OPTION VALUE="CZ">Canal Zone
+					
+					<OPTION VALUE="CO">Colorado
+					
+					<OPTION VALUE="CT">Connecticut
+					
+					<OPTION VALUE="DE">Delaware
+					
+					<OPTION VALUE="DC">District of Columbia
+					
+					<OPTION VALUE="FL">Florida
+					
+					<OPTION VALUE="GA">Georgia
+					
+					<OPTION VALUE="GU">Guam
+					
+					<OPTION VALUE="HI">Hawaii
+					
+					<OPTION VALUE="ID">Idaho
+					
+					<OPTION VALUE="IL">Illinois
+					
+					<OPTION VALUE="IN">Indiana
+					
+					<OPTION VALUE="IA">Iowa
+					
+					<OPTION VALUE="KS">Kansas
+					
+					<OPTION VALUE="KY">Kentucky
+					
+					<OPTION VALUE="LA">Louisiana
+					
+					<OPTION VALUE="ME">Maine
+					
+					<OPTION VALUE="MD">Maryland
+					
+					<OPTION VALUE="MA">Massachusetts
+					
+					<OPTION VALUE="MI">Michigan
+					
+					<OPTION VALUE="MN">Minnesota
+					
+					<OPTION VALUE="MS">Mississippi
+					
+					<OPTION VALUE="MO">Missouri
+					
+					<OPTION VALUE="MT">Montana
+					
+					<OPTION VALUE="NE">Nebraska
+					
+					<OPTION VALUE="NV">Nevada
+					
+					<OPTION VALUE="NH">New Hampshire
+					
+					<OPTION VALUE="NJ">New Jersey
+					
+					<OPTION VALUE="NM">New Mexico
+					
+					<OPTION VALUE="NY">New York
+					
+					<OPTION VALUE="NC">North Carolina
+					
+					<OPTION VALUE="ND">North Dakota
+					
+					<OPTION VALUE="CM">Northern Mariana Islands
+					
+					<OPTION VALUE="OH">Ohio
+					
+					<OPTION VALUE="OK">Oklahoma
+					
+					<OPTION VALUE="OR">Oregon
+					
+					<OPTION VALUE="PA">Pennsylvania
+					
+					<OPTION VALUE="PR">Puerto Rico
+					
+					<OPTION VALUE="RI">Rhode Island
+					
+					<OPTION VALUE="SC">South Carolina
+					
+					<OPTION VALUE="SD">South Dakota
+					
+					<OPTION VALUE="TN">Tennessee
+					
+					<OPTION VALUE="TX">Texas
+					
+					<OPTION VALUE="TT">Trust Territories
+					
+					<OPTION VALUE="UT">Utah
+					
+					<OPTION VALUE="VT">Vermont
+					
+					<OPTION VALUE="VA">Virginia
+					
+					<OPTION VALUE="VI">Virgin Islands
+					
+					<OPTION VALUE="WA">Washington
+					
+					<OPTION VALUE="WV">West Virginia
+					
+					<OPTION VALUE="WI">Wisconsin
+					
+					<OPTION VALUE="WY">Wyoming
+					
+					</SELECT>&nbsp;&nbsp;
+				</TD>
+			</TR>
+	
+			<TR>	
+				<TD VALIGN=TOP><FONT FACE="Arial, Helvetica, sans-serif" SIZE=+0>Email address:</FONT></TD>
+				<TD VALIGN=TOP><INPUT TYPE="hidden" NAME="TEXTemail" VALUE="
+		Email address:"><INPUT TYPE="text" NAME="email" SIZE=40><BR></TD>
+			</TR>
+	
+			<TR>	
+				<TD VALIGN=TOP><FONT FACE="Arial, Helvetica, sans-serif" SIZE=+0>Comments:</FONT></TD>
+				<TD VALIGN=TOP><INPUT TYPE="hidden" NAME="TEXTComments" VALUE="
+		Comments: ">
+	
+			<TEXTAREA NAME="Comments" ROWS="6" COLS="70"></TEXTAREA><BR></TD>
+			</TR>
+	
+			<TR>	
+				<TD VALIGN=TOP COLSPAN=2><CENTER><INPUT TYPE=SUBMIT VALUE="Submit"></CENTER><BR><BR></TD>
+			</TR>
+		
+		</TABLE>
+		
+		</FORM>
+
+		</FONT><BR><BR>
+
+</TD>
+</TR>
+</TABLE>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ++++++ FOOTER.cfm ++++++ -->
+
+
+
+
+
+
+
+
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=700 BGCOLOR=FFFFFF>
+<TR>
+<TD>
+
+	<CENTER>	
+	<FONT SIZE=-1 FACE="Trebuchet MS, Helvetica, Arial, sans serif" COLOR=339966><A HREF="/index.cfm">Home</A>&nbsp;&nbsp;<FONT COLOR=660099>|</FONT>&nbsp;&nbsp;<A HREF="/TEMPLATE/about/index.cfm">About TERC</A>&nbsp;&nbsp;<FONT COLOR=660099>|</FONT>&nbsp;&nbsp;<A HREF="/TEMPLATE/news/index.cfm">News</A>&nbsp;&nbsp;<FONT COLOR=660099>|</FONT>&nbsp;&nbsp;<A HREF="/TEMPLATE/handson/index.cfm">Hands On!</A>&nbsp;&nbsp;<FONT COLOR=660099>|</FONT>&nbsp;&nbsp;<A HREF="/TEMPLATE/contactus/index.cfm">Contact Us</A>&nbsp;&nbsp;<FONT COLOR=660099>|</FONT>&nbsp;&nbsp;<A HREF="http://search.terc.edu/">Search</A></FONT><BR>
+<BR><BR>
+
+	<FONT SIZE=-1 FACE="Trebuchet MS, Helvetica, Arial, sans serif"><A HREF="/index.cfm">TERC</A><BR>2067 Massachusetts Avenue&nbsp;<FONT COLOR=660099>|</FONT>&nbsp;Cambridge, MA  02140&nbsp;<FONT COLOR=660099>|</FONT>&nbsp;617-547-0430&nbsp;<FONT COLOR=660099>|</FONT>&nbsp;617-349-3535&nbsp;fax&nbsp;<FONT COLOR=660099>|</FONT>&nbsp;<A HREF="mailto:communications@terc.edu">communications@terc.edu</A></FONT><BR>
+	<HR WIDTH="20%">
+	
+	
+	<FONT SIZE=-1 FACE="Trebuchet MS, Helvetica, Arial, sans serif">&copy; </FONT><FONT SIZE=2 FACE="Trebuchet MS, Helvetica, Arial, sans serif">
+	Copyright 2000 TERC, Inc.  All Rights Reserved.</FONT><BR>
+	<FONT SIZE=-2 FACE="Trebuchet MS, Helvetica, Arial, sans serif">last modified May 2000/mew</FONT><BR>
+	
+	<HR WIDTH="20%">
+	</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+
+
+
+</BODY>
+</HTML>
+

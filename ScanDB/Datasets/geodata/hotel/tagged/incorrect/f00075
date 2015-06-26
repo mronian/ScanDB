@@ -1,0 +1,1424 @@
+<DOC>
+<DOCNO>f00075</DOCNO>
+<DOCHDR>http://hotels.boston.com/hotels-browse-los_angeles!.htm</DOCHDR>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/includes/style.css">
+<link rel="stylesheet" href="http://www.openlist.com/includes/styles.css">
+<script src="/includes/js.js" language="javascript" type="text/javascript"></script>
+<meta http-equiv="charset" content="iso-8859-1"><meta
+    http-equiv="Keywords"
+    content="Save on hotels, Deals on hotels, Special rates for hotels, Deals on Boston hotels, Book a Boston hotel room, Where to Stay"><meta
+    http-equiv="Description"
+    content="Make online hotel reservations, including New England bed and breakfasts. Find last-minute hotel deals and save with special rates on Boston hotels.">
+<title>Boston.com / Travel / Hotels &amp; New England Bed and Breakfasts</title>
+<script src="/includes/widget_new.js" language="javascript" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript"><!--
+function init_widget() { make_slots(); add_vendors(); }
+function add_vendors() {
+	add_vendor( new vendor( "orbitz", document.widget.orbitz, "/widget?r=1&target=widget_city&advertiser=orbitz&campaign=6&partner=boston" ) );add_vendor( new vendor( "hotwire", document.widget.hotwire, "/widget?r=1&target=widget_city&advertiser=hotwire&campaign=30&partner=boston" ) );add_vendor( new vendor( "cheaptickets", document.widget.cheaptickets, "/widget?r=1&target=widget_city&advertiser=cheaptickets&campaign=16&partner=boston" ) );
+	add_vendor( new vendor( "priceline", document.widget.priceline, "/widget?r=1&target=widget_city&advertiser=priceline&campaign=36&partner=boston" ) );add_vendor( new vendor( "travelocity", document.widget.travelocity, "/widget?r=1&target=widget_city&advertiser=travelocity&campaign=26243&partner=boston" ) );
+}
+var cal1 = new CalendarPopup();
+var cal2 = new CalendarPopup();
+var now = new Date();
+now.setDate(now.getDate()-1);
+cal1.addDisabledDates(null,formatDate(now,"yyyy-MM-dd"));
+cal2.addDisabledDates(null,formatDate(now,"yyyy-MM-dd"));
+cal1.setReturnFunction("setMultipleValues1");
+cal2.setReturnFunction("setMultipleValues2");
+function setMultipleValues1(y,m,d) { document.widget.in_mm.selectedIndex=m - 1; for (var i=0; i< document.widget.in_dd.options.length; i++) { if (document.widget.in_dd.options[i].value==d) { document.widget.in_dd.selectedIndex=i; } } adjust_out(); }
+function setMultipleValues2(y,m,d) { document.widget.out_mm.selectedIndex=m - 1; for (var i=0; i< document.widget.out_dd.options.length; i++) { if (document.widget.out_dd.options[i].value==d) { document.widget.out_dd.selectedIndex=i; } } }
+function getDateString(m_obj,d_obj) { var y = 2006; var m = m_obj.options[m_obj.selectedIndex].value; var d = d_obj.options[d_obj.selectedIndex].value; if (y=="" || m=="") { return null; } if (d=="") { d=1; } return str= y+'-'+m+'-'+d; }
+//-->
+</script>
+
+<script language="JavaScript1.1" type="text/javascript" src="http://cache.boston.com/bonzai-fba/File-Based_File_Resource/site_global_scripts11.js"></script>
+<script language="JavaScript1.3" type="text/javascript" src="http://content.worldnow.com/global/tools/video/VideoFunctions.js?ver=1"></script>
+<script language="JavaScript1.2" type="text/javascript" src="http://cache.boston.com/tacoda/Tacoda_AMS_DDC_Header.js"></script>
+<script language="JavaScript"><!--
+  var siteurl = 'http://www.boston.com';
+  var imgurl  = 'http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/';
+  var gimages = ['gnav_site_h.gif', 'gnav_news_h.gif', 'gnav_ae_h.gif', 'gnav_business_h.gif', 'gnav_sports_h.gif', 'gnav_travel_h.gif', 'gnav_yourlife_h.gif', 'gnav_cars_h.gif', 'gnav_jobs_h.gif', 'gnav_personals_h.gif', 'gnav_realestate_h.gif'];
+//--></script>
+<link rel="stylesheet" href="http://cache.boston.com/bonzai-fba/File-Based_File_Resource/site_global_styles7.css" type="text/css" />
+<style>
+<!--
+a#secnav_hotels:link, a#secnav_hotels:visited, a#secnav_hotels:active, a#secnav_hotels:hover { font-weight: bold; text-decoration: none; color: #cc0000; }
+//--></style>
+<!--[if IE 6]>
+<style>
+  .padAll5, .padAll7, .padAll10, .padLeft5, .indent10, .fodorsIndent, .lighterIndent { height: 100%; }
+</style>
+<![endif]-->
+<!--Weather Query Params--><script language="JavaScript1.1" type="text/javascript" src="http://cache.boston.com/weather-ad-include.js"></script>
+<!--Begin OAS MJX setup tag--><script language="JavaScript"><!--
+//configuration
+OAS_sitepage='www.boston.com/travel/deals/hotels';
+OAS_listpos='TOP,POPUP,POPUN,EXTRA';
+oasquery='pagetype=section_folder&RM_Exclude=exclude_section_folder&RM_Exclude=exclude_partner_traffic';if(typeof OAS_query=='undefined'||!OAS_query)OAS_query=oasquery;else OAS_query+='&'+oasquery;
+OAS_url='http://rmedia.boston.com/RealMedia/ads/';OAS_target='_top';OAS_version=10;OAS_rn='001234567890';OAS_rns='1234567890';OAS_rn=new String(Math.random());OAS_rns=OAS_rn.substring(2, 11);
+//--></script><script language="JavaScript1.2"><!--
+var rerefer=/referrer=(\w+)/,urefer=document.URL.match(rerefer);if(urefer){if(OAS_query){var reexclude=/RM_Exclude=[\w,*]+/,OAS_query=OAS_query.replace(reexclude,OAS_query.match(reexclude)[0]+',exclude_referrer_'+urefer[1].toLowerCase());OAS_query+='&';}OAS_query+=urefer[0];}
+//--></script><script language="JavaScript"><!--
+function OAS_NORMAL(pos){document.writeln('<A HREF="'+OAS_url+'click_nx.ads/'+OAS_sitepage+'/1'+OAS_rns+'@'+OAS_listpos+'!'+ pos+'?'+OAS_query+'" TARGET='+OAS_target+'>');document.writeln('<IMG SRC="'+OAS_url+'adstream_nx.ads/'+OAS_sitepage+'/1'+OAS_rns+'@'+OAS_listpos+'!'+pos+'?'+OAS_query+'" BORDER=0></A>');}
+//--></script><script language="JavaScript1.1"><!--
+OAS_version=11;if((navigator.userAgent.indexOf('Mozilla/3')!=-1)||navigator.userAgent.indexOf('Mozilla/4.0 WebTV')!=-1){OAS_version=10;}if(OAS_version >= 11)document.writeln('<SCR'+'IPT LANGUAGE=JavaScript1.1 SRC="'+OAS_url+'adstream_mjx.ads/'+OAS_sitepage+'/1'+OAS_rns+'@'+OAS_listpos+'?'+OAS_query+'"> <\/SCRIPT>');
+//--></script><script language="JavaScript"><!--
+document.writeln('');
+function OAS_AD(pos){if(OAS_version >= 11)OAS_RICH(pos);else OAS_NORMAL(pos);}
+//--></script><!--End OAS MJX setup tag-->
+</head>
+
+<body bgcolor="#919dbc" marginheight="0" marginwidth="0"
+      topmargin="0" rightmargin="0" bottommargin="0"
+      leftmargin="0" onload="windowLoaded();">
+<table class="header" width="778" align="center"
+       bgcolor="#000066" cellpadding="0" cellspacing="0"
+       border="0">
+<tr><td class="banner" colspan="3"><table align="center"
+    cellpadding="0" cellspacing="0" border="0"><tr><td
+    class="bannerAd" align="center"><!--OAS MJX Ad Tag--><script language="JavaScript"><!--
+OAS_AD('TOP');
+//--></script><!--End Ad Tag--></td></tr></table></td></tr>
+<tr valign="bottom">
+  <td width="136" height="31" align="right"><a href="http://www.boston.com/"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/bcom_logo_000066.gif" width="113" height="29" alt="boston.com" title="boston.com" border="0" hspace="10" /></a></td>
+  <td width="360"><a href="http://www.boston.com/travel"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/site_branding_000066_travel.gif" alt="Travel" title="Travel" height="29" width="84" border="0" /></a></td>
+  <td width="278"><a href="http://www.boston.com/news/globe/"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/globe_connection_logo_000066.gif" width="265" height="29" alt="your connection to The Boston Globe" title="your connection to The Boston Globe" border="0" /></a></td>
+</tr>
+<tr><td class="bluegrayLine" colspan="3" height="5"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" border="0" /></td></tr>
+</table>
+<table class="globalNav" width="778" align="center"
+       cellpadding="0" cellspacing="0" border="0"
+       bgcolor="#ffffff">
+<tr valign="bottom">
+<td width="8"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" alt="" border="0" /></td>
+<td width="45" height="26"><a href="http://www.boston.com/"
+    onmouseover="changeImageOn('gnav_site_h.gif','site')"
+    onmouseout="changeImageOff('site')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_site.gif" width="45" height="26" id="site" alt="Home" title="Home" border="0" /></a></td>
+<td width="43" height="26"><a
+    href="http://www.boston.com/news"
+    onmouseover="changeImageOn('gnav_news_h.gif','news')"
+    onmouseout="changeImageOff('news')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_news.gif" width="43" height="26" id="news" alt="News" title="News" border="0" /></a></td>
+<td width="35" height="26"><a
+    href="http://www.boston.com/ae"
+    onmouseover="changeImageOn('gnav_ae_h.gif','ae')"
+    onmouseout="changeImageOff('ae')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_ae.gif" width="35" height="26" id="ae" alt="A&E" title="A&E" border="0" /></a></td>
+<td width="60" height="26"><a
+    href="http://www.boston.com/business"
+    onmouseover="changeImageOn('gnav_business_h.gif','business')"
+    onmouseout="changeImageOff('business')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_business.gif" width="60" height="26" id="business" alt="Business" title="Business" border="0" /></a></td>
+<td width="48" height="26"><a
+    href="http://www.boston.com/sports"
+    onmouseover="changeImageOn('gnav_sports_h.gif','sports')"
+    onmouseout="changeImageOff('sports')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_sports.gif" width="48" height="26" id="sports" alt="Sports" title="Sports" border="0" /></a></td>
+<td width="46" rowspan="2" height="27"><a
+    href="http://www.boston.com/travel"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_travel_a.gif" width="46" height="27" id="travel" alt="Travel" title="Travel" border="0" /></a></td>
+<td width="61" height="26"><a
+    href="http://www.boston.com/yourlife"
+    onmouseover="changeImageOn('gnav_yourlife_h.gif','yourlife')"
+    onmouseout="changeImageOff('yourlife')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_yourlife.gif" width="61" height="26" id="yourlife" alt="Your Life" title="Your Life" border="0" /></a></td>
+<td width="38" height="26"><a
+    href="http://www.boston.com/cars"
+    onmouseover="changeImageOn('gnav_cars_h.gif','cars')"
+    onmouseout="changeImageOff('cars')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_cars.gif" width="38" height="26" id="cars" alt="Cars" title="Cars" border="0" /></a></td>
+<td width="37" height="26"><a
+    href="http://www.boston.com/jobs"
+    onmouseover="changeImageOn('gnav_jobs_h.gif','jobs')"
+    onmouseout="changeImageOff('jobs')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_jobs.gif" width="37" height="26" id="jobs" alt="Jobs" title="Jobs" border="0" /></a></td>
+<td width="66" height="26"><a
+    href="http://www.boston.com/personals"
+    onmouseover="changeImageOn('gnav_personals_h.gif','personals')"
+    onmouseout="changeImageOff('personals')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_personals.gif" width="66" height="26" id="personals" alt="Search the Personals" title="Search the Personals" border="0" /></a></td>
+<td width="73" height="26"><a
+    href="http://www.boston.com/realestate"
+    onmouseover="changeImageOn('gnav_realestate_h.gif','realestate')"
+    onmouseout="changeImageOff('realestate')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_realestate.gif" width="73" height="26" id="realestate" alt="Real estate" title="Real estate" border="0" /></a></td>
+<td align="right" valign="middle"><script language="JavaScript"><!--
+try{showLogin();}catch(e){document.writeln('&nbsp;');}
+//--></script><noscript>&nbsp;</noscript>
+</td>
+</tr>
+<tr><td class="bluegrayLine" height="1" colspan="6"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" alt="" border="0" /></td><td
+    class="bluegrayLine" height="1" colspan="6"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" alt="" border="0" /></td></tr>
+</table>
+<table class="secondaryNav" width="778" align="center"
+       cellpadding="0" cellspacing="0" border="0"
+       bgcolor="#ffffff"><tr><td><div class="secNavLinks"><a
+    href="http://www.boston.com/travel/hotels"
+    id="secnav_hotels">Lodging</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/flights"
+    id="secnav_flights">Flights</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/vacations"
+    id="secnav_vacations">Vacation deals</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/boston"
+    id="secnav_boston">Boston Visitors' Guide</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/newengland"
+    id="secnav_newengland">New England</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/getaways"
+    id="secnav_getaways">Destinations</a></div></td></tr></table>
+<table class="mainTable" width="778" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff"><tr><td class="bluegrayLine" width="778" height="1"></td></tr>
+<tr><td><div class="mainContent">
+<!-- omniture tag -->
+<script language="JavaScript">var s_account="localicom,localicomhotels,localibostonrollup,localicomboshotels";</script> 
+<script language="JavaScript" src="/includes/s_code.js"></script> 
+<script language="JavaScript"><!--
+	s.pageName="" 
+	s.server="" 
+	s.channel="Los Angeles, CA" 
+	s.pageType="" 
+	s.prop1="" 
+	s.prop2="" 
+	s.prop3="" 
+	s.prop4="" 
+	s.prop5=""
+	s.campaign=""
+	s.state=""
+	s.zip=""
+	s.events=""
+	s.products=""
+	s.purchaseID=""
+	s.eVar1=""
+	s.eVar2=""
+	s.eVar3=""
+	s.eVar4=""
+	s.eVar5=""
+	var s_code=s.t();
+	if(s_code)document.write(s_code)
+//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.writer(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http://localicom.112.2O7.net/b/ss/localicom/1/H.2--NS/0" height="1" width="1" border="0" alt="" /></noscript><! --/DO NOT REMOVE/-->
+
+
+
+
+<!-- start header -->
+<form action="/hotels-browse.htm" method="GET">
+<center>
+<table width="752" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="5" colspan="3">&nbsp;</td>
+</tr>
+<tr valign="top">
+	<td width="527" valign="top">
+		<table>
+		<tr>
+			<td class="copy">Search Hotels for:</td>
+			<td class="copy">City, State; City, Country; or Zip</td>
+			<td class="copy"></td>
+		</tr>
+		<tr>
+			<td class="copy"><input type="text" name="query" class="input" value="" size="30"></td>
+			<td class="copy"><input type="text" name="loc" class="input" value="Los Angeles, CA" size="30"></td>
+			<td class="copy"><input type="image" src="http://images.openlist.com/images/search.gif" width="91" height="18"></td>
+		</tr>
+		</table>
+	</td>
+	<td valign="middle">
+		<center>
+		<font class="small">
+			powered by<br>
+			<a href="/about/boston.htm"><img src="http://images.openlist.com/images/botLogo.gif" border="0" alt="Open List, Inc." width="85" height="15" valign="middle"></a><br>
+			<a href="/sitemap/index_boston.htm">site map</a>
+
+		</font>
+		<center>
+	</td>
+</tr>
+</form>
+</table>
+</center>
+<!-- end header -->
+
+
+<!-- start body -->
+<table width="752" cellpadding="0" cellspacing="0" border="0">
+	<tr><td height="5" colspan=3></td></tr>
+	<tr>
+		<td height="1" width="200" bgcolor="#EDEFF1"></td>
+		<td></td>
+		<td width="543" bgcolor="#EDEFF1"></td>
+	</tr>
+	
+
+
+<!-- disambiguation -->
+
+
+
+
+
+</div>
+<!-- disambiguation -->
+
+
+	
+	<tr valign="top">
+		<td width="200" bgcolor="#ECF5FA" style="padding-left:10px">
+		
+		
+		
+		
+	<font class="question">Refine Your Search</font><br/>
+	<font class="bottomlink">..........................................</font><br/>
+
+	
+<!-- start of undos -->
+
+<!-- end of undos -->
+
+<!-- start of refinements -->
+
+	<font class="copy"><B>By city:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-los_angeles~.htm">los angeles (183)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-santa_monica~.htm">santa monica (41)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-beverly_hills~.htm">beverly hills (17)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-west_hollywood~.htm">west hollywood (15)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-redondo_beach~.htm">redondo beach (13)</a></font><br/>
+ 	
+	<font class="link"><a href="/hotels-browse-los_angeles!.htm?e_city=1">see all</a>
+	
+	<p>
+
+	<font class="copy"><B>By neighborhood:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-santa_monica.htm">santa monica (41)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-downtown.htm">downtown (32)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-hollywood.htm">hollywood (21)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-west_hollywood.htm">west hollywood (20)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-koreatown.htm">koreatown (7)</a></font><br/>
+ 	
+	<font class="link"><a href="/hotels-browse-los_angeles!.htm?e_neighborhood=1">see all</a>
+	
+	<p>
+
+	<font class="copy"><B>By price:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-$300_or_less.htm">$300 or less (201)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-$200_or_less.htm">$200 or less (180)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-$150_or_less.htm">$150 or less (155)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-$100_or_less.htm">$100 or less (93)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-more_than_$300.htm">more than $300 (16)</a></font><br/>
+ 	
+	
+	
+	<p>
+
+	<font class="copy"><B>By traveler rating:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-2_or_better.htm">2 or better (207)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-3_or_better.htm">3 or better (175)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-4_or_better.htm">4 or better (115)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-5.htm">5 (25)</a></font><br/>
+ 	
+	
+	
+	<p>
+
+	<font class="copy"><B>By star rating:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-2_stars_or_better.htm">2 stars or better (194)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-3_stars_or_better.htm">3 stars or better (99)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-4_stars_or_better.htm">4 stars or better (17)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-5_stars.htm">5 stars (3)</a></font><br/>
+ 	
+	
+	
+	<p>
+
+	<font class="copy"><B>By ambiance:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-luxurious.htm">luxurious (62)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-great_views.htm">great views (30)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-hip.htm">hip (30)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-business.htm">business (30)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-romantic.htm">romantic (24)</a></font><br/>
+ 	
+	<font class="link"><a href="/hotels-browse-los_angeles!.htm?e_ambiance=1">see all</a>
+	
+	<p>
+
+	<font class="copy"><B>By award:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-all_awards.htm">all awards (10)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-conde_nast.htm">conde nast (6)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-travel_and_leisure.htm">travel and leisure (6)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-fodors_choice.htm">fodors choice (6)</a></font><br/>
+ 	
+	
+	
+	<p>
+
+	<font class="copy"><B>By activity:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-spa.htm">spa (113)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-beach.htm">beach (37)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-tennis.htm">tennis (19)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-golf.htm">golf (13)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-fishing.htm">fishing (8)</a></font><br/>
+ 	
+	<font class="link"><a href="/hotels-browse-los_angeles!.htm?e_activity=1">see all</a>
+	
+	<p>
+
+	<font class="copy"><B>By feature:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-tv.htm">tv (224)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-on^site_car_rental.htm">on-site car rental (202)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-restaurant.htm">restaurant (198)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-business_services.htm">business services (184)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-pool.htm">pool (181)</a></font><br/>
+ 	
+	<font class="link"><a href="/hotels-browse-los_angeles!.htm?e_feature=1">see all</a>
+	
+	<p>
+
+	<font class="copy"><B>By brand:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-holiday_inn.htm">holiday inn (12)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-marriott.htm">marriott (7)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-radisson.htm">radisson (7)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-sheraton.htm">sheraton (6)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-hilton.htm">hilton (6)</a></font><br/>
+ 	
+	<font class="link"><a href="/hotels-browse-los_angeles!.htm?e_brand=1">see all</a>
+	
+	<p>
+
+	<font class="copy"><B>By loyalty program:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-los_angeles!-triprewards.htm">triprewards (30)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-priority_club.htm">priority club (16)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-starwood.htm">starwood (15)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-hilton_hhonors.htm">hilton hhonors (12)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-los_angeles!-marriott_rewards.htm">marriott rewards (12)</a></font><br/>
+ 	
+	<font class="link"><a href="/hotels-browse-los_angeles!.htm?e_loyalty program=1">see all</a>
+	
+	<p>
+
+<!-- end of refinements -->
+
+
+	<font class="copy"><B>Hotels near Los Angeles, CA:</B></font><br/>
+	
+		<font class="link"><a href="/hotels-browse-atwater~-ca.htm">Atwater, CA hotels (1)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-huntington_park~-ca.htm">Huntington Park, CA hotels (4)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-hollywood~-ca.htm">Hollywood, CA hotels (25)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-commerce~-ca.htm">Commerce, CA hotels (1)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-south_pasadena~-ca.htm">South Pasadena, CA hotels (2)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-monterey_park~-ca.htm">Monterey Park, CA hotels (3)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-south_gate~-ca.htm">South Gate, CA hotels (26)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-west_hollywood~-ca.htm">West Hollywood, CA hotels (15)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-alhambra~-ca.htm">Alhambra, CA hotels (4)</a></font><br/>
+ 	
+		<font class="link"><a href="/hotels-browse-sepulveda~-ca.htm">Sepulveda, CA hotels (8)</a></font><br/>
+ 	
+
+
+
+		
+
+		
+		
+		
+		</td>
+		<td>&nbsp;&nbsp;</td>
+		<td width="543" valign="top">
+
+
+		
+			
+			
+		<!-- browse results header start -->
+		
+			<table cellpadding="0" cellspacing="0" border="0"  width="543">
+			<tr bgcolor="#ECF5FA" height="55" valign="top">
+				<td>
+					<font class="question">1-10 of 296 in Los Angeles, CA
+					&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<span class="bottomlink"><b>
+						<span class="copyo"><b>Hotels</b></span> - <a href="/restaurants-browse?loc=Los Angeles, CA">Restaurants</a> - <a href="/attractions-browse?loc=Los Angeles, CA">Attractions</a>
+						
+						
+				</b><br></span>
+				
+				</font>
+					
+					<font class="bottomlink">	.....................................................................................................................................</font><br/>
+					<font class="copy"><B>View:</B></font>
+					<font class="bottomlinko"><b>List</b></font> | 
+					<font class="bottomlink"><a href="/hotels-browse-los_angeles!.htm?view=map">Map</a></font>
+
+					
+						&nbsp;
+						<font class="copy"><B>Sort:</B></font>
+			
+						
+						<font class="bottomlink"><a href="/hotels-browse-los_angeles!.htm?sort=expert">Star&nbsp;Rating</a></font> | 
+						<font class="bottomlink"><a href="/hotels-browse-los_angeles!.htm?sort=user">Traveler&nbsp;Rating</a></font> | 
+						
+			
+						
+			
+						
+			
+						<font class="bottomlink"><a href="/hotels-browse-los_angeles!.htm?sort=price">Price</a></font> | 
+						<font class="bottomlink"><a href="/hotels-browse-los_angeles!.htm?sort=name">Name</a></font>
+						&nbsp;
+						<font class="copy"><B>Show:</B></font>
+						<font class="bottomlink"><a href="/hotels-browse-los_angeles!.htm?perpage=5">5</a></font> | 
+						<font class="bottomlinko"><B>10</B></font> | 
+						<font class="bottomlink"><a href="/hotels-browse-los_angeles!.htm?perpage=15">15</a></font>
+						
+				</td>
+			</tr>
+			<tr><td></td></tr>
+			</table>	
+			
+			
+			<!-- browse results header end -->
+			
+			
+			
+			
+			
+				
+<!-- start results -->
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-362836-peninsula_the_-beverly_hills-ca.htm">Peninsula (The)</a></font>
+		<font class="copy">
+			 - $250+ - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '362836', 'Beverly Hills', 'CA', 'US', 'Peninsula (The)');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">9882 Santa Monica Blvd, Beverly Hills, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"A luxurious and low-key enclave in the middle of Beverly Hills. Editorial Rating: Highly Recommended The Scene This discreet hotel, which is related to the venerable Peninsula in Hong Kong, is elegant without being stuffy." - <span class="bottomlink"><a href="/hotels-view-362836-peninsula_the_-beverly_hills-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.5.gif" alt="4.5" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.5.gif" alt="4.5" valign="top" vspace="0" border="0"></a>
+			 (based on 29 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Conde Nast 2002 Reader's Poll: Top Hotel Spas, 
+			
+				Conde Nast 2003 Reader's Poll: Top Hotel Spas, 
+			
+				Fodors Choice
+			 <span class="copylight">(and 7 others)</span>
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-325332-hotel_bel_air-los_angeles-ca.htm">Hotel Bel-Air</a></font>
+		<font class="copy">
+			 - $250+ - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '325332', 'Los Angeles', 'CA', 'US', 'Hotel Bel-Air');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">701 Stone Canyon Rd, Los Angeles, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"In a wooded canyon with verdant gardens and a swan-filled lake, the Hotel Bel-Airs distinctive luxury and seclusion have made it a favorite of discreet celebs (and royalty) for decades. Bungalow-style, country French-inspired rooms feel..." - <span class="bottomlink"><a href="/hotels-view-325332-hotel_bel_air-los_angeles-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.gif" alt="4" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.5.gif" alt="4.5" valign="top" vspace="0" border="0"></a>
+			 (based on 26 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Fodors Choice, 
+			
+				Gayot 10 Best: Romantic Hotels: Los Angeles Area, 
+			
+				Gayot Top 10 Hotels: Los Angeles Area
+			 <span class="copylight">(and 4 others)</span>
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-334498-raffles_l_ermitage_beverly_hills_hotel-beverly_hills-ca.htm">Raffles L'Ermitage Beverly Hills Hotel</a></font>
+		<font class="copy">
+			 - $250+ - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '334498', 'Beverly Hills', 'CA', 'US', 'Raffles L'Ermitage Beverly Hills Hotel');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">9291 Burton Way, Beverly Hills, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"-- By Jenner Bishop Celebs and moguls love the personal touch of this chic Beverly Hills boutique hotel. Editorial Rating: Highly Recommended The Scene Industry-types taking a meeting, actors promoting their latest project and touring..." - <span class="bottomlink"><a href="/hotels-view-334498-raffles_l_ermitage_beverly_hills_hotel-beverly_hills-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.gif" alt="4" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.5.gif" alt="4.5" valign="top" vspace="0" border="0"></a>
+			 (based on 29 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Gayot Top 10 Hotels: Los Angeles Area, 
+			
+				Travel + Leisure World's Best 2005, 
+			
+				Travel + Leisure Top 500 Hotels
+			 <span class="copylight">(and 3 others)</span>
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-354371-shutters_on_the_beach-santa_monica-ca.htm">Shutters on the Beach</a></font>
+		<font class="copy">
+			 - $250+ - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '354371', 'Santa Monica', 'CA', 'US', 'Shutters on the Beach');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">1 Pico Blvd, Santa Monica, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"Some call Shutters on the Beach the most comfortable hotel in the world &#8212; and they may be right. Its just the perfect mix of that Deco glamour, old world coziness and modern LA laissez-faire..." - <span class="bottomlink"><a href="/hotels-view-354371-shutters_on_the_beach-santa_monica-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.gif" alt="4" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/3.5.gif" alt="3.5" valign="top" vspace="0" border="0"></a>
+			 (based on 42 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Fodors Choice, 
+			
+				Gayot 10 Best: Spa Hotels: Los Angeles Area, 
+			
+				Travel + Leisure Top 500 Hotels
+			 <span class="copylight">(and 2 others)</span>
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-321308-four_seasons_hotel_los_angeles_at_beverly_hills-los_angeles-ca.htm">Four Seasons Hotel Los Angeles at Beverly Hills</a></font>
+		<font class="copy">
+			 - $250+ - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '321308', 'Los Angeles', 'CA', 'US', 'Four Seasons Hotel Los Angeles at Beverly Hills');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">300 S Doheny Dr, Los Angeles, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"-- By Andrea Rademan Quintessential Four Seasons luxury with Hollywoods stamp of approval. Editorial Rating: Highly Recommended The Scene With the Four Seasons brand and a Tinseltown location, the guest register here reads like Varietys..." - <span class="bottomlink"><a href="/hotels-view-321308-four_seasons_hotel_los_angeles_at_beverly_hills-los_angeles-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/5.gif" alt="5" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/5.gif" alt="5" valign="top" vspace="0" border="0"></a>
+			 (based on 18 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Gayot 10 Best: Business Hotels: Los Angeles Area, 
+			
+				Gayot Top 10 Hotels: Los Angeles Area, 
+			
+				Travel + Leisure World's Best 2004
+			 <span class="copylight">(and 1 others)</span>
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-327118-regent_beverly_wilshire-beverly_hills-ca.htm">Regent Beverly Wilshire</a></font>
+		<font class="copy">
+			 - $250+ - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '327118', 'Beverly Hills', 'CA', 'US', 'Regent Beverly Wilshire');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">9500 Wilshire Blvd, Beverly Hills, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"-- By Traude Gomez Impeccably elegant hotel situated in L.A.s most upscale shopping district. Editorial Rating: Highly Recommended The Scene Located where Rodeo Drive meets Wilshire Boulevard, this landmark hotel has been tending to well-heeled..." - <span class="bottomlink"><a href="/hotels-view-327118-regent_beverly_wilshire-beverly_hills-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.5.gif" alt="4.5" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/5.gif" alt="5" valign="top" vspace="0" border="0"></a>
+			 (based on 34 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Gayot Top 10 Hotels: Los Angeles Area, 
+			
+				Conde Nast 2003 Gold List, 
+			
+				Conde Nast 2004 Gold List
+			 <span class="copylight">(and 1 others)</span>
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-343847-hotel_casa_del_mar-santa_monica-ca.htm">Hotel Casa Del Mar</a></font>
+		<font class="copy">
+			 - $250+ - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '343847', 'Santa Monica', 'CA', 'US', 'Hotel Casa Del Mar');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">1910 Ocean Front Walk, Santa Monica, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"In the 1920s it was a posh beach club catering to the citys elite; now the Casa del Mar is one of SoCals most luxurious beachfront hotels, with three extravagant, two-story penthouses, a raised deck..." - <span class="bottomlink"><a href="/hotels-view-343847-hotel_casa_del_mar-santa_monica-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.gif" alt="4" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/2.gif" alt="2" valign="top" vspace="0" border="0"></a>
+			 (based on 15 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Gayot 10 Best: Romantic Hotels: Los Angeles Area, 
+			
+				Gayot Top 10 Hotels: Los Angeles Area, 
+			
+				Conde Nast 2004 Gold List
+			 <span class="copylight">(and 1 others)</span>
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-308628-the_beverly_hills_hotel-beverly_hills-ca.htm">The Beverly Hills Hotel</a></font>
+		<font class="copy">
+			 - $250+ - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '308628', 'Beverly Hills', 'CA', 'US', 'The Beverly Hills Hotel');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">9641 Sunset Blvd, Beverly Hills, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"-- By Ginny Chien A hotel resplendent in pink and green; soaked in money, romance and celebrity. Editorial Rating: Highly Recommended The Scene Before there was a city of Beverly Hills, there was the Beverly..." - <span class="bottomlink"><a href="/hotels-view-308628-the_beverly_hills_hotel-beverly_hills-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.5.gif" alt="4.5" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/5.gif" alt="5" valign="top" vspace="0" border="0"></a>
+			 (based on 41 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Gayot 10 Best: Romantic Hotels: Los Angeles Area, 
+			
+				Gayot Top 10 Hotels: Los Angeles Area
+			 
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-338950-park_hyatt_los_angeles_hotel-los_angeles-ca.htm">Park Hyatt Los Angeles Hotel</a></font>
+		<font class="copy">
+			 - $200-$250 - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '338950', 'Los Angeles', 'CA', 'US', 'Park Hyatt Los Angeles Hotel');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">2151 Avenue Of The Stars, Los Angeles, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"-- By Melissa Stampley Dependable digs boast consistent service and ample amenities. Editorial Rating: Not Rated In Short This highly recognized hotel chain has been taking care of business and leisure travelers since 1957. Professionals..." - <span class="bottomlink"><a href="/hotels-view-338950-park_hyatt_los_angeles_hotel-los_angeles-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.gif" alt="4" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/5.gif" alt="5" valign="top" vspace="0" border="0"></a>
+			 (based on 42 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Gayot 10 Best: Spa Hotels: Los Angeles Area, 
+			
+				Gayot Top 10 Hotels: Los Angeles Area
+			 
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+<table cellpadding="2" cellspacing="0" border="0"  width="543">
+
+<tr>
+	<td valign="top" colspan="2">
+		<font class="title"><a href="/hotels-view-430969-four_seasons_hotel_los_angeles_at_beverly_hills-beverly_hills-ca.htm">Four Seasons Hotel Los Angeles at Beverly Hills</a></font>
+		<font class="copy">
+			 - $150-$200 - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '430969', 'Beverly Hills', 'CA', 'US', 'Four Seasons Hotel Los Angeles at Beverly Hills');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			<br>
+			<GEO TYPE="US">300 S Doheny Dr, Beverly Hills, CA</GEO>
+		</font>
+	</td>
+</tr>
+
+
+<tr>
+	<td class="copy" valign="top" colspan="2">
+		"High hedges and patio gardens make this hotel a secluded retreat that even the hum of traffic cant permeate. The staff here will make you feel pampered, as will the lavish guest rooms with their..." - <span class="bottomlink"><a href="/hotels-view-430969-four_seasons_hotel_los_angeles_at_beverly_hills-beverly_hills-ca.htm">see all reviews</a></span>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Stars:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copy">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/5.gif" alt="5" valign="top" vspace="0" border="0">
+			</a>
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="bottom">
+		<font class="copylight"><B>Traveler&nbsp;Rating:</B></font>
+	</td>
+	<td width="473" valign="bottom">
+		<font class="copylight">
+			<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+			<img src="http://images.openlist.com/images/4.gif" alt="4" valign="top" vspace="0" border="0"></a>
+			 (based on 3 samples)
+		</font>
+	</td>
+</tr>
+
+
+
+<tr valign="top">
+	<td width="100" valign="top">
+		<font class="copylight"><B>Awards:</B></font>
+	</td>
+	<td width="473" valign="top">
+		<font class="copyg">
+			
+				Fodors Choice, 
+			
+				Travel + Leisure Top 500 Hotels
+			 
+		</font>
+	</td>
+</tr>
+
+
+
+
+</table>
+<font class="copylight">	.....................................................................................................................................</font>
+		
+
+
+
+				
+				
+			
+			
+			
+			
+			<!--
+            	
+			-->
+			
+			<!-- start pagination -->
+			
+			<table align="center" cellpadding="0" cellspacing="0" border="0">
+			<tr><td colspan="4"><P>&nbsp;<P>&nbsp;</td></tr>
+			<tr>
+				<td><img src="http://images.openlist.com/images/openmanlg.gif" alt="openlist icon"></td>
+				<td><img src="http://images.openlist.com/images/resultleft.gif" alt="results page"></td>
+				<td width="" height="26">
+					<table cellpadding="0" cellspacing="0" border="0">
+					<tr><td width="" height="1" bgcolor="#4166B4" colspan="4"></td></tr>
+					<tr bgcolor="#FFFFCB" valign="middle">
+						<td height="24"><font class="copy"><B>Result Page:&nbsp;&nbsp;</B></font></td>
+						<td></td>
+						<td><font class="bottomlinko"><b>1</b>&nbsp;<a href="/hotels-browse-los_angeles!.htm?page=2">2</a>&nbsp;<a href="/hotels-browse-los_angeles!.htm?page=3">3</a>&nbsp;<a href="/hotels-browse-los_angeles!.htm?page=4">4</a>&nbsp;<a href="/hotels-browse-los_angeles!.htm?page=5">5</a>&nbsp;<a href="/hotels-browse-los_angeles!.htm?page=6">6</a>&nbsp;<a href="/hotels-browse-los_angeles!.htm?page=7">7</a>&nbsp;<a href="/hotels-browse-los_angeles!.htm?page=8">8</a>&nbsp;<a href="/hotels-browse-los_angeles!.htm?page=9">9</a>&nbsp;<a href="/hotels-browse-los_angeles!.htm?page=10">10</a>&nbsp;</font></td>
+						<td><font class="link">&nbsp;<B><a href="/hotels-browse-los_angeles!.htm?page=2">NEXT &gt;</a></B></font></td>
+					</tr>
+					<tr><td width="" height="1" bgcolor="#4166B4" colspan="4"></td></tr>
+					</table>
+				</td>
+				<td><img src="http://images.openlist.com/images/resultright.gif" alt="results page"></td>
+			</tr>
+			<tr><td colspan="4"><P>&nbsp;<P>&nbsp;</td></tr>
+			</table>
+			
+			<!-- end pagination -->
+			
+			
+			
+			<!-- start end of page search form -->
+			
+			<form action="/hotels-browse.htm" method="GET">
+			<table>
+			<tr>
+				<td width="12"></td>
+				<td class="copy">Search Hotels for:</td>
+				<td class="copy">City, State; City, Country; or Zip</td>
+				<td class="copy"></td>
+			</tr>
+			<tr>
+				<td width="12"></td>
+				<td class="copy"><input type="text" name="query" class="input" value="" size="25"></td>
+				<td class="copy"><input type="text" name="loc" class="input" value="Los Angeles, CA" size="25"></td>
+				<td class="copy"><input type="image" src="http://images.openlist.com/images/search.gif" width="91" height="18"></td>
+			</tr>
+			</table>
+			</form>
+			
+			<!-- end of page search form -->
+			
+			
+			
+				</td>
+	</tr>
+	<tr>
+		<td height="1" width="200" bgcolor="#EDEFF1"></td>
+		<td></td>
+		<td width="543" bgcolor="#EDEFF1"></td>
+	</tr>
+	</table>
+	
+
+
+</div></td></tr></table>
+<table class="footer" width="778" align="center"
+       cellpadding="0" cellspacing="0" border="0"
+       bgcolor="#ffffff">
+<tr>
+<td width="778" colspan="3"><div class="footerLinks">
+<a href="http://www.boston.com/help/bostoncom_info/feedback">feedback</a> <font
+    class="footerPipe">|</font> <a
+    href="http://www.boston.com/help">help</a> <font
+    class="footerPipe">|</font> <a
+    href="http://www.boston.com/help/sitemap">site map</a> <font
+    class="footerPipe">|</font> <a
+    href="http://www.boston.com/tools/archives">globe archives</a> <font
+    class="footerPipe">|</font> <a
+    href="http://www.boston.com/tools/rss">rss</a>  
+<div class="copyright">&copy; 2005 The New York Times Company</div>
+</div></td></tr>
+<tr><td height="5" class="bluegrayLine"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" border="0" alt="" /></td><td class="darkblueLine" width="6"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="6" height="1" border="0" alt="" /></td><td width="185" class="lightgrayLine"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" border="0" alt="" /></td></tr>
+</table>
+<!--OAS MJX Ad Tag--><script language="JavaScript"><!--
+OAS_AD('POPUP');
+//--></script><!--End Ad Tag-->
+<!--OAS MJX Ad Tag--><script language="JavaScript"><!--
+OAS_AD('POPUN');
+//--></script><!--End Ad Tag-->
+<!--OAS MJX Ad Tag--><script language="JavaScript"><!--
+OAS_AD('EXTRA');
+//--></script><!--End Ad Tag-->
+
+<!-- SiteCatalyst code version: G.5. Copyright 1997-2003 Omniture, Inc. More info available at http://www.omniture.com --><script
+    language="JavaScript"><!--
+var s_pageName='Travel | Lodging | Openlist',s_channel='Travel',s_prop1='Travel | Lodging';
+var s_server='',s_pageType='',s_prop2='',s_prop3='',s_prop4='',s_prop5='',s_prop6='Section Folder',s_prop7='',s_prop8='',s_prop9='',s_prop10='';
+/* E-commerce Variables */
+var s_campaign='',s_state='',s_zip='',s_events='',s_products='',s_purchaseID='',s_eVar1='',s_eVar2='',s_eVar3='',s_eVar4='',s_eVar5='',s_eVar6='',s_eVar7='',s_eVar8='',s_eVar9='',s_eVar10='';
+var s_code=' ';
+//--></script>
+<script language="JavaScript" src="http://cache.boston.com/omniture/s_code.js"></script>
+<script language="JavaScript"><!--
+var s_wd=window,s_tm=new Date;if(s_code!=' '){s_code=s_dc('nytbglobe');if(s_code)document.write(s_code);}else document.write('<im'+'g src="http://nytbglobe.112.2O7.net/b/ss/nytbglobe/1/G.5--FB/s'+s_tm.getTime()+'?[AQB]'+'&j=1.0&[AQE]" height="1" width="1" border="0" alt="" />');
+//--></script><script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-');
+//--></script><noscript><img src="http://nytbglobe.112.2O7.net/b/ss/nytbglobe/1/G.5--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: G.5. -->
+<!--Tacoda--><script language="JavaScript"><!--
+Tacoda_AMS_DDC_addPair('t_section','Travel | Lodging | Openlist');
+Tacoda_AMS_DDC_addPair('site','boston.com');
+Tacoda_AMS_DDC('http://te.boston.com/tte/blank.gif','1.0');
+--></script><!--End Tacoda-->
+
+
+</body>
+</html>
+

@@ -1,0 +1,785 @@
+<DOC>
+<DOCNO>g00070</DOCNO>
+<DOCHDR>http://www.smalltimes.com/document_display.cfm?document_id=3630</DOCHDR>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Small Times: News about MEMS, Nanotechnology and Microsystems</title>
+
+<meta name="keywords" content="mems, nanotech, nanotechnology, nano,microfluidic, microfluidics, microoptic, microoptical, microoptics, nanotechnologies, MOEMS, WIMS,news, ardesta, smalltimes, microtechnology, microsystems, nanotechnologies, small times, small tech, small times media">
+
+	
+	<link rel="stylesheet" type="text/css" href="/stylesheet/smalltimes_dom.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheet/smalltimes_ns4.css" disabled>
+
+	
+	
+
+
+
+<script type="text/javascript" language="JavaScript">
+
+function ChangeImage(ImageName, NewImage, Title, Directory)
+{
+if (document.images)
+	{
+	if (String (Directory) != "undefined")
+		document[ImageName].src = "/" + Directory + "/" + NewImage;
+	else
+		document[ImageName].src = "/images/" + NewImage;
+	}
+	
+	if (String (Title) != "undefined")
+	window.status=Title;
+	else
+	window.status=' ';
+}
+
+if (document.images)
+	{
+	Preload_image_01 = new Image();
+	Preload_image_01.src = "/images/search_button_over.gif"
+	Preload_image_02 = new Image();
+	Preload_image_02.src = "/images/tab_news_over.gif"
+	Preload_image_03 = new Image();
+	Preload_image_03.src = "/images/tab_magazine_over.gif"
+	Preload_image_04 = new Image();
+	Preload_image_04.src = "/images/tab_events_over.gif"
+	Preload_image_05 = new Image();
+	Preload_image_05.src = "/images/tab_directory_over.gif"
+	Preload_image_06 = new Image();
+	Preload_image_06.src = "/images/nav_fabrication_over.gif"
+	Preload_image_07 = new Image();
+	Preload_image_07.src = "/images/nav_money_over.gif";
+	Preload_image_08 = new Image();
+	Preload_image_08.src = "/images/nav_r_and_d_over.gif";
+	Preload_image_09 = new Image();
+	Preload_image_09.src = "/images/nav_opinion_over.gif";
+	Preload_image_10 = new Image();
+	Preload_image_10.src = "/images/nav_patents_over.gif";
+	Preload_image_11 = new Image();
+	Preload_image_11.src = "/images/nav_profiles_over.gif";
+	Preload_image_12 = new Image();
+	Preload_image_12.src = "/images/nav_biotech_over.gif";
+	Preload_image_14 = new Image();
+	Preload_image_14.src = "/images/nav_consumer_goods_over.gif";
+	Preload_image_15 = new Image();
+	Preload_image_15.src = "/images/nav_defense_over.gif";
+	Preload_image_16 = new Image();
+	Preload_image_16.src = "/images/nav_energy_over.gif";
+	Preload_image_17 = new Image();
+	Preload_image_17.src = "/images/nav_environment_over.gif";
+	Preload_image_18 = new Image();
+	Preload_image_18.src = "/images/nav_it_telecom_over.gif";
+	Preload_image_19 = new Image();
+	Preload_image_19.src = "/images/nav_transportation_over.gif";
+	Preload_image_20 = new Image();
+	Preload_image_20.src = "/images/nav_subscription_over.gif";
+	Preload_image_21 = new Image();
+	Preload_image_21.src = "/images/nav_newsletter_over.gif";
+	Preload_image_22 = new Image();
+	Preload_image_22.src = "/images/nav_products_over.gif";
+	Preload_image_23 = new Image();
+	Preload_image_23.src = "/images/nav_career_center_over.gif";
+	Preload_image_24 = new Image();
+	Preload_image_24.src = "/images/nav_reprints_over.gif";
+	Preload_image_25 = new Image();
+	Preload_image_25.src = "/images/nav_glossary_over.gif";
+	Preload_image_26 = new Image();
+	Preload_image_26.src = "/images/nav_advertiser_index_over.gif";
+	Preload_image_27 = new Image();
+	Preload_image_27.src = "/images/nav_about_us_over.gif";
+	Preload_image_28 = new Image();
+	Preload_image_28.src = "/images/nav_contact_us_over.gif";
+	Preload_image_29 = new Image();
+	Preload_image_29.src = "/images/nav_advertising_over.gif";
+	Preload_image_30 = new Image();
+	Preload_image_30.src = "/images/right_stock_summary_over.gif";
+	Preload_image_31 = new Image();
+	Preload_image_31.src = "/images/right_smalltech_stocks_over.gif";
+
+	Preload_image_32 = new Image();
+	Preload_image_32.src = "/images/mag_free_subscription_over.gif";
+	Preload_image_33 = new Image();
+	Preload_image_33.src = "/images/mag_about_over.gif";
+	Preload_image_34 = new Image();
+	Preload_image_34.src = "/images/mag_back_issues_over.gif";
+	Preload_image_35 = new Image();
+	Preload_image_35.src = "/images/mag_media_kit_over.gif";
+	Preload_image_36 = new Image();
+	Preload_image_36.src = "/images/media_order_reprints.gif";
+	
+	Preload_image_37 = new Image();
+	Preload_image_37.src = "/images/button_free_subscription_over.gif";
+	
+	Preload_image_38 = new Image();
+	Preload_image_38.src = "/images/smalltechcensusover.gif";
+	
+	Preload_image_39 = new Image();
+	Preload_image_39.src = "/images/home_over.gif";
+	
+	Preload_image_40 = new Image();
+	Preload_image_40.src = "/images/nav_adsections_over.gif";	
+	
+	Preload_image_41 = new Image();
+	Preload_image_41.src = "/images/nav_Directory_over.gif";
+	
+	
+	}Preload_image_42 = new Image();
+	Preload_image_42.src = "/images/nav_Classifieds_over.gif";
+</SCRIPT>	
+
+	
+</head>
+
+<body bgcolor="#7C8FD1">
+
+
+<table bgcolor="FFFFFF" align=center width=760 border=0 cellpadding=0 cellspacing=0>
+
+<tr>
+<td width=760 colspan=2><img src="http://www.smalltimes.com/images/top_stripes.gif" width=760 height=14 border=0 alt=""></td>
+</tr>
+
+<tr>
+<td width=288>
+<a href="http://www.smalltimes.com/index.cfm"><img src="http://www.smalltimes.com/images/smalltimes_logo.gif" width=288 height=62 border=0 alt="Small Times - Big News in Small Tech."></a></td>
+
+<td width=472 valign=top>
+
+	
+	
+	
+	
+	
+		
+		<A HREF="/adsystem/redir.cfm?adid=356" TARGET="_top">
+			<IMG SRC="/adsystem/banners/FreeSub_Jan_468x60.gif" ALT="Free Subscription" BORDER="0" ALIGN="absmiddle"></A>
+		
+		
+		
+			
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+		 
+</td>
+</tr>
+</table>
+
+
+
+<table bgcolor="#304488" align=center width=760 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1 bgcolor="#FFFFFF"><img src="http://www.smalltimes.com/images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+<td width=627 valign=top>
+	<table width=627 border=0 cellpadding=0 cellspacing=0>
+	<tr>
+	
+	
+	<form action="http://www.smalltimes.com/search_results.cfm" method=post>
+		<td width=174 height=33><img src="/images/spacer.gif" width=11 height=1 border=0 alt="">
+		
+<SCRIPT type="text/javascript" language="JavaScript">
+if (navigator.platform.indexOf("Mac") >= 0) {
+	if (navigator.appName.indexOf("Explorer") >= 0)
+		document.write('<input type=text class="searchText" name="keyword" size=20>');
+	else
+		document.write('<input type=text class="searchText" name="keyword" size=16>');
+}
+else if (navigator.appName.indexOf("Netscape") >= 0 && parseInt(navigator.appVersion) == 4)
+ 	document.write('<input type=text class="searchText" name="keyword" size=10>');
+else
+	document.write('<input type=text class="searchText" name="keyword" size=20>');
+</SCRIPT>
+		</td>
+		<td width=64><img src="/images/spacer.gif" width=64 height=1 border=0 alt=""><br><a href="javascript:document.forms[0].submit();" onMouseover="ChangeImage('search', 'search_button_over.gif', 'Search', 'images')" onMouseout="ChangeImage('search', 'search_button.gif', '', 'images')"><img name="search" src="/images/search_button.gif" width=51 height=24 border=0 alt="Search"></a><img src="/images/spacer.gif" width=13 height=1 border=0 alt=""></td>
+	</form>
+	
+	<td width=98 valign=bottom><a href="http://www.smalltimes.com/index.cfm" onMouseover="ChangeImage('news', 'tab_news_over.gif', 'News', 'images')" onMouseout="ChangeImage('news', 'tab_news.gif', '', 'images')"><img name="news" src="/images/tab_news.gif" width=98 height=20 border=0 alt="News"></a></td> 
+	<td width=97 valign=bottom><a href="http://www.smalltimes.com/magazine.cfm" onMouseover="ChangeImage('magazine', 'tab_magazine_over.gif', 'Magazine', 'images')" onMouseout="ChangeImage('magazine', 'tab_magazine.gif', '', 'images')"><img name="magazine" src="/images/tab_magazine.gif" width=97 height=20 border=0 alt="Magazine"></a></td>
+	<td width=97 valign=bottom><a href="http://www.smalltimes.com/calendar/index.cfm" onMouseover="ChangeImage('events', 'tab_events_over.gif', 'Events', 'images')" onMouseout="ChangeImage('events', 'tab_events.gif', '', 'images')"><img name="events" src="/images/tab_events.gif" width=97 height=20 border=0 alt="Events"></a></td>
+	
+	<td width=97 valign=bottom><a href="http://www.smalltechdirectory.com" onMouseover="ChangeImage('SmalltechDir', 'tab_directory_over.gif', 'SmalltechDir', 'images')" onMouseout="ChangeImage('SmalltechDir', 'tab_directory.gif', '', 'images')"><img name="SmalltechDir" src="/images/tab_directory.gif" width=97 height=20 border=0 alt="Smalltech Directory"></a></td>
+	
+	
+
+	
+	</tr>
+	</table>
+	
+	<table width=627 border=0 cellpadding=0 cellspacing=0>
+	<tr>				
+
+	
+	<td width=133 align=right valign=top>
+	
+	
+	
+	
+	<img src="/images/nav_head_inside.gif" width=123 height=25 border=0 alt="Inside Small Tech"><br>
+	<a href="http://www.smalltimes.com/" onMouseover="ChangeImage('home', 'home_over.gif', 'Home', 'images')" onMouseout="ChangeImage('home', 'home.gif', '', 'images')"><img name="home" src="/images/home.gif" width=123 height=16 border=0 alt="Home"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=39" onMouseover="ChangeImage('fabrication', 'nav_fabrication_over.gif', 'Fabrication', 'images')" onMouseout="ChangeImage('fabrication', 'nav_fabrication.gif', '', 'images')"><img name="fabrication" src="/images/nav_fabrication.gif" width=123 height=16 border=0 alt="Fabrication"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=51" onMouseover="ChangeImage('money', 'nav_money_over.gif', 'Money', 'images')" onMouseout="ChangeImage('money', 'nav_money.gif', '', 'images')"><img name="money" src="/images/nav_money.gif" width=123 height=16 border=0 alt="Money"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=53" onMouseover="ChangeImage('r_and_d', 'nav_r_and_d_over.gif', 'R and D', 'images')" onMouseout="ChangeImage('r_and_d', 'nav_r_and_d.gif', '', 'images')"><img name="r_and_d" src="/images/nav_r_and_d.gif" width=123 height=16 border=0 alt="R and D"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=76" onMouseover="ChangeImage('opinion', 'nav_opinion_over.gif', 'Opinion', 'images')" onMouseout="ChangeImage('opinion', 'nav_opinion.gif', '', 'images')"><img name="opinion" src="/images/nav_opinion.gif" width=123 height=16 border=0 alt="Opinion"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=90" onMouseover="ChangeImage('patents', 'nav_patents_over.gif', 'Patents', 'images')" onMouseout="ChangeImage('patents', 'nav_patents.gif', '', 'images')"><img name="patents" src="/images/nav_patents.gif" width=123 height=16 border=0 alt="Patents"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=97" onMouseover="ChangeImage('profiles', 'nav_profiles_over.gif', 'Profiles', 'images')" onMouseout="ChangeImage('profiles', 'nav_profiles.gif', '', 'images')"><img name="profiles" src="/images/nav_profiles.gif" width=123 height=16 border=0 alt="Profiles"></a><br>
+	
+	<img src="/images/nav_head_applications.gif" width=123 height=28 border=0 alt="Applications"><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=45" onMouseover="ChangeImage('biotech', 'nav_biotech_over.gif', 'Biotech', 'images')" onMouseout="ChangeImage('biotech', 'nav_biotech.gif', '', 'images')"><img name="biotech" src="/images/nav_biotech.gif" width=123 height=16 border=0 alt="Biotech"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=46" onMouseover="ChangeImage('consumer_goods', 'nav_consumer_goods_over.gif', 'Consumer Goods', 'images')" onMouseout="ChangeImage('consumer_goods', 'nav_consumer_goods.gif', '', 'images')"><img name="consumer_goods" src="/images/nav_consumer_goods.gif" width=123 height=16 border=0 alt="Consumer Goods"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=47" onMouseover="ChangeImage('defense', 'nav_defense_over.gif', 'Defense', 'images')" onMouseout="ChangeImage('defense', 'nav_defense.gif', '', 'images')"><img name="defense" src="/images/nav_defense.gif" width=123 height=16 border=0 alt="Defense"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=93" onMouseover="ChangeImage('energy', 'nav_energy_over.gif', 'Energy', 'images')" onMouseout="ChangeImage('energy', 'nav_energy.gif', '', 'images')"><img name="energy" src="/images/nav_energy.gif" width=123 height=16 border=0 alt="Energy"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=21" onMouseover="ChangeImage('environment', 'nav_environment_over.gif', 'Environment', 'images')" onMouseout="ChangeImage('environment', 'nav_environment.gif', '', 'images')"><img name="environment" src="/images/nav_environment.gif" width=123 height=16 border=0 alt="Environment"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=29" onMouseover="ChangeImage('it_telecom', 'nav_it_telecom_over.gif', 'IT and Telecom', 'images')" onMouseout="ChangeImage('it_telecom', 'nav_it_telecom.gif', '', 'images')"><img name="it_telecom" src="/images/nav_it_telecom.gif" width=123 height=16 border=0 alt="IT and Telecom"></a><br>
+	<a href="http://www.smalltimes.com/section_display.cfm?section_id=58" onMouseover="ChangeImage('transportation', 'nav_transportation_over.gif', 'Transportation', 'images')" onMouseout="ChangeImage('transportation', 'nav_transportation.gif', '', 'images')"><img name="transportation" src="/images/nav_transportation.gif" width=123 height=16 border=0 alt="Transportation"></a><br>
+	
+	<img src="/images/nav_head_reader_services.gif" width=123 height=28 border=0 alt="Reader Services"><br>
+	
+	
+		<a href="https://register.smalltimes.com/subscribe.cfm" onMouseover="ChangeImage('subscription', 'nav_subscription_over.gif', 'Free Subscription', 'images')" onMouseout="ChangeImage('subscription', 'nav_subscription.gif', '', 'images')"><img name="subscription" src="/images/nav_subscription.gif" width=123 height=16 border=0 alt="Free Subscription"></a><br>
+	
+	<a href="http://www.smalltimes.com/document_display.cfm?document_id=3642" onMouseover="ChangeImage('advertiser_index', 'nav_advertiser_index_over.gif', 'Advertiser Index', 'images')" onMouseout="ChangeImage('advertiser_index', 'nav_advertiser_index.gif', '', 'images')"><img name="advertiser_index" src="/images/nav_advertiser_index.gif" width=123 height=16 border=0 alt="Advertiser Index"></a><br>
+	
+	
+	<a href="http://www.smalltimes.com/careercenter/" onMouseover="ChangeImage('career_center', 'nav_career_center_over.gif', 'Career Center', 'images')" onMouseout="ChangeImage('career_center', 'nav_career_center.gif', '', 'images')"><img name="career_center" src="/images/nav_career_center.gif" width=123 height=16 border=0 alt="Career Center"></a><br>
+	<a href="http://www.smalltimes.com/document_display.cfm?document_id=3643" onMouseover="ChangeImage('classifieds', 'nav_Classifieds_over.gif', 'Classifieds', 'images')" onMouseout="ChangeImage('classifieds', 'nav_Classifieds.gif', '', 'images')"><img name="classifieds" src="/images/nav_Classifieds.gif" width=123 height=16 border=0 alt="Classifieds"></a><br>
+	
+	
+		<a href="http://www.smalltechdirectory.com" onMouseover="ChangeImage('smalldir', 'nav_Directory_over.gif', 'Smaltech Directory', 'images')" onMouseout="ChangeImage('smalldir', 'nav_Directory.gif', '', 'images')"><img name="smalldir" src="/images/nav_Directory.gif" width=123 height=16 border=0 alt="Smalltech Directory"></a><br>
+	
+		<a href="https://register.smalltimes.com/subscribe.cfm?showEmail=1" onMouseover="ChangeImage('newsletter', 'nav_newsletter_over.gif', 'E-mail Newsletter', 'images')" onMouseout="ChangeImage('newsletter', 'nav_newsletter.gif', '', 'images')"><img name="newsletter" src="/images/nav_newsletter.gif" width=123 height=16 border=0 alt="E-mail Newsletter"></a><br>
+		
+	<a href="http://www.smalltimes.com/document_display.cfm?document_id=3631" onMouseover="ChangeImage('glossary', 'nav_glossary_over.gif', 'Glossary', 'images')" onMouseout="ChangeImage('glossary', 'nav_glossary.gif', '', 'images')"><img name="glossary" src="/images/nav_glossary.gif" width=123 height=16 border=0 alt="Glossary"></a><br>
+	<a href="http://www.smalltimes.com/products/" onMouseover="ChangeImage('products', 'nav_products_over.gif', 'Products', 'images')" onMouseout="ChangeImage('products', 'nav_products.gif', '', 'images')"><img name="products" src="/images/nav_products.gif" width=123 height=16 border=0 alt="Products"></a><br>
+	
+	<a href="http://www.smalltimes.com/document_display.cfm?document_id=3533" onMouseover="ChangeImage('reprints', 'nav_reprints_over.gif', 'Reprints', 'images')" onMouseout="ChangeImage('reprints', 'nav_reprints.gif', '', 'images')"><img name="reprints" src="/images/nav_reprints.gif" width=123 height=16 border=0 alt="Reprints"></a><br>
+	<a href="http://www.smalltechcensus.com/" onMouseover="ChangeImage('census', 'smalltechcensusover.gif', 'Census', 'images')" onMouseout="ChangeImage('census', 'smalltechcensus.gif', '', 'images')"><img name="census" src="/images/smalltechcensus.gif" width=123 height=16 border=0 alt="Census"></a><br>	
+	<a href="http://www.smalltimes.com/specialadsections" onMouseover="ChangeImage('ad_sections', 'nav_adsections_over.gif', 'Advertiser Sections', 'images')" onMouseout="ChangeImage('ad_sections', 'nav_adsections.gif', '', 'images')"><img name="ad_sections" src="/images/nav_adsections.gif" width=123 height=16 border=0 alt="Advertiser Sections"></a><br>
+		
+	
+	<img src="/images/nav_head_st_media.gif" width=123 height=28 border=0 alt="Small Times Media"><br>
+	<a href="http://www.smalltimes.com/document_display.cfm?document_id=3628" onMouseover="ChangeImage('about_us', 'nav_about_us_over.gif', 'About Us', 'images')" onMouseout="ChangeImage('about_us', 'nav_about_us.gif', '', 'images')"><img name="about_us" src="/images/nav_about_us.gif" width=123 height=16 border=0 alt="About Us"></a><br>
+	<a href="http://www.smalltimes.com/document_display.cfm?document_id=3630" onMouseover="ChangeImage('contact_us', 'nav_contact_us_over.gif', 'Contact Us', 'images')" onMouseout="ChangeImage('contact_us', 'nav_contact_us.gif', '', 'images')"><img name="contact_us" src="/images/nav_contact_us.gif" width=123 height=16 border=0 alt="Contact Us"></a><br>
+	<a href="http://www.smalltimes.com/section_mediakit.cfm?document_id=1054" onMouseover="ChangeImage('advertising', 'nav_advertising_over.gif', 'Advertising', 'images')" onMouseout="ChangeImage('advertising', 'nav_advertising.gif', '', 'images')"><img name="advertising" src="/images/nav_advertising.gif" width=123 height=16 border=0 alt="Advertising"></a><br>
+	<br><br>
+	
+	
+
+	<br>
+	
+					
+		
+			
+	
+	
+	
+	<center>
+	
+		
+	
+	
+	
+	
+	
+		
+		<A HREF="/adsystem/redir.cfm?adid=352" TARGET="_top">
+			<IMG SRC="/adsystem/banners/NanoInk_125x60.gif" ALT="NanoInk" BORDER="0" ALIGN="absmiddle"></A>
+		
+		
+		
+			
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+
+		<br><br>
+	
+		
+	
+	
+	
+	
+	
+		
+		<A HREF="/adsystem/redir.cfm?adid=303" TARGET="_top">
+			<IMG SRC="/adsystem/banners/BurnsDoane_125x60.gif" ALT="Atlantic NanoForum" BORDER="0" ALIGN="absmiddle"></A>
+		
+		
+		
+			
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+
+		<br><br>
+	
+		
+	
+	
+	
+	
+	
+		
+		<A HREF="/adsystem/redir.cfm?adid=331" TARGET="_top">
+			<IMG SRC="/adsystem/banners/Flow_125x60.gif" ALT="Flow Creative" BORDER="0" ALIGN="absmiddle"></A>
+		
+		
+		
+			
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+
+	
+	</center>
+	
+	<br><br>
+	</td>
+	
+
+
+	<td width=494 valign=top bgcolor="ffffff">
+
+
+
+
+
+	<table width=494 bgcolor="#FFFFFF" border=0 cellpadding=0 cellspacing=0>
+
+
+		<tr valign=top>
+			
+					<td width=494>
+					
+					<img src="images/header_contact_us.gif" width="494" height="34" border="0" alt="">
+					
+					<div class="vertSpace">&nbsp;</div><div class="vertSpace">&nbsp;</div>
+					</td>
+				
+		</tr>
+	</table>
+	<table width=494 bgcolor="#FFFFFF" border=0 cellpadding=0 cellspacing=0>	
+		<tr>
+			<td width=17><img src="images/spacer.gif" width=17 height=1 border=0 alt=""></td>
+			<td width=460 class="content"><img src="images/spacer.gif" width=460 height=1 border=0 alt=""><br>
+
+			<table WIDTH=150 bgcolor="DBDBDB" align="RIGHT" border="0" cellpadding="0" cellspacing="0">
+			
+			</table>
+			
+			
+			<div class="vertSpace">&nbsp;</div>
+						
+				<B><U>Contact Small Times Media</U></B> <BR>Small Times welcomes your comments, questions and suggestions. Our contact information is listed below. 
+<P>Small Times Media, LLC <BR>755 Phoenix Drive <BR>Ann Arbor, MI 48108 <BR>USA 
+<P>(+1) 734-994-1106 - phone <BR>(+1) 734-994-1554 - fax 
+<P>Subscription questions: <BR><A class="inline" href="mailto:subscriptions@smalltimes.com">subscriptions@smalltimes.com</A> 
+<P>Change of address (magazine subscription): <BR>Online at <A class="inline" href="http://www.smalltimes.com/addchange">smalltimes.com/addchange</A> 
+<P>To submit news: <BR><A class="inline" href="mailto:news@smalltimes.com">news@smalltimes.com</A> 
+<P>Letters to the editor: <BR><A class="inline" href="mailto:letters@smalltimes.com">letters@smalltimes.com</A> 
+<P>Advertising:&nbsp;<BR><A class="inline" href="mailto:craigcuddeback@smalltimes.com">craigcuddeback@smalltimes.com</A> 
+<P>Public relations &amp; event sponsorships: <BR><A class="inline" href="mailto:kellifelker@smalltimes.com">kellifelker@smalltimes.com</A> 
+<P>For reprint information: <BR><A class="inline" href="mailto:info@smalltimes.com">info@smalltimes.com</A> 
+<P>To purchase back issues of <I>Small Times</I> magazine: <BR><A class="inline" href="mailto:requests@smalltimes.com">requests@smalltimes.com</A> 
+<P>Small Tech Census questions: <BR><A class="inline" href="mailto:census@smalltimes.com">census@smalltimes.com</A> 
+<P>For all other questions: <BR><A class="inline" href="mailto:info@smalltimes.com">info@smalltimes.com</A> 
+<P></P>
+			
+			<img src="images/article_end_symbol.gif" align=top width=15 height=15 border=0 alt="">
+
+							
+
+			<div class="vertSpace">&nbsp;</div></td>
+			<td width=17><img src="images/spacer.gif" width=17 height=1 border=0 alt=""></td>
+		</tr>
+		
+		
+
+		<tr>
+			<td width=494 colspan=3 height=10><img src="images/spacer.gif" width=492 height=10 border=0 alt=""></td>
+		</tr>
+		<tr>
+			<td width=494 colspan=3 height=3 align=center valign=top><img src="images/1stripe.gif" width=492 height=2 border=0 alt=""></td>
+		</tr>
+	</table>
+
+
+		</td>
+
+	</tr>
+	</table>
+</td>
+
+	
+
+				
+	
+	
+<td width=131 valign=top><img src="http://www.smalltimes.com/images/spacer.gif" width=131 height=13 border=0 alt=""><br>
+
+	
+
+	<table width=123 bgcolor="B8B8B8" border=0 cellpadding=0 cellspacing=0 align=center>
+	<tr>
+	<td colspan=6 width=123>
+	
+	
+		<img src="http://www.smalltimes.com/images/right_head_market_news.gif" width=123 height=21 border=0 alt="Market News"><br>
+	
+	
+	
+	
+	<a href="http://studio.financialcontent.com/Engine?Account=smalltimes" onMouseover="ChangeImage('stock_summary', 'right_stock_summary_over.gif', 'Stock Summary', 'images')" onMouseout="ChangeImage('stock_summary', 'right_stock_summary.gif', '', 'images')"><img name="stock_summary" src="http://www.smalltimes.com/images/right_stock_summary.gif" width=123 height=16 border=0 alt="Stock Summary"></a><br>
+	<a href="http://studio.financialcontent.com/Engine?Account=smalltimes&Index=$STINX&PageName=INDEX&Mode=SORT" onMouseover="ChangeImage('smalltech_stocks', 'right_smalltech_stocks_over.gif', 'Small Tech Stocks', 'images')" onMouseout="ChangeImage('smalltech_stocks', 'right_smalltech_stocks.gif', '', 'images')"><img name="smalltech_stocks" src="http://www.smalltimes.com/images/right_smalltech_stocks.gif" width=123 height=16 border=0 alt="Small Tech Stocks"></a><br>
+	</td>
+	</tr>
+	
+		<tr>
+		<td width=1 bgcolor="FFFFFF"><img src="http://www.smalltimes.com/images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+		<td width=6><img src="http://www.smalltimes.com/images/spacer.gif" width=6 height=1 border=0 alt=""></td>
+		<td width=60 valign=bottom class="market"><img src="http://www.smalltimes.com/images/spacer.gif" width=60 height=5 border=0 alt=""><br>
+		
+		<img src="http://www.smalltimes.com/images/subhead_Nasdaq.gif" border=0 alt="Nasdaq"><br>
+		 2067.500
+		<div class="vertSpace">&nbsp;</div></td>
+		<td width=49 align=right valign=bottom class="market"><img src="http://www.smalltimes.com/images/spacer.gif" width=49 height=1 border=0 alt=""><br>
+		
+		  -3.75
+		
+		<div class="vertSpace">&nbsp;</div></td>
+		<td width=6><img src="http://www.smalltimes.com/images/spacer.gif" width=6 height=1 border=0 alt=""></td>
+		<td width=1 bgcolor="FFFFFF"><img src="http://www.smalltimes.com/images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+		</tr>
+		<tr>
+			<td width=1 bgcolor="FFFFFF"><img src="images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+			<td colspan=4 height=1 bgcolor="D9D9D9"><img src="images/spacer.gif" width=121 height=1 border=0 alt=""></td>
+			<td width=1 bgcolor="FFFFFF"><img src="images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+		</tr>
+	
+		<tr>
+		<td width=1 bgcolor="FFFFFF"><img src="http://www.smalltimes.com/images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+		<td width=6><img src="http://www.smalltimes.com/images/spacer.gif" width=6 height=1 border=0 alt=""></td>
+		<td width=60 valign=bottom class="market"><img src="http://www.smalltimes.com/images/spacer.gif" width=60 height=5 border=0 alt=""><br>
+		
+		<img src="http://www.smalltimes.com/images/subhead_S&P.gif" border=0 alt="S&P"><br>
+		 1210.080
+		<div class="vertSpace">&nbsp;</div></td>
+		<td width=49 align=right valign=bottom class="market"><img src="http://www.smalltimes.com/images/spacer.gif" width=49 height=1 border=0 alt=""><br>
+		
+		  -0.33
+		
+		<div class="vertSpace">&nbsp;</div></td>
+		<td width=6><img src="http://www.smalltimes.com/images/spacer.gif" width=6 height=1 border=0 alt=""></td>
+		<td width=1 bgcolor="FFFFFF"><img src="http://www.smalltimes.com/images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+		</tr>
+		<tr>
+			<td width=1 bgcolor="FFFFFF"><img src="images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+			<td colspan=4 height=1 bgcolor="D9D9D9"><img src="images/spacer.gif" width=121 height=1 border=0 alt=""></td>
+			<td width=1 bgcolor="FFFFFF"><img src="images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+		</tr>
+	
+	<tr>
+	<td colspan=6 height=1 bgcolor="FFFFFF"><img src="http://www.smalltimes.com/images/spacer.gif" width=121 height=1 border=0 alt=""></td>
+	</tr>
+	</table>
+	<div class="vertSpace">&nbsp;</div>
+	
+			
+	<table width=125 border=0 cellpadding=0 cellspacing=0 align=center>
+	<tr>
+	<td>					
+	
+	
+		
+	
+	
+	
+	
+	
+		
+		<A HREF="/adsystem/redir.cfm?adid=362" TARGET="_top">
+			<IMG SRC="/adsystem/banners/AdvanceTec_125x125.gif" ALT="AdvanceTec" BORDER="0" ALIGN="absmiddle"></A>
+		
+		
+		
+			
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+
+	
+	
+	<div class="vertSpace">&nbsp;</div>
+					
+	
+	
+		
+	
+	
+	
+	
+	
+		
+		<A HREF="/adsystem/redir.cfm?adid=271" TARGET="_top">
+			<IMG SRC="/adsystem/banners/AutoAlley_125x400.gif" ALT="Automation Alley" BORDER="0" ALIGN="absmiddle"></A>
+		
+		
+		
+			
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+
+	
+	
+	<div class="vertSpace">&nbsp;</div>
+	<div class="vertSpace">&nbsp;</div>
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<A HREF="/adsystem/redir.cfm?adid=351" TARGET="_top">
+			<IMG SRC="/adsystem/banners/PANano_125x125.gif" ALT="Pennsylvania NanoConference" BORDER="0" ALIGN="absmiddle"></A>
+		
+		
+		
+			
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+
+	<div class="vertSpace">&nbsp;</div>
+	<div class="vertSpace">&nbsp;</div>
+	
+	
+	
+	
+	
+	
+	
+		
+		<A HREF="/adsystem/redir.cfm?adid=354" TARGET="_top">
+			<IMG SRC="/adsystem/banners/ASME_MEMS_125x125.gif" ALT="ASME MEMS" BORDER="0" ALIGN="absmiddle"></A>
+		
+		
+		
+			
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+			
+			
+		
+	
+
+			
+	<div class="vertSpace">&nbsp;</div>
+	<div class="vertSpace">&nbsp;</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+	
+
+		
+	</td>
+	</tr>
+	</table>
+	<div class="vertSpace">&nbsp;</div>
+	
+</td>
+	
+		
+<td width=1 bgcolor="FFFFFF"><img src="http://www.smalltimes.com/images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+</tr>
+</table>
+
+<table bgcolor="304488" align=center width=760 border=0 cellpadding=0 cellspacing=0>
+	<tr>
+		<td width=1 bgcolor="FFFFFF"><img src="http://www.smalltimes.com/images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+		<td width=468 class="footer"><img src="http://www.smalltimes.com/images/spacer.gif" width=468 height=1 border=0 alt=""><br>
+			&nbsp;&nbsp;
+			<a href="/index.cfm" class="footer">HOME</a>
+			&nbsp;|&nbsp;
+			<a href="http://www.smalltimes.com/document_display.cfm?document_id=3628" class="footer">ABOUT US</a>
+			&nbsp;|&nbsp;
+			<a href="http://www.smalltimes.com/document_display.cfm?document_id=3630" class="footer">CONTACT US</a>
+			&nbsp;|&nbsp;
+			<a href="http://www.smalltimes.com/section_mediakit.cfm" class="footer">MEDIA KIT</a>
+			&nbsp;|&nbsp;
+			<a href="http://www.smalltimes.com/document_display.cfm?document_id=1094" class="footer">TERMS &amp; CONDITIONS</a>
+		<div class="vertSpace">&nbsp;</div></td>
+		<td width=290 class="footer"><img src="http://www.smalltimes.com/images/spacer.gif" width=290 height=1 border=0 alt=""><br>
+			&copy;Small Times Media 2002, All Rights Reserved
+		<div class="vertSpace">&nbsp;</div></td>
+		<td width=1 bgcolor="FFFFFF"><img src="http://www.smalltimes.com/images/spacer.gif" width=1 height=1 border=0 alt=""></td>
+	</tr>
+	<tr>
+		<td colspan=4><img src="http://www.smalltimes.com/images/bottom_stripes.gif" width=760 height=9 border=0 alt=""></td>
+	</tr>
+</table>
+
+
+</body>
+</html>
+

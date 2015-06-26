@@ -1,0 +1,513 @@
+<DOC>
+<DOCNO>f00279</DOCNO>
+<DOCHDR>http://support.sas.com/training/fyi/sf.html</DOCHDR>
+<html>
+<head>
+<title>SAS Training Center - San Francisco, CA</title>
+<script language = "Javascript" type="text/javascript" src="/lib/global.js"></script>
+<script language = "Javascript" type="text/javascript" src="/training/includes/main.js"></script>
+<LINK REL="STYLESHEET" TYPE="text/css" href="/training/includes/train.css">
+</HEAD>
+<body bgcolor="#ffffff" leftmargin=0 topmargin=0 marginwidth=0 marginheight=0>
+
+<table border=0 cellPadding=0 cellSpacing=0 height=27 width="100%">
+<tr bgcolor="#000000">
+<!-- ******* BEGIN BREADCRUMBS IN LEFT OF TOP BLACK BAR ****************************** -->
+<td align=left height=27 nowrap valign=middle>&nbsp;<b> 
+ <a href="http://support.sas.com"><font color="#FFFFFF" size=2><span class="topnav">support.sas.com</span></font></a>
+ <font color="#FFFFFF" size=2>&gt;</font>
+ <a href="/training/"><font color="#FFFFFF" size=2><span class="topnav">Training</span></font></a>
+ <font color="#FFFFFF" size=2>&gt;</font>
+ <a href="/training/us/"><font color="#FFFFFF" size=2><span class="topnav">U.S. Training</span></font></a>
+ </b></td>
+<!-- ******* BEGIN RIGHT NAVIGATION IN TOP BLACK BAR ********************************* -->
+<form action="/bin/jump.pl" method="get">
+<td height="27" valign="middle" align="right" nowrap>
+        
+ <select name="jump_list" onChange="if (options[selectedIndex].value)
+   window.location.href=(options[selectedIndex].value)">
+          <option value="http://support.sas.com/"> -- Navigate our Site -- </option> 
+          <option value="http://support.sas.com/contact/intro.html">Contact Us</option>   
+          <option value="http://support.sas.com/rnd/intro.html">Communities</option>         
+          <option value="http://support.sas.com/documentation/index.html">Documentation</option> 
+          <option value="http://support.sas.com/software/index.htm">SAS<font size="-2">&reg;</font>9</option>
+          <option value="http://support.sas.com/ctx/samples/index.jsp">Samples</option> 
+          <option value="http://support.sas.com/search/index.html">Search</option>       
+          <option value="http://www.sas.com/apps/demosdownloads/setupintro.jsp">Software Downloads</option> 
+          <option value="http://support.sas.com/techsup/intro.html">Technical Support</option>        
+          <option value="http://support.sas.com/training/">Training</option>  
+          <option value="http://www.sas.com/index.html">www.sas.com</option>
+         
+                         </select>
+
+          <noscript><input type="submit" value="Go"></noscript>&nbsp;
+</td>
+</form>
+</tr></table>
+<!-- ******* BEGIN HEADER in blue horizontal bar ************************************* -->
+<table border=0 cellpadding=0 cellspacing=0 height=50 width="100%"><tr>
+ <td bgcolor="#003399" height=50 width="46%"><a href="/training/us/">
+  <img height=50 src="http://support.sas.com/images/country/l2_hdd_ustraining.gif" width=310 alt="SAS Training in the U.S." border=0></a></td>
+ <td align=right bgcolor="#003399" height=50 valign=middle width="54%"><a href="http://www.sas.com/index.html">
+  <img alt="SAS - The power to know(tm)" height=50 src="http://support.sas.com/images/global/hdd_rt.gif" width=159 border=0></a></td>
+</tr></table>
+<!-- ******* NAVIGATION AREAS ******************************************************** -->        
+<table border=0 cellPadding=0 cellSpacing=0 height=18 width="100%"><TR>
+    <td bgcolor="#FFCC33" height="2" colspan="3" nowrap><img src="http://support.sas.com/images/global/clear.gif" width="1" height="2" alt=""></td>
+</tr><tr>
+<td bgcolor="#003399" height=18 noWrap vAlign=middle width="99%">
+<b>&nbsp;
+<a href="/training/"><font color="#FFFFFF" size=2><span class="topnav">Worldwide Training</span></font></a><font color="#FFFFFF" size="2"> |</font>
+<a href="/training/us/"><font color="#FFFFFF" size=2><span class="topnav">U.S. Training</span></font></a><font color="#FFFFFF" size=2> |</font>
+<a href="/training/us/start.html"><font color="#FFFFFF" size=2><span class="topnav">Starting Points</span></font></a><font color="#FFFFFF" size=2> |</font>
+<a href="/training/us/find.html"><font color="#FFFFFF" size=2><span class="topnav">Find a Course</span></font></a><font color="#FFFFFF" size=2> |</font>
+<a href="/training/us/curric.html"><font color="#FFFFFF" size=2><span class="topnav">Course List</span></font></a><font color="#FFFFFF" size=2> |</font>
+<a href="/training/map_na.html"><font color="#FFFFFF" size=2><span class="topnav">Locations</span></font></a><font color="#FFFFFF" size=2> |</font>
+<a href="/training/elearn/catalog/welcome.html"><font color="#FFFFFF" size=2><span class="topnav">Self-paced e-Learning</span></font></a>
+</b>
+</td>
+<td bgcolor="#003399" width="14" height="18" valign="bottom" align="right"><a href="/training/us/search.html"><img src="http://support.sas.com/images/global/search.gif" width="49" height="13" align="right" vspace="2" hspace="8" border="0" alt=""></a></td>
+<td bgcolor="#003399" width="5" height="18" valign="bottom" align="right" nowrap><img src="http://support.sas.com/images/global/clear.gif" width="5" height="18" alt=""></td>
+</tr></table>
+
+<div class="ustext">
+
+<table border=0 cellspacing=0 cellpadding=4 width="100%"><tr valign=top>
+  <td>
+  <table cellpadding=0 cellspacing=0 border=0><tr>
+    <td align=right><img src="/training/images/lnav_head.gif" width=161 height=6 alt="[]"></td>
+    <td rowspan=19 width=1 bgcolor="#CCCCCC"><img src="/training/images/spacer.gif" width=1 height=1 alt="[]"></td>
+  </tr><tr>
+    <td>
+    <table width=165 border=0 cellspacing=0 cellpadding=2><tr>
+      <td><div id="navbg"><a href="/training/us/" class="nav">Home</a></div></td>
+<!--
+    </tr><tr>
+      <td><div id="navbg"><a href="/training/us/buynow.html" class="buy">Buy Now!</a></div></td>
+-->
+    </tr><tr>
+      <td><div id="navbg"><a href="/training/us/start.html" class="nav">Starting Points</a></div></td>
+    </tr><tr>
+      <td><a href="/training/us/paths/gs.html" class="subnav">Getting Started</a></td>
+    </tr><tr>
+      <td><a href="/training/us/user.html" class="subnav">SAS user</a></td>
+    </tr><tr>
+      <td><a href="/training/us/mgr.html" class="subnav">Training manager</a></td>
+    </tr><tr>
+      <td><a href="/training/us/eptoadmin.html" class="subnav">EPTO administrator</a></td>
+    </tr><tr>
+      <td><div id="navbg"><a href="/training/us/find.html" class="nav">Find a Course</a></div></td>
+    </tr><tr>
+      <td><a href="/training/us/regnow.html" class="subnav">Register now!</a></td>
+    </tr><tr>
+      <td><a href="/training/us/curric.html" class="subnav">Course list</a></td>
+    </tr><tr>
+      <td><a href="/training/us/pop.html" class="subnav">Most popular courses</a></td>
+    </tr><tr>
+      <td><a href="/training/map_na.html" class="subnav">Locations</a></td>
+    </tr><tr>
+      <td><a href="/training/us/paths/" class="subnav">Curriculum paths</a></td>
+    </tr><tr>
+      <td><a href="/training/bks/" class="subnav">Courses by Industry Experts</a></td>
+    </tr><tr>
+      <td><a href="/training/us/css/" class="subnav">Training for Six Sigma</a></td>
+    </tr><tr>
+      <td><a href="/training/us/onsite/" class="subnav">On-site training</a></td>
+    </tr><tr>
+      <td><a href="/training/us/discounts.html" class="subnav">Discounts</a></td>
+    </tr><tr>
+      <td><div id="navbg"><a href="/training/elearn/lw/" class="nav">Live Web classes</a></div></td>
+    </tr><tr>
+      <td><div id="navbg"><a href="/training/elearn/catalog/welcome.html" class="nav">Self-paced e-Learning</a></div></td>
+    </tr><tr>
+      <td><div id="navbg"><a href="/certify/" class="nav">Certification</a></div></td>
+    </tr><tr>
+      <td><div id="navbg"><a href="/training/forms/contact_us.html" class="nav">Contact Education</a></div></td>
+    </tr></table>
+    </td>
+  </tr><tr>
+    <td align=right><img src="/training/images/lnav_footer.gif" width=161 height=5 alt="[]"></td>
+  </tr></table>
+  </td>
+
+  <td><a name="top"> </a>      
+  <table width="100%" border=0 cellspacing=0 cellpadding=0><tr>
+    <td height=2 valign=top bgcolor="#FFCC66"><img src="/training/images/spacer.gif" width=1 height=4 alt="[]"></td>
+  </tr><tr>
+    <td valign=top>
+    <table width="100%" border=0 cellspacing=0 cellpadding=0><tr>
+      <td valign=top><IMG src="http://www.sas.com/images/offices/NA/sanfran.gif" width=95 height=194 hspace=5 border=0 alt="San Francisco Office" align=left>
+      <p class="blacksubhead">San Francisco Training Center
+      <p class=fyi><b>Building entrance:</b>
+        <br>120 Kearny St. (between Post &amp; Sutter)
+        <br>Suite 3400
+        <br><br><br>
+        <b>Mailing address:</b>
+        <br><GEO TYPE="US">One Montgomery St.
+        <br>Suite 3400
+        <br>San Francisco, CA 94104</GEO>
+        <br>Phone 415-421-2227
+        <br>Fax 415-421-1213
+      </td>
+    </tr></table>
+    </td>
+  </tr></table>
+  <br>
+  <table width="100%" border=0 cellspacing=0 cellpadding=2><tr>
+    <td bgcolor="#EEEEEE" colspan=2><b>Course Schedule:</b></td>
+  </tr><tr>
+    <td width=20>&nbsp;</td>
+    <td><a href="http://www.sas.com/apps/wtraining2/trainsched.jsp?sort=date&loc=sf&ctry=us">Browse schedule; register online</a></td>
+  </tr><tr>
+    <td width=20>&nbsp;</td>
+    <td><a href="/training/us/schd/sf.html">Print schedule</a><br><br></td>    
+  </tr><tr>
+
+    <td bgcolor="#EEEEEE" colspan=2><b>Class Info:</b></td>
+  </tr><tr>
+    <td width=20>&nbsp;</td>
+    <td>You can check in and pick up your course materials beginning at 8:30
+am. Classes start at 9 am and end by 4 or 5 pm each day.
+<ul>
+<li><b>Photo ID:</b> For security purposes, please be prepared to show a 
+photo ID. You may have to check in at the security desk in the building lobby
+before proceeding to the SAS training facility.
+<li><b>No recording devices:</b> Recording devices, including video and audio,
+are not permitted in the classroom.
+<li><b>Cell phones:</b> Students are asked to turn cell phones and pagers 
+off or to set them to vibrate.
+<li><b>Courtesy phones:</b> Training Center phones are available as a 
+courtesy for our students. Please be considerate and limit your calls to 
+approximately 5 minutes.
+<li><b>Children/guests:</b> Attendees are not allowed to have children or
+guests accompany them in the training center.
+<li><b>Room temperature:</b> Classroom temperatures do fluctuate. Please
+bring a light jacket or sweater to ensure your comfort level.
+</ul>
+</td>
+
+
+
+  </tr><tr>
+    <td bgcolor="#EEEEEE" colspan=2><b>Meals:</b></td>
+  </tr><tr>
+    <td width=20>&nbsp;</td>
+    <td>A continental breakfast is provided each day as part of the course fee.
+Classes will break for lunch around 12 noon; however, <b>lunch is not
+provided</b>.</td>
+  </tr><tr>
+    <td bgcolor="#EEEEEE" colspan=2><b>Smoking:</b></td>
+  </tr><tr>
+    <td width=20>&nbsp;</td>
+    <td>Smoking is prohibited in the training center and in the building. The
+nearest location is at the 120 Kearny Street building entrance.</td>
+  </tr><tr>
+    <td bgcolor="#EEEEEE" colspan=2><b>Emergencies:</b></td>
+  </tr><tr>
+    <td width=20>&nbsp;</td>
+    <td>In case of emergency, your family or coworkers can leave you a message
+during class hours by calling the Training Center Coordinator at
+415-421-2227.
+<br><br>
+In case of inclement weather, please call ahead for information on delayed
+openings or cancellations.</td>
+  </tr><tr>
+    <td bgcolor="#EEEEEE" colspan=2><a name="dir"> </a>
+<b>Transportation:</b></td>
+  </tr><tr>
+    <td width=20>&nbsp;</td>
+    <td>You are responsible for your own transportation to and from the SAS
+training course.  The training center, and the recommended hotels are
+approximately 15 miles from the San Francisco International Airport (SFO).
+The recommended hotels are very close to our training center and offer
+valet parking.  The SAS Training Center is located in the Post Montgomery
+Center at 120 Kearny St.  If entering through the attached Crocker
+Galleria, that entrance is called One Montgomery.
+<br><br>
+<b>Parking:</b><br>
+<table cellspacing=5 border=0><tr>
+<td>White House Garage
+<br>223 Sutter St (Kearny/Grant)
+<br>415-788-7080</td>
+<td valign=top>$18/day before 9am
+<br>$26/day after 9am</td>
+</tr><tr>
+<td>Sutter/Stockton Garage
+<br>444 Stockton (Sutter/Bush)</td>
+<td valign=top>$28/day - all day</td>
+</tr></table>
+<br>
+<b>BART (Bay Area Rapid Transit):</b>
+From either SFO or Oakland International Airport, 
+<a href="http://www.bart.gov">BART</a> is the fastest, easiest, and
+cheapest method of transportation.  The ride from SFO is about 30 minutes
+and the fare is $4.95.  From Oakland, take the AirBart bus ($2 one-way) to
+the BART station for your 30-min. ride into the city &#151; fare
+approximately $3.50.  Exit at <b>Montgomery St</b> for either the SAS
+training center or the Sheraton Palace Hotel.  Look for the One Post Plaza
+exit.  For the office, turn left on Post St and walk one block to Kearny St
+and turn right to 120 Kearny St and check in with the front desk.  Those
+going to the Orchard Hotel first should use the Powell St exit.
+<br><br>
+<b>Ferries:</b>
+Weekday commuter ferry service runs from Sausalito, Larkspur and Tiburon
+to the Ferry Building at the Embarcadero. There are Free Muni Transfer
+Ticket Machines when you exit the Boat Dock Area.  You can catch a Muni Bus
+2 blocks west of the Ferry Building on Market St. then get off at
+Montgomery St. The Blue and Gold Fleet covers Vallejo (415-705-5444).
+<br><br> 
+<b>MUNI Metro:</b>
+Metro cars travel underground beneath Market Street to the BART/MUNI
+Montgomery Station. The Market St. and 2<sup>nd</sup> Street exit brings
+you up at Montgomery St.  The Market St. &amp; 3<sup>rd</sup> St. exit brings
+you up at Kearny St. For information, call 415-673-MUNI.
+<br><br> 
+<b>Golden Gate Transit Bus System:</b>
+Buses from Marin and Sonoma county stop on Battery Street; outbound buses
+leave from the East Bay Terminal. Both stops are within walking distance of
+the 1 Montgomery Building. For information, call 415-923-2000 (San Francisco),
+707-541-2000 (Sonoma County), and 415-455-2000 (Marin County).
+<br><br> 
+<b>CAL-TRAIN and SAMTRANS:</b>
+Train and bus service from San Mateo and Santa Clara counties. The
+CAL-TRAIN terminal is at 4<sup>th</sup> and Townsend Streets. The SAMTRANS buses enter
+the city from different routes, but most lines travel on Mission Street,
+at which point you would get off on New Montgomery and cross over to Market
+Street one block away. For information, call 415-508-6200 (or 800-660-4287
+from Northern California area codes.) 
+<br><br>
+ When you exit the CAL-TRAIN Station, to your right
+(south) is the MUNI/Rail platform. Signs are posted in the station for MUNI
+directions. Fare is $1/one-way. You need to purchase your ticket at
+either of two locations: at the corner of 4<sup>th</sup> and King Street as you exit
+the CAL-TRAIN Station, or across the street at the loading platform for the
+'N Judah' Line. This trolley will travel above ground around the waterfront
+before entering the underground MUNI Embarcadero Station. At this point,
+refer to MUNI METRO instructions listed above.  
+<br><br> 
+<b>SFO Airporter Shuttle:</b>
+There are a number of Airport Shuttle Services you can pick up at the 
+Ground Transportation Island at the airport. <i>Super Shuttle</i> is a 
+good choice as it is a smaller van and will give more direct service. The
+fare is $12. Their stands are located outside the US Air, United, and 
+International Terminal areas. 
+<br><br> 
+<b>Taxi:</b>
+These are always available but the cost can range from $25 to $35, depending
+on traffic. 
+<br><br>
+<b>Driving Directions</b><br>
+From the South/Peninsula/San Jose:
+<ul>
+<li>North on Hwy 101 
+<li>Follow signs to Bay Bridge 
+<li>Exit at 7th Street onto Bryant Street
+<li>Left on 3rd Street 
+<li>3rd Street changes to Kearny Street as you cross at Market Street
+<li>Right on Bush Street  
+<li>Right on Montgomery Street 
+<li>Right on Sutter - parking garage entrance will be on the left mid-block 
+</ul> 
+From the East/Bay Bridge/Hwy 80/Oakland:
+<ul>
+<li>Exit at Fremont Street 
+<li>Stay on Fremont Street and cross Market Street 
+<li>Left on Pine Street 
+<li>Left on Montgomery Street 
+<li>Right on Sutter Street; parking garage entrance (mid-block) will be on the left
+</ul> 
+From the North/Golden Gate Bridge/Hwy 101:
+<ul>
+<li>Stay on Hwy 101 off Golden Gate Bridge onto Lombard Street 
+<li>Right on Van Ness Avenue 
+<li>Left on Clay Street 
+<li>Right on Montgomery Street 
+<li>Right on Sutter Street - parking garage will be on the left mid-block 
+</ul>
+<A href="#top"><img src="/training/images/backtotop.gif" width=72 height=11 align=right hspace=20 border=0 alt="back to top"></a>
+</td>
+  </tr><tr>
+    <td bgcolor="#EEEEEE" colspan=2><a name="hotel"> </a>
+<b>Recommended Hotels:</b></td>
+  </tr><tr>
+    <td width=20>&nbsp;</td>
+    <td>Recommended hotels are listed below. You are responsible 
+  for calling the hotel to make your reservations. When making reservations, please 
+  ask for SAS's corporate rate to receive the rates listed. Rates are 
+  based upon availability and are subject to change without notice. 
+<TABLE border="0" cellspacing=10><TR>
+    <TD valign="top" width="55%">Palace Hotel San Francisco<BR>
+      <GEO TYPE="US">2 New Montgomery Street<BR>
+      San Francisco, CA 94105</GEO><BR>
+      415-546-5049<BR>
+      800-325-3589</TD> 
+    <TD valign="top">$229</TD> 
+  </TR><TR>
+    <TD valign=top>Orchard Hotel<br>
+      <GEO TYPE="US">665 Bush Street<br>
+      San Francisco, CA  94108</GEO><br>
+      888-717-2881</TD> 
+    <TD valign="top">SAS Preferred Rate: $159<br><br>
+      includes European-style breakfast buffet; approx 5 blocks from training center</td>
+  </TR><TR>
+    <TD valign=top><a href="http://www.argenthotel.com">The Argent Hotel</a><br>
+      <GEO TYPE="US">50 Third Street<br>
+      San Francisco, CA  94103</GEO><br>
+      415-974-6400<br>
+      877-222-6699</TD> 
+    <TD valign="top">SAS Preferred Rate: $179<br><br>
+      less than 2 blocks from training center</td>
+</TR></TABLE>
+<A href="#top"><img src="/training/images/backtotop.gif" width=72 height=11 align=right hspace=20 border=0 alt="back to top"></a>
+    </td>
+  </tr></table>
+  </td>
+                  
+  <td width=1>
+  <table width=1 border=0 cellspacing=0 cellpadding=0><tr>
+    <td height="100%" bgcolor="#CCCCCC"><img src="/training/images/spacer.gif" width=1 height="500" alt=""></td>
+  </tr></table>
+  </td>
+  <td width=150>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0><tr>
+    <td width=9 bgcolor="#FFCC66">&nbsp;</td>
+    <td bgcolor="#FFF0D1">
+    <table width="100%" border=0 cellspacing=0 cellpadding=1><tr>
+      <td class="blacksubhead"><nobr>Related Links</nobr></td>
+    </tr></table>
+    </td>
+    <td width=8 align=right valign=bottom bgcolor="#FFF0D1"><img src="/training/images/rhtab.gif" width=8 height=10></td>
+  </tr></table>    
+
+
+
+  <table width="100%" border=0 cellspacing=2 cellpadding=2><tr>
+    <td width=16><a href="http://www.sas.com/apps/wtraining2/trainsched.jsp?sort=date&loc=sf&ctry=us"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="http://www.sas.com/apps/wtraining2/trainsched.jsp?sort=date&loc=sf&ctry=us">View schedule</a></td>
+  </tr><tr>
+    <td width=16><a href="/training/us/schd/sf.html"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/us/schd/sf.html">Print schedule</a></td>
+  </tr><tr>
+    <td width=16><a href="/training/fyi/sf.html#dir"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/fyi/sf.html#dir">Directions</a></td>
+  </tr><tr>
+    <td width=16><a href="/training/fyi/sf_map.pdf"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/fyi/sf_map.pdf">Map</a></td>
+  </tr><tr>
+    <td width=16><a href="/training/fyi/sf.html#hotel"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/fyi/sf.html#hotel">Hotels</a></td>
+  </tr></table>                             
+  <table width="100%" border=0 cellspacing=0 cellpadding=0><tr>
+    <td width=9 bgcolor="#FFCC66">&nbsp;</td>
+    <td bgcolor="#FFF0D1">
+    <table width="100%" border=0 cellspacing=0 cellpadding=1><tr>
+      <td class="blacksubhead">Hot Topics</td>
+    </tr></table>
+    </td>
+    <td width=8 align=right valign=bottom bgcolor="#FFF0D1"><img src="/training/images/rhtab.gif" width=8 height=10></td>
+  </tr></table>    
+  <table width="100%" border=0 cellspacing=2 cellpadding=2><tr>
+    <td width=16><a href="/training/analytics/index.html?hot"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/analytics/index.html?hot">Analytics training</a></td>
+  </tr><tr>
+    <td width=16><a href="/training/bi/index.html?hot"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/bi/index.html?hot">Business Intelligence training</a></td>
+  </tr><tr>
+    <td width=16><a href="/training/us/sas9.html?hot"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/us/sas9.html?hot">SAS 9 training</a></td>
+  </tr></table>
+
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0><tr>
+    <td width="9" bgcolor="#FFCC66">&nbsp;</td>
+    <td bgcolor="#FFF0D1">
+    <table width="100%" border=0 cellspacing=0 cellpadding=1><tr>
+      <td class="blacksubhead">Events</td>
+    </tr></table>
+    </td>
+    <td width=8 align=right valign=bottom bgcolor="#FFF0D1"><img src="/training/images/rhtab.gif" width=8 height=10 alt="[]"></td>
+  </tr></table>      
+  <table width="100%" border=0 cellspacing=2 cellpadding=2><tr>
+    <td width=16 valign=top><a href="http://www.sas.com/events/dmconf/"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="http://www.sas.com/events/dmconf/">M2006</a> (Oct 23-24; Las Vegas, NV)</td>
+  </tr><tr>
+<!--
+    <td width=16 valign=top><a href="/training/sugi/"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/sugi/">Training at SUGI</a><br>San Francisco, CA</td>
+  </tr><tr>
+    <td width=16 valign=top><a href="http://www.sas.com/events/fx/"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="http://www.sas.com/events/fx/">F2006 Business Forecasting Conference</a> (Jun 5-6; Cary, NC)</td>
+  </tr><tr>
+    <td width=16 valign=top><a href="/training/jmp/"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/jmp/">JMP User Conference</a> (Jun 20-21; Cary, NC)</td>
+  </tr><tr>
+-->
+    <td width=16 valign=top><a href="/training/bks/als/"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0 alt="[]"></a></td>
+    <td class="newstext"><a href="/training/bks/als/">Analytics Lecture Series</a> (Jul 11-Oct 3; Live Web)</td>
+  </tr></table>
+
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0><tr>
+    <td width=9 bgcolor="#FFCC66">&nbsp;</td>
+    <td bgcolor="#FFF0D1">
+    <table width="100%" border=0 cellspacing=0 cellpadding=1><tr>
+      <td class="blacksubhead"><nobr>Keep in Touch</nobr></td>
+    </tr></table>
+    </td>
+    <td width=8 align=right valign=bottom bgcolor="#FFF0D1"><img src="/training/images/rhtab.gif" width=8 height=10></td>
+  </tr></table>      
+  <table width="100%" border=0 cellspacing=2 cellpadding=2><tr>
+    <td width=16><a href="/training/us/catalog.html"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0></a></td>
+    <td class="newstext"><a href="/training/us/catalog.html">Training catalogs</a></td>
+  </tr><tr>
+    <td width=16><a href="/training/news/"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0></a></td>
+    <td class="newstext"><a href="/training/news/">e-newsletter</a></td>
+  </tr><tr>
+    <td width=16><a href="/training/news/"><img src="/training/images/goldarrow.gif" width=16 height=13 border=0></a></td>
+    <td class="newstext"><a href="javascript:feedback()">Was this page helpful?</a></td>
+  </tr></table>      
+
+
+<!--
+  <p align=center><a href="/training/sugi/"><img src="/training/images/sugi_train.gif" width=120 height=120 border=0 alt="SUGI Training"></a>
+-->
+
+</td>
+</tr></table>
+
+
+</div>
+<br>
+
+<br>
+
+
+<center> 
+<hr>
+<img src="/images/global/clear.gif" width="13" height="8" alt="">
+<span class="yllwbar">
+<a href="/search/index.html">Search</a> <font size="2">|</font>
+
+<a href="/contact/intro.html">Contact Us</a> <font size="2">|</font> 
+
+<a href="http://www.sas.com/Copyright.html">Terms of Use &amp; Legal Information</a>
+<font size="2">|</font> <a href="http://www.sas.com/Privacy.html">Privacy Statement</a><br>
+Copyright &copy; 2006 SAS Institute Inc. All Rights Reserved.
+</span>      
+</center>
+
+
+
+<script language="Javascript" src="/lib/itvsasid.js"></script>
+</body>
+</html>
+                       
+
+
+
+
+
+
+
+

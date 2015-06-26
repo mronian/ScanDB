@@ -1,0 +1,100 @@
+<DOC>
+<DOCNO>g00760</DOCNO>
+<DOCHDR>http://www.majorityleader.gov/Contact.asp</DOCHDR>
+
+<script LANGUAGE="JavaScript" SRC="helper/JavaScript/FieldValidator.js"></script>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><LINK rel="stylesheet" type="text/css" href="helper/css/style.css"><title>Majority Leader : Tom Delay</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+				function fwLoadMenus() {
+					if (window.fw_menu_0)
+						return;
+
+					window.fw_menu_0 = new Menu("root",84,16,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#03265b","#1c3b6b");
+					fw_menu_0.addMenuItem("123456789","window.open('#', '_self');");
+					fw_menu_0.hideOnMouseOut=true;
+
+					window.fw_menu_home = new Menu("root",0,0,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_home.hideOnMouseOut=true;
+
+					window.fw_menu_news = new Menu("root",160,16,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_news.addMenuItem("Releases","window.open('News.asp?Desc=Releases&FormMode=List&ID=1', '_self');");
+					fw_menu_news.addMenuItem("Articles","window.open('News.asp?Desc=Articles&FormMode=List&ID=2', '_self');");
+					fw_menu_news.addMenuItem("Speeches","window.open('News.asp?Desc=Speeches&FormMode=List&ID=3', '_self');");
+					fw_menu_news.hideOnMouseOut=true;
+
+					window.fw_menu_calendar = new Menu("root",160,16,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_calendar.hideOnMouseOut=true;
+
+					window.fw_menu_floorreport = new Menu("root",160,16,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_floorreport.addMenuItem("Daily Floor Report","window.open('DailyFloorReport.asp', '_self');");
+					fw_menu_floorreport.addMenuItem("Weekly Floor Report","window.open('WeeklyFloorReport.asp', '_self');");
+					fw_menu_floorreport.addMenuItem("Wrap up Report","window.open('WrapUp.asp', '_self');");
+					fw_menu_floorreport.hideOnMouseOut=true;
+
+					window.fw_menu_resources = new Menu("root",0,0,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_resources.hideOnMouseOut=true;
+
+					window.fw_menu_leaderissues = new Menu("root",0,0,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_leaderissues.hideOnMouseOut=true;
+
+					window.fw_menu_about = new Menu("root",0,0,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_about.hideOnMouseOut=true;
+
+					window.fw_menu_contact = new Menu("root",160,0,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_contact.addMenuItem("Contact Information","window.open('Contact.asp', '_self');");
+					fw_menu_contact.addMenuItem("Send a message","window.open('CONTACT.ASP?a=form', '_self');");
+					fw_menu_contact.hideOnMouseOut=true;
+
+					window.fw_menu_search = new Menu("root",0,0,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_search.hideOnMouseOut=true;
+
+					window.fw_menu_emailUpdates = new Menu("root",160,16,"Verdana, Arial, Helvetica, sans-serif",9,"#ffffff","#ffffff","#000000","#1c3b6b");
+					fw_menu_emailUpdates.addMenuItem("Subscribe","window.open('EmailUpdates.asp', '_self');");
+					fw_menu_emailUpdates.addMenuItem("Unsubscribe","window.open('Unsubscribe.asp', '_self');");
+					fw_menu_emailUpdates.hideOnMouseOut=true;
+
+					fw_menu_emailUpdates.writeMenus();
+				}
+</script>		<script language="JavaScript1.2" src="helper/javascript/fw_menu.js"></script>
+<link href="images/otherlinks.css" rel="stylesheet" type="text/css"></head><body background="images/background.gif" link="132F4F" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><script language="JavaScript1.2">fwLoadMenus();</script>
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" valign="TOP"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" background="images/mleader_index_topback2.jpg"> <table width="750" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top"><img src="http://majorityleader.gov/media/photos/mleader_index_headr1.jpg" width="750" height="116"></td></tr><tr><td><a href="index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('home','','images/mleader_index_nhome2.gif',0)"><img name="home" border="0" src="images/mleader_index_nhome.gif" width="38" height="25" alt="home"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"><a href="news.asp" onMouseOut="FW_startTimeout();MM_swapImgRestore()" onMouseOver="window.FW_showMenu(window.fw_menu_news,39,140);MM_swapImage('news','','images/mleader_index_nnews2.gif',0)"><img name="news" border="0" src="images/mleader_index_nnews.gif" width="35" height="25" alt="news"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"><a href="calendar.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('calendar','','images/mleader_index_nhcalendar2.gif',0)"><img name="calendar" border="0" src="images/mleader_index_nhcalendar.gif" width="87" height="25" alt="calendar"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"><a href="Flooraction.asp" onMouseOut="FW_startTimeout();MM_swapImgRestore()" onMouseOver="window.FW_showMenu(window.fw_menu_floorreport,161,140);MM_swapImage('floorreport','','images/mleader_index_nflooraction2.gif',0)"><img name="floorreport" border="0" src="images/mleader_index_nflooraction.gif" width="66" height="25" alt="floorreport"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"><a href="Resources.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('resources','','images/mleader_index_nlegresource2.gif',0)"><img name="resources" border="0" src="images/mleader_index_nlegresource.gif" width="112" height="25" alt="resources"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"><a href="issues.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('leaderissues','','images/mleader_index_nlissues2.gif',0)"><img name="leaderissues" border="0" src="images/mleader_index_nlissues.gif" width="76" height="25" alt="leaderissues"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"><a href="about.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('about','','images/mleader_index_naboutTD2.gif',0)"><img name="about" border="0" src="images/mleader_index_naboutTD.gif" width="92" height="25" alt="about"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"><a href="contact.asp" onMouseOut="FW_startTimeout();MM_swapImgRestore()" onMouseOver="window.FW_showMenu(window.fw_menu_contact,511,140);MM_swapImage('contact','','images/mleader_index_ncontact2.gif',0)"><img name="contact" border="0" src="images/mleader_index_ncontact.gif" width="70" height="25" alt="contact"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"><a href="Search.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('search','','images/mleader_index_nsearch2.gif',0)"><img name="search" border="0" src="images/mleader_index_nsearch.gif" width="44" height="25" alt="search"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"><a href="EmailUpdates.asp" onMouseOut="FW_startTimeout();MM_swapImgRestore()" onMouseOver="window.FW_showMenu(window.fw_menu_emailUpdates,627,140);MM_swapImage('emailUpdates','','images/mleader_index_nemail2.gif',0)"><img name="emailUpdates" border="0" src="images/mleader_index_nemail.gif" width="82" height="25" alt="emailUpdates"></a><img alt='' src="images/mleader_index_nline.gif" width="1" height="25"></td></tr><tr><td align="left" valign="top"><img src="images/mleader_index_headr2.jpg"></td></tr><tr><td align="left" valign="top"><img src="images/mleader_index_r4_c1.gif" width="750" height="8"></td></tr></table> </td></tr><tr><td align="left" valign="top" background="images/mleader_back_back.gif"><table width="750" border="0" cellspacing="0" cellpadding="0"><tr align="left" valign="top"><td width="580"><table border="0" cellpadding="0" cellspacing="0" background="images/mleader_index_r10_c9.jpg"><tr align="left" valign="top"><td rowspan="2" background="images/mleader_index_r6_c1.jpg"><img src="images/mleader_back_r5_c1.gif" width="15" height="29"></td><td><img src="images/mleader_back_hcontact2.gif" width="558" height="29"></td><td width="20" rowspan="2"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif"><img src="images/mleader_back_r5_c23.gif" width="7" height="26"></font></td></tr><tr align="left" valign="top"> <td><p><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif"><P><B><FONT size=3>Congressman Tom DeLay</FONT></B></P><P><STRONG><EM>Majority Leader Office</EM></STRONG><BR>H-107 The Capitol<BR>Washington, DC 20515<BR>p. (202)225-4000<BR>f.&nbsp; (202)225-5117</P><P><STRONG><EM>Congressional Office</EM></STRONG><BR>242 Cannon HOB <BR>Washington, DC 20515 <BR>p. (202)225-5951&nbsp;<BR>f.&nbsp; (202)225-5241<BR><BR><STRONG><EM>District Office <BR></EM></STRONG>10701 Corporate Drive ,Suite 118 <BR>Stafford, TX 77477 <BR>p.&nbsp;(281)240-3700 <BR>f.&nbsp; (281)240-2959<BR><BR></P></td></tr></table></td><td background="images/mleader_back_rtback.gif"> <table width="170" border="0" cellspacing="0" cellpadding="0"><tr align="left" valign="top"><td rowspan="2"><img src="images/mleader_back_r5_c24.gif" width="6" height="26"></td><td height="27"><img src="images/mleader_back_hquicklinks.gif" width="151" height="26"></td><td rowspan="2" background="images/mleader_back_r8_c34.jpg"><img src="images/mleader_back_r5_c33.gif" width="13" height="26"></td></tr><tr align="left" valign="top"> <td background="images/F2F2DF.jpg"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">	     <strong><font color="132F4F"> Internship Opportunities </font></strong><br> 
+Download the internship application form (pdf).<br> 
+         <a href="http://tomdelay.house.gov/Adobe/intern05.pdf">More>></a><br> 
+</font>         <br> 
+<font size="1" face="Verdana, Arial, Helvetica, sans-serif">	     <strong><font color="132F4F"> 2005 House Calendar (pdf) </font></strong><br> 
+Download a printable version of the 2005 House Calendar<br> 
+         <a href="http://www.majorityleader.gov/media/pdfs/HOUSE%20CALENDAR%202005.pdf">More>></a><br> 
+</font>         <br> 
+<font size="1" face="Verdana, Arial, Helvetica, sans-serif">	     <strong><font color="132F4F"> Inaugural History </font></strong><br> 
+Joint Congressional Committee on Inaugural Ceremonies<br> 
+         <a href="http://inaugural.senate.gov">More>></a><br> 
+</font>         <br> 
+<font size="1" face="Verdana, Arial, Helvetica, sans-serif">	     <strong><font color="132F4F"> Victory In Iraq </font></strong><br> 
+Learn more about our accomplishments in Iraq<br> 
+         <a href="http://www.freedom.gov">More>></a><br> 
+</font>         <br> 
+</td></tr></table><div align="left"></div></td></tr></table></td></tr><tr><td align="left" valign="top" background="images/mleader_index_ftrback.gif"><table width="750" border="0" cellspacing="0" cellpadding="0"><tr align="left" valign="top"><td colspan="5"><img src="images/mleader_back_r12_c1.gif" width="750" height="17"></td></tr><tr align="left" valign="top"> <td><img src="images/mleader_index_r17_c1.gif" width="17" height="7"></td><td><img src="images/mleader_index_r17_c4.gif" width="556" height="7"></td><td><img src="images/mleader_index_r17_c24.gif" width="13" height="7"></td><td><img src="images/mleader_index_r17_c26.gif" width="158" height="7"></td><td><img src="images/mleader_index_r17_c36.gif" width="6" height="7"></td></tr><tr align="left" valign="top"> <td background="images/81803F.jpg" bgcolor="#81803F"> </td><td background="images/81803F.jpg" bgcolor="#81803F"><p><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong>The Office of the House Majority Leader</strong> | H-107 The Capitol| Washington, DC 20515<br>p. (202)225-4000 | f. (202)225-5117</font></p><p><font color="#FFFFFF" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="index.asp" class="otherlinks">home</a> | <a href="news.asp" class="otherlinks">news</a> | <a href="Calendar.asp?ComID=0&month=3&year=2005" class="otherlinks">house calendar</a> | <a href="FloorAction.asp" class="otherlinks">floor action</a> | <a href="Resources.asp" class="otherlinks">legislative resources</a> | <a href="Issues.asp" class="otherlinks">leader issues</a> | <br><a href="About.asp" class="otherlinks">about Tom Delay</a> | <a href="Contact.asp" class="otherlinks">contact information</a> |<a href="Search.asp" class="otherlinks">search</a> | <a href="EmailUpdates.asp" class="otherlinks">email updates</a>| <a href="Privacy.asp" class="otherlinks">privacy policy</a> | <a href="helper/changeview.asp" class="otherlinks">text only version</a></font></p></td><td background="images/mleader_index_r18_c9.gif"><img src="images/mleader_index_r18_c9.gif" width="13" height="14"></td><td background="images/47545A.jpg" bgcolor="#47545A"><table width="158" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="2" align="left" valign="top"><img src="images/mleader_index_hsearch.gif"></td></tr><tr><td colspan="2" align="left" valign="top"><font color="#CCCCCC" size="1" face="Verdana, Arial, Helvetica, sans-serif">Enter a keyword to search this site.</font></td></tr><tr><form method=post action=Search.asp><td width="72" align="left" valign="top"><input name="textfield" name="Keyword" ID="Keyword" type="text" onFocus="Keyword.value=''" value="Keyword(s)" size="12"></td><td width="86" align="left" valign="top"><input type="image" src="images/mleader_index_bgo.gif" width="22" height="22" border="0"></td></form></tr></table></td><td background="images/47545A.jpg" bgcolor="#47545A"> </td></tr></table></td></tr><tr><td align="left" valign="top" background="images/mleader_index_btmlnback.gif"><img src="images/mleader_index_r21_c1.gif" width="750" height="8"></td></tr></table></td></tr></table></body></html>

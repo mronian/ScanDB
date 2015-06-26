@@ -1,0 +1,206 @@
+<DOC>
+<DOCNO>f00448</DOCNO>
+<DOCHDR>http://santorinipizza.com</DOCHDR>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Santorini Pizza &amp; Pasta - Seattle</title>
+
+<!-- META INFO -->
+<meta name="description" content="Santorini Pizza and Pasta in Seattle, WA" />
+<meta name="keywords" content="Santorini, Pizza, Pasta, Seattle, Wedgewood, Wedgwood" />
+<meta name="author" content="Daniel Talsky" />
+
+<link rel="stylesheet" type="text/css" href="css/santorini.css" />
+<script type="text/javascript" src="js/santorini.js"></script>
+</head>
+
+
+<!-- 
+
+***************************************
+  JAVASCRIPT PRELOAD 
+_______________________________________
+
+-->
+<body
+  onLoad="WM_preloadImages('img/nav_gourmet_pizza_over.gif', 'img/nav_pasta_over.gif', 'img/nav_salads_over.gif', 'img/nav_juniors_over.gif', 'img/nav_sandwiches_over.gif', 'img/nav_beverages_over.gif', 'img/nav_welcome_over.gif', 'img/nav_desserts_over.gif')">
+
+<div id="outer">
+<div id="toptile">
+<div id="bottomtile">
+<div id="lefttile">
+<div id="righttile">
+<div id="topleft">
+<div id="topright">
+<div id="bottomleft">
+<div id="bottomright">
+
+<div id="santorinilogo">
+  <img src="img/santorini_logo.gif" width="389" height="150" alt="santorini_logo (11K)" />
+</div>
+
+<div id="sidebar">
+
+  <div>
+    <img src="img/nav_welcome_on.gif" 
+      id="nav_welcome"
+      width="98" height="22" alt="Welcome to Santorini" />
+  </div>
+  <div>
+    <a href="gourmet_pizza.php">
+      <img src="img/nav_gourmet_pizza_off.gif" 
+        id="nav_gourmet_pizza"
+        onMouseOver="WM_imageSwap(nav_gourmet_pizza, 'img/nav_gourmet_pizza_over.gif')" 
+    	  onMouseOut="WM_imageSwap(nav_gourmet_pizza, 'img/nav_gourmet_pizza_off.gif')" 
+        width="155" height="26" alt="Gourmet Pizza" />
+    </a>
+  </div>
+  <div>
+    <a href="pasta.php">
+      <img src="img/nav_pasta_off.gif" 
+        id="nav_pasta"
+        onMouseOver="WM_imageSwap(nav_pasta, 'img/nav_pasta_over.gif')" 
+    	  onMouseOut="WM_imageSwap(nav_pasta, 'img/nav_pasta_off.gif')" 
+        width="67" height="21" alt="Pasta" />
+    </a>
+  </div>
+  <div>
+    <a href="salads.php">
+      <img src="img/nav_salads_off.gif" 
+        id="nav_salads"
+        onMouseOver="WM_imageSwap(nav_salads, 'img/nav_salads_over.gif')" 
+    	  onMouseOut="WM_imageSwap(nav_salads, 'img/nav_salads_off.gif')" 
+        width="71" height="25" alt="Salads" />
+    </a>
+  </div>
+  <div>
+    <a href="sandwiches.php">
+      <img src="img/nav_sandwiches_off.gif" 
+        id="nav_sandwiches"
+        onMouseOver="WM_imageSwap(nav_sandwiches, 'img/nav_sandwiches_over.gif')" 
+    	  onMouseOut="WM_imageSwap(nav_sandwiches, 'img/nav_sandwiches_off.gif')" 
+        width="120" height="23" alt="Sandwiches" />
+    </a>
+  </div>
+  <div>
+    <a href="juniors.php">
+      <img src="img/nav_juniors_off.gif" 
+        id="nav_juniors"
+        onMouseOver="WM_imageSwap(nav_juniors, 'img/nav_juniors_over.gif')" 
+    	  onMouseOut="WM_imageSwap(nav_juniors, 'img/nav_juniors_off.gif')" 
+        width="84" height="26" alt="Juniors" />
+    </a>
+  </div>
+  <div style="margin-bottom: 4px;">
+    <a href="beverages.php">
+      <img src="img/nav_beverages_off.gif" 
+        id="nav_beverages"
+        onMouseOver="WM_imageSwap(nav_beverages, 'img/nav_beverages_over.gif')" 
+    	  onMouseOut="WM_imageSwap(nav_beverages, 'img/nav_beverages_off.gif')" 
+        width="108" height="28" alt="Beverages" />
+    </a>
+  </div>
+  <div>
+    <a href="desserts.php">
+      <img src="img/nav_desserts_off.gif" 
+        id="nav_desserts"
+        onMouseOver="WM_imageSwap(nav_desserts, 'img/nav_desserts_over.gif')" 
+    	  onMouseOut="WM_imageSwap(nav_desserts, 'img/nav_desserts_off.gif')" 
+        width="98" height="22" alt="Desserts" />
+    </a>
+  </div>
+
+</div>
+
+<div id="inner">
+
+  <div id="pagetitle">
+      <img src="img/page_title_home.gif" 
+        width="130" height="42" alt="Welcome to Santorini" />
+  </div><!-- pagetitle -->
+
+  <div id="actualcontent">
+  
+  <div><br />
+  <table style="width: 75%;" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="vertical-align: top;">
+      <h2>Location</h2>
+      <p>
+        <GEO TYPE="US">11001 35th Avenue NE <br />
+        Seattle, WA 98125</GEO> <br />
+        206.440.8499 <br />
+      </p>
+      
+      <p style="font-size: 90%;">
+        <a href="http://www.mapquest.com/maps/map.adp?searchtype=address&address=11001+35th+Avenue+NE&city=seattle&state=wa">
+          Map
+        </a>
+      </p>
+    </td>
+    
+    <td style="vertical-align: top;">
+      <h2>Hours</h2>
+      <p>
+        Monday - Saturday <br />
+        4 pm - 10 pm
+      </p>
+    </td>
+   </tr></table>
+  </div>
+
+  <h2>About Us</h2>
+
+  <p>
+    Santorini Pizza &amp; Pasta is a family restaurant located in the 
+    Meadowbrook - Wedgwood neighborhood of Seattle. 
+    Since 1994, we have specialized in serving Gourmet Pizza, Pasta &amp; Salads 
+    along with a different dinner special each night. Visit and have dinner 
+    with us or call ahead for orders to go.         
+    We hope to see you soon!
+  </p> 
+
+  <ul>
+     <li>We are a non-smoking establishment</li>
+     <li>Reservations accepted for parties of 6 or more people</li>
+     <li>Catering available for your next party or event</li>
+     <li>We offer Gift Certificates and accept most major credit cards</li>     
+  </ul>
+
+  <p>
+    For more details, please call us at 206.440.8499, 
+    or send one of us an e-mail at
+    <a href="mailto:george@santorinipizza.com">george@santorinipizza.com</a> 
+    or 
+    <a href="mailto:demi@santorinipizza.com">demi@santorinipizza.com</a>.
+  </p>
+
+  </div><!-- Actual Content -->
+
+</div><!-- inner -->
+
+<div id="copyleft-divider-hack">
+&nbsp;<br />&nbsp;
+</div>
+
+<div id="copyleft">
+  &copy; 2004 Santorini Pizza &amp; Pasta, Inc.  All rights reserved.<br />
+  <GEO TYPE="US">11001 35th Avenue NE -
+    Seattle, WA 98125</GEO> -
+    206.440.8499
+</div>
+
+</div><!-- bottomright -->
+</div><!-- bottomleft -->
+</div><!-- topright -->
+</div><!-- topleft -->
+</div><!-- righttile -->
+</div><!-- lefttile -->
+</div><!-- bottomtile -->
+</div><!-- toptile -->
+</div><!-- outer -->
+
+</body>
+</html>

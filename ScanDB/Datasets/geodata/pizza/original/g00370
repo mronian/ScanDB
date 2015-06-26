@@ -1,0 +1,623 @@
+<DOC>
+<DOCNO>g00370</DOCNO>
+<DOCHDR>http://www.laszlosystems.com/developers/community/events/event_060606.php</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Laszlo - Pizza, Beer and AJAX (NY)</title>
+<LINK REL="SHORTCUT ICON" HREF="http://www.laszlosystems.com/favicon.ico">
+<link rel="icon"  href="http://www.laszlosystems.com/favicon.ico">
+
+<link href="/includes/styles.css" rel="stylesheet" type="text/css">
+<script>
+<!-- 
+	var urlPrefix = "../../../";
+// -->
+</script>
+<script src="../../../includes/script.js"></script>
+</head>
+
+<body background="../../../img/g_background.gif" bgcolor="#FFFFFF" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">	
+<tr align="left" valign="top">
+	<td width="120"><a href="../../../"><img src="../../../img/g_head_logo.gif" width="120" height="120" alt="Laszlo Systems" border="0"></a></td>
+	<td width="100%">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr align="left" valign="top"><!-- nav row -->
+			<td width="680">
+				<table width="680" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td><a href="../../../products/" onmouseover="rollover('g_head_nav_products', 'g_head_nav_products_over');" onmouseout="rollover('g_head_nav_products', 'g_head_nav_products_off');"><img src="../../../img/g_head_nav_products_off.gif" width="86" height="31" alt="Products" name="g_head_nav_products" border="0"></a></td>
+					<td><a href="../../../services/" onmouseover="rollover('g_head_nav_services', 'g_head_nav_services_over');" onmouseout="rollover('g_head_nav_services', 'g_head_nav_services_off');"><img src="../../../img/g_head_nav_services_off.gif" width="78" height="31" alt="Services" name="g_head_nav_services" border="0"></a></td>
+                    
+					
+                    
+                    <td><a href="../../../demos/" onmouseover="rollover('g_head_nav_demos', 'g_head_nav_demos_over');" onmouseout="rollover('g_head_nav_demos', 'g_head_nav_demos_off');"><img src="../../../img/g_head_nav_demos_off.gif" width="65" height="31" alt="Demos" name="g_head_nav_demos" border="0"></a></td>
+					
+                    
+                    
+                    <td><a href="../../../customers/" onmouseover="rollover('g_head_nav_customers', 'g_head_nav_customers_over');" onmouseout="rollover('g_head_nav_customers', 'g_head_nav_customers_off');"><img src="../../../img/g_head_nav_customers_off.gif" width="95" height="31" alt="Customers" name="g_head_nav_customers" border="0"></a></td>
+					<td><a href="../../../developers/" onmouseover="rollover('g_head_nav_developers', 'g_head_nav_developers_over');" onmouseout="rollover('g_head_nav_developers', 'g_head_nav_developers_on');"><img src="../../../img/g_head_nav_developers_on.gif" width="97" height="31" alt="Developers" name="g_head_nav_developers" border="0"></a></td>
+					<td><a href="../../../partners/" onmouseover="rollover('g_head_nav_partners', 'g_head_nav_partners_over');" onmouseout="rollover('g_head_nav_partners', 'g_head_nav_partners_off');"><img src="../../../img/g_head_nav_partners_off.gif" width="84" height="31" alt="Partners" name="g_head_nav_partners" border="0"></a></td>
+					<td><a href="../../../company/" onmouseover="rollover('g_head_nav_company', 'g_head_nav_company_over');" onmouseout="rollover('g_head_nav_company', 'g_head_nav_company_off');"><img src="../../../img/g_head_nav_company_off.gif" width="82" height="31" alt="Company" name="g_head_nav_company" border="0"></a></td>
+                    <!-- bug 
+					<td><a href="/partners/support/demos/"><img src="/img/h_h_demosbug.gif" width="157" height="31" alt="Demos" border="0"></a></td>
+                    -->
+					<!-- Make the following width set the whole table to total 680px -->
+					<td><img src="../../../img/g_head_nav_background.gif" alt="" width="103" height="31" border="0"></a></td>
+				</tr>
+				</table>
+			</td>
+			<td width="100%" background="../../../img/g_head_nav_background.gif"><img src="../../../img/spacer.gif" alt="" width="1" height="1" border="0"></td>
+		</tr>
+		<tr><!-- persistent nav (search) row -->
+			<td width="680" align="right" background="../../../img/g_head_persistent_background_left.jpg">
+			<table border="0" cellspacing="0" cellpadding="0">
+			<form method="get" action="../../../search/">
+			<input type="hidden" name="c" value="notdev">
+			<tr>
+				<td><a href="../../../developers/download/"><img src="../../../img/g_head_persistent_downloadbutton.gif" width="69" height="19" alt="Download" border="0"></a></td>
+				<td><img src="../../../img/g_head_persistent_separator.gif" width="7" height="19" alt="Contact Us" border="0"></td>
+				<td><a href="../../../company/contact/"><img src="../../../img/g_head_persistent_contactbutton.gif" width="71" height="19" alt="" border="0"></a></td>
+				<td><img src="../../../img/spacer.gif" alt="" width="4" height="1" border="0"></td>
+				<td><font face="Verdana, Geneva, Arial, Helvetica, sans-serif" size="2"><input type="text" name="w" size="8" style="font: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 9px; width: 90px;"></td>
+				<td><img src="../../../img/spacer.gif" alt="" width="4" height="1" border="0"></td>
+				<td><input type="image" src="../../../img/g_head_persistent_searchbutton.gif" width="47" height="19" border="0" alt="Search"></td>
+			</tr>
+			</form>
+			</table>
+			</td>
+			<td width="100%" background="../../../img/g_head_persistent_background.gif"><img src="../../../img/spacer.gif" alt="" width="1" height="29" border="0"></td>
+		</tr>
+		<tr align="left"><!-- flair row -->
+			<td>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="14"><img src="../../../img/g_head_flairrow_left.gif" width="14" height="39" alt="" border="0"></td>
+					<td width="100%" background="../../../img/g_head_flairrow_background.gif"><img src="../../../img/g_head_flair_developers.jpg" width="266" height="39" alt="Developers" border="0"></td>
+				</tr>
+				</table>
+			</td>
+			<td width="100%" background="../../../img/g_head_flairrow_background.gif"><img src="../../../img/spacer.gif" alt="Developers" width="1" height="1" border="0"></td>
+		</tr>
+		<tr align="left"><!-- mousetrail row -->
+			<td>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="14"><img src="../../../img/g_head_mousetrail_left.gif" width="15" height="21" alt="" border="0"></td>
+					<td width="100%" background="../../../img/g_head_mousetrail_background.gif"><!-- Swishcommand noindex --><table width="665" border="0" cellspacing="0" cellpadding="0" background="../../../img/spacer.gif"><tr align="left"><td width="10"><img src="../../../img/spacer.gif" width="10" height="1" alt="" border="0"></td><td><span class="mousetrailHome"><a href="../../../">Home</a></span><span class="mousetrail">&gt;</span><span class="mousetrail"><a href="../../../developers/">Developers</a></span><span class="mousetrail">&gt;</span><span class="mousetrail"><a href="../../../developers/community/">Community</a></span><span class="mousetrail">&gt;</span><span class="mousetrail"><a href="../../../developers/community/events/">Events</a></span><span class="mousetrail">&gt;</span><span class="mousetrailCurrent">Pizza, Beer and AJAX (NY)</span></td><td align="right" width="250"><script><!-- 
+                    document.write( getCurrentDate() );
+                // --></script></td></tr></table><!-- Swishcommand index --></td>
+				</tr>
+				</table>
+			</td>
+			<td background="../../../img/g_head_mousetrail_background.gif"><img src="../../../img/spacer.gif" alt="" width="1" height="21" border="0"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+	
+</table>
+
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+	<tr><!-- spacer row -->
+		<td width="134" bgcolor="#000066"><img src="../../../img/spacer.gif" width="134" height="1" alt="" border="0"></td>
+		<td width="1"><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+		<td width="665"><img src="../../../img/spacer.gif" width="665" height="1" alt="" border="0"></td>
+	</tr>
+	<tr valign="top">
+		<td><!-- side nav -->
+			<table width="134" border="0" cellspacing="0" cellpadding="0">
+				<tr >
+					<td width="12"><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+					<td width="115"><img src="../../../img/spacer.gif" width="115" height="1" alt="" border="0"></td>
+				</tr>
+                <tr >
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><span class="sideNavSection"><a href="../../../developers"><!-- Swishcommand noindex -->Developers<!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif"  width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr><!-- dark dotted line -->
+                    <td colspan="2"><img src="../../../img/g_sidenav_dotline_dark.gif" width="134" height="1" alt="" border="0"></td>
+                </tr>
+                <tr >
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="7" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><span class="sideNavMain"><a href="../../learn/"><!-- Swishcommand noindex -->Learn OpenLaszlo<!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr><!-- dark dotted line -->
+                    <td colspan="2"><img src="../../../img/g_sidenav_dotline_dark.gif" width="134" height="1" alt="" border="0"></td>
+                </tr>
+                <tr >
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="7" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><span class="sideNavMain"><a href="../../download/"><!-- Swishcommand noindex -->Download OpenLaszlo<!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr><!-- dark dotted line -->
+                    <td colspan="2"><img src="../../../img/g_sidenav_dotline_dark.gif" width="134" height="1" alt="" border="0"></td>
+                </tr>
+                <tr >
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="7" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><span class="sideNavMain"><a href="../../community/"><!-- Swishcommand noindex -->Community<!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr><!-- light dotted line -->
+                    <td colspan="2"><img src="../../../img/g_sidenav_dotline_light.gif" width="134" height="1" alt="" border="0"></td>
+                </tr>
+                <tr >
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="7" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><span class="sideNavSub"><a href="../../community/login.php"><!-- Swishcommand noindex --><div class="indentTen">Developer Account Sign Up</div><!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr><!-- light dotted line -->
+                    <td colspan="2"><img src="../../../img/g_sidenav_dotline_light.gif" width="134" height="1" alt="" border="0"></td>
+                </tr>
+                <tr >
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="7" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><span class="sideNavSub"><a href="../../community/forums/"><!-- Swishcommand noindex --><div class="indentTen">Forums</div><!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr><!-- light dotted line -->
+                    <td colspan="2"><img src="../../../img/g_sidenav_dotline_light.gif" width="134" height="1" alt="" border="0"></td>
+                </tr>
+                <tr >
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="7" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><span class="sideNavSub"><a href="../../community/bugs/"><!-- Swishcommand noindex --><div class="indentTen">Bug reporting</div><!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr><!-- light dotted line -->
+                    <td colspan="2"><img src="../../../img/g_sidenav_dotline_light.gif" width="134" height="1" alt="" border="0"></td>
+                </tr>
+                <tr >
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="7" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><span class="sideNavSub"><a href="../../community/usergroup.php"><!-- Swishcommand noindex --><div class="indentTen">User Group</div><!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr><!-- light dotted line -->
+                    <td colspan="2"><img src="../../../img/g_sidenav_dotline_light.gif" width="134" height="1" alt="" border="0"></td>
+                </tr>
+                <tr >
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="7" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><span class="sideNavSub"><a href="../../community/articles/devnews_archive.php"><!-- Swishcommand noindex --><div class="indentTen">News Archive</div><!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr><!-- light dotted line -->
+                    <td colspan="2"><img src="../../../img/g_sidenav_dotline_light.gif" width="134" height="1" alt="" border="0"></td>
+                </tr>
+                <tr bgcolor="#C6CAE4">
+                    <td><img src="../../../img/spacer.gif" width="1" height="11" alt="" border="0"></td>
+                    <td>
+                        <table width="122" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="7" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="100" height="6" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="3" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/spacer.gif" width="12" height="1" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><span class="sideNavSub"><a href="../../community/events/"><!-- Swishcommand noindex --><div class="indentTen">Events</div><!-- Swishcommand index --></a></span></td>
+                                <td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+                                <td><img src="../../../img/g_sidenav_arrow.gif" width="12" height="11" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="../../../img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                            </tr>
+                        </table></td>
+                </tr>
+				<tr><!-- dark dotted line -->
+					<td colspan="2"><img src="../../../img/g_sidenav_dotline_dark.gif" width="134" height="1" alt="" border="0"></td>
+				</tr>
+			</table>
+		</td>
+		<td><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+		<td valign="top"><!-- main content -->
+		
+<!-- <img src="../../../img/spacer.gif" width="2" height="2" alt="" border="1"> -->
+
+
+
+
+<table width="665" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td><img src="../../../img/spacer.gif" width="1" height="5" alt="" border="0"></td>
+	</tr>
+	<form method="get" action="../../../developers/search/">
+	<tr>
+		<td align="right"><img src="../../../img/d_c_devsearch.gif" alt="Developers Search" border="0" align="top"><select name="c" style="font: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 9px;">
+	<option value="developer,docs">All Developers</option>
+	<option value="docs">All Docs</option>
+	<option value="lzxref">LZX Reference</option>
+</select><span class="devSearch">
+for
+</span><input type="text" name="w" size="8" style="font: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 9px; width: 90px;"> <input type="image" src="../../../img/d_content_search_gobutton.gif" width="48" height="18" align="absmiddle" alt="Search" border="0">		</td>
+	</tr>
+	</form>
+</table>
+
+
+
+<img src="../../../img/spacer.gif" width="1" height="8" alt="" border="0"><br>			<!-- left margin -->
+			<table width="665" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="20"><img src="../../../img/spacer.gif" width="20" height="1" alt="" border="0"></td>
+					<td width="635">
+<script>
+function checkMailForm() {
+    //alert(document.signUpForm.customVal2.checked);
+    if (document.signUpForm.customVal1.checked == true)
+    {
+        document.signUpForm.customVal1.value = "Yes";
+        if (document.signUpForm.customVal2.value == "")
+        {
+            alert("Please fill out the Presentation Topic field.");
+            return false;
+        }
+    }
+    else if (!document.signUpForm.customVal1.checked);
+    {
+        //alert(document.signUpForm.customVal1.checked);
+        document.signUpForm.customVal1.value = "Yes, Please";
+    }
+    if ( document.signUpForm.fullName.value == '' ||
+        document.signUpForm.email.value == '') 
+    {
+        alert("Please fill out all the fields in bold.");
+        return false;
+    } else {
+        return true;
+    }
+}
+</script>
+
+<!-- ====================== CONTENT AREA ======================= -->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+    <tr>
+        <td><img src="../../../img/spacer.gif" width="201" height="1" alt="" border="0"></td>
+        <td><img src="../../../img/spacer.gif" width="16" height="1" alt="" border="0"></td>
+        <td><img src="../../../img/spacer.gif" width="201" height="1" alt="" border="0"></td>
+        <td><img src="../../../img/spacer.gif" width="16" height="1" alt="" border="0"></td>
+        <td><img src="../../../img/spacer.gif" width="201" height="1" alt="" border="0"></td>
+    </tr>
+    <tr valign="top">
+        <td colspan="3"><!-- Columns 1 and 2 -->
+<!-- ========================== Column 1 =========================== -->
+<img src="../../..//img/spacer.gif" width="1" height="12" alt="" border="0"><br>
+    <h2>Pizza, Beer and AJAX</h2>
+
+        <p>Please join Laszlo Systems in New York for an evening of pizza, beer and OpenLaszlo AJAX development on <b>Tuesday, June 6th, 2006</b>. We are going to be previewing an exciting new DHTML runtime for the OpenLaszlo platform, enabling you to run applications in a browser without the Flash plug-in.</p>
+
+
+    
+
+    <h3>Who Should Attend</h3>
+
+    <p>LZX newbies and seasoned Laszlo veterans alike are welcome.</p>
+
+    <h3>Where and When</h3>
+
+    <p><a href="http://www.theladders.com/" target="_blank">http://www.theladders.com/</a><br />
+    137 Varick Street, 3rd Floor<br />
+    New York, NY 10013<br />
+    646-453-1800<br />
+    <br />
+    (<a href="http://maps.google.com/maps?q=137+Varick+St,+New+York,+NY+10013&hl=en&om=1" target="_blank">Click here for directions.</a>)</p>
+
+    <p><b>Tuesday, June 6th, 2006</b><br />
+    7:00pm - 9:00pm</p>
+
+    <p><a href="./">Other events hosted by Laszlo Systems, Inc.</a></p>
+
+    <h3>Agenda</h3>
+
+    <table cellpadding="2" cellspacing="5" border="0">
+        <tr valign="top">
+            <td width="80"><p><b>7:00 - 7:30</b></p></td>
+            <td><p>Welcome Drinks</p></td>
+        </tr>
+        <tr valign="top">
+            <td><p><b>7:30 - 7:35</b></p></td>
+            <td><p>Introduction (Founder and CTO, Laszlo Systems)</p></td>
+        </tr>
+        <tr valign="top">
+            <td><p><b>7:35 - 7:45</b></p></td>
+            <td><p>Showcase DHTML Runtime (Jim Grandy, Director OpenLaszlo, Laszlo Systems)</p></td>
+        </tr>
+        <tr valign="top">
+            <td><p><b>7:45 - 8:30</b></p></td>
+            <td><p>Community Demos (10 minute slots Presenters TBD - see below)</p></td>
+        </tr>
+        <tr valign="top">
+            <td><p><b>8:30 - 9:00</b></p></td>
+            <td><p>Networking</p></td>
+        </tr>
+    </table>
+      
+
+    <h3>We're Looking for Presenters!</h3>
+
+    <p>OpenLaszlo Developers: We'd love to catch a glimpse at your latest applications and projects.  Please plan on describing how you overcame development challenges or incorporated unique problem solving solutions along the way.  Each presentation should be technical in nature with a demo included.  10 minute slots will be available from 7:45 pm - onwards, and there will be a projector on site.</p>
+
+    <h3>To Sign Up</h3>
+
+    <p>Please fill out the form at the top of the page to let us know if you're planning to attend. If you are interested in presenting, please let us know via the form.</p>
+
+    <h3>Cost</h3>
+
+    <p>Free. Pizza, beer and non-alcoholic drinks will be provided by Laszlo Systems.</p>
+
+    </td>
+        <td>&nbsp;</td>
+        <td><!-- column 3 -->
+ 
+<!-- ========================== Column 2 =========================== -->
+        <img src="../../..//img/spacer.gif" width="1" height="20" alt="" border="0">
+
+        <table width="177" border="0" cellspacing="0" cellpadding="0">
+        <!-- Standard Laszlo Table -->
+        <!-- Set the width of the spacer to width - 24 -->
+        <tr><!-- Title bar -->
+            <td width="1"><img src="../../../img/g_table_title_corner_top_left.gif" width="1" height="6" alt="" border="0"></td>
+            <td width="6"><img src="../../../img/g_table_title_top_left.gif" width="8" height="6" alt="" border="0"></td>
+            <td background="../../../img/g_table_title_top_repeater.gif" width="177"><img src="../../../img/spacer.gif" width="177" height="1" alt="" border="0"></td>
+            <td width="6"><img src="../../../img/g_table_title_top_right.gif" width="8" height="6" alt="" border="0"></td>
+            <td width="1"><img src="../../../img/g_table_title_corner_top_right.gif" width="1" height="6" alt="" border="0"></td>
+        </tr>
+        <tr valign="top">
+            <td colspan="2"><img src="../../../img/g_table_title_left.gif" width="9" height="15" alt="" border="0"></td>        
+            <td background="../../../img/g_table_title_background.gif"> <span class="tableTitle">Sign Me Up!</span></td>
+            <td colspan="2"><img src="../../../img/g_table_title_right.gif" width="9" height="15" alt="" border="0"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><img src="../../../img/g_table_title_corner_bottom_left.gif" width="9" height="3" alt="" border="0"></td>
+            <td background="../../../img/g_table_title_bottom_repeater.gif"><img src="../../../img/spacer.gif" width="1" height="3" alt="" border="0"></td>
+            <td colspan="2"><img src="../../../img/g_table_title_corner_bottom_right.gif" width="9" height="3" alt="" border="0"></td>
+        </tr>
+        <tr><!-- Body -->
+            <td bgcolor="#000000"><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+            <td colspan="3" bgcolor="#ffffff">
+                <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                    <tr><td>
+                
+    				<!-- signup form -->
+    				<table border="0" cellpadding="4" cellspacing="1" width="100%">
+                    <form name="signUpForm" action="/forms/subscribe.php" method="post" onSubmit="return checkMailForm(this);">
+                    <input type="hidden" name="l" value="34" />
+    				
+    				<tr valign="top">
+    					<td>
+                        <span class="regular"><b>Name*:</b><span><br>
+                        <span class="regular"><input type="text" name="fullName" size="9" style="width: 144px;"></span><br>
+                        </td>
+    				</tr>
+    				<tr valign="top">
+    					<td>
+                        <span class="regular"><b>Email*:</b><span><br>
+                        <span class="regular"><input type="text" name="email" size="9" style="width: 144px;" /></span><br>
+    					</td>
+    				</tr>
+    				<tr valign="top">
+    					<td>
+                        <input type="checkbox" name="customVal1" size="9" /> <span class="regular">I'd like to present (Optional)<span>
+    					</td>
+    				</tr>
+    				<tr valign="top">
+    					<td>
+                        <span class="regular">Presentation Topic:<span><br>
+                        <span class="regular"><input type="text" name="customVal2" size="9" style="width: 144px;" /></span><br>
+    					</td>
+    				</tr>
+    				<tr>
+                        <td align="center">
+    						<input type="submit" class="bginput" value="Sign Me Up!">
+                        </td>
+    				</tr>
+    				
+    				</form>
+    				</table>
+    				<!-- end signup form -->
+
+                    </td></tr>
+                </table>
+
+                                
+                </td>
+                <td bgcolor="#000000"><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+            </tr>
+            <tr><!-- Bottom line -->
+                <td colspan="5" bgcolor="#000000"><img src="../../../img/spacer.gif" width="1" height="1" alt="" border="0"></td>
+            </tr>
+        </table>
+
+        <img src="../../..//img/spacer.gif" width="1" height="1" alt="" border="0">
+
+        <!-- Right hand column box -->
+        
+
+		<!-- End of right hand column content -->
+    
+
+    </td></tr></table>
+    </td>
+</tr>
+
+</table>
+
+
+<!-- ====================== /CONTENT AREA ======================= -->
+
+                    </td>
+                </tr>
+            </table>
+            <!-- end left margin -->
+</td>
+    </tr>
+</table>
+
+<table width="100%">
+    <tr>
+            <td align="center"><img src="../../../img/spacer.gif" width="1" height="50"><p align="center" class="smaller">
+<!-- Swishcommand noindex -->
+ 
+<a href="../../../company/copyright.php">Copyright information</a>, <a href="../../../company/privacy.php">Privacy Policy</a>, <a href="../../../company/contact/">Contact Us</a><br>
+Using this website means you agree to our <a href="../../../company/terms.php">Terms of Use</a><br>
+Problems with the site? email <script>document.write( zapThatSpam('www', true) );</script>
+<!-- Swishcommand index -->
+</p>
+</td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+</html>

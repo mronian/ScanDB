@@ -1,0 +1,900 @@
+<DOC>
+<DOCNO>f00354</DOCNO>
+<DOCHDR>http://www.us.design-reuse.com/contact</DOCHDR>
+<HTML>
+<HEAD>
+<title>Design And Reuse, The Web's System-On-Chip Design Resource - IP, Core, System-On-Chip</title>
+<LINK REL="stylesheet" HREF="http://www.us.design-reuse.com/JAVA/basestyle.css">
+<link rel="shortcut icon" href="http://www.us.design-reuse.com/IMAGES/favicon.ico" >
+
+<META NAME="description" CONTENT="Design And Reuse, The Web's System On Chip Design Resource : catalogs of IPs, Virtual Components, Cores, Embedded Software and Design Tools for designing system on chip (SOC)">
+<META NAME="keywords" CONTENT="IP, System On Chip, SoC, Systems On Chip, design reuse, Intellectual Property, reuse blocks, saucier, IP Catalyst, ip catalog, Silicon, Core, VHDL, soft, design, reuse, Design And Reuse, microprocessor, VSI, Virtual, virtual component, VC, Mentor, OpenMore, Synopsys, VCX, silicon">
+<META http-equiv=Cache-Control content=no-cache>
+<META http-equiv=Pragma content=no-cache>
+<META name="Expires" content="Fri, 01 Jan 1990 00:00:00 GMT">
+
+<script language="JavaScript" src="http://www.us.design-reuse.com/JAVA/overlib.js"></script> 
+<script language="JavaScript">
+function DR_goTo( url ) { 	window.location.href = url;
+}
+function DR_navBar( tableCellRef, hoverFlag, navStyle ) {
+	if ( hoverFlag ) {
+		switch ( navStyle ) {
+			case 1:
+				tableCellRef.style.backgroundColor = '#69c';
+				break;
+			default:
+				if ( document.getElementsByTagName ) {
+					tableCellRef.getElementsByTagName( 'a' )[0].style.color = '#c00';
+				}
+		}
+	} else {
+		switch ( navStyle ) {
+			case 1:
+				tableCellRef.style.backgroundColor = '#036';
+				break;
+			default:
+				if ( document.getElementsByTagName ) {
+					tableCellRef.getElementsByTagName( 'a' )[0].style.color = '#000';
+				}
+		}
+	}
+}
+function DR_navBarClick( tableCellRef, navStyle, url ) {
+	DR_navBar( tableCellRef, 0, navStyle );
+	DR_goTo( url );
+}
+
+
+function selectListeSearch() {
+
+if(!document.form1.where.options[document.form1.where.selectedIndex].value) 
+  {
+  alert("Select a category");
+  return false;
+  }
+else if (!document.form1.i.value)
+  {
+  alert("Keyword, required");
+  return false;
+  }
+
+return true;
+
+}
+
+
+</script> 
+</head>
+<body bgcolor="white" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<!-- drsearchend -->
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<form id=form1 name=form1 action=http://www.us.design-reuse.com/search/ method="GET" onsubmit="return selectListeSearch()"><input type="hidden" name="PHPSESSID" value="627ac9b747b268a3cbaa0b83bdc91832" />
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr background=http://www.us.design-reuse.com/IMG/raie.gif>
+<td align="left" valign="top" background=http://www.us.design-reuse.com/IMG/raie.gif>
+<a href="http://www.us.design-reuse.com/"><img src="http://www.us.design-reuse.com/IMG2002/drlogo.gif"  border="0"></a><br>
+</td>
+<td align="left" valign="top" background=http://www.us.design-reuse.com/IMG/raie.gif >
+  <table border=0 height=100% width=100%><tr><td rowspan=2>
+  <img src="http://www.us.design-reuse.com/IMG2002/spacer.gif" height=71 width=1 border="0">
+  </td><td align=right valign=top>
+<a href="http://www.us.design-reuse.com/contact"><img src="http://www.us.design-reuse.com/IMG2002/feedback.gif" border="0"></a> 
+ <img src="http://www.us.design-reuse.com/IMG2002/spacer.gif"   border="0" width=4 height=1><a href="http://www.us.design-reuse.com/DR_SERVICES"><img src="http://www.us.design-reuse.com/IMG2002/dr_products.gif" border="0"></a>
+  <img src="http://www.us.design-reuse.com/IMG2002/spacer.gif" border="0" width=4 height=1><a href="http://www.us.design-reuse.com/map/"><img src="http://www.us.design-reuse.com/IMG2002/site_map.gif" border="0"></a> 
+  <img src="http://www.us.design-reuse.com/IMG2002/spacer.gif" border="0" width=4 height=1>
+		<a href="http://www.us.design-reuse.com/users/signup.php"><img src="http://www.us.design-reuse.com/IMG2002/register.gif" border="0"></a>
+		  </td></tr><tr><td align=right valign=bottom><a href="http://www.eetimesnetwork.com"><img src="http://www.us.design-reuse.com/IMG2002/edtn.gif" border="0"></a></td></tr></table></td></tr>
+<tr>
+<td align="center" valign="top" colspan="2" width="100%" background="http://www.us.design-reuse.com/IMG2002/pixel_right.gif">
+<img src="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="1" height="1" border="0"></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="100%" colspan="2" bgcolor="#ce0000">
+  <table cellspacing="0" cellpadding="0" border=0 width="100%"><tr>
+  <td >
+  <img src="http://www.us.design-reuse.com/IMG2002/drtagline.gif" border="0">
+  </td>
+  <td align=right valign=center>
+	<table cellspacing="0" cellpadding="0" border=0><tr><td>
+  <img src="http://www.us.design-reuse.com/IMG2002/esearch.gif" border="0"></td><td><font color=white><b><SELECT name=where  >
+<OPTION value="">Select Category...</OPTION>
+<OPTION value=sip>SIP Catalog</OPTION>
+<OPTION value=vip>VIP Catalog</OPTION>
+<OPTION value=hds>HDS Catalog</OPTION>
+<OPTION value=eda>EDA catalog</OPTION>
+<OPTION value=news>Headline News</OPTION>
+<OPTION value=articles>Industry articles</OPTION>
+</SELECT></b></font> </td><td>&nbsp;&nbsp;</td><td> <INPUT name=i value=""   size="10"></td><td><INPUT type=image name=Search src="http://www.us.design-reuse.com/IMG2002/go.gif" alt=Search border=0></td><td width=5>&nbsp;&nbsp;</td></tr></table>
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" colspan="2" width="100%"  background="http://www.us.design-reuse.com/IMG2002/pixel_right.gif">
+<img src="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="1" height="1" border="0"></td>
+</tr>
+</table></form>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td><img src="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="1" height="5" border="0"></td>
+<td></td><td></td><td></td><td></td></tr><tr>
+<td align="center" valign="top" width="100%" colspan="5" background="http://www.us.design-reuse.com/IMG2002/pixel_right.gif">
+<img src="http://www.us.design-reuse.com/IMG2002/pixel_right.gif" width="3" height="1" border="0"><br>
+</td></tr><tr><td align="left" valign="top" width="133" bgcolor="#003063" >
+<!-- begin left nav -->
+<table width="134" bgcolor="#EEEEEE" border="0" cellpadding="0" cellspacing="0">
+<tr class="drNavHiliteRow">
+<td class="drNavHilite" colspan=2><div class="drNavText">Search for IP</div></td></tr>
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/sip')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/sip"; onmouseover="return overlib('The world\'s largest directory of Silicon IP (Intellectual Property) and SoC Design Platforms from more than 350 vendors ');" onmouseout="return nd();">
+Silicon IP / SoC
+</a></div></td></tr>
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/vip')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/vip"; onmouseover="return overlib('Speed up your verification of protocol-centric designs by finding the specific Verification IP you need (already more than 100 products listed !!!)');" onmouseout="return nd();">
+Verification IP
+</a></div></td></tr>
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/hds')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/hds"; onmouseover="return overlib('A catalog of Hardware dependent Software (HdS) ranging from embedded OS to Communication Stacks and Application Software');" onmouseout="return nd();">
+Software IP
+</a></div></td></tr>
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/sip/wanted')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/sip/wanted"; onmouseover="return overlib('The worldwide place to trigger the most strategic IP business deals');" onmouseout="return nd();">
+IP Search/Find Club
+</a></div></td></tr>
+
+<tr class="drNavHiliteRow">
+<td class="drNavHilite" colspan=2><div class="drNavText">Plan a SoC Project</div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/designplatform/')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/designplatform/"; onmouseover="return overlib('Design platforms for fast and reliable SoCs design is the key challenge in the semi conductor field having to cope with the well known severe market constraints');" onmouseout="return nd();">
+Design Platform <font color=red><b> NEW</b></font>
+</a></div></td></tr>
+
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/foundry')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/foundry"; onmouseover="return overlib('All the information you need about silicon proven virtual components and foundry opportunities');" onmouseout="return nd();">
+Foundry 
+</a></div></td></tr>
+
+<!--
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/corecentric/')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/corecentric/"; onmouseover="return overlib('Compatible resources for building a SoC around a core such as ARM, MIPS, PowerPC');" onmouseout="return nd();">
+Plan a SoC Project
+</a></div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/ipinterconnection')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/ipinterconnection"; onmouseover="return overlib('Get expertises about Internal Interconnection Buses ');" onmouseout="return nd();">
+IP Interconnection
+</a></div></td></tr>
+-->
+
+<tr class="drNavHiliteRow">
+<td class="drNavHilite" colspan=2><div class="drNavText">Design Centers</div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/designcenter')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/designcenter"; onmouseover="return overlib('Find an expert in a comprehensive catalog of SoC design experts and qualified design centers');" onmouseout="return nd();">
+Find an Expert
+</a></div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/designcenter/home.php')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/designcenter/home.php"; onmouseover="return overlib('View SoC projects for which high level experts are searched and apply');" onmouseout="return nd();">
+View Projects
+</a></div></td></tr>
+
+<!--
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/designcenter/home.php')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/designcenter/home.php"; onmouseover="return overlib('Post your project for quick access to the best electronic experts');" onmouseout="return nd();">
+Post your project
+</a></div></td></tr>
+-->
+
+<tr class="drNavHiliteRow">
+<td class="drNavHilite" colspan=2><div class="drNavText">Search for Tools</div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/embedded')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/embedded"; onmouseover="return overlib('Software Development, Debug Tools, Development boards, Development Kits and EDA models');" onmouseout="return nd();">
+Embedded Systems
+</a></div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/eda')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/eda"; onmouseover="return overlib('IP Exchange, IP Interface & Bus Protocol, IP Protection, IP Synthesis, IP High Level Design, HW/SW Co-design Tools,Place & Route / Floorplanner, Layout Verifier & Extractor, IP Layout Optimizer, Physical migration');" onmouseout="return nd();">
+EDA Tools
+</a></div></td></tr>
+
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/platform')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/platform"; onmouseover="return overlib('Virtual Prototyping and Hardware Prototyping Platforms');" onmouseout="return nd();">
+Proto. Platforms
+</a></div></td></tr>
+
+
+
+<tr class="drNavHiliteRow">
+<td class="drNavHilite" colspan=2><div class="drNavText">Hot Corners</div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/designplatform/structuredasic')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/designplatform/structuredasic"; onmouseover="return overlib('Structured ASICs are a new breed of custom device that approach the performance of today\'s Standard Cell ASIC while dramatically simplifying the design complexity');" onmouseout="return nd();">
+Structured ASIC <font color=red><b>NEW</b></font>
+</a></div></td></tr>
+
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/verificationip/')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/verificationip/"; onmouseover="return overlib('With increasing design complexity, large number of in-house and third-parties IPs, different protocols being used in the design, and limited resources design verification represents a bottleneck in product development process');" onmouseout="return nd();">
+Verification IP <font color=red><b>NEW</b></font>
+</a></div></td></tr>
+
+
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/esld')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/esld"; onmouseover="return overlib('High level specification and modeling is the hottest challenge for IP and IP based Soc design for the next decade');" onmouseout="return nd();">
+ESL Design <font color=red><b> &nbsp; &nbsp; &nbsp; NEW</b></font>
+</a></div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/soi')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/soi"; onmouseover="return overlib('This new corner  highlights  the benefits of SOI (Silicon On Insulator) technology');" onmouseout="return nd();">
+SOI 
+</a></div></td></tr>
+
+
+
+<tr class="drNavHiliteRow">
+<td class="drNavHilite" colspan=2><div class="drNavText">In the SoC World</div></td></tr>
+
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/news')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/news"; onmouseover="return overlib('New products and industry developments');" onmouseout="return nd();">
+Headline News
+</a></div></td></tr>
+
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/articles')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/articles"; onmouseover="return overlib('Commentaries, technology and design articles');" onmouseout="return nd();">
+Industry Articles
+</a></div></td></tr>
+
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/NEWS/hot_events.html')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/events/">
+Calendar / Events
+</a></div></td></tr>
+
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/seminar')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/seminar">
+Online Seminars
+</a></div></td></tr>
+
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/bookstore')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/bookstore">
+Online Bookstore
+</a></div></td></tr>
+<!--
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/JOB')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/JOB">
+Job Corner
+</a></div></td></tr>
+-->
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/socnews')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/socnews"; onmouseover="return overlib('Sign up for receiving \'SoC News Alert\' on your Desktop');" onmouseout="return nd();">
+SoC News Alert
+</a></div></td></tr>
+
+<tr class="drNavHiliteRow">
+<td class="drNavHilite" colspan=2><div class="drNavText">Free Download</div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/download/sip')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/download/sip">
+IP Cores
+</a></div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/download/tools')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/download/tools">
+Tool Demos
+</a></div></td></tr>
+
+<tr class="drNavHiliteRow">
+<td class="drNavHilite" colspan=2><div class="drNavText">About D&amp;R</div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/about')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/about">
+D&amp;R Mission
+</a></div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/partners/')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/partners/">
+D&amp;R Partners
+</a></div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/USERS/users_forum.html')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/newsletter/">
+D&amp;R Newsletters
+</a></div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/CONTACT/contact_us.html')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/contact">
+Contact us
+</a></div></td></tr>
+
+<tr class="drNavRow"><td class="swath">&nbsp;</td>
+<td class="drNav" onMouseOver="DR_navBar(this,1,1)" onMouseOut="DR_navBar(this,0,1)" onClick="DR_navBarClick(this,1,'http://www.us.design-reuse.com/DR_SERVICES')">
+<div class="drNavText">
+<a href="http://www.us.design-reuse.com/DR_SERVICES">
+D&amp;R Software
+</a></div></td></tr>
+
+<tr><td colspan=2  bgcolor="#003063" ><BR></td></tr><tr>
+<td colspan=2 bgcolor="#003063" ><a href="http://www.us.design-reuse.com/users/signup.php"><img src="http://www.us.design-reuse.com/IMG2002/register2.gif" border=0></a></td></tr>
+<tr><td colspan=2  bgcolor="#003063" >
+<a href="http://www.us.design-reuse.com/map/providers/"><img src="http://www.us.design-reuse.com/IMG2002/submit.gif" border=0></a>
+</td></tr>
+  
+<tr><td  colspan=2 bgcolor="#003063" ><BR></td></tr><tr><td align=center  colspan=2 bgcolor="#003063" >
+<!-- top left tile ad call-->
+<SCRIPT LANGUAGE="JavaScript">
+
+var axel = Math.random();
+
+var num = axel * 100000000000000000 + "?";
+
+
+
+NS4 = document.layers
+
+;if (NS4) {origWidth = innerWidth;origHeight = innerHeight;}
+
+function reDo() {if (innerWidth != origWidth || innerHeight != origHeight) location.reload();}
+
+if (NS4) onresize = reDo;
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript1.1"> 
+
+document.write('<IFRAME SRC="http://as.cmpnet.com/html.ng/site=electronics&affiliate=edtnip&pagepos=tilelefttop&rs=dr&target=/contact/&ord='+ num +'"  width="125" height="125" frameborder="no" border="0" marginwidth="0" marginheight="0" SCROLLING="no">'); 
+
+document.write('<SCRIPT LANGUAGE="Javascript1.1" SRC="http://as.cmpnet.com/js.ng/Params.richmedia=yes&site=electronics&affiliate=edtnip&pagepos=tilelefttop&rs=dr&target=/contact/&ord='+ num +'"><\/SCRIPT>');     
+
+document.write('</IFRAME>');    
+
+</SCRIPT><!--- end of top left tile ad-->
+</td></tr>
+<tr><td  colspan=2 bgcolor="#003063"  ><BR></td></tr><tr><td  align=center  colspan=2 bgcolor="#003063" >
+<!-- bottom left tile ad call-->
+<SCRIPT LANGUAGE="JavaScript">
+
+var axel = Math.random();
+
+var num = axel * 100000000000000000 + "?";
+
+
+
+NS4 = document.layers
+
+;if (NS4) {origWidth = innerWidth;origHeight = innerHeight;}
+
+function reDo() {if (innerWidth != origWidth || innerHeight != origHeight) location.reload();}
+
+if (NS4) onresize = reDo;
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript1.1"> 
+
+document.write('<IFRAME SRC="http://as.cmpnet.com/html.ng/site=electronics&affiliate=edtnip&pagepos=bottomlefttile&rs=dr&target=/contact/&ord='+ num +'"  width="125" height="125" frameborder="no" border="0" marginwidth="0" marginheight="0" SCROLLING="no">'); 
+
+document.write('<SCRIPT LANGUAGE="Javascript1.1" SRC="http://as.cmpnet.com/js.ng/Params.richmedia=yes&site=electronics&affiliate=edtnip&pagepos=bottomlefttile&rs=dr&target=/contact/&ord='+ num +'"><\/SCRIPT>');     
+
+document.write('</IFRAME>');    
+
+</SCRIPT><!--- end of bottom left tile ad-->
+</td></tr><tr><td  colspan=2 bgcolor="#003063" >
+<BR></td></tr></table>
+<!-- end left nav -->
+</td><td align="left" valign="top" width="1" background="http://www.us.design-reuse.com/IMG2002/pixel_down.gif">
+<img src="http://www.us.design-reuse.com/IMG2002/pixel_down.gif" width="1" height="3" border="0"><br>
+</td>
+<!-- center column -->
+<td align="left" valign="top" width=100%  >
+<table border=0 width=100% CELLPADDING="1"><tr><td align=center>
+<!-- top banner ad call-->
+<!-- top banner ad call-->
+
+<SCRIPT LANGUAGE="JavaScript">
+
+var axel = Math.random();
+
+var num = axel * 100000000000000000 + "?";
+
+
+
+NS4 = document.layers
+
+;if (NS4) {origWidth = innerWidth;origHeight = innerHeight;}
+
+function reDo() {if (innerWidth != origWidth || innerHeight != origHeight) location.reload();}
+
+if (NS4) onresize = reDo;
+
+</SCRIPT>
+
+
+
+<SCRIPT LANGUAGE="Javascript1.1"> 
+
+document.write('<IFRAME SRC="http://as.cmpnet.com/html.ng/site=electronics&affiliate=edtnip&pagepos=top&rs=dr&target=/contact/&ord='+ num +'"  width="468" height="60" frameborder="no" border="0" marginwidth="0" marginheight="0" SCROLLING="no">'); 
+
+document.write('<SCRIPT LANGUAGE="Javascript1.1" SRC="http://as.cmpnet.com/js.ng/Params.richmedia=yes&site=electronics&affiliate=edtnip&pagepos=top&rs=dr&target=/contact/&ord='+ num +'"><\/SCRIPT>');     
+
+document.write('</IFRAME>');    
+
+</SCRIPT>
+
+<!--- end of top banner ad-->
+
+<!--- end of top banner ad-->
+</td></tr></table>
+<!-- ****************** embedded table for MAIN content ****************** -->
+<TABLE HEIGHT="100%" WIDTH=100% CELLSPACING="0" CELLPADDING="0" BORDER="0">
+<tr><td></td><td></td><td></td>
+</tr><tr><td align="center" valign="top" colspan="3"  background="http://www.us.design-reuse.com/IMG2002/pixel_right.gif">
+<img src="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="3"  height="1" border="0"><br> </td></tr><TR>
+<TD VALIGN="top" ><IMG src="http://www.us.design-reuse.com/IMG2002/spacer.gif" WIDTH="7" HEIGHT="8" ALT="" BORDER="0"></TD>
+<TD VALIGN="top" WIDTH="95%"  class="MainText"> <br><p>
+<!-- begin_printable -->
+<!-- drsearchbegin -->
+<!--- PAGE PRINCIPALE  -->
+<FORM NAME="form" METHOD="POST" action="http://www.us.design-reuse.com/contact/" ><input type="hidden" name="PHPSESSID" value="627ac9b747b268a3cbaa0b83bdc91832" />
+<INPUT type=hidden NAME="post" value="1">
+
+<img SRC="images/contact_us.gif" >
+
+
+
+<h3> Design And Reuse</h3> 
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 >
+<tr VALIGN=TOP>
+<td NOWRAP> 
+
+12 rue Ampere 
+<br>BP 267
+<br>38 016 Grenoble Cedex 1
+<br>FRANCE
+<br>Tel: +33 476 21 31 02
+<br> Fax: +33 476 49 00 52
+<br> <script language=javascript>
+var name = "info@";
+document.write ("<a href=\"mailto:" + name + "design-reuse.com\">" + name + "design-reuse.com</a>");
+</script>
+
+
+
+</td>
+
+<td><font size=0>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+
+<td NOWRAP> <GEO TYPE="US">5600 Mowry School Road<br>Suite 180<br>
+      Newark, CA 94560<br>USA</GEO><br>
+      Tel:  +1 510 656 1445<br>
+      Fax: +1 510 656 0995
+<br><script language=javascript>
+var name = "info@";
+document.write ("<a href=\"mailto:" + name + "design-reuse.com\">" + name + "design-reuse.com</a>");
+</script>
+
+</td>
+</tr>
+</table>
+ 
+
+<p> Please send your site comments, suggestions, or problem reports to <br> <script language=javascript>
+var name = "philippe.coeurdevey@";
+document.write ("<a href=\"mailto:" + name + "design-reuse.com\">" + name + "design-reuse.com</a>");
+</script>
+
+  
+<br><br>
+ To contact us, you can also complete the form below:&nbsp; 
+<br><br>
+
+
+
+
+
+<TABLE>
+<TR>
+<TD>Name:</TD>
+
+<TD><INPUT type=text NAME="customer_name" SIZE=35></TD>
+</TR>
+
+<TR>
+<TD>Company:</TD>
+
+<TD><INPUT type=text NAME="customer_company" SIZE=35></TD>
+</TR>
+<!-- 
+<TR>
+<TD>Address:</TD>
+
+<TD><INPUT type=text NAME="customer_address" SIZE=35></TD>
+</TR>
+
+<TR>
+<TD>Mail Stop (if any):</TD>
+
+<TD><INPUT type=text NAME="customer_ms" SIZE=35></TD>
+</TR>
+
+<TR>
+<TD>City:</TD>
+
+<TD><INPUT type=text NAME="customer_city" SIZE=35></TD>
+</TR>
+
+<TR>
+<TD>State:</TD>
+
+<TD><INPUT type=text NAME="customer_state" SIZE=35></TD>
+</TR>
+
+<TR>
+<TD>Country:</TD>
+
+<TD><INPUT type=text NAME="customer_country" SIZE=35></TD>
+</TR>
+
+<TR>
+<TD>Postal Code:</TD>
+
+<TD><INPUT type=text NAME="customer_postal" SIZE=35></TD>
+</TR>
+-->
+<TR>
+<TD>Phone:</TD>
+
+<TD><INPUT type=text NAME="customer_phone" SIZE=35></TD>
+</TR>
+<!--
+<TR>
+<TD>Fax:</TD>
+
+<TD><INPUT type=text NAME="customer_fax" SIZE=35></TD>
+</TR>
+-->
+<TR>
+<TD>E-mail:</TD>
+
+<TD><INPUT type=text NAME="customer_email" SIZE=35></TD>
+</TR>
+</TABLE>
+
+<CENTER><TABLE>
+<TR>
+<TD COLSPAN=2>Comments: </TD>
+</TR>
+
+<TR>
+<TD COLSPAN=2 ALIGN=CENTER><TEXTAREA NAME="comments" ROWS="10" COLS="40"></TEXTAREA></TD>
+</TR>
+</TABLE></CENTER>
+
+<CENTER><TABLE>
+<TR>
+<TD valign=center ><INPUT type="submit" value="SEND"></TD>
+
+<TD>
+<PRE>     </PRE>
+</TD>
+
+<TD  valign=center><INPUT type="reset" value="Clear Form"> </TD>
+</TR>
+</TABLE></CENTER>
+
+</form>
+
+
+
+<!--- FIN PAGE PRINCIPALE  -->
+<!-- end_printable -->
+<!-- drsearchend -->
+<p>
+<!-- <TABLE>
+<TR><TD bgcolor=yellow>
+<FONT face="Arial, Helvetica" size="2" color="#000FFF"><B><A href="/cgi-bin/SEARCH/print.pl?id=ABOUT_DR/about_dr.html&PHPSESSID=627ac9b747b268a3cbaa0b83bdc91832">  
+Click for printer-friendly version</A></B></FONT>
+</TD></TR></TABLE><p>-->
+</TD><TD VALIGN="top" ><IMG SRC="http://www.us.design-reuse.com/IMG2002/spacer.gif" WIDTH="7" HEIGHT="8" ALT="" BORDER="0"></TD></tr></table>
+<!-- **************** end embedded table for MAIN content **************** -->
+<!-- end body -->
+</td><td align="left" valign="top" width="1" background="http://www.us.design-reuse.com/IMG2002/pixel_down.gif">
+<img SRC="http://www.us.design-reuse.com/IMG2002/pixel_down.gif" width="1" height="3" border="0"><br></td>
+<td align="left" valign="top" width="128">
+<!-- ############  right column -->
+<p>
+<!-- debut right top tile -->
+<a href="http://www.us.design-reuse.com/banner/exit.php?id=148"><img src="http://www.us.design-reuse.com/IMAGES/isi96.gif" border="0" width=125 height=125></a><!-- fin right top tile -->
+<br>
+<!-- right hand tiles -->
+</P><P>
+<!--- LOGO RIGHT  -->
+<!-- skyscraper -->
+<!-- skyscraper ad call-->
+<SCRIPT LANGUAGE="JavaScript"> 
+
+var axel = Math.random(); 
+
+var num = axel * 100000000000000000 + "?"; 
+
+
+
+NS4 = document.layers 
+
+;if (NS4) {origWidth = innerWidth;origHeight = innerHeight;} 
+
+function reDo() {if (innerWidth != origWidth || innerHeight != origHeight) location.reload();} 
+
+if (NS4) onresize = reDo; 
+
+</SCRIPT> 
+
+
+
+<SCRIPT LANGUAGE="Javascript1.1"> 
+
+document.write('<IFRAME SRC="http://as.cmpnet.com/html.ng/site=electronics&affiliate=edtnip&pagepos=sky&rs=dr&target=/contact/&ord='+ num +'"  width="125" height="600" frameborder="no" border="0" marginwidth="0" marginheight="0" SCROLLING="no">'); 
+
+document.write('<SCRIPT LANGUAGE="Javascript1.1" SRC="http://as.cmpnet.com/js.ng/Params.richmedia=yes&site=electronics&affiliate=edtnip&pagepos=sky&rs=dr&target=/contact/&ord='+ num +'"><\/SCRIPT>'); 
+
+document.write('</IFRAME>'); 
+
+</SCRIPT> <!--- end of skyscraper banner ad-->
+</P><P>
+<!-- debut right tile -->
+<a href="http://www.us.design-reuse.com/banner/exit.php?id=168"><img src="http://www.us.design-reuse.com/IMAGES/asicsws.gif" border="0" width=125 height=125></a><!-- fin right tile -->
+</P><P>
+<!-- debut partner tile -->
+<a href="http://www.us.design-reuse.com/banner/exit.php?id=2"><img src="http://www.us.design-reuse.com/LOGO/logorot6.gif" width=126 height=86 border=0></a><!-- fin partner tile -->
+<!-- fin colonne droite -->
+<!-- ############  end right column -->
+</td>
+</tr>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td align="left" valign="top" width="133" bgcolor="#003063" >
+<img SRC="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="134" height="1" border="0">
+</td><td align="left" valign="top" width="1" background="http://www.us.design-reuse.com/IMG2002/pixel_down.gif">
+<img SRC="http://www.us.design-reuse.com/IMG2002/pixel_down.gif" width="1" height="3" border="0"><br>
+</td><!-- center column -->
+<td align="left" valign="top" >
+<!-- **************** end embedded table for MAIN content **************** -->
+  <table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" bgcolor="#FFFFFF" >
+  <tr><td align="center" valign="top"  width="100%" background="http://www.us.design-reuse.com/IMG2002/pixel_right.gif">
+<img SRC="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="1" height="1" border="0"></td></tr>
+  <tr><td align="center" valign="top" width="100%" >
+    <!-- sponsor link -->   
+     <table cellspacing="10" cellpadding="0" border="0" width="100%">
+
+     <tr>
+
+     <td align="left" valign="top" width="100%" colspan="2">
+
+     <b>Sponsor Links</b><br>
+
+     </td>
+
+     </tr>
+
+     <tr>
+
+     <td align="left" valign="top" width="50%">
+
+     <B>
+
+     D&amp;R Foundry Corner
+
+     </B><br>
+
+     <A HREF="http://www.us.design-reuse.com/foundry">
+
+All the information you need about silicon proven virtual components and foundry opportunities
+
+     </A>
+
+     </td>
+
+     <td align="left" valign="top" width="50%">
+
+     <B>
+
+     Coware
+
+     </B><br>
+
+     <A HREF="http://www.us.design-reuse.com/articles/article8523.html">
+
+     Read Coware's Transaction Level Models In SystemC White Paper  
+
+
+
+     </A>   
+
+     </td>
+
+     </tr>
+
+     <tr>
+
+     <td align="left" valign="top" width="50%">  
+
+     <B>
+
+     IP/SOC 2004 - Forum &amp; Exhibition
+
+     </B><br>
+
+     <A TARGET=_TOP HREF="http://www.us.design-reuse.com/ipsoc2004">
+	Do not miss this event !!! December 8-9, 2004 - Grenoble France
+
+
+     </A>
+
+     </td>
+
+     <td align="left" valign="top" width="50%">
+
+     <B>
+
+     SOI (Silicon on Insulator) Corner 
+
+
+     </B><br>
+
+     <A HREF="http://www.us.design-reuse.com/soi">
+
+     Visit this new corner highlighting the benefits of Silicon On Insulator technology. 
+
+
+     </A>
+
+     </td>
+
+     </tr>
+
+     </table>    <!-- end sponsor link -->  
+</td></tr>
+<!-- bottom banner -->
+<tr><td align="center" valign="top" width="100%"  background="http://www.us.design-reuse.com/IMG2002/pixel_right.gif">
+<img SRC="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="1" height="1" border="0"></td></tr> 
+<tr><td align="center" valign="top" width="100%">
+<table border=0 width=100% CELLPADDING="1"><tr><td align=center>
+<!-- bottom banner ad call-->
+<SCRIPT LANGUAGE="JavaScript">
+
+var axel = Math.random();
+
+var num = axel * 100000000000000000 + "?";
+
+
+
+NS4 = document.layers
+
+;if (NS4) {origWidth = innerWidth;origHeight = innerHeight;}
+
+function reDo() {if (innerWidth != origWidth || innerHeight != origHeight) location.reload();}
+
+if (NS4) onresize = reDo;
+
+</SCRIPT>
+
+
+
+<SCRIPT LANGUAGE="Javascript1.1"> 
+
+document.write('<IFRAME SRC="http://as.cmpnet.com/html.ng/site=electronics&affiliate=edtnip&pagepos=bottom&rs=dr&target=/contact/&ord='+ num +'"  width="468" height="60" frameborder="no" border="0" marginwidth="0" marginheight="0" SCROLLING="no">'); 
+
+document.write('<SCRIPT LANGUAGE="Javascript1.1" SRC="http://as.cmpnet.com/js.ng/Params.richmedia=yes&site=electronics&affiliate=edtnip&pagepos=bottom&rs=dr&target=/contact/&ord='+ num +'"><\/SCRIPT>');     
+
+document.write('</IFRAME>');    
+
+</SCRIPT><!--- end of bottom banner ad-->
+</td></tr></table></td></tr></table>
+<!-- end body -->
+</td><td align="left" valign="top" width="1" background="http://www.us.design-reuse.com/IMG2002/pixel_down.gif">
+<img SRC="http://www.us.design-reuse.com/IMG2002/pixel_down.gif" width="1" height="3" border="0"><br>
+</td><td align="left" valign="top" width="128">
+<!-- ############  right column -->
+<img SRC="http://www.us.design-reuse.com/IMG2002/pixel.gif" width="128" height="1" border="0">
+<!-- ############  end right column -->
+</td></tr></table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td align="center" valign="top"  width="100%" background="http://www.us.design-reuse.com/IMG2002/pixel_right.gif">
+<img SRC="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="1" height="1" border="0"></td>
+</tr><tr><td align="left" valign="top"  width="100%"  >
+<a href="/welcome/?PHPSESSID=627ac9b747b268a3cbaa0b83bdc91832"><img SRC="http://www.us.design-reuse.com/IMG2002/pixel.gif" border="0" alt=" " width="1" height="1"></a>
+
+<br><br></div></td></tr><tr><td align="center" valign="top"  width="100%" background="http://www.us.design-reuse.com/IMG2002/pixel_right.gif">
+<img SRC="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="1" height="1" border="0"></td>
+</tr>
+
+<tr><td align="center" valign="top"  width="100%" bgcolor="#003063" >
+<br><font color=white>
+<a href="http://www.us.design-reuse.com//" style="color:white" >Home</a> | <a href="http://www.us.design-reuse.com//contact/" style="color:white">Feedback</a> | <a href="http://www.us.design-reuse.com//users/signup.php" style="color:white">Register</a> | <a href="http://www.us.design-reuse.com//map/" style="color:white">Site Map</a><br><br></font>
+</td></tr>
+
+<tr><td align="center" valign="top"  width="100%" background="http://www.us.design-reuse.com/IMG2002/pixel_right.gif">
+<img SRC="http://www.us.design-reuse.com/IMG2002/spacer.gif" width="1" height="1" border="0"></td></tr>
+
+<tr>
+<td align="center">
+<!-- copyright -->
+<img SRC="http://www.us.design-reuse.com/IMG2002/cmpnet.gif"  border="0"><p>
+All material on this site Copyright © 2004 Design And Reuse S.A. All rights reserved.
+</td></tr></table>
+<!-- drsearchbegin -->
+</body></html>

@@ -1,0 +1,837 @@
+<DOC>
+<DOCNO>f00549</DOCNO>
+<DOCHDR>http://www.grandcentralpartnership.org/neighborhood_guide/guidebook.asp?type=6</DOCHDR>
+
+<html>
+<head>
+	<title>Grand Central Partnership</title>
+	<link href='../css/gcp.css' rel='stylesheet' type='text/css'>
+	<script src="/js/jsUtils.js"></script>
+</head>
+<body topmargin='0' leftmargin='0' bottommargin='0' rightmargin='0' marginwidth='0' marginheight='0' bgcolor='white'>
+	<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+		<tr>
+			<td width='760' width='760' height='97'><a href='../home.asp'><img src='../img/header/header.gif' width='760' height='97' border='0'></a></td>
+			<td width='100%'><img src='../img/header/header_stretch.gif' width='100%' height='97' border='0'></td>
+		</tr>
+	</table>
+
+<script language="javascript">
+	//<!-- 
+	var ver='6.1.3EnPro';
+	var m1=new Object;   //' Menu object
+
+	// browser detection
+	NS4=(document.layers);	// Set to true for Netscape 4
+	NS60=(navigator.userAgent.indexOf("Netscape6/6.0")!=-1); // Set to true for Netscape 6
+	Opera=(navigator.userAgent.indexOf('Opera')!=-1) || (navigator.appName.indexOf('Opera')!=-1)||(window.opera); // Set to true for Opera
+	Opera7=(Opera && document.createElement!=null && document.addEventListener!=null);   // Set to true for Opera 7
+	IE4=(document.all && !Opera);	 // Set to true for IE 4
+	mac=((IE4) && (navigator.appVersion.indexOf ("Mac")!=-1));	// Set to true for Mac
+	DOM=document.documentElement && !NS4 && !IE4 && !Opera;	 // Set to true if DOM is supported
+	mswnd=(navigator.appVersion.indexOf("Windows")!=-1 || navigator.appVersion.indexOf("WinNT")!=-1);	// Set to true for Windows
+	
+	
+	if(IE4){
+		av=navigator.appVersion;
+		avi=av.indexOf("MSIE");
+		if (avi==-1){
+			version = parseInt(av);
+		}else{
+			version=parseInt(av.substr(avi+4));
+		}
+	}
+
+	m1.name='m1';
+	
+	if(!window.lastm||window.lastm<1)
+		lastm=1;
+		
+	if(NS4||IE4||DOM||Opera){
+		var maxZ=1000;
+		var docLoaded=false;	
+		m1.pad_rt_v01=0;					// width of padding - right		
+		m1.pad_top_v10=0;				// controls top padding (the lower the value, the greater the padding on top)	
+		m1.is_transparent_v11=true;
+		m1.subNavPopup=null;			// V17
+		m1.subNavPopupTimeout='';		// V17timeout
+		m1.v19=false;
+		m1.v20=false;
+		m1.v21="img";
+		m1.txt_align=0;					// (v22) 0=left align, 1=center, 2=right
+		m1.menu_width_v23=104;					// menu width
+		m1.frame_name_v24="content";	
+		m1.v25=true;
+		m1.v29=null;					// scrolling timeout? or generic timout?
+		m1.v29Str='';					// scrolling option, eval()		
+		m1.scrollDelay=0;
+		m1.scrollStep=0;
+		//m1.rollover_text_v26;			
+		//m1.nav_item_url_v27;
+		m1.item_bullet_image_v30=true;	
+		m1.showDelayedTimeout=null;
+		m1.fadingSteps=8;
+		m1.targetFrame;
+		m1.bIncBorder=true;	
+		m1.maxlev=3;				// levels of subnavigation to support
+		m1.bVarWidth=0;
+		m1.bShowDel=0;
+		m1.levelOffset=4;			// number of pixels from parent div
+		m1.vertSpace=3;				// padding around items in a navigation level
+		m1.sep=0;					// doesn't appear to be used
+		m1.cntFrame="content";		// target frame name
+		m1.mout=true;				// sets mouseout functionality on/off
+		m1.tlmOrigBg="#ffffff";
+		m1.tlmOrigCol="#ffffff";
+		m1.closeDelay=1000;			// milliseconds before menu disappears
+		m1.popupOpacity=0;
+		m1.rm=-1;
+		if(document.getElementById && (!Opera||Opera7))
+			m1.bord=0;
+		m1.tlmHlBg="#d9d9d9";
+		m1.tlmHlCol="#c0c0c0";
+		m1.borderCol="#5e5e5d";
+		m1.menuHorizontal=true;
+		m1.popupLeftPad=0;
+		m1.iconSize=9;
+		m1.scrollHeight=0;
+	}
+	// Array elements: (font-size reg, bold?, italic?, reg font color, bgcolor reg, rollover font color, font-family, rollover bgcolor)
+	m1.lev0 = new Array ("11px",false,false,"#1230aa","#bac6e6","black","Verdana,Arial,Helvetica","#d8dff3");
+	m1.lev1 = new Array ("11px",false,false,"#1230aa","#d8dff3","navy","Verdana,Arial,Helvetica","#d8dff3");
+	m1.lev2 = new Array ("11px",false,false,"#1230aa","#f3f3f3","black","Verdana,Arial,Helvetica","d8dff3");
+
+
+	// What's New menu and submenus
+	m1mn1 = new Array
+	(
+		"Newsletter","/whats_new/newsletter.asp",1
+		,"Events Calendar","/whats_new/calendar.asp",1
+		,"Promotions","/whats_new/promotions.asp",0
+	)
+		// Newsletter subnav
+		m1mn1_1 = new Array(
+			"Subscribe","/whats_new/newsletter_subscribe.asp",0
+			,"Unsubscribe","/whats_new/newsletter_unsubscribe.asp",0
+			,"Past issues","/whats_new/newsletter_past_issues.asp",0
+		)
+		// Calendar subnav
+		m1mn1_2 = new Array(
+			"Weekly Calendar","/whats_new/calendar.asp",0
+			,"Monthly Calendar","/whats_new/calendar_monthly.asp",0
+		)
+		
+	// Who We Are menu
+	m1mn2 = new Array(
+		"About Us","/who_we_are/about.asp",0
+		,"History","/who_we_are/history_then.asp",1
+		,"Our Board","/who_we_are/board.asp",0
+		,"Executive Staff","/who_we_are/staff.asp",0
+		,"Employment","/who_we_are/employment.asp",0
+		,"Contact Us","/who_we_are/contact_us.asp",0
+	)
+		// History Subnav
+		m1mn2_2 = new Array(
+			"Then","/who_we_are/history_then.asp",0,
+			"Now","/who_we_are/history_now.asp",0
+		)
+		
+	// What We Do menu and submenus
+	m1mn3 = new Array(
+		"We Clean","/what_we_do/clean.asp",0
+		,"We Protect","/what_we_do/protect.asp",0
+		,"We Beautify","/what_we_do/beautify.asp",1
+		,"We Build","/what_we_do/build.asp",0
+		,"We Promote","/what_we_do/promote.asp",1
+	)
+		//Beautify subnav
+		m1mn3_3 = new Array(
+			"U.N. Way","/what_we_do/beautify_un_way.asp",0
+			,"Library Way","/what_we_do/beautify_library_way.asp",0
+			,"Pershing Square Plaza","/what_we_do/beautify_pershing_square.asp",0
+			,"Advertising Walk of Fame","/what_we_do/beautify_walk_of_fame.asp",0
+		)
+		//Promote subnav
+		m1mn3_5 = new Array(
+			"Tourism","/what_we_do/promote_tourism.asp",0
+			,"Retail Services","/what_we_do/promote_retail_assistance.asp",0
+			,"Summer Concerts","/what_we_do/promote_summer_concerts.asp",0
+			,"Grand Gourmet","/what_we_do/promote_grand_gourmet.asp",0
+			,"Free Tour","/what_we_do/promote_free_tour.asp",0
+		)
+
+	// Neighborhood Guide menu and submenus
+	m1mn4 = new Array
+	(
+		"Map","/neighborhood_guide/map.asp",0
+		,"Restaurants","/neighborhood_guide/guidebook.asp?type=1",0
+		,"Nightlife","/neighborhood_guide/guidebook.asp?type=2",0
+		,"Hotels","/neighborhood_guide/guidebook.asp?type=6",0
+		,"Shopping","/neighborhood_guide/guidebook.asp?type=3",0
+		,"Attractions","/neighborhood_guide/guidebook.asp?type=5",1
+	)
+		// Attractions subnav
+		m1mn4_6 = new Array(
+			"Landmarks","/neighborhood_guide/guidebook.asp?type=5",0
+			,"Museums","/neighborhood_guide/guidebook.asp?type=4",0
+		)
+						
+	// Resources menu
+	m1mn5 = new Array
+	(
+		"Map of Neighborhood","/resources/map.asp",0
+		,"Reports & Data","/resources/data.asp",0
+		,"Order Publications","/resources/publications_order.asp",0
+		,"Links","/resources/links.asp",0
+	)
+	
+	absPath="";
+	if (m1.v19 && !m1.v20){
+		sepCh = (document.URL.lastIndexOf("\\")>document.URL.lastIndexOf("/")) ? "\\" : "/" ;
+		absPath = document.URL.substring(0,document.URL.lastIndexOf(sepCh)+1);
+	}
+	m1.popupOffset=1;
+	m1.menu_width_v02 = m1.menu_width_v23;
+	
+	if (DOM||IE4){
+		document.write("<img width=1 height=1 id='m1menubg4' src='\/img\/menubg4.gif' style='display:none' />");
+		document.write("<img width=1 height=1 id='m1menubg5' src='\/img\/menubg5.gif' style='display:none' />");
+		document.write("<img width=1 height=1 id='m1menubg6' src='\/img\/menubg6.gif' style='display:none' />");
+	}
+	if(NS4){
+		document.write("<"+"script language='JavaScript1.2' src='\/js\/menu_ns4.js'><"+"/"+"script>");
+	}
+	else if(document.getElementById) 
+		document.write("<"+"script language='JavaScript1.2' src='\/js\/menu_dom.js'><"+"/"+"script>");
+	else
+		document.write("<"+"script language='JavaScript1.2' src='\/js\/menu_ie4.js'><"+"/"+"script>");
+		
+	document.write("<style type='text/css'>\n");
+	document.write(".m1CL0{text-decoration:none;color:Black; }\n");
+	document.write(".topFold{position:"+(!DOM && !IE4 ? "relative" : "static")+"}\n");
+	if(NS4&&!m1.v25)
+		document.write(".x1{padding-left:5px;padding-right:5px;}\n");
+	document.write(".m1mit{"+((!NS4||m1.v25)?"padding-left:5px;padding-right:5px;":"")+"color:gray; font-family:Verdana,Arial,Helvetica; font-size:11px; }\n");
+	document.write("</style>\n\n");
+	//-->
+</script>
+
+<table cellspacing='0' cellpadding='0' border='0'>
+	<tr>
+		<!-- left sidebar -->
+		<td width='5'><a target='top'><span class='space3pt'>&nbsp;</span></a></td>
+		<td valign='top' width='106' height="100%">
+			<div id='m1tln' class='topFold'></div>
+			<div id='m1tl' style='position:static'>
+				<table cellspacing='0' cellpadding='0' border='0'>
+				<tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr><tr><td height='12'><table cellspacing='1' cellpadding='0' class='border' width='106'><tr><td width='106' class='tdSubnav'><a href="/whats_new/newsletter.asp" coords="104,1,104,0" onmouseover="exM(m1,'m1mn1','coords',104,1,104,0)" onmouseout="coM(m1,'m1mn1')"><img src='../img/nav/whats_new_off.gif' width='104' height='22' border='0'></a></td></tr></table></td></tr><tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr><tr><td height='12'><table cellspacing='1' cellpadding='0' class='border' width='106'><tr><td width='106' class='tdSubnav'><a href="/who_we_are/about.asp" coords="104,1,104,26" onmouseover="exM(m1,'m1mn2','coords',104,1,104,26)" onmouseout="coM(m1,'m1mn2')"><img src='../img/nav/who_we_are_off.gif' width='104' height='22' border='0'></a></td></tr></table></td></tr><tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr><tr><td height='12'><table cellspacing='1' cellpadding='0' class='border' width='106'><tr><td width='106' class='tdSubnav'><a href="/what_we_do/clean.asp" coords="104,1,104,52" onmouseover="exM(m1,'m1mn3','coords',104,1,104,52)" onmouseout="coM(m1,'m1mn3')"><img src='../img/nav/what_we_do_off.gif' width='104' height='22' border='0'></a></td></tr></table></td></tr><tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr><tr><td height='12'><table cellspacing='1' cellpadding='0' class='border' width='106'><tr><td width='106' class='tdSubnav'><a href="/neighborhood_guide/map.asp" coords="104,1,104,NaN" ><img src='../img/nav/neighborhood_guide_on.gif' width='104' height='28' border='0'></a><table cellspacing="0" cellpadding="0" border="0" width="104"><tr><td class="tdSubNav" style="padding:1 5 0 5;" width="100%"><a href='/neighborhood_guide/map.asp' class='subnavOff'>Map</a></td><td class="tdSubNav">&nbsp;</td></tr><tr><td class="tdSubNav" style="padding:1 5 0 5;" width="100%"><a href='/neighborhood_guide/guidebook.asp?type=1' class='subnavOff'>Restaurants</a></td><td class="tdSubNav">&nbsp;</td></tr><tr><td class="tdSubNav" style="padding:1 5 0 5;" width="100%"><a href='/neighborhood_guide/guidebook.asp?type=2' class='subnavOff'>Nightlife</a></td><td class="tdSubNav">&nbsp;</td></tr><tr><td class="tdSubNav" style="padding:1 5 0 5;" width="100%"><a href='/neighborhood_guide/guidebook.asp?type=6' class='subnavOn'>Hotels</a></td><td class="tdSubNav">&nbsp;</td></tr><tr><td class="tdSubNav" style="padding:1 5 0 5;" width="100%"><a href='/neighborhood_guide/guidebook.asp?type=3' class='subnavOff'>Shopping</a></td><td class="tdSubNav">&nbsp;</td></tr><tr><td class="tdSubNav" style="padding:1 5 0 5;" width="100%"><a href='/neighborhood_guide/guidebook.asp?type=5' class='subnavOff' onmouseover="exM(m1,'m1mn4_6','coords',104,1,104,183)" onmouseout="coM(m1,'m1mn4_6')">Attractions</a></td><td class="tdSubNav"><a href='/neighborhood_guide/guidebook.asp?type=5' class='subnavOff' onmouseover="exM(m1,'m1mn4_6','coords',104,1,104,183)" onmouseout="coM(m1,'m1mn4_6')"><img src='/img/site/right_arrow.gif' border='0' width='9' height='9' hspace="3"></a></td></tr></table></td></tr></table></td></tr><tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr><tr><td height='12'><table cellspacing='1' cellpadding='0' class='border' width='106'><tr><td width='106' class='tdSubnav'><a href="/resources/map.asp" coords="104,1,104,200" onmouseover="exM(m1,'m1mn5','coords',104,1,104,200)" onmouseout="coM(m1,'m1mn5')"><img src='../img/nav/resources_off.gif' width='104' height='22' border='0'></a></td></tr></table></td></tr>
+				</table>
+			</div>	
+
+			<table cellspacing='0' cellpadding='0' border='0'>
+				<tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr>
+				<tr>
+					<td valign='top'>
+						<table cellspacing='1' cellpadding='0' class='border'>
+							<tr>					
+								<td class='tdSidebarExtra' width='106' valign='top'><span style='font-weight:bold;color:gray'>Did You Know</span><span style="font-size:4pt;"><br><br></span>The MetLife Building at 200 Park Ave is the largest property in the Grand Central neighborhood, with more than 2.7 million sq. ft. of commercial space.</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr>
+				<tr>
+					<td>
+						<table cellspacing='1' cellpadding='0' border='0' class='border'>
+							<tr>					
+								<td class='tdSidebarExtra' width='106'><a href='/who_we_are/contact_us.asp'><img src='../img/nav/contact_us_off.gif' width='93' height='12' border='0'></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>				
+				<tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr>
+				<tr>
+					<td>
+						<table cellspacing='1' cellpadding='0' border='0' class='border'>
+							<tr>					
+								<td class='tdSidebarExtra' width='106'><a href='/site_map.asp'><img src='../img/nav/site_map_off.gif' width='93' height='12' border='0'></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr>
+
+				<tr>
+					<td>
+						<table cellspacing='1' cellpadding='0' class='border' width='106'>
+							<tr>
+								<td class='tdSidebarExtra' width='106' class='txtReg8'>&copy;2003 Grand Central Partnership</td>
+							</tr>
+						</table>
+						
+					</td>
+				</tr>
+				<tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr>
+				<tr>
+					<td>
+						<table cellspacing='1' cellpadding='0' class='border' width='106'>
+							<tr>
+								<td width='106' height='7' class='tdRightSidebar'><span class='space3pt'>&nbsp;</span></td>
+							</tr>
+						</table>
+						<br><br>
+					</td>
+				</tr>																																												
+			</table>
+		</td>
+		<td width='5'><span class='space3pt'>&nbsp;</span></td>
+		<td valign='top'>
+		
+
+			<table cellspacing='0' cellpadding='0' border='0' height='2' id="Table1">
+				<tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr>
+			</table>
+			<!-- page title -->
+			<table cellspacing='1' cellpadding='0' border='0' class='border' width='628' id="Table2">
+				<tr>
+					<td class='tbTitle' width='628' height='16' valign='top'>HOTELS</td>
+				</tr>
+			</table>			
+			<table cellspacing='0' cellpadding='0' border='0' height='2' id="Table3">
+				<tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr>
+			</table>
+			<!-- page body -->			
+			<table cellspacing='1' cellpadding='0' border='0' class='border' width='628' id="Table4">
+				<tr>
+					<td class='tdPageContent' width='628' height='288' valign='top'>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			70 Park Avenue<br><span class='txtReg8'><GEO TYPE="US">70 Park Avenue<br>New York, NY 10016</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>East 38th Street<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-973-2400<br><a href='http://www.70parkave.com' target='_blank'>www.70parkave.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Alex, The <br><span class='txtReg8'><GEO TYPE="US">205 East 45th Street<br>New York, NY 10017</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>Third Avenue<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-867-5100<br><a href='http://www.thealexhotel.com' target='_blank'>www.thealexhotel.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Bedford Hotel, The<br><span class='txtReg8'><GEO TYPE="US">118 East 40th Street<br>New York, NY 10016</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>between Lexington & Park Avenues<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-697-4800<br><a href='http://www.bedfordhotel.com' target='_blank'>www.bedfordhotel.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Benjamin, The <br><span class='txtReg8'><GEO TYPE="US">125 East 50th Street <br>New York, NY 10022</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>Lexington Avenue<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-715-2500<br><a href='http://www.thebenjamin.com' target='_blank'>www.thebenjamin.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Crowne Plaza at the United Nations<br><span class='txtReg8'><GEO TYPE="US">304 East 42nd Street <br>New York, NY 10017</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>Second Avenue<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-986-8800<br>Fax: 212-986-1758<br><a href='http://www.unitednationsarea.crowneplaza.com' target='_blank'>www.unitednationsarea.crowneplaza.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Dylan Hotel<br><span class='txtReg8'><GEO TYPE="US">52 East 41st Street <br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-338-0500<br><a href='http://www.dylanhotel.com' target='_blank'>www.dylanhotel.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Fitzpatrick Grand Central Hotel<br><span class='txtReg8'><GEO TYPE="US">141 East 44th Street<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-351-6800<br><a href='http://www.fitzpatrickhotels.com' target='_blank'>www.fitzpatrickhotels.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Hotel 5A<br><span class='txtReg8'><GEO TYPE="US">3 East 40th Street<br>New York, NY 10016</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>Fifth Avenue<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-447-1500<br><a href='http://www.hotel5A.com' target='_blank'>www.hotel5A.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Inter-Continental, the Barclay New York<br><span class='txtReg8'><GEO TYPE="US">111 East 48th Street<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-755-5900<br><a href='http://new-york-barclay.intercontinental.com' target='_blank'>new-york-barclay.intercontinental.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Jolly Madison Towers Hotel<br><span class='txtReg8'><GEO TYPE="US">22 East 38th Street<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-802-0600<br><a href='http://www.jollymadison.com' target='_blank'>www.jollymadison.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Kimberly Hotel<br><span class='txtReg8'><GEO TYPE="US">145 East 50th Street<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-755-0400<br><a href='http://www.kimberlyhotel.com' target='_blank'>www.kimberlyhotel.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Kitano New York<br><span class='txtReg8'><GEO TYPE="US">66 Park Avenue<br>New York, NY 10016</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>East 38th Street<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-885-7000<br><a href='http://www.kitano.com' target='_blank'>www.kitano.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Library Hotel, The<br><span class='txtReg8'><GEO TYPE="US">299 Madison Avenue<br>New York, NY 10017</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>East 41st Street<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-983-4500<br><a href='http://www.libraryhotel.com' target='_blank'>www.libraryhotel.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Mansfield Hotel, The<br><span class='txtReg8'><GEO TYPE="US">12 West 44th Street <br>New York, NY 10036</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>between Fifth & Sixth Avenues<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-944-6050<br><a href='http://www.mansfieldhotel.com' target='_blank'>www.mansfieldhotel.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Metropolitan Hotel<br><span class='txtReg8'><GEO TYPE="US">569 Lexington Avenue <br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-752-7000<br><a href='http://www.metropolitanhotelnyc.com' target='_blank'>www.metropolitanhotelnyc.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Millennium Hotel New York U.N. Plaza<br><span class='txtReg8'><GEO TYPE="US">1 United Nations Plaza<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-758-1234<br><a href='http://www.millenniumhotels.com' target='_blank'>www.millenniumhotels.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Morgans<br><span class='txtReg8'><GEO TYPE="US">237 Madison Avenue <br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-686-0300<br><a href='http://www.ianschragerhotels.com' target='_blank'>www.ianschragerhotels.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			New York Helmsley<br><span class='txtReg8'><GEO TYPE="US">212 East 42nd Street<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-490-8900<br><a href='http://www.helmsleyhotels.com' target='_blank'>www.helmsleyhotels.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			New York Marriot East Side<br><span class='txtReg8'><GEO TYPE="US">525 Lexington Avenue<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-755-4000<br><a href='http://www.marriot.com' target='_blank'>www.marriot.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			New York Palace<br><span class='txtReg8'><GEO TYPE="US">455 Madison Avenue<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-888-7000<br><a href='http://www.newyorkpalace.com' target='_blank'>www.newyorkpalace.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Radisson Lexington Hotel New York<br><span class='txtReg8'><GEO TYPE="US">511 Lexington Avenue<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-755-4400<br><a href='http://www.radisson.com' target='_blank'>www.radisson.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Roger Smith Hotel<br><span class='txtReg8'><GEO TYPE="US">501 Lexington Avenue <br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-755-1400<br><a href='http://www.rogersmith.com' target='_blank'>www.rogersmith.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Roosevelt Hotel, The<br><span class='txtReg8'>Madoson Avenue at <GEO TYPE="US">45th Street<br>New York, NY 10017</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>East 45th Street<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-661-9600<br><a href='http://www.theroosevelthotel.com' target='_blank'>www.theroosevelthotel.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Shelburne Murray Hill Hotel<br><span class='txtReg8'><GEO TYPE="US">303 Lexington Avenue <br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-689-5200<br><a href='http://www.affinia.com' target='_blank'>www.affinia.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Sheraton Russell Hotel<br><span class='txtReg8'><GEO TYPE="US">45 Park Avenue<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-685-7676<br><a href='http://www.starwood.com/sheraton' target='_blank'>www.starwood.com/sheraton</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			W New York<br><span class='txtReg8'><GEO TYPE="US">541 Lexington Avenue<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-755-1200<br><a href='http://www.starwood.com/whotels' target='_blank'>www.starwood.com/whotels</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			W New York- The Court<br><span class='txtReg8'><GEO TYPE="US">130 East 39th Street<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-685-1100<br><a href='http://www.starwood.com/whotels' target='_blank'>www.starwood.com/whotels</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			W New York- The Tuscany<br><span class='txtReg8'><GEO TYPE="US">120 East 39th Street<br>New York, NY</GEO> </span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-686-1600<br><a href='http://www.starwood.com/whotels' target='_blank'>www.starwood.com/whotels</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+<table cellspacing='0' cellpadding='0' border='0' width='100%'> 
+	<tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+	<tr>
+		<td class='tdListing' colspan='2'>
+			Waldorf Astoria, The<br><span class='txtReg8'><GEO TYPE="US">301 Park Avenue<br>New York, NY 10022</GEO></span></td>
+	</tr><tr>
+		<td class='midBlue' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+<tr><td valign='top' class='tdYellowIndent'></td><td align='right' valign='top' class='tdSidebarExtra' style='padding-left:4pt' rowspan='3'></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'><br>Cross Street: </span>East 49th Street<span class='space3pt'><br><br><br></span></td></tr><tr><td class='tdYellowIndent'><span class='txtReg8Bold'>For more info:<br></span>Tel: 212-355-3000<br><a href='http://www.waldorfastoria.com' target='_blank'>www.waldorfastoria.com</a><span class='space3pt'><br><br><br></span></td></tr>			
+	<tr>
+		<td class='yellow' colspan='2'><img src='../img/blank.gif' width='100%' height='1' border='0'></td>
+	</tr>
+</table>
+<br>
+
+					</td>
+				</tr>				
+			</table>
+			
+			<table cellspacing='0' cellpadding='0' border='0' width='628' id="Table5">
+				<tr><td height='2'><img src='img/site/blank.gif' width='1' height='2' border='0'></td></tr>
+				<tr>
+					<td>
+						<!-- yellow bar -->
+						<table cellspacing='1' cellpadding='0' border='0' class='border' width='100%' id="Table6">
+							<tr>
+								<td width='106' height='7' class='tdRightSidebar'><span class='space3pt'>&nbsp;</span></td>
+							</tr>
+						</table>
+					</td>
+				</tr>			
+			</table>
+			<br><br>
+			
+		</td>
+		
+		<td valign='top' width='100%'>
+			<table cellspacing='0' cellpadding='0' border='0'>
+				<tr>
+					<td><img src='../img/site/blank.gif' width='1' height='2' border='0'></td>
+				</tr>
+			</table>
+			<img src='../img/site/right_side_stretch.gif' width='100%' height='48' border='0'>
+		</td>
+	</tr>
+</table>
+	<!-- footer -->
+
+
+	<!-- end footer -->
+</body>
+</html>

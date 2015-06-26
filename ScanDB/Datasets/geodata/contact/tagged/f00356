@@ -1,0 +1,807 @@
+<DOC>
+<DOCNO>f00356</DOCNO>
+<DOCHDR>http://www.pfizer.com/mn_contact.html</DOCHDR>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Pfizer | Contact</title>
+
+
+<script language="javascript" src="/search.js" type="text/javascript"></script>
+<script language="javascript" src="/browser.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+<!--
+// mac detect
+if (is_mac) {
+  document.write('<'+'link rel="stylesheet" type="text/css" href="/style_mac.css" />');
+}
+
+
+else if (is_mac68k) {
+  document.write('<'+'link rel="stylesheet" type="text/css" href="/style_mac.css" />');
+}
+
+
+else if (is_macppc) {
+  document.write('<'+'link rel="stylesheet" type="text/css" href="/style_mac.css" />');
+}
+
+
+else {
+  document.write('<'+'link rel="stylesheet" type="text/css" href="/style.css" />');
+}
+// -->
+</script> 
+
+
+<script language="javascript" type="text/javascript">
+	<!--//
+
+
+	//==========//
+	// JavaScript Rollovers v1.4
+	//==========//
+
+
+	// ***** ROLLOVER CODE - START ***** //
+	
+	if (document.images) {
+		var imageCache = new Array();
+		var allCacheCalls = 0;
+		var tempImage = new Image();
+	}	
+
+
+	function swapImage(names) {
+		if (document.images) {
+			imageList = names.split(",");
+			for (i = 0 ; i < imageList.length ; i++) {
+				imagePair = imageList[i].split("=");
+				if (imagePair.length == 2) {
+					if (document.images[imagePair[0]]) {
+						document.images[imagePair[0]].src = imagePair[1];
+					} 
+				}
+			}
+		}
+	}
+
+
+	function cache(name) {
+		if (document.images) {
+			var current = imageCache.length;
+			imageCache[current] = new Image();
+			imageCache[current].src = name;
+		}
+	}
+
+
+	function pageLoaded() {
+		if (document.images) {
+			cache("/images/nav/bt_are_about.gif");
+			cache("/images/nav/bt_are_about_over.gif");
+			cache("/images/nav/bt_are_about_on.gif");
+			cache("/images/nav/bt_are_news.gif");
+			cache("/images/nav/bt_are_news_over.gif");
+			cache("/images/nav/bt_are_news_on.gif");
+			cache("/images/nav/bt_are_careers.gif");
+			cache("/images/nav/bt_are_careers_over.gif");
+			cache("/images/nav/bt_are_careers_on.gif");
+			cache("/images/nav/bt_are_investors.gif");
+			cache("/images/nav/bt_are_investors_over.gif");
+			cache("/images/nav/bt_are_investors_on.gif");
+			cache("/images/nav/bt_do_medicines.gif");
+			cache("/images/nav/bt_do_medicines_over.gif");
+			cache("/images/nav/bt_do_health.gif");
+			cache("/images/nav/bt_do_health_over.gif");
+			cache("/images/nav/bt_do_animal.gif");
+			cache("/images/nav/bt_do_animal_over.gif");
+			cache("/images/nav/bt_do_business.gif");
+			cache("/images/nav/bt_do_business_over.gif");
+			cache("/images/nav/bt_help_research.gif");
+			cache("/images/nav/bt_help_research_over.gif");
+			cache("/images/nav/bt_help_caring.gif");
+			cache("/images/nav/bt_help_caring_over.gif");
+			cache("/images/nav/bt_help_access.gif");
+			cache("/images/nav/bt_help_access_over.gif");
+			cache("/images/nav/bt_help_citizen.gif");
+			cache("/images/nav/bt_help_citizen_over.gif");
+			cache("/images/nav/blt_square.gif");
+			cache("/images/nav/blt_square_on.gif");
+			cache("/images/nav/blt_arrow.gif");
+			cache("/images/nav/blt_arrow_on.gif");
+			
+			allCacheCalls = 1;
+		}
+	}
+
+
+	// ***** ROLLOVER CODE - END ***** //
+
+
+//-->
+</script>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+
+
+//this is the javascript for the annual reports popup
+
+
+function popUp2002() {
+        window.open("/are/investors_reports/annual_2002/index.html","ar2002","width=740,height=500,status=yes,resizable=yes,scrollbars=yes,menubars=yes,toolbar=yes,location=yes");
+
+
+}
+
+
+//-->
+</script>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+
+
+//THIS jumps the browser to a blank window
+
+
+function callPageBlank(theName) {
+	
+	if (document.images) {
+	
+		var whereTo;
+
+
+		whereTo = theName.options[theName.selectedIndex].value;
+
+
+		if (whereTo == ""){
+			theName.selectedIndex = 0;
+		} else {
+			window.open(whereTo);
+		}
+	
+	}
+	
+}
+-->
+</script>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+
+
+//this allows dropdown to open in different windows
+
+
+function land(ref, target) {
+lowtarget=target.toLowerCase();
+if (lowtarget=="_self") {window.location=loc;}
+else {if (lowtarget=="_top") {top.location=loc;}
+else {if (lowtarget=="_blank") {window.open(loc);}
+else {if (lowtarget=="_parent") {parent.location=loc;}
+else {parent.frames[target].location=loc;};
+}}}
+}
+
+
+function jump(menu) {
+ref=menu.sites.options[menu.sites.selectedIndex].value;
+splitc=ref.lastIndexOf("*");
+target="";
+if (splitc!=-1)
+{loc=ref.substring(0,splitc);
+target=ref.substring(splitc+1,1000);}
+else {loc=ref; target="_self";};
+if (ref != "") {land(loc,target);}
+}
+//-->
+</script>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+//this makes the 3rd party exit window work
+
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+
+
+//this is the javascript for the annual reports popup
+function popUp2001() {
+        window.open("/are/investors_reports/annual_2001/index.html","ar2001","width=740,height=500,status=yes,resizable=yes,scrollbars=yes,menubars=yes,toolbar=yes,location=yes");
+
+
+}
+//-->
+</script>
+</head>
+
+
+<body bgcolor="#ffffff" background="/images/bg_home.gif" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" onload="pageLoaded();">
+
+<!-- start blue strip table -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#1f62a9">
+<tr>
+<td><a href="#content"><img src="/images/1x1.gif" width="1" height="15" border="0" alt="Skip Navigation Links" /></a></td>
+</tr>
+</table>
+<!-- end blue strip table -->
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td bgcolor="#ffffff" valign="top">
+
+
+<!-- start logo & strapline -->
+	<table border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tr>
+	<td rowspan="4"><a href="index.html" name="top"><img src="/images/lg_pfizer.gif" width="90" height="55" border="0" alt="Pfizer" hspace="12" vspace="8" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="15" border="0" alt=" " /></td>
+	</tr>	<tr>
+	<td><img src="/images/txt_we_dedicate.gif" width="410" height="34" border="0" alt="We dedicate ourselves to humanity's quest for longer, healthier, happier lives through innovation in pharmaceutical, consumer and animal health products." /></td>
+	</tr>
+	
+	<tr>
+	<td><img src="/images/1x1.gif" width="1" height="15" border="0" alt=" " /></td>
+	</tr>
+	</table>
+<!-- end logo & strapline -->
+
+
+</td>
+<td align="right" valign="bottom">
+
+
+	<table border="0" cellpadding="0" cellspacing="0" width="170">
+	<tr>
+	<td align="center"><p class="toplink"><a href="/mn_sitemap.html" class="toplink">Sitemap</a>&nbsp;&nbsp;|<!--- &nbsp;&nbsp;<a href="/mn_contact.html" class="toplink">Contact</a>&nbsp;&nbsp;| --->&nbsp;&nbsp;<a href="/privacy/mn_privacy_truste.html" class="toplink">Privacy</a><br />
+	<img src="/images/1x1.gif" width="1" height="9" border="0" alt=" " /></p></td>
+	</tr>
+	</table>
+	
+</td>
+</tr>
+</table>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr valign="top">
+<td>
+
+
+	<!-- start leftnav -->
+	<!-- start search -->
+	<table border="0" cellpadding="0" cellspacing="0" width="160" bgcolor="#ffcc33">
+	<tr bgcolor="#ffcc33">
+	<td colspan="4"><img src="/images/1x1.gif" width="160" height="6" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#ffcc33">
+	<td colspan="4"><img src="/images/nav/hd_search.gif" width="159" height="18" border="0" alt="Search Pfizer.com" /></td>
+	</tr>
+	
+	<form action="" name="searchIt" onsubmit="GoogleSearch(); return false;" method="post">
+
+
+	<tr bgcolor="#ffcc33">
+	<td><img src="/images/1x1.gif" width="10" height="1" border="0" alt=" " /></td>
+	<td><input type="text" name="search" size="14" class="search" /></td>
+	<td><input type="submit" value="go" name="go" class="go" /></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	</form>
+	
+	<tr bgcolor="#ffcc33">
+	<td colspan="4"><img src="/images/1x1.gif" width="1" height="6" border="0" alt=" " /></td>
+	</tr>
+	</table>
+	<!-- end search -->
+	
+	
+	<!-- start who we are -->
+	<table border="0" cellpadding="0" cellspacing="0" width="160">
+	<tr bgcolor="#ffffff">
+	<td><img src="/images/1x1.gif" width="10" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="8" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="12" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="129" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#afd7eb">
+	<td colspan="5"><img src="/images/1x1.gif" width="1" height="6" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#afd7eb">
+	<td colspan="5"><img src="/images/nav/hd_are.gif" width="151" height="27" border="0" alt="Who We Are" /></td>
+	</tr>
+	
+	<tr bgcolor="#afd7eb">
+	<td colspan="4"><a href="/are/index.html" onmouseover="swapImage('about=/images/nav/bt_are_about_over.gif')" onmouseout="swapImage('about=/images/nav/bt_are_about.gif')"><img src="/images/nav/bt_are_about.gif" width="159" height="18" border="0" alt="About Pfizer" name="about" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+
+
+	<tr bgcolor="#afd7eb">
+	<td colspan="4"><a href="/are/mn_news.html" onmouseover="swapImage('news=/images/nav/bt_are_news_over.gif')" onmouseout="swapImage('news=/images/nav/bt_are_news.gif')"><img src="/images/nav/bt_are_news.gif" width="159" height="18" border="0" alt="News" name="news" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#afd7eb">
+	<td colspan="4"><a href="/are/careers/index.html" onmouseover="swapImage('careers=/images/nav/bt_are_careers_over.gif')" onmouseout="swapImage('careers=/images/nav/bt_are_careers.gif')"><img src="/images/nav/bt_are_careers.gif" width="159" height="18" border="0" alt="Careers" name="careers" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#afd7eb">
+	<td colspan="4"><a href="/are/mn_investors.cfm" onmouseover="swapImage('investors=/images/nav/bt_are_investors_over.gif')" onmouseout="swapImage('investors=/images/nav/bt_are_investors.gif')"><img src="/images/nav/bt_are_investors.gif" width="159" height="18" border="0" alt="For Investors" name="investors" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#afd7eb">
+	<td colspan="5"><img src="/images/1x1.gif" width="1" height="12" border="0" alt=" " /></td>
+	</tr>
+	</table>
+	<!-- end who we are -->
+	
+	<!-- start what we do -->
+	<table border="0" cellpadding="0" cellspacing="0" width="160">
+	<tr bgcolor="#ffffff">
+	<td><img src="/images/1x1.gif" width="10" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="8" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="12" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="129" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#3399cc">
+	<td colspan="5"><img src="/images/1x1.gif" width="1" height="6" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#3399cc">
+	<td colspan="5"><img src="/images/nav/hd_do.gif" width="151" height="27" border="0" alt="What We Do" /></td>
+	</tr>
+	
+	<tr bgcolor="#3399cc">
+	<td colspan="4"><a href="/do/medicines/index.html" onmouseover="swapImage('medicines=/images/nav/bt_do_medicines_over.gif')" onmouseout="swapImage('medicines=/images/nav/bt_do_medicines.gif')"><img src="/images/nav/bt_do_medicines.gif" width="159" height="18" border="0" alt="Medicines and Products" name="medicines" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+
+
+	<tr bgcolor="#3399cc">
+	<td colspan="4"><a href="/do/mn_health.html" onmouseover="swapImage('health=/images/nav/bt_do_health_over.gif')" onmouseout="swapImage('health=/images/nav/bt_do_health.gif')"><img src="/images/nav/bt_do_health.gif" width="159" height="18" border="0" alt="Health Resources" name="health" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#3399cc">
+	<td colspan="4"><a href="/do/mn_animal.html" onmouseover="swapImage('animal=/images/nav/bt_do_animal_over.gif')" onmouseout="swapImage('animal=/images/nav/bt_do_animal.gif')"><img src="/images/nav/bt_do_animal.gif" width="159" height="18" border="0" alt="Animal Care" name="animal" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#3399cc">
+	<td colspan="4"><a href="/do/mn_business.html" onmouseover="swapImage('business=/images/nav/bt_do_business_over.gif')" onmouseout="swapImage('business=/images/nav/bt_do_business.gif')"><img src="/images/nav/bt_do_business.gif" width="159" height="18" border="0" alt="Business to Business" name="business" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#3399cc">
+	<td colspan="5"><img src="/images/1x1.gif" width="1" height="12" border="0" alt=" " /></td>
+	</tr>
+	</table>
+	<!-- end what we do -->
+	
+	
+	<!-- start how we help -->
+	<table border="0" cellpadding="0" cellspacing="0" width="160">
+	<tr bgcolor="#ffffff">
+	<td><img src="/images/1x1.gif" width="10" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="8" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="12" height="1" border="0" alt=" " /></td>
+
+	<td><img src="/images/1x1.gif" width="129" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#1f62a9">
+	<td colspan="5"><img src="/images/1x1.gif" width="1" height="6" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#1f62a9">
+	<td colspan="5"><img src="/images/nav/hd_help.gif" width="151" height="27" border="0" alt="How We Help" /></td>
+	</tr>
+	
+	<tr bgcolor="#1f62a9">
+	<td colspan="4"><a href="/help/index.html" onmouseover="swapImage('research=/images/nav/bt_help_research_over.gif')" onmouseout="swapImage('research=/images/nav/bt_help_research.gif')"><img src="/images/nav/bt_help_research.gif" width="159" height="18" border="0" alt="Research and Development" name="research" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+
+
+	<tr bgcolor="#1f62a9">
+	<td colspan="4"><a href="/subsites/philanthropy/caring/index.html" onmouseover="swapImage('caring=/images/nav/bt_help_caring_over.gif')" onmouseout="swapImage('caring=/images/nav/bt_help_caring.gif')"><img src="/images/nav/bt_help_caring.gif" width="159" height="18" border="0" alt="Caring for Community" name="caring" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#1f62a9">
+	<td colspan="4"><a href="/subsites/philanthropy/access/index.html" onmouseover="swapImage('access=/images/nav/bt_help_access_over.gif')" onmouseout="swapImage('access=/images/nav/bt_help_access.gif')"><img src="/images/nav/bt_help_access.gif" width="159" height="18" border="0" alt="Access to Medicines" name="access" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+		<tr bgcolor="#1f62a9">
+	<td colspan="4"><a href="/subsites/corporate_citizenship/index.html" onmouseover="swapImage('citizenship=/images/nav/bt_help_citizen_over.gif')" onmouseout="swapImage('citizenship=/images/nav/bt_help_citizen.gif')"><img src="/images/nav/bt_help_citizen.gif" width="159" height="18" border="0" alt="Corporate Citizenship" name="citizenship" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#1f62a9">
+	<td colspan="5"><img src="/images/1x1.gif" width="1" height="12" border="0" alt=" " /></td>
+	</tr>
+	</table>
+	<!-- end how we help -->
+	
+	<!-- start of home -->
+	<table border="0" cellpadding="0" cellspacing="0" width="160">
+	<tr bgcolor="#ffffff">
+	<td><img src="/images/1x1.gif" width="10" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="8" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="12" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="129" height="1" border="0" alt=" " /></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+
+
+	<tr bgcolor="#1f62a9">
+	<td colspan="5"><img src="/images/1x1.gif" width="1" height="6" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr bgcolor="#1f62a9">
+	<td colspan="4"><a href="index.html" onmouseover="swapImage('home=/images/nav/bt_home_over.gif')" onmouseout="swapImage('home=/images/nav/bt_home.gif')"><img src="/images/nav/bt_home.gif" width="159" height="18" border="0" alt="Home" name="home" /></a></td>
+	<td><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	</table>
+	<!-- end of home -->
+	<!-- end leftnav -->
+
+
+</td>
+<td colspan="2" valign="top">
+
+
+	<!-- nested content table -->
+	<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	<td rowspan="4"><img src="/images/1x1.gif" width="12" height="1" border="0" alt=" " /></td>
+	<td colspan="3" bgcolor="#afd7eb"><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr>	
+	<td valign="top">
+	
+		<!-- start header --><a name="content"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+		<td><h1>Contact</h1></td>
+		</tr>
+		</table>		
+		<!-- end header -->
+		
+		<!-- start blue strip -->
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+		<td bgcolor="#afd7eb"><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+		</tr>
+		</table>
+		<!-- end blue strip -->
+		
+		<!-- start breadcrumb -->
+		<p class="breadcrumb"><a href="/index.html" class="breadcrumb">Home</a> &gt; Contact</p>
+		<!-- end breadcrumb -->
+		
+		<!-- start blue strip -->
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+		<td bgcolor="#afd7eb"><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+		</tr>
+		</table>
+		<!-- end blue strip -->
+		
+		<!-- start content1 -->
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+		<td colspan="2"><img src="/images/1x1.gif" width="1" height="8" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td valign="top" width="100%">
+		<h2>Patient Assistance Programs</h2>
+		          <dl class="text"> 
+                    <dd><a href="http://www.pfizerhelpfulanswers.com" target="_blank"><b>Pfizer Helpful Answers<span class="trademark">TM</span></b></a></dd>
+                    <br />
+                    <br />
+					<dd><a href="/subsites/philanthropy/access/connection.care.index.html"><b>Connection 
+                      to Care</b></a></dd>
+                    <br />
+                    <br />
+                    <dd><a href="http://www.pfizersharecard.com" target="_blank"><b>The 
+                      Pfizer for Living Share Card&#153;</b></a></dd>
+                    <br />
+                    <br />
+                    
+				    <dd><a href="/subsites/philanthropy/access/other.patients.index.html"><b>Other 
+                      Patient Assistance Programs</b></a></dd>
+					  <br />
+                    <br />
+                 <dd><strong>Medicare-Approved Drug Discount Cards</strong><br /><br /></dd>
+					
+						<dl> 
+                    <dd> 
+                    <a href="pop_jump.html?urlto=http://www.usharerx.com/" target="_blank"><b>U Share<span class="trademark">TM</span> Prescription Drug Discount Card</b></a></dd>
+					  <br />
+                    <br />
+					<dd><a href="pop_jump.html?urlto=http://www.medicare.gov/" target="_blank"><b>Other Medicare-Approved Drug Discount Cards</b></a></dd>
+					 
+                  </dl>
+			      </dl>
+                  <br />
+
+		
+		<h2>Products</h2>
+		          <dl class="text"> 
+                    <dd><b>Prescription Medicines</b> - Consumers who have questions 
+                      about any of our prescription medicines.<br />
+                      <br />
+                      <dl class="nested"> 
+                        <dd><b>Pfizer Prescription Medicine</b><br />
+                          1-800-TRY-FIRST (1-800-879-3477)<br />
+                          Monday through Friday 8:00 a.m. to 8:00 p.m. EST</dd>
+                        <br>
+                        <br>
+                        <dd><b>Legacy Pharmacia Prescription Medicine Questions</b> 
+                          <br />
+                            1-800-TRY-FIRST (1-800-879-3477)<br />
+Monday through Friday 8:00 a.m. to 8:00 p.m. EST</dd>
+                      </dl>
+                    </dd>
+                    <dd><b>Over the Counter Medicines and Consumer Products</b> 
+                      - Consumers who have questions about any of our over the 
+                      counter medicines and consumer products<br />
+                      <br />
+                      <dl class="nested"> 
+                        <dd><b>Pfizer Consumer Products</b><br />
+                          1-800-223-0182<br />
+                          Monday through Friday 9:00 a.m. to 5:00 p.m. EST</dd>
+                        <br>
+                        <br>
+                        <dd><b>Legacy Pharmacia Consumer Products</b><br />
+                          1-800-223-0182<br />
+                          Monday through Friday 9:00 a.m. to 5:00 p.m. EST</dd>
+                      </dl>
+                    </dd>
+                    <dd><b>Pfizer Animal Health Product Support</b> - Pfizer Product 
+                      Support Specialists can answer questions and discuss technical/medical 
+                      issues relating to Pfizer Animal Health products and when 
+                      appropriate forward your call to one of our veterinarians. 
+                      Product Support also handle any reports of product complaints 
+                      including adverse experiences, human exposures and product 
+                      defects. <br>
+                      <br>
+                      <dl class="nested"> 
+                        <dd><b>Pfizer Animal Health Customer Service and Product 
+                          Support</b><br />
+                          1-800-366-5288<br />
+                          Monday through Friday 9:00 a.m. to 12:00 p.m. and 1:00 
+                          p.m. to 5:00 p.m. EST</dd>
+                        <br>
+                      </dl>
+                      <dl class="nested"> 
+                        <dd><b>Legacy Pharmacia Animal Health Customer Service 
+                          and Product Support</b><br />
+                          1-800-793-0596<br />
+                          Monday through Friday 8:00 a.m. to 6:30 p.m. EST</dd>
+                      </dl>
+                    </dd>
+                  </dl>
+                  <br />
+		
+		<h2>Shareholders</h2>
+		<p class="text">Pfizer shareholders of record needing assistance and information.</p>
+		
+			      <dl class="text"> 
+                    <dd><b>Phone</b><br />
+                      1-800-733-9393<br />
+                      Weekdays 9:00 a.m. - 5:00 p.m. EST<br />
+                      An automated response system is available 24 hours a day.</dd>
+                    <br />
+                    <br />
+
+                    <dd><b>Internet</b><br />
+                      <a href="#" onclick="MM_openBrWindow('/pop_jump.html?urlto=http://www.equiserve.com','','width=620,height=460,location=yes,menubar=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes')">www.equiserve.com</a></dd>
+                    <br />
+                    <br />
+                   
+                    <dd><b>Mail</b><br />
+                      EquiServe Trust Company, N.A.<br />
+                      <GEO TYPE="US">P.O. Box 43069<br />
+                      Providence, RI 02940-3069</GEO></dd>
+                    <br />
+                    <br />
+                    <dd><b>Optional Cash Payments</b><br />
+                      EquiServe Trust Company<br />
+                      <GEO TYPE="US">P.O. Box 13531<br />
+                      Newark, NJ 07188-001</GEO></dd>
+                    <br />
+                    <br />
+                  </dl>
+                  
+		
+		          
+		
+				
+		<h2>Headquarters</h2>
+		<dl class="text">
+		<dd>Pfizer Inc<br />
+		<GEO TYPE="US">235 East 42nd Street<br />
+		New York, NY 10017<br />
+		USA</GEO></dd><br /><br />
+		<dd><b>Phone</b><br />
+		1-212-733-2323</dd>
+		</dl><br />
+		
+		<p class="text"><a href="#top" class="top"><img src="/images/ic_top.gif" width="12" height="10" border="0" alt="top" class="inline" vspace="5" />Top</a></p>
+		
+		<p class="small"><img src="/images/ic_pdf.gif" width="26" height="22" border="0" alt="pdf" class="inline" /> If you do not have Adobe<span class="registered">&reg;</span> Acrobat<span class="registered">&reg;</span> Reader, <a href="http://www.adobe.com/products/acrobat/readstep.html" target="_blank">download it here</a>. It is available without charge from Adobe<span class="registered">&reg;</span>. This link is provided as a convenience. Pfizer is not responsible for the content of this linked page.</p>
+		</td>
+		<td><img src="/images/1x1.gif" width="12" height="1" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td colspan="2"><img src="/images/1x1.gif" width="1" height="8" border="0" alt=" " /></td>
+		</tr>
+		</table>
+		<!-- end content1 -->
+	
+	</td>
+	<td rowspan="2" bgcolor="#afd7eb"><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	<td rowspan="2" valign="top">
+
+
+		<!-- start righthand column -->
+		<table border="0" cellpadding="0" cellspacing="0" width="170">
+		<tr>
+		<td><img src="/images/1x1.gif" width="8" height="1" border="0" alt=" " /></td>
+		<td colspan="2"><h2>Looking for the Pfizer Annual Report to Shareholders?</h2></td>
+		<td><img src="/images/1x1.gif" width="5" height="1" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td><img src="/images/1x1.gif" width="8" height="1" border="0" alt=" " /></td>
+		        <td colspan="2" align="center"><img src="/images/ic_annual_2003.jpg" width="100" height="130" border="1" alt="2003 Annual Review and Financial Report" /></td>
+		<td><img src="/images/1x1.gif" width="5" height="1" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td colspan="4"><img src="/images/1x1.gif" width="1" height="3" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td><img src="/images/1x1.gif" width="8" height="1" border="0" alt=" " /></td>        
+                <td colspan="2"> 
+				<p class="text">View the 2003 Annual Review (<a onclick="javascript:_hbPageView('review2003.pdf','/annual_2003/review/')" href="/are/investors_reports/annual_2003/review2003.pdf" target="_blank" class="feature">PDF</a> | <a class="feature" href="/are/investors_reports/annual_2003/review/index.htm">HTML</a>) and Financial Report (<a href="/are/investors_reports/annual_2003/financial2003.pdf" target="_blank" class="feature">PDF</a> | <a class="feature" href="/are/investors_reports/annual_2003/financial/index.htm">HTML</a>).</p>
+                </td>
+		<td><img src="/images/1x1.gif" width="5" height="1" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td colspan="4" bgcolor="#afd7eb"><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+		</tr>
+		<tr>
+		<td colspan="4"><img src="/images/1x1.gif" width="1" height="3" border="0" alt=" " /></td>
+		</tr>
+		<tr>
+		<td><img src="/images/1x1.gif" width="8" height="1" border="0" alt=" " /></td>        
+                <td colspan="2"> 
+				<p class="text">The 2004 Annual Report will be available in mid-March.  If you are a shareholder, a report will be mailed to you.</p>
+                </td>
+		<td><img src="/images/1x1.gif" width="5" height="1" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td colspan="4"><img src="/images/1x1.gif" width="1" height="3" border="0" alt=" " /></td>
+		</tr>
+		</table>
+		
+		
+        <!-- start blue strip -->
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+		<td bgcolor="#afd7eb"><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+		</tr>
+		</table>
+		    <!-- end blue strip -->
+        
+		<!-- start pfizer sites table -->
+		<table border="0" cellpadding="0" cellspacing="0" width="170">
+		<tr>
+		<td colspan="4"><img src="/images/1x1.gif" width="1" height="12" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td><img src="/images/1x1.gif" width="8" height="1" border="0" alt=" " /></td>
+		<td valign="top"><img src="/images/blt_arrows.gif" width="16" height="11" border="0" alt="*" vspace="4" /></td>
+		<td width="100%"><img src="/images/hd_pfizer_sites.gif" width="75" height="22" border="0" alt="Pfizer Sites" /></td>
+		<td><img src="/images/1x1.gif" width="5" height="1" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td colspan="4"><img src="/images/1x1.gif" width="1" height="5" border="0" alt=" " /></td>
+		</tr>
+		
+		<script language="javascript" type="text/javascript" src="/include/worldwidesitesdropdown.js"></script>
+		
+		<tr>
+		<td colspan="4"><img src="/images/1x1.gif" width="1" height="12" border="0" alt=" " /></td>
+		</tr>
+		
+		<tr>
+		<td colspan="4" align="center">&nbsp;</td>
+		</tr>
+		
+		<tr>
+		<td colspan="4"><img src="/images/1x1.gif" width="1" height="12" border="0" alt=" " /></td>
+		</tr>
+		</table>
+		<!-- end pfizer sites table -->
+		<!-- end righthand column -->
+	
+	</td>
+	</tr>
+
+
+	<tr>
+	<td valign="bottom">
+
+
+		<!-- start blue strip -->
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+		<td bgcolor="#afd7eb"><img src="/images/1x1.gif" width="150" height="1" border="0" alt=" " /></td>
+		</tr>
+		</table>
+		<!-- end blue strip -->
+	
+		<!-- start copyright -->
+<script language="javascript" type="text/javascript" src="/include/terms.js"></script>
+		<!-- end copyright -->
+	
+	</td>
+	</tr>
+
+
+	<tr>
+	<td colspan="3" bgcolor="#afd7eb"><img src="/images/1x1.gif" width="1" height="1" border="0" alt=" " /></td>
+	</tr>
+	
+	<tr>
+	<td colspan="4"><img src="/images/1x1.gif" width="1" height="12" border="0" alt=" " /></td>
+	</tr>
+	</table>
+	<!-- end nested content table -->
+
+
+</td>
+</tr>
+</table>
+	
+</body>
+</html>

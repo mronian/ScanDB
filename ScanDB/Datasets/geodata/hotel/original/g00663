@@ -1,0 +1,1698 @@
+<DOC>
+<DOCNO>g00663</DOCNO>
+<DOCHDR>http://listings.nytimes.com/SmallInnsAndLodges/List_Listings.asp?cid=23&CompName=Escapes</DOCHDR>
+
+
+<script language="JavaScript">
+//-------------------------------------------------------------------------
+function changeImage(image_name,image_src) {
+	document.images[image_name].src = image_src;
+}
+//-------------------------------------------------------------------------
+function ChangeEmail() {
+	document.TheNextPage.ChangeEmail.value = 'N';
+	document.TheNextPage.submit();
+}
+//-------------------------------------------------------------------------
+function goMyClassifieds() {
+	document.details.action = 'http://209.11.106.50/ULS_FSBO/edit/List_Listings.asp';
+	document.details.submit();
+}
+//-------------------------------------------------------------------------
+myRegionsAll = new Array();
+	myRegionsAll[0] = new Array('IT','100','Europe','20000','','10610','France');
+		myRegionsAll[1] = new Array('IT','100','Europe','20000','','10900','Ireland');
+		myRegionsAll[2] = new Array('IT','100','Europe','20000','','12010','Italy');
+		myRegionsAll[3] = new Array('IT','100','Europe','20000','','10100','Other Europe');
+		myRegionsAll[4] = new Array('IT','150','Caribbean','20000','','14550','Jamaica');
+		myRegionsAll[5] = new Array('IT','150','Caribbean','20000','','14300','Other Caribbean');
+		myRegionsAll[6] = new Array('IT','200','Mexico','20000','','15010','All Mexico');
+		myRegionsAll[7] = new Array('IT','250','Canada','20000','','15120','All Canada');
+		myRegionsAll[8] = new Array('IT','400','Central America','20000','','15100','Belize');
+		myRegionsAll[9] = new Array('IT','400','Central America','20000','','15300','Guatemala');
+		myRegionsAll[10] = new Array('US','1000','Mid-Atlantic','2020','All New Jersey','2020','All New Jersey');
+		myRegionsAll[11] = new Array('US','1000','Mid-Atlantic','2020','All New Jersey','80100','     New Jersey Shore');
+		myRegionsAll[12] = new Array('US','1000','Mid-Atlantic','2022','All New York','82500','     Hamptons');
+		myRegionsAll[13] = new Array('US','1000','Mid-Atlantic','2022','All New York','82400','     New York City');
+		myRegionsAll[14] = new Array('US','1000','Mid-Atlantic','2022','All New York','82600','     Other New York');
+		myRegionsAll[15] = new Array('US','1000','Mid-Atlantic','20000','','57000','Delaware');
+		myRegionsAll[16] = new Array('US','1000','Mid-Atlantic','20000','','70000','Maryland');
+		myRegionsAll[17] = new Array('US','1000','Mid-Atlantic','20000','','88000','Pennsylvania');
+		myRegionsAll[18] = new Array('US','1100','Midwest','20000','','72000','Michigan');
+		myRegionsAll[19] = new Array('US','1100','Midwest','20000','','85000','Ohio');
+		myRegionsAll[20] = new Array('US','1200','New England','2016','All Massachusetts','71100','     Berkshires');
+		myRegionsAll[21] = new Array('US','1200','New England','2016','All Massachusetts','71200','     Boston');
+		myRegionsAll[22] = new Array('US','1200','New England','2016','All Massachusetts','71300','     Cape Cod & the Islands');
+		myRegionsAll[23] = new Array('US','1200','New England','2016','All Massachusetts','71400','     Other Massachusetts');
+		myRegionsAll[24] = new Array('US','1200','New England','20000','','56000','Connecticut');
+		myRegionsAll[25] = new Array('US','1200','New England','20000','','69000','Maine');
+		myRegionsAll[26] = new Array('US','1200','New England','20000','','79000','New Hampshire');
+		myRegionsAll[27] = new Array('US','1200','New England','20000','','89000','Rhode Island');
+		myRegionsAll[28] = new Array('US','1200','New England','20000','','95000','Vermont');
+		myRegionsAll[29] = new Array('US','1600','South','2012','All Florida','59200','     Other Florida');
+		myRegionsAll[30] = new Array('US','1600','South','20000','','83000','North Carolina');
+		myRegionsAll[31] = new Array('US','1600','South','20000','','96000','Virginia');
+		
+//-------------------------------------------------------------------------
+</script>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>The New York Times: Small Inns &amp; Lodges </title>
+<meta name="keywords" content="Small Inns &amp; Lodges">
+<meta name="description" content="Small Inns &amp; Lodges">
+
+  
+<script src="http://www.nytimes.com/adx/bin/adx_remote.html?type=fastscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&query=qstring&keywords=?"></script>
+
+<script type="text/javascript" src="http://www.nytimes.com/js/goToURL2.js"></script>
+<!-- begin site-wide js functions -->
+<script src="http://www.nytimes.com/js/common.js"></script>
+<script src="http://www.nytimes.com/js/todays_date.js" type="text/javascript" language="JavaScript"></script>
+<!-- end site-wide js functions -->
+
+<script type="text/JavaScript">
+<!--
+function goToURL(obj){
+	var f = (obj.section) ? obj : obj.form;
+	var selected = f.section.selectedIndex;
+	var URL = f.section.options[selected].value;
+	if (URL != "") document.location = URL;
+		return false;
+	}
+//-->
+</script>
+
+<!-- the following code checks for version 6.+ of the Macromedia Flash player  -->
+<!-- begin VBScript Flash Detect for IE/PC -->
+<script language="vbscript">
+	on error resume next
+	var gotFlash
+	gotFlash = False
+	gotFlash = IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6"))
+</script>
+<!-- end VBScript Flash Detect for IE/PC -->
+<!-- begin javascript plugin detect functions -->
+<script language="javascript">
+var targetVersion = 6;
+//Look for correct version of Flash plugin. If found, then launch window.
+if ((navigator.plugins) && (navigator.plugins["Shockwave Flash"])) {
+	var d = navigator.plugins["Shockwave Flash"].description;
+	var v = parseInt(d.charAt(d.indexOf(".") - 1));
+	//if the player is version 6 or above then set flag
+	gotFlash = (v >= targetVersion)	? true : false;
+}
+</script>
+<!-- end javascript plugin detect functions -->
+
+
+<link rel="stylesheet" href="css/nyt_uls.css" type="text/css" />
+<link rel="stylesheet" href="css/gabriels.css" type="text/css" />
+<link rel="stylesheet" href="css/global.css" type="text/css" />
+</head>
+<body marginheight="5" marginwidth="5" leftmargin="5" topmargin="5" link="#000066" bgcolor="#ffffff" alink="#000066" vlink="#000066">
+
+<!-- Top5 position -->
+<script language="JavaScript">
+<!--
+if (typeof adxpos_Top5 != "undefined")
+    document.write(adxads[adxpos_Top5]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Top5"><img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=Top5&query=qstring&keywords=?"></a></noscript>
+
+<TABLE WIDTH="768" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+ 
+ <TR>
+  <TD ALIGN="left" width="180"><a href="http://www.nytimes.com/index.html"><IMG src="images/logo_nyt.gif" border="0"></a></TD>
+  <TD ALIGN="center" width="408"><a href="default.asp"><IMG src="images/logo_big_interior.gif" border="0"></a></TD>
+  
+  <TD ALIGN="right" width="180" class="text-verysmall-light"><div align="center">In Partnership with<BR><a href="http://www.about.com"><img src="images/120x59_AboutLogo.jpg"></a></div></TD>
+  
+ </TR>
+ 
+ <tr>
+  <td colspan="3"><IMG src="images/spacer.gif" width="1" height="4"></td>
+ </TR>
+</TABLE>
+
+<TABLE WIDTH="768" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+ <TR>
+  <TD bgcolor="#000000"><img src="images/spacer.gif" width="1" height="3"></TD>
+ </TR>
+</TABLE>
+
+<table width="768" cellspacing="0" cellpadding="0" valign="top" border="0">
+ <tr>
+  <td width="5"><img src="images/spacer.gif" width="5" height="20"></td>
+  <td width="379">
+   <strong>NYTimes:</strong>&nbsp;
+   <a href="http://www.nytimes.com/index.html">Home</a> -
+   <a href="http://www.nytimes.com/ref/membercenter/help/siteindex.html">Site Index</a> -
+   <a href="http://query.nytimes.com/search/archive.html">Archive</a> -
+   <a href="http://www.nytimes.com/membercenter/sitehelp.html">Help</a>
+  </td>
+  <td width="379" align="right">
+   <strong>Small Inns &amp; Lodges:</strong>&nbsp;
+   
+   <a href="JavaScript: openHelp('help.html')">FAQs</a> |
+   <a href="JavaScript: openHelp('help.html#Contact')">Contact Us</a>
+   
+  </td>
+  <td width="5"><img src="images/spacer.gif" width="5" height="20"></td>
+ </tr>
+ <tr>
+  <td width="768" colspan="4" bgcolor="#000000"><img src="images/spacer.gif" width="768" height="1"></td>
+ </tr>	
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="768" background="images/bg_header.gif">
+ <tr>
+  <td colspan="5"><img src="images/spacer.gif" width="1" height="5"></td>
+ </tr>
+ <tr>
+  <td width="5"><img src="images/spacer.gif" width="5" height="1"></td>
+  <td align="left">
+   <table cellspacing="0" cellpadding="0" border="0">
+    <form name="sectionform" onsubmit="return goToURL(this);">
+    <tr>
+	 <td valign="center">
+	  <select name="section" onchange="goToURL(this);" class="text_header">
+	   <option selected="">Go to a Section</option>
+	   <option>-----------------------</option>
+	   <option value="http://www.nytimes.com/pages/arts/index.html?gts">Arts</option>
+	   <option value="http://www.nytimes.com/pages/automobiles/index.html?gts">Automobiles</option>
+	   <option value="http://www.nytimes.com/pages/books/index.html?gts">Books</option>
+	   <option value="http://www.nytimes.com/pages/business/index.html?gts">Business</option>
+	   <option value="http://www.nytimes.com/pages/politics/campaign/index.html?gts">Campaign 2004</option>
+	   <option value="http://www.nytimes.com/pages/cartoons/index.html?gts">Cartoons</option>
+	   <option value="http://listings.nytimes.com/ClassifiedsMarketplace/">Classifieds Marketplace</option>
+	   <option value="http://www.nytimes.com/corrections.html?gts">Corrections</option>
+	   <option value="http://www.nytimes.com/pages/crosswords/index.html?gts">Crossword/Games</option>
+	   <option value="http://www.nytimes.com/pages/dining/index.html?gts">Dining & Wine</option>
+	   <option value="http://www.nytimes.com/pages/opinion/index.html?gts">Editorials/Op-Ed</option>
+	   <option value="http://www.nytimes.com/pages/education/index.html?gts">Education</option>
+	   <option value="http://www.nytimes.com/pages/fashion/index.html?gts">Fashion & Style</option>
+	   <option value="http://www.nytimes.com/pages/health/index.html?gts">Health</option>
+	   <option value="http://www.nytimes.com/pages/garden/index.html?gts">Home & Garden</option>
+	   <option value="http://www.nytimes.com/pages/world/index.html?gts">International</option>
+	   <option value="http://www.nytimes.com/pages/jobs/index.html?gts">Job Market</option>
+	   <option value="http://www.nytimes.com/learning?gts">Learning Network</option>
+	   <option value="http://www.nytimes.com/pages/magazine/?gts">Magazine</option>
+	   <option value="http://movies.nytimes.com?gts">Movies</option>
+	   <option value="http://www.nytimes.com/pages/multimedia/index.html?gts">Multimedia/Photos</option>
+	   <option value="http://www.nytimes.com/top/features/travel/destinations/unitedstates/newyork/newyorkcity/index.html?gts">NYC Guide</option>
+	   <option value="http://www.nytimes.com/pages/pageone/index.html?gts">NYT Front Page</option>
+	   <option value="http://www.nytimes.com/pages/national/index.html?gts">National</option>
+	   <option value="http://www.nytimes.com/pages/nyregion/index.html?gts">New York Region</option>
+	   <option value="http://www.nytimes.com/pages/obituaries/index.html?gts">Obituaries</option>
+	   <option value="http://www.nytimes.com/pages/readersopinions/index.html?gts">Readers' Opinions</option>
+	   <option value="http://www.nytimes.com/pages/realestate/index.html?gts">Real Estate</option>
+	   <option value="http://www.nytimes.com/pages/science/index.html?gts">Science</option>
+	   <option value="http://www.nytimes.com/pages/sports/index.html?gts">Sports</option>
+	   <option value="http://www.nytimes.com/pages/technology/index.html?gts">Technology</option>
+	   <option value="http://www.nytimes.com/top/opinion/thepubliceditor/index.html?gts">The Public Editor</option>
+	   <option value="http://theater.nytimes.com/pages/theater/index.html?gts">Theater</option>
+	   <option value="http://www.nytimes.com/pages/travel/index.html?gts">Travel</option>
+	   <option value="http://www.nytimes.com/pages/politics/index.html?gts">Washington</option>
+	   <option value="http://www.nytimes.com/weather/?gts">Weather</option>
+	   <option value="http://www.nytimes.com/pages/weekinreview/index.html?gts">Week in Review</option>
+	   <option>-----------------------</option>
+	   <option value="http://www.nytimes.com/ref/membercenter/help/siteindex.html#services">Services</option>
+	  </select>
+	 </td>
+	 <td width="5"><img src="http://graphics.nytimes.com/images/misc/spacer.gif" width="5" height="1" border="0" alt=""/></td>
+	 <td width="17" valign="center"><input width="28" height="21" border="0" alt="Go" type="image" src="http://graphics7.nytimes.com/images/misc/go_button.gif"></td>
+	 <td width="10"><img src="http://graphics.nytimes.com/images/misc/spacer.gif" width="10" height="1" border="0" alt=""/></td>
+	</tr>
+	</form>
+   </table>
+  </td>
+  <td align="right">
+   <!-- Middle1 position -->
+<script language="JavaScript">
+<!--
+if (typeof adxpos_Middle1 != "undefined")
+    document.write(adxads[adxpos_Middle1]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Middle1"><img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=Middle1&query=qstring&keywords=?"></a></noscript>
+  </td>
+  <td width="5"><img src="images/spacer.gif" width="5" height="1"></td>
+ </tr>
+ <tr>
+  <td colspan="5"><img src="images/spacer.gif" width="1" height="5"></td>
+ </tr>
+ <tr>
+  <td bgcolor="#cccccc" colspan="5"><img src="images/spacer.gif" width="1" height="1"></td>
+ </tr>
+</table>
+
+<TABLE WIDTH="768" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+ 
+ <tr>
+  <TD align="center" bgcolor="#f2f2f2" width="768">
+  
+<script language="JavaScript">
+<!--
+if (typeof adxpos_TopAd != "undefined")
+    document.write(adxads[adxpos_TopAd]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=TopAd"><img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=TopAd&query=qstring&keywords=?"></a></noscript>
+  </TD>
+ </TR>
+ 
+ <tr>
+  <td bgcolor="#cccccc" colspan="5"><img src="images/spacer.gif" width="1" height="1"></td>
+ </tr>
+</TABLE>
+
+<div id="navBar" class="navHeader">
+
+<table width="768" cellspacing="0" cellpadding="0" border="0" valign="top" class="navHeader">
+ <tr>
+  <td class="navHeader" align="center" width="181"><a href="http://listings.nytimes.com/ClassifiedsMarketplace/">Classifieds Marketplace</a></td>
+  <td><IMG src="http://graphics8.nytimes.com/images/misc/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+  <td class="navHeader" align="center" width="160"><a href="http://listings.nytimes.com/smallinnsandlodges/">Small Inns &amp; Lodges</a></td>
+  <!-- <td><IMG src="http://graphics8.nytimes.com/images/misc/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+  <td class="navHeader" align="center" width="115"><a href="List_Listings.asp?RegionId=82400">NYC Lodging</a></td> -->
+  <td><IMG src="http://graphics8.nytimes.com/images/misc/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+  <td class="navHeader" align="center" width="200"><a href="http://about.com/travel/">Resources from About.com</a></td>
+  <td><IMG src="http://graphics8.nytimes.com/images/misc/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+  <td class="navHeader" align="center" width="109"><a href="https://placead.nytimes.com/default.asp?CategoryID=NYTWTS&Source=NYT">Place an Ad</a></td>
+ </tr>
+ <!-- <tr>
+  <td class="navHeader" align="center" width="286"><a href="http://listings.nytimes.com/ClassifiedsMarketplace/">Classifieds Marketplace</a></td>
+  <td><IMG src="http://graphics8.nytimes.com/images/misc/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+  <td class="navHeader" align="center" width="265"><a href="http://listings.nytimes.com/smallinnsandlodges/">Small Inns &amp; Lodges</a></td>
+  <td><IMG src="http://graphics8.nytimes.com/images/misc/nav_pipe.gif" alt="" width="1" height="23" border="0" /></td>
+  <td class="navHeader" align="center" width="216"><a href="https://placead.nytimes.com/default.asp?CategoryID=NYTWTS&Source=NYT">Place an Ad</a></td>
+ </tr> -->
+ <tr>
+  <td background="http://graphics8.nytimes.com/images/misc/nav_bg.gif" colspan="11"><IMG src="images/spacer.gif" height="2" border="0" alt="0" /></td>
+ </tr>
+</table>
+
+</div>
+
+<TABLE WIDTH="768" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+ <tr>
+  <TD align="center"><div class="b10"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+ </TR>
+</TABLE>
+<table width="768" cellspacing="0" cellpadding="0" valign="top" border="0">
+ <tr>
+  <td width="588" valign="top">
+   
+   
+   
+   
+   
+   
+   <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+   <form name="selectRegion" method="Post">
+	<TR>
+	 <TD colspan="9" background="images/bg_dot.gif"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+	<TR>
+	 <TD width="47" colspan="9"><img src="images/hd_search.gif" border="0" vspace="6" hspace="4"></TD>
+	</TR>
+    <TR>
+	 <TD colspan="9" background="images/bg_dot.gif"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+    <TR>
+	 <TD colspan="9"><div class="b6"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+	<TR>
+	 <TD width="4"><img src="images/spacer.gif" border="0" width="4"></TD>
+	 <TD width="170">
+	  <SELECT NAME="GroupId" STYLE="width:170px;" onChange="getRegions()">
+					<OPTION VALUE="">--Select a Region or Country--</option>
+						
+					      <OPTION VALUE="5" >All Areas</option>
+					      <OPTION VALUE="10" >United States</option>
+						
+  								<option value="1000" >&nbsp;&nbsp;&nbsp;Mid-Atlantic</option>
+					
+  								<option value="1100" >&nbsp;&nbsp;&nbsp;Midwest</option>
+					
+  								<option value="1200" >&nbsp;&nbsp;&nbsp;New England</option>
+					
+  								<option value="1600" >&nbsp;&nbsp;&nbsp;South</option>
+					
+  								<option value="100" >Europe</option>
+					
+  								<option value="150" >Caribbean</option>
+					
+  								<option value="200" >Mexico</option>
+					
+  								<option value="250" >Canada</option>
+					
+  								<option value="400" >Central America</option>
+					 
+      				</SELECT>
+	 </TD>
+	 <TD CLASS="text-verysmall-light" align="center">and/or</TD>
+	 <TD width="150">
+	  <SELECT NAME="RegionId" STYLE="width:150px;">
+					<OPTION VALUE="">- Pick a Location -</option>					
+					 
+
+      				</SELECT>
+	 </TD>
+	 <TD CLASS="text-verysmall-light" align="center">and/or</TD>
+     
+     <TD WIDTH="110"><INPUT TYPE="text" name="KeyWord" STYLE="width:110px;" value="--Optional Keyword--" onFocus="if(this.value==this.defaultValue) this.value='';" onBlur="if(this.value=='') this.value='--Optional Keyword--';"></TD>
+	 <TD width="8"><img src="images/spacer.gif" border="0" width="8"></TD>
+	 <TD width="53" align="right"><a href="javascript:submitRegions('s');"><img src="images/but_search.gif" border="0"></a></TD>
+	 <TD width="4"><img src="images/spacer.gif" border="0" width="4"></TD>
+	</TR>
+    </form>
+   </TABLE>
+   
+   
+   
+   
+   
+   
+   <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+    <tr>
+     <td><div class="b20"><img src="images/spacer.gif" width="1" height="1"></div></td>
+    </tr>
+	<TR>
+	 <TD align="center" valign="top">
+      <TABLE WIDTH="100%" border="0" cellpadding="0" cellspacing="0">
+	   <TR>
+		<TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		<TD CLASS="text-large" VALIGN="top">Your search for listings in Escapes returned <b>24 result(s)</b>. To refine your search or  search again, please enter a keyword or select new categories above.<BR><BR>  To re-sort your results, please click on the appropriate column heading.</TD>
+		<TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+	   </tr>
+	  </TABLE>
+	 </TD>
+	</TR>
+   </TABLE>
+   
+   
+   
+   
+   
+   
+   <TABLE WIDTH="588" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+    <tr>
+     <td colspan="2"><div class="b20"><img src="images/spacer.gif" width="1" height="1"></div></td>
+    </tr>
+	<TR>
+	 <TD colspan="2" background="images/bg_dot.gif"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+	<TR>
+	 <TD><img src="images/hd_results.gif" border="0" vspace="6" hspace="4"></TD>
+	</TR>
+    <TR>
+	 <TD colspan="2" background="images/bg_dot.gif"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+	<TR>
+	 <TD colspan="2">
+      <TABLE WIDTH="100%" border="0" cellpadding="0" cellspacing="0" class="table_results">
+	  
+	   <TR>
+        <TD COLSPAN="11"><div class="b8"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   <tr>
+		<TD WIDTH="10" NOWRAP><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD WIDTH="198"><IMG SRC="images/spacer.gif" WIDTH="198" HEIGHT="1" BORDER="0"><br><b><a href="javascript:ReSortListings('N')" STYLE="color: #333333">Name</a></TD>
+
+        <TD WIDTH="10" NOWRAP><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD WIDTH="117"><IMG SRC="images/spacer.gif" WIDTH="117" HEIGHT="1" BORDER="0"><br><b><a href="javascript:ReSortListings('L')" STYLE="color: #333333">Category</a></TD>
+        
+		<TD WIDTH="10" NOWRAP><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD WIDTH="90"><IMG SRC="images/spacer.gif" WIDTH="90" HEIGHT="1" BORDER="0"><br><b><a href="javascript:ReSortListings('R')" STYLE="color: #333333">City</a></TD>
+        
+		<TD WIDTH="10" NOWRAP><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD WIDTH="53"><IMG SRC="images/spacer.gif" WIDTH="53" HEIGHT="1" BORDER="0"><br><b><a href="javascript:ReSortListings('S')" STYLE="color: #333333">State</a></TD>
+
+        <TD WIDTH="10" NOWRAP><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD WIDTH="70"><IMG SRC="images/spacer.gif" WIDTH="70" HEIGHT="1" BORDER="0"><br><b><a href="javascript:ReSortListings('P')" STYLE="color: #333333">Price</a></TD>
+        
+        <TD WIDTH="10" NOWRAP><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+	   <TR>
+        <TD COLSPAN="11"><div class="b8"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A134',1)"> THE GRACIE INN</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A134',1)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Inn</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">New York</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">NY</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">THE GRACIE INN New Yorks own country Bed & Breakfast. An All-Suite Hotel located in the heart of New Yorks Upper East Side. Its like having your own apartment in the City. Breakfast is included. 502 E. 81st Street New York, NY 10028...&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A134',1)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A142',2)"> Villas By Linda Smith</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A142',2)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Condo/Villa</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP"></TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Jamaica</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">Villas By Linda Smith "Once youve stayed in a staffed villa, youll never go back to another vacation style again." More than 50 exquisite villas adorn Linda Smiths remarkable collection in the heart of "the Jamaican Riviera." Large or small,...&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A142',2)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A153',3)">Auto France</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A153',3)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP"></TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">France</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">While in Europe, enjoy a brand-new Peugeot for 17 days or more at an all-inclusive rate. 1-800-572-9655 PO Box 142 Wood-Ridge, NJ 07075&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A153',3)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A152',4)">BELIZE PREMIER HOTEL</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A152',4)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Hotel</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP"></TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Caribbean</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">BELIZE PREMIER HOTEL Overlooking the Caribbean. Beautiful rooms, gardens and banquet facilities. amin.dredge@radisson.com 011-501-223-3333 Fax: 011-501-227-3820&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A152',4)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A146',5)">Blind Pass Condominium</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A146',5)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Condo/Villa</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Sanibel Island</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">FL</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">Reminiscent of the South Pacific. Private two or three-bedroom condos Pristine beaches of Sanibel Island. Swimming pool, tiki huts, outdoor grills Tennis, canoeing and kayaking. 800-852-2038 www.Blind-Pass.com&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A146',5)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A140',6)">Bolongo Bay Beach Resort</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A140',6)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Resort</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">St. Thomas</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Caribbean</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">St. Thomas U.S.V.I. Bolongo Bay Beach Resort One-of-a-kind All Inclusive experience with terrific dining options at 2 popular restaurants & bars. 65 rooms right on the beach, complimentary non- motorized water sports and day sail to St. John...&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A140',6)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A156',7)">Chalets Village</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A156',7)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Condo/Villa</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Quebec City</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Canada</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">QUEBEC CITY Heritage Villas for rent! Old Quebec City. Fully-equipped large country homes for rent in a Laurentian decor. Up to 36 people per house, Up to 7 bathrooms per house, Double Jacuzzis or saunas and wood-burning fireplaces in each...&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A156',7)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A157',8)">Corolla Classic Vacations</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A157',8)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Condo/Villa</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Outer Banks</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">NC</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">Northern Outer Banks, NC Beautiful homes located in Pine Island, Buck Island, Whalehead, Corolla Light and north to Ocean Hill. Oceanfront to soundfront homes accommodate 8-26. ·Call for free brochure· Toll Free 866-453-9660 www.corollaclassicv&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A157',8)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A136',9)">GREAT TRIPS UNLIMITED</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A136',9)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP"></TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Ireland</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">IRELAND & THE UK GREAT TRIPS UNLIMITED Vacation rental Cottages, Castles, Manor Houses, Apartments. Self catering and serviced. We have visited every property on our web site. Our personal service will help you find the perfect place for your...&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A136',9)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		  
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <TR BGCOLOR='#F5F8F1'">
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">
+		 <b><a href="javascript:LookDetails('23-A133',10)">Inn at the Beach</A></b>
+         <div class="b5"><img src="images/spacer.gif" width="1" height="1"></div>
+		 <TABLE cellpadding="2" cellspacing="0" border="0">
+		  <TR>
+		   <TD><a href="javascript:LookDetails('23-A133',10)"><IMG SRC="images/icon_info.gif" BORDER="0" ALT="View Details"></A></TD>
+           
+		   
+		   <TD><a  href="javascript:alert('You need login to My Listings Account to save listings')"><img src="images/icon_save.gif" border="0" ALT="Login to My Listings Account to save Listing" ></a></TD>
+		  </TR>
+		 </TABLE>
+		</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Inn</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">Venice Beach</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD VALIGN="TOP">FL</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+        <TD VALIGN="TOP" CLASS="text_navigate" WIDTH="70">--</TD>
+        <TD WIDTH="10"><IMG SRC="images/spacer.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+       </TR>
+       <TR>
+	    <TD COLSPAN="11" BGCOLOR='#F5F8F1'"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF">
+         <TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+          <TR>
+		   
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+           <TD valign="top">INN AT THE BEACH VENICE BEACH SOUTH OF SARASOTA Deluxe guest rooms to spacious 1 BR suites/pvt beach view balconies, jacuzzi, pool, lush tropical settings. Walk to historic downtown shopping, parks. Continental breakfast, including AAA 3·...&nbsp;&nbsp;(<a href="javascript:LookDetails('23-A133',10)">Click here to view more details</A>)</TD>
+		   <TD WIDTH="10"><img src="images/spacer.gif" width="10" height="1"></TD>
+		  </TR>
+         </TABLE>
+        </TD>
+	   </TR>
+       <TR>
+        <TD COLSPAN="11" BGCOLOR="#FFFFFF"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+		
+	   <TR>
+        <TD BGCOLOR="#999999" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+       </TR>
+	   <TR>
+	    <TD BGCOLOR="#CCCCCC" COLSPAN="11"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+      </TABLE>
+	 </TD>
+	</TR>
+   </TABLE>
+   
+   <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" class="table_results">
+	<form method="POST" name="TheNextPage" action="List_Listings.asp">
+	<input type="hidden" name="strStates" value="1000+&nbsp;&nbsp;&nbsp;Mid-Atlantic:1100+&nbsp;&nbsp;&nbsp;Midwest:1200+&nbsp;&nbsp;&nbsp;New England:1600+&nbsp;&nbsp;&nbsp;South:100+Europe:150+Caribbean:200+Mexico:250+Canada:400+Central America:">
+	<input type="hidden" name="strUS" value="United States">
+	<input type="hidden" name="CategoryId" value="NYTWTS">
+	<input type="hidden" name="RegionId" value="">
+	<input type="hidden" name="strRegion" value="Escapes">
+	<input type="hidden" name="strRegions" value="">
+	<input type="hidden" name="KeyWord" value="">
+	<input type="hidden" name="GroupId" value="">
+	<input type="hidden" name="Sort" value="D">
+	<input type="hidden" name="Order" value="A">  
+	<input type="hidden" name="DOrder" value="A">
+	<input type="hidden" name="LOrder" value="A">
+	<input type="hidden" name="NOrder" value="A">
+	<input type="hidden" name="ROrder" value="A">
+	<input type="hidden" name="SOrder" value="A">
+	<input type="hidden" name="POrder" value="A">
+	<input type="hidden" name="sLsIds0" value="23-A134,23-A142,23-A153,23-A152,23-A146,23-A140,23-A156,23-A157,23-A136,23-A133">
+	<input type="hidden" name="sLsIds1" value="23-A149,23-A144,23-A132,23-A148,23-A135,23-A138,23-A131,23-A141,23-A130,23-A154">
+	<input type="hidden" name="sLsIds2" value="23-A145,23-A155,23-A158,23-A150">
+	<input type="hidden" name="sLsIds3" value="">
+	<input type="hidden" name="sLsIds4" value="">
+	<input type="hidden" name="sLsIds5" value="">
+	<input type="hidden" name="sLsIds6" value="">
+	<input type="hidden" name="sLsIds7" value="">
+	<input type="hidden" name="sLsIds8" value="">
+	<input type="hidden" name="sLsIds9" value="">
+	<input type="hidden" name="sLsIdsA" value="">
+	<input type="hidden" name="sLsIdsB" value="">
+	<input type="hidden" name="sLsIdsC" value="">
+	<input type="hidden" name="sLsIdsD" value="">
+	<input type="hidden" name="sLsIdsE" value="">
+	<input type="hidden" name="sLsIdsF" value="">
+	<input type="hidden" name="sLsIdsG" value="">
+	<input type="hidden" name="sLsIdsH" value="">
+	<input type="hidden" name="sLsIdsI" value="">
+	<input type="hidden" name="sLsIdsJ" value="">
+	<input type="hidden" name="sLsIdsK" value="">
+	<input type="hidden" name="sLsIdsL" value="">
+	<input type="hidden" name="sLsIdsM" value="">
+	<input type="hidden" name="sLsIdsN" value="">
+	<input type="hidden" name="sLsIdsO" value="">
+	<input type="hidden" name="sLsIdsP" value="">
+	<input type="hidden" name="sLsIdsQ" value="">
+	<input type="hidden" name="sLsIdsR" value="">
+	<input type="hidden" name="sLsIdsS" value="">
+	<input type="hidden" name="sLsIdsT" value="">
+	<input type="hidden" name="sLsIdsU" value="">
+	<input type="hidden" name="sLsIdsV" value="">
+	<input type="hidden" name="sLsIdsW" value="">
+	<input type="hidden" name="sLsIdsX" value="">
+	<input type="hidden" name="sLsIdsY" value="">
+	<input type="hidden" name="sLsIdsZ" value="">
+	<input type="hidden" name="sLsIdsAA" value="">
+	<input type="hidden" name="sLsIdsAB" value="">
+	<input type="hidden" name="sLsIdsAC" value="">
+	<input type="hidden" name="sLsIdsAD" value="">
+	<input type="hidden" name="strSQL3" value="Execute uspSearchListingsByLsIds 'NYTWTS',">            
+	<input type="hidden" name="RSCount" value="24">
+	<input type="hidden" name="LastPage" value="3">
+	<input type="hidden" name="ThisPage" value="1">
+	<input type="hidden" name="cid" value="23">
+	<input type="hidden" name="CompName" value="Escapes">
+	<input type="hidden" name="intl" value="">
+	<input type="hidden" name="SoL" value="">
+	<input type="hidden" name="AdTagCountyId" value="">
+	<input type="hidden" name="AdTagPriceIndx" value="">
+	<input type="hidden" name="ChangeEmail" value="">
+	</form>
+	<TR>
+	 <TD colspan="2">
+      <TABLE border="0" cellpadding="0" cellspacing="0" align="center">
+	   <TR>
+	    <TD colspan="3"><div class="b10"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	   <tr>
+	    
+	    <td align="center">  1 of 3  <b>[</b><b>   1,   </b>  <a href ="javascript:LookAtNextPage(2)" class='text_navigate'>2,</a>    <a href ="javascript:LookAtNextPage(3)" class='text_navigate'>3</a>  <b>]</b></td>
+	    <td align="right">&nbsp;&nbsp;<font color="#666666">|</font>&nbsp;&nbsp;<b><a href="javascript:LookAtNextPage(2)">Next Page</a> &#155;</b></td>
+	   </tr>
+	   <TR>
+	    <TD colspan="3"><div class="b10"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	   </TR>
+	  </table>
+     </td>
+	</tr>
+   </table>
+   
+   
+   
+   
+   
+   
+   <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+    <TR>
+	 <TD background="images/bg_dot.gif"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+	<TR>
+	 <TD><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+	<tr>
+	 <td align="center"><img src="images/icon_key.gif"></td>
+	</TR> 
+	<TR>
+	 <TD><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+    <TR>
+	 <TD background="images/bg_dot.gif"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+   </TABLE>
+   
+   
+   
+   
+   
+   <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+	 <TD><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+	<tr>
+	 <td align="center"><script type="text/JavaScript">
+	var google_hints = "Inn;Hotel;Villa;Lodge"
+</script>
+
+<script>
+<!--
+ if (typeof adxpos_SponLink != "undefined")
+  document.write(adxads[adxpos_SponLink]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_remote.html?type=cookie&pos=SponLink">
+<img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=SponLink&query=qstring&keywords=?">
+</a></noscript></td>
+	</tr>
+   </TABLE>
+   
+   
+   
+   
+   
+   <form name="details" method="POST">
+   <input type="hidden" name="strStates" value="1000+&nbsp;&nbsp;&nbsp;Mid-Atlantic:1100+&nbsp;&nbsp;&nbsp;Midwest:1200+&nbsp;&nbsp;&nbsp;New England:1600+&nbsp;&nbsp;&nbsp;South:100+Europe:150+Caribbean:200+Mexico:250+Canada:400+Central America:">
+   <input type="hidden" name="strUS" value="United States">
+   <input type="hidden" name="CategoryId" value="NYTWTS">
+   <input type="hidden" name="RegionId" value="">
+   <input type="hidden" name="Amenities" value="">
+   <input type="hidden" name="KeyWord" value="">
+   <input type="hidden" name="GroupId" value="">
+   <input type="hidden" name="Lid" value="">
+   <input type="hidden" name="UserEmail" value="">
+   <input type="hidden" name="UserPwd" value="">
+   <input type="hidden" name="ctRS" value="10">
+   <input type="hidden" name="LIndex" value="">
+   <input type="hidden" name="SoL" value="">
+   <input type="hidden" name="intl" value="">
+   <input type="hidden" name="strLsId" value="23-A134,23-A142,23-A153,23-A152,23-A146,23-A140,23-A156,23-A157,23-A136,23-A133">
+   <input type="hidden" name="AdTagCountyId" value="">
+   <input type="hidden" name="AdTagPriceIndx" value="">
+   <input type="hidden" name="ChangeEmail" value="">
+   </form>
+  </TD>
+  <TD width="20" valign="top"><img src="images/spacer.gif" width="20" height="1"></td>
+  <td valign="top" width="160">
+   
+   <table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+	<TR>
+	 <TD background="images/bg_dot.gif" colspan="2"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+	<TR>
+	 <TD colspan="2"><img src="images/hd_mylistings_new.gif" border="0" vspace="6" hspace="4"></TD>
+	</TR>
+    <TR>
+	 <TD background="images/bg_dot.gif" colspan="2"><div class="b1"><img src="images/spacer.gif" width="1" height="1"></div></TD>
+	</TR>
+    
+    <tr>
+     <td colspan="2"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></td>
+    </tr>
+    <tr>
+     <TD width="4"><img src="images/spacer.gif" width="4" height="1"></TD>
+     <TD align="left"><b><A HREF="javascript:ChangeUser('h')"><img src="images/but_loginnew.gif" style="vertical-align:middle;"><img src="images/spacer.gif" width="5" height="1">Login to your account</a></TD>
+    </tr>
+    <tr>
+     <td colspan="2"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></td>
+    </tr>
+    <TR>
+     <TD width="4"><img src="images/spacer.gif" width="4" height="1"></TD>
+     <TD align="left"><b><A HREF="javascript:ContactInfo('h')"><img src="images/but_createnew.gif" style="vertical-align:middle;"><img src="images/spacer.gif" width="5" height="1">Create a profile</a></TD>
+    </TR>
+    
+    <tr>
+     <td colspan="2"><div class="b5"><img src="images/spacer.gif" width="1" height="1"></div></td>
+    </tr>
+    <TR>
+     <TD width="4"><img src="images/spacer.gif" width="4" height="1"></TD>
+     <TD align="left"><a HREF="javascript:openKey('key.html')"><img src="images/but_iconkeynew.gif" style="vertical-align:middle;"><img src="images/spacer.gif" width="5" height="1"><b>Icon key</a></TD>
+    </TR>
+   </table>
+   
+   <div class="b15"><img src="images/spacer.gif" width="1" height="1"></div>
+   
+	<div class="epromoBox">
+	<div class="epromoText" align="left">
+	<IMG SRC="../SmallInnsAndLodges/images/hd_rr_escapes.gif" BORDER="0"><BR>
+	<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	<td>
+		<a href="List_Listings.asp?cid=23&CompName=Escapes">View all</a> listings from The New York Times Special Escapes Supplement.
+	</td>
+	</tr>
+	</table>
+	</div>
+	</div>
+	<div class="b15"><img src="../SmallInnsAndLodges/images/spacer.gif" height="1" width="1"></div>
+
+	<div class="epromoBox">
+	<div class="epromoText" align="left">
+	<IMG SRC="../SmallInnsAndLodges/images/hd_rr_placeadonline.gif" BORDER="0"><BR>
+	<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	<td>
+		It’s easy to list your ad on NYTimes.com. <a href="https://placead.nytimes.com/default.asp#CategoryID=NYTWTS&Source=NYT">Click here</a> to reach more than 14 million NYTimes.com visitors each month.
+	</td>
+	</tr>
+	</table>
+	</div>
+	</div>
+	<div class="b15"><img src="../SmallInnsAndLodges/images/spacer.gif" height="1" width="1"></div>
+
+	
+	<div class="epromoBox">
+	<div class="epromoText" align="left">
+	<IMG SRC="../SmallInnsAndLodges/images/hd_rr_featuredlisting.gif" BORDER="0"><BR>
+	<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	<td><div class="b4"><img src="../SmallInnsAndLodges/images/spacer.gif" height="1" width="1"></div></td>
+	</tr>
+	<tr>
+	<td align="center"><a href="View_Listing.asp?Lid=80-WTS607143&CategoryId=NYTWTS"><img src="http://nytulsimages.gabriels.net/100_0466.jpg" style="border: 3px double #CCCCCC;" OnError="this.src='images/noimage.gif'" width="130"></a></td>
+	</tr>
+	</tr>
+	<tr>
+	<td><div class="b6"><img src="../SmallInnsAndLodges/images/spacer.gif" height="1" width="1"></div></td>
+	</tr>
+	<tr>
+	<td>
+		<a href="View_Listing.asp?Lid=80-WTS607143&CategoryId=NYTWTS">Beach front condo in Mexico</a><br>
+		3bd 3.5 bath 1600 sq ft condo directly on the...<br>
+		<div align="right" class="text_featuredadlink"><a href="View_Listing.asp?Lid=80-WTS607143&CategoryId=NYTWTS">View Details</a><div>
+	</td>
+	</tr>
+	</table>
+	</div>
+	</div>
+	<div class="b15"><img src="../SmallInnsAndLodges/images/spacer.gif" height="1" width="1"></div>
+	
+
+	<div class="epromoBox">
+	<div class="epromoText" align="left">
+	<IMG SRC="../SmallInnsAndLodges/images/hd_rr_placeadprint.gif" BORDER="0"><BR>
+	<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	<td>
+		To have your ad appear in the New York Times newspaper, please call 800-631-8275.
+	</td>
+	</tr>
+	</table>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="b15"><img src="../SmallInnsAndLodges/images/spacer.gif" height="1" width="1"></div>
+<div class="epromoBox">
+<div class="epromoText" align="left">
+<IMG SRC="../+Comshare/images/hd_rr_contactus.gif" BORDER="0"><BR>
+<table cellpadding="0" cellspacing="0" border="0">
+ <tr>
+  <td>
+   For help with ONLINE ads, please email:<BR><a href="mailto:onlineclassifieds@nytimes.com">onlineclassifieds@<BR>nytimes.com</a>
+   <div class="b4"><img src="../SmallInnsAndLodges/images/spacer.gif" height="1" width="1"></div>
+  </td>
+ </tr>
+</table>
+</div>
+</div>
+
+  </TD>  
+ </TR>
+</TABLE>
+
+<TABLE WIDTH="768" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+ <TR>
+  <TD><div class="b20"><img src="../SmallInnsAndLodges/images/spacer.gif" height="1" width="1"></div></TD>
+ </TR>
+ <tr>
+  <td width="768" align="center" class="footer">
+   <a href="http://listings.nytimes.com/ClassifiedsMarketplace/">Classifieds Marketplace</a> |
+   <a href="http://listings.nytimes.com/smallinnsandlodges/">Small Inns &amp; Lodges</a> |
+   <a href="http://about.com/travel/">Resources from About.com</a> |
+   <a href="https://placead.nytimes.com/default.asp?CategoryID=NYTWTS&Source=NYT">Place an Ad</a>
+  </td>
+ </TR>
+</TABLE>
+
+
+<TABLE WIDTH="768" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+ <tr>
+  <td colspan="2"><img src="images/spacer.gif" width="1" height="10" border="0" /></td>
+ </TR>
+ <tr>
+  <td colspan="2" bgcolor="#CCCCCC"><img src="images/spacer.gif" width="1" height="1" border="0" /></td>
+ </TR>
+ <tr bgcolor="#EBEBEB">
+  <td width="14"><img src="images/spacer.gif" width="14" height="27" border="0" /></td>
+  <td width="764" valign="middle" class="footer">
+   <a href="http://www.nytimes.com/ref/membercenter/help/copyright.html">Copyright 2006</a>
+   <a href="http://www.nytco.com">The New York Times Company</a> |
+   <a href="http://www.nytimes.com/ref/membercenter/help/privacy.html">Privacy Policy</a> |
+   <a href="http://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a> |
+   <a href="http://www.nytimes.com/membercenter/sitehelp.html">Help</a>
+  </td>
+ </TR>
+</TABLE>
+
+
+<!-- SiteCatalyst code version: G.6.
+Copyright 1997-2004 Omniture, Inc. More info available at
+http://www.omniture.com --><script language="JavaScript"><!--
+var s_account="nytclassifieds"
+var s_pageName="SmallInnsAndLodges/List_Listings.asp"
+var s_server="listings.nytimes.com"
+var s_channel="Classifieds"
+var s_pageType=""
+var s_prop1=""
+var s_prop2=""
+var s_prop3=""
+var s_prop4=""
+var s_prop5=""
+var s_prop6=""
+var s_prop7=""
+var s_prop8=""
+var s_prop9=""
+var s_prop10=""
+var s_campaign=""
+var s_state=""
+var s_zip=""
+var s_events=""
+var s_products=""
+var s_purchaseID=""
+var s_eVar1=""
+var s_eVar2=""
+var s_eVar3=""
+var s_eVar4=""
+var s_eVar5=""
+var s_eVar6=""
+var s_eVar7=""
+var s_eVar8=""
+var s_eVar9=""
+var s_eVar10=""
+var s_code=' '//--></script>
+<script language="JavaScript" src="http://www.nytimes.com/js/s_code_1to1.js"></script>
+<script language="JavaScript"><!-- 
+var s_wd=window,s_tm=new Date;if(s_code!=' '){s_code=s_dc(
+s_account);if(s_code)document.write(s_code)}else
+document.write('<im'+'g src="http://std.o.nytimes.com/b/ss/'+s_account+'/1/G.6--FB/s'+s_tm.getTime()+'?[AQB]'
++'&j=1.0&[AQE]" height="1" width="1" border="0" alt="" />')
+//--></script><script language="JavaScript"><!-- 
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img 
+src="http://std.o.nytimes.com/b/ss/nytclassifieds/1/G.6--NS/0" 
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: G.6. -->
+
+<!-- SiteCatalyst code version: G.5.
+Copyright 1997-2003 Omniture, Inc. More info available at
+http://www.omniture.com --><script language="JavaScript"><!--
+var s_account="nytimesglobal"
+var s_pageName="SmallInnsAndLodges/List_Listings.asp"
+var s_server="listings.nytimes.com"
+var s_channel="Classifieds"
+var s_formOnPage=""
+var s_pageType=""
+var s_prop1=""
+var s_prop2=""
+var s_prop3=""
+var s_prop4=""
+var s_prop5=""
+var s_prop6=""
+var s_prop7=""
+var s_prop8=""
+var s_prop9=""
+var s_prop10=""
+var s_campaign=""
+var s_state=""
+var s_zip=""
+var s_events=""
+var s_products=""
+var s_purchaseID=""
+var s_eVar1=""
+var s_eVar2=""
+var s_eVar3=""
+var s_eVar4=""
+var s_eVar5=""
+var s_eVar6=""
+var s_eVar7=""
+var s_eVar8=""
+var s_eVar9=""
+var s_eVar10=""
+//--></script><script language="JavaScript" src="http://www.nytimes.com/js/s_code_sampling.js"></script>
+<!-- End SiteCatalyst code version: G.5. -->
+<script language="javascript">
+//-------------------------------------------------------------------------
+function ContactInfo(loc)
+{
+ 	var Email = '';
+  	URL = "../+ComShare/User_Info.asp?Email="+Email+"&loc="+loc;
+   	window.open(URL,"","width=420,height=500,left=20,top=40,resizable=no,scrollbars=yes");
+}
+//-------------------------------------------------------------------------
+function getCookie(Name) {
+	var search = Name + "=";
+	if (document.cookie.length > 0) { // if there are any cookies
+		offset = document.cookie.indexOf(search);
+    	if (offset != -1) { 			// if cookie exists
+      		offset += search.length	;	      					// set index of beginning of value
+      		end = document.cookie.indexOf(";", offset);		// set index of end of cookie value
+      		if (end == -1)
+        		end = document.cookie.length;
+
+      		return unescape(document.cookie.substring(offset, end));
+    	}
+	}
+}
+//-------------------------------------------------------------------------
+function ChangeUser(loc)
+{
+  URL = "../+ComShare/GetEmail.asp?loc="+loc;
+  window.open(URL,"","width=350,height=265,top=40,left=20,resizable=no,scrollbars=no");
+}	
+//-------------------------------------------------------------------------
+function SaveSelect(Lid) {
+	    res = getCookie("NYTULSEmailId");
+  	    if (res != null && res !="")
+  	    {
+  		  window.open("../+ComShare/SaveListing.asp?ListingId=" + Lid +"&CaseType=U","SaveSelect","width=300,height=150,scrollbars,left=20,top=40");  			
+    	 // document.SaveSelected.submit();
+    	}
+  	    else //if (res==undefined || res==null || res =="") 
+  	      ChangeUser('l');        
+}
+//-------------------------------------------------------------------------
+function DeleteSelect(Lid) {
+	    res = getCookie("NYTULSEmailId");
+  	    if (res != null && res !="")
+  	      	   window.open("../+ComShare/DeleteListing.asp?ListingId=" + Lid,"DeleteSelect","width=300,height=150,scrollbars,left=20,top=40");  	
+//  		  top.location="../+ComShare/DeleteListing.asp?ListingId=" + Lid 
+  	    else //if (res==undefined || res==null || res =="") 
+  	      ChangeUser('l');        
+}
+//-------------------------------------------------------------------------
+function openMap(baseURL) {
+	window.open(baseURL,"", "width=580,height=600,toolbar=no,status=no,directories=no,menubar=no,resizable=no,scrollbars=yes");
+}
+//-------------------------------------------------------------------------
+function openEmail(baseURL) {
+	window.open(baseURL,"", "width=400,height=455,toolbar=no,status=no,directories=no,menubar=no,resizable=no,scrollbars=no");
+}
+//-------------------------------------------------------------------------
+function openPrint(baseURL) {
+	window.open(baseURL,"", "width=610,height=500,toolbar=no,status=no,directories=no,menubar=no,resizable=no,scrollbars=yes");
+}
+//-------------------------------------------------------------------------
+function openKey(url){
+	window.open(url,'ik','width=475,height=150,toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no')
+}
+//-------------------------------------------------------------------------
+function openPhoto(url){
+	window.open(url,'ik','width=400,height=345,toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no')
+}
+//-------------------------------------------------------------------------
+function pop_Map(url){
+	window.open(url,'ik','width=475,height=480,toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no')
+}
+//-------------------------------------------------------------------------
+function openHelp(baseURL) {
+	window.open(baseURL,"", "width=420,height=480,toolbar=no,status=no,directories=no,menubar=no,resizable=no,scrollbars=yes");
+}
+//-------------------------------------------------------------------------
+</script>
+  
+
+<script language="JavaScript1.2">
+//-------------------------------------------------------------------------
+function LookAtNextPage(ThisPage) {
+	var myPage = ThisPage;
+	document.TheNextPage.ThisPage.value = myPage;
+	document.TheNextPage.submit();
+}
+//-------------------------------------------------------------------------
+function ReSortListings(Sort) {
+	document.TheNextPage.Sort.value = Sort;
+	document.TheNextPage.ThisPage.value = "";
+	document.TheNextPage.submit();
+}
+//-------------------------------------------------------------------------
+function LookDetails(lid,ct) {
+	document.details.Lid.value = lid;
+	document.details.LIndex.value = ct;
+	document.details.action = "View_Listing.asp";
+	document.details.submit();
+}
+//-------------------------------------------------------------------------
+function getRegions() {
+	groupPick = document.selectRegion.GroupId.options[document.selectRegion.GroupId.selectedIndex].value;
+	var countNew = 1;
+	var tmpSubGroupId = "";
+	var subGroupId = "";
+	var allRegion = "";
+	document.selectRegion.RegionId.length = 99;
+	if (groupPick == 5)
+	{
+		document.selectRegion.RegionId.options[countNew].value = 5;
+		document.selectRegion.RegionId.options[countNew].text = "All Areas";
+		countNew++;
+	}
+	if (groupPick == 10)
+	{
+		document.selectRegion.RegionId.options[countNew].value = 10;
+		document.selectRegion.RegionId.options[countNew].text = "All United States";
+		countNew++;
+	}
+	else if (groupPick == 50)
+	{
+		document.selectRegion.RegionId.options[countNew].value = 50;
+		document.selectRegion.RegionId.options[countNew].text = "All Other Area";
+		countNew++;
+	}
+	else
+	{
+	for (i=0;i<myRegionsAll.length;i++) {
+		if (myRegionsAll[i][1] == groupPick ) {	
+			if (allRegion == "") 
+			{
+				document.selectRegion.RegionId.options[countNew].value = myRegionsAll[i][1];
+				document.selectRegion.RegionId.options[countNew].text = "All " + myRegionsAll[i][2];
+				countNew++;
+				allRegion = "Y"
+			}
+
+			subGroupId = myRegionsAll[i][3];
+			if ((subGroupId != tmpSubGroupId ) && (subGroupId != '20000') && (myRegionsAll[i][3] != myRegionsAll[i][5]))
+			{
+				document.selectRegion.RegionId.options[countNew].value = myRegionsAll[i][3];
+				document.selectRegion.RegionId.options[countNew].text = myRegionsAll[i][4];
+				countNew++;
+			}
+			if ((myRegionsAll[i][2] != myRegionsAll[i][6]) && (("All " +  myRegionsAll[i][2]) != myRegionsAll[i][6]))
+			{
+			document.selectRegion.RegionId.options[countNew].value = myRegionsAll[i][5];
+			document.selectRegion.RegionId.options[countNew].text = myRegionsAll[i][6];
+			countNew++;
+			}
+			tmpSubGroupId = subGroupId;
+		} 	
+	}
+	}
+	document.selectRegion.RegionId.length = countNew;
+	document.selectRegion.RegionId.selectedIndex = 0;
+}
+//-------------------------------------------------------------------------
+function submitRegions(act)
+{
+if (document.selectRegion.GroupId.value!="" && document.selectRegion.GroupId.value!="US") 
+{
+	if (act == 's')
+	{
+		document.TheNextPage.SoL.value = ""
+		document.TheNextPage.ThisPage.value = ""
+		document.TheNextPage.Sort.value = ""
+		document.TheNextPage.cid.value = ""
+		document.TheNextPage.RegionId.value = document.selectRegion.RegionId.value
+		document.TheNextPage.KeyWord.value = document.selectRegion.KeyWord.value
+		document.TheNextPage.action = "List_Listings.asp"
+	}
+	document.TheNextPage.GroupId.value = document.selectRegion.GroupId.value
+	document.TheNextPage.submit();
+}
+else
+		alert("Please select a United States Region");
+}
+//-------------------------------------------------------------------------
+</script>
+
+</BODY>
+<!-- Bottom7 position -->
+<script language="JavaScript">
+<!--
+if (typeof adxpos_Bottom7 != "undefined")
+    document.write(adxads[adxpos_Bottom7]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Bottom7"><img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=Bottom7&query=qstring&keywords=?"></a></noscript>
+
+
+<!-- Bottom8 position -->
+<script language="JavaScript">
+<!--
+if (typeof adxpos_Bottom8 != "undefined")
+    document.write(adxads[adxpos_Bottom8]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Bottom8"><img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=Bottom8&query=qstring&keywords=?"></a></noscript>
+
+
+<!-- Bottom9 position -->
+<script language="JavaScript">
+<!--
+if (typeof adxpos_Bottom9 != "undefined")
+    document.write(adxads[adxpos_Bottom9]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Bottom9"><img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=Bottom9&query=qstring&keywords=?"></a></noscript>
+
+
+<!-- Inv1 position -->
+<script language="JavaScript">
+<!--
+if (typeof adxpos_Inv1 != "undefined")
+    document.write(adxads[adxpos_Inv1]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Inv1"><img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=Inv1&query=qstring&keywords=?"></a></noscript>
+
+
+<!-- Inv2 position -->
+<script language="JavaScript">
+<!--
+if (typeof adxpos_Inv2 != "undefined")
+    document.write(adxads[adxpos_Inv2]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Inv2"><img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=Inv2&query=qstring&keywords=?"></a></noscript>
+
+
+<!-- Inv3 position -->
+<script language="JavaScript">
+<!--
+if (typeof adxpos_Inv3 != "undefined")
+    document.write(adxads[adxpos_Inv3]);
+// -->
+</script>
+<noscript>
+<a href="http://www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Inv3"><img src="http://www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=listings.nytimes.com/smallinnsandlodges/search&posall=Top5,TopLeft,Middle1,SFMiddle,SponLink,TopAd,Right3,Right1,Bottom7,Bottom8,Bottom9,Inv1,Inv2,Inv3&pos=Inv3&query=qstring&keywords=?"></a></noscript>  
+</HTML>

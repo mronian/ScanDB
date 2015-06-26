@@ -1,0 +1,364 @@
+<DOC>
+<DOCNO>g00849</DOCNO>
+<DOCHDR>http://www.bootsnall.com/hostels/re/USA/Seattle+Hostels.php</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta http-equiv="content-type" content="text/html;charset=iso-8859-1"><title>Seattle Hostels - Youth Hostels in Seattle, USA</title><meta name="description" content="Hostels in Seattle USA. Book a youth hostel in Seattle online. Find hostels all over the world"><meta  name="ROBOTS" content="ALL"><meta name="keywords" content="travel, online, independent, hostels, hosteling, hostel, accommodation, budget, backpacker, pension, guesthouse, youth, independent, cheap tickets, eurail passes"><link rel="stylesheet" href="http://www.bootsnall.com/articles/hostel_style.css" type="text/css" /><link REL="ICON" href="/favicon.ico" type="image/x-ico"><link REL="SHORTCUT ICON" href="/favicon.ico"></head><body><div class="supercontainer">Top Hostels: <a href="http://www.bootsnall.com/hostels/europe/">Europe Hostels</a> &nbsp;|&nbsp; <a href="http://www.bootsnall.com/hostels/re/England/London+Hostels.php">London Hostels</a> &nbsp;|&nbsp; <a href="http://www.bootsnall.com/hostels/re/Spain/Barcelona+Hostels.php">Barcelona Hostels</a> &nbsp;|&nbsp; <a href="http://www.bootsnall.com/hostels/re/Italy/Venice+Hostels.php">Venice Hostels</a> &nbsp;|&nbsp; <a href="http://www.bootsnall.com/hostels/re/Italy/Milan+Hostels.php">Milan Hostels</a> &nbsp;|&nbsp; <a href="http://www.bootsnall.com/hotels/#eu">Europe Hotels</a></div><table width="760" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td valign="top">
+<a href="http://www.bootsnall.com/"><img src="http://www.bootsnall.com/images/bna-logo.gif" width="418" height="108" alt="BootsnAll Travel Network" border="0" /></a>
+</td><td width="270" align="right">
+<div class="headbox"><a href="http://www.bootsnall.com/">Home</a> | <a href="http://www.bootsnall.com/hotels/">Cheap Hotels</a> |  <a href="http://boards.bootsnall.com/eve/">Travel Forums</a><br />
+<a href="http://www.cheapticketlinks.com/">Plane Tickets</a> | <a href="http://www.bootsnall.com/hostels/">Youth Hostels</a> | <a href="http://www.BootsnAll.com/rtw/">RTW Guide</a><br />
+<a href="http://www.bootsnall.com/aboutus.shtml">About Us</a> | <a href="http://adsales.bootsnall.com">Advertising</a> | <a href="http://www.bootsnall.com/contact.shtml">Contact</a> | <a href="http://www.bootblog.org/04-08/bootsnall-travel-network-rss-files.html">RSS</a> | <a href="http://www.BootsnAll.com/profiles.shtml">Staff</a></div>
+<div align="center" class="content"><a href="http://www.bootsnall.com/firsttime.shtml"><b>First Time Visitor?</b></a></div>
+</TD></tr></table>
+
+<table border="0" cellpadding="2" cellspacing="0" align="center" width="760"><tr><td align="right" class="detail_main"><a href="http://www.BootsnAll.com/hostel-reviews/"><b>Review a Youth Hostel</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/hostels/french.shtml"><img src="/images/flags/flag_french.gif" alt="Chercher des Auberges De Jeunesse" border="0"></a> &nbsp;<a href="/hostels/italian.shtml"><img src="/images/flags/flag_italian.gif" alt="Ricercare gli Ostelli di Gioventù" border="0"></a> &nbsp;<a href="/hostels/german.shtml"><img src="/images/flags/flag_german.gif" alt="Suchen Sie Jugendherbergen" border="0"></a> &nbsp;<a href="/hostels/spanish.shtml"><img src="/images/flags/flag_spanish.gif" alt="Busque para Albergues Juveniles de Juventud" border="0"></a></td></tr><tr><td class="description"><a href="http://www.bootsnall.com/hostels" title="">Home</a> &raquo; <a href="http://www.bootsnall.com/hostels/north-america/"   title="">North America Hostels</a> &raquo; <a href="http://www.bootsnall.com/hostels/north-america/usa/"   title="">USA Hostels</a> &raquo; Seattle Hostels</td></tr></table><script src="http://reservations.bookhostels.com/includes/countries.js"></script>
+
+
+<body onLoad="onInit();">
+<!-- populateCitySelect(document.theForm.CountryChoice.value)"  -->
+<FORM NAME="theForm" ACTION="http://www.hostelworld.com/expresspanel.php" METHOD="POST"  >
+<table width="760" class="top_search" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top">
+
+<input type="hidden" name="UserID" value="bootsnall.com">
+<input type="hidden" name="SubAffiliateUserID" value='' >
+<input type="hidden" name="Language" value="English"> 
+<input type="hidden" name="tmpChoice">
+<input type="hidden" name="SearchType" value="HOSTEL">
+<input type="hidden" name="datePicked" value="false">
+
+		<b>Choose a Country:</b><br>
+		<SELECT NAME='FABCountryChoice' onChange='javascript:populateCitySelect( this.options[selectedIndex].value )' >
+		 <OPTION VALUE=''>Choose a country:</option>
+		  <SCRIPT SRC="http://reservations.bookhostels.com/includes/countrylistarray.js">
+		  </script>
+		</select>
+<br><br>
+<b>Choose a City:</b><br>
+<SELECT NAME='FABChoice' onChange='document.theForm.tmpChoice.value = this.options[selectedIndex].value;'>
+ <OPTION VALUE=''>Choose a city:</option>
+</select>
+</td>
+<td align="left">
+<b>Arrival Date:</b><br>
+  <SELECT NAME='selMonth' onChange='makeValidDate();'>
+  <OPTION VALUE='01'>Jan</option>
+  <OPTION VALUE='02'>Feb</option>
+  <OPTION VALUE='03'>Mar</option>
+  <OPTION VALUE='04'>Apr</option>
+  <OPTION VALUE='05'>May</option>
+  <OPTION VALUE='06'>Jun</option>
+  <OPTION VALUE='07'>Jul</option>
+  <OPTION VALUE='08'>Aug</option>
+  <OPTION VALUE='09'>Sep</option>
+  <OPTION VALUE='10'>Oct</option>
+  <OPTION VALUE='11'>Nov</option>
+  <OPTION VALUE='12'>Dec</option>
+  </SELECT>
+  
+  <SELECT NAME='selDay' onChange='makeValidDate();'>
+  <OPTION VALUE='01' SELECTED>1</option>
+  <OPTION VALUE='02'>2</option>
+  <OPTION VALUE='03'>3</option>
+  <OPTION VALUE='04'>4</option>
+  <OPTION VALUE='05'>5</option>
+  <OPTION VALUE='06'>6</option>
+  <OPTION VALUE='07'>7</option>
+  <OPTION VALUE='08'>8</option>
+  <OPTION VALUE='09'>9</option>
+  <OPTION VALUE='10'>10</option>
+  <OPTION VALUE='11'>11</option>
+  <OPTION VALUE='12'>12</option>
+  <OPTION VALUE='13'>13</option>
+  <OPTION VALUE='14'>14</option>
+  <OPTION VALUE='15'>15</option>
+  <OPTION VALUE='16'>16</option>
+  <OPTION VALUE='17'>17</option>
+  <OPTION VALUE='18'>18</option>
+  <OPTION VALUE='19'>19</option>
+  <OPTION VALUE='20'>20</option>
+  <OPTION VALUE='21'>21</option>
+  <OPTION VALUE='22'>22</option>
+  <OPTION VALUE='23'>23</option>
+  <OPTION VALUE='24'>24</option>
+  <OPTION VALUE='25'>25</option>
+  <OPTION VALUE='26'>26</option>
+  <OPTION VALUE='27'>27</option>
+  <OPTION VALUE='28'>28</option>
+  <OPTION VALUE='29'>29</option>
+  <OPTION VALUE='30'>30</option>
+  <OPTION VALUE='31'>31</option>
+  </SELECT>
+  
+<SELECT NAME='selYear' onChange='makeValidDate();'>
+   <OPTION VALUE='2006' SELECTED>2006</option>
+   <OPTION VALUE='2007'>2007</option>
+</SELECT>
+<br><br>
+<b>Number of Nights:</b>&nbsp;&nbsp;&nbsp;&nbsp;
+<SELECT NAME='NumNights'>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+  </select><br><br>
+
+</td>
+<td valign="top" align="right">
+<b>Property:&nbsp;</b> <SELECT NAME='PropType' >
+<OPTION VALUE='0'>All Accommodation Types</option>
+<OPTION VALUE='HOSTEL'>Hostel</option>
+<OPTION VALUE='HOTEL'>Budget Hotel</option>
+<OPTION VALUE='GUESTHOUSE'>Guesthouse</option>
+<OPTION VALUE='CAMPSITE'>Campsite</option>
+<OPTION VALUE='APARTMENT'>Apartment</option>
+</select>
+<br><br> 
+<b>Currency:</b>
+  <SELECT NAME='Currency'>
+   <option value="USD" selected>United States Dollar</option>
+<option value="EUR">Euro</option>
+<option value="GBP">British Pound Sterling</option>
+<option value="AUD">Australian Dollar</option>
+<option value="CAD">Canadian Dollar</option>
+<option value="NZD">New Zealand Dollar</option>
+<option value="ZAR">South African Rand</option>
+<option value="JPY">Japanese Yen</option>
+<option value="">----------</option>
+<option value="ARS">Argentine Peso</option>
+<option value="BSD">Bahamian Dollar</option>
+<option value="BZD">Belize Dollar</option>
+<option value="BOB">Bolivian Boliviano</option>
+<option value="BRL">Brazilian Real</option>
+<option value="BND">Brunei Dollar</option>
+<option value="KHR">Cambodian Riel</option>
+<option value="XOF">CFA Franc BCEAO</option>
+<option value="CLP">Chilean Peso</option>
+<option value="CNY">Chinese Yuan Renminbi</option>
+<option value="COP">Colombian Peso</option>
+<option value="KMF">Comoros Franc</option>
+<option value="CRC">Costa Rican Colon</option>
+<option value="HRK">Croatian Kuna</option>
+<option value="CYP">Cyprus Pound</option>
+<option value="CSK">Czech Koruna</option>
+<option value="DKK">Danish Krone</option>
+<option value="DOP">Dominican R. Peso</option>
+<option value="ECS">Ecuador Sucre</option>
+<option value="EGP">Egyptian Pound</option>
+<option value="EEK">Estonian Kroon</option>
+<option value="FJD">Fiji Dollar</option>
+<option value="HKD">Hong Kong Dollar</option>
+<option value="HUF">Hungarian Forint</option>
+<option value="ISK">Iceland Krona</option>
+<option value="INR">Indian Rupee</option>
+<option value="IDR">Indonesian Rupiah</option>
+<option value="ILS">Israeli New Shekel</option>
+<option value="JOD">Jordanian Dinar</option>
+<option value="KES">Kenyan Shilling</option>
+<option value="LAK">Lao Kip</option>
+<option value="LVL">Latvian Lats</option>
+<option value="LBP">Lebanese Pound</option>
+<option value="LTL">Lithuanian Litas</option>
+<option value="MYR">Malaysian Ringgit</option>
+<option value="MTL">Maltese Lira</option>
+<option value="MXP">Mexican Peso</option>
+<option value="MNT">Mongolian Tugrik</option>
+<option value="MAD">Moroccan Dirham</option>
+<option value="NAD">Namibia Dollar</option>
+<option value="NPR">Nepalese Rupee</option>
+<option value="NIO">Nicaraguan Cordoba Oro</option>
+<option value="NOK">Norwegian Kroner</option>
+<option value="PEN">Peruvian Nuevo Sol</option>
+<option value="PHP">Philippine Peso</option>
+<option value="PLZ">Polish Zloty</option>
+<option value="ROL">Romanian Lei</option>
+<option value="RUB">Russian Rouble</option>
+<option value="WST">Samoan Tala</option>
+<option value="SGD">Singapore Dollar</option>
+<option value="SKK">Slovak Koruna</option>
+<option value="SIT">Slovenian Tolar</option>
+<option value="KRW">South-Korean Won</option>
+<option value="LKR">Sri Lanka Rupee</option>
+<option value="SZL">Swaziland Lilangeni</option>
+<option value="SEK">Swedish Krona</option>
+<option value="CHF">Swiss Franc</option>
+<option value="TWD">Taiwan Dollar</option>
+<option value="TZS">Tanzanian Shilling</option>
+<option value="THB">Thai Baht</option>
+<option value="TOP">Tonga Pa'anga</option>
+<option value="TTD">Trinidad/Tobago Dollar</option>
+<option value="TND">Tunisian Dinar</option>
+<option value="TRL">Turkish Lira</option>
+<option value="UAH">Ukraine Hryvnia</option>
+<option value="UYP">Uruguayan Peso</option>
+<option value="VUV">Vanuatu Vatu</option>
+<option value="VEB">Venezuelan Bolivar</option>
+<option value="VND">Vietnamese Dong</option>
+<option value="ZWD">Zimbabwe Dollar</option>
+  </select>
+<BR>
+<BR>
+<INPUT TYPE='submit' VALUE='Find a Hostel!' NAME='Submit' >
+<!-- <INPUT TYPE='button' VALUE='Find a Bed!' NAME='Submit' onClick='checkInputs();' > -->
+</td>
+</tr>
+</table>
+</form>
+<SCRIPT SRC="http://reservations.bookhostels.com/includes/countries.js">
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+function populateCitySelect( country ) {
+
+  countryArrayName = country.replace(/ /g,'');
+  if ( countryArrayName.length == 0 ) 
+  {
+    document.theForm.FABChoice.length = 1;
+    document.theForm.FABChoice.options[0] = new Option('Choose a country:');
+    document.theForm.FABChoice.options[0].value = '';
+    return;
+  }
+  
+  if ( country == 'Holland' ) 
+  {
+    country = 'Netherlands';
+    countryArrayName = country;
+  }
+  if ( country == 'Britain' ) 
+  {
+    country = 'UK';
+    countryArrayName = country;
+  }
+  newOptions = eval(countryArrayName+'Array');
+  document.theForm.FABChoice.length = 1;
+  document.theForm.FABChoice.options[0] = new Option('Choose a city :');
+  document.theForm.FABChoice.options[0].value = '';
+  document.theForm.FABChoice.options[0].selected = true;
+  var citylength = newOptions.length + 1;
+  for ( i=0; i<newOptions.length; i++ ) {
+    document.theForm.FABChoice.length++;
+    thisEntry = newOptions[i];
+    newOption = new Option( thisEntry );
+    // MK - changed the last variable to newcountry so the FABChoice value 
+    // will be correct when submitted to the search engine.  It was broken
+    // for the special cases of Holland and Britain handled above.
+    newOption.value =  thisEntry + ';' + country;
+    document.theForm.FABChoice.options[i+1] = newOption;
+  }
+  document.theForm.FABChoice.length = citylength;
+  if(newOptions.length == 1) document.theForm.FABChoice.options[1].selected = true;
+}
+
+function makeValidDate() 
+{   
+    document.theForm.datePicked.value = "true";
+    year = document.theForm.selYear.options[ document.theForm.selYear.selectedIndex ].value;
+    month = document.theForm.selMonth.options[ document.theForm.selMonth.selectedIndex ].value;
+    day = document.theForm.selDay.options[ document.theForm.selDay.selectedIndex ].value;
+
+    maxDay = 31;
+    if ( month == 4 || month == 6 || month == 9 || month == 11 ) 
+    {
+        maxDay = 30;
+    } 
+    else if ( month == 2 ) 
+    {
+        if ( year%100 != 0 && year%4 == 0 ) 
+        {
+            maxDay = 29;
+        } 
+        else  
+        {
+            maxDay = 28;
+        }
+    }
+    //alert("func:" + ( Math.min(day, maxDay) - 1));
+    document.theForm.selDay.selectedIndex = ( Math.min(day, maxDay) - 1);
+}
+
+/*MK - I made some changes here to make it work in both prepopulation cases.*/
+function onInit()
+{
+    if (!document.theForm.FABCountryChoice.value && 'USA')
+    {
+        document.theForm.FABCountryChoice.value = 'USA';
+    }
+    populateCitySelect(document.theForm.FABCountryChoice.value);
+    if (document.theForm.tmpChoice.value)
+	{
+	    document.theForm.FABChoice.value = document.theForm.tmpChoice.value;
+	}
+    else if ('Seattle')
+	{
+	    country = document.theForm.FABCountryChoice.value;
+	    //strippedCountry = country.replace(/ /g,'');
+	    strippedCountry = country;
+		CChoice = 'Seattle' + ';' + strippedCountry;
+		//alert(CChoice);
+		document.theForm.FABChoice.value = CChoice;
+	}
+	
+	
+	if (document.theForm.datePicked.value == "false")
+    {
+	    Today = new Date();
+        ThreeDays = new Date();
+        ThreeDays.setTime(Today.getTime() + (60*60*24*3*1000));
+        Day = ThreeDays.getDate();
+        if(Day > 0) Day = Day - 1;
+        Month = ThreeDays.getMonth();
+        Year = ThreeDays.getYear();
+        document.theForm.selDay.options[Day].selected = true;
+        document.theForm.selMonth.options[Month].selected = true;
+        x = document.theForm.selYear.length;
+        for(i=0;i<x;i++) 
+        {
+            if(document.theForm.selYear.options[i].value == Year) 
+            {
+                document.theForm.selYear.options[i].selected = true;
+            }
+        }
+    }// end if
+}
+
+</script>
+<table width="760" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td valign="top" class="detail_main" style="padding-right:10px;padding-top:10px;" rowspan="2"><h1>Book hostels in Seattle, USA</h1>Check availability of all hostels in Seattle using the search box above, or browse by name in the list below.<hr noshade>Your search found <b>7 properties</b><br />Hostel : 5&nbsp;Hotel : 1&nbsp;Hotel ** : 1&nbsp;<hr noshade><div class="hostel_result_header"><b><a href="/hostels/d/818/Green+Tortoise+Hostel.php" >Green Tortoise Hostel</a></b></div>1525 Second AV, <br /><a href="javascript:window.open('http://www.bootsnall.com/maps/hostel_map.php?hostel_id=818', 'Map', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=1,resizable=1,width=600,height=600,left = 312,top = 184');exit;">Map and Directions to Green Tortoise Hostel</a><br />Type: HOSTEL<br /><a href="/hostels/d/818/Green+Tortoise+Hostel.php" >See more details &amp; Check Availability &#187;</a><br /><br /><div class="hostel_result_header"><b><a href="/hostels/d/1857/H.I.+Seattle.php" >H.I. Seattle</a></b></div>84 Union Street, WA 98101<br /><a href="javascript:window.open('http://www.bootsnall.com/maps/hostel_map.php?hostel_id=1857', 'Map', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=1,resizable=1,width=600,height=600,left = 312,top = 184');exit;">Map and Directions to H.I. Seattle</a><br />Type: HOSTEL<br /><a href="/hostels/d/1857/H.I.+Seattle.php" >See more details &amp; Check Availability &#187;</a><br /><br /><div class="hostel_result_header"><b><a href="/hostels/d/5503/HI-Vashon+Island+AYH+Ranch+Hostel.php" >HI-Vashon Island AYH Ranch Hostel</a></b></div>12119 SW Cove Rd., Vashon Island<br /><a href="javascript:window.open('http://www.bootsnall.com/maps/hostel_map.php?hostel_id=5503', 'Map', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=1,resizable=1,width=600,height=600,left = 312,top = 184');exit;">Map and Directions to HI-Vashon Island AYH Ranch Hostel</a><br />Type: HOSTEL<br /><a href="/hostels/d/5503/HI-Vashon+Island+AYH+Ranch+Hostel.php" >See more details &amp; Check Availability &#187;</a><br /><br /><div class="hostel_result_header"><b><a href="/hostels/d/15930/Seattle+Pacific+Hotel.php" >Seattle Pacific Hotel</a></b></div>325 Aurora Ave. N, <br /><a href="javascript:window.open('http://www.bootsnall.com/maps/hostel_map.php?hostel_id=15930', 'Map', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=1,resizable=1,width=600,height=600,left = 312,top = 184');exit;">Map and Directions to Seattle Pacific Hotel</a><br />Type: HOTEL<br /><a href="/hostels/d/15930/Seattle+Pacific+Hotel.php" >See more details &amp; Check Availability &#187;</a><br /><br /></td><td valign="top" width="275" style="border:1px solid #000;padding-left:5px;background:#eee;" class="detail_main"><h3>More cities in USA</h3><ul><li><a href="/hostels/re/USA/Aberdeen+Hostels.php">Aberdeen Hostels</a></li><li><a href="/hostels/re/USA/Anaheim+Hostels.php">Anaheim Hostels</a></li><li><a href="/hostels/re/USA/Anchorage+Hostels.php">Anchorage Hostels</a></li><li><a href="/hostels/re/USA/Arroyo%2BSeco+Hostels.php">Arroyo Seco Hostels</a></li><li><a href="/hostels/re/USA/Asheville+Hostels.php">Asheville Hostels</a></li><li><a href="/hostels/re/USA/Asheville%2BNC+Hostels.php">Asheville NC Hostels</a></li><li><a href="/hostels/re/USA/Ashland+Hostels.php">Ashland Hostels</a></li><li><a href="/hostels/re/USA/Aspen+Hostels.php">Aspen Hostels</a></li><li><a href="/hostels/re/USA/Atlanta+Hostels.php">Atlanta Hostels</a></li><li><a href="/hostels/re/USA/Austin+Hostels.php">Austin Hostels</a></li><li><a href="/hostels/re/USA/Belmar+Hostels.php">Belmar Hostels</a></li><li><a href="/hostels/re/USA/Big%2BIsland%2C%2BHawaii+Hostels.php">Big Island, Hawaii Hostels</a></li><li><a href="/hostels/re/USA/Bingen+Hostels.php">Bingen Hostels</a></li><li><a href="/hostels/re/USA/Boston+Hostels.php">Boston Hostels</a></li><li><a href="/hostels/re/USA/Breckenridge+Hostels.php">Breckenridge Hostels</a></li><li><a href="/hostels/re/USA/Buena%2BPark+Hostels.php">Buena Park Hostels</a></li><li><a href="/hostels/re/USA/Buffalo+Hostels.php">Buffalo Hostels</a></li><li><a href="/hostels/re/USA/Cambridge+Hostels.php">Cambridge Hostels</a></li><li><a href="/hostels/re/USA/Cameron%2BPark+Hostels.php">Cameron Park Hostels</a></li><li><a href="/hostels/re/USA/Camp%2BSprings+Hostels.php">Camp Springs Hostels</a></li><li><a href="/hostels/re/USA/Cape%2BCod+Hostels.php">Cape Cod Hostels</a></li><li><a href="/hostels/re/USA/Carlisle+Hostels.php">Carlisle Hostels</a></li><li><a href="/hostels/re/USA/Cedar%2BCreast+Hostels.php">Cedar Creast Hostels</a></li><li><a href="/hostels/re/USA/Charleston+Hostels.php">Charleston Hostels</a></li><li><a href="/hostels/re/USA/Charlottesville+Hostels.php">Charlottesville Hostels</a></li><li><a href="/hostels/re/USA/Chicago+Hostels.php">Chicago Hostels</a></li><li><a href="/hostels/re/USA/Cleveland+Hostels.php">Cleveland Hostels</a></li><li><a href="/hostels/re/USA/Colorado+Hostels.php">Colorado Hostels</a></li><li><a href="/hostels/re/USA/Conway+Hostels.php">Conway Hostels</a></li><li><a href="/hostels/re/USA/Dallas+Hostels.php">Dallas Hostels</a></li><li><a href="/hostels/re/USA/Detroit+Hostels.php">Detroit Hostels</a></li><li><a href="/hostels/re/USA/Driggs+Hostels.php">Driggs Hostels</a></li><li><a href="/hostels/re/USA/Estes%2BPark+Hostels.php">Estes Park Hostels</a></li><li><a href="/hostels/re/USA/Eugene+Hostels.php">Eugene Hostels</a></li><li><a href="/hostels/re/USA/Everglades+Hostels.php">Everglades Hostels</a></li><li><a href="/hostels/re/USA/Fairbanks+Hostels.php">Fairbanks Hostels</a></li><li><a href="/hostels/re/USA/Fayetteville+Hostels.php">Fayetteville Hostels</a></li><li><a href="/hostels/re/USA/Flagstaff+Hostels.php">Flagstaff Hostels</a></li><li><a href="/hostels/re/USA/Florida+Hostels.php">Florida Hostels</a></li><li><a href="/hostels/re/USA/Florida%2BCity+Hostels.php">Florida City Hostels</a></li><li><a href="/hostels/re/USA/Fort%2BLauderdale+Hostels.php">Fort Lauderdale Hostels</a></li><li><a href="/hostels/re/USA/Fort%2BWayne+Hostels.php">Fort Wayne Hostels</a></li><li><a href="/hostels/re/USA/Fort%2BWorth+Hostels.php">Fort Worth Hostels</a></li><li><a href="/hostels/re/USA/Fountain%2BHills+Hostels.php">Fountain Hills Hostels</a></li><li><a href="/hostels/re/USA/Glenwood%2BSprings+Hostels.php">Glenwood Springs Hostels</a></li><li><a href="/hostels/re/USA/Gonzales+Hostels.php">Gonzales Hostels</a></li><li><a href="/hostels/re/USA/Hamilton+Hostels.php">Hamilton Hostels</a></li><li><a href="/hostels/re/USA/Hartford+Hostels.php">Hartford Hostels</a></li><li><a href="/hostels/re/USA/Harvard+Hostels.php">Harvard Hostels</a></li><li><a href="/hostels/re/USA/Hawkinsville+Hostels.php">Hawkinsville Hostels</a></li><li><a href="/hostels/re/USA/Hollywood+Hostels.php">Hollywood Hostels</a></li><li><a href="/hostels/re/USA/Homer+Hostels.php">Homer Hostels</a></li><li><a href="/hostels/re/USA/Hop%2BBottom+Hostels.php">Hop Bottom Hostels</a></li><li><a href="/hostels/re/USA/Huntington%2BBeach+Hostels.php">Huntington Beach Hostels</a></li><li><a href="/hostels/re/USA/Hyder+Hostels.php">Hyder Hostels</a></li><li><a href="/hostels/re/USA/Indianapolis+Hostels.php">Indianapolis Hostels</a></li><li><a href="/hostels/re/USA/Jackson+Hostels.php">Jackson Hostels</a></li><li><a href="/hostels/re/USA/Jennings+Hostels.php">Jennings Hostels</a></li><li><a href="/hostels/re/USA/Jersey%2BCity+Hostels.php">Jersey City Hostels</a></li><li><a href="/hostels/re/USA/Jim%2BThorpe+Hostels.php">Jim Thorpe Hostels</a></li><li><a href="/hostels/re/USA/Kailua%2BKona+Hostels.php">Kailua Kona Hostels</a></li><li><a href="/hostels/re/USA/Kauai%2C%2BHawaii+Hostels.php">Kauai, Hawaii Hostels</a></li><li><a href="/hostels/re/USA/Kennebunkport+Hostels.php">Kennebunkport Hostels</a></li><li><a href="/hostels/re/USA/Killington+Hostels.php">Killington Hostels</a></li><li><a href="/hostels/re/USA/Klamath+Hostels.php">Klamath Hostels</a></li><li><a href="/hostels/re/USA/LaPorte+Hostels.php">LaPorte Hostels</a></li><li><a href="/hostels/re/USA/Laceyville+Hostels.php">Laceyville Hostels</a></li><li><a href="/hostels/re/USA/Lafayette+Hostels.php">Lafayette Hostels</a></li><li><a href="/hostels/re/USA/Lake%2BKabetogama+Hostels.php">Lake Kabetogama Hostels</a></li><li><a href="/hostels/re/USA/Lake%2BTahoe+Hostels.php">Lake Tahoe Hostels</a></li><li><a href="/hostels/re/USA/Las%2BVegas+Hostels.php">Las Vegas Hostels</a></li><li><a href="/hostels/re/USA/Los%2BAngeles+Hostels.php">Los Angeles Hostels</a></li><li><a href="/hostels/re/USA/Ludlow+Hostels.php">Ludlow Hostels</a></li><li><a href="/hostels/re/USA/Maine+Hostels.php">Maine Hostels</a></li><li><a href="/hostels/re/USA/Marathon+Hostels.php">Marathon Hostels</a></li><li><a href="/hostels/re/USA/Mariposa+Hostels.php">Mariposa Hostels</a></li><li><a href="/hostels/re/USA/Marthas%2BVineyard+Hostels.php">Marthas Vineyard Hostels</a></li><li><a href="/hostels/re/USA/Maui%2C%2BHawaii+Hostels.php">Maui, Hawaii Hostels</a></li><li><a href="/hostels/re/USA/McCarthy+Hostels.php">McCarthy Hostels</a></li><li><a href="/hostels/re/USA/Mechanicsburg+Hostels.php">Mechanicsburg Hostels</a></li><li><a href="/hostels/re/USA/Mendocino+Hostels.php">Mendocino Hostels</a></li><li><a href="/hostels/re/USA/Miami+Hostels.php">Miami Hostels</a></li><li><a href="/hostels/re/USA/Middletown+Hostels.php">Middletown Hostels</a></li><li><a href="/hostels/re/USA/Midpines+Hostels.php">Midpines Hostels</a></li><li><a href="/hostels/re/USA/Milledgeville+Hostels.php">Milledgeville Hostels</a></li><li><a href="/hostels/re/USA/Minerva+Hostels.php">Minerva Hostels</a></li><li><a href="/hostels/re/USA/Minneapolis+Hostels.php">Minneapolis Hostels</a></li><li><a href="/hostels/re/USA/Montara+Hostels.php">Montara Hostels</a></li><li><a href="/hostels/re/USA/Monterey+Hostels.php">Monterey Hostels</a></li><li><a href="/hostels/re/USA/Myrtle%2BBeach+Hostels.php">Myrtle Beach Hostels</a></li><li><a href="/hostels/re/USA/Nampa+Hostels.php">Nampa Hostels</a></li><li><a href="/hostels/re/USA/Nantucket+Hostels.php">Nantucket Hostels</a></li><li><a href="/hostels/re/USA/Napa+Hostels.php">Napa Hostels</a></li><li><a href="/hostels/re/USA/Naples+Hostels.php">Naples Hostels</a></li><li><a href="/hostels/re/USA/Nashville+Hostels.php">Nashville Hostels</a></li><li><a href="/hostels/re/USA/Nashville%2BIN+Hostels.php">Nashville IN Hostels</a></li><li><a href="/hostels/re/USA/New%2BOrleans+Hostels.php">New Orleans Hostels</a></li><li><a href="/hostels/re/USA/New%2BYork+Hostels.php">New York Hostels</a></li><li><a href="/hostels/re/USA/Newark+Hostels.php">Newark Hostels</a></li><li><a href="/hostels/re/USA/Newport%2BRI+Hostels.php">Newport RI Hostels</a></li><li><a href="/hostels/re/USA/Newport%2BWA+Hostels.php">Newport WA Hostels</a></li><li><a href="/hostels/re/USA/Niagara%2BFalls+Hostels.php">Niagara Falls Hostels</a></li><li><a href="/hostels/re/USA/Norwood+Hostels.php">Norwood Hostels</a></li><li><a href="/hostels/re/USA/Oahu%2C%2BHawaii+Hostels.php">Oahu, Hawaii Hostels</a></li><li><a href="/hostels/re/USA/Orlando+Hostels.php">Orlando Hostels</a></li><li><a href="/hostels/re/USA/Ottawa+Hostels.php">Ottawa Hostels</a></li><li><a href="/hostels/re/USA/Palm%2BSprings+Hostels.php">Palm Springs Hostels</a></li><li><a href="/hostels/re/USA/Palmer+Hostels.php">Palmer Hostels</a></li><li><a href="/hostels/re/USA/Palo%2BAlto+Hostels.php">Palo Alto Hostels</a></li><li><a href="/hostels/re/USA/Panguitch+Hostels.php">Panguitch Hostels</a></li><li><a href="/hostels/re/USA/Pescadero+Hostels.php">Pescadero Hostels</a></li><li><a href="/hostels/re/USA/Philadelphia+Hostels.php">Philadelphia Hostels</a></li><li><a href="/hostels/re/USA/Plymouth+Hostels.php">Plymouth Hostels</a></li><li><a href="/hostels/re/USA/Portland+Hostels.php">Portland Hostels</a></li><li><a href="/hostels/re/USA/Railroad+Hostels.php">Railroad Hostels</a></li><li><a href="/hostels/re/USA/Raymondville+Hostels.php">Raymondville Hostels</a></li><li><a href="/hostels/re/USA/Round%2BRock+Hostels.php">Round Rock Hostels</a></li><li><a href="/hostels/re/USA/Rumney+Hostels.php">Rumney Hostels</a></li><li><a href="/hostels/re/USA/Rutledge+Hostels.php">Rutledge Hostels</a></li><li><a href="/hostels/re/USA/Sacramento+Hostels.php">Sacramento Hostels</a></li><li><a href="/hostels/re/USA/Salt%2BLake%2BCity+Hostels.php">Salt Lake City Hostels</a></li><li><a href="/hostels/re/USA/San%2BAntonio+Hostels.php">San Antonio Hostels</a></li><li><a href="/hostels/re/USA/San%2BDiego+Hostels.php">San Diego Hostels</a></li><li><a href="/hostels/re/USA/San%2BFrancisco+Hostels.php">San Francisco Hostels</a></li><li><a href="/hostels/re/USA/San%2BYsidro+Hostels.php">San Ysidro Hostels</a></li><li><a href="/hostels/re/USA/Santa%2BBarbara+Hostels.php">Santa Barbara Hostels</a></li><li><a href="/hostels/re/USA/Santa%2BRosa+Hostels.php">Santa Rosa Hostels</a></li><li><a href="/hostels/re/USA/Saratoga%2BSprings+Hostels.php">Saratoga Springs Hostels</a></li><li><a href="/hostels/re/USA/Sausalito+Hostels.php">Sausalito Hostels</a></li><li><a href="/hostels/re/USA/Seaside+Hostels.php">Seaside Hostels</a></li><li><a href="/hostels/re/USA/Seattle+Hostels.php">Seattle Hostels</a></li><li><a href="/hostels/re/USA/Sedona+Hostels.php">Sedona Hostels</a></li><li><a href="/hostels/re/USA/Seekonk+Hostels.php">Seekonk Hostels</a></li><li><a href="/hostels/re/USA/Sheldon+Hostels.php">Sheldon Hostels</a></li><li><a href="/hostels/re/USA/Silver%2BBay+Hostels.php">Silver Bay Hostels</a></li><li><a href="/hostels/re/USA/Silverthorne+Hostels.php">Silverthorne Hostels</a></li><li><a href="/hostels/re/USA/Simsbury+Hostels.php">Simsbury Hostels</a></li><li><a href="/hostels/re/USA/Sonora+Hostels.php">Sonora Hostels</a></li><li><a href="/hostels/re/USA/South%2BLake%2BTahoe+Hostels.php">South Lake Tahoe Hostels</a></li><li><a href="/hostels/re/USA/St.%2BLouis+Hostels.php">St. Louis Hostels</a></li><li><a href="/hostels/re/USA/Sumpter+Hostels.php">Sumpter Hostels</a></li><li><a href="/hostels/re/USA/Talkeetna+Hostels.php">Talkeetna Hostels</a></li><li><a href="/hostels/re/USA/Tampa+Hostels.php">Tampa Hostels</a></li><li><a href="/hostels/re/USA/Tehuacana+Hostels.php">Tehuacana Hostels</a></li><li><a href="/hostels/re/USA/Tempe+Hostels.php">Tempe Hostels</a></li><li><a href="/hostels/re/USA/Torrey+Hostels.php">Torrey Hostels</a></li><li><a href="/hostels/re/USA/Truth%2Bor%2BConsequences+Hostels.php">Truth or Consequences Hostels</a></li><li><a href="/hostels/re/USA/Tucumcari+Hostels.php">Tucumcari Hostels</a></li><li><a href="/hostels/re/USA/Venice%2BBeach+Hostels.php">Venice Beach Hostels</a></li><li><a href="/hostels/re/USA/Washington%2BDC+Hostels.php">Washington DC Hostels</a></li><li><a href="/hostels/re/USA/West%2BYellowstone+Hostels.php">West Yellowstone Hostels</a></li><li><a href="/hostels/re/USA/Whitefish+Hostels.php">Whitefish Hostels</a></li><li><a href="/hostels/re/USA/Whitehall+Hostels.php">Whitehall Hostels</a></li><li><a href="/hostels/re/USA/Wildwood+Hostels.php">Wildwood Hostels</a></li><li><a href="/hostels/re/USA/Williams+Hostels.php">Williams Hostels</a></li><li><a href="/hostels/re/USA/Wilmington+Hostels.php">Wilmington Hostels</a></li><li><a href="/hostels/re/USA/Winter%2BPark-Fraser+Hostels.php">Winter Park-Fraser Hostels</a></li><li><a href="/hostels/re/USA/York+Hostels.php">York Hostels</a></li></ul><br /></td></tr><tr><td>&nbsp;</td></tr></table><table width="760" cellspacing="0" cellpadding="3" border="0" class="footer" align="center">
+<tr>
+	<td colspan="3" align="center" class="header_nav" bgcolor="#E8EBF0"><a href="http://www.BootsnAll.com/">Home</a> | <a href="http://help.bootsnall.com/support/inquire.php">Email BootsnAll</a> | <a href="http://boards.bootsnall.com/groupee/login?ORIGINAL_REFERRER_URL=http%3A%2F%2Fboards.bootsnall.com%2Fgroupee">Become a Member</a> | <a href="#top">Top of page</a></td>
+</tr><tr>
+<td style="border-right:1px solid #999;border-top:1px solid #999;">Travel Guides, Stories, Information, and Newsletters</td>
+<td style="border-top:1px solid #999;"><a href="http://www.bootsnall.com/africa/">Africa Travel</a> | <a href="http://www.bootsnall.com/asia/">Asia Travel</a> | <a href="http://www.bootsnall.com/australasia/">Pacific Travel</a> | <a href="http://www.bootsnall.com/europe/">Europe Travel</a> | <a href="http://www.bootsnall.com/north-america/">North America Travel</a> | <a href="http://www.bootsnall.com/central-america/">Central America Travel</a> | <a href="http://www.bootsnall.com/south-america/">South America Travel</a> | <a href="http://www.bootsnall.com/middle-east/">Middle East Travel</a> <br /> <a href="http://www.bootsnall.com/guides/">Odds'n'Ends</a> | <a href="http://www.BootsnAll.com/reviews/">Travel Book Reviews</a> | <a href="http://www.bootsnall.com/insiders/">Insiders</a> | <a href="http://blogs.bootsnall.com/">Travel Blogs</a> | <a href="http://www.bootsnall.com/nl/">Travel Newsletters</a></td>
+</tr><tr>
+<td style="border-right:1px solid #999;border-top:1px solid #999;">Around the World Travel</td>
+<td style="border-top:1px solid #999;"><a href="http://www.bootsnall.com/airfare.shtml">Around the World Tickets</a> | <a href="http://www.BootsnAll.com/rtw/">Around the World Travel Guide</a> | <a href="http://airfare.BootsnAll.com">Cheap International Plane Tickets</a> | <a href="http://www.bootsnall.com/rtw/round-the-world-tips/">Around the World Travel Tips</a></td></tr>
+<tr>
+<td style="border-right:1px solid #999;border-top:1px solid #999;"><a href="http://www.bootsnall.com/airport-parking/">Airport Parking Reservations</a></td>
+<td style="border-top:1px solid #999;"><a href="http://www.bootsnall.com/airport-parking/philadelphia.html">Philadelphia Airport Parking</a> | <a href="http://www.bootsnall.com/airport-parking/newark.html">Newark Airport Parking</a> | <a href="http://www.bootsnall.com/airport-parking/oakland.html">Oakland Airport Parking</a> | <a href="http://www.bootsnall.com/airport-parking/san-diego.html">San Diego Airport Parking</a> | <a href="http://www.bootsnall.com/airport-parking/phoenix.html">Phoenix Airport Parking</a></td></tr>
+<tr>
+<td style="border-right:1px solid #999;border-top:1px solid #999;">BootsnAll World <a href="http://www.bootsnall.com/adventures/">Adventure Travel</a></td>
+<td style="border-top:1px solid #999;"><a href="http://www.bootsnall.com/adventures/destinations/africa/tanzania/">Tanzania Safari</a> | <a href="http://www.bootsnall.com/adventures/destinations/asia/vietnam/">Viet Nam Tours</a> | <a href="http://www.bootsnall.com/adventures/destinations/asia/thailand/">Thailand Tour</a> | <a href="http://www.bootsnall.com/adventures/destinations/asia/china/">China Tours</a> | <a href="http://www.bootsnall.com/adventures/destinations/new-zealand/">New Zealand Adventure</a> | <a href="http://www.bootsnall.com/adventures/destinations/australia/">Australia Tours</a></td></tr>
+<tr>
+<td style="border-right:1px solid #999;border-top:1px solid #999;"><a href="http://www.bootsnall.com/hostels/">Youth Hostels</a></td>
+<td style="border-top:1px solid #999;"><a href="http://www.bootsnall.com/hostels/europe/">Europe Hostels</a> | <a href="http://www.bootsnall.com/hostels/re/USA/New+York+Hostels.php">New York Hostels</a> | <a href="http://www.bootsnall.com/hostels/re/France/Paris+Hostels.php">Paris Hostels</a> | <a href="http://www.bootsnall.com/hostels/re/England/London+Hostels.php">London Hostels</a> | <a href="http://www.bootsnall.com/hostels/re/Netherlands/Amsterdam+Hostels.php">Amsterdam Hostels</a></td></tr>
+<tr>
+<td style="border-right:1px solid #999;border-top:1px solid #999;"><a href="http://www.bootsnall.com/eurail/">Eurail</a></td>
+<td style="border-top:1px solid #999;"><a href="http://www.bootsnall.com/eurail/passes/eurailpass.shtml">Eurail Passes</a> | <a href="http://www.bootsnall.com/eurail/passes/britrail.shtml">Britrail Passes</a> | <a href="http://www.australiablog.com">Eurail Travel</a> | <a href="http://www.bootsnall.com/eurail/tips.html">Eurail Tips</a></td></tr>
+<tr>
+<td style="border-right:1px solid #999;border-top:1px solid #999;">Book Tickets, Hostels, Hotels and more anywhere in the world</td>
+<td style="border-top:1px solid #999;"><A HREF="http://www.BootsnAll.com/hotels/">Search for Hotels</A> |  <a href="http://www.BootsnAll.com/guides/">Traveler's Toolkit</a> | <a HREF="http://www.cheapticketlinks.com/">Plane Tickets</a> |  <a HREF="http://www.cheapcarrentallinks.com/">Rent Cars</a> | <a HREF="http://www.BootsnAll.com/hostels/">Search Youth Hostels</a> | <a href="http://www.BootsnAll.com/travel-insurance/">Travel Insurance</a> | <a href="http://www.bootsnall.com/ollc.shtml">Learn Languages</a> | <a href="http://www.BootsnAll.com/tours/">Backpacker Tours</a> | <a href="http://www.cheapticketlinks.com/">Cheap Tickets</a> | <a href="http://www.cruiseandvacationpackages.com/">Cruise</a> and <a href="http://www.cruiseandvacationpackages.com/dest/">Vacation Packages</a> | <a href="http://www.cheaphotellinks.com/">Cheap Hotels</a> | <a href="http://www.cheapvacationrentallinks.com">Cheap Vacation Rentals</a> | <a href="http://www.bootsnall.com/music/">World Music Downloads</a> | <a href="http://www.bootsnall.com/travelbookstore/">Travel Bookstore</a></td></tr>
+<tr>
+<td style="border-right:1px solid #999;border-top:1px solid #999;">BootsnAll Travel Community websites, blogs and About the Company</td>
+<td style="border-top:1px solid #999;"><a href="http://press.BootsnAll.com/">Press Kit</a> | <a href="http://adsales.BootsnAll.com/">Advertise with us</a> | <a href="http://www.BootsnAll.com/intern/">Internships</a> | <a href="http://www.BootsnAll.com/partners/tp/">TripPlanner Affiliate Partners</a> | <a href="http://www.BootsnAll.com/linktous.shtml">Link to Us</a> | <a href="http://boards.bootsnall.com/eve/">Join Us!</a> | <a href="http://www.bootsnall.com/privacy.shtml">Privacy policy</a> | <a href="http://www.bootblog.org/">BootBlog</a> | <a href="http://www.BaliBlog.com">Bali Travel</a> | <a href="http://www.australiablog.com">Australia Travel</a> | <a href="http://blogs.BootsnAll.com">BootsnAll TravelBlogs</a> | <a href="http://www.writtenroad.com">Travel Writer's Resource</a> | <a href="http://www.travelgearblog.com">Travel Gear Blog</a> | <a href="http://www.eurailblog.com">Eurail Blog</a> | <a href="http://www.londonblog.com">London Blog</a> | <a href="http://www.bootsnall.com.au">BootsnAll Travel: Australia</a> | <a href="http://www.bootsnall.co.uk">UK and Europe Travel</a> | <a href="http://www.hongkongblog.org/">Hong Kong Blog</a> | <a href="http://www.worldtravelwatch.com">World Travel Watch</a></td></tr>
+<tr>
+<td style="border-right:1px solid #999;border-top:1px solid #999;">BootsnAll in Other Languages</td>
+<td style="border-top:1px solid #999;"><a href="/hostels/french.shtml">Chercher des Auberges De Jeunesse</a> | <a href="/hostels/italian.shtml">Ricercare gli Ostelli di Giovent&ugrave;</a> | <a href="/hostels/spanish.shtml">Busque para Albergues Juveniles de Juventud</a> | <a href="/hostels/german.shtml">Suchen Sie Jugendherbergen</a><!--  | <a href="http://deutsche.bootsnall.com/hotels/">Suchen Sie Hotels</a>  --></td></tr></table>
+<!-- Google Analytics -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-191427-3";
+urchinTracker();
+</script>
+</body></html>

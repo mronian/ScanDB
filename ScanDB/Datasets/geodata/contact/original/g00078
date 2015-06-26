@@ -1,0 +1,731 @@
+<DOC>
+<DOCNO>g00078</DOCNO>
+<DOCHDR>http://www.lucent.com/contact</DOCHDR>
+<HTML>     
+<HEAD>    
+<TITLE>Lucent - Contact Lucent</TITLE>    
+<SCRIPT src="/javascript/techsupportphonenumbers.js" language="javascript" type="text/javascript"></SCRIPT> 
+ 
+<script language="JavaScript">
+function DoPopup(url,name,width,height) {                                   
+  args = "width=" + width + "," + "height=" + height + "," + "location=0," + "menubar=0," + "resizable=0," + "scrollbars=0";                           
+  popupWin = window.open(url, name, args)                                   
+}                                          
+
+
+NS4 = (document.layers);
+IE4 = (document.all);
+ver4 = (NS4 || IE4);   
+isMac = (navigator.appVersion.indexOf("Mac") != -1);
+isMenu = (NS4 || (IE4 && !isMac));
+function popUp(){return};
+function popDown(){return};
+function startIt(){return};
+   var platform = navigator.appVersion;
+isUNIX = (platform.indexOf("X11") != -1) ||
+  (platform.indexOf("Linux") != -1) ||
+  (platform.indexOf("SunOS") != -1) ||
+  (platform.indexOf("IRIX") != -1) ||
+   (platform.indexOf("HP-UX") != -1);
+
+if (!ver4) event = null;
+
+browser = (((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) >= 3 )) || ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4 )))
+
+if (browser) {
+
+//Home  !1
+	Home_off = new Image;
+	Home_off.src = "/images_v1/nav/home.gif";
+	Home_on = new Image;
+	Home_on.src = "/images_v1/nav/home_on.gif";
+
+//Solutions !2
+	Solutions_off = new Image;
+	Solutions_off.src = "/images_v1/nav/solutions_products.gif";
+	Solutions_on = new Image;
+	Solutions_on.src = "/images_v1/nav/solutions_products_on.gif";
+
+//Support !3
+	Support_off = new Image;
+	Support_off.src = "/images_v1/nav/customer_support.gif";
+	Support_on = new Image;
+	Support_on.src = "/images_v1/nav/customer_support_on.gif";
+
+//Bell Labs !4
+	BL_off = new Image;
+	BL_off.src = "/images_v1/nav/bell_labs.gif";
+	BL_on = new Image;
+	BL_on.src = "/images_v1/nav/bell_labs_on.gif";
+
+//About Lucent !5
+	About_off = new Image;
+	About_off.src = "/images_v1/nav/about_lucent.gif";
+	About_on = new Image;
+	About_on.src = "/images_v1/nav/about_lucent_on.gif";
+
+}
+
+function putImage(imgDocID,imgObjName) {
+if (browser) {
+        document.images[imgDocID].src = eval(imgObjName + ".src")
+	}
+}
+</script>
+<!--END MENU SYSTEM-->
+<!--LOAD STYLESHEETS-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+  if (isMac) {
+    document.write('<link rel="stylesheet" href="/stylesheet/style_mac.css" type="text/css">');
+   }else if (isUNIX) {
+    document.write('<link rel="stylesheet" href="/stylesheet/style_unix.css" type="text/css">');
+   }else {
+      document.write('<link rel="stylesheet" href="/stylesheet/style_pc.css" type="text/css">');
+   }
+//-->
+</SCRIPT>
+<!--END LOAD STYLESHEETS-->
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#000080" vlink="#000080" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (NS4) {
+document.write('<layer name="searchBox2" left="20px" top="59px" width="117px" height="20px" visibility="hidden" id="searchBox2" z-index="0"><table cellpadding="0" cellspacing="0" border="0"><tr><td><a href="#" onMouseOver="javascript:restoreSearch();"><img src="/stylesheet/ns4search.gif" vspace="0" border="0" alt=""><\/a><\/td><\/tr><\/table><\/layer>');
+}
+//-->
+</SCRIPT>
+
+<!-- Start Header Section -->
+<script language="Javascript" src="/javascript/menu_array.js"></script>
+<script language="Javascript" src="/javascript/mmenu.js"></script>
+<!-- CC Menu start -->
+
+<!-- CC Menu End -->
+
+<table cellpadding="0" cellspacing="0" border="0" width="800">
+<tr>
+	<td width="312">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td nowrap><a href="/"
+onMouseOver="putImage('Home','Home_on');status='Home';return true;" onMouseOut="putImage('Home','Home_off');popdn();"><img name="Home" src="/images_v1/nav/home.gif" width="44" height="19" alt="" border="0"></a></td>
+
+<td nowrap><a href="/solutions" onMouseOver="putImage('Solutions','Solutions_on');popup(1);status='Solutions and Products';return true;" onMouseOut="putImage('Solutions','Solutions_off');popdn();"><img name="Solutions" src="/images_v1/nav/solutions_products.gif" width="120" height="19" alt="" border="0"></a></td>
+
+<td nowrap><a href="/support" onMouseOver="putImage('Support','Support_on');popup(2);status='Customer Support';return true;" onMouseOut="putImage('Support','Support_off');popdn();"><img name="Support" src="/images_v1/nav/customer_support.gif" width="98" height="19" alt="" border="0"></a></td>
+
+<td nowrap><a href="http://www.bell-labs.com" onMouseOver="putImage('BL','BL_on');popup(3);status='Bell Labs';return true;" onMouseOut="putImage('BL','BL_off');popdn();"><img name="BL" src="/images_v1/nav/bell_labs.gif" width="60" height="19" alt="" border="0"></a></td>
+
+<td nowrap><a href="/inside" onMouseOver="putImage('About','About_on');popup(4);status='About Lucent';return true;" onMouseOut="putImage('About','About_off');popdn();"><img name="About" src="/images_v1/nav/about_lucent.gif" width="79" height="19" alt="" border="0"></a></td>
+</tr>
+</table>
+	</td>
+	<td width="94%"><img src="/images_v1/transpixel.gif" width="60" height="19" border=0><spacer type="block" width="1" height="1"></td>
+	<td><a href="javascript:DoPopup('/search/glossary/glossary.html','gallery','598','344')" onclick="DoPopup('/search/glossary/glossary.html','gallery','598','344')"><img src="/images_v1/nav/glossary.gif" width="44" height="19" border="0" hspace="4" alt="Glossary"></a></td>
+	<td><a href="/contact"><img src="/images_v1/nav/contact_us.gif" width="60" height="19" border="0" hspace="5" alt="Contact us"></a></td>
+	<td width = "100%"><a href="https://market.lucent.com/release/jsp/sso/logout.jsp?LOGIN=1"><img src="/images_v1/nav/log_in_fixed.gif" width="63" height="19" border="0" alt="Log in"></a><a name="top"></a></td>
+	<!----- <td width="6%"><spacer type="block" width="15" height="1"></td>  ------->
+</tr>
+<tr>
+	<td colspan="6" bgcolor="#cc0000" height="1"><spacer type="block" width="1" height="1"></td>
+</tr>
+<tr>
+	<td colspan="6" bgcolor="#cccccc" height="2"><spacer type="block" width="1" height="2"></td>
+</tr>
+<tr>
+	<td colspan="6" bgcolor="#ffffff" height="10"><spacer type="block" width="1" height="10"></td>
+</tr>
+</table>
+<!------ END pulldown menus ------>
+<!------ BEGIN header margin (search, greeting, logo) ------>
+<table cellpadding="0" cellspacing="0" border="0" width="800">
+<tr>
+	<td height="7" width="200"><spacer type="block" width="1" height="1"></td>
+	<td><spacer type="block" width="1" height="1"></td>
+	<td rowspan="2"><spacer type="block" width="1" height="1"></td>
+	<td width="50" rowspan="2" align="left"><spacer type="block" width="1" height="1"></td>
+	<td rowspan="2" align="left"><spacer type="block" width="1" height="1"></td>
+	<td rowspan="2" width="100%" align="right" valign="top"><a href="/"><img src="/images_v1/nav/logo.gif" width="215" height="65" border="0" alt="Lucent Technologies, Bell Labs Innovations"></a></td>
+</tr>
+<tr align="left">
+<td valign="top">
+<!------ BEGIN Search ------>
+	<table cellpadding="0" cellspacing="0" border="0" width="200" align="left">
+	<tr align="left">
+		<td bgcolor="#FFFFFF" height="1" width="20"><spacer
+type="block" width="1" height="1"></td>
+		<td bgcolor="#FFFFFF" height="1" width="120"><spacer
+type="block" width="1" height="1"></td>
+		<td bgcolor="#FFFFFF" height="1" width="60"><spacer
+type="block" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td><spacer type="block" width="1" height="1"></td>
+		<td><img src="/images_v1/nav/search.gif" width="38" height="19" border="0" alt="Search"></td>
+		<td><spacer type="block" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td><spacer type="block" width="1" height="1"></td>
+		<td>
+		<layer name="searchBox1" left="20px" top="58px" width="117px" height="20px" visibility="show" id="searchBox1" z-index="1">
+		<table cellpadding="0" cellspacing="0" border="0">
+		<form name="searchForm" method="GET" action="/search97cgi/vtopc">
+		<input type="hidden" name="collection" value="ALL">
+		<tr>
+		<td class="T1"><font size=1 class="T1" face="Arial">
+		<input type="text" name="queryString" class="S4" size="13"></font></td>
+		<td><div><input type="image" name="goButton" src="/images_v1/nav/go.gif" width="23" height="17" border="0" align="right" alt="Go"></div></td>
+		</tr>
+		</form>
+		</table>
+		</layer></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><spacer type="block" width="1" height="1"></td>
+		<td><layer name="searchLink" left="20px" top="78px" z-index="2" width="100" height="15" bgcolor="White" id="searchLink"><a href="/search/" class="L2"><img src="/images_v1/nav/advanced_search.gif" alt="" border="0"></a></layer></td>
+		<td><spacer type="block" width="1" height="1"></td>
+	</tr>
+	</table>
+	<!------ END Search ------>
+	</td>
+<td valign="top" width="9" align="left">
+</td>
+</tr>
+<tr align="left">
+	<td width="200" height="1" bgcolor="#FFFFFF"><spacer type="block"
+width="1" height="1"></td>
+	<td width="9"><spacer type="block" width="9" height="1"></td>
+	<td colspan="4" height="1" bgcolor="#FFFFFF"><spacer type="block"
+width="1" height="1"></td>
+</tr>
+</table>
+<!--END HEADER INSERT-->
+ 
+    
+<!---------------------------------------------------------    
+begin main parent table for content area    
+------------------------------------------------------------>    
+<table width="800" cellspacing="0" cellpadding="7" border="0">  
+  <tr valign="top">    
+	<!---------------------------------------------------------    
+	begin left side main parent table for secondary nav (L)    
+	------------------------------------------------------------>    
+    <td width="160" valign="top">     
+      <table width=142 border="0" cellpadding="0" cellspacing="0">    
+        <tr>     
+          <td colspan="2" valign="baseline"><img src="/contact/images/nav_contact_r.gif" alt="About Lucent" width="141" height="18" border="0"><br>    
+          </td>    
+        </tr>    
+        <tr>     
+          <td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>    
+          <td><a href="/contact/inq.html" class="L5">Inquiries &amp; Feedback</a></td>    
+        </tr>    
+        <tr>     
+          <td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>    
+          <td><a href="/contact/FAQ.html" class="L5">FAQs</a></td>    
+        </tr>    
+      </table>    
+      <img src="/images_v1/transpixel.gif" width="151" height="1" border="0"><br><BR>  
+	      
+      <!-- ****************** BEGIN COUNTRY INCLUDE *************** -->    
+      <!-- COUNTRY PULLDOWN SUBMIT -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function countries(){
+    var location = document.country_dropdown.select1.options[document.country_dropdown.select1.selectedIndex].value;
+    document.location = location;
+}
+//-->
+</SCRIPT>
+<!-- /COUNTRY PULLDOWN SUBMIT -->
+
+
+<!-- BEGIN country pulldown --> 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<!--Begin form-->
+<FORM NAME="country_dropdown">
+<TR>
+<TD ROWSPAN="5"><IMG SRC="/images/spacer.gif" ALT="" WIDTH="6" HEIGHT="1"></TD>
+<TD><SPAN STYLE="font-size: 07pt;"><B>Lucent worldwide sites</B></SPAN></TD>
+</TR>
+<TR>
+<TD><IMG SRC="/images/spacer.gif" ALT="" WIDTH="1" HEIGHT="3"></TD>
+</TR>
+<TR>
+<TD CLASS="t3">
+<!--Begin dropdown-->
+<SELECT NAME="select1" ID="select1" CLASS="t3" WIDTH="145px">
+<OPTION>Select a Country
+<OPTION VALUE="http://www.lucent.at">Austria
+<OPTION VALUE="http://www.lucent.com.au">Australia
+<OPTION VALUE="http://www.lucent.be">Belgium
+<OPTION VALUE="http://www.lucent.com.br">Brazil
+<OPTION VALUE="http://www.lucent.ca">Canada
+<OPTION VALUE="http://www.lucent.com.cn">China
+<OPTION VALUE="http://www.lucent.cz">Czech Republic
+<OPTION VALUE="http://www.lucent.dk">Denmark
+<OPTION VALUE="http://www.lucent.fr">France
+<OPTION VALUE="http://www.lucent.de">Germany
+<OPTION VALUE="http://www.lucent.ie">Ireland
+<OPTION VALUE="http://www.lucent.it">Italy
+<OPTION VALUE="http://www.lucent.com/jp">Japan
+<OPTION VALUE="http://www.lucent.com/kr">Korea
+<OPTION VALUE="http://www.lucent.com.sa">Middle East &amp; Africa
+<OPTION VALUE="http://www.lucent.nl">Netherlands
+<OPTION VALUE="http://www.lucent.co.nz">New Zealand
+<OPTION VALUE="http://www.lucent.com.pl">Poland
+<OPTION VALUE="http://www.lucent.ru">Russia and CIS
+<OPTION VALUE="http://www.lucent.sk">Slovak Republic
+<OPTION VALUE="http://www.lucent.es">Spain
+<OPTION VALUE="http://www.lucent.se">Sweden
+<OPTION VALUE="http://www.lucent.ch">Switzerland
+<!--<OPTION VALUE="http://www.lucent.com.tw">Taiwan
+<OPTION VALUE="http://www.lucent-ua.com">Ukraine-->
+<OPTION VALUE="http://www.lucent.co.uk">United Kingdom
+<OPTION VALUE="http://www.lucent.com">USA
+</SELECT>
+<!--End dropdown-->
+</TD>
+</TR>
+<TR>
+<TD><IMG SRC="/images/spacer.gif" ALT="" WIDTH="1" HEIGHT="3"></TD>
+</TR>
+<TR>
+<TD ALIGN="RIGHT"> <A HREF="javascript:countries();"><IMG NAME="country_go" SRC="/images/button_go.gif" WIDTH="23" HEIGHT="17" HSPACE="0" VSPACE="0" BORDER="0" ALT="go button" NAME="go" ID="go"></A></TD>
+</TR></FORM>
+</TABLE>
+<!-- END country pulldown -->
+    
+      <!-- ******************* END COUNTRY INCLUDE **************** -->    
+      <br>    
+    </td>    
+    
+	<!---------------------------------------------------------    
+	begin middle main parent table for body content (M)    
+	------------------------------------------------------------>    
+    <td width="480" valign="top">     
+      <table width="100%" border="0" cellpadding="0" cellspacing="3">    
+        <TR>    
+          <TD>    
+            <div align="right"><img src="/contact/images/header_contact.gif" hspace="12" height="26" width="109" alt="Contact Us" border="0"></div>    
+          </TD>    
+        </TR>    
+        <TR>    
+          <TD> Feel free to contact us. To save time, we encourage you to read     
+            our <a href = "/contact/FAQ.html" class = "L3">Frequently Asked Questions</a>.     
+            <BR>    
+            <br>    
+            <span class="H3">General Information</span><br>    
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">    
+              <tr>     
+                <td width="100%" height="1" bgcolor="#999999"><spacer type="block" width="1" height="1"></td>    
+              </tr>    
+            </table>    
+            <table border="0" cellpadding="3" bgcolor="#EEEEEE" width="100%">    
+              <tr>     
+                <td><font class="H3">Corporate Headquarters:</font><br>    
+                  <nobr></nobr>&nbsp;&nbsp;Lucent Technologies<br>    
+                  &nbsp;&nbsp;600 Mountain Ave.<br>  
+                  &nbsp;&nbsp;Murray Hill, NJ 07974-0636<br>
+	       	&nbsp;&nbsp;908 582-3000<br>
+	       	&nbsp;&nbsp;908 582-8500
+			    </td>
+			  </tr>
+			
+			  <tr>
+			    <td><span class="H3">Customer Support</span><br>
+              &nbsp;&nbsp;For 24/7 registration and access to Lucent's Online <br>
+			  &nbsp;&nbsp;Customer Support:   
+              <a href="/support/" class="L5">More &gt;</a> 
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">    
+          
+		<tr>     
+          <td width="3%" valign="top">     
+            <div align="right">&#149;</div>    
+          </td>    
+<td width="97%">&nbsp;Inside the United States call toll free: 1 866 LUCENT8,   
+            <BR>&nbsp;prompt 7 or directly via 1 866 237-4448</td>    
+        </tr>    
+        <tr>     
+          <td width="3%" valign="top">     
+            <div align="right">&#149;</div>    
+          </td>    
+          <td width="97%">&nbsp;Outside the United States: 630 218-7688</td>    
+        </tr>    
+      </table>  
+
+				</td>
+			  </tr>
+
+
+
+              <tr>     
+                <td><font class="H3">Executive Offices:</font><br>
+		&nbsp;&nbsp;<a href="mailto:execoffice@lucent.com" class="L5">execoffice@lucent.com</a><br>               
+  		 &nbsp;&nbsp;908-508-8080, prompt 9<br>  
+              </tr>    
+              <tr>     
+                <td><font class="H3">Shareowner Services:</font><br>    
+                  &nbsp;&nbsp;1 888 LUCENT6 (1 888 582-3686)<br>  
+                  &nbsp;&nbsp;Outside the United States call collect: 610 312-5318</td>    
+              </tr>    
+              <tr>     
+                <td><font class="H3">Products, Services and General Information:</font><br>    
+                  &nbsp;&nbsp;1 888 4 LUCENT (1 888 458-2368)<br>  
+                  &nbsp;&nbsp;Outside the United States&nbsp;call collect: 512 434-1523 <br>
+                </td>
+              </tr>
+            </table>    
+          </TD>    
+        </TR>    
+      </TABLE>    
+
+    <br>    
+
+      <span class="H3">Inquiries &amp; Feedback</span><br>   
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">    
+        <tr><td width="100%" height="1" bgcolor="#999999"><spacer type="block" width="1" height="1"></td></tr>    
+      </table>  
+	      
+            
+	  <span class="T1">For inquiries on specific product services and transactions   
+      <br>or to submit a question or provide feedback</span> <a href="/contact/inq.html" class="L5">More   
+      &gt;</a> <br>  
+      <br>  
+	    
+	    
+    
+    
+	  <span class="H3">How to Buy</span><br>   
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">    
+        <tr><td width="100%" height="1" bgcolor="#999999"><spacer type="block" width="1" height="1"></td></tr>    
+      </table>  
+	      
+       <table width="100%" border="0" cellspacing="0" cellpadding="5">    
+        <tr><td><span class="T1">For technical and sales information about purchasing Lucent products and services. </span>  
+	         <a href="/products/howtobuy.html" class="L5">More &gt;</a> </td></tr> 
+	   </table>  
+	      
+      
+     <br>  
+<span class="H3">Order Management</span><br>    
+<table cellspacing="0" cellpadding="0" border="0" width="100%">    
+<tr><td width="100%" height="1" bgcolor="#999999"><spacer type="block" width="1" height="1"></td></tr>    
+      </table>   
+	     
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">    
+        <tr>  
+          <td colspan="2" valign="top">
+For 24/7 access to ordering, order status and pricing, as well as related online questions:</td>  
+        </tr>    
+        <tr>
+          <td width="3%" valign="top">
+            <div align="right">&#149;</div>
+          </td>
+          <td width="97%">&nbsp;Inside the United States call toll free: 1 877 894-4647</td>
+
+        </tr>
+
+        <tr>
+          <td width="3%" valign="top">
+            <div align="right">&#149;</div>
+          </td>
+          <td width="97%">&nbsp;Outside the United States: 636 736-6861</td>
+        </tr>
+
+      </table>  
+	    
+	  <BR>  
+	  <span class="H3">Partner/Supplier Support</span><br>   
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">   
+        <tr><td width="100%" height="1" bgcolor="#999999"><spacer type="block" width="1" height="1"></td></tr>   
+      </table>   
+	    
+	  <span class="T1">For locating a Lucent Business Partner</span>  
+	  <a href="/businesspartner/locator/" class="L5">More &gt;</a>  
+	    
+	  <span class="T1"><br>For information on becoming a Lucent supplier</span>   
+	  <a href="https://scportal.lucent.com/servlet/page?_pageid=117,354&_dad=portal30&_schema=PORTAL30" class="L5">More &gt;</a>  
+	  <br><br>     
+      <span class="H3">Collaboration Workspace</span> <br>    
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">    
+        <tr>     
+          <td width="100%" height="1" bgcolor="#999999"><spacer type="block" width="1" height="1"></td>    
+        </tr>    
+      </table>    
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">    
+        <tr>     
+          <td colspan="2" valign="top">For 24/7 information on Lucent collaboration teams, myDocuments and related online questions:</td>    
+        </tr>    
+        <tr>     
+          <td width="3%" valign="top">     
+            <div align="right">&#149;</div>    
+          </td>    
+          <td width="97%">&nbsp;Inside the United States call toll free: 1 877 894-4647</td>    
+        </tr>    
+        <tr>     
+          <td width="3%" valign="top">     
+            <div align="right">&#149;</div>    
+          </td>    
+          <td width="97%">&nbsp;Outside the United States: 636 736-6861</td>    
+        </tr>    
+      </table>    
+      <br>    
+      <span class="H3">Product Training Logins</span> <br>
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+          <td width="100%" height="1" bgcolor="#999999"><spacer type="block" width="1" height="
+1"></td>
+        </tr>
+      </table>   
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="2" valign="top">For 24/7 information on obtaining training logins through Lucent.com:</td>
+        </tr>
+        <tr>
+          <td width="3%" valign="top">
+            <div align="right">&#149;</div>
+          </td>
+          <td width="97%">&nbsp;Inside the United States call toll free: 1 877 894-4647</td>
+        </tr>
+        <tr>
+          <td width="3%" valign="top">
+            <div align="right">&#149;</div>
+          </td>
+          <td width="97%">&nbsp;Outside the United States: 636 736-6861</td>
+        </tr>
+      </table>   
+      <br>
+      <span class="H3">Product Training Course Information and Schedules</span> <br>
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+          <td width="100%" height="1" bgcolor="#999999"><spacer type="block" width="1" height="
+1"></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="2" valign="top">For information on product training courses, class registration and schedules:</td>
+        </tr>
+        <tr>
+          <td width="3%" valign="top">
+            <div align="right">&#149;</div>
+          </td>
+          <td width="97%">&nbsp;Inside the United States call toll free: <br>
+1 888 582-3688, prompt 2, prompt 2</td>
+
+        </tr>
+        <tr>
+          <td width="3%" valign="top">
+            <div align="right">&#149;</div>
+          </td>
+          <td width="97%">&nbsp;Outside the United States: 407 767-2667</td>
+        </tr>
+
+      </table>
+      <span class="H3"></span> <br>
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+        </tr>
+      </table>   
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+	          <tr>
+               </td>    
+              </tr>    
+	  </table>
+
+	  
+    </td>    
+    
+	<!---------------------------------------------------------    
+	begin right side main parent table for secondary content (R)    
+	------------------------------------------------------------>    
+    <td width="160" valign="top"> <img src="/images_v1/transpixel.gif" width="160" height="1" border="0">   
+	      
+      <!-- ****************** BEGIN TAC INCLUDE *************** -->    
+        
+<SCRIPT language="javascript" type="text/javascript">  
+<!--  
+function popsup(filename,width,height) {  
+    specs = "width="+width+",height="+height+",scrollbars=yes,toolbar=no,menubar=no,resizable=yes,status=no";  
+    tacpopup = window.open(filename, "tacpopup", specs);  
+    setTimeout("if(window.focus) tacpopup.focus()",300)  
+}  
+ function buildOptionsMenu() {  
+	IE = (document.all);  
+	document.phone.country.length = phoneList.length + 1;  
+	var optnum = 0;  
+	for (var i=0; i < phoneList.length; i++) {  
+		if(!IE) {  
+			newpList = phoneList[i].replace(/\n\n/g,'\n');  
+		} else {  
+			newpList = phoneList[i];  
+		}  
+		document.phone.country.options[i+1] = new  
+Option(countryList[i],newpList);  
+	}  
+	document.phone.country.options[0].selected = true;  
+}  
+// -->  
+</SCRIPT>  
+
+
+      <table width="159" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td height="8" colspan="3"><spacer type="block" width="1" height="8"></td>
+        </tr>
+        <tr> 
+          <td width="100%" valign="top"> 
+            <form name=phone>
+              <input type="HIDDEN" name="hiddenCountry" value="No country selected.">
+              <input type="HIDDEN" name="hiddenPhone" value="Please choose a country.">
+               <p><b> Technical Assistance Center</b><br>  
+                <select name="country" size="1" class="S1">
+                  <option value="">Select a Country</option>
+                  <option value="">Select a Country</option>
+                  <option> 
+                  <option> 
+                  <option> 
+                  <option> 
+                  <option> 
+                  <option> 
+                  <option> 
+                  <option> 
+                  <option> 
+                </select>
+                <a href="javascript:document.phone.hiddenPhone.value=document.phone.country.options[document.phone.country.selectedIndex].value;document.phone.hiddenCountry.value=document.phone.country.options[document.phone.country.selectedIndex].text;popsup('/contact/contactus_popup.html',450,250)"><img src="/images/go.gif" width=23 height=17 alt="Go" border=0 align=ABSMIDDLE></a> 
+            </form>
+      </table>
+ <img onLoad="javascript:buildOptionsMenu();" src="/images_v1/transpixel.gif" width="1" height="1" border="0">
+    
+      <!-- ******************* END TAC INCLUDE **************** -->    
+ 
+      <br>    
+<table border=0 cellpadding=0 cellspacing=0 width=160>    
+        <tbody>     
+        <tr valign=bottom>     
+<td align=left rowspan=2 width=2> </td>    
+<td align=left class=H2 width=100%>Corporate Contact Information</td>    
+        </tr>    
+        <!--One pixel gray border-->    
+        <tr>     
+<td bgcolor="#999999" height=1 width=163><spacer height="1" width="1" type="block"></td>    
+        </tr>    
+        </tbody>    
+      </table>    
+<table width=163 border="0" cellpadding="0" cellspacing="0">    
+        <tr>     
+<td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/news_events/prc.html" class="L5">Public Relations</a></td>    
+        </tr>    
+        <tr>     
+<td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/industryanalyst/contacts.html" class="L5">Industry Analyst Relations</a></td>    
+        </tr>    
+        <tr>     
+<td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/investor" class="L5">Investor Relations</a></td>    
+        </tr>    
+      </table>    
+      <br>    
+<table border=0 cellpadding=0 cellspacing=0 width=160>    
+        <tbody>     
+        <tr valign=bottom>     
+<td align=left rowspan=2 width=2> </td>    
+<td align=left class=H2 width=100%>Self Help Links</td>    
+        </tr>    
+        <!--One pixel gray border-->    
+        <tr>     
+<td bgcolor="#999999" height=1 width=163><spacer height="1" width="1" type="block"></td>    
+        </tr>    
+        </tbody>     
+      </table>    
+<table width=163 border="0" cellpadding="0" cellspacing="0">   
+        		  
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/investor/financialreports.html" class="L5">Annual Report 2003</a></td></tr>   
+  
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="http://www.bell-labs.com/" class="L5">Bell Labs</a></td></tr>   
+  
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/work/work.html" class="L5">Career Opportunities</a></td></tr>   
+  
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/corpinfo/" class="L5">Company Information</a></td></tr>   
+		  
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/support/" class="L5">Customer Support</a></td></tr>   
+	  
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/support/documentation.html" class="L5">Documentation and Downloads  </a></td></tr>   
+		  
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="http://www.lucent.com/events/archive/0,2284,inDocTypeId+7-inPageNumber+1-inByLocation+0,00.html" class="L5">Events Calendar</a></td></tr>   
+    
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/industryanalyst/" class="L5">Industry Analyst Relations</a></td></tr>   
+          
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/investor" class="L5">Investor Relations</a></td></tr>   
+         
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/news_events/" class="L5">News &amp; Events</a></td></tr>   
+    
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/products/main/0,,LOCL+1,00.html" class="L5">Product Catalog</a></td></tr>   
+          
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/solutions/" class="L5">Products &amp; Solutions</a></td></tr>   
+   
+<tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="/knowledge/resourcelib/0,,,00.html" class="L5">Resource Library</a></td></tr>   
+          
+         
+<!--		<tr>    
+<td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="http://www.lucentdocs.com/cgi-bin/CIC_store.cgi?page=cic_docs_pdf.html&category=yes&cart_id=5791625.15282" class="L5">Technical documentation</a></td>   
+        </tr>   
+-->  
+		  
+ <tr><td valign="baseline"><img src="/images_v1/nav_rightarrow_red.gif" alt=""></td>   
+<td><a href="https://training.lucent.com/" class="L5">Training</a></td></tr>   
+      </table>    
+    </td>    
+    
+</tr>    
+</table>  
+  
+    
+<!---------------------------------------------------------    
+end main parent table for content area    
+------------------------------------------------------------>    
+    
+    
+<!--- include footer --->    
+<!--BEGIN 14 footer module for Lucent.com--> 
+<TABLE WIDTH="800" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+		<TD CLASS="V20">&nbsp;</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="center" CLASS="T1">
+		<A HREF="/copyright.html" CLASS="L3">Terms&nbsp;of&nbsp;use</A>&nbsp;&nbsp;&nbsp;
+		<A HREF="/privacy.html" CLASS="L3">Privacy&nbsp;statement</A>
+		<BR>Copyright &#169; 2005 Lucent Technologies. All rights reserved. </TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="10"><SPACER TYPE="block" WIDTH="1" HEIGHT="1"></TD>
+	</TR>
+</TABLE>
+<!--END 14 footer module for Lucent.com-->
+    
+    
+    
+</body>    
+</html>    

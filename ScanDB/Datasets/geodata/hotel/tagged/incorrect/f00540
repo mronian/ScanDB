@@ -1,0 +1,4896 @@
+<DOC>
+<DOCNO>f00540</DOCNO>
+<DOCHDR>http://www.hostels.net/findabed.php/USA-New+York-hostels</DOCHDR>
+<html>
+<head>
+ <TITLE>New York Hostels - Guide to New York Youth Hostels</TITLE>
+ <META NAME='description' CONTENT="New York Hostels. Online guide to independent New York youth hostels.  Photos, descriptions, ratings and online hostel reservations with Hostels.net.">
+ <META NAME='keywords' CONTENT="hostels in New York, hostel New York, New York hostel, New York hostels, New York youth hostels, youth hostels in New York, backpacker hostels New York, backpacker hostels in New York, New York backpacker hostel, cheap hostels New York, cheap hostels in New York, cheap New York hostels, New York cheap hostel, New York,">
+<link href='/styles/hostelsnet.css' rel=stylesheet>
+</head>
+<body bgcolor='#ffffff' topmargin=0 marginheight=0 leftmargin=0 marginwidth=0>
+      <script Language='JavaScript'>
+       
+CountryList = new Array(
+  "Albania",
+  "Andorra",
+  "Antigua And Barbuda",
+  "Argentina",
+  "Armenia",
+  "Australia",
+  "Austria",
+  "Bahamas",
+  "Bangladesh",
+  "Barbados",
+  "Belarus",
+  "Belgium",
+  "Belize",
+  "Bolivia",
+  "Bosnia And Herzegovina",
+  "Brazil",
+  "Britain",
+  "Brunei",
+  "Bulgaria",
+  "Burkina Faso",
+  "Cambodia",
+  "Cameroon",
+  "Canada",
+  "Cape Verde",
+  "Chile",
+  "China",
+  "Colombia",
+  "Cook Islands",
+  "Costa Rica",
+  "Croatia",
+  "Cuba",
+  "Cyprus",
+  "Czech Republic",
+  "Denmark",
+  "Dominica",
+  "Dominican Republic",
+  "Ecuador",
+  "Egypt",
+  "El Salvador",
+  "England",
+  "Estonia",
+  "Fiji",
+  "Finland",
+  "France",
+  "French Polynesia",
+  "Gambia",
+  "Germany",
+  "Ghana",
+  "Greece",
+  "Greenland",
+  "Guadeloupe",
+  "Guatemala",
+  "Haiti",
+  "Holland",
+  "Honduras",
+  "Hong Kong",
+  "Hungary",
+  "Iceland",
+  "India",
+  "Indonesia",
+  "Ireland",
+  "Israel",
+  "Italy",
+  "Jamaica",
+  "Japan",
+  "Jordan",
+  "Kenya",
+  "Kyrgyzstan",
+  "Laos",
+  "Latvia",
+  "Lebanon",
+  "Liechtenstein",
+  "Lithuania",
+  "Luxembourg",
+  "Macau",
+  "Macedonia",
+  "Madagascar",
+  "Malawi",
+  "Malaysia",
+  "Malta",
+  "Mauritius",
+  "Mexico",
+  "Micronesia",
+  "Moldova",
+  "Monaco",
+  "Mongolia",
+  "Montserrat",
+  "Morocco",
+  "Mozambique",
+  "Myanmar",
+  "Namibia",
+  "Nepal",
+  "Netherlands",
+  "Netherlands Antilles",
+  "New Zealand",
+  "Nicaragua",
+  "Nigeria",
+  "Northern Ireland",
+  "Norway",
+  "Oman",
+  "Panama",
+  "Papua New Guinea",
+  "Paraguay",
+  "Peru",
+  "Philippines",
+  "Poland",
+  "Portugal",
+  "Puerto Rico",
+  "Reunion",
+  "Romania",
+  "Russia",
+  "Saint Lucia",
+  "Samoa",
+  "Scotland",
+  "Senegal",
+  "Serbia and Montenegro",
+  "Seychelles",
+  "Singapore",
+  "Slovakia",
+  "Slovenia",
+  "South Africa",
+  "South Korea",
+  "Spain",
+  "Sri Lanka",
+  "Swaziland",
+  "Sweden",
+  "Switzerland",
+  "Syria",
+  "Taiwan",
+  "Tanzania",
+  "Thailand",
+  "Tonga",
+  "Trinidad and Tobago",
+  "Tunisia",
+  "Turkey",
+  "UK",
+  "USA",
+  "Uganda",
+  "Ukraine",
+  "United Arab Emirates",
+  "Uruguay",
+  "Uzbekistan",
+  "Vanuatu",
+  "Venezuela",
+  "Vietnam",
+  "Virgin Islands",
+  "Wales",
+  "Zambia",
+  "Zimbabwe"
+);
+
+function populateFindABedPanel( country ) {
+  newcountry = country.replace(/ /g,'');
+  if ( country.length == 0 ) {
+    document.theForm.FABChoice.length = 1;
+    document.theForm.FABChoice.options[0] = new Option("");
+    document.theForm.FABChoice.options[0].value = '';
+
+    document.theForm.FABChoice.options[1] = new Option("Choose a Countrty First");
+    document.theForm.FABChoice.options[1].value = '';
+
+    return;
+  }
+
+  if ( country == 'Holland' ) {
+    newcountry = 'Netherlands';
+  }
+  if ( country == 'Britain' ) {
+    newcountry = 'England';
+  }
+  newOptions = eval(newcountry+'Array');
+
+  document.theForm.FABChoice.length = 1;
+  document.theForm.FABChoice.options[0] = new Option("Choose a City");
+  document.theForm.FABChoice.options[0].value = '';
+
+  document.theForm.FABChoice.options[0].selected = true;
+
+  for ( i=0; i<newOptions.length; i++ ) {
+    document.theForm.FABChoice.length=i+1;
+    thisEntry = newOptions[i];
+    newOption = new Option( thisEntry );
+    newOption.value = thisEntry + ';' + country;
+    document.theForm.FABChoice.options[i+1] = newOption;
+  }
+}
+
+function showHostelCountries( chosenCountry ) {
+  document.theForm.FABCountryChoice.length = 1;
+  document.theForm.FABCountryChoice.options[0] = new Option('Choose a Country');
+  document.theForm.FABCountryChoice.options[0].value = '';
+  var count = 149;
+  for(var i=0; i < count; i++ ) {
+    document.theForm.FABCountryChoice.length = i+1;
+    newOption = new Option( CountryList[i] );
+    newOption.value = CountryList[i];
+    document.theForm.FABCountryChoice.options[i+1] = newOption;
+  }
+  for(var j=0; j < document.theForm.FABCountryChoice.length; j++ ) {
+    if(document.theForm.FABCountryChoice.options[j].value == chosenCountry) {
+      document.theForm.FABCountryChoice.options[j].selected = true;
+    }
+  }
+  return;
+}
+    
+function searchForBeds(aform) {
+  document.t_hostels.src = hostelson.src;
+  document.img_fabicon.src = hostelicon.src;
+  aform.NumNights.disabled = false;
+  aform.FABChoice.disabled = false;
+  showHostelCountries('USA');
+  populateFindABedPanel('USA');
+}
+
+function checkFindBedPanel() {
+  if ( document.theForm.FABCountryChoice.options[document.theForm.FABCountryChoice.selectedIndex].value == '' ) {
+    alert('!!PLEASECOUNTRY!!');
+    return false;
+  }
+  return true;
+}
+
+
+		function GetMonth(intMonth){
+		var MonthArray = new Array('Jan', 'Feb', 'Mar',
+								   'Apr', 'May', 'June',
+								   'July', 'Aug', 'Sept',
+								   'Oct', 'Nov', 'Dec') 
+		return MonthArray[intMonth] 	  	 
+		}
+      </script>	
+<form name=theForm action='/findabed.php/USA-New+York-hostels' ENCTYPE="multipart/form-data" method=post><input type="hidden" name="PHPSESSID" value="qqkmc21ftcvdm6ieff8j9bngm6h38rr7" />
+<table border='0' cellpadding='0' cellspacing='0' width='770'>
+ <tr valign='top'>
+  <td colspan=2><img src='/images/hostels.net/header_a.gif' width='770' height='63' border='0'></td>
+ </tr>
+ <tr valign='top'>
+  <td width='221'>
+   <table border='0' cellpadding='0' cellspacing='0' width='221'>
+    <tr valign='top'>
+     <td colspan=3><img src='/images/hostels.net/fab_table_a.gif' width='221' height='33' border='0'></td>
+    </tr>
+    <tr valign='top'>
+     <td><img src='/images/hostels.net/fab_table_b.gif' width='14' height='170' border='0'></td>
+     <td background='/images/hostels.net/fab_table_c.gif' width='185' height='170'>
+     <table cellpadding=1 cellspacing=1 border=0 align=center width=80%>
+ <tr>
+  <td class=content><font color='#A23700'><b>Choose a Country:</b><br>   <SELECT NAME='FABCountryChoice' onChange="populateFindABedPanel( this.options[selectedIndex].value );" width=150 style='width:150px' class=formElements>
+    <OPTION VALUE=''>Choose a Country</OPTION>
+<SCRIPT LANGUAGE="JavaScript">
+for( var x=0; x<149; x++ ) {
+  document.write('<OPTION VALUE=\''+CountryList[x]+'\'');
+  if(CountryList[x] == 'USA') {
+    document.write(' SELECTED');
+  }
+  document.write('>'+CountryList[x]+'</OPTION>');
+}
+</SCRIPT>
+</SELECT>
+</td>
+ </tr>
+ <tr>
+  <td class=content colspan=2><font color='#A23700'><b>Choose a City:</b><br>   <SELECT NAME='FABChoice' width=150 style='width:150px' class=formElements>
+    <OPTION VALUE=''></OPTION>
+    <OPTION VALUE=''>Choose a Country First</OPTION>
+   </SELECT>
+</td>
+ </tr>
+ <tr>
+  <td class=content><font color='#A23700'><b>Arriving On:</b><br><SELECT NAME='selDay' WIDTH=2 class=formElements>
+<OPTION VALUE='01'>1</OPTION><OPTION VALUE='02'>2</OPTION><OPTION VALUE='03'>3</OPTION><OPTION VALUE='04'>4</OPTION><OPTION VALUE='05'>5</OPTION><OPTION VALUE='06'>6</OPTION><OPTION VALUE='07'>7</OPTION><OPTION VALUE='08'>8</OPTION><OPTION VALUE='09'>9</OPTION><OPTION VALUE='10'>10</OPTION><OPTION VALUE='11'>11</OPTION><OPTION VALUE='12' SELECTED>12</OPTION><OPTION VALUE='13'>13</OPTION><OPTION VALUE='14'>14</OPTION><OPTION VALUE='15'>15</OPTION><OPTION VALUE='16'>16</OPTION><OPTION VALUE='17'>17</OPTION><OPTION VALUE='18'>18</OPTION><OPTION VALUE='19'>19</OPTION><OPTION VALUE='20'>20</OPTION><OPTION VALUE='21'>21</OPTION><OPTION VALUE='22'>22</OPTION><OPTION VALUE='23'>23</OPTION><OPTION VALUE='24'>24</OPTION><OPTION VALUE='25'>25</OPTION><OPTION VALUE='26'>26</OPTION><OPTION VALUE='27'>27</OPTION><OPTION VALUE='28'>28</OPTION><OPTION VALUE='29'>29</OPTION><OPTION VALUE='30'>30</OPTION><OPTION VALUE='31'>31</OPTION></SELECT><SELECT NAME='selMonth' class=formElements>
+<OPTION VALUE='01'>Jan</OPTION><OPTION VALUE='02'>Feb</OPTION><OPTION VALUE='03'>Mar</OPTION><OPTION VALUE='04'>Apr</OPTION><OPTION VALUE='05'>May</OPTION><OPTION VALUE='06'>Jun</OPTION><OPTION VALUE='07'>Jul</OPTION><OPTION VALUE='08' SELECTED>Aug</OPTION><OPTION VALUE='09'>Sep</OPTION><OPTION VALUE='10'>Oct</OPTION><OPTION VALUE='11'>Nov</OPTION><OPTION VALUE='12'>Dec</OPTION></SELECT><SELECT NAME='selYear' class=formElements>
+<OPTION VALUE='2006' SELECTED>2006</OPTION><OPTION VALUE='2007'>2007</OPTION><OPTION VALUE='2008'>2008</OPTION></SELECT>
+</td>
+ </tr>
+ <tr>
+  <td class=content width=60%><font color='#A23700'><b># Nights:</b><br><SELECT NAME='NumNights' class=formElements>
+<OPTION VALUE='1'>1</OPTION>
+<OPTION VALUE='2'>2</OPTION>
+<OPTION VALUE='3' SELECTED>3</OPTION>
+<OPTION VALUE='4'>4</OPTION>
+<OPTION VALUE='5'>5</OPTION>
+<OPTION VALUE='6'>6</OPTION>
+<OPTION VALUE='7'>7</OPTION>
+</SELECT> <input align=right type='image' src='/images/hostels.net/search_button.gif?PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' name='Submit' border=0></td>
+ </tr>
+</table>
+
+     </td>
+     <td><img src='/images/hostels.net/fab_table_d.gif' width='22' height='170' border='0'></td>
+    </tr>
+   </table>
+   <p>
+   <table cellpadding=0 cellspacing=0 width=80% align=center>
+    <tr>
+     <td height=45><span class=content2><b>Our Price Promise</b></span><br> <span class=contentSmall>Bed rates are not marked up! You reserve at the hostel's own set prices.</span></td>
+    </tr>
+   </table>
+   <p class=content align=center><font color='#000000'><a class=content href='http://www.hostels.net/countrylist.php'><b>Search our database of hostels</b></a></font>
+   <p class=content align=center><font color='#000000'><b>We accept the following cards...</b></font>
+   <table cellpadding=1 cellspacing=0 border=0 align=center>
+    <tr>
+     <td valign='top'><img src='/images/ryan/visa_card.gif' alt='Visa'></td>
+     <td valign='top'><img src='/images/ryan/mastercard_card.gif'' alt='Mastercard'></td>
+     <td valign='top'><img src='/images/ryan/visa_e_card.gif' alt='Visa Electron'></td>
+     <td valign='top'><img src='/images/ryan/solo_card.gif' alt='Solo'></td>
+     <td valign='top'><img src='/images/ryan/switch_card.gif' alt='Switch'></td>
+     <td valign='top'><img src='/images/ryan/jcb_card.gif' alt='JCB'></td>
+     <td valign='top'><img src='/images/ryan/laser_card.gif' alt='Laser Card'></td>
+    </tr>
+   </table>
+   <p>	  
+   <table cellpadding=1 cellspacing=0 width=80% align=center>
+    <tr>
+     <td height=20><span class='titletext'>Continent Search</span></td>
+    </tr>
+    <tr>
+     <td class=content>&#149; <a href='http://www.hostels.net/continent.php/Africa-hostels' class=list>Africa Hostels</a></td>
+    </tr>
+    <tr>
+     <td class=content>&#149; <a href='http://www.hostels.net/continent.php/Asia-hostels' class=list>Asia Hostels</a></td>
+    </tr>
+    <tr>
+     <td class=content>&#149; <a href='http://www.hostels.net/continent.php/Europe-hostels' class=list>Europe Hostels</a></td>
+    </tr>
+    <tr>
+     <td class=content>&#149; <a href='http://www.hostels.net/continent.php/North America-hostels' class=list>North America Hostels</a></td>
+    </tr>
+    <tr>
+     <td class=content>&#149; <a href='http://www.hostels.net/continent.php/Oceania-hostels' class=list>Oceania Hostels</a></td>
+    </tr>
+    <tr>
+     <td class=content>&#149; <a href='http://www.hostels.net/continent.php/South America-hostels' class=list>South America Hostels</a></td>
+    </tr>
+   </table>
+  </td>
+  <td width=549>
+   <table border='0' cellpadding='0' cellspacing='0'>
+    <tr valign='top'>
+     <td><img src='/images/hostels.net/header_c.gif' width='74' height='32' border='0'></td>
+     <td><a href='http://www.hostels.net/'><img src='/images/hostels.net/header_d.gif' width='51' height='32' border='0'></a></td>
+     <td><a href='http://www.hostels.net/countrylist.php'><img src='/images/hostels.net/header_e.gif' width='100' height='32' border='0'></a></td>
+     <td><a href='http://www.hostels.net/contact.php'><img src='/images/hostels.net/header_f.gif' width='91' height='32' border='0'></a></td>
+     <td><a href='http://www.hostels.net/security.php'><img src='/images/hostels.net/header_g.gif' width='69' height='32' border='0'></a></td>
+     <td><a href='http://www.hostels.net/contract.php'><img src='/images/hostels.net/header_h.gif' width='111' height='32' border='0'></a></td>
+     <td><img src='/images/hostels.net/header_i.gif' width='53' height='32' border='0'></td>
+    </tr>
+   </table>
+<SCRIPT>
+  var r = document.referrer;
+  var ref = '';
+  var rand = Math.random();
+  if(r.search(window.location.host) == -1) ref = r;
+  blah = new Image();
+  blah.src='/includes/thing.php?T=V&S=HOE&N=' + window.location.host + '&R=' + r + '&rand=' + rand;
+  halb = new Image();
+  halb.src="https://secure.webresint.com/writrak.php?T=V&S=HOE&ChosenCity=New York&UserID=&ServerName=www.hostels.net&N=" + window.location.host + '&R=' + ref + '&rand=' + rand ;
+</SCRIPT>
+
+
+<table cellpadding=10 cellspacing=0 width=100% border=0>
+ <tr valign=top>
+  <td colspan=2 class=content>
+   <center>
+    <span class=content1><font color='#000000'>Guide to New York Hostels, <a class=content5 href="http://www.hostels.net/country.php/USA-hostels" title='USA Hostels'>USA</a> </font></span><br>
+    Choose Dates to see Hostel Availibility
+   </center><br>
+    Hostels.net features thousands of cheap hostels worldwide.<br><br>
+    Below you will see a list of <b>New York hostels</b>.  To see a list of available New York Hostels for the dates you wish
+    to stay just enter your criteria in the panel on the left hand side of the page.  Each hostel in New York displays photographs and descriptions.  Also you can see excatly which nights they have available beds and the room types available.<br><br>
+    Book your New York Hostel now and guarantee your bed before you go.
+  </td>
+ </tr>
+</table>
+<table cellpadding=10 cellspacing=0 border=0 width=98% align=center>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=809&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>American Dream Hostel, New York</b></a><br>168 East 24th Street, between Lexington and 3rd Av</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   One of two American Dream Hostels in the city, we provide a safe and friendly stay for all our guests...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=809&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="American Dream Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=809&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=5429&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Swiss 1291 Hostel, New York</b></a><br><GEO TYPE="US">337 West 55th, 10019</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Swiss1291 is located on 5th and Broadway between Times Square and Central Park in the heart of Manhattan...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=5429&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Swiss 1291 Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=5429&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=803&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Chelsea Star Hotel, New York</b></a><br><GEO TYPE="US">300 West 30th Street, NY 10001</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Spend your days discovering the city and your nights in the newest and brightest star in the Big Apple...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=803&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Chelsea Star Hotel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=803&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=4660&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Manhattan Inn Hostel, New York</b></a><br>303 West 30th Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Manhattan Inn Hostel is centrally located in New York City close to everything you need...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=4660&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Manhattan Inn Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=4660&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=815&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Vanderbilt YMCA, New York</b></a><br><GEO TYPE="US">224 East 47th St., NY 10017</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Located on Manhattan's fashionable East Side we have maintained the classic style of the neighborhood...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=815&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Vanderbilt YMCA, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=815&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=4554&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Jazz on the Town-East Village, New York</b></a><br>307 East 14 Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   This newly renovated hostel has guest rooms which offer comfort and efficiency and is one of Manhattan's best-kept secrets...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=4554&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Jazz on the Town-East Village, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=4554&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=2403&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>The Wanderers Inn, New York</b></a><br>179 East 94th Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   This is the newest hostel in New York and is located on the exclusive Upper East Side of Manhattan.
+   <div align=right><a href='/hosteldetails.php?HostelNumber=2403&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="The Wanderers Inn, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=2403&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=4559&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Flushing YMCA, New York</b></a><br><GEO TYPE="US">138-46 Northern Blvd., Flushing NY</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Flushing YMCA is conveniently located in Downtown Flushing, Queens is safe, clean & affordable...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=4559&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Flushing YMCA, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=4559&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=831&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>West Side YMCA, New York</b></a><br><GEO TYPE="US">5 West 63rd St., N.Y. 10023</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Providing travelers from everywhere with great value for money, and just minutes from all the attractions...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=831&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="West Side YMCA, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=831&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=4547&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>International Student Center, New York</b></a><br><GEO TYPE="US">38 West 88th Street, Manhattan NY 10024</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   This friendly youth hostel is located in a beautiful & safe residential neighbourhood close to Central Park...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=4547&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="International Student Center, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=4547&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=4835&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>The Wanderers Inn West, New York</b></a><br><GEO TYPE="US">257 West 113th Street, NY 10026</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   This hostel offers your guests a unique opportunity to experience genuine New York way of life...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=4835&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="The Wanderers Inn West, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=4835&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=4561&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Greenpoint YMCA, New York</b></a><br><GEO TYPE="US">99 Meserole Avenue, Brooklyn, NY  11222</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   This YMCA is located in a residential area in Greenpoint, Brooklyn & has a spectacular view of the city...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=4561&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Greenpoint YMCA, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=4561&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=7993&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Dexter House Hostel, New York</b></a><br><GEO TYPE="US">345 West 86th Street, 10024</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Dexter House Hostel is located in the heart of the Upper Westside of New York City. Central Park is only four blocks away...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=7993&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Dexter House Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=7993&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=804&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>The Gershwin Hotel, New York</b></a><br><GEO TYPE="US">7 East 27th Street, NY 10016</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Gershwin Hotel/Hostel offers a very appealing deal for travellers on a tight budget...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=804&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="The Gershwin Hotel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=804&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=8969&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Twelve Towns YMCA, New York</b></a><br><GEO TYPE="US">570 Jamaica Avenue, Brooklyn</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Twelve Towns YMCA facility accommodates 97 guests at any one time.  All rooms are single occupancy.
+   <div align=right><a href='/hosteldetails.php?HostelNumber=8969&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Twelve Towns YMCA, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=8969&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=4560&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Harlem YMCA, New York</b></a><br><GEO TYPE="US">180 West 135th Street, NY 10030</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Harlem YMCA's Claude McKay Residence has singles and doubles and is clean, safe and affordable...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=4560&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Harlem YMCA, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=4560&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=12023&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Mount Royal Hotel & Hostel, New York</b></a><br>315 West 94th Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Mount Royal, conveniently located in the fashionable upper west side, attracts a youthful, and budget conscious clientele...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=12023&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Mount Royal Hotel & Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=12023&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=4764&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Chelsea Center, New York</b></a><br><GEO TYPE="US">313 West 29th Street, New York NY 10001</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Chelsea Center Hostel is one of the oldest hostels in New York and offers friendly service...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=4764&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Chelsea Center, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=4764&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=822&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Bowery's Whitehouse Hotel of NY, New York</b></a><br>340 Bowery</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Introducing Bowery's Whitehouse Hotel of New York, the newest hotel in the No-Ho district of Manhattan...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=822&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Bowery's Whitehouse Hotel of NY, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=822&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=14105&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Manhattan Youthcastle, New York</b></a><br>556 West 173rd Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   After 7 years in Spanish Harlem, Manhattan Youthcastle has now reopened in trendy Washington Heights.
+   <div align=right><a href='/hosteldetails.php?HostelNumber=14105&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Manhattan Youthcastle, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=14105&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=805&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>West End Studios, New York</b></a><br>850 West End Avenue</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   With Gothic design and European flavor we are located in one of the cities trendiest neighborhoods...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=805&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="West End Studios, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=805&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=801&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Chelsea International Hostel, New York</b></a><br><GEO TYPE="US">251 West 20th Street, NY 10011</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Located in the historic Chelsea area of Manhattan right beside Greenwich Village...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=801&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Chelsea International Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=801&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=14303&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Jazz on Harlem, New York</b></a><br>104 West 128 Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Experience the soul of New York!  Jazz on Harlem is located at the Heart of the Harlem community and surrounded by numerous landmarks.
+   <div align=right><a href='/hosteldetails.php?HostelNumber=14303&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Jazz on Harlem, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=14303&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=14174&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Times Square Hostel, New York</b></a><br>311 West 48 Street,(above the Japanese Restaurant)</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   We are the perfect base for visitors to the No.1 City of the world. Our hostel is one block to Times Square!
+   <div align=right><a href='/hosteldetails.php?HostelNumber=14174&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Times Square Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=14174&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=12205&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Malibu Hostel, New York</b></a><br>2688 Broadway</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Malibu Hostel is a stylish and comfortable hostel located on Manhattan's trendy Upper West Side.
+   <div align=right><a href='/hosteldetails.php?HostelNumber=12205&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Malibu Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=12205&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=4908&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Columbus Studios, New York</b></a><br>106 West 83rd Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   This hostel enjoys a location on trendy Columbus Avenue, noted for fancy saloons, cafés and outdoor dining...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=4908&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Columbus Studios, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=4908&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=16165&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Continental Hostel, New York</b></a><br>330 West 95th Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Continental, conveniently located in the fashionable upper west side, enjoys the ambiance of tree lined streets in the midst of the big city.
+   <div align=right><a href='/hosteldetails.php?HostelNumber=16165&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Continental Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=16165&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=15070&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Glenwood Hostel, New York</b></a><br><GEO TYPE="US">339 Broadway, Williamsburgh Brooklyn</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   You'll find clean, safe, friendly, comfortable accommodations right in the heart of Brooklyn at The Glenwood Hostel
+   <div align=right><a href='/hosteldetails.php?HostelNumber=15070&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Glenwood Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=15070&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=16002&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Broadway Hotel n Hostel, New York</b></a><br><GEO TYPE="US">230 West 101 Street, Broadway</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Welcome to The Broadway! We are located on the Upper West Side on Boadway. We are the perfect stop on your backpacker trail of New York!
+   <div align=right><a href='/hosteldetails.php?HostelNumber=16002&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Broadway Hotel n Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=16002&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=816&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Big Apple Hostel, New York</b></a><br><GEO TYPE="US">119 West 45th Street,, New York</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Conveniently located in Midtown Manhattan, in the heart of New York's famous Broadway Theater District...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=816&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Big Apple Hostel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=816&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=800&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Central Park Hostel & Inn, New York</b></a><br><GEO TYPE="US">19W, 103rd Street, 10025</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   One block from Central Park and near many major attractions, perfect for those travelling on a budget too...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=800&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Central Park Hostel & Inn, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=800&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=806&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>West Side Inn Hostel & Hotel, New York</b></a><br>237 West 107th Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The West Side Inn Hotel/Hostel is located in New York's hottest new neighborhood...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=806&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="West Side Inn Hostel & Hotel, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=806&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=16533&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Jazz on the Villa, New York</b></a><br>12 West 129th Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Jazz on the Villa hostel is a newly renovated landmark with a picturesque exoticism located in the heart of the Harlem community...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=16533&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Jazz on the Villa, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=16533&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=13136&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Virginia Guest House, New York</b></a><br>128 East 112 Street</td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   Virginia's Guest House welcomes travelers from around the world who want to maximize their money by staying in an affordable, safe and clean place...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=13136&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Virginia Guest House, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=13136&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=14764&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>B & B Lodges, New York</b></a><br><GEO TYPE="US">1598 Lexington Avenue, New York, NY 10029</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   B & B Lodges offers accommodations to the budget minded traveler. We offer clean, comfortable apartments at our Guesthouse
+   <div align=right><a href='/hosteldetails.php?HostelNumber=14764&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="B & B Lodges, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=14764&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+<td valign=top width=50%>
+<table border="0" cellpadding="0" cellspacing="0" width="255">
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_a.gif"></td>
+  <td background="/images/hostels.net/result_tab_b.gif" width="227" height="49" valign=middle class=contentSmall><a href='/hosteldetails.php?HostelNumber=11078&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=title title='New York Hostels'><b>Awesome Bed & Breakfast, Brooklyn, New York</b></a><br><GEO TYPE="US">136 Lawrence Street, Brooklyn</GEO></td>
+  <td><img src="/images/hostels.net/result_tab_c.gif"></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14" height="110"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content3 valign=middle>
+   The Awesome B&B is located in Downtown Brooklyn, just 5 minutes from Manhattan by subway...
+   <div align=right><a href='/hosteldetails.php?HostelNumber=11078&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7' class=more title="Awesome Bed & Breakfast, Brooklyn, New York"><b>More Info »</b></a></div>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td background="/images/hostels.net/result_tab_d.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+  <td class=content2 valign=middle>
+   <table cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+
+     <td align=right><a href='/hosteldetails.php?HostelNumber=11078&PHPSESSID=qqkmc21ftcvdm6ieff8j9bngm6h38rr7'><img src='/images/hostels.net/book_now.gif' border=0 alt='New York Hostel'></a></td>
+    </tr>
+   </table>
+  </td>
+  <td background="/images/hostels.net/result_tab_f.gif" width="14"><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr valign="top">
+  <td><img src="/images/hostels.net/result_tab_g.gif"></td>
+  <td background="/images/hostels.net/result_tab_h.gif" width="227" height="21"><img src='/images/hostels.net/trans.gif'></td>
+  <td><img src="/images/hostels.net/result_tab_i.gif"></td>
+ </tr>
+</table>
+</td>
+</tr></table>
+<table cellpadding=10 cellspacing=0 width=100% border=0>
+ <tr valign=top>
+  <td colspan=2 class=content><span class=content>Check out some of the most fun and popular New York hostels online at hostels.net. Book any of the New York hostels above online by paying just a 10% deposit online. Your hostel reservation is confirmed online instantly. Enjoy your time in New York and book your hostel before you go.</span></td>
+</tr>
+
+  </td>
+ </tr>
+</table>
+<p>
+<table cellpadding=0 cellspacing=0 width=770>
+ <tr>
+  <td bgcolor='#F1DDDD'><img src='/images/hostels.net/trans.gif'></td>
+ </tr>
+ <tr> 
+  <td align=center class=content><p><br>
+  <a class=footer href='http://www.hostels.net/continent.php/Africa-hostels' title='Africa Hostels'>Africa</a> | <a class=footer href='http://www.hostels.net/continent.php/Asia-hostels' title='Asia Hostels'>Asia</a> | <a class=footer href='http://www.hostels.net/continent.php/North America-hostels' title='North America Hostels'>North America</a> | <a class=footer href='http://www.hostels.net/continent.php/South America-hostels' title='South America Hostels'>South America</a> | <a class=footer href='http://www.hostels.net/continent.php/Europe-hostels' title='Europe Hostels'>Europe</a><br>
+   <a class= footer href='http://www.hostels.net/findabed.php/England-London-hostels' title='Hostels in London'>London Hostels</a> |    <a class= footer href='http://www.hostels.net/findabed.php/Italy-Rome-hostels' title='Hostels in Rome'>Rome Hostels</a> |    <a class= footer href='http://www.hostels.net/findabed.php/France-Paris-hostels' title='Hostels in Paris'>Paris Hostels</a> |    <a class= footer href='http://www.hostels.net/findabed.php/Spain-Barcelona-hostels' title='Hostels in Barcelona'>Barcelona Hostels</a> |    <a class= footer href='http://www.hostels.net/findabed.php/Netherlands-Amsterdam-hostels' title='Hostels in Amsterdam'>Amsterdam Hostels</a><br>   <a class= footer href='http://www.hostels.net/findabed.php/Ireland-Dublin-hostels' title='Hostels in Dublin'>Dublin Hostels</a> |    <a class= footer href='http://www.hostels.net/findabed.php/Italy-Venice-hostels' title='Hostels in Venice'>Venice Hostels</a> |    <a class= footer href='http://www.hostels.net/findabed.php/Italy-Florence-hostels' title='Hostels in Italy'>Florence Hostels</a> |    <a class= footer href='http://www.hostels.net/findabed.php/USA-New York-hostels' title='Hostels in New York'>New York Hostels</a> |    <a class= footer href='http://www.hostels.net/findabed.php/Czech Republic-Prague-hostels' title='Hostels in Prague'>Prague Hostels</a><br>   <a href='http://www.hostels.net/terms.php' target='_blank' class=footer>Terms & Conditions of Use</a> | <a href='javascript:OpenWindow("http://www.hostels.net/privacy.php",540,600);' class=footer>Security &amp; Privacy Policy</a>
+   <br>Copyright &copy; 2002-2006 Hostels.net
+  </td>
+ </tr>  
+</table>
+<SCRIPT LANGUAGE='JavaScript'>
+  <!--
+    var AlbaniaArray = new Array(
+  "Berat",
+  "Durres",
+  "Gjirokaster",
+  "Kavaje",
+  "Korca",
+  "Pogradec",
+  "Saranda",
+  "Tirana",
+  "Vlora",
+  "Voskopoje"
+);
+
+var AndorraArray = new Array(
+  "Andorra la Vella",
+  "Arinsal",
+  "Encamp",
+  "Escaldes-Engordany",
+  "Meritxell",
+  "Ordino",
+  "Sant Julia de Loria",
+  "Soldeu"
+);
+
+var AntiguaAndBarbudaArray = new Array(
+  "English Harbour",
+  "St. John's"
+);
+
+var ArgentinaArray = new Array(
+  "Bariloche",
+  "Buenos Aires",
+  "Cafayate",
+  "Capilla del Monte",
+  "Chacras de Coria-Lujan",
+  "Colon",
+  "Cordoba",
+  "El Bolson",
+  "El Calafate",
+  "El Chalten",
+  "Esquel",
+  "Gaiman",
+  "La Cumbre",
+  "Malargue",
+  "Mar del Plata",
+  "Mendoza",
+  "Miramar",
+  "Pinamar",
+  "Puerto Iguazu",
+  "Puerto Madryn",
+  "Rosario",
+  "Salta",
+  "San Juan",
+  "San Martin de los Andes",
+  "San Rafael",
+  "San Salvador de Jujuy",
+  "Sierras de Cordoba",
+  "Tigre",
+  "Tucuman",
+  "Ushuaia",
+  "Valle de la luna",
+  "Villa Carlos Paz",
+  "Villa La Angostura"
+);
+
+var ArmeniaArray = new Array(
+  "Gyumri",
+  "Yerevan"
+);
+
+var AustraliaArray = new Array(
+  "Adelaide",
+  "Airlie Beach",
+  "Albany",
+  "Alice Springs",
+  "Apollo Bay",
+  "Ayr",
+  "Ballina",
+  "Barrington",
+  "Bendigo",
+  "Blue Mountains",
+  "Bright",
+  "Brisbane",
+  "Bunbury",
+  "Bundaberg",
+  "Byron Bay",
+  "Cairns",
+  "Canberra",
+  "Cape Tribulation",
+  "Childers",
+  "Coffs Harbour",
+  "Cooktown",
+  "Coral Bay",
+  "Corowa",
+  "Daintree-Cairns",
+  "Darwin",
+  "Denmark",
+  "Deviot",
+  "Exmouth",
+  "Faulconbridge",
+  "Geeveston",
+  "Glen Innes",
+  "Gold Coast",
+  "Gosford-Central Coast",
+  "Grampians",
+  "Grampians National Park",
+  "Great Ocean Road",
+  "Hervey Bay",
+  "Hobart",
+  "Kalbarri",
+  "Kangaroo Island",
+  "Kununurra",
+  "Kuranda",
+  "Kyneton",
+  "Launceston",
+  "Maffra",
+  "Magnetic Island",
+  "Malanda",
+  "Margaret River",
+  "Maroochydore",
+  "McLaren Vale",
+  "Melbourne",
+  "Merimbula",
+  "Mildura",
+  "Mission Beach",
+  "Monkey Mia",
+  "Mooloolaba",
+  "Mount Gambier",
+  "Mount Martha",
+  "Newcastle",
+  "Nimbin",
+  "Noosa",
+  "Old Bar",
+  "Orford",
+  "Pacific Palms",
+  "Perth",
+  "Perth-Fremantle",
+  "Peterborough",
+  "Phillip Island",
+  "Port Douglas",
+  "Port Macquarie",
+  "Port Stephens",
+  "Rainbow Beach",
+  "Richmond",
+  "Robe",
+  "Rockhampton",
+  "Surfers Paradise",
+  "Swansea",
+  "Sydney",
+  "Tennant Creek",
+  "Thredbo",
+  "Townsville",
+  "Tully",
+  "Tumut",
+  "West End Brisbane",
+  "Wollongong",
+  "Yanchep"
+);
+
+var AustriaArray = new Array(
+  "Arlberg",
+  "Axams",
+  "Bad Aussee",
+  "Bad Gastein",
+  "Bregenz",
+  "Gerlos",
+  "Graz",
+  "Grunau",
+  "Innsbruck",
+  "Kaprun",
+  "Kirchdorf",
+  "Kitzbuhel",
+  "Klagenfurt",
+  "Koetschach Mauthen",
+  "Leogang",
+  "Linz",
+  "Obertraun",
+  "Ramsau",
+  "Reutte",
+  "Salzburg",
+  "St Johann in Tirol",
+  "St. Gilgen",
+  "Vienna",
+  "Zell am See"
+);
+
+var BahamasArray = new Array(
+  "Grand Bahama Island",
+  "Gregory Town",
+  "Nassau"
+);
+
+var BangladeshArray = new Array(
+  "Dhaka"
+);
+
+var BarbadosArray = new Array(
+  "Kingsland Gardens",
+  "Rendezvous",
+  "Silver Sands",
+  "St Lawrence Gap",
+  "Worthing"
+);
+
+var BelarusArray = new Array(
+  "Minsk"
+);
+
+var BelgiumArray = new Array(
+  "Antwerp",
+  "Bouillon",
+  "Bruges",
+  "Brussels",
+  "Champlon",
+  "Gent",
+  "Knokke",
+  "Leuven",
+  "Namur",
+  "Torhout",
+  "Tournai",
+  "Ypres"
+);
+
+var BelizeArray = new Array(
+  "Caye Caulker",
+  "Dangriga",
+  "Punta Gorda",
+  "San Ignacio",
+  "San Pedro"
+);
+
+var BoliviaArray = new Array(
+  "Cochabamba",
+  "Copacabana",
+  "La Paz",
+  "Potosi",
+  "Samaipata",
+  "Santa Cruz",
+  "Sucre",
+  "Tupiza",
+  "Uyuni"
+);
+
+var BosniaAndHerzegovinaArray = new Array(
+  "Sarajevo"
+);
+
+var BrazilArray = new Array(
+  "Arraial da Ajuda",
+  "Arraial do Cabo",
+  "Bahia",
+  "Belo Horizonte",
+  "Bombinhas",
+  "Buzios",
+  "Cabo Frio",
+  "Canoa Quebrada",
+  "Cuiaba",
+  "Curitiba",
+  "Extrema",
+  "Florianopolis",
+  "Fortaleza",
+  "Foz do Iguacu",
+  "Ilha do Mel",
+  "Ilha Grande",
+  "Ilheus",
+  "Imbassai",
+  "Itacare",
+  "Lencois",
+  "Manaus",
+  "Maragogi",
+  "Natal",
+  "Nova Friburgo",
+  "Olivenca",
+  "Paraty",
+  "Peruibe",
+  "Petropolis",
+  "Pipa",
+  "Porto Seguro",
+  "Rio de Janeiro",
+  "Salvador",
+  "Sana",
+  "Sao Paulo",
+  "Saquarema",
+  "Serra da Canastra",
+  "Trancoso"
+);
+
+var BruneiArray = new Array(
+  "Bandar Seri Begawan"
+);
+
+var BulgariaArray = new Array(
+  "Arbanassi",
+  "Balchik",
+  "Bansko",
+  "Blagoevgrad",
+  "Burgas",
+  "Dryanovo",
+  "Kresna",
+  "Kyustendil",
+  "Nesebar",
+  "Plovdiv",
+  "Russe",
+  "Sinemoretz",
+  "Sofia",
+  "Troyan",
+  "Varna",
+  "Veliko Tarnovo",
+  "Vitosha"
+);
+
+var BurkinaFasoArray = new Array(
+  "Burkina Faso"
+);
+
+var CambodiaArray = new Array(
+  "Phnom Penh",
+  "Siem Reap",
+  "Sihanoukville"
+);
+
+var CameroonArray = new Array(
+  "Bamenda"
+);
+
+var CanadaArray = new Array(
+  "Banff",
+  "Barrie",
+  "Bella Coola",
+  "British Columbia",
+  "Calgary",
+  "Campbell River",
+  "Clearwater/Wells Gray",
+  "Dalhousie",
+  "Dawson City",
+  "Edmonton",
+  "Fernie",
+  "Fredericton",
+  "Golden",
+  "Grand Falls - Windsor NL",
+  "Gros Morne National Park",
+  "Jasper",
+  "Kelowna",
+  "Lake St. Peter",
+  "London",
+  "Madawaska",
+  "Moncton",
+  "Mont-Tremblant",
+  "Montreal",
+  "Nanaimo",
+  "Nelson",
+  "Niagara Falls",
+  "Nova Scotia",
+  "Ontario",
+  "Ottawa",
+  "Pemberton",
+  "Penticton",
+  "Port Alberni",
+  "Port Hardy",
+  "Powell River",
+  "Prince Edward Island",
+  "Prince George",
+  "Prince Rupert",
+  "Qualicumbeach",
+  "Quebec",
+  "Regina",
+  "Revelstoke",
+  "Rimouski",
+  "Riviere-du-Loup",
+  "Saint John",
+  "Saint Sauveur",
+  "Sainte-Anne-Des-Monts",
+  "Saskatoon",
+  "Squamish",
+  "St. John",
+  "St. John's",
+  "Surrey",
+  "Toronto",
+  "Trois-Rivieres",
+  "Ucluelet",
+  "Val-David",
+  "Vancouver",
+  "Vancouver Island",
+  "Vernon",
+  "Victoria",
+  "Wasaga Beach",
+  "Whistler",
+  "Whitney",
+  "Windsor",
+  "Winnipeg",
+  "Yukon"
+);
+
+var CapeVerdeArray = new Array(
+  "Mindelo"
+);
+
+var ChileArray = new Array(
+  "Arica",
+  "Chanco",
+  "Coquimbo",
+  "Curacautin",
+  "Easter Island",
+  "Iquique",
+  "La Serena",
+  "Pucon",
+  "Puerto Montt",
+  "Puerto Natales",
+  "Puerto Octay",
+  "Puerto Varas",
+  "Puerto Williams",
+  "Punta Arenas",
+  "San Pedro de Atacama",
+  "Santiago",
+  "Temuco",
+  "Valdivia",
+  "Valparaiso",
+  "Villarrica",
+  "Vina del Mar"
+);
+
+var ChinaArray = new Array(
+  "Beijing",
+  "Chengde",
+  "Chengdu",
+  "Chongqing",
+  "Dali",
+  "Guangzhou",
+  "Guilin",
+  "Hangzhou",
+  "Harbin",
+  "Huangshan",
+  "Jinan",
+  "Kunming",
+  "Lijiang",
+  "Luoyang",
+  "Nanjing",
+  "Nanning",
+  "Pingyao",
+  "Qingdao",
+  "Sanya",
+  "Shanghai",
+  "Shangri-la",
+  "Shenyang",
+  "Shenzhen",
+  "Suzhou",
+  "Wuhan",
+  "Wutai Mountain",
+  "Xi'an",
+  "Xiahe",
+  "Xiamen",
+  "Xinjiang",
+  "Yangshuo",
+  "Yantai"
+);
+
+var ColombiaArray = new Array(
+  "Bogota",
+  "Cali",
+  "Cartagena",
+  "Cartagena de indias",
+  "Medellin",
+  "Nuqui",
+  "San Andres Island",
+  "Santa Marta",
+  "Taganga",
+  "Tolu"
+);
+
+var CookIslandsArray = new Array(
+  "Mangaia Island",
+  "Rarotonga",
+  "Titikaveka"
+);
+
+var CostaRicaArray = new Array(
+  "Alajuela",
+  "Arenal Nuevo",
+  "Cahuita",
+  "Caño Negro",
+  "Cartago",
+  "Heredia",
+  "Jaco",
+  "La Fortuna",
+  "La Trinidad",
+  "Liberia",
+  "Limon",
+  "Londres",
+  "Mal Pais",
+  "Manuel Antonio",
+  "Monteverde",
+  "Playa Dominical",
+  "Playa Hermosa",
+  "Playa Tamarindo",
+  "Playas del Coco",
+  "Puriscal",
+  "Quepos",
+  "Rincón de la Vieja National Park",
+  "San Jose",
+  "Santa Elena",
+  "Santa Teresa",
+  "Sarapiqui",
+  "Tortuguero",
+  "Uvita"
+);
+
+var CroatiaArray = new Array(
+  "Baska Voda",
+  "Brac",
+  "Cavtat",
+  "Ciovo and Trogir",
+  "Dubrovnik",
+  "Hvar",
+  "Istria",
+  "Jelsa",
+  "Kastel Stafilic",
+  "Kastela",
+  "Makarska",
+  "Makarska Riviera",
+  "Mali Losinj",
+  "Medulin",
+  "Mokosica",
+  "North Dalmatia",
+  "Novalja",
+  "Omis",
+  "Opatija",
+  "Orebic",
+  "Peljesac Peninsula",
+  "Porec",
+  "Pula",
+  "Rab",
+  "Rovinj",
+  "Sibenik Region",
+  "Split",
+  "Split Region",
+  "Trogir",
+  "Trstenik",
+  "Vinisce",
+  "Vis",
+  "Zagreb"
+);
+
+var CubaArray = new Array(
+  "Camaguey",
+  "Cienfuegos",
+  "Havana",
+  "Isla de la Juventud",
+  "Matanzas",
+  "Miramar",
+  "Old Havana",
+  "Santa Clara",
+  "Santiago de Cuba",
+  "Trinidad",
+  "Varadero",
+  "Vedado",
+  "Viñales"
+);
+
+var CyprusArray = new Array(
+  "Arsos",
+  "Ayia Marina",
+  "Ayia Napa",
+  "Girne",
+  "Kyrenia",
+  "Larnaca",
+  "Lefke",
+  "Limassol",
+  "Lythrodontas",
+  "Magusa",
+  "Oroklini Larnaca",
+  "Paphos",
+  "Pedhoulas",
+  "Platres"
+);
+
+var CzechRepublicArray = new Array(
+  "Brno",
+  "Cesky Krumlov",
+  "Jindrichuv Hradec",
+  "Karlovy Vary",
+  "Loucovice",
+  "North Bohemia",
+  "Olomouc",
+  "Pec pod Snizkou",
+  "Plzen",
+  "Prague",
+  "Telc",
+  "Valtice"
+);
+
+var DenmarkArray = new Array(
+  "Aabenraa",
+  "Aarhus",
+  "Copenhagen",
+  "Stege"
+);
+
+var DominicaArray = new Array(
+  "Portsmouth",
+  "Rosalie"
+);
+
+var DominicanRepublicArray = new Array(
+  "Bonao",
+  "Cabarete",
+  "La Barbacoa",
+  "Las Terrenas",
+  "Santa Barbara de Samana",
+  "Santo Domingo",
+  "Sosua"
+);
+
+var EcuadorArray = new Array(
+  "Baeza",
+  "Banos",
+  "Coca",
+  "Coca - Yasuni National Park",
+  "Cuenca",
+  "Guayaquil",
+  "Isinlivi",
+  "Manglaralto",
+  "Mindo",
+  "Otavalo",
+  "Pastocalle",
+  "Puerto Lopez",
+  "Puerto Quito",
+  "Quito",
+  "Salinas",
+  "San Pedro",
+  "Tena"
+);
+
+var EgyptArray = new Array(
+  "Alexandria",
+  "Aswan",
+  "Bahariya Oasis",
+  "Cairo",
+  "Dahab",
+  "Hurghada",
+  "Luxor",
+  "Nuweiba",
+  "Sharm El Sheikh",
+  "Sinai"
+);
+
+var ElSalvadorArray = new Array(
+  "Cuscatlan",
+  "Juayua",
+  "La Libertad",
+  "San Salvador"
+);
+
+var EnglandArray = new Array(
+  "Ambleside",
+  "Ashby de la Zouch",
+  "Bath",
+  "Berkshire",
+  "Berwick on Tweed",
+  "Birmingham",
+  "Blackpool",
+  "Bournemouth",
+  "Bradford",
+  "Brighton",
+  "Bristol",
+  "Bude",
+  "Burnham Deepdale",
+  "Cambridge",
+  "Canterbury",
+  "Chester",
+  "Chorley",
+  "Coalport",
+  "Codicote - Luton",
+  "Cornwall",
+  "Coventry",
+  "Cumbria",
+  "Derby",
+  "Dover",
+  "East Sussex",
+  "Essex",
+  "Exeter",
+  "Falmouth",
+  "Folkestone",
+  "Gateshead",
+  "Gatwick",
+  "Gloucestershire",
+  "Great Glen",
+  "Guernsey",
+  "Harlow",
+  "Harrow",
+  "Hastings",
+  "Hawes",
+  "Heathrow",
+  "Hexham",
+  "Hull",
+  "Jersey",
+  "Kent",
+  "Keswick",
+  "Lake District",
+  "Ledbury",
+  "Lee Valley - Stansted Airport",
+  "Leeds",
+  "Liverpool",
+  "London",
+  "Luton",
+  "Manchester",
+  "Middlesbrough",
+  "Middlesex",
+  "Newcastle upon Tyne",
+  "Newquay",
+  "North Yorkshire",
+  "Nottingham",
+  "Oxford",
+  "Oxfordshire",
+  "Penzance",
+  "Plymouth",
+  "Reading",
+  "Royston",
+  "Ruislip",
+  "Salisbury",
+  "Sittingbourne",
+  "Southampton",
+  "St Ives",
+  "Stansted",
+  "Stratford-upon-Avon",
+  "Surrey",
+  "Swanage",
+  "Torquay",
+  "Warwick",
+  "West Yorkshire",
+  "Winchester",
+  "Windermere",
+  "Windsor",
+  "York"
+);
+
+var EstoniaArray = new Array(
+  "Kuressaare",
+  "Parnu",
+  "South East Estonia",
+  "Tallinn",
+  "Tartu",
+  "West Estonia"
+);
+
+var FijiArray = new Array(
+  "Beachcomber Island",
+  "Coral Coast",
+  "Kadavu",
+  "Lautoka",
+  "Malolo Island",
+  "Mana Beach",
+  "Nadi",
+  "Pacific Harbour",
+  "Rakiraki",
+  "Savusavu",
+  "Sigatoka",
+  "Suva",
+  "Taveuni",
+  "Yanuca Island",
+  "Yasawa Islands"
+);
+
+var FinlandArray = new Array(
+  "Helsinki",
+  "Inari",
+  "Kotka",
+  "Rovaniemi",
+  "Sotkamo",
+  "Tervola",
+  "Vaasa"
+);
+
+var FranceArray = new Array(
+  "Albi",
+  "Amboise",
+  "Annecy",
+  "Antibes",
+  "Arles",
+  "Avignon",
+  "Bandol",
+  "Baux de Provence",
+  "Beaucaire",
+  "Beaufortain",
+  "Beaune",
+  "Bergerac",
+  "Beziers",
+  "Biarritz",
+  "Bigluglia",
+  "Bordeaux",
+  "Bourg St. Maurice",
+  "Brest",
+  "Cairanne",
+  "Cannes",
+  "Carcassonne",
+  "Carqueiranne",
+  "Castres",
+  "Chalon Sur Saone",
+  "Chamonix",
+  "Congenies",
+  "Correze",
+  "Courbevoie",
+  "Crozon",
+  "Dijon",
+  "Dinan",
+  "Draguignan",
+  "Faverges",
+  "Font Romeu",
+  "Gironde",
+  "Gourdon",
+  "Grasse",
+  "Grenoble",
+  "Grigny",
+  "Honfleur",
+  "Hyeres",
+  "Issy les Moulineaux",
+  "Joue les Tours",
+  "Juan les Pins",
+  "La Reole",
+  "Le Lavandou",
+  "Le Mans",
+  "Les Arcs",
+  "Les Mureaux",
+  "Lille",
+  "Limay",
+  "Limoges",
+  "Lourdes",
+  "Lucciana",
+  "Lyon",
+  "Marseille",
+  "Mazamet",
+  "Menton",
+  "Mimizan Beach",
+  "Montpellier",
+  "Morzine",
+  "Mouliherne",
+  "Nanterre",
+  "Nantes",
+  "Narbonne",
+  "Nice",
+  "Nimes",
+  "Orange",
+  "Orly",
+  "Ouistreham",
+  "Paris",
+  "Paris-Disneyland",
+  "Paris-Saint Denis",
+  "Pau",
+  "Perigueux",
+  "Perpignan",
+  "Poitiers",
+  "Pommeuse",
+  "Pontault Combault",
+  "Pontlevot",
+  "Prayssac",
+  "Reims",
+  "Rouen",
+  "Rubelles",
+  "Ruffec",
+  "Sahorre",
+  "Saint Cyr sur Mer",
+  "Saint Julien en Genevois",
+  "Saint Martin de Villereglan",
+  "Saint Michel de Lanes",
+  "Saint Raphael",
+  "Saint Remy de Provence",
+  "Saint-Malo",
+  "Saintes Maries de la Mer",
+  "Salleles dAude",
+  "Sanary",
+  "Saumur",
+  "Savigny le Temple",
+  "Six Fours les Plages",
+  "Soupex",
+  "St Emilion",
+  "St Paul",
+  "St. Palais de Phiolin",
+  "Strasbourg",
+  "Toulouse",
+  "Tours",
+  "Varetz",
+  "Vence",
+  "Versailles",
+  "Verteuil sur Charente",
+  "Villefranche de Rouergue",
+  "Villeneuve Loubet",
+  "Vouzon"
+);
+
+var FrenchPolynesiaArray = new Array(
+  "Huahine"
+);
+
+var GambiaArray = new Array(
+  "Banjul",
+  "Brufut",
+  "Kololi"
+);
+
+var GermanyArray = new Array(
+  "Aachen",
+  "Albbruck-Unteralpfen",
+  "Augsburg",
+  "Bad Neuenahr",
+  "Baden-Baden",
+  "Belzig",
+  "Berlin",
+  "Bitburg",
+  "Bochum",
+  "Bonn",
+  "Bottrop",
+  "Bremen",
+  "Cologne",
+  "Dinkelsbuehl",
+  "Dortmund",
+  "Dreilinden",
+  "Dresden",
+  "Duisburg",
+  "Dusseldorf",
+  "Erfurt",
+  "Essen",
+  "Fischen",
+  "Flensburg",
+  "Frankfurt",
+  "Frankfurt am Main",
+  "Frankfurt Hahn",
+  "Freiburg",
+  "Friedrichshafen",
+  "Fussen",
+  "Garmisch-Partenkirchen",
+  "Gersfeld",
+  "Halle",
+  "Hamburg",
+  "Hannover",
+  "Heide",
+  "Heidelberg",
+  "Heilbronn",
+  "Holsthum",
+  "Kassel",
+  "Kiel",
+  "Kobern-Gondorf",
+  "Koblenz",
+  "Leipzig",
+  "Lubeck",
+  "Magdeburg",
+  "Mannheim",
+  "Munich",
+  "Munster",
+  "Neustadt im Harz",
+  "Nuremberg",
+  "Oberzollhaus",
+  "Offenbach",
+  "Offenburg",
+  "Osnabruck",
+  "Regensburg",
+  "Rostock",
+  "Rothenburg",
+  "Saarbrucken",
+  "Schweinfurt",
+  "Sinzig",
+  "Steinfeld",
+  "Stuttgart",
+  "Weimar",
+  "Wiesbaden",
+  "Wilhelmshaven",
+  "Wuppertal",
+  "Wurzburg"
+);
+
+var GhanaArray = new Array(
+  "Accra",
+  "Busua",
+  "Cape Coast",
+  "Ho, Volta Region"
+);
+
+var GreeceArray = new Array(
+  "Aegina",
+  "Agios Nikolaos",
+  "Alexandroupolis",
+  "Alonissos",
+  "Andros",
+  "Argalasti",
+  "Athens",
+  "Chalkidiki",
+  "Chania",
+  "Corfu",
+  "Crete",
+  "Epirus",
+  "Evia",
+  "Fira",
+  "Gavdos",
+  "Hydra",
+  "Ios",
+  "Kalithies Rodou",
+  "Karpathos",
+  "Kefalonia",
+  "Kissos",
+  "Kos",
+  "Lagonissi",
+  "Lassithi",
+  "Loutraki",
+  "Matala",
+  "Mykonos",
+  "Naoussa",
+  "Naxos",
+  "Olympia",
+  "Parga",
+  "Parikia",
+  "Paros",
+  "Pelion",
+  "Perissa",
+  "Perivolos",
+  "Poros Island",
+  "Porto Heli",
+  "Rhodes",
+  "Roda",
+  "Samos",
+  "Santorini",
+  "Sifnos",
+  "Sithonia",
+  "Skiathos",
+  "Skiathos Island",
+  "Skyros",
+  "Syros",
+  "Thassos Island",
+  "Thessaloniki",
+  "Tinos",
+  "Tsilivi",
+  "Zakynthos",
+  "Zante"
+);
+
+var GreenlandArray = new Array(
+  "Qaqortoq"
+);
+
+var GuadeloupeArray = new Array(
+  "Pointe Noire",
+  "Saint Francois"
+);
+
+var GuatemalaArray = new Array(
+  "Antigua",
+  "El Remate",
+  "Guatemala City",
+  "Jaibalito",
+  "Lake Atitlan",
+  "Quetzaltenango",
+  "San Jose Pinula",
+  "San Juan",
+  "Santiago Sacatepequez"
+);
+
+var HaitiArray = new Array(
+  "Port Salut"
+);
+
+var HondurasArray = new Array(
+  "Copan Ruinas",
+  "La Ceiba",
+  "Roatan",
+  "San Pedro Sula",
+  "Tegucigalpa",
+  "Tela"
+);
+
+var HongKongArray = new Array(
+  "Causeway Bay",
+  "Central District",
+  "Kowloon"
+);
+
+var HungaryArray = new Array(
+  "Balaton",
+  "Balatonlelle",
+  "Balatonszemes",
+  "Budapest",
+  "Gyenesdias",
+  "Hegyko",
+  "Heviz",
+  "Kaposujlak",
+  "Kecskemet",
+  "Mohacs",
+  "Nagykanizsa",
+  "Pecs",
+  "Siofok",
+  "Szeged"
+);
+
+var IcelandArray = new Array(
+  "Akureyri",
+  "Grundarfjordur",
+  "Keflavik",
+  "Reykjavik"
+);
+
+var IndiaArray = new Array(
+  "Agra",
+  "Ahmedabad",
+  "Ajmer",
+  "Alappuzha",
+  "Alleppey",
+  "Anjuna",
+  "Bangalore",
+  "Bikaner",
+  "Chennai",
+  "Cochin",
+  "Darjeeling",
+  "Dehradun",
+  "Dharamsala",
+  "Ernakulam",
+  "Goa",
+  "Hardwar",
+  "Jaipur",
+  "Jaisalmer",
+  "Jalandhar",
+  "Jodhpur",
+  "Kamshet",
+  "Kanchipuram",
+  "Kanha",
+  "Kanha National Park",
+  "Kerala",
+  "Kodaikanal",
+  "Kottayam",
+  "Kovalam",
+  "Lonavala",
+  "Madurai",
+  "Mahabalipuram",
+  "Manali",
+  "Mount Abu",
+  "Mumbai",
+  "Muttukadu",
+  "Mysore",
+  "Nagothane",
+  "Nainital",
+  "Nawalgarh",
+  "New Delhi",
+  "North Goa",
+  "Panjim",
+  "Pondicherry",
+  "Port Blair",
+  "Pune",
+  "Pushkar",
+  "Rajasthan",
+  "Ranthambhore",
+  "Rishikesh",
+  "Shillong",
+  "Shimla",
+  "Thanjavur",
+  "Tiruchirapalli",
+  "Trivandrum",
+  "Udaipur",
+  "Varanasi",
+  "Vellore"
+);
+
+var IndonesiaArray = new Array(
+  "Bali",
+  "Batam",
+  "Biak",
+  "Denpasar",
+  "Jakarta",
+  "Kuta",
+  "Kuta Beach",
+  "Lombok",
+  "Pecatu",
+  "Singaraja",
+  "Tabanan",
+  "Yogyakarta"
+);
+
+var IrelandArray = new Array(
+  "Achill Island",
+  "Adare",
+  "Annascaul",
+  "Aran Islands",
+  "Ashford",
+  "Ballinasloe",
+  "Ballinhassig",
+  "Ballinskelligs",
+  "Ballycotton",
+  "Ballyferriter",
+  "Ballylongford",
+  "Ballyvaughan",
+  "Baltimore",
+  "Bandon",
+  "Bantry",
+  "Bawnboy",
+  "Beara",
+  "Beaufort",
+  "Belturbet",
+  "Boyle",
+  "Bray",
+  "Buncrana",
+  "Bundoran",
+  "Cahersiveen",
+  "Carlow",
+  "Cashel",
+  "Castlebar",
+  "Clear Island",
+  "Clifden",
+  "Clonakilty",
+  "Cobh",
+  "Cong",
+  "Connemara",
+  "Cootehill",
+  "Cork",
+  "Corofin",
+  "Dingle",
+  "Donegal",
+  "Doolin",
+  "Dublin",
+  "Dundalk",
+  "Dunfanaghy",
+  "Dunmanway",
+  "Ennis",
+  "Galway",
+  "Kells",
+  "Kenmare",
+  "Kerry",
+  "Kilfenora",
+  "Kilfinane",
+  "Kilkee",
+  "Kilkenny",
+  "Killarney",
+  "Killybegs",
+  "Kilrush",
+  "Kinsale",
+  "Kinvara",
+  "Lahinch",
+  "Limerick",
+  "Lisdoonvarna",
+  "Maynooth",
+  "Midleton",
+  "Mullingar",
+  "New Ross",
+  "Newcastle West",
+  "Newgrange",
+  "Newmarket on Fergus",
+  "Newport",
+  "Offaly",
+  "Oughterard",
+  "Portmagee",
+  "Rathgormack",
+  "Rosslare Harbour",
+  "Shannon",
+  "Shannon Harbour",
+  "Skibbereen",
+  "Sligo",
+  "Sneem",
+  "Swanlinbar",
+  "Tarbert",
+  "The Burren",
+  "Tipperary",
+  "Tralee",
+  "Waterford",
+  "Waterville",
+  "Westmeath",
+  "Westport",
+  "Wexford",
+  "Wicklow",
+  "Youghal"
+);
+
+var IsraelArray = new Array(
+  "Jerusalem",
+  "Nahariya",
+  "Nazareth",
+  "Tel Aviv"
+);
+
+var ItalyArray = new Array(
+  "Abano Terme",
+  "Abbadia San Salvatore-Siena",
+  "Acicastello",
+  "Acireale",
+  "Acquapendente",
+  "Agnone",
+  "Agrigento",
+  "Alghero",
+  "Amalfi",
+  "Ancona",
+  "Andria",
+  "Arbus",
+  "Arezzo",
+  "Argegno",
+  "Ascoli Piceno",
+  "Asiago",
+  "Assisi",
+  "Asti",
+  "Azzani - Loiri Porto san Paolo",
+  "Barberino del Mugello",
+  "Barberino Val d'Elsa",
+  "Bardolino",
+  "Bari",
+  "Barletta",
+  "Bedizzole",
+  "Bergamo",
+  "Bergamo-Foresto Sparso",
+  "Bologna",
+  "Bolzano",
+  "Borzonasca",
+  "Bosa",
+  "Brembate",
+  "Brescia",
+  "Brindisi",
+  "Buonopane",
+  "Cagliari",
+  "Cala Gonone",
+  "Calco",
+  "Caldogno",
+  "Caltagirone",
+  "Camaiore-Lucca",
+  "Camerana",
+  "Campofelice di Roccella",
+  "Cannobio",
+  "Capri",
+  "Caprie Val Susa",
+  "Carlentini",
+  "Casole D'elsa",
+  "Cassine",
+  "Cassino",
+  "Castelgandolfo",
+  "Castellana Grotte",
+  "Castiglione D'orcia",
+  "Catania",
+  "Cattolica",
+  "Cava de' Tirreni",
+  "Cavriglia",
+  "Cefalu",
+  "Ceraso",
+  "Certaldo",
+  "Cervia",
+  "Cesana Torinese",
+  "Cesano di Roma",
+  "Cesena",
+  "Chianciano",
+  "Chioggia",
+  "Chiusi",
+  "Ciampino",
+  "Cinque Terre",
+  "Civita Castellana",
+  "Civitavecchia",
+  "Colle di Val D'Elsa",
+  "Collepietro",
+  "Como",
+  "Conflenti",
+  "Controguerra",
+  "Cortona",
+  "Courmayeur",
+  "Cropani Marina",
+  "Deiva Marina",
+  "Desenzano del Garda",
+  "Dobbiaco",
+  "Dolceacqua",
+  "Dolo",
+  "Empoli",
+  "Erice",
+  "Este",
+  "Etna",
+  "Falcade",
+  "Feltre",
+  "Ferentillo",
+  "Ferrara",
+  "Fiesole",
+  "Fiumicino",
+  "Florence",
+  "Foligno",
+  "Forli",
+  "Francavilla al mare Ortona",
+  "Frascati",
+  "Furore",
+  "Gaeta",
+  "Gallipoli",
+  "Genoa",
+  "Giardini Naxos",
+  "Giarre",
+  "Gibellina",
+  "Greve in Chianti",
+  "Grosseto",
+  "Grosseto Roccatederighi",
+  "Guardavalle",
+  "Gubbio",
+  "Impruneta",
+  "Ischia",
+  "Iseo",
+  "Isola Rossa",
+  "Isole Eolie",
+  "L' Aquila",
+  "La Spezia",
+  "Lake Garda",
+  "Lake of Como-Gravedona",
+  "Lake of Iseo",
+  "Lake Trasimeno",
+  "Lamezia",
+  "Lamezia Terme",
+  "Lanciole",
+  "Lanuvio",
+  "Lecce",
+  "Lecce Vernole",
+  "Lerici",
+  "Levico Terme",
+  "Lido di Jesolo",
+  "Lipari",
+  "Livorno",
+  "Lizzano in Belvedere",
+  "Lovere",
+  "Lucca",
+  "Lunamatrona",
+  "Macerata",
+  "Magliano Sabina",
+  "Maida",
+  "Maiori",
+  "Malpensa",
+  "Mantignana",
+  "Marina di Massa",
+  "Marina di Pietrasanta",
+  "Marina Romea",
+  "Massa Lubrense",
+  "Mazara del Vallo",
+  "Merano",
+  "Merate",
+  "Mercato San Severino",
+  "Messina",
+  "Mestre",
+  "Meta di Sorrento",
+  "Miane",
+  "Miglianico",
+  "Milan",
+  "Mira",
+  "Miramare di Rimini",
+  "Modena",
+  "Modica",
+  "Montecatini Terme",
+  "Montecatini Val di Cecina",
+  "Montechiaro",
+  "Montepulciano",
+  "Monteriggioni",
+  "Montichiari",
+  "Monzuno",
+  "Mozzo",
+  "Murlo",
+  "Naples",
+  "Naples-Sant'Antimo",
+  "Nicolosi",
+  "Notaresco",
+  "Noto",
+  "Nova Ponente",
+  "Olbia",
+  "Olmedo",
+  "Oria",
+  "Oristano",
+  "Orvieto",
+  "Ostuni",
+  "Otranto",
+  "Padua",
+  "Paestum",
+  "Palaia",
+  "Palermo",
+  "Palmadula",
+  "Parma",
+  "Pedara",
+  "Perugia",
+  "Pesaro",
+  "Pescara",
+  "Peschiera Borromeo",
+  "Peschiera del Garda",
+  "Pescosolido",
+  "Piacenza",
+  "Piano di Sorrento",
+  "Pienza",
+  "Pietralunga",
+  "Piombino",
+  "Pisa",
+  "Pistoia",
+  "Poggibonsi",
+  "Poggiofiorito",
+  "Pompei",
+  "Ponte San Pietro",
+  "Pontedera",
+  "Porretta Terme",
+  "Porto Recanati",
+  "Portofino-Leivi",
+  "Positano",
+  "Possagno",
+  "Pozzallo",
+  "Pozzuoli-Naples",
+  "Praiano",
+  "Prato",
+  "Pula",
+  "Quiliano",
+  "Radda in Chianti",
+  "Ranica",
+  "Ravenna",
+  "Rieti",
+  "Rimini",
+  "Ripa Teatina",
+  "Riva del Garda",
+  "Roccadaspide",
+  "Rodi Garganico",
+  "Rome",
+  "Rome Cesano",
+  "Rosolina",
+  "Rovereto",
+  "Rubiana Susa Valley",
+  "S.Agata Sui Due Golfi",
+  "Salerno",
+  "Salerno-Raito di Vietri Sul Mare",
+  "Salsomaggiore Terme",
+  "San Fedele D'Intelvi",
+  "San Felice Circeo",
+  "San Gimignano",
+  "San Giorgio",
+  "San Giovanni Rotondo",
+  "San Giuliano Terme",
+  "San Pietro di Feletto",
+  "San Remo",
+  "San Teodoro",
+  "San Vito Lo Capo",
+  "Sant Agnello",
+  "Sant Alessio Siculo",
+  "Sant' Agata sui due Golfi",
+  "Santa Margherita Ligure",
+  "Sapri",
+  "Sassari",
+  "Sassetta",
+  "Saturnia",
+  "Savigno",
+  "Sciacca",
+  "Segesta",
+  "Seiano of Sorrento",
+  "Selinunte",
+  "Senigallia",
+  "Sermoneta",
+  "Sesto Fiorentino",
+  "Siena",
+  "Silvi Marina",
+  "Sinalunga",
+  "Siracusa",
+  "Sorrento",
+  "Sovicille",
+  "Spello",
+  "Spoleto",
+  "St Antonio di Antadi",
+  "Stazzema",
+  "Stresa",
+  "Stromboli",
+  "Subbiano",
+  "Susa",
+  "Syracuse",
+  "Taormina",
+  "Tavarnelle Val di Pesa",
+  "Termini Imerese",
+  "Todi",
+  "Torre dei Corsari",
+  "Torre di Ruggiero",
+  "Tottubella",
+  "Tovena",
+  "Trani",
+  "Trapani",
+  "Trento",
+  "Treviso",
+  "Trieste",
+  "Trieste-Airport",
+  "Tropea",
+  "Turin",
+  "Vaglia",
+  "Valdidentro",
+  "Valeggio sul Mincio",
+  "Valledoria",
+  "Vasto Marina",
+  "Venice",
+  "Venice Chioggia",
+  "Venice Dolo",
+  "Venice Lido",
+  "Venice Mestre",
+  "Venice Mira",
+  "Venice Oriago",
+  "Venice Tessera",
+  "Venice-Malcontenta",
+  "Venice-Mirano",
+  "Ventimiglia",
+  "Verbania",
+  "Vergemoli",
+  "Verona",
+  "Viareggio",
+  "Vieste",
+  "Vignale Monferrato",
+  "Viterbo",
+  "Vittorio Veneto",
+  "Volterra",
+  "Zafferana Etnea"
+);
+
+var JamaicaArray = new Array(
+  "Browns Town",
+  "Christiana",
+  "Kingston",
+  "Montego Bay",
+  "Negril",
+  "Ocho Rios",
+  "Port Antonio",
+  "Port Maria",
+  "Priory",
+  "St Andrew",
+  "St Ann's Bay",
+  "St. Ann Runaway Bay",
+  "St. Mary",
+  "Treasure Beach",
+  "Westmoreland"
+);
+
+var JapanArray = new Array(
+  "Aomori",
+  "Beppu Spa Resort",
+  "Fukuoka City",
+  "Fukushima Prefecture",
+  "Gifu city",
+  "Hakodate",
+  "Hakone National Park",
+  "Hida Takayama",
+  "Hiroshima",
+  "Hokkaido",
+  "Ise-shima National Park",
+  "Iwate Prefecture",
+  "Izu Peninsula",
+  "Kanazawa",
+  "Kansai International Airport",
+  "Kinugawa Spa (Nikko National Park)",
+  "Kitakyushu city",
+  "Kobe",
+  "Kochi",
+  "Kurashiki city",
+  "Kyoto",
+  "Maruyama",
+  "Mount Fuji",
+  "Nagano",
+  "Nagasaki",
+  "Nagoya",
+  "Nara",
+  "Nara (Sakurai city)",
+  "Narita City",
+  "Narita Int'l AP",
+  "Nasu",
+  "Nikko",
+  "Okinawa",
+  "Osaka",
+  "Sapporo",
+  "Shizuoka",
+  "Tanabe",
+  "Tokyo",
+  "Ureshino Spa",
+  "Volcano Aso",
+  "Yokohama City"
+);
+
+var JordanArray = new Array(
+  "Amman",
+  "Dana City",
+  "Madaba",
+  "Petra"
+);
+
+var KenyaArray = new Array(
+  "Lamu",
+  "Mombasa",
+  "Nairobi",
+  "Nyahururu"
+);
+
+var KyrgyzstanArray = new Array(
+  "Bishkek"
+);
+
+var LaosArray = new Array(
+  "Luang Prabang",
+  "Phonsavan",
+  "Vientiane"
+);
+
+var LatviaArray = new Array(
+  "District of Limbazi",
+  "Liepaja",
+  "Riga",
+  "Sigulda",
+  "Tukums"
+);
+
+var LebanonArray = new Array(
+  "Beirut",
+  "Jounieh",
+  "Sidon"
+);
+
+var LiechtensteinArray = new Array(
+  "Schaan"
+);
+
+var LithuaniaArray = new Array(
+  "Druskininkai",
+  "Kaunas",
+  "Klaipeda",
+  "Vilnius"
+);
+
+var LuxembourgArray = new Array(
+  "Luxembourg"
+);
+
+var MacauArray = new Array(
+  "Macau"
+);
+
+var MacedoniaArray = new Array(
+  "Negotino",
+  "Ohrid",
+  "Skopje"
+);
+
+var MadagascarArray = new Array(
+  "Antananarivo",
+  "Majunga",
+  "Sainte Marie"
+);
+
+var MalawiArray = new Array(
+  "Blantyre",
+  "Lilongwe"
+);
+
+var MalaysiaArray = new Array(
+  "Alor Setar",
+  "Ipoh",
+  "Johor Bahru",
+  "Kota Belud",
+  "Kota Bharu",
+  "Kota Kinabalu",
+  "Kuala Lumpur",
+  "Kuantan",
+  "Kuching",
+  "Labuan",
+  "Langkawi",
+  "Melaka",
+  "Miri",
+  "Penang",
+  "Perak",
+  "Petaling Jaya",
+  "Sandakan",
+  "Semporna",
+  "Sibu Island",
+  "Taiping"
+);
+
+var MaltaArray = new Array(
+  "Bugibba",
+  "Gozo",
+  "Gzira",
+  "Mellieha",
+  "Sliema",
+  "St. Julians",
+  "Valletta",
+  "Xlendi"
+);
+
+var MauritiusArray = new Array(
+  "Belle Rose",
+  "Black River",
+  "Grand Bay",
+  "Mont Choisy",
+  "Pamplemousses",
+  "Port Louis",
+  "Quatre Bornes",
+  "Tombeau Bay",
+  "Trou aux Biches"
+);
+
+var MexicoArray = new Array(
+  "Acapulco",
+  "Bacalar",
+  "Cabo San Lucas",
+  "Campeche",
+  "Cancun",
+  "Celestun",
+  "Chihuahua",
+  "Cozumel",
+  "Cuernavaca",
+  "Ensenada",
+  "Guadalajara",
+  "Guanajuato",
+  "Isla Mujeres",
+  "La Paz",
+  "Mahahual",
+  "Merida",
+  "Mexico City",
+  "Monterrey",
+  "Morelia",
+  "Oaxaca",
+  "Papantla",
+  "Playa del Carmen",
+  "Progreso",
+  "Puebla",
+  "Puerto Escondido",
+  "Puerto Vallarta",
+  "Rosarito",
+  "San Cristobal de las Casas",
+  "San Miguel de Allende",
+  "Taxco",
+  "Tijuana",
+  "Tlaquepaque",
+  "Tulum",
+  "Valladolid",
+  "Villa Victoria",
+  "Xalapa",
+  "Yelapa",
+  "Zacatecas",
+  "Zihuatanejo"
+);
+
+var MicronesiaArray = new Array(
+  "Lelu"
+);
+
+var MoldovaArray = new Array(
+  "Chisinau",
+  "Krasnaya Besarabka",
+  "Tiraspol"
+);
+
+var MonacoArray = new Array(
+  "Monaco"
+);
+
+var MongoliaArray = new Array(
+  "Ulaanbaatar",
+  "Ulgy"
+);
+
+var MontserratArray = new Array(
+  "Montserrat"
+);
+
+var MoroccoArray = new Array(
+  "Agadir",
+  "Casablanca",
+  "Chaouen",
+  "Essaouira",
+  "Fes",
+  "Marrakech",
+  "Rabat",
+  "Tanger",
+  "Tangier",
+  "Zagora"
+);
+
+var MozambiqueArray = new Array(
+  "Maputo"
+);
+
+var MyanmarArray = new Array(
+  "Yangon"
+);
+
+var NamibiaArray = new Array(
+  "Swakopmund",
+  "Walvis Bay",
+  "Windhoek"
+);
+
+var NepalArray = new Array(
+  "Bhaktapur",
+  "Kathmandu",
+  "Pokhara",
+  "Royal Chitwan National Park"
+);
+
+var NetherlandsArray = new Array(
+  "Alem",
+  "Alkmaar",
+  "Amsterdam",
+  "Apeldoorn",
+  "Arnhem",
+  "Asten-Eindhoven",
+  "Bakkum",
+  "Bergen op Zoom",
+  "De Koog",
+  "Delft",
+  "Den Burg",
+  "Domburg",
+  "Dordrecht",
+  "Eext",
+  "Egmond",
+  "Etten-Leur",
+  "Haarlem",
+  "Heemskerk",
+  "Helmond",
+  "Hilversum",
+  "Hollum-Ameland",
+  "Huizen",
+  "Kessel",
+  "Loppersum",
+  "Maastricht",
+  "Noordwijk",
+  "Rotterdam",
+  "Sluis",
+  "Sneek",
+  "Soest",
+  "The Hague",
+  "Tilburg",
+  "Utrecht",
+  "Valkenswaard",
+  "West -Terschelling",
+  "Wijhe"
+);
+
+var NetherlandsAntillesArray = new Array(
+  "Bonaire",
+  "Saba",
+  "St. Maarten"
+);
+
+var NewZealandArray = new Array(
+  "Akaroa",
+  "Auckland",
+  "Blenheim",
+  "Charleston",
+  "Christchurch",
+  "Coromandel Peninsula",
+  "Dunedin",
+  "Fairlie",
+  "Franz Josef",
+  "Golden Bay",
+  "Greymouth",
+  "Hamilton",
+  "Invercargill",
+  "Kaikoura",
+  "Kaitaia",
+  "Kapiti Coast",
+  "KeriKeri",
+  "Lake Tekapo",
+  "Martinborough",
+  "Methven",
+  "Moeraki",
+  "Mt Cook",
+  "Napier",
+  "Nelson",
+  "New Plymouth",
+  "Oamaru",
+  "Ohakune",
+  "Opoutere",
+  "Otago",
+  "Paihia",
+  "Picton",
+  "Queenstown",
+  "Riverton",
+  "Rotorua",
+  "Taihape",
+  "Taupo",
+  "Tauranga",
+  "Te Anau",
+  "Thames",
+  "Waitomo",
+  "Wanaka",
+  "Wanganui",
+  "Wellington",
+  "Whangarei",
+  "Whitianga"
+);
+
+var NicaraguaArray = new Array(
+  "Corn Island",
+  "Granada",
+  "Jinotega",
+  "Managua",
+  "Pochomil",
+  "San Juan del Sur",
+  "Solentiname"
+);
+
+var NigeriaArray = new Array(
+  "Abuja"
+);
+
+var NorthernIrelandArray = new Array(
+  "Armagh",
+  "Ballycastle",
+  "Ballymena",
+  "Belfast",
+  "Bushmills",
+  "Castlerock",
+  "Derry",
+  "Fermanagh",
+  "Mourne Mountains",
+  "Newcastle",
+  "Omagh",
+  "Portrush"
+);
+
+var NorwayArray = new Array(
+  "Bergen",
+  "Hamar",
+  "Hellesoy",
+  "Honningsvag",
+  "Karasjok",
+  "Kristiansand",
+  "Lavik",
+  "Lillehammer",
+  "Oslo",
+  "Solvorn",
+  "Trondheim",
+  "Ulvik",
+  "Voss"
+);
+
+var OmanArray = new Array(
+  "Muscat"
+);
+
+var PanamaArray = new Array(
+  "Bocas del Toro",
+  "Boquete",
+  "Colon",
+  "David City",
+  "Las Nubes",
+  "Panama City",
+  "Penonome",
+  "Santa Rita Arriba"
+);
+
+var PapuaNewGuineaArray = new Array(
+  "Madang",
+  "Port Moresby"
+);
+
+var ParaguayArray = new Array(
+  "Altos",
+  "Asuncion"
+);
+
+var PeruArray = new Array(
+  "Arequipa",
+  "Cusco",
+  "Huaraz",
+  "Ica",
+  "Iquitos",
+  "Juliaca",
+  "Lima",
+  "Machu Picchu",
+  "Madre de Dios",
+  "Piura",
+  "Puerto Maldonado",
+  "Puno",
+  "Tarma",
+  "Trujillo"
+);
+
+var PhilippinesArray = new Array(
+  "Angeles",
+  "Boracay Island",
+  "Camiguin",
+  "Cavite",
+  "Davao City",
+  "Dumaguete",
+  "Larena  Sandugan Beach",
+  "Makati",
+  "Manila",
+  "Puerto Galera",
+  "Quezon City",
+  "Siquijor",
+  "Surigao City"
+);
+
+var PolandArray = new Array(
+  "Baligrod",
+  "Czorsztyn",
+  "Gdansk",
+  "Gniew",
+  "Grzybowo",
+  "Karpacz",
+  "Kolobrzeg",
+  "Krakow",
+  "Leba",
+  "Lodz",
+  "Lupkow",
+  "Nowe",
+  "Poznan",
+  "Sobacz",
+  "Sopot",
+  "Ustka",
+  "Warsaw",
+  "Wroclaw",
+  "Zakopane"
+);
+
+var PortugalArray = new Array(
+  "Albufeira",
+  "Caldas da Rainha",
+  "Cascais",
+  "Coimbra",
+  "Costa da Caparica",
+  "Evora",
+  "Faro",
+  "Fatima",
+  "Figueira da Foz",
+  "Funchal",
+  "Lagos",
+  "Lisbon",
+  "Lisbon-Alenquer",
+  "Nazare",
+  "Obidos",
+  "Pinhao",
+  "Ponta Delgada",
+  "Porches-Algarbe",
+  "Porto",
+  "Queluz-Lisbon",
+  "Santa Clara a Velha",
+  "Serra D'el Rei-Peniche",
+  "Setubal",
+  "Sintra",
+  "St Antonio da Caparica",
+  "Tavira",
+  "Viana do Castelo",
+  "Vila Nova de Gaia",
+  "Vilamoura-Loule",
+  "Viseu"
+);
+
+var PuertoRicoArray = new Array(
+  "Lajas",
+  "Rincon",
+  "Rio Blanco",
+  "San Juan"
+);
+
+var ReunionArray = new Array(
+  "Entre Deux",
+  "Saint Denis",
+  "Salazie",
+  "St Gilles les Hauts"
+);
+
+var RomaniaArray = new Array(
+  "Bran",
+  "Brasov",
+  "Bucharest",
+  "Busteni",
+  "Cluj-Napoca",
+  "Danube Delta",
+  "Galati",
+  "Gura Humorului",
+  "Gura Raului",
+  "Maramures",
+  "Nasaud",
+  "Rasinari",
+  "Salciua",
+  "Saliste",
+  "Sibiel",
+  "Sibiu",
+  "Sighisoara",
+  "Suceava",
+  "Vama"
+);
+
+var RussiaArray = new Array(
+  "Irkutsk",
+  "Listvyanka",
+  "Moscow",
+  "Olkhon Island",
+  "St Petersburg"
+);
+
+var SaintLuciaArray = new Array(
+  "Castries",
+  "Gros Islet",
+  "Mamiku",
+  "Marigot Bay",
+  "Micoud",
+  "Rodney Bay",
+  "Vieux Fort"
+);
+
+var SamoaArray = new Array(
+  "Apia",
+  "Savaii"
+);
+
+var ScotlandArray = new Array(
+  "Aberdeen",
+  "Aviemore",
+  "Ayr",
+  "Ayrshire",
+  "Ballater",
+  "Banff",
+  "Ben Lomond",
+  "Braemar",
+  "Canisbay",
+  "Carbisdale",
+  "Coldingham",
+  "Crianlarich",
+  "Crieff",
+  "Dumfries",
+  "Edinburgh",
+  "Falkirk",
+  "Falkland",
+  "Fort William",
+  "Gairloch",
+  "Garve",
+  "Glasgow",
+  "Glencoe",
+  "Glendevon",
+  "Glenmoriston",
+  "Grantown-on-Spey",
+  "Inveraray",
+  "Inverey by Braemar",
+  "Inverness",
+  "Inverurie",
+  "Isle of Arran",
+  "Isle of Skye",
+  "Kelso",
+  "Killin",
+  "Kingussie",
+  "Kirkwall",
+  "Kyle",
+  "Kyle of Lochalsh",
+  "Lairg",
+  "Loch Lomond",
+  "Loch Ness",
+  "Melrose",
+  "New Lanark",
+  "Newtonmore",
+  "Oban",
+  "Orkney Islands",
+  "Perth",
+  "Pitlochry",
+  "Prestwick",
+  "Skye",
+  "Spean Bridge",
+  "St Andrews",
+  "Stirling",
+  "Stirlingshire",
+  "Sutherland",
+  "Thurso",
+  "Tomintoul",
+  "Tongue",
+  "Torridon",
+  "Troon",
+  "Ullapool",
+  "Wanlockhead",
+  "Yarrowford"
+);
+
+var SenegalArray = new Array(
+  "Dakar"
+);
+
+var SerbiaandMontenegroArray = new Array(
+  "Belgrade",
+  "Budva",
+  "Kotor"
+);
+
+var SeychellesArray = new Array(
+  "Mahe Island"
+);
+
+var SingaporeArray = new Array(
+  "Singapore"
+);
+
+var SlovakiaArray = new Array(
+  "Banska Stiavnica",
+  "Bratislava",
+  "Dobsina",
+  "High Tatras",
+  "Hrabusice",
+  "Kosice",
+  "Liptov Region",
+  "Liptovsky Hradok",
+  "Liptovsky Mikulas",
+  "Low Tatras",
+  "Ruzomberok",
+  "The High Tatras",
+  "Zdiar"
+);
+
+var SloveniaArray = new Array(
+  "Bled",
+  "Bohinj",
+  "Bovec",
+  "Branik",
+  "Brestanica",
+  "Cerklje",
+  "Idrija",
+  "Kobarid",
+  "Koper",
+  "Kranjska Gora",
+  "Ljubljana",
+  "Logatec",
+  "Maribor",
+  "Medvode",
+  "Piran",
+  "Portoroz",
+  "Postojna",
+  "Radomlje",
+  "Smarje",
+  "Trenta",
+  "Zalec"
+);
+
+var SouthAfricaArray = new Array(
+  "Addo",
+  "Barberton",
+  "Benoni",
+  "Brakpan",
+  "Cape Town",
+  "Cape Winelands",
+  "Cederberg Concervancy",
+  "Champagne Valley",
+  "Cintsa",
+  "Coffee Bay",
+  "Drakensberg",
+  "Durban",
+  "Durban North",
+  "East London",
+  "Eastern Cape",
+  "Eshowe",
+  "Estcourt",
+  "Franschhoek",
+  "Gansbaai",
+  "Gauteng",
+  "Gingingdlovu",
+  "Gordon's Bay",
+  "Graaff-Reinet",
+  "Grahamstown",
+  "Graskop",
+  "Greyton",
+  "Harkerville",
+  "Hartbeespoort",
+  "Hazyview",
+  "Hectorspruit",
+  "Hermanus",
+  "Hluhluwe",
+  "Hoedspruit",
+  "Jeffreys Bay",
+  "Johannesburg",
+  "Katberg",
+  "Kempton Park",
+  "Knysna",
+  "Komatipoort",
+  "Kruger Park",
+  "Kwa Zulu Natal",
+  "Kwambonambi",
+  "Kwazulu Natal",
+  "Lephalala",
+  "Marloth Park",
+  "Middelburg",
+  "Montagu",
+  "Mossel Bay",
+  "Mpumalanga",
+  "Naboomspruit",
+  "Nelspruit",
+  "Nieu Bethesda",
+  "Oudtshoorn",
+  "Phalaborwa",
+  "Pietermaritzburg",
+  "Plettenberg Bay",
+  "Port Edward",
+  "Port Elizabeth",
+  "Port St Johns",
+  "Pretoria",
+  "Prince Albert",
+  "Ramsgate",
+  "Richard's Bay",
+  "Robertson",
+  "Sabie",
+  "Sedgefield",
+  "Somerset West",
+  "St Francis Bay",
+  "St Lucia",
+  "Stellenbosch",
+  "Storms River",
+  "Tsitsikamma",
+  "Tzaneen",
+  "Umkomaas",
+  "Upington",
+  "Western Cape",
+  "Wilderness"
+);
+
+var SouthKoreaArray = new Array(
+  "Busan",
+  "Incheon",
+  "Kangwon-do",
+  "Seoul"
+);
+
+var SpainArray = new Array(
+  "(Cartajima) Ronda",
+  "Abanto-Zierbena",
+  "Alcala de Henares",
+  "Alcorisa",
+  "Alfaz del Pi",
+  "Alicante",
+  "Almeria",
+  "Alora",
+  "Alpujarra de la Sierra",
+  "Antequera",
+  "Arbuniel",
+  "Archidona",
+  "Arcos de la Frontera",
+  "Arfa",
+  "Aviles",
+  "Badajoz",
+  "Baeza",
+  "Barcelona",
+  "Bayarcal",
+  "Bedmar",
+  "Benalmadena",
+  "Benicarlo",
+  "Berga",
+  "Berzocana",
+  "Betera-Valencia",
+  "Betren - Viella",
+  "Bilbao",
+  "Blanes",
+  "Bocairent",
+  "Bubion",
+  "Burgos",
+  "Cabezon de la Sal",
+  "Caceres",
+  "Cadiz",
+  "Calan Bosch-Ciudadela",
+  "Calatayud",
+  "Calella",
+  "Calpe",
+  "Campos",
+  "Cartagena",
+  "Casares",
+  "Cazalla de la Sierra",
+  "Chipiona",
+  "Conchar",
+  "Conil de la Frontera",
+  "Cordoba",
+  "Denia",
+  "Ecija",
+  "El Elegido",
+  "El Puerto de Santa Maria",
+  "Empúriabrava",
+  "Estepona",
+  "Farrera (Lleida)",
+  "Frigiliana",
+  "Fuengirola",
+  "Fuente del Maestre",
+  "Fuerteventura",
+  "Gaucin",
+  "Girona",
+  "Gran Canaria Is. (Canary Is)",
+  "Granada",
+  "Granada- Almunecar",
+  "Gurrea De Gallego(Huesca)",
+  "Ibiza",
+  "Infiesto",
+  "Islantilla",
+  "Istan",
+  "Jaen",
+  "Jerez de la Frontera",
+  "La Coruna",
+  "La Lastrilla",
+  "La Manga Del Mar Menor",
+  "La Selva Del Camp",
+  "La Seu d Urgell",
+  "Lanjaron",
+  "Lanjaron-Alpujarra",
+  "Las Cabezas",
+  "Las Negras(Nijar)",
+  "Las Palmas de Gran Canaria",
+  "Leon",
+  "Llanes Asturias",
+  "Lleida",
+  "Lloret de Mar",
+  "Logrono",
+  "Los Palacios y Villafranca",
+  "Lucena",
+  "Lugo",
+  "Madrid",
+  "Malaga",
+  "Malgrat De Mar",
+  "Mallorca",
+  "Manilva",
+  "Marbella",
+  "Margarida-Planes",
+  "Mazagon",
+  "Medina del Campo",
+  "Mentera. Santander",
+  "Mijas",
+  "Mijas Costa",
+  "Mino",
+  "Mollet del Valles",
+  "Monistrol de Montserrat",
+  "Montefrio",
+  "Montseny",
+  "Murcia",
+  "Murguia",
+  "Navacerrada",
+  "Navajas",
+  "Nerja",
+  "Noriega-Asturias",
+  "Ontinyent",
+  "Oviedo",
+  "Palma de Mallorca",
+  "Palma del Rio",
+  "Palmanova",
+  "Pamplona",
+  "Periana",
+  "Pineda de Mar",
+  "Ponferrada",
+  "Pontevedra",
+  "Port de Soller",
+  "Prats I Sansor",
+  "Priego De Cordoba-Cordoba",
+  "Puerto de Alcudia",
+  "Quesada",
+  "Ribera del Duero",
+  "Ronda",
+  "Sabadell",
+  "Sabiote",
+  "Salamanca",
+  "Salobrena",
+  "Salou",
+  "San Antonio",
+  "San Jose",
+  "San Sebastian",
+  "San Vicente de la Barquera",
+  "Sant Feliu de Guixols",
+  "Santander",
+  "Santiago de Compostela",
+  "Seville",
+  "Sierra Nevada-Granada",
+  "Sitges",
+  "Tarifa",
+  "Tarragona",
+  "Tenerife",
+  "Toledo",
+  "Torrelavega",
+  "Torremolinos",
+  "Torrevieja",
+  "Tortosa",
+  "Tossa de Mar",
+  "Trevelez",
+  "Trujillo",
+  "Ubeda",
+  "Ugijar",
+  "Uncastillo",
+  "Valencia",
+  "Valencia de Alcantara",
+  "Valladolid",
+  "Valls",
+  "Vielha",
+  "Vigo",
+  "Villamartin",
+  "Villanuava del Arzobispo",
+  "Vitoria",
+  "Zaragoza"
+);
+
+var SriLankaArray = new Array(
+  "Anuradhapura",
+  "Colombo",
+  "Dambulla",
+  "Galle",
+  "Hikkaduwa",
+  "Kandy"
+);
+
+var SwazilandArray = new Array(
+  "Mbabane"
+);
+
+var SwedenArray = new Array(
+  "Arjang",
+  "Degerhamn",
+  "Falun",
+  "Gnarp",
+  "Gothenburg",
+  "Helsingborg",
+  "Horby - Malmo",
+  "Nykoping",
+  "Ripsa",
+  "Solna",
+  "Stockholm",
+  "Stromsbruk",
+  "Tarnaby",
+  "Uppsala",
+  "Vasteras"
+);
+
+var SwitzerlandArray = new Array(
+  "Baden",
+  "Basel",
+  "Bern",
+  "Bevaix",
+  "Biel",
+  "Biel-Bienne",
+  "Braunwald",
+  "Bulle",
+  "Davos",
+  "Faulensee",
+  "Fluelen",
+  "Geneva",
+  "Grindelwald",
+  "Gryon",
+  "Gstaad",
+  "Interlaken",
+  "Kloten",
+  "La Chaux-de-Fonds",
+  "Lausanne",
+  "Lauterbrunnen",
+  "Locarno",
+  "Lucerne",
+  "Meiringen",
+  "Montreux",
+  "Montreux-Vevey",
+  "Murren",
+  "Neuchatel",
+  "Saas-Fee",
+  "Samedan",
+  "St. Moritz",
+  "Vevey",
+  "Weissbad",
+  "Wengen",
+  "Wilderswil",
+  "Wolfisberg",
+  "Zermatt",
+  "Zurich"
+);
+
+var SyriaArray = new Array(
+  "Damascus"
+);
+
+var TaiwanArray = new Array(
+  "Changhua",
+  "Hsinchu County",
+  "Hualien",
+  "Kaohsiung",
+  "Keelung",
+  "Koo-kung Hsiang",
+  "Ping-Tung Hsian",
+  "Taichung City",
+  "Taipei",
+  "Yilan County"
+);
+
+var TanzaniaArray = new Array(
+  "Dar es Salaam",
+  "Jambiani",
+  "Kilimanjaro",
+  "Moshi",
+  "Mwanza",
+  "Zanzibar"
+);
+
+var ThailandArray = new Array(
+  "Ao Nang",
+  "Ayutthaya",
+  "Bangkok",
+  "Chiang Mai",
+  "Chiang Rai",
+  "Hua Hin",
+  "Kaengkrachan",
+  "Kanchanaburi",
+  "Karon Beach",
+  "Khao Lak",
+  "Khon Kaen",
+  "Koh Chang",
+  "Koh Lanta",
+  "Koh Pha Ngan",
+  "Koh Phi Phi",
+  "Koh Samui",
+  "Koh Tao",
+  "Koh Yao",
+  "Krabi",
+  "Lampang",
+  "Mae Nam",
+  "Maehongson",
+  "Muang",
+  "Nang Rong",
+  "Pakchong",
+  "Patong",
+  "Patong Beach",
+  "Pattaya",
+  "Phuket",
+  "Prachuap Khiri Khan",
+  "Rayong",
+  "Sattahip",
+  "Sayoke",
+  "Sukhothai"
+);
+
+var TongaArray = new Array(
+  "Nuku'alofa",
+  "Vava'u"
+);
+
+var TrinidadandTobagoArray = new Array(
+  "Buccoo Point",
+  "Crown Point",
+  "Diego Martin",
+  "Englishman's Bay",
+  "Maracas Bay",
+  "Maraval",
+  "Santa Cruz",
+  "Scarborough",
+  "Speyside Village",
+  "Toco"
+);
+
+var TunisiaArray = new Array(
+  "Hammamet",
+  "Monastir",
+  "Nabeul",
+  "Tunis"
+);
+
+var TurkeyArray = new Array(
+  "Antalya",
+  "Assos",
+  "Ayvalik",
+  "Bodrum",
+  "Canakkale",
+  "Cappadocia",
+  "Cirali",
+  "Dalyan",
+  "Datca",
+  "Denizli",
+  "Duzce",
+  "Egirdir",
+  "Fethiye",
+  "Goreme",
+  "Gulluk-Bodrum",
+  "Hisaronu",
+  "Istanbul",
+  "Izmir",
+  "Kalkan",
+  "Kas",
+  "Koycegiz",
+  "Kusadasi",
+  "Marmaris",
+  "Mugla",
+  "Nevsehir",
+  "Nigde",
+  "Olympos",
+  "Pamukkale",
+  "Selcuk"
+);
+
+var UKArray = new Array(
+  "Aberdeen",
+  "Abersoch",
+  "Ambleside",
+  "Armagh",
+  "Ashby de la Zouch",
+  "Aviemore",
+  "Ayr",
+  "Ayrshire",
+  "Ballater",
+  "Ballycastle",
+  "Ballymena",
+  "Banff",
+  "Bath",
+  "Belfast",
+  "Ben Lomond",
+  "Berkshire",
+  "Berwick on Tweed",
+  "Betws-y-Coed",
+  "Birmingham",
+  "Blackpool",
+  "Bournemouth",
+  "Bradford",
+  "Braemar",
+  "Brighton",
+  "Bristol",
+  "Bude",
+  "Burnham Deepdale",
+  "Bushmills",
+  "Caernarfon",
+  "Cambridge",
+  "Canisbay",
+  "Canterbury",
+  "Carbisdale",
+  "Cardiff",
+  "Carmarthen",
+  "Castlerock",
+  "Ceredigion",
+  "Chester",
+  "Chorley",
+  "Coalport",
+  "Codicote - Luton",
+  "Coldingham",
+  "Conwy",
+  "Cornwall",
+  "Coventry",
+  "Crianlarich",
+  "Crieff",
+  "Cumbria",
+  "Derby",
+  "Derry",
+  "Dolwyddelan",
+  "Dover",
+  "Dumfries",
+  "East Sussex",
+  "Edinburgh",
+  "Essex",
+  "Exeter",
+  "Falkirk",
+  "Falkland",
+  "Falmouth",
+  "Fermanagh",
+  "Fishguard",
+  "Folkestone",
+  "Fort William",
+  "Gairloch",
+  "Garve",
+  "Gateshead",
+  "Gatwick",
+  "Glasgow",
+  "Glencoe",
+  "Glendevon",
+  "Glenmoriston",
+  "Gloucestershire",
+  "Grantown-on-Spey",
+  "Great Glen",
+  "Guernsey",
+  "Gwynedd",
+  "Harlow",
+  "Harrow",
+  "Hastings",
+  "Hawes",
+  "Heathrow",
+  "Hexham",
+  "Hull",
+  "Inveraray",
+  "Inverey by Braemar",
+  "Inverness",
+  "Inverurie",
+  "Isle of Arran",
+  "Isle of Skye",
+  "Jersey",
+  "Kelso",
+  "Kent",
+  "Keswick",
+  "Killin",
+  "Kingussie",
+  "Kirkwall",
+  "Knighton",
+  "Kyle",
+  "Kyle of Lochalsh",
+  "Lairg",
+  "Lake District",
+  "Ledbury",
+  "Lee Valley - Stansted Airport",
+  "Leeds",
+  "Liverpool",
+  "Llandudno",
+  "Loch Lomond",
+  "Loch Ness",
+  "London",
+  "Luton",
+  "Manchester",
+  "Melrose",
+  "Middlesbrough",
+  "Middlesex",
+  "Mourne Mountains",
+  "New Lanark",
+  "Newcastle",
+  "Newcastle upon Tyne",
+  "Newquay",
+  "Newtonmore",
+  "North Yorkshire",
+  "Nottingham",
+  "Oban",
+  "Omagh",
+  "Orkney Islands",
+  "Oswestry",
+  "Oxford",
+  "Oxfordshire",
+  "Penzance",
+  "Perth",
+  "Pitlochry",
+  "Plymouth",
+  "Porthmadog",
+  "Portrush",
+  "Powys",
+  "Prestwick",
+  "Reading",
+  "Royston",
+  "Ruislip",
+  "Salisbury",
+  "Sittingbourne",
+  "Skye",
+  "Southampton",
+  "Spean Bridge",
+  "St Andrews",
+  "St Ives",
+  "Stansted",
+  "Stirling",
+  "Stirlingshire",
+  "Stratford-upon-Avon",
+  "Surrey",
+  "Sutherland",
+  "Swanage",
+  "Swansea",
+  "Thurso",
+  "Tomintoul",
+  "Tongue",
+  "Torquay",
+  "Torridon",
+  "Trawsfynydd",
+  "Troon",
+  "Ullapool",
+  "Wanlockhead",
+  "Warwick",
+  "West Yorkshire",
+  "Winchester",
+  "Windermere",
+  "Windsor",
+  "Yarrowford",
+  "York"
+);
+
+var USAArray = new Array(
+  "Aberdeen",
+  "Anaheim",
+  "Anchorage",
+  "Arroyo Seco",
+  "Asheville",
+  "Ashland",
+  "Aspen",
+  "Atlanta",
+  "Austin",
+  "Big Island, Hawaii",
+  "Bingen",
+  "Boston",
+  "Breckenridge",
+  "Buena Park",
+  "Buffalo",
+  "Cambridge",
+  "Cameron Park",
+  "Camp Springs",
+  "Cape Cod",
+  "Carlisle",
+  "Cedar Creast",
+  "Charleston",
+  "Charlottesville",
+  "Chicago",
+  "Cleveland",
+  "Colorado",
+  "Conway",
+  "Dallas",
+  "Dearborn",
+  "Detroit",
+  "Driggs",
+  "Estes Park",
+  "Eugene",
+  "Everglades",
+  "Fairbanks",
+  "Fayetteville",
+  "Flagstaff",
+  "Florida",
+  "Fort Lauderdale",
+  "Fort Wayne",
+  "Fort Worth",
+  "Fountain Hills",
+  "Fullerton",
+  "Glenwood Springs",
+  "Gonzales",
+  "Hamilton",
+  "Hartford",
+  "Harvard",
+  "Hawkinsville",
+  "Hollywood",
+  "Homer",
+  "Hop Bottom",
+  "Huntington Beach",
+  "Hyder",
+  "Indianapolis",
+  "Jackson",
+  "Jennings",
+  "Jersey City",
+  "Jim Thorpe",
+  "Kailua Kona, Hawaii",
+  "Kauai, Hawaii",
+  "Kennebunkport",
+  "Key Largo FL",
+  "Killington",
+  "Klamath",
+  "Knoxville",
+  "Laceyville",
+  "Lafayette",
+  "Lake Kabetogama",
+  "Lake Tahoe",
+  "LaPorte",
+  "Las Vegas",
+  "Los Angeles",
+  "Ludlow",
+  "Maine",
+  "Marathon",
+  "Mariposa",
+  "Martha's Vineyard",
+  "Maui, Hawaii",
+  "McCarthy",
+  "Mechanicsburg",
+  "Mendocino",
+  "Miami",
+  "Middletown",
+  "Milledgeville",
+  "Minerva",
+  "Minneapolis",
+  "Montara",
+  "Monterey",
+  "Myrtle Beach",
+  "Nampa",
+  "Nantucket",
+  "Napa",
+  "Naples",
+  "Nashville",
+  "Nashville IN",
+  "New Orleans",
+  "New York",
+  "Newark",
+  "Newport RI",
+  "Newport WA",
+  "Niagara Falls",
+  "Norwood",
+  "Oahu, Hawaii",
+  "Okemo Valley",
+  "Orlando",
+  "Ottawa",
+  "Palm Springs",
+  "Palmer",
+  "Palo Alto",
+  "Panguitch",
+  "Pescadero",
+  "Philadelphia",
+  "Plymouth",
+  "Portland",
+  "Railroad",
+  "Raymondville",
+  "Round Rock",
+  "Rumney",
+  "Rutledge",
+  "Sacramento",
+  "Salt Lake City",
+  "San Antonio",
+  "San Diego",
+  "San Francisco",
+  "San Ysidro",
+  "Santa Barbara",
+  "Santa Rosa",
+  "Saratoga Springs",
+  "Sausalito",
+  "Seaside",
+  "Seattle",
+  "Seekonk",
+  "Sheldon",
+  "Silver Bay",
+  "Simsbury",
+  "South Lake Tahoe",
+  "St. Louis",
+  "Sumpter",
+  "Talkeetna",
+  "Tampa",
+  "Tehuacana",
+  "Tempe",
+  "Torrey",
+  "Truth or Consequences",
+  "Tucumcari",
+  "Washington DC",
+  "West Yellowstone",
+  "white bird",
+  "Whitehall",
+  "Wildwood",
+  "Williams",
+  "Wilmington",
+  "Winter Park-Fraser"
+);
+
+var UgandaArray = new Array(
+  "Jinja",
+  "Kabale",
+  "Kampala"
+);
+
+var UkraineArray = new Array(
+  "Feodosia",
+  "Genichesk",
+  "Huzul Land",
+  "Kiev",
+  "Kolomiya",
+  "Komsomolsk",
+  "Lviv",
+  "Nikolaev",
+  "Novgorod-Siverskiy",
+  "Odessa",
+  "Sevastopol",
+  "Yalta"
+);
+
+var UnitedArabEmiratesArray = new Array(
+  "Dubai",
+  "Fujairah"
+);
+
+var UruguayArray = new Array(
+  "Colonia del Sacramento",
+  "Flores",
+  "Montevideo",
+  "Punta del Este",
+  "Treinta y Tres"
+);
+
+var UzbekistanArray = new Array(
+  "Tashkent"
+);
+
+var VanuatuArray = new Array(
+  "Port Vila"
+);
+
+var VenezuelaArray = new Array(
+  "Caracas",
+  "Coche Island",
+  "Margarita Island",
+  "Trujillo"
+);
+
+var VietnamArray = new Array(
+  "Da Nang",
+  "Haiphong",
+  "Hanoi",
+  "Ho Chi Minh",
+  "Ho Chi Minh City",
+  "Hoi An",
+  "Hue",
+  "Laocai",
+  "Nha Trang",
+  "Ninh Binh",
+  "Phan Thiet",
+  "Sapa"
+);
+
+var VirginIslandsArray = new Array(
+  "St. John",
+  "Tortola"
+);
+
+var WalesArray = new Array(
+  "Abersoch",
+  "Betws-y-Coed",
+  "Caernarfon",
+  "Cardiff",
+  "Carmarthen",
+  "Ceredigion",
+  "Conwy",
+  "Dolwyddelan",
+  "Fishguard",
+  "Gwynedd",
+  "Knighton",
+  "Llandudno",
+  "Oswestry",
+  "Porthmadog",
+  "Powys",
+  "Swansea",
+  "Trawsfynydd"
+);
+
+var ZambiaArray = new Array(
+  "Lake Kariba",
+  "Livingstone",
+  "Lusaka"
+);
+
+var ZimbabweArray = new Array(
+  "Bulawayo",
+  "Harare",
+  "Victoria Falls"
+);
+
+function OpenWindow( url, width, height ) {
+  SmallWin = window.open(url, 'HostelPicture','scrollbars,resizable,height='+height+',width='+width);
+  if (window.focus) {
+    SmallWin.focus();
+  }
+  if (SmallWin.opener == null) {
+    SmallWin.opener = window;
+  }
+}
+function OpenWindow2( url, width, height ) {
+  SmallWin = window.open(url, 'HostelPicture2','height='+height+',width='+width);
+  if (window.focus) {
+    SmallWin.focus();
+  }
+  if (SmallWin.opener == null) {
+    SmallWin.opener = window;
+  }
+}
+showHostelCountries('USA');
+document.theForm.FABChoice.disabled = false;
+document.theForm.NumNights.disabled = false;
+
+populateFindABedPanel('USA' );
+for ( i=0; i<document.theForm.FABChoice.length; i++ ) {
+  if ( document.theForm.FABChoice.options[i].value == 'New York;USA' ) {
+    document.theForm.FABChoice.selectedIndex = i;
+  }
+}
+
+
+  // -->
+</SCRIPT>
+</form>
+</body>
+</html>
+

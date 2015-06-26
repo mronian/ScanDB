@@ -1,0 +1,600 @@
+<DOC>
+<DOCNO>f00239</DOCNO>
+<DOCHDR>http://www.sgi.com/cgi-bin/feedback/index.cgi</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>SGI - Feedback</TITLE>
+<STYLE TYPE="text/css">
+<!--
+.homeLink {color: #000000; text-decoration: none;}
+-->
+</STYLE>
+<SCRIPT TYPE="text/javascript" SRC="/js/validate_form.js"></SCRIPT>
+<style type="text/css">
+<!--
+div.menu	{ position: absolute; top: 79px; visibility: hidden;}
+#menu0		{ left: 156px; z-index: 101; width: 107px;}
+#menu1		{ left: 264px; z-index: 102; width: 110px;}
+#menu2		{ left: 375px; z-index: 103; width: 119px;}
+#menu3		{ left: 495px; z-index: 104; width: 167px;}
+#menu4		{ left: 663px; z-index: 106; width: 116px;}
+#menu0overs	{ left: 156px; z-index: 111; width: 107px;}
+#menu1overs	{ left: 264px; z-index: 112; width: 110px;}
+#menu2overs	{ left: 375px; z-index: 113; width: 119px;}
+#menu3overs	{ left: 495px; z-index: 114; width: 167px;}
+#menu4overs	{ left: 663px; z-index: 116; width: 116px;}
+#menu5overs	{ left: 615px; z-index: 400; top: 45px;}
+-->
+</style>
+<link rel="stylesheet" href="/styles/general.css" type="text/css" />
+<script type="text/javascript" src="/js/style_sniffer.js"></script>
+<script type="text/javascript" src="/js/nav_functions.js"></script>
+<script type="text/javascript" src="/js/hitbox-vars.js"></script>
+<script type="text/javascript">
+<!--
+// Makes all menus invisible
+function clearmenus() {
+	if (initialized) {
+		if (menustatus[0]) change(0,'nav_prd',0);
+		if (menustatus[1]) change(1,'nav_ind',0);
+		if (menustatus[2]) change(2,'nav_dev',0);
+		if (menustatus[3]) change(3,'nav_srv',0);
+		if (menustatus[4]) change(4,'nav_fun',0);
+	}
+}
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0033CC"  vlink="#7C7F87" alink="#FF0000" marginheight="0" marginwidth="0" ONLOAD="init()">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr bgcolor="#7C7F87">
+<!-- Primary Navigation -->
+    <td rowspan="3" width="126"><a href="/"><img src="/images/common/sgi_logo_us.gif" height="79" width="126" border="0" alt="SGI Logo" /></a></td>
+    <td width="100%">
+	<table border="0" cellpadding="0" cellspacing="0" width="654">
+	<tr>
+	    <!-- Company related Links -->
+	    <td width="209"><img src="/images/dots/dot_clear.gif" alt="" width="209" height="54" /></td>
+	    <td width="285" valign="top"><a href="/sales/"><img
+		src="/images/nav/nav_buy.gif"		height="21" width="60" border="0" alt="How to Buy" /></a><img
+		src="/images/nav/nav_top_spacer.gif"	height="21" width="15" border="0" alt=" | " /><a href="/sales/resellers/"><img
+		src="/images/nav/nav_resellers.gif"	height="21" width="61" border="0" alt="Resellers" /></a><img
+		src="/images/nav/nav_top_spacer.gif"	height="21" width="15" border="0" alt=" | " /><a href="/company_info/"><img
+		src="/images/nav/nav_company_info.gif"	height="21" width="73" border="0" alt="Company Info" /></a><img
+		src="/images/nav/nav_top_spacer.gif"	height="21" width="15" border="0" alt=" | " /><a href="/company_info/employment/"><img
+		src="/images/nav/nav_careers.gif"	height="21" width="46" border="0" alt="Careers" /></a></td><td
+		width="160" valign="top" align="right"><a href="/search/" ONCLICK="if(isFour){change(5,0,1);return false;}"><img
+		src="/images/nav/nav_search.gif"	height="26" width="67" border="0" alt="Search" /></a><a href="/"><img
+		src="/images/nav/nav_home1.gif"		height="26" width="59" border="0" alt="Home" /></a></td>
+	</tr>
+	</table></td>
+</tr>
+<tr bgcolor="#7C7F87">
+	<td width="100%"><a href="/" ONMOUSEOVER="clearmenus()"><img src="/images/dots/dot_clear.gif" alt="" height="2" width="657" border="0" /></a></td>
+</tr>
+<tr bgcolor="#CFCFCF">
+    <!-- Good and Services related Links -->
+    <td width="100%">
+	<a	href="/products/" ONMOUSEOVER="clearmenus()"><img
+		src="/images/nav/nav_prod_corner0.gif"	alt=""			width="30"	height="23" border="0" name="imgcrnr" /></a><img
+		src="/images/nav/nav_prod0.gif"		alt="[Products]"	width="108"	height="23" border="0" name="imgmenu0" usemap="#menu0map" /><img
+		src="/images/nav/nav_ind0.gif"		alt="[Industries]"	width="111"	height="23" border="0" name="imgmenu1" usemap="#menu1map" /><img
+		src="/images/nav/nav_dev0.gif"		alt="[Developers]"	width="120"	height="23" border="0" name="imgmenu2" usemap="#menu2map" /><img
+		src="/images/nav/nav_support0.gif"	alt="[Services and Support]"		width="168"	height="23" border="0" name="imgmenu3" usemap="#menu3map" /><img
+		src="/images/nav/nav_fun0.gif"		alt="[Serious Fun]"	width="117"	height="23" border="0" name="imgmenu4" usemap="#menu4map" /><a
+		href="/fun/" ONMOUSEOVER="clearmenus()"><img src="/images/dots/dot_clear.gif" width="2" height="23" border="0" alt="" /></a></td>
+</tr>
+</table>
+<!-- End Primary Navigation -->
+
+<table width="780" border="0" cellpadding="0" cellspacing="0">
+<tr>
+    <!-- This is the site banner TD -->
+    <td colspan="5" align="RIGHT">
+<IMG SRC="/sales/images/ban_contact_us.gif" ALT="Contact Us" WIDTH="515" HEIGHT="68"></TD>
+</TR>
+<TR VALIGN="TOP">
+<TD WIDTH="130">
+<DIV ID="sidenav">
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="130">
+</TABLE></DIV>
+<!-- Start sep_left.htmlf -->
+</td>
+<td width="30" valign="TOP"><img src="/images/dots/dot_clear.gif" width="30" height="2" alt="" /></td><td>
+
+
+<!-- End sep_left.htmlf -->
+
+<div class="content">
+<!-- Content starts here -->
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="550">
+<TR>
+<!-- start To Buy an SGI Product -->
+<TD VALIGN="TOP" CLASS="med">
+<IMG SRC="/sales/images/hdr_buy_prod.gif" WIDTH="165" HEIGHT="23" ALT="To Buy an SGI Product" BORDER="0"><BR>
+Select a Region:
+	<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="/sales/"><SPAN CLASS="med">United States</SPAN></A></TD>
+	</TR>
+
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="/sales/sales_canada.html"><SPAN CLASS="med">Canada</SPAN></A></TD>
+	</TR>
+
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="/sales/sales_lam.html"><SPAN CLASS="med">Latin America</SPAN></A></TD>
+	</TR>
+
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="/sales/sales_europe.html"><SPAN CLASS="med">Europe</SPAN></A></TD>
+	</TR>
+
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="/sales/sales_asia.html"><SPAN CLASS="med">Asia Pacific</SPAN></A></TD>
+	</TR>
+
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="/sales/sales_mena.html"><SPAN CLASS="med">Middle East and Africa</SPAN></A></TD>
+	</TR>
+	</TABLE>
+</TD>
+<!-- end To Buy an SGI Product -->
+
+
+<TD VALIGN="TOP"><IMG SRC="/sales/images/sep_vert.gif" WIDTH="27" HEIGHT="133" ALT="" BORDER="0"></TD>
+<!-- end General Contact Info -->
+
+
+<!-- start Corporate Headquarters -->
+<TD VALIGN="TOP" CLASS="med">
+<IMG SRC="/sales/images/hdr_corp_hq.gif" WIDTH="166" HEIGHT="23" ALT="Corporate Headquarters" BORDER="0"><BR>
+SGI<BR>
+<GEO TYPE="US">1500 Crittenden Lane<BR>
+Mountain View, CA 94043<BR>
+USA</GEO><BR>
+Tel: (650) 960-1980<BR>
+Toll Free: (800) 800-SGI1 (7441) in the U.S. and Canada<BR>5AM - 5PM PST, Monday - Friday
+</TD>
+<!-- end Corporate Headquarters -->
+
+
+<TD VALIGN="TOP"><IMG SRC="/sales/images/sep_vert.gif" WIDTH="27" HEIGHT="133" ALT="" BORDER="0"></TD>
+
+
+<!-- start General Contact Info -->
+<TD VALIGN="TOP">
+<IMG SRC="/sales/images/hdr_gen_contact.gif" WIDTH="165" HEIGHT="23" ALT="General Contact Info" BORDER="0"><BR>
+	<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="/company_info/investors/contact.html"><SPAN CLASS="med">Investor Relations</SPAN></A></TD>
+	</TR>
+
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="/company_info/newsroom/contact_us.html"><SPAN CLASS="med">Public Relations</SPAN></A></TD>
+	</TR>
+	</TABLE>
+
+</TD>
+</TR>
+<!-- end General Contact Info -->
+
+<TR>
+<TD COLSPAN="5"><IMG SRC="/sales/images/sep_horiz.gif" WIDTH="550" HEIGHT="33" ALT="" BORDER="0"></TD>
+</TR>
+</TABLE>
+
+
+
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="550">
+<TR>
+<TD VALIGN="TOP">
+
+<!-- start For Technical Assistance -->
+	<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+	<TD></TD>
+	<TD COLSPAN="3"><IMG SRC="/sales/images/techbox_top.gif" WIDTH="233" HEIGHT="30" ALT="For Technical Assistance:" BORDER="0"></TD>
+	</TR>
+
+	<TR>
+	<TD VALIGN="TOP"><IMG SRC="/sales/images/keyboard_left.gif" WIDTH="47" HEIGHT="87" ALT="Image of a keyboard" BORDER="0"></TD>
+	<TD VALIGN="TOP" BGCOLOR="#CCE5FF"><IMG SRC="/sales/images/keyboard_right.gif" WIDTH="26" HEIGHT="87" ALT="Image of a keyboard" BORDER="0"></TD>
+	<TD BGCOLOR="#CCE5FF">
+		<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" WIDTH="190">
+		<TR>
+		<TD VALIGN="TOP"><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+		<TD CLASS="med"><B><A HREF="http://support.sgi.com"><SPAN CLASS="med">Online Support</SPAN></A></B> (Supportfolio)<BR>Submit technical questions. (Requires a free SurfZone membership.)</TD>
+		</TR>
+
+		<TR>
+		<TD VALIGN="TOP"><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+		<TD CLASS="med"><B><A HREF="/support/supportcenters.html"><SPAN CLASS="med">Telephone Support Directory</SPAN></A></B><BR>Talk to a service representative in our Customer Support Center.</TD>
+		</TR>
+		</TABLE>
+	</TD>
+	<TD BGCOLOR="#CCE5FF"><IMG SRC="/images/dots/dot_clear.gif" WIDTH="17" HEIGHT="1" ALT="" BORDER="0"></TD>
+	</TR>
+
+	<TR>
+	<TD></TD>
+	<TD COLSPAN="3"><IMG SRC="/sales/images/techbox_bottom.gif" WIDTH="233" HEIGHT="9" ALT="" BORDER="0"></TD>
+	</TR>
+	</TABLE>
+</TD>
+<!-- end For Technical Assistance -->
+
+
+<TD WIDTH="40" ALIGN="CENTER" VALIGN="TOP"><IMG SRC="/sales/images/sep_vert.gif" WIDTH="27" HEIGHT="133" ALT="" BORDER="0"></TD>
+
+
+<!-- start Web Site Feedback -->
+<TD VALIGN="TOP" CLASS="med">
+<IMG SRC="/sales/images/hdr_web_feedback.gif" WIDTH="230" HEIGHT="23" ALT="Web Site Feedback" BORDER="0">
+Note: This section is for Web site feedback only. For questions about technical support and SGI&#174; products, please use Technical Assistance.
+	<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="index.cgi?entry=website_broken_link&LEVEL=2&last_url="><SPAN CLASS="med">Broken link</SPAN></A></TD>
+	</TR>
+
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="index.cgi?entry=website_bug&LEVEL=2&last_url="><SPAN CLASS="med">Error in text or copy</SPAN></A></TD>
+	</TR>
+
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="index.cgi?entry=website_no_doc&LEVEL=2&last_url="><SPAN CLASS="med">Can't find document</SPAN></A></TD>
+	</TR>
+
+	<TR>
+	<TD><IMG SRC="/images/arrows/arrow_sm_corp.gif" WIDTH="8" HEIGHT="11" ALT="" BORDER="0"></TD>
+	<TD><A HREF="index.cgi?entry=website_all_other_feedback&LEVEL=2&last_url="><SPAN CLASS="med">All other web site feedback</SPAN></A></TD>
+	</TR>
+	</TABLE>
+</TD>
+</TR>
+<!-- end Web Site Feedback -->
+
+<!-- table spacers -->
+<TR>
+<TD><IMG SRC="/images/dots/dot_clear.gif" WIDTH="280" HEIGHT="1" ALT="" BORDER="0"></TD>
+<TD><IMG SRC="/images/dots/dot_clear.gif" WIDTH="40" HEIGHT="1" ALT="" BORDER="0"></TD>
+<TD><IMG SRC="/images/dots/dot_clear.gif" WIDTH="230" HEIGHT="1" ALT="" BORDER="0"></TD>
+</TR>
+</TABLE>
+
+
+<!-- Content Ends Here -->
+
+</div>
+</td><td></td><td>
+<!-- Begin trademark footer -->
+    </td>
+</tr>
+<tr>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="3" valign="bottom" align="center"><br /><br /><br />
+	<table cellpadding="0" cellspacing="0" border="0" width="600">
+	<tr valign="bottom">
+	    <td align="right" class="footer"><a class="footer" href="/company_info/terms.html">Using this site means you accept its terms of use</a>&nbsp;|&nbsp;<a class="footer" href="/company_info/privacy.html">privacy policy</a></td>
+	    <td align="center" class="footer">&nbsp;|&nbsp;</td>
+	    <td align="left" class="footer"><a class="footer" href="/company_info/trademarks/">trademark information</a></td>
+	</tr>
+	<tr>
+	    <td align="right" class="footer">Copyright &copy; 1993-2005 Silicon Graphics, Inc. All rights reserved.</td>
+	    <td align="center" class="footer">&nbsp;|&nbsp;</td>
+	    <td align="left" class="footer"><a class="footer" href="/cgi-bin/feedback/index.cgi">contact us</a></td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<!-- End trademark footer -->
+
+<map name="menu0map"><area shape="RECT" coords="2,0 106,23" class="menu" href="/products/" alt="Products" ONMOUSEOVER="change(0,'nav_prd',1)" ONMOUSEOUT="if(!nn)menuhider(event)" /></map>
+<map name="menu1map"><area shape="RECT" coords="2,0 109,23" class="menu" href="/industries/" alt="Industries" ONMOUSEOVER="change(1,'nav_ind',1)" ONMOUSEOUT="if(!nn)menuhider(event)" /></map>
+<map name="menu2map"><area shape="RECT" coords="2,0 118,23" class="menu" href="/developers/" alt="Developers" ONMOUSEOVER="change(2,'nav_dev',1)" ONMOUSEOUT="if(!nn)menuhider(event)" /></map>
+<map name="menu3map"><area shape="RECT" coords="2,0 166,23" class="menu" href="/support/" alt="Support" ONMOUSEOVER="change(3,'nav_srv',1)" ONMOUSEOUT="if(!nn)menuhider(event)" /></map>
+<map name="menu4map"><area shape="RECT" coords="2,0 115,23" class="menu" href="/fun/" alt="Serious Fun" ONMOUSEOVER="change(4,'nav_fun',1)" ONMOUSEOUT="if(!nn)menuhider(event)" /></map>
+
+<script language="javascript1.1" defer src="/js/hitbox-functions.js"></script>
+
+<noscript><table><tr><td></noscript>
+
+<div id="menu0" class="menu"><img src="/images/nav/drop_prod.gif" border="0" height="111" width="107" alt="Products Menu" /></div>
+<div id="menu0overs" class="menu" hbxrootmenuid="//Products" hbxrootmenuorientation="down">
+<a href="/products/servers/" name="&lid=//Products//Servers"
+	onmouseover="menuItem('servers',0,1)"
+	onmouseout="menuItem('servers',0,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Servers"
+		border="0" height="15" hspace="0" name="servers" vspace="0" width="107" class="menu" /><br class="menu" /></a>
+<a href="/products/visualization/" name="&lid=//Products//Visualization"
+	onmouseover="menuItem('vissys',0,1)"
+	onmouseout="menuItem('vissys',0,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Visualization"
+		border="0" height="15" hspace="0" name="vissys" vspace="0" width="107" class="menu" /><br class="menu" /></a>
+<a href="/products/workstations/" name="&lid=//Products//Workstations"
+	onmouseover="menuItem('workstations',0,1)"
+	onmouseout="menuItem('workstations',0,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Workstations"
+		border="0" height="15" hspace="0" name="workstations" vspace="0" width="107" class="menu" /><br class="menu" /></a>
+<a href="/products/storage/" name="&lid=//Products//Storage"
+	onmouseover="menuItem('storage',0,1)"
+	onmouseout="menuItem('storage',0,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Storage"
+		border="0" height="15" hspace="0" name="storage" vspace="0" width="107" class="menu" /><br class="menu" /></a>
+<a href="/products/software/" name="&lid=//Products//Software"
+	onmouseover="menuItem('soft',0,1)"
+	onmouseout="menuItem('soft',0,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Software"
+		border="0" height="15" hspace="0" name="soft" vspace="0" width="107" class="menu" /><br class="menu" /></a>
+<a href="/products/peripherals/" name="&lid=//Products//Peripherals"
+	onmouseover="menuItem('peripherals',0,1)"
+	onmouseout="menuItem('peripherals',0,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Peripherals"
+		border="0" height="15" hspace="0" name="peripherals" vspace="0" width="107" class="menu" /><br class="menu" /></a>
+<a href="/products/remarketed/" name="&lid=//Products//Remarketed"
+	onmouseover="menuItem('remarketed',0,1)"
+	onmouseout="menuItem('remarketed',0,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Remarketed"
+		border="0" height="15" hspace="0" name="remarketed" vspace="0" width="107" class="menu" /><br class="menu" /></a>
+</div>
+
+<div id="menu1" class="menu"><img src="/images/nav/drop_ind.gif" width="110" height="90" border="0" alt="Industries Menu" /></div>
+<div id="menu1overs" class="menu" hbxrootmenuid="//Industries" hbxrootmenuorientation="down">
+<a href="/industries/energy/" name="&lid=//Industries//Energy"
+	onmouseover="menuItem('energy',1,1)"
+	onmouseout="menuItem('energy',1,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Energy"
+		border="0" height="15" hspace="0" name="energy" vspace="0" width="110" class="menu" /><br class="menu" /></a>
+<a href="/industries/manufacturing/" name="&lid=//Industries//Manufacturing"
+	onmouseover="menuItem('man',1,1)"
+	onmouseout="menuItem('man',1,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Manufacturing"
+		border="0" height="15" hspace="0" name="man" vspace="0" width="110" class="menu" /><br class="menu" /></a>
+<a href="/industries/media/" name="&lid=//Industries//Media"
+	onmouseover="menuItem('media',1,1)"
+	onmouseout="menuItem('media',1,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Media"
+		border="0" height="15" hspace="0" name="media" vspace="0" width="110" class="menu" /><br class="menu" /></a>
+<a href="/industries/sciences/" name="&lid=//Industries//Sciences"
+	onmouseover="menuItem('science',1,1)"
+	onmouseout="menuItem('science',1,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Sciences"
+		border="0" height="15" hspace="0" name="science" vspace="0" width="110" class="menu" /><br class="menu" /></a>
+<a href="/industries/government/" name="&lid=//Industries//Government"
+	onmouseover="menuItem('govdef',1,1)"
+	onmouseout="menuItem('govdef',1,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Government and Defense"
+		border="0" height="26" hspace="0" name="govdef" vspace="0" width="110" class="menu" /><br class="menu" /></a>
+</div>
+
+<div id="menu2" class="menu"><img src="/images/nav/drop_dev.gif" border="0" width="119" height="79" alt="Developers Menu" /></div>
+<div id="menu2overs" class="menu" hbxrootmenuid="//Developers" hbxrootmenuorientation="down">
+<a href="/developers/program/" name="&lid=//Developers//Program"
+	onmouseover="menuItem('devprog',2,1)"
+	onmouseout="menuItem('devprog',2,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Developer Program"
+		border="0" height="15" hspace="0" name="devprog" vspace="0" width="119" class="menu" /><br class="menu" /></a>
+<a href="/developers/business/" name="&lid=//Developers//Business"
+	onmouseover="menuItem('busdev',2,1)"
+	onmouseout="menuItem('busdev',2,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Business Development"
+		border="0" height="15" hspace="0" name="busdev" vspace="0" width="119" class="menu" /><br class="menu" /></a>
+<a href="/developers/technology/" name="&lid=//Developers//Tools"
+	onmouseover="menuItem('devtools',2,1)"
+	onmouseout="menuItem('devtools',2,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Development Tools"
+		border="0" height="15" hspace="0" name="devtools" vspace="0" width="119" class="menu" /><br class="menu" /></a>
+<a href="/developers/technology/irix/" name="&lid=//Developers//IRIX"
+	onmouseover="menuItem('irix',2,1)"
+	onmouseout="menuItem('irix',2,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Development on IRIX"
+		border="0" height="15" hspace="0" name="irix" vspace="0" width="119" class="menu" /><br class="menu" /></a>
+<a href="/developers/oss/" name="&lid=//Developers//OpenSource"
+	onmouseover="menuItem('oss',2,1)"
+	onmouseout="menuItem('oss',2,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Open Source Development"
+		border="0" height="15" hspace="0" name="oss" vspace="0" width="119" class="menu" /><br class="menu" /></a>
+</div>
+
+<div id="menu3" class="menu"><img src="/images/nav/drop_supp.gif" border="0" height="95" width="167" alt="Services and Support Menu" /></div>
+<div id="menu3overs" class="menu" hbxrootmenuid="//Services" hbxrootmenuorientation="down">
+<a href="/products/services/se/" name="&lid=//Services//SystemsEngineering"
+	onmouseover="menuItem('sysengr',3,1)"
+	onmouseout="menuItem('sysengr',3,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Systems Engineering"
+		border="0" height="15" hspace="0" name="sysengr" vspace="0" width="167" class="menu" /><br class="menu" /></a>
+<a href="/products/services/" name="&lid=//Services//ProfessionalServices"
+	onmouseover="menuItem('prof',3,1);"
+	onmouseout="menuItem('prof',3,0);"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Professional Services"
+		border="0" height="15" hspace="0" name="prof" vspace="0" width="167" class="menu" /><br class="menu" /></a>
+<a href="/products/services/managed_services/" name="&lid=//Services//ManagedServices"
+	onmouseover="menuItem('managed',3,1)"
+	onmouseout="menuItem('managed',3,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Managed Services"
+		border="0" height="15" hspace="0" name="managed" vspace="0" width="167" class="menu" /><br class="menu" /></a>
+<a href="/support/customerservice.html" name="&lid=//Services//SupportServices"
+	onmouseover="menuItem('ort',3,1);"
+	onmouseout="menuItem('ort',3,0);"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Support Services"
+		border="0" height="15" hspace="0" name="ort" vspace="0" width="167" class="menu" /><br class="menu" /></a>
+<a href="/support/custeducation/" name="&lid=//Services//CustomerEducation"
+	onmouseover="menuItem('edu',3,1);"
+	onmouseout="menuItem('edu',3,0);"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Customer Education"
+		border="0" height="15" hspace="0" name="edu" vspace="0" width="167" class="menu" /><br class="menu" /></a>
+<a href="/support/online/" name="&lid=//Services//OnlineSupport"
+	onmouseover="menuItem('online',3,1);"
+	onmouseout="menuItem('online',3,0);"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Online Support"
+		border="0" height="15" hspace="0" name="online" vspace="0" width="167" class="menu" /><br class="menu" /></a>
+</div>
+
+<div id="menu4" class="menu"><img src="/images/nav/drop_fun.gif" width="116" height="95" border="0" alt="Fun Menu" /></div>
+<div id="menu4overs" class="menu" hbxrootmenuid="//Fun" hbxrootmenuorientation="down">
+<a href="/fun/freeware/games.html" name="&lid=//Fun//Games"
+	onmouseover="menuItem('games',4,1);"
+	onmouseout="menuItem('games',4,0);"
+	class="menu"><img
+		src="/cgi-bin/remember.gif"
+		alt="Games"
+		border="0" height="15" hspace="0" name="games" vspace="0" width="116" class="menu" /><br class="menu" /></a>
+<a href="/fun/freeware/web.html" name="&lid=//Fun//WebDevelopment"
+	onmouseover="menuItem('webdev',4,1);"
+	onmouseout="menuItem('webdev',4,0);"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Web Development"
+		border="0" height="15" hspace="0" name="webdev" vspace="0" width="116" class="menu" /><br class="menu" /></a>
+<a href="/fun/freeware/software.html" name="&lid=//Fun//SoftwareDevelopment"
+	onmouseover="menuItem('softdev',4,1);"
+	onmouseout="menuItem('softdev',4,0);"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Software Development"
+		border="0" height="15" hspace="0" name="softdev" vspace="0" width="116" class="menu" /><br class="menu" /></a>
+<a href="/fun/freeware/graphics.html" name="&lid=//Fun//Graphics"
+	onmouseover="menuItem('graphics',4,1);"
+	onmouseout="menuItem('graphics',4,0);"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Graphics"
+		border="0" height="15" hspace="0" name="graphics" vspace="0" width="116" class="menu" /><br class="menu" /></a>
+<a href="/fun/freeware/sysadmin.html" name="&lid=//Fun//SystemAdministration"
+	onmouseover="menuItem('sysadmin',4,1);"
+	onmouseout="menuItem('sysadmin',4,0);"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="System Administration"
+		border="0" height="15" hspace="0" name="sysadmin" vspace="0" width="116" class="menu" /><br class="menu" /></a>
+<a href="http://freeware.sgi.com/" name="&lid=//Fun//Freeware"
+	onmouseover="menuItem('freeware',4,1);"
+	onmouseout="menuItem('freeware',4,0)"
+	class="menu"><img
+		src="/images/dots/dot_clear.gif"
+		alt="Freeware"
+		border="0" height="15" hspace="0" name="freeware" vspace="0" width="116" class="menu" /><br class="menu" /></a>
+</div>
+
+<!-- Search Widget -->
+<div id="menu5" class="menu"></div>
+<div id="menu5overs" class="menu">
+<table border="0" cellpadding="1" cellspacing="0" bgcolor="#0066CC"><tr><td>
+<table border="0" cellpadding="2" cellspacing="1" width="150">
+<tr bgcolor="#0066CC">
+    <td><span class="widget">SGI Search</span></td>
+    <td align="right"><a href="/search/" ONCLICK="change(5,0,0);return false"><img src="/images/common/srch_close_x.gif" width="16" height="14" alt="X" border=0 /></a></td>
+</tr>
+<tr bgcolor="#CFCFCF">
+    <td colspan="2" align="CENTER">
+<form name="searchForm" class="srch" action="/cgi-bin/search" method="GET">
+	<input type="hidden" name="site" value="sgi" />
+	<input type="hidden" name="client" value="sgi" />
+	<input type="hidden" name="proxystylesheet" value="sgi" />
+	<input type="hidden" name="output" value="xml_no_dtd" />
+	<select name="restrict">
+		<option value="" selected>All of SGI</option>
+		<option value="Products">Products</option>
+		<option value="Industries">Industries</option>
+		<option value="Developers">Developers</option>
+		<option value="Services-Support">Services & Support</option>
+		<option value="Feature-Stories">Feature Stories</option>
+		<option value="Newsroom">Newsroom</option>
+		<option value="PDF">PDF Library</option>
+	</select>
+	<br />
+	<input type="text" name="q" size="15">
+	<br />
+	<nobr>
+	<input type="submit" value=" Search "><input type="button" name="Close" value=" Cancel " ONCLICK="change(5,0,0)" />
+	</nobr>
+</form>
+	</td></tr></table></td></tr></table>
+</div>
+<div id="surveyWidget" class="menu" style="left:200px;top:120px">
+<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000"><tr><td>
+<table border="0" cellpadding="2" cellspacing="1" width="220">
+<tr bgcolor="#000000"><form ONSUBMIT="return false">
+    <td><span class="widget">SGI Online Survey</span></td>
+    <td align="right"><a href="#" onclick="surveyWidget(0)"><img src="/images/common/srch_close_x.gif" width="16" height="14" alt="X" border=0 /></a></td>
+</tr>
+<tr bgcolor="#FFFFFF">
+    <td colspan="2" style="padding: 6px">
+	Would you like to participate in a short web user satisfaction survey?
+	<br /><br />
+	<div align=center>
+	    <input type="button" value="Yes" onclick="makeChoice('yes')">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Later" onclick="makeChoice('later')" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="No" onclick="makeChoice('no')" />
+	</div>
+	<br />
+    </td></form>
+</tr></table>
+</td></tr></table>
+</div>
+
+<noscript></td></tr></noscript>
+
+</body>
+</body>
+</html>

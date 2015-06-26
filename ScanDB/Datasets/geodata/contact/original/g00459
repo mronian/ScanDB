@@ -1,0 +1,1010 @@
+<DOC>
+<DOCNO>g00459</DOCNO>
+<DOCHDR>http://www.hud.gov/offices/pih/pha/contacts/index.cfm</DOCHDR>
+ 
+<!-- Application build 01/27/2003 (EN) -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<HTML>
+<!-- #BeginTemplate "/Templates/document.dwt" --> 
+<HEAD>
+<!-- #BeginEditable "doctitle" --> 
+ 
+<TITLE>PHA- Contact Information - HUD </title>
+
+
+	
+<!-- End HGVTITLE Tag -->
+
+
+	
+	<!-- HGVSETTOPIC Note: TOPICID is 01.15.04.10.07 -->
+	
+	
+
+
+ <!-- #EndEditable --> <!-- Begin_common_javascript --> 
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+// This Macromedia function preloads images (used for rollovers)
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+// This Macromedia function restores images to their original (non-hover) version
+// Usually triggered by the MouseOut event
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+// This Macromedia function is used by the swap fuctions to identify the images object in the browser object model
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+// This Macromedia function is used to swap an image for a rollover effect
+// Usually triggered by the MouseOver or MouseClick events
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// Begin Foresee Survey Code
+// Everything below can be removed when survey period ends
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+/*
+	MSacks 8/11/2001: Wrap the Forsee code in a ColdFusion IF statement so that the survey will only
+	work in production.  Also, both the English and Spanish websites use this same .js file, so this also
+	tests which of the sites the user is coming from and displays the appropriate triggerParams.
+*/
+
+
+	
+		// Customer : HUD Housing Model
+// Version : Advance Trigger 1.4
+
+function cppUrlPatch(s) {
+	var translated = "";
+	var i; 
+	var found = 0;
+	for(i = 0; (found = s.indexOf(':', found)) != -1; ) {
+		translated += s.substring(i, found) + "|";
+		i = found + 1;
+		found++;
+	}
+	translated += s.substring(i, s.length);
+	return translated;
+}
+
+var triggerParms = new Array(); 
+var excludeList = new Array();
+triggerParms["dt"] = 0; // disable trigger if 1
+triggerParms["mid"] = "o1YNI5VUUNl91dspEFEAdA=="; // model instance id
+triggerParms["cid"] = "UU1kQpQE9kEMJNJ40Np4xA=="; // customer id
+triggerParms["lf"] = 3; // loyalty factor
+triggerParms["sp"] = 1.0; // sample percentage
+triggerParms["npc"] = 1; // no persistent cookies if 1
+triggerParms["rw"] = 129600; // resample wait (value in minutes)
+triggerParms["pu"] = 0; // pop-under control
+triggerParms["olpu"] = 1; // On Load pop-under control
+triggerParms["lfcookie"] = "ForeseeLoyalty_MID_o1YNI5VUUN";
+triggerParms["ascookie"] = "ForeseeSurveyShown_o1YNI5VUUN";
+triggerParms["width"] = 420; // survey width
+triggerParms["height"] = 500; // survey height
+triggerParms["domain"] = ".hud.gov"; // domain name
+triggerParms["omb"] = "1505-0186"; // OMB number
+//triggerParms["cmetrics"] = "90010257"; // coremetrics client id
+triggerParms["cpp_1"] = "userURL:"+ cppUrlPatch (window.location.protocol+"://" + window.location.host + window.location.pathname); // customer parameter 1 - user URL
+//triggerParms["cpp_2"] = "Browser:"+ cppUrlPatch (navigator.userAgent); // customer parameter 2 - Browser
+triggerParms["capturePageView"] = 1;
+//excludeList[0] = "/exclude/"; //trigger script will not work under this path
+
+		// Customer : HUD Housing Model
+// Version : Advance Trigger 1.4
+
+var popUpURL = "http://www.foreseeresults.com/survey/display"; // base URL to the survey 
+
+var ckAlreadyShown = triggerParms["ascookie"]; // name of the persistent/session cookie
+
+var ckLoyaltyCount = triggerParms["lfcookie"]; // name of the loyalty count cookie
+
+var persistentExpires = new Date(); // persistent cookie expiration 
+persistentExpires.setTime(persistentExpires.getTime() + (triggerParms["rw"]*60*1000));
+
+function ForeCStdGetCookie (name) {
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i, j) == arg) {
+			return ForeCStdGetCookieVal (j);
+		}
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0) {
+			break;
+		}
+	}
+	return null;
+}
+
+function ForeCStdSetCookie (name, value) {
+	var argv = ForeCStdSetCookie.arguments;
+	var argc = ForeCStdSetCookie.arguments.length;
+	var expires = (argc > 2) ? argv[2] : null;
+	var path = (argc > 3) ? argv[3] : null;
+	var domain = (argc > 4) ? argv[4] : null;
+	var secure = (argc > 5) ? argv[5] : false;
+	document.cookie = name + "=" + escape (value) +
+	((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+	((path == null) ? "" : ("; path=" + path)) +
+	((domain == null) ? "" : ("; domain=" + domain)) +
+	((secure == true) ? "; secure" : "");
+}
+
+function ForeCStdGetCookieVal(offset) {
+	var endstr = document.cookie.indexOf (";", offset);
+	if (endstr == -1) {
+		endstr = document.cookie.length;
+	}
+	return unescape(document.cookie.substring(offset, endstr));
+}
+
+function specialEscape(str) {
+	var translated = "";
+	var i; 
+	var found = 0;
+	for(i = 0; (found = str.indexOf('+', found)) != -1; ) {
+		translated += str.substring(i, found) + "%2B";
+		i = found + 1;
+		found++;
+	}
+	translated += str.substring(i, str.length);
+	return translated;
+}
+
+// this function checks to see if we are in path included in the excluded list. 
+function currentLocationExcluded() {	
+	var parentURLPath = window.location.pathname;//location path
+	for(key in excludeList) {
+		if(parentURLPath.indexOf(excludeList[key]) != -1) {
+			return true;
+		}
+	}
+	return false;
+}
+
+function Poll() { 
+	if(triggerParms["dt"] == 1) {
+		return;
+	}
+	//checks if we are in path included in the excluded list.
+	if(currentLocationExcluded()) {
+		return;
+	}
+	var stickyCounter = ForeCStdGetCookie(ckLoyaltyCount); // check counter cookie
+	var alreadyShown = ForeCStdGetCookie(ckAlreadyShown); // check if we already have shown survey
+	var pageCount;
+	var randNum = Math.random();
+	randNum *= 100;
+	if (stickyCounter == null) {
+		// create the loyalty factor cookie if we don't already have one
+		pageCount = 1; 
+		ForeCStdSetCookie(ckLoyaltyCount, pageCount, null,'/',triggerParms["domain"]);		
+		stickyCounter = ForeCStdGetCookie(ckLoyaltyCount);
+	}
+	if (stickyCounter != null) {
+		pageCount = stickyCounter;
+		if(pageCount >= triggerParms["lf"]) {
+			// apply the samplingPercentage algorithm
+			if(alreadyShown == null) {
+				if(randNum <= triggerParms["sp"]) {
+					var winOptions = "width= 1,height= 1,top= 4000,left= 4000,resizable=yes,scrollbars=yes";
+					var fullURL = popUpURL + "?" + "width=" + triggerParms["width"] +
+					"&height=" + triggerParms["height"] +
+					"&cid=" + specialEscape(escape(triggerParms["cid"])) + "&mid=" + specialEscape(escape(triggerParms["mid"]));
+					if ((triggerParms["omb"] ) != null) {
+						fullURL += "&omb=" + escape(triggerParms["omb"]);
+					}
+					
+					//Coremetrics support
+					if ((triggerParms["cmetrics"] ) != null) {
+						fullURL += "&cmetrics=" + escape(triggerParms["cmetrics"]);
+					}
+
+					// added for pop control after window is loaded
+					if (triggerParms["olpu"] == 1) {
+						fullURL += "&olpu=1";
+					}
+					// capturing Page Viewed in CPP
+					if (triggerParms["capturePageView"] == 1) {
+						triggerParms["cpp_3"] = "PageView:"+ pageCount; // customer parameter 3 - Page View
+					}
+					// extract customer passed parameters if any
+					var customerParams = "";
+					for(paramKey in triggerParms) {
+						if(paramKey.substring(0,3) == "cpp"){
+							fullURL += "&" + paramKey + "=" + escape(triggerParms[paramKey]);
+						}
+					}
+					// insure that we only pop up once during the lifetime of the cookie
+					if(triggerParms["npc"] == 1) {
+						ForeCStdSetCookie(ckAlreadyShown, 'true',null,'/',triggerParms["domain"]);
+					} else {
+						ForeCStdSetCookie(ckAlreadyShown, 'true', persistentExpires,'/',triggerParms["domain"]);
+					}
+					var myPopUp = window.open(fullURL, 'survey',winOptions);
+					if (triggerParms["pu"] == 1){
+						self.focus();
+					} else {
+						myPopUp.focus(); //focusing on survey window								
+					}
+				}
+			}
+		}	
+		// increment it and set the new cookie value
+		pageCount++;
+		ForeCStdSetCookie(ckLoyaltyCount, pageCount, null,'/',triggerParms["domain"]);		
+	}
+}
+		Poll();
+	
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// End Foresee Survey Code
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//-->
+</script>
+<!-- End_common_javascript --> <!-- Begin_global_stylesheet --> 
+<STYLE TYPE="text/css" TITLE="Standard">
+<!--
+	A, A:LINK {
+		font-weight : bold;
+		color : #990000
+	}
+	A.leftnavitem, A.leftnavitem:ACTIVE, A.leftnavitem:VISITED {
+		text-decoration : none;
+		color : #ffffff;
+	}
+	A.leftnavitem:HOVER {
+		text-decoration : underline;
+		color : #ffffff;
+	}
+	A.leftnavparent, A.leftnavparent:VISITED, A.leftnavparent:ACTIVE {
+		text-decoration : none;
+		color : #ffffff;
+		font-weight : normal;
+	}
+	A.leftnavparent:HOVER {
+		text-decoration : underline;
+		color : #ffffff;
+		font-weight : normal;
+	}
+	A.leftnavhead, A.leftnavhead:ACTIVE, A.leftnavhead:VISITED {
+		text-decoration : none;
+		color : #FF9900;
+	}
+	A.leftnavhead:HOVER {
+		text-decoration : underline;
+		color : #FF9900;
+	}
+	A.bodynavitem {
+		text-decoration : underline;
+		color : #990000;
+		font-weight : normal;
+	}
+	A.crumbs {
+		text-decoration : underline;
+		font-weight : normal;
+	}
+	A:HOVER {
+		color : #CC0000;
+	}
+	A:ACTIVE {
+		color : #CC0000;
+	}
+	A.cfbutton {
+		text-decoration : none;
+	}
+	A.cfbutton:HOVER {
+		text-decoration : underline;
+	}
+	H1.print {
+		margin-bottom : 0px;
+	}
+	H2 {
+		color : #330066;
+		font-weight : bold;
+		font-size : 130%;
+	}
+	H3 {
+		color : #330066;
+		font-weight : bold;
+		font-size : 90%;
+	}
+	H4 {
+		font-weight : bold;
+		font-size : 90%;
+	}
+	A.alphatoc {
+		color : Black;
+		text-decoration : none;
+	}
+	A.alphatoc:HOVER {
+		background-color : #ffd590;
+		color : Black;
+	}
+
+
+-->
+</STYLE>
+<!-- End_global_stylesheet --> 
+</HEAD>
+<BODY BGCOLOR="White" LINK="#FFAA00" VLINK="#FFAA00" ALINK="#330066" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH="0" MARGINHEIGHT="0" onLoad="MM_preloadImages('/images/common/hgv-bnr-text-hover.gif','/images/common/hgv-bnr-translate-hover.gif','/images/common/hgv-bnr-search-hover.gif')">
+<basefont size="2" face="Verdana,Geneva,Arial,Helvetica,sans-serif"> <A NAME="top"></A> 
+<!-- Begin Header Table --> 
+   
+
+<!-- Begin HGVBANNER Tag (2002-12-02) -->
+
+	
+	
+	
+		
+		
+			
+				 
+				
+				
+				
+				
+					
+					
+					
+					
+						
+					
+					
+					
+				
+			
+		
+	
+
+	
+		
+				
+			
+			
+			
+
+			
+			
+	
+
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		
+			<td width="171" height="61" bgcolor="#990000">
+				
+					<a href="/">
+						
+					
+							<img src="/images/common/hgv-bnr-logo2.gif" alt="[Logo: Homes and Communities: U.S. Department of Housing and Urban Development]" width="171" height="61" border="0">
+						
+					</a>
+				
+			</td>
+			<td width="377" height="61">
+				
+					<img src="/images/common/hgv-tab-pih.gif" alt="Public and Indian Housing" width="377" height="61" border="0">
+				
+			</td>
+		
+		<td width="287">
+			<table width="287" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					
+								<td width="75">
+									<a href="http://espanol.hud.gov/offices/pih/pha/contacts/index.cfm?&lang=es" onMouseOver="MM_swapImage('spanish','','/images/common/hgv-bnr-espanol-hover2.gif',1)" onMouseOut="MM_swapImgRestore()">
+										<img src="/images/common/hgv-bnr-espanol2.gif" alt="[Vea la versión en español de esta página]" name="spanish" id="spanish" width="75" height="51" border="0">
+									</a> 
+								</td>
+								<td width="58">
+									<a href="/utilities/textonly.cfm" onMouseOver="MM_swapImage('text','','/images/common/hgv-bnr-text-hover.gif',1)" onMouseOut="MM_swapImgRestore()">
+										<img src="/images/common/hgv-bnr-text.gif" alt="[Display the text version of this page]" name="text" id="text" width="58" height="51" border="0">
+									</a>
+								</td>
+								<td width="154">
+									<a href="/assist/siteindex.cfm" onMouseOver="MM_swapImage('search','','/images/common/hgv-bnr-search-hover.gif',1)" onMouseOut="MM_swapImgRestore()">
+										<img src="/images/common/hgv-bnr-search.gif" alt="[Search/Index]" name="search" id="search" width="154" height="51" border="0">
+									</a>
+								</td>
+							
+				</tr>
+				
+			</table>
+		</td>
+		<td width="100%" align="left" valign="top" bgcolor="white">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td height="51" bgcolor="#990000">&nbsp;</td>
+				</tr>
+			</table>
+			
+		</td>
+	</tr>
+</table>
+<!-- End HGVBANNER Tag -->
+
+    <!-- End Header Table --> <!-- Begin Main Table --> 
+<TABLE WIDTH="760" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR VALIGN="top"> 
+    <!-- Begin Column 1 - Navigation -->
+    <TD WIDTH="171" ROWSPAN="6" BGCOLOR="#990000" HEIGHT="525"><IMG SRC="/images/common/hgv-bnr-logo2a.gif" WIDTH="171" HEIGHT="21" BORDER="0" ALIGN="top" ALT=" "> 
+      <!-- Begin Navigation Area -->
+      <TABLE border="0" CELLSPACING="0" CELLPADDING="0">
+        <TR> 
+          <TD WIDTH="166"> 
+            <!-- Begin Navigation Content -->
+            
+   <!-- HGVtopics build 01/27/2003 -->
+<!--Begin_Navigation_Content--> 
+			<table cellspacing="3" cellpadding="0" BORDER="0">
+		<tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><br><A HREF="/offices/pih/index.cfm" CLASS="leftnavhead">Public and Indian Housing</a></b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/about/index.cfm" CLASS="leftnavparent">About PIH</a></font></td></tr><tr><td width="10"><img src="/images/common/hgv-icn-pointer-yellow-down.gif" width="10" height="10" border="0" alt=" - "></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/ph/index.cfm" CLASS="leftnavparent">Public housing</a></font></td></tr><tr valign="top"><td></td><td width="10"><img src="/images/common/hgv-icn-dot-yellow.gif" width="10" height="10" border="0" alt=" - - "></td><td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/phprog.cfm" CLASS="leftnavitem">Fact sheet</a></font></td></tr><tr valign="top"><td></td><td width="10"><img src="/images/common/hgv-icn-dot-yellow.gif" width="10" height="10" border="0" alt=" - - "></td><td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/pha/contacts/index.cfm" CLASS="leftnavitem">Public Housing Agency contacts</a></font></td></tr><tr valign="top"><td></td><td width="10"><img src="/images/common/hgv-icn-dot-yellow.gif" width="10" height="10" border="0" alt=" - - "></td><td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/ph/homeownership.cfm" CLASS="leftnavitem">Homeownership</a></font></td></tr><tr valign="top"><td></td><td width="10"><img src="/images/common/hgv-icn-dot-yellow.gif" width="10" height="10" border="0" alt=" - - "></td><td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/ph/programs.cfm" CLASS="leftnavitem">Programs</a></font></td></tr><tr valign="top"><td></td><td width="10"><img src="/images/common/hgv-icn-dot-yellow.gif" width="10" height="10" border="0" alt=" - - "></td><td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/ph/mtw/index.cfm" CLASS="leftnavitem">Moving to Work</a></font></td></tr><tr valign="top"><td></td><td width="10"><img src="/images/common/hgv-icn-dot-yellow.gif" width="10" height="10" border="0" alt=" - - "></td><td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/pha/index.cfm" CLASS="leftnavitem">Public Housing Agency Plans</a></font></td></tr><tr valign="top"><td></td><td width="10"><img src="/images/common/hgv-icn-dot-yellow.gif" width="10" height="10" border="0" alt=" - - "></td><td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/ph/ross/index.cfm" CLASS="leftnavitem">Resident Opportunities & Self Sufficiency</a></font></td></tr><tr valign="top"><td></td><td width="10"><img src="/images/common/hgv-icn-dot-yellow.gif" width="10" height="10" border="0" alt=" - - "></td><td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/renting/index.cfm" CLASS="leftnavitem">Renter's kit</a></font></td></tr><tr valign="top"><td></td><td width="10"><img src="/images/common/hgv-icn-dot-yellow.gif" width="10" height="10" border="0" alt=" - - "></td><td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/ph/phecc/index.cfm" CLASS="leftnavitem">PHECC</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/pihcc/index.cfm" CLASS="leftnavparent">Senior Housing Clearinghouse Center</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/ph/capfund/index.cfm" CLASS="leftnavparent">CapFund</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/ph/hope6/index.cfm" CLASS="leftnavparent">HOPE VI</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/hcv/index.cfm" CLASS="leftnavparent">Housing Choice Vouchers</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/phr/index.cfm" CLASS="leftnavparent">Public Housing Reform</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/ih/index.cfm" CLASS="leftnavparent">Indian Housing</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/programs/ph/rhiip/index.cfm" CLASS="leftnavparent">Rental Housing Integrity Improvement Project</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/grants/index.cfm" CLASS="leftnavparent">Grants</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/regs/index.cfm" CLASS="leftnavparent">Notices, rules & regulations</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/publications/index.cfm" CLASS="leftnavparent">Library</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/forums/index.cfm" CLASS="leftnavparent">Forums</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/offices/pih/systems/index.cfm" CLASS="leftnavparent">Online systems</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><br><A HREF="/news/index.cfm" CLASS="leftnavhead">HUD news</a></b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><br><A HREF="/buying/index.cfm" CLASS="leftnavhead">Homes</a></b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><br><A HREF="/community/index.cfm" CLASS="leftnavhead">Communities</a></b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><br><A HREF="/grants/index.cfm" CLASS="leftnavhead">Working with HUD</a></b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><br><A HREF="/library/index.cfm" CLASS="leftnavhead">Resources</a></b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="ffaa00"><b><img src="/images/common/hgv-fmt-space.gif" width="1" height="9" border="0" alt=""><br><A HREF="/webcasts/index.cfm" CLASS="leftnavhead">Tools</a></b></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/webcasts/index.cfm" CLASS="leftnavitem">Webcasts</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/subscribe/index.cfm" CLASS="leftnavitem">Mailing lists</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/assist/contactus.cfm" CLASS="leftnavitem">Contact us</a></font></td></tr><tr><td width="10"></td><td colspan="2"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><A HREF="/assist/index.cfm" CLASS="leftnavitem">Help</a></font></td></tr></table><!--End_Navigation_Content-->
+
+
+<p align="center"><a href="http://www.firstgov.gov/"><img src="/images/common/hgv-tpc-firstgov.gif" alt="[FirstGov: Your First Click for the U.S. Government]" width="130" height="36" hspace="0" vspace="0" border="0"></a>
+&nbsp;<br>
+
+
+
+
+    
+            <!-- End Navigation Content -->
+          </TD>
+          <TD WIDTH="5" ALIGN="left" VALIGN="top"></TD>
+        </TR>
+        <!-- End Navigation Area -->
+      </TABLE>
+      <!-- End Column 1 - Navigation -->
+    </TD>
+    <!-- Begin Column 2 - Whitespace Only -->
+    <TD WIDTH="20" ROWSPAN="6"><IMG SRC="/images/common/hgv-fmt-space.gif" WIDTH="20" HEIGHT="1" BORDER="0" ALIGN="top" ALT=" "></TD>
+    <!-- End Column 2 - Whitespace Only -->
+    <!-- Begin Content Area - Columns 3-5 -->
+    <TD COLSPAN="3" VALIGN="top"> 
+      <!-- Begin Content Table -->
+      <TABLE WIDTH="560" CELLSPACING="1" CELLPADDING="0" BORDER="0">
+        <TR> 
+          <!-- Begin Crumb Trail Area - Spans Columns 3 through 5 -->
+          <TD COLSPAN="3" ALIGN="left" VALIGN="top"><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="1">
+   <!-- HGVcrumbs build 03/08/2002 -->
+
+   </FONT></TD>
+          <!-- End Crumb Trail Area  - Spans Columns 2 through 5 -->
+        </TR>
+        <TR> 
+          <!-- Begin Spacer Cell To Ensure Minimum Vertical Spacing Between Crumbtrail and Title - Spans Columns 3 - 5 -->
+          <TD COLSPAN="3" ALIGN="left" VALIGN="top"><IMG SRC="/images/common/hgv-fmt-space.gif" WIDTH="1" HEIGHT="10" HSPACE="0" VSPACE="0" BORDER="0" ALIGN="top" ALT=" "></TD>
+          <!-- End Spacer Cell To Ensure Minimum Vertical Spacing Between Crumbtrail and Title - Spans Columns 3 - 5 -->
+        </TR>
+        <TR> 
+          <!-- Begin Title Cell - Spans Columns 3 - 5 -->
+          <TD COLSPAN="3" ALIGN="left" VALIGN="top"> 
+            <H1><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="5" COLOR="#330066"><!-- #BeginEditable "title" -->PHA 
+              Contact Information<!-- #EndEditable --></FONT></H1>
+          </TD>
+          <!-- End Title Cell - Spans Columns 3 - 5 -->
+        </TR>
+        <TR> 
+          <!-- Begin Column 3 - Wide Content Area -->
+          <TD WIDTH="560" VALIGN="top" COLSPAN="3" id="content-area"><!-- #BeginEditable "content-area" --> 
+<!-- Begin HGVSIDEBAR Open Tag -->
+		<table border="0" cellspacing="0" cellpadding="0" align="right"><tr>
+			<td width="20" valign="top"><img src="/images/common/hgv-fmt-space.gif" width="20" height="1" border="0" alt=""></td>
+			<td width="212" valign="top">
+
+
+<!-- Begin HGVSENDTHIS Tag -->
+
+   
+
+<!-- Begin HGVTOOLBOX Tag build 09/24/02 -->
+
+
+
+	<table width="212" border="0" cellspacing="0" cellpadding="0" bgcolor="fff5dc">
+
+<tr>
+	<td width="6" align="left" valign="top"><img align="left" alt="" border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topleft.gif"></td>
+	
+		<td width="200" height="6" align="center" valign="middle"><img alt="" border="0" height="1" src="/images/common/hgv-fmt-space.gif" width=200 hspace="0" vspace="0"></td>
+	
+	<td width="6" align="right" valign="top"><img alt="" border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topright.gif"></td>
+</tr>
+<tr>
+	<td><img alt="" border="0" src="/images/common/hgv-fmt-space.gif" height="1" width="1" hspace="0" vspace="0"></td>
+	<td>
+		<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+			
+				      
+						<a href="/local/index.cfm"><img src="/images/common/hgv-icn-tools-map.gif" width="30" height="20" border="0" alt="" hspace="0" vspace="0" align="top"><span style="font-size: 9pt;" style="text-decoration:none;">&nbsp;</span>Information by State</a><br>
+					
+			
+	
+	
+	
+		
+		
+			
+				 
+				
+				
+				
+				
+					
+					
+					
+					
+						
+					
+					
+					
+				
+			
+		
+	
+
+	
+		
+		
+			
+			
+				<a href="http://espanol.hud.gov/offices/pih/pha/contacts/index.cfm?&lang=es"><img src="/images/common/hgv-icn-tools-translate.gif" width="30" height="20" border="0" alt="" hspace="0" vspace="0" align="top"><span style="font-size: 9pt;" style="text-decoration:none;">&nbsp;</span>Esta p&aacute;gina en espa&ntilde;ol</a><br>
+			
+			
+	
+
+
+
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<a href="/utilities/print/print.cfm?referer=http://www.hud.gov/offices/pih/pha/contacts/index.cfm"><img src="/images/common/hgv-icn-tools-print.gif" width="30" height="20" border="0" alt="" hspace="0" vspace="0" align="top"><span style="font-size: 9pt;" style="text-decoration:none;">&nbsp;</span>Print version</a><br>
+					
+						<a href="/utilities/send/sendlink.cfm"><img src="/images/common/hgv-icn-tools-send.gif" width="30" height="20" border="0" alt="" hspace="0" vspace="0" align="top"><span style="font-size: 9pt;" style="text-decoration:none;">&nbsp;</span>Email this to a friend</a><br>
+					
+		</font>
+	</td>
+	<td><img alt="" border="0" src="/images/common/hgv-fmt-space.gif" height="1" width="1" hspace="0" vspace="0"></td>
+</tr>
+<tr>
+	<td align="left" valign="bottom"><img align="left" alt="" border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-btmleft.gif"></td>
+	<td height="6"><img alt="" border="0" src="/images/common/hgv-fmt-space.gif" height="1" width="1" hspace="0" vspace="0"></td>
+	<td align="right" valign="bottom"><img alt="" border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-btmright.gif"></td>
+</tr>
+</table>
+&nbsp;<br>
+
+   
+
+<!-- End HGVSENDTHIS Tag -->
+
+</font> 
+<!-- Begin HGVPRINTTHIS Tag -->
+
+<!-- End HGVPRINTTHIS Tag -->
+
+   
+<!-- Begin HGVCONTENTBOX Open Tag -->
+
+	<table width=212 border="0" cellspacing="0" cellpadding="0" bgcolor="fff5dc"> 
+			<tr>
+				<td width="6" align="left" valign="top" bgcolor="336600"><IMG align="left" alt=" " border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topleft.gif"></td>
+				<td width=200 height="20" align="center" valign="middle" bgcolor="336600"><FONT color=white face=Verdana,Geneva,Arial,Helvetica,sans-serif size=2><IMG alt="" border="0" height="1" src="/images/common/hgv-fmt-space.gif" width=200 hspace="0" vspace="0"><br><B>  Related Information 
+
+
+
+
+
+</B></FONT></td>
+				<td width="6" align="right" valign="top" bgcolor="336600"><IMG alt=" " border="0" height="6" width="6" hspace="0" src="/images/common/hgv-fmt-topright.gif"></td>
+			</tr>
+		
+		<tr><td colspan="3">
+		
+			<table width=212 border="0" cellspacing="0" cellpadding="5">
+			<tr><td>
+			
+	  	
+		
+		<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+	
+
+	<!-- STheodore: End check for subpage -->
+	
+
+   
+ 
+                        <table  border='0' cellspacing='4' cellpadding='0' class='hgvlist'>
+                          <tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><a href="http://www.hud.gov/offices/pih/systems/pic/haprofiles/index.cfm">HA 
+                            Profiles</a> - HA profiles provides more detailed, 
+                            up-to-date HA information, in addition to address 
+                            and contact information for individual Public Housing 
+                            Agencies.</font></td></tr>
+                          <tr valign="top">
+		<td nowrap width="15"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1" color="990000"><img src='/images/common/hgv-icn-pointer-red.gif' alt=' - ' align='baseline'>&nbsp;</font></td>
+		<td><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"><a href="../../about/irc.cfm">PIH 
+                            Information and Resource Center</a> (1-800-955-2232). 
+                            The PIH Information and Resource Center is staffed 
+                            to answer questions/ inquiries from the public and 
+                            PHAs regarding public housing and housing choice voucher 
+                            programs and regulations. </font></font></td></tr>
+                        </table>
+                        
+
+   
+    <!-- Begin HGVCONTENTBOX Close Tag -->
+	<!-- STheodore: Begin check for subpage -->
+	
+
+		
+		</font></td></tr>
+	
+		
+		</table>
+		
+		</td></tr>
+		
+		</table>
+		<br>
+
+	<!-- STheodore: End check for subpage -->
+	
+	
+<!-- End HGVCONTENTBOX Tag -->
+
+
+   
+                  <font face="Verdana,Arial" size="1"> 
+                  <!-- Place any additional sidebar content here -->
+                  
+<!-- Begin HGVSIDEBAR Close Tag -->
+			</td>
+		</tr></table>
+<!-- End HGVSIDEBAR Tag -->
+
+
+            <FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="2"> 
+            <h3>Find Your Local Public Housing Agency (PHA)</h3>
+            </font> 
+            <p> <font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2"> 
+              If you need <a href="../../programs/ph/index.cfm">public housing</a> 
+              assistance or would like specific information about public housing 
+              programs such as <a href="../../programs/hcv/index.cfm">housing 
+              choice vouchers</a>, please contact your local Public Housing Agency.</font></p>
+            <p><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="2"> 
+              To view contact information for Public Housing Agencies in your 
+              city and state, select your state from the list-box, or use the 
+              map below.</font></p>
+            <font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2"> 
+            <h3>HA Contact Information by State (List):</h3>
+            </font> <font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1"> 
+
+<SCRIPT Language="JavaScript">
+<!--
+function go()
+{
+	box = document.formstate.site;
+	destination = box.options[box.selectedIndex].value;
+	location.href = destination;
+}
+//-->
+</SCRIPT>
+
+            <form name="formstate" method="post">
+              <p> 
+                <Select name="site" size=4 style="FONT-WEIGHT: normal; FONT-SIZE: xx-small; FONT-FAMILY: Verdana, Arial, Helvetica">
+                  <option id="AL" value="http://www.hud.gov/offices/pih/pha/contacts/states/al.cfm">Alabama</option>
+                  <option id="AK" value="http://www.hud.gov/offices/pih/pha/contacts/states/ak.cfm">Alaska</option>
+                  <option id="AZ" value="http://www.hud.gov/offices/pih/pha/contacts/states/az.cfm">Arizona</option>
+                  <option id="AR" value="http://www.hud.gov/offices/pih/pha/contacts/states/ar.cfm">Arkansas</option>
+                  <option id="CA" value="http://www.hud.gov/offices/pih/pha/contacts/states/ca.cfm">California</option>
+                  <option id="CO" value="http://www.hud.gov/offices/pih/pha/contacts/states/co.cfm">Colorado</option>
+                  <option id="CT" value="http://www.hud.gov/offices/pih/pha/contacts/states/ct.cfm">Connecticut</option>
+                  <option id="DE" value="http://www.hud.gov/offices/pih/pha/contacts/states/de.cfm">Delaware</option>
+                  <option id="FL" value="http://www.hud.gov/offices/pih/pha/contacts/states/fl.cfm">Florida</option>
+                  <option id="GA" value="http://www.hud.gov/offices/pih/pha/contacts/states/ga.cfm">Georgia</option>
+                  <option id="GU" value="http://www.hud.gov/offices/pih/pha/contacts/states/gu.cfm">Guam</option>
+                  <option id="HI" value="http://www.hud.gov/offices/pih/pha/contacts/states/hi.cfm">Hawaii</option>
+                  <option id="ID" value="http://www.hud.gov/offices/pih/pha/contacts/states/id.cfm">Idaho</option>
+                  <option id="IL" value="http://www.hud.gov/offices/pih/pha/contacts/states/il.cfm">Illinois</option>
+                  <option id="IN" value="http://www.hud.gov/offices/pih/pha/contacts/states/in.cfm">Indiana</option>
+                  <option id="IA" value="http://www.hud.gov/offices/pih/pha/contacts/states/ia.cfm">Iowa</option>
+                  <option id="KS" value="http://www.hud.gov/offices/pih/pha/contacts/states/ks.cfm">Kansas</option>
+                  <option id="KY" value="http://www.hud.gov/offices/pih/pha/contacts/states/ky.cfm">Kentucky</option>
+                  <option id="LA" value="http://www.hud.gov/offices/pih/pha/contacts/states/la.cfm">Louisiana</option>
+                  <option id="ME" value="http://www.hud.gov/offices/pih/pha/contacts/states/me.cfm">Maine</option>
+                  <option id="MP" value="http://www.hud.gov/offices/pih/pha/contacts/states/mp.cfm">Mariana 
+                  Islands</option>
+                  <option id="MD" value="http://www.hud.gov/offices/pih/pha/contacts/states/md.cfm">Maryland</option>
+                  <option id="MA" value="http://www.hud.gov/offices/pih/pha/contacts/states/ma.cfm">Massachusetts</option>
+                  <option id="MI" value="http://www.hud.gov/offices/pih/pha/contacts/states/mi.cfm">Michigan</option>
+                  <option id="MN" value="http://www.hud.gov/offices/pih/pha/contacts/states/mn.cfm">Minnesota</option>
+                  <option id="MS" value="http://www.hud.gov/offices/pih/pha/contacts/states/ms.cfm">Mississippi</option>
+                  <option id="MO" value="http://www.hud.gov/offices/pih/pha/contacts/states/mo.cfm">Missouri</option>
+                  <option id="MT" value="http://www.hud.gov/offices/pih/pha/contacts/states/mt.cfm">Montana</option>
+                  <option id="NE" value="http://www.hud.gov/offices/pih/pha/contacts/states/ne.cfm">Nebraska</option>
+                  <option id="NV" value="http://www.hud.gov/offices/pih/pha/contacts/states/nv.cfm">Nevada</option>
+                  <option id="NH" value="http://www.hud.gov/offices/pih/pha/contacts/states/nh.cfm">New 
+                  Hampshire</option>
+                  <option id="NJ" value="http://www.hud.gov/offices/pih/pha/contacts/states/nj.cfm">New 
+                  Jersey</option>
+                  <option id="NM" value="http://www.hud.gov/offices/pih/pha/contacts/states/nm.cfm">New 
+                  Mexico</option>
+                  <option id="NY" value="http://www.hud.gov/offices/pih/pha/contacts/states/ny.cfm">New 
+                  York</option>
+                  <option id="NC" value="http://www.hud.gov/offices/pih/pha/contacts/states/nc.cfm">North 
+                  Carolina</option>
+                  <option id="ND" value="http://www.hud.gov/offices/pih/pha/contacts/states/nd.cfm">North 
+                  Dakota</option>
+                  <option id="OH" value="http://www.hud.gov/offices/pih/pha/contacts/states/oh.cfm">Ohio</option>
+                  <option id="OK" value="http://www.hud.gov/offices/pih/pha/contacts/states/ok.cfm">Oklahoma</option>
+                  <option id="OR" value="http://www.hud.gov/offices/pih/pha/contacts/states/or.cfm">Oregon</option>
+                  <option id="PA" value="http://www.hud.gov/offices/pih/pha/contacts/states/pa.cfm">Pennsylvania</option>
+                  <option id="PR" value="http://www.hud.gov/offices/pih/pha/contacts/states/pr.cfm">Puerto 
+                  Rico</option>
+                  <option id="RI" value="http://www.hud.gov/offices/pih/pha/contacts/states/ri.cfm">Rhode 
+                  Island</option>
+                  <option id="SC" value="http://www.hud.gov/offices/pih/pha/contacts/states/sc.cfm">South 
+                  Carolina</option>
+                  <option id="SD" value="http://www.hud.gov/offices/pih/pha/contacts/states/sd.cfm">South 
+                  Dakota</option>
+                  <option id="TN" value="http://www.hud.gov/offices/pih/pha/contacts/states/tn.cfm">Tennessee</option>
+                  <option id="TX" value="http://www.hud.gov/offices/pih/pha/contacts/states/tx.cfm">Texas</option>
+                  <option id="UT" value="http://www.hud.gov/offices/pih/pha/contacts/states/ut.cfm">Utah</option>
+                  <option id="VT" value="http://www.hud.gov/offices/pih/pha/contacts/states/vt.cfm">Vermont</option>
+                  <option id="VI" value="http://www.hud.gov/offices/pih/pha/contacts/states/vi.cfm">Virgin 
+                  Island</option>
+                  <option id="VA" value="http://www.hud.gov/offices/pih/pha/contacts/states/va.cfm">Virginia</option>
+                  <option id="WA" value="http://www.hud.gov/offices/pih/pha/contacts/states/wa.cfm">Washington</option>
+                  <option id="DC" value="http://www.hud.gov/offices/pih/pha/contacts/states/dc.cfm">Washington 
+                  DC</option>
+                  <option id="WV" value="http://www.hud.gov/offices/pih/pha/contacts/states/wv.cfm">West 
+                  Virginia</option>
+                  <option id="WI" value="http://www.hud.gov/offices/pih/pha/contacts/states/wi.cfm">Wisconsin</option>
+                  <option id="WY" value="http://www.hud.gov/offices/pih/pha/contacts/states/wy.cfm">Wyoming</option>
+                </select>
+                <br>
+                <!--
+                           <input type="image" border=0 
+					  value="Go" src="/offices/pih/images/icons/go-white-bg.gif" alt="Click here to go to page.">
+//-->
+
+<a href="JavaScript:go()">
+<img src="/offices/pih/images/icons/go-white-bg.gif" alt="Click here to go to page." name="image" border=0></a>
+            </form>
+            </font> <font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2"> 
+            <h3>HA Contact Information by State (Map):</h3>
+            </font> <FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="2"><img src="usamap1.gif" width="550" height="406" alt="Clickable Image of the US" border="0" usemap="#usamap" href="states/vt.cfm"> 
+            <map name="usamap"> 
+              <area shape="poly" coords="35,3,102,23,96,61,33,43" href="states/wa.cfm" alt="Washington" title="Washington">
+              <area shape="poly" coords="30,44,92,61,80,114,14,97" href="states/or.cfm" alt="Oregon" title="Oregon">
+              <area shape="poly" coords="16,98,54,107,47,145,91,219,81,242,24,204,10,140,8,115,13,102" href="states/ca.cfm" alt="California" title="California">
+              <area shape="poly" coords="98,188,148,196,138,271,81,245" href="states/az.cfm" alt="Arizona" title="Arizona">
+              <area shape="poly" coords="139,126,144,89,125,87,118,71,109,44,110,23,103,23,84,113" href="states/id.cfm" alt="Idaho" title="Idaho">
+              <area shape="poly" coords="99,183,110,120,56,108,48,144,88,211" href="states/nv.cfm" alt="Nevada" title="Nevada">
+              <area shape="poly" coords="207,94,211,42,110,27,124,90" href="states/mt.cfm" alt="Montana" title="Montana">
+              <area shape="poly" coords="202,146,206,92,143,88,136,138" href="states/wy.cfm" alt="Wyoming" title="Wyoming">
+              <area shape="poly" coords="149,195,155,140,134,139,136,126,110,120,100,186" href="states/ut.cfm" alt="Utah" title="Utah">
+              <area shape="poly" coords="209,78,275,83,268,42,212,39" href="states/nd.cfm" alt="North Dakota" title="North Dakota">
+              <area shape="poly" coords="209,79,276,83,275,126,205,120" href="states/sd.cfm" alt="South Dakota" title="South Dakota">
+              <area shape="poly" coords="158,142,224,149,222,201,152,195" href="states/co.cfm" alt="Colorado" title="Colorado">
+              <area shape="poly" coords="138,269,203,267,209,200,149,194" href="states/nm.cfm" alt="New Mexico" title="New Mexico">
+              <area shape="rect" coords="483,337,501,348" href="states/pr.cfm" alt="Puerto Rico" title="Puerto Rico">
+              <area shape="poly" coords="204,121,274,127,285,163,224,160,222,150,202,147" href="states/ne.cfm" alt="Nebraska" title="Nebraska">
+              <area shape="poly" coords="222,160,289,163,292,202,223,201" href="states/ks.cfm" alt="Kansas" title="Kansas">
+              <area shape="poly" coords="210,201,292,202,296,247,249,240,239,233,239,210,208,206" href="states/ok.cfm" alt="Oklahoma" title="Oklahoma">
+              <area shape="poly" coords="209,207,238,211,241,236,301,249,305,299,274,319,264,335,268,350,242,347,232,316,212,298,202,309,169,269,202,269" href="states/tx.cfm" alt="Texas" title="Texas">
+              <area shape="poly" coords="273,42,331,53,317,70,313,84,312,99,326,114,277,115" href="states/mn.cfm" alt="Minnesota" title="Minnesota">
+              <area shape="poly" coords="275,115,325,114,330,127,330,140,324,154,282,154" href="states/ia.cfm" alt="Iowa" title="Iowa">
+              <area shape="poly" coords="284,153,327,153,339,177,351,204,345,213,331,208,295,208" href="states/mo.cfm" alt="Missouri" title="Missouri">
+              <area shape="poly" coords="295,209,328,209,345,216,330,255,303,255,303,249,297,247" href="states/ar.cfm" alt="Arkansas" title="Arkansas">
+              <area shape="poly" coords="302,255,330,256,332,267,328,283,349,283,357,308,329,309,314,305,305,301" href="states/la.cfm" alt="Louisana" title="Louisana">
+              <area shape="poly" coords="464,355,467,311,438,277,404,279,375,277,378,291,413,304" href="states/fl.cfm" alt="Florida" title="Florida">
+              <area shape="rect" coords="16,261,103,334" href="states/ak.cfm" alt="Alaska" title="Alaska">
+              <area shape="poly" coords="330,127,357,126,364,166,361,187,347,199,325,153" href="states/il.cfm">
+              <area shape="poly" coords="314,70,330,70,355,87,358,95,356,125,330,125,311,97" href="states/wi.cfm" alt="Wisconsin" title="Wisconsin">
+              <area shape="poly" coords="401,131,371,133,367,99,356,88,333,69,376,55,401,75,408,103" href="states/mi.cfm" alt="Michigan" title="Michigan">
+              <area shape="poly" coords="359,134,387,133,390,171,363,186" href="states/in.cfm">
+              <area shape="rect" coords="106,296,157,340" href="states/hi.cfm" alt="Hawaii" title="Hawaii">
+              <area shape="poly" coords="513,19,546,60,516,91,502,59" href="states/me.cfm" alt="Maine" title="Maine">
+              <area shape="poly" coords="388,131,426,120,429,153,415,171,391,168" href="states/oh.cfm" alt="Ohio" title="Ohio">
+              <area shape="poly" coords="348,205,405,201,421,185,409,168,363,186,353,195" href="states/ky.cfm" alt="Kentucky" title="Kentucky">
+              <area shape="poly" coords="348,205,427,195,403,221,342,227" href="states/tn.cfm" alt="Tennessee" title="Tennessee">
+              <area shape="poly" coords="428,120,470,113,481,121,478,129,489,135,476,146,430,152" href="states/pa.cfm" alt="Pennsylvania" title="Pennsylvania">
+              <area shape="poly" coords="467,73,483,71,492,121,481,122,473,113,430,118,443,95" href="states/ny.cfm" alt="New York" title="New York">
+              <area shape="poly" coords="341,227,362,225,364,287,352,290,348,283,329,283,332,260,331,254" href="states/ms.cfm" alt="Mississippi" title="Mississippi">
+              <area shape="poly" coords="363,226,389,223,400,278,373,277,376,287,364,286" href="states/al.cfm" alt="Alabama" title="Alabama">
+              <area shape="poly" coords="390,223,413,221,441,257,438,277,401,277" href="states/ga.cfm" alt="Georgia" title="Georgia">
+              <area shape="poly" coords="415,220,438,216,443,219,449,216,463,226,443,256" href="states/sc.cfm" alt="South Carolina" title="South Carolina">
+              <area shape="poly" coords="426,195,485,188,498,203,463,226,449,216,441,218,437,216,406,221" href="states/nc.cfm" alt="North Carolina" title="North Carolina">
+              <area shape="poly" coords="411,197,421,185,438,183,442,169,455,156,465,157,466,166,474,169,485,187" href="states/va.cfm" alt="Virginia" title="Virginia">
+              <area shape="poly" coords="415,172,420,185,437,183,446,163,451,155,456,151,442,154,442,150,431,154" href="states/wv.cfm" alt="West Virginia" title="West Virginia">
+              <area shape="poly" coords="484,69,500,64,501,73,498,84,499,96,490,100" href="states/vt.cfm" alt="Vermont" title="Vermont">
+              <area shape="poly" coords="501,61,513,90,501,96" href="states/nh.cfm" alt="New Hampshire" title="New Hampshire">
+              <area shape="poly" coords="489,99,513,90,522,99,526,110,504,104,490,107" href="states/ma.cfm" alt="Massachusetts" title="Massachusetts">
+              <area shape="poly" coords="508,106,516,125,523,115,511,109" href="states/ri.cfm" alt="Rhode Island" title="Rhode Island">
+              <area shape="poly" coords="491,108,509,107,510,116,493,118" href="states/ct.cfm" alt="Connecticut" title="Connecticut">
+              <area shape="poly" coords="480,123,493,119,488,150,479,146" href="states/nj.cfm" alt="New Jersey" title="New Jersey">
+              <area shape="poly" coords="511,126,506,116,497,119,496,132,494,124" href="states/ny.cfm" alt="New York" title="New York">
+              <area shape="poly" coords="477,145,488,152,497,153,498,160,482,159,477,144" href="states/de.cfm" alt="Delaware" title="Delaware">
+              <area shape="poly" coords="491,159,504,163,497,170,486,166,476,158,472,148,470,151,472,159,468,160,461,153,459,146" href="states/md.cfm" alt="Maryland" title="Maryland">
+              <area shape="poly" coords="475,161,497,174,498,185,483,179,472,165" href="states/dc.cfm" alt="District of Columbia" title="District of Columbia">
+            </map>
+            </font> 
+	<!-- Begin cf_hgvexpire open tag -->
+
+	
+	
+	<!-- EXPIRE Note: PUBLICATION is not defined. -->
+	
+				
+	<!-- EXPIRE Note: Content has expired. -->
+			
+	
+	
+
+ 
+	<!-- Begin cf_hgvexpire close tag -->
+	
+		
+		
+	
+	<!-- End cf_hgvexpire tag -->
+
+
+<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2">
+
+</font> 
+            <!-- #EndEditable --></TD>
+          <!-- End Column 3 - Wide Content Area -->
+        </TR>
+      </TABLE>
+      <!-- End Content Table -->
+    </TD>
+    <!-- End Content Area - Columns 3-5 -->
+    <!-- Begin Column 6 - Whitespace Only -->
+    <TD ROWSPAN="6" WIDTH="9"><IMG SRC="/images/common/hgv-fmt-space.gif" WIDTH="9" HEIGHT="1" BORDER="0" ALIGN="top" ALT=" "></TD>
+    <!-- End Column 6 - Whitespace Only -->
+  </TR>
+  <!-- Begin Footer Row -->
+  <TR> 
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <TR VALIGN="top"> 
+    <TD COLSPAN="3"> 
+      <table border="0" cellspacing="0" cellpadding="0">
+        <TR> 
+          <TD WIDTH="312">  <FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+   
+
+   Content updated November 20, 2004
+   
+	
+	
+		<!-- Begin HGVDATE Tag -->
+		
+		
+		
+		
+			
+			
+
+
+
+			
+			
+			         
+		
+		<!-- End HGVDATE Tag -->
+	
+
+
+   </font>  
+          </TD>
+          <TD WIDTH="38">&nbsp;</TD>
+          <TD ALIGN="right" WIDTH="210"> 
+            <!-- Begin Back to Top -->
+            <FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+   
+
+<!-- Begin HGVBUTTON Tag -->
+<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+	
+		<a href="#top" 
+			class="cfbutton" 
+			onmouseover="" 
+			onmouseout="" 
+			onmousedown="" 
+			onmouseup=""
+			>
+			<img src="/images/common/hgv-icn-btn-up.gif" width="16" height="16" border="0" alt="Follow this link to go" name="top" id="button" hspace="0" vspace="0" align="top">
+			
+				<span style="font-size: 9pt; text-decoration: none;">&nbsp;</span>Back to top
+			
+		</a>
+	&nbsp;&nbsp;
+</font>
+<!-- End HGVBUTTON Tag -->
+
+   </font> 
+            <!-- End Back to Top -->
+          </TD>
+        </TR>
+      </table>
+      <!-- Begin Footer Table -->
+      
+   
+
+<!-- Begin HGVFOOTER Tag build 05/06/02 -->
+<table width="560" border="0" cellspacing="0" cellpadding="0">
+<TR>
+   <TD COLSPAN="4"><IMG SRC="/images/common/hgv-fmt-red.gif" WIDTH="560" HEIGHT="1" HSPACE="0" VSPACE="5" border="0" ALT="----------"><br><img src="/images/common/hgv-fmt-space.gif" alt="" width="1" height="5" border="0"></TD>
+</TR>
+
+      <TR>
+         <td width="67" valign="top"><img src="/images/common/hgv-icn-seal.gif" alt="[logo: HUD seal]" border="0"><img src="/images/common/hgv-fmt-space.gif" alt="" width="10" height="1" border="0"></td>
+         <td width="340" nowrap><FONT FACE="Verdana,Geneva,Arial,Helvetica,sans-serif" SIZE="1">
+            <nobr>U.S. Department of</nobr> <nobr>Housing and Urban Development</nobr><br>
+            <nobr>451 7th Street S.W.,</nobr> <nobr>Washington, DC 20410</nobr><br>
+            <nobr>Telephone: (202) 708-1112&nbsp;&nbsp;</nobr> <nobr>TTY: (202) 708-1455</nobr><br>
+            <a href="/directory/ascdir3.cfm" class="bodynavitem">Find the address of a HUD office near you</a>
+            </FONT>
+         </td>
+         <td width="44" valign="top"><img src="/images/common/hgv-fmt-space.gif" alt="" width="1" height="10" border="0"><br><a href="/library/bookshelf15/hudgraphics/fheologo.cfm"><IMG SRC="/images/common/hgv-icn-fheo.gif" WIDTH="29" HEIGHT="21" border="0" ALT="[logo: Fair Housing and Equal Opportunity]" vspace="2"></a><img src="/images/common/hgv-fmt-space.gif" alt="" width="15" height="1" border="0"></td>
+         <td width="109" align="left"><font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="1">
+            
+            <a href="/assist/privacy.cfm" class="bodynavitem">Privacy&nbsp;Policy</a><br>
+            
+      		   <a href="/" class="bodynavitem">Home</a>
+            <br>&nbsp;
+      		</font>
+         </td>
+      </TR>
+    
+</TABLE><br>
+<!-- End HGVFOOTER Tag -->
+    
+      <!-- End Footer Table -->
+    </TD>
+  </TR>
+  <!-- End Footer Row --> 
+</TABLE>
+<!-- End Main Table --> 
+</BODY>
+<!-- #EndTemplate -->
+</HTML>

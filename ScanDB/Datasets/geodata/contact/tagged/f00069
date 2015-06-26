@@ -1,0 +1,505 @@
+<DOC>
+<DOCNO>f00069</DOCNO>
+<DOCHDR>http://www.motherjones.com/about</DOCHDR>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Expires" content="0">
+<meta name="atomz_id" content="aboutindexhtml">
+
+
+
+<title>About Mother Jones</title>
+<meta name="byline" content="">
+<meta name="description" content="">
+<meta name="print_magazine" content="">
+<meta name="year" content="">
+<meta name="month" content="">
+<meta name="day" content="">
+<meta name="section" content="About">
+<link rel="Stylesheet" href="../styles_ns.css" type="text/css">
+
+<style type="text/css">
+<!--
+@import url(../styles.css);
+-->
+</style>
+        
+<script type="text/javascript" language="Javascript">
+<!--
+function in_array(needle,haystack) {
+	// craig heydenburg 4/8/02 
+	// this function is similar to the PHP function 
+	// of the same name function in_array(needle,haystack) 
+	var bool = false; 
+	for (var i=0; i<haystack.length; i++) { 
+		if (haystack[i]==needle) { 
+			bool=true; 
+		}
+	} 
+	return bool; 
+} 
+
+function sub_section_by_url(story_url) {
+	if (story_url.indexOf('/arts/music') == 0) { document.write('<span class="subhead">MUSIC</span><br>'); }
+	else if (story_url.indexOf('/arts/books') == 0) { document.write('<span class="subhead">BOOKS</span><br>'); }
+	else if (story_url.indexOf('/arts/film') == 0) { document.write('<span class="subhead">FILM</span><br>'); }
+	else if (story_url.indexOf('/arts/qa') == 0) { document.write('<span class="subhead">INTERVIEW</span><br>'); }
+	else if (story_url.indexOf('/news/qa') == 0) { document.write('<span class="subhead">INTERVIEW</span><br>'); }
+	else if (story_url.indexOf('/arts/feature') == 0) { document.write('<span class="subhead">FEATURE</span><br>'); }
+}
+function byline_title_by_url(story_url) {
+	if (story_url.indexOf('/arts/music') == 0) { document.write('Reviewed'); }
+	else if (story_url.indexOf('/arts/books') == 0) { document.write('Reviewed'); }
+	else if (story_url.indexOf('/arts/film') == 0) { document.write('Reviewed'); }
+	else if (story_url.indexOf('/arts/qa') == 0) { document.write('Interviewed'); }
+	else if (story_url.indexOf('/news/qa') == 0) { document.write('Interviewed'); }
+	else if (story_url.indexOf('/commentary/fiore') == 0) { document.write('Cartoon'); }
+}
+function home_byline_title_by_url(story_url) {
+	if (story_url.indexOf('/arts/music') == 0) { document.write('Music Review'); }
+	else if (story_url.indexOf('/arts/books') == 0) { document.write('Book Review'); }
+	else if (story_url.indexOf('/arts/film') == 0) { document.write('Film Review'); }
+	else if (story_url.indexOf('/arts/qa') == 0) { document.write('Interview'); }
+	else if (story_url.indexOf('/news/qa') == 0) { document.write('Interview'); }
+	else if (story_url.indexOf('/commentary/fiore') == 0) { document.write('Cartoon'); }
+}
+//-->
+</script>
+
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+
+		home_on = newImage("../images/nav_home_on.gif");
+		news_on = newImage("../images/nav_news_on.gif");
+		commentary_on = newImage("../images/nav_commentary_on.gif");
+		arts_on = newImage("../images/nav_arts_on.gif");
+		discuss_on = newImage("../images/nav_discuss_on.gif");
+		reader_on = newImage("../images/nav_reader_on.gif");
+		donate_on = newImage("../images/nav_donate_on.gif");
+		market_on = newImage("../images/nav_market_on.gif");
+		about_on = newImage("../images/nav_about_on.gif");
+
+		
+		preloadFlag = true;
+	}
+}
+
+
+function email_article () {
+        var url = '/popups/getemailinfo_new.pl?url=' + window.location;
+        EmailArticleWindow = window.open(url,'EmailArticleWindow','height=270,width=270');
+}
+
+function print_article () {      
+        var url = '/cgi-bin/print_article.pl?url=' + window.location;
+        PrintArticleWindow = window.open(url,'PrintArticleWindow');
+}
+
+// -->
+</SCRIPT>
+
+
+<!-- ##### begin OAS browser test ##### -->
+<script language="JavaScript" type="text/javascript"> 
+<!--
+_version=10; 
+//--> 
+</SCRIPT>
+<script language="JavaScript1.1" type="text/javascript"> 
+<!--
+_version=11;
+if (navigator.userAgent.indexOf('Mozilla/3') != -1){
+_version=10;}
+// -->
+</SCRIPT>
+
+<!-- # end OAS browser test # -->
+<!-- ##### begin OAS function definition ##### -->
+<script type="text/javascript" language="Javascript">
+<!--
+
+// here are oas site, page, and random number variables
+var url1 = document.URL;
+var Reg1 = /(\w+):\/\/[\w.]+/;
+var url2 = url1.replace(Reg1, "motherjones.com");
+var Reg2 = /\?.*/g;
+var url3 = url2.replace(Reg2, "");
+var Reg3 = /#.*/g;
+var url4 = url3.replace(Reg3, "");
+var last = url4.length - 1;
+if (url4.substr(last,1) == "/") {
+  url4 = url4 + "index.html";
+}
+var sitepage = url4;
+
+var oas='http://motherjones.com/RealMedia/ads/';
+
+var RN = new String (Math.random());
+var RNS = RN.substring (2, 11);
+
+// here is the ad insertion function
+function DisplayAds (position, width, height)
+{ 
+	var oaspage= sitepage + '/1' + RNS + '@' + position;
+	if ( _version < 11 ) {
+		document.write ('<A HREF="' + oas + 'click_nx.ads/' + oaspage + '" TARGET="_top"><IMG SRC="' + oas + 'adstream_nx.ads/' + oaspage + '" BORDER="0" WIDTH="' + width + '" HEIGHT="' + height + '"><' + '/a>');
+	} else {
+		document.write ('<SCRIPT LANGUAGE="JavaScript1.1" SRC="' + oas + 'adstream_jx.ads/' + oaspage + '">');
+		document.write ('\<\!-- --\>');
+		document.write ('\<\/SCRIPT\>');
+		document.write ('\<\!-- --\>');
+	}
+}
+// -->
+</SCRIPT>
+<!-- # end OAS function definition # -->
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function validemail ( form )
+{
+  var Reg = /(\w+)\@(\w+)\.(.+)/ ;
+  if (!form.email.value.match(Reg)) {
+    alert("Please enter a valid email address.");
+    form.email.focus();
+    return false ;
+  }  
+  return true ;
+}
+//-->
+</script>
+
+
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
+<script language="javascript">
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="ehg-foundation.hitbox.com";
+
+//BEGIN EDITABLE SECTION
+//CONFIGURATION VARIABLES
+hbx.acct="DM5307296NDD68EN3";//ACCOUNT NUMBER(S)
+hbx.pn="About Mother Jones";//PAGE NAME(S)
+hbx.mlc="About";//MULTI-LEVEL CONTENT CATEGORY
+hbx.pndef="index.html";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="n";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="none";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg="";//VISITOR SEGMENTATION
+hbx.fnl="";//FUNNELS
+
+//CAMPAIGNS
+hbx.cmp="";//CAMPAIGN ID
+hbx.cmpn="";//CAMPAIGN ID IN QUERY
+hbx.dcmp="";//DYNAMIC CAMPAIGN ID
+hbx.dcmpn="";//DYNAMIC CAMPAIGN ID IN QUERY
+hbx.dcmpe="";//DYNAMIC CAMPAIGN EXPIRATION
+hbx.dcmpre="";//DYNAMIC CAMPAIGN RESPONSE EXPIRATION
+hbx.hra="";//RESPONSE ATTRIBUTE
+hbx.hqsr="";//RESPONSE ATTRIBUTE IN REFERRAL QUERY
+hbx.hqsp="";//RESPONSE ATTRIBUTE IN QUERY
+hbx.hlt="";//LEAD TRACKING
+hbx.hla="";//LEAD ATTRIBUTE
+hbx.gp="";//CAMPAIGN GOAL
+hbx.gpn="";//CAMPAIGN GOAL IN QUERY
+hbx.hcn="";//CONVERSION ATTRIBUTE
+hbx.hcv="";//CONVERSION VALUE
+hbx.cp="null";//LEGACY CAMPAIGN
+hbx.cpd="";//CAMPAIGN DOMAIN
+
+//CUSTOM VARIABLES
+hbx.ci="";//CUSTOMER ID
+hbx.hc1="OtherPage";//CUSTOM 1
+hbx.hc2="";//CUSTOM 2
+hbx.hc3="";//CUSTOM 3
+hbx.hc4="";//CUSTOM 4
+hbx.hrf="";//CUSTOM REFERRER
+hbx.pec="";//ERROR CODES
+
+//INSERT CUSTOM EVENTS
+
+//END EDITABLE SECTION
+
+//REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
+</script><script language="javascript1.1" defer src="http://www.motherjones.com/hbx.js"></script>
+<!--END WEBSIDESTORY CODE-->
+
+
+</head>
+
+
+<body onload="preloadImages();">
+
+
+<table width="740" border="0" cellpadding="0" cellspacing="0">
+
+<tr>
+<!-- start banner -->
+<td valign="TOP" align="LEFT" bgcolor="#CCCCFF" style="white-space: nowrap;"><a href="../index.html"><img src="../images/hometop_1.gif" width="347" height="79" alt="MotherJones.com" border="0"><img src="../images/biztop_2.gif" width="135" height="79" alt="Mother Jones" border="0"></a><a href="."><img src="../images/biz_about.gif" width="258" height="79" alt="About Us" border="0"></a></td>
+<!-- end banner -->
+</tr>
+</table><table width="740" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<!-- start left column -->
+<td width="122" valign="TOP" align="LEFT" bgcolor="#666666">
+<div id="left-column" class="noindex">
+<div id="main-nav">
+<a href="../index.html" onmouseover="changeImages( 'home', '/images/nav_home_on.gif' ); return true;" onmouseout="changeImages( 'home', '/images/nav_home.gif'); return true;"><img name="home" src="../images/nav_home.gif" width="122" height="18" alt="Home" border="0"></a><br><a href="../news/index.html" onmouseover="changeImages( 'news', '/images/nav_news_on.gif' ); return true;" onmouseout="changeImages( 'news', '/images/nav_news.gif'); return true;"><img name="news" src="../images/nav_news.gif" width="122" height="18" alt="News" border="0"></a><br><a href="../commentary/index.html" onmouseover="changeImages( 'commentary', '/images/nav_commentary_on.gif' ); return true;" onmouseout="changeImages( 'commentary', '/images/nav_commentary.gif'); return true;"><img name="commentary" src="../images/nav_commentary.gif" width="122" height="18" alt="Commentary" border="0"></a><br><a href="../arts/index.html" onmouseover="changeImages( 'arts', '/images/nav_arts_on.gif' ); return true;" onmouseout="changeImages( 'arts', '/images/nav_arts.gif'); return true;"><img name="arts" src="../images/nav_arts.gif" width="122" height="18" alt="Arts" border="0"></a><br><a href="../discuss/index.html" onmouseover="changeImages( 'discuss', '/images/nav_discuss_on.gif' ); return true;" onmouseout="changeImages( 'discuss', '/images/nav_discuss.gif'); return true;"><img name="discuss" src="../images/nav_discuss.gif" width="122" height="18" alt="Discuss" border="0"></a><br><a href="services/index.html" onmouseover="changeImages( 'reader', '/images/nav_reader_on.gif' ); return true;" onmouseout="changeImages( 'reader', '/images/nav_reader.gif'); return true;"><img name="reader" src="../images/nav_reader.gif" width="122" height="18" alt="Reader Services" border="0"></a><br><a href="philanthropy/index.html" onmouseover="changeImages( 'donate', '/images/nav_donate_on.gif' ); return true;" onmouseout="changeImages( 'donate', '/images/nav_donate.gif'); return true;"><img name="donate" src="../images/nav_donate.gif" width="122" height="18" alt="Donate Now" border="0"></a><br><a href="http://market.motherjones.com/" onmouseover="changeImages( 'market', '/images/nav_market_on.gif' ); return true;" onmouseout="changeImages( 'market', '/images/nav_market.gif'); return true;"><img name="market" src="../images/nav_market.gif" width="122" height="18" alt="Market" border="0"></a><br><a href="index.html"><img name="about" src="../images/nav_about_on.gif" width="122" height="18" alt="About Us" border="0"></a>
+</div>
+
+
+
+<!-- Search -->
+<form action="http://search.atomz.com/search/" class="left-indent">
+<input type=hidden name=sp-a value="sp1002c8b7">
+<input type=hidden name=sp-t value="search">
+<input type=hidden name=sp-f value="iso-8859-1">
+<input type="hidden" name="sp-x-10" value="year">
+<input type="hidden" name="sp-q-10" value="2003">
+<input type="hidden" name="sp-q-required-10" value="0">
+<input type="text" name="sp-q" size=10>
+<input TYPE="IMAGE" SRC="/images/search_button.gif" ALT="Search">
+<p CLASS="leftcol-mini"><a href="/search/other.html">Advanced Search</a></p>
+<p CLASS="leftcol-mini"><a href="/search/back_issues.html">Browse Back Issues</a></p>
+</form>
+
+
+
+<hr>
+
+<div class="left-indent">
+<p CLASS="leftcol"><a href="http://www.motherjones.com/toc/2005/03/index.html">Current Issue</a>
+<br><a href="http://www.motherjones.com/toc/2005/03/index.html"><img src="http://www.motherjones.com/toc/2005/03/cover_97x126.jpg" vspace="4" width="97" height="126" alt="Current Issue" border="1"></a>
+</p>
+</div>
+
+<hr>
+
+<a href="http://market.motherjones.com/redmonoswsn.html" target="new"><img class="leftcolpromo" src="http://www.motherjones.com/images/ads/shoe_thumb.gif" width="97" height="50" border="1" alt="Sweatshop-Free MoJo Sneaks"></a></p>
+
+<hr>
+
+<div class="left-indent">
+<form method="POST" action="http://ga3.org/offsite-join.tcl" onsubmit="return validemail(this);">
+<p CLASS="leftcol">Free MoJo Newsletters<br><img src="http://www.motherjones.com/images/spacer.gif" width="1" height="3" alt="" border="0"><br>
+<a href="http://www.motherjones.com/about/services/mojournal.html">MoJournal</a>
+<input type="hidden" name="domain" value="Mo_Journal">
+<input type="hidden" name="return_url" value="http://www.motherjones.com/about/services/thanks_mojournal.html">
+<INPUT type=hidden name="ema_outreach_affiliate_code" value="MJ_swl">
+<input type="text" size="10" name="email" value="your e-mail" maxlength="100"><br>
+<input type="radio" name="email_pref" value="plain"><a href="http://www.motherjones.com/about/services/mosample.html" TARGET="MoJournalWindow" ONCLICK="window.open('http://www.motherjones.com/about/services/mosample.html', 'MoJournalWindow', 'width=560,height=450,scrollbars=yes'); return false">Text</a><br>
+<input type="radio" name="email_pref" value="html" checked><a href="http://www.motherjones.com/about/services/mosample2.html" TARGET="MoJournalWindow" ONCLICK="window.open('http://www.motherjones.com/about/services/mosample2.html', 'MoJournalWindow', 'width=620,height=450,scrollbars=yes'); return false">HTML</a><br>
+<input TYPE="IMAGE" value="Sign Up" src="http://www.motherjones.com/images/signup_button.gif" ALT="Sign Up">
+</p>
+</form>
+</div>
+
+<div class="left-indent">
+<form method="POST" action="http://ga3.org/offsite-join.tcl" onsubmit="return validemail(this);">
+<p CLASS="leftcol"><a href="http://www.motherjones.com/about/services/mustreads.html">Must Reads</a><br>
+<input type="hidden" name="domain" value="Must_Reads">
+<input type="hidden" name="return_url" value="http://www.motherjones.com/about/services/thanks_mustreads.html">
+<INPUT type=hidden name="ema_outreach_affiliate_code" value="MJ_swl">
+<input type="text" size="10" name="email" value="your e-mail" maxlength="100"><br>
+<input type="radio" name="email_pref" value="plain"><a href="http://www.motherjones.com/about/services/mrsample.html" TARGET="MoJournalWindow" ONCLICK="window.open('http://www.motherjones.com/about/services/mrsample.html', 'MoJournalWindow', 'width=560,height=450,scrollbars=yes'); return false">Text</a><br>
+<input type="radio" name="email_pref" value="html" checked><a href="http://www.motherjones.com/about/services/mrsample2.html" TARGET="MoJournalWindow" ONCLICK="window.open('http://www.motherjones.com/about/services/mrsample2.html', 'MoJournalWindow', 'width=620,height=450,scrollbars=yes'); return false">HTML</a><br>
+<input TYPE="IMAGE" value="Sign Up" src="http://www.motherjones.com/images/signup_button.gif" ALT="Sign Up">
+</p>
+</form>
+</div>
+
+<div class="left-indent">
+<form method="POST" action="http://ga3.org/offsite-join.tcl" onsubmit="return validemail(this);">
+<p CLASS="leftcol"><a href="http://www.motherjones.com/about/services/informed_dissent.html">Informed Dissent</a><br>
+<input type="hidden" name="domain" value="Informed_Dissent">
+<input type="hidden" name="return_url" value="http://www.motherjones.com/about/services/thanks_informed_dissent.html">
+<INPUT type=hidden name="ema_outreach_affiliate_code" value="MJ_swl">
+<input type="text" size="10" name="email" value="your e-mail" maxlength="100"><br>
+<input type="radio" name="email_pref" value="plain"><a href="http://www.motherjones.com/about/services/dissentsample.html" TARGET="MoJournalWindow" ONCLICK="window.open('http://www.motherjones.com/about/services/dissentsample.html', 'MoJournalWindow', 'width=560,height=450,scrollbars=yes'); return false">Text</a><br>
+<input type="radio" name="email_pref" value="html" checked><a href="http://www.motherjones.com/about/services/dissentsample2.html" TARGET="MoJournalWindow" ONCLICK="window.open('http://www.motherjones.com/about/services/dissentsample2.html', 'MoJournalWindow', 'width=620,height=450,scrollbars=yes'); return false">HTML</a><br>
+<input TYPE="IMAGE" value="Sign Up" src="http://www.motherjones.com/images/signup_button.gif" ALT="Sign Up">
+</p>
+</form>
+</div>
+
+<hr>
+
+<div class="leftcolpromo">
+<p class="leftcol"><img src="http://www.motherjones.com/images/lc_icon.gif" width="21" height="14" alt="$" border="0"><a href="http://www.motherjones.com/about/services/paid_content.html">Learn about subscriber content on MotherJones.com</a></p>
+</div> 
+
+
+
+
+</div>
+</td>
+<!-- end left column -->
+<!-- start center column -->
+<td valign="TOP" align="LEFT" bgcolor="#FFFFFF">
+<div class="generic-content">
+
+
+<!--begin story body-->
+<H1>About Mother Jones</h1>
+<DIV>
+<P>Mother Jones is an independent nonprofit whose roots lie in a commitment to social justice implemented through first rate investigative reporting. 
+<P>Mother Jones Magazine and Motherjones.com are made possible, in large part, by the support of the <a href="/about/philanthropy/">Foundation for National Progress</a> and through <a href="https://secure.ga3.org/03/donate_now" target="new">donations from individual readers like you.</a> 
+<P>Contact Us: <BR>Mother Jones Magazine <BR><GEO TYPE="US">222 Sutter Street <BR>6th Floor <BR>San Francisco, CA 94108</GEO> <BR>tel. 415.321.1700 <BR>fax. 415.321.1701 <BR>e-mail <a href="mailto:backtalk@motherjones.com">backtalk@motherjones.com</a></p></div>
+<P>&nbsp;</p><BR clear=all>
+<TABLE cellSpacing=0 cellPadding=0 width=485 border=0>
+<TBODY>
+<TR>
+<TD vAlign=top align=left bgColor=#ffffff colSpan=5></td></tr>
+<TR>
+<TD vAlign=top align=left bgColor=#ffffff colSpan=5>
+<H2>Click below for more information about</h2>
+<P><B><a href="/about/edit/magazine.html">Mother Jones Magazine</a></b><BR>&middot; <a href="/about/services/">Reader Services</a><BR>&middot; <a href="/commentary/letters/index.html#ma">Letters to the Editor, Mother Jones Magazine</a><BR>&middot; <a href="/about/admin/mag_guidelines.html">Writers' Guidelines</a><BR>&middot; <a href="/about/edit/masthead.html#ma">Masthead</a><BR>&middot; <a href="/magazine/MJ01/first25.html">Mother Jones: The First 25 Years</a><BR>&middot; <a href="/magazine/MJ01/motherjones_gorn.html">Mary Harris "Mother" Jones: The Woman</a><BR>&middot; <a href="mailto:backtalk@motherjones.com">Contact us</a></p>
+<P><B><a href="/about/edit/website.html">MotherJones.com</a></b><BR>&middot; <a href="pr/tenth_anniversary.html">Mother Jones Marks 10th Anniversary Online<BR></a>&middot; <a href="/about/services/mojournal.html">The MoJournal Free Weekly Newsletter</a><BR>&middot; <a href="/commentary/letters/2004/09/09_302.html">Letters to the Editor, MotherJones.com</a><BR>&middot; <a href="/about/admin/web_guidelines.html">Writer's Guidelines</a><BR>&middot; <a href="/about/edit/masthead.html#we">Masthead</a><BR>&middot; <a href="mailto:backtalk@motherjones.com">Contact us</a></p>
+<P></p>
+<P><B><a href="/about/philanthropy/">The Foundation for National Progress</a></b><BR>&middot; <a href="/about/philanthropy/programs.html">Learn more about programs supported by the FNP</a><BR>&middot; <a href="/about/philanthropy/sustainer.html">Become a sustainer</a><BR>&middot; <a href="https://secure.ga3.org/03/donate_now" target="new">Make a donation for Mother Jones to the FNP</a><BR>&middot; <a href="mailto:mjif@motherjones.com">Contact us</a></p>
+<P><B><a href="/about/sales/">Advertising</a></b><BR>&middot; <a href="/about/sales/">Tell us more about you and your company's objectives</a><BR>&middot; <a href="mailto:advertise@motherjones.com">Contact us</a></p>
+<P><B><a href="/about/pr/">Press Room</a></b><BR>&middot; <a href="/about/pr/interviews.html">Current Interviews</a><BR>&middot; <a href="/about/pr/releases.html">Press Releases</a><BR>&middot; <a href="/about/pr/newsbriefs.html">Sign up for Mother Jones News Briefs</a><BR>&middot; <a href="mailto:reynolds@motherjones.com">Contact us</a></p>
+<P><B><a href="/about/admin/jobs.html">Career and Internship Opportunities</a></b><BR>&middot; <a href="/about/admin/jobs.html">Jobs at Mother Jones</a><BR>&middot; <a href="/about/admin/internships.html">The Mother Jones Internship Program</a><BR>&middot; <a href="mailto:intern@motherjones.com">Contact us</a></p></td></tr>
+<TR>
+<TD vAlign=top align=left bgColor=#ffffff colSpan=5><img height="20" alt="______" hspace="0" src="images/midcol_rule.gif" width="452" vspace="6" border="0"></td></tr>
+<TR>
+<TD vAlign=top align=left bgColor=#ffffff colSpan=5>
+<P>Can't find what you're looking for here? 
+<P>Read the <a href="/about/admin/faq.html">Mother Jones FAQ</a> (Frequently Asked Questions)<BR>Try an <a href="/search/other.html">advanced search</a> of the MotherJones.com site </p></td></tr></tbody></table>
+<P></p>
+
+
+<!--end story body-->
+
+</div>
+
+<br clear="all" class="ns-only">
+<hr class="ns-only">
+<div class="ad-center-banner">
+<p align="center" style="font-family: verdana, sans-serif; font-size: 10px; line-height: normal; margin: 3px; padding: 0;">----Advertisement----</p>
+<script language="Javascript" type="text/javascript">
+<!--
+DisplayAds("Bottom,Right!Bottom", "468", "60");
+//-->
+</SCRIPT>
+<p align="center" style="font-family: verdana, sans-serif; font-size: 10px; line-height: normal; margin: 0px; padding: 0;">----Advertisement----</p>
+</div>
+<hr class="ns-only">
+
+
+
+
+<div class="footer">
+<p>This article has been made possible by the <a href="http://www.motherjones.com/about/admin/index.html">Foundation for National Progress</a>, the <a href="http://www.motherjones.com/about/philanthropy/index.html">Investigative Fund of Mother Jones</a>, and <a target="new" href="https://secure.ga3.org/03/donate_now">gifts from generous readers like you</a>.</p>
+
+
+<p>&copy; 
+2004
+The Foundation for National Progress</p>
+
+
+<p class="textnav">
+<a href="philanthropy/index.html">Support Us</a>  &nbsp; <a href="sales/index.html">Advertise</a>  &nbsp; <a href="sales/policy.html">Ad Policy</a>  &nbsp; <a href="admin/privacy.html">Privacy Policy</a>  &nbsp; <a href="index.html">Contact Us</a>  &nbsp; <a href="/subscribe">Subscribe</a>  &nbsp; <a href="../cgi-bin/rss.cgi">RSS</a>
+</p>
+</div>
+
+
+</td>
+<!-- end center column -->
+<!-- start right column -->
+<td width="132" valign="TOP" align="LEFT" bgcolor="#FFFFFF" class="col-cell-right">
+<div class="noindex">
+<a href="http://www.motherjones.com/subscribe/"><img SRC="http://www.motherjones.com/images/ads/subscribe_132x155.gif" WIDTH="132" HEIGHT="155" ALT="Subscribe to Mother Jones" BORDER="0"></a>
+
+<a href="https://secure.ga3.org/03/donate_now"><img SRC="http://www.motherjones.com/images/ads/00_132x92_01_donate.gif" WIDTH="132" HEIGHT="92" ALT="Donate" BORDER="0"></a>
+
+<div class="ad-right">
+<p style="font-family: verdana, sans-serif; font-size: 10px; line-height: normal; margin: 3px; padding: 0;">----Advertisement----</p>
+<script language="Javascript" type="text/javascript">
+<!--
+DisplayAds("Bottom,Right!Right", "120", "600");
+//-->
+</SCRIPT>
+<p style="font-family: verdana, sans-serif; font-size: 10px; line-height: normal; margin: 0px; padding: 0px;">----Advertisement----</p>
+</div>
+
+<!-- Begin: AdBrite -->
+
+<div class="adbrite">
+<p style="font-family: verdana, sans-serif; font-size: 10px; line-height: .5em; margin-bottom: 0px; padding: 0px;">--Advertisements--</p>
+
+<p class="adHeadline"><script type="text/javascript" src="http://3.adbrite.com/mb/text_group.php?sid=19999&amp;newwin=1&br=1"></script>
+</p>
+
+<p class="adText"><a target="_top" href="http://www.adbrite.com/mb/commerce/purchase_form.php?opid=19999&afsid=1">Your Ad Here</a>
+</p>
+<p style="font-family: verdana, sans-serif; font-size: 10px; line-height: .5em; margin-top: 2px; padding: 0px;">--Advertisements--</p>
+</div>
+
+<!-- End: AdBrite -->
+</div>
+</td>
+<!-- end right column -->
+</tr>
+</table>
+</body>
+</html> 
+
+
+
+

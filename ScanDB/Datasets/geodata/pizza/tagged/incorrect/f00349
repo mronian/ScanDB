@@ -1,0 +1,258 @@
+<DOC>
+<DOCNO>f00349</DOCNO>
+<DOCHDR>http://www.bestnypizza.com</DOCHDR>
+<html>
+
+<script language="JavaScript">  
+	function opennewwindow(referencename) 	{
+		window.open(referencename, 'winreference', 'toolbar=0,location=0,status=0,width=800,scrollbars=yes,height=600,menubar=1,resizable=1');
+	}
+
+	function pagenavigation(pagename) {	
+		document.location=pagename;	
+	}		
+	
+
+</script>
+
+<body  bgcolor="#4666bf" text="#ffffff">
+<LINK href="CSS/nyuc.css" type=text/css rel=stylesheet>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td valign="top" width="25%" align="middle" rowspan="2"><IMG height=260 src="images/logo.jpg" width=141>
+		<p><font class="regtextwhite"><b>Need Directions?</b>
+			<table border="0">	
+				<tr>
+					<td><INPUT TYPE="button" class="btnLocation" ID="btnLaguna" value="Laguna Niguel" onclick='javascript:pagenavigation("maplagunaniguel.htm")'></td>				
+				</tr>
+				<tr>
+					<td align="middle" class="regtextwhitesmall">28051-B Greenfield Drive <br>Laguna Niguel, California<br>949 831-4300</td>
+				</tr>							
+				<tr><td>&nbsp;</td></tr>
+				<tr>
+					<td><INPUT TYPE="button" class="btnLocation" ID="btnOakCreek" value="Irvine Oakcreek Ctr" onclick='javascript:pagenavigation("mapirvineoakcreek.htm")'></td>		
+				</tr>
+				<tr><td align="middle" class="regtextwhitesmall"><GEO TYPE="US">5613 Alton Parkway<br>Irvine, California</GEO> <br>949 653-1033</td></tr>														
+				<tr><td>&nbsp;</td></tr>									
+				<tr>
+					<td><INPUT TYPE="button" class="btnLocation" ID="btnFoothillRanch" value="Foothill Ranch" onclick='javascript:pagenavigation("mapfoothillranch.htm")'></td>		
+				</tr>
+				<tr>
+					<td align="middle" class="regtextwhitesmall"><GEO TYPE="US">26612-F Towne Centre Drive <br>Foothill Ranch, California</GEO><br>949 951-7400</td>
+				</tr>
+				<tr><td>&nbsp;</td></tr>									
+				<tr>
+					<td><INPUT TYPE="button" class="btnLocation" ID="btnlongbeach" value="Long Beach" onclick='javascript:pagenavigation("maplongbeach.htm")'></td>		
+				</tr>
+				<tr>
+					<td align="middle" class="regtextwhitesmall">5291 E. 2nd St <br>Long Beach, California<br>562 987-4700</td>
+				</tr>
+	
+				<tr><td>&nbsp;</td></tr>
+				<tr><td align="middle" class="regtextwhitesmall">Need Delivery?</td></tr>				
+				<tr>
+					<td align="middle"><a href="http://ontherun.cc/default.asp"><IMG height=100 src="images/ontherun.jpg" width=143></a></td>
+				</tr>	
+				<tr>
+					<td align="middle"><a href=javascript:opennewwindow("rotrcoupon.htm")><IMG height=48 src="images/coupontag.jpg" width=143></a></td>
+				</tr>	
+				<tr><td align="middle"><a class="reglink" href=javascript:opennewwindow("rotrcoupon.htm")><b>click for coupon</b></a></td></tr>								
+										
+			</table></font></p>
+		</td>		
+      	<td valign="top" width="50%" align="left" >
+      		<table>
+	      		<tr>
+      				<td class="regtextwhitebig" align="middle">We're from Brooklyn...<br>We know pizza!</td>
+				</tr>	
+      			<tr>
+					<td valign="top" width="50%" align="left" class="regtextwhite" > 
+						<br>Owned and operated by a third generation New York Italian family since 1991, <b><font class="regtextwhiteitalic">NY's UPPER CRUST PIZZA</font></b> specializes in
+						traditional thin crust, Sicilian or stuffed pizza, by the slice. 
+						<p>Using only the finest ingredients, all dough and sauces are made on site daily from family recipes. Fresh vegetables,
+						100% Wisconsin mozzarella cheese and hand stretched dough help give this pie its unique taste and quality.
+						<p>Other specialty items include calzone, gourmet pizza, garlic knots, rolls and pinwheels. The Laguna Niguel, Foothill Ranch and 
+						Irvine - Oakcreek Center locations also feature hot pastas, subs, salads, desserts, beer and wine.<br></p>				
+					</td>
+				</tr>
+			</table>
+		</td> 
+		<td align="middle" width="25%" valign="top" rowspan="2">
+			<table>
+				<tr>
+					<td><INPUT TYPE="button" class="btnMenu" ID="btnPizza" value="Pizza" onclick='javascript:pagenavigation("pizza.htm")'></td>		
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Sicilian</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Gourmet</td>					
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Stuffed</td>					
+				</tr>
+				<tr>
+					<td><INPUT TYPE="button" class="btnMenu" ID="btnSubs" value="New York Subs" onclick='javascript:pagenavigation("nysubs.htm")'></td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Hot Subs</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Cold Subs</td>					
+				</tr>	
+				<tr>
+					<td><INPUT TYPE="button" class="btnMenu" ID="btnSalads" value="Salads" onclick='javascript:pagenavigation("salads.htm")'></td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Garden Salad</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Antipasto</td>					
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Caesar</td>					
+				</tr>	
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Pasta Salad</td>					
+				</tr>
+				<tr>
+					<td><INPUT TYPE="button" class="btnMenu" ID="btnFavorites" value="Old World Favorites" onclick='javascript:pagenavigation("favorites.htm")'></td>
+				</tr>				
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Stromboli</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Spinach Roll</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Sausage Roll</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Eggplant Parmesan Roll</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Chicken Parmesan Roll</td>
+				</tr>																				
+				<tr>
+					<td><INPUT TYPE="button" class="btnMenu" ID="btnHotDinnners" value="Hot Dinners" onclick='javascript:pagenavigation("dinners.htm")'></td>		
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle"> Spaghetti</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Baked Ziti</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Chicken Parmesan</td>
+				</tr>
+				<tr>
+					<td><INPUT TYPE="button" class="btnMenu" ID="btnCalzones" value="Calzones" onclick='javascript:pagenavigation("calzones.htm")'></td>
+				</tr>				
+				<tr>
+					<td><INPUT TYPE="button" class="btnMenu" ID="btnHotPasta" value="Hot Pasta" onclick='javascript:pagenavigation("hotpasta.htm")'></td></td>
+				</tr>	
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Spaghetti</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Baked Ziti</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Ravioli</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Lasagna</td>
+				</tr>
+				
+				<tr>
+					<td><INPUT TYPE="button" class="btnMenu" ID="btnDesserts" value="Desserts" onclick='javascript:pagenavigation("desserts.htm")'></td></TD>
+				</tr>	
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Cannoli</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Tiramisu</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Italian Ice</td>
+				</tr>				
+				
+				<tr>
+					<td><INPUT TYPE="button" class="btnMenu" ID="btnSideOrders" value="Side Orders" onclick='javascript:pagenavigation("sideorders.htm")'></td>		
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Garlic Knots</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Garlic Bread</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Pinwheels</td>
+				</tr>
+				<tr>
+					<td class="regtextwhitesmall" align="middle">Meatballs/Sausage</td>
+				</tr>						
+			</table>
+		</TD>
+	 </tr>
+     <tr>
+		<td width="50%" align="top" valign="top">
+			<table align="center">
+				<tr>
+					<td align="center" class="regtextwhitesmall"><b>READ THE REVIEWS</b></td>
+				</tr>								
+				<tr>
+					<td align="center">
+						<INPUT TYPE="button" class="btnlink" ID="btnLinks" value="&quot;The Standard&quot;" onclick='javascript:opennewwindow("thestandard.htm")'>				
+						<INPUT TYPE="button" class="btnlink" ID="btnLinks" value="DigitalCity.com" onclick='javascript:opennewwindow("http://home.digitalcity.com/orangecounty/dining/venue.adp?vid=170751")'>
+					</td>				
+				</tr>
+
+				<tr>
+					<td align="center">
+						<INPUT TYPE="button" class="btnlink" ID="btnLinks" value="What Customers Say" onclick='javascript:opennewwindow("images/customerletter.jpg")'>				
+						<INPUT TYPE="button" class="btnlink" ID="btnlinks" value="The Press-Telegram" onclick='javascript:opennewwindow("presstelegram.htm")'>
+					</td>
+				</tr>	
+				<br>		
+			</table>	
+			<table>	
+				<tr>	
+					<td align="middle" width="25%" valign="top"><IMG height=316 src="images/foodspread.jpg" width=264></td>	
+				</tr>									
+				<tr>
+					<td align="middle" class="regtextwhitesmall">Delivery and Catering  949 951-2500</td>
+				</tr>
+				<tr>
+					<td align="middle" class="regtextwhitesmall">FAX   949 831-8975</td>				
+				</tr>
+				<tr>
+					<td align="middle" class="regtextwhitesmall"><GEO TYPE="US">28051-B Greenfield Drive</td>
+				</tr>
+				<tr>
+					<td  align="middle" class="regtextwhitesmall">Laguna Niguel, CA 92677</GEO></td>
+				</tr>			
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table align="center" class="regtextwhitesmall">
+	
+	<tr>					
+		 <td colspan="3" align="middle"><A class=reglink href="mailto:joe@nyuppercrustpizza.com"><b>Comments?</b></A></td>
+	</tr>
+	<tr>
+		<td  align="middle" colspan="3"><A class=reglink href="mailto:joe@nyuppercrustpizza.com">
+			Send your comments and questions to: <b>joe@nysuppercrustpizza.com.</b></A>
+		</td>
+	</tr>
+	<tr><td colspan="3">&nbsp;</td></tr>	
+	<tr>
+		<td  align="middle" colspan="3">Copyright © 2006 N.Y.'s UPPER CRUST PIZZA</td>
+	</tr>
+	<tr>
+		<td  align="middle" colspan="3">Last modified: May 20, 2006</td>
+	</tr>	
+</table></body></HTML>

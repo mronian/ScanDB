@@ -1,0 +1,522 @@
+<DOC>
+<DOCNO>g00136</DOCNO>
+<DOCHDR>http://www.firstgov.gov/feedback/FeedbackForm.jsp</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en">
+<head>
+<title> FirstGov.gov: Contact Your Government &#8211; We Answer Your Questions</title>
+<meta name="description" content="FirstGov.gov: Contact Your Government -- We Answer Your Questions:  Write the FirstGov Citizen Response Team with questions about the U.S. government, the FirstGov.gov website, or any comment you wish to offer." />
+<meta name="keywords" content="FirstGov, US government, United States, US, government, government contacts, officials, federal regulations, government agency, government agencies" />
+<meta name="classification" content="Internet" />
+<meta name="distribution" content="Global" />
+<meta name="rating" content="Safe For Kids" />
+<meta name="copyright" content="public domain" />
+<meta name="language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta content="MSHTML 5.50.4616.200" name="GENERATOR" />
+<noscript> <link href="/style/FG_Master.css" rel="stylesheet" type="text/css"> </noscript> 
+<script language="JavaScript" src="/scripts/rollover.js" type="text/JavaScript"></script> 
+<script language="JavaScript" src="/scripts/sniff.js" type="text/JavaScript"></script>
+<style>
+ .FontRequired
+ {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 75%;
+	COLOR: #990000;
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+  }
+</style>
+<script Language="Javascript">
+ //Feedback form validation and submit functions
+ function myForm_Validate(theForm){
+	if(theForm.category.selectedIndex==0){
+	   alert ("Please select a value for the \"Category\" field");
+	   theForm.category.focus();
+	   return(false);
+	}
+	if(theForm.feedback.value==""){
+	   alert ("Please enter a value for the \"Feedback\" field");
+	   theForm.feedback.focus();
+	   return(false);
+	}
+	if(theForm.feedback.value.length>2500) {
+	   alert ("Your Feedback message is too long.  Please shorten it to 2500 characters or less.");
+	   theForm.feedback.focus();
+	   return(false);
+	}
+	return (true);
+ }
+
+ function sendForm(){
+	if (myForm_Validate(document.myForm)){
+	   document.myForm.submit();
+	}
+ }
+</script>
+<noscript>
+ You must select a feedback category and enter a feedback message to submit the form.
+</noscript>
+</head>
+<body onLoad="document.forms[0].elements[0].focus()" bgcolor="#ffffff" text="#000000" link="#000066" vlink="#990000" alink="#990000" leftmargin="3" topmargin="0" marginwidth="3" marginheight="0">
+<!-- Start of Top Navigation Bar -->
+<table width="760" border="0" cellpadding="0" cellspacing="0" summary="top navagation bar">
+   <tr> 
+      <td valign="top" align="left">
+      	
+<div style="line-height:2px; font-color:white;">
+<a href="#Content"><span class = "InvisibleLink">Skip to Content</span></a> 
+<a href="#govsearch"><span class = "InvisibleLink">Skip to Government Search</span></a> 
+<a href="#departments"><span class = "InvisibleLink">Skip to Departments &amp; Agencies</span></a> 
+<a href="#reference"><span class = "InvisibleLink">Skip to Reference</span></a> 
+<a href="#custsat"><span class = "InvisibleLink">Skip to Customer Survey</span></a> 
+
+</div>
+
+		</td>
+	</tr>
+	<script LANGUAGE="JavaScript" SRC="/scripts/triggerParams.js"></script>
+<script LANGUAGE="JavaScript" SRC="/scripts/stdLauncher.js"> </script>
+<a name="Top"></a>
+<table width="765" summary="banner and search" border="0" cellpadding ="0" cellspacing="0">
+	<tr>
+		<td><a href="/index.shtml"><img height="55" alt="FirstGov Home Page" src="/images/banner1.jpg" width="524" border="0" /></a></td>
+		<td>
+<table border="0" cellpadding="0" cellspacing="0" bgcolor="#990000" height="55" width="241">
+<tr>
+	<td align="right" valign="middle" style="FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: white">Search</td>
+	<td rowspan=2><img height=1 alt=" " src="/images/spacer_transp.gif" width="8" border =0 ></td>
+	<form action="/fgsearch/index.jsp" name="query">
+	<label for="Search">
+	<td><div class="search">
+                        <label for=" label_for_mw0"><input id="label_for_mw0" onFocus = "this.value='';" name="mw0" size="18px"  style="FONT-SIZE: 8pt; FONT-FAMILY: Arial, Sans Serif, monospace; width: 130px;"></label>
+                     </div>
+                <input type="hidden" name="ms0" value="&nbsp;">
+				<input type="hidden" name="mt0" value="all">
+				<input type="hidden" name="st" value="AS">
+				<input type="hidden" name="rn" value="2">
+				<input type="hidden" name="parsed" value="true"></td></label>
+	<td rowspan=2><img height=1 alt=" " src="/images/spacer_transp.gif" width="5" border ="0" ></td>
+	<td valign="middle" align="left"><img height="3" alt=" "  src="/images/spacer_transp.gif" border ="0" /><br />
+<div class="search"><label><input type="submit" style="FONT-WEIGHT: 900; FONT-SIZE: 8pt; FONT-FAMILY: Arial; sans-serif: " border="0" value="Go"></label></div></td>
+	<td rowspan=2><img height=1 alt=" " src="/images/spacer_transp.gif" width="8" border ="0" ></td>
+</tr>
+<tr>
+	<td align="right"  height ="10" valign="center"><font style="FONT-WEIGHT: 900; FONT-SIZE: 8pt; COLOR: #ffffff">&nbsp;&nbsp;in</font></td>
+	<td>
+
+				<div class="search">
+             <select NAME="db" align = "left" hspace="0"  style="FONT-Family: sans-serif;Font-Size:8pt" size="1" WIDTH: 125px;">
+
+			<label><option VALUE="" style="FONT-Family: sans-serif;Font-Size:8pt"selected>Federal Only</option></label>
+			<label><option style="BACKGROUND: #e9edf1;FONT-Family: sans-serif;Font-Size:8pt"  VALUE="www-fed-all">Federal &amp; All States</option></label>
+			<label><option style="BACKGROUND: #e9edf1;FONT-Family: sans-serif;Font-Size:8pt" VALUE="states">All States</option></label>
+			<label><option style="BACKGROUND: #e9edf1;FONT-Family: sans-serif;Font-Size:8pt" VALUE="one-st">One State</option></label>
+			<label><option style="BACKGROUND: #e9edf1;FONT-Family: sans-serif;Font-Size:8pt" VALUE="fed-one-st">Federal &amp; One State</option></label>
+
+				            </select>
+                     </div></td></form>
+	<td valign="bottom"><a title="Advanced Search" style="FONT-SIZE: 8pt; COLOR: white" href="/fgsearch/index.jsp">Advanced</a>
+			</td>
+	
+</tr>
+<tr>
+			<td colspan="6" align="left"><img height=2 alt=" " src="/images/spacer_transp.gif" width=1 border =0 ></td>
+		
+		
+		</tr>
+		</table>
+		</td>
+	</tr>
+	<tr align="left">
+    	<td valign="top"  bgcolor="#000066" style="COLOR: white">
+         &nbsp; &nbsp; 	<a title="Home" href ="/index.shtml"><span class="fontw10b">Home</span></a>
+         &nbsp; &nbsp;<a title="About Us"  href ="/About.shtml"><span class="fontw10b">About Us</span></a>
+	  		&nbsp;&nbsp;<a title="Site Map" href ="/Site_Map.shtml"><span class="fontw10b">Site Map</span></a>
+	  		&nbsp;&nbsp;<a title="Help" href = "/Help.shtml"><span class="fontw10b">Help</span></a>
+			&nbsp;&nbsp;<a title="Espa&ntilde;ol" href ="/Espanol/index.shtml"><span class="fontw10b">Espa&ntilde;ol</span></a>
+			&nbsp;&nbsp;<a title="Other Languages" href ="http://www.pueblo.gsa.gov/multilanguage/multilang.htm"><span class="fontw10b">Other Languages</span></a>
+
+		</td>
+      <td align="right" valign="top"  bgcolor="#000066" style="COLOR: white">
+      	&nbsp;&nbsp; <a href="http://www.whitehouse.gov/news/releases/2002/03/20020314.html" title="Welcome from President Bush"><span class="fontw10b">Welcome from President Bush&nbsp; </span></a>
+		</td>
+   </tr>
+    <tr align="left">
+      <td colspan="2" valign="top" style="COLOR: white"><img src="/images/spacer_transp.gif" alt=" " width="1" height="10"></td>
+   </tr>
+</table>
+
+</table>
+      
+
+<!-- End of Top Navigation Bar -->
+<table width="760" border="0" cellpadding="0" cellspacing="0" summary="Design table only">
+   <tr>
+      
+		
+      <td valign="top" width="125">
+				
+         <!-- Start of Left Naviation Bar and Content Area-->
+      			<table border="0" cellpadding="0" cellspacing="0" id="table_1" summary="left navigation bar">
+   <tr>
+	   <td align="center"> <a href="/feedback/FeedbackForm.jsp"><img src="/images/questions.gif" alt="Uncle Sam: We answer your questions. Click here to send us an e-mail question." width="119" height="49" border="0" /></a> 
+      <img src="/images/spacer_transp.gif" alt="" height="4" align="left"> </td>
+   </tr>
+
+	<tr>
+      <td align="left"><a name="organization"></a>
+        		<img src="/images/lft_nav_line.gif"  alt="" width="125" height="1" vspace="0" valign="top" /><br />
+      <a href="/Agencies.shtml" title="By Organization" class="leftbar">By Organization &raquo;</a><br />
+				<img src="/images/lft_nav_line.gif"  alt=""  width="125" height="1" vspace="0" valign="top" /><br />
+   	</td>
+	</tr>
+
+   <tr>
+      <td valign="middle" class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Agencies/Federal/All_Agencies/index.shtml" title="A-Z Agency Index">A-Z Agency Index</a></td>
+   </tr>
+
+   <tr>
+      <td valign="middle" class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Agencies/Federal/Executive.shtml" title="Federal Executive">Federal Executive</a></td>
+   </tr>
+
+   <tr>
+      <td valign="middle" class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Agencies/Federal/Legislative.shtml" title="Federal Legislative" >Federal Legislative</a></td>
+   </tr>
+
+   <tr>
+      <td valign="middle" class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Agencies/Federal/Judicial.shtml" title="Federal Judicial">Federal Judicial</a></td>
+   </tr>
+
+   <tr>
+      <td valign="middle" class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Topics/Cross_Agency_Portals.shtml" title="Cross-Agency Portals">Cross-Agency Portals</a></td>
+   </tr>
+   
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Agencies/State_and_Territories.shtml" title="State Government">State Government</a></td>
+   </tr>
+
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Agencies/Local.shtml" title="Local Government">Local Government</a></td>
+   </tr>
+
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Government/Tribal.shtml" title="Tribal Government">Tribal Government</a></td>
+   </tr>
+
+	<tr>
+   	<td valign="top"><img src="/images/spacer_transp.gif" alt="" width="125" height="5"></td>
+   </tr>
+
+	<tr>
+      
+    <td align="left" bgcolor="#990000"><a name="contact"></a>
+	 <img src="/images/lft_nav_line.gif"  alt="" width="125" height="1" vspace="0" valign="top" /><br />
+      <a href="/Contact.shtml" title="Contact Your Government" class="fontwhite80arialbold"><font color="#FFFFFF">Contact 
+      Your<br />
+      Government &raquo;</font></a><br />
+				<img src="/images/lft_nav_line.gif"  alt=""  width="125" height="1" vspace="0" valign="top" /><br />
+   	</td>
+	</tr>
+	
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/feedback/FeedbackForm.jsp" title="E-mail">E-mail</a></td>
+   </tr>
+
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Contact/Directories.shtml" title="Phone">Phone</a></td>
+   </tr>
+
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Citizen/Find_Services.shtml" title="In-Person">In-Person</a></td>
+   </tr>
+
+   <tr>
+      <td valign="top">&nbsp;&nbsp;<a href="/Contact.shtml" title="more" class="fontred70arialunderline">more</a><br />
+         <img src="/images/spacer_transp.gif" alt="" width="125" height="8"></td>
+   </tr>
+
+	<tr>
+      <td align="left"><a name="reference"></a>
+        		<img src="/images/lft_nav_line.gif"  alt="" width="125" height="1" vspace="0" valign="top" /><br />
+      <a href="/Topics/Reference_Shelf.shtml" title="Reference Center" class="leftbar">Reference Center &raquo;</a><br />
+				<img src="/images/lft_nav_line.gif"  alt=""  width="125" height="1" vspace="0" valign="top" /><br />
+   	</td>
+   </tr>
+
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Topics/Reference_Shelf.shtml#vgn-data-and-statistics-vgn" title="Data and Statistics">Data &amp; Statistics</a></td>
+   </tr>
+
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/external/external.jsp?url=http://www.fedforms.gov" title="Government Forms">Government Forms</a></td>
+   </tr>
+   
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Topics/Graphics.shtml " title="Graphics and Photos">Graphics and Photos</a></td>
+   </tr>
+   
+   <tr>
+      <td class="fontblue70arial"><img src="/images/bullet_sq_blue.gif" alt="" width="11" height="11" border="0" align="absbottom"><a href="/Topics/Reference_Shelf.shtml#vgn-laws-and-regulations-vgn" title="Laws and Regulations">Laws &amp; Regulations</a></td>
+   </tr>
+
+   <tr>
+      <td valign="top">&nbsp;&nbsp;<a href="/Topics/Reference_Shelf.shtml" title="more" class="fontred70arialunderline">more</a><br />
+         <img src="/images/spacer_transp.gif" alt="" width="125" height="8"></td>
+   </tr>
+
+	<tr>
+      <td align="left">
+        		<img src="/images/lft_nav_line.gif"  alt="" width="125" height="1" vspace="0" /><br />
+     <span class="leftbartopic">Also of Interest&#133;</span><br />
+				<img src="/images/lft_nav_line.gif"  alt=""  width="125" height="1" vspace="0" /><br />
+   	</td>
+   </tr>
+
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+   
+	<tr>
+      <td align="center"><a href="/external/external.jsp?url=http://www.whitehouse.gov">
+		
+		<img src="/images/whitehouse.gif" alt="link to White House website" border="0" /></a>
+		</td>
+   </tr>
+<!--
+   <tr>
+      <td>&nbsp;</td>
+   </tr>
+-->
+   <tr>
+      <td align="center"><a href="/external/external.jsp?url=http://www.egov.gov"><img src="/images/egov.gif" width="105" height="67" alt="link to E-Gov.gov website to learn about the President's electronic government initiatives" border="0" /></a></td>
+   </tr>
+
+</table>
+
+
+         			
+		</td>
+		<td><table width="521" border="0" cellspacing="0" cellpadding="0" summary="Top Navigation Tabs">
+   <tr>
+      <td width="121" align="left">
+	  <a href="/index.shtml"><img src="/images/citizens_grey.gif" alt="Citizens Gateway" width="120" height="39" border="0"></a></td>
+      <td width="4" align="left">&nbsp;</td>
+      <td width="125" align="left"><a href="/Business/Business_Gateway.shtml"><img src="/images/business_grey.gif" alt="Businesses and Nonprofits Gateway" width="124" height="39" border="0"></a></td>
+      <td width="4" align="left"><img src="/images/spacer_transp.gif" alt=" "></td>
+      <td width="126" align="left"><a href="/Federal_Employees/Federal_Employees_Gateway.shtml"><img src="/images/federal_grey.gif" alt="Federal Employees Gateway" width="125" height="39" border="0"></a></td>
+      <td width="4"><img src="/images/spacer_transp.gif" alt=" "></td>
+      <td width="131" align="left"><a href="/Government/Government_Gateway.shtml"><img src="/images/government_grey.gif" alt="Government-to-Government Gateway" width="130" height="39" border="0"></a></td>
+   </tr>
+</table>
+
+
+
+<table width="630" bordercolor="#880000" cellspacing="0" cellpadding="0" border="0" summary="Design Table Only">
+   <tr bgcolor="#880000">
+      <!-- upper border -->
+      <td height="10" colspan="4" nowrap><img src="/images/spacer_transp.gif" alt=" " width="1" height="1"></td>
+   </tr>
+   <!-- Main Outside Table -->
+   <tr>
+      <td width="5" bgcolor="#880000"><img src="/images/spacer_transp.gif" alt=" " width="5" height="1">
+         <!-- left border -->
+		</td>
+      <td valign="top">
+
+
+         <table width="472" align="left" cellspacing="0" cellpadding="0" border="0" summary="Main Content Area">
+            <tr>
+               <!-- Row 1 -->
+               <td>
+                  <table width="472" cellpadding="0" cellspacing="0" summary="Design Table Only">
+                     <tr>
+                        <td colspan="3"><span class="FontBlack80Arial">  &nbsp; &nbsp;&nbsp;<a href="/index.shtml" title="Home">Home</a> &gt; <a href="/Contact.shtml" title="Contact You Government">Contact Your Government </a>&gt; </span><span class="FontBlack60Arial">We Answer Your Questions</span></td>
+                     </tr>
+                     <tr>
+                        <td width="15" valign="top" class="FontGold100ArialBold">&nbsp;</td>
+                        <td valign="middle" class="FontGold100ArialBold"> <span class="fontblack120timesbold">FirstGov&#8211;We Answer Your Questions</span></td>
+                        <td rowspan="2" align="right"><img src="/images/firstgov.jpg" alt="A laptop computer displaying the FirstGov.gov homepage" width="101" height="74" align="absbottom"></td>
+                     </tr>
+                     <tr>
+                        <td valign="bottom" class="FontGold100ArialBold">&nbsp;</td>
+                        <td valign="top" class="FontGold100ArialBold">&nbsp;</td>
+                     </tr>
+                     <tr>
+								<td valign="bottom" class="FontGold100ArialBold"><img src="/images/spacer_transp.gif" alt=" " width="1" height="1"></td>
+                        		<td colspan="2" valign="top" bgcolor="#000099"><img src="/images/spacer_transp.gif" alt=" " width="1" height="1"></td>
+                     </tr>
+                  </table>
+                  
+                  </td>
+            </tr>
+            <!-- end info by topic -->
+			<tr>
+				<td>
+					<table width="472" cellpadding="0" cellspacing="0">
+						<tr>
+						   <td width="15" valign="top" class="FontGold100ArialBold"></td>
+						   <td valign="middle">
+						   	  <br />
+							  <p class="fontblack75arial">Use the form below to submit any questions you have about the U.S. government.
+								If you provide your e-mail address, a member of our Citizen Response Team will respond to you within two
+								business days.  For <span class="fontblack75arial" style="font-size: 12pt; text-decoration: underline"><a href="/About/Privacy_Security.shtml" title="privacy and security">privacy and security</a></span>
+								purposes, we recommend that you do NOT include any other personal information, 
+								especially Social Security numbers.  Please note:  We regret that we can only accept and respond to inquiries in English or Spanish.
+							  </p>
+							 </td>
+						</tr>
+						<tr>
+						    <td width="15" valign="top" class="FontGold100ArialBold">&nbsp;<img src="/images/spacer_transp.gif" alt=" " width="15" height="1"></td>
+							<td>
+								<br />
+								<form name="myForm" id="myForm" method="POST" action="PostFeedback.jsp" onSubmit="return false">
+									<fieldset class="fontblack75arial">
+									   <label for="label_for_category">
+										  Please select one of the following categories: 
+									   </label>
+									   <span class="FontRequired">(required)</span>
+									   <br />
+									   <select size="1" name="category" id="label_for_5" tabindex="109">
+										   <option value="0">Select a category</option>
+											<option value="1:Consumer protection">Consumer protection</option>
+											<option value="2:Copyright patent and trademark">Copyright, patent and trademark</option>
+											<option value="3:Federal loans and grants">Federal loans and grants</option>
+											<option value="4:FirstGov website comments">FirstGov website comments</option>
+											<option value="5:Government jobs">Government jobs</option>
+											<option value="6:Government officials">Government officials</option>
+											<option value="7:Housing">Housing</option>
+											<option value="8:Immigration and Naturalization">Immigration and Naturalization</option>
+											<option value="9:Medicaid and Medicare">Medicaid and Medicare</option>
+											<option value="11:Passports visas and travel">Passports, visas and travel</option>
+											<option value="12:Radio TV phone and internet complaints">Radio, TV, phone and internet complaints</option>
+											<option value="13:Social Security">Social Security</option>
+											<option value="14:State or local government">State or local government</option>
+											<option value="15:Taxes">Taxes</option>
+											<option value="16:Veterans">Veterans</option>
+											<option value="10:Other">Other</option>
+									   </select>
+									   <br /><br />
+									   <label for="email">E-mail Address:</label>
+									   <span class="FontRequired">(required only if you would like a response)</span>
+									   <br />
+									   <input type='TEXT' name='email' id='email' size='40' tabindex="110" maxlength='70'>
+									   <br /><br />
+									   <label for="zip code">Zip Code:</label>
+									   <span class="FontRequired">(optional, but will help us respond to your message)</span>
+									   <br />
+									   <input type="text" name="zip" id="zip" size="40" tabindex="111" maxlength="10" />
+									   <br /><br />
+									   <label for="feedback">Your Question or Comment:</label>
+									   <span class="FontRequired">(required; maximum of 2,500 characters)</span>
+									   <br />
+									   <textarea name='feedback' id="feedback" cols="60" rows="7" wrap="physical" wrap="hard" tabindex="111"></textarea>
+									   <br /><br />
+									   <div align="left">
+										  <label for='label_for_p_submit'>
+										  <input type='button' name='p_submit' 
+										  id='label_for_p_submit' value='Submit' 
+										  onClick='sendForm()' tabindex="112">
+										  </label>
+									   </div>
+									</fieldset>
+								 </form>
+							</td>
+						</tr>
+						<tr>
+							<td width="15" valign="top" class="FontGold100ArialBold">&nbsp;</td>
+							<td>
+								<p class="fontblack75arial">Do you use a "spam filter" in your e-mail program?</P>
+								<p class="fontblack75arial">If you do, it may prevent the information you requested from reaching you.  Instead, your spam
+								filter may assume our message is junk mail and send our message to your "bulk," "delete," "trash," "suspect email" or other folder.
+								<br /><br />
+								If you use a spam filter, you must add <b>FirstGov@mail.fedinfo.gov</b> to your e-mail address book or "safe list" to ensure you receive the information you requested from us.
+								</p>
+							</td>
+						</tr>
+						<tr>
+						    <td width="15" valign="top" class="FontGold100ArialBold">&nbsp;</td>
+							<td>
+							  <br />
+							  <p class="fontblack75arial">Our goal is to make it easy for you to communicate with government.  If you prefer to contact other government 
+							  agencies directly, use these links.
+							  </p>
+							  <ul class="square_blue" style="margin-left: 20px">
+								<li><a href="/Contact/By_topic.shtml" title="Contact your government links organized by topic" accesskey="t" tabindex="101">Contact links organized by Topic</a></li>
+								<li><a href="/Contact/By_agency.shtml" title="Contact your government links organized by agency" accesskey="a" tabindex="102">Contact links organized by Agency</a></li>
+								<li><a href="/Contact/Elected.shtml" title="Contact Your Elected Officials" accesskey="e" tabindex="106">Contact Your Elected Officials</a><br />
+								<li><a href="/external/external.jsp?url=http://www.archives.gov/federal_register/public_participation/public_participation.html" title="Comment on Federal Regulations" accesskey="r" tabindex="107">Comment on Federal Regulations</a></li>
+								<li><a href="/Contact/Faq.shtml" title="Frequently Asked Questions (FAQs) About Government" accesskey="f" tabindex="109">Frequently Asked Questions (FAQs) about Government</a></li>
+								<li><a href="/Contact/Directories.shtml" title="Telephone and  E-mail Directories" accesskey="t" tabindex="110">Telephone and E-mail Directories</a></li>
+							  </ul>
+							  <br />
+							 </td>
+						</tr>
+					</table>
+                </td>
+            </tr>
+         </table>
+         <p><br />
+         </p></td>
+      <td width=8>&nbsp;</td>
+      <!-- extra col to add padding before right border -->
+      <td width="5" bgcolor="#880000"><img src="/images/spacer_transp.gif" alt=" " width="5" height="1">
+         <!-- right border -->
+		</td>
+   <tr>
+      <td height="1" colspan="4" bgcolor="#880000"><img src="/images/spacer_transp.gif" alt=" " width="1" height="1"></td>
+   </tr>
+</tr>
+</table>
+
+
+
+                  
+                  
+      	<!-- <table cellSpacing="0" cellPadding="0" width="775" border="0" height="16"> -->
+<table cellSpacing="0" cellPadding="0" width="630" border="0" summary="table for layout">
+
+  <tr> 
+      <td valign="middle" align="center" bgColor="#880000" height="22">&nbsp; 
+		<a href="/Contact/Faq.shtml" title="FAQs"><span class="fontw10b">FAQs</span></a>&nbsp; &nbsp; 
+		<a href="/About/Privacy_Security.shtml" title="Privacy &amp; Security"><span class="fontw10b">Privacy &amp; Security</span></a>&nbsp; &nbsp; 
+      <a href="/feedback/FeedbackForm.jsp" title="Contact Us"><span class="fontw10b">Contact Us</span> </a>&nbsp; &nbsp; 
+		<a href="/feedback/SuggestLinkForm.jsp" title="Suggest-A-Link"><span class="fontw10b">Suggest-A-Link</span></a>&nbsp; &nbsp; 
+		<a href="/About/FirstGov_Logos.shtml" title="Link to Us"><span class="fontw10b">Link to Us</font></span> </a> 
+	</td>
+  </tr>
+</table>
+
+
+  
+
+      	
+<table cellSpacing="0" cellPadding="0" width="630" border="0" height="16" align="center" summary="Table for layout">
+<tr>
+<td><img src="/images/spacer_transp.gif" height="5" alt=""></td>
+</tr>
+   <tr>
+   	<td ><div align="left"><img src="/images/seal.gif" width="58" height="56" alt="Official seal of the U.S. government"></div></td>
+      <td bgColor="#FFFFFF" class="footer">
+			&nbsp;&nbsp;FirstGov.gov <sup><font SIZE="-1">TM</font></sup> is the U.S. government's official web portal:<br />
+				&nbsp;&nbsp;<a href="/external/external.jsp?url=http://www.pueblo.gsa.gov/aboutus.htm"
+				title="Federal Citizen Information Center">Federal Citizen Information Center</a><br />
+				&nbsp;&nbsp;<a href="/external/external.jsp?url=http://www.gsa.gov/Portal/gsa/ep/channelView.do?pageTypeId=8199&channelPage=%2Fep%2Fchannel%2FgsaOverview.jsp&channelId=-13326"
+				title="Office of Citizen Services and Communications">Office of Citizen Services and Communications</a>, U.S. General Services Administration<br />
+					&nbsp;&nbsp;1800 F Street, NW, Washington, DC 20405<br />
+					&nbsp;&nbsp;Have any questions about the federal government?  E-mail <a href="/feedback/FeedbackForm.jsp" accesskey="f" title="FirstGov">FirstGov</a> or call 1 (800) FED INFO (1-800-333-4636)
+
+	</td>
+  </tr>
+</table>
+<noscript>
+<script language="JavaScript">
+Poll();
+</script>
+</noscript>
+
+		</td>
+   </tr>
+</table><!-- End of Left Navigation Bar and Content Area-->
+
+</body>
+</html>

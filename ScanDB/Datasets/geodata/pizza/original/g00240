@@ -1,0 +1,189 @@
+<DOC>
+<DOCNO>g00240</DOCNO>
+<DOCHDR>http://www.sifry.com/alerts/archives/000386.html</DOCHDR>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>Sifry's Alerts: Technorati Hackathon, San Francisco: Wed Oct 6, 2004</title>
+
+<link rel="stylesheet" href="http://www.sifry.com/alerts/styles-site.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.sifry.com/alerts/index.rdf" />
+
+<link rel="start" href="http://www.sifry.com/alerts/" title="Home" />
+<link rel="prev" href="http://www.sifry.com/alerts/archives/000385.html" title="New Technorati Toolbar for Firefox" />
+
+<link rel="next" href="http://www.sifry.com/alerts/archives/000387.html" title="State of the Blogosphere, October 2004" />
+
+
+<script type="text/javascript" language="javascript">
+<!--
+
+function OpenTrackback (c) {
+    window.open(c,
+                    'trackback',
+                    'width=480,height=480,scrollbars=yes,status=yes');
+}
+
+var HOST = 'www.sifry.com';
+
+// Copyright (c) 1996-1997 Athenia Associates.
+// http://www.webreference.com/js/
+// License is granted if and only if this entire
+// copyright notice is included. By Tomer Shiran.
+
+function setCookie (name, value, expires, path, domain, secure) {
+    var curCookie = name + "=" + escape(value) + ((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+    document.cookie = curCookie;
+}
+
+function getCookie (name) {
+    var prefix = name + '=';
+    var c = document.cookie;
+    var nullstring = '';
+    var cookieStartIndex = c.indexOf(prefix);
+    if (cookieStartIndex == -1)
+        return nullstring;
+    var cookieEndIndex = c.indexOf(";", cookieStartIndex + prefix.length);
+    if (cookieEndIndex == -1)
+        cookieEndIndex = c.length;
+    return unescape(c.substring(cookieStartIndex + prefix.length, cookieEndIndex));
+}
+
+function deleteCookie (name, path, domain) {
+    if (getCookie(name))
+        document.cookie = name + "=" + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+}
+
+function fixDate (date) {
+    var base = new Date(0);
+    var skew = base.getTime();
+    if (skew > 0)
+        date.setTime(date.getTime() - skew);
+}
+
+function rememberMe (f) {
+    var now = new Date();
+    fixDate(now);
+    now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000);
+    setCookie('mtcmtauth', f.author.value, now, '', HOST, '');
+    setCookie('mtcmtmail', f.email.value, now, '', HOST, '');
+    setCookie('mtcmthome', f.url.value, now, '', HOST, '');
+}
+
+function forgetMe (f) {
+    deleteCookie('mtcmtmail', '', HOST);
+    deleteCookie('mtcmthome', '', HOST);
+    deleteCookie('mtcmtauth', '', HOST);
+    f.email.value = '';
+    f.author.value = '';
+    f.url.value = '';
+}
+
+//-->
+</script>
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.sifry.com/alerts/archives/000386.html"
+    trackback:ping="http://www.sifry.com/mt/mt-tb.cgi/178"
+    dc:title="Technorati Hackathon, San Francisco: Wed Oct 6, 2004"
+    dc:identifier="http://www.sifry.com/alerts/archives/000386.html"
+    dc:subject=""
+    dc:description=" We&apos;re having a Hackathon at our new offices in San Francisco, on Wednesday, October 6. We&apos;re going to have lots of pizza and beer, and lots of outlets and free wifi. The idea is to actually do some real..."
+    dc:creator="dsifry"
+    dc:date="2004-09-30T19:07:48-08:00" />
+</rdf:RDF>
+-->
+
+
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.sifry.com/alerts/archives/000386.html">
+<dc:title>Technorati Hackathon, San Francisco: Wed Oct 6, 2004</dc:title>
+<dc:description> We&apos;re having a Hackathon at our new offices in San Francisco, on Wednesday, October 6. We&apos;re going to have lots of pizza and beer, and lots of outlets and free wifi. The idea is to actually do some real...</dc:description>
+<dc:creator>dsifry</dc:creator>
+<dc:date>2004-09-30T19:07:48-08:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc/1.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc/1.0/">
+<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+<requires rdf:resource="http://web.resource.org/cc/Notice" />
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+</License>
+</rdf:RDF>
+-->
+
+
+
+</head>
+
+<body>
+
+<div id="banner">
+<h1><a href="http://www.sifry.com/alerts/" accesskey="1">Sifry's Alerts</a></h1>
+<span class="description"></span>
+</div>
+
+<div id="container">
+
+<div class="blog">
+
+<div id="menu">
+<a href="http://www.sifry.com/alerts/archives/000385.html">&laquo; New Technorati Toolbar for Firefox</a> |
+
+<a href="http://www.sifry.com/alerts/">Main</a>
+| <a href="http://www.sifry.com/alerts/archives/000387.html">State of the Blogosphere, October 2004 &raquo;</a>
+
+</div>
+
+</div>
+
+
+<div class="blog">
+
+<h2 class="date">September 30, 2004</h2>
+
+<div class="blogbody">
+
+<h3 class="title">Technorati Hackathon, San Francisco: Wed Oct 6, 2004</h3>
+
+<p>
+We're having a Hackathon at our <a href="http://www.technorati.com/about/contact.html">new offices</a> in San Francisco, on Wednesday, October 6.  We're going to have lots of pizza and beer, and lots of outlets and free wifi.  The idea is to actually do some real web services hacking that night after talking about it all day at the looks-to-be-great <a href="http://www.web2con.com/">Web 2.0</a> conference.  If you're a hacker who knows about our <a href="http://developers.technorati.com/wiki">API</a>, or is interested in learning more about coding web services, this is going to be a chance to hang out with our core developers as well as with other leading web services developers, with the goal being to foster great new applications and tools using those APIs.  We're also really interested in sparking further conversation and getting feedback from you so that we can make Technorati more valuable for you.  You don't have to be a Web 2.0 attendee to come to the hackathon - but there's sure to be lots of attendees there.
+</p><p>
+OK, the details:
+</p><p>
+<strong>WHEN: </strong>Wednesday October 6, 2004, from 8PM - whenever!
+<br /><strong>WHERE:</strong> Technorati Offices (<a href="http://www.mapquest.com/maps/map.adp?address=665+3rd+St.&#38;zipcode=94107&#38;submit=Get+Map">map</a>) at 665 3rd Street, Suite 207, San Francisco, CA 94107 (between Brannan and Townsend Streets)
+<br /><strong>WE PROVIDE: </strong>Free pizza, beer, soft drinks; Fast WiFi, whiteboards, lots of room to hack as a group or individually, experts, help, and advice.
+<br /><strong>YOU PROVIDE:</strong> Creativity, energy, good humor, great ideas, willingness to teach and learn, readiness to hack!
+</p><p>
+<strong>IMPORTANT NOTE: </strong>Space is limited (our offices only hold so many people!), so please <a href="mailto:rsvp@technorati.com">RSVP</a> (<a href="mailto:rsvp@technorati.com">rsvp@technorati.com</a>) as soon as possible to guarantee your spot!   First come, first served.
+</p>
+
+<a name="more"></a>
+
+
+<span class="posted">Posted by dsifry at September 30, 2004 07:07 PM
+| <a href="http://www.technorati.com/cosmos/search.html?rank=&sub=mtcosmos&url=http://www.sifry.com/alerts/archives/000386.html" title="Technorati Cosmos">Other blogs commenting on this post</a>
+ | <a href="http://www.sifry.com/mt/mt-tb.cgi?__mode=view&amp;entry_id=386" onclick="OpenTrackback(this.href); return false">TrackBack</a>
+
+<br /></span>
+
+</div>
+
+
+</div>
+</div>
+</body>
+</html>

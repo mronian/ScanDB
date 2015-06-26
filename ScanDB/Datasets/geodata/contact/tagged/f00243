@@ -1,0 +1,703 @@
+<DOC>
+<DOCNO>f00243</DOCNO>
+<DOCHDR>http://www.wtgrantfoundation.org/feedback3041/feedback.htm</DOCHDR>
+
+<STYLE type="text/css">
+	#pagingContainer { display:block; margin:5px 0 3px 0; padding:3px; }
+	#pagingContainer a, #pagingContainer a:link, #pagingContainer a:visited { display:inline; margin:0 3px 0 1px; }
+	#pagingContainer a:active, #pagingContainer a:hover { display:inline; margin: 0 3px 0 1px; }
+	#pagingContainer h1 { display:inline; font-size:8pt; font-weight:bold; }
+	#pagingListing { display:inline; float:right; }
+	#pagingListing  #pageFirst, #pagingListing #pageFirst { margin-right:4px; }
+	#pagingListing  #pageLast, #pagingListing #pageLast { margin-left:6px; }
+	#pagingListing #pageActive { margin:0 2px 0 2px; }
+	#pagingListing #pageFirst, #pagingListing #pageFirst, #pagingListing #pageFirst { margin-right:4px; }
+	#pagingListing #pageLast, #pagingListing #pageLast, #pagingListing #pageLast { margin-left:6px; }
+	#pagingRange { display:inline; float:left; }
+	.abstract { color:000000; font-family:verdana,sans-serif; font-size:10pt; }
+	.admincolumnbg { background-color:666699; }
+	.admincolumnheader { color:ffffff; font-size:10px; font-weight:bold; text-transform:uppercase; }
+	.admincolumnsubbg { background-color:9999cc; }
+	.adminlabel { color:000000; font-size:8pt; font-weight:bold; text-transform:uppercase; }
+	.adminlabelsm { font-size:10px; font-weight:bold; text-transform:uppercase; }
+	.adminnavpath { color:000000; font-family:verdana, sans-serif; font-size:10pt; font-size:8pt; font-weight:bold; text-decoration:none; text-transform:uppercase; }
+	.adminrowdarkbg { background-color:cccccc; }
+	.adminrowhiddenbg { background-color:9999cc; }
+	.adminrowlightbg { background-color:eeeeee; }
+	.adminrowpublishedbg { background-color:eeeeee; }
+	.adminrowtext { color:666666; font-family:verdana; font-size:8pt; }
+	.adminrowunapprovedbg { background-color:ccccff; }
+	.admintext { color:666666; font-family:verdana; font-size:8pt; }
+	.admintextsm { color:000000; font-family:verdana; font-size:10px; }
+	.admintoolborderbg { background-color:663399; }
+	.admintoolheader { color:ffffff; font-size:8pt; font-weight:bold; text-transform:uppercase; }
+	.admintoolinsidebg { background-color:ffffff; }
+	.admintoolnavbg { background-color:996699; }
+	.admintoolnavtext { color:000000; font-size:8pt; font-weight:bold; text-transform:uppercase; }
+	.category { color:000000; font-family:verdana,sans-serif; font-size:10pt; font-weight:bold; }
+	.colleft { float:left; }
+	.colorarchive { background-color:cccccc; }
+	.colorattrib { background-color:9999CC; }
+	.colorbackground { background-color:ffffff; }
+	.colorborder { background-color:000000; }
+	.colorcontactinfo { background-color:666699; }
+	.colorextattrib { background-color:003366; }
+	.colorextnav { background-color:3366CC; }
+	.colorfeatured { background-color:666699; }
+	.colorheader { background-color:996699; }
+	.colornav { background-color:663399; }
+	.colorsearch { background-color:cccccc; }
+	.colorsearch2 { background-color:e2e2e2; }
+	.colorviolet { background-color:CCCCFF; }
+	.colright { float:right; padding-left:10px; width:163px; }
+	.extnavbottom2 { color:99ccff; font-family:verdana,sans-serif; font-size:8pt; }
+	.featuredbackground { background-color:666699; }
+	.footer { color:330066; font-family:verdana,sans-serif; font-size:10pt; }
+	.footerext { color:9999CC; font-family:verdana,sans-serif; font-size:10pt; }
+	.footerext2 { color:99ccff; font-family:verdana,sans-serif; font-size:10pt; }
+	.redtext { color:FF0000; font-family:verdana, sans-serif; font-size:8pt; }
+	.subtitle { color:999999; font-size:10pt; font-style:verdana,sans-serif; }
+	.surveybgblocktitleborder { background-color:000000; }
+	.surveybggroup { background-color:666699; }
+	.surveybggroupborder { background-color:666699; }
+	.surveybgquestiongroup { background-color:cccccc; }
+	.surveybgquestiongroupdark { background-color:cccccc; }
+	.surveytext { color:000000; font-family:verdana; font-size:8pt; }
+	.surveytextanswer { color:000000; font-family:verdana; font-size:8pt; }
+	.surveytextblocktitle { color:ffffff; font-family:verdana; font-size:10pt; font-weight:bold; }
+	.surveytextheader { color:000000; font-family:verdana; font-size:9pt; font-weight:bold; text-align:center; }
+	.surveytextquestion { color:000000; font-family:verdana; font-size:8pt; font-weight:bold; }
+	.surveytextrequired { color:000000; font-family:verdana; font-size:8pt; }
+	.surveytextsurveytitle { color:666699; font-family:verdana; font-size:16pt; text-align:center; }
+	.textblob { color:000000; font-family:verdana, sans-serif; font-size:10pt; }
+	.textblobwhite { color:ffffff; font-family:verdana, sans-serif; font-size:8pt; }
+	.textbold { color:000000; font-family:verdana,sans-serif; font-size:10pt; font-weight:bold; }
+	.textboldblue { color:666699; font-family:verdana,sans-serif; font-size:10pt; font-weight:bold; }
+	.textcopyright { color:ffffff; font-family:verdana,sans-serif; font-size:8pt; }
+	.textdate { color:000000; font-family:verdana,sans-serif; font-size:8pt; }
+	.textfeatured { color:ffffff; font-family:verdana, sans-serif; font-size:10pt; font-weight:bold; }
+	.textgray { color:999999; font-family:verdana; font-size:9pt; }
+	.textsmall { color:000000; font-family:verdana,sans-serif; font-size:8pt; }
+	.textsmallbold { color:000000; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; }
+	.textviolet { color:cc99cc; font-family:verdana,sans-serif; font-size:8pt; }
+	.title { color:666699; font-family:verdana,sans-serif; font-size:10pt; font-weight:bold; }
+	a.discussion:active { color:999999; font-size:8pt; text-decoration:none; }
+	a.discussion:hover { color:666666; font-size:8pt; text-decoration:none; }
+	a.discussion:link { color:999999; font-size:8pt; text-decoration:none; }
+	a.discussion:visited { color:999999; font-size:8pt; text-decoration:none; }
+	a.extnavbottom2:active { color:99CCFF; font-family:verdana,sans-serif; font-size:8pt; text-decoration:none; }
+	a.extnavbottom2:link { color:99ccff; font-family:verdana,sans-serif; font-size:8pt; text-decoration:none; }
+	a.extnavbottom2:visited { color:99ccff; font-family:verdana,sans-serif; font-size:8pt; text-decoration:none; }
+	a.extranetnavleft:active { color:ffffff; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; text-decoration:none; }
+	a.extranetnavleft:link { color:ffffff; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; text-decoration:none; }
+	a.extranetnavleft:visited { color:ffffff; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; text-decoration:none; }
+	a.footer:active { color:330066; font-family:verdana,sans-serif; font-size:10pt; text-decoration:none; }
+	a.footer:link { color:330066; font-family:verdana,sans-serif; font-size:10pt; text-decoration:none; }
+	a.footer:visited { color:330066; font-family:verdana,sans-serif; font-size:10pt; text-decoration:none; }
+	a.navbottom:active { color:ffffff; font-family:verdana,sans-serif; font-size:8pt; text-decoration:none; }
+	a.navbottom:link { color:ffffff; font-family:verdana,sans-serif; font-size:8pt; text-decoration:none; }
+	a.navbottom:visited { color:ffffff; font-family:verdana,sans-serif; font-size:8pt; text-decoration:none; }
+	a.navbottom2:active { color:cc99cc; font-family:verdana,sans-serif; font-size:8pt; text-decoration:none; }
+	a.navbottom2:link { color:cc99cc; font-family:verdana,sans-serif; font-size:8pt; text-decoration:none; }
+	a.navbottom2:visited { color:cc99cc; font-family:verdana,sans-serif; font-size:8pt; text-decoration:none; }
+	a.navleft:active { color:CC99CC; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; text-decoration:none; }
+	a.navleft:link { color:cc99cc; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; text-decoration:none; }
+	a.navleft:visited { color:cc99cc; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; text-decoration:none; }
+	a.smallurl:active { color:663399; font-family:verdana,sans-serif; font-size:8pt; text-decoration:underline; }
+	a.smallurl:link { color:663399; font-family:verdana,sans-serif; font-size:8pt; text-decoration:underline; }
+	a.smallurl:visited { color:663399; font-family:verdana,sans-serif; font-size:8pt; text-decoration:underline; }
+	a.titleurl:active { color:996699; font-family:verdana,sans-serif; font-size:10pt; font-weight:bold; text-decoration:underline; }
+	a.titleurl:link { color:663399; font-family:verdana,sans-serif; font-size:10pt; font-weight:bold; text-decoration:underline; }
+	a.titleurl:visited { color:666699; font-family:verdana,sans-serif; font-size:10pt; font-weight:bold; text-decoration:underline; }
+	a.titleurlsmall:active { color:996699; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; text-decoration:underline; }
+	a.titleurlsmall:link { color:663399; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; text-decoration:underline; }
+	a.titleurlsmall:visited { color:666699; font-family:verdana,sans-serif; font-size:8pt; font-weight:bold; text-decoration:underline; }
+	a.url:active { color:663399; font-family:verdana,sans-serif; font-size:10pt; text-decoration:underline; }
+	a.url:link { color:663399; font-family:verdana,sans-serif; font-size:10pt; text-decoration:underline; }
+	a.url:visited { color:996699; font-family:verdana,sans-serif; font-size:10pt; text-decoration:underline; }
+	a.urladmincolumnheader:link, a.urladmincolumnheader:active, a.urladmincolumnheader:visited { color:FFFFFF; font-size:7pt; font-weight:bold; text-decoration:underline; text-transform:uppercase; }
+	a.urladminlabel:link, a.urladminlabel:active, a.urladminlabel:visited { color:003399; font-size:8pt; font-weight:normal; text-transform:uppercase; }
+	a.urladminnav:link, a.urladminnav:active, a.urladminnav:visited { color:003399; font-size:10px; text-decoration:underline; text-transform:uppercase; }
+	a.urladminnavpath:link, a.urladminnavpath:active, a.urladminnavpath:visited,  { font-family:verdana, sans-serif; font-size:8pt; font-weight:bold; text-decoration:none; text-transform:uppercase; }
+	a.urladminrow:link, a.urladminrow:active, a.urladminrow:visited { color:003399; font-size:10px; text-decoration:underline; text-transform:uppercase; }
+	a.urladmintoolnav:link, a.urladmintoolnav:active, a.urladmintoolnav:visited { color:ffffff; font-size:10px; font-weight:normal; text-decoration:none; text-transform:uppercase; }
+	a.urladmintoolsubnav:link, a.urladmintoolsubnav:active, a.urladmintoolsubnav:visited { color:ffffff; font-size:10px; font-weight:normal; text-decoration:none; text-transform:uppercase; }
+	a.urlfeatured:link, a.urlfeatured:active, a.urlfeatured:visited { color:ffffff; font-family:verdana, sans-serif; font-size:10pt; font-weight:bold; }
+	a:active { color:663399; font-family:verdana,sans-serif; font-size:10pt; text-decoration:underline; }
+	a:link { color:663399; font-family:verdana,sans-serif; font-size:10pt; text-decoration:underline; }
+	a:visited { color:996699; font-family:verdana,sans-serif; font-size:10pt; text-decoration:underline; }
+	body, table, tr, td { font-family:verdana,sans-serif; font-size:10pt; }
+</STYLE>
+<!-- 
+	(C) 1997 INTERACTIVE APPLICATIONS GROUP INC
+	$Revision: 90 $
+	$Modtime: 12/09/04 4:12p $
+	$Archive: /ORGWEB/CNLIB/plates/feedback/2408/feedback.htm $
+-->
+
+
+
+<html>
+<head>
+	<title>The William T. Grant Foundation - Contact Us</title>
+	<meta name="description" content="The William T Grant Foundation is helping the nation value young people as resources and enabling them to reach their full potential.">
+	<meta name="keywords" content="William, Grant, Foundation, Youth, Young People, Grants, Youth Development, Social Science, Research, Funding Opportunities, Behavioral Science, Teens, Adolescents, Adolescence, Children, Youth Programs, Youth Policies, Perceptions of Young People, Evaluation, Social Indicators, Civic Development, Youth Diversity, Youth and Adults, Youth and Media, Policy Analysis, Communications Research, Grant Foundation, William T. Grant Foundation, New York, Helping the Nation Value Youth">
+<script language="javaScript">
+	function checkForm()		{	
+	
+	// begin variable functions
+		if(!checkBlank(document.contactus.feedback, 'You did not enter a comment or question.  Please enter a comment or question before continuing.'))
+		{
+			return false;
+		}
+	
+	function checkBlank(formfield,errorMsg)
+	{
+		var fieldValue = formfield.value;
+		var fieldLen = fieldValue.length;
+		if(fieldLen == 0 || fieldValue ==' ' || fieldValue=='  ' || fieldValue=='   ') 
+		{
+			alert(errorMsg);
+			return false;
+		}
+		return true;
+	}
+	if(!checkEmail(document.contactus.email))
+		{
+			return false; 
+		}	
+	function checkEmail(formfield) 
+	
+		{
+		var emailPat=/^(.+)@(.+)$/;
+		var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]";
+		var validChars="\[^\\s" + specialChars + "\]";
+		var quotedUser="(\"[^\"]*\")";
+		var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/;
+		var atom=validChars + '+';
+		var word="(" + atom + "|" + quotedUser + ")";
+		var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+		var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+		var matchArray=formfield.value.match(emailPat);
+		if (matchArray==null) 
+			{
+			alert("The EMAIL ADDRESS you entered seems incorrect (check @ and .'s)");
+			return false;
+			}
+		var user=matchArray[1];
+		var domain=matchArray[2];
+		if (user.match(userPat)==null) 
+			{
+		    alert("The EMAIL ADDRESS username does not seem to be valid.");
+		    return false;
+			}
+		var IPArray=domain.match(ipDomainPat);
+		if (IPArray!=null) 
+			{
+			for (var i=1;i<=4;i++) 
+				{
+			    if (IPArray[i]>255) 
+					{
+			        alert("The EMAIL ADDRESS Destination IP address for is invalid!");
+					return false;
+			    	}
+		    	}
+			}
+		var domainArray=domain.match(domainPat);
+		if (domainArray==null) 
+			{
+			alert("The EMAIL ADDRESS domain name doesn't seem to be valid.")
+		    return false;
+			}
+		var atomPat=new RegExp(atom,"g");
+		var domArr=domain.match(atomPat);
+		var len=domArr.length;
+		if (domArr[domArr.length-1].length<2 || domArr[domArr.length-1].length>3) 
+			{
+		   	alert("A valid EMAIL ADDRESS must end in a three-letter domain, or two letter country.");
+		   	return false;
+			}
+		if (len<2) 
+			{
+		   	alert("The EMAIL ADDRESS you entered is missing a hostname!");
+		   	return false;
+			}
+		return true;
+		}
+	
+		
+}
+</script>
+
+<script language=javaScript>
+	function checkSearch()
+	{	
+		// begin variable functions
+		if(!checkBlank(document.sitesearch.searchstring, 'You did not enter any search criteria.  Please enter keywords to search.'))
+		{
+			return false;
+		}
+	function checkBlank(formfield,errorMsg)
+	{
+		var fieldValue = formfield.value;
+		var fieldLen = fieldValue.length;
+		if(fieldLen == 0 || fieldValue ==' ' || fieldValue=='  ' || fieldValue=='   ') 
+		{
+			alert(errorMsg);
+			return false;
+		}
+		return true;
+	}
+		
+}
+</script>
+<SCRIPT language="JavaScript">
+<!-- 
+if(document.images)
+{
+	var activeFrame = "F3041";
+	RolloverF3016 = new Image();
+	RolloverF3016.src = "http://www.wtgrantfoundation.org/img/3016_rollover.gif";
+	InactiveF3016 = new Image();
+	InactiveF3016.src = "http://www.wtgrantfoundation.org/img/3016.gif";
+	RolloverF3026 = new Image();
+	RolloverF3026.src = "http://www.wtgrantfoundation.org/img/3026_rollover.gif";
+	InactiveF3026 = new Image();
+	InactiveF3026.src = "http://www.wtgrantfoundation.org/img/3026.gif";
+	RolloverF3076 = new Image();
+	RolloverF3076.src = "http://www.wtgrantfoundation.org/img/3076_rollover.gif";
+	InactiveF3076 = new Image();
+	InactiveF3076.src = "http://www.wtgrantfoundation.org/img/3076.gif";
+	RolloverF3042 = new Image();
+	RolloverF3042.src = "http://www.wtgrantfoundation.org/img/3042_rollover.gif";
+	InactiveF3042 = new Image();
+	InactiveF3042.src = "http://www.wtgrantfoundation.org/img/3042.gif";
+	RolloverF3039 = new Image();
+	RolloverF3039.src = "http://www.wtgrantfoundation.org/img/3039_rollover.gif";
+	InactiveF3039 = new Image();
+	InactiveF3039.src = "http://www.wtgrantfoundation.org/img/3039.gif";
+	RolloverF3040 = new Image();
+	RolloverF3040.src = "http://www.wtgrantfoundation.org/img/3040_rollover.gif";
+	InactiveF3040 = new Image();
+	InactiveF3040.src = "http://www.wtgrantfoundation.org/img/3040.gif";
+	RolloverF3041 = new Image();
+	RolloverF3041.src = "http://www.wtgrantfoundation.org/img/3041_rollover.gif";
+	InactiveF3041 = new Image();
+	InactiveF3041.src = "http://www.wtgrantfoundation.org/img/3041.gif";
+	RolloverF4030 = new Image();
+	RolloverF4030.src = "http://www.wtgrantfoundation.org/img/4030_rollover.gif";
+	InactiveF4030 = new Image();
+	InactiveF4030.src = "http://www.wtgrantfoundation.org/img/4030.gif";
+	function rollOn(pic)
+	{
+		document.images[pic].src=eval("Rollover" +pic +".src");
+	}
+	
+	function rollOff(pic)
+	{
+		if(activeFrame!=pic)
+		{
+			document.images[pic].src=eval("Inactive"+pic+".src");
+		}
+	}
+
+}
+// -->
+</script>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" class="colorbackground">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+    	<td class="colorheader" background="http://www.wtgrantfoundation.org/img/internal_background.gif"><img src="http://www.wtgrantfoundation.org/img/internal_header.gif" width="600" height="60" alt="William T. Grant Foundation"></td>
+	</tr>
+	<tr>
+		<td height="24" class="colornav"><a href="http://www.wtgrantfoundation.org/index.htm" onmouseover="rollOn('F3016');" onmouseout="rollOff('F3016');"><img src="http://www.wtgrantfoundation.org/img/3016.gif" height="24" alt=
+"Home" border="0" name="F3016"></a><a href="http://www.wtgrantfoundation.org/info-url_nocat3026/info-url_nocat.htm" onmouseover="rollOn('F3026');" onmouseout="rollOff('F3026');"><img src="http://www.wtgrantfoundation.org/img/3026.gif" height="24" alt=
+"About Us" border="0" name="F3026"></a><a href="http://www.wtgrantfoundation.org/search_site3076/search_site.htm" onmouseover="rollOn('F3076');" onmouseout="rollOff('F3076');"><img src="http://www.wtgrantfoundation.org/img/3076.gif" height="24" alt=
+"Active Grants" border="0" name="F3076"></a><a href="http://www.wtgrantfoundation.org/info-url_nocat3042/info-url_nocat.htm" onmouseover="rollOn('F3042');" onmouseout="rollOff('F3042');"><img src="http://www.wtgrantfoundation.org/img/3042.gif" height="24" alt=
+"Funding Opportunities" border="0" name="F3042"></a><a href="http://www.wtgrantfoundation.org/info-url_nocat4030/info-url_nocat.htm" onmouseover="rollOn('F4030');" onmouseout="rollOff('F4030');"><img src="http://www.wtgrantfoundation.org/img/4030.gif" height="24" alt=
+"Special Initiatives" border="0" name="F4030"></a><a href="http://www.wtgrantfoundation.org/newsletter3039/newsletter.htm" onmouseover="rollOn('F3039');" onmouseout="rollOff('F3039');"><img src="http://www.wtgrantfoundation.org/img/3039.gif" height="24" alt=
+"News" border="0" name="F3039"></a><a href="http://www.wtgrantfoundation.org/info-url_nocat3040/info-url_nocat.htm" onmouseover="rollOn('F3040');" onmouseout="rollOff('F3040');"><img src="http://www.wtgrantfoundation.org/img/3040.gif" height="24" alt=
+"Resources" border="0" name="F3040"></a><a href="http://www.wtgrantfoundation.org/feedback3041/feedback.htm" onmouseover="rollOn('F3041');" onmouseout="rollOff('F3041');"><img src="http://www.wtgrantfoundation.org/img/3041_active.gif" height="24" alt=
+"Contact Us" border="0" name="F3041"></a></td> 
+	</tr>
+  	<tr>
+    	<td height="1" class="colorbackground"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="1" height="1" alt=""></td>
+  	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  	<tr> 
+	<!-- left navigation -->
+	  	<td width="137" class="colornav" valign="top" align="center">
+			
+			<img src="http://www.wtgrantfoundation.org/img/internal_img_3041.jpg" alt="Contact Us"><br>
+<a href="http://www.wtgrantfoundation.org/feedback3041/feedback.htm"><img src="http://www.wtgrantfoundation.org/img/internal_cat_3041.gif" border="0" alt="Contact Us"></a>
+	  		
+	<table width="137" cellpadding="0" cellspacing="0" border="0" class="colornav">
+		<tr>
+			<td colspan="3" class="colornav" height="5"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="1" height="5" alt=""></td>
+		</tr>
+		
+	</table>
+
+<br>
+		<form method="post" name="sitesearch" action="http://www.wtgrantfoundation.org/search_site3107/search_site_results.htm" onsubmit="return checkSearch();">
+		<img src="http://www.wtgrantfoundation.org/img/internal_search.gif" width="80" height="31" alt="search" border="0"><input type="image" value="submit" src="http://www.wtgrantfoundation.org/img/internal_go.gif" width="33" height="31" alt="go" border="0"><br>
+			<script language="javascript">
+			if(navigator.appName == 'Netscape')
+				{
+				if(navigator.platform.toLowerCase().substr(0,3) != 'win')
+					{
+					document.write('<input type=\"text\" name=\"searchstring\" size=\"18\" maxlength=\"50\">');
+					}
+				else
+					{
+					document.write('<input type=\"text\" name=\"searchstring\" size=\"12\" maxlength=\"50\">');
+					}
+				}
+			else
+				{
+				document.write('<input type=\"text\" name=\"searchstring\" size=\"14\" maxlength=\"50\">');
+				}
+		</script>
+		</form><br><br><br><br>
+		<a href="http://www.wtgrantfoundation.org/login3075/login.htm"><img src="http://www.wtgrantfoundation.org/img/internal_extranet.gif"  border="0" alt="Extranet Login"></a>
+		<br><br><a href="http://www.wtgrantfoundation.org/feedback3041/feedback.htm?registration=yes"><img src="http://www.wtgrantfoundation.org/img/internal_mailing.gif" height="60" width="113" alt="Join/Update Mailing List" border="0"></a><br><br>
+    	</td>
+	 	<td width="15" valign="bottom" class="colorbackground"><img src="http://www.wtgrantfoundation.org/img/internal_corner_bottomleft.gif" width="20" height="20" alt=""></td>
+    	<td width="100%" valign="top" class="colorbackground">
+			
+
+		<br>
+		
+	<table border="0" cellpadding="4" cellspacing="0" width="450">
+		<tr>
+			<td colspan="2">	
+	   <span class="textBlob">Your feedback is important to us! Please let us know if you have questions or comments about the site.  <br>  <br> *Please use <STRONG>standard capitalization</STRONG> when completing this information (i.e., use a combination of capitalized and lowercase letter, not one or the other).&nbsp; Please <U>do not</U> use abbreviations for your company or organization's name.&nbsp;&nbsp;<SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: Garamond; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><SPAN style="mso-spacerun: yes">&nbsp;</SPAN></SPAN>&nbsp; <P></span>
+	   	</td>
+		</tr>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<form action="feedback.htm" name="contactus" method="post" onsubmit="return checkForm();">
+	
+		<tr>
+			<td width="225" align="right">First Name:</td>
+			<td width="225"><input type="text" size="15" name="fname"  value="" maxlength="40"></td>
+		</tr>
+		<tr>
+			<td width="225" align="right">Last Name:</td>
+			<td width="225"><input type="text" size="15" name="lname"  value="" maxlength="40"></td>
+		</tr>
+		<tr>
+			<td width="225" align="right">Email Address:<sup><span class="redtext">*</span></sup></td>
+			<td width="225"><input type="text" name="email" size="15" value=""></td>
+		</tr>
+		<tr>
+			<td colspan="2">Comment or Question:<sup><span class="redtext">*</span></sup></td>
+		<tr>
+			<td colspan="2" align="center"><textarea cols="38" rows=4 name="feedback" wrap="virtual"></textarea></td>
+		</tr>
+	
+			<tr>
+				<td align="left" valign="top" colspan="2"><br><span class="textboldblue">Topic Area Interests<br><img src="http://www.wtgrantfoundation.org/img/purple_dot.gif" alt="line" width="100%" height="1"></td>
+			</tr>
+			<tr>
+				<td colspan=2>The Grant Foundation would like to know what topic areas are of interest to you.  This information will not be used to contact you in anyway unless you have completed the form to join our mailing lists and have therefore given us permission to send you information.</td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<table width="100%">
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4434" >
+						</td>
+						<td valign="top">
+							Adults' Views of Youth
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4435" >
+						</td>
+						<td valign="top">
+							After-school
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4438" >
+						</td>
+						<td valign="top">
+							Child Welfare
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4436" >
+						</td>
+						<td valign="top">
+							Child/Adolescent Development
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4437" >
+						</td>
+						<td valign="top">
+							Childcare
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4439" >
+						</td>
+						<td valign="top">
+							Civic Engagement/Civic Development
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4440" >
+						</td>
+						<td valign="top">
+							Diversity and Inter-group Relations
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4441" >
+						</td>
+						<td valign="top">
+							Education/Education Policy
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4442" >
+						</td>
+						<td valign="top">
+							Employment/Employment Policy
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4443" >
+						</td>
+						<td valign="top">
+							Family
+						</td>
+					</tr>
+					
+					</table>
+				</td>
+				<td valign="top">
+					<table width="100%">
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4444" >
+						</td>
+						<td valign="top">
+							Health/Health Policy
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4445" >
+						</td>
+						<td valign="top">
+							Juvenile Justice/Policy
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4446" >
+						</td>
+						<td valign="top">
+							Peers
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4447" >
+						</td>
+						<td valign="top">
+							Poverty/Poverty Policy
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4448" >
+						</td>
+						<td valign="top">
+							Social and Cultural Contexts
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4449" >
+						</td>
+						<td valign="top">
+							Transitions
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4450" >
+						</td>
+						<td valign="top">
+							Welfare Policy
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4452" >
+						</td>
+						<td valign="top">
+							Youth Creativity
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4451" >
+						</td>
+						<td valign="top">
+							Youth, Media, and Technology
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+							<input type="checkbox" name="topic_attrib" value="4453" >
+						</td>
+						<td valign="top">
+							Other
+						</td>
+					</tr>
+					
+					</table>
+				</td>
+			</tr>
+		
+		<tr><td colspan="2">&nbsp;</td></tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input type="hidden" name="process_feedback" value="yes"><input type="image" alt="Submit" src="http://www.wtgrantfoundation.org/img/but_submit.gif" border="0"></td>
+		</tr>	
+		<tr>
+			<td colspan="2" align="left"><br><sup><span class="redtext">*</span></sup> indicates a required field</td>
+		</tr>
+		</table>
+		</form>
+	<br><br>
+	
+	</td>
+    	<td width="15" class="colorbackground"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="15" height="1" alt=""></td>
+    	<td width="15" class="colorbackground"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="15" height="1" alt=""></td>
+  	</tr>
+  <tr> 
+    <td width="135" class="colornav">&nbsp;</td>
+    <td width="15" class="colornav">&nbsp;</td>
+    <td width="100%" class="colornav" align="center"><a class="navbottom" href="http://www.wtgrantfoundation.org/index.htm">Home</a> <span class="textcopyright">~</span> <a class="navbottom" href="http://www.wtgrantfoundation.org/info-url_nocat3026/info-url_nocat.htm">About Us</a> <span class="textcopyright">~</span> <a class="navbottom" href="http://www.wtgrantfoundation.org/search_site3076/search_site.htm">Active Grants</a> <span class="textcopyright">~</span> <a class="navbottom" href="http://www.wtgrantfoundation.org/info-url_nocat3042/info-url_nocat.htm">Funding Opportunities</a> <span class="textcopyright">~</span> <a class="navbottom" href="http://www.wtgrantfoundation.org/info-url_nocat4030/info-url_nocat.htm">Special Initiatives</a> <span class="textcopyright">~</span> <a class="navbottom" href="http://www.wtgrantfoundation.org/newsletter3039/newsletter.htm">News</a> <span class="textcopyright">~</span> <a class="navbottom" href="http://www.wtgrantfoundation.org/info-url_nocat3040/info-url_nocat.htm">Resources</a> <span class="textcopyright">~</span> <a class="navbottom" href="http://www.wtgrantfoundation.org/feedback3041/feedback.htm">Contact Us</a><br><a class="navbottom2" href="http://www.wtgrantfoundation.org/information3044/information.htm">Privacy Policy</a> <span class="textviolet">~</span> <a class="navbottom2" href="http://www.wtgrantfoundation.org/information3126/information.htm">Terms of Use</a></td>
+    <td width="15" valign="top" class="colornav"><img src="http://www.wtgrantfoundation.org/img/internal_corner_bottomright.gif" alt=""></td>
+    <td width="15" class="colorbackground"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="15" height="1" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="4" height="2" class="colornav"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="1" height="1" alt=""></td>
+	<td width="15" class="colorbackground"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="15" height="1" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="4" height="1" class="colorbackground"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="1" height="1" alt=""></td>
+    <td width="15" class="colorbackground"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="15" height="1" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="4" class="colorheader" align="center"><br><span class="footer"><GEO TYPE="US">570 Lexington Ave., 18th Floor, New York, NY 10022-6837</GEO><br>
+Phone: 212.752.0071   Fax: 212.752.1398   E-mail: <a href="mailto:info@wtgrantfdn.org"> <span class="footer" style="text-decoration:none">info@wtgrantfdn.org</span></a></span><br><br><span class="textcopyright">copyright 2005 William T. Grant Foundation<br>Created by</span> <a href="http://www.iapps.com" class="navbottom">iapps</a></span><br><br></td>
+    <td width="15" class="colorbackground"><img src="http://www.wtgrantfoundation.org/img/trsp_dot.gif" width="15" height="1" alt=""></td>
+  </tr>
+
+</table>
+
+</body>
+</html>
+
+
+				
+          <!-- BEGIN WEBSIDESTORY CODE v7.3 -->
+<!-- COPYRIGHT 1997-2002 WEBSIDESTORY, INC. ALL RIGHTS RESERVED. U.S. PATENTED. Privacy notice at: http://websidestory.com/privacy -->
+<script language="javascript">
+var _pn=""; 	//page name(s)
+var _mlc="Contact+Us";	//multi-level content category
+var _cp="null"; 	//campaign
+var _acct="WR5207302IDC80EN3"; 	//account number(s)
+var _pndef="title";	//default page name
+var _ctdef="full"; 	//default content category
+var _prc="";	//commerce price
+var _oid="";	//commerce order
+var _dlf="";	//download filter
+var _elf="";	//exit link filter
+var _epg=""; 	//event page identifier
+var _mn="wp179"; //machine name
+var _gn="phg.hitbox.com"; //gateway name
+var _hcv=68;function _wn(n){return((n.indexOf("NAME")>0&&n.indexOf("PUT")>-1)||
+(n.indexOf("CONTENT")>-1&&n.indexOf("CATEGORY")>0))};function _gd(x,w){var _ed=
+x.lastIndexOf("/");var _be=(w!="full")?x.lastIndexOf("/",_ed-2):x.indexOf("/");
+return(_be==_ed)?"/":x.substring(_be,_ed);};function _gf(x){return x.substring(
+x.lastIndexOf("/")+1,x.length);};function _tc(_ml){var _mll=_ml.length-1;var s=
+"/";if(_ml.lastIndexOf(s)==(_mll-1)){_ml=_ml.substring(0,_mll-1)}if(_ml.indexOf
+(s)!=0){_ml=s+_ml;_mll++}if(_mll){var a=_ml.substring(1,_mll).indexOf(s);if(a==
+-1)return _ml;var b=_ml.substring(a+2,_mll).indexOf(s);if(b==-1)return _ml;if(b
+!=-1){if(!b)b--;return _ml.substring(0,a+2+b);}};return _ml;};var _hl=location;
+var _lp=_hl.protocol.indexOf('https')>-1?'https://':'http://';var _zo=(new Date
+()).getTimezoneOffset();function _ps(_ip,_pml){return(_ip&&_wn(_pml))?((_pndef
+=="title"&&document.title!="")?document.title:_gf(_hl.pathname)?_gf(
+_hl.pathname):_pndef):_tc(_wn(_pml)?_gd(_hl.pathname,_ctdef):_pml)};function 
+_pm(m,_fml,h){if(m.indexOf(";")!=-1){_nml=m.substring(0,m.indexOf(";"));_rm=
+m.substring(m.indexOf(";")+1,m.length);_fml+=_ps(h,_nml)+";";return _pm(_rm,
+_fml,h);}else{return _fml+_ps(h,m);}};var _sv=10;var _hn=navigator;var _bn=
+_hn.appName;if(_bn.substring(0,9)=="Microsoft"){_bn="MSIE";};var _bv=(
+Math.round(parseFloat(_hn.appVersion)*100));if((_bn=="MSIE")&&(parseInt(_bv)==2
+))_bv=301;function _ex(v){return escape(v)};var _rf=_ex(document.referrer);
+_mlc=_pm(_mlc,"",0);_pn=_pm(_pn,"",1);</script><script language="javascript1.1">
+_sv=11;</script><script defer src="http://stats.hitbox.com/js/hbp.js" 
+language="javascript1.1"></script><script language="javascript">if(_sv<11){if(
+document.cookie.indexOf("CP=")>-1){_ce="y";}else{document.cookie="CP=null*; p"+
+"ath=/; expires=Wed, 1 Jan 2020 00:00:00 GMT";_ce=(document.cookie.indexOf(
+"CP=")!=-1)?"y":"n";};if((_rf=="undefined")||(_rf=="")){_rf="bookmark";};_x2=
+"<img src='"+_lp+_gn+"/HG?hc="+_mn+"&hb="+_ex(_acct)+"&n="+_ex(_pn);_x3="&cd="+
+"1&hv=6' border=0 height=1 width=1>";_ar="&bn="+_ex(_bn)+"&bv="+_bv+"&ce="+_ce+
+"&ss=na&sc=na&ja=na&sv="+_sv+"&con="+_ex(_mlc)+"&vcon="+_ex(_mlc)+"&epg="+_epg+
+"&hp=u&cy=u&dt=&ln=na&cp="+_ex(_cp)+"&pl=&prc="+_ex(_prc)+"&oid="+_ex(_oid)+""+
+"&rf="+_rf;document.write(_x2+_ar+_x3);}document.write("<\!--");</script>
+<noscript><img 
+src="http://phg.hitbox.com/HG?hc=wp179&cd=1&hv=6&ce=u&hb=WR5207302IDC80EN3&n=&vcon=Contact+Us" border='0' width='1' height='1' alt=''></noscript><!--//-->
+<!-- END WEBSIDESTORY CODE  -->
+
+			

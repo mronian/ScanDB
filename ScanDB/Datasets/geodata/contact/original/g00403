@@ -1,0 +1,981 @@
+<DOC>
+<DOCNO>g00403</DOCNO>
+<DOCHDR>http://www.kentucky.com/mld/kentucky/contact_us</DOCHDR>
+
+
+
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+
+var rm = false;
+
+</script>
+<title>Contact Us -- Kentucky.com</title>
+<link rel='stylesheet' type='text/css' href='/css/palette/kentucky/en/global.css'/><script type="text/javascript" language="javascript">
+
+_krdDartOrd = new Date().getTime();
+
+_krdDartInc = 0;
+var navReady = false;
+var toolsReady = false;var onLoadScript="";function Browser() {var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+// I have disabled the following line, but something similar might be useful later,
+// but launching a popup window is more polite than this alert.
+//if (!b) alert(''Unidentified browser./nThis browser is not supported,'');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.ns=(this.b=="ns" && this.v>=4);
+this.ns4=(this.b=="ns" && this.v==4);
+this.ns6=(this.b=="ns" && this.v==5);
+this.ie=(this.b=="ie" && this.v>=4);
+this.ie4=(this.version.indexOf('MSIE 4')>0);
+this.ie4up = (this.ie && this.v>= 4);
+this.ns5up = (this.ns && this.v>= 5);
+this.ie5=(this.version.indexOf('MSIE 5')>0);
+this.ie5up = (this.ie5);
+this.ie55=(this.version.indexOf('MSIE 5.5')>0);
+this.opera=(this.b=="opera");
+this.def=(this.ie||this.dom);var ua=navigator.userAgent.toLowerCase();
+this.mac = (ua.indexOf("mac")!=-1);if (ua.indexOf("win")>-1) this.platform="win32";
+else if (ua.indexOf("mac")>-1) this.platform="mac";
+else this.platform="other";
+}
+var is = new Browser();
+// tiny extra css. these are ONLY used by old browsers.
+// VAST majority of users will NEVER request these files.
+// Even NS4 is around 7% of market and falling
+if (is.ns4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/kentucky/en/browser/ns4.css'>\n";
+document.write(css);
+}
+if (((is.ns4)||(is.ie4))&&( is.mac)) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/kentucky/en/browser/ns4mac.css'>\n";
+document.write(css);
+}
+if (is.ie4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/kentucky/en/browser/ie4.css'>\n";
+document.write(css);
+}
+
+function LayerObject(divId) {
+this.name = divId;
+if (is.ns4) this.ob = eval("document." +divId);
+else if (is.ie4) this.ob = document.all(divId);
+else this.ob = document.getElementById(divId);
+this.x = 0;
+this.y = 0;
+this.width = this.getWidth();
+this.height = this.getHeight();
+}
+LayerObject.prototype.px = (is.version>=5)?"px":"";
+LayerObject.prototype.hideSyntax = (is.ns4)? "hide":"hidden";
+LayerObject.prototype.showSyntax = "visible";// NS4::  Unbelievable, but document.layername.document.imgname works for img-in-layer-in document
+// and it works for img in layer in table in document.
+// but it doesnt work for img in layer in table in table in document.
+// Maybe a workaround exists, but it seems unlikely at this point.
+// The images MUST therefore be nested only one deep....
+LayerObject.prototype.getInlineLeft = function() {
+if (is.ns4) return this.ob.pageX;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var xPos = 0;
+var yPos = 0;
+while (elem.offsetParent != null) {
+xPos += elem.offsetLeft;
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) xPos += 2;
+return xPos;
+}
+else return (this.ob.offsetLeft + document.body.offsetLeft);
+}
+
+LayerObject.prototype.getInlineTop = function() {
+if (is.ns4) return this.ob.pageY;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var yPos=0;
+while (elem.offsetParent != null) {
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) yPos += 2;
+return yPos;
+}
+else return (this.ob.offsetTop+ document.body.offsetTop);
+}
+
+//getWidth and getHeight works for both inline and positioned divs.
+LayerObject.prototype.getWidth = function () {
+if (is.ns4) return this.ob.clip.width;
+else if (is.opera) return this.ob.style.pixelWidth;
+else return this.ob.offsetWidth;
+}
+LayerObject.prototype.getHeight = function () {
+if (is.ns4) return this.ob.clip.height;
+else if (is.opera) return this.ob.style.pixelHeight;
+else return this.ob.offsetHeight;
+}
+LayerObject.prototype.hide = function() {
+if (is.ns4) this.ob.visibility = this.hideSyntax;
+else this.ob.style.visibility = this.hideSyntax;
+}
+LayerObject.prototype.show = function() {
+if (is.ns4) this.ob.visibility = this.showSyntax;
+else this.ob.style.visibility = this.showSyntax;
+}
+LayerObject.prototype.moveLayerTo = function(toX, toY) {
+this.x = toX;
+this.y = toY;
+}
+LayerObject.prototype.updateLayer = function() {
+if (is.ns4) {
+this.ob.left = Math.round(this.x) + this.px;
+this.ob.top = Math.round(this.y)+ this.px ;
+}
+else {
+this.ob.style.left = Math.round(this.x) + this.px;
+this.ob.style.top = Math.round(this.y) + this.px;
+}
+}
+//-----------------
+function roll(divName, imgName, which) {
+var suffix = (which==1)?"on":"off"
+if ((is.ns4)&&(divName!=0)) {
+var imgObject = eval("document." + divName +".document.images['"+imgName +"']");
+imgObject.src = eval(imgName + "_" + suffix + ".src");
+}
+else {
+document.images[imgName].src = eval(imgName + "_" + suffix + ".src");
+}
+}
+
+function init() {
+if (onLoadScript) eval(onLoadScript);
+}
+
+// Workaround for the netscape resize problem --
+// namely, on resize ns looses div positioning and
+// styles from css files.
+// This checks to see if the window''s dimensions have
+// actually changed (because Netscape often fires a
+// false onResize event when it forms scrollbars);
+// if the dimensions have changed, page is reloaded
+function resizefix(){
+if((document.resizeFix.initWidth != window.innerWidth) ||
+(document.resizeFix.initHeight != window.innerHeight))
+{
+document.location = document.location;
+}
+}
+
+// This code creates a new object with properties
+// to hold the current window width & height to be
+// used in the event of a netscape resize
+document.resizeFix = new Object();
+if(is.ns4){
+document.resizeFix.initWidth = window.innerWidth;
+document.resizeFix.initHeight = window.innerHeight;
+window.onresize=resizefix;
+}
+
+
+
+
+
+
+
+function initMenus(){
+}
+
+
+
+function showResults(siteSurveyKey) {
+var url="/mld/templates/contentModules/poll-results-popup.jsp"+ "?siteSurveyKey=" + siteSurveyKey;
+window.open(url, 'Title');
+}
+
+function openWin(URL) {
+aWindow = window.open(URL,
+'thewindow','width=500,height=400,resizable=yes,scrollbars=yes');
+}
+function getSite(){
+foundSite = false;
+site=document.location.hostname;
+endPos=site.indexOf(".com");
+if (endPos>= 1) {
+foundSite = true;
+site = site.substr(0, endPos);
+startPos = site.lastIndexOf(".");
+site = site.substr(startPos + 1);
+}
+return site;
+}
+function getPublication(){
+publication=document.location.pathname;
+startPos=publication.indexOf("/mld/");
+publication=publication.substr(startPos+5);
+endPos=publication.indexOf("/");
+publication=publication.substr(0,endPos);
+return publication;
+}
+function openSlideshow(url,width,height) {
+y=Math.floor((screen.availHeight-height)/2);
+x=Math.floor((screen.width-width)/2);
+window.open(url,'slideshow','width='+width+',height='+height+',top='+y+',left='+x+',scrollbars=yes,resizable=yes').focus();
+}
+
+
+
+</script>
+</head>
+<body class="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CDS : SDP2.5.0_full_02072005_100000 : production --><table width="768" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:5px;">
+<tr><td class="header1">
+
+
+<a HREF="http://www.subscribetohl.com/"><img SRC="/images/logos/site/kentucky/kentucky/mediapartners/sm_logo_heraldleader.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a>
+
+
+
+</td><td class="header2">
+<a href="/"><img src="/images/logos/site/kentucky/kentucky/site_logo_340x60.gif" width="340" height="60" alt="" hspace="0" vspace="0" border="0"/></a>
+</td><td class="header3">
+
+
+
+<a href="http://weather.kentucky.com"><img src="http://banners.wunderground.com/banner/krd_cond/language/www/US/KY/Lexington.gif" alt="Weather" hspace="0" vspace="0" border="0"></a>
+<br>
+
+
+
+<a href="http://weather.kentucky.com">Complete Forecast</a>
+
+
+
+</td><td class="header4">
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/kentucky.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;dcopt=ist;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/kentucky.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109896887895?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/kentucky.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109896887895?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+</td></tr></table>
+
+
+
+
+
+<script id="search_box_center_jsp_script" language="javascript" type="text/javascript">
+function searchFormSubmit(form) {
+if (form.searchSelect[1].checked == true) {
+window.location = "http://www.newslibrary.com/nlsearch.asp?forceTheme=RealCities&s_site=kentucky&search_mode=all&action=search&date_mode=year&year=last+180+days&sort=d%3Ah&nitems=10&region=lh&dbquery=" + form.query.value;
+return false;
+}
+return true;
+}
+</script><table cellspacing="0" cellpadding="0" border="0" width="768"><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr><tr><td align="center" class="navbg1">
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/kentucky.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/kentucky.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109896887897?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/kentucky.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109896887897?" BORDER="0" ></A>
+</NOSCRIPT>
+
+</td></tr><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr></table><table cellspacing="0" cellpadding="0" border="0" width="768">
+<form action="http://www.kentucky.com/mld/kentucky/search/search_results.htm" method="get" name="SearchForm_top" onsubmit="return searchFormSubmit(this)">
+<input type=hidden name="pubName" value="kentucky">
+<input type=hidden name="orderBy" value="date">
+<input type=hidden name="pageStart" value="1">
+
+
+<input type="hidden" name="sitesToSearch" value="kentucky,heraldleader,realcities">
+
+
+
+<input type=hidden name="pageSize" value="10">
+<input type=hidden name="fieldsToSearch" value="HEADLINE,FORSEARCH,LEAD,BYLINE">
+<input type=hidden name="queryType" value="all">
+<tr style="background-color:#f2f2f2;">
+<td class="newsearch">
+
+<b>Search</b>&nbsp;
+
+
+<input name="searchSelect" value="article" type="radio" checked>Recent News&nbsp;
+
+
+
+<input name="searchSelect" value="archives" type="radio">Archives&nbsp;
+
+
+
+
+<input name="searchSelect" value="web" type="radio">Web&nbsp;&nbsp;
+
+
+
+<b>for&nbsp;&nbsp;</b><input name="query" size="25" maxlength="256" type="text">&nbsp;&nbsp;<input value="Go" type="submit">
+
+</td><script language="javascript" type="text/javascript">
+document.write('<td class="newregbox">');
+if (rm) {
+document.write('Welcome <b>' + rname + '</b><br>');
+
+document.write('	<a href="https://secure.kentucky.com/listit/myclassifieds/">My Classifieds</a>&nbsp;|&nbsp;');
+
+document.write('<a href="https://registration.kentucky.com/reg/myAccount.do">My Account</a>&nbsp;|&nbsp;');
+document.write('<a href="https://registration.kentucky.com/reg/logout.do">Sign Out</a>');
+} else {
+document.write('	Welcome <b>Guest</b><br />');
+document.write('	<a href="https://registration.kentucky.com/reg/createAccount.do">Sign Up</a>&nbsp;|&nbsp;<a href="https://registration.kentucky.com/reg/login.do">Sign In</a>&nbsp;|&nbsp;');
+document.write('	<a href="https://registration.kentucky.com/reg/memberBenefits.do">Member Benefits</a>');
+}
+document.write('</td>');
+</script>
+</tr></form>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="columndiv" width="134"><img src="/images/common/spacer.gif" width="134" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="472"><img src="/images/common/spacer.gif" width="472" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="160"><img src="/images/common/spacer.gif" width="160" height="1"></td></tr><tr>
+<td class="leftrail" valign="top" align="center" width="134">
+
+
+
+<!-- classifieds -->
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BGCOLOR="#ffffff"><TR><TD>
+<div style="border-left:4px solid #368f26;">
+<div class="contentnav" style="border-top:1px solid #cccccc;"><img src="http://www.kentucky.com/multimedia/kentucky/images/kentucky_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/kentucky/classifieds/employment/"><B>Jobs</B></A></div>
+<div class="contentnav"><img src="http://www.fortwayne.com/multimedia/kentucky/images/kentucky_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/kentucky/classifieds/automotive/"><B>Cars</B></A></div>
+<div class="contentnav"><img src="http://www.kentucky.com/multimedia/kentucky/images/kentucky_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/kentucky/classifieds/real_estate/"><B>Real Estate</B></A></div>
+<div class="contentnav"><img src="http://www.kentucky.com/multimedia/kentucky/images/kentucky_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.apartments.com/search/oasis.dll?p=kentucky&rgn1=145&page=Area&state=KY&partner=kentucky&prvpg=2"><B>Apartments</B></A></div>
+<div class="contentnav"><img src="http://www.kentucky.com/multimedia/kentucky/images/kentucky_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.shoplocal.com/kentucky/new_user_entry.aspx?CityStateZip=40502&AdRef=link03"><B>Local Shopping</B></A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/kentucky/new_user_entry.aspx?CityStateZip=40502&AdRef=link03">Find Sales & Deals</A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/kentucky/new_user_entry.aspx?CityStateZip=40502&AdRef=link03">Shop Local Stores</A><BR /></div>
+<div class="contentnav"><img src="http://www.kentucky.com/multimedia/kentucky/images/kentucky_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/kentucky/classifieds/"><B>All Classifieds</B></A></div>
+<div class="contentnav"><img src="http://www.kentucky.com/multimedia/kentucky/images/kentucky_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/kentucky/classifieds/personals/"><B>Personals</B></A></div>
+</div>		
+</TD></TR></TABLE>
+
+<DIV style="text-align: left; background-color:#fff;">
+<!-- site nav -->
+<div class="navtitlebar"></div>
+<div class="contentnav"><A HREF="/mld/kentucky/news/"><B>News</B></A><BR />
+	  •  <A HREF="/mld/kentucky/news/local/">Local</A><BR />
+	  •  <A HREF="/mld/kentucky/news/nation/">Nation</A><BR />
+	  •  <A HREF="http://www.legacy.com/kentucky/">Obituaries</A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/sports/"><B>Sports</B></A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/entertainment/"><B>Entertainment</B></A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/business/"><B>Business</B></A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/living/"><B>Living</B></A><BR />
+	  •  <A HREF="/mld/kentucky/living/health/">Health</A><BR />
+	  •  <A HREF="/mld/kentucky/living/home/">Home</A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/news/editorial/"><B>Opinion / Letters</B></A><BR />
+	  •  <A HREF="/mld/heraldleader/news/columnists/">Columnists</A></div>
+</DIV>
+
+<DIV style="text-align: left; background-color:#fff;">
+<!-- online extras -->
+<div class="navtitlebar">ONLINE EXTRAS</div>
+<div class="contentnav"><A HREF="/mld/kentucky/archives/"><B>Archives</B></A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/contests/"><B>Contests</B></A></div>
+<div class="contentnav"><A HREF="http://forums.realcities.com/dir-app/nav/forumdirectory.aspx?webtag=kr-kentuckyz&byName=y"><B>Discussion Boards</B></A></div>
+<div class="contentnav"><A HREF="http://maps.kentucky.com/jump.cgi/refsrc=KR.1215"><B>Maps & Directions</B></A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/forums/"><B>Q&A Forums</B></A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/9272165.htm"><B>RSS</B></A></div>
+<div class="contentnav"><A HREF="http://yp.kentucky.com/bin/cgidir.dll?MEM=1215"><B>Yellow Pages</B></A></div>
+
+<!-- site services -->
+<div class="navtitlebar">SITE SERVICES</div>
+<div class="contentnav"><A HREF="/mld/kentucky/contact_us/"><B>Contact Us</B></A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/contact_us/advertise/"><B>Advertise</B></A></div>
+<div class="contentnav"><A HREF="/mld/kentucky/promotions/4494799.htm"><B>Photo Reprints</B></A></div>
+</DIV>
+<BR />
+
+<!-- BEGIN CONTEST BUTTON FREEFORM -->
+
+<TABLE ALIGN="center" CELLSPACING="0" CELLPADDING="0" BORDER="0" WIDTH="100%" BGCOLOR="#FFFFFF">
+<TR><TD ALIGN="center" VALIGN="top"><img src="/images/common/spacer.gif" width="1" height="6"><BR><DIV ALIGN="center"><A HREF="/mld/kentucky/contests/"><IMG SRC="/images/kentucky/kentucky/7513/56450577360.gif" width="125" height="30" border="0" ALT="Kentucky.com Contests"></A><BR>
+<a href="/mld/kentucky/contests/" class="topstory-headline"><FONT SIZE="-1">Contests</FONT></a></DIV></TD>
+</TR>
+<TR><TD ALIGN="center" VALIGN="top"><HR WIDTH="98%" SIZE="1" NOSHADE></TD>
+</TR></TABLE>
+
+<!-- END CONTEST BUTTON FREEFORM -->
+
+<!-- START FREEFORM WKYT VIDEO LINK -->
+<table align="center" border="0" cellpadding="2" cellspacing="0" width="100%" BGCOLOR="#FFFFFF">
+   <tr>
+     <td align="middle"></td></tr>
+   <tr>
+   <td align="middle">
+   <img src="/images/common/spacer.gif" width="1" height="2" ALT=""><BR>
+   <A HREF="http://www.wkyt.com/global/Category.asp?c=49566"><img src="/images/kentucky/kentucky/8116/65872287484.gif" width="80" height="26" border="0" alt="WKYT-TV"><BR><B>News Videos</B></A><br><img src="/images/common/spacer.gif" width="1" height="3"></td>
+</tr>
+   <tr>
+     <td BGCOLOR="#000000"></td></tr>
+</table>
+<br><img src="/images/common/spacer.gif" width="1" height="1"><br>
+<!-- STOP FREEFORM WKYT VIDEO LINK -->
+
+<!-- WKYT First Alert FREEFORM BEGIN -->
+
+<TABLE BGCOLOR="#FFFFFF" WIDTH="100%" ALIGN="center"><TR><TD ALIGN="center"><A HREF="http://www.wkyt.com/global/Story.asp?s=857087" TARGET="_new"><img src="/images/kentucky/kentucky/7864/61843265672.gif" width="120" height="60" border="0" alt="WKYT First Alert Weather"></A></TD></TR>
+<TR><TD ALIGN="center"><HR WIDTH="98%" SIZE="1" NOSHADE>
+</TD></TR></TABLE>
+
+<!-- WKYT First Alert FREEFORM END -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td class=raildiv><img src="/images/common/spacer.gif" width="1" height="1" border="0"/></td></tr></table>
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr><td class="promobg1" align="center"><span class="promotitle"><b>SKI REPORT</b></span></td></tr></table>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tr><td class="promobg2">
+<div align="center">
+<img src="http://www.kansas.com/images/kansas/kansas/7557/57113500115.jpg" height=50 width=80></div>
+<span class="v1">Snow reports by resort or region.</span><br>
+ <a href="http://www.onthesnow.com/ski/media_affiliates/kentucky/"><span class="arrow">&#187;</span><b class="v1">Click here</b></a><br></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td class=raildiv><img src="/images/common/spacer.gif" width="1" height="1" border="0"/></td></tr></table>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td>
+<td class="centerrail" valign="top" align="center" width="472">
+
+
+<img src="/images/common/spacer.gif" width="1" height="1"
+border="0"><br>
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+<tr><td class="searchbox"  width="100%" align="center">
+<b class="v1search">Can't find it?  <a href="http://www.kentucky.com/mld/kentucky/classifieds/"
+class="v1search">Browse Classifieds</a> | <a href="http://www.kentucky.com/mld/kentucky/entertainment/"
+class="v1search">Search Entertainment</a> | <a href="http://www.legacy.com/kentucky/LegacyHome.asp"
+class="v1search">Search Obituaries</a></b><br>
+</td>
+</tr></table>
+<table cellspacing="0" cellpadding="0" width="100%" border=0>
+</tr>
+<tr><td colspan="2" class="searchboxrule"><img
+src="/images/common/spacer.gif" width="1" height="1" border="0"></td>
+</tr></table>
+
+
+
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="2" width="97%">
+<tr><td valign="middle">&nbsp;</td><td align="right" class="byline">Thursday, Mar 03, 2005</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="97%">
+<tr><td align="right" valign="top">
+
+</td></tr></table><img src="/images/common/spacer.gif" width="100%" height="5" /><br></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td><td><!-- <BASE HREF="http://www.kentucky.com/mld/kentucky/">
+<LINK href="/css/palette/kentucky/en/global.css" type=text/css rel=stylesheet>  -->
+<!-- BEGIN CONTACT_US.HTML -->
+
+<!--  BEGIN INLINE HEADER component 44 -->
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="2" width="97%">
+	<tr>
+		<td valign="middle" class="bcrumb">
+		<!--  Breadcrumb --><a href="/mld/kentucky" title="Kentucky.com home page" class="related">Back to Home</a> &gt; </td>
+		<td align="right" class="byline">&nbsp;</td>
+	</tr>
+	<tr>
+		<td  colspan="2" align="center" bgcolor="#ffffff"><img src="/images/common/spacer.gif" width="1" height="1" alt=""><br></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="97%">
+	<tr>
+		<td  align="center" class="pagetitle" width="100%"><!--  the graphic page title may be replaced by text, the graphic dimensions need to be flexible -->Contact Us</td>
+		<td align="right" width="1" valign="top"><img src="/images/common/spacer.gif" width="1" height="35" alt=""></td>
+		<td align="right" width="56" valign="top"></td>
+	</tr>
+</table><!--  the background colors of the following table cells need to be variable to accomodate changes in color-->
+<table border="0" cellpadding="0" cellspacing="0" width="97%" align="center">
+	<tr>
+		<td  align="center"><img src="/images/common/spacer.gif" width="1" height="2" alt=""><br></td>
+	</tr>
+	<tr>
+		<td  align="center" bgcolor="#cccccc"><img src="/images/common/spacer.gif" width="1" height="2" alt=""><br></td>
+	</tr>
+	
+	<tr>
+		<td  align="center"><img src="/images/common/spacer.gif" width="1" height="2" alt=""><br></td>
+	</tr>
+	<tr>
+		<td  align="center"  bgcolor="#cccccc"><img src="/images/common/spacer.gif" width="1" height="1" alt=""><br></td>
+	</tr>
+</table>
+<!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   -->
+<img src="/images/common/spacer.gif" width="100%" height="5" alt=""><br>
+</div>
+<!-- END INLINE HEADER component 44 -->
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=2 width="95%" border=0>
+	<TR>
+		<TD bgColor=#cccccc>
+			<TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+				<TR>
+					<TD bgColor="#ffffff" align="center"><span class="bulletin"><b>&raquo;</b></span><a href="http://classifieds.kentucky.com/lhl/home/support/faq.html"><b>Click here for information and feedback on the online classifieds.</b></a><BR></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+</DIV>
+<br>
+<!-- COMPONENT 28  SKYBOX , variation 04  -->
+<!--  NOTE THAT ANY SPACES IN THE FIELD "COMPONENT TITLE" MUST BE REPLACED BY &nbsp; TO GET NETSCAPE LOOKING OK IT WAS EITHER THIS, OR A SURPRISINGLY HUGE AMOUNT OF TABLECODE PER COMPONENT.  HOPEFULLY THIS ISNT A HUGE ISSUE FOR THE JSP, CAUSE THE FILESIZE SAVINGS ARE SIGNIFICANT, AND THE STRETCHY LINE IS A KEY DESIGN ELEMENT FOR INLINE COMPONENTS .  WE TRIED NOBR, AND MANY OTHER IDEAS.  -->
+
+<!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   -->
+<!-- <img src="/images/common/spacer.gif" width="100%" height="25" alt=""><br>	
+ --><!-- END COMPONENT 28 SKYBOX -->
+<!-- COMPONENT 28  SKYBOX , variation 04  -->
+<!--  NOTE THAT ANY SPACES IN THE FIELD "COMPONENT TITLE" MUST BE REPLACED BY &nbsp; TO GET NETSCAPE LOOKING OK IT WAS EITHER THIS, OR A SURPRISINGLY HUGE AMOUNT OF TABLECODE PER COMPONENT.  HOPEFULLY THIS ISNT A HUGE ISSUE FOR THE JSP, CAUSE THE FILESIZE SAVINGS ARE SIGNIFICANT, AND THE STRETCHY LINE IS A KEY DESIGN ELEMENT FOR INLINE COMPONENTS .  WE TRIED NOBR, AND MANY OTHER IDEAS.  -->
+<P>Lexington Herald-Leader<BR>
+	100 Midland Avenue<BR>
+	Lexington, KY 40508-1999</P>
+	
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr> 
+    	<td width="10" rowspan="2"><img src="/images/common/spacer.gif" width="10" height="1" alt=""></td>
+    	<td colspan="5"> 
+      		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+        		<tr> 
+          			<td class="smalltitle" nowrap>LEXINGTON&nbsp;HERALD-LEADER&nbsp;&nbsp;</td>
+          			<td width="100%"><hr size="1" color="#cccccc"></td>
+				</tr>
+			</table>
+		</td>
+		<td width="10" rowspan="2"><img src="/images/common/spacer.gif" width="10" height="1" alt="">
+		</td>
+	</tr>
+	<tr> 
+    	<td width="30%" valign="top"> The voice of Lexington </td>
+    	<td background="/images/component/archives_vertdotline.gif" width="15" align="center"><img src="/images/common/spacer.gif" width="14" height="1" border="0" alt=""></td>
+    	<td width="30%" valign="top"> 
+      		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+        		<tr> 
+          			<td valign="top"> <img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/contact_us/about_np1">About Lexington Herald-Leader</a></b><br><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/contact_us/help_np1">Help</a></b><br><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/contact_us/feedback_np1">Feedback</a></b><br><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/contact_us/contact_list/newspaper_staff_np1/">Contacts</a></b><br><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/contact_us/contact_list/departments_np1/">Departments</a></b></td>
+        		</tr>
+			</table>
+		</td>
+		<td background="/images/component/archives_vertdotline.gif" width="15" align="center"><img src="/images/common/spacer.gif" width="14" height="1" border="0" alt=""></td>
+		<td width="30%" valign="top"> 
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr> 
+ 					<td valign="top"><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/news/news_to_use/">Ask Us</a></b><br><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/contact_us/advertise_np1">Advertise</a></b><br><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/contact_us/subscriptions_np1">Subscriptions</a></b><br><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/contact_us/contact_list/">Kentucky.com Contacts</a></b><br><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="/mld/kentucky/news/resources/">Kentucky Connect</a></b><br></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   -->
+<img src="/images/common/spacer.gif" width="100%" height="25" alt=""><br>	
+<!-- END COMPONENT 28 SKYBOX -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+ 		<td width="10" rowspan="2"><img src="/images/common/spacer.gif" width="10" height="1" alt=""></td>
+		<td colspan="5">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+	 				<td class="smalltitle">REALCITIES&nbsp;&nbsp;</td>
+					<td width="100%"><hr size="1" color="#cccccc"></td>
+				</tr>
+			</table>
+		</td>
+		<td width="10" rowspan="2"><img src="/images/common/spacer.gif" width="10" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td width="30%" valign="top">Bringing together the best of local sites</td>
+		<td background="/images/component/archives_vertdotline.gif" width="15" align="center"><img src="/images/common/spacer.gif" width="14" height="1" border="0" alt=""></td>
+		<td width="30%" valign="top">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td valign="top"><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="http://www.realcities.com/mld/realcities/">About the<br><img src="/images/common/spacer.gif" width="12" height="9" vspace="2" border="0" align="left" alt="">Real Cities Network</a></b><br><img src="/images/palette/gray_neutral/panel_arrow_0.gif" width="12" height="9" border="0" alt="" vspace="2" align="left"><b><a href="http://www.corporate-ir.net/ireye/ir_site.zhtml?ticker=kri&script=401&item_id='701'">Press Center</a></b><br></td>
+				</tr>
+			</table>
+		</td>
+		<td background="/images/component/archives_vertdotline.gif" width="15" align="center"><img src="/images/common/spacer.gif" width="14" height="1" border="0" alt=""></td>
+		<td width="30%" valign="top">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td valign="top">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!--  IMPORTANT .  THE FOLLOWING SPACER GIF AND BREAK TAG ARE PART OF THE ABOVE COMPONENT   -->
+<img src="/images/common/spacer.gif" width="100%" height="25" alt=""><br>	
+<!-- END COMPONENT 28 SKYBOX -->
+
+
+<!-- END CONTACT_US.HTML -->
+</td><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td></tr></table>
+	
+
+
+
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="90%">
+<!-- <TR><TD class="pagetitle" ALIGN="center">Contact Us
+
+
+</TD></TR> -->
+<TR><TD>
+<SPAN CLASS="body-content">
+<P>&nbsp;</P>
+<P>Use the form below to contact the Lexington Herald-Leader and Kentucky.com regarding the subjects below.</P>
+<P>If you wish to send us a news tip, please go to the <B><A HREF="/mld/kentucky/contact_us/newspaper_services/news_tips/">news tips page</A></B>. If you wish to send a letter to the editor, please go to <B><A HREF="/mld/kentucky/contact_us/newspaper_services/letters_to_the_editor/">Letters to the Editor page</A></B>.</P>
+<P>If you did not receive your paper and you want a replacement paper delivered, please call toll-free 1 (800) 999-8881. For other circulation issues please use the form below.</P>
+To place a Classified ad, you may use our <B><A HREF="http://csweb.herald-leader.com/webentry/">online order entry</A></B>. For other classified ad questions or issues, use the form below.
+<P>&nbsp;</P></SPAN>
+
+</TD></TR>
+<TR><TD>
+<style type="text/css">
+<!--
+.but{width:25%;cursor:hand;font-weight:bold;color:#0000FF;background-color:#adadad;}
+.buto{width:25%;cursor:hand;font-weight:bold;color:#FF0000;background-color:#c0c0c0;}
+// -->
+</style>
+
+<table align="center" border="0" cellpadding="3" cellspacing="0">
+
+<!-- BEGIN FORM FIELDS DO NOT REMOVE THIS LINE -->
+					
+<script language="JavaScript" type="text/javascript">
+<!--
+REQS = new Array();
+
+REQS[0] = ["from","Text"];
+REQS[1] = ["firstname","Text"];
+REQS[2] = ["lastname","Text"];
+REQS[3] = ["address","Text"];
+REQS[4] = ["city","Text"];
+REQS[5] = ["state","Select"];
+REQS[6] = ["zip","Text"];
+REQS[7] = ["phone","Text"];
+REQS[8] = ["to","Select"];
+					
+function check_form(f){
+	isCC = 0;
+	
+	for(t = 0; t < REQS.length; t++){
+		if(REQS[t][0] == "from"){
+			if(!checke(f.from.value)){
+				alert("Error: \nPlease enter a valid e-mail address."); 
+				f.from.focus();
+				if(document.all || document.getElementById){
+					f.from.style.background = "#FFFF00";
+				}
+				return (false); 
+			}
+		} else {
+			if(REQS[t][1] == "Text" || REQS[t][1] == "textarea" || REQS[t][1] == "File"){
+				if(REQS[t][0] != "ccnum" && REQS[t][0] != "ccname"){
+					if(f[REQS[t][0]].value.length < 1){
+						alert("Error: \nPlease check the field with focus.");
+						f[REQS[t][0]].focus();
+						if(document.all || document.getElementById){
+							f[REQS[t][0]].style.background = "#FFFF00";
+						}
+						return (false);
+					}
+				}
+			}
+			if(REQS[t][1] == "Select" && REQS[t][0] != "ccexp" && REQS[t][0] != "ccexp_y"){
+				if(f[REQS[t][0]].selectedIndex < 1){
+					alert("Error: \nPlease check the field with focus.");
+					f[REQS[t][0]].focus();
+					if(document.all || document.getElementById){
+						f[REQS[t][0]].style.background = "#FFFF00";
+					}
+					return (false);
+				}
+			}
+			if(REQS[t][1] == "Checkbox"){
+				if(!f[REQS[t][0]].checked){
+					alert("Error: \nPlease check the field with focus.");
+					f[REQS[t][0]].focus();
+					if(document.all || document.getElementById){
+						f[REQS[t][0]].style.background = "#FFFF00";
+					}
+					return (false);
+				}
+			}
+			if(REQS[t][1] == "Radio"){
+				isRad = 0;
+				for(r = 0; r < f[REQS[t][0]].length; r++){
+					if(f[REQS[t][0]][r].checked){
+						isRad++;
+					}
+				}
+				if(!isRad){
+					alert("Error: \nPlease check the field with focus.");
+					f[REQS[t][0]][0].focus();
+					if(document.all || document.getElementById){
+						f[REQS[t][0]][0].style.background = "#FFFF00";
+					}
+					return (false);
+				}
+			}
+			
+		}
+	}
+	if(f.from){
+		if(f.from.value.length > 0){
+			if(!checke(f.from.value)){
+				alert("Error: \nPlease enter a valid e-mail address."); 
+				f.from.focus();
+				if(document.all || document.getElementById){
+					f.from.style.background = "#FFFF00";
+				}
+				return (false); 
+			}
+		}
+	}
+}
+// -->
+</script>
+
+
+<script>
+<!--
+function checke(e){
+	if(document.images){
+		re = /(@.*@)|(\.\.)|(^\.)|(^@)|(@$)|(\.$)|(@\.)/;
+		re_two = /^.+\@(\[?)[a-zA-Z0-9\-\.]+\.([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+		if (!e.match(re) && e.match(re_two)) {
+			return (-1);		
+		} 
+	}
+}
+// -->
+</script>
+
+
+
+<form action="sendmail.htm" method="post" onsubmit="return check_form(this);">
+<input type="Hidden" name="subject" value="FEEDBACK">
+<input type="Hidden" name="free_form_name" value="http://www.kentucky.com/html/kentucky/feedback_form.htm">
+<tr>
+<td class="cell"><font color="#FF0000">&#149;</font>&nbsp;Subject </td>
+<td><select name="to">
+<option value="">Select</option>
+<option value="hlresearch@herald-leader.com">Ask Us</option>
+<option value="hlbusiness@herald-leader.com">Business Press Release</option>
+<option value="hlcelebrations@herald-leader.com">Celebrations (Wedding, etc.)</option>
+<option value="hlcirculation@heraldleaderonline.com">Circulation</option>
+<option value="hlclass@herald-leader.com">Classified Advertising</option>
+<option value="hlcommunity@herald-leader.com">Community announcements</option>
+<option value="hlnews@herald-leader.com">Corrections</option>
+<option value="hlfeatures@herald-leader.com">Entertainment &amp; Events</option>
+<option value="kentucky@heraldleaderonline.com">General Questions/Comments</option>
+<option value="hlfeatures@herald-leader.com">Hobbies, clubs and pastimes</option>
+<option value="hlfeatures@herald-leader.com">Home/Garden news and questions</option>
+<option value="hljobs@herald-leader.com">Human Resources</option>
+<option value="hlnews@herald-leader.com">News content</option>
+<option value="hlnie@herald-leader.com">Newspaper In Education</option>
+<option value="hlobits@herald-leader.com">Obituaries</option>
+<option value="hleditorial@herald-leader.com">Opinions</option>
+<option value="promotion@heraldleaderonline.com">Promotion/Marketing</option>
+<option value="hlfeatures@herald-leader.com">Religion news and announcements</option>
+<option value="hladvertising@herald-leader.com">Retail Advertising</option>
+<option value="hlsports@herald-leader.com">Sports</option>
+<option value="kentucky@heraldleaderonline.com">Website problems</option></select></td></tr>
+
+<tr>
+<td class="cell"><font color="#FF0000">&#149;</font>&nbsp;E-mail </td>
+<td><input type="Text" name="from" SIZE="35"></td> 
+</tr>
+<tr>
+<td class="cell"><font color="#FF0000">&#149;</font>&nbsp;First Name </td>
+<td><input type="Text" name="firstname" SIZE="35"></td> 
+</tr>
+<tr>
+<td class="cell"><font color="#FF0000">&#149;</font>&nbsp;Last Name </td>
+<td><input type="Text" name="lastname" SIZE="35"></td> 
+</tr>
+<tr>
+<td class="cell"><font color="#FF0000">&#149;</font>&nbsp;Address </td>
+<td><input type="Text" name="address" SIZE="35"></td> 
+</tr>
+<tr>
+<td class="cell">&nbsp;&nbsp;Address two</td>
+<td><input type="Text" name="address_two" SIZE="35"></td> 
+</tr>
+<tr>
+<td class="cell"><font color="#FF0000">&#149;</font>&nbsp;City </td>
+<td><input type="Text" name="city" SIZE="35"></td> 
+</tr>
+<tr>
+<td class="cell"><font color="#FF0000">&#149;</font>&nbsp;State </td>
+<td><select name="state">
+<option value=""></option>
+<option value="AK">Alaska</option>
+<option value="AL">Alabama</option>
+<option value="AR">Arkansas</option>
+<option value="AZ">Arizona</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DC">District of Columbia</option>
+<option value="DE">Delaware</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="HI">Hawaii</option>
+<option value="IA">Iowa</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="KS">Kansas</option>
+<option value="KY" SELECTED>Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="MA">Massachusetts</option>
+<option value="MD">Maryland</option>
+<option value="ME">Maine</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MO">Missouri</option>
+<option value="MS">Mississippi</option>
+<option value="MT">Montana</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="NE">Nebraska</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NV">Nevada</option>
+<option value="NY">New York</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX">Texas</option>
+<option value="UT">Utah</option>
+<option value="VA">Virginia</option>
+<option value="VT">Vermont</option>
+<option value="WA">Washington</option>
+<option value="WI">Wisconsin</option>
+<option value="WV">West Virginia</option>
+<option value="WY">Wyoming</option>
+<option value="Other">Other</option></select></td></tr>
+
+<tr>
+<td class="cell"><font color="#FF0000">&#149;</font>&nbsp;Zip Code</td>
+<td><input type="Text" name="zip" SIZE="35"></td> 
+</tr>
+<tr>
+<td class="cell"><font color="#FF0000">&#149;</font>&nbsp;Day Phone </td>
+<td><input type="Text" name="phone" SIZE="35"></td> 
+</tr>
+<tr>
+<td class="cell">&nbsp;&nbsp;Evening Phone</td>
+<td><input type="Text" name="eve_phone" SIZE="35"></td> 
+</tr>
+
+<tr>
+<td class="cell">&nbsp;&nbsp;Questions or Comments</td>
+<td><textarea name="t_x_comments" ROWS="6" COLS="25"></textarea></td>
+</tr>
+
+
+<!--  END FORM FIELDS DO NOT REMOVE THIS LINE  -->
+
+<tr>
+<td colspan="2" ALIGN="center"><br>
+<font style="font-size:14px;font-family:Arial;font-weight:bold;">
+<input type="Submit" value=" Submit " class="but" width="490"
+onmouseover="this.className='buto'" onmouseout="this.className='but'">
+</font></td>
+</tr>
+</form>
+</table>
+</TD></TR>
+<TR><TD>&nbsp;</TD></TR>
+</TABLE>
+
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="rightrail" valign="top" align="center" width="160">
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/kentucky.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/kentucky.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109896888119?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/kentucky.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109896888119?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/kentucky.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/kentucky.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109896888120?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/kentucky.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109896888120?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="leftrail" width="134">
+<img src="/images/common/spacer.gif" width="134" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="centerrail" width="100%" align="center">
+<img src="/images/common/spacer.gif" width="450" height="1"/><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/kentucky.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/kentucky.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109896888120?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/kentucky.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109896888120?" BORDER="0" ></A>
+</NOSCRIPT>
+
+<br/><br/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="rightrail" width="160">
+<img src="/images/common/spacer.gif" width="160" height="1"/></td></tr></table>
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="768"><tr><td rowspan="2" valign="top" class="footer"><a href="http://www.realcities.com" target="_blank"><img src="/images/palette/kentucky/realcities_logo.gif" width="155" height="57" alt="RealCities" border="0"/></a>
+</td><td align="left" class="footer">
+<span class="lightgreylinks"><a href="/mld/kentucky/news/"> News  |</a> <a href="/mld/kentucky/business/"> Business  |</a> <a href="/mld/kentucky/sports/"> Sports  |</a> <a href="/mld/kentucky/entertainment/"> Entertainment  |</a> <a href="/mld/kentucky/living/">Living  |</a> <a href="http://www.shoplocal.com/kentucky/new_user_entry.aspx?CityStateZip=40502&AdRef=link02">Shop Local |</a> <a href="/mld/kentucky/classifieds/"> Classifieds  |</a> <a href="/mld/kentucky/classifieds/employment/"> Jobs  |</a> <a href="/mld/kentucky/classifieds/automotive/"> Cars  |</a> <a href="/mld/kentucky/classifieds/real_estate/"> Homes   </a><br><a href="/mld/kentucky/contact_us/about">About Kentucky.com |</a> <a href="/mld/kentucky/contact_us/rc_sites/">About the Real Cities Network |</a> <a href="/mld/kentucky/contact_us/terms_of_use">Terms of Use & Privacy Statement |</a> <a href="http://www.knightridder.com">About Knight Ridder |</a> <a href="/mld/kentucky/contact_us/copyright">Copyright  </a><br></span>
+</td></tr></table>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,394 @@
+<DOC>
+<DOCNO>g00743</DOCNO>
+<DOCHDR>http://www.ireap.umd.edu/ireap/contact.htm</DOCHDR>
+<html>
+<head>
+<title>Institute for Research in Electronics and Applied Physics - Contact Information</title>
+
+
+<script language="JavaScript">
+ /* Functions that swaps down images. */
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+/* random image rotation. */
+r = 7
+var rand1 = Math.random();
+var rand2 = Math.round(rand1 * (r-1))+1;
+
+function create() {
+		this.src='';
+}
+
+s = new Array();
+for (var i=1; i<=r; i++) {s[i]=new create()
+}
+
+s[1].src="/images/rotate1.jpg";
+s[1].alt="Institute for Plasma Research";
+
+s[2].src="/images/rotate2.jpg";
+s[2].alt="Institute for Plasma Research";
+
+s[3].src="/images/rotate3.jpg";
+s[3].alt="Institute for Plasma Research";
+
+s[4].src="/images/rotate4.jpg";
+s[4].alt="Institute for Plasma Research";
+
+s[5].src="/images/rotate5.jpg";
+s[5].alt="Institute for Plasma Research";
+
+s[6].src="/images/rotate6.jpg";
+s[6].alt="Institute for Plasma Research";
+
+s[7].src="http://www.ipr.umd.edu/ireap/images/rotate7.jpg";
+s[7].alt="Institute for Plasma Research";
+
+var randomimage="";
+randomimage += '<img src="' + s[rand2].src + '"';
+randomimage += 'border=0 valign=top ';
+randomimage += ' height=59 width=107 alt="';
+randomimage += s[rand2].alt + '">'
+
+//-->
+</script>
+
+<style type="text/css">
+<!--
+a:link {  text-decoration: none}
+a:visited {  text-decoration: none}
+a:active {  text-decoration: none}
+a:hover {  text-decoration: underline}
+-->
+</style>
+<script language="JavaScript">
+<!--
+ imgArray = new Array(22);
+ imgArray[0] = new Image(130,16);
+ imgArray[0].src="/ireap/images/visitor_black.jpg";
+ imgArray[1] = new Image(130,16);
+ imgArray[1].src="/ireap/images/visitor_red.jpg";
+ imgArray[2] = new Image(130,16);
+ imgArray[2].src="/ireap/images/personnel_black.jpg";
+ imgArray[3] = new Image(130,16);
+ imgArray[3].src="/ireap/images/personnel_red.jpg";
+ imgArray[4] = new Image(130,16);
+ imgArray[4].src="/ireap/images/research_black.jpg";
+ imgArray[5] = new Image(130,16);
+ imgArray[5].src="/ireap/images/research_red.jpg";
+ imgArray[6] = new Image(130,16);
+ imgArray[6].src="/ireap/images/iprfellow_black.jpg";
+ imgArray[7] = new Image(130,16);
+ imgArray[7].src="/ireap/images/iprfellow_red.jpg";
+ imgArray[8] = new Image(130,16);
+ imgArray[8].src="/ireap/images/publications_black.jpg";
+ imgArray[9] = new Image(130,16);
+ imgArray[9].src="/ireap/images/publications_red.jpg";
+ imgArray[10] = new Image(130,16);
+ imgArray[10].src="/ireap/images/seminars_black.jpg";
+ imgArray[11] = new Image(130,16);
+ imgArray[11].src="/ireap/images/seminars_red.jpg";
+ imgArray[12] = new Image(130,16);
+ imgArray[12].src="/ireap/images/alumni_black.jpg";
+ imgArray[13] = new Image(130,16);
+ imgArray[13].src="/ireap/images/alumni_red.jpg";
+ imgArray[14] = new Image(130,16);
+ imgArray[14].src="/ireap/images/news_black.jpg";
+ imgArray[15] = new Image(130,16);
+ imgArray[15].src="/ireap/images/news_red.jpg";
+ imgArray[16] = new Image(130,16);
+ imgArray[16].src="/ireap/images/Community_black.jpg";
+ imgArray[17] = new Image(130,16);
+ imgArray[17].src="/ireap/images/Community_red.jpg";
+ imgArray[18] = new Image(130,16);
+ imgArray[18].src="/ireap/images/sites_black.jpg";
+ imgArray[19] = new Image(130,16);
+ imgArray[19].src="/ireap/images/sites_red.jpg";
+ imgArray[20] = new Image(130,16);
+ imgArray[20].src="/ireap/images/homepage_black.jpg";
+ imgArray[21] = new Image(130,16);
+ imgArray[21].src="/ireap/images/homepage_red.jpg";
+ imgArray[22] = new Image(130,16);
+ imgArray[22].src="/ireap/images/mission_black.jpg";
+ imgArray[23] = new Image(130,16);
+ imgArray[23].src="/ireap/images/mission_red.jpg";
+ imgArray[24] = new Image(130,16);
+ imgArray[24].src="/ireap/images/StudentInfo_black.jpg";
+ imgArray[25] = new Image(130,16);
+ imgArray[25].src="/ireap/images/StudentInfo_red.jpg";
+ imgArray[26] = new Image(130,16);
+ imgArray[26].src="/ireap/images/contact_black.jpg";
+ imgArray[27] = new Image(130,16);
+ imgArray[27].src="/ireap/images/contact_red.jpg";
+ imgArray[28] = new Image(130,16);
+ imgArray[28].src="/ireap/images/MURI2001_black.jpg";
+ imgArray[29] = new Image(130,16);
+ imgArray[29].src="/ireap/images/MURI2001_red.jpg";
+ imgArray[30] = new Image(130,16);
+ imgArray[30].src="/ireap/images/makinggift_black.jpg";
+ imgArray[31] = new Image(130,16);
+ imgArray[31].src="/ireap/images/makinggift_red.jpg";
+
+
+  
+function changeImg(imgName, imgNum) {
+  // Only use JavaScript capable browsers able to see image arrays
+  if ((navigator.appName.substring(0,9) == "Microsoft" && 
+      ((navigator.appVersion.indexOf("Win") > 0 & parseInt(navigator.appVersion) >= 4) ||
+       (navigator.appVersion.indexOf("Mac") > 0 && parseInt(navigator.appVersion) >= 3)))
+      ||
+      (navigator.appName.substring(0,8) == "Netscape" && parseInt(navigator.appVersion) >= 3))
+
+    imgName.src = imgArray[imgNum].src;
+ }
+
+//-->
+</script>
+
+<style type="text/css">
+<!--
+a:link {  text-decoration: none}
+a:visited {  text-decoration: none}
+a:active {  text-decoration: none}
+a:hover {  text-decoration: underline}
+-->
+</style>
+</head>
+<body 
+ text="000000" link="AA0000" vlink="AA0000">
+
+<map name="IREAP-Navbar">
+<area shape="rect" alt="Mission Statement" coords="2,1,123,26" href="http://www.ireap.umd.edu/ireap/mission.htm" title="Mission Statement">
+<area shape="rect" alt="Student Information" coords="128,0,260,24" href="http://www.ireap.umd.edu/ireap/StudentInfo.htm" title="Student Information">
+<area shape="rect" alt="Contact Information" coords="265,1,396,22" href="http://www.ireap.umd.edu/ireap/contact.htm" title="Contact Information">
+<area shape="rect" alt="Related Sites" coords="404,1,496,24" href="http://www.ireap.umd.edu/ireap/sites.htm" title="Related Sites">
+<area shape="rect" alt="MURI 2001" coords="502,0,577,28" href="http://www.ireap.umd.edu/MURI-2001" title="MURI 2001">
+<area shape="default" nohref>
+</map>
+
+
+ <map id="IREAP-logo-2004-Arialcaps2" name="IREAP-logo-2004-Arialcaps2">
+<area shape="rect"#University of Maryland
+ coords="2,3,79,86" href="http://www.umd.edu" title="University of Maryland" />
+<area shape="rect"#Institute for Research in Electronics and Applied Physics
+ coords="83,4,340,97" href="http://www.ireap.umd.edu" title="Institute for Research in Electronics and Applied Physics" />
+<area shape="default" nohref="nohref" alt="" />
+</map>
+
+
+<div>
+<center>
+
+
+
+
+
+<a href="http://www.ireap.umd.edu">
+<img src="/ireap/images/IREAP-logo-2004-Arialcaps2.jpg" usemap="#IREAP-logo-2004-Arialcaps2" width=360 height=75 border=0 alt="Institute for Research in Electronics and Applied Physics" hspace=75</a>
+<br><img src="/ireap/images/grey.gif" width=270 height=1 vspace=2><br><br>
+ <font face="Arial, Helvetica, sans-serif" size="-1"><B>
+
+A joint Institute of the <a href="http://www.cmps.umd.edu">College of Computer, Mathematical and <br>Physical Sciences</a> and the <a href="http://www.eng.umd.edu">A. James Clark School of Engineering</a></B></font>
+
+</center>
+<br>
+
+
+
+
+
+
+<table width=87% cellpadding=6 >
+<tr >
+
+
+	<td width=20% valign=top halign=center background="/ireap/images/Gold/gold.jpg" width=100 height=4>
+
+<img src="/ireap/images/Gold/gold.jpg" height=1 width=4>
+<a href="/ireap/visitor.htm" onMouseOver='changeImg(Visitor,1); changeImg(current,2);' onMouseOut='changeImg(Visitor,0); changeImg(current,3);'><img name="Visitor" src="/ireap/images/visitor_black.jpg" width="130" height="16" border="0" alt="Visitor Information"></a>
+<br>
+<img src="/ireap/images/Gold/gold.jpg" height=1 width=4>
+
+	<a href="http://www.ireap.umd.edu/ireap/personnel.htm" onMouseOver='changeImg(Personnel,3); changeImg(current,2);'
+OnMouseOut='changeImg(Personnel,2); changeImg(current,3);'><img name="Personnel" src="/ireap/images/personnel_black.jpg" width=130 height=16 border=0 alt="Personnel" halign=center></a>
+</a>
+
+<br>
+
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+
+	<a href="/ireap/research.htm" onMouseOver='changeImg(Research,5); changeImg(current,2);'
+OnMouseOut='changeImg(Research,4); changeImg(current,3);'><img name="Research" src="/ireap/images/research_black.jpg" width=130 height=16 border=0 alt="Research"></a>
+</a>
+
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+
+	<a href="/ireap/IREAPfellows.htm" onMouseOver='changeImg(iprfellow,7); changeImg(current,2);'
+OnMouseOut='changeImg(iprfellow,6); changeImg(current,3);'><img name="iprfellow" src="http://www.ipr.umd.edu/ireap/images/iprfellow_black.jpg" width=130 height=16 border=0 alt="IREAP Fellows"></a>
+</a>
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+
+	<a href="/ireap/publications.htm" onMouseOver='changeImg(publications,9); changeImg(current,2);'
+OnMouseOut='changeImg(publications,8); changeImg(current,3);'><img name="publications" src="http://www.ipr.umd.edu/ireap/images/publications_black.jpg" width=130 height=16 border=0 alt="Publications"></a>
+</a>
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+
+	<a href="/ireap/seminars.htm" onMouseOver='changeImg(Seminars,11); changeImg(current,2);'
+OnMouseOut='changeImg(Seminars,10); changeImg(current,3);'><img name="Seminars" src="/ireap/images/seminars_black.jpg" width=130 height=16 border=0 alt="Seminars"></a>
+</a>
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+
+	<a href="/ireap/alumni.htm" onMouseOver='changeImg(IPRAlumni,13); changeImg(current,2);'
+OnMouseOut='changeImg(IPRAlumni,12); changeImg(current,3);'><img name="IPRAlumni" src="/ireap/images/alumni_black.jpg" width=130 height=16 border=0 alt="Alumni"></a>
+</a>
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+	<a href="/ireap/news.htm" onMouseOver='changeImg(News,15); changeImg(current,2);'
+OnMouseOut='changeImg(News,14); changeImg(current,3);'><img name="News" src="/ireap/images/news_black.jpg" width=130 height=16 border=0 alt="News"></a>
+</a>
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+	<a href="/ireap/outreach.htm" onMouseOver='changeImg(Community,17); changeImg(current,2);'
+OnMouseOut='changeImg(Community,16); changeImg(current,3);'><img name="Community" src="/ireap/images/Community_black.jpg" width=130 height=16 border=0 alt="Community Outreach"></a>
+</a>
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+	<a href="/ireap/sites.htm" onMouseOver='changeImg(Sites,19); changeImg(current,2);'
+OnMouseOut='changeImg(Sites,18); changeImg(current,3);'><img name="Sites" src="/ireap/images/sites_black.jpg" width=130 height=16 border=0 alt="Related Sites"></a>
+</a>
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+	<a href="http://www.ireap.umd.edu/welcome.htm" onMouseOver='changeImg(Homepage,21); changeImg(current,2);'
+OnMouseOut='changeImg(Homepage,20); changeImg(current,3);'><img name="Homepage" src="/ireap/images/homepage_black.jpg" width=130 height=16 border=0 alt="IREAP Homepage"></a>
+</a>
+
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+	<a href="/ireap/mission.htm" onMouseOver='changeImg(Mission,23); changeImg(current,2);'
+OnMouseOut='changeImg(Mission,22); changeImg(current,3);'><img name="Mission" src="/ireap/images/mission_black.jpg" width=130 height=16 border=0 alt="Mission Statement"></a>
+</a>
+
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+	<a href="/ireap/StudentInfo.htm" onMouseOver='changeImg(StudentInfo,25); changeImg(current,2);'
+OnMouseOut='changeImg(StudentInfo,24); changeImg(current,3);'><img name="StudentInfo" src="/ireap/images/StudentInfo_black.jpg" width=130 height=16 border=0 alt="Student Information"></a>
+</a>
+
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+	<a href="/ireap/contact.htm" onMouseOver='changeImg(Contact,27); changeImg(current,2);'
+OnMouseOut='changeImg(Contact,26); changeImg(current,3);'><img name="Contact" src="/ireap/images/contact_black.jpg" width=130 height=16 border=0 alt="Contact Information"></a>
+</a>
+
+
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+	<a href="/MURI-2001/" onMouseOver='changeImg(MURI2001,29); changeImg(current,2);'
+OnMouseOut='changeImg(MURI2001,28); changeImg(current,3);'><img name="MURI2001" src="/ireap/images/MURI2001_black.jpg" width=130 height=16 border=0 alt="MURI 2001"></a>
+</a>
+
+<br>
+
+<img src="/ireap/images/Gold/gold.jpg" height=4 width=4>
+	<a href="/ireap/gift.htm" onMouseOver='changeImg(makinggift,31); changeImg(current,2);'
+OnMouseOut='changeImg(makinggift,30); changeImg(current,3);'><img name="makinggift" src="/ireap/images/makinggift_black.jpg" width=130 height=16 border=0 alt="Making a Gift to IREAP"></a>
+</a>
+
+<td valign=top>
+
+
+
+<font face="Arial" size=-1>
+<center><h3>  Contact Information</h3></center>
+
+
+<center>
+For information about student research opportunities, please contact:<br>
+Professor Wes Lawson<br>
+Associate Director of Education<br>
+FAX: (301) 314-9437<br>
+Email:  lawson at umd.edu<br><br>
+For other information, please contact<br>
+Patrick O'Shea, Professor and Director<br>
+Fax: (301) 314-9437<br>
+Email:  poshea at umd.edu<p>
+
+Institute for Research in Electronics and Applied Physics<br>
+Energy Research Facility, Bldg. #223<br>
+Paint Branch Drive<br>
+University of Maryland<br>
+College Park, MD 20742-3511
+</center>
+<font size=1>
+<center>
+
+<tr>
+</table>
+
+<p>
+<hr size=2 noshade>
+<font size=1>
+<center>
+Webpage maintained by Dorothea F. Brosius<br>
+Created 3/12/99 by DFB<br>
+Modified 02/09/05 by DFB</center> </font>
+</font>
+</body>
+</html>
+
+

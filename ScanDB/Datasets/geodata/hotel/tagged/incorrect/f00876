@@ -1,0 +1,1005 @@
+<DOC>
+<DOCNO>f00876</DOCNO>
+<DOCHDR>http://nextel.boingo.com/search.html?pgt=results&cty=Seattle&cnty=US&ste=WA&dm=&cte=&sb=2&oft=0</DOCHDR>
+<html>
+<head>
+	<title>Nextel - Location Directory</title>
+		<? // server
+	  //  include "/var/www/html/SiteDev/SiteDev/base.html"
+
+	//  include "c:/cvs/SiteDev/base.html"
+	   ?>
+	<link rel="stylesheet" href="http://www.nextel.com/assets/scripts/nx_main.css" type="text/css">
+	<script src="http://www.nextel.com/assets/scripts/nextel_functions.js" language="javascript"></script>
+	<script src="http://www.nextel.com/assets/scripts/tools.js" language="javascript"></script>
+	<script src="http://www.nextel.com/assets/scripts/nx_header.js" language="javascript"></script>
+	<style>
+	/* header styles */
+	.yellowBarBG{background:url(http://www.nextel.com/assets/images/common/header/bg_header_dark_yellow.gif) repeat-x bottom #ffcc00; height:65px;}
+	.vDotDivLight{background-image:url(http://www.nextel.com/assets/images/common/bg_v_dots_light.gif);}
+	.hDotDivLight{background-image:url(http://www.nextel.com/assets/images/common/bg_h_dots_light.gif);}
+	.vDotDivWhite{background-image:url(http://www.nextel.com/assets/images/common/bg_v_dots_white.gif);}
+	.hDotDivWhite{background-image:url(http://www.nextel.com/assets/images/common/bg_h_dots_white.gif);}
+	.hDotDivDark{background-image:url(http://www.nextel.com/assets/images/common/bg_h_dots_dark.gif);}
+	.dotList{padding-left:7px; background-image:url(http://www.nextel.com/assets/images/common/icon_bk_bullet.gif); background-position:0 .5em; background-repeat:no-repeat;}
+	.checkList{padding-left:12px; background-image:url(http://www.nextel.com/assets/images/common/icon_feature_check_mark.gif); background-position:center left; background-repeat:no-repeat;}
+	.blueListArrow{background-image:url(http://www.nextel.com/assets/images/common/icon_bl_arrow_lg.gif); background-position:center left; background-repeat:no-repeat; padding-left:15px; margin-top:10px;}
+	/*.greyPromoBack{background-image:url(images/common/ban_promo_bkg.gif); width:365px; height:118px;}*/
+	.leftItemSelectorBG{background-image:url(http://www.nextel.com/assets/images/common/bg_left_item_selector.gif); background-repeat:repeat-y;}
+	.leftColumnItemTableBG{background-image:url(http://www.nextel.com/assets/images/common/bg_item_left_column_table.gif); background-repeat:repeat-y;}
+	/* used in plans */
+	.mainTable{background-image:url(http://www.nextel.com/assets/images/shop/bg_plans_table.gif); width:600px; background-repeat:repeat-y;}
+	.leftColumnBG{background-image:url(http://www.nextel.com/assets/images/shop/bg_plans_highlight_left.gif);}
+	/* end plans styles */
+	/* myNextel Styles */
+	.myNextelActivityProgressEmptyBG{background-image:url(http://www.nextel.com/assets/images/mynextel/bg_limits_bar_empty.gif); background-repeat:repeat-x;}
+	/* end myNextel Styles */
+	/* error messaging styles */
+	#errorMessagingBox{border:1px solid #cc0000; background-color:#ffcccc; background-image:url(http://www.nextel.com/assets/images/common/icon_error.gif); background-repeat:no-repeat; width:100%;}
+	.errorMessagingBoxSm{border:1px solid #cc0000; background-color:#ffcccc; background-image:url(http://www.nextel.com/assets/images/common/icon_error_sm.gif); background-repeat:no-repeat; width:100%;}
+	/* end error messaging styles */
+	/* myNextel Styles */
+	.limitsBG{background-image:url(http://www.nextel.com/assets/images/mynextel/bg_limits_bar.gif);}
+	/* end myNextel Styles */
+	/* used in phones */
+	.leftColumnTableBG{background-image:url(http://www.nextel.com/assets/images/shop/bg_left_column_table.gif);}
+	/* end phones  */
+	/* CMS pages */
+	.promo50Back{background-image:url(http://www.nextel.com/assets/images/promos/bg_promo50_header.gif);}
+	.dummyBG{background-image:url(http://www.nextel.com/assets/images/spacer.gif);}
+	</style>
+
+
+<script src="/jscript/locdir.js"></script>
+<script src="/locations/countries.js"></script>
+
+
+</head>
+<body onLoad="setupForm();" name="main_body">
+
+<table cellpadding="0" cellspacing="0" width="775" align="center">
+<tr>
+	<td><div id="navUtilityBar">
+		<script>document.writeln(renderUtilityBar(1));</script>
+	</div>
+	<div id="navTabBar">
+		<script>document.writeln(renderTabBar(1));</script>
+
+	</div>
+	<div id="subNavBar">
+		<script>document.writeln(renderSubNavBar("sol"));</script>
+	</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<table cellpadding="0" cellspacing="0">			<tr>
+
+				<td>
+				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="385" height="126" align="middle">
+			      <param name="allowScriptAccess" value="sameDomain">
+  			      <param name="movie" value='http://www.nextel.com/assets/flash/common/billboards/bb1-2_wireless_modems_v1_en.swf'>
+  			<param name="quality" value="high">
+			<param name="wmode" value="transparent">
+			<param name="menu" value="false">
+  			<embed src="http://www.nextel.com/assets/flash/common/billboards/bb1-2_wireless_modems_v1_en.swf" menu=" false" quality="high" width="385" height="126" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+  	</object>
+
+</td>
+				<td width="5"><img src="/assets/images/spacer.gif" width="5" height="5"></td>
+				<td><img src="http://www.nextel.com/assets/images/common/billboards/bb2_wireless_modems_v1.jpg"></td>
+			</tr>
+		</table>
+
+	</td>
+</tr>
+<tr>
+	<td>
+		<br>
+<div style="font-size: 11px; margin-left: 215px;  top: 285x; position:absolute;">
+<script language="JavaScript">
+
+
+function getArgValue(arg) {
+    var args = new Object();
+    var query = location.search.substring(1);
+    var pairs = query.split("&");
+    for (var i=0; i < pairs.length; i++) {
+        var pos = pairs[i].indexOf('=');
+        if(pos == -1) continue;
+        var argname = pairs[i].substring(0, pos);
+        var value = pairs[i].substring(pos+1);
+        //args[argname] = unescape(value);
+        if(argname == arg) {
+           return unescape(value);
+        }
+    }
+    return "";
+}
+
+function getRefValue(arg) {
+    var args = new Object();
+    var query = '' + document.referrer;
+    query = query.substring((query.indexOf('?')) +1);
+    var pairs = query.split("&");
+    for (var i=0; i < pairs.length; i++) {
+        var pos = pairs[i].indexOf('=');
+        if(pos == -1) continue;
+        var argname = pairs[i].substring(0, pos);
+        var value = pairs[i].substring(pos+1);
+        //args[argname] = unescape(value);
+        if(argname == arg) {
+           return unescape(value);
+        }
+    }
+    return "";
+}
+
+
+function print_breadcrumb(location_name, do_metro, city_name, state_abbr, country_abbr, category, ecity_name, estate_abbr, ecountry_abbr, ecategory)
+{
+   var refPage;
+   var page;
+   var citystr;
+   var stestr;
+    var bcct;
+
+   if (getRefValue("pgt") != null) { 
+      refPage = getRefValue("pgt"); 
+      page = getArgValue("pgt");
+   }
+   if(getArgValue("pgt") != null) {
+      page = getArgValue("pgt");
+   }
+   if(getArgValue("ctystr") != null) {
+      citystr = getArgValue("ctystr");
+   }
+   if(getArgValue("stestr") != null) {
+      stestr = getArgValue("stestr");
+   }
+   if(getArgValue("bcct") != null) {
+      bcct = getArgValue("bcct");
+   }
+    
+    
+   var cte  = getArgValue("cte");
+
+
+    var breadcrumb = "<a href=\"http://www.nextel.com/\">Home</a> ";
+    var locations_link = "<a href=\"search.html\">Locations</a>&nbsp;";
+    var locations_nonlink = "Locations";
+    var arrow_img = "<img hspace=\"5\" height=\"5\" width=\"7\" src=\"img/nav-img/img_arrow.gif\">&nbsp;";
+    var category_link = "<a href=\"search.html?pgt=cat_list&cte="+ecategory+"\">" + category + "</a>";
+    var country_name;
+
+    
+    if (country_abbr.length) 
+           country_name = country_names[country_abbr];
+    var state_name;
+    if (country_abbr.length && state_abbr.length)
+           country_name = countries[country_abbr][state_abbr] + ', ' + country_names[country_abbr];
+  
+    var country_link="<a href=\"search.html?pgt=results&cnty="+ecountry_abbr+"&ste="+estate_abbr+"\">"+country_name+"</a>";
+  
+    var city_link = "<a href=\"search.html?pgt=results&cnty="+ecountry_abbr+"&ste="+estate_abbr+"&cty="+ecity_name+"\">"+city_name+"</a>";
+
+    if((category != null && category.length) || (country_abbr != null && country_abbr.length))
+    {
+       breadcrumb += arrow_img + locations_link;
+
+       if(category != null && category.length) { 
+         if (country_name || state_name)
+              if (getArgValue("lid"))
+                breadcrumb += arrow_img + category_link;
+              else 
+                if (refPage != "cat_list" || page == "results" && bcct > 1)
+                  breadcrumb += arrow_img + country_link + arrow_img + category;
+                else 
+                  breadcrumb += arrow_img + country_link + arrow_img + category_link;
+         else 
+           breadcrumb +=  arrow_img + 'Hot Spots' + ' (' + category + ')';      
+      }
+    else {
+    if(country_abbr != null && country_abbr.length && state_abbr && city_name)  
+              breadcrumb += arrow_img + country_link;
+    else
+       if (refPage != null && refPage != "cat_list")
+             breadcrumb += arrow_img  + country_name;
+    }
+
+       //if(category != null && refPage != null && refPage == "cat_list" && country_abbr != null) 
+         //    breadcrumb += arrow_img + country_name;
+    
+       if(city_name != null && city_name.length)
+       {
+            if(location_name)
+               breadcrumb += arrow_img + city_link;
+            else 
+               breadcrumb += arrow_img + city_name;
+         
+            if(do_metro == 1 && country_abbr == "US")
+                breadcrumb += " Metro";
+             }
+ 
+            if(location_name)
+               breadcrumb += arrow_img + location_name;
+       }
+    else if (page != null && page == "cat_list" && cte != null) {
+            breadcrumb += arrow_img + locations_link;
+            breadcrumb += arrow_img + 'Hot Spots' + ' (' + cte + ')';    
+    }
+    else if (page != null && page == "category") {
+            breadcrumb += arrow_img + locations_link + arrow_img + 'Hot Spot Categories';
+    }
+    else if (page == "results" && !country_abbr && !category && !state_abbr && !city_name) {
+        breadcrumb += arrow_img + locations_link + arrow_img + 'Search Results';    
+    }
+    else {
+       if (citystr || stestr) {
+           breadcrumb += arrow_img + locations_link + arrow_img  + 'Select Location';
+       }
+      else {
+          breadcrumb += arrow_img + locations_nonlink;
+      }
+   }
+    document.write(breadcrumb);
+}
+
+print_breadcrumb("", "0", "Seattle", "WA", "US", "", "Seattle", "WA", "US", "");
+</script>
+
+</div>
+<br>
+
+<table cellpadding="0" cellspacing="0" width="775"  class="pageContent">
+			<tr>
+				<td valign="top" align="left">
+					<div class="leftModMargin">
+				<!-- Left Column Content -->
+				
+				
+<!--Begin Hot Spots Category Long-->
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="0" cellpadding="0" width="156">
+<tr>
+<td width="9" background="/img/box_top_left.gif"><table cellspacing=0 cellpadding=0 border=0 width=9><tr><td></td></tr></table></td><td background="/img/box_top.gif"><table cellspacing=0 cellpadding=0 border=0 width=100%><tr><td></td></tr></table></td><td width="9" background="/img/box_top_right.gif"><table cellspacing=0 cellpadding=0 border=0 width=9><tr><td></td></tr></table></td>
+</tr>
+<tr>
+<td width="9" background="/img/box_left.gif"><table cellspacing=0 cellpadding=0 border=0 height=1 width=100%><tr><td></td></tr></table></td><td bgcolor="#CBCBCB"><table cellspacing=0 cellpadding=0 border=0 height=1 width=100%><tr><td></td></tr></table></td><td width="9" background="/img/box_right.gif"><table cellspacing=0 cellpadding=0 border=0 height=1 width=100%><tr><td></td></tr></table></td>
+</tr>
+<tr height="16">
+<td width="9" background="/img/box_left.gif"><font size="1">&nbsp;</font></td><td height="16" bgcolor="#eeeeee"><img border="0" alt="" src="img/hdr_hotspots_top.gif"></td><td width="9" background="/img/box_right.gif"><font size="1">&nbsp;</font></td>
+</tr>
+<tr>
+<td width="9" background="/img/box_left.gif">&nbsp;</td><td>
+<br id="px5">
+<table border="0" cellspacing="1" cellpadding="0"  width="156">
+
+
+<tr>
+<td colspan="2"><table cellspacing=0 cellpadding=0 border=0 height=5 width=100%><tr><td></td></tr></table></td>
+</tr>
+
+<tr>
+<td colspan="2"><table cellspacing=0 cellpadding=0 border=0 height=5 width=100%><tr><td></td></tr></table></td>
+</tr>
+
+<tr>
+<td valign="top" width="65" align="middle">
+<a href="/search.html?pgt=results&cte=Airport">
+<img src="/img/locations/icon_lg_cat-airport.gif" alt="wifi network: Airport" height="51" width="60" border="0" align="center"></a>
+<span class="blackText">
+<a href="/search.html?pgt=results&cte=Airport">Airports</a><br>(142)
+</span>
+</td>
+
+<td valign="top" width="65" align="middle">
+<a href="/search.html?pgt=results&cte=Hotel"><img align="middle" alt="wifi location: Hotel" src="/img/locations/icon_lg_cat-hotel.gif" height="51" width="60" border="0"></a>
+<br>
+<span class="blackText">
+<a href="/search.html?pgt=results&cte=Hotel">Hotels</a><br>(3350)
+</span>
+</td>
+</tr>
+
+<tr><td colspan="2">&nbsp;&nbsp;<img src="/img/hs_div.gif" width="136" height="2"></td></tr>
+
+<tr>
+<td colspan="2"><table cellspacing=0 cellpadding=0 border=0 height=5 width=100%><tr><td></td></tr></table></td>
+</tr>
+
+
+<tr>
+<td valign="top" width="75" align="middle">
+<a href="/search.html?pgt=results&cte=Retail%20Business"><img alt="wifi finder: Store" align="center" src="/img/locations/icon_lg_cat-retail_business.gif" height="51" width="60" border="0"></a>
+<br><span class="blackText">
+<a href="/search.html?pgt=results&cte=Retail%20Business">Retail</a><br>(2946)
+</td>
+
+
+<td valign="top" width="75" align="middle">
+<a href="/search.html?pgt=results&cte=Cafe%20%2F%20Restaurant"><img alt="wifi hot spot: Cafe" align="middle" src="/img/locations/icon_lg_cat-cafe_restaurant.gif" height="51" width="60" border="0"></a>
+<span class="blackText">
+<a href="/search.html?pgt=results&cte=Cafe%20%2F%20Restaurant">Cafes</a><br>(1472)
+</span>
+</td>
+</tr>
+
+<tr>
+<td colspan="2"><table cellspacing=0 cellpadding=0 border=0 height=5 width=100%><tr><td></td></tr></table></td>
+</tr>
+<tr>
+
+<td align="middle" colspan="2" class="blackText">
+<a href="/search.html?pgt=category">More</a>
+</td>
+</tr>
+
+<tr>
+<td colspan="2"><table cellspacing=0 cellpadding=0 border=0 height=5 width=100%><tr><td></td></tr></table></td>
+</tr>
+<tr>
+
+<tr>
+<td valign="top" align="left" colspan="2" width="100%">
+
+<!--div class="businessLine">
+	<div class="topCorners"><div class="l2"><div
+class="l1"></div></div><div class="l3"></div><div
+class="l4"></div></div>
+	<div class="content">
+		<h3><img
+src="/assets/images/common/pts_yl_phone_sales_en.gif" alt="Phone
+Sales" /></h3>
+		<ul>
+			<li class="first"><h4>1-800-SPRINT1</h4><p>7 am
+- 1 am Eastern Time<br>7 days a week</p></li>
+			<li><h4>En Espa&ntilde;ol</h4><p>Llame al
+1-800-SPRINT1<br>Oprima el 5</p></li>
+		</ul>
+	</div>								
+	<div class="bottomCorners"><div class="l4"></div><div
+class="l3"></div><div class="l2"><div class="l1"></div></div></div>
+</div-->
+
+
+
+</td>
+</tr>
+
+</table>
+</td><td width="9" background="/img/box_right.gif">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="178" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="18" width="9" background="/img/box_btm_left.gif">&nbsp;</td><td height="18" width="157" background="/img/box_btm_mid.gif">&nbsp;</td><td height="18" width="9" background="/img/box_btm_right.gif">&nbsp;</td>
+</tr>
+</table>
+<!-- End Hot Spots Category Long -->
+
+<style>
+
+ .businessLine{margin-left:9px; margin-bottom:10px; background-color:#ffe100;
+background-image:url(http://www.nextel.com/assets/images/spacer.gif)}
+
+ .businessLine .content{padding:7px 10px; margin:1px; color:#333;}
+
+
+ .businessLine h3{margin:0 0 10px 0; padding:0;}
+
+ .businessLine .content p{padding:7px 10px; margin:1px; color:#333;
+margin:0; padding:0;}
+
+ .businessLine ul{list-style:none; margin:0; padding:0}
+ .businessLine li{list-style:none; margin:0; padding:0;
+line-height:15px;}
+ .businessLine li.first{margin:0 0 10px 0;}
+
+ .businessLine ul h4{font-size:12px; font-weight:bold;}
+ .businessLine ul p{margin:0; padding:0;}
+
+
+ .businessLine .topCorners,
+ .businessLine .bottomCorners{background-color:#fff; font-size:1px;
+clear:both; width:150px; margin:0; padding:0;}
+
+ .businessLine .l1, 
+ .businessLine .l2,
+ .businessLine .l3,
+ .businessLine .l4{
+	overflow:hidden; 
+	height:1px; 
+	background-color:#ffe100;
+	}
+ .businessLine .l1{margin:0; border-left:1px solid #FFE41C;
+border-right:1px solid #FFE41C;}
+ .businessLine .l2{margin:0 1px; border-left:1px solid #FFEB58;
+border-right:1px solid #FFEB58;}
+ .businessLine .l3{margin:0; border-left:1px solid #FFEB58;
+border-right:1px solid #FFEB58;}
+ .businessLine .l4{margin:0; border-left:1px solid #FFE41C;
+border-right:1px solid #FFE41C;}
+ 
+ </style>
+
+
+<div class="businessLine">
+	<div class="topCorners"><div class="l2"><div
+class="l1"></div></div><div class="l3"></div><div
+class="l4"></div></div>
+	<div class="content">
+		<h3><img
+src="http://www.sprint.com/assets/images/common/entry/pts_yl_phone_sales_en.gif" alt="Phone
+Sales" /></h3>
+		<ul>
+			<li class="first"><h4>1-800-SPRINT1</h4><p>7 am
+- 1 am Eastern Time<br>7 days a week</p></li>
+			<li><h4>En Espa&ntilde;ol</h4><p>Llame al
+1-800-SPRINT1<br>Oprima el 5</p></li>
+		</ul>
+	</div>								
+	<div class="bottomCorners"><div class="l4"></div><div
+class="l3"></div><div class="l2"><div class="l1"></div></div></div>
+</div>
+
+					</div>
+				</td>
+				<td width valign="top"><img src="img/div.gif" align="left">
+					<div class="rightMod3Margin">
+					 <!-- Right Column Content -->
+	    		   <SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+function Get_Cookie(name) {
+    var start = document.cookie.indexOf(name+"=");
+    var len = start+name.length+1;
+    if ((!start) && (name != document.cookie.substring(0,name.length))) return null;
+    if (start == -1) return null;
+    var end = document.cookie.indexOf(";",len);
+    if (end == -1) end = document.cookie.length;
+    return unescape(document.cookie.substring(len,end));
+}
+
+function Set_Cookie(name,value,expires,path,domain,secure) {
+    document.cookie = name + "=" +escape(value) +
+        ( (expires) ? ";expires=" + expires.toGMTString() : "") +
+        ( (path) ? ";path=" + path : "") + 
+        ( (domain) ? ";domain=" + domain : "") +
+        ( (secure) ? ";secure" : "");
+		//alert(document.cookie);
+}
+
+function setupForm() {
+    if (userProfile) getValues(userProfile);
+}
+
+function getValues(string) {
+    getValue(string,"ctystr",   document.TOP_FORM.ctystr,   "text");
+    getValue(string,"zc",    document.TOP_FORM.zc,    "text");
+    getValue(string,"stestr",    document.TOP_FORM.stestr,    "text");
+    for (var i=0;i<7+1;i++)
+        getValue(string,"i"+i, eval("document.TOP_FORM.i"+i), "checkbox");
+}
+
+function replace(string,text,by) {
+// Replaces text with by in string
+    var i = string.indexOf(text);
+    var newstr = '';
+    if ((!i) || (i == -1)) return string;
+    newstr += string.substring(0,i) + by;
+
+    if (i+text.length < string.length)
+        newstr += replace(string.substring(i+text.length,string.length),text,by);
+    
+    return newstr;
+}
+
+function onCheck(string) { if (string == "on") return true; return false; }
+
+function getValue(string,elementName,object,elementType) {
+// gets value of elementName from string and populates object of elementType
+
+    var startPos = string.indexOf(elementName + "=")
+    
+    if (startPos > -1) {
+        startPos = startPos + elementName.length + 1;
+        var endPos = string.indexOf("&",startPos);
+        if (endPos == -1) endPos = string.length;
+
+        var elementValue = unescape(string.substring(startPos,endPos));
+        
+        if (elementType == "text")     object.value = elementValue;
+   }
+}
+
+function printUrl() {
+ var url = "/search.html?pgt=advanced&ctystr=";
+ url += document.TOP_FORM.ctystr.value;
+ url += "&zc=";
+ url += document.TOP_FORM.zc.value;
+ url += "&stestr=";
+ url += document.TOP_FORM.stestr.value;
+ location.href=url;
+ 
+}
+
+
+</script>
+
+<SCRIPT LANGUAGE="JavaScript"><!--
+var today = new Date();
+var expires = new Date(today.getTime() + (56 * 86400000));
+
+var searchString = replace(self.location.search.substring(1),"+"," ");
+//alert(searchString);
+if (searchString.length > 0) Set_Cookie("userProfile",searchString,expires);
+var userProfile = Get_Cookie("userProfile");
+//--></SCRIPT>
+
+<form name="TOP_FORM" method=get action="/search.html">
+<input type=hidden name=pgt value="results">
+<input type=hidden name=stestr>
+<table border="0" cellpadding="0" width="567" cellspacing="0" height="20">
+  <tr valign="top">
+   <td colspan="3"><img src="img/border.gif" width="100%" height="1" border="0"></td>
+  </tr>
+  <tr valign="top">
+   <td width="1" bgcolor="#C6C3C6"><img src="img/border.gif" width="1" border="0"></td>
+   <td>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr><td colspan="3" valign="top"><img width="567" src="img/ld_quicksearch.gif"></td></tr>
+			<tr>
+			<td>
+				<table border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tr>
+				<td valign="top" width="40%">
+			<img src="img/spacer.gif"><br>
+			<img src="img/spacer_10.gif"><img src="img/hdr_hs_city.gif">
+		<br>
+<img src="img/spacer_10.gif"><input style="width:180px;" type=text name=ctystr tabIndex="1" size=20>
+<br><br>
+		</td>
+		<td valign="top" width="40%">
+			<img src="img/spacer.gif"><br>
+			<img src="img/ld_hdr_zip.gif">
+		<br>
+<input style="width:180px;" type=text name=zc tabIndex="2" size=20>
+</td>
+<td valign="middle" align="left" width="10%">
+			<input tabIndex="3" type=image src="img/btn_ld_search.gif" border=0>
+</td>
+</tr>
+
+<tr>
+	<td valign="top">
+	&nbsp;
+			</td>
+			<td valign="top" width="10">&nbsp;
+			</td>
+			<td align="left">
+		    <a href="javascript:printUrl();"><img src="img/search_opt.gif" border="0"></a>
+				</td>
+				</tr>
+				</table>
+			</td>
+			</tr>
+		    </table>
+</td>
+<td width="1" bgcolor="#C6C3C6"><img src="img/border.gif" width="1"  border="0"></td>
+</tr>
+<tr>
+<td colspan="3"><img src="img/border.gif" width="100%" height="1" border="0"></td>
+</tr>
+</table>
+</form>
+
+				   <br>
+                   
+									<img width="568" src="img/ld_printemail.gif" border="0" usemap="#boingo_ldmap">
+									<map name="boingo_ldmap">
+<area shape="rect" alt="" coords="15,0,121,19" href='javascript:openMapWindow("/searchprint.html?cty=Seattle&cnty=US&ste=WA&dm=&cte=&zc=&sb=2", "RESULTS", 710, 580)' onMouseOver='window.status="Print Results"'>
+<!--area shape="rect" alt="" coords="323,1,439,17" href="/emailform.html?cty=Seattle&cnty=US&ste=WA"-->
+<area shape="rect" alt="" coords="323,1,439,17" href='javascript:openMapWindow("/emailform.html?pgt=emailform&cty=Seattle&cte=&cnty=US&ste=WA&lid=&dm=&zc=", "EMAILRESULTS", 710, 580)' onMouseOver='window.status="Email Results"'>
+</map>
+<br><br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	<td><img src="img/hdld-searchresults.gif"></td>
+	</tr>
+        <tr><td colspan=2 height="2" background="img/ld_category_top.gif"></td></tr>
+</table>
+
+<table border="0" width="100%">
+<tr>
+ <td colspan="2">
+<span class="blackBText">66 Locations found in Seattle</span><span class="black10Text"> (click on header to sort)</span><br>
+<span class="blackText">Included within 156 locations in the</span>
+<a class="blueText" href="search.html?pgt=results&zc=&cty=Seattle&cnty=US&ste=WA&cte=&dm=1">Seattle Metro</a><span class="blackText"> area<blueText>
+</td>
+
+
+ <td align="right" nowrap colspan="2" class="blackText"><span class="blackBText">1-20 of 66</span>
+<script language="JavaScript">
+function getArgValue(arg) {
+    var args = new Object();
+    var query = location.search.substring(1);
+    var pairs = query.split("&");
+    for (var i=0; i < pairs.length; i++) {
+        var pos = pairs[i].indexOf('=');
+        if(pos == -1) continue;
+        var argname = pairs[i].substring(0, pos);
+        var value = pairs[i].substring(pos+1);
+        //args[argname] = unescape(value);
+        if(argname == arg) {
+           return unescape(value);
+        }
+    }
+    return "";
+}
+
+function getRefValue(arg) {
+    var args = new Object();
+    var query = '' + document.referrer;
+    query = query.substring((query.indexOf('?')) +1);
+    var pairs = query.split("&");
+    for (var i=0; i < pairs.length; i++) {
+        var pos = pairs[i].indexOf('=');
+        if(pos == -1) continue;
+        var argname = pairs[i].substring(0, pos);
+        var value = pairs[i].substring(pos+1);
+        //args[argname] = unescape(value);
+        if(argname == arg) {
+           return unescape(value);
+        }
+    }
+    return "";
+}
+
+var stype;
+
+ if (getRefValue("stype") != null) { 
+     stype = getRefValue("stype");
+   }
+ if (getArgValue("stype") != null) { 
+      stype = getArgValue("stype");
+   }  
+
+document.write('&nbsp;|&nbsp;<a href="search.html?stype='+stype+'&pgt=results&cnty=US&ste=WA&cty=Seattle&cte=&zc=&dm=&oft=20&sb=2"><span class="blueSmBText">Next 20></a></span>');
+
+</script>
+</td>
+</tr>
+</table>
+<br>
+<table width="568" border="0" cellspacing="1">
+<tr>
+<td width="260">
+<a class="blackLgBText" href="/search.html?pgt=results&cty=Seattle&cnty=US&ste=WA&dm=&cte=&sb=0&oft=0">Location</a></td>
+<td width="40" align="left">
+<a class="blackLgBText" href="/search.html?pgt=results&cty=Seattle&cnty=US&ste=WA&dm=&cte=&sb=1&oft=0">Description</a></td>
+<td width="80">
+<a class="blackLgBText" href="/search.html?pgt=results&cty=Seattle&cnty=US&ste=WA&dm=&cte=&sb=2&oft=0">Address</a></td>
+<td width="160">
+<a class="blackLgBText" href="/search.html?pgt=results&cty=Seattle&cnty=US&ste=WA&dm=&cte=&sb=3&oft=0">Details</a></td>
+</tr>
+<tr><td colspan="4"><img src="img/spacer.gif"></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=68863"><b>The UPS Store 1277</b></a>
+</td>
+<td width="50" valign="top" align="left">Retail Business</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">10002 Aurora Ave North 36<br>Seattle, WA 98133</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=10002%20Aurora%20Ave%20North%2036&csz=Seattle+WA+98133", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=65357"><b>Summerfield Suites Downtown Seattle</b></a>
+</td>
+<td width="50" valign="top" align="left">Hotel</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1011 Pike St<br>Seattle, WA 98101</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1011%20Pike%20St&csz=Seattle+WA+98101", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left">In-Room Wired Access Powered by Wayport</td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=223"><b>Summerfield Suites by Wyndham - Seattle</b></a>
+</td>
+<td width="50" valign="top" align="left">Hotel</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1011 Pike Street<br>Seattle, WA 98101</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1011%20Pike%20Street&csz=Seattle+WA+98101", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left">Lobby and Public Area Wireless Access Powered by Wayport</td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=16080"><b>Tully's Coffee - Expeditors NW</b></a>
+</td>
+<td width="50" valign="top" align="left">Cafe / Restaurant</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1015 - 3rd Avenue<br>Seattle, WA 98104</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1015%20%2D%203rd%20Avenue&csz=Seattle+WA+98104", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=78475"><b>The UPS Store 5256</b></a>
+</td>
+<td width="50" valign="top" align="left">Retail Business</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1037 Ne 65th St<br>Seattle, WA 98115</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1037%20Ne%2065th%20St&csz=Seattle+WA+98115", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=16075"><b>Tully's Coffee - Harbor Steps</b></a>
+</td>
+<td width="50" valign="top" align="left">Cafe / Restaurant</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1222 Post Alley<br>Seattle, WA 98101</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1222%20Post%20Alley&csz=Seattle+WA+98101", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=16068"><b>Tully's Coffee - 1st and Union</b></a>
+</td>
+<td width="50" valign="top" align="left">Cafe / Restaurant</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1401 1st Avenue<br>Seattle, WA 98101</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1401%201st%20Avenue&csz=Seattle+WA+98101", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=70677"><b>The UPS Store 2679</b></a>
+</td>
+<td width="50" valign="top" align="left">Retail Business</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1426 Harvard Avenue<br>Seattle, WA 98122</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1426%20Harvard%20Avenue&csz=Seattle+WA+98122", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=87906"><b>Juan Valdez - Seattle</b></a>
+</td>
+<td width="50" valign="top" align="left">Cafe / Restaurant</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1427 5th Ave<br>Seattle, WA 98101</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1427%205th%20Ave&csz=Seattle+WA+98101", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=16060"><b>Tully's Coffee - West Tower</b></a>
+</td>
+<td width="50" valign="top" align="left">Cafe / Restaurant</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">150 West Harrison<br>Seattle, WA 98119</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=150%20West%20Harrison&csz=Seattle+WA+98119", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=7841"><b>The Roosevelt</b></a>
+</td>
+<td width="50" valign="top" align="left">Hotel</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1531 7th Avenue<br>Seattle, WA 98101</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1531%207th%20Avenue&csz=Seattle+WA+98101", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left">In-Room, Lobby, and Public Area Wireless Access Powered by Wayport</td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=161935"><b>Embassy Suites Seattle Tacoma</b></a>
+</td>
+<td width="50" valign="top" align="left">Hotel</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">15920 W Valley Hwy<br>Seattle, WA 98188</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=15920%20W%20Valley%20Hwy&csz=Seattle+WA+98188", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=17228"><b>Tully's - Westlake Center</b></a>
+</td>
+<td width="50" valign="top" align="left">Cafe / Restaurant</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1601 5th Avenue<br>Seattle, WA 98101</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1601%205th%20Avenue&csz=Seattle+WA+98101", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=20933"><b>Holiday Inn Sea-Tac</b></a>
+</td>
+<td width="50" valign="top" align="left">Hotel</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">17338 International Blvd<br>Seattle, WA 98188</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=17338%20International%20Blvd&csz=Seattle+WA+98188", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left">In-Room, Lobby, and Public Area Wireless Access Powered by StayOnline</td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=179850"><b>SEA - Seattle-Tacoma International Airport</b></a>
+</td>
+<td width="50" valign="top" align="left">Airport</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">17801 International Blvd<br>Seattle, WA 98158</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=17801%20International%20Blvd&csz=Seattle+WA+98158", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=135734"><b>Seattle Downtown SpringHill Suites</b></a>
+</td>
+<td width="50" valign="top" align="left">Hotel</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">1800 Yale Avenue<br>Seattle, WA 98101</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=1800%20Yale%20Avenue&csz=Seattle+WA+98101", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left">Access availiable in: Wired Guest Rooms</td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=64785"><b>Coast Gateway Hotel - Seattle</b></a>
+</td>
+<td width="50" valign="top" align="left">Hotel</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">18415 International Blvd.<br>Seattle, WA 98188</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=18415%20International%20Blvd%2E&csz=Seattle+WA+98188", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left">In-Room Wired Access Powered by Wayport</td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=7837"><b>Coast Gateway Airport Hotel</b></a>
+</td>
+<td width="50" valign="top" align="left">Hotel</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">18415 International Boulevard<br>Seattle, WA 98188</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=18415%20International%20Boulevard&csz=Seattle+WA+98188", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left">In-Room, Lobby, and Public Area Wireless Access Powered by Wayport</td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#F5F5F5" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=16077"><b>Tully's Coffee - 1st and Virginia</b></a>
+</td>
+<td width="50" valign="top" align="left">Cafe / Restaurant</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">2000 1st Avenue<br>Seattle, WA 98121</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=2000%201st%20Avenue&csz=Seattle+WA+98121", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+
+<tr bgcolor="#FFFFFF" >
+<td width="295" valign="top" align="left" class="blackText">
+<a href="/search.html?pgt=results&lid=16066"><b>Tully's Coffee - Market Place</b></a>
+</td>
+<td width="50" valign="top" align="left">Cafe / Restaurant</td>
+<td width="187" valign="top" align="left" nowrap><GEO TYPE="US">2001 Western Avenue, Suite 110A<br>Seattle, WA 98121</GEO><br><A HREF='javascript:openMapWindow("http://maps.yahoo.com/py/maps.py?addr=2001%20Western%20Avenue%2C%20Suite%20110A&csz=Seattle+WA+98121", "MAP_POPUP", 580, 580)'>Map & Directions</a>
+</td>
+<td width="164" valign="top" align="left"></td>
+</tr>
+<tr><td colspan="4"><img src="img/div_results.gif"><br></td></tr>
+
+<tr>
+ <td colspan="2">&nbsp;</td><td align="right" nowrap colspan="2" class="blackText"><span class="blackBText">1-20 of 66</span>
+<script language="JavaScript">
+function getArgValue(arg) {
+    var args = new Object();
+    var query = location.search.substring(1);
+    var pairs = query.split("&");
+    for (var i=0; i < pairs.length; i++) {
+        var pos = pairs[i].indexOf('=');
+        if(pos == -1) continue;
+        var argname = pairs[i].substring(0, pos);
+        var value = pairs[i].substring(pos+1);
+        //args[argname] = unescape(value);
+        if(argname == arg) {
+           return unescape(value);
+        }
+    }
+    return "";
+}
+
+function getRefValue(arg) {
+    var args = new Object();
+    var query = '' + document.referrer;
+    query = query.substring((query.indexOf('?')) +1);
+    var pairs = query.split("&");
+    for (var i=0; i < pairs.length; i++) {
+        var pos = pairs[i].indexOf('=');
+        if(pos == -1) continue;
+        var argname = pairs[i].substring(0, pos);
+        var value = pairs[i].substring(pos+1);
+        //args[argname] = unescape(value);
+        if(argname == arg) {
+           return unescape(value);
+        }
+    }
+    return "";
+}
+
+var stype;
+
+ if (getRefValue("stype") != null) { 
+     stype = getRefValue("stype");
+   }
+ if (getArgValue("stype") != null) { 
+      stype = getArgValue("stype");
+   }  
+
+document.write('&nbsp;|&nbsp;<a href="search.html?stype='+stype+'&pgt=results&cnty=US&ste=WA&cty=Seattle&cte=&zc=&dm=&oft=20&sb=2"><span class="blueSmBText">Next 20></a></span>');
+
+</script>
+</td>
+</tr>
+
+</table>
+
+						</div>
+				</td>
+			</tr>
+		</table>
+
+	
+	</td>
+</tr>
+<tr>
+	<td class="blackBG">
+	<div id="footerBar">
+		<script>document.writeln(renderFooter());</script>
+	</div>
+	</td>
+</tr>
+</table>
+
+
+</body>
+</html>

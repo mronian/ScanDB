@@ -1,0 +1,349 @@
+<DOC>
+<DOCNO>g00377</DOCNO>
+<DOCHDR>http://www.hrc.org/Template.cfm?Section=Contact_US</DOCHDR>
+
+<!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL="StyleSheet" HREF="/Styles/Client.css" type="text/css">
+<LINK REL="StyleSheet" HREF="/Styles/Styles.css" type="text/css">
+<LINK REL="StyleSheet" HREF="/Styles/SUStyles.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+  if (document.images) { 
+
+  button1off = new Image(); button1off.src = "/Graphics/Template/HRC/button1_off.gif";
+  button1on = new Image(); button1on.src = "/Graphics/Template/HRC/button1_on.gif";
+  button2off = new Image(); button2off.src = "/Graphics/Template/HRC/button2_off.gif";
+  button2on = new Image(); button2on.src = "/Graphics/Template/HRC/button2_on.gif";
+  button3off = new Image(); button3off.src = "/Graphics/Template/HRC/button3_off.gif";
+  button3on = new Image(); button3on.src = "/Graphics/Template/HRC/button3_on.gif";
+  button4off = new Image(); button4off.src = "/Graphics/Template/HRC/button4_off.gif";
+  button4on = new Image(); button4on.src = "/Graphics/Template/HRC/button4_on.gif";
+  button5off = new Image(); button5off.src = "/Graphics/Template/HRC/button5_off.gif";
+  button5on = new Image(); button5on.src = "/Graphics/Template/HRC/button5_on.gif";
+
+  }
+
+  function buttonSwap(buttonName,styleFlag) {
+      if (document.images) {
+        if (styleFlag == "on") {
+          document[buttonName].src = eval(buttonName + "on.src");
+        } else {
+          document[buttonName].src = eval(buttonName + "off.src");
+        }
+      }
+  }
+
+  
+  var varBrowser = "Other";
+  if(navigator.appName.indexOf("Netscape",0) == 0)
+    {varBrowser = "Netscape";
+  }else{
+    if((navigator.appName.indexOf("Microsoft",0) == 0) || (navigator.appName.indexOf("MS",0) == 0))
+    {varBrowser = "MSIE";}
+  }
+
+  if(document.images) {
+  this[1] = new Image();
+  this[1].src = "/Graphics/takeaction_on.gif";
+  this[2] = new Image();
+  this[2].src = "/Graphics/family_on.gif";
+  this[3] = new Image();
+  this[3].src = "/Graphics/worklife_on.gif";
+  this[4] = new Image();
+  this[4].src = "/Graphics/yourcommunity_on.gif";
+  this[5] = new Image();
+  this[5].src = "/Graphics/comingout_on.gif";
+}
+
+function swapIt(imgName,imgType,imgAction) {
+      if (document.images) {
+        if (imgAction == 1) {
+          switch(imgType){
+            case "Take_Action": newSrc="/Graphics/takeaction_on.gif"; break
+          case "Family": newSrc="/Graphics/family_on.gif"; break
+          case "Work_Life": newSrc="/Graphics/worklife_on.gif"; break
+          case "Your_Community": newSrc="/Graphics/yourcommunity_on.gif"; break
+          case "Coming_Out": newSrc="/Graphics/comingout_on.gif"; break
+        }
+        }
+        else {
+          switch(imgType){
+            case "Take_Action": newSrc="/Graphics/takeaction_off.gif"; break
+          case "Family": newSrc="/Graphics/family_off.gif"; break
+          case "Work_Life": newSrc="/Graphics/worklife_off.gif"; break
+          case "Your_Community": newSrc="/Graphics/yourcommunity_off.gif"; break
+          case "Coming_Out": newSrc="/Graphics/comingout_off.gif"; break
+        }
+        }
+        document.images[imgName].src = newSrc;
+      }
+    }
+//-->
+</SCRIPT>
+ 
+ <LINK REL="SHORTCUT ICON" HREF="http://www.hrc.org/favicon.ico">
+<title>HRC | Contact Us</title></head> 
+
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  bgcolor="ffffff">
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="760" bgcolor="ffffff">
+  
+  
+  <tr bgcolor="000066">
+      
+
+	  <td align="top" colspan="2"><img src="/Graphics/Template/hrcfocuson_text.gif" width="152" height="15" border="0" alt=""><img src="/Graphics/spacer.gif" width="272" height="1" alt="" border="0"><a href="http://www.hrc.org/" class="ciadminwhite">&gt;Home</a>&nbsp;&nbsp;<a href="https://secure.ga3.org/03/join1?source=W05YGMPGX" class="ciadminwhite">&gt;Join</a> 
+        
+        &nbsp;&nbsp;<a href="http://www.hrcactioncenter.org/actioncenter/join.html" class="ciadminwhite">&gt;Sign-Up/Login</a>&nbsp;&nbsp;<a href="http://www.hrc.org/Template.cfm?Section=Search" class="ciadminwhite">&gt;Search</a>&nbsp;&nbsp;<a href="http://www.hrc.org/Template.cfm?Section=Contact_US" class="ciadminwhite">&gt;Contact 
+        Us</a>&nbsp;&nbsp;<a href="http://www.hrc.org/Template.cfm?Section=Site_Map" class="ciadminwhite">&gt;Site 
+        Map<br />
+        </a></td></tr>
+  
+    <tr>
+      <td valign="top" colspan="2">
+       
+       <!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr><td align="center"><a class="TopNav" href="http://www.hrc.org/Template.cfm?Section=Family&Template=/ContentManagement/ContentDisplay.cfm&ContentID=24117"  onFocus="swapIt('i_Family','Family',1);" onMouseOver="swapIt('i_Family','Family',1); " onBlur="swapIt('i_Family', 'Family', 0);" onMouseOut="swapIt('i_Family', 'Family', 0);"><img name="i_Family" src="/Graphics/family_off.gif" width="152" height="57" alt="Family" border="0"></a></td><td align="center"><a class="TopNav" href="http://www.hrc.org/Template.cfm?Section=Work_Life&Template=/ContentManagement/ContentDisplay.cfm&ContentID=21882"  onFocus="swapIt('i_Work_Life','Work_Life',1);" onMouseOver="swapIt('i_Work_Life','Work_Life',1); " onBlur="swapIt('i_Work_Life', 'Work_Life', 0);" onMouseOut="swapIt('i_Work_Life', 'Work_Life', 0);"><img name="i_Work_Life" src="/Graphics/worklife_off.gif" width="152" height="57" alt="Work Life" border="0"></a></td><td align="center"><a class="TopNav" href="http://www.hrc.org/Template.cfm?Section=Your_Community&Template=/ContentManagement/ContentDisplay.cfm&ContentID=8471"  onFocus="swapIt('i_Your_Community','Your_Community',1);" onMouseOver="swapIt('i_Your_Community','Your_Community',1); " onBlur="swapIt('i_Your_Community', 'Your_Community', 0);" onMouseOut="swapIt('i_Your_Community', 'Your_Community', 0);"><img name="i_Your_Community" src="/Graphics/yourcommunity_off.gif" width="152" height="57" alt="Your Community" border="0"></a></td><td align="center"><a class="TopNav" href="http://www.hrc.org/Template.cfm?Section=Coming_Out&Template=/ContentManagement/ContentDisplay.cfm&ContentID=8472"  onFocus="swapIt('i_Coming_Out','Coming_Out',1);" onMouseOver="swapIt('i_Coming_Out','Coming_Out',1); " onBlur="swapIt('i_Coming_Out', 'Coming_Out', 0);" onMouseOut="swapIt('i_Coming_Out', 'Coming_Out', 0);"><img name="i_Coming_Out" src="/Graphics/comingout_off.gif" width="152" height="57" alt="Coming Out" border="0"></a></td><td align="center"><a class="TopNav" href="http://www.hrcactioncenter.org/actioncenter/"  onFocus="swapIt('i_Take_Action','Take_Action',1);" onMouseOver="swapIt('i_Take_Action','Take_Action',1); " onBlur="swapIt('i_Take_Action', 'Take_Action', 0);" onMouseOut="swapIt('i_Take_Action', 'Take_Action', 0);"><img name="i_Take_Action" src="/Graphics/takeaction_off.gif" width="152" height="57" alt="Take Action Resources" border="0"></a></td></tr></table> 
+
+      </td>
+    </tr>
+  
+  <form action="http://www.hrc.org/Template.cfm?Section=Search&template=/Search/SearchDisplay.cfm" method="post">
+  <tr>
+    <td valign="top"><a href="http://www.hrc.org/"><img src="/Graphics/Template/HRC/title_left.gif" width="304" height="108" border="0" alt="Return to Home Page"><img src="/Graphics/Template/HRC/title_right.gif" width="304" height="108" border="0" alt="Return to Home Page"></a></td>
+    <td valign="top"><br><br><input type="text" class="search" name="criteria" value="Search" size="10">&nbsp;<input type="image" src="/Graphics/searchgo.gif" border="0" alt="Click Here to Search"><br><a href="http://www.hrc.org/Template.cfm?Section=Search" class="smaller"><img src="/Graphics/Template/search_advancedsearch.gif" border="0" alt="Advanced Search"></a></td>
+  </tr>
+  </form>
+</table>
+
+<!-- Begin Side Nav  -->
+<!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+
+
+
+
+
+<!-- End Side Nav  -->
+
+
+<table border="0" width="760" cellpadding="0" cellspacing="0" bgcolor="ffffff">
+ 	<tr>
+    
+
+		<td width="136" valign="top" bgcolor="#ffffff">
+        
+        <!-- Side Nav Display: Begin --><table width='136' cellpadding='0' cellspacing='0' border='0' bgcolor='FFF7DE'>
+<tr bgcolor='E7E7B4' valign='top'><td colspan='15'><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Involved/Support_HRC/Support_HRC.htm' ><img src='/Graphics/banner_pic.gif' width='136' height='59' alt='Join or Donate' border='0'></a><br></td></tr>
+<tr bgcolor='E7E7B4' valign='top'><td colspan='15'><img src='/Graphics/getinformed_pic.gif' width='136' height='28' alt='Get Informed' border='0'><br></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/marriage' >Marriage</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Informed/Issues/Index.htm' >Issues</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Informed/Federal_Legislation/Index.htm' >Federal Legislation</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Template.cfm?Section=Your_Community&Template=/ContentManagement/ContentDisplay.cfm&ContentID=8471' >Laws & Legislation in Your State</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Informed/Campaigns_and_Elections/Campaigns_and_Elections.htm' >Campaigns & Elections</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Informed/Congress_and_Scorecard/Index.htm' >U.S. Congress & Scorecard</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Informed/Special_Projects/Special_HRC_Projects.htm' >Special HRC Projects</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='E7E7B4' valign='top'><td colspan='15'><img src='/Graphics/getinvolved_pic.gif' width='136' height='28' alt='Get Involved' border='0'><br></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Involved/Support_HRC/Support_HRC.htm' >Support HRC</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='https://www.hrc.org/candidateFundraising/' >Contribute to Candidates</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrcactioncenter.org/actioncenter/' >Take Action Resources</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/Your_Community/Get_Informed3/HRC_in_Your_Community/Steering_Committees.htm' >HRC in Your Community</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Template.cfm?Section=Sign_Up_to_Volunteer&Template=/Surveys/SurveyDisplay.cfm&SurveyTypeID=3&SurveyID=10' >Volunteer</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Involved/HRC_Sponsors/Corporate_Sponsors/National_Corporate_Sponsors.htm' >Sponsors & Foundation Support</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Involved/Membership_Center/Membership_Information.htm' >Memberships & Account Info</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr>
+<tr bgcolor='FFF7DE' valign='top'><td class='smaller'>&nbsp;</td><td class='SideNav'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br>&gt;</td><td colspan='13'><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''><br><a class='SideNav' href='http://www.hrc.org/Content/NavigationMenu/HRC/Get_Involved/Fun_Stuff/Fun_Stuff.htm' >Fun Stuff</a><br><img src='/Graphics/spacer.gif' width='1' height='5' border='0' alt=''></td></tr><tr><td colspan='15'><img src='/Graphics/Template/leftnav_divider.gif' border='0' alt=''></td></tr><tr><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="9"></td><td width="10"></td></tr></table><table width='136' cellpadding='0' cellspacing='0' border='0' bgcolor='FFF7DE'><tr><td colspan='15' valign='top'><img src='/Graphics/Template/leftnav_bottom.gif' border='0' alt=''></td></tr></table><!-- Side Nav Display: End --> 
+            
+              <br><div align="center">
+              <a href="/PrinterTemplate.cfm?Section=Contact_US" class="small"><img src="/Graphics/Template/printthispage.gif" width="93" height="10" border="0" alt="Print this Page"></a>
+              <br><a href="/TellAFriend/SendToFriend.cfm?Title=Send%20this%20Page%20to%20a%20friend%20via%20e%2Dmail%2E&Page=http://www.hrc.org/Template.cfm?Section=Contact_US" class="small" target="_blank"><img src="/Graphics/Template/emailthispage.gif" width="93" height="10" border="0" alt="E-mail this Page"></a><img src="/Graphics/spacer.gif" width="3" height="18" alt="" border="0">
+              </div>
+            
+          
+    </td>
+
+    
+    <td width="1" bgcolor="#FFFFFF"><img src="/Graphics/spacer.gif" width="1" height="1" alt="" border="0"></td>
+
+    
+    <td width="618" valign="top">
+      <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+        
+        <tr><td valign="top">
+          <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="ffffff">
+            <tr>
+              
+                <td valign="top"><img src="/Graphics/Template/HRC/title_text_int.gif" width="260" height="31" border="0" alt=""></td>
+              
+              
+              
+              
+              <td bgcolor="ffffff" width="1"></td>
+              
+                <td valign="top"><a href="/Template.cfm?Section=About_HRC" onMouseOver="buttonSwap('button1','on'); return true;" onMouseOut="buttonSwap('button1','off'); return true;"><img src="/Graphics/Template/HRC/button1_off.gif" name="button1" border="0" alt=""></a></td>
+              
+              <td valign="top"><a href="/Template.cfm?Section=Press_Room" onMouseOver="buttonSwap('button2','on'); return true;" onMouseOut="buttonSwap('button2','off'); return true;"><img src="/Graphics/Template/HRC/button2_off.gif" name="button2" border="0" alt=""></a></td>
+              <td valign="top"><a href="/Template.cfm?Section=Events" onMouseOver="buttonSwap('button3','on'); return true;" onMouseOut="buttonSwap('button3','off'); return true;"><img src="/Graphics/Template/HRC/button3_off.gif" name="button3" border="0" alt=""></a></td>
+              <td valign="top"><a href="/Template.cfm?Section=HRC_Store" onMouseOver="buttonSwap('button4','on'); return true;" onMouseOut="buttonSwap('button4','off'); return true;"><img src="/Graphics/Template/HRC/button4_off.gif" name="button4" border="0" alt=""></a></td>
+              <td valign="top"><a href="/Template.cfm?Section=Support_HRC2" onMouseOver="buttonSwap('button5','on'); return true;" onMouseOut="buttonSwap('button5','off'); return true;"><img src="/Graphics/Template/HRC/button5_off.gif" name="button5" border="0" alt=""></a></td>
+            </tr>
+            
+            
+              
+              
+                
+                  <tr><td colspan="7" valign="top"><img src="/Graphics/Template/HRC/header_int.gif" width="624" height="32" name="headermain" border="0" alt=""></td></tr>
+                
+              
+            
+          </table>
+        </td></tr>
+        
+
+        <tr><td valign="top">
+         <!-- Source Code Copyright © 2001 Active Matter, Inc. www.activematter.com -->
+
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" width="30"></td>
+    <td valign="top">
+
+  
+  
+  <div class="breadcrumb">
+  
+    >&nbsp;<a href="http://www.hrc.org/" class="BreadCrumb">Home</a>
+    
+    
+      &nbsp;&nbsp;>&nbsp;Contact Us
+    
+  
+  </div><br>
+<!-- Source Code Copyright © 2001 Active Matter,Inc. www.activematter.com -->
+
+       <script language="JavaScript" src="/ViewTrack.cfm?ComponentCode=CM&ComponentID=19709"></script>
+    <h3 align="center">Contact Information</h3>
+
+<p align="center"><i>Please visit our membership&#160;<a 
+href="https://www.hrc.org/Template.cfm?Section=Contact_Us&amp;Template=/CustomSource/Faq/faq.htm">Frequently 
+Asked Questions</a>&#160;prior to contacting HRC. These questions were 
+designed to address common membership concerns and questions!<br>
+<br>
+<br>
+</i></p>
+
+<p align="left"></p>
+
+<table width="100%">
+<tbody>
+<tr>
+<td width="10%">&#160;</td>
+<td><b>Mail</b><br>
+Human Rights Campaign<br>
+1640 Rhode Island Avenue NW<br>
+Washington, DC 20036-3278</td>
+</tr>
+
+<tr>
+<td>&#160;</td>
+</tr>
+
+<tr>
+<td width="10%">&#160;</td>
+<td><b>Phone</b><br>
+Front Desk: 202/628-4160<br>
+TTY: 202/216-1572<br>
+Toll-Free: 800/777-4723<br>
+Membership Toll-Free: 800/727-4723</td>
+</tr>
+
+<tr>
+<td>&#160;</td>
+</tr>
+
+<tr>
+<td width="10%">&#160;</td>
+<td><b>Fax</b><br>
+202/347-5323</td>
+</tr>
+
+<tr>
+<td>&#160;</td>
+</tr>
+
+<tr>
+<td width="10%">&#160;</td>
+<td><b>Email</b><br>
+For general HRC inquiries/comments, please contact&#160;<a 
+href="mailto:hrc@hrc.org">hrc@hrc.org</a>.<br>
+For membership-specific inquires/comments, please contact&#160;<a 
+href="mailto:membership@hrc.org">membership@hrc.org</a>.</td>
+</tr>
+</tbody>
+</table>
+
+    </td>
+    <td valign="top" width="30"></td>
+    
+    
+  </tr>
+</table>
+
+
+  
+  
+  <table border="0" width="100%" cellpadding="3" cellspacing="0">
+    <tr><td><br>&nbsp;</td></tr>
+    <tr><td valign="top" align="center">
+      <a href="/Template.cfm?Section=Family" class="footer">Family</a>&nbsp;
+      <a href="/Template.cfm?Section=Work_Life" class="footer">Work Life</a>&nbsp;
+      <a href="/Template.cfm?Section=Your_Community" class="footer">Your Community</a>&nbsp;
+      <a href="/Template.cfm?Section=Coming_Out" class="footer">Coming Out</a>&nbsp;
+      <a href="/Template.cfm?Section=Take_Action" class="footer">Take Action</a>&nbsp;
+      <a href="/Template.cfm?Section=About_HRC" class="footer">About HRC</a>&nbsp;
+      <a href="/Template.cfm?Section=Press_Room" class="footer">Press Room</a>&nbsp;
+      <a href="/Template.cfm?Section=Events" class="footer">Events</a>&nbsp;
+      <a href="/Template.cfm?Section=HRC_Store" class="footer">HRC Store</a>&nbsp;
+      <br>
+      <a href="/Template.cfm?Section=Support_HRC" class="footer">Support HRC</a>&nbsp;
+      <a href="/Template.cfm?Section=Contact_US" class="footer">Contact Us</a>&nbsp;
+	  <a href="http://www.hrc.org/careers" class="footer">Employment Opportunities</a>&nbsp;
+      <a href="/Template.cfm?Section=Site_Map" class="footer">Site Map</a>&nbsp;
+      <a href="/Template.cfm?Section=Home" class="footer">Home</a>&nbsp;
+    </td></tr>
+    <tr><td valign="top" align="center" class="copyrightfooter">© 2004 The Human Rights Campaign. All rights reserved. View our <a class="copyrightfooter" href="/Content/NavigationMenu/About_HRC/Privacy_Policy.htm">privacy policy</a><br></td></tr>
+    <tr><td><br>&nbsp;</td></tr>
+  </table>
+  
+
+
+        </td></tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+
+  
+    
+       
+         <script language="JavaScript" src="/ViewTrack.cfm?ComponentCode=CM&ComponentID=19709&SetInTemplateFlag=Y"></script>
+      
+    
+  
+
+
+</body>
+</html>
+
+  
+
+

@@ -1,0 +1,1160 @@
+<DOC>
+<DOCNO>f00738</DOCNO>
+<DOCHDR>http://www.co.maui.hi.us/information</DOCHDR>
+<!-- Header for Maui County Web pages -->
+<SCRIPT>
+function fixdomain(){
+  var strText = new String() ;
+  var newstr = new String();
+  wherearewe = document.location;
+  strText = "" + wherearewe;  
+
+var re = new RegExp ('county.maui.net');
+var newstr = strText.replace(re, 'www.co.maui.hi.us')
+
+var re2 = new RegExp ('mauico.maui.net');
+var newstr = strText.replace(re2, 'www.co.maui.hi.us')
+
+if(newstr != strText){
+  window.location.replace(newstr);
+}
+
+}
+  
+</SCRIPT>
+<html>
+<head>
+<title>Maui County - Contact Information </title>
+<link TITLE="new" REL="stylesheet" HREF="/style.css" TYPE="text/css">
+<style type="text/css">
+        DIR { margin-top: 0px; margin-left: 16px; margin-bottom: 0px; };
+</style>
+</head>
+
+<body bgcolor="#ffffff" topmargin="5" leftmargin="5" marginwidth="5" marginheight="5" onload=fixdomain()>
+<table border="0" cellpadding="0" cellspacing="0" width="754">
+<tr>
+<td colspan=6><img src="/images/blank.gif" width=700 height=1 alt="For our ADA web users, if you are having difficulties navigating our site, please call us between the hours of  8:00am and 4:30pm, Monday thru Friday,  Hawaii Standard Time, and we will be more than happy to assist you.  The contact numbers are 808 270-7842, and 808 270-7537. You can also email us at webmaster@co.maui.hi.us  Thank you for visiting us, and we hope we can enhance your stay.  Mahalo"></td>
+</tr>
+<tr>
+<td><img alt="" src="/images/black.gif" width="1" height="1"></td>
+<td><img alt="" src="/images/black.gif" width="185" height="1"></td>
+<td><img alt="" src="/images/black.gif" width="1" height="1"></td>
+<td><img alt="" src="/images/black.gif" width="15" height="1"></td>
+<td><img alt="" src="/images/black.gif" width="552" height="1"></td>
+</tr>
+
+<tr>
+<td colspan="5">
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td bgcolor="#000000"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        <td bgcolor="#003300" align="right"><a href="/mayor/"><img alt="Mayor Link" src="/images/headersfooters/mayor.gif" height="17" width=40 border="0"></a><img alt="grey space for formatting" src="/images/trans.gif"
+                width="15" height="17"><a href="/county/"><img alt="County Council Link" src="/images/headersfooters/countyCouncil.gif" height="17" width=95 border="0"></a><img alt="grey space for formatting" src="/images/trans.gif"
+                width="15" height="17"><a href="/departments/"><img alt="departments link" src="/images/headersfooters/departments.gif" height="17" width=82 border="0"></a><img alt="grey space for formatting" src="/images/trans.gif"
+                width="15" height="17"><a href="/boards/"><img alt="Boards and Commission Link" src="/images/headersfooters/boardsAndCommissions.gif" height="17" width=154 border="0"></a><img alt="grey space for formatting" src="/images/trans.gif"
+                width="15" height="17"><a href="/information/"><img alt="Information link" src="/images/headersfooters/information.gif" height="17" width=72 border="0"></a><img alt="grey space for formatting" src="/images/trans.gif"
+                width="15" height="17"><a href="/"><img alt="home link" src="/images/headersfooters/home.gif" height="17" width=37 border="0"></a><img alt="grey space for formatting" src="/images/trans.gif"
+                width="15" height="17"></td>
+        <td bgcolor="#000000"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        </tr>
+        
+        <tr>
+        <td bgcolor="#000000"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        <td bgcolor="#000000" align="right"><img alt="grey space for formatting" src="/images/trans.gif" width="752" height="1"></td>
+        <td bgcolor="#000000"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        </tr>
+        </table>
+</td>
+</tr>
+
+<tr>
+<td colspan="3"><a href="/"><img alt="Silversword in Bloom" src="/images/headersfooters/nav1.jpg" width="187" height="115" border="0"></a></td>
+<td colspan="2"><a href="/"><img alt="Maui County Seal as watermark" src="/images/headersfooters/nav2.gif" width="192" height="115" border="0"></a><img alt="Islands of Maui County" src="/images/headersfooters/nav3.jpg" width="375" height="115" border="0"></td>
+</tr>
+
+<tr>
+<td bgcolor="#999999" valign="top"><img alt="black space for formatting" src="/images/headersfooters/black.gif" width="1" height="66"></td>
+<td bgcolor="#ebefeb" valign="top">
+        <table border="0" cellpadding="0" cellspacing="0" width="185">
+        <tr>
+        <td colspan="3"><img alt="Adult Silversword in Bloom" src="/images/headersfooters/nav4.gif" width="185" height="66"></td>
+        </tr>
+        
+        <tr>
+        <td bgcolor="#bcc9bc" colspan="3"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="7"></td>
+        </tr>
+<!-- SEARCH --> 
+        <tr>
+        <td bgcolor="#bcc9bc" colspan="3"><img alt="Green Search" src="/images/headersfooters/search.gif" width="185" height="11"></td>
+        </tr>
+        
+        <tr>
+        <td bgcolor="#bcc9bc" colspan="3"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="4"></td>
+        </tr>
+        
+        <tr>
+        <td bgcolor="#bcc9bc"><img alt="grey space for formatting" src="/images/trans.gif" width="15" height="1"></td>
+        <td bgcolor="#bcc9bc">
+<script language="javascript">
+
+        function SearchSubmit() {
+                var strSearchTerms = document.SearchForm.query.value;
+                if (strSearchTerms.length > 1) {
+                        document.SearchForm.submit();
+                } else {
+                        alert("Please enter a search term with more than one character.")
+                }
+        }
+
+</script>
+<FORM METHOD=get ACTION="/bin/texis/webinator/newsearch/" name=SearchForm>
+<INPUT TYPE=hidden NAME=db VALUE="db">
+                <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                <td><input type="text" size="10" name="query"></td>
+                <td><img alt="grey space for formatting" src="/images/trans.gif" width="5" height="1"></td>
+                <td><a href="javascript:SearchSubmit()"><img alt="" src="/images/headersfooters/go.gif" border="0" width="24" height="24"></a></td>
+                </tr>                
+                </table>
+                </FORM>
+        </td>
+        <td bgcolor="#bcc9bc"><img alt="grey space for formatting" src="/images/trans.gif" width="15" height="1"></td>
+        </tr>
+        
+        <tr>
+        <td bgcolor="#bcc9bc" colspan="3"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="8"></td>
+        </tr>
+        
+        <tr>
+        <td bgcolor="#999999"><img alt="grey space for formatting" src="/images/trans.gif" width="15" height="1"></td>
+        <td bgcolor="#999999"><img alt="grey space for formatting" src="/images/trans.gif" width="155" height="1"></td>
+        <td bgcolor="#999999"><img alt="grey space for formatting" src="/images/trans.gif" width="15" height="1"></td>
+        </tr>
+        
+        <tr>
+        <td colspan="3"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="10"></td>
+        </tr>
+<!-- LEFT NAV -->	
+	<tr>
+	<td><img alt="grey space for formatting"  src="/images/trans.gif" width="15" height="1"></td>
+	<td width="155">
+
+
+
+<!-- SIDE BAR: 3830 | 405 -->
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=155><tr><td colspan=2><a href=/boards/  class=blackB>Boards</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 411-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/bus/  class=blackB>Bus Schedule</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 5230-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/information/events.php  class=blackB>Calendar of Events</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 3834-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/departments/Planning/CommunityPlan.htm  class=blackB>Community Plan</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 6160-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/information/index.php  class=blackB>Contact Information</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 3833-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/charter.html  class=blackB>County Charter</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 2399-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://ordlink.com/codes/maui/index.htm target=_blank class=blackB>County Code</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 2400-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/county/  class=blackB>County Council</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 344-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/departments/  class=blackB>Departments</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 410-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.hawaii.gov/health/dcab/ target=_blank class=blackB>Disability and Communication Access Board (DCAB)</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 4928-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/optin.php?account=mauico&formnum=3&version=125  class=blackB>E-Mail Subscriptions</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 3803-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/departments/Personnel/employmentOpportunities.php  class=blackB>Employment</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 2392-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/information/faq.php  class=blackB>FAQ</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 949-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/optin.php?account=mauico&formnum=1&version=123  class=blackB>Feedback</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 3804-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.capitol.hawaii.gov/site1/docs/docs.asp?press1=docs target=_blank class=blackB>Hawaii State Statutes</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 3930-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/2005legpkg.pdf  class=blackB>Legislative Package - Council</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 7615-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/information/links.htm  class=blackB>Links</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 3832-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/departments/Police/index.htm  class=blackB>Maui Police Department</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 6163-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/youth/  class=blackB>Maui Youth Connections</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 5854-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/mayor/  class=blackB>Office of the Mayor</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 85-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/online_services/  class=blackB>Online Services</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 4275-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/departments/Parks/Recware/index.htm  class=blackB>Parks Reservations</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 5898-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.co.maui.hi.us/departments/Planning/planningforms.htm  class=blackB>Planning Dept Forms</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 12289-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/press/  class=blackB>Press Releases</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 412-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/information/sitemap.php  class=blackB>Website Map</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 2349-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.mauipropertytax.com/ target=_blank class=blackB>Real Property Tax Information</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 12290-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://kivanetext.co.maui.hi.us/kivanet/2/rfs/citizen/index.cfm?fa=dsp_entry  class=blackB>Request for Service</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 12291-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=/servcenter/  class=blackB>Service Center</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 5138-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+<tr><td colspan=2><a href=http://www.maui.net/~mauinews/legals.htm  class=blackB>State & County Gov't Public and Procurement Notices</a></td><tr>
+
+
+<!--parent: 405 parent_above: 0  catidcur: 3830 catparent: 0 catid : 4523-->
+<tr><td><img src=/images/trans.gif width=12 height=8></td><td><img src=/images/trans.gif  width=133 height=1></td></tr>
+</table>
+        </td>
+        <td><img alt="grey space for formatting" src="/images/trans.gif" width="15" height="1"></td>
+        </tr>        
+        </table>
+</td>
+<td bgcolor="#999999"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="66"></td>
+<td valign="top"><img alt="" src="/images/headersfooters/nav5.gif" width="15" height="66"></td>
+<td width="552"  valign="top">
+
+        <table border="0" cellpadding="0" cellspacing="0" width="552">
+        <tr>
+       <!-- Page Header -->
+        <td><img src=/images/default/dfHdr.gif width=400 height=37></td>                
+        </tr>        
+        <tr>
+        <td><img alt="" src="/images/black.gif" width="552" height="1"></td>
+        </tr>        
+        <tr>
+        <td><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="10"></td>
+        </tr>        
+        <tr>
+        <td>
+<!-- End HEADER -->     
+<font class="blackB">You Are Here:</font><font class="black"> <a href=/ Target=_top class=greenU>Home</a> /  Contact Information  </font><br><br>
+<!-- End of Header -->
+
+<title>Contact Information Page</title>
+
+	
+
+
+<tr>
+    <td> 
+      <table width="552" border="0" cellpadding="1">
+        <tr> 
+          <td colspan="2"> 
+            <div align="center"><br>
+              <font class="green16B">Maui County</font> - <font class="black16B">Contact 
+              Information</font> </div>
+          </td>
+        </tr>
+        <tr> 
+          
+        <td width="311"><br>
+            <img alt=""src="/images/trans.gif" width="1" height="10"><br>
+            <font class="greenB2">Executive Branch</font><br>
+            <font class="black">The Honorable Alan Arakawa<br>
+            Mayor's Office<br>
+            County of Maui<br>
+            <GEO TYPE="US">200 South High Street, 9th floor<br>
+            Wailuku, HI 96793-2155</GEO><br>
+            <img alt="" src="/images/trans.gif" width="1" height="5"><br>
+            Phone: (808) 270-7855<br>
+            Fax: (808) 270-7870<br>
+            <img alt="" src="/images/trans.gif" width="1" height="5"><br>
+            </font> <font class="black">E-mail:</font> <a class="greenU" href="mailto:mayors.office@co.maui.hi.us">mayors.office@co.maui.hi.us</a></td>
+          
+        <td width="231"><br>
+            <br><img src="/information/COMcolor125.jpg" width="125" height="126"><br>
+           
+          </td>
+        </tr>
+        <br>
+        <tr> 
+          
+        <td width="311"> <br>
+          </td>
+          
+        <td width="231"></td>
+        </tr>
+        <tr> 
+          
+        <td width="311" height="138"><font class="greenB2">Legislative Branch</font><br>
+            
+            <font class="blackB">County Clerk</font><br>
+            <span class="black">County of Maui<br>
+            <GEO TYPE="US">200 South High Street, 7th floor<br>
+            Wailuku, HI 96793-2155</GEO><br>
+            </span> <img alt="" src="/images/trans.gif" width="1" height="5"><br>
+            <span class="black">Phone: (808) 270-7748 (Legislative matters)<br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (808) 270-7749 (Election 
+            matters)<br>
+          Fax: (808) 270-7171<br>
+            E-mail:</span> <a class="greenU" href="mailto:county.clerk@co.maui.hi.us">county.clerk@co.maui.hi.us</a></td>
+          
+        <td width="231" height="138"> 
+           
+            <br>
+            <font class="blackB">County Council</font><br>
+            <span class="black">County of Maui<br>
+            <GEO TYPE="US">200 South High Street, 7th floor<br>
+            Wailuku, HI 96793-2155</GEO><br>
+            <img alt="" src="/images/trans.gif" width="1" height="10"><br><br>
+            Phone: (808) 270-7838<br>
+            Fax: (808) 270-7686</span><br>
+            <img alt="" src="/images/trans.gif" width="1" height="10"><font class="black">E-mail:</font> 
+            <a class="greenU" href="mailto:county.council@co.maui.hi.us">county.council@co.maui.hi.us</a> 
+          </td>
+        </tr>
+      </table>
+     
+      <tr><td>
+        <img alt="" src="/images/trans.gif" width="1" height="15"> <br>
+    </td></tr>	
+
+	<tr><td><img alt="" src="/images/trans.gif" width="1" height="15"></td>
+	</tr>
+	<tr><td>			
+
+      <table border="0" cellpadding="0" cellspacing="0" width="552">
+        <tr><td colspan="4"><font class="greenB2">County Councilmembers</font></td>			</tr>						<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"></td>
+	      
+        <td width="269"><img alt="" src="/images/trans.gif" width="217" height="1"></td>		
+          
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="1"></td>			
+          
+        <td width="233"><img alt="" src="/images/trans.gif" width="100" height="1"></td>
+</tr>			
+
+	<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"> 
+          </td>	
+
+          
+        <td width="269"><a href="/county/members/cMemberDetail.php?MemberID=1005" class="blackB"> 
+          G.          Riki          Hokama          </a><br>
+            			<a href="mailto:riki.hokama@co.maui.hi.us" class="greenU">riki.hokama@co.maui.hi.us</a></td>
+
+		  
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="8"></td>			
+          
+        <td width="233"><font class="black">ph: 
+          (808) 270-7768          <br>
+            fax: (808) 270-7848</font></td>		</tr>			
+<tr><td colspan="4"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>
+
+	<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"> 
+          </td>	
+
+          
+        <td width="269"><a href="/county/members/cMemberDetail.php?MemberID=1007" class="blackB"> 
+          Robert                    Carroll          </a><br>
+            			<a href="mailto:robert.carroll@co.maui.hi.us" class="greenU">robert.carroll@co.maui.hi.us</a></td>
+
+		  
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="8"></td>			
+          
+        <td width="233"><font class="black">ph: 
+          (808) 270-7246          <br>
+            fax: (808) 270-7247</font></td>		</tr>			
+<tr><td colspan="4"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>
+
+	<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"> 
+          </td>	
+
+          
+        <td width="269"><a href="/county/members/cMemberDetail.php?MemberID=1014" class="blackB"> 
+          Michelle                    Anderson          </a><br>
+            			<a href="mailto:michelle.anderson@co.maui.hi.us" class="greenU">michelle.anderson@co.maui.hi.us</a></td>
+
+		  
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="8"></td>			
+          
+        <td width="233"><font class="black">ph: 
+          (808) 270-7108          <br>
+            fax: (808) 270-7119</font></td>		</tr>			
+<tr><td colspan="4"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>
+
+	<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"> 
+          </td>	
+
+          
+        <td width="269"><a href="/county/members/cMemberDetail.php?MemberID=1008" class="blackB"> 
+          Jo Anne                    Johnson          </a><br>
+            			<a href="mailto:jo_anne.johnson@co.maui.hi.us" class="greenU">jo_anne.johnson@co.maui.hi.us</a></td>
+
+		  
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="8"></td>			
+          
+        <td width="233"><font class="black">ph: 
+          (808) 270-5504          <br>
+            fax: (808) 270-5505</font></td>		</tr>			
+<tr><td colspan="4"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>
+
+	<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"> 
+          </td>	
+
+          
+        <td width="269"><a href="/county/members/cMemberDetail.php?MemberID=1009" class="blackB"> 
+          Dain          P.          Kane          </a><br>
+            			<a href="mailto:dain.kane@co.maui.hi.us" class="greenU">dain.kane@co.maui.hi.us</a></td>
+
+		  
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="8"></td>			
+          
+        <td width="233"><font class="black">ph: 
+          (808) 270-7760          <br>
+            fax: (808) 270-7639</font></td>		</tr>			
+<tr><td colspan="4"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>
+
+	<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"> 
+          </td>	
+
+          
+        <td width="269"><a href="/county/members/cMemberDetail.php?MemberID=1010" class="blackB"> 
+          Danny          A.          Mateo          </a><br>
+            			<a href="mailto:danny.mateo@co.maui.hi.us" class="greenU">danny.mateo@co.maui.hi.us</a></td>
+
+		  
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="8"></td>			
+          
+        <td width="233"><font class="black">ph: 
+          (808) 270-7678          <br>
+            fax: (808) 270-7717</font></td>		</tr>			
+<tr><td colspan="4"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>
+
+	<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"> 
+          </td>	
+
+          
+        <td width="269"><a href="/county/members/cMemberDetail.php?MemberID=1011" class="blackB"> 
+          Michael          J.          Molina          </a><br>
+            			<a href="mailto:michael.molina@co.maui.hi.us" class="greenU">michael.molina@co.maui.hi.us</a></td>
+
+		  
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="8"></td>			
+          
+        <td width="233"><font class="black">ph: 
+          (808) 270-5507          <br>
+            fax: (808) 270-5508</font></td>		</tr>			
+<tr><td colspan="4"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>
+
+	<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"> 
+          </td>	
+
+          
+        <td width="269"><a href="/county/members/cMemberDetail.php?MemberID=1006" class="blackB"> 
+          Joseph                    Pontanilla          </a><br>
+            			<a href="mailto:joseph.pontanilla@co.maui.hi.us" class="greenU">joseph.pontanilla@co.maui.hi.us</a></td>
+
+		  
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="8"></td>			
+          
+        <td width="233"><font class="black">ph: 
+          (808) 270-5501          <br>
+            fax: (808) 270-5502</font></td>		</tr>			
+<tr><td colspan="4"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>
+
+	<tr>
+          <td width="20"><img alt="" src="/images/trans.gif" width="15" height="1"> 
+          </td>	
+
+          
+        <td width="269"><a href="/county/members/cMemberDetail.php?MemberID=1013" class="blackB"> 
+          Charmaine                    Tavares          </a><br>
+            			<a href="mailto:charmaine.tavares@co.maui.hi.us" class="greenU">charmaine.tavares@co.maui.hi.us</a></td>
+
+		  
+        <td width="30"><img alt="" src="/images/trans.gif" width="10" height="8"></td>			
+          
+        <td width="233"><font class="black">ph: 
+          (808) 270-7939          <br>
+            fax: (808) 270-7127</font></td>		</tr>			
+<tr><td colspan="4"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>
+
+	</table></td></tr>
+
+<tr><td><img alt="" src="/images/trans.gif" width="1" height="15"></td></tr>
+
+<tr>
+    <table border="0" width="542" cellpadding="0" cellspacing="0">	
+		
+<td align="left" colspan="3"><font class="greenB2">Committee Listings</font></td>		</tr>
+
+	<tr> 
+      <td align="left" class="black" width="306"> 
+        Budget and Finance Committee      </td>
+      <td width="12"><img alt="" src="/images/trans.gif" width="10" height="1" class="black"></td>		
+
+      <td width="224"><a class="greenU" href="mailto:bf.committee@co.maui.hi.us" > 
+        bf.committee@co.maui.hi.us        </a></td>
+    </tr>		
+
+<tr><td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>		</tr>
+	<tr> 
+      <td align="left" class="black" width="306"> 
+        Committee of the Whole      </td>
+      <td width="12"><img alt="" src="/images/trans.gif" width="10" height="1" class="black"></td>		
+
+      <td width="224"><a class="greenU" href="mailto:cow.committee@co.maui.hi.us" > 
+        cow.committee@co.maui.hi.us        </a></td>
+    </tr>		
+
+<tr><td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>		</tr>
+	<tr> 
+      <td align="left" class="black" width="306"> 
+        Housing and Human Services Committee      </td>
+      <td width="12"><img alt="" src="/images/trans.gif" width="10" height="1" class="black"></td>		
+
+      <td width="224"><a class="greenU" href="mailto:hhs.committee@co.maui.hi.us" > 
+        hhs.committee@co.maui.hi.us        </a></td>
+    </tr>		
+
+<tr><td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>		</tr>
+	<tr> 
+      <td align="left" class="black" width="306"> 
+        Land Use Committee      </td>
+      <td width="12"><img alt="" src="/images/trans.gif" width="10" height="1" class="black"></td>		
+
+      <td width="224"><a class="greenU" href="mailto:lu.committee@co.maui.hi.us" > 
+        lu.committee@co.maui.hi.us        </a></td>
+    </tr>		
+
+<tr><td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>		</tr>
+	<tr> 
+      <td align="left" class="black" width="306"> 
+        Parks and Economic Development Committee      </td>
+      <td width="12"><img alt="" src="/images/trans.gif" width="10" height="1" class="black"></td>		
+
+      <td width="224"><a class="greenU" href="mailto:ped.committee@co.maui.hi.us" > 
+        ped.committee@co.maui.hi.us        </a></td>
+    </tr>		
+
+<tr><td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>		</tr>
+	<tr> 
+      <td align="left" class="black" width="306"> 
+        Planning Committee      </td>
+      <td width="12"><img alt="" src="/images/trans.gif" width="10" height="1" class="black"></td>		
+
+      <td width="224"><a class="greenU" href="mailto:pc.committee@co.maui.hi.us" > 
+        pc.committee@co.maui.hi.us        </a></td>
+    </tr>		
+
+<tr><td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>		</tr>
+	<tr> 
+      <td align="left" class="black" width="306"> 
+        Public Works Committee      </td>
+      <td width="12"><img alt="" src="/images/trans.gif" width="10" height="1" class="black"></td>		
+
+      <td width="224"><a class="greenU" href="mailto:pw.committee@co.maui.hi.us" > 
+        pw.committee@co.maui.hi.us        </a></td>
+    </tr>		
+
+<tr><td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>		</tr>
+	<tr> 
+      <td align="left" class="black" width="306"> 
+        Water Resources Committee      </td>
+      <td width="12"><img alt="" src="/images/trans.gif" width="10" height="1" class="black"></td>		
+
+      <td width="224"><a class="greenU" href="mailto:wr.committee@co.maui.hi.us" > 
+        wr.committee@co.maui.hi.us        </a></td>
+    </tr>		
+
+<tr><td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>		</tr>
+<tr><td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="10"></td></tr>	  
+
+</table>
+
+<table width="552" border="0" cellpadding="1">
+<tr>
+    <td colspan="3" height="14"><font class="greenB2">Departmental 
+      Phone Listings</font></td>
+  </tr>
+
+  <tr>
+      <td width="306"><font class="blackB">Mayor: <br>
+         Managing Director:</font></td>
+      <td class="black" width="148">Alan M. Arakawa <br>
+         Keith A. Regan</td>
+      <td class="black" width="84">270-7855<br>
+        270-7855</td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Civil Defense</span><br>
+        <span class="black"> Administrator:</span></td>
+      <td width="148"><br>
+        <span class="black"> Kyle Watanabe</span></td>
+      <td width="84"><br>
+        <span class="black"> 270-7285</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Corporation Counsel</span><br>
+        <span class="black"> Corporation Counsel:<br>
+        First Deputy:</span></td>
+      <td width="148"><br>
+        <span class="black"> Brian T. Moto<br>Gregory J. Garneau</span></td>
+      <td class="black" width="84"><br>
+        270-7740<br>270-7740</td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Finance</span> <br>
+        <span class="black"> Director:<br>
+        Deputy Director:</span></td>
+      <td width="148"><br>
+        <span class="black"> Kalbert K. Young<br>
+        Wayne Y. Fujita</span></td>
+      <td width="84"><br>
+        <span class="black"> 270-7844<br>
+        270-7844</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Fire</span><br>
+        <span class="black"> Fire Chief:<br>
+        Deputy Chief:</span></td>
+      <td width="148"><br>
+        <span class="black"> Carl M. Kaupalolo<br>
+        Neal A. Bal</span></td>
+      <td class="black" width="84"><br>
+        270-7561<br>270-7561</td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Housing& Human Concerns</span><br>
+        <span class="black"> Director:<br>
+        Deputy Director:</span></td>
+      <td width="148"><br>
+        <span class="black"> Alice L. Lee<br>
+        Herman Andaya, Jr.</span></td>
+      <td width="84"><br>
+        <span class="black"> 270-7805<br>
+        270-7805</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Liqour Control</span><br>
+        <span class="black"> Director:<br>
+        Deputy Director:</span></td>
+      <td width="148"><br>
+        <span class="black"> Franklyn L. Silva<br>
+        Wayne M. Pagan</span></td>
+      <td width="84"><br>
+        <span class="black"> 243-7772<br>
+        243-7485</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Parks & Recreation</span><br>
+        <span class="black"> Director:<br>
+        Deputy Director:</span></td>
+      <td width="148"><br>
+        <span class="black"> Glenn T. Correa<br>
+        John L. Buck</span></td>
+      <td width="84"><br>
+        <span class="black"> 270-7626<br>
+        270-7626</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Personnel Services</span><br>
+        <span class="black"> Director:<br>
+        Deputy Director:</span></td>
+      <td width="148"><br>
+        <span class="black"> Lynn G. Krieg<br>
+        Lance T. Hiromoto</span></td>
+      <td width="84"><br>
+        <span class="black"> 270-7850<br>
+        270-7850</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Planning</span><br>
+        <span class="black"> Director:<br>
+        Deputy Director:</span></td>
+      <td width="148"><br>
+        <span class="black"> Michael W. Foley<br>
+        Wayne A. Boteilho</span></td>
+      <td width="84"><br>
+        <span class="black"> 270-7735<br>
+        270-7735</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Police</span><br>
+        <span class="black"> Police Chief:<br>
+        Deputy Police Chief:</span></td>
+      <td width="148"><br>
+        <span class="black"> Thomas M. Phillips<br>
+        Kekuhaupio R. Akana</span></td>
+      <td width="84"><br>
+        <span class="black"> 244-6300<br>
+        244-6305</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Prosecuting Attorney</span><br>
+        <span class="black"> Prosecuting Attorney:<br>
+        First Deputy:</span></td>
+      <td width="148"><br>
+        <span class="black"> Davelynn M. Tengan<br>
+        Benjamin M. Acob</span></td>
+      <td width="84"><br>
+        <span class="black"> 270-7777<br>
+        270-7777</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Public Works& Environmental 
+        Management</span><br>
+        <span class="black"> Director:<br>
+        Deputy Director:</span></td>
+      <td width="148" height="32"><br>
+        <br>
+        <span class="black"> Gilbert S. Coloma-Agaran<br>
+        Milton Arakawa</span></td>
+      <td width="84" height="32"><br>
+        <br>
+        <span class="black"> 270-7845<br>
+        270-7845</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Transportation</span><br>
+        <span class="black"> Director:<br>
+        Deputy Director:</span></td>
+      <td width="148"><br>
+        <span class="black"> Kyle K. Ginoza<br>
+        Don Medeiros</span></td>
+      <td width="84"><br>
+        <span class="black"> 270-7511<br>
+        270-7511</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Water Supply</span><br>
+        <span class="black"> Director:<br>
+        Deputy Director:</span></td>
+      <td width="148"><br>
+        <span class="black"> George Y. Tengan<br>
+        Jeffrey T. Pearson</span></td>
+      <td width="84"><br>
+        <span class="black"> 270-7816<br>
+        270-7834</span></td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Mayor's Office</span><br>
+        <span class="black">Budget Director:<br>
+        CDBG Coordinator:<br>
+        Economic Development Coordinator:<br>
+        Public Information Officer:<br>
+        Senior Executive Assistant:<br>
+        Executive Assistant:<br>
+        Executive Assistant:<br>
+        Executive Assistant:<br>
+        Executive Assistant:<br>
+        Executive Assistant:<br>
+        Executive Assistant:<br>
+        Executive Assistant: </span> </td>
+      <td width="148"><br>
+        <font class="black"> Danny F. Agsalog<br>
+        Agnes Hayashi<br>
+        Lynn A.S. Araki-Regan<br>
+        Ellen Pelissero<br>
+        Dave DeLeon<br>
+        Adele Rugg<br>
+        David Ching<br>
+        Don Couch<br>
+        Jan Yagi Buen<br>
+        Mele Carroll<br>
+        Mercedes D. Neri<br>
+        Willie Albiar </font>
+      </td>
+      <td class="black" width="84">270-7855<br>
+270-7855<br>
+270-7213<br>
+270-7710<br>
+270-7866<br>
+270-7855<br>
+270-7855<br>
+270-7855<br>
+270-7855<br>
+270-7855<br>
+270-7855<br>
+270-7855<br>
+270-7855
+</td>
+  </tr>
+  <tr>
+      <td width="306"><span class="blackB">Managing Director's Office</span><br>
+        <span class="black">First Assistant to Managing Director:<br>
+        Executive Assistant to Managing Director:<br>
+        CIP Coordinator<br>
+        Energy Coordinator<br>
+        GIS Manager<br>
+        MIS Manager <br>
+        </span> </td>
+      <td width="148"><br>
+        <span class="black"> Dave Taylor<br>
+        Dennis Schwind<br>
+        Jay Buzianis<br>
+        Kal Kobayashi<br>
+        Bill Medeiros<br>
+        Jacob Verkerke </span> </td>
+      <td class="black" width="84"><br>
+270-7855<br>
+270-7855<br>
+270-7855<br>
+270-7167<br>
+270-7832<br>
+270-7519<br>
+270-7842 <br>
+</td>
+</tr>
+</table>
+
+
+
+  <table border="0" width="552" cellpadding="0" cellspacing="0">
+    <tr align="left"> 
+      <td align="left" width="308"><font class="greenB2">Departmental Listings</font></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Budget Director</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:budget.director@co.maui.hi.us">budget.director@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Community Development Block Grant</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:cdbg@co.maui.hi.us">cdbg@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Civil Defense</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:civil.defense@co.maui.hi.us">civil.defense@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Housing and Human Concerns</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:director.hhc@co.maui.hi.us">director.hhc@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Economic Development</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"> <a class="greenU" href="mailto:economic.development@co.maui.hi.us">economic.development@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Energy</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:energy.office@co.maui.hi.us">energy.office@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Finance</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:finance@co.maui.hi.us">finance@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Housing and Human Concerns - 
+        Grants</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:grants.hhc@co.maui.hi.us">grants.hhc@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Housing division - Kahului</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:housing.hhc@co.maui.hi.us">housing.hhc@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Housing and Human Concerns - 
+        Immigrant</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:immigrantservices.hhc@co.maui.hi.us">immigrantservices.hhc@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Liquor Control</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:liquor@co.maui.hi.us">liquor@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Maui Police Department<br>
+    </tr>
+    <tr> 
+      <td class="black" width="308"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Community Relations 
+        Section  </td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:crs@mpd.net">crs@mpd.net </a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Records 
+        Section </td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto: RecordsSection@mpd.net"> RecordsSection@mpd.net </a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vice 
+        Section </td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto: vice@mpd.net"> vice@mpd.net </a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" width="308" class="black" >MIS</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:mis.division@co.maui.hi.us">mis.division@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Parks</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:parks.dept@co.maui.hi.us">parks.dept@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Personnel</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"> <a class="greenU" href="mailto:personnel.services@co.maui.hi.us">personnel.services@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Planning</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:planning@co.maui.hi.us">planning@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Prosecuting Attorney</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:prosecuting.attorney@co.maui.hi.us">prosecuting.attorney@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Public Works</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:public.works@co.maui.hi.us">public.works@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Solid Waste</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:recycle.maui@co.maui.hi.us">recycle.maui@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Kaunoa</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:seniorservices.hhc@co.maui.hi.us">seniorservices.hhc@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Volunteer Center Kaunoa</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:vcmaui@co.maui.hi.us">vcmaui@co.maui.hi.us</a></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><img alt="" src="/images/trans.gif" width="1" height="5"></td>
+    </tr>
+    <tr> 
+      <td align="left" class="black" width="308">Webmaster</td>
+      <td width="11"><img alt="" src="/images/trans.gif" width="10" height="1"></td>
+      <td width="233"><a class="greenU" href="mailto:webmaster@co.maui.hi.us">webmaster@co.maui.hi.us</a> 
+      </td>
+    </tr>
+    <tr> 
+      <td align="left" colspan="3"><font class="black"><br>NOTICE: Any correspondence 
+        sent to the County including e-mail will be treated as public information 
+        and cannot be deemed confidential.</font></td>
+    </tr>
+  </table>
+
+
+<!-- Footer for Maui County Web pages -->
+
+<!-- Start FOOTER -->
+        </td>
+        </tr>
+        </table>
+        
+        </form>
+</td>
+</tr>
+
+<tr>
+<td colspan="5">
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td bgcolor="#999999"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        <td bgcolor="#ebefeb"><img alt="grey space for formatting" src="/images/trans.gif" width="185" height="25"></td>
+        <td bgcolor="#999999"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        <td><img alt="grey space for formatting" src="/images/trans.gif" width="562" height="1"></td>
+        <td><img alt="grey space for formatting" src="/images/trans.gif" width="5" height="1"></td>
+        </tr>
+        
+        <tr>
+        <td colspan="3" bgcolor="#000000"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        <td><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        <td><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        </tr>
+        
+        <tr>
+        <td bgcolor="#000000"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="20"></td>
+        <td class="middle" align="center" bgcolor="#003300"><font class="white"><a href="/information/sitemap.php" class="white">website map</a>  |  <a href="/information/faq.php" class="white">faq</a>  |  <a href="/information/" class="white">contact</a></td>
+        <td bgcolor="#000000"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        <td class="middle" align="right"><font class="black"><a href="/mayor/" class="green">mayor</a>  |   <a href="/county/" class="green">county council</a>  |   <a href="/departments/" class="green">departments</a>  |   <a href="/boards/" class="green">boards and commissions</a>  |   <a href="/information/" class="green">information</a></font></td>
+        <td><img alt="grey space for formatting" src="/images/trans.gif" width="5" height="1"></td>
+        </tr>
+        
+        <tr>
+        <td colspan="5" bgcolor="#000000"><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        </tr>   
+        
+        <tr>
+        <td><img alt="grey space for formatting" src="/images/trans.gif" width="1" height="1"></td>
+        <td align="center"><font class="black11"><a href="/privacypolicy.htm" class="gray11">privacy policy</a>  |  <a href="/accessterms.htm" class="gray11">terms of use</a></font></td>
+        <td class="middle" colspan="2" align="right"><font class="black11">Copyright © 2001-2005  County of Maui. All Rights Reserved.</td>
+        <td><img alt="grey space for formatting" src="/images/trans.gif" width="5" height="20"></td>
+        </tr>
+        </table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<!-- End of Footer -->

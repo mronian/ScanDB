@@ -1,0 +1,411 @@
+<DOC>
+<DOCNO>f00076</DOCNO>
+<DOCHDR>http://www.nextel.com/contact/index.shtml</DOCHDR>
+<html>
+<head>
+  <title>Nextel - Contact Us</title>
+  <link rel="stylesheet" href="/nextel_pc.css" type="text/css">
+
+<!-- BEGIN: Header -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script src="/Header.js" language=javascript></script>
+
+<script src="/common.js" language=javascript></script>
+
+<script language="javascript">
+
+autoRedirect();
+
+function validateSearch(form) {	
+	var hostName = window.location.hostname
+	hostSet = new Array( ["www.nextel.com","nextelonline.nextel.com"],["mulan.nextel.com","nextelonline.nextel.com"],["www-test.nextel.com","noltest.nextel.com"],["localhost","noltest.nextel.com"] )
+	for (x=0;x<hostSet.length;x++) {
+		if (hostName == hostSet[x][0]) {
+			hostName = hostSet[x][1]
+			break
+		}
+	}
+	document.verity_search.action="http://" + hostName + "/NASApp/search/search.jsp";
+	document.verity_search.submit();
+}
+</script>
+
+
+
+</head>
+
+
+
+<body bgcolor="#FFFFFF" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" onload="getSection();"><a name="top"></a>
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="735">
+
+	<tr>
+
+		<td colspan="2" bgcolor="#FFC709">
+
+		<table border="0" cellpadding="0" cellspacing="0" width=100%>
+        <tr>	
+		<FORM name="verity_search" method="GET" accept-charset="iso-8859-1" action="" onSubmit="validateSearch(); return false;">	
+<script language=javascript>
+if (hasAribaCookie()) {
+		//alert ("ariba header")
+		document.write('<td rowspan="2"><a href="javascript:sourceRedirect(1)"><img src="/img/topnav/logo.gif" width="132" height="50" border="0" alt="NEXTEL"></a></td><td align="right" class="yellowbar"><a href="javascript:sourceRedirect(1)" class="yellowbar">Home</a> | <a href="/NASApp/onlinestore/Action/CartLanding" class="yellowbar">View Cart</a>');
+	} else {
+		//alert ("normal header")	
+		document.write('<td rowspan="2"><a href="javascript:sourceRedirect(1)"><img src="/img/topnav/logo.gif" width="132" height="50" border="0" alt="NEXTEL"></a></td><td align="right" class="yellowbar"><a href="javascript:sourceRedirect(1)" class="yellowbar">Home</a> | <a href="javascript:sourceRedirect(8)" class="yellowbar">Contact Us</a> | <a href="/NASApp/onlinestore/Action/CartLanding" class="yellowbar">View Cart</a> | <a href="/phones_plans/retailers.shtml" class="yellowbar">Find a Store</a>');
+	}
+</script>	
+              &nbsp;&nbsp;&nbsp;&nbsp;
+		<script language=javascript>
+			if (hasCACookie() || hasAribaCookie()){
+					//alert ("no search")
+					document.write('');
+				} else {
+					//alert ("print search")
+					document.write('<br>Search: <input type=text name=qt size="19" maxlength="1991" value="" class="yellowbar"><img src="/img/spacer.gif" width=3 height=8><input type="image" src="/img/button_go_green.gif" name="search" alt="Go" value="go" border="0" width="21" height="21" align="absmiddle"><img src="/img/spacer.gif" width=17>');														
+				}
+		</script>
+		</td>   
+		</FORM>
+      </table></td>
+
+	</tr>
+
+	<tr>
+
+		<td colspan="2" bgcolor="#FFFFFF"><img src="/img/spacer.gif" width="525" height="2" border="0"></td>
+
+	</tr>
+
+	<tr>
+
+		<td bgcolor="#000000">
+
+		<table border="0" cellpadding="0" cellspacing="0">
+
+			<tr>
+
+				<td bgcolor="#000000"><img src="/img/spacer.gif" width="1" height="1"></td>
+
+<script language=javascript>
+if (hasAribaCookie()) {
+		//alert ("ariba header")
+		document.write('<td><a href="/NASApp/onlinestore/Action/StoreLanding" onMouseOver="showMenu(\'phones_plansLyr\')" onMouseOut="dropMenu(\'phones_plansLyr\')"><img src="/img/topnav/phones_plans_off.gif" width="162" height="22" border="0" name="phones_plans" alt="Phones and Rate Plans"></a></td>');
+	} else {
+		//alert ("normal header")	
+		document.write('<td><a href="/NASApp/onlinestore/Action/StoreLanding" onMouseOver="showMenu(\'phones_plansLyr\')" onMouseOut="dropMenu(\'phones_plansLyr\')"><img src="/img/topnav/phones_plans_off.gif" width="162" height="22" border="0" name="phones_plans" alt="Phones and Rate Plans"></a></td><td bgcolor="#000000"><img src="/img/spacer.gif" width="1" height="1"></td><td><a href="/services/index.shtml" onMouseOver="showMenu(\'servicesLyr\')" onMouseOut="dropMenu(\'servicesLyr\')"><img src="/img/topnav/services_off.gif" width="81" height="22" border="0" name="services" alt="Services"></a></td><td bgcolor="#000000"><img src="/img/spacer.gif" width="1" height="1"></td><td><a href="/support/index.shtml" onMouseOver="showMenu(\'supportLyr\')" onMouseOut="dropMenu(\'supportLyr\')"><img src="/img/topnav/support_off.gif" width="148" height="22" border="0" name="support" alt="Customer Support"></a></td><td bgcolor="#000000"><img src="/img/spacer.gif" width="1" height="1"></td><td><a href="/mynextel/index.shtml" onMouseOver="showMenu(\'mynextelLyr\')" onMouseOut="dropMenu(\'mynextelLyr\')"><img src="/img/topnav/mynextel_off.gif" width="91" height="22" border="0" name="mynextel" alt="MyNextel"></a></td><td bgcolor="#000000"><img src="/img/spacer.gif" width="1" height="1"></td><td><a href="/about/index.shtml" onMouseOver="showMenu(\'aboutLyr\')" onMouseOut="dropMenu(\'aboutLyr\')"><img src="/img/topnav/about_off.gif" height="22" border="0" name="about" alt="About Nextel"></a></td>');
+	}
+</script>		
+	  
+
+				<td bgcolor="#000000"><img src="/img/spacer.gif" width="1" height="1"></td>
+
+			</tr>
+
+		</table>
+
+		</td>
+
+		<td bgcolor="#000000" align=right valign=bottom>&nbsp;
+
+
+		<script language=javascript>
+
+			function logOut() {
+
+				confBox = confirm("Logging out will delete any items you may have added to your shopping cart. Are you sure you want to continue and log out?")
+
+				if (confBox == true) { location = "/NASApp/registration/do/Logoff" }
+
+			}
+
+			var cookieTest = document.cookie
+
+			if (cookieTest.indexOf('SMSESSION') >= 0 && cookieTest.indexOf('LOGGEDOFF') == -1) {
+
+				document.write('<a href="javascript:logOut()"><img src="/img/topnav/button_logout.gif" border=0 width=69 height=19 hspace=4></a>');
+
+			} else if (hasAribaCookie()) {
+			
+							document.write('');
+						
+			} else {
+
+				document.write('<a href="/mynextel_login"><img src="/img/topnav/button_login.gif" border=0 width=69 height=19 hspace=4></a>');
+
+			}
+
+		</script>
+
+
+
+		</td> 
+
+	</tr>
+
+	<tr>
+
+		<td colspan="2" bgcolor="#FFFFFF"><img src="/img/spacer.gif" width="1" height="1" border="0"></td>
+
+	</tr>
+
+</table>
+
+<!-- END: Header -->
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="727">
+	<tr>
+		<td rowspan=2><img src="/img/spacer.gif" width=10 height=1></td>
+		<td colspan=5 valign=top><img src="/img/spacer.gif" width=1 height=25><br>
+		<img src="/img/hr_black.gif" width=717 height=1><br>
+		<img src="/img/spacer.gif" width=1 height=3></td>
+	</tr>
+	<tr>
+		
+<td valign=top>
+<img src="/img/title_contactus.gif" width=226 height=73 alt="Contact Us"><br>
+<br>
+<div align=center><img src="images/photo_contactus.jpg" width=210 height=247 alt="Contact Us"></div><br>
+	
+
+<b>Web Site Feedback</b><br>
+<a href="/NASApp/care/WCGeneralQuestionsFeedbackServlet">Email nextel.com</a> with your suggestions or comments about our Web site. 			
+
+<td><img src="/img/spacer.gif" width=24 height=1></td>
+
+<td valign=top>
+<table border="0" cellspacing="0" cellpadding="4" bgcolor="#666666" width="100%">
+<tr>    
+<td><span class="subcathdr">Customer Service</span></td>
+</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="4" bgcolor="#FCF7DA" width="100%">
+<tr>    
+<td>For help with your account, including billing questions, phone and service support, and rate plan changes:<br>
+<br>
+<a href="/NASApp/care/WCCustomerCareServlet/">Email us</a><br>
+<br>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>    
+<td valign="top" class="smalltext" span><nobr>Or call:</nobr></td>
+<td span class="smalltext"><nobr>800-639-6111</nobr><br><br></td>
+</tr>
+<tr>    
+<td valign="top" class="smalltext" span><nobr>Mon - Fri: &nbsp;</nobr></td>
+<td span class="smalltext"><nobr>7:00 a.m. - 10:00 p.m. </nobr>(Local  time)</td>
+</tr>
+<tr>
+<td valign="top" class="smalltext" span><nobr>Sat: </nobr></td>
+<td span class="smalltext"><nobr>8:00 a.m. - 5:00 p.m. </nobr>(Local  time)</td>
+</tr>
+</table>
+</td></tr>			
+</table>			
+<br>
+
+<table border="0" cellspacing="0" cellpadding="4" bgcolor="#666666" width="100%">
+<tr>    
+<td><span class="subcathdr">Order Status &amp; Support</span></td>
+</tr>
+</table>			
+<img src="/img/spacer.gif" width=222 height=4><br>
+<b>Check Order Status</b><br>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr>
+<td><img src="/img/spacer.gif" width=2 height=8></td>
+<td><b>Phones, accessories</b></td>
+</tr>
+<tr>
+<td><img src="/img/spacer.gif" width=2 height=8></td>
+<td>Enter your nextel.com order number:<br>
+<img src="/img/spacer.gif" width="1" height="1" border="0">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<form name=order_tracking_form method=GET action="/NASApp/onlinestore/NextelOrderTrackerServlet" >
+			<tr>
+				<td><input type="text" size="12" name="order_number" value=""></td>
+				<td>&nbsp;</td>
+				<td><input type=image name=go src="/img/button_go.gif" onClick="return checkTrackingNumber();" width="21" height="15" border="0" alt="Go"></td>
+			</tr>
+			</form>
+			</table>
+<span class="smalltext">Use lowercase letters and include dashes. Example: xx-xxxx-1234567</span>
+</td>
+</tr>
+<tr>
+<td><img src="/img/spacer.gif" width=2 height=8></td>
+<td><b>Ring tones, wallpapers, games, applications</b><br>
+<a href="/support/download_status.shtml">Check status</a></td>
+</tr>
+<tr>
+<td><img src="/img/spacer.gif" width=2 height=8></td>
+<td><b>Number transfers</b><br>
+<a href="/services/wlnp/check.shtml">Check status</a></td>
+</tr>
+</table>
+<hr width="100%" size="1" align="left" noshade color="#cccccc">
+<b>Contact Order Support</b><br>		
+If you placed your order online:<br> 
+<a href="emailwebsales.shtml">Email Web Sales</a><br>
+			<br>
+			
+If you placed your order by phone:<br>
+<a href="emailtelesales.shtml">Email Telesales</a></td>
+
+<td><img src="/img/spacer.gif" width=20 height=1></td>
+
+<td valign=top>
+
+<table border="0" cellspacing="0" cellpadding="4" bgcolor="#666666" width="100%">
+<tr>    
+<td><span class="subcathdr">Sales</span></td>
+</tr>
+</table>				  
+<img src="/img/spacer.gif" width=222 height=4><br>
+<b>Learn more about our phones, accessories and services</b>: Call 800-NEXTEL9 (800-639-8359), or <a href="callme.shtml">give us your number</a> and we'll call you
+			  <br>
+<br>
+
+<b>Enterprise & Public Sector Accounts</b>
+
+<table border="0" cellpadding="1" cellspacing="1">
+<tr>
+<td valign="top"><img src="/img/bullet_red_arrow_2.gif" width=6 height=11 border=0 vspace=1></td>
+<td><a href="/about/enterprise/corporate/index.shtml" class=bulletLink>Corporate Accounts</a></td>
+</tr>
+<tr>
+<td valign="top"><img src="/img/bullet_red_arrow_2.gif" width=6 height=11 border=0 vspace=1></td>
+<td><a href="/about/enterprise/erate/index.shtml" class=bulletLink>Education Accounts</a></td>
+</tr>
+<tr>
+<td valign="top"><img src="/img/bullet_red_arrow_2.gif" width=6 height=11 border=0 vspace=1></td>
+<td><a href="/about/enterprise/gsa/public_safety.shtml" class=bulletLink>Public Safety Accounts</a></td>
+</tr>
+<tr>
+<td valign=top><img src="/img/bullet_red_arrow_2.gif" width=6 height=11 border=0 vspace=1></td>
+<td><a href="/about/enterprise/gsa/index.shtml" class=bulletLink>Public Sector Accounts</a></td>
+</tr>
+</table>
+<br>
+
+<table border="0" cellspacing="0" cellpadding="4" bgcolor="#666666" width="100%">
+<tr>    
+<td><span class="subcathdr">Corporate Contacts</span></td>
+</tr>
+</table>
+<img src="/img/spacer.gif" width=222 height=4><br>
+      <b>Investor Relations</b> <br>
+		  <a href="mailto:investor.relations@nextel.com">Investor.Relations@nextel.com</a><br>
+<br>
+		  <b>Media Relations</b><br>
+			  <a href="mailto:media.relations@nextel.com">Media.Relations@nextel.com</a><br>
+			  703-433-4700<br>
+			  <br>
+			  <b>Human Resources</b><br>
+			<a href="http://www.nexteljobs.com">Search jobs and submit your resume</a> <br>
+			<br>
+<b>Nextel Dealer Program</b><br>
+<a href="../about/dealers/program.shtml">Learn how to become an authorized representative</a> <br>
+<br>
+
+<b>Nextel Affiliate Program</b><br>
+<a href="../about/affiliates.shtml">Apply to become a Nextel Affiliate Partner</a> <br>
+<br>
+
+<table border="0" cellspacing="0" cellpadding="4" bgcolor="#666666" width="100%">
+  <tr>
+    <td><span class="subcathdr">Corporate Address </span></td>
+  </tr>
+</table>
+<img src="/img/spacer.gif" width=222 height=4><br>
+<b>NEXTEL COMMUNICATIONS</b><br>
+  <GEO TYPE="US">2001 Edmund Halley Drive<br>
+    Reston, VA 20191</GEO><br>
+    Main phone: 703-433-4000<br>
+<p></p>
+</td>
+</tr>
+</table>
+
+<!--START: Bottom footer table-->
+
+<script language="JavaScript"><!--
+function homeLink() {
+	if (window.pubArray) { sourceRedirect(1) }
+	else { location = "/index.shtml" }
+}
+
+function open_popup1 (file,height,width) {
+	yheight = height; xwidth = width; url = file;
+	newWindow = eval('window.open(url,"new_window","height=' + yheight + ',width=' + xwidth + ',scrollbars=yes,menubar=yes,directories=no,location=no,status=yes,resizable=yes")')
+	newWindow.focus();
+}
+
+function hasAribaCookie() {
+	cookieContentsAriba = document.cookie
+	cookieIndexAriba = cookieContentsAriba.indexOf('AribaEnabledAisle')
+	if (cookieIndexAriba >= 0) { 
+		return true
+	} else {
+		return false
+	}
+}
+
+--></script>
+<!--START: Bottom footer table-->
+<table border="0" cellpadding="0" cellspacing="0" width="735">
+<tr>
+<td><img src="/img/spacer.gif" width="14" height="25"></td>
+</tr>
+
+<tr>
+<td bgcolor="#BFBFBF"><img src="/img/spacer.gif" width="1" height="2"></td>
+</tr>
+
+<tr>
+<td bgcolor="#ededed">
+<table border="0" cellpadding="0" cellspacing="14" width="735">
+<tr>
+<script language=javascript>
+if (hasAribaCookie()) {
+		//alert ("ariba footer")
+		document.write('<td class="smalltext"> <a href="/NASApp/onlinestore/Action/StoreLanding" target="_top" class="footerLink">Phones & Rate Plans</a><br>');
+	} else {
+		//alert ("normal footer")	
+		document.write('<td class="smalltext"> <a href="/index.shtml" class="footerLink" target="_top">Home</a>  | <a href="/about/index.shtml" target="_top" class="footerLink">About Nextel</a> | <a href="/contact/index.shtml" target="_top" class="footerLink">Contact Us</a> | <a href="/support/index.shtml" target="_top" class="footerLink">Customer Support</a><br><a href="http://developer.nextel.com/" target="_top" class="footerLink">Developer Program</a> | <a href="/sitemap.shtml" target="_top" class="footerLink">Site Map</a> | <a href="/espanol/index.shtml" target="_top" class="footerLink">En Español</a><br>');
+	}
+</script>	                               
+<img src="/img/spacer.gif" width="10" height="14"><br>
+By accessing this site, you accept the terms of our <a href="/visitor_agreement.shtml" class="footerLinkSM" target="_top">Acceptable Use Policy and Visitor Agreement</a> and <a href="/privacy_prefs.shtml" class="footerLinkSM" target="_top">Privacy Policy</a>. &#169; 1995-2005 Nextel Communications. All rights reserved. <a href="/legal.shtml" class="footerLinkSM" target="_top">Copyright and Disclaimer Notice</a></td>
+<td valign="top"><a href="javascript:open_popup1('/ctia_popup.html',480,395)"><img src="/img/logo_cic.gif" width="58" height="72" alt="CTIA Consumer Code" border="0" hspace="4"></a></td>
+<td valign="top"><a href="https://digitalid.verisign.com/as2/c22d4f6a7af1664f3349b07d53f0d2a1" target="_blank"><img src="/img/verisign.gif" width="95" height="63" alt="VeriSign" border="0" hspace="4"></a></td>
+<td valign="top"><a href="/fact_driver.shtml" target="_top"><img src="/img/talk_safely2.gif" alt="Talk Safely" border="0" hspace="4"></a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#666666"><img src="/img/spacer.gif" width="1" height="2"></td>
+</tr>
+</table>
+
+
+<!-- SiteCatalyst code version: G.4. Copyright 1997-2003 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" src="/s_code_remote.js"></script>
+<!-- End SiteCatalyst code version: G.4. -->
+
+<!--END: Bottom footer table-->
+
+
+</body>
+</html>

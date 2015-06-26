@@ -1,0 +1,622 @@
+<DOC>
+<DOCNO>g00042</DOCNO>
+<DOCHDR>http://www.infoworld.com/about/abt_con.html</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>InfoWorld: Contact Us</title>
+<link rel="stylesheet" href="../script/main.css" type="text/css">
+<meta name="description" content="meta_description"><meta name="keywords" content="meta_keywords">
+	
+<style type="text/css">
+<!--
+.curBarClr {
+	background-color : #9A9A9A;
+}
+
+.curTitleSub {
+	font-family : arial,verdana,sans-serif;
+	font-size : 11px;
+	font-weight : bold;
+	color : #656565;
+}
+-->
+</style>
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#003382" vlink="#003382" alink="#003382" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+<center>
+<script language="javascript" src="http://www.infoworld.com/script/ads/Tacoda_AMS_DDC_Header.js"></script>
+<script type="text/javascript">
+//Infoworld = IW; Computerworld=CW; Network World=NWW
+var sitePrefix = "IW";
+
+//dev=emetadev.nww.com; prod=login.idg.com
+//var erightsHost = "emetadev.nww.com";
+var erightsHost = "login.idg.com"
+
+function writeLinks()
+{
+	var erights = retrieveCookie("ERIGHTS");
+	var links = "";
+	var erightsLoginLink = "<a class='blueVrdSm' href='https://" + erightsHost + "/idg/" + sitePrefix + "Login.do?url=" + document.location.href + "'>Login</a>";
+	var erightsProfileLink = "<a class='blueVrdSm' href='https://" + erightsHost + "/idg/" + sitePrefix + "Profile.do?call=viewProfile&url=" + document.location.href + "'>Profile</a>";
+	var erightsLogoutLink = "<a class='blueVrdSm' onClick='delete_cookie(); return false;' href='https://" + erightsHost + "/idg/" + sitePrefix + "Logout.do'>Logout</a>";
+
+	if ( erights == null || erights.length < 1 ) {
+//		links = "<span class='blackVrdSm'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + erightsLoginLink + "</span>";
+	}
+	else {
+		links = "<span class='blackVrdSm'>IDG Network: Logged In &nbsp;" + erightsProfileLink + "&nbsp;&nbsp;&nbsp;" + erightsLogoutLink + "</span>";
+	}
+
+	return links;
+}
+
+function delete_cookie(){
+	var cookiePCOOKIE = setCookie('PCOOKIE','','delete');
+	var cookieERIGHTS = setCookie('ERIGHTS','','delete');
+	window.location= "https://" + erightsHost + "/idg/" + sitePrefix + "Logout.do";
+}
+
+function retrieveCookie( cookieName ) {
+	/* retrieved in the format
+	cookieName4=value; 
+	cookieName3=value; 
+	cookieName2=value;  
+	cookieName1=value;
+	only cookies for this domain and path will be retrieved */
+
+	var cookieJar = document.cookie.split( "; " );
+
+	for( var x = 0; x < cookieJar.length; x++ ) {
+		var oneCookie = cookieJar[x].split( "=" );
+		if( oneCookie[0] == escape( cookieName ) ) { 
+			return unescape( oneCookie[1] ); 
+		}
+	}
+	return null;
+}
+
+function setCookie( cookieName, cookieValue, lifeTime, path, domain, isSecure ) {
+	if( !cookieName ) { 
+		return false; 
+	}
+
+	if( lifeTime == "delete" ) { 
+		lifeTime = -10; 
+	} //this is in the past.  Expires immediately.
+
+	/* This next line sets the cookie but does not overwrite other  
+	cookies.syntax:  cookieName=cookieValue[;expires=dataAsString[;path=pathAsString[; 
+	domain=domainAsString[;secure]]]] Because of the way that document.cookie behaves, writing this here is  
+	equivalent to writing document.cookie = whatIAmWritingNow + "; " + document.cookie; */
+
+	document.cookie = escape( cookieName ) + "=" + escape( cookieValue ) + 
+	( lifeTime ? ";expires=" + ( new Date( ( new Date() ).getTime() + (1000 * lifeTime ) ) ).toGMTString() : "" ) + 
+	( path ? ";path=" + path : "") + ( domain ? ";domain=" + domain : "")  + ( isSecure ? ";secure" : "");
+
+	/*check if the cookie has been set/deleted as required*/
+	if( lifeTime < 0 ) { 
+		if( typeof( retrieveCookie( cookieName ) ) ==  "string" ) 
+		{ 
+			return false; 
+		} 
+		return true; 
+	}
+
+	if( typeof( retrieveCookie( cookieName ) ) == "string" ) 
+	{ 
+		return  true; 
+	}
+
+	return false;
+}
+
+</script>
+
+<table width="750" height="24" border="0" cellpadding="0" cellspacing="0"><tr><td><script type="text/javascript">document.writeln(writeLinks());</script></td><td align="right"><span class=grayVrdSm><a href="/about/" class="blueVrdSm">About InfoWorld</a> : <a href="/advertise/" class="blueVrdSm">Advertise</a> : <a href="http://subscribe.infoworld.com/cgi-win/ifwd.cgi?m=add&p=ww3hm1" class="blueVrdSm">Subscribe</a> : <a href="/about/abt_con.html" class="blueVrdSm">Contact Us</a> : <a href="/awards/" class="blueVrdSm">Awards</a> : <a href="/evt_hom.html" class="blueVrdSm">Events</a></span> : <a href="/store" class="blueVrdSm">Store</a></span></td></tr></table>	
+<NOLAYER><IFRAME SRC="http://ad.doubleclick.net/adi/idg.us.info.popup/ros;sz=1x1;tile=4;ord=Thursday, 03-Mar-2005 04:34:23 PST?" width="1" height="1" frameborder="no" border="0" MARGINWIDTH="0" MARGINHEIGHT="0" SCROLLING="no">
+<A HREF="http://ad.doubleclick.net/jump/idg.us.info.popup/ros;abr=!ie;sz=1x1;tile=4;ord=Thursday, 03-Mar-2005 04:34:23 PST?"><IMG SRC="http://ad.doubleclick.net/ad/idg.us.info.popup/ros;abr=!ie;sz=1x1;tile=4;ord=Thursday, 03-Mar-2005 04:34:23 PST?" border=0 height="1" width="1"></A></IFRAME></NOLAYER><ILAYER id="layer4" visibility="hidden" width=1 height=1></ILAYER>
+
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
+<script language="javascript">
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="ehg-idg.hitbox.com";
+
+//BEGIN EDITABLE SECTION
+//CONFIGURATION VARIABLES
+hbx.acct="DM520506G2AD83EN3";//ACCOUNT NUMBER(S)
+hbx.pn="PUT+PAGE+NAME+HERE";//PAGE NAME(S)
+hbx.mlc="CONTENT+CATEGORY";//MULTI-LEVEL CONTENT CATEGORY
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg="";//VISITOR SEGMENTATION
+hbx.fnl="";//FUNNELS
+
+//CAMPAIGNS
+hbx.cmp="";//CAMPAIGN ID
+hbx.cmpn="";//CAMPAIGN ID IN QUERY
+hbx.dcmp="";//DYNAMIC CAMPAIGN ID
+hbx.dcmpn="source";//DYNAMIC CAMPAIGN ID IN QUERY
+hbx.dcmpe="";//DYNAMIC CAMPAIGN EXPIRATION
+hbx.dcmpre="";//DYNAMIC CAMPAIGN RESPONSE EXPIRATION
+hbx.hra="";//RESPONSE ATTRIBUTE
+hbx.hqsr="";//RESPONSE ATTRIBUTE IN REFERRAL QUERY
+hbx.hqsp="";//RESPONSE ATTRIBUTE IN QUERY
+hbx.hlt="";//LEAD TRACKING
+hbx.hla="";//LEAD ATTRIBUTE
+hbx.gp="";//CAMPAIGN GOAL
+hbx.gpn="";//CAMPAIGN GOAL IN QUERY
+hbx.hcn="";//CONVERSION ATTRIBUTE
+hbx.hcv="";//CONVERSION VALUE
+hbx.cp="null";//LEGACY CAMPAIGN
+hbx.cpd="";//CAMPAIGN DOMAIN
+
+//CUSTOM VARIABLES
+hbx.ci="";//CUSTOMER ID
+hbx.hc1="";//CUSTOM 1
+hbx.hc2="";//CUSTOM 2
+hbx.hc3="";//CUSTOM 3
+hbx.hc4="";//CUSTOM 4
+hbx.hrf="";//CUSTOM REFERRER
+hbx.pec="";//ERROR CODES
+
+//INSERT CUSTOM EVENTS
+
+//END EDITABLE SECTION
+
+//REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
+</script><script language="javascript1.1" defer src="http://www.infoworld.com/script/hitbox_web_analysis.js"></script>
+<!--END WEBSIDESTORY CODE-->
+
+<table border="0" cellspacing="0" cellpadding="0" valign="top" align="center">
+<tr>			
+<td>
+
+
+
+
+<NOLAYER>				
+<IFRAME SRC="http://ad.doubleclick.net/adi/idg.us.info.general/index;pos=leader; pkey=;skey=;paud=;saud=;sz=728x90;tile=1;ord=233404030305?" width="728" height="90" frameborder="no" border="0" MARGINWIDTH="0" MARGINHEIGHT="0" SCROLLING="no">				
+<A HREF="http://ad.doubleclick.net/jump/idg.us.info.general/index;abr=!ie;pos=leader; pkey=;skey=;paud=;saud=;sz=728x90;tile=1;ord=233404030305">				
+<IMG SRC="http://ad.doubleclick.net/ad/idg.us.info.general/index;abr=!ie;pos=leader; pkey=;skey=;paud=;saud=;sz=728x90;tile=1;ord=233404030305?" border=0 width="728" height="90"></A>				
+</IFRAME>				
+</NOLAYER>				
+<ILAYER id="layer1" visibility="hidden" width="728" height="90"></ILAYER></td>
+</tr>
+</table>	
+
+
+
+<table idth="750" border="0" cellpadding="0" cellspacing="0"><tr><td valign="top" colspan="3"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="750" height="1" border="0"></td></tr><tr><td colspan="3"><table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="bottom"><a href="http://www.infoworld.com" target="_top"><img src="http://images.infoworld.com/img/logo_iw_main.gif" alt="InfoWorld" width="214" height="54" border="0"/></a></td>
+<td valign="bottom"><nobr><a href="http://www.infoworld.com" target="_top"><img src="http://images.infoworld.com/img/tab_hom_off2.gif" alt="Home" width="45" height="21" border="0"/></a><a href="http://www.infoworld.com/news/" target="_top"><img src="http://images.infoworld.com/img/tab_nws_off2.gif" alt="News" width="58" height="21" border="0"/></a><a href="http://www.infoworld.com/testcenter/" target="_top"><img src="http://images.infoworld.com/img/tab_tst_off2.gif" alt="Test Center" width="98" height="21" border="0"/></a><a href="http://www.infoworld.com/opinions/" target="_top"><img src="http://images.infoworld.com/img/tab_opn_off2.gif" alt="Opinions" width="84" height="21" border="0"/></a><a href="http://www.infoworld.com/product_guide/" target="_top"><img src="http://images.infoworld.com/img/tab_pg_off.gif" alt="Product Guide" width="111" height="21" border="0"/></a><a href="http://www.infoworld.com/techindex/" target="_top"><img src="http://images.infoworld.com/img/tab_ti_off2.gif" alt="TechIndex" width="86" height="21" border="0"/></a></nobr></td>
+</tr></table>
+</td></tr>
+<tr><td colspan="3"><img src="http://images.infoworld.com/img/hbr_top_hom.gif" alt="" width="750" height="4" border="0"/></td></tr>
+<tr><td valign="top" background="http://images.infoworld.com/img/hbr_bg_hom.gif"><img src="http://images.infoworld.com/img/dot_CE9D85.gif" alt="" width="1" height="17" border="0"/></td>
+<td background="http://images.infoworld.com/img/hbr_bg_hom.gif">
+<table border="0" cellpadding="0" cellspacing="0" width="734">
+	<tr>
+	<td valign="middle"><nobr><span class="whiteVrdMed">&nbsp;<a href="http://subscribe.infoworld.com/cgi-win/ifwd.cgi?m=add&p=ww3hm1" class="whiteVrdSm">SUBSCRIBE</a>&nbsp;<img src="http://images.infoworld.com/img/men_gen_div3.gif" border="0" align="absmiddle">&nbsp;<a href="http://subscribe.infoworld.com/cgi-win/ifwd.cgi?m=newsletter" class="whiteVrdSm">NEWSLETTERS</a>&nbsp;<img src="http://images.infoworld.com/img/men_gen_div3.gif" border="0" align="absmiddle">&nbsp;<a href="http://www.infoworld.com/evt_hom.html" class="whiteVrdSm">EVENTS</a>&nbsp;<img src="http://images.infoworld.com/img/men_gen_div3.gif" border="0" align="absmiddle">&nbsp;<a href="http://www.infoworld.com/advertise/adv_wc.html" class="whiteVrdSm">WEBCASTS</a>&nbsp;<img src="http://images.infoworld.com/img/men_gen_div3.gif" border="0" align="absmiddle">&nbsp;<a href="http://www.infoworld.com/spr_hom.html" class="whiteVrdSm">SPECIAL REPORTS</a>&nbsp;<img src="http://images.infoworld.com/img/men_gen_div3.gif" border="0" align="absmiddle">&nbsp;<a href="/rss/rss_info.html" class="whiteVrdSm">RSS FEEDS</a></span></nobr></td>
+	<td align="right">
+		<SCRIPT LANGUAGE="JavaScript">
+		<!--
+		var search_form_url = "http://search.infoworld.com/query.html?rq=0&col=ifwspid&charset=iso-8859-1&htvalue%3D%220%22=&qp=&qs=&qcvalue%3D%22%22=&pw=100%25&ws=0&la=en&qm=0&st=1&nh=10&lk=1&rf=0&oq=&rq=0&si=1&qt=";
+
+		function set_form_url(val) {
+		if(val==0){
+		search_form_url = "http://search.infoworld.com/query.html?rq=0&col=ifwspid&charset=iso-8859-1&htvalue%3D%220%22=&qp=&qs=&qcvalue%3D%22%22=&pw=100%25&ws=0&la=en&qm=0&st=1&nh=10&lk=1&rf=0&oq=&rq=0&si=1&qt=";
+		}
+		else if(val==1){
+		search_form_url = "http://www.infoworld.com/products/search/Search.jsp?index=0&searchType=0&displayCount=10&query=";        }
+		}
+
+		function search_it(input_text){
+		var new_url = search_form_url + escape(input_text);
+		window.location.href=new_url;
+		window.location.reload;
+		}
+		//-->
+		</SCRIPT>
+		<table border="0" cellpadding="0" cellspacing="2">
+		<form name="seek1" action="javascript:search_it(document.seek1.qt.value);" accept-charset="iso-8859-1" onSubmit="search_it(document.seek1.qt.value);" class="searchbox" size="16">
+		<tr>
+		<td valign="middle"><input type="radio" name="site_searched" value="0" onClick="set_form_url(0);" checked><span class="whiteVrdMed">Site</span><input type="radio" name="site_searched" value="1" onClick="set_form_url(1);"><span class="whiteVrdMed">Products</span></td>
+		<td valign="middle"><img src="http://images.infoworld.com/img/dot_t.gif" width="2" height="1"><input type="text" name="qt" id="search" size="16" value="" maxlength="1991" class="searchbox" onChange="search_it(document.seek1.qt.value);"></td>
+		<td valign="middle"><a href="javascript:search_it(document.seek1.qt.value);" onClick="javascript:search_it(document.seek1.qt.value)"><img src="http://images.infoworld.com/img/but_hom_search2.gif" alt="Search" width="50" height="18" border="0"></a></td>
+		</tr>
+		</form>
+		</table>
+	</td>
+	</tr>
+</table>
+</td><td valign="top" background="http://images.infoworld.com/img/hbr_bg_rgt_hom.gif"><span class="hSpace9">&#160;</span></td>
+</tr>
+<tr><td colspan="3"><img src="http://images.infoworld.com/img/hbr_btm_hom.gif" alt="" width="750" height="5" border="0"/></td></tr>
+<tr>
+<td valign="top" bgcolor="#E6E6E6"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="12" height="1" border="0"/></td>
+<td valign="top" bgcolor="#E6E6E6"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="734" height="1" border="0"/><br/>
+<span class="blackVrdSm"><b>TOPICS:</b>&nbsp;&nbsp;</span><a href="/techindex/application_development.html" class="smTitleGen3">&nbsp;App Dev</a>&nbsp;&nbsp;<a href="/techindex/applications.html" class="smTitleGen3">&nbsp;Applications</a>&nbsp;&nbsp;<a href="/techindex/data_management.html" class="smTitleGen3">&nbsp;Data Mgmt</a>&nbsp;&nbsp;<a href="/techindex/hardware.html" class="smTitleGen3">&nbsp;Hardware</a>&nbsp;&nbsp;<a href="/techindex/networking.html" class="smTitleGen3">&nbsp;Networking</a>&nbsp;&nbsp;<a href="/techindex/platforms.html" class="smTitleGen3">&nbsp;Platforms</a>&nbsp;&nbsp;<a href="/techindex/security.html" class="smTitleGen3">&nbsp;Security</a>&nbsp;&nbsp;<a href="/techindex/storage.html" class="smTitleGen3">&nbsp;Storage</a>&nbsp;&nbsp;<a href="/techindex/web_services.html" class="smTitleGen3">&nbsp;Web Services</a>&nbsp;&nbsp;<a href="/techindex/wireless.html" class="smTitleGen3">&nbsp;Wireless</a>&nbsp;&nbsp;</td>
+<td valign="top" bgcolor="#E6E6E6"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="4" height="1" border="0"/></td>
+</tr>
+
+
+<tr><td valign="top" bgcolor="#E6E6E6"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="12" height="1" border="0"></td><td valign="top" bgcolor="#E6E6E6"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="734" height="1" border="0"></td><td valign="top" bgcolor="#E6E6E6"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="4" height="1" border="0"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="750" border="0">
+<tbody><tr><td valign="top"><img height="12" alt="" src="http://images.infoworld.com/img/dot_t.gif" width="578" border="0"></td><td valign="top"><img height="1" alt="" src="http://images.infoworld.com/img/dot_t.gif" width="12" border="0"></td><td valign="top"><img height="1" alt="" src="http://images.infoworld.com/img/dot_t.gif" width="160" border="0"></td></tr>
+<tr>
+<td valign="top">
+<nobr><img height="25" alt="" src="http://images.infoworld.com/img/dot_t.gif" width="12" align="absMiddle" border="0"><span class="tiPageTitle">ABOUT INFOWORLD</span></nobr><br><img height="1" src="http://images.infoworld.com/img/dot_333333.gif" width="578" border="0"><br><span class="hSpace9">&nbsp;</span> <br>
+<!--                                                                                 BREAK POINT - Between Branded Top Area and Generic Content Area                                                                                 --><table cellspacing="0" cellpadding="0" width="578" border="0">
+<tbody><tr> <td valign="top"><img height="1" alt="" src="http://images.infoworld.com/img/dot_t.gif" width="12" border="0"></td>
+ <td valign="top"><img height="1" alt="" src="http://images.infoworld.com/img/dot_t.gif" width="566" border="0"></td></tr><tr><td valign="top"><span class="hSpace1">&nbsp;</span></td>
+<td valign="top"><p><span class="lgTitleGen">Contact Us</span><br><span class="hSpace9">&nbsp;</span><br>
+
+<b>InfoWorld Media Group</b><br>501 Second Street<br>San Francisco, CA 94107<br><a href="http://maps.yahoo.com/py/maps.py?BFCat=&amp;Pyt=Tmap&amp;newFL=Use+Address+Below&amp;addr=501+Second+Street&amp;csz=94107&amp;Country=us&amp;Get%07Map=Get+Map" target="_blank">Get Directions</a><br><br>
+
+Send comments regarding InfoWorld's articles to <a href="mailto:letters@infoworld.com">letters@infoworld.com</a>
+
+<br>
+
+
+<span class="hSpace12">&nbsp;</span><br><b>CUSTOMER SERVICE</b><br><span class="hSpace1">&nbsp;</span><br><img height="1" alt="" src="http://images.infoworld.com/img/dot_333333.gif" width="566" border="0"><br><span class="hSpace3">&nbsp;</span><br>Our customer service team can be reached at 847-291-5217 (7:30 am to 6:00 pm CST) or e-mail <a href="mailto:customerservice@infoworld.com">customerservice@infoworld.com</a>.<br><span class="hSpace9">&nbsp;</span><br>Visit our <a href="http://subscribe.infoworld.com/">Subscriber Services</a> site to renew or begin a subscription to InfoWorld. At this site you may also change your address for your InfoWorld subscription;
+       subscribe, unsubscribe or change your e-mail address for InfoWorld newsletters and Alerts; view our privacy policy; and edit
+       your mailing list preferences.<br><span class="hSpace3">&nbsp;</span>
+
+<!-- Sales Contacts - Begin -->
+<br>
+<span class="lgTitleGen">InfoWorld Sales Team</span><br>
+<br>
+<a href="mailto:paul_calento@infoworld.com">Paul Calento</a>, VP/Marketing<br>
+415-978-3212<br>
+<br>
+<a href="mailto:hal_mentlik@infoworld.com">Hal Mentlik</a>, National Ad Director<br>
+631-696-4498
+
+
+<br>
+<br>
+<a href="mailto:kate_hobbie@infoworld.com">Kate Hobbie</a>, National Online Sales Director<br>
+415-978-3274
+
+<br><br>
+<a href="mailto:Laura_Pitt@infoworld.com">Laura Pitt</a>, National Sales Administration Manager<br>
+415-978-3243<br>
+<span class="hSpace12">&nbsp;</span><br>
+<b>ONLINE SALES TEAM</b><br><span class="hSpace1">&nbsp;</span><br><img src="http://images.infoworld.com/img/dot_333333.gif" alt="" width="566" height="1" border="0"><br>
+<span class="hSpace6">&nbsp;</span><br>
+<table width="566" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top">
+
+<a href="mailto:brian_mcavoy@infoworld.com">Brian McAvoy</a>, Eastern Regional Sales Manager <br>617-239-7858<br>
+<br>
+<a href="mailto:elisabeth_raphel@infoworld.com">Elisabeth Raphel</a>, Account Executive<br>
+617-239-7856<br><br>
+
+<a href="mailto:Jeannette_Gonzalez@infoworld.com">Jeannette Gonzalez</a>, Sales Project Manager<br>
+415-978-3281<br><br>
+
+
+
+<BR></td></tr></table>
+<span class="hSpace12">&nbsp;</span><br>
+<b>WESTERN REGION - PRINT SALES</b><br>
+<span class="hSpace1">&nbsp;</span><br>
+<img src="http://images.infoworld.com/img/dot_333333.gif" alt="" width="566" height="1" border="0"><br><span class="hSpace6">&nbsp;</span><br>
+<table width="566" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="283" height="1" border="0"></td>
+<td valign="top"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="283" height="1" border="0"></td>
+</tr>
+<tr>
+<td valign="top"><b>San Francisco/East Bay/North Bay/<br>
+Oregon/Washington</b><br>
+<br>
+<a href="mailto:Mary_Johnson@infoworld.com">Mary E. Johnson</a>, Regional Manager<br>
+415-978-3196<br>
+<br>
+<a href="mailto:Casey_Hall@infoworld.com">Casey Hall</a>, Account Executive<br>
+415-978-3189<br>
+<br>
+<b>Peninsula/Silicon Vally/Colorado/<br>
+Idaho</b><br>
+<br>
+<a href="mailto:Lisa_Farrell@infoworld.com">Lisa Farrell</a>, Regional Manager<br>
+415-978-3203<br>
+<br>
+
+<a href="mailto:alisa_wise@infoworld.com">Alisa Wise</a>, Account Executive<br>
+415-978-3167<br>
+<br></td>
+<td valign="top">
+<b>Northern California</b><br>
+501 Second Street<br>
+San Francisco, CA 94107<br>
+Phone: 415-243-4344 or<br>
+800-227-8365<br>
+Fax: 415-978-3120<br>
+<br>
+<br></td></tr>
+<tr><td valign="top"><nobr><b>Southern CA/Utah/Arizona/Arkansas/</nobr><br>Oklahoma/Louisiana/Texas</b><br>
+<br>
+<a href="mailto:Amy_Bartulis@infoworld.com">Amy Bartulis</a>, Regional Manager<br>
+949-442-4031<br><br>
+<a href="mailto:Susan_Narta@infoworld.com">Susan Narta</a>, Sales Associate<br>
+949-442-4022<br>
+</td>
+<td valign="top"><b>Southern California</b><br>
+19200 Von Karman Ave, Suite 360<br>
+Irvine, CA 92612<br>
+Phone: 949-250-1305<br>
+Fax: 949-250-4881<br></td></tr></table>
+<span class="hSpace12">&nbsp;</span><br>
+<b>EASTERN REGION - PRINT SALES</b><br>
+<span class="hSpace1">&nbsp;</span><br>
+<img src="http://images.infoworld.com/img/dot_333333.gif" alt="" width="566" height="1" border="0"><br>
+<span class="hSpace6">&nbsp;</span><br>
+<table width="566" border="0" cellpadding="0" cellspacing="0">
+<tr><td valign="top"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="283" height="1" border="0"></td><td valign="top"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="283" height="1" border="0"></td></tr>
+<tr><td valign="top"><b>SouthEastern States/Metro New York/<br>New Jersey</b>
+
+<br>
+<br>
+<a href="mailto:Roseann_LaBruno@infoworld.com">Roseann LaBruno</a>, Senior Sales Associate<br>
+201-634-2311<br>
+
+<br>
+<a href="mailto:Derek_Sentner@infoworld.com">Derek Sentner</a>, Regional Manager<br>
+646-336-7319<br>
+</td>
+<td valign="top"><b>East Coast</b><br>
+Mack Cali II<br>
+650 From Road, 2nd Floor<br>
+Paramus, NJ  07652<br>
+Tel:  201-634-2311<br>
+Fax: 201-634-9249</td></tr>
+
+<tr><td valign="top" colspan=2><br>
+<b>Metro New York/New England/<br>
+Upper Midwest/Eastern Canada</b><br>
+
+
+<br>
+<a href="mailto:steve_martin@infoworld.com">Steve Martin</a>,  Regional Manager<br>
+631-271-1547<br>
+<br><a href="mailto:Roseann_LaBruno@infoworld.com">Roseann LaBruno</a>, Senior Sales Associate<br>
+201-587-7311<br>
+</td></tr>
+<tr><td valign="top" colspan=2><br>
+<b>CUSTOM SOLUTIONS</b><span class="hSpace1">&nbsp;</span><br>
+<img src="http://images.infoworld.com/img/dot_333333.gif" alt="" width="566" height="1" border="0"><br>
+<span class="hSpace6">&nbsp;</span><br>
+<a href="mailto:Lisa_Farrell@infoworld.com">Lisa Farrell</a>, Custom Solutions Director<br>
+415-978-3203<br></td></tr>
+<tr><td valign="top" colspan=2><br>
+<b>LEADERBOARD SECTION</b><span class="hSpace1">&nbsp;</span><br>
+<img src="http://images.infoworld.com/img/dot_333333.gif" alt="" width="566" height="1" border="0"><br>
+<span class="hSpace6">&nbsp;</span><br>
+<a href="mailto:Elisabeth_Raphel@infoworld.com">Elisabeth Raphel</a>, Account Executive<br>
+617-239-7856<br>
+<br>
+<a href="mailto:Dawn_Kezer@infoworld.com">Dawn Kezer</a>, Senior Ad Coordinator<br>
+760-789-6861<br></td>
+</tr>
+<tr>
+<td valign="top" colspan=2><br>
+<span
+class="arrow">&#187;&nbsp;</span><b><a href="http://www.infoworld.com/about/abt_masthead.html">MASTHEAD</a></b><span class="hSpace1">&nbsp;</span><br>
+<span
+class="arrow">&#187;&nbsp;</span><b><a href="http://www.infoworld.com/advertise/adv_edt_bet.html">BEAT LIST</a></b><span class="hSpace1">&nbsp;</span><br></td>
+</tr>
+</table>
+<br>
+
+
+
+
+
+
+<!-- Sales Contacts - End -->  
+
+<br></td></tr></tbody></table></td>
+<td valign="top"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="12" height="1" border="0"></td>
+<!-- Content Table - Boxed Content Column - Begin -->
+<td valign="top"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="160" height="21" border="0"><br>
+<!-- About InfoWorld Navigation - Begin -->
+<table width="160" border="0" cellpadding="0" cellspacing="0" bgcolor="#E6E6E6">
+<tr>
+<td colspan="2" class="curBarClr"><table height="21" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><img src="http://images.infoworld.com/img/cor_tl.gif" alt="" width="4" height="4" border="0"></td>
+<td valign="middle"><span class="titleBarText">ABOUT INFOWORLD</span></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign="top" colspan="2"><span class="hSpace6">&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="10" height="1" border="0"></td>
+<td valign="top">
+<table width="142" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="10" height="1" border="0"></td>
+<td valign="top"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="132" height="1" border="0"></td>
+</tr>
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="abt_ext.html">Executive Team</a></span></td>
+</tr>
+<tr>
+<td valign="top" colspan="2"><span class="hSpace1">&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="/advertise/adv_edt_bet.html">Editorial Team</a></span></td>
+</tr>
+
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="/about/abt_masthead.html">Masthead</a></span></td>
+</tr>
+
+<tr>
+<td valign="top" colspan="2"><span class="hSpace1">&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="/about/editcal.html">Editorial Calendar</a></span></td>
+</tr>
+
+<tr>
+<td valign="top" colspan="2"><span class="hSpace1">&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="http://www.infoworld.com/about/index.html#product_review">Product Previews</a></span></td>
+</tr>
+
+<tr>
+<td valign="top" colspan="2"><span class="hSpace1">&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="abt_prs_rel.html">Press Releases</a></span></td>
+</tr>
+<tr>
+<td valign="top" colspan="2"><span class="hSpace1">&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="abt_cpy.html">Reprints, Copyrights <nobr>&amp; Terms</nobr></a></span></td>
+</tr>
+<tr>
+<td valign="top" colspan="2"><span class="hSpace1">&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="abt_emp.html">Employment Opportunities</a></span></td>
+</tr>
+<tr>
+<td valign="top" colspan="2"><span class="hSpace1">&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="abt_con.html">Contact Us</a></span></td>
+</tr>
+<tr>
+<td valign="top" colspan="2"><span class="hSpace1">&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top"><span class="curTitleSub">&#8226;</span></td>
+<td valign="top"><span><a href="abt_prv.html">Privacy Policy</a></span></td>
+</tr>
+<tr>
+<td valign="top" colspan="2"><span class="hSpace1">&nbsp;</span></td>
+</tr>
+</table>
+<span class="hSpace6">&nbsp;</span><br></td>
+</tr>
+<tr>
+<td colspan="2"><table width="160" border="0" cellpadding="0" cellspacing="0"><tr><td class="curBarClr"><img src="http://images.infoworld.com/img/dot_t.gif" alt="" width="1" height="1" border="0"></td></tr></table></td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td colspan="2" align="right"><table border="0" cellpadding="0" cellspacing="0" class="curBarClr">
+<tr>
+<td valign="bottom"><img src="http://images.infoworld.com/img/tab_lft.gif" alt="" width="6" height="16" border="0"></td>
+<td valign="middle"><span class="tabText"><a href="/about/" class="tabText">About InfoWorld</a></span></td>
+<td valign="bottom"><a href="/about/index.html"><img src="http://images.infoworld.com/img/tab_arw.gif" alt="" width="16" height="16" border="0"></a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+
+<!-- About InfoWorld Navigation - End -->
+</td></tr></table>
+<table width="750" height="24" border="0" cellpadding="0" cellspacing="0" bgcolor="#999999">
+<tr>
+<td width="6"><img src="http://images.infoworld.com/img/ftr_men_lft_gen2.gif" border="0" height=24 width=6></td>
+<td width="340"><nobr><span class="whiteVrdMed">&nbsp;<a href="/" class="whiteVrdSm">HOME</a>&nbsp;<img src="http://images.infoworld.com/img/ftr_men_gen_div2.gif" border="0" align="absmiddle" alt="">&nbsp;<a href="/news/" class="whiteVrdSm">NEWS</a>&nbsp;<img src="http://images.infoworld.com/img/ftr_men_gen_div2.gif" border="0" align="absmiddle">&nbsp;<a href="/testcenter/" class="whiteVrdSm">TEST CENTER</a>&nbsp;<img src="http://images.infoworld.com/img/ftr_men_gen_div2.gif" border="0" align="absmiddle">&nbsp;<a href="/opinions/" class="whiteVrdSm">OPINIONS</a>&nbsp;<img src="http://images.infoworld.com/img/ftr_men_gen_div2.gif" border="0" align="absmiddle">&nbsp;<a href="/product_guide/" class="whiteVrdSm">PRODUCT GUIDE</a>&nbsp;<img src="http://images.infoworld.com/img/ftr_men_gen_div2.gif" border="0" align="absmiddle">&nbsp;<a href="/techindex/" class="whiteVrdSm">TECHINDEX</a>&nbsp;<img src="http://images.infoworld.com/img/ftr_men_gen_div2.gif" border="0" align="absmiddle">&nbsp;</span></nobr></td>
+<td align="center" width="398"><nobr><span class="whiteVrdMed"> <a href="/about/" class="whiteVrdMed">About</a> : <a href="/advertise/" class="whiteVrdMed">Advertise</a> : <a href="http://subscribe.infoworld.com/cgi-win/ifwd.cgi?m=add&p=ww3hm1" class="whiteVrdMed">Subscribe</a> : <a href="/about/abt_con.html" class="whiteVrdMed">Contact Us</a> : <a href="/awards/" class="whiteVrdMed">Awards</a>  : <a href="/evt_hom.html" class="whiteVrdMed">Events</a>&nbsp;</span></nobr></td>
+<td width="6"><img src="http://images.infoworld.com/img/ftr_men_rgt_gen2.gif" border="0" height=24></td>
+</tr>
+<tr><td align="center" bgcolor="#FFFFFF" colspan="4"><br><span class="grayVrdSm">Copyright &copy; 2005, <a href="http://www.infoworld.com/about/abt_cpy.html" class="blueVrdSm">Reprints, Permissions, Licensing</a>, <a class="blueVrdSm" href="http://www.infoworld.com/about/idg_network.html">IDG Network</a>, <a class="blueVrdSm" href="http://www.infoworld.com/about/abt_prv.html">Privacy Policy</a></span></td></tr>
+</table>
+<table width="750" bgcolor="#FFFFFF" height="24" border="0" cellpadding="0" cellspacing="0"><tr>
+<td align="center"><br><span class="grayVrdSm"><a href="http://www.computerworld.com" target="_new" class="blueVrdSm">Computerworld</a> : <a href="http://www.nwfusion.com" target="_new" class="blueVrdSm">Network World</a> : <a href="http://www.cio.com" target="_new" class="blueVrdSm">CIO</a> : <a href="http://www.pcworld.com" target="_new" class="blueVrdSm">PC World</a> : <a href="http://www.darwinmagazine.com" target="_new" class="blueVrdSm">Darwin</a> : <a href="http://www.cmomagazine.com" target="_new" class="blueVrdSm">CMO</a> : <a href="http://www.csoonline.com" target="_new" class="blueVrdSm">CSO</a> : <a href="http://www.bio-itworld.com" target="_new" class="blueVrdSm">Bio-IT World</a> 
+</span></td></tr>
+<tr><td align="center"><span class="grayVrdSm">
+<a href="http://www.itcareers.com" target="_new" class="blueVrdSm">IT Careers</a> : <a href="http://www.javaworld.com" target="_new" class="blueVrdSm">JavaWorld</a> : <a href="http://www.macworld.com" target="_new" class="blueVrdSm">Macworld</a> : <a href="http://www.maccentral.com" target="_new" class="blueVrdSm">Mac Central</a> : <a href="http://www.playlistmag.com" target="_new" class="blueVrdSm">Playlist</a> : <a href="http://www.gamepro.com" target="_new" class="blueVrdSm">GamePro</a> : <a href="http://www.gamestar.com" target="_new" class="blueVrdSm">GameStar</a> : <a href="http://www.gamerhelp.com" target="_new" class="blueVrdSm">Gamerhelp</a>
+</span></td></tr></table>
+<LAYER SRC="http://ad.doubleclick.net/adl/idg.us.info.popup/ros;sz=1x1;tile=4;ord=233404030305?" width=1 height=1 visibility="hidden" onLoad="moveToAbsolute(layer4.pageX,layer4.pageY);clip.height=1;clip.width=1; visibility='show';"></LAYER>
+<table width="750" bgcolor="#FFFFFF">
+	<tr><td>
+    	<script language="JavaScript">
+      	
+      	if(!window.pkeys && !window.products && !window.companies)
+      	{
+      		Tacoda_AMS_DDC_addPair("pkey","ROS");
+      	}
+      	
+      	if(window.pkeys && pkeys != null && pkeys.length > 0)
+      	{
+      		var tacodaPkeys = buildDelimitedString(pkeys);
+      		Tacoda_AMS_DDC_addPair("pkey",tacodaPkeys);
+      	}
+      	
+      	if(window.products && products != null && products.length > 0)
+      	{
+	      	var tacodaProducts = buildDelimitedString(products);
+	      	Tacoda_AMS_DDC_addPair("Products",tacodaProducts);
+    	}  	
+    	
+    	if(window.companies && companies!=null && companies.length > 0)
+    	{
+      		var tacodaCompanies = buildDelimitedString(companies);
+      		Tacoda_AMS_DDC_addPair("Company",tacodaCompanies);
+      	}
+      	
+      	function buildDelimitedString(valueArray,delimiter)
+      	{
+      		var delimitString = "";
+	      	for(i =0;i < valueArray.length;i++)
+	      	{
+	      		delimitString += valueArray[i].replace(/ /g,"_").toLowerCase();
+	      		if((i+1) != valueArray.length)
+	      		{
+	      			delimitString += "|";
+	      		}
+	      	}
+	      	return delimitString;
+      	}
+      	
+		Tacoda_AMS_DDC("http://te.infoworld.com/tte/blank.gif", "1.0");
+</script>
+</td></tr>
+</table>
+&nbsp;<br>&nbsp;<br></center>
+<!-- ad layers -->	
+<LAYER SRC="http://ad.doubleclick.net/adl/idg.us.info.general/index;pos=leader; pkey=;skey=;paud=;saud=;sz=728x90;tile=1;ord=233404030305?" width=728 height=90 visibility="hidden" onLoad="moveToAbsolute(layer1.pageX,layer1.pageY);clip.height=90;clip.width=728; visibility='show';"></LAYER>
+
+<LAYER SRC="http://ad.doubleclick.net/adl/idg.us.info.general/index;pos=skyscraper; pkey=;skey=;paud=;saud=;sz=160x600;tile=2;ord=233404030305?" width=160 height=600 visibility="hidden" onLoad="moveToAbsolute(layer2.pageX,layer2.pageY);clip.height=600;clip.width=160; visibility='show';"></LAYER>
+
+<LAYER SRC="http://ad.doubleclick.net/adl/idg.us.info.general/index;pos=imu; pkey=;skey=;paud=;saud=;sz=336x280;tile=3;ord=233404030305?" width=336 height=280 visibility="hidden" onLoad="moveToAbsolute(layer3.pageX,layer3.pageY);clip.height=280;clip.width=336; visibility='show';"></LAYER>
+</body>
+</html>
+

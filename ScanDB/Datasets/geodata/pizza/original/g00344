@@ -1,0 +1,791 @@
+<DOC>
+<DOCNO>g00344</DOCNO>
+<DOCHDR>http://www.portlandmercury.com/portland/DiningLocation?Location=39414</DOCHDR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+			
+		
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="imagetoolbar" content="no"/>
+  <meta name="description" content="The Portland Mercury, Portland's #1 alternative weekly newspaper. The Northwest's best source for news, celebrity gossip, humor, entertainment reviews, events calendars, movie times, TV listings, classifieds, personals and the home of Savage Love." />
+  <meta name="keywords" content="The Portland Mercury,  mercury,  portland,  weekly newspaper,  newspaper,  news,  alternative,  media,  savage love,  dan savage,  celebrity gossip,  gossip,  humor,  columns,  events,  arts,  listings,  music,  calendar,  classifieds,  personals,  film,  television,  movies,  movie times,  books,  visual art,  reviews,  food,  theater" />
+  <title>Portland Mercury - Restaurant Listings | Escape From New York Pizza</title>
+  <script type="text/javascript" src="/js/mercury.js"></script>
+	
+  
+    <!-- Google Maps Javascript -->
+	
+    <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAA8XvPfXDRSyhjjrSyX5bcQBTxlfWBtc65NoXYxxGA4aT4M6MxaRTyJr0jAz58qAI36lYD6thqoj5FVw" type="text/javascript"></script>
+    
+  
+	
+  	<script type="text/javascript">
+			//<![CDATA[
+			
+			function showGMap() {
+				if (GBrowserIsCompatible()) {
+					// resize the map
+					var m = document.getElementById("LocationGoogleMap");
+					m.style.height = "250px";
+					m.style.width = "390px";
+					var map = new GMap(m);
+					map.addControl(new GSmallMapControl());
+					map.centerAndZoom(new GPoint(-122.69830, 45.52715), 2);
+					var point = new GPoint(-122.69830, 45.52715);
+					marker = new GMarker(point);
+					var html = '<div style="white-space:nowrap;"><strong>Escape From New York Pizza</strong><br />622 NW 23rd Ave<br />Portland, OR 97210</div>';
+						GEvent.addListener(marker, 'click', function() {
+						marker.openInfoWindowHtml(html);
+					});
+					map.addOverlay(marker);
+				}
+			}
+			
+			function toTarget () {
+				var addr = document.directions.fromaddress.value;
+				addr = addr.replace(/\+/g, '%2B');
+				addr = addr.replace(/ /g, '+');
+				var googleAddress = '622+NW+23rd+Ave,';
+				googleAddress += 'Portland,OR';
+				var txt = 'http://maps.google.com/?q=from:'+addr+'+to:+';
+				txt += googleAddress;
+				return txt;
+			}
+			
+			//]]>
+			</script>
+  
+  <style type="text/css">
+  @import "/styles/all.css"; /* just some basic formatting, no layout stuff */
+  </style>
+  <link rel="stylesheet" type="text/css" href="/styles/listings.css" />
+	<link rel="stylesheet" type="text/css" href="/styles/portmerc.css" />
+	
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	_uacct = "UA-332219-3";
+	urchinTracker();
+	</script>
+  </head>
+
+  
+  	<body onload="showGMap();">
+  
+  
+  	<div id="wrapper">
+  
+
+  <!-- begin masthead -->
+  
+    <div id="top_banner">
+    <iframe id="92d0a8b" name="92d0a8b" src="http://ads.portlandmercury.com/ads/adframe.php?n=92d0a8b&amp;what=zone%3A119" frameborder="0" scrolling="no" width="728" height="90"><a href="http://ads.portlandmercury.com/ads/adclick.php?n=92d0a8b" target="_blank"><img src="http://ads.portlandmercury.com/ads/adview.php?what=zone%3A119&amp;n=92d0a8b" border="0" alt="" width="728" height="90" /></a></iframe>
+    </div>
+  
+
+  
+    <span class="horiz_rule_m">&nbsp;</span>
+    <div id="masthead_sm">
+      <div id="search_sm">
+      
+      <form method="get" name="searchForm" action="http://www.google.com/search">
+      <label>SEARCH SITE</label><br />
+      <input class="searchtext" type="text" size="13" name="q" value="" />
+      <input type="image" name="sa" src="/images/search_button.gif" alt="search" />
+	  <input type="hidden" name="sitesearch" value="portlandmercury.com" />
+	  <input type="hidden" name="domains" value="portlandmercury.com" />
+      </form>
+      
+      </div> 
+      <!-- end search_sm div -->
+      <div id="logo">
+      <a href="/portland/Home"><img src="/images/logo_small.gif" width="143" height="36" alt="portland mercury" border="0" /></a>
+      </div> <!-- end logo div -->
+      <div id="tagline">
+      We Know Where the Action Is! 
+      
+      </div> 
+      <!-- end tagline div -->
+    </div>
+    <span class="horiz_rule_m">&nbsp;</span>
+  
+  <!-- end masthead -->
+
+  <!-- begin leftside -->
+  <div id="leftside">
+    <ul id="mainnav">
+      <li id="nav_home"><a href="/portland/Home"><span class="hide">HOME</span></a></li>
+  
+  
+    <li id="nav_feature"><a href="/portland/Features?issue=45544"><span class="hide">FEATURE</span></a></li>
+  
+  
+    <li id="nav_news"><a href="/portland/News?issue=45544"><span class="hide">NEWS</span></a></li>
+  
+  
+    <li id="nav_busy"><a href="/portland/BusyWeek?issue=45544"><span class="hide">MY WHAT A BUSY WEEK</span></a></li>
+  
+  
+    
+	  <li id="nav_destination"><a href="/portland/Page?oid=35523"><span class="hide">DESTINATION FUN</span></a></li>
+	
+  
+  
+    <li id="nav_music"><a href="/portland/Music?issue=45544"><span class="hide">MUSIC</span></a></li>
+  
+  
+    <li id="nav_film"><a href="/portland/Film?issue=45544"><span class="hide">FILM</span></a></li>
+  
+  
+    <li id="nav_arts"><a href="/portland/ArtsRodeo?issue=45544"><span class="hide">ARTS RODEO</span></a></li>
+  
+  
+    <li id="nav_oneday"><a href="/portland/Content?category=22175&amp;issue=45544"><span class="hide">ONE DAY AT A TIME</span></a></li>
+  
+  
+    <li id="nav_savage"><a href="/portland/SavageLove?issue=45544"><span class="hide">SAVAGE LOVE</span></a></li>
+  
+  
+    <li id="nav_tv"><a href="/portland/Content?category=22118&amp;issue=45544"><span class="hide">I LOVE TV</span></a></li>
+  
+  
+    <li id="nav_newcol"><a href="/portland/BigArt?category=22124&amp;issue=45544"><span class="hide">NEW COLUMN</span></a></li>
+  
+  
+    <li id="nav_letters"><a href="/portland/Letters?category=22120&amp;issue=45544"><span class="hide">LETTERS</span></a></li>
+  
+  
+    <li id="nav_supper"><a href="/portland/LastSupper?issue=45544"><span class="hide">LAST SUPPER</span></a></li>
+  
+  
+    <li id="nav_ianon"><a href="/portland/Content?category=22113&amp;issue=45544"><span class="hide">I, ANONYMOUS</span></a></li>
+  
+  
+    <li id="nav_bestof"><a href="/portland/BestOf?issue=45544"><span class="hide">BEST OF THE MERC</span></a></li>
+  
+  <li id="nav_events"><a href="/portland/Promotions"><span class="hide">MERCURY EVENTS</span></a></li>
+  <li id="nav_blogtown"><a href="/blogtown"><span class="hide">BLOG TOWN, PDX</span></a></li>
+  <li id="nav_pod"><a href="http://www.portlandmercury.com/podcasts"><span class="hide">POD 'N' VOD</span></a></li>
+  <li id="nav_classy"><a href="http://classifieds.portlandmercury.com/portland/"><span class="hide">CLASSIFIEDS/FORUM</span></a></li>
+    </ul>
+
+    
+    
+
+    <!-- subnav -->
+    <ul id="left_subnav">
+    <li><a href="/portland/Page?oid=21244">MASTHEAD</a></li>
+    <li><a href="/portland/Page?oid=21506">CONTACT THE MERCURY</a></li>
+	<li><a href="/portland/Page?oid=37509">PRODUCTION GUIDELINES</a></li>
+    <li><a href="/portland/Archives">ISSUE ARCHIVES</a></li>
+    </ul>
+    <span class="horiz_rule">&nbsp;</span>
+    <!-- end subnav -->
+
+    
+		
+		<div class="leftad"><iframe id='a0e55f1a' name='a0e55f1a' src='http://ads.thestranger.com/ads/adframe.php?n=a0e55f1a&amp;what=zone:95' framespacing='0' frameborder='no' scrolling='no' width='160' height='600'><a href='http://ads.thestranger.com/ads/adclick.php?n=a0e55f1a' target='_blank'><img src='http://ads.thestranger.com/ads/adview.php?what=zone:95&amp;n=a0e55f1a' border='0' alt=''></a></iframe></div>
+			
+    <!-- end left skyscraper -->
+
+  </div>
+  <!-- end leftside -->
+  
+  <!-- begin content div -->
+  <div id="content">
+
+
+
+
+<p style="text-align:center;">
+<a href="/portland/Dining"><img src="/images/dining-listings-head.jpg" alt="restaurant listings" border="0" /></a>
+</p>
+
+
+  
+
+  
+  
+  
+  <div class="LocationDetails">
+   <div class="LocationName">
+    Escape From New York Pizza
+   </div> <!-- end LocationName -->
+   
+   622 NW 23rd Ave<br />Portland, OR 97210<br />(503) 227-5423<br />
+   </a><br /><div id="recommendedSlug"></div>
+  </div> <!-- end LocationDetails -->
+
+
+
+
+
+
+  
+	
+	
+      
+   
+    
+
+    <div class="LocationDiningDetails">
+      
+      <div class="DiningCuisineSlugs">
+	  <span class="DiningCuisineName">Pizza</span> 
+	  </div>
+    <div class="LocationDiningCapsule">
+      Escape from New York is still the best joint in town for a greasy, floppy slice of New York-style pizza, dished up by Escape's affably surly staff. Toppings are minimal—you won't find any artichoke hearts here—but a focus on quality ingredients and a sheer mastery of the Holy Trinity of pizza (sauce, cheese, and crust) make Escape perhaps the only reason to ever set foot on NW 23rd.
+	  
+      <div id="DiningBasics">
+		  
+			<span class="DiningFeatureHeader">Hours: </span>11:30am-11pm Daily<br />
+			
+			
+			<span class="DiningFeatureHeader">Price: </span><a href="#" onclick="javascript:OpenWindow('/images/diningpricekey.gif','170','180');return false;"><img src="/images/blue-dollar.gif" border="0" alt="" /></a><br />
+			
+			
+			
+		  <span class="DiningFeatureHeader">Features: </span>Cheap Eats, Family Friendly, To Go<br />
+			
+	  </div> <!-- end DiningBasics -->
+    </div> <!-- end LocationDiningCapsule -->
+  
+	
+
+	
+	
+	<!-- MAP AND DIRECTIONS -->
+	<div id="MapDirWrapper">
+		<div id="LocationGoogleMap" style="width:0px;height:0px"></div>
+	
+		<div class="LocationMapInfo">
+			<p>
+			<span class="LocationMapName">Escape From New York Pizza</span><br />
+			622 NW 23rd Ave<br />Portland, OR 97210<br />(503) 227-5423
+			</p>
+		</div> <!-- end LocationMapInfo -->
+	</div> <!-- end MapDirWrapper -->
+	<div class="LocationGetDirections">
+	<form name="directions" onSubmit="window.open(toTarget());return false;">
+	<strong>From:</strong> <input type="text" name="fromaddress" size="30" />
+	<input style="vertical-align:middle" type="image" src="/images/go-button-small.gif" alt="go" border="0" /><br />
+	<span style="padding-left:42px;font-size:10px;">(enter whole address)</span>
+	</form>
+	</div> <!-- end LocationGetDirections -->
+		
+	
+ </div> <!-- end LocationDiningDetails --> 
+
+
+
+<span class="horiz_rule" style="margin:12px 18px 10px 17px;">&nbsp;</span>
+<div style="text-align:center;">
+<div id="DiningCorrectThisBug">
+<a href="/portland/DiningSuggest"><img src="/images/listings-correct-this.gif" alt="update or correct this listing" border="0" /></a>
+</div>
+<a href="http://forums.portlandmercury.com/forumdisplay.php?f=18"><img src="/images/dining-talk-forums.gif" alt="talk about this restaurant on the forums" border="0" /></a>
+</div>
+<span class="horiz_rule" style="margin:8px 18px 12px 17px;">&nbsp;</span>
+  
+
+   
+		<div class="DiningBrowseBox">
+ <div class="DiningBrowseInnerBox">
+	<form name="DiningBrowse" action="/portland/Dining" method="get">
+	<div class="DiningBrowseChoices">
+    <div class="DiningBrowseChoicesLeft">
+	
+    by cuisine:<br />
+    <Select name="DiningCategory" style="width:235px;">
+         
+        <option value="" selected>-All-</option>
+      
+      
+        
+          <Option value="oid:38195">American</Option>
+        
+      
+        
+          <Option value="oid:38177">Asian</Option>
+        
+      
+        
+          <Option value="oid:38173">Bakeries</Option>
+        
+      
+        
+          <Option value="oid:38174">Barbecue/Southern</Option>
+        
+      
+        
+          <Option value="oid:38175">Buffet</Option>
+        
+      
+        
+          <Option value="oid:38176">Burgers</Option>
+        
+      
+        
+          <Option value="oid:38178">Coffee Shop</Option>
+        
+      
+        
+          <Option value="oid:38179">Deli</Option>
+        
+      
+        
+          <Option value="oid:38180">Dessert</Option>
+        
+      
+        
+          <Option value="oid:38181">Diner</Option>
+        
+      
+        
+          <Option value="oid:38172">Ethiopian/Moroccan</Option>
+        
+      
+        
+          <Option value="oid:38183">Food Cart</Option>
+        
+      
+        
+          <Option value="oid:38187">Haute Cuisine</Option>
+        
+      
+        
+          <Option value="oid:38188">Indian</Option>
+        
+      
+        
+          <Option value="oid:38184">Italian/European</Option>
+        
+      
+        
+          <Option value="oid:38193">Mediterranean/Greek</Option>
+        
+      
+        
+          <Option value="oid:38192">Mexican/Latin</Option>
+        
+      
+        
+          <Option value="oid:38197">Pizza</Option>
+        
+      
+        
+          <Option value="oid:38199">Pub Grub</Option>
+        
+      
+        
+          <Option value="oid:38202">Seafood</Option>
+        
+      
+        
+          <Option value="oid:38205">Steakhouse</Option>
+        
+      
+        
+          <Option value="oid:38207">Thai</Option>
+        
+      
+        
+          <Option value="oid:38208">Vegetarian/Vegan</Option>
+        
+      
+    </Select>
+
+    
+    
+      by features:<br />
+      <Select name="Extras" style="width:235px;">
+           
+          <option value="" selected>-All-</option>
+        
+        
+        
+					
+						
+						
+					
+					
+					<Option value="oid:38210">Breakfast/Brunch</Option>
+					
+		    
+        
+        
+        
+        
+					
+						
+						
+					
+					
+					<Option value="oid:38212">Cheap Eats</Option>
+					
+		    
+        
+        
+					
+						
+						
+					
+					
+					<Option value="oid:38213||oid:38230">Beer/Booze</Option>
+					
+		    
+        
+        
+        
+        
+        
+        
+        
+        
+					
+						
+						
+					
+					
+					<Option value="oid:38217">Good for Groups</Option>
+					
+		    
+        
+        
+					
+						
+						
+					
+					
+					<Option value="oid:38218">Happy Hour</Option>
+					
+		    
+        
+        
+        
+        
+        
+        
+					
+						
+						
+					
+					
+					<Option value="oid:38221">Late-Night Dining</Option>
+					
+		    
+        
+        
+        
+        
+        
+        
+        
+        
+					
+						
+						
+					
+					
+					<Option value="oid:38225">Patio</Option>
+					
+		    
+        
+        
+        
+        
+					
+						
+						
+					
+					
+					<Option value="oid:38227">Romantic</Option>
+					
+		    
+        
+        
+        
+        
+        
+        
+        
+      </Select>
+    
+	
+	
+    by neighborhood:<br />
+    <Select name="Region" style="width:235px;">
+         
+        <option value="" selected>-All-</option>
+      
+      
+          
+            <Option value="Southeast">Southeast</Option>
+          
+      
+          
+            <Option value="Northeast">Northeast</Option>
+          
+      
+          
+            <Option value="North">North</Option>
+          
+      
+          
+            <Option value="Northwest">Northwest</Option>
+          
+      
+          
+            <Option value="Southwest">Southwest</Option>
+          
+      
+          
+            <Option value="Elsewhere">Elsewhere</Option>
+          
+      
+          
+            <Option value="Downtown">Downtown</Option>
+          
+      
+    </Select>
+	
+	</div> <!-- end DiningBrowseChoicesLeft -->
+	<div class="DiningBrowseChoicesRight">
+    
+    by keyword:<br />
+    <input name="searchPhrase" value="" type="text">
+
+    
+    <p style="line-height:10px;margin-top:4px;">
+	
+	<input type="checkbox" name="recommended" value="Yes"> 
+	
+	search only <em>Mercury</em> recommended restaurants
+	</p>
+    <input type="image" src="/images/go-button.gif" alt="go" />
+   </div> <!-- end DiningBrowseChoicesRight -->
+   <br style="clear:both;" />
+   </div> <!-- end DiningBrowseChoices -->
+   </form>
+  </div> <!-- end DiningBrowseInnerBox -->
+  </div> <!-- end DiningBrowseBox -->
+   
+	   
+	   
+<div id="RecentlyReviewed"><h3 class="hide">RECENTLY REVIEWED</h3>
+	
+    
+	<div class="RecentlyReviewedItem">
+	<div class="LocationThumbnail" style="padding-left:0;">
+	<a href="/portland/Content?oid=oid%3A45572"><img src="/binary/6f180f91/food-86.jpg" width="86" height="86" alt="story image" border="0" /></a>
+	</div> <!-- end LocationThumbnail -->
+	<div class="RecentlyReviewedHeadline"><a href="/portland/Content?oid=oid%3A45572">Leave Me Alone</a></div>
+	<p style="padding:0;margin:0;">
+	The Press Club Lets You Dine in Peace 
+	
+	<span class="byline">BY ALISON HALLETT</span>
+	
+	</p>
+	<p style="padding:0;margin-top:4px;font-size:11px;">Restaurants are tricky to navigate for the solo diner Taking a whole table... 
+    <a href="/portland/Content?oid=oid%3A45572"><img src="/images/blue-arrow.gif" border="0"s alt="read" /></a></p>
+	</div> <!-- end RecentlyReviewedItem -->
+  
+  
+  </div><!-- end RecentlyReviewed -->
+
+<div class="bottomIslandAd" style="background-image:none;">
+<iframe id='a1aa8a5e' name='a1aa8a5e' src='http://ads.thestranger.com/ads/adframe.php?n=a1aa8a5e&amp;what=zone:107' framespacing='0' frameborder='no' scrolling='no' width='300' height='250'><a href='http://ads.thestranger.com/ads/adclick.php?n=a1aa8a5e' target='_blank'><img src='http://ads.thestranger.com/ads/adview.php?what=zone:107&amp;n=a1aa8a5e' border='0' alt=''></a></iframe>
+</div> <!-- end bottomIslandAd -->
+
+</div> 
+  <!-- end content div -->
+  
+  <!-- begin rightside -->
+  <div id="rightside">
+    
+      <div id="new_classy_arrow">
+  <a href="http://classifieds.portlandmercury.com/portland/index"><img src="http://classifieds.portlandmercury.com/images/classy_logo.gif" width="150" height="33" alt="portland mercury classifieds" border="0" /></a>
+</div>
+<div class="classyside">
+
+  <div id="adoftheday">
+  <p style="text-align:left;margin:0 0 3px 4px;"><img src="http://classifieds.portlandmercury.com/images/adoftheweek.gif" alt="/images/adoftheweek.gif" width="108" height="10" border="0" /></p>
+  <a href="http://classifieds.portlandmercury.com/portland/ViewAd?oid=oid%3A16868"><img src="http://www.portlandmercury.com/binary/597b911e/medium-1144343278-2.jpg" alt="ad of the day" width="122" height="92" border="0" /></a>
+  <p>Arts: Join the Artist’s Way creative cluster! <a href="http://classifieds.portlandmercury.com/portland/ViewAd?oid=oid%3A16868"><img src="http://classifieds.portlandmercury.com/images/adoftheday_arr.gif" align="middle" alt="go" width="7" height="10" border="0" /></a></p>
+  </div> <!-- end adoftheday -->
+
+
+<div id="classyDoubleSide">
+<a class="wide first highlight" href="http://classifieds.portlandmercury.com/portland/Results?subsection=oid%3A49177">Bands Page</a>
+<a class="left" href="http://classifieds.portlandmercury.com/portland/Results?section=oid%3A8">Housing</a>
+<a href="http://classifieds.portlandmercury.com/portland/Results?section=oid%3A3">Jobs</a>
+<a class="left" href="http://classifieds.portlandmercury.com/portland/Results?section=oid%3A49176">Musicians</a>
+<a href="http://classifieds.portlandmercury.com/portland/Results?section=oid%3A2">For Sale</a>
+<a class="left" href="http://classifieds.portlandmercury.com/portland/Results?section=oid%3A11">Wheels</a>
+<a href="http://classifieds.portlandmercury.com/portland/Results?section=oid%3A9">Services</a>
+<a class="left" href="http://classifieds.portlandmercury.com/portland/Results?section=oid%3A5">Health</a>
+<a href="http://classifieds.portlandmercury.com/portland/Results?section=oid%3A10">The Arts</a>
+<a class="wide" href="http://classifieds.portlandmercury.com/portland/Results?section=oid%3A189">Friends 'N' Neighbors</a>
+<a class="wide" href="http://www.portlandmercury.com/gbase/bboard/Index">Bulletin Board</a>
+<a class="left" href="http://portlandmercury.com/personals/">Personals</a>
+<a href="http://naughtynw.com">Adult</a>
+<a class="wide" href="http://forums.portlandmercury.com/">Forums</a>
+</div> <!-- end classyDoubleSide -->
+
+<div class="postanad"><br /><a href="https://ssl.portlandmercury.com/gyrobase/PostAd"><img src="http://classifieds.portlandmercury.com/images/classy_postad.gif" alt="post an ad" width="149" height="25" border="0" /></a></div>
+</div> 
+<!-- end classyside div -->
+
+    
+
+    <div id="lovelab_aod">
+     <script language="JavaScript"
+        src="http://teaser.portlandmercury.selectalternatives.com/gyrobase/TeaserJS2"
+        type="text/javascript"></script>
+    </div> 
+		
+
+
+
+	<div id="BandOfTheWeek">
+		<img src="/images/channel3-botw-top.jpg" alt="" border="0" /><br />
+		<div class="BOTWPhoto">
+			<a href="http://classifieds.portlandmercury.com/portland/ViewAd?oid=oid%3A66026"><img src="/binary/2cab939c/Captin.jpg" width="130" height="125" alt="Captain Bogg & Salty" class="" border="0"></a>
+		</div>
+		<div class="BOTWInfo">
+			<div class="BOTWName"><a href="http://classifieds.portlandmercury.com/portland/ViewAd?oid=oid%3A66026">Captain Bogg & Salty</a></div>
+			<div class="BOTWGoButton">
+				<a href="http://classifieds.portlandmercury.com/portland/ViewAd?oid=oid%3A66026"><img src="/images/channel3-botw-go.gif" alt="go" border="0" /></a>
+			</div>
+			<p>Fun pirate rock!...</p>
+		</div> <!-- end BOTDInfo -->
+	</div> <!-- end BandOfTheDay -->
+
+    
+      <div class="promospot_r">
+      <iframe id="92d0a8p" name="92d0a8p" src="http://ads.portlandmercury.com/ads/adframe.php?n=92d0a8p&amp;what=zone%3A102" frameborder="0" scrolling="no" width="120" height="240"><a href="http://ads.portlandmercury.com/ads/adclick.php?n=92d0a8p" target="_blank"><img src="http://ads.portlandmercury.com/ads/adview.php?what=zone%3A102&amp;n=92d0a8p" border="0" alt="" width="120" height="240" /></a></iframe>
+      </div>
+    
+    
+  </div>
+  <!-- end rightside -->
+
+  <div id="footer">
+    <ul id="footernav">
+    <li><a href="/portland/Home">Home</a></li>
+    <li><a href="/portland/Features?issue=45544">Feature</a></li>
+    <li><a href="/portland/News?issue=45544">News</a></li>
+    <li><a href="/portland/BusyWeek?issue=45544">My,&nbsp;What&nbsp;a&nbsp;Busy&nbsp;Week</a></li>
+    <li><a href="/portland/Music?issue=45544">Music</a></li>
+    <li><a href="/portland/Film?issue=45544">Film</a></li>
+    <li><a href="/portland/ArtsRodeo?issue=45544">Arts&nbsp;Rodeo</a></li>
+    <li><a href="/portland/Content?category=22175&amp;issue=45544">One&nbsp;Day&nbsp;at&nbsp;a&nbsp;Time</a></li>
+    <li><a href="/portland/SavageLove?issue=45544">Savage&nbsp;Love</a></li>
+    <li><a href="/portland/Content?category=22118&amp;issue=45544">I&nbsp;&hearts;&nbsp;TV</a></li>
+    <li><a href="/portland/BigArt?category=22124&amp;issue=45544">New&nbsp;Column</a></li>
+    <li><a href="/portland/Content?category=22113&amp;issue=45544">I,&nbsp;Anonymous</a></li>
+    <li><a href="/portland/BestOf?issue=45544">Best&nbsp;of&nbsp;the&nbsp;Mercury</a></li>
+    <li><a href="/portland/Promotions">Mercury&nbsp;Events</a></li>
+    <li><a href="/blogtown">Blog&nbsp;Town,&nbsp;PDX</a></li>
+    <li><a href="http://www.portlandmercury.com/personals/">Lovelab</a></li>
+    </ul>
+    <!-- end footernav -->
+    <p>All contents &copy; 2006 Index Publishing &bull; 
+    <a href="/portland/Page?oid=21243">Privacy Policy</a> &bull; 
+    <a href="/portland/Page?oid=21506">Contact Info</a> &bull; 
+	<a href="/portland/Page?oid=37509">Production Guidelines</a></p>
+    <a href="http://www.thestranger.com"><img src="/images/stranger_ad.gif" width="246" height="75" alt="the stranger" border="0" /></a>
+  </div>
+  <!-- end footer div -->
+  
+  </div> 
+  <!-- end wrapper div -->
+
+  </body>
+  </html>
+

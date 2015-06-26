@@ -1,0 +1,338 @@
+<DOC>
+<DOCNO>g00018</DOCNO>
+<DOCHDR>http://www.physicstoday.org/contact.html</DOCHDR>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/generic_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Physics Today</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+<!--
+@import url(css/pt_style.css);
+-->
+</style>
+<link href="css/pt_style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" -->
+<script language="JavaScript" type="text/javascript">
+function valform() {
+	if (contactform.name.value == "") {
+	alert("Please enter your name.");
+	contactform.name.focus;
+	return false;
+	}
+
+	if (contactform.email.value == "") {
+	alert("Please enter your e-mail address");
+	contactform.email.focus;
+	return false;
+	}
+	
+	if (contactform.society.options[0].selected) {
+	alert("Please tell us what your affiliation is");
+	contactform.society.focus;
+	return false;
+	}
+	
+	
+	if (contactform.chgadd.checked==true) {
+	if (contactform.message.value == "") {
+	alert("Please enter your old address");
+	contactform.message.focus;
+	return false;
+	}
+	if (contactform.newadd.value == "") {
+	alert("Please enter your new address");
+	contactform.newadd.focus;
+	return false;
+	}
+	}
+
+
+	if (contactform.message.value == "") {
+	alert("Please enter your comments");
+	contactform.message.focus;
+	return false;
+	}
+return true;
+}
+
+function chkbx() {
+
+if (document.contactform.chgadd.checked==true)
+{
+document.contactform.subject.disabled=true;
+document.getElementById('regd').style.visibility=('hidden');
+document.getElementById('msgtxt').style.visibility=('hidden');
+document.getElementById('oldaddtxt').style.visibility=('visible');
+document.getElementById('newaddtxt').style.visibility=('visible');
+document.getElementById('newadd').style.visibility=('visible');
+}
+else
+{
+document.contactform.subject.disabled=false;
+document.getElementById('regd').style.visibility=('visible');
+document.getElementById('msgtxt').style.visibility=('visible');
+document.getElementById('oldaddtxt').style.visibility=('hidden');
+document.getElementById('newaddtxt').style.visibility=('hidden');
+document.getElementById('newadd').style.visibility=('hidden');
+}
+
+}
+</script>
+
+<style type="text/css">
+<!--
+#artcontent form p {
+margin-bottom: 10px;
+}
+-->
+</style>
+<!-- InstanceEndEditable --><!-- InstanceParam name="additional style" type="text" value="" -->
+</head>
+
+<body>
+<div id="container"><!-- contains all content in body -->
+<div id="header">
+<script src="/pt/js/ns4detect.js" language="JavaScript" type="text/javascript"></script>
+<script src="/pt/js/ptolcookie.js" language="JavaScript" type="text/javascript"></script>
+<!-- ** -->
+<link rel="alternate stylesheet" type="text/css" href="/pt/css/large.css" title="A++"/pt/>
+<link rel="alternate stylesheet" type="text/css" href="/pt/css/medium.css" title="A+"/pt/>
+<link rel="alternate stylesheet" type="text/css" href="/pt/css/small.css" title="A"/pt/>
+<link rel="alternate stylesheet" type="text/css" href="/pt/css/x-small.css" title="A-"/pt/>
+<link rel="alternate stylesheet" type="text/css" href="/pt/css/xx-small.css" title="A--"/pt/>
+<script language="JavaScript1.2" src="/pt/js/styleswitcher.js" type="text/javascript">
+
+</script>
+<div id="hrow1">
+  <div id="topad" style="text-align: center; float: none;">
+    <!-- ####### New Tag for Ad banner ###### -->
+    <script language="javascript" type="text/javascript">
+
+<!-- Hide from old browsers
+now = new Date();
+random = now.getTime();
+
+// Modify to reflect site specifics
+site = "http://adserv.aip.org:80";
+target = "/pt/SITE=AIP_CORPORATE/AREA=PHYSICS_TODAY";
+document.write('<iframe src="' + site + '/hserver/acc_random=' + random
++
+target + '"');
+document.write(' noresize="noresize" scrolling=no hspace=0 vspace=0 frameborder=0 marginheight=0 marginwidth=0 width=468 height=60>');
+document.write('<scr');
+document.write('ipt src="' + site + '/jnserver/acc_random=' + random +
+target + '">');
+document.write('</scr');
+document.write('ipt>');
+document.write('</iframe>');
+// End Hide -->
+</script>
+    <!-- ###### end of new tag for ads ###### -->
+  </div>
+  <p class="small" style="position: absolute; top: 18px; right: 10px; text-align: right;"><a href="http://www.physicstoday.org/adcenter.html">Advertising</a></p>
+</div>
+<div id="hrow2">
+  <div id="searchfrm">
+    <form action="/servlet/SearchptTest" method="get" name="search" id="search">
+      <input type="hidden" name="ResultMaxDocs" value="700">
+      <input type="hidden" name="collection" value="PTHTML">
+      <input name="queryText" type="text" onfocus="if(this.value=='Search')this.value='';" value="Search " size="15"/pt/>
+      <input type="image" src="/pt/images/gobutton.gif" name="SEARCH-97" style="background: #00309C; border: 0;" alt="Search Physics Today">
+      <a href="http://www.physicstoday.org/search.html" style="color: #ffffff;" class="small">advanced search</a>
+    </form>
+  </div>
+  <div id="logo"><a href="http://www.physicstoday.org"><img src="/pt/images/spacer.gif" style="width: 140px; height: 50px; position: absolute; top: 12px; left: 5px; border: 0;" alt="Physics Today" /></a>
+    <div style="position: relative; left: 168px; top: 35px;">
+      <script src="/pt/js/date.js" language="JavaScript" type="text/javascript"></script>
+    </div>
+  </div>
+</div>
+
+  </div>
+<div id="subscriber_nav">
+<ul>
+<li><a href="http://www.physicstoday.org">Home</a></li>
+<li>|</li>
+<script language="JavaScript" type="text/javascript">
+if (getUserInfo() == "") {
+document.write('<li><a href="/pt/ptonline_login.jsp">Sign In</a></li>');
+} else {
+document.write("<li>Welcome " + getUserInfo() + "!</li><li>|</li>");
+document.write("<li><a href='/pt/profile.shtml'>Manage your profile</a></li><li>|</li>");
+document.write('<li><a href="/eRights/servlet/SSOLogout?redirectURL=/index.htm">Sign Out</a></li>');
+}
+</script></li>
+<li>|</li>
+<li><a href="/pt/faq.html">Site help</a></li>
+</ul>
+</div>
+
+<table style="width: 100%; margin: 0;" cellspacing="0" cellpadding="0">
+<tr>
+<td id="artlc">
+<ul class="plain">
+<li><a href="http://www.physicstoday.org/vol-58/iss-3/contents.html">Table of contents</a></li> 
+<li><a href="http://www.physicstoday.org/pastiss05.html">Past issues</a></li> 
+<li style="margin-top: 10px;"><a href="http://aip.jobcontrolcenter.com/">Career Network</a></li> 
+<li><a href="http://www.physicstoday.org/cal/eventhome.jsp">Event Calendar</a></li>
+<li><a href="http://www.physicstoday.org/ptbg/search.jsp">Buyers Guide</a></li> 
+<li><a href="http://www.physicstoday.org/adcenter.html">Advertising</a></li>
+</ul> 
+
+<!-- InstanceBeginEditable name="Extras" --><!-- InstanceEndEditable -->
+</td>
+<td id="artcontent"><h1><!-- InstanceBeginEditable name="Page heading" -->Contact us <!-- InstanceEndEditable --></h1>
+<!-- InstanceBeginEditable name="Page content" -->
+<h2>Send us your feedback</h2>
+<p>Do you have a question, comment or suggestion for a feature article? Our staff always welcomes feedback about Physics Today magazine.</p>
+<form action="contact_form_parser.jsp" method="get" id="contactform" name="contactform" onsubmit="return valform();">
+<p><label for="name" style="width: 80px; float: left; text-align: right; margin-right: 10px;">Name:</label> <input name="name" type="text" id="name" size="24" /></p>        
+<p><label for="email" style="width: 80px; float: left; text-align: right; margin-right: 10px;">E-mail:</label> <input name="email" type="text" id="email" size="24" /></p>
+<p><label for="society" style="width: 80px; float: left; text-align: right; margin-right: 10px;">Affiliation:</label>
+<select name="society">
+<option value="x">Choose One</option>
+<option value="x">I am a member of:</option>
+<option value="APS">&nbsp;&nbsp;The American Physical Society</option>
+<option value="OSA">&nbsp;&nbsp;Optical Society of America</option>
+<option value="ASA">&nbsp;&nbsp;Acoustical Society of America</option>
+<option value="SOR">&nbsp;&nbsp;The Society of Rheology</option>
+<option value="AAPT">&nbsp;&nbsp;American Association of Physics Teachers</option>
+<option value="ACA">&nbsp;&nbsp;American Crystallographic Association</option>
+<option value="AAS">&nbsp;&nbsp;American Astronomical Society</option>
+<option value="AAPM">&nbsp;&nbsp;American Association of Physicists in Medicine</option>
+<option value="AVS">&nbsp;&nbsp;AVS The Science and Technology Society</option>
+<option value="AGU">&nbsp;&nbsp;American Geophysical Union</option>
+<option value="SPS">&nbsp;&nbsp;Society of Physics Students</option>
+<option value="x">--------------------------------------------------------------</option>
+<option value="x">I am a:</option>
+<option value="PTIND">&nbsp;&nbsp;Physics Today individual subscriber</option>
+<option value="x">--------------------------------------------------------------</option>
+<option value="x">I am a:</option>
+<option value="PUBLIC">&nbsp;&nbsp;Member of the Public</option>
+</select>
+</p>
+<p><input type="checkbox" value="Member Change of Address" name="chgadd" id="chgadd" onclick="chkbx()"> 
+<label for="chgadd">Check this box if this is a change of address request.</label>
+<p id="regd"><label for="subject" style="width: 80px; float: left; text-align: right; margin-right: 10px;">Regarding:</label>
+    <select name="subject" id="subject">
+      <option value="General Queries">General Queries</option>
+      <option value="Feedback about the Web site">Feedback about the Web site</option>
+      <option value="Feedback about Update">Feedback about Physics Update</option>
+      <option value="Letters to the Editor">Letters to the Editor</option>
+      <option value="Feedback about Reference Frame">Feedback about Reference Frame</option>
+      <option value="Feedback about Search and Discovery">Feedback about Search and Discovery</option>
+      <option value="Feedback about Issues and Events">Feedback about Issues and Events</option>
+      <option value="Feedback about Articles">Feedback about Articles</option>
+      <option value="Feedback about Books">Feedback about Books</option>
+      <option value="Feedback about New Products">Feedback about New Products</option>
+      <option value="Feedback about Obituaries">Feedback about Obituaries</option>
+      <option value="Feedback about We Hear That">Feedback about We Hear That</option>
+      <option value="Feedback about Advertising">Feedback about Advertising</option>
+      <option value="Job posting queries">Queries on Job Ads</option>
+    </select>
+</p>
+<table border="0">
+  <tr>
+    <td><label for="message" id="oldaddtxt" style="visibility: hidden;">Old Address:</label><br />
+	<label for="message" id="msgtxt">Message:</label><br />
+            <textarea name="message" cols="30" rows="5" id="message"></textarea></td>
+    <td><label for="newadd" id="newaddtxt" style="visibility: hidden;">New Address:</label><br />&nbsp;<br />
+          <textarea name="newadd" cols="30" rows="5" id="newadd" style="visibility: hidden;"></textarea>
+    </td>
+  </tr>
+</table>
+<p><input type="submit" name="Submit" value="Submit" class="frmbutton" /></p>
+  </form>
+<p style="margin-bottom: 25px;"><strong>Queries can also be sent to:</strong></p>
+<div style="float: left; width: 32%; font-size: 10px; line-height: 12px;">
+<p><strong>Editorial</strong></p>      
+<p>Physics Today<br />
+        American Center for Physics<br />
+        One Physics Ellipse<br />
+        College Park, MD 20740-3842<br />
+    U.S.A.</p>      
+	<p>Phone: (301) 209-3040<br />
+    Fax: (301) 209-0842</p></div>
+<div style="float: left; width: 32%; font-size: 10px; margin-left: 5px; line-height: 12px;">
+<p><strong>Advertising </strong></p>      
+<p>Randy Nanna<br />
+        Physics Today Advertising<br />
+        One Physics Ellipse<br />
+        College Park, MD 20740-3842<br />
+    U.S.A.</p>      
+	<p>Phone: (301) 209-3040<br />
+    Fax: (301) 209-0842</p></div>
+<div style="float: left; width: 32%; font-size: 10px; margin-left: 5px; line-height: 12px;"><p><strong>Circulation and Fullfillment</strong></p>      
+<p>American Institute of Physics<br />
+        Circulation and Fullfillment Division<br />
+        Ste 1NO1<br />
+        2 Huntington Quadrangle<br />
+        Melville, NY 11747<br />
+    U.S.A.</p>      <p>Phone: (516) 576-2270<br />
+    Fax: (516) 349-9704</p></div>
+<!-- InstanceEndEditable --></td>
+<td style="width: 150px; padding: 5px; background: #efefef;">
+<!--company spotlight-->
+<div style="margin-top: 15px; text-align: center;" class="small">
+<p><strong>Company Spotlight</strong></p>
+<iframe src="http://adserv.aip.org:80/hserver/SITE=AIP_CORPORATE/AREA=PHYS_BUTTON1" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" height="90" width="120" allowtransparency="true" style="FILTER: chroma(color=#FFFFFF)"><script src="http://adserv.aip.org:80/jserver/SITE=AIP_CORPORATE/AREA=PHYS_BUTTON1" language="javascript" type="text/javascript"></script></iframe>
+<iframe src="http://adserv.aip.org:80/hserver/SITE=AIP_CORPORATE/AREA=PHYS_SCRAPER" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" height="600" width="120" allowtransparency="true" style="FILTER: chroma(color=#FFFFFF)"> 
+<script src="http://adserv.aip.org:80/jserver/SITE=AIP_CORPORATE/AREA=PHYS_SCRAPER" language="javascript" type="text/javascript"></script></iframe>
+
+<!-- 
+<iframe src="http://adserv.aip.org:80/hserver/SITE=AIP_CORPORATE/AREA=PHYS_TEXTLINK" width="130" height="130" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" style="FILTER: chroma(color=#FFFFFF)">
+<script src="http://adserv.aip.org:80/hserver/SITE=AIP_CORPORATE/AREA=PHYS_TEXTLINK" language="javascript" type="text/javascript"></script>
+</iframe>
+
+<iframe src="http://adserv.aip.org:80/hserver/SITE=AIP_CORPORATE/AREA=PHYS_TEXTLINK_SLOT2" width="130" height="155" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" style="FILTER: chroma(color=#FFFFFF)">
+<script src="http://adserv.aip.org:80/hserver/SITE=AIP_CORPORATE/AREA=PHYS_TEXTLINK_SLOT2" language="javascript" type="text/javascript"></script>
+</iframe> -->
+<!-- <iframe src="http://adserv.aip.org:80/hserver/SITE=AIP_CORPORATE/AREA=PHYS_TEXTLINK_SLOT3" width="130" height="155" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" style="FILTER: chroma(color=#FFFFFF)">
+<script src="http://adserv.aip.org:80/hserver/SITE=AIP_CORPORATE/AREA=PHYS_TEXTLINK_SLOT3" language="javascript" type="text/javascript"></script>
+</iframe> -->
+
+<!--hotel/travel ads-->		  
+Sponsored links
+<div class="sponlink"><ul style="text-align: left;" class="plain">
+<li style="font-weight: bold;">For your conference travel needs, try:</li>
+<li><a href="http://hotels-x.net">Find Hotel Rooms</a></li> 
+<li><a href="http://www.canadianhotelguide.com">Canada Hotels</a></li>
+<li><a href="http://www.freehotelsearch.com">Discount Hotels Search</a></li>
+<li><a href="http://urbaneasy.com">Urban Hotel Rooms</a></li>
+<li><a href="http://www.freehotelguide.com">Hotel Discounts Guide</a></li>
+<li><a href="http://hotels-123.com">Discount Hotels 123</a></li>
+<li><a href="http://www.lasvegas-discounthotels.com">Las Vegas Hotels</a></li>
+<li><a href="http://www.disneyvacationguide.com">Disney World Hotels FL</a></li>
+<li><a href="http://www.freenewyorkhotelguide.com">New York City Hotels</a></li>
+<li><a href="http://www.freehotelsearch.com/us/illinois-hotels/Chicago-hotels.html">Chicago Hotels</a></li>
+</ul></div></div>
+
+</td>
+</tr>
+</table>
+</td>
+<td style="width: 150px; padding: 5px; background: #efefef;">&nbsp;</td>
+</tr>
+</table>
+<div id="footer">
+<ul>
+<li><a href="/pt/contact.html" target="_self">Contact us</a></li>
+<li>|</li>
+<li><a href="/pt/about.html" target="_self">About Physics Today</a></li>
+<li>|</li>
+<li><a href="http://www.aip.org/aip/privacy.html" target="_self">Privacy Policy</a></li>
+<li>|</li>
+<li><a href="/pt/terms.html" target="_self">Terms &amp; Conditions</a></li>
+</ul>
+<p><a href="http://www.aip.org/aip/copyright.html">Copyright</a> &copy; 2005 by the <a href="http://www.aip.org">American Institute of Physics</a><br />
+All rights reserved</p>
+</div>
+</div>
+</body>
+</html>
+</div>
+</body>
+<!-- InstanceEnd --></html>

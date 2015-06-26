@@ -1,0 +1,1374 @@
+<DOC>
+<DOCNO>g00603</DOCNO>
+<DOCHDR>http://hotels.boston.com/hotels-view-357320-san_carlos_hotel-new_york-ny.htmi</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/includes/style.css">
+<link rel="stylesheet" href="http://www.openlist.com/includes/styles.css">
+<script src="/includes/js.js" language="javascript" type="text/javascript"></script>
+<meta http-equiv="charset" content="iso-8859-1"><meta
+    http-equiv="Keywords"
+    content="Save on hotels, Deals on hotels, Special rates for hotels, Deals on Boston hotels, Book a Boston hotel room, Where to Stay"><meta
+    http-equiv="Description"
+    content="Make online hotel reservations, including New England bed and breakfasts. Find last-minute hotel deals and save with special rates on Boston hotels.">
+<title>Boston.com / Travel / Hotels &amp; New England Bed and Breakfasts</title>
+<script src="/includes/widget_new.js" language="javascript" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript"><!--
+function init_widget() { make_slots(); add_vendors(); }
+function add_vendors() {
+	add_vendor( new vendor( "travelocity", document.widget.travelocity, "/widget?r=1&target=widget_property&advertiser=travelocity&campaign=2&partner=boston&entity_id=357320" ) );
+	add_vendor( new vendor( "orbitz", document.widget.orbitz, "/widget?r=1&target=widget_city&advertiser=orbitz&campaign=6&partner=boston" ) );add_vendor( new vendor( "hotwire", document.widget.hotwire, "/widget?r=1&target=widget_city&advertiser=hotwire&campaign=30&partner=boston" ) );add_vendor( new vendor( "cheaptickets", document.widget.cheaptickets, "/widget?r=1&target=widget_city&advertiser=cheaptickets&campaign=16&partner=boston" ) );add_vendor( new vendor( "priceline", document.widget.priceline, "/widget?r=1&target=widget_city&advertiser=priceline&campaign=36&partner=boston" ) );
+}
+var cal1 = new CalendarPopup();
+var cal2 = new CalendarPopup();
+var now = new Date();
+now.setDate(now.getDate()-1);
+cal1.addDisabledDates(null,formatDate(now,"yyyy-MM-dd"));
+cal2.addDisabledDates(null,formatDate(now,"yyyy-MM-dd"));
+cal1.setReturnFunction("setMultipleValues1");
+cal2.setReturnFunction("setMultipleValues2");
+function setMultipleValues1(y,m,d) { document.widget.in_mm.selectedIndex=m - 1; for (var i=0; i< document.widget.in_dd.options.length; i++) { if (document.widget.in_dd.options[i].value==d) { document.widget.in_dd.selectedIndex=i; } } adjust_out(); }
+function setMultipleValues2(y,m,d) { document.widget.out_mm.selectedIndex=m - 1; for (var i=0; i< document.widget.out_dd.options.length; i++) { if (document.widget.out_dd.options[i].value==d) { document.widget.out_dd.selectedIndex=i; } } }
+function getDateString(m_obj,d_obj) { var y = 2006; var m = m_obj.options[m_obj.selectedIndex].value; var d = d_obj.options[d_obj.selectedIndex].value; if (y=="" || m=="") { return null; } if (d=="") { d=1; } return str= y+'-'+m+'-'+d; }
+//-->
+</script>
+
+<script language="JavaScript1.1" type="text/javascript" src="http://cache.boston.com/bonzai-fba/File-Based_File_Resource/site_global_scripts11.js"></script>
+<script language="JavaScript1.3" type="text/javascript" src="http://content.worldnow.com/global/tools/video/VideoFunctions.js?ver=1"></script>
+<script language="JavaScript1.2" type="text/javascript" src="http://cache.boston.com/tacoda/Tacoda_AMS_DDC_Header.js"></script>
+<script language="JavaScript"><!--
+  var siteurl = 'http://www.boston.com';
+  var imgurl  = 'http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/';
+  var gimages = ['gnav_site_h.gif', 'gnav_news_h.gif', 'gnav_ae_h.gif', 'gnav_business_h.gif', 'gnav_sports_h.gif', 'gnav_travel_h.gif', 'gnav_yourlife_h.gif', 'gnav_cars_h.gif', 'gnav_jobs_h.gif', 'gnav_personals_h.gif', 'gnav_realestate_h.gif'];
+//--></script>
+<link rel="stylesheet" href="http://cache.boston.com/bonzai-fba/File-Based_File_Resource/site_global_styles7.css" type="text/css" />
+<style>
+<!--
+a#secnav_hotels:link, a#secnav_hotels:visited, a#secnav_hotels:active, a#secnav_hotels:hover { font-weight: bold; text-decoration: none; color: #cc0000; }
+//--></style>
+<!--[if IE 6]>
+<style>
+  .padAll5, .padAll7, .padAll10, .padLeft5, .indent10, .fodorsIndent, .lighterIndent { height: 100%; }
+</style>
+<![endif]-->
+<!--Weather Query Params--><script language="JavaScript1.1" type="text/javascript" src="http://cache.boston.com/weather-ad-include.js"></script>
+<!--Begin OAS MJX setup tag--><script language="JavaScript"><!--
+//configuration
+OAS_sitepage='www.boston.com/travel/deals/hotels';
+OAS_listpos='TOP,POPUP,POPUN,EXTRA';
+oasquery='pagetype=section_folder&RM_Exclude=exclude_section_folder&RM_Exclude=exclude_partner_traffic';if(typeof OAS_query=='undefined'||!OAS_query)OAS_query=oasquery;else OAS_query+='&'+oasquery;
+OAS_url='http://rmedia.boston.com/RealMedia/ads/';OAS_target='_top';OAS_version=10;OAS_rn='001234567890';OAS_rns='1234567890';OAS_rn=new String(Math.random());OAS_rns=OAS_rn.substring(2, 11);
+//--></script><script language="JavaScript1.2"><!--
+var rerefer=/referrer=(\w+)/,urefer=document.URL.match(rerefer);if(urefer){if(OAS_query){var reexclude=/RM_Exclude=[\w,*]+/,OAS_query=OAS_query.replace(reexclude,OAS_query.match(reexclude)[0]+',exclude_referrer_'+urefer[1].toLowerCase());OAS_query+='&';}OAS_query+=urefer[0];}
+//--></script><script language="JavaScript"><!--
+function OAS_NORMAL(pos){document.writeln('<A HREF="'+OAS_url+'click_nx.ads/'+OAS_sitepage+'/1'+OAS_rns+'@'+OAS_listpos+'!'+ pos+'?'+OAS_query+'" TARGET='+OAS_target+'>');document.writeln('<IMG SRC="'+OAS_url+'adstream_nx.ads/'+OAS_sitepage+'/1'+OAS_rns+'@'+OAS_listpos+'!'+pos+'?'+OAS_query+'" BORDER=0></A>');}
+//--></script><script language="JavaScript1.1"><!--
+OAS_version=11;if((navigator.userAgent.indexOf('Mozilla/3')!=-1)||navigator.userAgent.indexOf('Mozilla/4.0 WebTV')!=-1){OAS_version=10;}if(OAS_version >= 11)document.writeln('<SCR'+'IPT LANGUAGE=JavaScript1.1 SRC="'+OAS_url+'adstream_mjx.ads/'+OAS_sitepage+'/1'+OAS_rns+'@'+OAS_listpos+'?'+OAS_query+'"> <\/SCRIPT>');
+//--></script><script language="JavaScript"><!--
+document.writeln('');
+function OAS_AD(pos){if(OAS_version >= 11)OAS_RICH(pos);else OAS_NORMAL(pos);}
+//--></script><!--End OAS MJX setup tag-->
+</head>
+
+<body bgcolor="#919dbc" marginheight="0" marginwidth="0"
+      topmargin="0" rightmargin="0" bottommargin="0"
+      leftmargin="0" onload="init_widget();windowLoaded();">
+<table class="header" width="778" align="center"
+       bgcolor="#000066" cellpadding="0" cellspacing="0"
+       border="0">
+<tr><td class="banner" colspan="3"><table align="center"
+    cellpadding="0" cellspacing="0" border="0"><tr><td
+    class="bannerAd" align="center"><!--OAS MJX Ad Tag--><script language="JavaScript"><!--
+OAS_AD('TOP');
+//--></script><!--End Ad Tag--></td></tr></table></td></tr>
+<tr valign="bottom">
+  <td width="136" height="31" align="right"><a href="http://www.boston.com/"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/bcom_logo_000066.gif" width="113" height="29" alt="boston.com" title="boston.com" border="0" hspace="10" /></a></td>
+  <td width="360"><a href="http://www.boston.com/travel"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/site_branding_000066_travel.gif" alt="Travel" title="Travel" height="29" width="84" border="0" /></a></td>
+  <td width="278"><a href="http://www.boston.com/news/globe/"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/globe_connection_logo_000066.gif" width="265" height="29" alt="your connection to The Boston Globe" title="your connection to The Boston Globe" border="0" /></a></td>
+</tr>
+<tr><td class="bluegrayLine" colspan="3" height="5"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" border="0" /></td></tr>
+</table>
+<table class="globalNav" width="778" align="center"
+       cellpadding="0" cellspacing="0" border="0"
+       bgcolor="#ffffff">
+<tr valign="bottom">
+<td width="8"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" alt="" border="0" /></td>
+<td width="45" height="26"><a href="http://www.boston.com/"
+    onmouseover="changeImageOn('gnav_site_h.gif','site')"
+    onmouseout="changeImageOff('site')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_site.gif" width="45" height="26" id="site" alt="Home" title="Home" border="0" /></a></td>
+<td width="43" height="26"><a
+    href="http://www.boston.com/news"
+    onmouseover="changeImageOn('gnav_news_h.gif','news')"
+    onmouseout="changeImageOff('news')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_news.gif" width="43" height="26" id="news" alt="News" title="News" border="0" /></a></td>
+<td width="35" height="26"><a
+    href="http://www.boston.com/ae"
+    onmouseover="changeImageOn('gnav_ae_h.gif','ae')"
+    onmouseout="changeImageOff('ae')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_ae.gif" width="35" height="26" id="ae" alt="A&E" title="A&E" border="0" /></a></td>
+<td width="60" height="26"><a
+    href="http://www.boston.com/business"
+    onmouseover="changeImageOn('gnav_business_h.gif','business')"
+    onmouseout="changeImageOff('business')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_business.gif" width="60" height="26" id="business" alt="Business" title="Business" border="0" /></a></td>
+<td width="48" height="26"><a
+    href="http://www.boston.com/sports"
+    onmouseover="changeImageOn('gnav_sports_h.gif','sports')"
+    onmouseout="changeImageOff('sports')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_sports.gif" width="48" height="26" id="sports" alt="Sports" title="Sports" border="0" /></a></td>
+<td width="46" rowspan="2" height="27"><a
+    href="http://www.boston.com/travel"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_travel_a.gif" width="46" height="27" id="travel" alt="Travel" title="Travel" border="0" /></a></td>
+<td width="61" height="26"><a
+    href="http://www.boston.com/yourlife"
+    onmouseover="changeImageOn('gnav_yourlife_h.gif','yourlife')"
+    onmouseout="changeImageOff('yourlife')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_yourlife.gif" width="61" height="26" id="yourlife" alt="Your Life" title="Your Life" border="0" /></a></td>
+<td width="38" height="26"><a
+    href="http://www.boston.com/cars"
+    onmouseover="changeImageOn('gnav_cars_h.gif','cars')"
+    onmouseout="changeImageOff('cars')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_cars.gif" width="38" height="26" id="cars" alt="Cars" title="Cars" border="0" /></a></td>
+<td width="37" height="26"><a
+    href="http://www.boston.com/jobs"
+    onmouseover="changeImageOn('gnav_jobs_h.gif','jobs')"
+    onmouseout="changeImageOff('jobs')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_jobs.gif" width="37" height="26" id="jobs" alt="Jobs" title="Jobs" border="0" /></a></td>
+<td width="66" height="26"><a
+    href="http://www.boston.com/personals"
+    onmouseover="changeImageOn('gnav_personals_h.gif','personals')"
+    onmouseout="changeImageOff('personals')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_personals.gif" width="66" height="26" id="personals" alt="Search the Personals" title="Search the Personals" border="0" /></a></td>
+<td width="73" height="26"><a
+    href="http://www.boston.com/realestate"
+    onmouseover="changeImageOn('gnav_realestate_h.gif','realestate')"
+    onmouseout="changeImageOff('realestate')"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/gnav_realestate.gif" width="73" height="26" id="realestate" alt="Real estate" title="Real estate" border="0" /></a></td>
+<td align="right" valign="middle"><script language="JavaScript"><!--
+try{showLogin();}catch(e){document.writeln('&nbsp;');}
+//--></script><noscript>&nbsp;</noscript>
+</td>
+</tr>
+<tr><td class="bluegrayLine" height="1" colspan="6"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" alt="" border="0" /></td><td
+    class="bluegrayLine" height="1" colspan="6"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" alt="" border="0" /></td></tr>
+</table>
+<table class="secondaryNav" width="778" align="center"
+       cellpadding="0" cellspacing="0" border="0"
+       bgcolor="#ffffff"><tr><td><div class="secNavLinks"><a
+    href="http://www.boston.com/travel/hotels"
+    id="secnav_hotels">Lodging</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/flights"
+    id="secnav_flights">Flights</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/vacations"
+    id="secnav_vacations">Vacation deals</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/boston"
+    id="secnav_boston">Boston Visitors' Guide</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/newengland"
+    id="secnav_newengland">New England</a> &nbsp;&nbsp; <a
+    href="http://www.boston.com/travel/getaways"
+    id="secnav_getaways">Destinations</a></div></td></tr></table>
+<table class="mainTable" width="778" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff"><tr><td class="bluegrayLine" width="778" height="1"></td></tr>
+<tr><td><div class="mainContent">
+<!-- omniture tag -->
+<script language="JavaScript">var s_account="localicom,localicomhotels,localibostonrollup,localicomboshotels";</script> 
+<script language="JavaScript" src="/includes/s_code.js"></script> 
+<script language="JavaScript"><!--
+	s.pageName="" 
+	s.server="" 
+	s.channel="New York, NY" 
+	s.pageType="" 
+	s.prop1="San Carlos Hotel" 
+	s.prop2="" 
+	s.prop3="" 
+	s.prop4="" 
+	s.prop5=""
+	s.campaign=""
+	s.state=""
+	s.zip=""
+	s.events=""
+	s.products=""
+	s.purchaseID=""
+	s.eVar1="San Carlos Hotel"
+	s.eVar2=""
+	s.eVar3=""
+	s.eVar4=""
+	s.eVar5=""
+	var s_code=s.t();
+	if(s_code)document.write(s_code)
+//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.writer(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http://localicom.112.2O7.net/b/ss/localicom/1/H.2--NS/0" height="1" width="1" border="0" alt="" /></noscript><! --/DO NOT REMOVE/-->
+
+
+
+<a name="top"></a><center>
+
+<!-- start header -->
+<form action="/hotels-browse.htm" method="GET">
+<center>
+<table width="752" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td height="5" colspan="3">&nbsp;</td>
+</tr>
+<tr valign="top">
+	<td width="527" valign="top">
+		<table>
+		<tr>
+			<td class="copy">Search Hotels for:</td>
+			<td class="copy">City, State; City, Country; or Zip</td>
+			<td class="copy"></td>
+		</tr>
+		<tr>
+			<td class="copy"><input type="text" name="query" class="input" value="San Carlos Hotel" size="30"></td>
+			<td class="copy"><input type="text" name="loc" class="input" value="New York, NY" size="30"></td>
+			<td class="copy"><input type="image" src="http://images.openlist.com/images/search.gif" width="91" height="18"></td>
+		</tr>
+		</table>
+	</td>
+	<td valign="middle">
+		<center>
+		<font class="small">
+			powered by<br>
+			<a href="/about/boston.htm"><img src="http://images.openlist.com/images/botLogo.gif" border="0" alt="Open List, Inc." width="85" height="15" valign="middle"></a><br>
+			<a href="/sitemap/index_boston.htm">site map</a>
+
+		</font>
+		<center>
+	</td>
+</tr>
+</form>
+</table>
+</center>
+<!-- end header -->
+
+<!-- start breadcrumb -->
+<table width="752" cellpadding="0" cellspacing="0" border="0">
+<tr><td height="3"></td></tr>
+<tr>
+	<td class="bottomlink">
+		
+		<a href="/hotels-browse-new_york~-ny.htm">New York, NY Hotels</a>&nbsp;&gt;&nbsp;
+		<a href="/hotels-view-357320-san_carlos_hotel-new_york-ny.htm">San Carlos Hotel in New York, NY</a>
+	</td>
+</tr>
+</table>
+<!-- end breadcrumb -->
+
+<!-- start header -->
+<table width="752" cellpadding="0" cellspacing="0" border="0">
+<tr><td height="10" colspan="3"></td></tr>
+<tr>
+	<td valign="top" width="400">
+		<!-- start primary metadata -->
+		<table cellspacing="2">
+		<tr>
+			<td valign="top">
+				<font class="titleb"><a href="/hotels-view-357320-san_carlos_hotel-new_york-ny.htm">San Carlos Hotel</a></font>
+				<font class="copy">
+					
+						- <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '357320', 'New York', 'NY', 'US', 'San Carlos Hotel');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+					
+					<br>
+						150 E 50Th St<br>
+						New York, NY 10022<br>
+						<span class="bottomlink"><a href="http://www.sancarloshotel.com" target="_blank">sancarloshotel.com</a></span>
+						
+						 - <span class="bottomlink"><a href="http://maps.google.com/maps?li=d&hl=en&q=from:+New%20York,+NY+to:+150%20E%2050Th%20St,+New%20York,+NY+10022" target="_blank">map & directions</a></span><br>
+						
+						
+						
+						
+						
+						<p>
+						<!--email this page | add to favorites | add your comments<br>-->
+					
+						<br>
+						&#8226; <b><a rel="nofollow" href="javascript:;" onClick="window.open('/review?id=357320&vertical=hotels&name=San%20Carlos%20Hotel&uri=%2Fhotels-view-357320-san_carlos_hotel-new_york-ny.htm&partner=ene', 'review', 'toolbar=no,width=400,height=450,status=no,scrollbars=no,menubar=no,resizable=yes,alwaysRaised=yes,screenX=0,screenY=0'); return false" target="_top" name="review">Add your review</a></b> of San Carlos Hotel<br>
+					
+					</font>
+			</td>
+		</tr>
+		</table>
+		<!-- end primary metadata -->
+	</td>
+	<td width="30"></td>
+	<td valign="top">
+		
+		<!-- start alternates -->
+		
+		<table cellspacing="1" border="0" cellpadding="1" width="400" bgcolor="#ECF5FA">
+		<tr>
+			<td class="copy" colspan="2">	
+				<B>Similar <span class="bottomlink"><a href="/hotels-browse-new_york~-ny.htm">Hotels in New York, NY</a></span>:</B>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="bottomlink">	
+				 - <a href="/hotels-view-373213-the_lucerne_hotel-new_york-ny.htm"><B>The Lucerne Hotel  </B></a>
+			</td>
+			<td class="bottomlink">
+				
+				 - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '373213', '', '', '', 'The Lucerne Hotel  ');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="bottomlink">	
+				 - <a href="/hotels-view-321402-bryant_park_hotel-new_york-ny.htm"><B>Bryant Park Hotel  </B></a>
+			</td>
+			<td class="bottomlink">
+				
+				 - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '321402', '', '', '', 'Bryant Park Hotel  ');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="bottomlink">	
+				 - <a href="/hotels-view-323330-affinia_50_hotel-new_york-ny.htm"><B>Affinia 50 Hotel  </B></a>
+			</td>
+			<td class="bottomlink">
+				
+				 - <span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '323330', '', '', '', 'Affinia 50 Hotel  ');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			</td>
+		</tr>
+		
+		</table>
+		
+		<!-- end alternates -->
+		
+		<!-- start thumbnail -->
+		
+		<!-- end thumbnail -->
+		
+	</td>
+</tr>
+</table>
+<!-- end header -->
+
+
+
+<!-- start boston.com content -->
+
+
+
+
+
+<!-- start company information -->
+<table width="752" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td class="copylight">	............................................................................................................................................................................................</td>
+</tr>
+<tr><td height="10"></td></tr>
+<tr>
+	<td valign="top" class="copy">
+		
+		
+		
+		<table><tr><td valign=top>
+		
+		
+		
+		
+		<font class="titleb">Details on <a href="/hotels-view-357320-san_carlos_hotel-new_york-ny.htm">San Carlos Hotel, New York</a> </font>
+ 		- <span class="bottomlink"><a rel="nofollow" 
+	href="javascript:;" 
+	onClick="window.open('/review?id=357320&vertical=hotels&name=San%20Carlos%20Hotel&uri=%2Fhotels-view-357320-san_carlos_hotel-new_york-ny.htm', 'review', 'toolbar=no,width=400,height=450,status=no,scrollbars=no,menubar=no,resizable=yes,alwaysRaised=yes,screenX=0,screenY=0'); return false" 
+	target="_top" 
+	name="review">Review this Hotel</a></span>
+	- <span class="bottomlink"><a rel="nofollow" 
+	href="javascript:;" 
+	onClick="window.open('/update?id=357320&vertical=hotels', 'update', 'toolbar=no,width=350,height=575,status=no,scrollbars=no,menubar=no,resizable=yes,alwaysRaised=yes,screenX=0,screenY=0'); return false" 
+	target="_top" 
+	name="review">Update details</a></span>
+		
+		<table cellpadding="0" cellspacing="0" border="0">
+		
+		
+
+		
+		
+		
+		
+		
+		<tr><td colspan="3" height="4"></td></tr>
+		<tr>
+			<td valign="top" class="copylight" width="150">
+				<B>Recent Rate:</B>
+			</td>
+			<td width="7"></td>
+			<td valign="top" class="copy">
+				$250+ - 
+				<span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '357320', 'New York', 'NY', 'US', 'San Carlos Hotel');" target="_top" name="compare deals at Open List">check rates</a></b></span>
+			</td>
+		</tr>
+		
+		
+		
+		<tr><td colspan="3" height="4"></td></tr>
+		<tr>
+			<td valign="top" class="copylight" width="150"><B>Star&nbsp;Rating:</B></td>
+			<td width="7"></td>
+			<td valign="top" class="copy">
+				<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+				<img src="http://images.openlist.com/images/3.gif" alt="3" valign="top" vspace="0" border="0">
+				</a>
+			</td>
+		</tr>
+		
+		
+		
+		
+		
+	
+		
+		<tr><td colspan="3" height="4"></td></tr>
+		<tr>
+			<td valign="top" class="copylight" width="150"><B>Traveler&nbsp;Rating:</B></td>
+			<td width="7"></td>
+			<td valign="top" class="copylight">
+				<a href="javascript:;" onClick="window.open('/ratings.htm', 'ratings', 'width=300,height=350,scrollbars=yes,menubar=no,location=no,toolbar=no');">
+				<img src="http://images.openlist.com/images/5.gif" alt="5" valign="top" vspace="0" border="0"></a>
+				 (based on 67 samples)
+			</td>
+		</tr>
+		
+		
+		
+		<tr><td colspan="3" height="4"></td></tr>
+		<tr>
+			<td valign="top" class="copylight" width="150"><B>Features:</B></td>
+			<td width="7"></td>
+			<td valign="top" class="copy">
+				
+					airport shuttle, 
+				
+					babysitting/child care, 
+				
+					bar/lounge, 
+				
+					business center, 
+				
+					business services, 
+				
+					cable tv, 
+				
+					corporate facilities, 
+				
+					fitness facilities, 
+				
+					handicap facilities, 
+				
+					high speed internet, 
+				
+					internet access (free), 
+				
+					kitchen/kitchenette, 
+				
+					on-site car rental, 
+				
+					pool, 
+				
+					restaurant, 
+				
+					tv
+				
+			</td>
+		</tr>
+		
+		
+		
+		
+		
+		<tr><td colspan="3" height="4"></td></tr>
+		<tr>
+			<td valign="top" class="copylight" width="150"><B>Phone:</B></td>
+			<td width="7"></td>
+			<td valign="top" class="copy">
+				212-755-1800
+			</td>
+		</tr>
+		
+		
+		
+		<tr><td colspan="3" height="4"></td></tr>
+		<tr>
+			<td valign="top" class="copylight" width="150"><B>Fax:</B></td>
+			<td width="7"></td>
+			<td valign="top" class="copy">
+				212-688-9778
+			</td>
+		</tr>
+		
+		
+		
+		
+		</table>
+		
+		
+		
+		
+		
+		
+		
+		</td>
+		
+		
+		<td width=10></td><td width=225 valign=top bgcolor=eeeeee>
+		
+			<div style="width: 200px; border: 1px solid #003399; padding: 5px; background: #ECF5FA;">
+
+<form name="widget" action="/widgetdd" target="_blank">
+<noscript>Please enable JavaScript to check rates with our partners.</noscript>
+<input type="hidden" name="name" value="San Carlos Hotel">
+<input type="hidden" name="entity_id" value="357320">
+<input type="hidden" name="city" value="New York">
+<input type="hidden" name="state" value="NY">
+<input type="hidden" name="country" value="US">
+<input type="hidden" name="guests" value="1">
+<input type="hidden" name="advertiser" value="">
+<input type="hidden" name="campaign" value="">
+<input type="hidden" name="r" value="1">
+<input type="hidden" name="partner" value="boston">
+<input type="hidden" name="target" value="">
+
+<div style="font-size: 12px; text-align: center; padding-bottom: 5px; color: #007F00">
+	<b>Find Great Rates<br>
+	on San Carlos Hotel</b>
+</div>
+
+<table cellspacing=0 cellpadding=0>
+<tr>
+	<td style="text-align: right;">Check-in:</td>
+	<td>
+		<select onchange="adjust_out();" name=in_mm id=in_mm>
+			
+				<option value="01" >Jan</option>
+			
+				<option value="02" >Feb</option>
+			
+				<option value="03" >Mar</option>
+			
+				<option value="04" >Apr</option>
+			
+				<option value="05" >May</option>
+			
+				<option value="06" >Jun</option>
+			
+				<option value="07" >Jul</option>
+			
+				<option value="08" selected>Aug</option>
+			
+				<option value="09" >Sep</option>
+			
+				<option value="10" >Oct</option>
+			
+				<option value="11" >Nov</option>
+			
+				<option value="12" >Dec</option>
+			
+		</select>
+	</td>
+	<td>
+		<select onchange="adjust_out();" name=in_dd id=in_dd>
+			
+				<option value="01" >01</option>
+			
+				<option value="02" >02</option>
+			
+				<option value="03" >03</option>
+			
+				<option value="04" >04</option>
+			
+				<option value="05" selected>05</option>
+			
+				<option value="06" >06</option>
+			
+				<option value="07" >07</option>
+			
+				<option value="08" >08</option>
+			
+				<option value="09" >09</option>
+			
+				<option value="10" >10</option>
+			
+				<option value="11" >11</option>
+			
+				<option value="12" >12</option>
+			
+				<option value="13" >13</option>
+			
+				<option value="14" >14</option>
+			
+				<option value="15" >15</option>
+			
+				<option value="16" >16</option>
+			
+				<option value="17" >17</option>
+			
+				<option value="18" >18</option>
+			
+				<option value="19" >19</option>
+			
+				<option value="20" >20</option>
+			
+				<option value="21" >21</option>
+			
+				<option value="22" >22</option>
+			
+				<option value="23" >23</option>
+			
+				<option value="24" >24</option>
+			
+				<option value="25" >25</option>
+			
+				<option value="26" >26</option>
+			
+				<option value="27" >27</option>
+			
+				<option value="28" >28</option>
+			
+				<option value="29" >29</option>
+			
+				<option value="30" >30</option>
+			
+				<option value="31" >31</option>
+			
+		</select>
+	</td>
+	<td><a href="#"onClick="cal1.showCalendar('in',getDateString(document.widget.in_mm,document.widget.in_dd)); return false;" NAME="in" ID="in"><image src="http://images.openlist.com/images/w_cal.gif" width=19 height=16 border=0></a></td>
+</tr>
+<tr>
+	<td style="text-align: right;">Check-out:</td>
+		<td>
+			<select name=out_mm id=out_mm>
+       			
+      				<option value="01" >Jan</option>
+       			
+      				<option value="02" >Feb</option>
+       			
+      				<option value="03" >Mar</option>
+       			
+      				<option value="04" >Apr</option>
+       			
+      				<option value="05" >May</option>
+       			
+      				<option value="06" >Jun</option>
+       			
+      				<option value="07" >Jul</option>
+       			
+      				<option value="08" selected>Aug</option>
+       			
+      				<option value="09" >Sep</option>
+       			
+      				<option value="10" >Oct</option>
+       			
+      				<option value="11" >Nov</option>
+       			
+      				<option value="12" >Dec</option>
+       			
+  			</select>
+		</td>
+		<td>
+		<select name=out_dd id=out_dd>
+   			
+   				<option value="01" >01</option>
+   			
+   				<option value="02" >02</option>
+   			
+   				<option value="03" >03</option>
+   			
+   				<option value="04" >04</option>
+   			
+   				<option value="05" >05</option>
+   			
+   				<option value="06" >06</option>
+   			
+   				<option value="07" >07</option>
+   			
+   				<option value="08" >08</option>
+   			
+   				<option value="09" selected>09</option>
+   			
+   				<option value="10" >10</option>
+   			
+   				<option value="11" >11</option>
+   			
+   				<option value="12" >12</option>
+   			
+   				<option value="13" >13</option>
+   			
+   				<option value="14" >14</option>
+   			
+   				<option value="15" >15</option>
+   			
+   				<option value="16" >16</option>
+   			
+   				<option value="17" >17</option>
+   			
+   				<option value="18" >18</option>
+   			
+   				<option value="19" >19</option>
+   			
+   				<option value="20" >20</option>
+   			
+   				<option value="21" >21</option>
+   			
+   				<option value="22" >22</option>
+   			
+   				<option value="23" >23</option>
+   			
+   				<option value="24" >24</option>
+   			
+   				<option value="25" >25</option>
+   			
+   				<option value="26" >26</option>
+   			
+   				<option value="27" >27</option>
+   			
+   				<option value="28" >28</option>
+   			
+   				<option value="29" >29</option>
+   			
+   				<option value="30" >30</option>
+   			
+   				<option value="31" >31</option>
+   			
+		</select>
+	</td>
+	<td><a href="#"onClick="cal2.showCalendar('out',getDateString(document.widget.out_mm,document.widget.out_dd)); return false;" NAME="out" ID="out"><image src="http://images.openlist.com/images/w_cal.gif" width=19 height=16 border=0></a></td>
+</tr>
+</table>
+
+
+<hr noshade size=1 width=95%>
+
+
+	<b>Compare rates at&nbsp;<b>San Carlos Hotel</b>&nbsp;with:</b><br>
+	
+		&nbsp;&nbsp;&nbsp;<label for=travelocity><input type="checkbox" name=travelocity id=travelocity checked>&nbsp;<a href="javascript:open_single('travelocity', 2, 'widget_property');">Travelocity.com</a><img src="http://www.openlist.com/qx/tr/crypt?uLw3udiDdDlNH2WAPBA0dcAVgSv8XbixVBRSePg16xx0YkMmqiUCjehm3ZY6cIB4OmHk9qTkdtk_kyGGn6ZVXDcy9LQ20foeULaQ-cCQnvulvXw4NjbFi3IDRAevZ42RDtaxGkL1ztR3spRiw0WQV_HGqZExcvJeS1l2lodxOzsVbal3TknifDNRiV6ge1NTEaUcw0vKK7yy604R7oj5Aos_PEqOc70LGCSUWJtGidZVQ0LuMMF0t8zXkmY7NApnxM4fO6g84RxdZlUoiWryGi-sOeqZYmYFctjNYqEJbDUJxqbS_GL-vua8zZ3dYpyAdnKXSasWVlMNF_DqT0GT2JqHkMZ-PL5B-2wYWIr6prIHZLY1kngpXoS6JTwibDXd-z-NB3NCMAdTDJ0WglX3mE-OOseaPItB-YYJEjnamJiS9eFMUoeRelAFnEpM3uPWrMvffUuG0OFala8QhYIm7wgsnzcuB1aqbh1S_CdcVzqyvhsYXybCLlWUxZY2ObYrabr1KrymH_mKdOvTxmf1ALMwChq6WmU6KCRciW0it4BaJOladb-F2PiSA9MwGNfrhYPe0lxuHs1HTPgc0eYRBA" border="0" width="1" height="1"></label><br>
+	
+	<hr noshade size=1 width=95%>
+
+
+
+	<b>Compare rates on other hotels in&nbsp;<b>New York</b>:</b><br>
+
+	&nbsp;&nbsp;&nbsp;<label for=orbitz><input type="checkbox" name=orbitz id=orbitz>&nbsp;<a href="javascript:open_single('orbitz', 6, 'widget_city');">Orbitz.com</a><img src="http://www.openlist.com/qx/tr/crypt?c6wxLdfrgWaa-oh57rpdG3U5taVSMmEars4u11cHsIFu4RgMoX8L2BAayGiH2YiIkeasLXLV0C35EWEEIokNDSy58KYR7VBSutq_2j1PcaDOiKGpTACPqIoCXUswi-YTjtpm7fqQYQaEO71BHalWsLk8Fx84DbQDGDbhWn7Lc5RRfQ9omPgGhPRa6GeQyMx7KjV2WaSqyvObu2qu5pwQbKmxrFwzD8UDAnf4iifFA37DVUNuCSlHJeDB9ffkigFSTS7jpdTg8b5QFVSA8nZ7hNAfjyEKZpSW3BZ_kw-_KmGICLTnCr8-BRAXW4BoOshWegGTxQoIvgLKm8r3-056e_iGMrH59ZAnGwmdAc90oylcrewmtFSB0iWbn4FjojTD0IzXSkySYdtR4Tfxk5vEuY1tfqLKTNYFDY3K1apGVa4QmSEmTNZ7dsZ2jDoKYjUTVDym0s1AcGPtilbFbPskzbGPGywE6lR8TIZz4S9cpxvCFjKGUFvqb-OwUJeV9Uc5ojNdbVQ7kOguRFcM7-IF2ANUmIYRcnDXNKWi1Nv-ew_sPtHJINBP9sySL6U4CJNW" border="0" width="1" height="1"></label><br>
+
+	&nbsp;&nbsp;&nbsp;<label for=hotwire><input type="checkbox" name=hotwire id=hotwire>&nbsp;<a href="javascript:open_single('hotwire', 30, 'widget_city');">Hotwire.com</a><img src="http://www.openlist.com/qx/tr/crypt?wkStgpqUB5pv5s1-o457VA703J9KO0i4IEQGC3JhMbC9Y8awWb4DlqrOoQqUSITFS1NVSY-sE5wbmVSuzRsdb_r8HCpzHxhcQpB5aadFsyZSclK3xI9bKX4MWsufJpEXGKDL1t5k0jv-2XIyrO27aZJpilph6EzVg_8YUJiuM9FxYHPZyUxOG-DUe8NVw35uAdQz-r0eFVBLTMSV2uysvWH51YIvRcI0rwid-swtR7zuoRdWljegZ7PSzZe41QsBdFfO-V7C_j5O-0EOB12WkVC791ymT8y1pi3XsxPgS-MJZZHQVUS4cN0ZXBWky3JmIM5ZaHqbFgTpO9oTDZJ5M8C9H6HlnmujnfCILovqcDxB7Eb14awcDRLYG09jXLs2XKQnpZcKokBNCXZEtDv3HvVh6ZzFNKERr6izrozU3KT9_hG_oCiWQKxQGkz-Pd4aiNs9YlE62SGihFo9DOHpPQcs3Z4dsawgRZMDoZ5feF4" border="0" width="1" height="1"></label><br>
+
+	&nbsp;&nbsp;&nbsp;<label for=cheaptickets><input type="checkbox" name=cheaptickets id=cheaptickets>&nbsp;<a href="javascript:open_single('cheaptickets', 16, 'widget_city');">Cheaptickets.com</a><img src="http://www.openlist.com/qx/tr/crypt?jXRdaLmHuzpJIdw7XTwfRbccZABderVWgiM_88y9EDFC6MSR4S_igva_hsobrHAcS-V7j1h7YZGcZMgZFuRBD1KHorh2sb_bUGupz9I5tItnJtptSMOLr2naQvc1eURws8crt1G_Q06OxGY_vucpDm4pnafrc3KfKZmnGd64_eiHBPifKsSMXRwlmjpxuZb3axrgp3-XiBmqXqo9dSHEN91zSiRRwGahIfWB8RKrc1-w4-lH5FeOJkLl2TXiNcNn4CIvE-_aO04fbRwd0eKm7KiZ09k8LdmuYD_1_6n4NAZBjwKui5UD2UgGO-Mu9zcJ9ZBYwADZRY8dC_Kugulxd3ItiBuRCLuaQo6IyII-F3sVPVblFOcvtoDS9cfZ6SLCtbm2pbb9eLFneJqIrkuNsMCi1xrcxlQPtaXcmyicgzJD1ta7KHjHJQzmK4vtcR38xwj5bqzLw_FK3S7JbpUYpjFIzAH4CjANF7BFEeLxppNTXGOt3WE9a4emXo5AsckHoZEPhg9DLNP32NDTjLLkrMBCZIlg4j6J21zpI8U-kriyniho-2F66MxpcVtUkvqIwzVilyixvwg" border="0" width="1" height="1"></label><br>
+
+	&nbsp;&nbsp;&nbsp;<label for=priceline><input type="checkbox" name=priceline id=priceline>&nbsp;<a href="javascript:open_single('priceline', 36, 'widget_city');">Priceline.com</a><img src="http://www.openlist.com/qx/tr/crypt?HbBoUYDyGLp_x2JUWrJCBHMzg5PIkWb8OGiPc-KxbWZAll_qWaxHC8nVYVS3sVmPPpNc2OtRGV7xVjcS4cH6stC0T4JtNfTNOi2uAh8mBshfogrixuGfB2ZIsmJZDESpIE3waJjQNVDW-K4fozJlHUEbqLHis7ch1HhKKgHgh2q54e20gEaRV1FUiAlLOiVvcLXGTksVgGLZF7Uew4ENMU250v78TqAtF_1cwZyIPZO2H-O6uS0nzqBGzVrKxmsd-JZbAhaq7Cm2cA_d09buejJXKLl6y9IfzpUva-UFl6WzHlmRCfhQ4zLEleN22X5XlNTMyIuZuaAfAcFpAST9Xbwg6auJAjtMb1gRZlVrXwVC8SSwMlc0Aor8r3wTHZHB0_l9_WeQw4_1J0i60WQhp-ni6ohUXjUyQXaP3t76kJskzCpuFIZzEDh0yipP--vQjk47wiuXLK9litFSPIeEOA" border="0" width="1" height="1"></label><br>
+
+
+
+<p align=right>
+
+	<img src="http://images.openlist.com/images/w_search.gif" alt="Search" width=91 height=18 border=0 onClick="javascript:display_vendors(); return false;">
+
+</p>
+
+<div id="sel10"></div><div id="sel11"></div>
+			
+<div style="font-family: Arial; font-size: 10px; color: #808080; padding-top: 7px;" id=msgbox>
+	Opens one window for each partner. Please disable popup blockers.
+</div>
+
+
+
+</form>
+</div>
+
+		</td>
+		
+		
+		
+		</tr></table>
+			
+	</td>
+</tr>
+<tr><td height="10"></td></tr>
+<tr>
+	<td class="copylight">	............................................................................................................................................................................................</td>
+</tr>
+</table>
+<!-- end company information -->
+
+
+
+         
+
+
+
+
+<!-- start content -->
+
+<a name="resources"></a>
+<table width="752" cellpadding="0" cellspacing="0" border="0">
+<tr><td height="10" colspan="3"></td></tr>
+<tr>
+	<td valign="top" colspan="3">
+		<font class="titleb"><B>Comments and Reviews from across the Web for San Carlos Hotel, New York</B></font>
+	</td>
+</tr>
+<tr><td height="10" colspan="3"></td></tr>
+<tr>
+	<td valign="top" width="135" bgcolor="#ECF5FA" style="padding-left:3px">
+		
+		<!-- start refinements -->
+		
+		<font class="copy"><b>Refine Your Research</b></font><br/><br/>
+	
+		
+			<font class="copy"><b>By type of content</b></font><br>
+			
+			
+				
+				<font class="link"><a href="/hotels-view-357320-san_carlos_hotel-new_york-ny.htm?type=expert%20review#resources">expert&nbsp;review&nbsp;(8)</a></font><br>
+				
+			
+			
+				
+				<font class="link"><a href="/hotels-view-357320-san_carlos_hotel-new_york-ny.htm?type=traveler%20comment#resources">traveler&nbsp;comment&nbsp;(13)</a></font><br>
+				
+			
+			
+			<p>
+					
+		
+			<font class="copy"><b>By rating</b></font><br>
+			
+			
+				
+				<font class="link"><a href="/hotels-view-357320-san_carlos_hotel-new_york-ny.htm?rating=5%20stars#resources"><img src="http://images.openlist.com/images/5.gif" border="0">&nbsp;(1)</a></font><br>
+				
+			
+			
+			<p>
+					
+		
+			<font class="copy"><b>By recommendation</b></font><br>
+			
+			
+				
+				<font class="link"><a href="/hotels-view-357320-san_carlos_hotel-new_york-ny.htm?affect=positive#resources">positive&nbsp;(4)</a></font><br>
+				
+			
+			
+				
+				<font class="link"><a href="/hotels-view-357320-san_carlos_hotel-new_york-ny.htm?affect=neutral#resources">neutral&nbsp;(6)</a></font><br>
+				
+			
+			
+				
+				<font class="link"><a href="/hotels-view-357320-san_carlos_hotel-new_york-ny.htm?affect=negative#resources">negative&nbsp;(2)</a></font><br>
+				
+			
+			
+			<p>
+					
+		
+		
+		<!-- end refinements -->
+
+		<!-- start nearby -->
+		
+		<!-- end nearby -->
+		
+		
+	</td>
+	<td valign="top" width="7"</td>
+	<td valign="top">
+		
+		<table cellspacing="0" cellpadding="3" border="0" width="100%">
+		<tr><td class="copy" bgcolor="#ECF5FA" valign="top">
+				<span class="bottomlink"><b><a rel="nofollow" href="javascript:;" onClick="launch_widget('boston', '357320', 'New York', 'NY', 'US', 'San Carlos Hotel');" target="_top" name="compare deals at Open List">check rates</a></b></span> - 
+				<!--<a href="xxx">add your comments</a>-->
+				<span class="bottomlink"><a href="#top">top of page</a></span>
+				 - other <span class="bottomlink"><a href="/hotels-browse-new_york~-ny.htm">Hotels in New York, NY</a></span>
+				
+		</td></tr>
+		<tr><td height="3"></td></tr>
+		</table>
+		
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://travel2.nytimes.com/top/features/travel/destinations/unitedstates/newyork/newyorkcity/hotel_details.html?vid=1083919789453" target="_blank">The New York Times > Travel > New York City Guide > Hotel Details</a></b>" 
+				<br>
+			</b></font>
+			<font class="copy">
+				"Comfortable and plain, this small residential-style property has friendly service and a convenient location. Rooms are spacious, and all include a walk-in closet and two phones. Guests have access to the nearby YWCA, an impressive facility with two swimming pools, for only $5 a day."<br>
+			</font>
+			<font class="copyg">
+				nytimes.com
+				
+				 - neutral
+				 - expert review
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.fodors.com/miniguides/mgresults.cfm?destination=new_york_city@111&cur_section=lod&property_id=49239" target="_blank">San Carlos | New York City Hotels | Fodor's Online Travel Guide</a></b>" 
+				<br>
+			</b></font>
+			<font class="copy">
+				"Comfortable and plain, this small residential-style property has friendly service and a convenient location. Rooms are spacious, and all include a walk-in closet and two phones. Guests have access to the nearby YWCA, an impressive facility with two swimming pools, for only $5 a day."<br>
+			</font>
+			<font class="copyg">
+				fodors.com
+				
+				 - neutral
+				 - expert review
+				 - <img src="http://images.openlist.com/images/3.5.gif" border="0" alt="3.5" valign="bottom">
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://travel.yahoo.com/p-hotel-398354-san_carlos_hotel-i?action=describe" target="_blank">Amenities for San Carlos Hotel, New York City - Yahoo! Travel</a></b>" 
+				<br>
+			</b></font>
+			<font class="copy">
+				"The San Carlos Hotel is located in Manhattans Midtown area, walking distance from Fifth Avenue, and approximately ten miles from LaGuardia and17 miles from both JFK International, and Newark Liberty International airports. Local attractions include Rockefeller Center, UN Headquarters, Chrysler Building, Grand Central Station, Times..."<br>
+			</font>
+			<font class="copyg">
+				yahoo.com
+				
+				
+				 - expert review
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://travel.yahoo.com/p-hotel-398354-san_carlos_hotel-i" target="_blank">San Carlos Hotel, New York City Hotels - Yahoo! Travel</a></b>" 
+				<br>
+			</b></font>
+			<font class="copy">
+				"Find comprehensive hotel information including descriptions, rates & availability, photos, reviews and interactive maps for San Carlos Hotel in New York, New York. Check the weather, and locate additional information on nearby airports, attractions and restaurants.         "<br>
+			</font>
+			<font class="copyg">
+				yahoo.com
+				
+				
+				 - expert review
+				 - <img src="http://images.openlist.com/images/4.5.gif" border="0" alt="4.5" valign="bottom">
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.gayot.com/newhotels/NewYorkInfo.php?tag=NYHOT041296&code=NY" target="_blank">San Carlos Hotel Hotel New York NY Review Gayot</a></b>" 
+				<br>
+			</b></font>
+			<font class="copy">
+				"After a whopping $22 million renovation, this 18-story Midtown hotel re-opened in July 2003 to great fanfare. The service---including front desk and concierge---is top notch. Need hard-to-get theater tickets or local hotspot dinner reservations? Theyll really go the extra mile here. And if you dont..."<br>
+			</font>
+			<font class="copyg">
+				gayot.com
+				
+				 - positive
+				 - expert review
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.quikbook.com/GetProfile.asp?Code=2450&Market=46" target="_blank">San Carlos Hotel - Quikbook - Hotel Detail</a></b>" 
+				<br>
+			</b></font>
+			<font class="copy">
+				"This midtown hotel is located four blocks from Rockefeller Center, five blocks from Radio City Music Hall, and seven blocks from Broadway. Guest rooms include hi-speed Internet access, complimentary newspaper, flat screen TV, kitchenette, CD player, Frette bathrobes, Aveda bath products, mini bar, and in-room..."<br>
+			</font>
+			<font class="copyg">
+				quikbook.com
+				
+				
+				 - expert review
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://travel.travelocity.com/hotel/HotelDateLessDetail.do?propertyId=26828&Service=TRAVELOCITY" target="_blank">Travelocity.com : Traveler Reviews</a></b>" 
+				<br>
+			</b></font>
+			<font class="copy">
+				"The San Carlos Hotel is located in Manhattans Midtown area, walking distance from Fifth Avenue, and approximately ten miles from LaGuardia and17 miles from both JFK International, and Newark Liberty International airports. Local attractions include Rockefeller Center, UN Headquarters, Chrysler Building, Grand Central Station, Times..."<br>
+			</font>
+			<font class="copyg">
+				travelocity.com
+				
+				
+				 - expert review
+				 - <img src="http://images.openlist.com/images/5.gif" border="0" alt="5" valign="bottom">
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://travel.ian.com/index.jsp?pageName=hotInfo&cid=105682&hotelID= 125871&city=NEW YORK &stateProvince=NY &country=US&hotel=1&currencyCode=USD" target="_blank">The San Carlos Hotel Is...</a></b>" 
+				<br>
+			</b></font>
+			<font class="copy">
+				"The San Carlos Hotel Is Located In The Heart Of Midtown Manhattan At 150 East 50th Street Between Lexington And 3rd Avenues. The Hotel Is Surrounded By Some Of New YorkS Most Popular Tourist Attractions, Shopping, Business District And Fine Dining.    "<br>
+			</font>
+			<font class="copyg">
+				ian.com
+				
+				
+				 - expert review
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.tripadvisor.com/ShowUserReviews-a_aid.CD1537-g60763-d80112-r3554705-San_Carlos-New_York_City_New_York.html" target="_blank">Was very comfortable at the San Carlos.</a></b>" (A TripAdvisor Member)
+				<br>
+			</b></font>
+			<font class="copy">
+				"My husband and I stayed at the San Carlos the first week of June. We had an Executive Suite on the 12th...                       "<br>
+			</font>
+			<font class="copyg">
+				tripadvisor.com
+				 - 06-14-2005
+				
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.tripadvisor.com/ShowUserReviews-a_aid.CD1537-g60763-d80112-r3417560-San_Carlos-New_York_City_New_York.html" target="_blank">Very nice hotel north of Grand Central</a></b>" (A TripAdvisor Member)
+				<br>
+			</b></font>
+			<font class="copy">
+				"Stayed here one night, because we werent allowed to extend our stay at another hotel. The room (mini-suite)...                           "<br>
+			</font>
+			<font class="copyg">
+				tripadvisor.com
+				 - 04-26-2005
+				
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.tripadvisor.com/ShowUserReviews-a_aid.CD1537-g60763-d80112-r3477333-San_Carlos-New_York_City_New_York.html" target="_blank">Friendly hotel in great location</a></b>" (A TripAdvisor Member)
+				<br>
+			</b></font>
+			<font class="copy">
+				"We were impressed with the San Carlos as soon as we arrived. The reception staff were very friendly...                           "<br>
+			</font>
+			<font class="copyg">
+				tripadvisor.com
+				 - 05-16-2005
+				 - positive
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.tripadvisor.com/ShowUserReviews-a_aid.CD1537-g60763-d80112-r3353164-San_Carlos-New_York_City_New_York.html" target="_blank">Would never stay anywhere else!</a></b>" (A TripAdvisor Member)
+				<br>
+			</b></font>
+			<font class="copy">
+				"From the telephone and email contact before our trip, to the friendly and knowledgeable staff, to the...                            "<br>
+			</font>
+			<font class="copyg">
+				tripadvisor.com
+				 - 04-12-2005
+				 - neutral
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.tripadvisor.com/ShowUserReviews-a_aid.CD1537-g60763-d80112-r3402824-San_Carlos-New_York_City_New_York.html" target="_blank">clean with all amenities</a></b>" (A TripAdvisor Member)
+				<br>
+			</b></font>
+			<font class="copy">
+				"Good location. this hotel had everything you could want. My only complaint was that my room faced on...                           "<br>
+			</font>
+			<font class="copyg">
+				tripadvisor.com
+				 - 04-25-2005
+				 - negative
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.tripadvisor.com/ShowUserReviews-a_aid.CD1537-g60763-d80112-r3439999-San_Carlos-New_York_City_New_York.html" target="_blank">Highly Recommend!!!!!!!</a></b>" (A TripAdvisor Member)
+				<br>
+			</b></font>
+			<font class="copy">
+				"I travel frequently for business thus I rely on landing hotels that are super clean, yet have a home...                          "<br>
+			</font>
+			<font class="copyg">
+				tripadvisor.com
+				 - 05-05-2005
+				 - positive
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://travel.yahoo.com/p-reviews-398354-prod-hotel-action-read-ratings_and_reviews-i?from=-29#29" target="_blank">What a remarkable find!</a></b>" (A Yahoo! User)
+				<br>
+			</b></font>
+			<font class="copy">
+				"We visited New York City for the first time in August, 2004. After looking at reviews for the many available hotels in the area, we decided to try the San Carlos. What a gem! Upon our arrival&#160;...        "<br>
+			</font>
+			<font class="copyg">
+				yahoo.com
+				 - 05-24-2005
+				
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.tripadvisor.com/ShowUserReviews-a_aid.CD1537-g60763-d80112-r3509196-San_Carlos-New_York_City_New_York.html" target="_blank">Comfort, Friendly, Tops</a></b>" (A TripAdvisor Member)
+				<br>
+			</b></font>
+			<font class="copy">
+				"San Carlos is conviently located. We stayed in a suite with one king bed and a pull out double in adjoining...                        "<br>
+			</font>
+			<font class="copyg">
+				tripadvisor.com
+				 - 05-29-2005
+				 - neutral
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.tripadvisor.com/ShowUserReviews-a_aid.CD1537-g60763-d80112-r3352189-San_Carlos-New_York_City_New_York.html" target="_blank">Differing opinions</a></b>" (A TripAdvisor Member)
+				<br>
+			</b></font>
+			<font class="copy">
+				"I really liked the San Carlos, but my husband didnt. It is near the Waldorf Astoria and within walking...                          "<br>
+			</font>
+			<font class="copyg">
+				tripadvisor.com
+				 - 04-12-2005
+				
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://www.tripadvisor.com/ShowUserReviews-a_aid.CD1537-g60763-d80112-r3372865-San_Carlos-New_York_City_New_York.html" target="_blank">Lots of room</a></b>" (A TripAdvisor Member)
+				<br>
+			</b></font>
+			<font class="copy">
+				"Stayed for a few nights and had a great stay. Rooms were large and quiet and furnished nicely. The...                          "<br>
+			</font>
+			<font class="copyg">
+				tripadvisor.com
+				 - 04-18-2005
+				 - neutral
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://leisure.travelocity.com/Vacations/Reviews/Hotel/Read/0,,TRAVELOCITY_26828_0,00.html" target="_blank">I have to be the...</a></b>" (Douglas B.)
+				<br>
+			</b></font>
+			<font class="copy">
+				"I have to be the first person to give this hotel other than 5. The two areas that I found lacking were the fact that I could hear talking in the rooms on both sides of our room and the breakfast was a bit lacking..."<br>
+			</font>
+			<font class="copyg">
+				travelocity.com
+				 - 09-08-2004
+				 - negative
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://travel.yahoo.com/p-reviews-398354-prod-hotel-action-read-ratings_and_reviews-i?from=1#1" target="_blank">Great Hotel</a></b>" (A Yahoo! User)
+				<br>
+			</b></font>
+			<font class="copy">
+				"4 of us stayed in a room with 2 double beds. Plenty of room and the staff was very helpful, free use of the Internet on the 2nd floor. Absolutely sparkly clean throughout. Would definitely stay&#160;...         "<br>
+			</font>
+			<font class="copyg">
+				yahoo.com
+				 - 06-15-2004
+				 - neutral
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+			<!-- start resource -->
+			<font class="link">
+				"<b><a href="http://travel.yahoo.com/p-reviews-398354-prod-hotel-action-read-ratings_and_reviews-i?from=1#2" target="_blank">San Carlos</a></b>" (A Yahoo! User)
+				<br>
+			</b></font>
+			<font class="copy">
+				"Wonderful small hotel with European ambience in a great location. Clean, large rooms. Excellent service. Nice continental breakfast.                           "<br>
+			</font>
+			<font class="copyg">
+				yahoo.com
+				 - 08-20-2004
+				 - positive
+				 - traveler comment
+				
+				<br>
+			</font>
+			<font class="copylight">	.....................................................................................................................................</font>
+			<br>
+			<!-- end resource -->
+		
+		
+			<br><font class="copy">Other Web references to San Carlos Hotel in New York, NY: </font>
+			<font class="bottomlink"><b><a href="http://www.kayak.com/s/kayaksearch.jsp?tab=hotels" target="_blank">kayak.com</a></b></font>
+			
+
+	</td>
+</tr>
+</table>
+
+
+</div></td></tr></table>
+<table class="footer" width="778" align="center"
+       cellpadding="0" cellspacing="0" border="0"
+       bgcolor="#ffffff">
+<tr>
+<td width="778" colspan="3"><div class="footerLinks">
+<a href="http://www.boston.com/help/bostoncom_info/feedback">feedback</a> <font
+    class="footerPipe">|</font> <a
+    href="http://www.boston.com/help">help</a> <font
+    class="footerPipe">|</font> <a
+    href="http://www.boston.com/help/sitemap">site map</a> <font
+    class="footerPipe">|</font> <a
+    href="http://www.boston.com/tools/archives">globe archives</a> <font
+    class="footerPipe">|</font> <a
+    href="http://www.boston.com/tools/rss">rss</a>  
+<div class="copyright">&copy; 2005 The New York Times Company</div>
+</div></td></tr>
+<tr><td height="5" class="bluegrayLine"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" border="0" alt="" /></td><td class="darkblueLine" width="6"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="6" height="1" border="0" alt="" /></td><td width="185" class="lightgrayLine"><img src="http://cache.boston.com/bonzai-fba/File-Based_Image_Resource/spacer.gif" width="1" height="1" border="0" alt="" /></td></tr>
+</table>
+<!--OAS MJX Ad Tag--><script language="JavaScript"><!--
+OAS_AD('POPUP');
+//--></script><!--End Ad Tag-->
+<!--OAS MJX Ad Tag--><script language="JavaScript"><!--
+OAS_AD('POPUN');
+//--></script><!--End Ad Tag-->
+<!--OAS MJX Ad Tag--><script language="JavaScript"><!--
+OAS_AD('EXTRA');
+//--></script><!--End Ad Tag-->
+
+<!-- SiteCatalyst code version: G.5. Copyright 1997-2003 Omniture, Inc. More info available at http://www.omniture.com --><script
+    language="JavaScript"><!--
+var s_pageName='Travel | Lodging | Openlist',s_channel='Travel',s_prop1='Travel | Lodging';
+var s_server='',s_pageType='',s_prop2='',s_prop3='',s_prop4='',s_prop5='',s_prop6='Section Folder',s_prop7='',s_prop8='',s_prop9='',s_prop10='';
+/* E-commerce Variables */
+var s_campaign='',s_state='',s_zip='',s_events='',s_products='',s_purchaseID='',s_eVar1='',s_eVar2='',s_eVar3='',s_eVar4='',s_eVar5='',s_eVar6='',s_eVar7='',s_eVar8='',s_eVar9='',s_eVar10='';
+var s_code=' ';
+//--></script>
+<script language="JavaScript" src="http://cache.boston.com/omniture/s_code.js"></script>
+<script language="JavaScript"><!--
+var s_wd=window,s_tm=new Date;if(s_code!=' '){s_code=s_dc('nytbglobe');if(s_code)document.write(s_code);}else document.write('<im'+'g src="http://nytbglobe.112.2O7.net/b/ss/nytbglobe/1/G.5--FB/s'+s_tm.getTime()+'?[AQB]'+'&j=1.0&[AQE]" height="1" width="1" border="0" alt="" />');
+//--></script><script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-');
+//--></script><noscript><img src="http://nytbglobe.112.2O7.net/b/ss/nytbglobe/1/G.5--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: G.5. -->
+<!--Tacoda--><script language="JavaScript"><!--
+Tacoda_AMS_DDC_addPair('t_section','Travel | Lodging | Openlist');
+Tacoda_AMS_DDC_addPair('site','boston.com');
+Tacoda_AMS_DDC('http://te.boston.com/tte/blank.gif','1.0');
+--></script><!--End Tacoda-->
+
+
+</body>
+</html>
+
+
+

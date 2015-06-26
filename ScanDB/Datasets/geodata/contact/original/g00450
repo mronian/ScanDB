@@ -1,0 +1,674 @@
+<DOC>
+<DOCNO>g00450</DOCNO>
+<DOCHDR>http://www.cnn.com/SPECIALS/2001/trade.center/contacts.html</DOCHDR>
+<html>
+<head>
+<title>CNN.com Specials</title>
+<LINK rel="stylesheet" href="/virtual/2000/style/main.css" type="text/css">
+
+<link rel="stylesheet" href="/SPECIALS/2001/trade.center/wtc.style.css" type="text/css">
+
+<script src="/virtual/2000/code/main.js" language="javascript"></script>
+<script language="JavaScript">
+<!--
+
+	function chgI(imagename) {
+	
+		document.images[imagename].src = "/SPECIALS/2001/trade.center/images/" + imagename + ".blue.gif";
+	
+	}
+
+	function unchgI(imagename) {
+	
+		document.images[imagename].src = "/SPECIALS/2001/trade.center/images/" + imagename + ".red.gif";
+	
+	}
+
+//-->
+</script>
+<script language="JavaScript">
+<!--
+
+	function chgI(imagename) {
+	
+		document.images[imagename].src = "/SPECIALS/2001/trade.center/images/" + imagename + ".blue.gif";
+	
+	}
+
+	function unchgI(imagename) {
+	
+		document.images[imagename].src = "/SPECIALS/2001/trade.center/images/" + imagename + ".red.gif";
+	
+	}
+	function changeto(highlightcolor){
+source=event.srcElement
+if (source.tagName=="TR"||source.tagName=="TABLE")
+return
+while(source.tagName!="TD")
+source=source.parentElement
+if (source.style.backgroundColor!=highlightcolor&&source.id!="ignore")
+source.style.backgroundColor=highlightcolor
+}
+
+function changeback(originalcolor){
+if (event.fromElement.contains(event.toElement)||source.contains(event.toElement)||source.id=="ignore")
+return
+if (event.toElement!=source)
+source.style.backgroundColor=originalcolor
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+
+
+//-->
+</script>
+<script type="text/javascript" language="JavaScript1.1" src="http://ar.atwola.com/file/adsWrapper.js"></script>
+<style type="text/css">
+<!--
+.aoltextad { text-align: justify; font-size: 12px; color: black; font-family: Georgia, sans-serif }
+-->
+</style>
+<script language="JavaScript1.1" type="text/javascript" src="http://ar.atwola.com/file/adsPopup2.js"></script>
+<script language="JavaScript1.2" type="text/javascript">
+
+function CNN_getCookies() {
+	var hash = new Array;
+	if ( document.cookie ) {
+		var cookies = document.cookie.split( '; ' );
+		for ( var i = 0; i < cookies.length; i++ ) {
+			var namevaluePairs = cookies[i].split( '=' );
+			hash[namevaluePairs[0]] = unescape( namevaluePairs[1] ) || null;
+		}
+	}
+	return hash;
+}
+
+function CNN_parseCookieData( cookieDataString ) {
+	var cookieValues = new Object();
+	var separatePairs = cookieDataString.split( '&' );
+	for ( var i = 0; i < separatePairs.length; i++  ) {
+		var separateValues = separatePairs[i].split( ':' );
+		cookieValues[separateValues[0]] = separateValues[1] || null;
+	}
+	return cookieValues;
+}
+
+// default values
+var adHeadOffset = 0;
+var adHeadClass = "us.low";
+
+var allCookies = CNN_getCookies();
+var adHeadCookie = allCookies[ "Target" ] || null;
+var isClassAndOffsetValid = false;
+var alreadySwappedTargetImage = false;
+var alreadySwappedCookieCrumb = false;
+
+if ( adHeadCookie ) {	// got milk?
+	var adHeadHash = CNN_parseCookieData( adHeadCookie );
+	//alert("o=" +  adHeadHash[ "o" ] + "\nclass=" + adHeadHash[ "class"]);
+	if ( adHeadHash[ "o" ] && adHeadHash[ "class" ] ) {
+		var validClassesAndOffsets = [ 'us.low', 0, 'us.high', 1, 'intl', 2, 'intl', 3, 'us.edu', 0, 'us.gov', 0, 'us.mil', 0, 'us.org', 0 ];
+		for ( var i = 0; i < validClassesAndOffsets.length; i+=2 ) {
+			if ( validClassesAndOffsets[i] == adHeadHash[ "class" ] && validClassesAndOffsets[i+1] == adHeadHash[ "o" ] ) {
+				isClassAndOffsetValid = true;
+				break;
+			}
+		}
+	}
+	if ( isClassAndOffsetValid ) {
+		adHeadOffset = adHeadHash[ "o" ];
+		adHeadClass = adHeadHash[ "class" ];
+	}
+}
+
+document.adoffset = adHeadOffset;
+document.adPopupDomain = window.location.hostname;
+document.adPopupFile = '/cnn_adspaces/adsPopup2.html';
+document.adPopupInterval = 'P24';
+document.adPopunderInterval = 'P24';
+adSetOther('&TVAR='+escape('class=' + adHeadClass));
+
+//alert( "GLOBAL\nalreadySwappedTargetImage=" + alreadySwappedTargetImage + "\nisClassAndOffsetValid=" + isClassAndOffsetValid );
+
+function getAdHeadCookie( imageRef ) {
+	//alert( "isClassAndOffsetValid=" + isClassAndOffsetValid + "\nadHeadOffset=" + adHeadOffset + "\nadHeadClass=" + adHeadClass);
+	var newSrc = "http://cnn.dyn.cnn.com/1.gif?" + new Date().getTime();
+	if ( !alreadySwappedTargetImage && !isClassAndOffsetValid && WM_browserAcceptsCookies() ) {
+		//alert( "getAdHeadCookie\nalreadySwappedTargetImage=" + alreadySwappedTargetImage + "\nisClassAndOffsetValid=" + isClassAndOffsetValid );
+		imageRef.src = newSrc;
+		alreadySwappedTargetImage = true;
+	}
+}
+
+</script>
+
+</head>
+<body bgcolor="#666666" marginheight=0 marginwidth=0 topmargin=0 leftmargin=0>
+
+
+
+<br>
+
+<table cellspacing=0 cellpadding=0 border=0>
+<tr>
+<td width=10><img src="http://i.cnn.net/cnn/images/spacer.gif" alt="" width="10" height="1" border="0"></td>
+<td>
+<!-- main table -->
+
+<table width="750" border="0" cellpadding="0" cellspacing="0" bgcolor="#666666">
+<tr valign="bottom">
+<td width="302"><A HREF="http://www.cnn.com"><img src="http://i.cnn.net/cnn/SPECIALS/2001/nobel.100/images/cnn.com.gif" WIDTH="224" HEIGHT="65" HSPACE="0" VSPACE="0" BORDER="0" ALIGN="middle"></A></td>
+<td width="468" align="right" valign="middle"><!-- indepth_features/main/topright.468x60 -->
+<script language="JavaScript1.1">
+<!--
+adSetTarget('_top');
+htmlAdWH( (new Array(93158679,93102309,93158652,93158652))[document.adoffset||0] , 468, 60);
+//-->
+</script><noscript><a href="http://ar.atwola.com/link/93158679/aol" target="_top"><img src="http://ar.atwola.com/image/93158679/aol" alt="Click here for our advertiser" width="468" height="60" border="0"></a></noscript>
+</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="750" bgcolor="#333333"><tr>
+
+<td bgcolor="#333333">
+
+<style>
+
+<!--
+
+	.topst,
+	.topst:link,
+	.topst:vlink
+	 {
+
+	
+
+		font-family: verdana;
+
+		font-size: 10px;
+
+		font-weight: bold;
+
+		color: #CCCCCC;	
+
+	}
+
+-->
+
+</style>
+
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+ <tr><form name=specials1>
+
+
+
+<td width="257" valign="bottom"><a href="/SPECIALS/"><IMG SRC="http://i.a.cnn.net/cnn/SPECIALS/instant.template/images/indepth.specials.gif" ALT="" WIDTH="224" HEIGHT="35" HSPACE="0" VSPACE="0" BORDER="0"></a></td>
+
+
+
+<td width="20">&nbsp;<img src="http://i.a.cnn.net/cnn/SPECIALS/new.specials/divide.line.gif" width=1 height=28 border=0 vspace=2></td>
+
+
+
+<td width=170 align="center"><FONT face="verdana" size="1">
+
+<script language="JavaScript">
+
+<!--
+
+function makeSelOpt (obj) {
+
+        if (obj.length > 1) {
+
+                var last = 2;
+
+                if (document.all){
+
+                        var last = obj.length;
+
+                        for (var count = 2; count < last; count++) {
+
+                        obj.remove(2);
+
+                        }
+
+                }
+
+        } else {
+
+                var last = obj.length;
+
+        }
+
+        for (var count = 0; count < URLs.length; count++) {
+
+                if (navigator.appName == "Netscape") {
+
+                        obj[last + count] = new Option(NAMEs[count],URLs[count],false);
+
+                } else {
+
+                        var newElem     = document.createElement("OPTION");
+
+                        newElem.text    = NAMEs[count];
+
+                        if (URLs[count] != "") {
+
+                                newElem.value = URLs[count];
+
+                                if (navigator.platform != "MacPPC") {newElem.style.backgroundColor = "#ffffff";}
+
+                        } else if (navigator.platform != "MacPPC") {
+
+                                 newElem.style.backgroundColor = "#dddddd";
+
+                        }
+
+                        obj.add(newElem);
+
+                }
+
+        }
+
+return;
+
+}
+
+//-->
+
+</script>
+
+<script>
+
+<!--
+
+function goSpecials1(){
+
+  if (document.specials1.airports.options[document.specials1.airports.selectedIndex].value == "") {
+
+    window.alert ("Select a Special");
+
+  }
+
+  else {
+
+    var url = document.specials1.airports.options[document.specials1.airports.selectedIndex].value;
+
+    
+
+	top.location.href = url;
+
+	
+
+  }
+
+}
+
+// -->
+
+</script>
+
+<SELECT  class="FormLt1" name="airports" class=dropbox onChange="goSpecials1(this.form.elements[0]);">
+
+<OPTION>In-depth Archive</OPTION>
+
+<OPTION>---------------------</OPTION>
+
+<OPTION></OPTION>
+
+<OPTION></OPTION>
+
+</SELECT>
+
+</FONT>
+
+<SCRIPT language="javascript">
+
+<!-- 
+
+         var URLs    = new Array("/SPECIALS/2002/america.remembers/", "/SPECIALS/2002/wtc.ideas/", "/SPECIALS/2001/trade.center/", "/SPECIALS/2001/memorial/",  "/SPECIALS/2002/back.to.school/", "/SPECIALS/2001/mideast/", "/SPECIALS/2002/hurricanes/", "/SPECIALS/2002/coming.attractions/", "/SPECIALS/2002/summertrips/", "#", "#", "/SPECIALS/index.2002.html", "/SPECIALS/index.2001.html", "/SPECIALS/index.2000.html", "/SPECIALS/index.1999.html", "/SPECIALS/index.1998.html", "/SPECIALS/index.1997.html", "/SPECIALS/index.9695.html#1996", "/SPECIALS/index.9695.html#1995");
+
+	var NAMEs = new Array(" America Remembers", " WTC: Your Proposals", " War Against Terror", " 9/11 Memorial", " Back to School", " Mideast: Land of conflict", " Hurricane Season", " Coming attractions", " Summer trips", "______________", "  Specials by year", "  2002", "  2001", "  2000", "  1999", "  1998", "  1997", "  1996", "  1995");
+
+        var obj  = document.specials1.airports.options;
+
+        makeSelOpt(obj);
+
+// -->
+
+</SCRIPT>
+
+</td>
+
+
+
+<td width="20">&nbsp;<img src="http://i.a.cnn.net/cnn/SPECIALS/new.specials/divide.line.gif" width=1 height=28 border=0></td>
+
+
+
+<td width=120 align="center">
+
+
+
+<!-- ||||| CNN Sites ||||| -->
+<FONT face="verdana" size="1">
+<SELECT class="FormLt1" valign="middle" onChange="location=this.options[this.selectedIndex].value;">
+<OPTION>CNN.com Sections</OPTION>
+<OPTION value="/">MAIN PAGE</OPTION>
+<OPTION value="/WORLD/">WORLD</OPTION>
+<OPTION value="/US/">U.S.</OPTION>
+<OPTION value="/WEATHER/">WEATHER</OPTION>
+<OPTION value="/cnnfn/">BUSINESS</OPTION>
+<OPTION value="/cnnsi/">SPORTS</OPTION>
+<OPTION value="/ALLPOLITICS/">POLITICS</OPTION>
+<OPTION value="/LAW/">LAW</OPTION>
+<OPTION value="/TECH/">SCI-TECH</OPTION>
+<OPTION value="/TECH/space/">SPACE</OPTION>
+<OPTION value="/HEALTH/">HEALTH</OPTION>
+<OPTION value="/SHOWBIZ/">ENTERTAINMENT</OPTION>
+<OPTION value="/TRAVEL/">TRAVEL</OPTION>
+<OPTION value="http://fyi.cnn.com/fyi/teachers.ednews/">EDUCATION</OPTION>
+<OPTION value="/SPECIALS/">IN-DEPTH</OPTION>
+<OPTION value="/QUICKNEWS/">QUICK NEWS</OPTION>
+<OPTION value="/LOCAL/">LOCAL</OPTION>
+<OPTION value="http://community.cnn.com/">COMMUNITY</OPTION>
+</SELECT>
+</FONT>
+<!-- ||||| CNN Sites ||||| -->
+
+
+
+
+</td>
+
+
+
+<td width="20">&nbsp;<img src="http://i.a.cnn.net/cnn/SPECIALS/new.specials/divide.line.gif" width=1 height=28 border=0 hspace=2></td>
+
+
+
+<td width="130" valign=bottom>
+&nbsp;
+<!--
+[[table cellspacing=0 cellpadding=0 border=0 width="100%"]][[tr valign=top]][[td]][[img src="http://www.cnn.com/images/spacer.gif" height=20 width=1]][[/td]]
+
+[[td width="16"]][[a href="javascript:openWindow('/desktop/frameset.exclude.html','desktopnews','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=380')" vlink="#cccccc" alink="#cccccc"]][[img src="http://www.cnn.com/SPECIALS/new.specials/topstory.gif" width=16 height=16 border=0]][[/a]][[/td]]
+
+[[td width="114"]][[a href="javascript:openWindow('/desktop/frameset.exclude.html','desktopnews','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=260,height=380')" vlink="#cccccc" alink="#cccccc"]][[span class="topst"]]CNN Top Stories[[/span]][[/a]]
+
+[[/td]][[/tr]][[/table]]
+-->
+
+</td></form>
+
+
+
+</tr>
+
+</table>
+
+
+
+</td></tr></table>
+
+
+
+<table cellspacing=0 cellpadding=0 border=0>
+<tr><td colspan=4><a href="index.html"><img src="http://i.cnn.net/cnn/SPECIALS/2001/trade.center/images/subsection.banner.gif" ALT="" WIDTH="750" HEIGHT="60" BORDER="0"></a></td></tr>
+<tr><td colspan=4><img src="http://i.cnn.net/cnn/images/spacer.gif" alt="" width="1" height="5" border="0"></td></tr>
+
+<tr><td colspan=4><table width="100%" border="0" cellspacing="0" cellpadding="0" height="22">
+  <tr align="center"> 
+    <td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"><font face="Arial, Helvetica, sans-serif" size="2"><a href="/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','/SPECIALS/2001/trade.center/images/arrow.gif',1)" class="menu"><img src="http://i.cnn.net/cnn/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name="Image11" >CNN.COM</a></font></td>
+  <!--   [[td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"]][[font face="Arial, Helvetica, sans-serif" size="2"]][[a href="/SPECIALS/2001/trade.center/missing/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image251','','/SPECIALS/2001/trade.center/images/arrow.gif',1)"  class="menu"]][[img src="/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name="Image251"]]MISSING[[/a]][[/font]][[/td]]-->
+   <td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"><font face="Arial, Helvetica, sans-serif" size="2"><a href="/SPECIALS/2001/trade.center/rescue.section.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image151','','/SPECIALS/2001/trade.center/images/arrow.gif',1)"class="menu"><img src="http://i.cnn.net/cnn/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name="Image151">AMERICA AT HOME</a></font></td>
+  <td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"><font face="Arial, Helvetica, sans-serif" size="2"><a href="/SPECIALS/2001/trade.center/retal.section.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image99','','/SPECIALS/2001/trade.center/images/arrow.gif',1)" class="menu"><img src="http://i.cnn.net/cnn/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name="Image99">FRONT LINES</a></font></td>
+ <td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"><font face="Arial, Helvetica, sans-serif" size="2"><a href="/SPECIALS/2001/trade.center/binladen.section.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image199','','/SPECIALS/2001/trade.center/images/arrow.gif',1)" class="menu"><img src="http://i.cnn.net/cnn/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name="Image199">BIN LADEN</a></font></td>
+     <td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"><font face="Arial, Helvetica, sans-serif" size="2"><a href="/SPECIALS/2001/trade.center/afghan.section.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image931','','/SPECIALS/2001/trade.center/images/arrow.gif',1)" class="menu"><img src="http://i.cnn.net/cnn/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name="Image931">AFGHANISTAN</a></font></td>
+     <td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"><font face="Arial, Helvetica, sans-serif" size="2"><a href="/SPECIALS/2001/trade.center/scene.section.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image311','','/SPECIALS/2001/trade.center/images/arrow.gif',1)"class="menu"><img src="http://i.cnn.net/cnn/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name="Image311">BATTLEFIELD</a></font></td>
+<!--
+   [[td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"]][[font face="Arial, Helvetica, sans-serif" size="2"]][[a href="/SPECIALS/2001/trade.center/invest.section.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image101','','/SPECIALS/2001/trade.center/images/arrow.gif',1)" class="menu"]][[img src="/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name=image101]]INVESTIGATION[[/a]][[/font]][[/td]]
+-->
+<!--[[td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"]][[font face="Arial, Helvetica, sans-serif" size="2"]][[a href="/SPECIALS/2001/trade.center/community.section.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image199','','/SPECIALS/2001/trade.center/images/arrow.gif',1)" class="menu"]][[img src="/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name="Image199"]]VOICES[[/a]][[/font]][[/td]]-->
+     <td class="myCellsOff"><font face="Arial, Helvetica, sans-serif" size="2"><a href="/SPECIALS/2001/trade.center/victims.section.html" class="menu"><img src="http://i.cnn.net/cnn/SPECIALS/2001/trade.center/images/arrow.gif" width="10" height="13" border="0" align="top" name="Image41">VICTIMS</a></font></td>
+ <td class="myCells" onMouseOver="changeto('#003366')" onMouseOut="changeback('CC0000')"><font face="Arial, Helvetica, sans-serif" size="2"><a href="/SPECIALS/2001/trade.center/day.section.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','/SPECIALS/2001/trade.center/images/arrow.gif',1)" class="menu"><img src="http://i.cnn.net/cnn/SPECIALS/2001/trade.center/images/arrow2.gif" width="10" height="13" border="0" align="top" name="Image32">SEPTEMBER 11</a></font></td>
+
+  </tr>
+</table>
+
+
+</td></tr>
+
+<tr valign=top>
+<td width=200 bgcolor="#CCCCCC">
+<!-- sidenav -->
+<table cellspacing=0 cellpadding=10 border=0 width=200><tr><td><span class="sidetext"><span class="headline" style="color:#990000; font-size:15px;">TOP STORIES</span><br clear="all">
+&#149;&nbsp;<a href="/2001/US/09/25/vic.neighborhood.death/index.html" class=sidelink>Children cope with loss</a><br>
+&#149;&nbsp;<a href="/2001/US/09/23/vic.yankee.service.report/index.html" class=sidelink>Prayer service: 'We shall not be moved'</a><br>
+&#149;&nbsp;<a href="/2001/US/09/22/vic.unknown.lost/index.html" class=sidelink>The mighty and the meek</a><br>
+&#149;&nbsp;<a href="http://www.cnn.com/2001/US/09/15/vic.terror.funerals/" class=sidelink>New York remembers firefighters</a><br>
+&#149;&nbsp;<a href="/2001/US/09/20/vic.personal.account.cnna/index.html" class=sidelink>Survivor recounts harrowing escape</a><br>
+&#149;&nbsp;<a href="/2001/US/09/12/plane.phone.call/index.html" class=sidelink>Passengers voted to attack hijackers</a><br>
+&#149;&nbsp;<a href="/2001/US/09/13/witness.girlfriend/index.html" class=sidelink>'Just get out of there'</a><br>
+&#149;&nbsp;<a href="/2001/US/09/11/notable.victims/index.html" class=sidelink>Industry, media figures among victims</a><br><br>&#149;&nbsp;<a href="/SPECIALS/2001/trade.center/multimedia.victims.html" class=sidelink>AUDIO/VIDEO</a><br>&#149;&nbsp;<a href="/SPECIALS/2001/trade.center/stories.victims.html" class=sidelink>ARCHIVE </a><br>&#149;&nbsp;<a href="/SPECIALS/2001/trade.center/tenants1.html" class=sidelink>WTC TENANTS</a><br></span></td></tr></table>
+<!-- /sidenav -->
+</td>
+<td width=10 bgcolor="#FFFFFF"><img src="http://i.cnn.net/cnn/images/spacer.gif" alt="" width="10" height="5" border="0"></td>
+<td width=530 bgcolor="#FFFFFF">
+<img src="http://i.cnn.net/cnn/images/spacer.gif" alt="" width="530" height="5" border="0"><br>
+
+
+<h1 align=center>Contact information</h1><br><br>
+
+
+
+
+
+
+
+<span class="text"><B>For disaster assistance: Call FEMA 1-800-462-9029, for the hearing impaired 1-800-462-7585</B></span><br><br>
+
+
+<span class="text"><B>To volunteer or make donations: Call FEMA 1-800-801-8092</B></span> <br><br>
+
+<span class="text"><B>The Social Security Administration provides benefits for retirement, disability, families, survivors and bereavement. For more information contact:</B></span> <br>
+
+<B>
+<ul>
+<li> <span class="text">Your local Social Security office</span>
+ <li><span class="text">The Social Security's toll-free service at 1-800-772-1213 (voice) or 1-800-325-0778 (TTY)</span>
+<li><span class="text">Social Security online at www.ssa.gov </span>
+</ul>
+</B> <br><br>
+
+
+
+
+
+
+<h3>Victim information</h3><span class="text">
+
+<b>Airlines:</b><br>&nbsp;&#149;&nbsp;Friends and family who wish to check on passengers and flights may call:<br>&nbsp;&nbsp;&nbsp;&nbsp;American Airlines, 1-800-245-0999<br>&nbsp;&nbsp;&nbsp;&nbsp;United Airlines, 1-800-932-8555<br><br>
+
+<b>World Trade Center businesses:</b>
+<br>&nbsp;&#149;&nbsp;Morgan Stanley: 1-888-883-4391<br>&nbsp;&#149;&nbsp;Fuji Bank: 1-888-537-FUJI (3854)<br>&nbsp;&#149;&nbsp;Carr Futures: 1-800-755-7620<br>
+&nbsp;&#149;&nbsp;Cantor Fitzgerald: 1-212-940-8162, 1-212-940-8482, 1-212-940-8492, 1-212-893-6073<br>
+&nbsp;&#149;&nbsp;Lee Hecht Harrison: 1-201-782-3704<br>
+&nbsp;&#149;&nbsp;AON Corporation: 1-866-256-4154<br>
+&nbsp;&#149;&nbsp;Thacher, Proffitt, & Wood: 1-800-698-4567<br>
+&nbsp;&#149;&nbsp;Marsh & McLennan (includes related businesses of Mercer, Guy Carpenter, Seabury & Smith and MMC Enterprise Risk):<br>1-212-345-6000<br>
+&nbsp;&#149;&nbsp;Fiduciary Trust Co. International: 1-800-632-2350, ext. 22578<br>
+
+&nbsp;&#149;&nbsp;Dow Jones & Co.: 1-800-530-4504 <br>
+&nbsp;&#149;&nbsp;Deutsche Asset Management: 1-800-475-6701 code: 603374<br>
+&nbsp;&#149;&nbsp;Port Authority employees and family members: 973-624-6203<br>
+&nbsp;&#149;&nbsp;Windows of the World Restaurant: Employees of the restaurant can contact H.E.R.E. New York Assistance Fund 321 W. 44th Street, 5th Floor, New York, NY  10036 212-541-4226
+
+<br><br>
+
+<b>Marriott</b>
+<br>&nbsp;&#149;&nbsp; Employees, families of employees or families of guests staying at the Marriott Hotel near the World Trade Center should call 1-866-866-9928<br><br>
+
+
+<b>Cell phone/pager tracker</b>
+<br>&nbsp;&#149;&nbsp; 24-hour hotline for families of victims to call and provide the number of any cell phone or pager victims might have had with them the morning of the attacks: 1-877-348-8579<br><br>
+
+
+<b>New York City emergency personnel</b><br>
+
+&nbsp;&#149;&nbsp; New York City firefighters: 1-718-999-2541<br>
+&nbsp;&#149;&nbsp; Families of New York police officers: 1-212-741-4626<br>
+&nbsp;&#149; Survivors of firefighters, polices officers and emergency medical technicians killed in the line of duty are eligible for death benefits from the U.S. Justice Department. For more information, call 1-888-744-6513.<br><br>
+
+<b>Pentagon personnel:</b><br>&nbsp;&#149;&nbsp;Pentagon employees only are asked to check in by calling 1-877-663-6772 <br><br>
+
+<b>Army personnel</b><br>&nbsp;&#149;&nbsp;Army personnel assigned to the Pentagon asked to call 800-984-8523<br><br>
+
+<b>Air Force</b><br>&nbsp;&#149;&nbsp;Air Force family members can call  800-253-9276. Evacuated Air Force members are being asked to call 800-558-1404.<br><br>
+
+<b>Justice Department: </b><br>&nbsp;&#149;&nbsp;The Justice Department's Office of Victims of Crime has set up a phone line to provide information to families about victims and about services for survivors and their rights: 1-800-331-0075<br>
+
+&nbsp;&#149;&nbsp;The Justice Department has also set up a Web site for victims and families at: <A HREF="http://www.ojp.usdoj.gov/ovc/terrorismvictimassistance" TARGET="new">www.ojp.usdoj.gov/ovc/terrorismvictimassistance</A><br><br>
+
+<b>Other:</b><br>
+&nbsp;&#149;&nbsp;Blue Cross Blue Shield: 1-866-761-8365<br>
+&nbsp;&#149;&nbsp;Japanese language assistance for relatives is available at <a href="http://www.jhelp.com/" target="_blank">jhelp.com</a> or 1-800-527-2611<br><br>
+
+<h3>Emergency response/relief efforts</h3> 
+
+
+<b>American Red Cross, information and support:</b><br>&nbsp;&#149;&nbsp;1-866-get-info<br><br>
+
+<b>American Red Cross, blood supply:</b><br>&nbsp;&#149;&nbsp;The American Red Cross is in need of blood to replenish the nation's supply.  Call 1-800-HELP-NOW to schedule an appointment near where you live.<br><br>
+
+<b>American Red Cross, cash donations:</b><br>&nbsp;&#149;&nbsp;(800) HELP-NOW<br><br>
+
+<b>AmeriCares:</b><br>&nbsp;&#149;&nbsp; <a href="http://www.americares.org" target="new">www.americares.org</a> or toll free 1-800-486-4357<br><br>
+
+<b>New York Blood Center, blood supply:</b><br>&nbsp;&#149;&nbsp;The New York Blood Center has also announced a blood emergency for the greater New York/New Jersey metropolitan area. Visit <A HREF="http://www.nybloodcenter.org/" TARGET="new">www.nybloodcenter.org </A>for more information on how to help or call 1-800-933-2566.<br><br><b>Helping.org:</b><br>&nbsp;&#149;&nbsp;For more information on helping victims of the U.S. attacks, visit <a href="http://helping.web.aol.com/promos/wtcAOL.adp" target="_blank">Helping.org</a><br><br><b>United Way, donations:</b><br>&nbsp;&#149;&nbsp;The United Way of New York and the New York Community Trust have established a fund to help the victims of the attacks and their families. The September Eleventh Fund will provide immediate support to established emergency assistance agencies.  Anyone wishing to contribute may send their donations in care of United Way, 2 Park Ave, New York, New York, 10016 or call: 212-251-4035. Donations are also being accepted on United Way of New York City's Web site: <a href="http://www.uwnyc.org" target="_blank">http://www.uwnyc.org</a>.<br><br><b>Feed The Children, donations:</b><br>&nbsp;&#149;&nbsp;Donations are being accepted at <a href="http://www.FeedTheChildren.org" target="_blank">Feed The Children</a><br><br><b>Salvation Army, cash donations:</b><br>&nbsp;&#149;&nbsp;(800) SAL-ARMY<br><br>
+<b>World Vision</b><br>
+&nbsp;&#149;&nbsp;Donations are being accepted for World Vision's American Relief Fund at the organization's <a href="https://www.worldvision.org/worldvision/sgappeal.nsf/sgacardamrelief2?OpenForm&amp;MOT=WX91TN" target="_blank">Web site</a> or by calling 1-888-511-6593.<br>
+<br>
+<h3>Investigation</h3> <br>
+
+
+
+
+<b>FBI tip Web site:</b><br>&nbsp;&#149;&nbsp;<A href="http://www.ifccfbi.gov" target="_blank">http://www.ifccfbi.gov</A><br><br>
+
+<b>Department of Justice tip line:</b><br>&nbsp;&#149;&nbsp;<A href="http://www.ifccfbi.gov" target="_blank">1-866-483-5137</A><br><br>
+
+
+
+
+</span>
+
+
+
+
+</td>
+<td width=10 bgcolor="#FFFFFF"><img src="http://i.cnn.net/cnn/images/spacer.gif" alt="" width="10" height="5" border="0"></td>
+</tr>
+</table>
+
+<!-- /main table -->
+</td>
+</tr>
+</table>
+<!-- BOTTOM ADS -->
+<!-- BOTTOM ADS -->
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td colspan="9"><img src="http://i.cnn.net/cnn/images/spacer.gif" width="770" height="13" border="0"></td>
+</tr>
+<tr valign="top">
+<td><img src="http://i.cnn.net/cnn/images/spacer.gif" width="88" height="60" border="0"></td>
+<td>
+<!-- indepth_specials/war_against_terror/bottom1.120x60 -->
+<script language="JavaScript1.1">
+<!--
+adSetTarget('_top');
+htmlAdWH( (new Array(93121710,93121710,93121710,93121710))[document.adoffset||0] , 120, 60);
+//-->
+</script>
+<noscript><a href="http://ar.atwola.com/link/93121710/aol" target="_top"><img src="http://ar.atwola.com/image/93121710/aol" alt="Click Here" width="120" height="60" border="0"></a></noscript></td>
+<td><img src="http://i.cnn.net/cnn/images/spacer.gif" width="39" height="60" border="0"></td>
+<td>
+<!-- indepth_specials/war_against_terror/bottom2.120x60 -->
+<script language="JavaScript1.1">
+<!--
+adSetTarget('_top');
+htmlAdWH( (new Array(93121711,93121711,93121711,93121711))[document.adoffset||0] , 120, 60);
+//-->
+</script>
+<noscript><a href="http://ar.atwola.com/link/93121711/aol" target="_top"><img src="http://ar.atwola.com/image/93121711/aol" alt="Click Here" width="120" height="60" border="0"></a></noscript></td>
+<td><img src="http://i.cnn.net/cnn/images/spacer.gif" width="38" height="60" border="0"></td>
+<td>
+<!-- indepth_specials/war_against_terror/bottom3.120x60 -->
+<script language="JavaScript1.1">
+<!--
+adSetTarget('_top');
+htmlAdWH( (new Array(93121712,93121712,93121712,93121712))[document.adoffset||0] , 120, 60);
+//-->
+</script>
+<noscript><a href="http://ar.atwola.com/link/93121712/aol" target="_top"><img src="http://ar.atwola.com/image/93121712/aol" alt="Click Here" width="120" height="60" border="0"></a></noscript></td>
+<td><img src="http://i.cnn.net/cnn/images/spacer.gif" width="38" height="60" border="0"></td>
+<td>
+<!-- indepth_specials/war_against_terror/bottom4.120x60 -->
+<script language="JavaScript1.1">
+<!--
+adSetTarget('_top');
+htmlAdWH( (new Array(93121713,93121713,93121713,93121713))[document.adoffset||0] , 120, 60);
+//-->
+</script>
+<noscript><a href="http://ar.atwola.com/link/93121713/aol" target="_top"><img src="http://ar.atwola.com/image/93121713/aol" alt="Click Here" width="120" height="60" border="0"></a></noscript></td>
+<td><img src="http://i.cnn.net/cnn/images/spacer.gif" width="87" height="60" border="0"></td>
+</tr>
+<tr valign="top"> <td colspan="9"><img src="http://i.cnn.net/cnn/images/spacer.gif" width="770" height="12" border="0"></td>
+</tr>
+</table>
+<!--/BOTTOM ADS -->
+
+<!--/BOTTOM ADS -->
+
+
+
+<table border="0" cellpadding="10" cellspacing="0" width=310>
+<tr valign="top">
+<td width="310"><div class="cnnCopyright"><b>&copy; 2001 Cable News Network LP, LLLP.</b><br>An AOL Time Warner Company. All Rights Reserved.<br><a href="/interactive_legal.html">Terms</a> under which this service is provided to you.<br>Read our <a href="/privacy.html">privacy guidelines</a>.</div></td>
+</tr>
+</table>
+<img src="http://i.a.cnn.net/cnn/1.gif" alt="" id="TargetImage" name="TargetImage" width="1" height="1" onLoad="getAdHeadCookie(this)">
+
+<script language="JavaScript1.1" src="http://ar.atwola.com/file/adsEnd.js"></script>
+
+
+
+</body>
+</html>

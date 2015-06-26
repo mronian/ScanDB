@@ -1,0 +1,621 @@
+<DOC>
+<DOCNO>f00312</DOCNO>
+<DOCHDR>http://www.homesteadhotels.com/minisite/directions/main.asp?HotelID=112</DOCHDR>
+
+<script language="javascript"> self.name = "masterDefault"</script>
+
+<html>
+<head>
+<title>Homestead Studio Suites Hotels - Oakland/E. Bay/San Francisco hotel directions for long term corporate travel in California</title>
+<meta NAME="DESCRIPTION" CONTENT="Get directions to hotels near Oakland/E. Bay/San Francisco and make reservations for corporate travel accommodations in California with Homestead Hotels.">
+<link rel="stylesheet" href="../../css/homesteadStyle.css" media="all" type="text/css">
+
+<script language="javascript" src="../includes/navjs.asp"></script>
+<script language="javascript" src="../includes/topjs.asp"></script>
+<script language="javascript" src="../../includes/resvFunctionsjs.asp"></script>
+<script language="javascript" src="../../Includes/SetCheckOutDate.asp"></script>
+</head>
+<body bgcolor="ffffff" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<div id="miniContainer">
+	
+<div id="miniHeader">
+	<div id="miniHeaderLogo">
+		<a href="http://www.homesteadhotels.com/" target="_top"><img src="/minisite/images/top-logo.gif" border="0" alt="Back to Homestead"></a>
+	</div>
+	<div id="miniHeaderInfo">
+		<div id="miniTopInfo">
+			<ul>
+				<li><a href="https://www.homesteadhotels.com/minisite/contact/main.asp?hotelID=112" target="_top">Contact Us</a></li>
+				<li><a href="http://www.homesteadhotels.com/minisite/legal/terms.asp?hotelID=112" target="_top">Terms of Use</a></li>
+				<li><a href="http://www.homesteadhotels.com/minisite/legal/privacy.asp?hotelID=112" target="_top">Privacy/Security Policy</a></li>
+			</ul>
+		</div>
+		<div id="miniBottomInfo">
+			<div id="miniBttn">
+				<a href="http://www.homesteadhotels.com/?hotelID=112&amp;metroID=277" target="_top"><img src="/minisite/images/b-selectHotel.gif" border="0"></a>
+			</div>
+Homestead Studio Suites San Francisco - San Mateo - SFO
+		</div>
+	</div>
+</div>
+	<div id="miniContent">
+		<div id="miniContentLeft">
+			<!--STARTS HERE ###############-->
+			
+			<script language="javascript">
+<!--
+function checkAvailability() {
+	var iYear  = 2006;
+	var iMonth = 7;
+	var iDay   = 28;
+
+
+	var todaydate = pad4(2006).toString() + pad2(7).toString() + pad2(28).toString();
+	var checkindate;
+	var checkoutdate;
+	var week50date;
+	
+	checkindate = pad4(document.frmMain.Yearcheckindate.options[document.frmMain.Yearcheckindate.selectedIndex].value) + pad2(document.frmMain.Monthcheckindate.options[document.frmMain.Monthcheckindate.selectedIndex].value) + pad2(document.frmMain.Daycheckindate.options[document.frmMain.Daycheckindate.selectedIndex].value);
+	checkoutdate = pad4(document.frmMain.Yearcheckoutdate.options[document.frmMain.Yearcheckoutdate.selectedIndex].value) + pad2(document.frmMain.Monthcheckoutdate.options[document.frmMain.Monthcheckoutdate.selectedIndex].value) + pad2(document.frmMain.Daycheckoutdate.options[document.frmMain.Daycheckoutdate.selectedIndex].value);
+	week50date = pad4(2007).toString() + pad2(7).toString() + pad2(13).toString();
+
+	if (checkindate < todaydate) {
+		alert("Check In date cannot be a past date");
+		return void(0);
+	}
+
+	if (checkoutdate <= todaydate) {
+		alert("Check Out date cannot be today's date");
+		return void(0);
+	}
+	if (checkindate > checkoutdate) {
+		alert("Check In date must be before Check Out date");
+		return void(0);	
+	}
+	if (checkoutdate > week50date) {
+		alert("Availability for arrival dates more than 50 weeks in the future is not available at this time.");
+		return void(0);
+	}
+
+	//Check the numAdults and numKids < 5
+	var chkNumAdults = document.frmMain.numadults.options[document.frmMain.numadults.selectedIndex].value - 0;
+	var chkNumKids   = document.frmMain.numkids.options[document.frmMain.numkids.selectedIndex].value - 0;
+	if ((chkNumAdults + chkNumKids) >= 5) {
+		alert('Maximum occupancy per room is 4 people.  Please reduce your numbers.');
+		return void(0);
+	}
+
+	//Check the company code is  valid alphanumeric characters
+	var sCompCode = '';
+//	if(!document.frmMain.companycode.disabled) {
+		if (isAlphaNumeric('companycode')) {
+			if(document.frmMain.companycode.value.length > 0){
+				sCompCode = document.frmMain.companycode.value;
+			} else {
+				sCompCode = '';
+			}
+		} else {
+			alert('The company code is invalid. Please try again.');
+			document.frmMain.companycode.value = '';
+			document.frmMain.companycode.focus();
+			return void(0);
+		}
+//	} 
+
+	//Check the promo code for valid alphanumeric characters
+	var sPromo = '';
+	if (isAlphaNumeric('promocode')) {
+		if(document.frmMain.promocode.value.length > 0) {
+			sPromo = document.frmMain.promocode.value;
+		} else {
+			sPromo = '';
+		}
+	} else {
+		alert('The promotional code is invalid. Please try again.');
+		document.frmMain.promocode.value = '';
+		document.frmMain.promocode.focus();
+		return void(0);
+	}
+
+	var url = "http://www.homesteadhotels.com/session2.asp"+
+		"?page=" + escape("http://www.homesteadhotels.com/minisite/") +
+		"&destpage=lodging&hssite=mini" +
+		"&hotelid="    + escape("112") + 
+		"&state="      + escape("CA") + 
+		"&metroid="    + escape("277") + 
+		"&iata="       + escape("") + 
+		"&corpinfo="   + escape("") + 
+		"&numadults="  + document.frmMain.numadults.options[document.frmMain.numadults.selectedIndex].value + "" + 
+		"&numkids="    + document.frmMain.numkids.options[document.frmMain.numkids.selectedIndex].value + "" + 
+		"&numrooms="   + document.frmMain.rooms.options[document.frmMain.rooms.selectedIndex].value + "" +
+		"&inmonth="    + document.frmMain.Monthcheckindate.options[document.frmMain.Monthcheckindate.selectedIndex].value + "" + 
+		"&inday="      + document.frmMain.Daycheckindate.options[document.frmMain.Daycheckindate.selectedIndex].value + "" + 
+		"&inyear="     + document.frmMain.Yearcheckindate.options[document.frmMain.Yearcheckindate.selectedIndex].value + "" + 
+		"&outmonth="   + document.frmMain.Monthcheckoutdate.options[document.frmMain.Monthcheckoutdate.selectedIndex].value + "" + 
+		"&outday="     + document.frmMain.Daycheckoutdate.options[document.frmMain.Daycheckoutdate.selectedIndex].value + "" + 
+		"&outyear="    + document.frmMain.Yearcheckoutdate.options[document.frmMain.Yearcheckoutdate.selectedIndex].value + "" + 
+		"&rateid="     + document.frmMain.rates.options[document.frmMain.rates.selectedIndex].value + "" + 
+		"&directbill=" + escape("") +
+		"&promoCode="  + escape(sPromo);
+	if (sCompCode.length > 0) {
+		url = url + "&companycode=" + escape(sCompCode);
+	}
+		
+	parent.location.href = url + '&WTReferrer=http%3A%2F%2Fwww%2Ehomesteadhotels%2Ecom%2Fminisite%2Fdirections%2Fmain%2Easp%3FHotelID%3D112';
+		
+	return void(0);
+}
+//-->
+</script>
+			<form method="post" action id="frmMain" name="frmMain" class="miniForm">
+					<div id="miniFormsHdr">Make a Reservation</div>
+					<div class="row">
+						Check In:<span class="space">&nbsp;</span><a href="javascript:showCalendar('frmMain', 'checkindate', document.frmMain.Monthcheckindate.options[document.frmMain.Monthcheckindate.selectedIndex].value, document.frmMain.Daycheckindate.options[document.frmMain.Daycheckindate.selectedIndex].value, document.frmMain.Yearcheckindate.options[document.frmMain.Yearcheckindate.selectedIndex].value);">Calendar</a>
+					</div>
+				
+				
+						<div class="row">
+							<input type="hidden" id="checkindate" name="checkindate" value="7/29/2006">
+					<select width="60" style="width:60px" class="" id="Monthcheckindate" name="Monthcheckindate" onchange="javascript:CheckDays('frmMain', 'Monthcheckindate', 'Daycheckindate', 'Yearcheckindate');document.frmMain.checkindate.value=document.frmMain.Monthcheckindate.options[Monthcheckindate.selectedIndex].value+'/'+document.frmMain.Daycheckindate.options[Daycheckindate.selectedIndex].value+'/'+document.frmMain.Yearcheckindate.options[Yearcheckindate.selectedIndex].value;setCheckoutdDate(this.name);">
+		<option value="1">Jan</option>
+		<option value="2">Feb</option>
+		<option value="3">Mar</option>
+		<option value="4">Apr</option>
+		<option value="5">May</option>
+		<option value="6">Jun</option>
+		<option value="7" selected >Jul</option>
+		<option value="8">Aug</option>
+		<option value="9">Sep</option>
+		<option value="10">Oct</option>
+		<option value="11">Nov</option>
+		<option value="12">Dec</option>
+	</select>
+	<select width="40" style="width:40px" class="" id="Daycheckindate" name="Daycheckindate" onchange="javascript:CheckDays('frmMain', 'Monthcheckindate', 'Daycheckindate', 'Yearcheckindate');document.frmMain.checkindate.value=document.frmMain.Monthcheckindate.options[Monthcheckindate.selectedIndex].value+'/'+document.frmMain.Daycheckindate.options[Daycheckindate.selectedIndex].value+'/'+document.frmMain.Yearcheckindate.options[Yearcheckindate.selectedIndex].value;setCheckoutdDate(this.name);">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		<option value="27">27</option>
+		<option value="28" selected >28</option>
+		<option value="29">29</option>
+		<option value="30">30</option>
+		<option value="31">31</option>
+	</select>
+	<select width="60" style="width:60px" class="" id="Yearcheckindate" name="Yearcheckindate" onchange="javascript:CheckDays('frmMain', 'Monthcheckindate', 'Daycheckindate', 'Yearcheckindate');document.frmMain.checkindate.value=document.frmMain.Monthcheckindate.options[Monthcheckindate.selectedIndex].value+'/'+document.frmMain.Daycheckindate.options[Daycheckindate.selectedIndex].value+'/'+document.frmMain.Yearcheckindate.options[Yearcheckindate.selectedIndex].value;setCheckoutdDate(this.name);">
+		<option value="2006" selected >2006</option>
+		<option value="2007">2007</option>
+	</select>
+		</div>
+					
+				
+					<div class="row">
+						Check Out:<span class="space">&nbsp;</span><a href="javascript:showCalendar('frmMain', 'checkoutdate', document.frmMain.Monthcheckoutdate.options[document.frmMain.Monthcheckoutdate.selectedIndex].value, document.frmMain.Daycheckoutdate.options[document.frmMain.Daycheckoutdate.selectedIndex].value, document.frmMain.Yearcheckoutdate.options[document.frmMain.Yearcheckoutdate.selectedIndex].value);">Calendar</a></td>
+					</div>
+			
+						<div class="row">
+							<input type="hidden" id="checkoutdate" name="checkoutdate" value="7/30/2006">
+					<select width="60" style="width:60px" class="" id="Monthcheckoutdate" name="Monthcheckoutdate" onchange="javascript:CheckDays('frmMain', 'Monthcheckoutdate', 'Daycheckoutdate', 'Yearcheckoutdate');document.frmMain.checkoutdate.value=document.frmMain.Monthcheckoutdate.options[Monthcheckoutdate.selectedIndex].value+'/'+document.frmMain.Daycheckoutdate.options[Daycheckoutdate.selectedIndex].value+'/'+document.frmMain.Yearcheckoutdate.options[Yearcheckoutdate.selectedIndex].value;setCheckoutdDate(this.name);">
+		<option value="1">Jan</option>
+		<option value="2">Feb</option>
+		<option value="3">Mar</option>
+		<option value="4">Apr</option>
+		<option value="5">May</option>
+		<option value="6">Jun</option>
+		<option value="7" selected >Jul</option>
+		<option value="8">Aug</option>
+		<option value="9">Sep</option>
+		<option value="10">Oct</option>
+		<option value="11">Nov</option>
+		<option value="12">Dec</option>
+	</select>
+	<select width="40" style="width:40px" class="" id="Daycheckoutdate" name="Daycheckoutdate" onchange="javascript:CheckDays('frmMain', 'Monthcheckoutdate', 'Daycheckoutdate', 'Yearcheckoutdate');document.frmMain.checkoutdate.value=document.frmMain.Monthcheckoutdate.options[Monthcheckoutdate.selectedIndex].value+'/'+document.frmMain.Daycheckoutdate.options[Daycheckoutdate.selectedIndex].value+'/'+document.frmMain.Yearcheckoutdate.options[Yearcheckoutdate.selectedIndex].value;setCheckoutdDate(this.name);">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		<option value="27">27</option>
+		<option value="28">28</option>
+		<option value="29" selected >29</option>
+		<option value="30">30</option>
+		<option value="31">31</option>
+	</select>
+	<select width="60" style="width:60px" class="" id="Yearcheckoutdate" name="Yearcheckoutdate" onchange="javascript:CheckDays('frmMain', 'Monthcheckoutdate', 'Daycheckoutdate', 'Yearcheckoutdate');document.frmMain.checkoutdate.value=document.frmMain.Monthcheckoutdate.options[Monthcheckoutdate.selectedIndex].value+'/'+document.frmMain.Daycheckoutdate.options[Daycheckoutdate.selectedIndex].value+'/'+document.frmMain.Yearcheckoutdate.options[Yearcheckoutdate.selectedIndex].value;setCheckoutdDate(this.name);">
+		<option value="2006" selected >2006</option>
+		<option value="2007">2007</option>
+	</select>
+		</div>
+					
+				
+					<div class="row">
+						<a href="javascript://" onclick="javascript:window.open('/booking/popups/adultKids.asp?WTReferrer=http%3A%2F%2Fwww%2Ehomesteadhotels%2Ecom%2Fminisite%2Fdirections%2Fmain%2Easp%3FHotelID%3D112','newwin2','height=300,width=387');">Adults</a>:&nbsp;&nbsp;
+						<td valign="middle">
+							<select id="numadults" name="numadults" style="width: 35px;">
+								<option value="1" >1</option>
+								<option value="2" >2</option>
+								<option value="3" >3</option>
+								<option value="4" >4</option>
+							</select>
+						&nbsp;<a href="javascript://" onclick="javascript:window.open('/booking/popups/adultKids.asp?WTReferrer=http%3A%2F%2Fwww%2Ehomesteadhotels%2Ecom%2Fminisite%2Fdirections%2Fmain%2Easp%3FHotelID%3D112','newwin2','height=300,width=387');">Kids</a>:&nbsp;&nbsp;
+						<select id="numkids" name="numkids" style="width: 35px;">
+								<option value="0" >0</option>
+								<option value="1" >1</option>
+								<option value="2" >2</option>
+								<option value="3" >3</option>
+								<option value="4" >4</option>
+						</select>
+					</div>
+					<div class="row">
+						Rooms:
+							<select id="rooms" name="rooms" style="width: 35px;">
+								<option value="1" >1</option>
+								<option value="2" >2</option>
+								<option value="3" >3</option>
+								<option value="4" >4</option>
+								<option value="5" >5</option>
+								<option value="6" >6</option>
+								<option value="7" >7</option>
+								<option value="8" >8</option>
+								<option value="9" >9</option>
+							</select>
+					</div>
+					<div class="row">
+						Select Rate:
+							<select id="rates" name="rates" style="width: 85px;">
+										<option value="ESH" >Best Available Rate</option>
+										<option value="COR" >Corporate</option>
+										<option value="GOV" >Gov't/Mil</option>
+										<option value="AAA" >AAA</option>
+										<option value="SNR" >Seniors</option>
+							</select>
+					</div>
+					<div class="row">
+						Company Code:
+							<input type="text" name="companycode" value="" size="7" maxlength="5" onkeyDown="handleKeyPress();">
+							<br>
+							<i>(If applicable)</i>
+					</div>
+					<div class="row">
+						Promotion Code:
+							<input type="text" name="promocode" value="" size="7" maxlength="10" onkeyDown="handleKeyPress();">
+						<br>
+						<i>(If applicable)</i>
+					</div>
+					
+					<div class="row">
+						<a href="javascript:checkAvailability()"><img src="/minisite/images/b-checkAvailability.gif" border="0"></a>
+					</div>
+					
+					<div class="row">
+						<a href="http://www.homesteadhotels.com/promotions/main.asp" target="_top"><img src="/images/nav-anibanner-guarantee.gif" border="0" WIDTH="125" HEIGHT="96"></a>
+					</div>
+			</form>
+			
+			<!--ENDS HERE ################-->
+		</div><!--LEFT CONTENT-->
+		<div id="miniContentRight">
+			<div id="miniIconNav">
+	<a href="http://www.homesteadhotels.com/minisite/?HotelID=112" onMouseOver="imgAct('img11')" onMouseOut="imgInact('img11')"><img src="/minisite/images/b-home-off.gif" border="0" name="img11" alt="Home"></a>
+	<a href="http://www.homesteadhotels.com/minisite/accommodations/main.asp?HotelID=112" onMouseOver="imgAct('img12')" onMouseOut="imgInact('img12')"><img src="/minisite/images/b-acc-off.gif" border="0" name="img12" alt="Accommodations"></a>
+	<a href="http://www.homesteadhotels.com/minisite/services/main.asp?HotelID=112" onMouseOver="imgAct('img13')" onMouseOut="imgInact('img13')"><img src="/minisite/images/b-services-off.gif" border="0" name="img13" alt="Services/Policies"></a>
+	<a href="http://www.homesteadhotels.com/minisite/directions/main.asp?HotelID=112" onMouseOver="imgAct('img14')" onMouseOut="imgInact('img14')"><img src="/minisite/images/b-directions-off.gif" border="0" name="img14" alt="Directions"></a>
+	<a href="http://www.homesteadhotels.com/minisite/information/main.asp?HotelID=112" onMouseOver="imgAct('img15')" onMouseOut="imgInact('img15')"><img src="/minisite/images/b-info-off.gif" border="0" name="img15" alt="Area Information"></a>
+</div><!--NAV ENDS-->
+			<div id="miniMainCon">
+				<div id="miniConText">
+					<div id="miniHdr">DIRECTIONS</div>
+					<p>
+					<a href="vicinity.asp?HotelID=112"><img src="../images/b-mapDirections.gif" border="0" alt="Map/Driving Directions" WIDTH="128" HEIGHT="22"></a>
+					</p>
+
+						<p>
+						<strong>From Highway 101</strong><br>
+						 From Highway 101, take Highway 92 East.  Exit on Mariners/Edgewater Blvd., make a left onto Edgewater, then another left on Metro Center Blvd.  Take your first left onto Gateway Drive into San Mateo Center.  Homestead is on the right.
+						</p>
+						<p>
+						<strong>From San Francisco International Airport (8M)</strong><br>
+						 Follow signs to Highway 101 South toward San Jose (8M).  Exit Highway 92 East (toward San Mateo Bridge).  Exit on Mariners/Edgewater Blvd., make a left onto Edgewater then another left on Metro Center Blvd. Take your first left onto Gateway Drive into San Mateo Center. Homestead is on the right.
+						</p>
+						<p>
+						<strong>From San Jose International Airport (30M)</strong><br>
+						 Follow all signs to Highway 101 North towards San Francisco.  Exit Highway 92 East (toward San Mateo Bridge).  Exit on Mariners/Edgewater Blvd., make a left onto Edgewater then another left on Metro Center Blvd.  Take your first left onto Gateway Drive into San Mateo Center.  Homestead is on the right.
+						</p>
+				</div>
+				<div id="miniConInsert">
+					<div id="miniInsertImg">
+							<img src="../images/112/112-directions.jpg" WIDTH="203" HEIGHT="153"></td>
+					</div>
+					<div id="miniInsertText">
+	<table border="0" cellspacing="0" cellpadding="0" class="infoFix">
+	<tr>
+		<td>
+			Homestead Studio Suites San Francisco - San Mateo - SFO<br>
+			<GEO TYPE="US">1830 Gateway Dr.<br>
+			San Mateo, CA&nbsp; 94404</GEO><br>
+			Telephone: 650-574-1744<br> 
+			Fax: 650-574-1757<br> 
+			<a href="mailto:SNM@extendedstay.com">SNM@extendedstay.com</a>
+		</td>
+	</tr>
+	</table>
+	<br>
+</div>					
+
+					<div id="miniBackBttn">
+						<a href="#" onclick="history.back();"><img src="../images/back.gif" border="0" WIDTH="48" HEIGHT="22"></a>
+					</div>					
+				</div>	
+				<div id="miniInvisFoot">
+					&nbsp;
+				</div>							
+			</div><!-- END MAIN CON-->
+		</div> <!--Right Content-->
+	</div><!--CONTENT-->
+	<div id="miniInvisFoot">
+		&nbsp;
+	</div>
+</div>
+
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- WebTrends SmartSource Data Collector                  -->
+<!-- © 1996-2004 NetIQ Corporation.  All rights reserved.  -->
+<!-- $DateTime: 2004/05/03 13:43:43 $ -->
+<SCRIPT LANGUAGE="Javascript"><!--
+gVersion="1.0";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.1"><!--
+gVersion="1.1";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.2"><!--
+gVersion="1.2";
+var RE={"%09":/\t/g,"%20":/ /g,"%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g};
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.3"><!--
+gVersion="1.3";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.4"><!--
+gVersion="1.4";
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript1.5"><!--
+gVersion="1.5";
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript"><!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+
+var gDomain="sdc.def6.com";
+var gDcsId="";
+// Add customizations here
+//WT.sp="@@SPLITVALUE@@";
+
+function dcsMultiTrack(){
+	for (var i=0;i<arguments.length;i++){
+		if (arguments[i].indexOf('WT.')==0){
+				WT[arguments[i].substring(3)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCS.')==0){
+				DCS[arguments[i].substring(4)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCSext.')==0){
+				DCSext[arguments[i].substring(7)]=arguments[i+1];
+				i++;
+		}
+	}
+	var dCurrent=new Date();
+	DCS.dcsdat=dCurrent.getTime();
+	dcsTag();
+}
+
+function dcsVar(){
+	var dCurrent=new Date();
+	WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+	if (WT.tz==0){
+		WT.tz="0";
+	}
+	WT.bh=dCurrent.getHours();
+	WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+	if (typeof(screen)=="object"){
+		WT.cd=navigator.appName=="Netscape"?screen.pixelDepth:screen.colorDepth;
+		WT.sr=screen.width+"x"+screen.height;
+	}
+	if (typeof(navigator.javaEnabled())=="boolean"){
+		WT.jo=navigator.javaEnabled()?"Yes":"No";
+	}
+	if (document.title){
+		WT.ti=document.title;
+	}
+	WT.js="Yes";
+	if (typeof(gVersion)!="undefined"){
+		WT.jv=gVersion;
+	}
+	DCS.dcsaut='0';
+	DCS.dcsdat=dCurrent.getTime();
+	DCS.dcssip=window.location.hostname;
+	DCS.dcsuri=window.location.pathname;
+	if (window.location.search){
+		DCS.dcsqry=window.location.search;
+	}
+	if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+		if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+			DCS.dcsref=window.document.referrer;
+		}
+	}
+}
+
+function A(N,V){
+	return "&"+N+"="+dcsEscape(V);
+}
+
+function dcsEscape(S){
+	if (typeof(RE)!="undefined"){
+		var retStr = new String(S);
+		for (R in RE){
+			retStr = retStr.replace(RE[R],R);
+		}
+		return retStr;
+	}
+	else{
+		return escape(S);
+	}
+}
+
+function dcsCreateImage(dcsSrc){
+	if (document.images){
+		gImages[gIndex]=new Image;
+		gImages[gIndex].src=dcsSrc;
+		gIndex++;
+	}
+	else{
+		document.write('<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+	}
+}
+
+function dcsMeta(){
+	var myDocumentElements;
+	if (document.all){
+		myDocumentElements=document.all.tags("meta");
+	}
+	else if (document.documentElement){
+		myDocumentElements=document.getElementsByTagName("meta");
+	}
+	if (typeof(myDocumentElements)!="undefined"){
+		for (var i=1;i<=myDocumentElements.length;i++){
+			myMeta=myDocumentElements.item(i-1);
+			if (myMeta.name){
+				if (myMeta.name.indexOf('WT.')==0){
+					WT[myMeta.name.substring(3)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCSext.')==0){
+					DCSext[myMeta.name.substring(7)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCS.')==0){
+					DCS[myMeta.name.substring(4)]=myMeta.content;
+				}
+			}
+		}
+	}
+}
+
+function dcsTag(){
+	var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?";
+	for (N in DCS){
+		if (DCS[N]) {
+			P+=A(N,DCS[N]);
+		}
+	}
+	for (N in WT){
+		if (WT[N]) {
+			P+=A("WT."+N,WT[N]);
+		}
+	}
+	for (N in DCSext){
+	
+		if (DCSext[N]) {
+			P+=A(N,DCSext[N]);
+		}
+	}
+	if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+		P=P.substring(0,2040)+"&WT.tu=1";
+	}
+	dcsCreateImage(P);
+}
+
+dcsVar();
+dcsMeta();
+
+WT['Brand']='hsd';
+WT['mc_id']='';
+WT['srch']='';
+
+
+WT['FromPortal']='N';
+
+//-->
+</script>
+	<script language="javascript1.1">
+	<!--
+	WT['HotelCode']='SNM';
+	//-->
+	</script>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+dcsTag();
+//-->
+</SCRIPT>
+
+<NOSCRIPT>
+<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://sdc.def6.com/njs.gif?dcsuri=/nojavascript&WT.js=No">
+</NOSCRIPT>
+<!-- END OF Data Collection Server TAG -->	
+
+<!--Conners Tracking Pixels-->
+<script language="JavaScript">  
+<!--  
+
+document.write('<img src=http://web.homesteadhotels.com/esh.gif?' + escape(document.referrer) + ' width=1 height=1>'); 
+
+// -->  
+</script>
+<!--END Conners Tracking Pixels-->
+
+
+</body>
+</html>

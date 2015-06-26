@@ -1,0 +1,422 @@
+<DOC>
+<DOCNO>g00838</DOCNO>
+<DOCHDR>http://cramer.house.gov/HoR/AL05/Contact+Me/Contact+Information</DOCHDR>
+<!-- Microsoft Content Management Server template file -->
+<HTML>
+
+<HEAD>
+	<TITLE>Congressman Bud Cramer - Contact Information Page</TITLE>
+	<link rel="stylesheet" title="Default" href="/Include/HoR/AL05/al05_style.css">
+
+<!-- Inserted by Content Management Server: BEGIN EmbedTmplHeadHook -->
+
+		<link rel="stylesheet"
+				href="/NR/System/WBC/Customizable/WBC.css">
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/WBCFuncPagesConfig/UIStringConstants/JavaScriptUIStringsNR.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Customizable/OptionsClient.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Dates.js"
+				type="text/javascript"></script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/Windows.js"
+				type="text/javascript"></script>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+			var IDS_FRAMEWORK_VIRTUAL_PATH =  "/NR/System/WBC";
+		// -->
+		</script>
+		<script language="JavaScript"
+				src="/NR/System/WBC/Internals/Shared/CommonClient.js"
+				type="text/javascript"></script>
+	<META name="ROBOTS" content="FOLLOW,INDEX">
+
+<!-- Inserted by Content Management Server: END EmbedTmplHeadHook -->
+</HEAD>
+
+<BODY ALINK="#b22222" LINK="#b22222" VLINK="#b22222" BGCOLOR="#333366">
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyBeginHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyBeginHook -->
+
+
+<script language="javascript">
+var timeout0;
+var lastElement = '';
+
+function getObj(name){
+ if (document.getElementById) {
+	   this.obj = document.getElementById(name);
+	   this.style = document.getElementById(name).style;
+ } else if (document.all) {
+	   this.obj = document.all[name];
+	   this.style = document.all[name].style;
+ } else if (document.layers) {
+	   if (document.layers[name]){
+	   	this.obj = document.layers[name];
+	   	this.style = document.layers[name];
+	   }else{
+	    this.obj = document.layers.testP.layers[name];
+	    this.style = document.layers.testP.layers[name];
+	   }
+ }
+}
+
+function findPosX(obj)
+{
+	var curleft = 0;
+	if (obj.offsetParent)
+	{
+		while (obj.offsetParent)
+		{
+			curleft += obj.offsetLeft;
+			obj = obj.offsetParent;
+		}
+	}
+	else if (obj.x)
+		curleft += obj.x;
+	return curleft;
+}
+
+function findPosY(obj)
+{
+	var curtop = 0;
+	if (obj.offsetParent)
+	{
+		while (obj.offsetParent)
+		{
+			curtop += obj.offsetTop;
+			obj = obj.offsetParent;
+		}
+	}
+	else if (obj.y)
+		curtop += obj.y;
+	return curtop;
+}
+
+function setPosition(parent,target){
+	var newX = findPosX(parent);
+	var newY = findPosY(parent);
+
+	var e = new getObj(target);
+	if((e!=null)&&(e.style!=null)){
+		e.style.top = newY + 25;
+		e.style.left = newX - 3;
+	}
+}
+
+function getElement(x){
+	var temp;
+	if(document.getElementById){
+		var temp = document.getElementById(x);
+		temp = temp.style;
+	}else if(document.all){
+		var temp = eval('document.all.' + x);
+		temp = temp.style;
+	}else{
+		var temp = eval('document.' + x);
+	}
+	return temp;
+}
+
+function hideMenuNow(){
+	var hidden = 'hidden';
+	clearTimeout(timeout0);
+	if(lastElement!=''){
+		var element = getElement(lastElement);
+		element.visibility = hidden;
+		lastElement = '';
+	}
+}
+
+function showMenu(x){	
+	var visible = 'visible';
+	if (document.layers) visible = 'show';
+	
+	if (lastElement!=x){
+		if (lastElement!='') hideMenuNow();
+		var e = getElement(x);
+		e.visibility = visible;	
+		lastElement = x;
+	}else{
+		clearTimeout(timeout0);
+	}
+}
+
+function hideMenu(x){
+	lastElement = x;
+	clearTimeout(timeout0);
+	timeout0 = setTimeout('hideMenuNow()',250);
+}
+
+</script>
+
+<STYLE TYPE="text/css">
+.DDmenu{
+	visibility: hidden;
+	position: absolute;
+	padding: 5px;
+	background-color: #333366;
+	line-height: 150%;
+	z-index: 10;
+	font-family: arial;
+	font-size: 8pt;
+	color: white;
+}
+
+A.DDlink{
+	color: white;
+	text-decoration: none;
+}
+
+A.DDlink:hover{
+	color: #63CFFF;
+}
+</STYLE>
+
+<DIV ID="DDmenu1" CLASS="DDmenu">
+<A HREF="/HoR/AL05/About+Bud/Biography/" class="DDlink" onMouseOver="showMenu('DDmenu1')" onMouseOut="hideMenu('DDmenu1')">Biography</A><BR>
+<A HREF="/HoR/AL05/About+Bud/A+Typical+Week/" class="DDlink" onMouseOver="showMenu('DDmenu1')" onMouseOut="hideMenu('DDmenu1')">A Typical Week</A><BR>
+</DIV>
+
+<DIV ID="DDmenu2" CLASS="DDmenu">
+<A HREF="/HoR/AL05/News/Press+Releases/" class="DDlink" onMouseOver="showMenu('DDmenu2')" onMouseOut="hideMenu('DDmenu2')">Press Releases</A><BR>
+<A HREF="/HoR/AL05/News/Bud+In+the+News/" class="DDlink" onMouseOver="showMenu('DDmenu2')" onMouseOut="hideMenu('DDmenu2')">Bud In the News</A><BR>
+<A HREF="/HoR/AL05/News/Archived+E-Newsletters/" class="DDlink" onMouseOver="showMenu('DDmenu2')" onMouseOut="hideMenu('DDmenu2')">Archived E-Newsletters</A><BR>
+</DIV>
+
+<DIV ID="DDmenu3" CLASS="DDmenu">
+<A HREF="/HoR/AL05/Issues/On+The+Issues/" class="DDlink" onMouseOver="showMenu('DDmenu3')" onMouseOut="hideMenu('DDmenu3')">On The Issues</A><BR>
+<A HREF="/HoR/AL05/Issues/Legislation/" class="DDlink" onMouseOver="showMenu('DDmenu3')" onMouseOut="hideMenu('DDmenu3')">Legislation</A><BR>
+<A HREF="/HoR/AL05/Issues/Blue+Dogs/" class="DDlink" onMouseOver="showMenu('DDmenu3')" onMouseOut="hideMenu('DDmenu3')">Blue Dogs</A><BR>
+<A HREF="/HoR/AL05/Issues/Committees+and+Caucuses/" class="DDlink" onMouseOver="showMenu('DDmenu3')" onMouseOut="hideMenu('DDmenu3')">Committees and Caucuses</A><BR>
+<A HREF="/HoR/AL05/Issues/About+Congress/" class="DDlink" onMouseOver="showMenu('DDmenu3')" onMouseOut="hideMenu('DDmenu3')">About Congress</A><BR>
+</DIV>
+
+<DIV ID="DDmenu4" CLASS="DDmenu">
+<A HREF="/HoR/AL05/Helping+You/Constituent+Services/" class="DDlink" onMouseOver="showMenu('DDmenu4')" onMouseOut="hideMenu('DDmenu4')">Constituent Services</A><BR>
+<A HREF="/HoR/AL05/Helping+You/Federal+Grants/" class="DDlink" onMouseOver="showMenu('DDmenu4')" onMouseOut="hideMenu('DDmenu4')">Federal Grants</A><BR>
+<A HREF="/HoR/AL05/Helping+You/Visiting+DC/" class="DDlink" onMouseOver="showMenu('DDmenu4')" onMouseOut="hideMenu('DDmenu4')">Visiting DC</A><BR>
+<A HREF="/HoR/AL05/Helping+You/Order+a+US+Flag/" class="DDlink" onMouseOver="showMenu('DDmenu4')" onMouseOut="hideMenu('DDmenu4')">Order a U.S. Flag</A><BR>
+<A HREF="/HoR/AL05/Helping+You/Academy+Nominations/" class="DDlink" onMouseOver="showMenu('DDmenu4')" onMouseOut="hideMenu('DDmenu4')">Academy Nominations</A><BR>
+<A HREF="/HoR/AL05/Helping+You/General+Information/" class="DDlink" onMouseOver="showMenu('DDmenu4')" onMouseOut="hideMenu('DDmenu4')">General Information</A><BR>
+</DIV>
+
+<DIV ID="DDmenu6" CLASS="DDmenu">
+<A HREF="/HoR/AL05/Contact+Me/Contact+Information/" class="DDlink" onMouseOver="showMenu('DDmenu6')" onMouseOut="hideMenu('DDmenu6')">Contact Information</A><BR>
+<A HREF="/HoR/AL05/Contact+Me/Send+Me+a+Message/" class="DDlink" onMouseOver="showMenu('DDmenu6')" onMouseOut="hideMenu('DDmenu6')">Send Me a Message</A><BR>
+</DIV>
+
+
+
+<TABLE WIDTH="780" CELLPADDING="0" CELLSPACING="0" BORDER="0" align="center" style="border:1 solid black">
+
+<TR>
+<TD width="780">
+	<TABLE WIDTH="780" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+	<TR>
+		<TD width="170" height="117"><IMG SRC="/Include/HoR/AL05/contact_corner.jpg" ALT="photo of computer and telephone"></TD>
+		<TD width="610" height="117">
+			<TABLE WIDTH="610" HEIGHT="117" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<TR>
+				<TD height="84" width="610">
+					<TABLE WIDTH="610" HEIGHT="84" CELLPADDING="0" CELLSPACING="0" BORDER="0" bgcolor="#333366">
+					<TR>
+						<TD WIDTH="610" HEIGHT="35" BGCOLOR="#333366" COLSPAN="2" align="right" valign="top">
+							&nbsp;
+						</TD>
+					</TR>
+					
+					<TR>
+						<TD WIDTH="502" HEIGHT="49"><IMG SRC="/Include/HoR/AL05/cramer_red_banner_part.gif"></TD>
+						<TD WIDTH="108" HEIGHT="49"><A HREF="/HoR/AL05/Contact+Me/newsletter+sign+up.htm"><IMG SRC="/Include/HoR/AL05/email_signup_button.gif" BORDER="0" ALT="Newsletter Sign-Up"></A></TD>
+					</TR>
+					</TABLE>
+				</TD>
+			</TR>
+			<TR>
+				<TD height="33" VALIGN="MIDDLE" width="610" BGCOLOR="#333366">
+					<TABLE WIDTH="100%" BORDER="0"><TR>
+					<TD align="center"><A HREF="/HoR/AL05/Home.htm" CLASS="topNavLink">Home</A></TD>
+					<TD align="center"><A HREF="/HoR/AL05/About+Bud/" CLASS="topNavLink" onMouseOver="setPosition(this,'DDmenu1');showMenu('DDmenu1')" onMouseOut="hideMenu('DDmenu1')">About Bud</A></TD>
+					<TD align="center"><A HREF="/HoR/AL05/News/" CLASS="topNavLink" onMouseOver="setPosition(this,'DDmenu2');showMenu('DDmenu2')" onMouseOut="hideMenu('DDmenu2')">News</A></TD>
+					<TD align="center"><A HREF="/HoR/AL05/Issues/" CLASS="topNavLink" onMouseOver="setPosition(this,'DDmenu3');showMenu('DDmenu3')" onMouseOut="hideMenu('DDmenu3')">Issues</A></TD>
+					<TD align="center"><A HREF="/HoR/AL05/Helping+You/" CLASS="topNavLink" onMouseOver="setPosition(this,'DDmenu4');showMenu('DDmenu4')" onMouseOut="hideMenu('DDmenu4')">Helping You</A></TD>
+					<TD align="center"><A HREF="/HoR/AL05/Photos/" CLASS="topNavLink">Photos</A></TD>
+					<TD align="center"><A HREF="/HoR/AL05/Contact+Me/" CLASS="topNavLink" onMouseOver="setPosition(this,'DDmenu6');showMenu('DDmenu6')" onMouseOut="hideMenu('DDmenu6')"><FONT COLOR="#63CFFF">Contact Me</FONT></A></TD>
+					<TD align="center"><A HREF="/HoR/AL05/5th+District/" CLASS="topNavLink">5th District</A></TD>
+					<TD align="center"><A HREF="/HoR/AL05/Kids+Zone/" CLASS="topNavLink">Kid's Zone</A></TD>
+					</TR></TABLE>
+
+				</TD>
+			</TR>
+			</TABLE>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD width="780" valign="top" colspan="2">
+
+<TABLE WIDTH="780" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+
+<TD WIDTH="170" ID="sidebar" bgcolor="#FFFFFF" valign="top" background="/Include/HoR/AL05/sidebar_background.gif">
+	<TABLE WIDTH="170" CELLPADDING="5" CELLSPACING="0" BORDER="0"><TR><TD>
+	&nbsp;<BR>
+	<SPAN STYLE="color:black"><P><A href="/HoR/AL05/Contact+Me/Send+Me+a+Message/Send+Me+A+Message.htm"><FONT face="Arial" size="2"><STRONG>Send Me A Message</STRONG></FONT></A></P></span><BR>
+	&nbsp;<BR>
+	<SPAN STYLE="color:black"><DIV><FONT face="Arial" color="#000000" size="1"><STRONG><U>HUNTSVILLE</U></STRONG></FONT><FONT face="Arial"><FONT color="#000000"><STRONG><BR></STRONG><FONT size="1">626 Clinton Avenue, West<BR>Huntsville, Alabama 35801<BR>(256) 551-0190<BR>(256) 551-0194 (fax)</FONT></FONT></FONT></DIV>
+<DIV><FONT color="#000000" size="1"></FONT>&nbsp;</DIV>
+<DIV><FONT face="Arial" color="#000000" size="1"><STRONG><U>DECATUR</U></STRONG></FONT></DIV>
+<DIV><FONT face="Arial"><FONT color="#000000"><FONT size="1"><STRONG>Walk-in address:<BR></STRONG>Morgan Co. Courthouse<BR>302 Lee Street<BR>5th Floor, Room 86<BR>Decatur, Alabama 35601<BR><BR><B>Mailing address:</B><BR>P.O. Box 668<BR>Decatur, Alabama 35602<BR>(256) 355-9400<BR>(256) 355-9406 (fax)</FONT></FONT></FONT></DIV>
+<DIV><FONT face="Arial" color="#000000" size="1"></FONT>&nbsp;</DIV>
+<DIV><FONT face="Arial" color="#000000" size="1"><STRONG><U>MUSCLE SHOALS</U></STRONG></FONT><FONT face="Arial"><FONT color="#000000"><STRONG><BR></STRONG><FONT size="1">The Bevill Center for&nbsp;Environmental Technology<BR>1011 George Wallace Boulevard<BR>Tuscumbia, AL 35674<BR>(256) 381-3450<BR>(256) 381-7659 (fax)</FONT></FONT></FONT></DIV>
+<P><FONT face="Arial"><FONT color="#000000" size="1"><U>WASHINGTON, DC<BR></U>2368 Rayburn House Office Building<BR>Washington, DC 20515<BR></FONT></FONT><FONT face="Arial"><FONT color="#000000"><FONT size="1">(202) 225-4801<BR>(202) 225-4392 fax<BR></FONT><A href="mailto:budmail@mail.house.gov"><FONT size="1">budmail@mail.house.gov</FONT></A></FONT></FONT><FONT face="Arial"><FONT size="2"><FONT color="#000000"></P>
+<DIV><BR></DIV></FONT></FONT></FONT></span><BR>
+	<!--class="sidebarbox"-->
+	&nbsp;<BR>
+	</TD></TR></TABLE>	
+</TD>
+
+<TD WIDTH="610" ID="contentCell" valign="top">
+
+	<TABLE WIDTH="590" BORDER="0" CELLPADDING="10" CELLSPACING="0">
+	<TR><TD>
+
+	<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0 BORDER="0">
+	<TR>
+	<TD ALIGN="left" valign="top">
+		<SPAN STYLE="font-family: arial, sans-serif; font-size:14pt; font-weight:bold"><P align="left"><FONT face="Arial" size="4"><STRONG>CONTACT INFORMATION</STRONG></FONT></P></SPAN><BR><BR>
+	</TD>
+	<TD ALIGN="right" valign="top">
+		
+			<SPAN STYLE="font-family: arial; font-size: 10pt">
+			<A HREF="/HoR/AL05/Hidden+Content/Printer+Friendly+Generic+Page.htm?GUID={4CE6F5E9-107E-4273-9332-BE564DD8627A}">Print this Page</A>
+			</SPAN>
+		
+	</TD>
+	</TR>
+	</TABLE>
+	
+	<SPAN STYLE="font-family: arial, sans-serif; font-size:10pt"><P><FONT face="Arial" size="2">I know that interacting with the bureaucracy of the Federal Government can often times be frustrating and time consuming. Part of my responsibilities as your Representative is to assist you work through this bureaucracy. In order to better serve you, I handle these inquiries out of the three district offices that are located at the following addresses.</FONT></P>
+<P><FONT face="Arial" size="2">In addition, should you wish to contact me in regards to particular legislative issues or initiatives, please contact me in my Washington office. My staff and I are happy to provide you with any assistance you may need.<BR></FONT></P>
+<P><FONT face="Arial" size="2"></FONT></P>
+<P><FONT face="Arial" size="2"><B><IMG alt="Image, Congressman Cramer's Signature" src="/NR/rdonlyres/656C23AD-CD9C-4945-AA7D-AA225D341F64/0/BudSignature.jpg" border="0"></B></FONT></P>
+<P><FONT size="2"></FONT></P>
+<DIV><FONT face="Arial" color="#000000"><U><STRONG>DISTRICT OFFICES</STRONG></U></FONT></DIV>
+<DIV><STRONG><U></U></STRONG>&nbsp;</DIV>
+<DIV><STRONG><U></U></STRONG>&nbsp;</DIV>
+<DIV>
+<TABLE style="WIDTH: 468px; HEIGHT: 246px" cellSpacing="2" cellPadding="1" border="0">
+<TBODY>
+<TR>
+<TD>
+<DIV><FONT face="Arial" color="#000000" size="2"><U><STRONG>HUNTSVILLE</STRONG></U></FONT></DIV>
+<DIV><FONT face="Arial"><FONT size="2"><FONT color="#000000">Mailing and Walk-in Address:<BR>626 Clinton Avenue, West<BR>Huntsville, Alabama 35801<BR>(256) 551-0190 (phone)<BR>(256) 551-0194 (fax)<BR><BR>Huntsville Staff:<BR><I>Mr. Jim McCamy</FONT></FONT></FONT></I><FONT face="Arial"><FONT size="2"><FONT color="#000000">, District&nbsp; Director</FONT></FONT></FONT></DIV>
+<DIV><FONT face="Arial"><FONT size="2"><FONT color="#000000"><EM>Mr. Gary Chandler</EM>, Field Representative</FONT></FONT></FONT></DIV>
+<DIV><FONT face="Arial"><FONT size="2"><FONT color="#000000"><EM>Mrs. Mickey Ellis,</EM> Community Affairs Director<BR><I>Mrs. Jayne Murray</FONT></FONT></FONT></I><FONT color="#000000"><FONT face="Arial" size="2">, Caseworker<BR><I>Ms. Shannon Humphrey</I>, Staff Assistant</FONT> </FONT></DIV></TD>
+<TD>
+<DIV><FONT face="Arial" color="#000000" size="2"><U><STRONG>DECATUR</STRONG></U></FONT></DIV>
+<DIV><FONT face="Arial"><FONT size="2"><FONT color="#000000">Walk-in address:<BR>Morgan Co. Courthouse<BR>302 Lee Street<BR>5th Floor, Room 86<BR>Decatur, Alabama 35601<BR><BR>Mailing address:<BR>P.O. Box 668<BR>Decatur, Alabama 35602<BR>(256) 355-9400 (phone)<BR>(256) 355-9406 (fax)<BR><BR>Decatur Staff:<BR><I>Mrs. Peggy Towns,</FONT></FONT></FONT></I><FONT face="Arial" color="#000000" size="2"> Caseworker</FONT></DIV></TD></TR></TBODY></TABLE></DIV>
+<DIV><FONT face="Arial" color="#000000" size="2"><U></U></FONT>&nbsp;</DIV>
+<DIV>
+<DIV><FONT color="#000000"></FONT></DIV><FONT color="#000000"></FONT></DIV>
+<DIV>
+<DIV><FONT face="Arial" color="#000000" size="2"></FONT></DIV><FONT face="Arial" color="#000000" size="2"></FONT></DIV>
+<DIV><FONT face="Arial" color="#000000" size="2"><U><STRONG>MUSCLE SHOALS</STRONG></U></FONT></DIV>
+<DIV><FONT face="Arial"><FONT size="2"><FONT color="#000000">Mailing &amp; Walk-in Address:<BR>The Bevill Center for&nbsp;Environmental Technology<BR>1011 George Wallace Boulevard<BR>Tuscumbia, AL 35674<BR>(256) 381-3450 (phone)<BR>(256) 381-7659 (fax)<BR><BR>Muscle Shoals Staff:<BR><EM>Mrs. Judy Sizemore</EM>, Caseworker</FONT></FONT></FONT></DIV>
+<DIV>&nbsp;</DIV>
+<P align="center"><FONT face="Arial" size="2"><B><U>WASHINGTON, D.C.</U></B></P>
+<P>MAILING &amp; WALK-IN ADDRESS:<BR>2368 Rayburn House Office Building<BR>Washington, D.C. 20515-0105<BR>PHONE: (202) 225-4801<BR>FAX: (202) 225-4392<BR>E-MAIL: <A href="http://www.house.gov/cramer/contactbud.htm">budmail@mail.house.gov</A><BR><BR><B>Mr. Carter Wells</B>, Administrative Assistant/Chief-of-Staff.&nbsp; Issues: Transportation, Agriculture.<BR><B>Mrs. Val Watson</B>, Appointment Secretary.<BR><B>Mr. Adam Muhlendorf</B>, Press Secretary.&nbsp;<BR><B>Mrs. Jenny DiJames</B>, Legislative Director, handles issues before the Commerce Justice State Subcommittee of the Appropriations Committee.&nbsp; Issues: Children's Issues, Campaign Finance Reform, Welfare, the Judiciary, Health Care, Medicare/Medicaid, Law Enforcement, EPA, Housing, Budget, Insurance,&nbsp;Interior, Environment, Natural Resources.<BR><B>Dr. Thomas Koshut</B>, Senior Policy Advisor, handles issues before the Veterans' Affairs, Housing and Urban Development and Independent Agencies Subcommittee of the Appropriations Committee.&nbsp; Issues:&nbsp; NASA/Aerospace, Trade,&nbsp;Science and Technology, Taxes, National Weather Service, Federal Emergency Management Agency (FEMA), National Oceanic and Atmospheric Administration (NOAA), Commerce Issues, Banking, Telecommunications.<BR><STRONG>Mr. Mike Ryan,</STRONG> Legislative Aide.&nbsp; Issues:&nbsp;Defense, Energy and Water, Tennessee Valley Authority, Military Construction, Homeland Security, Intelligence, Veterans.<BR><B>Ms. Peggy L. Fields</B>, Staff Assistant/Federal Grants Coordinator, Military Academy Appointments, Flag Requests, and Washington tour requests.<BR><B>Mr. Alex Igou</B>, Legislative Correspondent.&nbsp; Issues: U.S. Postal Issues,&nbsp;Labor, Federal Employees, Immigration, Small Business.<BR><STRONG>Ms. Tiavalya Jefferson</STRONG>, Legislative Correspondent.&nbsp; Issues: Social Security, Seniors' Issues, Native American Affairs, Foreign Affairs, Education.</P></FONT></SPAN>
+	
+	</TD></TR>
+	</TABLE>
+
+</TD>
+
+
+
+</TR>
+</TABLE>
+
+		</TD>
+	</TR>
+	
+	<TR>
+		<TD bgcolor="#333366" ID="footerCell" align="left"><IMG SRC="/Include/HoR/AL05/footer_collage.gif" ALT="small collage of photos from the graphical menu on the homepage"></TD>
+
+		<TD bgcolor="#333366" ID="footerCell" align="center">
+			<CENTER>
+			<TABLE ALIGN="center" BORDER="0" width="100%">
+			<TR>
+				<TD valign="top" width="25%" align="center">
+				<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0"><TR><TD>
+				<SPAN STYLE="font-family:arial;font-size:8pt;color:#FFFFFF">
+				<B>Washington D.C.</B><BR>
+				2368 Rayburn HOB<BR>
+				Washington, DC 20515<BR>
+				Phone: 202-225-4801<BR>
+				Fax: 202-225-4392
+				</SPAN>
+				</TD></TR></TABLE>
+				</TD>
+
+				<TD valign="top" width="25%" align="center">
+				<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0"><TR><TD>
+				<SPAN STYLE="font-family:arial;font-size:8pt;color:#FFFFFF">
+				<B>Huntsville</B><BR>
+				626 Clinton Ave., West<BR>
+				Huntsville, AL 35801<BR>
+				Phone: 256-551-0190<BR>
+				Fax: 256-551-0194
+				</SPAN>
+				</TD></TR></TABLE>
+				</TD>
+
+				<TD valign="top" width="25%" align="center">
+				<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0"><TR><TD>
+				<SPAN STYLE="font-family:arial;font-size:8pt;color:#FFFFFF">
+				<B>Decatur</B><BR>
+				P.O. Box 668<BR>
+				Morgan County Courthouse<BR>
+				Decatur, AL 35601<BR>
+				Phone: 256-355-9400<BR>
+				Fax: 256-355-9406
+				</SPAN>
+				</TD></TR></TABLE>
+				</TD>
+
+				<TD valign="top" width="25%" align="center">
+				<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0"><TR><TD>
+				<SPAN STYLE="font-family:arial;font-size:8pt;color:#FFFFFF">
+				<B>Muscle Shoals</B><BR>
+				1011 George Wallace Blvd<BR>
+				Tuscumbia, AL 35674<BR>
+				Phone: 256-381-3450<BR>
+				Fax: 256-381-7659
+				</SPAN>
+				</TD></TR></TABLE>
+				</TD>
+
+			</TR>
+			</TABLE>
+			</CENTER>
+
+		</TD>
+	</TR>
+
+	<!--<TR><TD bgcolor="#333366" colspan="2">&nbsp;</TD></TR>-->
+
+	</TABLE>
+
+</TD>
+</TR>
+</TABLE>
+<!-- Inserted by Content Management Server: BEGIN EmbedBodyEndHook -->
+
+<!-- Inserted by Content Management Server: END EmbedBodyEndHook -->
+</BODY>
+</HTML>

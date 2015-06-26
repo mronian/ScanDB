@@ -1,0 +1,772 @@
+<DOC>
+<DOCNO>f00788</DOCNO>
+<DOCHDR>http://news10now.com/content/contact_us</DOCHDR>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+<!-- Begin
+function Start(page) {
+OpenWin = this.open(page, "CtrlWindow", "toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=no,width=814,height=540");
+}
+// End -->
+</SCRIPT>
+
+<map name="News10">
+<area alt="News 10 Syracuse - Home" coords="18,7,105,87" href="/default.asp">
+<area alt="24 hour local news only on Time Warner Cable" shape="poly" coords="571,0,572,15,604,15,605,40,605,46,748,45,748,0" href="http://www.TWCNY.com">
+<area alt="Central New York - Regional Top Stories" coords="136,52,236,71" href="/content/top_stories/default.asp?RegionCookie=13">
+<area alt="Rome/Mohawk Valley - Regional Top Stories" coords="237,52,344,71" href="/content/top_stories/default.asp?RegionCookie=48">
+<area alt="Tompkins/Courtland - Regional Top Stories" coords="345,52,467,71" href="/content/top_stories/default.asp?RegionCookie=45">
+<area alt="Watertown/North Country - Regional Top Stories" coords="467,52,567,71" href="/content/top_stories/default.asp?RegionCookie=52">
+</map>
+
+<map name="twmap3">
+<area alt="News 10 Syracuse - HOME" coords="17,0,102,6" href="/default.asp">
+</map>
+
+<!--Server: 10.11.12.107-->
+<!--Debug: False-->
+<!--SessionID: 1953606009-->
+
+<!-- TEMPLATE: 4 -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ENG">
+<head>
+<title>News 10 Now  | 24 Hour Local News | CONTACT US</title>
+<META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="pragma" CONTENT="NO-CACHE">
+<!-- <META http-equiv="REFRESH" content="1800; URL=http://news10now.com/content/contact_us/Default.asp?"> -->
+<META name="description" content="">
+<META name="keywords" content="contact, us, syracuse, news, weather, news, News10, news10syracuse, north country, rome, mohawk valley, new york, central new york, watertwon, tompkins, cortland, local, broadcast, tv, video, radar, doppler, live, breaking, music, government, cable, forecast, 8 day, 5 day, 7 day, 8-day, 5-day, 7-day, weather stations, stations, station, temperatures, high, low, record, almanac, rain, rainfall, watches, warnings, watch, warning, map, maps, National Weather Service, meterologist, web cams, cameras, almanac, satellite, allergy, pollen, sports, education, health, elections, websightings, web sightings, web sitings, websitings, anchors, reporters, television, lakes, lake, bug, time, temp, traffic, thunderstorm,">
+<link rel="stylesheet" href="/style.css" type="text/css">
+<!-- JAVASCRIPT POP UNDER AD CODE -->
+<script type="text/javascript">
+
+//JK Popup Window Script (version 3.0)- By JavaScript Kit (http://www.javascriptkit.com)
+//Visit JavaScriptKit.com for free JavaScripts
+//This notice must stay intact for legal use
+//Win Type: Pop Under | 20 hours period
+    
+//Specify URLs to randomly select from and popup/popunder:
+//To display a single URL, just remove all but the first entry below:
+var popurls=new Array()
+popurls[0]="/popunder.asp"
+
+function openpopup(popurl){
+var winpops=window.open(popurl,"","width=721,height=301,status,menubar=no,scrollbars=no,resizable=no,toolbar=no,location=no")
+winpops.blur()
+window.focus()
+}
+
+function get_cookie(Name) {
+  var search = Name + "="
+  var returnvalue = "";
+  if (document.cookie.length > 0) {
+    offset = document.cookie.indexOf(search)
+    if (offset != -1) { // if cookie exists
+      offset += search.length
+      // set index of beginning of value
+      end = document.cookie.indexOf(";", offset);
+      // set index of end of cookie value
+      if (end == -1)
+         end = document.cookie.length;
+      returnvalue=unescape(document.cookie.substring(offset, end))
+      }
+   }
+  return returnvalue;
+}
+
+popfrequency="24 hours"
+
+function resetcookie(){
+var expireDate = new Date()
+expireDate.setHours(expireDate.getHours()-10)
+document.cookie = "jkpopunder=;path=/;expires=" + expireDate.toGMTString()
+}
+
+function loadornot(){
+if (get_cookie('jkpopunder')==''){
+openpopup(popurls[Math.floor(Math.random()*(popurls.length))])
+var expireDate = new Date()
+expireDate.setHours(expireDate.getHours()+parseInt(popfrequency))
+document.cookie = "jkpopunder="+parseInt(popfrequency)+";path=/;expires=" + expireDate.toGMTString()
+}
+}
+
+if (get_cookie('jkpopunder')!=parseInt(popfrequency))
+resetcookie()
+loadornot()
+
+</script>
+
+<!-- END POP UNDER AD CODE -->
+<script language="JavaScript" type="text/javascript">
+<!--
+// Submit form to video_pop.asp.  
+function watchVid(vid) {
+	var newWindow;
+	var vidlist = "";
+	pageurl = "/shared/video/video_pop.asp?destlist=" + vid;
+	var props = 'scrollBars=yes,resizable=no,toolbar=no,menubar=no,location=no,directories=no,width=580,height=380,status=no';
+	newWindow = window.open(pageurl, "view_vids", props);
+	newWindow.focus();
+}
+
+// Show Video instructions
+
+function vidinstr() {
+	newWindow = window.open("/shared/video/instructions_pop.asp", "vids_instr", 'scrollBars=no,resizable=no,toolbar=no,menubar=no,location=no,directories=no,width=270,height=195,status=no');
+	newWindow.focus();
+}
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000CC" vlink="#0000CC" TOPMARGIN=2 LEFTMARGIN=5 MARGINWIDTH=5 MARGINHEIGHT=2 stats=1>
+<!-- Start of DeepMetrix (.NET) StatScript -->
+<script language="javascript">
+
+var DMNETdomain = "";
+var DMNETpage = window.location;
+var DMNETversion = "86";
+var DMNETsendTo = "//collector.newsx.cc/dm.gif?";
+var DMNETsession;
+
+function dmneterr(){return true;}
+
+window.onerror=dmneterr;
+var s = new Date();
+
+if (navigator.userAgent.indexOf('Mac') >= 0 && s.getTimezoneOffset() >= 720)
+  s.setTime (s.getTime() - 1440*60*1000);
+
+var dmnetURL = location.protocol + DMNETsendTo+"v="+DMNETversion+"&vst=1";
+var dmnetCookieString = document.cookie.toString();
+
+if(dmnetCookieString.indexOf("_dmnid") == -1)
+  {
+    DMNETsession = parseInt( Math.random()*1000000 ) + "_" + s.getTime();
+    var domStr = "";
+    if(DMNETdomain != "")
+    {
+      domStr = "domain="+ DMNETdomain +";";
+    }
+    document.cookie = "_dmnid=" + DMNETsession + ";expires=Mon, 31-Dec-2008 00:00:00 GMT;"+domStr+"path=/;";
+  }
+dmnetCookieString = document.cookie.toString();
+if(dmnetCookieString.indexOf('_dmnid') == -1)
+  {
+    DMNETsession = "";
+  }
+else
+  {
+    if(dmnetCookieString.indexOf(';') == -1)
+      dmnetCookieString = dmnetCookieString.replace(/_dm/g, ';_dm');
+
+    var start = dmnetCookieString.indexOf("_dmnid=") + 7;
+    var end = dmnetCookieString.indexOf(";",start);
+
+    if (end == -1)
+      end = dmnetCookieString.length;
+    DMNETsession = unescape(dmnetCookieString.substring(start,end));
+  }
+dmnetURL += "&id="+DMNETsession+"&url="+escape(DMNETpage) + "&ref="+escape(document.referrer)+"&lng=" + ((!document.all ||  navigator.userAgent.match('Opera')) ? navigator.language : navigator.userLanguage) + "&tz=" + (Math.round(new Date('dec 1, 2002').getTimezoneOffset()/60)*-1);
+if(screen)
+  dmnetURL += "&scr=" + escape( screen.width + "x" + screen.height + " " + screen.colorDepth + "bpp" );
+
+dmnetURL += "&rnd=" + new Date().getTime();
+
+if(document.layers)
+{
+  document.write("<la"+"yer name=\"DMStats\" visibility=hide><img src=\""+dmnetURL+"\" height=1 width=1></la"+"yer>");
+}
+else
+{
+  document.write("<di"+"v id=\"DMStats\" STYLE=\"position:absolute;visibility:hidden;\"><img src=\""+dmnetURL+"\" height=1 width=1></di"+"v>");
+}
+
+</script>
+<!-- End of DeepMetrix (.NET) StatScript -->
+
+<table cellspacing=0 cellpadding=0 border=0 width=920 height="100%" background="/images/bgimage.gif" >
+<tr><td width="752" valign="top" height="100%"><table cellspacing=0 cellpadding=0 border=0 width=752>
+<tr><td colspan=3 width="752"><table cellpadding=0 cellspacing=0 border=0 width=752 bgcolor="#ffffff"><tr><td colspan=5><img src="/images/750.gif" width="1" height="3" border="0" alt=""></td></tr><tr><td width=468><!--BizType: 1--><a href="/shared/ads/redirect.asp?AdID=194"target="_blank">	  
+	<img src="http://images.newsx.cc/news10syracuse_media/ads/advert_194_Advantage-RR-full.jpg?r=32" alt="Get the Advantage. Get Time Warner Cable." border="0" width="468" height="60"></a></td><td width=2><img src="/images/750.gif" width="2" height="1" border="0" alt=""></td><td bgcolor="#cccccc" width=46><!--BizType: 1--><img src="http://images.newsx.cc/news10syracuse_media/ads/advert_15_blank.gif?r=32" alt="" border="0" width="48" height="60"></td><td width=2><img src="/images/750.gif" width="2" height="1" border="0" alt=""></td><td width=234><!--BizType: 1--><a href="/shared/ads/redirect.asp?AdID=246"target="_blank">	  
+	<img src="http://images.newsx.cc/news10syracuse_media/ads/advert_246_digital_phone_234x602.jpg?r=32" alt="Get digital phone service! " border="0" width="234" height="60"></a></td></tr>
+<tr><td colspan=5><img src="/images/750.gif" width="1" height="3" border="0" alt=""></td></tr></table></td></tr>
+<tr><td colspan=5 width="752"><img src="/images/top_long_home.gif" width="752" height="87" border="0" alt="News 10 Syracuse - Your news, all the time."  usemap="#News10"></td></tr>
+<tr>
+<td width="132" bgcolor="#0064AA" valign="top"><table cellpadding="0" cellspacing="0" border="0" width="132">
+<tr><td width="132" valign="top"><img src="/images/home_logo_bottom.gif" width="132" height="42" border="0" alt="News 10 Syracuse - Home" usemap="#twmap3"><!-- XML MENU --><table border="0" cellspacing="0" cellpadding="0" width="132" onmouseover="this.style.cursor='hand';">
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1000.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1000" href="http://news10now.com/content/top_stories/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>TOP STORIES<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1001.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1001" href="http://news10now.com/content/all_news/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>ALL NEWS<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1007.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1007" href="http://news10now.com/content/beyond_new_york/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>BEYOND NEW YORK<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1008.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1008" href="http://news10now.com/content/sports/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>SPORTS<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1009.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1009" href="http://news10now.com/content/weather/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>WEATHER<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1018.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1018" href="http://news10now.com/content/traffic/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>TRAFFIC<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1019.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1019" href="http://news10now.com/content/closings/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>CLOSINGS<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1020.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1020" href="http://news10now.com/content/features/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>FEATURES<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1031.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1031" href="http://news10now.com/content/health/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>HEALTH<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1036.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1036" href="http://news10now.com/content/local_business/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>LOCAL BUSINESS<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1039.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1039" href="http://news10now.com/content/in_our_community/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>IN OUR COMMUNITY<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1040.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1040" href="http://news10now.com/content/in_your_neighborhood/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>IN YOUR NEIGHBORHOOD<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1043.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1043" href="http://news10now.com/content/story_links/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>STORY LINKS<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1044.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1044" href="http://news10now.com/content/video_stories/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>VIDEO STORIES<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1046.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1046" href="http://news10now.com/content/about_us/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>ABOUT US<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#FF6563" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E10019;" onmouseover="this.style.background='#E10019'" onmouseout="this.style.background='#E10019'" onclick="window.document.all.link1051.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1051" href="http://news10now.com/content/contact_us/" class="menuwhite"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>CONTACT US<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/menu_arrow_topleft.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#CC0000" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#F3F5F6" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E9E9EA;" onmouseover="this.style.background='#83D6FD'" onmouseout="this.style.background='#E9E9EA'" onclick="window.document.all.link1052.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1052" href="http://news10now.com/content/contact_us/advertise/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>Advertise<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#F3F5F6" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E9E9EA;" onmouseover="this.style.background='#83D6FD'" onmouseout="this.style.background='#E9E9EA'" onclick="window.document.all.link1053.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1053" href="http://news10now.com/content/contact_us/community_events/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>Community Events<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#F3F5F6" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E9E9EA;" onmouseover="this.style.background='#83D6FD'" onmouseout="this.style.background='#E9E9EA'" onclick="window.document.all.link1054.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1054" href="http://news10now.com/content/contact_us/news_tips/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>News Tips<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#F3F5F6" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E9E9EA;" onmouseover="this.style.background='#83D6FD'" onmouseout="this.style.background='#E9E9EA'" onclick="window.document.all.link1055.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1055" href="http://news10now.com/content/contact_us/submit_release/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>Submit Release<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#F3F5F6" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E9E9EA;" onmouseover="this.style.background='#83D6FD'" onmouseout="this.style.background='#E9E9EA'" onclick="window.document.all.link1056.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1056" href="http://news10now.com/content/contact_us/tours/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>Tours<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#F3F5F6" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E9E9EA;" onmouseover="this.style.background='#83D6FD'" onmouseout="this.style.background='#E9E9EA'" onclick="window.document.all.link1057.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1057" href="http://news10now.com/content/contact_us/video_requests/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>Video Requests<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#F3F5F6" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E9E9EA;" onmouseover="this.style.background='#83D6FD'" onmouseout="this.style.background='#E9E9EA'" onclick="window.document.all.link1058.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1058" href="http://news10now.com/content/contact_us/viewer_center/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>Viewer Center<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#F3F5F6" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E9E9EA;" onmouseover="this.style.background='#83D6FD'" onmouseout="this.style.background='#E9E9EA'" onclick="window.document.all.link1059.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1059" href="http://news10now.com/content/contact_us/poll_archive/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>Poll Archive<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#F3F5F6" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#E9E9EA;" onmouseover="this.style.background='#83D6FD'" onmouseout="this.style.background='#E9E9EA'" onclick="window.document.all.link1060.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1060" href="http://news10now.com/content/contact_us/jobs/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>Jobs<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1061.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1061" href="http://news10now.com/content/ealerts/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>E-ALERTS<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1062.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1062" href="http://news10now.com/content/cable_listings/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>CABLE LISTINGS<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr><td colspan="4" bgcolor="#EBE8E8" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+<tr style="background:#D4D0C8;" onmouseover="this.style.background='#F9FCFE'" onmouseout="this.style.background='#D4D0C8'" onclick="window.document.all.link1063.click()">
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td colspan="2" width="112"><a id="link1063" href="http://news10now.com/content/search/" class="menu"><img src="/images/750.gif" width="1" height="2" border="0" alt=""><br>SEARCH<br><img src="/images/750.gif" width="112" height="2" border="0" alt=""><br></a></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="10" border="0" alt=""></td>
+</tr>
+<tr><td colspan="4" bgcolor="#B8B7B7" width="132"><img src="/images/750.gif" width="132" height="1" border="0" alt=""></td></tr>
+
+<tr>
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+  <td width="102"><img src="/images/750.gif" width="102" height="1" border="0" alt=""></td>
+  <td width="10"><img src="/images/750.gif" width="10" height="1" border="0" alt=""></td>
+</tr>
+</table><br><div align="center"><!--BizType: 14--><a href="/shared/ads/redirect.asp?AdID=221">	  
+	<img src="http://images.newsx.cc/news10syracuse_media/ads/advert_221_Traffic-Alert-very-sm1.gif?r=32" alt="" border="0" width="120" height="32"></a><br><img src="/images/750.gif" width="1" height="20" border="0" alt=""><br><!--BizType: 14--><a href="/shared/ads/redirect.asp?AdID=238">	  
+	<img src="http://images.newsx.cc/news10syracuse_media/ads/advert_238_people_first_120.gif?r=32" alt="People First Award" border="0" width="120" height="127"></a><br><img src="/images/750.gif" width="1" height="20" border="0" alt=""><br><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><br><img src="/images/750.gif" width="1" height="20" border="0" alt=""><br><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><br><br></div></td></tr></table></td>
+<td width=435 valign="top" height="100%"><table cellpadding=0 cellspacing=0 border=0 width=435 height="100%" summary="Below is a list of news stories">
+<tr><td width=5 valign=top bgcolor="#ffffff" height="100%"><img src="/images/750.gif" width="5" height="500" border="0" alt=""></td><td width=13><img src="/images/750.gif" width="13" height="1" border="0" alt=""></td>
+<td class="story" width=409 valign=top>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+    <td valign="top" align="left" valign="bottom"><img src="/images/contact_us(1).gif" border="0" alt="CONTACT US"></td><td valign="top" align="right" valign="bottom"><table cellpadding="0" cellspacing="0" border="0" align="right"><tr><td><a href="/shared/makeus/"><img src="/images/icon_make_homepage.gif" width="24" height="21" border="0" alt="Home Page Icon"></a></td><td><a href="/shared/makeus/" class="blue11"><img src="/images/icon_make_home_text.gif" width="134" height="19" border="0" alt="Make this your home page"></a></td></tr></table></td>
+  </tr>
+</table><br><!-- End Header -->
+    <div style="position:absolute;left: 66px; top: 167px; width: 90px; height: 20px; z-index: 2">
+
+<table width="90" border="0" cellspacing="0" cellpadding="0" background=" ">
+	<tr>
+		<td valign="top" width="50"><span id="liveclock"></span></td><td>&nbsp;<!-- <img width="2" height="10" name="dyntemp0" src="/images/clock/x.gif" border="0" alt=""><img width="6" height="10" name="dyntemp1" src="/images/clock/2.gif" border="0" alt=""><img width="6" height="10" name="dyntemp2" src="/images/clock/7.gif" border="0" alt=""><img width="4" height="10" name="dyntemp3" src="/images/clock/g.gif" border="0" alt=""><img width="2" height="10" name="dyntemp4" src="/images/clock/x.gif" border="0" alt=""><img width="5" height="10" name="dyntemp5" src="/images/clock/F.gif" border="0" alt=""> --></td>
+	</tr>
+</table>
+
+
+<script language="JavaScript">
+ <!--
+/*
+Upper Corner Live clock script credit: JavaScript Kit (www.javascriptkit.com)
+More free scripts here!
+*/
+// ME
+var now = new Date("3/4/2005 7:03:32 PM")
+var first = 1
+var blinker = new Boolean(false)
+
+function show5() {
+	if (!document.layers&&!document.all&&!document.getElementById)
+	return
+	
+	if (first==0) {
+		now = new Date(secAdd(now));
+	}
+	first = 0;
+	
+	//var Digital=new Date()
+	var Digital=new Date(now)
+	var hours=Digital.getHours()
+	var minutes=Digital.getMinutes()
+	var seconds=Digital.getSeconds()
+	
+	var dn="pm"
+	if (hours<12)
+		dn="am"
+	if (hours>12)
+		hours=hours-12
+	if (hours==0)
+		hours=12
+	
+	if (minutes<=9)
+		minutes="0"+minutes
+	if (seconds<=9)
+		seconds="0"+seconds
+	
+	var colon
+	if (blinker) {
+		colon=":";
+		blinker = Boolean(false);
+	} else {
+		colon=" ";
+		blinker = Boolean(true);
+	}
+	
+	//change font size here to your desire
+	// myclock="<font size='1' face='Arial' ><b>"+hours+":"+minutes+":"+seconds+" "+dn+"</b></font>"
+	myclock="<span class='blue11b'>"+hours+colon+minutes+" "+dn+"</span>"
+	
+	if (document.layers){
+		document.layers.liveclock.document.write(myclock)
+		document.layers.liveclock.document.close()
+	}
+	else if (document.all)
+		liveclock.innerHTML=myclock
+	else if (document.getElementById)
+		document.getElementById("liveclock").innerHTML=myclock
+	setTimeout("show5()",1000)
+}
+function secAdd( start ) {
+    // get the milliseconds for this Date object. 
+    var buffer = Date.parse(start) ;
+    return new Date( buffer + 1000 ) ;
+}
+
+window.onload=show5
+//-->
+</script>
+
+    </div>
+
+    <div style="position:absolute;left: 591px; top: 122px; width: 160px; height: 14px; z-index: 3">
+
+<form action="http://news10now.com/content/search/" method="get" name="search" id="search">
+<input type="hidden" name="LookFor" value="1">
+<input type="hidden" name="SearchPage" value="1">
+<input type="hidden" name="SearchType" value="Articles">
+<input type="hidden" name="Operation" value="Search">
+<input type="hidden" name="when" value="1/1/1900">
+<table cellpadding="0" cellspacing="0" border="0"><tr><td><small><input type="text" size=9 name="searchterm" style="font: normal 10px Arial, Helvetica, sans-serif normal;width: 100px; height: 18px; color:#000000; background-color:#ffffff;"></small></td><td><img src="/images/750.gif" width="4" height="1" border="0" alt=""></td><td><small><input type="submit" name="submit" value="Search" style="width: 50px; font: normal 10px Arial, verdana, Helvetica, sans-serif; vertical-align: text-middle"></small></td></tr></table></small></form>
+
+    </div>
+
+    <div style="position:absolute;left: 142px; top: 122px; width: 432px; height: 18px; z-index: 3">
+
+    </div>
+
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		var temp = document.title;
+		document.title = temp + ' | Contact Us';
+		//-->
+		</script>
+		<table cellpadding="0" cellspacing="0" border="0" width="404">
+			<tr>
+				<td valign="top" width="404">
+				
+	<!--===== START STORY HERE =====-->
+	
+	<!-- //===== START BODY =====\\ -->
+	<span class="story"><p class="story">To share your questions, comments and ideas with us please visit the <a target='new' href='http://www.news10now.com/content/contact_us/viewer_center'>Viewer Center</a> or use our feedback form to send us an e-mail. From the <a target='new' href='http://www.news10now.com/content/contact_us/viewer_center'>Viewer Center</a> you can also submit press releases and story ideas, inquire about a studio tour, submit events to our community calendar and more.</p>
+<p class="story"><span class="headline1">News Tips Line</span><br>(315) 234-1010<br>(866) 4NEWS10</p>
+<p class="story"><span class="headline1">News Fax Line</span><br>(315) 634-4270<br>(800) 634-4270</p>
+<p class="story"><span class="headline1">General Offices</span><br>(315) 234-1010</p>
+<p class="story"><span class="headline1">Address</span><br>News 10 Now<br><GEO TYPE="US">815 Erie Blvd. East<br>Syracuse, NY 13210</GEO></p>
+<p class="story"><span class="headline1">Community Events</span><br><B>Mail events to:</B><br>News 10 Now<br>Attn: Community Calendar  <br><GEO TYPE="US">815 Erie Blvd. East<br>Syracuse, NY 13210</GEO><br><B>You may also submit events using our <a href='http://www.news10now.com/content/contact_us/viewer_center/neighborhood_news/default.asp?action=add'>online form</a>.</B></p>
+<p class="story"><span class="headline1">Advertise</span><br><a href='mailto:cindy.griffo@twcable.com'>Cindy Griffo</a><br>Sales Manager<br>(315) 634-2008 direct<br>(315) 634-4273 fax<br><a href='http://www.news10now.com/content/contact_us/viewer_center/advertising/'>advertise@news10now.com</a></p>
+<p class="story"><span class="headline1">Website</span><br>Send your questions and comments about our website to <br><a href='mailto:web@news10now.com'>web@news10now.com</a>.</p>
+<p class="story"><span class="headline1">General Information</span><br>Send general requests for information to<br><a href='mailto:info@news10now.com'>info@news10now.com</a>.</p>
+<p class="story"><span class="headline1">Comments</span><br>We want to hear from you! Send your comments to <br><a href='http://www.news10now.com/content/contact_us/viewer_center/feedback/'>comments@news10now.com</a>.</p>
+<p class="story"><span class="headline1">News Tips and Story Ideas</span><br>Know something newsworthy? Send us an email, <br><a href='http://www.news10now.com/content/contact_us/viewer_center/story_ideas/'>newstips@news10now.com</a>.</p>
+<p class="story"><span class="headline1">Community Calendar Events</span><br>Tell us about your community event.  <br>Fill out our online <a href='http://www.news10now.com/content/contact_us/viewer_center/neighborhood_news/default.asp?action=add'>form</a>.</p>
+<p class="story"><span class="headline1">Tours</span><br>Want to visit News 10 Now? <br>Bring your classmates or community organization for a tour.<br>Just fill out our online request <a href='http://www.news10now.com/content/contact_us/viewer_center/tours_at_news_10/'>form</a>.</p>
+<p class="story"><br>News 10 Now and its affiliates represent the state-of-the-art in local television news coverage, delivering on a commitment of responsible and community-oriented journalism on an around-the-clock basis. Our coverage area extends to more than 300,000 cable households or 10,000 square miles. News 10 Now is an exclusive community service for the customers of <a target='new' href='http://www.twcny.com'>Time Warner Cable</a>.</p>
+<p class="story"></p></span>
+	<!-- \\===== END BODY =====// -->
+	<form action="/shared/mailme/default.asp?Sec=0" method="post" name="mailme" id="mailmeid">
+	<input type="hidden" name="SERVER_NAME" value="news10now.com">
+	<input type="hidden" name="HTTP_USER_AGENT" value="Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.7.6) Gecko/20050223 Firefox/1.0.1">
+	<input type="hidden" name="URL" value="/content/contact_us/Default.asp">
+	<input type="hidden" name="MyQueryString" value="">
+	<input type="hidden" name="ArID" value="16655"></td></tr>
+	<tr><td><span class="xltgrey13"></span><br><br><table cellpadding=2 cellspacing=0 border=0><tr><td class="story"><img src="/images/icon_email.gif" width="24" height="21" border="0" alt=""></td><td><a class="blue11" href="javascript:window.document.mailme.submit()">Email this Story to a Friend</a></td></tr>
+	</form>
+	<tr><td><img src="/images/icon_printer.gif" width="24" height="21" border="0" alt=""></td><td><a class="blue11" href="/shared/print/default.asp?ArID=16655" target="new">Printer Friendly Version</a></td></tr>
+	<tr><td><img src="/images/icon_search.gif" width="24" height="21" border="0" alt=""></td><td><a href="/content/search/?SearchSec=37" class="blue11">Search CONTACT US</a></td></tr>
+	</table>
+	
+	<!--===== END STORY HERE =====-->
+	
+				</td>
+			</tr>
+		</table>
+		
+<!--Elapsed Time: 0.21875-->
+<!--Begin Footer-->
+</td>
+            <td width="13" valign="top"><img src="/images/750.gif" width="13" height="1" border="0" alt=""></td></tr>
+		<tr><td width="440" colspan="4"><img src="/images/750.gif" width="5" height="15" border="0" alt=""></td></tr>
+        </table>
+        </td>
+        <td width="180" valign="top"><img src="/images/750.gif" width="1" height="6" border="0" alt=""><br>
+        <table cellpadding="0" cellspacing="0" border="0">
+			
+          	<tr><td><a href="/content/closings/"><img src="/images/750.gif" width="1" height="5" alt="" border="0"><br><img src="/images/closings_alert.gif" width="180" height="46" border="0" alt=""></a><br><img src="/images/750.gif" width="1" height="5" alt="" border="0"></td></tr>
+
+          	<tr><td></td></tr>
+
+          	<tr><td>
+  <table border="0" cellspacing="0" cellpadding="0">
+  	<tr>
+  		<td width="180" bgcolor="#F5F3F3" valign="top"><img src="/images/rightcolumn_weather(1).gif" width="180" height="18" border="0" alt="Weather Center"></td>
+	</tr>
+  	<tr>
+		<td width="180" bgcolor="#F5F3F3" valign="top">
+		<table cellpadding="0" cellspacing="0" border="0" width="180">
+  	<tr>
+  		<td width="1" bgcolor="#F5F3F3"><img src="/images/spacer.gif" width="1" height="1" border="0"></td>
+  		<td width="1" bgcolor="#F5F3F3"><img src="/images/spacer.gif" width="1" height="1" border="0"></td>
+  		<td width="177" align="center" bgcolor="#F5F3F3">
+				
+			
+						<table cellpadding=0 cellspacing=6 border=0 bgcolor="#F5F3F3">
+							<tr>
+							<td align="center" width=49 bgcolor="#02027A" valign="top">
+			  <a href="http://news10now.com/content/weather/"><img src="/images/weather/home_overnight.gif" border="0" alt="overnight"><br>
+			  <img src="/images/weather/forecast/Night_Partly_Cloudy.gif" width="49" height="49" alt="3/5/2005" border="0"><br>
+			  <span class="temperature">10s</span>
+			  </a>
+			  </td> 
+			  <td align="center" width=49 bgcolor="#0055FF" valign="top">
+			  <a href="http://news10now.com/content/weather/"><img src="/images/weather/home_morning.gif" border="0" alt="morning"><br>
+			  <img src="/images/weather/forecast/Partly_Cloudy.gif" width="49" height="49" alt="3/5/2005" border="0"><br>
+			  <span class="temperature">20s</span>
+			  </a>
+			  </td> 
+			  <td align="center" width=49 bgcolor="#0055FF" valign="top">
+			  <a href="http://news10now.com/content/weather/"><img src="/images/weather/home_daytime.gif" border="0" alt="daytime"><br>
+			  <img src="/images/weather/forecast/Mostly_Cloudy.gif" width="49" height="49" alt="3/5/2005" border="0"><br>
+			  <span class="temperature">30s</span>
+			  </a>
+			  </td> 
+			  </tr></table>
+			  
+<div align="center"><img src="/images/spacer.gif" width="1" height="4" border="0"><br><a href="http://news10now.com/content/weather/" class="blue10">Today</a>&nbsp;|&nbsp;<a href="http://news10now.com/content/weather/7_day_forecast/" class="blue10">7-Day</a>&nbsp;|&nbsp;<a href="http://news10now.com/Content/Weather/Radar/" class="blue10">Radar</a>&nbsp;|&nbsp;<a href="http://news10now.com/Content/Weather/Weather_Stations/" class="blue10">Cameras</a><br><a href="http://news10now.com/Content/Weather/Travel/US/Current/" class="blue10">Travel</a>&nbsp;|&nbsp;<a href="http://news10now.com/content/weather/temps_and_precip/" class="blue10">Temps & Precip</a></div><img src="/images/spacer.gif" width="1" height="8" border="0" alt=""></td>
+  		<td width="1" bgcolor="#F5F3F3"><img src="/images/spacer.gif" width="1" height="1" border="0" alt=""></td>	
+  	</tr>
+  	<tr>
+  		<td colspan="4" bgcolor="#284390"><img src="/images/spacer.gif" width="1" height="1" border="0" alt=""></td></tr>
+  </table>
+  </td></tr>
+  <tr><td width="180" bgcolor="#ffffff"><img src="/images/750.gif" width="1" height="7" alt="" border="0"></td></tr>
+  </table></td></tr>
+
+          	<tr><td></td></tr>
+
+          	<tr><td></td></tr>
+
+          	<tr><td>
+<table width="0" cellspacing="0" cellpadding="0">
+<tr><td><!--BizType: 1--><a href="/shared/ads/redirect.asp?AdID=99">	  
+	<img src="http://images.newsx.cc/news10syracuse_media/ads/advert_99_stormchaser-contestgif.gif?r=32" alt="WIN A RIDE IN THE STORMCHASER!" border="0" width="180" height="187"></a>
+</td></tr>
+<tr><td width="180" bgcolor="#ffffff"><img src="/images/750.gif" width="1" height="7" alt="" border="0"></td></tr> 
+</table>
+</td></tr>
+
+          	<tr><td>
+<table width="0" cellspacing="0" cellpadding="0">
+<tr><td><!--<img src="images/150.gif" height="40" width="100" alt="no ad">-->
+</td></tr>
+<tr><td width="180" bgcolor="#ffffff"><img src="/images/750.gif" width="1" height="7" alt="" border="0"></td></tr> 
+</table>
+</td></tr>
+
+          	<tr><td></td></tr>
+
+          	<tr><td></td></tr>
+
+          	<tr><td>
+<table width="0" cellspacing="0" cellpadding="0">
+<tr><td><!--<img src="images/150.gif" height="40" width="100" alt="no ad">-->
+</td></tr>
+<tr><td width="180" bgcolor="#ffffff"><img src="/images/750.gif" width="1" height="7" alt="" border="0"></td></tr> 
+</table>
+</td></tr>
+
+          	<tr><td>
+<table width="0" cellspacing="0" cellpadding="0">
+<tr><td><!--BizType: 1--><a href="/shared/ads/redirect.asp?AdID=239">	  
+	<img src="http://images.newsx.cc/news10syracuse_media/ads/advert_239_banner-326.jpg?r=32" alt="Ted's Tune-up" border="0" width="180" height="150"></a>
+</td></tr>
+<tr><td width="180" bgcolor="#ffffff"><img src="/images/750.gif" width="1" height="7" alt="" border="0"></td></tr> 
+</table>
+</td></tr>
+
+          	<tr><td>
+		<!-- BEGIN SHOWING RANDOM TOUT -->
+		
+	<table cellpadding=0 cellspacing=0 border=0 width=180>
+		<tr>
+			<td bgcolor="#284390" colspan="3" width="180"><img src="/images/750.gif" width="1" height="1" border="0" alt=""></td>
+		</tr>
+		<tr>
+			<td width="1" bgcolor="#284390"><img src="/images/750.gif" width="1" height="1" border="0" alt=""></td>
+			<td width="178"><table cellpadding=0 cellspacing=0 border=0 summary="Daily Beat Story" width="178" bgcolor="#ffffff"><tr><td width="7"><img src="/images/750.gif" width="7" height="1" border="0" alt=""></td><td bgcolor="#ffffff" width="166"><img src="/images/750.gif" width="1" height="7" border="0" alt=""><br><a href="/content/health/fitstop/?ArID=38211&SecID=127" class="blue11"><img src="/images/franchises/fitstop(4).jpg" border="0" alt="FitStop"><br><img src="/images/750.gif" width="1" height="6" border="0" alt=""><br><span class="blue11">In today's FitStop Kathy finds out what separates X-Biking from other types of cycling exercises....</span></a>
+		<br><img src="/images/750.gif" width="1" height="7" border="0" alt=""></td><td width="5"><img src="/images/750.gif" width="5" height="1" border="0" alt=""></td></tr></table></td><td width="1" bgcolor="#284390"><img src="/images/750.gif" width="1" height="1" border="0" alt=""></td></tr>
+		<tr><td bgcolor="#284390" colspan="3" width="180"><img src="/images/750.gif" width="1" height="1" border="0" alt=""></td></tr>
+		<tr><td colspan="3" width="180" bgcolor="#ffffff"><img src="/images/750.gif" width="1" height="7" alt="" border="0"></td></tr>  
+		</table></td></tr>
+
+          	<tr><td>
+<table width="0" cellspacing="0" cellpadding="0">
+<tr><td><!--BizType: 1--><a href="/shared/ads/redirect.asp?AdID=80">	  
+	<img src="http://images.newsx.cc/news10syracuse_media/ads/advert_80_partners-small-x-2.gif?r=32" alt="Our partners" border="0" width="180" height="178"></a>
+</td></tr>
+<tr><td width="180" bgcolor="#ffffff"><img src="/images/750.gif" width="1" height="7" alt="" border="0"></td></tr> 
+</table>
+</td></tr>
+
+          	<tr><td>
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr><td width="180" bgcolor="#F5F3F3" valign="top"><img src="/images/rightcolumn_ion(2).gif" width="180" height="18" border="0" alt="In Other News"></td></tr>
+  <tr><td width="180" bgcolor="#F5F3F3" valign="top">
+  <table cellpadding="0" cellspacing="0" border="0" width="180">
+  	<tr>
+  		<td width="1" bgcolor="#F5F3F3"><img src="/images/spacer.gif" width="1" height="1" border="0"></td>
+  		<td width="1" bgcolor="#F5F3F3"><img src="/images/spacer.gif" width="1" height="1" border="0"></td>
+  		<td width="7" bgcolor="#F5F3F3"><img src="/images/spacer.gif" width="9" height="1" border="0"></td>
+  		<td width="163"><img src="/images/750.gif" width="1" height="6" border="0" alt=""><br>
+<a href="http://news10now.com/content/top_stories/default.asp?ArID=38204" class="blue11">DPW employees arrested...</a><br><img src="/images/750.gif" width="1" height="10" border="0" alt=""><br><a href="http://news10now.com/content/top_stories/default.asp?ArID=38222" class="blue11">YMCA expanding...</a><br><img src="/images/750.gif" width="1" height="10" border="0" alt=""><br><a href="http://news10now.com/content/top_stories/default.asp?ArID=38183" class="blue11">New jobs coming...</a><br><img src="/images/750.gif" width="1" height="10" border="0" alt=""><br><a href="http://news10now.com/content/top_stories/default.asp?ArID=38194" class="blue11">Couple helps police locate wanted man...</a><br><img src="/images/750.gif" width="1" height="10" border="0" alt=""><br><a href="http://news10now.com/content/top_stories/default.asp?ArID=38196" class="blue11">Hospital cuts...</a><br><img src="/images/750.gif" width="1" height="10" border="0" alt=""><br></td>
+  		<td width="7" bgcolor="#F5F3F3"><img src="/images/spacer.gif" width="7" height="1" border="0"></td>
+  		<td width="1" bgcolor="#F5F3F3"><img src="/images/spacer.gif" width="1" height="1" border="0"></td>	
+  	</tr>
+  	<tr><td colspan="6" bgcolor="#284390"><img src="/images/spacer.gif" width="1" height="1" border="0"></td></tr>
+  </table>
+  </td></tr>
+  <tr><td width="180" bgcolor="#ffffff"><img src="/images/750.gif" width="1" height="7" alt="" border="0"></td></tr>
+  </table></td></tr>
+
+          	<tr><td></td></tr>
+
+          	<tr><td></td></tr>
+
+        </table>
+
+        </td>
+    </tr>
+    <tr>
+        <td width="132" bgcolor="#0064AA" height="100%"><img src="/images/750.gif" width="1" height="10" border="0" alt=""></td>
+        <td valign="bottom" height="100%">
+        
+        <table cellpadding="0" cellspacing="0" border="0" width="425">
+            <tr>
+                <td width=5 valign=top bgcolor="#ffffff"><img src="/images/750.gif" width="5" height="75" border="0" alt=""></td>
+                <td width=13><img src="/images/750.gif" width="13" height="1" border="0" alt=""></td>
+                <td width=409 valign="bottom" align="center"><img src="/images/750.gif" width="409" height="10" border="0" alt=""><br><a href="/" class="blue11">Home</a> | <a href="/content/contact_us/terms_of_use/"  class="blue11">Terms of Use</a> | <a href="/content/contact_us/privacy_policy/" class="blue11">Privacy Policy</a> | <a href="/content/contact_us/" class="blue11">Contact Information</a><br><span class="grey11">Copyright &copy;2005 TWEAN News Channel of Syracuse, LLC, d/b/a News 10 Now.<br>All Rights Reserved. </span><br><img src="/images/750.gif" width="1" height="10" border="0" alt=""><br><a href="http://www.datatomato.com" target="_blank"><img src="/images/dt_engineered.gif" width="185" height="22" border="0" alt=""></a><br><img src="/images/750.gif" width="1" height="10" border="0" alt=""></td>
+                <td width="13" valign=top><img src="/images/750.gif" width="13" height="1" border="0" alt=""></td>
+            </tr>
+        </table>
+        </td>
+        <td width="180" bgcolor="#ffffff" height="100%"><img src="/images/750.gif" width="1" height="10" border="0" alt=""></td>
+    </tr>
+</table></td>
+<td width="8"><img src="/images/750.gif" width="8" height="3" border="0" alt=""></td>
+
+
+			<td width="160" bgcolor="#ffffff" valign="top"><div align="center"><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--BizType: 1--><img src="http://images.newsx.cc/news10syracuse_media/ads/advert_175_sponsor_header.gif?r=32" alt="" border="0" width="160" height="28"><br><img src="/images/750.gif" width="1" height="10" border="0" alt=""><br><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--BizType: 1--><span style="text-decoration: none"><CENTER><TABLE width="160" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"><tr><td><a href="http://www.twcny.com" target="_blank"><img src="http://content.news10now.com/syrcontent/twc/twc_logo.gif"  alt="Time Warner Cable" hspace="2" vspace="5" border="0"></a></td></tr></TABLE><TABLE width="160" border="0" cellpadding="2" cellspacing="0" bgcolor="A5CBEF"><tr><td><TABLE width="100%"  border="0" cellpadding="3" cellspacing="0" bgcolor="#FFFFFF"><tr><td bgcolor="e5e5e5"><span class="grey11">• </span><a href="http://twcny.com/cable/" target="_blank" class="grey11">Digital Cable</a></td></tr><tr><td><span class="grey11">• </span><a href="http://twcny.com/internet/" target="_blank" class="grey11">High Speed Online</a></td></tr><tr><td bgcolor="e5e5e5"><span class="grey11">• </span><a href="http://twcny.com/business/internet/" target="_blank" class="grey11">Business Class</a></td></tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><span class="grey11">&bull; </span><a href="http://www.timewarnercable.com/centralny/products/digitalphones/" target="_blank" class="grey11">Digital Phone </a></td>
+  </tr></TABLE></td></tr></TABLE></CENTER></span><br><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><!--BizType: 1--><a href="/shared/ads/redirect.asp?AdID=207">	  
+	<img src="http://images.newsx.cc/news10syracuse_media/ads/advert_207_LC_Potter_Perrone.jpg?r=32" alt="" border="0" width="160" height="171"></a><br><!--BizType: 1--><a href="/shared/ads/redirect.asp?AdID=193"target="_blank">	  
+	<img src="http://images.newsx.cc/news10syracuse_media/ads/advert_193_Advantage-RR-sky.jpg?r=32" alt="Get the Advantage. Get Time Warner Cable." border="0" width="160" height="600"></a><br><!--<img src="images/150.gif" height="40" width="100" alt="no ad">--><br></div></td></tr></table>
+		
+</body></html>
+
+<!--Elapsed Time: 0.390625-->

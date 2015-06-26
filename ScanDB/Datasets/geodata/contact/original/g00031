@@ -1,0 +1,1434 @@
+<DOC>
+<DOCNO>g00031</DOCNO>
+<DOCHDR>http://www.newscientist.com/info.ns?id=in2</DOCHDR>
+
+
+
+
+
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>New Scientist FAQ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="mssmarttagspreventparsing" content="true"/>
+
+
+<script type="text/javascript">
+function popWin(url, width, height) {
+	var Win = window.open(url,'nspopup','width=' + width +',height=' + height + ',toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,left=10,top=10' );
+}
+
+function printWin(url, width, height) {
+	var Win = window.open(url,'nsprint','width=' + width +',height=' + height + ',toolbar=yes,location=no,directories=no,status=yes,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no,left=10,top=10' );
+}
+
+function remoteWin(url)
+{
+	opener.location.href = url;
+	opener.focus ();
+	self.blur ();
+}
+
+function changePage(userChoice) {
+	var newPage = userChoice.options[userChoice.selectedIndex].value ;
+	if (newPage!=" ") {
+		document.location.href = newPage;
+	}
+}
+</script>
+
+<style type="text/css">
+/* very basic styles */
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+body {
+	background:#fff;
+	font-family: arial, sans-serif;
+	font-size:80%;
+}
+
+
+form {
+	display:inline;
+}
+
+h2 {
+	font-size:1.2em;
+}
+
+h3 {
+	font-size:1.3em;
+}
+
+
+h4 {
+	font-size:1em;
+}
+
+h5 {
+	font-size:1em;
+}
+
+p {
+	font-size:1em;
+}
+
+h6 {
+	font-size:0.9em;
+}
+
+small, .straptext, #lhcol .colcontent {
+	font-size:0.85em;
+}
+
+
+a {
+	color:#000;
+}
+
+a:visited {
+	color:#666;
+}
+
+
+.noline {
+	text-decoration:none;
+}
+
+span.access {
+	text-decoration:underline;
+}
+
+.highlight {
+	color:#016798;
+}
+
+.morelink, .morelink:visited {
+	color:#ff030e;
+}
+
+.tester {
+	background:#ff0;
+}
+
+SUB, SUP {
+	font-size:9px;
+}
+/* commonly used */
+
+.floatleft {
+	float:left;
+}
+
+.floatright {
+	float:right;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+.block {
+	display:block;
+	margin:0px;
+}
+
+.inline {
+	display:inline;
+	margin:0px;
+}
+
+ul.notlist {
+	list-style:none;	
+}
+
+ul.innerlist {
+	list-style:square inside;
+	color:#333;
+}
+
+.closelist li {
+	line-height:110%
+}
+
+.textinput {
+	height:15px;
+	font-size:0.85em;	
+}
+
+.formbutton {
+	width:60px;
+	padding-bottom:2px;
+	padding-top:2px;
+	background:#b6d2de;
+	color:#016798;
+	font-size:11px;
+	font-weight:bold;
+}
+
+
+/* page layout */
+
+#contentsurround {
+	width:828px;
+	border:solid #b6d2de;	
+	border-width: 0 4px;
+	float:left;
+}
+
+#contenttable {
+	width:828px;
+	border-bottom: 4px solid #b6d2de;	
+}
+
+#lhcol {
+	width:160px;
+	border-right: 4px solid #b6d2de;	
+	background:#e9f3f5;
+}
+
+#copycol {
+	background:#fff;
+}
+
+.pageblock {
+	width:1000px;
+}
+
+#skysurround {
+	width:164px;
+	background:#e9f3f5;	
+	float:right;
+}
+
+#pagebreaker {
+	height:2px;
+	background:#b6d2de;
+	font-size:1px;
+	clear:both;
+}
+
+
+/* all pages includes */
+
+/* header */
+
+#headerrow {
+	padding:10px 5px;
+	background:#016798;	
+}
+
+#headercontain {
+	width:827px;
+}
+
+#headerlogo {
+	margin-top:10px;
+	margin-right:15px;	
+}
+
+#headersearch {
+	margin-top:20px;
+	margin-right:40px;	
+}
+
+#headerlinks {
+	padding-left:20px;
+	list-style-type: square;
+	color:#fff;
+}
+
+#headersearch input.textinput {
+	width:110px;
+}
+
+.headerbutton {
+	margin-left:5px;
+	padding-bottom:0;
+	background:#ddd;
+	border:0;
+	color:#000;
+	
+}
+
+#headerrow * a, #topnavdate {
+	color:#fff;
+}
+
+#headerrow * a:visited {
+	color:#fff;
+}
+
+/* navbar */
+#topnavrow {
+	height:20px;
+	padding-left:5px;
+	background:#6ca4bd;
+}
+
+#topnavrow div {
+	float:left;
+}
+
+#topnavdate {
+	width:159px;
+}
+
+#topnavlinks {
+	width:672px;
+}
+
+#topnavlinks ul li {
+	margin: 0 1px;
+	display:inline;
+}
+
+#topnavlinks ul li a {
+	padding:0 3px;
+	font-weight: bold;
+	text-decoration:none;
+	color:#fff;
+}
+
+#topnavlinks ul li a:visited {
+	color:#fff;
+}
+
+.topnavseparator {
+	color:#fff;
+	font-weight:bold;
+	margin-right:6px;
+}
+
+#topnavbutton img.premiumicon {
+	margin-left:0;
+	margin-right:3px;
+}
+
+/* postheader */
+
+#jsholder {
+	height:5px;
+	font-size:1px;
+	background:#b6d2de;
+}
+
+
+/* banner row */
+#bannerrow {
+	border: 4px solid #b6d2de;
+	border-top:0;
+	background:#e9f3f5;
+}
+
+
+#bannerad {
+	width:728px;
+	margin-left:160px;
+	border:solid #b6d2de;
+	border-width: 0 4px;
+}
+
+
+
+/* footer */
+#footerrow {
+	height:60px;
+	background:#b6d2de;
+	border-top:1px solid #000;
+}
+
+#footerpad {
+	padding:5px 0 20px 168px;
+}
+
+#footerlinks {
+	width:540px;
+	margin-right:128px;
+	float:left;
+}
+
+#footerlinks ul li {
+	margin: 0 2px;
+	display:inline;
+}
+
+#footerlinks ul li a {
+	color:#000;
+}
+
+#footerjump {
+	float:left;
+}
+
+
+/* lhcol */
+
+ul.lhsubslist li a {
+	color:#666;
+}
+
+#lhjotwhead {
+	margin:3px 5px;
+}
+
+#lhjotwbg {
+	width:120px;
+	height:60px;
+	margin:0 auto;
+	padding:10px 15px;	
+	background:#b6d2de;
+}
+
+
+/* sky */
+.skybox {
+	width:160px;
+	border-bottom:5px solid #fff;	
+	border-left:4px solid #fff;
+}
+
+#skycollogin input.textinput {
+	width:90px;
+	border: 1px solid #b6d2de;
+}
+
+#skycollogin input.formbutton{
+	margin:3px 0;
+	padding:1px;	
+}
+
+#skysponsor {
+	padding-bottom:20px;
+}
+
+.sponsorsplitter  {
+	margin-bottom:5px;
+	padding-bottom:10px;
+	border-bottom: 3px solid #b6d2de;
+}
+
+#sponsorcontact {
+	margin-top:10px;
+	padding:5px;
+	border:1px  dotted #999;
+}
+
+/* boxes */
+
+
+#copysechead h3 {
+	padding:2px 5px;
+	color:#fff;
+}
+
+table.sectionhead {
+	width:100%;
+	height:70px;
+	background:#6ca4bd;	
+	position:relative;
+	border-bottom:5px solid #b6d2de;
+}
+
+table.sectionhead tr td {
+	height:70px;
+	vertical-align:bottom;
+}
+
+
+.colbox {
+	border-bottom:5px solid #b6d2de;
+}
+
+div.colbox {
+	padding-bottom:8px;
+}
+
+
+div.colhead h6 a {
+	color:#fff;
+	text-decoration:none;
+}
+
+div.colhead h6 a:visited {
+	color:#fff;
+}
+
+.colcontent {
+	padding:0 5px;
+}
+
+.colspacer {
+	margin-top:5px;
+}
+
+div.colhead {
+	width:100%;
+	margin-bottom:5px;	
+	padding:2px 0;
+	background:#016798;
+	color:#fff;
+}
+
+div.nomargbottom {
+	margin-bottom:0;	
+}
+
+div.colhead h6 {
+	margin-left:5px;
+}
+
+div.copycontent {
+	padding:0 10px;
+}
+
+.floatboxbreaker {
+	width:100%;
+	clear:both;
+	font-size:1px;
+}
+
+
+
+/* common elements */
+img.premiumicon {
+	width:16px;
+	height:10px;
+	margin-left:3px;
+	text-decoration:none;
+	vertical-align:baseline;
+}
+
+img.arrowicon {
+	width:6px;
+	height:10px;
+	margin-right:3px;
+	text-decoration:none;
+	vertical-align:bottom;
+}
+
+.arrowsurround {
+	width:100%;
+	margin-top:5px;
+	border-top:1px dotted #999;
+}
+
+div.arrowsurround div.floatboxbreaker {
+	height:4px;
+	border-bottom:1px dotted #999;
+}
+
+.arrowsurround div.floatleft {
+	padding-left:5px;
+}
+
+.arrowsurround div.floatright {
+	padding-right:5px;
+}
+
+.asterisk {
+	margin:0 3px;
+	font-family: Verdana, sans-serif; 
+	font-size: 11px; 
+	color:#CC0000;
+}
+</style>
+
+<style type="text/css">
+/* page layout styles */
+#copycol {
+	width:664px;
+}
+
+</style>
+
+<meta name="lhcol" content="info" />
+    <style type="text/css">/* in articleHead */
+#arthead {
+	margin-top:10px;
+}
+
+div.artblock {
+	padding:10px;
+	margin-bottom:10px;	
+	clear:all;
+}
+
+div.narrowhead{
+	width:400;
+}
+
+li.authaff {
+	line-height:100%;	
+}
+
+/* articleBody */
+
+.artblock p, .artblock h5 {
+	margin-bottom:8px;	
+}
+
+.artbox {
+	background:#e9f3f5;
+}
+
+.artquote {
+	width:200px;
+	padding:5px;
+	margin:10px 10px 5px 0;		
+	background:#e9f3f5;
+	float:left;
+	color:#016798;
+}
+
+#artbuttons {
+	margin:10px 10px 20px 10px;	
+}
+
+#artend img {
+	margin-right:10px;
+}
+
+#artend ul {
+	width:450px;
+	padding-left:20px;
+	list-style-image: url(/img/icon/artlinks.gif);
+	list-style-type: circle;
+	list-style-position: outside;	
+}
+
+/* rhcol */
+
+.rhbox {
+	width:250px;
+	margin-left:5px;
+	padding:10px 10px 10px 5px;
+	border-left: 1px solid #b6d2de;
+	float:right;
+	clear:right;
+}
+
+.rhtopbox {	
+	padding-top:0px;
+}
+
+div.enlarge {
+	margin:3px 0;
+}
+
+div.enlarge span {
+	padding:0 2px;
+	border: dotted #999;
+	border-width:1px;
+	background:#efefef;
+}
+
+.artgraphic {
+	width:200px;
+}
+
+
+#mpu {
+	margin:15px 0 15px 10px;
+	border: 1px solid #000;	
+	float:right;
+	clear:right;
+}</style>
+	<style type="text/css">
+			.picbox {
+			padding:10px;
+			border: 1px solid #b6d2de;
+			float:right;
+			clear:right;
+			}
+
+			#artbody ul {
+				list-style-type:none;
+			}
+	</style>
+
+
+<style type="text/css">
+<!--
+/*\*//*/
+@import "/decorator/css/ie5mac.css";
+/**/
+-->
+</style>
+</head>
+<body>
+
+
+
+
+
+<table id="headertable" class="pageblock" cellspacing="0">
+<tr><td id="headerrow"><div id="headercontain" class="floatleft">
+	<a href="/;jsessionid=FPBPEOFOFNNJ"><img src="/img/brand/nslogo250x28.gif" alt="NewScientist.com" title="NewScientist.com" id="headerlogo" class="floatleft"/></a>
+	<form action="/search.ns;jsessionid=FPBPEOFOFNNJ"><div id="headersearch" class="floatleft">
+	<input type="hidden" name="doSearch" value="true" />
+	<input type="hidden" name="articleQuery.sortOrder" value="1" />
+	<table cellspacing="0"><tr>
+	<td><input name="articleQuery.queryString" type="text" class="textinput"/></td>
+	<td><input type="submit" value="SEARCH" class="headerbutton formbutton"/></td>
+	</tr></table></div></form>
+	<ul id="headerlinks" class="floatleft straptext">
+	<li><a href="/signup/;jsessionid=FPBPEOFOFNNJ">Free E-Zine</a></li>
+	<li><a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nsheaderlink">Subscribe to Magazine</a></li>
+	<li><a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nsheaderlink">Customer Service</a></li>
+	</ul>
+	
+	<a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nsheaderbanner"><img src="/data/images/ads/siteads/header_4free_200501.gif" alt="Subscribe to New Scientist magazine" title="Subscribe to New Scientist magazine" class="block floatright"/></a>
+	</div>
+	</td></tr>
+<tr><td id="topnavrow" class="straptext">
+	<div id="topnavdate">03 March 2005</div>
+	<div id="topnavlinks"><ul>
+		<li><a accesskey="m" href="/home.ns;jsessionid=FPBPEOFOFNNJ">HO<span class="access">M</span>E</a></li>
+		<li><span class="topnavseparator">&#124;</span><a accesskey="n" href="/news.ns;jsessionid=FPBPEOFOFNNJ"><span class="access">N</span>EWS</a></li>
+		<li><span class="topnavseparator">&#124;</span><a accesskey="x" href="/channel;jsessionid=FPBPEOFOFNNJ">E<span class="access">X</span>PLORE BY SUBJECT</a></li>
+		<li><span class="topnavseparator">&#124;</span><a accesskey="k" href="/lastword.ns;jsessionid=FPBPEOFOFNNJ">BAC<span class="access">K</span> PAGE</a></li>
+		<li><span class="topnavseparator">&#124;</span><a accesskey="s" href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nssitenav"><span class="access">S</span>UBSCRIBE</a></li>
+		<li><span class="topnavseparator">&#124;</span><a accesskey="c" href="/search.ns;jsessionid=FPBPEOFOFNNJ">SEAR<span class="access">C</span>H</a></li>
+		<li><span class="topnavseparator">&#124;</span><a accesskey="a" href="/archive.ns;jsessionid=FPBPEOFOFNNJ"><span class="access">A</span>RCHIVE</a></li>
+		<li><span class="topnavseparator">&#124;</span><a accesskey="r" href="/feeds.ns;jsessionid=FPBPEOFOFNNJ"><span class="access">R</span>SS</a></li>
+		<li><span class="topnavseparator">&#124;</span><a href="http://www.sciencejobs.com" accesskey="j"><span class="access">J</span>OBS</a></li>
+	</ul></div>
+	<div id="topnavbutton"><a href="/info.ns?id=in14" target="nsinfo" onclick="javascript:printWin('/infopopup.ns?id=in14','600', '400'); return false;"><img src="/img/icon/iconpremium.gif" alt="Premium" title="Premium" class="premiumicon"/></a><b><a href="/info.ns?id=in14" target="nsinfo" onclick="javascript:printWin('/infopopup.ns?id=in14','600', '400'); return false;" class="highlight">Premium Content</a></b></div>
+</td></tr>
+</table>
+
+<div id="jsholder" class="pageblock"><!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No.6,393,479B1 & 6,766,370. INFO:http://websidestory.com/privacy-->
+<script type="text/javascript">
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0103u";hbx.gn="ehg-newscientist.hitbox.com";
+
+//BEGIN EDITABLE SECTION
+//CONFIGURATION VARIABLES
+hbx.acct="DM540714DIDE71EN3";//ACCOUNT NUMBER(S)
+hbx.pn="PUT+PAGE+NAME+HERE";//hbx.pn="PUT+PAGE+NAME+HERE";PAGE NAME(S)
+hbx.mlc="";//hbx.mlc="CONTENT+CATEGORY";MULTI-LEVEL CONTENT CATEGORY
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg="";//VISITOR SEGMENTATION
+hbx.fnl="";//FUNNELS
+
+//CAMPAIGNS
+hbx.cmp="";//CAMPAIGN ID
+hbx.cmpn="";//CAMPAIGN ID IN QUERY
+hbx.dcmp="";//DYNAMIC CAMPAIGN ID
+hbx.dcmpn="";//DYNAMIC CAMPAIGN ID IN QUERY
+hbx.dcmpe="";//DYNAMIC CAMPAIGN EXPIRATION
+hbx.dcmpre="";//DYNAMIC CAMPAIGN RESPONSE EXPIRATION
+hbx.hra="";//RESPONSE ATTRIBUTE
+hbx.hqsr="";//RESPONSE ATTRIBUTE IN REFERRAL QUERY
+hbx.hqsp="";//RESPONSE ATTRIBUTE IN QUERY
+hbx.hlt="";//LEAD TRACKING
+hbx.hla="";//LEAD ATTRIBUTE
+hbx.gp="";//CAMPAIGN GOAL
+hbx.gpn="";//CAMPAIGN GOAL IN QUERY
+hbx.hcn="";//CONVERSION ATTRIBUTE
+hbx.hcv="";//CONVERSION VALUE
+hbx.cp="null";//LEGACY CAMPAIGN
+hbx.cpd="";//CAMPAIGN DOMAIN
+
+//CUSTOM VARIABLES
+hbx.ci="";//CUSTOMER ID
+hbx.hc1="";//CUSTOM 1
+hbx.hc2="";//CUSTOM 2
+hbx.hc3="";//CUSTOM 3
+hbx.hc4="";//CUSTOM 4
+hbx.hrf="";//CUSTOM REFERRER
+hbx.pec="";//ERROR CODES
+
+//INSERT CUSTOM EVENTS
+
+
+//END EDITABLE SECTION
+
+//REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
+</script><script  type="text/javascript" language="javascript1.1" defer="defer" src="/decorator/inc/hbx.js"></script>
+<!--END WEBSIDESTORY CODE-->&nbsp;</div>
+
+<div class="pageblock">
+<div id="contentsurround">
+
+<table id="contenttable" cellspacing="0"><tr valign="top">
+<td id="lhcol">
+
+
+	<img src="/data/images/ns/sechead/info.gif" alt="Info" title="Info" class="colbox block"/>
+
+	<div id="lhsecnav" class="colbox">
+	<div class="colhead"><h6>&nbsp;</h6></div>
+	<div class="colcontent">
+	<ul class="notlist">
+		<li class="colspacer"><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in2">FAQ / Help</a></li>
+		<li class="colspacer"><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in3">Advertise</a></li>
+		<li class="colspacer"><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in6">Site Map</a></li>
+		<li class="colspacer"><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in12">Who's who</a></li>
+		<li class="colspacer"><a href="/signup/;jsessionid=FPBPEOFOFNNJ">E-Zines</a></li>
+	</ul>
+	</div>
+	</div>
+
+
+
+	<div id="lhprint" class="colbox">
+	<div class="colhead"><h6><a href="/archive.ns;jsessionid=FPBPEOFOFNNJ">PRINT EDITION</a></h6></div>
+	<div class="colcontent">
+	<b><a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nslhmagbox">Subscribe</a></b>
+	<a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nslhmagbox"><img src="/data/images/ns/covers/currentcover.jpg" width="150" alt="Cover of latest issue of New Scientist magazine" title="New Scientist magazine" class="colspacer centered block"/></a>
+	<ul class="colspacer innerlist">
+		<li><a href="/contents.ns?articleQuery.queryString=issue:2489">Current issue</a></li>
+		<li class="colspacer"><a href="/archive.ns;jsessionid=FPBPEOFOFNNJ">Archive</a></li>
+		
+		<li class="colspacer"><a href="/info.ns?id=in14" target="nsinfo" onclick="javascript:printWin('/infopopup.ns?id=in14','600', '400'); return false;"><img src="/img/icon/iconpremium.gif" alt="Premium" title="Premium" class="premiumicon" style="margin-right:3px; margin-left:0px;"/></a><a href="/info.ns?id=in14" target="nsinfo" onclick="javascript:printWin('/infopopup.ns?id=in14','600', '400'); return false;">Premium Content</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div id="lhjobs" class="colbox">
+	<div class="colhead"><h6><a href="http://www.sciencejobs.com">JOBS</a></h6></div>
+	<h6 id="lhjotwhead" class="highlight">JOB OF THE WEEK</h6>
+	<div id="lhjotwbg">
+	
+	<a href="http://www.sciencejobs.com/ads/sj/ns_home_jotw/"><img src="http://www.sciencejobs.com/ads/sj/ns_home_jotw.gif" width="120" height="60" alt="Job of the Week" title="Job of the Week"/></a>
+	
+	
+	</div>
+	<div class="colcontent">
+		
+		   
+		
+	 <ul id="lhjoblisting" class="closelist notlist">
+		
+		<li class="colspacer"><a href="http://www.ScienceJobs.com/viewjob.action?job.id=scij12321">Assistant Scientist</a></li>
+		<li><a href="http://www.ScienceJobs.com/viewjob.action?job.id=scij12321" class="highlight noline">University of Miami</a></li>
+		<li><a href="http://www.ScienceJobs.com/viewjob.action?job.id=scij12321" class="highlight noline">Miami, US Florida</a></li>
+		
+		<li class="colspacer"><a href="http://www.ScienceJobs.com/viewjob.action?job.id=scij12323">Research Instructor Position in Molecular Virology and Immunology</a></li>
+		<li><a href="http://www.ScienceJobs.com/viewjob.action?job.id=scij12323" class="highlight noline">University of South Florida College of Medicine</a></li>
+		<li><a href="http://www.ScienceJobs.com/viewjob.action?job.id=scij12323" class="highlight noline">Tampa, US Florida</a></li>
+		
+		<li class="colspacer"><a href="http://www.ScienceJobs.com/viewjob.action?job.id=cell4043">Assistant/Associate Professor, Center for Cell Biology & Cancer Research</a></li>
+		<li><a href="http://www.ScienceJobs.com/viewjob.action?job.id=cell4043" class="highlight noline">Albany Medical College</a></li>
+		<li><a href="http://www.ScienceJobs.com/viewjob.action?job.id=cell4043" class="highlight noline">Albany, US New York</a></li>
+		
+	</ul>
+	</div>
+	</div>
+
+	<div id="lhsubs" class="colbox">
+	<div class="colhead"><h6><a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nslhsubsbox">SUBSCRIPTIONS</a></h6></div>
+	
+	<a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nslhsubsbox"><img src="/data/images/ads/siteads/lhsubsbox_4free_200410.gif" alt="Subscribe to New Scientist magazine" title="Subscribe to New Scientist magazine" class="centered"/></a>
+	<ul class="lhsubslist notlist colspacer colcontent">
+		<li><a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nslhsubsbox">Subscribe</a></li>
+		<li class="colspacer"><a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nslhsubsbox">Renew</a></li>
+		<li class="colspacer"><a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nslhsubsbox">Change address</a></li>
+	</ul>
+	</div>
+
+
+
+
+</td>
+<td id="copycol">
+
+<table id="copysechead" cellspacing="0" class="sectionhead"><tr><td>
+<h3>The World&#039;s No.1 Science &#038; Technology News Service</h3>
+</td></tr></table>
+
+<div class="colhead"><h6>FAQ</h6></div>
+
+<div id="artbody" class="artblock">
+	
+
+    
+        
+            <h5>Contact Us</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq1">How can I contact the author of an article?</a><br /><a href="#faq2">How frequently do you update the site?</a><br /><a href="#faq27">I have an idea for New Scientist.</a></b></p>
+        
+	
+        
+            <h5>Website - Premium Content</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq4">How do I get access to Premium Content?</a><br /><a href="#faq5">What is Premium Content?</a><br /><a href="#faq6">Why can't I access Premium Content?</a><br /><a href="#faq29">I have forgotten my username and password</a><br /><a href="#faq30">Can I subscribe to Premium Content and not the magazine?</a><br /><a href="#faq31">Why have you started charging for content?</a></b></p>
+        
+	
+        
+            <h5>Other website questions</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq28">Where is books/feedback/lastword/letters/weblinks?</a><br /><a href="#faq3">Where has the Archive gone?</a><br /><a href="#faq7">How do I search NewScientist.com?</a><br /><a href="#faq8">The graphics are too small to see properly.</a><br /><a href="#faq9">I can't find the article I'm looking for.</a><br /><a href="#faq10">Is there a subscription fee for your website? Do you have to register to use it?</a><br /><a href="#faq11">Are you going to produce a mobile version of the site?</a><br /><a href="#faq12">How do I subscribe to the electronic newsletter?</a><br /><a href="#faq13">How do I unsubscribe from the electronic newsletter?</a></b></p>
+        
+	
+        
+            <h5>Back Issues</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq14">How can I get a back issue of the printed magazine?</a><br /><a href="#faq15">How do I get hold of an old article from the magazine?</a></b></p>
+        
+	
+        
+            <h5>Subscriptions</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq16">How do I set up a new subscription to the magazine?</a><br /><a href="#faq17">How do I change my subscription details?</a></b></p>
+        
+	
+        
+            <h5>Permissions/Syndication</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq18">How do I get permission to reuse New Scientist material?</a><br /><a href="#faq19">Can I use one of your pictures/contact one of your artists?</a></b></p>
+        
+	
+        
+            <h5>Enigma</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq20">How do I send in an answer to an Enigma question?</a></b></p>
+        
+	
+        
+            <h5>Info on New Scientist</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq21">So tell me more about New Scientist magazine. What's your circulation / readership?</a><!--<br/><a href="#faq22">Where can I buy a copy of New Scientist?</a>--><br /><a href="#faq23">Is there going to be an electronic version of the magazine available?</a></b></p>
+        
+	
+        
+            <h5>Work Experience/Internships</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq24">Do you provide work experience opportunities?</a><br /><a href="#faq25">How do I apply for an internship?</a></b></p>
+        
+	
+        
+            <h5>Other</h5>
+        
+        
+	
+        
+        
+            <p><b><a href="#faq26">Can I send in an article for publication in New Scientist?</a><br /><a href="#faq32">I am writing an essay, research paper or project and hope you can help.</a></b></p>
+        
+	
+        
+        
+            <p><b><a name="faq1" />How can I contact the author of an article?</b><br />A list of contact information for New Scientist is located <a href="/info.ns?id=in12">here</a>. You can email the section (<a href="/contactperson.ns?recipient=feat">Features</a>, <a href="/contactperson.ns?recipient=news">News</a>, <a href="/contactperson.ns?recipient=opin">Opinion</a>, <a href="/contactperson.ns?recipient=lett">Letters</a>, <a href="/contactperson.ns?recipient=fdbk">Feedback</a>, <a href="/contactperson.ns?recipient=lwd">The Last Word</a>, and <a href="/contact.ns?recipient=dn#popupform">Online News</a>) the article appeared in for further information. Remember that the easiest way to contact companies mentioned in the text of an article is to call directory enquiries for a number, as our journalists are very busy and may take some time to get back to you with information. Likewise, reports or articles referred to in news stories are best obtained from the publisher of the individual report or article, rather than New Scientist, which is simply writing about the report.</p>
+        
+	
+        
+        
+            <p><b><a name="faq2" />How frequently do you update the site?</b><br />The site is updated throughout the day, bringing you the very latest science and technology news from around the world.</p>
+        
+	
+        
+        
+            <p><b><a name="faq27" />I have an idea for New Scientist</b><br />If you have an interesting theory or idea which you think might interest our readership, please write a <a href="/contactperson.ns?recipient=lett">letter to the Editor</a>.  You must include a postal address for your letter to be published.</p>
+        
+	
+        
+        
+            <p>If you are a journalist or scientist interested in writing an article, please <a href="#faq26">see below</a>.</p>
+        
+	
+        
+        
+            <p><b><a name="faq28" />Where is books/feedback/lastword/letters/weblinks?</b><br />Feedback and The Last Word can now be found in the <a href="/lastword.ns">Back Page</a> section.</p>
+        
+	
+        
+        
+            <p>Books and letters can be browsed to from the contents page of the issue in which they featured from the <a href="/archive.ns">Archive page</a></p>
+        
+	
+        
+        
+            <p>Any particular article from those four sections can be found by <a href="/search.ns">searching</a> for it.</p>
+        
+	
+        
+        
+            <p>The "Weblinks" section has now been discontinued.</p>
+        
+	
+        
+        
+            <p><b><a name="faq3" />Where has the Archive gone?</b><br />The Archive has been integrated into NewScientist.com.  Articles from ten years of New Scientist are now available online as Premium Content; free to all subscribers to New Scientist Print Edition.</p>
+        
+	
+        
+        
+            <p><b><a name="faq4" />How do I get access to Premium Content?</b><br />Premium Content for personal subscribers to the Print Edition<br />If you subscribe to the print edition of New Scientist you can access Premium Content free of charge.  If you already hold a subscription and do not have a username and password, please <a href="/loginactivation.ns">register now</a>.  You will need:</p>
+        
+	
+        
+        
+            <p>*  Your surname, as it is spelled on your magazine mailing label (even if it's not quite right)</p>
+        
+	
+        
+        
+            <p>*  Your subscriber number from your magazine mailing label (instructions on finding this are on the registrationpage).</p>
+        
+	
+        
+        
+            <p>*  If you subscribed online, the email address you used when you subscribed.</p>
+        
+	
+        
+        
+            <p>Premium Content for Institutions<br />If you are interested in accessing Premium Content on behalf of a school, college of FE/HE, charity, university, public sector department, corporation, company or government department, you will need to apply for an <a href="/institution.ns" target="nspopup">institutional licence</a>. <a href="/contactperson.ns?recipient=qss">Contact us</a> for additional information.</p>
+        
+	
+        
+        
+            <p><b><a name="faq5">What is Premium Content?</a></b><br />The blue NS symbol <img src="/img/icon/iconpremium.gif" alt="Premium" title="Premium" class="premiumicon" /> indicates New Scientist premium content. These are the very best articles from the world's leading science and technology news weekly and its online news service.</p>
+        
+	
+        
+        
+            <p>Premium articles are available free of charge to subscribers to the print edition of New Scientist, while non-subscribers can view a free excerpt.</p>
+        
+	
+        
+        
+            <p>Subscribe now to New Scientist magazine and get instant access to premium content and the online Archive of over 60,000 articles.  For all countries except Australia and New Zealand <a href="/subscribe.ns?promcode=nsinstant" target="nssubs">click here</a>; Australia and New Zealand<a href="https://subscribe.reedbusiness.com.au/NS_Barrier.asp" target="nssubs"> click here</a>.</p>
+        
+	
+        
+        
+            <p>If you are already a magazine subscriber, <a href="/loginactivation.ns">register now</a>.</p>
+        
+	
+        
+        
+            <p><b><a name="faq6">Why can't I access Premium Content?</a></b><br />You need to be a subscriber to the Print Edition to access premium content.</p>
+        
+	
+        
+        
+            <p>Subscribe now to New Scientist magazine and get instant access to premium content and the online Archive of over 60,000 articles.  For all countries except Australia and New Zealand <a href="/subscribe.ns?promcode=nsinstant" target="nssubs">click here</a>; Australia and New Zealand<a href="https://subscribe.reedbusiness.com.au/NS_Barrier.asp" target="nssubs"> click here</a>.</p>
+        
+	
+        
+        
+            <p>If you are a subscriber and you accessed the Archive before, your username and password are the same, until or unless you have renewed your subscription.  Please click <a href="/loginreminder.ns" target="nspopup">here</a> for our login reminder service.  If you have renewed, you will need to register again using your new subscriber number.</p>
+        
+	
+        
+        
+            <p>If you have never used the Archive or Premium Content before, please  <a href="/loginactivation.ns">register now</a>.</p>
+        
+	
+        
+        
+            <p>We will also need to be able place a cookie on your computer to maintain your access to Premium Content.  If you are experiencing technical difficulties staying logged on, please <a href="/info.ns?id=in5#cookies">check here for further information</a>.</p>
+        
+	
+        
+        
+            <p><b><a name="faq29">I have forgotten my username/password to access Premium Content.</a></b><br />Please click <a href="/loginreminder.ns" target="nspopup">here</a> for our login reminder service</p>
+        
+	
+        
+        
+            <p><b><a name="faq30">Can I subscribe to Premium Content and not the magazine?</a></b><br />At the moment there are no plans for a web-only subscription.  Please <a href="/contact.ns?recipient=web#popupform">contact us</a> stating clearly your interest in such a service and we will keep your email address on file so that we can contact you in the event that such a subscription becomes available.  We will not pass it on for any other reason.</p>
+        
+	
+        
+        
+            <p>In the meantime, if a print subscription has difficulty reaching your region, or you wish to save a tree, you may like to try a subscription the <a href="#faq23">Digital Edition</a>.  Subscription to the Digital Edition does not include access to Premium Content.</p>
+        
+	
+        
+        
+            <p><b><a name="faq31">Why have you started charging for content?</a></b><br />Most of the content which was previously available for free on our website is still available and still free.  This includes <a href="/news.ns">Online News</a> and the <a href="/lastword.ns">Last Word</a></p>
+        
+	
+        
+        
+            <p>We have now added content from the magazine to our main site, which was previously available in the Archive.  It has always been available only to subscribers.  Obviously, you can also read these articles by buying the magazine at the news stand, or ordering a back issue.</p>
+        
+	
+        
+        
+            <p><b><a name="faq7">How do I search NewScientist.com?</a></b><br />To search for articles, go to the <a href="/search.ns">search page</a> and simply enter the keywords in the "Enter Keywords" box provided. The default search is to find articles that contain ALL the words you enter.</p>
+        
+	
+        
+        
+            <p>The search will ignore a selection of the most common words such as "the", "it", "is". Then select how you want the results displayed. They can be sorted by date, with the most recent first or by relevance.</p>
+        
+	
+        
+        
+            <p>To view an article, simply click on the HEADLINE.  You may need to log in to view Premium Content. Cross references are linked within the documents. Simply click on the underlined text to open the referenced article. Click back on your browser to return to the linking article.</p>
+        
+	
+        
+        
+            <p><b><a name="faq8" />The graphics are too small to see properly.</b><br />Click on the small "thumbnail" graphic to view the full-size graphic. This opens up a new browser window. Close the window to return to the article.</p>
+        
+	
+        
+        
+            <p><b><a name="faq9">I can't find the article I'm looking for.</a></b><br />The archive starts from Inside Science No 1, 22nd October 1987 and the first few issues after this will only contain subsequent Inside Science articles.  Also some issues since then have not yet been added to the archive due to technical difficulties.</p>
+        
+	
+        
+        
+            <p>Usually you can find articles since 1987 by <a href="/search.ns">searching</a> for them.  Put as many relevant words as you can in the keywords box.  For tips, <a href="#faq7">see above</a>.</p>
+        
+	
+        
+        
+            <p>If there are missing articles that you feel should be there, please <a href="/contact.ns?recipient=find#popupform">contact us</a> with as much information as possible. This should include issue, date, title and page number and we will endeavour to get the article online as fast as possible.</p>
+        
+	
+        
+        
+            <p><b><a name="faq10" />Is there a subscription fee for your website? Do you have to register to use it?</b><br />Some of our web services are free of charge. Premium Content is free to print subscribers. To access this content if you are a subscriber, please <a href="/loginactivation.ns">register now</a>. Other areas of the NewScientist.com network that require registration are the 'My Jobs' section of New Scientist Jobs and the New Scientist ezines. These are the ONLY sections of the site that require registration, although from time to time we may ask you to provide information for our surveys or competitions.</p>
+        
+	
+        
+        
+            <p><b><a name="faq11" />Are you going to produce a mobile version of the site?</b><br />At present there are no immediate plans for a mobile version of NewScientist.com. However, if you would be interested in using this service if we implement it in the future, please email and we will let you know if this service becomes available.</p>
+        
+	
+        
+        
+            <p><b><a name="faq12" />How do I subscribe to the electronic newsletter?</b><br /><a href="http://www.prq0.com/quickstart/LeadCapture/Display_LeadCapture.asp?e=XbcbbiecBJ-RaA&amp;amp;amp;amp;amp;amp;amp;oid=UcjjbCB">Please click here</a></p>
+        
+	
+        
+        
+            <p><b><a name="faq13" />How do I unsubscribe from the electronic newsletter?</b><br /><a href="http://www.prq0.com/quickstart/LeadCapture/Display_LeadCapture.asp?e=XbcbbaeeBD-RaA&amp;amp;amp;amp;amp;amp;amp;oid=UcjjbCB">Please click here</a></p>
+        
+	
+        
+        
+            <p><b><a name="faq14" />How can I get a back issue of the printed magazine?</b><br />If you know the issue number of date of the magazine you are trying to get hold of, please call New Scientist Back Issues on +44 (0)20 8532 3628 during normal UK business hours. For delivery in the UK, issues less than one year old cost £4.00, or £5 if published more than one year ago. For overseas delivery back issues cost £5.00 and £6.00 respectively. Issues are available up to three years old. Credit card orders can also be placed by fax - +44 (0)20 8519 3695. As a special offer, if you buy 3 back issues, we will give you another issue free of charge. If you do not know the issue number of date, please search for it on our archive.</p>
+        
+	
+        
+        
+            <p><b><a name="faq15" />How do I get hold of an old article from the magazine?</b><br />If it is later than 1987, please search for it using the facility in the header above.  Content from our archive is now available on NewScientist.com to all subscribers to the Print Edition.  If it is earlier than 1987, you will need to order the back issue, or it may be available in libraries.</p>
+        
+	
+        
+        
+            <p><b><a name="faq16" />How do I set up a new subscription to the magazine?</b><br /><a href="/contactperson.ns?recipient=qss">Email</a> Tel +44 (0) 8456 731 731 Or fax +44 (0)1444 445447</p>
+        
+	
+        
+        
+            <p>Credit Card Hotline: +44 (0)1622 778000 (UK orders only)</p>
+        
+	
+        
+        
+            <p>Or subscribe online.  For all countries except Australia and New Zealand <a href="/subscribe.ns?promcode=nsinstant" target="nssubs">click here</a>; Australia and New Zealand<a href="https://subscribe.reedbusiness.com.au/NS_Barrier.asp" target="nssubs"> click here</a>.</p>
+        
+	
+        
+        
+            <p><b><a name="faq17" />How do I change my subscription details?</b><br />Contact our subscriptions department in your country:</p>
+        
+	
+        
+        
+            <p>UK <a href="/contactperson.ns?recipient=qss">Email</a> +44 (0)1444 475636</p>
+        
+	
+        
+        
+            <p>USA <a href="/contactperson.ns?recipient=subs">Email</a> Tel: 888 822 3242 Fax: 800 327 9021<br />New Scientist Customer Services<br />6277 Sea Harbor Drive<br />Orlando<br />Florida, 32887</p>
+        
+	
+        
+        
+            <p>Australia/New Zealand <a href="/contactperson.ns?recipient=suau">Email</a>  Tel. +61 (2) 9422 2666 / 1300 360126</p>
+        
+	
+        
+        
+            <p><b><a name="faq18" />How do I get permission to reuse New Scientist material?</b><br />If you are interested in re-using New Scientist material in print or on the web for any purpose, you should email New Scientist for permission, to make sure that you will not be violating copyright. If you just want to link from your site to ours or to a specific section of our site, that's fine, but we'd appreciate it if you'd let us know that you're doing it, as we like to keep track of return links to our site. <a href="/contactperson.ns?recipient=ceth">Email us here</a>.</p>
+        
+	
+        
+        
+            <p><b><a name="faq19" />Can I use one of your pictures/contact one of your artists?</b><br />Most of the photographs we use come from photo libraries--check the credit at the side of the picture in the magazine for the name of the company. The copyright on these pictures does not belong to us, and we can't give permission to use them. If you can't find a number for the photo library in question, you can <a href="/contact.ns?recipient=art#popupform">email the picture desk</a> for contact information. New Scientist does commission a lot of original artwork, but the copyright always belongs to the artist who did the work. If you're interested in one of these pieces or in the artist who created it, you should <a href="/contact.ns?recipient=art#popupform">contact the art department by email</a> & we'll pass your request along to the artist.</p>
+        
+	
+        
+        
+            <p><b><a name="faq20" />How do I send in an answer to an Enigma question?</b><br />Please send entries to the Enigma section to Enigma, New Scientist, Lacon House, 84 Theobald's Road, London, WC1X 8NS, or <a href="/contactperson.ns?recipient=egma">email your entry</a> to us.</p>
+        
+	
+        
+        
+            <p><b><a name="faq21" />So tell me more about New Scientist magazine. What's your circulation / readership?</b><br />New Scientist is a science magazine for everyone, both young & old, amateur & professional. We have a circulation of over 143,000 (Jan - Jun 2003) and a worldwide readership of over half a million. If you want more details, here's some information about who we are.</p>
+        
+	
+        
+        
+            <p><b><a name="faq22" />Where can I buy a copy of New Scientist?</b><br />New Scientist is available in most supermarkets, high street stores and newsagents throughout the UK. You can also pick up a pick up a copy outside the UK. Or why not try a subscription?</p>
+        
+	
+        
+        
+            <p><b><a name="faq23" />Is there going to be an electronic version of the magazine available?</b><br />Yes, New Scientist Digital is innovative way of subscribing to the magazine in an electronic format. To receive more information and subscribe please visit: <a href="http://newscientist.newsstand.com" target="ns">http://newscientist.newsstand.com</a></p>
+        
+	
+        
+        
+            <p><b><a name="faq24" />Do you provide work experience opportunities?</b><br />Unfortunately we do not accept people on work placements or work experience. Constraints on time and money prevent us from offering such opportunities. We receive many enquiries such as yours and have to respond to them all with the same bad news.</p>
+        
+	
+        
+        
+            <p><b><a name="faq25" />How do I apply for an internship?</b><br />The main way to become a writer for New Scientist is through our internship scheme. It is advertised in the magazine and on our website at any time between November of the current year and January of the following year. The internships are based at our London office and last from 3-6 months. There is no guarantee of a job on the completion of your placement, but by the end you will have an excellent grounding in science journalism and an understanding of how New Scientist operates.</p>
+        
+	
+        
+        
+            <p>To qualify, you must be a graduate with a burning desire to be a science and technology journalist. Above all, New Scientist looks for people with a proven ability to write - you should ideally have some cuttings and if you have done some kind of postgraduate journalism course this is bonus. The advert in New Scientist gives full details of how to apply; please do not send in your application on spec until you have seen the advert as we do not keep CV's on file. Yes, this does mean that you will have to read the magazine regularly!</p>
+        
+	
+        
+        
+            <p><b><a name="faq26" />Can I send in an article for publication in New Scientist?</b><br />Most of our feature articles are written either by researchers (who usually give first hand accounts of work in which they are involved) or by science journalists but we are open to anyone who can write in our style on topics which we find exciting. We don't encourage people to send in full-length material out of the blue because we will often not have time to read it. If you have a good idea for an article, you should send a short synopsis - no more than 400 words - by <a href="/contactperson.ns?recipient=feat">email to the features editor</a>. And everyone is welcome to send <a href="/contactperson.ns?recipient=lett">letters</a> for publication though you must include a postal address for your letter to be published.</p>
+        
+	
+        
+        
+            <p><b><a name="faq32" />I am writing an essay, research paper or project and hope you can help.</b><br />The quickest way we are able to provide you with information for your project is via this web site.  Please use the <a href="/search.ns">Search</a> page to find articles of interest.  By choosing <a href="/channel/">Explore by Subject</a> you can also find the most up-to-date information on popular topics.  Some articles are only available as Premium Content.</p>
+        
+	
+        
+        
+            <p>Many libraries also hold back copies of the magazine for research purposes.</p>
+        
+	
+        
+        
+            <p>New Scientist Jobs is our searchable database of science jobs. See what it has to offer for you <a href="http://www.newscientistjobs.com" target="ns">here</a>.</p>
+        
+	
+</div>
+
+</td>
+</tr></table>
+</div>
+<div id="skysurround">
+<div class="colbox" style="border-bottom-color:#fff;">
+
+
+<div class="colhead"><h6>SUBSCRIBER LOGIN</h6></div>
+<form method="post" action="/unpwlogin.ns;jsessionid=FPBPEOFOFNNJ"><div class="colcontent">
+<input type="hidden" name="doLogin" value="true"/>
+<input type="hidden" name="loginAttempt.subscriberType" value="1"/><table cellspacing="1" id="skycollogin">
+<tr><td class="straptext">username</td><td class="straptext">&#058;</td><td><input type="text" class="textinput" name="loginAttempt.username" value=""/></td></tr>
+<tr><td class="straptext">password</td><td class="straptext">&#058;</td><td><input type="password" class="textinput" name="loginAttempt.password" value=""/></td></tr>
+<tr><td colspan="2">&nbsp;</td><td><input type="submit" value="Log in" class="formbutton"/></td></tr>
+</table>
+<ul class="colspacer straptext innerlist">
+<li><a href="/loginreminder.ns" target="nspopup" onclick="javascript:printWin('/loginreminder.ns','600', '350'); return false;">Forgotten your password?</a></li>
+<li class="colspacer"><a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nstext">Subscribe now</a></li>
+<li><a href="/institution.ns" target="nspopup" onclick="javascript:printWin('/institution.ns','600', '350'); return false;">Institutional Subscribers</a></li>
+<li><a href="/athenslogin.ns;jsessionid=FPBPEOFOFNNJ">Athens login</a></li>
+</ul>
+</div></form>
+
+
+
+
+
+
+</div>
+
+
+<div class="skybox"><!-- SLOT: null_sky -->
+<!-- AdtechUtils - JavaScript - $Revision: 1.3 $ - slotId="ns_ros_sky" -->
+<script type="text/javascript"><!--
+	var myDate = new Date();
+	AT_MISC = myDate.getTime();
+	document.write('<scr' + 'ipt src="http://adserver.adtech.de/?addyn|2.0|289|113655|1|154|target=nsad;loc=100;misc=' + AT_MISC + ';">');
+	if (navigator.userAgent.indexOf("Mozilla/2.") >= 0 || navigator.userAgent.indexOf("MSIE") >= 0) {
+		document.write('<a href="http://adserver.adtech.de/?adlink|2.0|289|113655|1|154|ADTECH;loc=200;" target="nsad"><img src="http://adserver.adtech.de/?adserv|2.0|289|113655|1|154|ADTECH;loc=200;" border="0" width="160" height="600"></a>');
+	}
+	document.write('</scr' + 'ipt>');// -->
+</script>
+<noscript><div><a href="http://adserver.adtech.de/?adlink|2.0|289|113655|1|154|ADTECH;loc=300;" target="nsad"><img src="http://adserver.adtech.de/?adserv|2.0|289|113655|1|154|ADTECH;loc=300;" width="160" height="600" alt="Advertising"/></a></div></noscript>
+</div>
+
+<div class="skybox">
+
+
+
+
+<a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=skycol4free"><img src="/data/images/ads/siteads/box_4free_200411.gif" width="160" alt="Subscribe and get 4 free issues" title="Subscribe and get 4 free issues"/></a>
+
+</div>
+
+<div class="skybox">
+	<a href="http://www.sciencejobs.com"><img src="/data/images/ads/siteads/box_jobs_200412.gif" width="160" alt="NewScientist Jobs" title="NewScientist Jobs"/></a>
+</div>
+
+
+
+
+
+<!-- 2do: make the call for this a property -->
+
+
+<div class="skybox" id="skysponsor">
+<div class="colhead"><h6>SPONSORED LINKS</h6></div>
+<ul class="colcontent straptext notlist">
+	<li><a href="http://www.motorinsurance.co.uk/car/" target="nsextern">Car Insurance by A Quote</a></li>
+	<li><a href="http://www.motorinsurance.co.uk/van/" target="nsextern">Van Insurance by A Quote</a></li>
+	<li class="sponsorsplitter"><a href="http://www.motorinsurance.co.uk/bike/" target="nsextern">Bike Insurance by A Quote</a></li>
+	<li><a href="http://www.nationalmortgage.com" target="nsextern">Home Mortgage</a></li>
+	<li><a href="http://www.vanlines.com" target="nsextern">Movers in Your area</a></li>
+	<li><a href="http://www.vanlines.com/moving.html" target="nsextern">Find Moving Companies</a></li>
+	<li class="sponsorsplitter"><a href="http://www.usrealestate.com" target="nsextern">Real Estate</a></li>
+	<li><a href="http://www.1001mobiles.co.uk/" target="nsextern">mobile phone accessories</a></li>
+	<li><a href="http://www.1stoptravelinsurance.co.uk/?advertID=70" target="nsextern">1stoptravelinsurance.co.uk</a></li>
+	<li><a href="http://store.anniescharmcloset.net/" target="nsextern">Italian Charm Bracelet</a></li>
+	<li><a href="http://www.life-assurance-bureau.co.uk/loans/index.htm" target="nsextern">"Loans, Secured, Personal"</a></li>
+	<li><a href="http://www.travelinsurance.co.uk" target="nsextern">Travel Insurance</a></li>
+</ul>
+<div class="colcontent colspacer straptext"><div id="sponsorcontact"><a href="/contactperson.ns;jsessionid=FPBPEOFOFNNJ?recipient=linkad">Contact us</a> about links</div></div>
+</div>
+
+
+</div>
+</div>
+
+<div id="pagebreaker" class="pageblock"><br /></div>
+
+<div class="pageblock">
+<div id="bannerrow">
+<div id="bannerad"><!-- SLOT: null_banner -->
+<!-- AdtechUtils - JavaScript - $Revision: 1.3 $ - slotId="ns_ros_banner" -->
+<script type="text/javascript"><!--
+	var myDate = new Date();
+	AT_MISC = myDate.getTime();
+	document.write('<scr' + 'ipt src="http://adserver.adtech.de/?addyn|2.0|289|113654|1|225|target=nsad;loc=100;misc=' + AT_MISC + ';">');
+	if (navigator.userAgent.indexOf("Mozilla/2.") >= 0 || navigator.userAgent.indexOf("MSIE") >= 0) {
+		document.write('<a href="http://adserver.adtech.de/?adlink|2.0|289|113654|1|225|ADTECH;loc=200;" target="nsad"><img src="http://adserver.adtech.de/?adserv|2.0|289|113654|1|225|ADTECH;loc=200;" border="0" width="728" height="90"></a>');
+	}
+	document.write('</scr' + 'ipt>');// -->
+</script>
+<noscript><div><a href="http://adserver.adtech.de/?adlink|2.0|289|113654|1|225|ADTECH;loc=300;" target="nsad"><img src="http://adserver.adtech.de/?adserv|2.0|289|113654|1|225|ADTECH;loc=300;" width="728" height="90" alt="Advertising"/></a></div></noscript>
+</div></div></div>
+
+<div id="footerrow" class="pageblock">
+<div id="footerpad">
+	<div id="footerlinks"><ul class="straptext">
+		<li><a href="/subscribe.ns;jsessionid=FPBPEOFOFNNJ?promcode=nsfooter">Subscribe</a></li>
+		<li><a href="/contact.ns;jsessionid=FPBPEOFOFNNJ">Contact&nbsp;Us</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in2">FAQ&nbsp;&#047;&nbsp;Help</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in3">Advertise</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in4">Disclaimer</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in5">Terms&nbsp;and&nbsp;Conditions</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in5#cookies">Cookies</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in5#privacy">Privacy&nbsp;Policy</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in59">Open&nbsp;Source</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in6">Site&nbsp;Map</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in1">About&nbsp;NewScientist.com</a></li>
+		<li><a href="/info.ns;jsessionid=FPBPEOFOFNNJ?id=in16">About&nbsp;New&nbsp;Scientist&nbsp;magazine</a></li>
+		<li>&#169;&nbsp;Copyright&nbsp;Reed&nbsp;Business&nbsp;Information&nbsp;Ltd.</li>
+	</ul></div>
+	<form action="/search.ns;jsessionid=FPBPEOFOFNNJ"><div>
+	<select id="footerjump" name="sitepage" size="1" class="textinput" onchange="changePage(this)">
+		<option value ="/home.ns">Home</option>
+		<option value ="/news.ns">Breaking News</option>
+		<option value ="/channel">Explore by Subject</option>
+		<option value ="/specials.ns">Special Reports</option>
+		<option value ="/lastword.ns">Back Page</option>
+		<option value ="/subscribe.ns?promcode=nsfooter">Subscribe</option>
+		<option value ="/archive.ns">Archive</option>
+		<option value ="/feeds.ns">RSS</option>
+		<option value ="http://www.sciencejobs.com">Jobs</option>
+	</select></div>
+	</form>
+	
+</div>
+</div>
+
+<div class="pageblock">
+<!-- SLOT: null_popup -->
+<!-- AdtechUtils - JavaScript - $Revision: 1.3 $ - slotId="ns_ros_popup" -->
+<script type="text/javascript"><!--
+	var myDate = new Date();
+	AT_MISC = myDate.getTime();
+	document.write('<scr' + 'ipt src="http://adserver.adtech.de/?addyn|2.0|289|113657|1|16|target=nsad;loc=100;misc=' + AT_MISC + ';">');
+	if (navigator.userAgent.indexOf("Mozilla/2.") >= 0 || navigator.userAgent.indexOf("MSIE") >= 0) {
+		document.write('<a href="http://adserver.adtech.de/?adlink|2.0|289|113657|1|16|ADTECH;loc=200;" target="nsad"><img src="http://adserver.adtech.de/?adserv|2.0|289|113657|1|16|ADTECH;loc=200;" border="0" width="1" height="1"></a>');
+	}
+	document.write('</scr' + 'ipt>');// -->
+</script>
+<noscript><div><a href="http://adserver.adtech.de/?adlink|2.0|289|113657|1|16|ADTECH;loc=300;" target="nsad"><img src="http://adserver.adtech.de/?adserv|2.0|289|113657|1|16|ADTECH;loc=300;" width="1" height="1" alt="Advertising"/></a></div></noscript>
+
+</div>
+</body>
+</html>

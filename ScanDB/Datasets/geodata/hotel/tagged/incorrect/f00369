@@ -1,0 +1,1727 @@
+<DOC>
+<DOCNO>f00369</DOCNO>
+<DOCHDR>http://www.cs.cmu.edu/~scandal/conf/pro-HPDC-940802.txt</DOCHDR>
+
+
+
+
+	       	     THIRD INTERNATIONAL SYMPOSIUM ON 
+                HIGH PERFORMANCE DISTRIBUTED COMPUTING (HPDC-3)
+
+
+               Westin St. Francis Hotel, San Francisco, California
+                            August 2-5, 1994 
+
+SPONSORS:
+
+   	- IEEE Computer Society 
+        - Northeast Parallel Architectures Center at Syracuse University
+
+IN COOPERATION WITH:
+
+        - ACM SIGCOMM
+        - Rome Laboratory
+
+The International Symposium on High Performance
+Distributed Computing provides a forum for presenting the latest
+research findings that unify parallel and distributed computing.
+In HPDC environments, parallel or distributed computing techniques
+are applied to the solution of computationally intensive applications
+across networks of computers.  
+This symposium follows two successful earlier conferences
+held in Syracuse, NY and Spokane, WA in 1992 and 1993, respectively.
+
+
+			=======================
+                        Pre-Symposium Tutorials
+			=======================
+
+Tuesday, August 2
+
+8:30 AM -- 12 NOON     Concurrent Sessions
+
+Tutorial 1A: Software Systems and Tools for High Performance
+             Distributed Computing
+             Anand Tripathi, University of Minnesota
+
+Tutorial 1B: Interfacing to High Speed Networks: Adapter Design
+             and Operating System Issues.
+             K. K. Ramakrishnan, Digital Equipment Corporation
+
+2:00 PM -- 5:30 PM     Concurrent Sessions
+
+Tutorial 2A: Message Passing Using MPI: from Fundamentals to Applications
+             David W. Walker, Oak Ridge National Laboratory
+
+Tutorial 2B: High Performance Distributed Computing
+             in a Supercomputing Environment:
+             Computational Services and Applications Issues
+             W. T. C. Kramer and Horst D. Simon, NASA Ames Research Center
+
+	        ======================================
+		       Wednesday, August 3
+	        ======================================
+
+8:00 AM - 10:00 AM  Registration
+
+8:30 AM - 10:00 AM  Plenary Session
+
+                        Keynote Speech
+                        Robert E. Kahn, Corporation for Networking
+                                     Research Initiatives
+
+10:30 AM - 12:00 NOON 
+
+
+               SESSION 1: INVITED PAPERS
+             Chair: W. Johnston, NYNEX
+
+Multimedia Supercomputing: The Use of Supercomputers to Drive 
+High-Performance Multimedia Systems and Virtual Environments
+Rick Stevens, Argonne National Laboratory
+
+Constructing Numerical Software Libraries for HPCC Environments
+Jack Dongarra, University of Tennessee and Oak Ridge National Laboratory
+
+Overview of RWC Massively Parallel Computer Project
+Shuichi Sakai, Real World Computing Project, Japan
+
+
+12:00 NOON - 1:30 PM  LUNCH
+            sponsored by Kendall-Square Research
+            Speaker: TBA
+
+
+1:30 PM - 3:00 PM   Concurrent Sessions
+
+               SESSION 2A: SOFTWARE TOOLS AND ENVIRONMENTS I
+               Chair: M. Annaratone, Digital
+
+"The Virtual Computing Environment"
+P. Rouselle, P. Tymann, G. Fox, S. Hariri,
+Syracuse University
+
+"The Use of Frameworks for Scientific Computation in a Parallel
+Distributed Environment"
+R. Armstrong, Sandia National Laboratories
+J. Macfarlane, Lawrence Berkeley Laboratory
+
+"Falcon -- Toward Interactive Parallel Programs:  The On-line Steering
+of a Molecular Dynamics Application"
+G. Eisenhauer, W. Gu, K. Schwan, N. Mallavarupu,
+Georgia Institute of Technology
+
+               SESSION 2B: HIGH-SPEED NETWORKS AND APPLICATIONS
+               Chair: W. Dabbous, INRIA, France
+
+"High-Performance TCP/IP and UDP/IP Networking in DEC OSF/1 Alpha AXP"
+C-H. Chang, D. Flower, J. Forecast, H. Gray, B. Hawe,
+A. Nadkarni, K. K. Ramakrishnan, U. Shikarpur, D. Ting, K. Wilde,
+Digital Equipment Corporation
+
+"Design and Implementation of Global Reduction Operations across ATM
+Networks"
+C. Huang, P. K. McKinley,
+Michigan State University
+
+"Traffic Monitoring for Capacity Allocation of Multimedia Traffic in
+ATM Broadband Networks"
+A. Burrell, D. Makrakis, P. Papantoni-Kazakos,
+University of Ottawa
+
+3:30 PM - 4:30 PM   Concurrent Sessions
+
+
+              SESSION 3A: SOFTWARE TOOLS AND ENVIRONMENTS II
+              Chair: A. Skjellum, Mississippi State University
+
+"WAVE Processing of Networks and Distributed Simulation"
+P. M.  Borst, University of Karlsruhe, Germany
+M. Corbin, DRA, Farnborough, U.K.
+P. S. Sapaty, University of Surrey, U.K.
+
+"Providing High Performance Distributed Computing through Scalable
+Computation Servers"
+O. Kremien, Bar-Ilan University, Israel
+J. Kramer, Imperial College, U.K.
+
+             SESSION 3B: HPDC APPLICATIONS I
+             Chair: D. McAuliffe, Rome Laboratory
+
+"Running a Climate Model in a Heterogeneous Distributed Computer
+Environment"
+C. R. Mechoso, D. J. Farrara, J. A. Spahr,
+University of California, Los Angeles
+
+"Distributed Computation of Electromagnetic Scattering Problems Using
+Finite-Difference Time-Domain Decompositions"
+Sandy Nguyen, Brian Zook, Southwest Research Institute
+Xiaodong Zhang, The University of Texas at San Antonio
+
+
+	        ======================================
+		       Thursday, August 4
+	        ======================================
+
+9:00 AM - 10:00 AM   Keynote Speech: System Architectures for High Performance
+                     Computing in the 1990's
+
+	             Tilak Agerwala, IBM
+
+10:30 AM - 12:00 NOON    Concurrent Sessions
+
+             SESSION 4A: MAPPING AND SCHEDULING I
+             Chair: A. Grimshaw, University of Virginia
+
+"Scheduling Large-Scale Parallel Computations on Networks of
+Workstations"
+R. D. Blumofe, D. S. Park,
+Massachusetts Institute of Technology
+
+"Scheduling a Metacomputer by an Implicit Voting System"
+K. Kremer, University of Technology Aachen, Germany
+F. Ramme, University of Paderborn, Germany
+
+"A Decomposition Advisory System for Heterogeneous Data-Parallel
+Processing"
+P. E. Crandall, M. J. Quinn,
+Oregon State University
+
+
+          SESSION 4B: DISTRIBUTED SHARED-MEMORY SYSTEMS
+                 Chair: T. V. Lakshman, Bellcore
+
+
+"Evaluating Weak Memories with Maya"
+D. Agrawal, M. Choy, H. Va Leong, A. Singh
+University of California, Santa Barbara
+
+"Analysis and Transformation of Parallel Programs for Fast Data Sharing"
+A. Li, University of Victoria, Canada
+G Hermannsson, L. Wittie, State University of New York, Stony Brook
+
+"An Experimental Active-Memory-Based Network Environment"
+A. Asthana, M. Cravatts, P. Krzyzanowski,
+AT&T Bell Laboratories
+
+12:00 NOON - 1:30 PM  LUNCH
+
+1:30 PM - 3:00 PM Panel
+
+    GOVERNMENT STRATEGIES FOR HIGH-PERFORMANCE DISTRIBUTED COMPUTING
+            Panel Chair: J. A. Graniero, Rome Laboratory
+
+             Panelists: Hank Dardy, Naval Research Laboratory
+			Andrew White, Los Alamos
+                        Richard Freund, Naval Research and Development Center
+			L/C John Toole, ARPA/CSTO
+			L/C Larry Davis, AFOSR/ST
+                        Ray Kline, Sandia National Laboratories
+                        
+3:30 PM - 5:00 PM   Concurrent Sessions
+
+             SESSION 5A: PARTITIONING AND LOAD BALANCING
+             Chair: R. Perrot, Queens University, Belfast
+
+"Network Partitioning of Data Parallel Programs"
+J. B. Weissman, A. S. Grimshaw,
+University of Virginia
+
+"Exploiting Inter-Task Dependencies for Dynamic Load Balancing"
+W. Becker, G. Waldmann,
+University of Stuttgart, Germany
+
+"Automatic Generation of Parallel Programs with Dynamic Load Balancing"
+B. S. Siegell, P. Steenkiste,
+Carnegie Mellon University
+
+
+             SESSION 5B: HPDC APPLICATIONS II
+             Chair: J. Patterson, Boeing
+
+"Distributed Solutions to the Delay Fault Test Quality Evaluation
+Problem"
+I. Pramanick, A. K. Pramanick,
+IBM
+
+"Design and Implementation of Parallel Algorithms for Gene Finding"
+J. J. Puthukattukran, S. Chalasani, University of Wisconsin-Madison
+P. Senapathy, Genome International Corporation
+
+"Solving Partial Differential Equations on a Network of Workstations"
+C.-C. Hui, M. Hamdi, Ishfaq Ahmad,
+Hong Kong University of Science and Technology
+
+
+	        ======================================
+		       Friday, August 5
+	        ======================================
+
+8:30 AM - 10:00 AM  Concurrent Sessions
+
+             SESSION 6A: MAPPING AND SCHEDULING II
+             Chair: Ardsher Ahmed, UMASS Dartmouth
+
+Parallel Computations on the CHARM Heterogeneous Workstation Cluster"
+V. A. Saletore, J. Jacob, M. Padala,
+Oregon State University
+
+"Mapping Parallel Iterative Algorithms onto Workstations Networks"
+A. Heddaya, K. Park,
+Boston University
+
+"A Task Graph Centroid"
+C. Leangsuksun, J. Potter
+Kent State University
+
+         SESSION 6B: FAULT-TOLERANCE AND I/O IN DISTRIBUTED SYSTEMS
+       Chair: I. Ahmad, Hong Kong University of Science & Technology
+
+"Data Reshuffling in Support of Fast I/O for Distributed-Memory Machines"
+C. Bornstein, P. Steenkiste
+Carnegie Mellon University
+
+"Process-Replication Technique for Fault-Tolerance and Performance
+Improvement in Distributed Computing Systems"
+J-F. Chiu, G-M. Chiu,
+National Taiwan Institute of Technology
+
+"Performance Evaluation of a Partial Dynamic Declustering Disk Array
+System"
+V. Catania, A. Puliafito, S. Riccobene, L. Vita,
+University of Catania, Italy
+
+10:30 AM - 12:00 NOON    Concurrent Sessions
+
+             SESSION 7A: NETWORK PROTOCOLS AND INTERFACES
+             Chair: I. Akyildiz, Georgia Institute of Technology
+
+"Large-Scale Group Communication Protocol on High-Speed Channel"
+M. Takamura, M. Takizawa,
+Tokyo Denki University
+
+"Deciding Boundedness for Systems of Communicating Finite
+State Machines"
+A. Benslimane,
+Universite de Franche-Comte, France
+
+"Design of the Header Processor for the PSi Implementation of the
+Logical Link Control Protocol in LANs"
+F. A. Morales, H. Abu-Amara,
+Texas A&M University
+
+
+             SESSION 7B: PERFORMANCE EVALUATION AND RESOURCE MANAGEMENT
+           Chair: J. J. Garcia-Luna, University of California, Santa Cruz
+
+"PMT: A Tool to Monitor Performance in Distributed Systems"
+V. Catania, O. Granato, A. Puliafito, L. Vita,
+University of Catania, Italy
+
+"Reducing Variations in Parallel Efficiency for Unstructured Grid
+Computations"
+B. Worner, G. Geunder, M. Hardtner, R. Zink,
+University of Stuttgart, Germany
+
+"Performance Prediction for Different Consistency Schemes in Distributed
+Shared Memory Systems"
+Z. G. Vranesic, S. Srbljic, University of Toronto
+L. Budin, University of Zagreb, Croatia
+
+
+______________________________________________________________
+
+KEYNOTE SPEAKERS
+
+Robert E. Kahn is President of the Corporation for National
+Research Initiatives (CNRI), which he founded in 1986 after a 13-
+year term at the Advanced Research Projects Agency (ARPA).  Dr.
+Kahn holds a Ph.D. from Princeton University.  Prior to his service
+at CNRI he held positions at Bell Laboratories, MIT and DARPA where
+he became Director of DARPA's Information Processing Techniques
+Office (IPTO) and initiated the United States government's billion
+dollar Strategic Computing Program, the largest computer research
+and development program ever undertaken by the federal government. 
+Dr. Kahn is a member of the National Academy of Engineering, a
+Fellow of the IEEE, a Fellow of AAAI, a recipient of the AFIPS
+Harry Goode Memorial Award, the Marconi Award, the ACM SIGCOMM
+Award, the President's Award from the ACM, the IEEE Koji Kobayashi
+Computer and Communications Award, the ACM Software Systems Award,
+and the ASIS Special Award.  He was twice the recipient of the
+Secretary of Defense Meritorious Civilian Service Award.
+
+
+Tilak Agerwala is Director of Architecture and System Design for
+IBM's parallel computer products.  He is responsible for future
+product designs, performance analysis, and technical strategy.
+Dr. Agerwala has held executive positions in the RISC System 6000
+division, where he was responsible for future system technology
+development, and at the T.J. Watson Research Center, where he
+initiated and directed broad research programs in parallel processing,
+artificial intelligence, and supercomputing.  Dr. Agerwala is a
+member of the IBM Academy of Technology and has served on the
+Corporate Technical Committee.  He was elected a Fellow of the IEEE
+for his leadership in the development of very high performance computers.
+
+**********************************************************************
+
+DESCRIPTIONS OF TUTORIALS
+
+---------------------------------------------------------------------------
+Tutorial 1A
+
+Software Systems and Tools for High Performance Distributed Computing
+Anand Tripathi, University of Minnesota
+
+The  objective  of  this  tutorial  is  to  present  an
+overview  of  the  mechanisms and software tools/systems that are
+currently available for high-performance distributed  programming
+in   local-area   networks.    A   high  performance  distributed
+programming  environment  needs  mechanisms  for  specifying  and
+managing   parallel   computation  structures  of  a  distributed
+application, transparent distribution of  load  in  the  network,
+dynamic  linking of components, error detection and recovery, and
+transparency  of  the  hardware/software  heterogeneity  in   the
+network.   This  tutorial  will  present  an overview of the most
+commonly used paradigms and  models  for  distributed  computing.
+
+These  are  related  to interprocess communication models such as
+message  passing   and   the   remote   procedure   call   (RPC),
+heterogeneous  computing, load balancing and scheduling of tasks,
+and  naming   and  protection  of  resources  in   the   network.
+Reliability related issues in implementing RPC will be discussed.
+An overview the object model of computing will  be  presented  in
+the   context   of  micro-kernel  architectures  for  distributed
+computing. The concept of  group  is  a  useful  abstraction  for
+managing  a  collection  of  related  activities.  Primitives for
+group management and  broadcast communication will be  presented.
+A   number  of  software  tools  and  programming  languages  are
+currently   available   for    high    performance    distributed
+programming.    An   overview   of   the   salient  features  and
+capabilities of Parallel Virtual Machine (PVM),  Linda,  Express,
+P4,  CODE/ROPE,  Mentat,  CC++, PCN, Jade, Orca, Concurrent C, SR
+will be presented.
+
+SPEAKER: Anand Tripathi is an Associate Professor in the Department
+of Computer Science,  University  of  Minnesota,  Minneapolis.  He
+received  the  B.Tech  degree  from  the  Indian   Institute   of
+Technology,  Bombay,  India, 1972, and the M.S. and Ph.D. degrees
+>from the  University  of  Texas  at  Austin  in  1978  and  1980,
+respectively,  in  Electrical  Engineering.  From 1972 to 1975 he
+worked as a research scientist at Bhabha Atomic Research  Center,
+Bombay,  India.   During  1981  to  1984  he  worked  as a Senior
+Principal  Research  Scientist  at  Honeywell  Computer  Sciences
+Center,  Bloomington,  MN.  At the University of Minnesota he has
+led the design and development of the Nexus distributed operating
+system  and  its programming environment.  His research interests
+include  parallel  and   distributed   systems,   object-oriented
+programming,  and  fault-tolerant  computing.  In the past he has
+presented tutorials on distributed computing systems at  some  of
+the IEEE sponsored conferences and tutorial-weeks.
+
+---------------------------------------------------------------------------
+Tutorial 1B
+
+Interfacing to High Speed Networks: Adapter Design and Operating System Issues
+
+K. K. Ramakrishnan, Digital Equipment Corporation
+
+Overview: We have seen significant increases in the bandwidth available
+for computer communication networks in the recent past. 
+Commercially available Local Area
+Networks operate at 100 Mbits/sec and research networks are running at greater
+than 1 Gbit/sec. Host CPU processing speed has also increased relentlessly.
+However, the anticipation that end-user applications can effectively use these
+large communication link speeds has yet to be fulfilled to a large extent.
+Network I/O at the end-system has often been perceived as the bottleneck for
+distributed applications.  This tutorial discusses
+the important topics in the design of a high-speed network adapter,
+including the memory-system architecture, buffer management,
+support for Quality of Service (QoS) guarantees
+and flow/congestion control, and host software issues.
+Several case studies will be presented.
+
+Speaker: K. K.  Ramakrishnan is a Consulting Engineer
+in the Distributed Systems Architecture and Performance group
+at Digital Equipment Corporation. 
+He has been with Digital since 1983 after completing
+his Ph.D. in Computer Science from the University of Maryland. 
+His group is involved in architecting Digital's efforts in the networking and
+distributed systems area.  
+Dr. Ramakrishnan has worked and published papers in the areas of load
+balancing, congestion control and avoidance, algorithms for FDDI, distributed
+systems performance and issues relating to network I/O. Dr. Ramakrishnan
+participates in the Internet Engineering Task Force and is a member of the
+End-End Group, as part of the Internet Research Task Force. He is also
+a technical editor for IEEE Network. 
+
+
+---------------------------------------------------------------------------
+Tutorial 2A
+
+Message Passing Using MPI: from Fundamentals to Applications
+
+David W. Walker, Oak Ridge National Laboratory
+
+This tutorial will describe the features of the MPI message passing
+standard, and will show how to use MPI in applications. The tutorial is 
+intended to benefit researchers who have some experience with message passing,
+and who wish to assess the advantages of MPI for their particular applications.
+However, the tutorial will be structured to also be of use to novices.
+   The tutorial will be divided into three main parts. The first part will
+give an overview of MPI, describe how it came about, and will discuss the
+basic point-to-point and collective communication capabilities of MPI. The
+second part will describe advanced features in MPI, in particular, the
+management of groups and communication contexts. The third part will be
+devoted to the presentation of application kernels and examples written
+using MPI.
+
+SPEAKER: David Walker is a Research Staff Member in the
+Mathematical Sciences Section  at Oak Ridge National Laboratory,
+and an Adjunct Associate Professor in the 
+Department of Computer Science of the University of Tennessee, Knoxville. 
+He obtained his B.A. in Mathematics from Jesus College, Cambridge, in 1973, 
+his M.S. in Astrophysics in 1979, and his Ph.D. in Physics from the University
+of London in 1983. From 1986-88. Dr. Walker was a member of the research staff
+of the Concurrent Computation Project at the California Institute of 
+Technology, and from 1988-1990 was an Associate Professor in the Department of
+Mathematics at the University of South Carolina. He was worked at ORNL since 
+1990, where he is mainly involved in the design of software libraries, 
+algorithms, and application for distributed memory concurrent computers.
+Dr. Walker was instrumental in establishing the MPI Forum, which led to the 
+specification of the MPI standard and in which he played an active role.
+
+---------------------------------------------------------------------------
+Tutorial 2B
+
+High Performance Distributed Computing in a Supercomputing Environment:
+Computational Services and Applications Issues
+
+W. T. C. Kramer and Horst D. Simon, NASA Ames Research Center
+
+The focus of this tutorial will be a discussion of current
+hardware and software trends for massively parallel supercomputers
+>from the perspective of applications. In case studies
+the lessons learned at NASA Ames will be presented. The main thrust of
+the tutorial will be a presentation of high performance computing topics
+which will remain relevant for a long period of time, independent
+of currently ``hot" machines. This requires a detailed investigation of
+the issue of communication. From an applications perspective
+the communication characteristics of various applications will be examined.
+A new taxonomy of parallel application will be developed.
+Similarly high-performance architectures will be investigated
+with respect to their communications performance. The matching
+of the applications taxonomy with the architectural characteristics
+of a machine will form the basis for the understanding of high
+performance computing. High performance distributed computing will thus
+be evaluated as one possible alternative to both MPP and PVP systems.
+Emphasis will be placed on an honest evaluation of the capabilities
+and challenges that distributed computing faces in a production
+environment.  The tutorial utilizes the unique experience made
+at the NAS facility at NASA Ames Research Center.
+Over the last five years at NAS 
+massively parallel supercomputers such as the  Connection Machines
+CM-2 and CM-5 from Thinking Machines Corporation
+and the iPSC/860 (Touchstone Gamma Machine) and Paragon Machines
+>from Intel were used in a production supercomputer center alongside
+traditional vector supercomputers such as the Cray Y-MP and C90.
+In addition to these resources, NAS has operated since 1993 a
+distributed computing testbed (DCT), consisting of an environment 
+with 50 SGI and 40 SUN workstations. 
+
+Speakers:    William Kramer is Chief of the NAS Computational
+Service Branch, and is responsible for providing state-of-the-art support
+and enhancement of a Cray YMP, two C-90s, CM-5, an Intel iPSC/860, an Intel
+Paragon and several Convex systems, along with over 250 other systems and
+workstations connected via Ultranet, FDDI and ethernet.  These systems are
+used by a nationwide network of over 1400 researchers in 100+ sites,
+connected with the advanced NAS Aeronet and other networks.  Bill was
+responsible for the first production Cray-2 and YMP at NAS before
+becoming Branch Chief.  He is currently leading the NAS effort in
+computing on loosely clustered workstations.  He has authored or
+presented papers sessions and seminars on a number of subjects, 
+including system management, computer graphics, security and supporting
+advanced users at supercomputer centers.
+He and his staff presented the highest rated Tutorial at Supercomputing 89,
+"System Management in the UNIX Supercomputing Environment", which was presented
+again by invitation at SC '90.
+
+Horst D. Simon  is with Computer Sciences Corporation at
+the Applied Research Branch at the
+NAS (National Aerodynamics Simulator) Systems Division 
+at NASA Ames Research Center in 
+Moffett Field, California. He is CSC department manager and 
+responsible for a group of researchers in the areas
+of parallel algorithm development and scientific visualization,
+who as contractor personnel collaborate with the NAS
+staff. His research interests are in the development
+of high performance algorithms for vector and
+parallel machines. Particular areas of
+interest are sparse matrix algorithms, algorithms for
+large scale eigenvalue problems, and domain decomposition
+algorithms for irregular domains for parallel processing.
+Simon's algorithm research efforts were honored
+with the 1988 Gordon Bell Award for parallel processing research.
+Previously, until October 1989, 
+Dr. Simon was an employee of Boeing Computer Services, and
+>from October 1987 through October 1989, supported the NAS
+project in a similar capacity. 
+>From 1982 to 1983 Dr. Simon was an assistant professor at the Department of 
+Applied Mathematics, SUNY Stony Brook, New York.  
+Dr. Simon holds a Ph.D. in mathematics from the University of
+California (1982), Berkeley and a Diplom in Mathematik from the
+TU Berlin, Germany (1978). 
+Dr. Simon has presented tutorials on high performance computing
+at all previous Supercomputing conferences. His tutorials 
+have consistently been rated excellent or very good.
+
+---------------------------------------------------------------------------
+
+        		CONFERENCE LOCATION
+
+HPDC-3 will be held at the Westin St. Francis Hotel
+in downtown San Francisco, California.  Just 30 minutes from the airport,
+the Westin St. Francis is in the heart of the city
+on Union Square surrounded by fine restaurants, shops and theaters.  Cable cars
+stop at the front door.   The hotel is within walking
+distance  of San Francisco's Chinatown and an easy cable car ride
+away from Ghiradelli Square and Fisherman's Wharf.  Napa and Sonoma
+Valleys, the heart of California wine country, are an hour's drive
+away.  If you have additional time before or after the symposium you may
+want to explore Marin County's redwoods, the California Mission, 
+or drive scenic highway 101 to San Simeon.
+Monterey, Carmel, Santa Cruz, Yosemite National Park and Lake
+Tahoe are not far away.
+
+Weather: San Francisco in August is typically very pleasant.  Sunny
+    and warm (about 70F) during the day, and cool (about 50F) in the
+    evenings.  Note that the evening fog often makes it feel a bit
+    colder and  a lightweight jacket or all-weather coat is advised.
+
+Transportation: The hotel is about 20 minutes away from San Francisco
+    International Airport.  A taxi ride from the airport typically costs
+    about $25.  Also, the SFO Airporter has direct service to the
+    hotel at 20-minute intervals.  The fare is $10 one-way and $17
+    round-trip.
+
+Rental Cars: HERTZ has been appointed as the car rental supplier for
+    HPDC-3.  Special rates with unlimited mileage have been offered
+    to HPDC-3 attendees and are also available the week prior and the
+    week after the symposium.  To make reservations call HERTZ 
+    at 1-800-654-2240 (In Canada 1-800-263-0600) and identify yourself as
+    HPDC attendee (Meeting # 15329).  Cars can be rented at most Bay-area
+    airports and also at the Westin St. Francis Hotel.
+
+Social Event: An evening dinner-cruise on the San Francisco Bay is planned
+    for Wednesday, August 3.  The cost of the cruise is included in
+    the registration fee.  Additional tickets may be purchased at a price
+    of $55 each. 
+
+E-mail service will be available at the hotel to the attendees.
+
+**************************************************************************
+
+		    REGISTRATION INFORMATION
+
+    Advance registration is available using the form below through July
+8th.  E-mail registration is available only through July 27th, and must
+use a credit card number.  On-site registration at the Westin St. Francis
+Hotel will be available starting Tuesday, August 2nd, and
+every day of the conference starting at 8 AM.
+
+---------------------------------------------------------------------------
+
+                        HPDC-3
+		     Registration Form
+
+Please send this form and a check, credit card information, 
+or money order (no purchase orders) to the address below.
+Make checks payable to SYRACUSE UNIVERSITY.
+Registrations accepted via postal mail, FAX, or email only.
+
+              SU Conference Planning
+              HPDC-3 Conference
+              <GEO TYPE="US">P.O. Box 4709
+              Syracuse, NY 13221-4709</GEO>
+
+              Phone: (315) 443-3333
+              Fax:   (315) 443-1168
+              e-mail: hpdc@nova.npac.syr.edu
+-----------------------------------------------------------
+Symposium Registration (select one):
+
+                         Advance Registration         Regular Registration
+                     (Received by July 8, 1994)   (Received after July 8, 1994)
+                       ---------------------         -------------------
+IEEE/ACM SIGCOMM Member   [  ] $325                       [  ] $395
+Non-Member                [  ] $405                       [  ] $485
+Full-time student         [  ] $180                       [  ] $180
+
+Symposium registration fee includes a copy of the proceedings,
+sponsored lunches, coffee breaks, and the Bay cruise. 
+Student registration does not include proceedings or the Bay cruise.
+Extra copies of the proceedings may be purchased on-site.
+
+-----------------------------------------------------------
+Extra Dinner/Cruise Tickets      ___ @ $55 each
+
+
+-----------------------------------------------------------
+Tutorials (check the box for each tutorial attending)
+
+Note: You may select at most one tutorial from the morning session
+and one from the afternoon session.
+
+                                                        _____
+1A: Software Systems and Tools for High Performance     |   |
+    Distributed Computing...............................|___|
+                                                        
+                                                        _____
+1B: Interfacing to High Speed Networks..................|   |
+                                                        |___|
+
+                                                        _____
+2A: Message Passing Using MPI...........................|   |
+                                                        |___|
+
+
+                                                        _____
+2B: High Performance Distributed Computing              |   |
+    in a Supercomputing Environment.....................|___|
+
+Enter total number of tutorials at the appropriate rate
+(rates are per tutorial).
+
+                         Advance Registration         Regular Registration
+                     (Received by July 8, 1994)   (Received after July 8, 1994)
+                       ---------------------         -------------------
+IEEE/ACM SIGCOMM Member   ___ @ $165                      ___ @ $195
+Non-Member                ___ @ $205                      ___ @ $245
+
+Total Tutorial Fee:                             $________US
+
+Each Tutorial registration fee includes attendance at one
+tutorial session, notes, and coffee breaks.  There are no student fees
+for the tutorials.  Cancellations of tutorial registrations after
+July 22 will be subject to the total fee.
+We reserve the right to cancel the tutorials
+due to insufficient participation or other unforeseeable problems,
+in which case fees will be refunded.
+
+-----------------------------------------------------------
+
+Symposium Registration Fee $_________ + Extra cruise tickets $_______ +
+     Tutorial Fees $___________ = Total Amount enclosed:  $________ US
+
+-----------------------------------------------------------
+
+Name: ____________________________________
+
+Affiliation: _____________________________
+
+Address: _________________________________
+
+City/State/Zip/Postal Code/Country: ________________________________
+
+Phone: ___________________________________
+
+FAX: _____________________________________
+
+E-mail Address: ___________________________
+
+IEEE/ACM SIGCOMM Member #: ____________________________
+                            (required for member rate)
+
+Method of Payment
+
+__ Visa    __ Mastercard    __check enclosed (payable to Syracuse University)
+
+Card Holder Name: ________________________
+                  (as it appears on card)
+Card Number: _____________________________
+
+Expiration Date: _________________________
+
+Signature: _______________________________
+
+You may register by e-mail using your credit card.
+Send completed registration to hpdc@nova.npac.syr.edu
+
+If you have a disability and may require accommodation in order  ______
+to fully participate in this activity, please check              |    |
+here.  You will be contacted to discuss your needs.              |____|
+
+Vegetarian Meals:   ___ YES  /  ___ NO
+
+Cancellation Policy:  All requests for refunds must be received
+in writing on or before July 22, 1994.  No refunds will be made
+on cancellations made after this date. 
+
+
+**************************************************************************
+
+		    HOTEL REGISTRATION
+
+Please contact the Westin St. Francis Hotel directly for
+accommodations.
+
+The Westin St. Francis
+Union Square
+<GEO TYPE="US">335 Powell Street
+San Francisco, CA 94102  USA</GEO>
+
+Phone: (415) 397-7000
+
+Special conference rates have been arranged for attendees of 
+HPDC-3.  The rates are as follows:
+
+Type of Room       Main Building       Towers
+                  Single Double      Single Double
+Standard           $120   $120         -      -
+Medium             $135   $135         -      -
+Deluxe             $150   $150        $170  $170
+
+Reservation cut-off date is Friday, July 1, 1994; 
+Reservations made after this date will be on a space-available basis only.
+In order to receive our special rates you must identify
+yourself as a participant in the HPDC-3 Conference.
+**************************************************************************
+		    CONFERENCE COMMITTEES
+**************************************************************************
+
+SYMPOSIUM GENERAL CHAIR: Geoffrey Fox, NPAC, Syracuse University
+
+SYMPOSIUM STEERING COMMITTEE:
+
+- Salim Hariri, Syracuse University (Chair)
+- Tilak Agerwala, IBM
+- Andrew Grimshaw, University of Virginia
+- H. T. Kung, Harvard University
+- T. V. Lakshman, Bell Communications Research
+- Daniel McAuliffe, Rome Laboratory
+- C. S. Raghavendra, Washington State University
+
+PROGRAM CHAIR: Anujan Varma, University of California, Santa Cruz
+
+PUBLICITY CHAIRS:
+
+   North America: T. V. Lakshman, Bell Communications Research
+   Europe: Walid Dabbous, INRIA, France
+   Asia: Makoto Takizawa, Tokyo Denki University, Japan
+
+TUTORIALS CHAIR: Ian F. Akyildiz, Georgia Tech 
+
+EXHIBITS: C. S. Raghavendra, Washington State University
+
+REGISTRATION AND LOCAL ARRANGEMENTS:  Peggy Van Arnam, Syracuse University
+
+PROGRAM COMMITTEE
+
+- Dharma Agrawal, North Carolina State University
+- Prathima Agrawal, AT&T Bell Labs
+- Ian F. Akyildiz, Georgia Tech 
+- Marco Annaratone, DEC
+- Ken Birman, Cornell University
+- Suresh Chalasani, University of Wisconsin, Madison
+- Monsong Chen, IBM Research
+- Roger Chen, Syracuse University
+- Abdelaziz Chihoub, Siemens Corporate Research
+- Jon Crowcroft, University College London
+- Walid Dabbous, INRIA, France
+- Patrick Dowd, SUNY Buffalo
+- Dennis Duke, SCRI/Florida State University
+- Stuart Elby, NYNEX Science and Technology
+- Richard Freund, NRaD
+- J.J. Garcia-Luna, University of California, Santa Cruz
+- Arif Ghafoor, Purdue University
+- Andrew Grimshaw, University of Virginia
+- Salim Hariri, Syracuse University
+- S. H. Hosseini, University of Wisconsin, Milwaukee
+- T. V. Lakshman, Bell Communications Research
+- C. R. Mechoso, UCLA
+- Paul Messina, Caltech
+- Richard C. Metzger, Rome Laboratory 
+- Paul Mockapetris, USC/ISI
+- John Morrison, Los Alamos National Laboratory
+- John Nicholas, Battelle Pacific Northwest Lab
+- James C. Patterson, Boeing Co.
+- Ira Pramanick, IBM
+- Michael Quinn, Oregon State University
+- C. S. Raghavendra, Washington State University
+- Paul Rupert, Lawrence Livermore National Laboratory
+- Karsten Schwan, Georgia Institute of Technology
+- Nita Sharma, Ncube Inc.
+- Vaidy Sunderam, Emory University
+- Makoto Takizawa, Tokyo Denki University, Japan
+- Alexander Thomasian, IBM Research
+- Satish Tripathi, University of Maryland
+- Larry Wittie, SUNY Stony Brook
+- Pen-Chung Yew, University of Illinois
+
+
+
+
+
+
+
+
+**************************************************************************
+                  HPDC-3 CALL FOR PARTICIPATION
+**************************************************************************
+
+
+
+	       	     THIRD INTERNATIONAL SYMPOSIUM ON
+                HIGH PERFORMANCE DISTRIBUTED COMPUTING (HPDC-3)
+
+
+               Westin St. Francis Hotel, San Francisco, California
+                            August 2-5, 1994
+
+SPONSORS:
+
+   	- IEEE Computer Society
+        - Northeast Parallel Architectures Center at Syracuse University
+
+IN COOPERATION WITH:
+
+        - ACM SIGCOMM
+        - Rome Laboratory
+
+The International Symposium on High Performance
+Distributed Computing provides a forum for presenting the latest
+research findings that unify parallel and distributed computing.
+In HPDC environments, parallel or distributed computing techniques
+are applied to the solution of computationally intensive applications
+across networks of computers.
+This symposium follows two successful earlier conferences
+held in Syracuse, NY and Spokane, WA in 1992 and 1993, respectively.
+
+
+			=======================
+                        Pre-Symposium Tutorials
+			=======================
+
+Tuesday, August 2
+
+8:30 AM -- 12 NOON     Concurrent Sessions
+
+Tutorial 1A: Software Systems and Tools for High Performance
+             Distributed Computing
+             Anand Tripathi, University of Minnesota
+
+Tutorial 1B: Interfacing to High Speed Networks: Adapter Design
+             and Operating System Issues.
+             K. K. Ramakrishnan, Digital Equipment Corporation
+
+2:00 PM -- 5:30 PM     Concurrent Sessions
+
+Tutorial 2A: Message Passing Using MPI: from Fundamentals to Applications
+             David W. Walker, Oak Ridge National Laboratory
+
+Tutorial 2B: High Performance Distributed Computing
+             in a Supercomputing Environment:
+             Computational Services and Applications Issues
+             W. T. C. Kramer and Horst D. Simon, NASA Ames Research Center
+
+	        ======================================
+		       Wednesday, August 3
+	        ======================================
+
+8:00 AM - 10:00 AM  Registration
+
+8:30 AM - 10:00 AM  Plenary Session
+
+                        Keynote Speech
+                        Robert E. Kahn, Corporation for Networking
+                                     Research Initiatives
+
+10:30 AM - 12:00 NOON
+
+
+               SESSION 1: INVITED PAPERS
+             Chair: W. Johnston, NYNEX
+
+Multimedia Supercomputing: The Use of Supercomputers to Drive
+High-Performance Multimedia Systems and Virtual Environments
+Rick Stevens, Argonne National Laboratory
+
+Constructing Numerical Software Libraries for HPCC Environments
+Jack Dongarra, University of Tennessee and Oak Ridge National Laboratory
+
+Overview of RWC Massively Parallel Computer Project
+Shuichi Sakai, Real World Computing Project, Japan
+
+
+12:00 NOON - 1:30 PM  LUNCH
+            sponsored by Kendall-Square Research
+            Speaker: TBA
+
+
+1:30 PM - 3:00 PM   Concurrent Sessions
+
+               SESSION 2A: SOFTWARE TOOLS AND ENVIRONMENTS I
+               Chair: M. Annaratone, Digital
+
+"The Virtual Computing Environment"
+P. Rouselle, P. Tymann, G. Fox, S. Hariri,
+Syracuse University
+
+"The Use of Frameworks for Scientific Computation in a Parallel
+Distributed Environment"
+R. Armstrong, Sandia National Laboratories
+J. Macfarlane, Lawrence Berkeley Laboratory
+
+"Falcon -- Toward Interactive Parallel Programs:  The On-line Steering
+of a Molecular Dynamics Application"
+G. Eisenhauer, W. Gu, K. Schwan, N. Mallavarupu,
+Georgia Institute of Technology
+
+               SESSION 2B: HIGH-SPEED NETWORKS AND APPLICATIONS
+               Chair: W. Dabbous, INRIA, France
+
+"High-Performance TCP/IP and UDP/IP Networking in DEC OSF/1 Alpha AXP"
+C-H. Chang, D. Flower, J. Forecast, H. Gray, B. Hawe,
+A. Nadkarni, K. K. Ramakrishnan, U. Shikarpur, D. Ting, K. Wilde,
+Digital Equipment Corporation
+
+"Design and Implementation of Global Reduction Operations across ATM
+Networks"
+C. Huang, P. K. McKinley,
+Michigan State University
+
+"Traffic Monitoring for Capacity Allocation of Multimedia Traffic in
+ATM Broadband Networks"
+A. Burrell, D. Makrakis, P. Papantoni-Kazakos,
+University of Ottawa
+
+3:30 PM - 4:30 PM   Concurrent Sessions
+
+
+              SESSION 3A: SOFTWARE TOOLS AND ENVIRONMENTS II
+              Chair: A. Skjellum, Mississippi State University
+
+"WAVE Processing of Networks and Distributed Simulation"
+P. M.  Borst, University of Karlsruhe, Germany
+M. Corbin, DRA, Farnborough, U.K.
+P. S. Sapaty, University of Surrey, U.K.
+
+"Providing High Performance Distributed Computing through Scalable
+Computation Servers"
+O. Kremien, Bar-Ilan University, Israel
+J. Kramer, Imperial College, U.K.
+
+             SESSION 3B: HPDC APPLICATIONS I
+             Chair: D. McAuliffe, Rome Laboratory
+
+"Running a Climate Model in a Heterogeneous Distributed Computer
+Environment"
+C. R. Mechoso, D. J. Farrara, J. A. Spahr,
+University of California, Los Angeles
+
+"Distributed Computation of Electromagnetic Scattering Problems Using
+Finite-Difference Time-Domain Decompositions"
+Sandy Nguyen, Brian Zook, Southwest Research Institute
+Xiaodong Zhang, The University of Texas at San Antonio
+
+
+	        ======================================
+		       Thursday, August 4
+	        ======================================
+
+9:00 AM - 10:00 AM   Keynote Speech: System Architectures for High Performance
+                     Computing in the 1990's
+
+	             Tilak Agerwala, IBM
+
+10:30 AM - 12:00 NOON    Concurrent Sessions
+
+             SESSION 4A: MAPPING AND SCHEDULING I
+             Chair: A. Grimshaw, University of Virginia
+
+"Scheduling Large-Scale Parallel Computations on Networks of
+Workstations"
+R. D. Blumofe, D. S. Park,
+Massachusetts Institute of Technology
+
+"Scheduling a Metacomputer by an Implicit Voting System"
+K. Kremer, University of Technology Aachen, Germany
+F. Ramme, University of Paderborn, Germany
+
+"A Decomposition Advisory System for Heterogeneous Data-Parallel
+Processing"
+P. E. Crandall, M. J. Quinn,
+Oregon State University
+
+
+          SESSION 4B: DISTRIBUTED SHARED-MEMORY SYSTEMS
+                 Chair: T. V. Lakshman, Bellcore
+
+
+"Evaluating Weak Memories with Maya"
+D. Agrawal, M. Choy, H. Va Leong, A. Singh
+University of California, Santa Barbara
+
+"Analysis and Transformation of Parallel Programs for Fast Data Sharing"
+A. Li, University of Victoria, Canada
+G Hermannsson, L. Wittie, State University of New York, Stony Brook
+
+"An Experimental Active-Memory-Based Network Environment"
+A. Asthana, M. Cravatts, P. Krzyzanowski,
+AT&T Bell Laboratories
+
+12:00 NOON - 1:30 PM  LUNCH
+
+1:30 PM - 3:00 PM Panel
+
+    GOVERNMENT STRATEGIES FOR HIGH-PERFORMANCE DISTRIBUTED COMPUTING
+            Panel Chair: J. A. Graniero, Rome Laboratory
+
+             Panelists: Hank Dardy, Naval Research Laboratory
+			Andrew White, Los Alamos
+                        Richard Freund, Naval Research and Development Center
+			L/C John Toole, ARPA/CSTO
+			L/C Larry Davis, AFOSR/ST
+                        Ray Kline, Sandia National Laboratories
+
+3:30 PM - 5:00 PM   Concurrent Sessions
+
+             SESSION 5A: PARTITIONING AND LOAD BALANCING
+             Chair: R. Perrot, Queens University, Belfast
+
+"Network Partitioning of Data Parallel Programs"
+J. B. Weissman, A. S. Grimshaw,
+University of Virginia
+
+"Exploiting Inter-Task Dependencies for Dynamic Load Balancing"
+W. Becker, G. Waldmann,
+University of Stuttgart, Germany
+
+"Automatic Generation of Parallel Programs with Dynamic Load Balancing"
+B. S. Siegell, P. Steenkiste,
+Carnegie Mellon University
+
+
+             SESSION 5B: HPDC APPLICATIONS II
+             Chair: J. Patterson, Boeing
+
+"Distributed Solutions to the Delay Fault Test Quality Evaluation
+Problem"
+I. Pramanick, A. K. Pramanick,
+IBM
+
+"Design and Implementation of Parallel Algorithms for Gene Finding"
+J. J. Puthukattukran, S. Chalasani, University of Wisconsin-Madison
+P. Senapathy, Genome International Corporation
+
+"Solving Partial Differential Equations on a Network of Workstations"
+C.-C. Hui, M. Hamdi, Ishfaq Ahmad,
+Hong Kong University of Science and Technology
+
+
+	        ======================================
+		       Friday, August 5
+	        ======================================
+
+8:30 AM - 10:00 AM  Concurrent Sessions
+
+             SESSION 6A: MAPPING AND SCHEDULING II
+             Chair: Ardsher Ahmed, UMASS Dartmouth
+
+Parallel Computations on the CHARM Heterogeneous Workstation Cluster"
+V. A. Saletore, J. Jacob, M. Padala,
+Oregon State University
+
+"Mapping Parallel Iterative Algorithms onto Workstations Networks"
+A. Heddaya, K. Park,
+Boston University
+
+"A Task Graph Centroid"
+C. Leangsuksun, J. Potter
+Kent State University
+
+         SESSION 6B: FAULT-TOLERANCE AND I/O IN DISTRIBUTED SYSTEMS
+       Chair: I. Ahmad, Hong Kong University of Science & Technology
+
+"Data Reshuffling in Support of Fast I/O for Distributed-Memory Machines"
+C. Bornstein, P. Steenkiste
+Carnegie Mellon University
+
+"Process-Replication Technique for Fault-Tolerance and Performance
+Improvement in Distributed Computing Systems"
+J-F. Chiu, G-M. Chiu,
+National Taiwan Institute of Technology
+
+"Performance Evaluation of a Partial Dynamic Declustering Disk Array
+System"
+V. Catania, A. Puliafito, S. Riccobene, L. Vita,
+University of Catania, Italy
+
+10:30 AM - 12:00 NOON    Concurrent Sessions
+
+             SESSION 7A: NETWORK PROTOCOLS AND INTERFACES
+             Chair: I. Akyildiz, Georgia Institute of Technology
+
+"Large-Scale Group Communication Protocol on High-Speed Channel"
+M. Takamura, M. Takizawa,
+Tokyo Denki University
+
+"Deciding Boundedness for Systems of Communicating Finite
+State Machines"
+A. Benslimane,
+Universite de Franche-Comte, France
+
+"Design of the Header Processor for the PSi Implementation of the
+Logical Link Control Protocol in LANs"
+F. A. Morales, H. Abu-Amara,
+Texas A&M University
+
+
+             SESSION 7B: PERFORMANCE EVALUATION AND RESOURCE MANAGEMENT
+           Chair: J. J. Garcia-Luna, University of California, Santa Cruz
+
+"PMT: A Tool to Monitor Performance in Distributed Systems"
+V. Catania, O. Granato, A. Puliafito, L. Vita,
+University of Catania, Italy
+
+"Reducing Variations in Parallel Efficiency for Unstructured Grid
+Computations"
+B. Worner, G. Geunder, M. Hardtner, R. Zink,
+University of Stuttgart, Germany
+
+"Performance Prediction for Different Consistency Schemes in Distributed
+Shared Memory Systems"
+Z. G. Vranesic, S. Srbljic, University of Toronto
+L. Budin, University of Zagreb, Croatia
+
+
+______________________________________________________________
+
+KEYNOTE SPEAKERS
+
+Robert E. Kahn is President of the Corporation for National
+Research Initiatives (CNRI), which he founded in 1986 after a 13-
+year term at the Advanced Research Projects Agency (ARPA).  Dr.
+Kahn holds a Ph.D. from Princeton University.  Prior to his service
+at CNRI he held positions at Bell Laboratories, MIT and DARPA where
+he became Director of DARPA's Information Processing Techniques
+Office (IPTO) and initiated the United States government's billion
+dollar Strategic Computing Program, the largest computer research
+and development program ever undertaken by the federal government.
+Dr. Kahn is a member of the National Academy of Engineering, a
+Fellow of the IEEE, a Fellow of AAAI, a recipient of the AFIPS
+Harry Goode Memorial Award, the Marconi Award, the ACM SIGCOMM
+Award, the President's Award from the ACM, the IEEE Koji Kobayashi
+Computer and Communications Award, the ACM Software Systems Award,
+and the ASIS Special Award.  He was twice the recipient of the
+Secretary of Defense Meritorious Civilian Service Award.
+
+
+Tilak Agerwala is Director of Architecture and System Design for
+IBM's parallel computer products.  He is responsible for future
+product designs, performance analysis, and technical strategy.
+Dr. Agerwala has held executive positions in the RISC System 6000
+division, where he was responsible for future system technology
+development, and at the T.J. Watson Research Center, where he
+initiated and directed broad research programs in parallel processing,
+artificial intelligence, and supercomputing.  Dr. Agerwala is a
+member of the IBM Academy of Technology and has served on the
+Corporate Technical Committee.  He was elected a Fellow of the IEEE
+for his leadership in the development of very high performance computers.
+
+**********************************************************************
+
+DESCRIPTIONS OF TUTORIALS
+
+---------------------------------------------------------------------------
+Tutorial 1A
+
+Software Systems and Tools for High Performance Distributed Computing
+Anand Tripathi, University of Minnesota
+
+The  objective  of  this  tutorial  is  to  present  an
+overview  of  the  mechanisms and software tools/systems that are
+currently available for high-performance distributed  programming
+in   local-area   networks.    A   high  performance  distributed
+programming  environment  needs  mechanisms  for  specifying  and
+managing   parallel   computation  structures  of  a  distributed
+application, transparent distribution of  load  in  the  network,
+dynamic  linking of components, error detection and recovery, and
+transparency  of  the  hardware/software  heterogeneity  in   the
+network.   This  tutorial  will  present  an overview of the most
+commonly used paradigms and  models  for  distributed  computing.
+
+These  are  related  to interprocess communication models such as
+message  passing   and   the   remote   procedure   call   (RPC),
+heterogeneous  computing, load balancing and scheduling of tasks,
+and  naming   and  protection  of  resources  in   the   network.
+Reliability related issues in implementing RPC will be discussed.
+An overview the object model of computing will  be  presented  in
+the   context   of  micro-kernel  architectures  for  distributed
+computing. The concept of  group  is  a  useful  abstraction  for
+managing  a  collection  of  related  activities.  Primitives for
+group management and  broadcast communication will be  presented.
+A   number  of  software  tools  and  programming  languages  are
+currently   available   for    high    performance    distributed
+programming.    An   overview   of   the   salient  features  and
+capabilities of Parallel Virtual Machine (PVM),  Linda,  Express,
+P4,  CODE/ROPE,  Mentat,  CC++, PCN, Jade, Orca, Concurrent C, SR
+will be presented.
+
+SPEAKER: Anand Tripathi is an Associate Professor in the Department
+of Computer Science,  University  of  Minnesota,  Minneapolis.  He
+received  the  B.Tech  degree  from  the  Indian   Institute   of
+Technology,  Bombay,  India, 1972, and the M.S. and Ph.D. degrees
+from the  University  of  Texas  at  Austin  in  1978  and  1980,
+respectively,  in  Electrical  Engineering.  From 1972 to 1975 he
+worked as a research scientist at Bhabha Atomic Research  Center,
+Bombay,  India.   During  1981  to  1984  he  worked  as a Senior
+Principal  Research  Scientist  at  Honeywell  Computer  Sciences
+Center,  Bloomington,  MN.  At the University of Minnesota he has
+led the design and development of the Nexus distributed operating
+system  and  its programming environment.  His research interests
+include  parallel  and   distributed   systems,   object-oriented
+programming,  and  fault-tolerant  computing.  In the past he has
+presented tutorials on distributed computing systems at  some  of
+the IEEE sponsored conferences and tutorial-weeks.
+
+---------------------------------------------------------------------------
+Tutorial 1B
+
+Interfacing to High Speed Networks: Adapter Design and Operating System Issues
+
+K. K. Ramakrishnan, Digital Equipment Corporation
+
+Overview: We have seen significant increases in the bandwidth available
+for computer communication networks in the recent past.
+Commercially available Local Area
+Networks operate at 100 Mbits/sec and research networks are running at greater
+than 1 Gbit/sec. Host CPU processing speed has also increased relentlessly.
+However, the anticipation that end-user applications can effectively use these
+large communication link speeds has yet to be fulfilled to a large extent.
+Network I/O at the end-system has often been perceived as the bottleneck for
+distributed applications.  This tutorial discusses
+the important topics in the design of a high-speed network adapter,
+including the memory-system architecture, buffer management,
+support for Quality of Service (QoS) guarantees
+and flow/congestion control, and host software issues.
+Several case studies will be presented.
+
+Speaker: K. K.  Ramakrishnan is a Consulting Engineer
+in the Distributed Systems Architecture and Performance group
+at Digital Equipment Corporation.
+He has been with Digital since 1983 after completing
+his Ph.D. in Computer Science from the University of Maryland.
+His group is involved in architecting Digital's efforts in the networking and
+distributed systems area.
+Dr. Ramakrishnan has worked and published papers in the areas of load
+balancing, congestion control and avoidance, algorithms for FDDI, distributed
+systems performance and issues relating to network I/O. Dr. Ramakrishnan
+participates in the Internet Engineering Task Force and is a member of the
+End-End Group, as part of the Internet Research Task Force. He is also
+a technical editor for IEEE Network.
+
+
+---------------------------------------------------------------------------
+Tutorial 2A
+
+Message Passing Using MPI: from Fundamentals to Applications
+
+David W. Walker, Oak Ridge National Laboratory
+
+This tutorial will describe the features of the MPI message passing
+standard, and will show how to use MPI in applications. The tutorial is
+intended to benefit researchers who have some experience with message passing,
+and who wish to assess the advantages of MPI for their particular applications.
+However, the tutorial will be structured to also be of use to novices.
+   The tutorial will be divided into three main parts. The first part will
+give an overview of MPI, describe how it came about, and will discuss the
+basic point-to-point and collective communication capabilities of MPI. The
+second part will describe advanced features in MPI, in particular, the
+management of groups and communication contexts. The third part will be
+devoted to the presentation of application kernels and examples written
+using MPI.
+
+SPEAKER: David Walker is a Research Staff Member in the
+Mathematical Sciences Section  at Oak Ridge National Laboratory,
+and an Adjunct Associate Professor in the
+Department of Computer Science of the University of Tennessee, Knoxville.
+He obtained his B.A. in Mathematics from Jesus College, Cambridge, in 1973,
+his M.S. in Astrophysics in 1979, and his Ph.D. in Physics from the University
+of London in 1983. From 1986-88. Dr. Walker was a member of the research staff
+of the Concurrent Computation Project at the California Institute of
+Technology, and from 1988-1990 was an Associate Professor in the Department of
+Mathematics at the University of South Carolina. He was worked at ORNL since
+1990, where he is mainly involved in the design of software libraries,
+algorithms, and application for distributed memory concurrent computers.
+Dr. Walker was instrumental in establishing the MPI Forum, which led to the
+specification of the MPI standard and in which he played an active role.
+
+---------------------------------------------------------------------------
+Tutorial 2B
+
+High Performance Distributed Computing in a Supercomputing Environment:
+Computational Services and Applications Issues
+
+W. T. C. Kramer and Horst D. Simon, NASA Ames Research Center
+
+The focus of this tutorial will be a discussion of current
+hardware and software trends for massively parallel supercomputers
+from the perspective of applications. In case studies
+the lessons learned at NASA Ames will be presented. The main thrust of
+the tutorial will be a presentation of high performance computing topics
+which will remain relevant for a long period of time, independent
+of currently ``hot" machines. This requires a detailed investigation of
+the issue of communication. From an applications perspective
+the communication characteristics of various applications will be examined.
+A new taxonomy of parallel application will be developed.
+Similarly high-performance architectures will be investigated
+with respect to their communications performance. The matching
+of the applications taxonomy with the architectural characteristics
+of a machine will form the basis for the understanding of high
+performance computing. High performance distributed computing will thus
+be evaluated as one possible alternative to both MPP and PVP systems.
+Emphasis will be placed on an honest evaluation of the capabilities
+and challenges that distributed computing faces in a production
+environment.  The tutorial utilizes the unique experience made
+at the NAS facility at NASA Ames Research Center.
+Over the last five years at NAS
+massively parallel supercomputers such as the  Connection Machines
+CM-2 and CM-5 from Thinking Machines Corporation
+and the iPSC/860 (Touchstone Gamma Machine) and Paragon Machines
+from Intel were used in a production supercomputer center alongside
+traditional vector supercomputers such as the Cray Y-MP and C90.
+In addition to these resources, NAS has operated since 1993 a
+distributed computing testbed (DCT), consisting of an environment
+with 50 SGI and 40 SUN workstations.
+
+Speakers:    William Kramer is Chief of the NAS Computational
+Service Branch, and is responsible for providing state-of-the-art support
+and enhancement of a Cray YMP, two C-90s, CM-5, an Intel iPSC/860, an Intel
+Paragon and several Convex systems, along with over 250 other systems and
+workstations connected via Ultranet, FDDI and ethernet.  These systems are
+used by a nationwide network of over 1400 researchers in 100+ sites,
+connected with the advanced NAS Aeronet and other networks.  Bill was
+responsible for the first production Cray-2 and YMP at NAS before
+becoming Branch Chief.  He is currently leading the NAS effort in
+computing on loosely clustered workstations.  He has authored or
+presented papers sessions and seminars on a number of subjects,
+including system management, computer graphics, security and supporting
+advanced users at supercomputer centers.
+He and his staff presented the highest rated Tutorial at Supercomputing 89,
+"System Management in the UNIX Supercomputing Environment", which was presented
+again by invitation at SC '90.
+
+Horst D. Simon  is with Computer Sciences Corporation at
+the Applied Research Branch at the
+NAS (National Aerodynamics Simulator) Systems Division
+at NASA Ames Research Center in
+Moffett Field, California. He is CSC department manager and
+responsible for a group of researchers in the areas
+of parallel algorithm development and scientific visualization,
+who as contractor personnel collaborate with the NAS
+staff. His research interests are in the development
+of high performance algorithms for vector and
+parallel machines. Particular areas of
+interest are sparse matrix algorithms, algorithms for
+large scale eigenvalue problems, and domain decomposition
+algorithms for irregular domains for parallel processing.
+Simon's algorithm research efforts were honored
+with the 1988 Gordon Bell Award for parallel processing research.
+Previously, until October 1989,
+Dr. Simon was an employee of Boeing Computer Services, and
+from October 1987 through October 1989, supported the NAS
+project in a similar capacity.
+From 1982 to 1983 Dr. Simon was an assistant professor at the Department of
+Applied Mathematics, SUNY Stony Brook, New York.
+Dr. Simon holds a Ph.D. in mathematics from the University of
+California (1982), Berkeley and a Diplom in Mathematik from the
+TU Berlin, Germany (1978).
+Dr. Simon has presented tutorials on high performance computing
+at all previous Supercomputing conferences. His tutorials
+have consistently been rated excellent or very good.
+
+---------------------------------------------------------------------------
+
+        		CONFERENCE LOCATION
+
+HPDC-3 will be held at the Westin St. Francis Hotel
+in downtown San Francisco, California.  Just 30 minutes from the airport,
+the Westin St. Francis is in the heart of the city
+on Union Square surrounded by fine restaurants, shops and theaters.  Cable cars
+stop at the front door.   The hotel is within walking
+distance  of San Francisco's Chinatown and an easy cable car ride
+away from Ghiradelli Square and Fisherman's Wharf.  Napa and Sonoma
+Valleys, the heart of California wine country, are an hour's drive
+away.  If you have additional time before or after the symposium you may
+want to explore Marin County's redwoods, the California Mission,
+or drive scenic highway 101 to San Simeon.
+Monterey, Carmel, Santa Cruz, Yosemite National Park and Lake
+Tahoe are not far away.
+
+Weather: San Francisco in August is typically very pleasant.  Sunny
+    and warm (about 70F) during the day, and cool (about 50F) in the
+    evenings.  Note that the evening fog often makes it feel a bit
+    colder and  a lightweight jacket or all-weather coat is advised.
+
+Transportation: The hotel is about 20 minutes away from San Francisco
+    International Airport.  A taxi ride from the airport typically costs
+    about $25.  Also, the SFO Airporter has direct service to the
+    hotel at 20-minute intervals.  The fare is $10 one-way and $17
+    round-trip.
+
+Rental Cars: HERTZ has been appointed as the car rental supplier for
+    HPDC-3.  Special rates with unlimited mileage have been offered
+    to HPDC-3 attendees and are also available the week prior and the
+    week after the symposium.  To make reservations call HERTZ
+    at 1-800-654-2240 (In Canada 1-800-263-0600) and identify yourself as
+    HPDC attendee (Meeting # 15329).  Cars can be rented at most Bay-area
+    airports and also at the Westin St. Francis Hotel.
+
+Social Event: An evening dinner-cruise on the San Francisco Bay is planned
+    for Wednesday, August 3.  The cost of the cruise is included in
+    the registration fee.  Additional tickets may be purchased at a price
+    of $55 each.
+
+E-mail service will be available at the hotel to the attendees.
+
+**************************************************************************
+
+		    REGISTRATION INFORMATION
+
+    Advance registration is available using the form below through July
+8th.  E-mail registration is available only through July 27th, and must
+use a credit card number.  On-site registration at the Westin St. Francis
+Hotel will be available starting Tuesday, August 2nd, and
+every day of the conference starting at 8 AM.
+
+---------------------------------------------------------------------------
+
+                        HPDC-3
+		     Registration Form
+
+Please send this form and a check, credit card information,
+or money order (no purchase orders) to the address below.
+Make checks payable to SYRACUSE UNIVERSITY.
+Registrations accepted via postal mail, FAX, or email only.
+
+              SU Conference Planning
+              HPDC-3 Conference
+              <GEO TYPE="US">P.O. Box 4709
+              Syracuse, NY 13221-4709</GEO>
+
+              Phone: (315) 443-3333
+              Fax:   (315) 443-1168
+              e-mail: hpdc@nova.npac.syr.edu
+-----------------------------------------------------------
+Symposium Registration (select one):
+
+                         Advance Registration         Regular Registration
+                     (Received by July 8, 1994)   (Received after July 8, 1994)
+                       ---------------------         -------------------
+IEEE/ACM SIGCOMM Member   [  ] $325                       [  ] $395
+Non-Member                [  ] $405                       [  ] $485
+Full-time student         [  ] $180                       [  ] $180
+
+Symposium registration fee includes a copy of the proceedings,
+sponsored lunches, coffee breaks, and the Bay cruise.
+Student registration does not include proceedings or the Bay cruise.
+Extra copies of the proceedings may be purchased on-site.
+
+-----------------------------------------------------------
+Extra Dinner/Cruise Tickets      ___ @ $55 each
+
+
+-----------------------------------------------------------
+Tutorials (check the box for each tutorial attending)
+
+Note: You may select at most one tutorial from the morning session
+and one from the afternoon session.
+
+                                                        _____
+1A: Software Systems and Tools for High Performance     |   |
+    Distributed Computing...............................|___|
+
+                                                        _____
+1B: Interfacing to High Speed Networks..................|   |
+                                                        |___|
+
+                                                        _____
+2A: Message Passing Using MPI...........................|   |
+                                                        |___|
+
+
+                                                        _____
+2B: High Performance Distributed Computing              |   |
+    in a Supercomputing Environment.....................|___|
+
+Enter total number of tutorials at the appropriate rate
+(rates are per tutorial).
+
+                         Advance Registration         Regular Registration
+                     (Received by July 8, 1994)   (Received after July 8, 1994)
+                       ---------------------         -------------------
+IEEE/ACM SIGCOMM Member   ___ @ $165                      ___ @ $195
+Non-Member                ___ @ $205                      ___ @ $245
+
+Total Tutorial Fee:                             $________US
+
+Each Tutorial registration fee includes attendance at one
+tutorial session, notes, and coffee breaks.  There are no student fees
+for the tutorials.  Cancellations of tutorial registrations after
+July 22 will be subject to the total fee.
+We reserve the right to cancel the tutorials
+due to insufficient participation or other unforeseeable problems,
+in which case fees will be refunded.
+
+-----------------------------------------------------------
+
+Symposium Registration Fee $_________ + Extra cruise tickets $_______ +
+     Tutorial Fees $___________ = Total Amount enclosed:  $________ US
+
+-----------------------------------------------------------
+
+Name: ____________________________________
+
+Affiliation: _____________________________
+
+Address: _________________________________
+
+City/State/Zip/Postal Code/Country: ________________________________
+
+Phone: ___________________________________
+
+FAX: _____________________________________
+
+E-mail Address: ___________________________
+
+IEEE/ACM SIGCOMM Member #: ____________________________
+                            (required for member rate)
+
+Method of Payment
+
+__ Visa    __ Mastercard    __check enclosed (payable to Syracuse University)
+
+Card Holder Name: ________________________
+                  (as it appears on card)
+Card Number: _____________________________
+
+Expiration Date: _________________________
+
+Signature: _______________________________
+
+You may register by e-mail using your credit card.
+Send completed registration to hpdc@nova.npac.syr.edu
+
+If you have a disability and may require accommodation in order  ______
+to fully participate in this activity, please check              |    |
+here.  You will be contacted to discuss your needs.              |____|
+
+Vegetarian Meals:   ___ YES  /  ___ NO
+
+Cancellation Policy:  All requests for refunds must be received
+in writing on or before July 22, 1994.  No refunds will be made
+on cancellations made after this date.
+
+
+**************************************************************************
+
+		    HOTEL REGISTRATION
+
+Please contact the Westin St. Francis Hotel directly for
+accommodations.
+
+The Westin St. Francis
+Union Square
+<GEO TYPE="US">335 Powell Street
+San Francisco, CA 94102  USA</GEO>
+
+Phone: (415) 397-7000
+
+Special conference rates have been arranged for attendees of
+HPDC-3.  The rates are as follows:
+
+Type of Room       Main Building       Towers
+                  Single Double      Single Double
+Standard           $120   $120         -      -
+Medium             $135   $135         -      -
+Deluxe             $150   $150        $170  $170
+
+Reservation cut-off date is Friday, July 1, 1994;
+Reservations made after this date will be on a space-available basis only.
+In order to receive our special rates you must identify
+yourself as a participant in the HPDC-3 Conference.
+**************************************************************************
+		    CONFERENCE COMMITTEES
+**************************************************************************
+
+SYMPOSIUM GENERAL CHAIR: Geoffrey Fox, NPAC, Syracuse University
+
+SYMPOSIUM STEERING COMMITTEE:
+
+- Salim Hariri, Syracuse University (Chair)
+- Tilak Agerwala, IBM
+- Andrew Grimshaw, University of Virginia
+- H. T. Kung, Harvard University
+- T. V. Lakshman, Bell Communications Research
+- Daniel McAuliffe, Rome Laboratory
+- C. S. Raghavendra, Washington State University
+
+PROGRAM CHAIR: Anujan Varma, University of California, Santa Cruz
+
+PUBLICITY CHAIRS:
+
+   North America: T. V. Lakshman, Bell Communications Research
+   Europe: Walid Dabbous, INRIA, France
+   Asia: Makoto Takizawa, Tokyo Denki University, Japan
+
+TUTORIALS CHAIR: Ian F. Akyildiz, Georgia Tech
+
+EXHIBITS: C. S. Raghavendra, Washington State University
+
+REGISTRATION AND LOCAL ARRANGEMENTS:  Peggy Van Arnam, Syracuse University
+
+PROGRAM COMMITTEE
+
+- Dharma Agrawal, North Carolina State University
+- Prathima Agrawal, AT&T Bell Labs
+- Ian F. Akyildiz, Georgia Tech
+- Marco Annaratone, DEC
+- Ken Birman, Cornell University
+- Suresh Chalasani, University of Wisconsin, Madison
+- Monsong Chen, IBM Research
+- Roger Chen, Syracuse University
+- Abdelaziz Chihoub, Siemens Corporate Research
+- Jon Crowcroft, University College London
+- Walid Dabbous, INRIA, France
+- Patrick Dowd, SUNY Buffalo
+- Dennis Duke, SCRI/Florida State University
+- Stuart Elby, NYNEX Science and Technology
+- Richard Freund, NRaD
+- J.J. Garcia-Luna, University of California, Santa Cruz
+- Arif Ghafoor, Purdue University
+- Andrew Grimshaw, University of Virginia
+- Salim Hariri, Syracuse University
+- S. H. Hosseini, University of Wisconsin, Milwaukee
+- T. V. Lakshman, Bell Communications Research
+- C. R. Mechoso, UCLA
+- Paul Messina, Caltech
+- Richard C. Metzger, Rome Laboratory
+- Paul Mockapetris, USC/ISI
+- John Morrison, Los Alamos National Laboratory
+- John Nicholas, Battelle Pacific Northwest Lab
+- James C. Patterson, Boeing Co.
+- Ira Pramanick, IBM
+- Michael Quinn, Oregon State University
+- C. S. Raghavendra, Washington State University
+- Paul Rupert, Lawrence Livermore National Laboratory
+- Karsten Schwan, Georgia Institute of Technology
+- Nita Sharma, Ncube Inc.
+- Vaidy Sunderam, Emory University
+- Makoto Takizawa, Tokyo Denki University, Japan
+- Alexander Thomasian, IBM Research
+- Satish Tripathi, University of Maryland
+- Larry Wittie, SUNY Stony Brook
+- Pen-Chung Yew, University of Illinois
+
+

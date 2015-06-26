@@ -1,0 +1,411 @@
+<DOC>
+<DOCNO>f00748</DOCNO>
+<DOCHDR>http://www.bucknell.edu/UR/Giving_to_Bucknell/Contact_Information.html</DOCHDR>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html >
+<head >
+<SCRIPT LANGUAGE=JavaScript><!--
+
+var wpid = 123;
+var directory = ''
+
+var wpid = 123;
+
+var NS4 = (document.layers) ? 1 : 0;
+var IE4 = (document.all) ? 1 : 0;
+var ver4 = (NS4 || IE4);
+window.updatefield = 0;
+
+if(top.name.length == 0 || top.name == "MainFrame" || top.name.indexOf("eGmain") == 0) {
+	top.name = "eGmain" + wpid;
+}
+
+function ow(loc, name, width, height, replace, statusbar, scrollbars)
+{
+// this function opens a window
+	if(!width) width = 540;
+	if(!height) height = 560;
+	if(!name.length) name = "unknown";
+	if(!replace) name += uniqid();
+	if (name == "admin") {
+		hostname = window.location.hostname;
+		i = 0;
+		while (hostname.indexOf(".") > -1 && i < 3) {
+			hostname = hostname.replace(/\./, "_");
+			i++;
+		}
+		name = "eG_" + hostname + directory.replace(/\//g, "_") + "_" + name;
+		name = name.replace(/-/,"_");
+	} else {
+		name = "eG_" + window.name + "_" + name;
+	}
+	
+	xpos = (screen.width - width)/2;
+	ypos = (screen.height - height)/2;
+	
+	wi = window.open(loc, name, 'width=' + width + ',height=' + height + ',resizable=1,status=1,menubar=0,scrollbars=1,screenX='+xpos+',screenY='+ypos+",left="+xpos+",top="+ypos);
+	if(ver4) wi.focus();
+	return(wi);
+}
+
+function NewWizard(loc,width,height)
+{
+	xpos = (screen.width - width)/2;
+	ypos = (screen.height - height)/2;
+		
+	wi = window.open(loc, 'newwindow' + uniqid(), 'width=' + width + ',height=' + height + ',resizable=1,status=0,menubar=0,scrollbars=1,screenX='+xpos+',screenY='+ypos+",left="+xpos+",top="+ypos);
+	if(ver4) wi.focus();
+}
+
+function NewBrowseWindow(loc,width,height)
+{
+	xpos = (screen.width - width)/2;
+	ypos = (screen.height - height)/2;
+		
+	wi = window.open(loc, 'egBrowseWindow', 'width=' + width + ',height=' + height + ',resizable=1,status=0,menubar=0,scrollbars=1,screenX='+xpos+',screenY='+ypos+",left="+xpos+",top="+ypos);
+	if(ver4) wi.focus();
+}
+
+function uniqid()
+{
+        var t = new Date();
+	var m = t.getTime();
+	return(m % 90000);
+}
+
+function getRef(name)
+{	
+	name = "eG" + name + wpid;
+	return(window.open("",name));
+}
+
+function BamfTo(name, loc, focus)
+{
+	rf = getRef(name);
+	rf.location = loc;
+	if(focus && ver4) rf.focus();
+}
+
+function BamfSize(loc,x,y) { ow(loc,"bamfsize",x,y,0); }
+function AdminPanel(loc) { ow(loc,"admin",700,500,1); }
+function NewWindow(loc,w,h,close) { ow(loc,"newwindow",w, h,close); }
+function NewWindowName(loc,name,w,h,close) { ow(loc,name,w,h,close); }
+function bamf(loc) { ow(loc,"justbamf",400,100,0); }
+function BamfHelp(loc) { ow(loc,"bamfhelp",400,300,1); }
+function BamfLink(loc) { self.location = loc; }
+function BamfPanel(loc) { ow(loc,"bamfpanel",300,500,0); }
+function BamfNewPanel(loc) { BamfPanel(loc); }
+function BamfPicker(loc,w,h,field) {
+	if(!w) w = 350;
+	if(!h) h = 250;
+	window.updatefield = field;
+	wr = ow(loc,"picker",w,h,0);
+}
+function CloseBamf() { return true; } 
+function PullDownStart() { return true; }
+function MsMenuInit() { if(IE4) MsMenuInit2(); }
+function SetCookie(Name,Val) { document.cookie = Name + "=" + Val + ";expires=Wed, 23-Dec-2000 03:24:00 GMT;path=/;domain=.egrail.com;"; }
+function setcookie(Name,Val,MyDate) { document.cookie = Name + "=" + Val + ";expires=" + MyDate + ";path=/;domain=.egrail.com;"; }
+function setcookie2(Name,Val,MyDate,Domain) { document.cookie = Name + "=" + Val + ";expires=" + MyDate + ";path=/;domain=" + Domain + ";"; }
+function setcookie3(Name,Val,MyDate,Domain,Path) { document.cookie = Name + "=" + Val + ";expires=" + MyDate + ";path=" + Path + ";domain=" + Domain + ";"; }
+function setsessioncookie(Name,Val,Domain,Path) { document.cookie = Name + "=" + Val + ";path=" + Path + ";domain=" + Domain + ";"; }
+
+function OpenWindow(Loc) { 	
+	window.open(Loc); 
+}
+function ReplaceText(Pre, Post) {
+	if (!IE4) { alert("Sorry, the browser you are using does not support the functions needed\nto perform this action.  Currently they are only available in\nInternet Explorer 4 or later."); return; }	
+	var Selection;
+	var Current;
+	if (!document.selection) { alert("Please select an area of text, and try again."); return; }
+	Selection = document.selection.createRange();
+	Current = Selection.text;
+	if (Current == '') return;
+	Selection.text = Pre + Current + Post;
+	Selection.parentElement().focus();
+}
+function SpellCheck(Obj) {
+	var MyForm = document.forms[0];
+	var oval = MyForm.elements[Obj].value;
+	var ct = ow(directory + "/login.html?" + escape(Obj) + "=" + escape(oval) + "&FormSwitch=SpellCheck|" + escape(Obj),"spelling",400,400,1);
+	ct.focus();
+	return;
+}
+				
+function HiliteThis(Name, Image) { ChangeImage(Name, Image); return true; }
+function RestoreThis (Name, Image) { ChangeImage(Name, Image); return true; }
+function HiliteThread(Name, Image) { ChangeImage(Name, Image); }
+function RestoreThread(Name, Image) { ChangeImage(Name, Image); }
+						
+function ChangeImage(Name, Image) {
+	if (!document.images || Image == null) return false;
+	document.images[Name].src = Image;
+	return true;
+}
+
+
+function BamfMain(loc) {
+	self.location = loc;
+}
+
+
+function BamfMainPanel(loc) {
+        r = getRef("admin");
+        x = r.frames["egrail"]
+        if(x)
+                x.location = loc;
+        else
+                r.location = loc;
+}
+
+function GetFormVarsAsArgs(formname) {
+	if (!formname) formname = 0;
+	elements = document.forms[formname].elements;
+	args = '?';
+	for (i = 0; i < elements.length; i++) {
+		args += elements[i].name + '=' + escape(elements[i].value);
+		if (i+1 < elements.length) {
+                	args += '&';
+		}
+	}       
+	return(args);   
+}       
+
+
+// --></SCRIPT>
+<title>Contact Information -- Giving to Bucknell Staff</title>
+<style type="text/css" media="all">
+	@import "/img/assets/6995/global.css";
+	@import "/img/assets/6995/color.css";
+</style>
+<meta name="keywords" content=" ">
+<meta name="description" content="Contact Information -- Giving to Bucknell Staff">
+<link rel="stylesheet" type="text/css" media="print" href="/img/assets/6995/global-print.css">
+<link rel="alternate stylesheet" type="text/css" title="size1" href="/img/assets/6995/size1.css">
+<link rel="alternate stylesheet" type="text/css" title="size2" href="/img/assets/6995/size2.css">
+<link rel="alternate stylesheet" type="text/css" title="size3" href="/img/assets/6995/size3.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="/img/assets/6995/global-print.css">
+<script type="text/javascript" src="/img/assets/6958/global.js"></script>
+<script>
+if (document.cookie.indexOf('fontsize=')!=-1) {
+        css = getCookie('fontsize');
+        setActiveStyleSheet(css);
+}
+</script>
+
+</head>
+
+<body >
+<!--begin EG_SiteTools-->
+
+<!--end EG_SiteTools-->
+<!--
+------------------------------------------------------------------------------------------
+
+						header begins here
+------------------------------------------------------------------------------------------
+-->
+
+<table id="fullPage" align="center" border="0" cellspacing="1" cellpadding="0" bgcolor="#ffffff">
+	<tr id="headerAlumni">
+		<td id="logo"><a href="http://www.bucknell.edu/"><img src="/img/assets/6957/header_logo.gif" width="186" height="105" alt="Bucknell Unversity" /></a></td>
+		<td id="banner1"></td>
+		<td id="banner2">
+			<div><a href="http://mybucknell.bucknell.edu">myBucknell</a> | <a href="/UR/Giving_to_Bucknell/index.html">Giving To Bucknell</a> | <a href="http://www.bucknellbookstore.com/">Bookstore</a></div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" id="topNav">
+<!---->
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<a href="/About_Bucknell/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('About Bucknell','','/img/assets/6959/about_over.gif',1)"><img src="/img/assets/6959/about.gif" alt="About Bucknell" name="About Bucknell" width="108" height="25" border="0"></a>
+</td>
+<td>
+<a href="/Admissions_Aid/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Admissions & Aid','','/img/assets/6959/admissions_over.gif',1)"><img src="/img/assets/6959/admissions.gif" alt="Admissions & Aid" name="Admissions & Aid" width="123" height="25" border="0"></a>
+</td>
+<td>
+<a href="/Academics/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Academics & Research','','/img/assets/6959/academics_over.gif',1)"><img src="/img/assets/6959/academics.gif" alt="Academics & Research" name="Academics & Research" width="89" height="25" border="0"></a>
+</td>
+<td>
+<a href="/Campus_Life/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Campus Life','','/img/assets/6959/campus_over.gif',0)"><img src="/img/assets/6959/campus.gif" alt="Campus Life" name="Campus Life" width="98" height="25" border="0"></a>
+</td>
+<td>
+<a href="/Athletics/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Athletics','','/img/assets/6959/athletics_over.gif',0)"><img src="/img/assets/6959/athletics.gif" alt="Athletics" name="Athletics" width="78" height="25" border="0"></a>
+</td>
+<td>
+<a href="/UR/index.html"><img src="/img/assets/6959/alumni_active.gif" alt="Alumni, Friends & Family" name="Alumni, Friends & Family" width="167" height="25" border="0"></a>
+</td>
+<td>
+<a href="/News_Events/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('News & Events','','/img/assets/6959/news_over.gif',0)"><img src="/img/assets/6959/news.gif" alt="News & Events" name="News & Events" width="104" height="25" border="0"></a>
+</td>
+</tr>
+</table>
+
+		</td>
+	</tr>
+	<tr>
+
+<!--
+------------------------------------------------------------------------------------------
+						header end here
+
+------------------------------------------------------------------------------------------
+-->
+					<!--
+------------------------------------------------------------------------------------------
+
+						sideNav begins here
+------------------------------------------------------------------------------------------
+-->
+
+		<td id="sideMenu" valign="top">
+<form name="siteSearch" method="GET" action="http://www.search.bucknell.edu/query.html" style="margin: 0;">
+<input type=hidden name=qp value="">
+<input type=hidden name=desc value="Bucknell">
+<input type=hidden name=qs value="">
+<input type=hidden name=qc value="">
+<input type=hidden name=pw value="100%">
+<input type=hidden name=ws value="0">
+<input type=hidden name=la value="">
+<input type=hidden name=qm value="0">
+<input type=hidden name=st value="1">
+<input type=hidden name=nh value="25">
+<input type=hidden name=lk value="1">
+<input type=hidden name=rf value="0">
+<input type=hidden name=oq value="">
+<input type=hidden name=rq value="0">
+<table id="search">
+<tr>
+<td colspan="2"><img src="/img/assets/6957/site_search.gif" /></td>
+</tr>
+<tr>
+<td>
+<input type="text" name="qt" id="textBox"></td>
+<td align="left"><input type="image" id="goButton" src="/img/assets/6957/go_button.gif"></td>
+</tr>
+</table>
+</form>
+<ul><li><a href="/UR/Giving_to_Bucknell/index.html">
+Giving to Bucknell</a></li>
+<li><a href="/UR/Giving_to_Bucknell/Make_a_Gift_Online.html">Make a Gift Online</a></li> 
+<li> <a href="/UR/Giving_to_Bucknell/My_Annual_Gift.html">My Annual Gift</a></li> 
+<li> <a href="/UR/Giving_to_Bucknell/Bucknells_Needs.html">Bucknell’s Needs</a></li> 
+<li> <a href="/UR/Giving_to_Bucknell/Planned_Gifts.html">Planned Gifts</a></li> 
+<li> <a href="/UR/Giving_to_Bucknell/Corporations_and_Foundations.html">Corporations & Foundations</a></li> 
+<li> <a href="/UR/Giving_to_Bucknell/Donor_Recognition.html">Donor Recognition</a></li> 
+<li><div class="active"> <a href="/UR/Giving_to_Bucknell/Contact_Information.html">Contact Information</a></div></li> <ul><li><a href="/UR/Giving_to_Bucknell/Contact_Information/Development_Staff.html">Development Staff</a></li><li><a href="/UR/Giving_to_Bucknell/Contact_Information/Advancement_Staff.html">Advancement Staff</a></li><li><a href="/UR/Giving_to_Bucknell/Contact_Information/Special_Events_Staff.html">Special Events Staff</a></li></ul>
+<li> <a href="/UR/Giving_to_Bucknell/Class_Participation.html">Class Participation</a></li> 
+</ul>
+
+
+			<table id="infoBar">
+				<tr>
+<form>					<td>					Bucknell Information For:<br>			<select name="InformationFor" onChange="jumpMenu('parent',this,0)" id="jumpBox">
+<option value="#" selected>Select one</option>					<option value="/For_Visitors.html">Prospective Student</option>
+<option value="/For_Alumni.html">Alumni</option>
+<option value="/For_Parents.html">Parents & Friends</option>
+<option value="http://mybucknell.bucknell.edu">Current Students, Faculty & Staff</option>
+<option value="/For_Visitors.html">Visitors</option>	</select>
+</td>
+</form>
+				</tr>
+			</table>
+<table id="toolbar" cellpadding="0" cellspacing="4">
+				<tr><td colspan="3"><a href="/Directory/"><img src="/img/assets/6975/toolbar_people.gif" /></a></td></tr>
+				<tr><td colspan="3"><a href="#" onclick='sendToAFriend();' ><img src="/img/assets/6975/toolbar_friend.gif" /></a></td></tr>
+				<tr><td colspan="3"><a href="#" onclick="setPrintable('print');"><img src="/img/assets/6975/toolbar_print.gif" /></a></td></tr>
+<tr><td><a href="#" onclick="toggleFontSize();"><img src="/img/assets/6975/toolbar_font.gif" /></a></td>		<td><a href="#" onclick='fontBigger();' ><img src="/img/assets/6975/toolbar_fontplus.gif" /></a>
+</td>
+					<td><a href="#" onclick='fontSmaller();' ><img src="/img/assets/6975/toolbar_fontminus.gif" /></a>
+</td>
+</tr>
+</table>
+		</td>
+
+<!--
+------------------------------------------------------------------------------------------
+						sideNav end here
+
+------------------------------------------------------------------------------------------
+-->
+
+<!--
+------------------------------------------------------------------------------------------
+
+						academics content / right promos begin here
+------------------------------------------------------------------------------------------
+-->
+		<td valign="top" colspan="2" id="contentsBG">
+
+			<table id="bodyPage" cellspacing="0" cellpadding="0" border="0" width="100%">
+				<tr>
+					<td id="breadcrumbs" colspan="2">
+						<ul>						<li><a href="http://www.bucknell.edu/index.html">Home</a> &gt; <A HREF=/UR/index.html>Alumni, Parents and Friends</A> &gt; <A HREF=/UR/Giving_to_Bucknell/index.html>Giving to Bucknell</A> &gt; Contact Information</li>			</ul>
+					</td>
+				</tr>
+				<tr>
+					<td id="contents" valign="top">
+<h1>Contact Information</h1>
+<h2>Giving to Bucknell</h2>
+<p><p><b>Robert J. Kallin <br />
+</b>Vice President for Development and University Relations </p>
+<p><b><a href="/UR/Giving_to_Bucknell/Contact_Information/Development_Staff.html">Development Staff</a><br />
+<a href="/UR/Giving_to_Bucknell/Contact_Information/Advancement_Staff.html">Advancement &amp; Information Services Staff</a><br />
+<a href="/UR/Giving_to_Bucknell/Contact_Information/Special_Events_Staff.html">Special Events Staff</a></b></p>
+<p>&nbsp;</p>
+<p><GEO TYPE="US">Cooley Hall<br />
+  Bucknell University<br />
+  Lewisburg, PA 17837</GEO><br />
+  Phone (570) 577-3200<br />
+  Fax (570) 577-3610</p></p>
+</td>
+				</tr>
+			</table>
+
+		</td>
+
+<!--
+------------------------------------------------------------------------------------------
+						academics content / right promos  end here
+
+------------------------------------------------------------------------------------------
+-->
+
+<!--
+------------------------------------------------------------------------------------------
+
+						footer starts here
+------------------------------------------------------------------------------------------
+-->
+
+	</tr>
+	<tr>
+		<td colspan="3" id="bottomLinks"><a href="/Terms_of_Use.html">Terms of Use</a> &nbsp; <a href="/Privacy_Statement.html">Privacy Statement</a> &nbsp; <a href="/Site_Index.html">Site Index</a> &nbsp; <a href="/Bucknell_Contacts.html">Contact Bucknell</a></td>
+	</tr>
+</table>
+
+<div id="footerContact">
+	<p>MOORE AVENUE &#149; LEWISBURG &#149; PA 17837 &#149; (570) 577-2000<br />
+	&copy; Bucknell University All Rights Reserved</p>
+</div>
+
+<!--
+------------------------------------------------------------------------------------------
+						footer ends here
+
+------------------------------------------------------------------------------------------
+-->
+
+<center>
+<!--begin login-->
+
+<!--end login-->
+</center>
+</body>
+
+</html>

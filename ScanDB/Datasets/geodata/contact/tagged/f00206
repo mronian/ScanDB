@@ -1,0 +1,922 @@
+<DOC>
+<DOCNO>f00206</DOCNO>
+<DOCHDR>http://www.theaustralian.news.com.au/sectionindex2/0,5746,auscontacts^^TEXT,00.html</DOCHDR>
+<!-- Vignette StoryServer 4 Fri Mar 04 01:08:39 2005 -->
+
+	
+		
+			     <HTML>
+	<HEAD>
+	<TITLE>The Australian: CONTACTS</TITLE>
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META name="keywords" content="The Australian, Weekend Australian, newspaper, Australia, breaking news, latest news, Australian news, world news, headlines, articles, stories, features, opinion, commentary, editorial, hi-tech, high-tech, hitech, letter to editor, journalist, journalism, reporters, pictures, front page, media, local, national, international, daily, weekly, journal, columns, online, classifieds, classies, employment, jobs, cars, motoring, vehicles, advertise, advertize, advertising, advertisments, advertisements, advertizing,  advertizements, ads, adverts, property, real estate, personals, business, finance, investment, technology, I.T., entertainment, movies, films, books, authors, book club, arts, music,  community, history, information, politics, reviews">
+<META name="description" content="The Australian, Australia's national daily newspaper.">
+
+   <script language="Javascript">
+<!--
+//roll overs
+if (document.images) {
+  mouseOverImg = new Image();
+  mouseOverImg.src = "/images/lnav/mouse_over.gif";
+  normalImg = new Image();
+  normalImg.src = "/images/lnav/mouse_out.gif";
+}
+
+function mouseOver(m) {
+  menuItem = "menu" + m;
+  if (document.images) {
+    document[menuItem].src = mouseOverImg.src;
+  }
+}
+
+function mouseOut(m) {
+  menuItem = "menu" + m;
+  if (document.images) {
+    document[menuItem].src = normalImg.src;
+  }
+}
+
+// new rollovers
+function arrowOver(theId) {
+document.all[theId].style.visibility='visible';
+}
+
+function arrowOut(theId) {
+document.all[theId].style.visibility='hidden';
+}
+
+//end roll overs
+
+
+ 
+function goThere(menu) {
+   var url2go = menu.options[menu.selectedIndex].value;
+   if ( url2go == "http://www.news.com.au") {
+   location= "http://www.news.com.au";
+   } else if (url2go == "") {
+   ;
+   } else {
+   window.open(url2go,'url2go');
+   }   
+} 
+
+function fnGo() {   
+   document.frmFastSearch.action="http://www.careerone.com.au/CareerOne/CallSearch";   
+   document.frmFastSearch.method = "GET"   
+   document.frmFastSearch.target = "blank";
+   document.frmFastSearch.submit(); 
+}
+
+function windowOpener(theURL,winName,features) {
+  window.open(theURL,winName,features);
+}
+
+function openWin(theURL,features) {
+  window.open(theURL,features);
+}
+
+function validBrowser() {
+	brow_Ver = parseFloat(navigator.appVersion); 
+	if (navigator.appName == "Microsoft Internet Explorer" && 
+		navigator.userAgent.indexOf("IE 5") > -1 && 
+		navigator.platform.indexOf("Win16") == -1)
+	{
+		return 1;
+	}
+	return 0;
+}
+function setHomePage() { 
+	if (validBrowser()) {
+	 	homePage.setHomePage("http://theaustralian.com.au");
+		return false;	
+	}
+} 
+
+function selectSearchOn(form,radioIdx,startDay,startORend){
+	if (form.searchOn[radioIdx].checked == false) {
+		form.searchOn[radioIdx].checked = true;
+	}
+}
+
+
+	// start search form check 
+	var oneMinute = 60 * 1000
+	var oneHour = oneMinute * 60
+	var oneDay = oneHour * 24
+	var oneWeek = oneDay * 7
+	var oneMonth = oneDay * 30
+    var	today = new Date();
+	
+	function checkDate(theForm,startDay,startMonth,startYear,endDay,endMonth,endYear) {
+		if (theForm.searchTerm.value == "") {
+		alert("Please enter a keyword.");
+		theForm.searchTerm.focus();
+		theForm.searchTerm.select();
+		return false;
+		}
+		todaysDate = today.getTime();
+		// know the input start date
+		sDate = new Date(startYear,startMonth,startDay);
+		startDate = sDate.getTime();
+		// know the input end date
+		eDate = new Date(endYear,endMonth,endDay);
+		endDate = eDate.getTime();
+		// check start date is not more than 0 days future and 3 months past
+		if (startDate > todaysDate) {
+		alert("Start Date cannot be in the Future !");
+		return false;
+		}
+		if ((todaysDate-startDate) > (oneDay*92)) {
+		alert("Search is restricted to material published in the last 3 months only.");
+		return false;
+		}
+		if (startDate > endDate) { 
+		alert("The start date must be earlier than the end date.");
+		return false;
+		}
+	return true;		
+	}
+	
+	// end search form check 
+
+//-->
+</SCRIPT>
+
+<script language="Javascript">
+<!--
+// Cookie functions
+function getCookieVal(offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+
+function FixCookieDate(date) {
+var base = new Date(0);
+var skew = base.getTime();
+if (skew > 0) 
+	date.setTime (date.getTime() - skew);
+}
+
+function GetCookie(name) {
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i=0;
+while (i < clen) {	
+	var j = i + alen;
+	if (document.cookie.substring(i, j) == arg)
+	return getCookieVal (j);
+	i = document.cookie.indexOf(" ", i) + 1;
+	if (i == 0) break;
+	}
+return null;
+}
+
+function SetCookie(name,value,expires,path,domain,secure) {
+document.cookie = name + "=" + escape (value) +
+((expires) ? "; expires=" + expires.toGMTString() : "") +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+((secure) ? "; secure" : "");
+}
+// end cookies
+//-->
+</SCRIPT>
+
+<script language="Javascript">
+<!--
+// odds for Ninnbar flash
+var randomN=Math.floor(Math.random()*3); // 1 in 4 odds
+
+// Flash Detect IE4+ Win32 only
+
+var flashVersion = 0;
+function getFlashVersion() {
+var agent = navigator.userAgent.toLowerCase();
+if (agent.indexOf("msie") != -1 && agent.indexOf("opera")==-1 && parseInt(navigator.appVersion) >= 4 && agent.indexOf("win")!=-1 && agent.indexOf("16bit")==-1) {
+document.write('<scr' + 'ipt language="VBScript"> \n');
+document.write('on error resume next \n');
+document.write('dim obFlash \n');
+document.write('set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.7") \n');
+document.write('if IsObject(obFlash) then \n');
+document.write('flashVersion = 7 \n');
+document.write('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.6") end if \n');
+document.write('if flashVersion < 7 and IsObject(obFlash) then \n');
+document.write('flashVersion = 6 \n');
+document.write('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.5") end if \n');
+document.write('if flashVersion < 6 and IsObject(obFlash) then \n');
+document.write('flashVersion = 5 \n');
+document.write('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.4") end if \n');
+document.write('if flashVersion < 5 and IsObject(obFlash) then \n');
+document.write('flashVersion = 4 \n');
+document.write('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.3") end if \n');
+document.write('if flashVersion < 4 and IsObject(obFlash) then \n');
+document.write('flashVersion = 3 \n');
+document.write('end if');
+document.write('</scr' + 'ipt> \n');
+}
+else { flashVersion = 1; // all other cases left alone
+	}
+}	
+
+getFlashVersion();
+
+// end Flash detect
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// Flash object(s)
+// 1.
+var flashNinnbar1 = '<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">'
++ '<tr><td align="LEFT" bgcolor="#FFFFFF">'
++ '<table cellpadding="0" cellspacing="0" border="0" width="760" bgcolor="#ffffff">'
++ '<tr bgcolor="#FFFFFF">'
++ '<td width="760" bgcolor="#ffffff">'
++ '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"' 
++ 'width="760" height="27"'
++ 'codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,0,0" name=ninnbarf>'
++ '<param name="movie" value="http://www.news.com.au/common/ninnbar_carsguide.swf">'
++ '<param name="quality" value="high">'
++ '<PARAM NAME=menu VALUE=false>'
++ '<param name="bgcolor" value="#FFFFFF">'
++ '<embed src="http://www.news.com.au/common/ninnbar_carsguide.swf"'
++ 'width="760" height="27" autostart="false" quality="high" menu=false bgcolor="#FFFFFF"'
++ 'TYPE="application/x-shockwave-flash"'
++ 'PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"'
++ 'name=ninnbarf></EMBED></object>'
++ '</td></tr></table></td></tr></table>';
+
+// etrade stock price form code
+	function displayProductSearch() {
+	newwindow = window.open('https://www.etradeaustralia.com.au/Application/ProductSearch/ProductSearch.asp','ProductSearch','dependent=no,height=350px,width=320px,scrollbars,resizable=yes,alwaysRaised=yes')
+	}
+	
+	function doQuote() {
+	var strURL
+	var strSymbol = escape(window.document.frmStockQuote.Code.value )
+	var strExchange = window.document.frmStockQuote.Exchange[document.frmStockQuote.Exchange.selectedIndex].value
+	var strType = window.document.frmStockQuote.Type[document.frmStockQuote.Type.selectedIndex].value
+	
+	strURL = "https://www.etradeaustralia.com.au/Products/StockCentre/StockCentre.asp?DisplayAs=Quotes&Code=" + strSymbol + "&Exchange=" + strExchange + "&Type=" + strType ;
+	document.frmStockQuote.URL.value = strURL
+	return true;
+
+
+	}
+
+//-->
+</SCRIPT> <LINK rel="stylesheet" type="text/css" href="/stylesheet/paperstyle.css" title="stylesheet">
+<style>
+ td.highlightbox {
+    background-color : whitesmoke;
+    border : solid .05em black;
+	}
+
+.pagehead {
+   color : #777777 ;
+   font-family : arial, helvetica, verdana, sans-serif;
+   font-weight : normal;
+   font-size : 14pt;
+   text-transform : uppercase;
+ letter-spacing: +1px
+}
+td.pageheadingbox {
+   background-color : #ebebeb;
+}
+</style>
+  	</HEAD>
+	<BODY MARGINWIDTH="0" TOPMARGIN=0 MARGINHEIGHT=0 leftmargin="0" bgcolor="#ffffff">
+	
+	<script language="javascript" src="http://central.news.com.au/ninnbar/ninnbarau.js"></script>
+
+
+	<table cellpadding=0 cellspacing=0 border=0 width="760" style="padding:4px 0px 0px 00px;"><tr>
+	<td style="padding:4px 4px 0px 0px;" valign="top" align="right">
+	<!-- AdSpace site=theaustralian&section=contactus&adsize=728x90&pagepos=1--><SCRIPT LANGUAGE="JavaScript1.1" SRC="http://adserver.news.com.au/js.ng/site=theaustralian&section=contactus&adsize=728x90&pagepos=1"></SCRIPT><NOSCRIPT><A HREF="http://adserver.news.com.au/click.ng/Params.richmedia=yes&site=theaustralian&section=contactus&adsize=728x90&pagepos=1"><IMG SRC="http://adserver.news.com.au/image.ng/Params.richmedia=yes&site=theaustralian&section=contactus&adsize=728x90&pagepos=1"></A></NOSCRIPT><!-- /AdSpace --> </td></tr></table>
+ <TABLE border="0" CELLSPACING="3" CELLPADDING="0" width=760>
+	<tr>
+<td rowspan=3 width=20 background="/images/side.gif">
+	<spacer type="block" width="20" height="1">
+	</td>
+	<td class="mainnav" rowspan="3" valign="top" width="123" align=center>
+	<span class="current-date">04 March 2005</span>
+	<br>
+	  <!-- start leftnav -->
+	
+		
+    
+	 
+			
+	
+	
+
+ 
+		   
+		  
+
+   
+	
+			<span class=2><!--<LINK rel="stylesheet" typse="terext/css" href="http://www.theaustralian.com.au/stylesheet/paperstyle.css" title="stylesheet">
+-->
+<table cellpadding=0 cellspacing=0 border=0 width=123 bgcolor=#c1c1c1>
+<tr>
+        <td bgcolor="#ffffff" background="">
+            <table cellpadding="1" cellspacing="2" border="0" width="123">
+
+<tr><td class="mainnav" align="right"><a href="/" class=mainnav><span class="white12">Home</a>  &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/homedelivery/" class="mainnav" target="_blank">Home delivery</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/archives/" class="mainnav">Online Archive</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav-heading" align="right"><span class="mainnav-heading">NEWS</span>  &nbsp;  </td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/breakingnews" class="mainnav">Breaking News</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,National%255E%255ETEXT,00.html" class=mainnav>The Nation</a> &nbsp;</td></tr>
+
+                <tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,World%255E%255ETEXT,00.html" class=mainnav>The World</a> &nbsp;</td></tr>
+
+                <tr><td class="mainnav" align="right"><a href="/opindex/0,9320,sport%255E%255ETEXT,00.html" class=mainnav>Sport</a> &nbsp;</td></tr>
+
+                <tr><td class="mainnav" align="right"><a href="/opindex/0,9320,au-afl%255E%255ETEXT,00.html" class=mainnav>AFL</a> &nbsp;</td></tr>
+
+                <tr><td class="mainnav" align="right"><a href="/opindex/0,9320,financial%20news%255E%255ETEXT,00.html" class=mainnav>Business</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,au_weird%255E%255ETEXT,00.html" class=mainnav>World Wide Weird</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav-heading" align="right"><span class="mainnav-heading">COMMENT</span> &nbsp;  </td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/opindex/0,9320,opinion%255E%255ETEXT,00.html" class=mainnav>Opinion</a> &nbsp;</td></tr>
+
+
+<tr><td class="mainnav" align="right">
+<a href="javascript:void(0)"onClick="window.open('http://theaustralian.com.au/storypane/0,9421,1^16^21682,00.html','','toolbar=no,scrolling=yes,status=no,menubar=no,scrollbars=yes,resizable=yes,width=510,height=600,left=100,top=100')"  class=mainnav>Letters &nbsp;</a>
+</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/cartoon" class=mainnav>Cartoons</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav-heading" align="right"><span class="mainnav-heading">SECTIONS</span> &nbsp; </td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/opindex/0,9320,ausarts%5E%5ETEXT,00.html" class=mainnav>The Arts</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,aviation%255E%255ETEXT,00.html" class=mainnav>Aviation</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,au_defence%255E%255ETEXT,00.html" class=mainnav>Defence</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/opindex/0,9320,au_features%255E%255ETEXT,00.html" class=mainnav>Features</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,aushealth%255E%255ETEXT,00.html" class=mainnav>Health</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,aushighered%255E%255ETEXT,00.html" class=mainnav>Higher Ed</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/opindex/0,9320,media%255E%255ETEXT,00.html" class=mainnav>Media</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/motoring" class=mainnav>Motoring</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,primespace%255E%255ETEXT,00.html" class=mainnav>Property</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,au_environment%255E%255ETEXT,00.html" class=mainnav>Science & nature</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,au_science%255E%255ETEXT,00.html" class=mainnav>Space</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/opindex/0,9320,traveller%255E%255ETEXT,00.html" class=mainnav>Travel</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav-heading" align="right"><span class="mainnav-heading">RESOURCES</span> &nbsp; </td></tr>
+
+
+<tr><td class="mainnav" align="right"><a href="http://newsmedianet.com.au/home/titles/title/index.jsp?titleid=5" target="_blank" class=mainnav>About us</a> &nbsp;</td></tr>
+
+                <tr><td class="mainnav" align="right"><a href="http://newsmedianet.com.au/home/titles/title/index.jsp?titleid=5" target="_blank" class=mainnav>Advertise</a> &nbsp;</td></tr>
+
+                <tr><td class="mainnav" align="right"><a href="http://careerone.com.au/theaustralian/" target="_blank" class=mainnav>CareerOne</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="javascript:void(0)"onClick="window.open('http://search.classifieds.news.com.au/servlet/Controller?controlleraction=searchpopup&publicationid=1aus&sectionid=1','','scrollbars=no,width=380,height=570,top=30,left=160')" class="mainnav">Classifieds</a> &nbsp;</a></td></tr>
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex2/0,5746,auscontacts%255E%255ETEXT,00.html" class=mainnav>Contact us</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="http://theaustralian.newsstand.com/?x=89&y=24" target="_blank" class="mainnav">Digital edition</a> &nbsp;</td></tr> 
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,au-foi%255E%255ETEXT,00.html" class=mainnav>FOI</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="javascript:void(0)"onClick="window.open('/wireless/','','toolbar=no,scrolling=yes,status=no,menubar=no,scrollbars=yes,resizable=yes,width=250,height=320,left=100,top=100')" class=mainnav>PDA edition &nbsp;</a></td></tr> 
+
+<tr><td class="mainnav" align="right"><a href="/sectionindex1/0,5745,schools%255E%255ETEXT,00.html" class=mainnav>Schools</a> &nbsp;</td></tr>
+
+                <tr><td class="mainnav" align="right"><a href="/sectionindex2/0,5746,auspecials%255E%255ETEXT,00.html" class=mainnav>Special Reports</a> &nbsp;</td></tr>
+
+                <tr><td class="mainnav" align="right"><a href="/sectionindex2/0,5746,specialadreports%255E%255ETEXT,00.html" class=mainnav>Sponsorship</a> &nbsp;</td></tr>
+
+<tr><td class="mainnav" align="right"><a href="http://australianit.news.com.au/" target="_blank" class=mainnav>Technology</a> &nbsp;</td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+
+<A href=http://newsmedianet.com.au target="_blank"><IMG SRC="/services/newsmedianet120x60.gif"  width=120 height=60 ALT="Newsmedianet" border=0></a>
+<br>
+<OBJECT width="120"  height="260" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" name="digitalaus-04b.swf" id="digitalaus-04b.swf" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0">
+  <PARAM name="movie" value="http://www.theaustralian.news.com.au/subscribe/digitalaus-04.swf">
+  <PARAM name="loop" value="false">
+  <PARAM name="quality" value="high">
+  <PARAM name="play" value="TRUE">
+ <PARAM name="menu" value="false">
+  <EMBED width="120"  height="260" src="http://www.theaustralian.news.com.au/subscribe/digitalaus-04.swf" name="digitalaus-04b.swf" loop="false"  type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+</EMBED>
+</OBJECT></span><br>
+    <!-- end leftnav -->
+	
+	  <p>
+		
+	 
+	
+	
+	 
+		 
+	
+		 <!--end lnav table -->
+	</td>	
+	<td valign="top" align="center">
+	
+	<table cellpadding=0 cellspacing=0 border=0><tr><td align=left style="padding-left:10px;">
+	
+	<img src="/images/masthead.gif" border=0 width=468 height=63>
+	 </td><td align=right width=140>
+<!-- AdSpace -->
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://adserver.news.com.au/js.ng/site=theaustralian&section=story&adsize=108x54&pagepos=1"></SCRIPT><NOSCRIPT>
+<A HREF="http://adserver.news.com.au/click.ng/Params.richmedia=yes&site=theaustralian&section=story&adsize=108x54&pagepos=1">
+<IMG SRC="http://adserver.news.com.au/image.ng/Params.richmedia=yes&site=theaustralian&section=story&adsize=108x54&pagepos=1">
+</A>
+</NOSCRIPT>
+<!-- /AdSpace -->
+	</td></tr></table>
+
+
+
+	
+<table width=100% cellpadding=3 border="0" align="center" cellspacing="0">
+  <tr>
+  <td class=pageheadingbox><span class="pagehead">CONTACTS</span>
+ 
+</td></tr>
+ 
+ 
+ <!-- letters variation -->
+
+	<!-- /letters variation -->
+ 
+ 
+ 
+ 
+ </table>					
+
+
+	 </td>
+	
+
+	</tr>
+	<tr>
+	<td valign="top">
+<table cellpadding=0 cellspacing=0 border=0><tr><td style="padding:0px 6px 0px 3px;">	
+	<!-- start single column content -->
+		<table align=right cellspacing=3 cellpadding=5 width=10 border="0">
+		<tr>
+		<td width=10>
+		 
+	
+
+	  
+		   
+		 
+			      
+	
+		  
+			   <!-- letters variation -->
+
+	<!-- /letters variation -->
+
+	  </td></tr>
+		</table>
+	
+	
+	
+	
+		 
+			
+	
+	
+
+ 
+		   
+		  
+
+   
+	
+			<span class=largeheadline>General address:</span><br>
+<span class=intro>2 Holt Street, Surry Hills, NSW 2010<br>
+Post: GPO Box 4245 Sydney NSW 2001<br>
+Tel: (02) 9288 3000<br>
+Fax: (02) 9288 2250</span><p>    
+			
+	
+	
+
+ 
+		   
+		  
+
+   
+	
+			<span class=body><b>Editor in Chief:</b> Chris Mitchell<br>
+<B>Editor:</b> Michael Stutchbury<br>
+<B>Deputy Editor:</b> Petra Rees<br>
+<B>Managing Editor:</b> Martin Beesley<br>
+<B>Executive Editor:</b> Deborah Jones<br>
+<p>
+
+<center>
+<table width=400>
+<tr>
+<td>
+<font face=arial,helvetica size=2>
+<a href="#editorial">Editorial</a> | <a href="#circulation">Circulation</a> | <a href="#photos">Photo Sales</a> | <a href="#archives">Archives</a>
+<P>
+<table width=98% cellpadding=2>
+<tr>
+<td class="rightpanel-heading">
+<b><a name="editorial"></a><font size="2" face="Arial, Helvetica, sans-serif">EDITORIAL CONTACTS</font></b></font>
+</td>
+</tr>
+</table>
+ 
+<p><font face="Arial, Helvetica" size="2">
+
+<b>News tips and general feedback:</b> <a href=mailto:feedback@theaustralian.com.au>Feedback</a><br>
+
+<!--<a href="#" onClick="javascript:windowOpener('/files/aus_feedback.html','terms','toolbar=no,location=no,scrolling=auto,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=450,height=550')">Feedback</a><br>-->
+
+<b>Letters to the editor:</b> <a href="#" onClick="javascript:windowOpener('/files/aus_letters.htm','terms','toolbar=no,location=no,scrolling=auto,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=450,height=550')">Letters</a><P>
+
+<b>Sections</b><br>
+<b>Arts: </b><a href="mailto: Arts@theaustralian.com.au">arts@theaustralian.com.au</a><br>
+<b>Books: </b><a href="mailto: review@theaustralian.com.au">books@theaustralian.com.au</a><br>
+<b>Business: </b><a href="mailto: Business@theaustralian.com.au">business@theaustralian.com.au</a><br>
+<b>Editor: </b><a href="mailto: editor@theaustralian.com.au">editor@theaustralian.com.au</a><br>
+
+<b>Fashion: </b><a href="mailto: Fashion@theaustralian.com.au">fashion@theaustralian.com.au</a><br>
+<b>Higher Education: </b><a href="mailto: HigherEd@theaustralian.com.au">highered@theaustralian.com.au</a><br>
+<b>IT: </b><a href="mailto: IT@theaustralian.com.au">it@theaustralian.com.au</a><br>
+<b>Media: </b><a href="mailto: Media@theaustralian.com.au">media@theaustralian.com.au</a><br>
+<b>Motoring: </b><a href="mailto: Motoring@theaustralian.com.au">motoring@theaustralian.com.au</a><br>
+<b>Primespace: </b><a href="mailto: primespace@theaustralian.com.au">primespace@theaustralian.com.au</a><br>
+
+<b>Review: </b><a href="mailto: Review@theaustralian.com.au">review@theaustralian.com.au</a><br>
+<b>Schools: </b><a href="mailto: schools@theaustralian.com.au">schools@theaustralian.com.au</a><br>
+
+<b>Sport: </b><a href="mailto: Sport@theaustralian.com.au">sport@theaustralian.com.au</a><br>
+<b>Travel: </b><a href="mailto: travel@theaustralian.com.au">travel@theaustralian.com.au</a><br>
+
+<b>World: </b><a href="mailto: world@theaustralian.com.au">world@theaustralian.com.au</a>
+
+<P>
+
+<b>ADELAIDE</b><br>
+11 Waymouth St, Adelaide, SA 5000<br>
+Post: Box 339 GPO Adelaide, SA 5001<br>
+Tel : (08) 8206 2686<br>
+Fax. : (08) 8206 3688<br>
+e-mail:  <a href="mailto:SA@theaustralian.com.au">SA@theaustralian.com.au</a><P>
+
+<b>BRISBANE</b><br>
+28 Mayne Rd Bowen Hills, Qld 4006<br>
+Post: GPO Box 2145 Brisbane Qld 4001<br>
+Tel: (07) 3666 7465<br>
+Fax: (07) 3666 7499<br>
+e-mail: <a href="mailto:Queensland@theaustralian.com.au">Queensland@theaustralian.com.au</a><P>
+
+<b>CAIRNS</b><br>
+22-24 Abbott Street, Cairns, QLD, 4006
+<br>
+Post: PO Box 126, Cairns, QLD 4006<br>
+Tel: (07) 4053 3589
+<br>
+Fax: (07) 4053 3813<br>
+e-mail: <a href="mailto:hodgea@theaustralian.com.au">hodgea@theaustralian.com.au</a><P>
+
+<b>CANBERRA</b><br>
+Suite 117 Press Gallery, Parliament House Canberra, ACT 2600<br>
+Tel: (02) 6270 7000<br>
+Fax: (02) 6270 7071<br>
+e-mail: <a href="mailto:ACT@theaustralian.com.au">ACT@theaustralian.com.au</a><P>
+
+<b>DARWIN</b><br>
+<!--Printer's Place, Darwin NT 0801<br>-->
+Post: PO Box 3580, Darwin NT 0801<br>
+<!--Tel: (08) 8944 9776, 0401 704 317<br>
+Fax: (08) 8941 2647<br>-->
+<!--e-mail: <a href="mailto:RothwellN@ntn.newsltd.com.au">tooheyp@theaustralian.com.au</a>--> <P>
+
+<b>HOBART</b><br>
+49 Salamanca Place, Hobart, Tas 7000<br>
+Tel: 03 6224 2196<br>
+Fax: 03 6224 2164<br>
+e-mail: <a href="mailto: carol.altmann@bigpond.com.au">carol.altmann@bigpond.com.au</a><P>
+
+<b>MELBOURNE</b><br>
+Level 2 West, IBM Centre, 60 City Road, Southbank, Vic 3006<br>
+Post: PO Box 14740, Melbourne City MC, Vic 8001<br>
+Tel: (03) 9292 2888<br>
+Fax: (03) 9292 2803<br>
+e-mail: <a href="mailto: Victoria@theaustralian.com.au">Victoria@theaustralian.com.au</a><P>
+
+<b>PERTH</b><br>
+34 Stirling Street, Perth, WA 6000<br>
+Tel: (08) 9326 8412<br>
+Fax: (08) 9325 9217<br>
+e-mail: <a href="mailto: WA@theaustralian.com.au">WA@theaustralian.com.au</a><P>
+
+<b>SYDNEY</b><br>
+2 Holt Street, Surry Hills, NSW 2010<br>
+Post: GPO Box 4245 Sydney NSW 2001<br>
+Tel: (02) 9288 2317<br>
+Fax: (02) 9288 2250<br>
+e-mail: <a href="mailto: NSW@theaustralian.com.au">NSW@theaustralian.com.au</a><P>
+
+<p>
+</font>
+
+<table width=98% cellpadding=2>
+<tr>
+<td class="rightpanel-heading">
+<b><font size="2" face="Arial, Helvetica, sans-serif">FOREIGN BUREAUS</font></b></font>
+</td>
+</tr>
+</table>
+ 
+<p><font face="
+Arial, Helvetica" size="2"> 
+<b>FOREIGN DESK</b><br>
+e-mail: <a href=mailto:world@theaustralian.com.au>world@theaustralian.com.au</a><p>
+
+<b>BANGKOK</b><br>
+Kimina Lyall<BR>
+7th Floor, Maneeya Centre,<br>
+518/5 Ploenchit Road,<br>
+Pathumwan, Bangkok, 10330<br>
+Tel: 662 652 0820<br>
+Fax: 662 652 0818<P>
+
+<b>BEIJING</b><br>
+Catherine Armitage<BR>
+e-mail: 
+<a href="mailto: armitage@newscorp.com.cn">armitage@newscorp.com.cn</a><P>
+
+<b>JAKARTA</B><br>
+Sian Powell<BR>
+Deutsche Bank Building, 16th Floor,<br>
+Jalan Imam Bonjal 80,<br>
+Jakarta 10310,<br>
+Indonesia<br>
+Tel: 62 21 316 2044<br>
+Fax: 62 21 314 9967<br><P>
+
+<b>LONDON</b><br>
+Peter Wilson<BR>
+News Limited of Australia Bureau,<br>
+PO Box 481, 1 Virginia St,<br>
+London,<br>
+E1 9BD, UK<br>
+Tel:  44 20 7702 1355<br>
+Fax:  44 20 7702 1384<br>
+e-mail: <a href="mailto: pj.wilson"at"newsint.co.uk">pj.wilson@newsint.co.uk</a><P>
+
+<b>LOS ANGELES</b><br>
+Robert Lusetich<BR>
+The Australian<br>
+News Ltd of Australia<br>
+<GEO TYPE="US">1801 Avenue of the Stars<br>
+Suite 1105<br>
+Century City, CA 90067</GEO><BR>
+Tel: 1 818 704 7500<br>
+Fax: 1 818 704 7516<br> 
+e-mail: <a href="mailto: lusetich@msn.com">lusetich@msn.com</a><P>
+
+<b>NEW YORK</b><br>
+Rodney Dalton<BR>
+<i>The Australian</i><br>
+News Ltd of Australia<br>
+<GEO TYPE="US">1211 Avenue of the Americas<br>
+9th Floor<br>
+New York, NY, 10036</GEO><br>
+Tel: 1 212 852 7644<br>
+Fax: 1 212 852 7671<br>
+<!--e-mail: <a href="mailto: daltonrv@aol.com">daltonrv@aol.com</a>--><p>
+
+
+<!--<b>SOUTH PACIFIC</b><br>
+Mary Louise O'Callaghan<BR>
+e-mail: <a href="mailto: ocallaghanm@ozemail.com.au">ocallaghanm@ozemail.com.au</a><P>-->
+
+<B>TOKYO</B><BR>
+Peter Alford<BR>
+8th floor, Yomiuri Shimbun<BR>
+1-7-1 Otemachi<BR>
+Chiyoda-Ku, Tokyo 100-8055<BR>
+Tel: 81 3 3279 2987<BR>
+Fax: 81 3 3279 4987<p>
+
+<b>WASHINGTON</b><BR>
+Roy Eccleston<BR>
+<GEO TYPE="US">Suite 446, 529 14th St NW,<br>
+Washington DC 20045</GEO><br>
+Tel: 1 202 628 6269<br>
+Fax: 1 202 393 3892<br>
+e-mail: <a href="mailto: royeccleston@aol.com">royeccleston@aol.com</a><P>
+
+<b>WELLINGTON</b><br>
+Claire Harvey<BR>
+The Australian<br>
+Press Gallery<br>
+Parliament Building<br>
+Wellington<br>
+New Zealand<BR>
+Tel: 64 4471 9551<br>
+Fax: 64 4472 6750<br> 
+<!--e-mail: <a href="mailto: claireharvey@xtra.co.nz">claireharvey@xtra.co.nz</a>--><P>
+
+<table width=98% cellpadding=2>
+<tr>
+<td class="rightpanel-heading">
+<b><a name="circulation"></a><font size="2" face="Arial, Helvetica, sans-serif">CIRCULATION</font></b></font>
+</td>
+</tr>
+</table>
+
+<p><font face="Arial, Helvetica" size="2"> 
+Tel: 1800 022 552<br>
+e-mail: <a href="mailto:customerservice@matp.newsltd.com.au">customerservice@matp.newsltd.com.au</a>
+<P>
+
+<table width=98% cellpadding=2>
+<tr>
+<td class="rightpanel-heading">
+<b><a name="photos"></a><font size="2" face="Arial, Helvetica, sans-serif">PHOTO SALES</font></b></font>
+</td>
+</tr>
+</table>
+
+
+
+<p><font face="Arial, Helvetica" size="2"> <b>Newsphotos:</b><br>
+for sales to the general public<br>
+Website: <a href=http://www.newsphotos.com.au Target=_blank>www.newsphotos.com.au</a><br>
+Tel: 1300 301 705 (Toll Free)<br>
+Email: <a href="mailto: newsphotos@newsltd.com.au">newsphotos@newsltd.com.au</a><P>
+
+
+<b>Newspix:</b><br>
+for professional groups and media organisations<br>
+Website: <a href=http://www.newspix.com.au Target=_blank>www.newspix.com.au</a><br>
+Tel: (02) 9288 2829<br>
+Email: <a href="mailto: newspix@newsltd.com.au">newspix@newsltd.com.au</a><P>
+
+
+
+<table width=98% cellpadding=2>
+<tr>
+<td class="rightpanel-heading">
+<b><a name="archives"></a><font size="2" face="Arial, Helvetica, sans-serif">ARCHIVES</font></b></font>
+</td>
+</tr>
+</table>
+ 
+<p><font face="Arial, Helvetica" size="2">
+<b>Newstext:</b> is an electronic archive of News Limited's newspapers from around the country. Website: <a href=http://www.newstext.com.au Target=_blank>www.newstext.com.au</a><p>
+
+Tel from within Australia:</strong> 02 9288 3000<br>
+Fax:</strong> (02) 9288 3205<P></P> 
+
+Tel from overseas:</strong> 612 9288 3000<br>
+Fax: 612 9288 3205<br>
+
+Email: <a href=mailto:newstext@newsltd.com.au>newstext@newsltd.com.au</a>
+
+</td></tr></table>
+
+</center></span><br>
+   <br>
+	
+			 
+			
+	
+	
+
+ 
+		   
+		  
+
+ 
+		       <table width=100% cellpadding="0" cellspacing="0" border="0">
+<tr><td class="mainnav" height="5"><spacer type="block" width="1" height="5"></td></tr>
+<tr>
+<td bgcolor="#ffffff" align=center height="10" valign="bottom"><spacer type="block" width="1" height="10"><span class="rightpanel-text">
+
+<a href="javascript:void(0)"onClick="window.open('/privacy/','','toolbar=no,location=no,scrolling=auto,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=no,width=468,height=400')">privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<a href="javascript:void(0)"onClick="window.open('/terms/','','toolbar=no,location=no,scrolling=auto,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=no,width=468,height=400')">terms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&copy; The Australian</span></td>   
+</tr>
+</table></td><td width=130 class="rightpanel-background" valign=top>
+	<!-- right panel start -->
+		 
+	 
+		 
+ 
+			        <!-- right panel finish -->
+	</td></tr></table>
+
+	
+	</td></tr>
+	<!-- end single column content -->
+	
+	<tr><td align=center>
+		 </td></tr>
+</table>
+
+<!-- Vignette StoryServer 4 Fri Mar 04 01:08:39 2005 -->
+<style type="text/css">
+#sidebar {
+position: absolute;
+top: 120px;
+left: 764px;
+width: 130px;
+text-align: center;
+background-color: white;
+display: block;
+z-index: 1;
+}
+</style>
+
+<script language="javascript" type="text/javascript">
+<!--
+window.onresize= checkRightPanel;
+
+function checkRightPanel() {
+userWidth = document.body.clientWidth;
+	if (userWidth >= 894) {
+		document.getElementById('sidebar').style.zIndex = '1';
+		document.getElementById('sidebar').style.display = 'block';
+	} else {
+		document.getElementById('sidebar').style.zIndex = '0';
+		document.getElementById('sidebar').style.display = 'none';
+	}
+}
+//-->
+</script>
+
+<div id="sidebar">
+</div>
+
+<script>checkRightPanel()</script>
+<!-- START RedMeasure V4 - Java v1.1  Revision: 1.8 -->
+<!-- COPYRIGHT 2000 Red Sheriff Limited -->
+<script language="JavaScript"><!--
+var pCid="au_newscorp_0";
+var w0=1;
+var refR=escape(document.referrer);
+if (refR.length>=252) refR=refR.substring(0,252)+"...";
+//--></script>
+<script language="JavaScript1.1"><!--
+var w0=0;
+//--></script>
+<script language="JavaScript1.1" src="http://server-au.imrworldwide.com/a1.js">
+</script>
+<script language="JavaScript"><!--
+if(w0){
+var imgN='<img src="http://server-au.imrworldwide.com/cgi-bin/count?ref='+
+	refR+'&cid='+pCid+'" width=1 height=1>';
+if(navigator.userAgent.indexOf('Mac')!=-1){document.write(imgN);
+}else{
+	document.write('<applet code="Measure.class" '+
+	'codebase="http://server-au.imrworldwide.com/"'+'width=1 height=2>'+
+	'<param name="ref" value="'+refR+'">'+'<param name="cid" value="'+pCid+
+	'"><textflow>'+imgN+'</textflow></applet>');
+	}
+}
+document.write("<COMMENT>");
+//-->
+</script>
+<noscript>
+<img src="http://server-au.imrworldwide.com/cgi-bin/count?cid=au_newscorp_0" width=1 height=1>
+</noscript>
+</COMMENT>
+<!-- END RedMeasure V4 --> 
+</BODY>
+</HTML>

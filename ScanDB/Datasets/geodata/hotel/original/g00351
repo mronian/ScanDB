@@ -1,0 +1,495 @@
+<DOC>
+<DOCNO>g00351</DOCNO>
+<DOCHDR>http://reservations.lodging.com/servlet/reservations.PropertyInformationXML/LDC_251356</DOCHDR>
+<html xmlns:mapurl="http://www.oracle.com/XSL/Transform/java/lodging.MapQUtils"><head><META http-equiv="Content-Type" content="text/html"><title>Adante Hotel&nbsp;San Francisco hotel reservations offered by Lodging.com
+       </title><meta name="keywords" content="Adante Hotel San Francisco, CA hotel reservations discount lodging hotels motels resorts travel hotels discount Adante Hotel in San Francisco, CA Reservations hotels motels discounts rooms accommodations bed breakfast bandb"><meta name="description" content="San Francisco hotel reservations for the Adante Hotel in San Francisco, CA. Click here to view property details, features, amenities and to book a hotel room online."><link rel="stylesheet" href="/css/2004_calendar.css" type="text/css"><link href="/css/LDC-propavail.css" type="text/css" rel="stylesheet"><script type="text/javascript" src="/java/datebox.js"></script><script type="text/javascript" src="/java/calendar.js"></script><script type="text/javascript" src="/java/pop_up.js"></script><script type="text/javascript" src="/java/date_selector.js"></script><script language="JavaScript" type="text/JavaScript"><!--
+function openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+        function showInfoSection(n) {
+
+              var numGroups = 5;
+
+      	document.getElementById("info-group" + n).className = "isShown";
+		document.getElementById("info-tab" + n).className = "current";
+		for (i=1; i <= numGroups; i++) {
+		  if(n != i) {
+		      hideInfoSection(i);
+		  }
+		}
+      }
+
+      function hideInfoSection(i) {
+	      var groupName = 'info-group' + i;
+	      var tabName = "info-tab" + i;
+    		document.getElementById(groupName).className = "isHidden";
+    		document.getElementById(tabName).className = "notCurrent";
+      }
+
+      function displayLess(n) {
+        document.getElementById("short" + n).className = "isShown";
+        document.getElementById("long" + n).className = "isHidden";
+      }
+      function displayMore(n) {
+        document.getElementById("short" + n).className = "isHidden";
+        document.getElementById("long" + n).className = "isShown";
+      }
+
+      function showAllRooms(n) {
+        for(i=6; i <= n; i++) {
+          document.getElementById("rate" + i).className = 'isShown';
+
+        }
+          document.getElementById("allrates").className = 'isHidden';
+          document.getElementById("fewerrates").className = 'isShown';
+      }
+
+      function showFewerRooms(n) {
+        for (i=6; i<=n; i++) {
+          document.getElementById("rate" + i).className = 'isHidden';
+
+        }
+          document.getElementById("allrates").className = 'isShown';
+          document.getElementById("fewerrates").className = 'isHidden';
+      }
+
+      function resizeImage(photo) {
+       var curImg      = document.getElementById(photo);
+       var imgWidth  = curImg.width;
+       var imgHeight = curImg.height;
+
+       if(imgWidth > 668) {
+         var imgWidthDiff = 668/imgWidth;
+         imgWidth = 668;
+         imgHeight = Math.round(imgHeight*imgWidthDiff);
+
+         curImg.width = imgWidth;
+         curImg.height = imgHeight;
+       }
+     }
+
+
+  
+//--></script><style type="text/css">
+          #amenities ul {
+          	list-style-type: disc;
+          	margin-left: 2px;
+          	}
+          #amenities li {
+          	list-style-type: disc;
+           	}
+      .isHidden {display : none;}
+      .isShown {display : inline;}
+
+
+
+#slidingDoorsTabs {
+	height:47px; /* Must declare height or line across tab bottoms vanishes in NN6.2 + NN7 */
+	width:777px;
+  	background:url(/images/propavail/bg.gif) repeat-x bottom;
+  	font-size:14px;
+  	line-height:normal;
+  	}
+#slidingDoorsTabs ul {
+	margin:0 0 0 -40px;
+	list-style:none;
+	}
+#slidingDoorsTabs li {
+	float:left; /* Float makes LIs stand side by side */
+	background:url(/images/propavail/tab_left.gif) no-repeat left top;
+	margin:0;
+  	padding:0 0 0 10px;
+ 	}
+#slidingDoorsTabs a {
+	float:left;
+	display:block;
+	background:url(/images/propavail/tab_right.gif) no-repeat right top;
+	padding:26px 15px 4px 4px;
+	text-decoration:none;
+	color:#039;
+	font-size: 14px;
+   }
+/* Commented Backslash Hack
+   	hides rule from IE5-Mac \*/
+#slidingDoorsTabs a {
+	float:none;
+	font-size: 14px;
+}
+	/* End IE5-Mac hack - Turns float off to prevent IE5Mac from stacking the tabs vertically and creating a mess */
+
+#slidingDoorsTabs a:hover {
+	color:#337;
+	font-size: 14px;
+   }
+#slidingDoorsTabs .current {
+  	 background-image:url(/images/propavail/tab_left_on.gif);
+   	}
+#slidingDoorsTabs .current a {
+  	background-image:url(/images/propavail/tab_right_on.gif);
+   	padding-bottom:4px;
+   	font-weight:bold;
+   	}
+#slidingDoorsTabs .special a {
+   	background-image:url(/images/propavail/tab_right_special.gif);
+   	padding-bottom:5px;
+ 	}
+
+#slidingDoorsTabs .notCurrent {
+  	 background-image:url(/images/propavail/tab_left.gif);
+   	}
+#slidingDoorsTabs .notCurrent a {
+	background-image:url(/images/propavail/tab_right.gif);
+	color:#039;
+	padding-bottom:4px;
+	font-weight:normal;
+	font-size: 14px;
+   	}
+
+.group { border-left: 1px #2961AD solid; border-right: 1px #2961AD solid; }
+      .unSelected {
+          padding-bottom: 0 px;
+      }
+
+.info-group {
+
+    border-left: 1px #2961AD solid; border-right: 1px #2961AD solid; border-bottom: 1px #2961AD solid;
+
+}
+.unSelected { padding-bottom: 0 px;
+      }
+
+      .isSelected {
+        font-weight: bold;
+        padding-bottom; 5px;
+      }
+      .empty {border-bottom: 1px #2961AD solid; }
+}
+</style><meta name="DCSext.channel" content="Lodging"><meta name="DCSext.chname" content=""><meta name="DCSext.online" content="Yes"><meta name="DCS.dcsuri" content="/PropInfo.html"><meta name="WT.ti" content="Property Information"></head><body bgcolor="#FFFFFF" text="#000000" leftmargin="2" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="setDates();showInfoSection('1')"><!-- Start Header -->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function openBrWindowHEADER(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<link href="/css/LDC_05-04.css" rel="stylesheet" type="text/css"/>
+<table width="777" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="201" height="16" colspan="2" rowspan="2"><img src="/images/b.gif" width="1" height="16"/><img src="/images/b.gif" width="8" height="8"/><a href="http://primary.lodging.com"><img src="/images/LDC_logo.gif" width="201" height="48" border="0"/></a></td>
+    <td height="16" align="right"><img src="/images/banner_ad.gif"/></td>
+  </tr>
+  <tr>
+    <td align="right"><img src="/images/b.gif" height="11" width="1"/></td>
+    <td></td>
+  </tr>
+  <tr align="right">
+    <td colspan="3"><img src="/images/888.gif" width="338" height="18"/></td>
+  </tr>
+</table>
+<table width="777" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="63"><a href="http://primary.lodging.com"><img src="/images/Hotels_up.gif" alt="Search Hotels" width="63" height="34" border="0"/></a></td>
+    <td width="123"><a href="http://lodging.skyauction.com/"><img src="/images/Vacation_Rentals_up.gif" alt="Search Vacation Rentals" width="123" height="34" border="0"/></a></td>
+    <td width="79"><a href="http://lodging.neatgroup.com/lodging/CPGateway?DD=LODGING"><img src="/images/Packages_up.gif" alt="Search Packages" width="79" height="34" border="0"/></a></td>
+    <td width="105"><a href="http://primary.lodging.com/hot-deals.cgi"><img src="/images/Cities_on_sale_up.gif" alt="Cities on Sale" width="105" height="34" border="0"/></a></td>
+    <td width="97"><a href="http://travelguides.lodging.com/"><img src="/images/Destinations_up.gif" alt="Search Hotels by Destination" width="97" height="34" border="0"/></a></td>
+    <td background="/images/nav_bar_bg.gif">&nbsp;&nbsp;&nbsp;<img src="/images/nav_arrow.gif" width="5" height="7"/> <a class="nav-link" href="https://reservations.lodging.com/servlet/lodging.PersonalAccount?action=selfserve">Customer
+      Service</a>&nbsp;&nbsp;&nbsp;<img src="/images/nav_arrow.gif" width="5" height="7"/>&nbsp;<a class="nav-link" href="https://reservations.lodging.com/servlet/lodging.PersonalAccount?action=selfserve">My
+      Reservations</a>&nbsp;&nbsp;&nbsp;<img src="/images/nav_arrow.gif" width="5" height="7"/>&nbsp;<a class="nav-link" href="https://reservations.lodging.com/servlet/lodging.PersonalAccount">My
+      Account</a></td>
+  </tr>
+</table>
+<table width="777" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="/images/b.gif" width="1" height="10"/></td>
+  </tr>
+</table>
+<!-- End Header -->
+<!-- START OF SmartSource Data Collector TAG --><!-- (c) 1999-2003 NetIQ Corporation. All rights reserved. --><!-- V6.1 --><!-- $DateTime: 2003/09/30 11:23:29 $ --><!-- $Revision: 1.3 $ --><SCRIPT LANGUAGE="Javascript"><!--
+gVersion="1.0";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.1"><!--
+gVersion="1.1";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.2"><!--
+gVersion="1.2";
+var RE={"%09":/\t/g, "%20":/ /g, "%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g};
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.3"><!--
+gVersion="1.3";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.4"><!--
+gVersion="1.4";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.5"><!--
+gVersion="1.5";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="JavaScript"><!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+
+var gDomain="statse.webtrendslive.com";
+var gDcsId="dcsuy22seau4fibba68ia3qp2_7e5d";
+// Add customizations here
+//WT.sp="@@SPLITVALUE@@";
+// (c) 1999-2003 NetIQ Corporation. All rights reserved.
+// $DateTime: 2003/09/30 11:23:29 $
+// $Revision: 1.3 $
+function dcsMultiTrack(){
+	for (var i=0;i<arguments.length;i++){
+		if (arguments[i].indexOf('WT.')==0){
+				WT[arguments[i].substring(3)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCS.')==0){
+				DCS[arguments[i].substring(4)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCSext.')==0){
+				DCSext[arguments[i].substring(7)]=arguments[i+1];
+				i++;
+		}
+	}
+	var dCurrent=new Date();
+	DCS.dcsdat=dCurrent.getTime();
+	dcsTag();
+}
+
+
+function dcsVar(){
+	var dCurrent=new Date();
+	WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+	if (WT.tz==0){
+		WT.tz="0";
+	}
+	WT.bh=dCurrent.getHours();
+	WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+	if (typeof(screen)=="object"){
+		WT.cd=screen.colorDepth;
+		WT.sr=screen.width+"x"+screen.height;
+	}
+	if (typeof(navigator.javaEnabled())=="boolean"){
+		WT.jo=navigator.javaEnabled()?"Yes":"No";
+	}
+	if (document.title){
+		WT.ti=document.title;
+	}
+	WT.js="Yes";
+	if (typeof(gVersion)!="undefined"){
+		WT.jv=gVersion;
+	}
+	DCS.dcsdat=dCurrent.getTime();
+	DCS.dcssip=window.location.hostname;
+	DCS.dcsuri=window.location.pathname;
+	if (window.location.search){
+		DCS.dcsqry=window.location.search;
+	}
+	if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+		if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+			DCS.dcsref=window.document.referrer;
+		}
+	}
+}
+
+function A(N,V){
+	return "&"+N+"="+dcsEscape(V);
+}
+
+function dcsEscape(S){
+	if (typeof(RE)!="undefined"){
+		var retStr = new String(S);
+		for (R in RE){
+			retStr = retStr.replace(RE[R],R);
+		}
+		return retStr;
+	}
+	else{
+		return escape(S);
+	}
+}
+
+function dcsCreateImage(dcsSrc){
+	if (document.images){
+		gImages[gIndex]=new Image;
+		gImages[gIndex].src=dcsSrc;
+		gIndex++;
+	}
+	else{
+		document.write('<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+	}
+}
+
+function dcsMeta(){
+	var myDocumentElements;
+	if (document.all){
+		myDocumentElements=document.all.tags("meta");
+	}
+	else if (document.documentElement){
+		myDocumentElements=document.getElementsByTagName("meta");
+	}
+	if (typeof(myDocumentElements)!="undefined"){
+		for (var i=1;i<=myDocumentElements.length;i++){
+			myMeta=myDocumentElements.item(i-1);
+			if (myMeta.name){
+				if (myMeta.name.indexOf('WT.')==0){
+					WT[myMeta.name.substring(3)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCSext.')==0){
+					DCSext[myMeta.name.substring(7)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCS.')==0){
+					DCS[myMeta.name.substring(4)]=myMeta.content;
+				}
+			}
+		}
+	}
+}
+
+function dcsTag(){
+	var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?";
+	for (N in DCS){
+		if (DCS[N]) {
+			P+=A(N,DCS[N]);
+		}
+	}
+	for (N in WT){
+		if (WT[N]) {
+			P+=A("WT."+N,WT[N]);
+		}
+	}
+	for (N in DCSext){
+		if (DCSext[N]) {
+			P+=A(N,DCSext[N]);
+		}
+	}
+	if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+		P=P.substring(0,2040)+"&WT.tu=1";
+	}
+	dcsCreateImage(P);
+}
+
+dcsVar();
+dcsMeta();
+dcsTag();
+  
+//--></SCRIPT><NOSCRIPT><IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://statse.webtrendslive.com/dcsuy22seau4fibba68ia3qp2_7e5d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No"></NOSCRIPT>
+	<!--BEGIN ROI TRACKING Code -->
+	<script language="javascript" src="http://track.roiservice.com/track/track.aspx?ROIID=932444107000015"></script>
+	<script language="javascript"><!--
+	if (typeof(ROIID) + '' != 'undefined') {
+	      TrackEvent('PropPage', 0);
+	     }
+	//--></script>
+	<!--END ROI TRACKING Code-->
+	<IMG SRC="https://ad.doubleclick.net/activity;src=903472;type=lodging;cat=land;ord=1;num=1154102348409?" WIDTH="1" HEIGHT="1" BORDER="0"><SCRIPT language="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/lodging.dart/exit;abr=!webtv;dcopt=ist;sz=1x1;ord=1154102348409?"></SCRIPT><SCRIPT><!--
+if ((!document.images && navigator.userAgent.indexOf('Mozilla/2.') >= 0)  || navigator.userAgent.indexOf("WebTV")>= 0) {
+document.write('<A HREF="http://ad.doubleclick.net/jump/lodging.dart/exit;sz=1x1;ord={$ord}?">');
+document.write('<IMG SRC="http://ad.doubleclick.net/ad/lodging.dart/exit;sz=1x1;ord={$ord}?" border="0" height="1" width="1"></A>')
+}
+  
+//--></SCRIPT><NOSCRIPT><A HREF="http://ad.doubleclick.net/jump/lodging.dart/exit;sz=1x1;ord=1154102348409?"><IMG SRC="http://ad.doubleclick.net/ad/lodging.dart/exit;sz=1x1;ord=1154102348409?" border="0" height="1" width="1"></A></NOSCRIPT><!--Added by Effi Ban (03/28/2005): revenue popup tag: BEGIN--><SCRIPT language="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/lodging.dart/pop;abr=!webtv;dcopt=ist;sz=1x1;ord=1154102348409?"></SCRIPT><SCRIPT><!--
+if ((!document.images && navigator.userAgent.indexOf('Mozilla/2.') >= 0)  || navigator.userAgent.indexOf("WebTV")>= 0)
+{
+    document.write('<A HREF="http://ad.doubleclick.net/jump/lodging.dart/pop;sz=1x1;ord=' +
+1154102348409
+    + '?">');
+    document.write('<IMG SRC="http://ad.doubleclick.net/ad/lodging.dart/pop;sz=1x1;ord=' +
+1154102348409
+    + '?" border="0" height="1" width="1"></A>')
+}
+
+
+//--></SCRIPT><NOSCRIPT><A HREF="http://ad.doubleclick.net/jump/lodging.dart/pop;sz=1x1;ord=1154102348409?"><IMG SRC="http://ad.doubleclick.net/ad/lodging.dart/pop;sz=1x1;ord=1154102348409?" border="0" height="1" width="1"></A></NOSCRIPT><!--Added by Effi Ban (03/28/2005): revenue popup tag: END--><br><table width="777" border="0" cellspacing="0" cellpadding="0"><tr><td width="2" valign="top"><img src="/images/results/result_header_left.gif" width="2" height="34"></td><td width="413" background="/images/results/result_header_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="8"><img src="/images/b.gif" width="1" height="1"></td><td width="618" class="results-header"><strong class="14BLUEdark">Adante Hotel</strong></td></tr></table></td><td align="center" background="/images/results/result_header_bg.gif"><table width="100" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" background="/images/results/star_empty.gif"><a href="#hotelrating" onclick="javascript: window.open('http://primary.lodging.com/ldcratings.html','rating','width=470,height=600,scrollbars')"><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""></a></td></tr></table></td><td align="left" background="/images/results/result_header_bg.gif">&nbsp;</td><td width="3" valign="top"><img src="/images/results/result_header_right.gif" width="3" height="34"></td></tr><tr><td width="2" valign="top"><img src="/images/results/result_fadeborder_left.gif" width="2" height="42"></td><td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="8"><tr><td width="100%" colspan="2"><p><strong>Downtown/Union Square/Nob Hill<br></strong><br>610 Geary St.<br>San Francisco,&nbsp;
+				California
+        &nbsp;94102&nbsp;&nbsp;
+              <strong> &nbsp;&nbsp;</strong><a onclick="showInfoSection('5');document.mapimage.src='http://mqmapgend.mapquest.com:80/mqmapgend?MQMapGenRequest=FDBnqeflmJI%2C3ii8drs-F3bP%10vk2g%26sdmH2h%108n%40FDJ%15_n%21y%40n%29NE%18%26Ivb2+VQK%3AFDJ%15_n%21y%40n%29NE%18%3D+1%2FXlm%2F167l+ur%7Cqf*2q+SF%17%26FDR2dmwjDE%3Butal0%24auus%22%21Bc%18%5C%40%1631aum*E%14M4nq8%17cwm%3BJSK%17%26FDT7w%7Clztggz%24.90a59ar%3A%26%40%24%3A%26%40t%3Aq67%3Al67%3A%14%17N%3DTPWIK%2Cba0rza%26%3D2l1w2xq%40%24%3A%26%40%24%3A%2607x%26%26FDKlqr%17omcj5*%19%12%12GM*E%14Fr73m%137c%7C%17N%10M'" href="#hotelinfo"><strong>Map</strong></a><br><br>A well-priced, boutique hotel with hand-painted murals of mountain scenes along the hallways and in the guest rooms. Three blocks from Union Square.</p></td></tr></table></td><td width="168" align="center" valign="middle"><a onclick="showInfoSection('4')" href="#hotelinfo"><img src="http://63.75.186.43/ImageServer/3/36980/36980_LOBBY_01_S.jpg" alt="" width="100" height="67" border="0"></a><br><a onclick="showInfoSection('4')" href="#hotelinfo"><strong>More Photos</strong></a><br><br></td><td width="191" align="center" valign="middle"><table width="170" border="0" cellspacing="0" cellpadding="0"><tr><td width="170" align="center" valign="top"><br></td></tr></table></td><td width="3" valign="top"><img src="/images/results/result_fadeborder_right.gif" width="3" height="46"></td></tr></table><a name="Getrates" id="Getrates"></a><br><table width="777" border="0" cellspacing="0" cellpadding="0"><form name="mainForm" action="/servlet/reservations.AvailabilityXML" method="post"><input type="hidden" name="propcode" value="GAL;36980"><input type="hidden" name="remote" value=""><input type="hidden" name="caller" value="propinfo"><tr><td width="2"><img src="/images/propavail/chkdates_bg_left.gif" width="2" height="81"></td><td valign="top" background="/images/propavail/chkdates_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr class="searchboxText"><td colspan="6" align="left" nowrap class="advancedsearchboxText"><b><font color="#FF6633">Check Rates for this Hotel</font></b></td></tr><tr class="searchboxText"><td width="29%" align="left" valign="top" nowrap class="searchboxText">Check-In<br><select name="inmonth" class="searchboxText" onChange="changeDates()"><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7" selected="">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="inday" class="searchboxText" onChange="changeDates()"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29" selected="">29</option><option value="30">30</option><option value="31">31</option></select><select name="inyear" onChange="changeDates()" class="searchboxText"><option value="2006" selected="">2006</option><option value="2007">2007</option></select><a href="javascript://" onclick="displayCalendar(true,'in')"><img src="/images/2004_calendar.gif" width="28" height="17" alt="View Calendar" border="0" align="absmiddle"></a></td><td width="30%" align="left" valign="top" nowrap class="searchboxText">Check-Out<span class="advancedsearchboxText"><br><select name="outmonth" class="searchboxText" onChange="checkOutDate()"><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7" selected="">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="outday" class="searchboxText" onChange="checkOutDate()"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30" selected="">30</option><option value="31">31</option></select><select name="outyear" onChange="checkOutDate()" class="searchboxText"><option value="2006" selected="">2006</option><option value="2007">2007</option></select><a href="javascript://" onClick="displayCalendar(true,'out')"><img src="/images/2004_calendar.gif" width="28" height="17" alt="View Calendar" border="0" align="absmiddle"></a></span></td><td width="9%" align="left" valign="top" nowrap class="searchboxText">Rooms<span class="advancedsearchboxText"><br><select name="numrooms" size="1" class="searchboxText"><option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select></span></td><td width="11%" align="left" valign="top" nowrap class="searchboxText">Adults/room<span class="advancedsearchboxText"><br><select name="numadults" class="searchboxText"><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option></select></span></td><td width="8%" align="left" valign="top" nowrap class="searchboxText">Children<br><select name="numchildren" id="numchildren" class="searchboxText"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></td><td width="13%" align="left" valign="bottom" nowrap class="searchboxText"><span class="advancedsearchboxText"><input type="image" src="/images/propavail/get_rates.gif" width="85" height="21" border="0"></span></td></tr></table></td><td width="2"><img src="/images/propavail/chkdates_bg_right.gif" width="2" height="81"></td></tr></form></table><br><a name="hotelinfo"></a><div id="slidingDoorsTabs"><ul><li class="current" id="info-tab1"><a href="#info" onclick="showInfoSection('1'); return false;">Hotel Highlights</a></li><li class="notCurrent" id="info-tab2"><a onclick="showInfoSection('2'); return false;" href="#info">Policies &amp; Restrictions</a></li><li class="notCurrent" id="info-tab3"><a onclick="showInfoSection('3'); return false;" href="#info">General Information</a></li><li class="notCurrent" id="info-tab4"><a onclick="showInfoSection('4'); return false;" href="#info">Photos</a></li><li class="notCurrent" id="info-tab5"><a onclick="showInfoSection('5'); document.mapimage.src='http://mqmapgend.mapquest.com:80/mqmapgend?MQMapGenRequest=FDBnqeflmJI%2C3ii8drs-F3bP%10vk2g%26sdmH2h%108n%40FDJ%15_n%21y%40n%29NE%18%26Ivb2+VQK%3AFDJ%15_n%21y%40n%29NE%18%3D+1%2FXlm%2F167l+ur%7Cqf*2q+SF%17%26FDR2dmwjDE%3Butal0%24auus%22%21Bc%18%5C%40%1631aum*E%14M4nq8%17cwm%3BJSK%17%26FDT7w%7Clztggz%24.90a59ar%3A%26%40%24%3A%26%40t%3Aq67%3Al67%3A%14%17N%3DTPWIK%2Cba0rza%26%3D2l1w2xq%40%24%3A%26%40%24%3A%2607x%26%26FDKlqr%17omcj5*%19%12%12GM*E%14Fr73m%137c%7C%17N%10M'; return false;" href="#info">Map</a></li></ul></div><div style="clear:both;" name="clearer"></div><div class="isShown" id="info-group1"><table id="info-group1" class="info-group" cellpadding="5" cellspacing="0" bgcolor="#F7F9FD" border="0" width="777"><tr style="padding:10 px;"><td><b>Hotel Description:</b><br><br><br> the adante hotel is at union square close to cable car<br> lines and 1 block from the theater district- surrounded by<br> fine dining and many other beautiful san francisco<br> attractions. we are committed to making your stay both<br> comfortable and pleasant. each and every member of our<br> staff is here to make your stay as stress free and<br> relaxing-as you deserve.<br><br><br><br><table width="100" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" background="/images/results/star_empty.gif"><a href="#hotelrating" onclick="javascript: window.open('http://primary.lodging.com/ldcratings.html','rating','width=470,height=600,scrollbars')"><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""></a></td></tr></table><br><br><b>Amenities:</b><div id="amenities"><ul style="margin-top: 5px;"><table width="550" cellspacing="0" cellpadding="2" border="0"><tr valign="top"><td><li>Bath Tub</li><li>Concierge Desk</li><li>Elevators</li><li>Lounge</li><li>Parking</li><li>Tour Desk</li></td><td><li>Breakfast</li><li>Meal Plan - Continental</li><li>Family Plan</li><li>In Room Movies</li><li>Restaurant</li><li>Television with Cable</li></td><td><li>Coffee Shop</li><li>Copy Service</li><li>No Smoking Rooms/Facilities</li><li>Phone Service</li><li>Safe</li></td></tr></table></ul></div><tr><td><strong>Room Information</strong>:&nbsp;<br> queen room - c1q<br> sleeps 3.<br> this is a very nice queen bedded room that has many<br> features including high-speed internet- free hbo- iron-<br> ironing board and coffee maker. no rollaways allowed.<br> 2 double bed room - c2d<br> sleeps 4.<br> this is a very nice 2 double-bedded room that has many<br> features including high-speed internet- free hbo- iron-<br> ironing board and coffee maker. no rollaways allowed.<br> 2 twin bed room - c2t<br> sleeps 3.<br> this is a very nice 2 twin bedded room that has many<br> features including high-speed internet- free hbo- iron-<br> ironing board and coffee maker. no rollaways allowed.<br> king room - c1k<br> sleeps 4.<br> this is a very nice king bedded room that has many features<br> including high-speed internet- free hbo- iron- ironing<br> board and coffee maker. no rollaways allowed.<br><center><img src="http://63.75.186.43/ImageServer/3/36980/36980_ROOM_01_M.jpg" alt="Room" border="0" value="piImg"></center></td></tr><tr valign="top"><td height="10" colspan="2"></td></tr><tr><td><strong>Recreation</strong>:&nbsp;<br>-hiking                       -mountain biking<br>-the above recreation may not be on-site and charges may<br> apply.<br></td></tr><tr valign="top"><td height="10" colspan="2"></td></tr></td></tr></table></div><div id="info-group2" class="isHidden"><table id="info-group2" border="0" cellpadding="2" cellspacing="0" width="777" bgcolor="#F7F9FD" class="info-group"><tr valign="top"><td style="padding:10px;"><b>Cancel Policy:</b><br><br><br>Reservations must be cancelled by 3pm the day before<br>Arrival to avoid a penalty of 1 night stay including tax.<br>No show fee - 1 night stay including tax.<br><br><br><b>Guarantee Policy:</b><br><br><br>Guarantee information<br>  late arrival time:  not applicable<br>  guarantee required at time of booking<br>  acceptable forms of payment:<br>  credit cards:  see |hod/cred<br>Deposit information<br>  within country waiver period:    0 days<br>  outside country waiver period:    0 days<br>  deposit required:  at time of booking<br>  deposit amount:  01 nights of stay<br>  mail deposit to:<br>Acceptable forms of payment<br>  credit cards:  see |hod/cred<br>All reservations must be guaranteed with a credit card.<br>A deposit of 1 night stay including tax is required and<br>Will be charged at the time of reservation.<br>Non-guaranteed reservations are not accepted.<br>Exceptions may apply during holidays- special events<br>Or conventions.<br>Payment information<br>Acceptable forms of payment<br>  cash<br>  credit cards:  see |hod/cred<br>Only credit cards and cash accepted.<br><br><br><b>Check In:</b><br><br>3PM<br><br><b>Check Out:</b><br><br>12N<br><br><b>Deposit Policy:</b><br><br><br>Chain did not define keyword<br><br><br></td></tr></table></div><div id="info-group3" class="isHidden"><table id="info-group3" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td style="padding:10px;"><b>Directions</b><br><br><br> start going east toward domestic terminal. turn right onto<br> s link rd. turn sharp right onto n mcdonnell rd. turn right<br> onto road 18. turn slight right onto airport exit. merge<br> onto us-101 n toward san francisco. merge onto i-280 n<br> toward port of san francisco. take the sixth street exit.<br> stay straight to go onto 6th st. 6th st becomes taylor st.<br> turn left onto geary st.<br><br><br></td></tr><tr valign="top"><td style="padding:10px;"><b>Location:</b><br><br><br>Primary city<br>  san francisco               00m w   trans: t<br>General area<br>  city           downtown       theater dist   entertnmt dist<br>  shopping dist  business dist  financial dist<br>Other points<br>  san carlos                  24m nw  trans:<br>  berkeley                    10m sw  trans:<br>  mountain view               39m nw  trans:<br>  fairfield                   45m sw  trans:<br>  oakland                     09m w   trans:<br>  san rafael                  17m se  trans:<br>  sausalito                   08m se  trans:<br>  sql                         25m nw  trans:<br>  jmc                         09m se  trans:<br>  sjc                         48m nw  trans:<br>  oak                         14m nw  trans:<br>  sts                         63m se  trans:<br>  sfo                         13m n   trans: s b t r o<br>  amtrak thruway bus termina  00m w   trans: t<br>  cannery                     02m s   trans: t<br>  threecom park               05m n   trans: t<br>  threecom park               05m n   trans: t<br>  financial district          01m sw  trans: t<br>  nob hill                    00m s   trans: t<br>  fort mason                  02m se  trans: t<br>  fishermans wharf san franc  02m s   trans: t<br>  san francisco state univer  06m ne  trans: t<br>  old us mint                 01m nw  trans: t<br>  alcatraz                    03m s   trans: t<br>  golden gate bridge          04m se  trans: t<br>  ghirardelli square          02m s   trans: t<br>  north beach                 01m s   trans: t<br>  presidio 6th army           03m se  trans: t<br>  the palace of fine arts     03m se  trans: t<br>  pier 39                     02m s   trans: t<br>  univ of calif san francisc  03m ne  trans: t<br>  san francisco state colleg  06m ne  trans: t<br>  the presidio of san franci  02m e   trans: t<br>  civic center                01m n   trans: t<br>  oakland bay bridge          02m w   trans: t<br>  calif academy of sciences   04m e   trans: t<br>  coit tower                  01m sw  trans: t<br>  the cannery                 02m s   trans: t<br>  university of san francisc  02m e   trans: t<br>  cow palace                  06m n   trans: t<br>  moscone convention center   01m w   trans: t<br>  chinatown                   01m sw  trans: t<br>  embarcadero center          01m sw  trans: t<br>  union square                00m w   trans: t<br>  federal reserve bank        01m sw  trans: t<br>  arthur andersen             01m n   trans: t<br>  pacific bell park           02m nw  trans: t<br>  tiburon                     07m s   trans:<br>  south san francisco         09m n   trans:<br>  ibm san francisco           01m sw  trans: t<br>  bank of america             01m sw  trans: t<br>  deloitte and touche         01m w   trans: t<br>  jp morgan chase             01m w   trans: t<br>  kpmg                        01m sw  trans: t<br>  price waterhouse coopers l  01m sw  trans: t<br><br><br><b>Area Airports:</b><br><br>9 Mile(s) SE to JMC airport<br><br></td></tr></table></div><div id="info-group4" class="isHidden"><table id="info-group4" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td style="padding:10px;" align="center">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <img onload="resizeImage(this.id)" id="more-photos-46" hspace="3" vspace="3" src="http://63.75.186.43/ImageServer/3/36980/36980_LOBBY_01_S.jpg"> 
+      <img onload="resizeImage(this.id)" id="more-photos-48" hspace="3" vspace="3" src="http://63.75.186.43/ImageServer/3/36980/36980_EXT_01_M.jpg"> 
+      
+      
+      
+      
+      
+      
+      
+      
+         <img onload="resizeImage(this.id)" id="more-photos-2" hspace="3" vspace="3" src="http://63.75.186.43/ImageServer/3/36980/36980_ROOM_01_M.jpg"> 
+      
+   </td></tr></table></div><div id="info-group5" class="isHidden"><table id="info-group5" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td align="center" style="padding:10px;"><img name="mapimage" src="/images/clear.gif"></td></tr></table></div><br><table width="777" border="0" cellpadding="5" cellspacing="0"><tr><td width="30" align="center">&nbsp;</td><td width="100" align="center" bgcolor="#FFFFCC"><a href="#Getrates"><strong>Check Rates for this Hotel </strong></a></td><td align="right">&nbsp;</td></tr></table><!--START FOOTER-->
+<script language="JavaScript" type="text/javascript">
+<!--
+function openBrWindow(theURL,winName,features) {
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<table width="777"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="/images/b.gif" width="1" height="10" /></td>
+  </tr>
+</table>
+<table width="777" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1"><img src="/images/footer_left.gif" width="1" height="25" /></td>
+    <td bgcolor="#2B63AB"><img src="/images/b.gif" width="1" height="1" /></td>
+    <td width="1"><img src="/images/footer_right.gif" width="1" height="25" /></td>
+  </tr>
+</table>
+<table width="777" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="110" align="center" valign="middle"><img src="/images/b.gif" width="1" height="20" /><img src="/images/b.gif" width="1" height="20" /><img src="/images/b.gif" width="1" height="10" /></td>
+    <td width="551" height="20"><img src="/images/b.gif" width="1" height="1" /></td>
+    <td width="116" rowspan="4" align="center" valign="bottom"><img src="/images/b.gif" width="1" height="1" /></td>
+  </tr>
+  <tr align="center">
+    <td width="110" align="center" valign="middle"><img src="/images/b.gif" width="1" height="1" /></td>
+    <td><span class="style3"><a href="http://primary.lodging.com/about-us.html">About Us</a> | <a href="http://primary.lodging.com/site-map.html">Site Map</a> | <a href="http://primary.lodging.com/terms_of_use.html">Terms of Use</a> | <a href="http://primary.lodging.com/privacy.html">Updated Privacy Policy</a> | <a href="http://primary.lodging.com/affiliates/">Join Affiliate Program</a> | <a href="http://primary.lodging.com/update_basic.html">Add Your Hotel</a></span><a href="#"></a></td>
+  </tr>
+  <tr align="center">
+    <td width="110" align="center" valign="middle"><img src="/images/b.gif" width="1" height="18" /></td>
+    <td><img src="/images/b.gif" width="1" height="1" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="middle"><table width="661" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="162" height="40" align="right" valign="bottom"><a href="javascript://" onclick="openBrWindow('http://primary.lodging.com/feedback.html','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes')"><img src="/images/feedback_footer_icon.gif" alt="Have comments or feedback on the website? Let us know!" width="122" height="34" border="0" /></a></td>
+        <td width="457" height="40" align="center" valign="middle"><strong>Book Online or Call</strong> - US: 888-563-4464 / Intl: 615-874-4290<br />
+Copyright &copy; 2002-2005 Lodging.com. All Rights Reserved. </td>
+        <td width="42" align="center"><img src="/images/b.gif" width="1" height="1" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td width="110" align="center" valign="middle"><img src="/images/b.gif" width="1" height="15" /></td>
+    <td align="center"><img src="/images/b.gif" width="1" height="25" /></td>
+    <td width="116" align="center" valign="middle"><img src="/images/b.gif" width="1" height="1" /></td>
+  </tr>
+</table>
+<!--END FOOTER-->
+<div id="CAL" name="CAL" style="position: absolute; top: 0; left: 0; width: 158; z-index: 100; visibility: hidden; border: 1 solid buttonface; border: 2 outset buttonhighlight; background-color: menu;"><span id="CAL_BODY" name="CAL_BODY"></span></div></body></html>

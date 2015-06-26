@@ -1,0 +1,287 @@
+<DOC>
+<DOCNO>g00805</DOCNO>
+<DOCHDR>http://www.niddk.nih.gov/forms/niddk_mail.htm</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>NIDDK : Contact NIDDK</TITLE>
+
+<BASE HREF="http://www.niddk.nih.gov/"><SCRIPT LANGUAGE="JavaScript"><!-- Beginfunction formHandler(form){var URL = document.form.site.options[document.form.site.selectedIndex].value;window.location.href = URL;}// End --></SCRIPT>
+<script language="JavaScript" type="text/javascript">
+<!--
+
+if (navigator.appVersion.toLowerCase().indexOf("win")!=-1)
+{
+
+document.writeln("<link REL=stylesheet HREF=\"niddk_win.css\" type=\"text/css\">")
+}
+else {
+
+document.writeln("<link REL=stylesheet HREF=\"niddk_mac.css\" type=\"text/css\">")
+}
+
+//-->
+</script>
+<script language="JavaScript">
+   function submitcheck() {
+    if (document.ContactForm.comments.value=="") {
+      alert ("Please enter comments!");
+      document.ContactForm.comments.focus();
+    }else if(document.ContactForm.from.value=="") {
+      alert ("Please enter email address!");
+      document.ContactForm.from.focus();
+    }else{
+      document.ContactForm.submit();
+	}
+    }
+</script>
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#006666" alink="#660066" vlink="#009999" background="/images/bg2.gif" marginwidth="8" leftmargin="8" marginheight="0" topmargin="0">
+
+<table width="102%"  border="0" cellspacing="0" cellpadding="0" vspace="0" hspace="0">
+  <tr>
+    <td width="104" valign="top"><img src="/images/spacer.gif" width="104" height="10" vspace="0" hspace="0" alt=""><br><A HREF="/index.htm"><img src="/images/logo.gif" width="66" height="59" border="0" hspace="18" vspace="0" alt="NIDDK logo"><BR><img src="/images/niddkhome.gif" alt="NIDDK Home" width="103" height="16" border="0" hspace="0" vspace="3"></A><BR></td>
+    <td valign="top" width="532" align="center"><img src="/images/spacer.gif" width="532" height="1" vspace="0" hspace="0" alt="">
+<table border="0" width="498" cellpadding="0" cellspacing="0">
+
+<TR><TD align="left">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+
+<TR><TD align="left">
+<img src="/images/small-header.gif" ALT="National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)" usemap="#small-header" border="0">
+</TD>
+
+<TD align="right">
+<!--- codes for quick link begin --->
+<form name="form">
+<select name="site" size=1 onChange="javascript:formHandler(this)">
+<option value="/">Quick Links for Investigators
+	<option value="/welcome/director.htm">Office of the Director
+	<option value="/fund/divisions/DEA/DEAintro.htm">Extramural Activities
+	<option value="http://intramural.niddk.nih.gov">Intramural Research
+	<option value="https://ddktoday.niddk.nih.gov/diradmin/admin">Update Intramural Pages - Staff Only
+	<option value="http://dnrc.nih.gov">Nutrition Research Coordination 
+	<option value="/fund/divisions/KUH/KUHintro.htm">Kidney, Urologic &amp; Hematologic
+	<option value="/fund/divisions/DEM/DEMintro.htm">Diabetes, Endocrinology &amp; Metabolic
+	<option value="/fund/divisions/DDN/DDNintro.htm">Digestive Diseases &amp; Nutrition
+	<option value="/fund/divisions/omhrc/omhrcintro.htm">Office of Minority Health Research
+</select>
+</form>
+<!--- codes for quick link end --->
+</TD></TR></TABLE>
+
+</TD></TR>
+<tr><td colspan="1" bgcolor="#0F6060"><img src="/images/spacer.gif" height="1" vspace="0" hspace="0" alt=""></td></tr>
+
+
+<tr><td align="center" colspan="2" bgcolor="#E7EFEF">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+<tr>
+
+<td align="center"><a href="/tools/map.htm"><img src="/images/sitemap.gif" width="60" height="12" border="0" hspace="0" vspace="7" alt="Site Map"></a></td>
+
+<td align="center"><img src="/images/dot.gif" width="12" height="12" border="0" hspace="0" vspace="7" alt=""></TD>
+
+<td align="center"><a href="/tools/faq.htm"><img src="/images/faqs.gif" width="168" height="12" border="0" hspace="0" vspace="7" alt="FAQs"></a></TD>
+
+<td align="center"><img src="/images/dot.gif" width="12" height="12" border="0" hspace="0" vspace="7" alt=""></TD>
+
+<td align="center"><a href="/forms/niddk_mail.htm"><img src="/images/contactniddk.gif" width="95" height="12" border="0" hspace="0" vspace="7" alt="Contact NIDDK"></a></TD>
+
+
+
+<td align="center"><img src="/images/dot.gif" width="12" height="12" border="0" hspace="0" vspace="7" alt=""></td>
+
+<td align="left" class="resourcenav">
+
+<form method="get" action="http://search2.google.cit.nih.gov/search" name="search">
+     <input id="searchbox" type="text" name="q" size="17" maxlength="255" value=""/><br>&gt; <a href="http://search2.google.cit.nih.gov/search?access=p&output=xml_no_dtd&sort=date%3AD%3AL%3Ad1&client=NIDDK_frontend&btnG.y=7&q=&filter=0&btnG.x=20&site=NIDDK&oe=UTF-8&proxystylesheet=NIDDK_frontend&ip=137.187.70.154&proxycustom=<ADVANCED/>">
+Advanced Search</a>
+        <input type="hidden" name="site" value="NIDDK"/>
+        <input type="hidden" name="client" value="NIDDK_frontend"/>
+        <input type="hidden" name="proxystylesheet" value="NIDDK_frontend"/>
+        <input type="hidden" name="output" value="xml_no_dtd"/>
+        <input type="hidden" name="filter" value="0"/>
+        <input type="hidden" name="getfields" value="*"/></td>
+		
+		
+		
+		 <td align="center"><input type="image" src="http://www.nih.gov/images/button_search.gif" width="54" height="15" border="0" name="btnG" id="btnG" alt="Search">  </td>
+</form>
+
+
+
+</td></tr></table>
+
+</TD></TR>
+
+<tr><td colspan="1" bgcolor="#0F6060"><img src="/images/spacer.gif" height="1" vspace="0" hspace="0" alt=""></td></tr>
+
+<map name="small-header">
+<area shape="rect" alt="National Institutes of Health" coords="5,39,130,50" href="http://www.nih.gov" title="National Institutes of Health">
+
+</map>
+	<tr>
+		<td valign="top">
+<br>
+
+<h1>Email NIDDK</h1>
+<h2>Be sure to check out these pages before sending a question:</h2>
+<ul type="disc" class="big">
+	<li><a href="/tools/faq.htm">Frequently Asked Questions</a>
+	<li><a href="/health/health.htm">Health Information</a>
+	<li><a href="/tools/survey.htm">Customer Satisfaction Survey</a>
+</ul>
+<br>
+<table border="2" cellpadding="10" cellspacing="0" bordercolor="#006666">
+	<tr>
+		<td bgcolor="#FFFFCC"><span class="big">Please note:</span> <span class="subhead">NIDDK <u>will not</u> provide medical advice.</span>	<br>
+The medical information we provide is intended to help people better understand their health and their diagnosed disorders. For medical advice, diagnosis, and answers to your questions, <b>NIDDK urges you to visit a qualified physician</b> (or dietitian if your questions concern nutrition).</td>
+	</tr>
+</table>
+     <br>
+
+<br>
+<h2>If you still want to send an email, please use the following form:</h2>
+
+
+<!-- form starts here -->
+<form action="/forms/NIDDK_mail.asp" method="post" name="ContactForm" id="ContactForm">
+
+<table bgcolor="#e8e8e8" border="0" cellpadding="10" cellspacing="0">
+<tr>
+	<td valign="TOP" align="RIGHT">
+      <b>What does your question<br>
+      or comment concern?<br></b>
+	</td>
+
+	<td>
+<select name="subject" size="1">
+<option value="diabetes">diabetes</option>
+<option value="digestive_disease">digestive disease</option>
+<option value="endocrine_or_metabolic_problem">endocrine or metabolic problem</option>
+<option value="kidney_or_urologic_problem">kidney or urologic problem</option>
+<option value="nutrition">nutrition</option>
+<option value="weight_control">weight control</option>
+<option value="grant_application">grant application</option>
+<option value="intramural_research">intramural research</option>
+<option value="NIDDK_web_site">NIDDK web site</option>
+</select>
+	</td>
+</tr>
+<tr>
+	<td valign="TOP" align="RIGHT"><b>Other:</b><br></td>
+	<td valign="TOP">
+	<input name="other" type="TEXT" size="40" maxlength="200"></td>
+</tr>
+
+<tr>  <td valign="TOP" align="RIGHT"><b>Comments: </b><br></td>
+	<td><textarea name="comments" rows="5" cols="33"></textarea></td>
+</tr>
+
+<tr>
+	<td colspan="2" valign="TOP"><br><b>Enter your name and U.S. postal address below if you are asking for information to be mailed to you.</b>  Double-check for accuracy.  Personal information will be kept confidential and used only to respond to your question.<p><!-- address blocks -->
+<table border="0">
+		<tr>
+			<td valign="TOP">First Name</td>
+			<td colspan="5"><input type="text" size="35" name="username" maxlength="35"></td>
+		</tr>
+		<tr>
+			<td valign="TOP">Last Name</td>
+			<td colspan="5"><input type="text" size="35" name="lastname" maxlength="35"></td>
+		</tr>
+		<tr>
+			<td valign="TOP">Address</td>
+			<td colspan="5"><input type="text" size="35" name="address" maxlength="35"></td>
+		</tr>
+		<tr>
+			<td valign="TOP">City</td>
+			<td><input type="text" size="15" name="city" maxlength="15"></td>
+			<td align="right" valign="TOP">State</td>
+			<td><input type="text" size="2" name="state" maxlength="2"></td>
+			<td align="RIGHT" valign="TOP">&nbsp;&nbsp;ZIP</td>
+			<td align="RIGHT"><input type="text" size="8" name="zip" maxlength="10"></td>
+		</tr>
+		<tr>
+			<td valign="TOP">Email</td>
+			<td colspan="5" valign="TOP"><input type="text" size="50" name="from" maxlength="35"><br>Use <b>complete</b> email address<br>
+			(example: jdoe@mailhost.com).</td>
+		</tr>
+		<tr>
+			<td align="center" colspan="6"><br>
+			<input type="button" value="Send" onClick="submitcheck()">
+			<input type="RESET" name="reset" value="Clear Form">
+			<p>Your email will be sent to &lt;dkwebmaster@extra.niddk.nih.gov&gt;.</td></tr></form></table><!-- end address blocks --></td>
+</tr>
+
+</table><!-- end form --></td>
+	</tr>
+<!--  footer row -->
+	<TR>
+		<TD>
+		<TR><TD><BR><BR></TD></TR>
+
+		<tr><td bgcolor="#0F6060"><img src="/images/spacer.gif" height="1" vspace="0" hspace="0" alt=""></td></tr>
+
+		<tr><td bgcolor="#FFFFFF"><img src="/images/spacer.gif" height="3" vspace="0" hspace="0" alt=""></td></tr>
+
+		<TR><TD>
+
+		<p class="nav">
+		<A HREF="/index.htm">Home</A> ||
+		<A HREF="/welcome/welcome.htm">Welcome</A> ||
+		<a href="/health/health.htm">Health Information</a> ||
+		<a href="/fund/fund.htm">Research Funding Opportunities</a> ||
+		<a href="/patient/patient.htm">Clinical Research</a> ||
+		<a href="http://intramural.niddk.nih.gov">NIDDK Laboratories</a> ||
+		<a href="/federal/planning.htm">Reports, Testimony &amp; Plans</a> ||
+		<A HREF="/tools/map.htm">Site Map</A> ||
+		<A HREF="/tools/faq.htm">FAQs</A> ||
+		<A HREF="/forms/niddk_mail.htm">Contact NIDDK</A> ||
+		<A HREF="http://search2.google.cit.nih.gov/search?access=p&output=xml_no_dtd&sort=date%3AD%3AL%3Ad1&client=NIDDK_frontend&btnG.y=7&q=&filter=0&btnG.x=20&site=NIDDK&oe=UTF-8&proxystylesheet=NIDDK_frontend&ip=137.187.70.154&proxycustom=<ADVANCED/>">Search</A></p>
+		</TD></tr>
+
+		<tr><td bgcolor="#FFFFFF"><img src="/images/spacer.gif" height="5" vspace="0" hspace="0" alt=""></td></tr>
+
+		<tr><td bgcolor="#0F6060"><img src="/images/spacer.gif" height="1" vspace="0" hspace="0" alt=""></td></tr>
+
+
+		<tr><td align="left" bgcolor="#E7EFEF"><img src="/images/spacer.gif" height="5" vspace="0" hspace="0" alt=""></td></tr>
+
+		<tr><td bgcolor="#0F6060"><img src="/images/spacer.gif" height="1" vspace="0" hspace="0" alt=""></td></tr>
+
+		<tr><td bgcolor="#FFFFFF"><img src="/images/spacer.gif" height="5" vspace="0" hspace="0" alt=""></td></tr>
+
+		<TR><TD>
+		<p class="index"><B>Director: Dr. Allen Spiegel</a></B> || <a href="/forms/niddk_mail.htm">Contact NIDDK</a><BR>
+		National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)
+		is part of the <a href="http://www.nih.gov">National Institutes of Health</a>, Bethesda, MD, USA.  General inquiries may be addressed to Office of Communications and Public Liaison, NIDDK, NIH, Building 31, room 9A04 Center Drive, MSC 2560, Bethesda, MD 20892-2560, USA.  <br><a href="/tools/privacy.htm">Privacy</a> || <a href="/tools/disclaim.htm">Disclaimer</a> || <a href="/tools/cright.htm">Copyright</a> || <a href="/tools/FOIA.htm">FOIA</a> 
+||
+<a href="/tools/accessibility.htm">Accessibility</a></p></TD></TR>
+
+		<tr><td bgcolor="#FFFFFF"><img src="/images/spacer.gif" height="5" vspace="0" hspace="0" alt=""></td></tr>
+
+		<tr><td bgcolor="#0F6060"><img src="/images/spacer.gif" height="1" vspace="0" hspace="0" alt=""></td></tr>
+
+		<tr><td bgcolor="#FFFFFF"><img src="/images/spacer.gif" height="3" vspace="0" hspace="0" alt=""></td></tr>
+
+		<TR><TD>
+		<table width="498" border="0" cellspacing="0" cellpadding="0">
+		<TR><TD align="center">
+		<a href="http://www.nih.gov"><img src="/images/nih-bottom.gif" border="0" Alt="U. S. National Institutes of Health"></a></TD>
+		<TD align="center"><a href="http://www.dhhs.gov"><img src="/images/dhhs-bottom.gif" border="0" ALT="U.S. Department of Health &amp; Human Services"></a></TD>
+		<TD align="center"><a href="http://www.firstgov.gov"><img src="/images/firstgov-bottom.gif" border="0" ALT="FirstGov"></a></TD></TR></TABLE>
+		</TD></TR>
+
+
+<!-- end  footer row -->
+
+</table><br></td>
+<td background="/images/stripe.gif" width="100" valign="top"><img src="/images/spacer.gif" width="100" height="1" alt=""></td>
+	</tr>
+</table>
+</body>
+</html>

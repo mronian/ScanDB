@@ -1,0 +1,341 @@
+<DOC>
+<DOCNO>f00139</DOCNO>
+<DOCHDR>http://www.mitre.org/cgi-bin/formrex.pl?config=wwwcontactus.txt</DOCHDR>
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+
+
+
+
+
+
+        <head>
+                <title>MITRE - Contact Us</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+                <link href="/wwwmitre.css" rel="stylesheet" media="screen" />
+
+
+
+
+<script language="JavaScript">
+
+
+
+
+function validateForm()      {
+          
+ if (window.document.contactus.NAME.value == '') {
+              alert("Please provide your name.");
+              window.document.contactus.NAME.focus();
+             return false;
+}
+	else if (window.document.contactus.EMAIL.value.length < 9) {
+              alert("Please provide a valid email address.");
+              window.document.contactus.EMAIL.focus();
+			  return false;
+          }
+          else if (window.document.contactus.CATEGORY.selectedIndex < 0) {
+              alert("Please select a category for your submission.");
+              window.document.contactus.EMAIL.focus();
+             return false;
+}
+          
+           else if (window.document.contactus.COMMENT.value == '') {
+              alert("You must enter your message.");
+              window.document.contactus.COMMENT.focus();
+             return false;
+}
+}
+</script>
+
+
+
+
+
+
+
+
+                </head>
+
+
+
+
+<body bgcolor="#ffffff" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><script type='text/javascript' src='/nwrmenu_var.js'></script>
+<script type='text/javascript' src='/menu9_com.js'></script>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr bgcolor="#0066cc">
+<td width="141" height="54" bgcolor="#0066cc" rowspan="2" nowrap="nowrap">
+<img src="/images/top1.gif" alt="MITRE" width="141" height="54" border="0" usemap="#Map2" /></td>
+
+
+<form action="http://www-search.mitre.org/search" method="get">
+<td align="right" width="640" valign="middle" height="30">
+<input type="hidden" name="client" value="mitre" />
+  <input type="hidden" name="site" value="mitre" />
+  <input type="hidden" name="proxystylesheet" value="mitre" />
+  <input name="q" value="" type="text" size="12" /> 
+  <input type="hidden" name="output" value="xml_no_dtd" /> 
+  <input type="image" name="submit" value="Search" src="/images/searchbutton.gif" alt="Search" align="absmiddle" border="0" height="17" width="49" />
+</td></form>
+<td width="100%"><img src="/images/spacer.gif" alt="" /></td></tr>
+<tr>
+    <td width="640" valign="bottom" bgcolor="#0066cc" height="24"> 
+      <table width="640" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="160"><a href="/about/index.html"><img src="/images/aboutus.gif" alt="About Us" border="0" /></a></td>
+          <td width="160"><a href="/work/index.html"><img src="/images/ourwork.gif" alt="Our Work" border="0" /></a></td>
+          <td width="160"><a href="/employment/index.html"><img src="/images/employment.gif" alt="Employment" border="0" /></a></td>
+          <td width="160"><a href="/news/index.html"><img src="/images/news.gif" alt="News &amp; Events" border="0" /></a></td>
+        </tr>
+      </table></td>
+<td bgcolor="#0066cc" width="198"><img src="/images/spacer.gif" alt="" /></td>
+</tr>
+</table>
+<map name="Map2">
+  <area shape="rect" coords="22,11,121,46" href="/" alt="MITRE Home" />
+</map>
+<img src="/images/bannerpart2_sub.gif" alt="" width="786" height="26" border="0" usemap="#Map" /> 
+<map name="Map">
+  <area shape="rect" coords="669,1,714,20" alt="Home" href="/" />
+  <area shape="rect" coords="714,2,771,20" alt="Site Map" href="/site/sitemap.html" />
+</map>
+
+
+<map name="Map">
+  <area shape="rect" coords="669,1,714,20" href="/" alt="Home">
+  <area shape="rect" coords="714,2,771,20" href="/site/sitemap.html">
+</map>
+
+
+
+
+<table width="750" border="0" cellspacing="4">
+  <tr> 
+    <td rowspan="2" width="140" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                
+    <td width="610"><a class="small" href="/">Home</a> <span class="small">&gt; Contact Us</span></td>
+                        </tr>
+                        <tr>
+                                <td valign="top" width="562"><p><span class="pagehead">Contact Us </span></p>
+      <p>The MITRE Corporation may be contacted via postal mail, email, and phone.</p>
+
+
+
+
+      <p><span class="subhead">Headquarters Locations</span></p>
+<p>
+  
+<table width="500" border="0" cellspacing="2" cellpadding="2" align="center">
+        <tr>
+          <td valign="top"><img src="/images/mitre_bedford.jpg" height="100" border="1" /><br />
+            <strong>MITRE-Bedford</strong><br />
+            <GEO TYPE="US">202 Burlington Road<br />
+            Bedford, MA 01730-1420</GEO><br />
+            (781) 271-2000</td>
+          <td valign="top"><img src="/images/mitre_virginia.jpg" height="100" border="1" /><br /> 
+            <strong>MITRE-Washington</strong><br />
+            <GEO TYPE="US">7515 Colshire Drive<br />
+            McLean, VA 22102-7508</GEO><br />
+            (703) 883-6000 </td>
+        </tr>
+      </table>
+
+
+
+
+</p>
+
+
+
+
+<p><span class="subhead">Contact a MITRE Employee</span></p>
+<p>MITRE employees may be contacted directly if they are listed in the <a href="/cgi-bin/pubdir/phonebook.cgi">Employee 
+        Directory</a>. If a current employee is not listed in the directory, please 
+        complete and submit the form below and your message will be manually forwarded. 
+        (When completing the form, be sure to select &quot;Contact an Employee&quot; 
+        under Message Category.)</p>
+
+
+
+
+
+
+
+
+<p><span class="subhead">Email Us</span></p>
+<p>
+Inquiries are usually answered within two business days. All form fields are required.     
+</p>
+
+
+
+
+<!-- submit question form -->
+
+
+
+
+<p>
+<form action="/cgi-bin/formrex.pl?config=wwwcontactus.txt" method="post" name="contactus" onsubmit="return validateForm()">
+<input type="hidden" name="ACTION" value="wwwcontactus.txt">
+<input type="hidden" name="oe" value="utf8" />
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="2">
+<tr>
+<td align="right"><strong>Your name:</strong></td>
+<td>
+<input type="text" size="30" name="NAME" />
+</td>
+</tr>
+
+
+
+
+<tr>
+<td nowrap align="right"><strong>Your e-mail address:</strong></td>
+
+
+
+
+<td>
+<input type="text" size="30" name="EMAIL" />
+</td>
+</tr>
+<tr valign="top">
+
+
+
+
+<td align="right"><strong>Select a Message<br /> Category:</strong></td>
+
+
+
+
+<td>
+<select name="CATEGORY" size="4">
+
+
+
+
+<option value="Contact an Employee">Contact an Employee</option>
+<option value="Copyrights/Permissions">Copyrights/Permissions</option>
+<option value="Employment Related">Employment Related</option>
+<option value="MITRE Web site Related">MITRE Web site Related</option>
+<option value="Public Relations">Public Relations</option>
+<option value="Request Article">Request Article/Publication</option>
+<option value="Student Inquiries">Student Inquiries</option>
+<option value="Technology Transfer">Technology Transfer</option>
+<option value="Vendor Related">Vendor Related</option>
+<option value="General Questions">General Questions</option>
+<option value="Photo Archives">Photo Archives</option>
+<option value="Other">Other</option>
+</select>
+
+
+
+
+</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+
+
+<td valign="top" align="right"><strong>Message:</strong></td>
+
+
+
+
+<td>
+<textarea name="COMMENT" wrap="virtual" rows="8" cols="30"></textarea>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td colspan="2" align="center"><br /><input type="submit" alt="Submit" name="Submit" value="Submit"/></td>
+</tr>
+</table>
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+</p>
+
+
+
+
+<div align="right">
+        <p class="small"><i>Page last updated:   <!-- #BeginDate format:Am1 -->February 2, 2005<!-- #EndDate --></i>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Top 
+          of page</a></p> <p>&nbsp;</p></div>
+</td>
+                        </tr>
+</table>
+&nbsp;<img src="/images/spacer.gif" width="15" height="45" /><img src="/images/footer2.gif" alt="" height="45" width="773" usemap="#footer60aa49f" border="0" /> 
+<map name="footer60aa49f" id="footer60aa49f">
+  <area shape="rect" coords="603,9,737,37" href="/about/ffrdcs/cem.html" alt="Center for Enterprise Modernization" />
+  <area shape="rect" coords="426,10,562,37" href="/about/ffrdcs/c3i.html" alt="Command, Control, Communications and Intelligence Center" />
+  <area shape="rect" coords="235,9,393,36" href="/about/ffrdcs/caasd.html" alt="Center for Advanced Aviation System Development" />
+  <area shape="rect" coords="20,7,188,38" href="/about/ffrdcs.html" alt="FFRDCs in the Public Interest" />
+</map>
+<br />
+<br />
+<table width="773" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="146" align="left" valign="top">&nbsp;<img src="/images/spacer.gif" width="20" height="13" /> 
+      <a title="MITRE Home" href="/"><img src="/images/mitrelogosmall.gif" alt="" height="13" width="48" border="0" /></a></td>
+    <td width="523" valign="top" nowrap="nowrap"> <p><span class="italics">A National 
+        Resource Working in the Public Interest.</span><br />
+        <span class="graysmall">Copyright © 1997-2005, The MITRE Corporation. 
+        All rights reserved.<br />
+        MITRE is a registered trademark of The MITRE Corporation.<br />
+        Material on this site may be copied and distributed with permission only.<br />
+        MITRE has no control over content on external sites unless noted.</span></p></td>
+    <td width="92" valign="top" nowrap="nowrap"> <div align="left"> <a href="/site/privacy_policy.html" class="small">Privacy 
+        Policy</a> <br />
+        <a href="/cgi-bin/formrex.pl?config=wwwcontactus.txt" class="small">Contact 
+        Us</a><br />
+        <a href="/site/printing_tips.html" class="small">Printing Tips</a></div></td>
+  </tr>
+</table><p>&nbsp;</p></body>
+
+
+
+
+</html>

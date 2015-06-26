@@ -1,0 +1,810 @@
+<DOC>
+<DOCNO>f00406</DOCNO>
+<DOCHDR>http://www.sunherald.com/mld/sunherald/contact_us</DOCHDR>
+
+
+
+
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+
+var rm = false;
+
+</script>
+<title>Contact Us -- SunHerald.com</title>
+<link rel='stylesheet' type='text/css' href='/css/palette/sunherald/en/global.css'/><script type="text/javascript" language="javascript">
+
+_krdDartOrd = new Date().getTime();
+
+_krdDartInc = 0;
+var navReady = false;
+var toolsReady = false;var onLoadScript="";function Browser() {var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+// I have disabled the following line, but something similar might be useful later,
+// but launching a popup window is more polite than this alert.
+//if (!b) alert(''Unidentified browser./nThis browser is not supported,'');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.ns=(this.b=="ns" && this.v>=4);
+this.ns4=(this.b=="ns" && this.v==4);
+this.ns6=(this.b=="ns" && this.v==5);
+this.ie=(this.b=="ie" && this.v>=4);
+this.ie4=(this.version.indexOf('MSIE 4')>0);
+this.ie4up = (this.ie && this.v>= 4);
+this.ns5up = (this.ns && this.v>= 5);
+this.ie5=(this.version.indexOf('MSIE 5')>0);
+this.ie5up = (this.ie5);
+this.ie55=(this.version.indexOf('MSIE 5.5')>0);
+this.opera=(this.b=="opera");
+this.def=(this.ie||this.dom);var ua=navigator.userAgent.toLowerCase();
+this.mac = (ua.indexOf("mac")!=-1);if (ua.indexOf("win")>-1) this.platform="win32";
+else if (ua.indexOf("mac")>-1) this.platform="mac";
+else this.platform="other";
+}
+var is = new Browser();
+// tiny extra css. these are ONLY used by old browsers.
+// VAST majority of users will NEVER request these files.
+// Even NS4 is around 7% of market and falling
+if (is.ns4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/sunherald/en/browser/ns4.css'>\n";
+document.write(css);
+}
+if (((is.ns4)||(is.ie4))&&( is.mac)) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/sunherald/en/browser/ns4mac.css'>\n";
+document.write(css);
+}
+if (is.ie4 && is.mac==false) {
+var css = "<LINK rel='stylesheet' type='text/css' href='/css/palette/sunherald/en/browser/ie4.css'>\n";
+document.write(css);
+}
+
+function LayerObject(divId) {
+this.name = divId;
+if (is.ns4) this.ob = eval("document." +divId);
+else if (is.ie4) this.ob = document.all(divId);
+else this.ob = document.getElementById(divId);
+this.x = 0;
+this.y = 0;
+this.width = this.getWidth();
+this.height = this.getHeight();
+}
+LayerObject.prototype.px = (is.version>=5)?"px":"";
+LayerObject.prototype.hideSyntax = (is.ns4)? "hide":"hidden";
+LayerObject.prototype.showSyntax = "visible";// NS4::  Unbelievable, but document.layername.document.imgname works for img-in-layer-in document
+// and it works for img in layer in table in document.
+// but it doesnt work for img in layer in table in table in document.
+// Maybe a workaround exists, but it seems unlikely at this point.
+// The images MUST therefore be nested only one deep....
+LayerObject.prototype.getInlineLeft = function() {
+if (is.ns4) return this.ob.pageX;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var xPos = 0;
+var yPos = 0;
+while (elem.offsetParent != null) {
+xPos += elem.offsetLeft;
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) xPos += 2;
+return xPos;
+}
+else return (this.ob.offsetLeft + document.body.offsetLeft);
+}
+
+LayerObject.prototype.getInlineTop = function() {
+if (is.ns4) return this.ob.pageY;
+else if ((is.ie) || (is.opera)) {
+var elem = this.ob;
+var yPos=0;
+while (elem.offsetParent != null) {
+yPos += elem.offsetTop;
+elem = elem.offsetParent;
+}
+if (is.mac) yPos += 2;
+return yPos;
+}
+else return (this.ob.offsetTop+ document.body.offsetTop);
+}
+
+//getWidth and getHeight works for both inline and positioned divs.
+LayerObject.prototype.getWidth = function () {
+if (is.ns4) return this.ob.clip.width;
+else if (is.opera) return this.ob.style.pixelWidth;
+else return this.ob.offsetWidth;
+}
+LayerObject.prototype.getHeight = function () {
+if (is.ns4) return this.ob.clip.height;
+else if (is.opera) return this.ob.style.pixelHeight;
+else return this.ob.offsetHeight;
+}
+LayerObject.prototype.hide = function() {
+if (is.ns4) this.ob.visibility = this.hideSyntax;
+else this.ob.style.visibility = this.hideSyntax;
+}
+LayerObject.prototype.show = function() {
+if (is.ns4) this.ob.visibility = this.showSyntax;
+else this.ob.style.visibility = this.showSyntax;
+}
+LayerObject.prototype.moveLayerTo = function(toX, toY) {
+this.x = toX;
+this.y = toY;
+}
+LayerObject.prototype.updateLayer = function() {
+if (is.ns4) {
+this.ob.left = Math.round(this.x) + this.px;
+this.ob.top = Math.round(this.y)+ this.px ;
+}
+else {
+this.ob.style.left = Math.round(this.x) + this.px;
+this.ob.style.top = Math.round(this.y) + this.px;
+}
+}
+//-----------------
+function roll(divName, imgName, which) {
+var suffix = (which==1)?"on":"off"
+if ((is.ns4)&&(divName!=0)) {
+var imgObject = eval("document." + divName +".document.images['"+imgName +"']");
+imgObject.src = eval(imgName + "_" + suffix + ".src");
+}
+else {
+document.images[imgName].src = eval(imgName + "_" + suffix + ".src");
+}
+}
+
+function init() {
+if (onLoadScript) eval(onLoadScript);
+}
+
+// Workaround for the netscape resize problem --
+// namely, on resize ns looses div positioning and
+// styles from css files.
+// This checks to see if the window''s dimensions have
+// actually changed (because Netscape often fires a
+// false onResize event when it forms scrollbars);
+// if the dimensions have changed, page is reloaded
+function resizefix(){
+if((document.resizeFix.initWidth != window.innerWidth) ||
+(document.resizeFix.initHeight != window.innerHeight))
+{
+document.location = document.location;
+}
+}
+
+// This code creates a new object with properties
+// to hold the current window width & height to be
+// used in the event of a netscape resize
+document.resizeFix = new Object();
+if(is.ns4){
+document.resizeFix.initWidth = window.innerWidth;
+document.resizeFix.initHeight = window.innerHeight;
+window.onresize=resizefix;
+}
+
+
+
+
+
+
+
+function initMenus(){
+}
+
+
+
+function showResults(siteSurveyKey) {
+var url="/mld/templates/contentModules/poll-results-popup.jsp"+ "?siteSurveyKey=" + siteSurveyKey;
+window.open(url, 'Title');
+}
+
+function openWin(URL) {
+aWindow = window.open(URL,
+'thewindow','width=500,height=400,resizable=yes,scrollbars=yes');
+}
+function getSite(){
+foundSite = false;
+site=document.location.hostname;
+endPos=site.indexOf(".com");
+if (endPos>= 1) {
+foundSite = true;
+site = site.substr(0, endPos);
+startPos = site.lastIndexOf(".");
+site = site.substr(startPos + 1);
+}
+return site;
+}
+function getPublication(){
+publication=document.location.pathname;
+startPos=publication.indexOf("/mld/");
+publication=publication.substr(startPos+5);
+endPos=publication.indexOf("/");
+publication=publication.substr(0,endPos);
+return publication;
+}
+function openSlideshow(url,width,height) {
+y=Math.floor((screen.availHeight-height)/2);
+x=Math.floor((screen.width-width)/2);
+window.open(url,'slideshow','width='+width+',height='+height+',top='+y+',left='+x+',scrollbars=yes,resizable=yes').focus();
+}
+
+
+
+</script>
+</head>
+<body class="body" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CDS : SDP2.5.0_full_02072005_100000 : production --><table width="768" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:5px;">
+<tr><td class="header1">
+
+
+<a HREF="http://www.sunherald.com/mld/sunherald/contact_us/subscriptions_np1/"><img SRC="/images/logos/site/sunherald/sunherald/mediapartners/sm_logo_sunherald.jpg" alt="Subscriber Services" hspace="0" vspace="1" border="0"/><br>Subscriber Services</a>
+
+
+
+</td><td class="header2">
+<a href="/"><img src="/images/logos/site/sunherald/sunherald/site_logo_340x60.gif" width="340" height="60" alt="" hspace="0" vspace="0" border="0"/></a>
+</td><td class="header3">
+
+
+
+<a href="http://weather.sunherald.com"><img src="http://banners.wunderground.com/banner/krd_cond/language/www/US/MS/Biloxi.gif" alt="Weather" hspace="0" vspace="0" border="0"></a>
+<br>
+
+
+
+<a href="http://weather.sunherald.com">Complete Forecast</a>
+
+
+
+</td><td class="header4">
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/sunherald.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;dcopt=ist;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/sunherald.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109896944786?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/sunherald.contact_us/contact_us;kw=header;c2=contact_us_homepage;pos=header;group=160x60;ord=1109896944786?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+</td></tr></table>
+
+
+
+
+
+<script id="search_box_center_jsp_script" language="javascript" type="text/javascript">
+function searchFormSubmit(form) {
+if (form.searchSelect[1].checked == true) {
+window.location = "http://www.newslibrary.com/nlsearch.asp?forceTheme=RealCities&s_site=sunherald&search_mode=all&action=search&date_mode=year&year=last+180+days&sort=d%3Ah&nitems=10&region=bx&dbquery=" + form.query.value;
+return false;
+}
+return true;
+}
+</script><table cellspacing="0" cellpadding="0" border="0" width="768"><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr><tr><td align="center" class="navbg1">
+<SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/sunherald.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/sunherald.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109896944787?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/sunherald.contact_us/contact_us;kw=top;c2=contact_us_homepage;pos=top;group=banner;ord=1109896944787?" BORDER="0" ></A>
+</NOSCRIPT>
+
+</td></tr><tr><td class="navbg1" style="font-size:2px; line-height:2px;">&nbsp;</td></tr></table><table cellspacing="0" cellpadding="0" border="0" width="768">
+<form action="http://www.sunherald.com/mld/sunherald/search/search_results.htm" method="get" name="SearchForm_top" onsubmit="return searchFormSubmit(this)">
+<input type=hidden name="pubName" value="sunherald">
+<input type=hidden name="orderBy" value="date">
+<input type=hidden name="pageStart" value="1">
+
+
+<input type="hidden" name="sitesToSearch" value="sunherald,thesunherald,realcities">
+
+
+
+<input type=hidden name="pageSize" value="10">
+<input type=hidden name="fieldsToSearch" value="HEADLINE,FORSEARCH,LEAD,BYLINE">
+<input type=hidden name="queryType" value="all">
+<tr style="background-color:#f2f2f2;">
+<td class="newsearch">
+
+<b>Search</b>&nbsp;
+
+
+<input name="searchSelect" value="article" type="radio" checked>Recent News&nbsp;
+
+
+
+<input name="searchSelect" value="archives" type="radio">Archives&nbsp;
+
+
+
+
+<input name="searchSelect" value="web" type="radio">Web&nbsp;&nbsp;
+
+
+
+<b>for&nbsp;&nbsp;</b><input name="query" size="25" maxlength="256" type="text">&nbsp;&nbsp;<input value="Go" type="submit">
+
+</td><script language="javascript" type="text/javascript">
+document.write('<td class="newregbox">');
+if (rm) {
+document.write('Welcome <b>' + rname + '</b><br>');
+
+document.write('	<a href="https://secure.sunherald.com/listit/myclassifieds/">My Classifieds</a>&nbsp;|&nbsp;');
+
+document.write('<a href="https://registration.sunherald.com/reg/myAccount.do">My Account</a>&nbsp;|&nbsp;');
+document.write('<a href="https://registration.sunherald.com/reg/logout.do">Sign Out</a>');
+} else {
+document.write('	Welcome <b>Guest</b><br />');
+document.write('	<a href="https://registration.sunherald.com/reg/createAccount.do">Sign Up</a>&nbsp;|&nbsp;<a href="https://registration.sunherald.com/reg/login.do">Sign In</a>&nbsp;|&nbsp;');
+document.write('	<a href="https://registration.sunherald.com/reg/memberBenefits.do">Member Benefits</a>');
+}
+document.write('</td>');
+</script>
+</tr></form>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="columndiv" width="134"><img src="/images/common/spacer.gif" width="134" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="472"><img src="/images/common/spacer.gif" width="472" height="1"></td><td class="columndiv" width="1"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="columndiv" width="160"><img src="/images/common/spacer.gif" width="160" height="1"></td></tr><tr>
+<td class="leftrail" valign="top" align="center" width="134">
+
+
+
+<!-- classifieds -->
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BGCOLOR="#ffffff"><TR><TD>
+<div style="border-left:4px solid #AB390F;">
+<div class="contentnav" style="border-top:1px solid #cccccc;"><img src="http://www.sunherald.com/multimedia/sunherald/images/sunherald_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/sunherald/classifieds/employment/"><B>Jobs</B></A></div>
+<div class="contentnav"><img src="http://www.sunherald.com/multimedia/sunherald/images/sunherald_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/sunherald/classifieds/automotive/"><B>Cars</B></A></div>
+<div class="contentnav"><img src="http://www.sunherald.com/multimedia/sunherald/images/sunherald_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/sunherald/classifieds/real_estate/"><B>Real Estate</B></A></div>
+<div class="contentnav"><img src="http://www.sunherald.com/multimedia/sunherald/images/sunherald_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.apartments.com/search/oasis.dll?p=sherald&Area1=Y&page=SubArea&state=MS&rgn2=155&partner=sherald&prvpg=3"><B>Apartments</B></A></div>
+<div class="contentnav"><img src="http://www.sunherald.com/multimedia/sunherald/images/sunherald_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="http://www.shoplocal.com/sunherald/new_user_entry.aspx?CityStateZip=39530&AdRef=link03"><B>Local Shopping</B></A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/sunherald/new_user_entry.aspx?CityStateZip=39530&AdRef=link03">Find Sales & Deals</A><BR />
+	&nbsp;&#149;&nbsp;&nbsp;<A style="color:#333; font-size:.9em;" HREF="http://www.shoplocal.com/sunherald/new_user_entry.aspx?CityStateZip=39530&AdRef=link03">Shop Local Stores</A><BR /></div>
+<div class="contentnav"><img src="http://www.sunherald.com/multimedia/sunherald/images/sunherald_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/sunherald/classifieds/"><B>All Classifieds</B></A></div>
+<div class="contentnav"><img src="http://www.sunherald.com/multimedia/sunherald/images/sunherald_bullet.gif" style="margin:0px; padding:0px;">&nbsp;<A HREF="/mld/sunherald/classifieds/personals/"><B>Personals</B></A></div>
+</div>		
+</TD></TR></TABLE>
+
+<DIV style="text-align: left; background-color:#fff;">
+<!-- site nav -->
+<div class="navtitlebar"></div>
+<div class="contentnav"><A HREF="/mld/sunherald/news/"><B>News</B></A><BR />
+	  •  <A HREF="/mld/sunherald/news/local/">Local</A><BR />
+	  •  <A HREF="/mld/sunherald/news/nation/">Nation</A><BR />
+	  •  <A HREF="http://www.legacy.com/sunherald/">Obituaries</A></div>
+<div class="contentnav"><A HREF="/mld/sunherald/sports/"><B>Sports</B></A></div>
+<div class="contentnav"><A HREF="/mld/sunherald/entertainment/"><B>Entertainment</B></A><BR /></div>
+<div class="contentnav"><A HREF="/mld/sunherald/business/"><B>Business</B></A></div>
+<div class="contentnav"><A HREF="/mld/sunherald/living/"><B>Living</B></A><BR />
+	  •  <A HREF="/mld/sunherald/living/religion/">Faith & Values</A><BR />
+	  •  <A HREF="/mld/sunherald/living/health/">Health & Fitness</A></div>
+<div class="contentnav"><A HREF="/mld/sunherald/news/editorial/"><B>Opinion</B></A><BR />
+    	•  <A HREF="/mld/sunherald/news/editorial/letters/">Letters</A><br>
+	  •  <A HREF="/mld/sunherald/news/opinion/">Sound Off</A></div>
+</DIV>
+
+
+<DIV style="text-align: left; background-color:#fff;">
+<!-- online extras -->
+<div class="navtitlebar">ONLINE EXTRAS</div>
+<div class="contentnav"><A HREF="/mld/sunherald/archives/"><B>Archives</B></A></div>
+<div class="contentnav"><A HREF="http://forums.realcities.com/dir-app/nav/forumdirectory.aspx?webtag=kr-sunheraldz&byName=y"><B>Discussion Boards</B></A></div>
+<div class="contentnav"><A HREF="http://maps.sunherald.com/jump.cgi/refsrc=KR.1218"><B>Maps & Directions</B></A></div>
+<div class="contentnav"><A HREF="http://newspaperads.sunherald.com/RopCategory.aspx"><B>Newspaper Ads</B></A></div>
+
+<div class="contentnav"><A HREF="http://yp.sunherald.com/bin/cgidir.dll?MEM=1218"><B>Yellow Pages</B></A></div>			
+
+<!-- site services -->
+<div class="navtitlebar">SITE SERVICES</div>
+<div class="contentnav"><A HREF="/mld/sunherald/contact_us/"><B>Contact Us</B></A></div>
+<div class="contentnav"><A HREF="/mld/sunherald/contact_us/advertise/"><B>Advertise</B></A></div>
+</DIV>
+<BR />
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td>
+<td class="centerrail" valign="top" align="center" width="472">
+
+
+
+
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="2" width="97%">
+<tr><td valign="middle"><a href="/mld/sunherald/" class="related">Back to Home</a>&nbsp;&gt;&nbsp;
+</td><td align="right" class="byline">Thursday, Mar 03, 2005</td></tr><tr><td colspan="2" align="center" bgcolor="#ffffff"> <img src="/images/common/spacer.gif" width="1" height="1" /><br></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="97%">
+<tr> <td align="center" class="pagetitle" width="100%">Contact Us</td><td align="right" width="1" valign="top"><img src="/images/common/spacer.gif" width="1" height="1" /></td><td align="right"  valign="top">
+
+</td></tr></table><table border="0" cellpadding="0" cellspacing="0" width="97%" align="center">
+<tr><td align="center">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center" bgcolor="#cccccc">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center">
+<img src="/images/common/spacer.gif" width="1" height="2" /><br></td></tr><tr><td align="center" bgcolor="#cccccc">
+<img src="/images/common/spacer.gif" width="1" height="1" /><br></td></tr></table><img src="/images/common/spacer.gif" width="100%" height="5" /><br></div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td><td><TABLE cellSpacing=2 cellPadding=0 width="425" border=0>
+
+<TBODY>
+
+<TR>
+
+<TD vAlign=center><A class=" related" href="/mld/sunherald/">Back to 
+
+Home</A> >  </TD>
+
+</TR>
+
+<TR>
+
+<TD align=middle bgColor=#ffffff colSpan=2><IMG height=1 
+
+src="/images/common/spacer.gif" width=1><BR></TD></TR></TBODY></TABLE>
+
+
+
+<TABLE cellSpacing=0 cellPadding=0 width="425" border=0>
+
+<TBODY>
+
+<TR>
+
+<TD vAlign=top>
+
+<TABLE cellSpacing=0 cellPadding=8 width="100%" border=0>
+
+<TBODY>
+
+<TR>
+
+<TD><IMG height=17 alt='""' 
+
+src="/images/sunherald/thesunherald/3728/13899023112.gif" width=150 vspace=2 
+
+border=0> <FONT face="Arial, Helvetica, sans-serif" size=1><BR></FONT><FONT 
+
+face="Arial, Helvetica, sans-serif" color=#cc0000 size=1>Your South Mississippi 
+
+Everything Guide</FONT><BR><BR><IMG height=9 alt="" 
+
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left 
+
+vspace=2 border=0><B><A href="/mld/sunherald/contact_us/about">About 
+
+SunHerald.com</A></B><BR><IMG height=9 alt="" 
+
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left 
+
+vspace=2 border=0><B><A 
+
+href="/mld/sunherald/contact_us/help">Help</A></B><BR><IMG height=9 alt="" 
+
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left 
+
+vspace=2 border=0><B><A 
+
+href="/mld/sunherald/contact_us/help/faq/">Feedback</A></B><BR><IMG height=9 
+
+alt="" src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left 
+
+vspace=2 border=0><B><A 
+
+href="/mld/sunherald/contact_us/contact_list">Contacts</A></B> <BR><IMG height=9 
+
+alt="" src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left 
+
+vspace=2 border=0><B><A 
+
+href="/mld/sunherald/contact_us/advertise">Advertise</A></B> 
+
+</TD></TR></TBODY></TABLE></TD>
+
+<TD align=middle width=15 
+
+background=/images/component/archives_vertdotline.gif><IMG height=1 alt="" 
+
+src="/images/common/spacer.gif" width=14 border=0> <BR></TD>
+
+<TD align=middle width=15><IMG height=1 alt="" src="/images/common/spacer.gif" 
+
+width=14 border=0></TD>
+
+<TD vAlign=top width="47%">
+
+<TABLE cellSpacing=0 cellPadding=8 width="100%" border=0>
+
+<TBODY>
+
+<TR>
+
+<TD><IMG height=29 alt='""' src="/images/common/realcities_logo.gif" width=27 
+
+align=left border=0><FONT face="Arial, Helvetica, sans-serif" color=#cc0000 
+
+size=1>The Internet's Largest Network of Local Sites </FONT><B><FONT 
+
+face="Arial, Helvetica, sans-serif" size=1><BR></FONT></B><BR><BR><IMG height=9 
+
+alt="" src="/images/palette/gray_neutral/panel_arrow_0.gif" width=11 align=left 
+
+vspace=2 border=0><B><A 
+
+href="http://www.realcities.com">About the<BR><IMG 
+
+height=9 alt="" src="/images/common/spacer.gif" width=12 align=left vspace=2 
+
+border=0>Real Cities Network</A></B><BR>
+
+<!-- <IMG height=9 alt="" 
+
+src="/images/palette/gray_neutral/panel_arrow_0.gif" width=12 align=left 
+
+vspace=2 border=0><B><A 
+
+href="http://www.knightridderdigital.com/press/index.html">Press Center</A></B> --> 
+
+</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+
+
+
+<table border=0><tr><td align=center width="425"><IMG height=27 alt='""' 
+
+src="/images/sunherald/thesunherald/3728/13899295256.gif" border=0><BR><FONT face="Arial, Helvetica, sans-serif" color=#cc0000 
+
+size=1>South Mississippi's newspaper</FONT><BR></td></tr></table>
+
+
+
+<table border=0 width="425"><tr><td>
+
+<GEO TYPE="US">205 DeBuys Road<br>
+
+Gulfport, MS 39507</GEO><p>
+
+</td>
+
+<td width="10"></td>
+
+<td>
+
+<GEO TYPE="US">P.O. Box 4567<br>
+
+Biloxi MS 39535-4567</GEO><p></p>
+
+</td></tr></table>
+
+
+
+<TABLE cellSpacing=0 cellPadding=8 width="400" border=0>
+
+<TBODY>
+
+<TR vAlign=top>
+
+<TD rowSpan=2><IMG height=37 alt='""' 
+
+src="/images/sunherald/thesunherald/3359/11285956844.gif" width=50 
+
+border=0></TD>
+
+<TD  width="44%" rowSpan=2><B><FONT face="Arial, Helvetica, sans-serif" 
+
+size=3>Reader Services<BR></FONT></B><FONT 
+
+face="Verdana, Arial, Helvetica, sans-serif" size=1>
+
+<!-- <LI><A 
+
+href="/mld/thesunherald/3277447.htm">Anniversaries/Births/<BR>Weddings/Engagements</A> 
+
+<BR> -->
+
+<LI><A href="http://www.sunherald.info/forms/letter.htm">Letters to the Editor</A><BR>
+
+<LI><A href="/mld/thesunherald/3285271.htm">Obituaries/Death notices</A><BR>
+
+<LI><A href="/mld/thesunherald/3277332.htm">Photo reprints</A> <BR>
+
+<LI><A href="/mld/thesunherald/4997713.htm">Sound 
+
+Off</A>
+<LI><A href="/mld/sunherald/contact_us/feedback_np1/">Newspaper Feedback</A><BR><BR></FONT></LI></TD>
+
+<TD><IMG height=30 alt='""' 
+
+src="/images/sunherald/thesunherald/3360/11289793880.gif" width=50 
+
+border=0></TD>
+
+<TD  width="34%"><B><FONT face="Arial, Helvetica, sans-serif" 
+
+size=3>Subscriber Services<BR></FONT></B><FONT 
+
+face="Verdana, Arial, Helvetica, sans-serif" size=1>
+
+<LI><A href="/mld/sunherald/contact_us/subscriptions_np1/">How to 
+
+subscribe</A><BR>
+
+<LI><A href="/mld/thesunherald/3735794.htm">EZ Pay</A> 
+
+<BR>
+
+<LI><A href="/mld/sunherald/contact_us/subscriptions_np1/hold/">Vacation stop/start request form</A> </FONT></LI></TD></TR>
+
+<TR vAlign=top>
+
+<TD><IMG height=42 alt='""' 
+
+src="/images/sunherald/thesunherald/3360/11289908120.gif" width=50 
+
+border=0></TD>
+
+<TD width="34%"><FONT face="Arial, Helvetica, sans-serif" 
+
+size=3><B>Newspapers in Education<BR></B></FONT><FONT 
+
+face="Verdana, Arial, Helvetica, sans-serif" size=1>
+
+<LI><A href="/mld/thesunherald/3360168.htm">About NIE</A><BR>
+
+<LI><A href="/mld/thesunherald/3360168.htm">Support NIE</A><BR>
+
+<LI><A href="/mld/thesunherald/3360168.htm">NIE activities</A> 
+
+<BR></FONT></LI></TD></TR>
+
+<TR vAlign=top>
+
+<TD><IMG height=71 alt='""' 
+
+src="/images/sunherald/thesunherald/3359/11286037460.gif" width=50 
+
+border=0></TD>
+
+<TD  width="44%" height=29><B><FONT face="Arial, Helvetica, sans-serif" 
+
+size=3>Advertiser Services<BR></FONT></B><FONT 
+
+face="Verdana, Arial, Helvetica, sans-serif" size=1>
+
+<LI><A href="/mld/thesunherald/3360368.htm">About our market</A><BR>
+
+
+
+<LI><A 
+
+href="http://classifieds.sunherald.com/bsh/home/support/faq.html">Classifieds</A> <LI><A 
+
+href="/mld/sunherald/contact_us/advertise">Advertise in The Sun Herald</A>
+
+<BR></FONT></LI></TD>
+
+<TD><IMG height=49 alt='""' 
+
+src="/images/sunherald/thesunherald/3360/11290607000.gif" width=50 border=0> 
+
+</TD>
+
+<TD  width="34%" height=29><B><FONT face="Arial, Helvetica, sans-serif" 
+
+size=3>Sun Herald jobs </FONT></B><BR><FONT 
+
+face="Verdana, Arial, Helvetica, sans-serif" size=1>
+
+<LI><A href="/mld/thesunherald/3360425.htm">Current openings</A><BR>
+
+<LI><A href="/mld/thesunherald/3736564.htm">Be a newspaper carrier</A><BR>
+
+<LI><A href="/mld/sunherald/3735437.htm">Freelance 
+
+work</A><BR></FONT></LI></TD></TR>
+
+<TR vAlign=top>
+
+<TD><IMG height=38 src="/images/sunherald/thesunherald/3734/13945462150.gif" 
+
+width=50></TD>
+
+<TD  width="44%"><B><FONT face="Arial, Helvetica, sans-serif" 
+
+size=3>Contact information <BR></FONT></B><FONT 
+
+face="Verdana, Arial, Helvetica, sans-serif" size=1>
+
+<LI><A 
+
+href="http://www.sunherald.com/mld/sunherald/contact_us/contact_list/departments_np1/">Primary 
+
+contacts</A><BR></LI>
+
+<LI><A 
+
+href="http://www.sunherald.com/mld/sunherald/contact_us/contact_list/newspaper_staff_np1/">Newsroom staff</A><BR></FONT></LI></TD>
+
+<TD><IMG height=28 alt='""' 
+
+src="/images/sunherald/thesunherald/3360/11290758200.gif" width=50 
+
+border=0></TD>
+
+<TD  width="34%"><B><FONT face="Arial, Helvetica, sans-serif" size=3>Help 
+
+pages<BR></FONT></B><FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>
+
+<LI><A href="/mld/thesunherald/3735623.htm">About us</A> <BR>
+
+<LI><A href="/mld/sunherald/contact_us/help/faq/">Online FAQs</A><BR>
+
+<LI><A href="/mld/sunherald/contact_us/help/">Technical help</A> 
+
+</FONT></LI></TD></TR></TBODY></TABLE>
+</td><td width="10"><img src="/images/common/spacer.gif" width="10" height="1"  border="0"/></td></tr></table>
+
+
+</td><td class="columndiv" rowspan="2"><img src="/images/common/spacer.gif" width="1" height="1"></td><td class="rightrail" valign="top" align="center" width="160">
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/sunherald.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/sunherald.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109896944901?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/sunherald.contact_us/contact_us;kw=right1;c2=contact_us_homepage;pos=right1;group=cube;ord=1109896944901?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+
+<img src="/images/common/spacer.gif" width="134" height="5"><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/sunherald.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/sunherald.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109896944902?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/sunherald.contact_us/contact_us;kw=right2;c2=contact_us_homepage;pos=right2;group=tower;ord=1109896944902?" BORDER="0" ></A>
+</NOSCRIPT>
+
+
+
+</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="768">
+<tr><td class="leftrail" width="134">
+<img src="/images/common/spacer.gif" width="134" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="centerrail" width="100%" align="center">
+<img src="/images/common/spacer.gif" width="450" height="1"/><br/><SCRIPT LANGUAGE="JavaScript1.1">
+_krdDartInc++;
+document.write('<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/adj/sunherald.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/SCRIPT>');
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/sunherald.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109896944902?" TARGET="_blank">
+<IMG SRC="http://ad.doubleclick.net/ad/sunherald.contact_us/contact_us;kw=footer;c2=contact_us_homepage;pos=footer;group=contextual;ord=1109896944902?" BORDER="0" ></A>
+</NOSCRIPT>
+
+<br/><br/></td><td class="centerrail" width="1">
+<img src="/images/common/spacer.gif" width="10" height="1"/></td><td class="columndiv" width="1">
+<img src="/images/common/spacer.gif" width="1" height="1"/></td><td class="rightrail" width="160">
+<img src="/images/common/spacer.gif" width="160" height="1"/></td></tr></table>
+
+
+<table border="0" cellpadding="3" cellspacing="0" width="768"><tr><td rowspan="2" valign="top" class="footer"><a href="http://www.realcities.com" target="_blank"><img src="/images/palette/sunherald/realcities_logo.gif" width="155" height="57" alt="RealCities" border="0"/></a>
+</td><td align="left" class="footer">
+<span class="lightgreylinks"><a href="/mld/sunherald/news/"> News  |</a> <a href="/mld/sunherald/business/"> Business  |</a> <a href="/mld/sunherald/sports/"> Sports  |</a> <a href="/mld/sunherald/entertainment/"> Entertainment  |</a> <a href="/mld/sunherald/living/">Living  |</a> <a href="http://www.shoplocal.com/sunherald/new_user_entry.aspx?CityStateZip=39530&AdRef=link02">Shop Local |</a> <a href="/mld/sunherald/classifieds/"> Classifieds  |</a> <a href="/mld/sunherald/classifieds/employment/"> Jobs  |</a> <a href="/mld/sunherald/classifieds/automotive/"> Cars  |</a> <a href="/mld/sunherald/classifieds/real_estate/"> Homes   </a><br><a href="/mld/sunherald/contact_us/about">About SunHerald.com |</a> <a href="/mld/sunherald/contact_us/rc_sites/">About the Real Cities Network |</a> <a href="/mld/sunherald/contact_us/terms_of_use">Terms of Use & Privacy Statement |</a> <a href="http://www.knightridder.com">About Knight Ridder |</a> <a href="/mld/sunherald/contact_us/copyright">Copyright  </a><br></span>
+</td></tr></table>
+
+</body>
+</html>
+
+
+

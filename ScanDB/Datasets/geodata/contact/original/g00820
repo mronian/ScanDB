@@ -1,0 +1,993 @@
+<DOC>
+<DOCNO>g00820</DOCNO>
+<DOCHDR>http://www.insurance.wa.gov/oic/contact.asp</DOCHDR>
+<html>
+<head>
+<title>Contact Information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="HTML LANG=English">
+<meta name="ProgId" content="Dreamweaver.Editor.Document">
+<meta name="dateofLastModification" content="3/03/04">
+<meta name="keywords" content="Insurance Commissioner, Washington State, insurance, health care, property and casualty, homeowner, holocaust, viatical settlemtent, senior insurance, Mike Kreidler ">
+<meta name="description" content="government agency overseeing insurance companies">
+<meta name="ROBOTS" content="ALL">
+<meta name="GENERATOR" content="Dreamweaver MX">
+<meta name="timePeriodTextual" content="current">
+<meta name="medium" content="website">
+<meta name="govType" content="state">
+<meta name="subjects" content="Business, Commerce: Insurance">
+<meta name="contactName" content="Tim Kern">
+<meta name="contactphoneNumber" content="360/725-7024">
+<meta name="contactNetworkAddress" content="webmaster@oic.wa.gov">
+<meta name="originalControlIdentifier" content>
+<meta name="accessConstraints" content>
+<meta name="linkage" content>
+<meta name="agencyProgram" content>
+<meta name="note" content>
+<meta name="schema.GILS" content>
+<link REV="made" href="mailto:webmaster@oic.wa.gov">
+<meta name="keywords" content="contact, e-mail, email, address">
+<meta name="description" content="Office of Insurance Commissioner for Washington State Contact Information.">
+<link rel="stylesheet" type="text/css" href="/_global/global.css">
+<script language="JavaScript" type="text/javascript">
+
+if (document.getElementById)
+{ //DynamicDrive.com change
+	document.write('<style type="text/css">\n')
+	document.write('.submenu{display: none;}\n')
+	document.write('</style>\n')
+}
+
+function SwitchMenu(obj)
+{
+	if(document.getElementById)
+	{
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span"); //DynamicDrive.com change
+		if(el.style.display != "block")
+		{ //DynamicDrive.com change
+			for (var i=0; i<ar.length; i++)
+			{
+				if (ar[i].className=="submenu") //DynamicDrive.com change
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}
+		else
+		{
+			el.style.display = "none";
+		}
+	}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (FrontPage_Form1.email2.value == "")
+  {
+    alert("Please enter a value for the 'E-Mail To:' field.");
+    FrontPage_Form1.email2.focus();
+    return (false);
+  }
+  
+  if (FrontPage_Form1.street.value == "")
+  {
+    alert("Please enter your complete street address in the 'Street:' field.");
+    FrontPage_Form1.street.focus();
+    return (false);
+  }
+  
+  if (FrontPage_Form1.city.value == "")
+  {
+    alert("Please enter the city in which you reside in the 'City:' field.");
+    FrontPage_Form1.city.focus();
+    return (false);
+  }
+  
+  if (FrontPage_Form1.state.value == "")
+  {
+    alert("Please enter the correct abbreviation for your 'State:' field.");
+    FrontPage_Form1.state.focus();
+    return (false);
+  }
+  
+  if (FrontPage_Form1.zip.value == "")
+  {
+    alert("Please enter your correct 5 or 9 diget zip code in the 'Zip:' field.");
+    FrontPage_Form1.zip.focus();
+    return (false);
+  }
+  return (true);
+}
+
+function FrontPage_Form3_Validator(theForm)
+{
+
+  if (theForm.Email.value == "")
+  {
+    alert("Please enter a value for the \"Email\" field.");
+    theForm.Email.focus();
+    return (false);
+  }
+  return (true);
+}
+
+
+</script>
+
+
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<table width="578" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top" bordercolor="#000099"> 
+<td colspan="3" height="6" bgcolor="#000066">&nbsp;</td>
+</tr>
+<tr valign="top"> 
+<td colspan="3" height="16">
+<img src="/_images/spacer.gif" width="700" height="4">
+</td>
+</tr>
+<tr> 
+<td width="222" valign="top"> 
+<!-- Begin Left Navigation -->
+<!-- Begin OIC News -->
+<style type="text/css">
+
+<!--
+.menutitle {cursor:pointer;
+margin-bottom: 5px;
+background-color:#CCCCFF;
+color:#000000;
+width:160px;
+padding:2px;
+text-align:center;
+font-weight:bold;
+font-size:14px;
+/*/*/border:1px solid #000000;/* */
+}
+
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="/_global/global.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: underline;
+}
+body {
+	margin-top: 0px;
+}
+.style1 {color: #000066}
+
+-->
+</style>
+<div onMouseMove="MM_preloadImages('/_images/capitol-OIC-over.jpg')">
+<table width="180" height="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="108" colspan="2" valign="top"><div align="right"><a href="/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('OICHomeImage','','/_images/capitol-OIC-over.jpg',1)"><img src="/_images/capitol-OIC-out.jpg" alt="OIC Home Page" name="OICHomeImage" width="180" height="108" border="0"></a></div>
+    <img src="/_images/transparent-120x1px.gif" width="120" height="6"></td>
+  </tr>
+  <tr align="center" valign="top">
+    <td width="6	" height="100%">&nbsp;</td>
+    <td width="170" height="100%" class="cellborder"><table width="175" align="center" cellpadding="2">
+      <tr>
+        <td valign="top"><!-- Begin Main Left Menu------------------------------------------->
+            <!-- Keep all menus within masterdiv-->
+            <div id="masterdiv">
+              <!-- "NEWS/INFO" SUBMENU --------------------------------------->
+              <div class="menutitle" onClick="SwitchMenu('sub1')">News/Info</div>
+              <span class="submenu" id="sub1">
+              <table width="100%" cellpadding="1" cellspacing="1" border="0">
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/news/dynamic/oicnewsmain.asp" class="links">News
+                      releases</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/dynamic/searchnews.asp" class="links">Search
+                      old news</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/industry/fraud.asp" class="links">Fraud</a></td>
+                </tr>
+				<tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/industry/enforcement.asp" class="links">Disciplinary Actions</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/news/dynamic/publicnotices_master.asp" class="links">Public
+                      notices/hearings</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/news/helpfultools.asp" class="links">Helpful
+                      tools/tables</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/news/info_websites.asp" class="links">Links
+                      to other sites</a></td>
+                </tr>
+              </table>
+              <br>
+              </span>
+              <!-- "TYPES OF INSURANCE" SUBMENU -------------------------------------------->
+              <div class="menutitle" onClick="SwitchMenu('sub2')">Types of Insurance</div>
+              <span class="submenu" id="sub2">
+              <table width="100%" cellpadding="1" cellspacing="1" border="0">
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/auto/autoinsurance.asp">Auto</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/health/healthinsurance.asp" class="links">Health</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/medicare/medicare.asp" class="links">Medicare</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/life/lifeinsurance.asp" class="links">Life</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/care/longtermcare.asp" class="links">Long-term
+                      care</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/home/homeowner.asp" class="links">Homeowner/tenant</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/factsheets/factsheet_detail.asp?FctShtRcdNum=20" class="links">Earthquake</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/factsheets/factsheet_detail.asp?FctShtRcdNum=24" class="links">Flood</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="http://www.rma.usda.gov/" target="_blank" class="links">Crop</a></td>
+                </tr>
+              </table>
+              <br>
+              </span>
+              <!-- "PUBLICATIONS" SUBMENU ------------------------------------------------>
+              <div class="menutitle" onClick="SwitchMenu('sub3')">Publications</div>
+              <span class="submenu" id="sub3">
+              <table width="100%" cellpadding="1" cellspacing="1" border="0">
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/publications/inspublications_auto.asp" class="links">Auto</a></td>
+                </tr>
+				                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/publications/inspublications_health.asp" class="links">Health</a></td>
+                </tr>
+
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/publications/inspublications_home.asp" class="links">Home/tenant</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/publications/inspublications_life.asp" class="links">Life</a></td>
+                </tr>
+				<tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/publications/inspublications_longterm.asp" class="links">Long-term
+                      care</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/publications/inspublications_medicare.asp" class="links">Medicare</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/publications/inspublications_other.asp" class="links">Other
+                      miscellaneous</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/default_publications.asp" class="links">Publication
+                      home</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/publications/inspublications_smallbusiness.asp" class="links">Small
+                      business</a></td>
+                </tr>
+              </table>
+              <br>
+              </span>
+              <!-- "S.H.I.B.A. HELPLINE" SUBMENU --------------------------------------->
+              <div class="menutitle" onClick="SwitchMenu('sub4')">SHIBA
+                HelpLine</div>
+              <span class="submenu" id="sub4">
+              <table width="100%" cellpadding="1" cellspacing="1" border="0">
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/SHIBA/Default.asp" class="links">SHIBA
+                        home page </a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/SHIBA/readonline_shiba.asp" target="_self" class="links">SHIBA
+                        publications </a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/medicare/medprescriptdrugs.asp" class="links">Medicare
+                        drug benefits </a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/consumers/SHIBA/shibacontacting.asp" class="links">How
+                        to contact SHIBA</a></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">-</td>
+                  <td align="left" valign="bottom" class="links"><a href="/consumers/SHIBA/volunteer/recruiting.asp" class="links">Become
+                      a volunteer </a></td>
+                </tr>
+              </table>
+              <br>
+              </span>
+			  
+       		<!-- "S.H.I.B.A. HELPLINE" SUBMENU --------------------------------------->
+		  
+			<div class="menutitle" onclick="SwitchMenu('sub6')">Laws/Regulations</div>
+			<span class="submenu" id="sub6">
+				<table width="100%" cellpadding="1" cellspacing="1" border="0">
+					<tr><td width="8%" align="left" valign="top">-</td><td width="92%" align="left" valign="bottom"><a href="/industry/rules_laws/adoptedproposed.asp" class="links">Proposed/new rules</a></td></tr>
+					<tr><td width="8%" align="left" valign="top">-</td><td width="92%" align="left" valign="bottom"><a href="/industry/rules_laws/rcw_links.asp" class="links">RCWs (laws)</a></td></tr>
+					<tr><td width="8%" align="left" valign="top">-</td><td width="92%" align="left" valign="bottom"><a href="/industry/rules_laws/wac_links.asp" class="links">WACs (regs)</a></td></tr>
+					<tr><td width="8%" align="left" valign="top">-</td><td width="92%" align="left" valign="bottom"><a href="http://search.leg.wa.gov/pub/textsearch/default.asp" target="_blank" class="links">RCW and WAC search</a></td></tr>
+					<tr><td width="8%" align="left" valign="top">-</td><td width="92%" align="left" valign="bottom"><a href="/industry/dynamic/advisories_tech.asp" class="links">TAA (advisories)</a></td></tr>
+				</table>
+			<br>
+			</span>
+
+              <!-- "PUBLIC DISCLOSURE" SUBMENU --------------------------------------->
+              <div class="menutitle" onClick="SwitchMenu('sub8')">Public Disclosure</div>
+              <span class="submenu" id="sub8">
+              <table width="100%" cellpadding="1" cellspacing="1" border="0">
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/industry/publicdisclosure.asp" class="links">Make
+                      a request</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="https://fortress.wa.gov/oic/kovis/" target="_blank" class="links">Company
+                      filings</a></td>
+                </tr>
+              </table>
+              <br>
+              </span>
+              <!-- "CONTACT THE OIC" SUBMENU --------------------------------------->
+              <div class="menutitle" onClick="SwitchMenu('sub9')">Contact the
+                OIC</div>
+              <span class="submenu" id="sub9">
+              <table width="100%" cellpadding="1" cellspacing="1" border="0">
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/factsheets/factsheet_detail.asp?FctShtRcdNum=1" class="links">Overview
+                      of the OIC</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/library/serviceofprocess.asp" class="links">Service
+                      of process</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/OIC/jobs/dirdefault.asp" class="links">Employment</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/OIC/directions.asp" class="links">Directions</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/oic/contact.asp" class="links">Contact
+                      information</a></td>
+                </tr>
+              </table>
+              <br>
+              </span>
+              <!-- "SEARCH THIS SITE" SUBMENU --------------------------------------->
+              <div class="menutitle" onClick="SwitchMenu('sub10')">Search This
+                Site</div>
+              <span class="submenu" id="sub10">
+              <table width="100%" cellpadding="1" cellspacing="1" border="0">
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/sitemap.asp" class="links">Table
+                      of contents</a></td>
+                </tr>
+                <tr>
+                  <td width="8%" align="left" valign="top">-</td>
+                  <td width="92%" align="left" valign="bottom"><a href="/search.asp" class="links">Search
+                      engine</a></td>
+                </tr>
+              </table>
+            </span></div>
+            <span class="submenu" id="sub10">
+            <!-- End Main Menu -->
+            </span>
+          <tr>
+            <td width="165" height="24" valign="top" class="addresstext">            
+          <tr>
+              <td valign="top" class="addresstext"><a href="http://www.access.wa.gov/" target="_blank"><img src="/_images/logos/AWlogo2_115px.gif" alt="Access Washington Official State Government Web Site" name="accesswa" width="115" height="22" border="0" id="accesswa"></a><br>
+                <a href="http://www.access.wa.gov/" class="linkrn"><span class="style3">State
+              Government Home Page </span></a>            
+        <tr>
+          <td valign="top">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><div align="left"><a href="http://www.naic.org"><img src="/_images/logos/NAICLogo-60px.gif" width="60" height="24" border="0"></a><br>
+                          <a href="http://www.naic.org" class="linkrn"><span class="addresstext">National
+                            Association of<br>
+          Insurance Commissioners</span></a></div></td>
+                  </tr>
+    </table></td>
+  </tr>
+</table>
+</div>
+<!-- End Left Navigation -->
+
+</td>
+<td width="13" valign="top"><!-- img src="/_images/bullets/db_bullit.gif" width="1" height="100%" -->&nbsp;</td>
+<td width="526" height="600" valign="top">
+
+<script language="JavaScript" type="text/JavaScript"></script>
+<script language="JavaScript" src="/_global/includes_banners/menu.js"></script>
+<script language="JavaScript" src="/_global/includes_banners/smallbanner_horizontalmenu/menu_items.js"></script>
+<script language="JavaScript" src="/_global/includes_banners/smallbanner_horizontalmenu/menu_tpl.js"></script>
+<link rel="stylesheet" href="/_global/includes_banners/smallbanner_horizontalmenu/menu.css">
+<!-- Begin Small_Banner -->
+<link rel="stylesheet" type="text/css" href="/_global/global.css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+
+			<title></title><div onMouseMove="MM_preloadImages('/_images/small_banner/BannerText_r2_c1_f3.gif','/_images/small_banner/BannerText_r2_c1_f2.gif','/_images/small_banner/BannerText_r2_c1_f4.gif')"><div onMouseMove="MM_preloadImages('/_images/small_banner/BannerText_r2_c1_f2.gif')"></div><table width="620" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+			    <td width="611"><table border="0" cellpadding="0" cellspacing="0" width="640">
+                  <!-- fwtable fwsrc="BannerText.png" fwbase="BannerText.gif" fwstyle="Dreamweaver" fwdocid = "341863692" fwnested="0" -->
+                  <tr>
+                    <td colspan="2"><img name="BannerText_r1_c1" src="/_images/small_banner/BannerText_r1_c1.gif" width="640" height="7" border="0" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td><a href="/" target="_top" onClick="MM_nbGroup('down','navbar1','BannerText_r2_c1','/_images/small_banner/BannerText_r2_c1_f3.gif',1);" onMouseOver="MM_nbGroup('over','BannerText_r2_c1','/_images/small_banner/BannerText_r2_c1_f2.gif','/_images/small_banner/BannerText_r2_c1_f4.gif',1);" onMouseOut="MM_nbGroup('out');"><img name="BannerText_r2_c1" src="/_images/small_banner/BannerText_r2_c1.gif" width="614" height="51" border="0" alt=""></a></td>
+                    <td rowspan="2"><img name="BannerText_r2_c2" src="/_images/small_banner/BannerText_r2_c2.gif" width="26" height="53" border="0" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td><img name="BannerText_r3_c1" src="/_images/small_banner/BannerText_r3_c1.gif" width="614" height="2" border="0" alt=""></td>
+                  </tr>
+                </table></td>
+ 			</tr>
+			<tr>
+			  <td height="100"><table width="615"border="0" align="left" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="6" rowspan="2" align="left" valign="top" >
+					
+					<img src="/_images/vertical_spacer_1x100.gif" width="6" height="100">			</td>
+            <td height="18" colspan="3" align="left" valign="top" ><a href="/" class="linksbc" style="text-decoration:none">Home Page</a><span class="navtextbc"> &gt; Oic</span><script type="text/javascript">if(document.title==""){document.write("<span class=navtextbc>:  Current Page</span>");}else {document.write("<span class=navtextbc>:  " + document.title + "</span>");}</script></td>
+            </tr>
+          <tr>
+            <td width="74" height="82" align="left" valign="top" >&nbsp;</td>
+            <td width="295" height="82" align="left" valign="top" >&nbsp;</td>
+            <td width="240" height="82" align="left" valign="top" >&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20" colspan="2" align="left" valign="bottom" ><img name="left_titlebar_color" src="/_images/titlebars/left_titlebar_color.jpg" width="80" height="20" border="0" alt=""></td>
+            <td width="295" height="20" valign="bottom">
+			  <div align="center">
+		        <script type="text/javascript">if(document.title==""){document.write("<span class=titlebar_text>OIC Information</span>");}else {document.write("<span class=titlebar_text>" + document.title + "</span>");}</script>
+              </div></td>
+            <td height="20" align="left" valign="bottom"><img name="right_titlebar_color" src="/_images/titlebars/right_titlebar_color.jpg" width="240" height="20" border="0" alt=""></td>
+          </tr>
+      </table>         </td>
+			  </tr>
+			</table>
+<!-- End Small_Banner -->
+	  	<script language="JavaScript">
+			new menu (MENU_ITEMS, MENU_POS);
+		</script>
+	<table width="580" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td>&nbsp;</td>
+	</tr>
+	</table>
+	<!-- Begin Title Bar -->
+	 
+<!-- End Title Bar -->
+<!-- Main Content of Contacting OIC Page -->
+<!-- Page Title -->
+	<table width="580" border="0">
+	<tr>
+	<td class="title">Contact the Office of the Insurance Commissioner</td>
+	</tr>
+	</table>
+<!-- End Page Title -->
+<!-- Begin Page Content -->
+	<table width="580" border="0">
+	<tr>
+	<td><table width="580" border="0">
+		<tr>
+          <td><p class="bodytextb"><a href="mailto:cad@oic.wa.gov" class="linksb">Consumer
+                Advocacy</a> &#151; for questions or complaints about your insurance
+                coverage:<br>
+      (360) 725 - 7080<br>
+      or 1-800-562-6900<br>
+      TDD (360) 586-0241<br>
+      Fax: (360) 586-2018<br>
+      E-Mail: <a href="mailto:cad@oic.wa.gov" class="linksb">CAD@oic.wa.gov</a></p>
+              <p class="bodytextb"><a href="mailto:QianaN@oic.wa.gov" class="linksb">Statewide
+                  Health Insurance Benefits Advisors (SHIBA) HelpLine</a> &#151; health
+                  insurance education, assistance and advocacy for consumers
+                  of all ages:<br>
+      1-800-562-6900<br>
+      TDD (360) 586-0241<br>
+      Fax (360) 389 - 2745</p>
+              <p class="subtitle">Agency Divisions</p>
+              <p class="bodytextb">Consumer Protection<br>
+      Deputy Commissioner &#151; Scott Jarvis<br>
+      Fax: (360) 586-2020</p>
+              <blockquote>
+                <table border="0" width="100%" cellpadding="2">
+                  <tr>
+                    <td width="60%" valign="top" colspan="2" class="bodytexti">Agent/Broker
+                      Licensing and Continuing Education</td>
+                    <td width="40%" valign="top">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td width="10%" valign="top">&nbsp;</td>
+                    <td width="50%" valign="top"><a href="mailto:georgiac@oic.wa.gov" class="links">Administrator</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7145</td>
+                  </tr>
+                  <tr>
+                    <td width="10%" valign="top">&nbsp;</td>
+                    <td width="50%" valign="top"><a href="mailto:sued@oic.wa.gov" class="links">Education</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7146</td>
+                  </tr>
+                  <tr>
+                    <td width="10%" valign="top">&nbsp;</td>
+                    <td width="50%" valign="top"><a href="mailto:tomt@oic.wa.gov" class="links">Licensing</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7144</td>
+                  </tr>
+                  <tr>
+                    <td width="10%" valign="top">&nbsp;</td>
+                    <td width="50%" valign="top"><span class="bodytext">Fax</span></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 586
+                      - 2019</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top" colspan="2"><a href="mailto:cad@oic.wa.gov" class="links">Consumer
+                        Advocacy</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7080</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top" colspan="2"><a href="mailto:marvins@oic.wa.gov">Holocaust</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(206) 464
+                      - 6828</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top" colspan="2"><a href="mailto:vickim@oic.wa.gov" class="links">Investigations &#151; Enforcement &#151; Fraud</a> </td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7263</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top" colspan="2"><a href="mailto:CarolynC@oic.wa.gov" class="links">Statewide
+                        Health Insurance Benefits Advisors</a></td>
+                    <td width="40%" valign="top" class="bodytexti">1-800-562-6900</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top" colspan="2"><a href="mailto:kenc@oic.wa.gov" class="links">Surplus
+                        Lines</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(206) 464
+                      - 5311</td>
+                  </tr>
+                </table>
+              </blockquote>
+              <p class="bodytextb">Company Supervision/Admissions<br>
+      Deputy Commissioner &#151; Jim Odiorne<br>
+      Fax: (360) 586 - 2022</p>
+              <blockquote>
+                <table border="0" width="100%" cellpadding="2">
+                  <tr>
+                    <td width="60%" valign="top"><p style="margin-top: 0; margin-bottom: 0"><a href="mailto:julieh@oic.wa.gov" class="links">General
+                        Information</a></p>
+                      </td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7200</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top"><p style="margin-bottom: 0;"><a href="mailto:colleenj@oic.wa.gov" class="links">Financial</a></p>
+                      <blockquote style="margin-top: 0; margin-bottom: 0;">
+                        <p style="margin-top: 0; margin-bottom: 0;">Chief Financial Examiner </p>
+                        <p style="margin-top: 0;">Chief Financial Analyst </p>
+                        </blockquote></td>
+                    <td width="40%" valign="top" class="bodytexti"><p style="margin-bottom: 0;">&nbsp;</p>
+                      <p style="margin-top: 0; margin-bottom: 0;">(206) 464-7054</p>
+                      <p style="margin-top: 0; margin-bottom: 0;">(360) 725-7200</p></td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top"><p style="margin-bottom: 0;"><a href="mailto:gretchh@oic.wa.gov" class="links">Market
+                        Conduct</a></p>
+                      <blockquote style="margin-top: 0; margin-bottom: 0;">
+                        <p style="margin-top: 0; margin-bottom: 0;">Chief Market Conduct Examiner</p>
+                      </blockquote>                      
+                      <p style="margin-top: 0; margin-bottom: 0;">Admissions</p>
+                      <blockquote style="margin-top: 0; margin-bottom: 0;">
+                        <p style="margin-top: 0; margin-bottom: 0;">Company Licensing Manager </p>
+                      </blockquote>                      
+                      <p style="margin-top: 0; margin-bottom: 0;">Holding Company</p>
+                      <blockquote style="margin-top: 0; margin-bottom: 0;">
+                        <p style="margin-top: 0; margin-bottom: 0;">Holding Company Manager </p>
+                      </blockquote></td>
+                    <td width="40%" valign="top" class="bodytexti"><p style="margin-bottom: 0;">&nbsp;</p>
+                      <p style="margin-top: 0;">(206) 464
+                        - 6263</p>
+                      <p>(360) 725-7210 </p>
+                      <p style="margin-bottom: 0;">(360) 725-7218 </p></td>
+                  </tr>
+                </table>
+              </blockquote>
+              <p class="bodytextb">Legal Affairs<br>
+      Deputy Commissioner - Carol Sureau<br>
+      Fax: (360) 586 - 3109</p>
+              <blockquote>
+                <table border="0" width="100%" cellpadding="2">
+                  <tr>
+                    <td width="60%" valign="top"><a href="mailto:nancyh@oic.wa.gov" class="links">General
+                        Information</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      -7047</td>
+                  </tr>
+                </table>
+              </blockquote>
+              <p class="bodytextb">Legislation<br>
+      Legislative Liaison -- Mary Clogston <br>
+      Fax: (360) 586 - 3109</p>
+              <blockquote>
+                <table border="0" width="100%" cellpadding="2">
+                  <tr>
+                    <td width="60%" valign="top"><a href="mailto:MaryCl@oic.wa.gov" class="links">Legislative
+                        Information</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7101</td>
+                  </tr>
+                </table>
+              </blockquote>
+              <p class="bodytextb">Operations<br>
+                  <a name="PUBLICRECORDS"></a>Deputy Commissioner &#151; D.J.
+                  Mark<br>
+      Fax: (360) 586 - 1223</p>
+              <blockquote>
+                <table border="0" width="100%" cellpadding="2">
+                  <tr>
+                    <td width="60%" valign="top" colspan="2"><a href="mailto:paulag@oic.wa.gov" class="links">Human
+                        Resource</a> </td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7011</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top" colspan="2"><a href="mailto:alp@oic.wa.gov" class="links">Public
+                        Records Requests</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7003</td>
+                  </tr>
+                  <tr>
+                    <td width="10%" valign="top">&nbsp;</td>
+                    <td width="50%" valign="top" class="bodytext">Fax:</td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 664
+                      - 2782</td>
+                  </tr>
+                </table>
+              </blockquote>
+              <p class="bodytextb">Policy<br>
+      Deputy Commissioner (Acting) &#151; Michael Arnis <br>
+      Fax: (360) 586 - 3109</p>
+              <blockquote>
+                <table border="0" width="100%" cellpadding="2">
+                  <tr>
+                    <td width="60%" valign="top"><a href="mailto:anne@oic.wa.gov" class="links">General
+                        Information</a> </td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7038</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top"><a href="mailto:kacys@oic.wa.gov" class="links">Rules
+                        Coordinator</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7041</td>
+                  </tr>
+                </table>
+              </blockquote>
+              <p class="bodytextb">Public Affairs<br>
+      Deputy Commissioner &#151; Sandi Peck<br>
+      Fax: (360) 586 - 3109</p>
+              <blockquote>
+                <table border="0" width="100%" cellpadding="2">
+                  <tr>
+                    <td width="60%" valign="top"><a href="mailto:stephanm@oic.wa.gov" class="links">Media
+                        inquiries</a> </td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7055</td>
+                  </tr>
+                </table>
+              </blockquote>
+              <p><span class="bodytextb">Rates and Forms<br>
+      Deputy Commissioner &#151; Beth Berendt <br>
+      Fax: (360) 586-0759</span></p>
+              <blockquote>
+                <table border="0" width="100%" cellpadding="2">
+                  <tr>
+                    <td width="60%" valign="top" class="bodytext">Insurance company
+                      filing status and reception:<br>
+            (This includes: Health Care, Life &amp; Disability, Property &amp; Casualty)</td>
+                    <td width="40%" valign="top">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top"><a href="mailto:rfhelpdesk@oic.wa.gov" class="links">Rates
+                        and Forms Helpline</a></td>
+                    <td width="40%" valign="top" class="bodytexti">(360) 725
+                      - 7111</td>
+                  </tr>
+                </table>
+              </blockquote>
+              <p class="subtitle">Office Locations</p>
+              <p class="bodytext">To view the map for each office, click on the
+                office/division title.</p>
+              <p class="bodytextb">Main Offices</p>
+              <blockquote>
+                <table border="0" width="100%" cellspacing="2" cellpadding="4">
+                  <tr>
+                    <td width="60%" valign="top" class="bodytext"><a href="/oic/directions.asp" class="linksb">Executive
+                        Staff and Rates &amp; Forms</a><br>
+            5000 Capitol Boulevard, <br>
+            Tumwater, WA 98501<br>
+            Mailing address:<br>
+            P.O. Box 40255<br>
+            Olympia, WA 98504-0255</td>
+                    <td width="40%" valign="top" class="bodytext">(360) 725 -
+                      7000<br>
+            TDD: (360) 664 - 3154<br>
+            Fax: (360) 586 - 3535</td>
+                  </tr>
+                  <tr>
+                    <td width="60%" valign="top" class="bodytext"><a href="/oic/directions.asp" class="linksb">Public
+                        Records</a><br>
+            5000 Capitol Boulevard,<br>
+            Tumwater, WA 98501<br>
+            Mailing address:<br>
+            P.O. Box 40255<br>
+            Olympia, WA 98504-0255</td>
+                    <td width="40%" valign="top" class="bodytext">(360) 725 -
+                      7003<br>
+            Fax: (360) 664 - 2782</td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><span class="bodytextb">Seattle Office</span><br>
+                        <span class="bodytext">The Central Building, Suite 650/MS:
+                        TB-03<br>
+            810 3rd Avenue<br>
+            Seattle, WA 98104</span> </td>
+                    <td valign="top" class="bodytext">(206) 464 - 6263<br>
+            Company Supervision Fax: <br>
+            (206) 587 - 4244<br>
+            SHIBA Fax: (206) 389 - 2745</td>
+                  </tr>
+                  <tr>
+                    <td valign="top" class="bodytext"><span class="bodytextb">Spokane
+                        Office</span><br>
+                        <span class="bodytext">One Rock Pointe<br>
+            1212 North Washington Street, Suite 106<br>
+            Spokane, WA 99201</span></td>
+                    <td valign="top" class="bodytext">Fax: (509) 456-3904</td>
+                  </tr>
+                </table>
+              </blockquote>
+              <blockquote>
+                <p class="subtitle">E-Mail the OIC About:</p>
+                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                  <tr valign="top">
+                    <td width="50%"><a href="/forms/brochureord_email.asp" target="_blank" class="links">Request
+                        Publications:</a></td>
+                    <td width="50%"><a href="/forms/invform_email.asp" target="_blank" class="links">Request
+                        for Investigation:</a></td>
+                  </tr>
+                  <tr valign="top">
+                    <td width="50%" rowspan="2"><a href="/forms/invonl_email.asp" target="_blank" class="links">Request
+                        for Assistance:<br>
+            Sales/Marketing Issues &#8212; Problems with Agent, Adjuster or Broker </a></td>
+                    <td width="50%"><a href="/forms/ldform1_email.asp" target="_blank" class="links">Life,
+                        Health and Disability Insurance Assistance:</a></td>
+                  </tr>
+                  <tr valign="top">
+                    <td width="50%"><a href="/forms/pcform1_email.asp" target="_blank" class="links">Property
+                        and Casuality Insurance Assistance</a>:</td>
+                  </tr>
+                  <tr>
+                    <td width="50%" height="9">&nbsp;</td>
+                    <td width="50%" height="9">&nbsp;</td>
+                  </tr>
+                </table>
+            </blockquote></td>
+		  </tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+<!-- End Page Content -->
+<!-- End Main Content for Page -->
+	<table height="30" width="580">
+	<tr> 
+	<td>&nbsp;</td>
+	</tr>
+	</table>
+</td>
+</tr>
+<tr> 
+<td width="222">&nbsp;</td>
+<td width="19">&nbsp;</td>
+<td width="526">
+<!-- Begin Main Footer -->	
+<table align="center" width="90%">
+<tr class="footertext"> 
+<td align="center" valign="top"> | <a href="/OIC/dirdefault.asp" class="links">OIC Information</a> | 
+<a href="/oic/kreidler/mike_kreidler.asp" class="links">About Mike Kreidler</a> | <a href="/sitemap.asp">Table of Contents</a> | <br> 
+| <a href="/OIC/jobs/dirdefault.asp" class="links">OIC Job Opportunities</a> | <a href="/privacynotice.asp" class="links">Privacy
+Notice and Disclaimer</a> | <a href="mailto:webmaster@oic.wa.gov">Email the
+OIC Webmaster</a></td>
+</tr>
+</table>
+<!-- End Main Footer -->
+</td>
+</tr>
+</table>
+</body>
+</html>

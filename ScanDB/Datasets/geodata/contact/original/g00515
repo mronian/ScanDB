@@ -1,0 +1,580 @@
+<DOC>
+<DOCNO>g00515</DOCNO>
+<DOCHDR>http://www.bmtinfonet.org/contact.html</DOCHDR>
+<HTML> 
+  <HEAD> 
+	 <TITLE>BMT InfoNet Contact Information</TITLE> <SCRIPT LANGUAGE="JavaScript">
+
+
+
+<!--
+browserName = navigator.appName;   // detect browser 
+browserVer = parseInt(navigator.appVersion);
+if (browserVer >= 3) version = "n3";
+        else version = "n2";
+
+               
+if (version == "n3") {         // if Netscape 3, then preload images 
+       var flagb = new Array("Navigator/SS_HI.gif","Navigator/HS_HI.gif",
+                              "Navigator/NL_HI.gif","Navigator/TC_HI.gif",
+                              "Navigator/NB_HI.gif","Navigator/RD_HI.gif",
+                                                                                "Navigator/OB_HI.gif","Navigator/DD_HI.gif",
+                                                                                "Navigator/CU_HI.gif","Navigator/HUS_HI.gif","Navigator/NAV_RIGHT_HI.gif");                                                                                                                                                             
+       var flag = new Array("Navigator/SS.gif","Navigator/HS.gif",
+                              "Navigator/NL.gif","Navigator/TC.gif",
+                                                                                "Navigator/NB.gif","Navigator/RD.gif",
+                                                                                "Navigator/OB.gif","Navigator/DD.gif",
+                                                                                "Navigator/CU.gif","Navigator/HUS.gif",                                                                         
+                              "Navigator/NAV_Right.gif");
+       
+       var pix = new Array("Navigator/SS_Text.gif","Navigator/HS_Text.gif", "Navigator/NL_Text.gif",
+                            "Navigator/TC_Text.gif","Navigator/NB_Text.gif","Navigator/RD_Text.gif", 
+                            "Navigator/OB_Text.gif","Navigator/DD_Text.gif","Navigator/CU_Text.gif",
+                         "Navigator/HUS_Text.gif","Navigator/Nav_Right_Text.gif","Navigator/subnavight.gif");
+     
+       ;
+       var imgloc = new Array("search", "services", "letter", "centers", "news", "directory", "books", "drugs", "contact", "survive");
+              var menuoff = new Array(10);
+              var menuon = new Array(10);
+        for(var i=0; i<10; i++)
+        {
+             menuoff[i] = flag[i] ;      
+             menuon[i] = flagb[i] ;      
+        }
+        menuoff[0] = flag[0];
+        var iold=8 ;
+        }
+
+function img_act(i) {
+        if (version == "n3") {
+          document [imgloc[i]].src = menuon[i];
+          document.banner.src = pix[i];
+        }
+}
+function img_inact(i) {
+        if (version == "n3") {
+          document [imgloc[i]].src = menuoff[i];
+          document.banner.src = pix[iold]; 
+        }
+}
+
+// -->
+
+
+
+</SCRIPT> 
+  </HEAD> 
+  <BODY> 
+	 <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"> 
+		<TR> 
+		  <TD> <A NAME="top"><IMG SRC="Navigator/spacer.gif" WIDTH="39"
+			 HEIGHT="1"></A></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="2" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="35" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="29" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="56" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="20" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="36" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="56" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="58" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="56" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="21" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="34" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="57" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="57" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="64" HEIGHT="1"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="20" HEIGHT="1"></TD> 
+		  <TD></TD> 
+		</TR> 
+		<TR> 
+		  <TD> <IMG SRC="Navigator/Nav_01.gif" WIDTH="39" HEIGHT="55"></TD> 
+		  <TD COLSPAN="14"> <A HREF="index.html"><IMG
+			 SRC="Navigator/Nav_HEADER.gif" WIDTH="581" HEIGHT="55"
+			 ALT="BMT InfoNet Home Page" BORDER="0"></A></TD> 
+		  <TD> <IMG SRC="Navigator/Nav_03.gif" WIDTH="20" HEIGHT="55"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="1" HEIGHT="55"></TD> 
+		</TR> 
+		<!--In two hours I am on vacation.  Here begins thee great rows of links-->
+		<TR> 
+		  <TD COLSPAN="2" ROWSPAN="3">
+			 <IMG SRC="Navigator/NAV_LEFT.gif" WIDTH="41" HEIGHT="58" BORDER="0"></TD> 
+		  <TD COLSPAN="2" ROWSPAN="2"><A
+			 HREF="http://www.bmtinfonet.org/search.html" ONMOUSEOVER="img_act(0)"
+			 ONMOUSEOUT="img_inact(0)"><IMG SRC="Navigator/SS.gif" WIDTH="64" HEIGHT="47"
+			 BORDER="0" ALIGN="TOP" NAME="search" ALT="Site Serch"></A></TD> 
+		  <TD> <IMG SRC="Navigator/Nav_06.gif" WIDTH="56" HEIGHT="11"></TD> 
+		  <TD COLSPAN="2" ROWSPAN="2"><A
+			 HREF="http://www.bmtinfonet.org/letter.html" ONMOUSEOVER="img_act(2)"
+			 ONMOUSEOUT="img_inact(2)"><IMG SRC="Navigator/NL.gif" WIDTH="56" HEIGHT="47"
+			 BORDER="0" ALIGN="TOP" NAME="letter" ALT="Newsletter"></A></TD> 
+		  <TD> <IMG SRC="Navigator/Nav_08.gif" WIDTH="56" HEIGHT="11"></TD> 
+		  <TD ROWSPAN="2"><A HREF="http://www.bmtinfonet.org/news.html"
+			 ONMOUSEOVER="img_act(4)" ONMOUSEOUT="img_inact(4)"><IMG SRC="Navigator/NB.gif"
+			 WIDTH="58" HEIGHT="47" BORDER="0" ALIGN="TOP" NAME="news"
+			 ALT="News Bulletins"></A></TD> 
+		  <TD><IMG SRC="Navigator/Nav_10.gif" WIDTH="56" HEIGHT="11"></TD> 
+		  <TD COLSPAN="2" ROWSPAN="2"><A
+			 HREF="http://www.bmtinfonet.org/books.html"
+			 ONMOUSEOVER="img_act(6)" ONMOUSEOUT="img_inact(6)"><IMG SRC="Navigator/OB.gif"
+			 WIDTH="55" HEIGHT="47" BORDER="0" ALIGN="TOP" NAME="books"
+			 ALT="Our Books"></A></TD> 
+		  <TD><IMG SRC="Navigator/Nav_12.gif" WIDTH="57" HEIGHT="11"></TD> 
+		  <TD ROWSPAN="2"><A HREF="http://www.bmtinfonet.org/contact.html"
+			 ONMOUSEOVER="img_act(8)" ONMOUSEOUT="img_inact(8)"><IMG SRC="Navigator/CU.gif"
+			 WIDTH="57" HEIGHT="47" BORDER="0" ALIGN="TOP" NAME="contact"
+			 ALT="Contact"></A></TD> 
+		  <TD> <IMG SRC="Navigator/Nav_14.gif" WIDTH="64" HEIGHT="11"></TD> 
+		  <TD ROWSPAN="3">
+			 <IMG SRC="Navigator/NAV_RIGHT.gif" WIDTH="20" HEIGHT="58" BORDER="0"></TD> 
+		  <TD><IMG SRC="Navigator/spacer.gif" WIDTH="1" HEIGHT="11"></TD> 
+		</TR> 
+		<TR> 
+		  <TD ROWSPAN="2"><A HREF="http://www.bmtinfonet.org/services.html"
+			 ONMOUSEOVER="img_act(1)" ONMOUSEOUT="img_inact(1)"><IMG SRC="Navigator/HS.gif"
+			 WIDTH="56" HEIGHT="47" BORDER="0" NAME="services"
+			 ALT="Helpful Services"></A></TD> 
+		  <TD ROWSPAN="2"><A HREF="http://www.bmtinfonet.org/centers/"
+			 ONMOUSEOVER="img_act(3)" ONMOUSEOUT="img_inact(3)"><IMG SRC="Navigator/TC.gif"
+			 WIDTH="56" HEIGHT="47" BORDER="0" NAME="centers"
+			 ALT="Transplant Center"></A></TD> 
+		  <TD ROWSPAN="2"><A
+			 HREF="http://www.bmtinfonet.org/resource/" ONMOUSEOVER="img_act(5)"
+			 ONMOUSEOUT="img_inact(5)"><IMG SRC="Navigator/RD.gif" WIDTH="56" HEIGHT="47"
+			 BORDER="0" NAME="directory" ALT="Resource Directory"></A></TD> 
+		  <TD ROWSPAN="2"><A HREF="http://www.bmtinfonet.org/drug/"
+			 ONMOUSEOVER="img_act(7)" ONMOUSEOUT="img_inact(7)"><IMG SRC="Navigator/DD.gif"
+			 WIDTH="57" HEIGHT="47" BORDER="0" NAME="drugs" ALT="Drug Database"></A></TD>
+		  <TD ROWSPAN="2" BGCOLOR="#FFFFFF"><A
+			 HREF="http://www.bmtinfonet.org/survive.html" ONMOUSEOVER="img_act(9)"
+			 ONMOUSEOUT="img_inact(9)"><IMG SRC="Navigator/HUS.gif" WIDTH="64" HEIGHT="47"
+			 BORDER="0" NAME="survive"></A></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="1" HEIGHT="36"></TD> 
+		</TR> 
+		<TR> 
+		  <TD COLSPAN="2"> <IMG SRC="Navigator/Nav_21.gif" WIDTH="64"
+			 HEIGHT="11"></TD> 
+		  <TD COLSPAN="2"> <IMG SRC="Navigator/Nav_22.gif" WIDTH="56"
+			 HEIGHT="11"></TD> 
+		  <TD> <IMG SRC="Navigator/Nav_23.gif" WIDTH="58" HEIGHT="11"></TD> 
+		  <TD COLSPAN="2"> <IMG SRC="Navigator/Nav_24.gif" WIDTH="55"
+			 HEIGHT="11"></TD> 
+		  <TD> <IMG SRC="Navigator/Nav_25.gif" WIDTH="57" HEIGHT="11"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="1" HEIGHT="11"></TD> 
+		</TR>
+		
+		<!-- Here endeth the great row of links -->
+		<TR> 
+		  <TD COLSPAN="2"> <IMG SRC="Navigator/Nav_26.gif" WIDTH="41"
+			 HEIGHT="60"></TD> 
+		  <TD> <IMG SRC="Navigator/subnavleft.gif" WIDTH="35" HEIGHT="60"></TD> 
+		  <TD COLSPAN="3">
+			 <IMG SRC="Navigator/CU_Icon.gif" WIDTH="105" HEIGHT="60" BORDER="0"></TD> 
+		  <TD COLSPAN="5">
+			 <IMG SRC="Navigator/CU_Text.gif" WIDTH="227" HEIGHT="60" BORDER="0"
+			  NAME="banner" ALT="Contact Us"></TD> 
+		  <TD COLSPAN="5">
+			 <IMG SRC="Navigator/Nav_30.gif" WIDTH="232" HEIGHT="60"></TD> 
+		  <TD> <IMG SRC="Navigator/spacer.gif" WIDTH="1" HEIGHT="60"></TD> 
+		</TR> 
+	 </TABLE><BR><BR><BR> 
+	 <TABLE WIDTH="570" CELLPADDING="0" CELLSPACING="0"> 
+		<TR> 
+		  <TD><IMG SRC="images/fill.gif" WIDTH="95" HEIGHT="1" BORDER="0"></TD> 
+		  <TD><B><FONT FACE="Arial">Mailing Address:</FONT></B><BR>BMT
+			 InfoNet<BR> 2900 Skokie Valley Road, Suite B<BR> Highland Park, IL 60035
+			 <BR><BR><B><FONT FACE="Arial">Telephone number:</FONT><BR></B>
+			 847.433.3313<BR>during regular business hours, toll-free 888.597.7674 <BR>
+			 <BR><B><FONT FACE="Arial"> Fax number:</FONT></B> 847.433.4599 <BR><BR><B><FONT
+			 FACE="Arial">You may send us electronic mail at:</FONT></B>
+			 <A HREF="mailto:help@bmtinfonet.org">help@bmtinfonet.org</A> <BR><BR><B><FONT
+			 FACE="Arial"><A HREF="/aboutus.html">Click here</A> to learn more about BMT
+			 InfoNet.</FONT></B><BR><BR><B><FONT FACE="Arial">To review a list of our
+			 Scientific Advisory Board, <A HREF="/scientific.html">click
+			 here</A></FONT></B><BR><BR></TD> 
+		</TR> 
+		<TR> 
+		  <TD>&nbsp;</TD> 
+		  <TD><B><FONT FACE="Arial">Feedback:</FONT></B><BR>If you have a
+			 question or comment about our website, please complete the form below. We will
+			 try to respond to your inquiry within 48 hours. During regular business hours,
+			 you may phone us toll free at: 888.597.7674.<BR><BR></TD> 
+		</TR> 
+		<TR> 
+		  <TD>&nbsp;</TD> 
+		  <TD> 
+			 <FORM ACTION="/cgi-bin/contactus-2000.pl" METHOD="POST"> 
+				<P><INPUT TYPE="HIDDEN" NAME="Client_Code" VALUE="BMT">
+				  <INPUT TYPE="HIDDEN" NAME="Webmaster" VALUE="webmaster@nidus.com">
+				  <INPUT TYPE="HIDDEN" NAME="Mailto" VALUE="help@bmtinfonet.org">
+				  <INPUT TYPE="HIDDEN" NAME="Mailtocc" VALUE="info@nidus.net">
+				  <INPUT TYPE="HIDDEN" NAME="File" VALUE="feedback-2000.txt">
+				  <INPUT TYPE="HIDDEN" NAME="Auto_Respond" VALUE="1">
+				  <INPUT TYPE="HIDDEN" NAME="Record_Type" VALUE="csv">
+				  <INPUT TYPE="HIDDEN" NAME="Survey" VALUE="24">
+				  <INPUT TYPE="HIDDEN" NAME="Bgcolor" VALUE="FFFFFF">
+				  <INPUT TYPE="HIDDEN" NAME="Image" VALUE="/images/header.gif">
+				  <INPUT TYPE="HIDDEN" NAME="Logic" VALUE="none"></P> 
+				<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="2"> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="LEFT" COLSPAN="2" BGCOLOR="#f4a8b9"> 
+						<P>Please provide us with information on how we can contact
+						  you:<BR><FONT COLOR="#FF0000">* Indicates a required entry</FONT></P></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">Name:</TD> 
+					 <TD BGCOLOR="#f4a8b9"><INPUT TYPE="TEXT" NAME="name"
+						SIZE="32"><FONT COLOR="#FF0000">*</FONT></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">Address:</TD> 
+					 <TD BGCOLOR="#f4a8b9"><INPUT TYPE="text" NAME="address"
+						SIZE="32"><FONT COLOR="#FF0000">*</FONT></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">City:</TD> 
+					 <TD BGCOLOR="#f4a8b9"><INPUT TYPE="text" NAME="city"
+						SIZE="15"><FONT COLOR="#FF0000">*</FONT></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT"
+					  BGCOLOR="#f4a8b9">State/Province:</TD> 
+					 <TD BGCOLOR="#f4a8b9"><INPUT TYPE="text" NAME="state"
+						SIZE="15"><FONT COLOR="#FF0000">*</FONT></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">Zip/Postal
+						Code:</TD> 
+					 <TD BGCOLOR="#f4a8b9"><INPUT TYPE="text" NAME="zip"
+						SIZE="15"><FONT COLOR="#FF0000">*</FONT></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">Country:</TD> 
+					 <TD BGCOLOR="#f4a8b9"> 
+						<SELECT NAME="country" SIZE="1" ONCHANGE="change_country()"> 
+						  <OPTION VALUE="">Select a Country</OPTION> 
+						  <OPTION VALUE="United States">United States</OPTION> 
+						  <OPTION VALUE="Afghanistan">Afghanistan</OPTION> 
+						  <OPTION VALUE="Albania">Albania</OPTION> 
+						  <OPTION VALUE="Algeria">Algeria</OPTION> 
+						  <OPTION VALUE="American Samoa">American Samoa</OPTION> 
+						  <OPTION VALUE="Andorra">Andorra</OPTION> 
+						  <OPTION VALUE="Angola">Angola</OPTION> 
+						  <OPTION VALUE="Anguilla">Anguilla</OPTION> 
+						  <OPTION VALUE="Antarctica">Antarctica</OPTION> 
+						  <OPTION VALUE="Antigua &amp; Barbuda">Antigua &amp;
+							 Barbuda</OPTION> 
+						  <OPTION VALUE="Argentina">Argentina</OPTION> 
+						  <OPTION VALUE="Armenia">Armenia</OPTION> 
+						  <OPTION VALUE="Aruba">Aruba</OPTION> 
+						  <OPTION VALUE="Australia">Australia</OPTION> 
+						  <OPTION VALUE="Austria">Austria</OPTION> 
+						  <OPTION VALUE="Azerbaijan">Azerbaijan</OPTION> 
+						  <OPTION VALUE="Bahamas">Bahamas</OPTION> 
+						  <OPTION VALUE="Bahrain">Bahrain</OPTION> 
+						  <OPTION VALUE="Bangladesh">Bangladesh</OPTION> 
+						  <OPTION VALUE="Barbados">Barbados</OPTION> 
+						  <OPTION VALUE="Belarus">Belarus</OPTION> 
+						  <OPTION VALUE="Belgium">Belgium</OPTION> 
+						  <OPTION VALUE="Belize">Belize</OPTION> 
+						  <OPTION VALUE="Benin">Benin</OPTION> 
+						  <OPTION VALUE="Bermuda">Bermuda</OPTION> 
+						  <OPTION VALUE="Bhutan">Bhutan</OPTION> 
+						  <OPTION VALUE="Bolivia">Bolivia</OPTION> 
+						  <OPTION VALUE="Bonaire">Bonaire</OPTION> 
+						  <OPTION
+							VALUE="Bosnia-Herzegovina">Bosnia-Herzegovina</OPTION> 
+						  <OPTION VALUE="Botswana">Botswana</OPTION> 
+						  <OPTION VALUE="Brazil">Brazil</OPTION> 
+						  <OPTION VALUE="Britain">Britain</OPTION> 
+						  <OPTION VALUE="British Virgin Islands">British Virgin
+							 Islands</OPTION> 
+						  <OPTION VALUE="Brunei">Brunei</OPTION> 
+						  <OPTION VALUE="Bulgaria">Bulgaria</OPTION> 
+						  <OPTION VALUE="Burkina Faso">Burkina Faso</OPTION> 
+						  <OPTION VALUE="Burundi">Burundi</OPTION> 
+						  <OPTION VALUE="Cambodia">Cambodia</OPTION> 
+						  <OPTION VALUE="Cameroon">Cameroon</OPTION> 
+						  <OPTION VALUE="Canada">Canada</OPTION> 
+						  <OPTION VALUE="Canary Islands">Canary Islands</OPTION> 
+						  <OPTION VALUE="Cape Verde">Cape Verde</OPTION> 
+						  <OPTION VALUE="Cayman Islands">Cayman Islands</OPTION> 
+						  <OPTION VALUE="Central African Republic">Central African
+							 Republic</OPTION> 
+						  <OPTION VALUE="Chad">Chad</OPTION> 
+						  <OPTION VALUE="Chile">Chile</OPTION> 
+						  <OPTION VALUE="China">China</OPTION> 
+						  <OPTION VALUE="Colombia">Colombia</OPTION> 
+						  <OPTION VALUE="Comoros">Comoros</OPTION> 
+						  <OPTION VALUE="Congo">Congo</OPTION> 
+						  <OPTION VALUE="Congo Democratic Republic">Congo Democratic
+							 Republic</OPTION> 
+						  <OPTION VALUE="Cook Islands">Cook Islands</OPTION> 
+						  <OPTION VALUE="Costa Rica">Costa Rica</OPTION> 
+						  <OPTION VALUE="Croatia">Croatia</OPTION> 
+						  <OPTION VALUE="Cuba">Cuba</OPTION> 
+						  <OPTION VALUE="Curacao">Curacao</OPTION> 
+						  <OPTION VALUE="Cyprus">Cyprus</OPTION> 
+						  <OPTION VALUE="Czech Republic">Czech Republic</OPTION> 
+						  <OPTION VALUE="Denmark">Denmark</OPTION> 
+						  <OPTION VALUE="Djibouti">Djibouti</OPTION> 
+						  <OPTION VALUE="Dominica">Dominica</OPTION> 
+						  <OPTION VALUE="Dominican Republic">Dominican
+							 Republic</OPTION> 
+						  <OPTION VALUE="Ecuador">Ecuador</OPTION> 
+						  <OPTION VALUE="Egypt">Egypt</OPTION> 
+						  <OPTION VALUE="El Salvador">El Salvador</OPTION> 
+						  <OPTION VALUE="England">England</OPTION> 
+						  <OPTION VALUE="Equatorial Guinea">Equatorial
+							 Guinea</OPTION> 
+						  <OPTION VALUE="Equitorial Guinea">Equitorial
+							 Guinea</OPTION> 
+						  <OPTION VALUE="Eritrea">Eritrea</OPTION> 
+						  <OPTION VALUE="Estonia">Estonia</OPTION> 
+						  <OPTION VALUE="Ethiopia">Ethiopia</OPTION> 
+						  <OPTION VALUE="Falkland Islands">Falkland Islands</OPTION> 
+						  <OPTION VALUE="Fiji">Fiji</OPTION> 
+						  <OPTION VALUE="Finland">Finland</OPTION> 
+						  <OPTION VALUE="France">France</OPTION> 
+						  <OPTION VALUE="French Guiana">French Guiana</OPTION> 
+						  <OPTION VALUE="Gabon">Gabon</OPTION> 
+						  <OPTION VALUE="Gambia">Gambia</OPTION> 
+						  <OPTION VALUE="Georgia">Georgia</OPTION> 
+						  <OPTION VALUE="Germany">Germany</OPTION> 
+						  <OPTION VALUE="Ghana">Ghana</OPTION> 
+						  <OPTION VALUE="Gibraltar">Gibraltar</OPTION> 
+						  <OPTION VALUE="Greece">Greece</OPTION> 
+						  <OPTION VALUE="Greenland">Greenland</OPTION> 
+						  <OPTION VALUE="Grenada">Grenada</OPTION> 
+						  <OPTION VALUE="Guadeloupe">Guadeloupe</OPTION> 
+						  <OPTION VALUE="Guam">Guam</OPTION> 
+						  <OPTION VALUE="Guatemala">Guatemala</OPTION> 
+						  <OPTION VALUE="Guinea">Guinea</OPTION> 
+						  <OPTION VALUE="Guinea-Bissau">Guinea-Bissau</OPTION> 
+						  <OPTION VALUE="Guyana">Guyana</OPTION> 
+						  <OPTION VALUE="Haiti">Haiti</OPTION> 
+						  <OPTION VALUE="Honduras">Honduras</OPTION> 
+						  <OPTION VALUE="Hungary">Hungary</OPTION> 
+						  <OPTION VALUE="Iceland">Iceland</OPTION> 
+						  <OPTION VALUE="India">India</OPTION> 
+						  <OPTION VALUE="Indonesia">Indonesia</OPTION> 
+						  <OPTION VALUE="Iran">Iran</OPTION> 
+						  <OPTION VALUE="Iraq">Iraq</OPTION> 
+						  <OPTION VALUE="Ireland">Ireland</OPTION> 
+						  <OPTION VALUE="Israel">Israel</OPTION> 
+						  <OPTION VALUE="Italy">Italy</OPTION> 
+						  <OPTION VALUE="Ivory Coast">Ivory Coast</OPTION> 
+						  <OPTION VALUE="Jamaica">Jamaica</OPTION> 
+						  <OPTION VALUE="Japan">Japan</OPTION> 
+						  <OPTION VALUE="Jordan">Jordan</OPTION> 
+						  <OPTION VALUE="Kazakhstan">Kazakhstan</OPTION> 
+						  <OPTION VALUE="Kenya">Kenya</OPTION> 
+						  <OPTION VALUE="Kiribati">Kiribati</OPTION> 
+						  <OPTION VALUE="Kuwait">Kuwait</OPTION> 
+						  <OPTION VALUE="Kyrgyzstan">Kyrgyzstan</OPTION> 
+						  <OPTION VALUE="Laos">Laos</OPTION> 
+						  <OPTION VALUE="Latvia">Latvia</OPTION> 
+						  <OPTION VALUE="Lebanon">Lebanon</OPTION> 
+						  <OPTION VALUE="Lesotho">Lesotho</OPTION> 
+						  <OPTION VALUE="Liberia">Liberia</OPTION> 
+						  <OPTION VALUE="Libya">Libya</OPTION> 
+						  <OPTION VALUE="Liechtenstein">Liechtenstein</OPTION> 
+						  <OPTION VALUE="Lithuania">Lithuania</OPTION> 
+						  <OPTION VALUE="Luxembourg">Luxembourg</OPTION> 
+						  <OPTION VALUE="Macau">Macau</OPTION> 
+						  <OPTION VALUE="Macedonia">Macedonia</OPTION> 
+						  <OPTION VALUE="Madagascar">Madagascar</OPTION> 
+						  <OPTION VALUE="Malawi">Malawi</OPTION> 
+						  <OPTION VALUE="Malaysia">Malaysia</OPTION> 
+						  <OPTION VALUE="Maldives">Maldives</OPTION> 
+						  <OPTION VALUE="Mali">Mali</OPTION> 
+						  <OPTION VALUE="Malta">Malta</OPTION> 
+						  <OPTION VALUE="Marshall Islands">Marshall Islands</OPTION> 
+						  <OPTION VALUE="Martinique">Martinique</OPTION> 
+						  <OPTION VALUE="Mauritania">Mauritania</OPTION> 
+						  <OPTION VALUE="Mauritius">Mauritius</OPTION> 
+						  <OPTION VALUE="Mexico">Mexico</OPTION> 
+						  <OPTION VALUE="Micronesia">Micronesia</OPTION> 
+						  <OPTION VALUE="Moldova">Moldova</OPTION> 
+						  <OPTION VALUE="Monaco">Monaco</OPTION> 
+						  <OPTION VALUE="Mongolia">Mongolia</OPTION> 
+						  <OPTION VALUE="Montserrat">Montserrat</OPTION> 
+						  <OPTION VALUE="Morocco">Morocco</OPTION> 
+						  <OPTION VALUE="Mozambique">Mozambique</OPTION> 
+						  <OPTION VALUE="Myanmar">Myanmar</OPTION> 
+						  <OPTION VALUE="Namibia">Namibia</OPTION> 
+						  <OPTION VALUE="Nauru">Nauru</OPTION> 
+						  <OPTION VALUE="Nepal">Nepal</OPTION> 
+						  <OPTION VALUE="Netherlands">Netherlands</OPTION> 
+						  <OPTION VALUE="New Caledonia">New Caledonia</OPTION> 
+						  <OPTION VALUE="New Zealand">New Zealand</OPTION> 
+						  <OPTION VALUE="Nicaragua">Nicaragua</OPTION> 
+						  <OPTION VALUE="Niger">Niger</OPTION> 
+						  <OPTION VALUE="Nigeria">Nigeria</OPTION> 
+						  <OPTION VALUE="Niue">Niue</OPTION> 
+						  <OPTION VALUE="North Korea">North Korea</OPTION> 
+						  <OPTION VALUE="Northern Ireland">Northern Ireland</OPTION> 
+						  <OPTION VALUE="Northern Mariana Islands">Northern Mariana
+							 Islands</OPTION> 
+						  <OPTION VALUE="Norway">Norway</OPTION> 
+						  <OPTION VALUE="Oman">Oman</OPTION> 
+						  <OPTION VALUE="Pakistan">Pakistan</OPTION> 
+						  <OPTION VALUE="Palau">Palau</OPTION> 
+						  <OPTION VALUE="Panama">Panama</OPTION> 
+						  <OPTION VALUE="Papua New Guinea">Papua New Guinea</OPTION> 
+						  <OPTION VALUE="Paraguay">Paraguay</OPTION> 
+						  <OPTION VALUE="Peru">Peru</OPTION> 
+						  <OPTION VALUE="Philippines">Philippines</OPTION> 
+						  <OPTION VALUE="Poland">Poland</OPTION> 
+						  <OPTION VALUE="Portugal">Portugal</OPTION> 
+						  <OPTION VALUE="Puerto Rico">Puerto Rico</OPTION> 
+						  <OPTION VALUE="Qatar">Qatar</OPTION> 
+						  <OPTION VALUE="Reunion">Reunion</OPTION> 
+						  <OPTION VALUE="Romania">Romania</OPTION> 
+						  <OPTION VALUE="Russia">Russia</OPTION> 
+						  <OPTION VALUE="Rwanda">Rwanda</OPTION> 
+						  <OPTION VALUE="Saba">Saba</OPTION> 
+						  <OPTION VALUE="San Marino">San Marino</OPTION> 
+						  <OPTION VALUE="Sao Tome and Principe">Sao Tome and
+							 Principe</OPTION> 
+						  <OPTION VALUE="Saudi Arabia">Saudi Arabia</OPTION> 
+						  <OPTION VALUE="Scotland">Scotland</OPTION> 
+						  <OPTION VALUE="Senegal">Senegal</OPTION> 
+						  <OPTION VALUE="Seychelles">Seychelles</OPTION> 
+						  <OPTION VALUE="Sierra Leone">Sierra Leone</OPTION> 
+						  <OPTION VALUE="Singapore">Singapore</OPTION> 
+						  <OPTION VALUE="Slovakia">Slovakia</OPTION> 
+						  <OPTION VALUE="Slovenia">Slovenia</OPTION> 
+						  <OPTION VALUE="Solomon Islands">Solomon Islands</OPTION> 
+						  <OPTION VALUE="Somalia">Somalia</OPTION> 
+						  <OPTION VALUE="South Africa">South Africa</OPTION> 
+						  <OPTION VALUE="South Korea">South Korea</OPTION> 
+						  <OPTION VALUE="Spain">Spain</OPTION> 
+						  <OPTION VALUE="Sri Lanka">Sri Lanka</OPTION> 
+						  <OPTION VALUE="St. Eustatius">St. Eustatius</OPTION> 
+						  <OPTION VALUE="St. Kitts &amp; Nevis">St. Kitts &amp;
+							 Nevis</OPTION> 
+						  <OPTION VALUE="St. Lucia">St. Lucia</OPTION> 
+						  <OPTION VALUE="St. Maarten">St. Maarten</OPTION> 
+						  <OPTION VALUE="St. Vincent &amp; Grenadines">St. Vincent
+							 &amp; Grenadines</OPTION> 
+						  <OPTION VALUE="Sudan">Sudan</OPTION> 
+						  <OPTION VALUE="Suriname">Suriname</OPTION> 
+						  <OPTION VALUE="Swaziland">Swaziland</OPTION> 
+						  <OPTION VALUE="Sweden">Sweden</OPTION> 
+						  <OPTION VALUE="Switzerland">Switzerland</OPTION> 
+						  <OPTION VALUE="Syria">Syria</OPTION> 
+						  <OPTION VALUE="Tahiti">Tahiti</OPTION> 
+						  <OPTION VALUE="Taiwan">Taiwan</OPTION> 
+						  <OPTION VALUE="Tajikistan">Tajikistan</OPTION> 
+						  <OPTION VALUE="Tanzania">Tanzania</OPTION> 
+						  <OPTION VALUE="Tasmania">Tasmania</OPTION> 
+						  <OPTION VALUE="Thailand">Thailand</OPTION> 
+						  <OPTION VALUE="Togo">Togo</OPTION> 
+						  <OPTION VALUE="Tonga">Tonga</OPTION> 
+						  <OPTION VALUE="Trinidad &amp; Tobago">Trinidad &amp;
+							 Tobago</OPTION> 
+						  <OPTION VALUE="Tunisia">Tunisia</OPTION> 
+						  <OPTION VALUE="Turkey">Turkey</OPTION> 
+						  <OPTION VALUE="Turkmenistan">Turkmenistan</OPTION> 
+						  <OPTION VALUE="Turks and Caicos Islands">Turks and Caicos
+							 Islands</OPTION> 
+						  <OPTION VALUE="Tuvalu">Tuvalu</OPTION> 
+						  <OPTION VALUE="US Virgin Islands">US Virgin
+							 Islands</OPTION> 
+						  <OPTION VALUE="Uganda">Uganda</OPTION> 
+						  <OPTION VALUE="Ukraine">Ukraine</OPTION> 
+						  <OPTION VALUE="United Arab Emirates">United Arab
+							 Emirates</OPTION> 
+						  <OPTION VALUE="United Kingdom">United Kingdom</OPTION> 
+						  <OPTION VALUE="Uruguay">Uruguay</OPTION> 
+						  <OPTION VALUE="Uzbekistan">Uzbekistan</OPTION> 
+						  <OPTION VALUE="Vanuatu">Vanuatu</OPTION> 
+						  <OPTION VALUE="Vatican">Vatican</OPTION> 
+						  <OPTION VALUE="Venezuela">Venezuela</OPTION> 
+						  <OPTION VALUE="Vietnam">Vietnam</OPTION> 
+						  <OPTION VALUE="Wales">Wales</OPTION> 
+						  <OPTION VALUE="Western Samoa">Western Samoa</OPTION> 
+						  <OPTION VALUE="Yemen">Yemen</OPTION> 
+						  <OPTION VALUE="Yugoslavia">Yugoslavia</OPTION> 
+						  <OPTION VALUE="Zambia">Zambia</OPTION> 
+						  <OPTION VALUE="Zimbabwe">Zimbabwe</OPTION> 
+						</SELECT><FONT COLOR="#FF0000">*</FONT></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">&nbsp;</TD> 
+					 <TD BGCOLOR="#f4a8b9">One of the following phone numbers is
+						required</TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">Evening
+						Phone:</TD> 
+					 <TD BGCOLOR="#f4a8b9"><INPUT TYPE="TEXT" NAME="evephone"
+						SIZE="32"><FONT COLOR="#FF0000">*</FONT></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9"> Day
+						Phone</TD> 
+					 <TD BGCOLOR="#f4a8b9"><INPUT TYPE="text" NAME="phone"
+						SIZE="32"><FONT COLOR="#FF0000">*</FONT></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">Fax:</TD> 
+					 <TD BGCOLOR="#f4a8b9"><INPUT TYPE="text" NAME="fax"
+						SIZE="32"></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">E-Mail:</TD> 
+					 <TD BGCOLOR="#f4a8b9"><INPUT TYPE="text" NAME="email"
+						SIZE="32"></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT" BGCOLOR="#f4a8b9">&nbsp;</TD> 
+					 <TD BGCOLOR="#f4a8b9">&nbsp;</TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="RIGHT">Comments:</TD> 
+					 <TD BACKGROUND="ffffff"><TEXTAREA NAME="feedback" ROWS="6" COLS="32" WRAP="Virtual"></TEXTAREA></TD> 
+				  </TR> 
+				  <TR> 
+					 <TD VALIGN="TOP" ALIGN="CENTER" COLSPAN="2"> 
+						<P><INPUT TYPE="SUBMIT" NAME="send"
+						  VALUE="Send Request"></P></TD> 
+				  </TR> 
+				</TABLE> <HR> 
+				<P> </P></FORM></TD> 
+		</TR> 
+	 </TABLE> 
+	 <TABLE WIDTH="570" BGCOLOR="#FFFFFF" CELLPADDING="1" CELLSPACING="1"> 
+		<TR> 
+		  <TD><IMG SRC="/images/fill.gif" WIDTH="56" HEIGHT="1" BORDER="0"
+			 ALIGN="RIGHT"></TD> 
+		  <TD><IMG SRC="/images/fill.gif" WIDTH="56" HEIGHT="1" BORDER="0"
+			 ALIGN="RIGHT"></TD> 
+		  <TD><IMG SRC="/images/fill.gif" WIDTH="56" HEIGHT="1" BORDER="0"
+			 ALIGN="RIGHT"></TD> 
+		  <TD></TD> 
+		  <TD COLSPAN="2"></TD> 
+		  <TD COLSPAN="3"><IMG SRC="/images/fill.gif" WIDTH="56" HEIGHT="1"
+			 BORDER="0" ALIGN="RIGHT"></TD> 
+		</TR> 
+		<TR> 
+		  <TD COLSPAN="7" VALIGN="TOP">&nbsp;<A HREF="index.html"><IMG
+			 SRC="/images/Home2.gif" WIDTH="46" HEIGHT="54" BORDER="0" ALIGN="RIGHT"
+			 ALT="Return to BMT InfoNet Home Page"></A></TD> 
+		  <TD>&nbsp;</TD> 
+		  <TD VALIGN="BOTTOM"><A HREF="#top"><IMG SRC="/images/Top1.gif"
+			 WIDTH="46" HEIGHT="54" BORDER="0" ALIGN="RIGHT"
+			 ALT="Return to the Top of this Page"></A></TD> 
+		</TR> 
+		<TR> 
+		  <TD COLSPAN="9">&nbsp;</TD> 
+		</TR> 
+		<TR> 
+		  <TD COLSPAN="9" ALIGN="RIGHT">&nbsp;<IMG SRC="/images/bmt_footer.gif"
+			 WIDTH="481" HEIGHT="29" BORDER="0" USEMAP="#map1"> 
+			 <MAP NAME="map1">
+				<AREA SHAPE="RECT" COORDS="298,13,434,29" HREF="mailto:help@bmtinfonet.org"> 
+			 </MAP></TD> 
+		</TR> 
+	 </TABLE> </BODY>
+</HTML>

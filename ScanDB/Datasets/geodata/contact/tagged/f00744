@@ -1,0 +1,154 @@
+<DOC>
+<DOCNO>f00744</DOCNO>
+<DOCHDR>http://www.stayaspensnowmass.com/p-contact-information.php</DOCHDR>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Contact Information</title>
+<SCRIPT language="JavaScript1.2" src="/scripts/HM_Settings.js" type='text/javascript'></SCRIPT>
+<style type="text/css" media="screen">
+@import "/style2.css";
+</style>
+<style type="text/css" media="all">
+<!--
+
+pre {font-size: xx-small;}
+
+-->
+</style>
+<SCRIPT language="JavaScript1.2" src="/scripts/popup.js" type='text/javascript'></SCRIPT>
+
+</head>
+
+<body bgcolor="#ffffff" leftmargin="2" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="2" marginheight="0"> 
+<div id="wrapper"> 
+<div id="header"> 
+    <div id="headerRight"><span class="bannerLVE">Local Vacation Experts</span><br />
+      <span class="bannerTollFree">888.649.5982</span><br /><img src="/images/icon.strip.gif" /><br/>
+	  <div style="font-size:10pt;color:white;font-weight:bold;text-align:left;">Aspen&nbsp;Central&nbsp;Reservations&nbsp;&<br />Snowmass&nbsp;Central&nbsp;Reservations</div></div><a href="http://www.stayaspensnowmass.com/"><img src="/images/head-logo.gif" alt="Stay Aspen Snowmass" width="346" height="122" border="0" /></a><img src="/images/seal_3.gif" width="177" height="123" /></div> 
+    <div id="menu"> 
+    <ul><li id="one"><a href="/p-colorado-vacations.php" class="navfont" onMouseOver="HM_f_PopUp('elMenu1',event)" onMouseOut="HM_f_PopDown('elMenu1')">PLAN YOUR VACATION</a></li><li id="two"><a href="/p-local-information.php" class="navfont" onMouseOver="HM_f_PopUp('elMenu2',event)" onMouseOut="HM_f_PopDown('elMenu2')">LOCAL INFORMATION </a></li><li id="three"><a href="/p-specials.php" class="navfont"  onMouseOver="HM_f_PopUp('elMenu3',event)" onMouseOut="HM_f_PopDown('elMenu3')">SPECIAL PACKAGES</a></li><li id="four"><a href="/p-group-planning.php" class="navfont" onMouseOver="HM_f_PopUp('elMenu4',event)" onMouseOut="HM_f_PopDown('elMenu4')">GROUP PLANNING </a></li><li id="five"><a href="/p-official-cenres.php" class="navfont" onMouseOver="HM_f_PopUp('elMenu5',event)" onMouseOut="HM_f_PopDown('elMenu5')">WHY US </a></li><li id="six"><table border="0" cellpadding="0" cellspacing="0"><form action="/p-aspen-snowmass-lodging.php" method="get" name="search" id="search"><tr><td><input name="propname" type="text" value="Property Search" size="17" onFocus="this.value = '';"/></td><td><input type="image" src="/images/go.gif" width="21" height="17" hspace="3" border="0" /><input type="hidden" name="mode" value="search" /></form></td>
+    </tr></form></table></li>
+    </ul> 
+  </div>
+ 
+    <div id="pagebody">
+	    <table border=0 cellpadding=0 cellspacing=0 width=100%>
+			<td valign="top" id="wrapbody" width="550"><h1>Contact Information</h1><div id='level2content'>	
+	<h2>Phone Numbers</h2>
+	<div style="margin-left:20px;">
+	Toll-free (U.S. and Canada): <b>888.649.5982</b><br />
+	International: <b>1 970-925-9000</b><br />
+	Fax: <b>1 970-925-9008</b>
+	</div>
+
+	<h2>Mailing/Shipping</h2>
+	<div style="margin-left:20px;">
+	Stay Aspen Snowmass<br />
+	<GEO TYPE="US">425 Rio Grande Place<br />
+	Aspen, CO<br />
+	81611</GEO>
+	</div>
+
+	<h2>Internet</h2>
+	<div style="margin-left:20px;">
+	<a href="mailto:info@stayaspensnowmass.com">info@stayaspensnowmass.com</a>
+	</div>
+
+	<h2>General Info Request</h2>
+	<div style="margin-left:20px;">
+	Use this form to request general information from Stay Aspen Snowmass.  Your personal
+	information will be used only to contact you.
+	</div>
+	<div class="form">
+	<script language="JavaScript" type="text/javascript">
+	function verify_contact() {
+		if(document.contact.email.value == "") { 
+			alert('Please enter your e-mail address.'); 
+			return false; 
+		} else { 
+			return true; 
+		}
+	}
+	</script>
+	<form name="contact" action="/p-contact-information.php" method="post" onsubmit="return verify_contact();">
+	<input type="hidden" name="mode" value="send">
+	<table border=0 cellpadding=3 cellspacing=0 class="formbody" width="515">
+	<tr class="tableHeader">
+		<td>General Information Request Form</td>
+	</tr>
+	<tr class="tableContentAltLeft">
+		<td align=center>
+		<table border=0 cellpadding=3 cellspacing=0>
+			<tr class="tableContentAltLeft">
+				<td><b>First Name:</b><br><input type="text" name="fname" value=""></td>
+				<td><b>Last Name:</b><br><input type="text" name="lname" value=""></td>
+			</tr>
+			<tr class="tableContentAltLeft">
+				<td colspan=2><b>Your E-mail Address:*</b><br><input type="text" name="email" value="" size=40></td>
+			</tr>
+			<tr class="tableContentAltLeft">
+				<td colspan=2><b>Subject:</b><br><input type="text" name="subject" value="" size=40></td>
+			</tr>
+			<tr class="tableContentAltLeft">
+				<td colspan=2><b>Message:</b><br><textarea name="message" rows=10 cols=50></textarea></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr class="tableContentAltLeft">
+		<td align=center><input type="submit" value="Send" class="formbutton"><br />
+		Your privacy is our priority.  The information provided here will be used only to contact you in
+			response to this inquiry.</td>
+	</tr>
+	</table>
+	</form>
+	</div>
+</div></td><td width=4></td>
+<td valign=top class="header">
+<a href="/p-discount-lift-tickets.php" ><img src="/images/promo/lift-tickets.jpg" width="196" height="242" alt="Discounted Lift Tickets" border="0" /></a>
+<br />
+<div class="rightspecials"><span class="bannerSpecTop">Sign up</span><br /> 
+      <table width="172" border='0' cellpadding='0' cellspacing='0'> 
+        <tr> 
+          <td NOWRAP width="110"><span class="bannerSpecBottom">and SAVE</span></td> 
+          <td><img src='/images/suitcase.gif' width='28' height='25' hspace='5' /></td> 
+        </tr> 
+      </table> 
+      <span class="rightColumnFont">Sign up for Aspen Snowmass information to be sent to you via email.</span><br /> 
+      <table width="172" border="0" cellpadding="0" cellspacing="0"> 
+        <tr> 
+          <td><span class="rightColumnFontBld"><a href="/p-newsletter.php">Click here to sign up now</a></span></td> 
+          <td><a href="/p-newsletter.php"><img src="/images/circle.arrow.gif" width="12" height="12" hspace="3" border="0"></a></td> 
+        </tr> 
+      </table> 
+    </div></td></table></div><div id="footer" style="margin-bottom:0;"></div>
+<div id="footermenu"> 
+      <ul>  
+    <li id="two"><a href="/p-media.php" class="fnavfont">Media Center</a></li> 
+    <li id="three"><a href="/p-welcome-travel-agents.php" class="fnavfont">Travel Agents</a></li> 
+    <li id="five"><a href="/p-legal-policy.php" class="fnavfont">Legal</a></li> 
+    <li id="six"><a href="/sitemap.php" class="fnavfont">Site Map</a></li> 
+    <li id="seven"><a href="/p-contact-information.php" class="fnavfont">Contact US</a></li> 
+    <li id="eight"> 
+          <table border="0" cellpadding="0" cellspacing="0" width="350" height="25"> 
+        <tr> 
+              <td align="right"><a href="/p-email-page.php?url=%2Fp-contact-information.php" class="emailnavfont">Email this page <img src="/images/email.gif" width="15" height="10" hspace="4" border="0" align="absmiddle" /></a></td> 
+            </tr> 
+      </table> 
+        </li> 
+  </ul> 
+    </div>
+	</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="753"> 
+      <tr> 
+    <td align="center"><div class="smallCopy">
+        &copy; 2001-2004 Aspen Central Reservations & Snowmass Central Reservations DBA Stay Aspen Snowmass. All rights reserved.<br> 
+        <a href="mailto:webmaster@stayaspensnowmass.com?Subject=Stay%20Aspen%20Snowmass%20Website">Website questions/comments?</a><br /><p></p> 
+        </div></td> 
+  </tr> 
+    </table>
+<script language="JavaScript1.2" src="/scripts/HM_Loader.js" type='text/javascript'></script> 
+</body></html>

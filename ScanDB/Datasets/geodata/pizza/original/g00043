@@ -1,0 +1,881 @@
+<DOC>
+<DOCNO>g00043</DOCNO>
+<DOCHDR>http://homepage.mac.com/ctholland/thelab/presentations/chris_holland_barcampLA2006/demos/localsearch/before.html</DOCHDR>
+<html xmlns:stringutil="java:com.google.common.base.StringUtil">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <title>Local Search: pizza near los angeles, ca</title><style>
+              <!--
+
+              .bar_divide{background-color:#DDDDDD;padding:2px;color:#444444; font-weight:bold; font-size:14px}
+              .ch{background-color:#FFFFFF; padding:3px 0px 3px 0px;}
+              .e{margin-top: .15em; margin-bottom: .15em;}
+              .xcontent{width: 100%; margin-left: 7px}
+              .content{width: 100%; margin:6px 0 4px 0; }
+              #container {width: 100%;}
+              #contained {margin: 0px 8px 0px 8px; display:inline-block;}
+
+              body,td,div,.p,a{font-family:arial,sans-serif }
+              div,td{color:#000}
+              .f,.fl:link{color:#6f6f6f}
+              a:link,.w,a.w:link,.w a:link{color:#00c}
+              a:visited,.fl:visited{color:#551a8b}
+              a:active,.fl:active{color:#f00}
+              .t a:link,.t a:active,.t a:visited,.t{color:#000}
+              .t{background-color:#ffeac0}
+              .k{background-color:#f90}
+              .j{width:34em}
+              .h{color:#000;font-size:14px}
+              .i,.i:link{color:#a90a08}
+              .a,.a:link{color:#008000}
+              .z{display:none}
+              div.n {margin-top: 1ex}
+              .n a{font-size:10pt; color:#000}
+              .n .i{font-size:10pt; font-weight:bold}
+              .q a:visited,.q a:link,.q a:active,.q {color: #00c; }
+              .b{font-size: 12pt; color:#00c; font-weight:bold}
+              //-->
+            </style><script>
+
+  
+
+<!--
+function ss(w){window.status=w;return true;}
+function cs(){window.status='';}
+function ga(o,e){if (document.getElementById){a=o.id.substring(1); p = "";r = "";g = e.target;if (g) { t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h) r = h.id;}}
+else{h = e.srcElement;f = h.parentNode;if (f) p = f.id;t = h.id;}if (t==a || p==a || r==a) return true;location.href=document.getElementById(a).href}}
+//-->
+
+
+  
+
+  </script><style type="text/css">
+
+             body, td {/*background:#fff;*/margin:0px;font-family:Arial, sans-serif;font-size:80%;}
+              .uNav{position:relative;background:#006;padding:13px;padding-top:5px;padding-bottom:7px;font-weight:bold;margin-right:0px;clear:both;}
+              .uLinks{position:absolute;background:#006;top:3px;right:15px;margin-right:-15px;padding:3px;}
+              .uLinks a{padding:0 6px 0 6px;border-left:1px solid #66c;}
+              .uLinks a:link{color:white;}
+              .uLinks a:visited{color:#ccc;}
+              .uLinks a.selected{color:#f90;}
+              .eHC{width:100%;background:url('http://eimg.net/img/thm/common_chan_hdr.gif');color:#353535;margin-bottom:20px;text-align:left;padding:4px;margin-top:10px;margin-bottom:0;}
+              .cT td{background-color:transparent;padding:0px;text-align:center;width:14%}
+              #page{padding:8px 10px 0px 10px;margin-bottom:0px;}
+
+
+
+
+
+/* start search box css */
+
+div.findex_1 {
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.searchInputInterface {
+  position:relative;
+  height:94px; /* 84 */ /* 94 */
+  border:0px;
+  padding:0;margin:0;
+  margin-bottom:20px;
+  margin-top:10px;
+  clear:both;
+}
+
+div.toggleRow {
+  padding:0;margin:0;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:5;
+  height:36px; /* 26 */
+  background: url("http://search.earthlink.net/search/img/tab/tab_row_white_bg2.gif") transparent bottom repeat-x;
+}
+
+table.searchToggle {
+  margin:0;padding:0;
+  /* margin-top:10px; */
+}
+
+table.searchToggle td {
+  background-color:transparent;
+}
+
+table.searchToggle td.engine {
+  font-size:13px;
+  font-family:Arial, Helvetica, sans-serif;
+  border:0;
+  padding:0;
+  padding-top:10px; /* instead of margin-top above */
+  padding-left:1px;
+  background-color:transparent;
+}
+
+table.searchToggle td.isNew {
+  background:url("http://search.earthlink.net/search/img/new.gif") transparent top center no-repeat;
+}
+
+table.searchToggle td.engine div {
+  margin:0;
+  background: url("http://search.earthlink.net/search/img/tab/tab_orange_filler.gif") orange repeat-x;
+  height: 26px;
+}
+
+table.searchToggle td.selected div {
+  background: url("http://search.earthlink.net/search/img/tab/tab_row_white_bg2.gif") #f3f3f3 top repeat-x;
+}
+
+table.searchToggle td.engine div a:hover {
+  text-decoration:underline;
+}
+
+table.searchToggle td.engine div a {
+  display:block;
+  margin:0;
+  height:26px;
+  text-decoration:none;
+  background: url("http://search.earthlink.net/search/img/tab/tab_orange_left.gif") transparent left no-repeat;
+  color:white;
+  font-weight:bold;
+}
+
+table.searchToggle td.selected div a {
+  background: url("http://search.earthlink.net/search/img/tab/tab_selected_left.gif") transparent left no-repeat;
+}
+
+table.searchToggle td.selected div a {
+  color:black;
+}
+
+
+table.searchToggle td.engine div a span {
+  display:block;
+  margin:0;
+  height:26px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:3px;
+  background: url("http://search.earthlink.net/search/img/tab/tab_orange_right.gif") transparent right top no-repeat;
+  cursor:pointer;
+}
+
+table.searchToggle td.selected div a span {
+/*  padding-top:5px; */
+  background: url("http://search.earthlink.net/search/img/tab/tab_selected_right.gif") transparent right top no-repeat;
+}
+
+div.inputBoxes {
+  display:block;
+  position:absolute;
+  left:0;
+  top:32px; /* */
+  width:100%;
+  background: url("http://search.earthlink.net/search/img/tab/tab_row_white_bg2.gif") #f3f3f3 top repeat-x;
+  border:0;
+  border-bottom:1px solid #c8c8c8;
+  padding:0;
+  margin:0;
+}
+
+div.searchInputInterface img.corner {
+  position:absolute;
+  width:7px;
+  height:7px;
+  z-index:10;
+}
+
+div.searchInputInterface img.left {
+  left:0;
+  top:32px; /* 22 */
+}
+
+div.searchInputInterface img.right {
+  right:0;
+  top:32px; /* 22 */
+}
+
+div.borderContainer {
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+div.inputBoxes div.leftContainer {
+  background: url("http://search.earthlink.net/search/img/tab/box_edge_left.gif") transparent left repeat-y;
+  margin-top:4px;
+}
+
+div.inputBoxes div.rightContainer {
+  background: url("http://search.earthlink.net/search/img/tab/box_edge_right.gif") transparent right repeat-y;
+  padding-top:10px;
+}
+
+/* end tab configuration */
+
+/* start input configuration */
+
+.enginesInput {
+  margin-left:40px;
+}
+
+table.enginesInput tr td {
+  background-color:transparent;
+}
+
+table.enginesInput tr td div.wrapper {
+  padding-left:5px;
+}
+
+/*
+table.enginesInput>tr>td>div, table.enginesInput>tr>td>span, table.enginesInput>tr>td>input {
+  margin-left:10px;
+}
+*/
+
+table.enginesInput td.actionCell {
+  padding-bottom:15px;
+}
+
+/* start search box css */
+
+
+div.logoContainer {
+  position:relative;
+  width:92px; /* 89 - sdc */ /* 92 x 42 */
+  height:42px; /* 42 */ /* 29 - sdc */
+}
+
+div.logoContainer img {
+  position:absolute;
+  right:0px;
+  bottom:0px;
+}
+
+.sBT{width:328px;} /* 378 */
+
+.webSearchInput input, .localSearchInput input {padding:0;margin:0;}
+
+.inputContainer {border:0;padding:0;margin:0;}
+
+.moreinfo {
+  border:0;height:15px;margin:0;padding:0;margin-top:3px;
+  font-size:10px;
+  font-family:Arial, Helvetica, Sans-Serif;
+}
+.example {
+  color: gray;
+}
+
+.localSearchInput td {padding-bottom:0px;padding-top:0px;}
+.localSearchInput td.one {padding-right:2px;}
+.lsBT_one {width:163px;padding:0;margin:0;} /* 188 */
+.lsBT_two {width:163px;padding:0;margin:0;} /* 188 */
+
+td select.shoppingCategory {
+  margin-left:4px;
+  width:161px;
+}
+
+div.searchForm {
+margin:0;padding:0;
+}
+
+.searchForm {
+  margin:0;padding:0;display:block;
+  margin-top:5px;
+  margin-bottom:10px;
+}
+
+.findex_2 .searchForm {
+  margin-bottom:0px;
+}
+
+
+button.imgSubmit {
+  width:70px;
+  height:22px;
+
+  display:inline;
+  padding:0;
+  margin:0;
+  border:0;
+  text-align:left;
+  cursor:pointer;
+  background-color:transparent;
+
+  /* win/ie hack */
+  _width:20px;
+  _overflow:visible;
+}
+
+.saveSearch {
+font-family: Arial, Helvetica, Sans-Serif;
+font-size:13px;
+}
+
+.selectSearch {
+display:block;
+white-space:nowrap;
+background-color:transparent;
+padding-top:10px;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size:12px;
+padding-left:10px;
+padding-right:10px;
+width:150; /* also see #rList.imagePagination below */
+font-weight:bold;
+}
+
+/* end search box css */
+
+
+/* end input configuration */
+
+
+/* end search box css */
+
+
+
+
+              #footer{padding:1.0em 0 1.0em 2.0em;}
+
+              /* Channelink CSS */
+              .universalNav TD {background:transparent;}
+              .channelLinksCol, .channelLinksColMin{padding:6px;vertical-align:top;text-align:center;width:20%;}
+              #chanLinksButton, #chanLinksButtonMax{background:transparent;vertical-align:top;text-align:right;padding:0 1px 0 0;}
+              .channelLinksColMinChan{background:transparent;width:110px;padding:0;text-align:center;}
+              .edtHdrChan{background:url('http://eimg.net/img/thm/common_chan_hdr.gif');color:#353535;margin-bottom:20px;text-align:left;padding:4px;width:760px;}
+              #moreMenu{position:absolute;border:1px solid #666;padding:4px;text-align:left;right:0;top:16px;}
+              #moreMenuMain{position:relative;z-index:1;width:80px;}
+              .button{cursor:pointer;cursor:hand;font-size:11px;color:#666;border:1px solid #666;background:#fff;padding:1px 6px;height:18px;}
+              .buttonMore{font-size:11px;border:1px solid #666;background:#fff;color:#666;}
+              .buttonMore A:link, .buttonMore A:visited, .buttonMore A:active, .buttonMore B{color:#666;text-decoration:none;font-weight:normal;}
+
+
+
+
+
+            </style><script>
+
+
+              kw="pizza"; /* query to be used in URLs */
+              qd="pizza"; /* query display in input field */
+
+              /* start google input fields */
+              nearLocation="los angeles, ca"; /* location display in input field */
+              hlValue = "en";
+              scValue = "1";
+              rlValue = "1";
+              rlChecked = "checked";
+              /* end google input fields */
+
+            </script><script src="./dependencies/srch61.js" language="JavaScript"></script><script src="./dependencies/dhtml.js" language="JavaScript"></script></head>
+   <body bgcolor="#ffffff" topmargin="2" marginheight="2"><style>
+            <!--
+            .fl:link{color:#7777CC}
+            //-->
+          </style><style type="text/css">
+            <!--
+            .la{margin-top: 0.5em}
+            .la td{border-right: 1px solid silver; padding-left: 10px; padding-right: 10px}
+            .la .pad{border-right: 0px; height: 6px}
+            .la .last{border-right: 0px}
+            .la f{color: #6f6f6f}
+            .la .s{font-size:70%}
+            //-->
+          </style><style type="text/css">
+            <!--
+            .lr td{padding-top: 0.5em}
+            .ln{padding-right: 8px}
+            .lre .l{border-bottom: 1px solid #d0d0d0; padding-bottom: 0.5em; padding-top: 0.25em}
+            .lad{padding-left: 25px; white-space: nowrap}
+            .fl{color:#7777cc}
+            //-->
+          </style><div class="uNav"><script>uN();</script></div>
+      <div id="page"><script>tb();sf();</script><div class="rCol"></div>
+      </div>
+      <div id="container">
+         <div id="contained">
+            <table width="100%">
+               <tr>
+                  <td>
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                           <td class="bar_divide">
+                              Sponsored Results
+                              
+                           </td>
+                        </tr>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr class="la">
+                           <td></td>
+                        </tr>
+                     </table>
+                     <p class="e">
+                        <table width="100%">
+                           <tr>
+                              <td class="ch" id="taw0" nowrap valign="top" width="100%"><font size="-1"><a id="aw0" href="http://www.google.com/pagead/iclk?sa=l&amp;ai=BrcB_JigLRPOaFK30YJm5_ecO34nmELP5rpgB-ZOdtwOQvwUQARgBIO32nQMoA0iROVCZuqrS-_____8BoAGRm8b-A6oBDGxvY2FscmVzdWx0c8gBAZUCMzcYCg&amp;num=1&amp;adurl=http://www.la.com/cgi-bin/WebObjects/cgpportal.woa/wa/path%3Furlpath%3D/dining%26campaignSource%3Dg" onmouseover="ss('go to www.LA.com')" onclick="ga(this,event)" onmouseout="cs()"><b>Pizza Los Angeles</b></a></font><br><font class="s">Your Guide to Eating Well in LA Burgers to Fine Dining We know LA!</font><br><a id="aw0" STYLE="text-decoration:none" href="http://www.google.com/pagead/iclk?sa=l&amp;ai=BrcB_JigLRPOaFK30YJm5_ecO34nmELP5rpgB-ZOdtwOQvwUQARgBIO32nQMoA0iROVCZuqrS-_____8BoAGRm8b-A6oBDGxvY2FscmVzdWx0c8gBAZUCMzcYCg&amp;num=1&amp;adurl=http://www.la.com/cgi-bin/WebObjects/cgpportal.woa/wa/path%3Furlpath%3D/dining%26campaignSource%3Dg" onmouseover="ss('go to www.LA.com')" onclick="ga(this,event)" onmouseout="cs()"><font color="green" size="-1">www.LA.com</font></a></td>
+                           </tr>
+                           <tr>
+                              <td class="ch" id="taw0" nowrap valign="top" width="100%"><font size="-1"><a id="aw0" href="http://www.google.com/url?sa=l&amp;ai=B6yLlJigLRPOaFK30YJm5_ecOve6HDoGTy9QBgYz0hAiw2wYQAhgCIO32nQMoAzAASJA5UPiW7qoBqgEMbG9jYWxyZXN1bHRzyAEBlQIOThgK&amp;num=2&amp;q=http://www.anrdoezrs.net/jl65mu2-u1HJLPONIKHNMOLKJP%3Furl%3Dhttp://search.ebay.com/search/pizza_W0QQfclZ4QQfnuZ1QQ%26sid%3DthnpUSy28165" onmouseover="ss('go to eBay.com')" onclick="ga(this,event)" onmouseout="cs()"><b>Pizza</b></a></font><br><font class="s">Products and information about <b>Pizza</b></font><br><a id="aw0" STYLE="text-decoration:none" href="http://www.google.com/url?sa=l&amp;ai=B6yLlJigLRPOaFK30YJm5_ecOve6HDoGTy9QBgYz0hAiw2wYQAhgCIO32nQMoAzAASJA5UPiW7qoBqgEMbG9jYWxyZXN1bHRzyAEBlQIOThgK&amp;num=2&amp;q=http://www.anrdoezrs.net/jl65mu2-u1HJLPONIKHNMOLKJP%3Furl%3Dhttp://search.ebay.com/search/pizza_W0QQfclZ4QQfnuZ1QQ%26sid%3DthnpUSy28165" onmouseover="ss('go to eBay.com')" onclick="ga(this,event)" onmouseout="cs()"><font color="green" size="-1">eBay.com</font></a></td>
+                           </tr>
+                           <tr>
+                              <td class="ch" id="taw0" nowrap valign="top" width="100%"><font size="-1"><a id="aw0" href="http://www.google.com/pagead/iclk?sa=l&amp;ai=Byh8YJigLRPOaFK30YJm5_ecOuofNEaT4urgB0JeDyQTg1AMQAxgDIO32nQMoA0ibOVDN-JLm-v____8BoAGUpZv-A6oBDGxvY2FscmVzdWx0c8gBAZUCLxIYCg&amp;num=3&amp;adurl=http://www.switchboard.com/bin/cgidir.dll%3FMEM%3D20006%26PR%3D109%26CID%3D7%26S%3DCA%26T%3DLos%2520Angeles" onmouseover="ss('go to www.switchboard.com')" onclick="ga(this,event)" onmouseout="cs()"><b>Pizza Los Angeles</b></a></font><br><font class="s">Find <b>Pizza Los Angeles</b> Near You Free Local Yellow Pages Service!</font><br><a id="aw0" STYLE="text-decoration:none" href="http://www.google.com/pagead/iclk?sa=l&amp;ai=Byh8YJigLRPOaFK30YJm5_ecOuofNEaT4urgB0JeDyQTg1AMQAxgDIO32nQMoA0ibOVDN-JLm-v____8BoAGUpZv-A6oBDGxvY2FscmVzdWx0c8gBAZUCLxIYCg&amp;num=3&amp;adurl=http://www.switchboard.com/bin/cgidir.dll%3FMEM%3D20006%26PR%3D109%26CID%3D7%26S%3DCA%26T%3DLos%2520Angeles" onmouseover="ss('go to www.switchboard.com')" onclick="ga(this,event)" onmouseout="cs()"><font color="green" size="-1">www.switchboard.com</font></a></td>
+                           </tr>
+                        </table>
+                     </p>
+                     <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                           <tr>
+                              <td class="bar_divide" colspan="2">
+                                 Local Results
+                                 
+                              </td>
+                              <td class="bar_divide" align="right"><font size="-1">
+                                    Search within:
+                                    </font><a style="color:black" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;radius=1.000000">1 mile</a>
+                                 
+                                 -
+                                 
+                                 <a style="color:black" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;radius=5.000000">5 miles</a>
+                                 
+                                 -
+                                 
+                                 <a style="color:black" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;radius=15.000000">15 miles</a>
+                                 
+                                 -
+                                 
+                                 <b>45 miles</b></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <nobr>
+                        <div style="padding-left: 0px; padding-top: .3em">
+                           Show only:
+                           <a href="/hws/earthlink/local?client=local-hws-earthlink&amp;q=category: Restaurant Pizza&amp;near=los angeles, ca">Restaurant Pizza</a> - <a href="/hws/earthlink/local?client=local-hws-earthlink&amp;q=category: Restaurants&amp;near=los angeles, ca">Restaurants</a></div>
+                     </nobr>
+                     <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                           <td valign="top">
+                              <table style="margin-top: 0.5em;" border="0" cellpadding="0" cellspacing="0">
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">A. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,18055754755490181859&amp;as_q=pizza+or+Angeli-Caffe-Pizzeria">Angeli-Caffe-Pizzeria</a><br><nobr></nobr>(323) 936-9086
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">7274 Melrose Ave</font><br><font size="-1">Los Angeles, CA&nbsp;</font><br><font class="fl" size="-1">6.4&nbsp;mi&nbsp;W</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,18055754755490181859&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B7274%2BMelrose%2BAve,%2BLos%2BAngeles,%2BCA%2B90046&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://www.angelicaffe.com/">angelicaffe.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,18055754755490181859"><b>153 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">B. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,12740008205340303082&amp;as_q=pizza+or+California+Pizza+Kitchen%3A+Beverly+Hills">California <b>Pizza</b> Kitchen: Beverly Hills</a><br><nobr></nobr>(310) 275-1101
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">207 S Beverly Dr</font><br><font size="-1">Beverly Hills, CA&nbsp;</font><br><font class="fl" size="-1">9.0&nbsp;mi&nbsp;W</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,12740008205340303082&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B207%2BS%2BBeverly%2BDr,%2BBeverly%2BHills,%2BCA%2B90212&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://www.cpk.com/">cpk.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,12740008205340303082"><b>81 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">C. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,13583569710057896861&amp;as_q=pizza+or+Martorana+Bros+Casa+Bianca+Pizza+Pie">Martorana Bros Casa Bianca <b>Pizza</b> Pie</a><br><nobr></nobr>(323) 256-9617
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">1650 Colorado Blvd</font><br><font size="-1">Los Angeles, CA&nbsp;</font><br><font class="fl" size="-1">6.4&nbsp;mi&nbsp;N</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,13583569710057896861&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B1650%2BColorado%2BBlvd,%2BLos%2BAngeles,%2BCA%2B90041&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://losangeles.citysearch.com/profile/70973/">citysearch.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,13583569710057896861"><b>100 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">D. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,674053322974272377&amp;as_q=pizza+or+California+Pizza+Kitchen">California <b>Pizza</b> Kitchen</a><br><nobr></nobr>(310) 826-3573
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">11677 San Vicente Blvd # 2nd</font><br><font size="-1">Los Angeles, CA&nbsp;</font><br><font class="fl" size="-1">13&nbsp;mi&nbsp;W</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,674053322974272377&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B11677%2BSan%2BVicente%2BBlvd%2B%2523%2B2nd,%2BLos%2BAngeles,%2BCA%2B90049&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://www.cpk.com/">cpk.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,674053322974272377"><b>69 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">E. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,14193438559301529144&amp;as_q=pizza+or+California+Pizza+Kitchen%3A+Wells+Fargo">California <b>Pizza</b> Kitchen: Wells Fargo</a><br><nobr></nobr>(213) 626-2616
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">330 S Hope St</font><br><font size="-1">Los Angeles, CA&nbsp;</font><br><font class="fl" size="-1">0.6&nbsp;mi&nbsp;W</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,14193438559301529144&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B330%2BS%2BHope%2BSt,%2BLos%2BAngeles,%2BCA%2B90071&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://www.cpk.com/">cpk.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,14193438559301529144"><b>51 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">F. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,5180805168380099715&amp;as_q=pizza+or+Domino%27s+Pizza%3A+Los+Angeles">Domino&#39;s <b>Pizza</b>: Los Angeles</a><br><nobr></nobr>(213) 623-2424
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">545 S Olive St</font><br><font size="-1">Los Angeles, CA&nbsp;</font><br><font class="fl" size="-1">0.7&nbsp;mi&nbsp;W</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,5180805168380099715&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B545%2BS%2BOlive%2BSt,%2BLos%2BAngeles,%2BCA%2B90013&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://www.dominos.com/">dominos.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,5180805168380099715"><b>18 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">G. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,4618787876089397321&amp;as_q=pizza+or+California+Pizza+Kitchen+Inc">California <b>Pizza</b> Kitchen Inc</a><br><nobr></nobr>(800) CPK-TALK
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">6053 W Century Blvd # 11</font><br><font size="-1">Los Angeles, CA&nbsp;</font><br><font class="fl" size="-1">11&nbsp;mi&nbsp;SW</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,4618787876089397321&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B6053%2BW%2BCentury%2BBlvd%2B%2523%2B11,%2BLos%2BAngeles,%2BCA%2B90045&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://www.cpk.com/">cpk.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,4618787876089397321"><b>113 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">H. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,15663837819932937749&amp;as_q=pizza+or+Berry%27s+Pizza+Cafe">Berry&#39;s <b>Pizza</b> Cafe</a><br><nobr></nobr>(323) 852-0642
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">8412 W 3rd St</font><br><font size="-1">Los Angeles, CA&nbsp;</font><br><font class="fl" size="-1">7.6&nbsp;mi&nbsp;W</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,15663837819932937749&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B8412%2BW%2B3rd%2BSt,%2BLos%2BAngeles,%2BCA%2B90048&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://losangeles.citysearch.com/roundup/40681/">citysearch.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,15663837819932937749"><b>29 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">I. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,1304181919793718264&amp;as_q=pizza+or+D%27Amore%27s+Pizza+Connection">D&#39;Amore&#39;s <b>Pizza</b> Connection</a><br><nobr></nobr>(310) 209-1212
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">1077 Broxton Ave</font><br><font size="-1">Los Angeles, CA&nbsp;</font><br><font class="fl" size="-1">12&nbsp;mi&nbsp;W</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,1304181919793718264&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B1077%2BBroxton%2BAve,%2BLos%2BAngeles,%2BCA%2B90024&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://www.sees.com/">sees.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,1304181919793718264"><b>24 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr class="lr">
+                                    <td class="ln" valign="top">J. </td>
+                                    <td valign="top"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,5312313120755970085&amp;as_q=pizza+or+Pane+E+Vino+Trattoria">Pane E Vino Trattoria</a><br><nobr></nobr>(323) 651-4600
+                                       <nobr></nobr>
+                                    </td>
+                                    <td class="lad" valign="top"><font size="-1">8265 Beverly Blvd</font><br><font size="-1">Los Angeles, CA&nbsp;</font><br><font class="fl" size="-1">7.4&nbsp;mi&nbsp;W</font><font size="-1">&nbsp;-&nbsp;</font><a href="http://local.google.com/local_url?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;radius=0&amp;latlng=34052222,-118242778,5312313120755970085&amp;q=/maps%3Fli%3Dd%26hl%3Den%26q%3Dfrom:%2BLos%2BAngeles,%2BCA%2Bto:%2B8265%2BBeverly%2BBlvd,%2BLos%2BAngeles,%2BCA%2B90048&amp;dq=pizza"><font color="#7777cc" size="-1">Directions</font></a></td>
+                                 </tr>
+                                 <tr class="lre">
+                                    <td>&nbsp;</td>
+                                    <td class="l" colspan="2">
+                                       <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                             <td style="width:22em"><font color="#7777cc" size="-1">
+                                                   References:
+                                                   </font><font size="-1"><a class="a" href="http://www.panevinola.com/">panevinola.com</a></font>
+                                                -
+                                                <font size="-1">
+                                                   <nobr><a class="a" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;rl=1&amp;sc=1&amp;latlng=34052222,-118242778,5312313120755970085"><b>112 more &raquo;
+                                                            </b></a></nobr></font></td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                           <td valign="top"><style type="text/css">
+    <!--
+    .lz,.lp{border: 0px; border-collapse: collapse}
+    .lz a,.lp a{color:#0000cc}
+    .lz td{border: 1px solid silver; padding-left: 8px; padding-right: 8px; width: 3.5em}
+    .lp td{border: 1px solid silver; width: 1em; height: 1em}
+    .lp .empty{border: 0px}
+    .lz .zlvl,.lp .pdir{cursor: pointer; cursor: hand}
+    //-->
+  </style><script language="JavaScript" type="text/javascript">
+
+  
+  
+  <!--
+  var map_x = 360;
+  var map_y = 360;
+  var max_zoom = 9;
+
+  var mapid = 0;var czl = 7;var zp = "";var izl = 7;var xmlhttp;var browserok = checkbrowser();
+function getnextfloat(str, prefix) {var i = str.indexOf(prefix);if (i != -1) {var version = parseFloat(str.substring(i + prefix.length));if (!isNaN(version)) {return version;}}return null;}
+function checkbrowser() {var agt = navigator.userAgent.toLowerCase();var isie = (agt.indexOf("msie") != -1);var isopera = (agt.indexOf("opera") != -1);var ismac = (agt.indexOf("mac") != -1);if (isie && !isopera && !ismac) {var version = getnextfloat(agt, "msie ");if (version != null) {return (version >= 5.5);}}var isgecko = (agt.indexOf("gecko") != -1);var issafari = (agt.indexOf("safari") != -1);if (isgecko && !issafari) {var version = getnextfloat(agt, "rv:");if (version != null) { return (version >= 1.4); }else {var i = agt.indexOf("galeon");version = getnextfloat(agt, "galeon/");if (version != null) { return (version >= 1.3); }}}if (issafari) {var version = getnextfloat(agt, "applewebkit/");if (version != null) { return (version >= 124); }}return false;}
+
+function updatecoords() { if (xmlhttp.readyState == 4 && xmlhttp.status == 200 && xmlhttp.responseText) eval(xmlhttp.responseText); }
+
+function changemapurl() {var mcurl = "?client=local-hws-earthlink&hl=&lr=&sa=&near=los+angeles%2C+ca&q=pizza" + "&zoom=" + izl + "&zp=" + zp + "&mc=mc";if (window.ActiveXObject && !window.XMLHttpRequest) {try {xmlhttp = new ActiveXObject(navigator.userAgent.toLowerCase().indexOf('msie5') != -1 ? 'Microsoft.XMLHTTP' : 'Msxml2.XMLHTTP');} catch(e) { return false; }} else if (window.XMLHttpRequest) {xmlhttp = new XMLHttpRequest();} else {return false;}
+
+xmlhttp.open("GET", mcurl, true);xmlhttp.onreadystatechange = updatecoords;xmlhttp.send(null);
+
+return true;
+
+}
+
+function E(n) {return document.getElementById(n);}
+function POver(p) {if (browserok) E('p' + p).style.backgroundColor = '#eeeeee';}
+
+function POut(p) {if (browserok) E('p' + p).style.backgroundColor = '#ffffff';}
+
+function P(dir) { if (!browserok) return true;if (dir == 'C') {zp = "";izl = czl;}else { zp += dir; }return (!changemapurl());}
+function EZIn(c) {if (!browserok) return true;
+if (c) {
+E('zin').innerHTML = '<table class=lz cellpadding=2 cellspacing=0 border=1 style="margin-bottom:3px"><tr> <td class=zlvl nowrap align=center onclick="return Z(-1)"> <font size=-2> <a href="?client=local-hws-earthlink&hl=&lr=&sa=&near=los+angeles%2C+ca&q=pizza&zoom=7&zp=I"> Zoom In </a> </font> </td> </tr> </table> ';
+} else {
+  E('zin').innerHTML = '<table class=lz cellpadding=2 cellspacing=0 border=1 style="margin-bottom:3px"> <tr> <td nowrap align=center> <font size=-2 color="#6f6f6f"> Zoom In </font> </td> </tr> </table> ';
+}
+}
+
+function EZOut(c) {
+  if (!browserok) return true;
+  if (c) {E('zout').innerHTML = ' <table class=lz cellpadding=2 cellspacing=0 border=1 style="margin-top: 3px;"> <tr> <td class=zlvl nowrap align=center onclick="return Z(1)"> <font size=-2> <a href="?client=local-hws-earthlink&hl=&lr=&sa=&near=los+angeles%2C+ca&q=pizza&zoom=7&zp=O"> Zoom Out </a> </font> </td> </tr> </table> ';
+} else {
+  E('zout').innerHTML = ' <table class=lz cellpadding=2 cellspacing=0 border=1 style="margin-top: 3px"> <tr> <td nowrap align=center> <font size=-2 color="#6f6f6f"> Zoom Out </font> </td> </tr> </table> ';}
+}
+
+
+function ZOver(zl) {if (!browserok) return true;E('zl' + zl).style.backgroundColor = '#eeeeee';
+return false;}
+function ZOut(zl) {if (!browserok) return true;if (zl != czl) E('zl' + zl).style.backgroundColor = '#ffffff';return false;}
+function ZTo(zl) {if (browserok) {if (zl != czl && zl >= 0 && zl <= max_zoom) {cc = E('zl' + czl);nc = E('zl' + zl);cl = E('l' + czl);nl = E('l' + zl);while (czl < zl) {zp += 'O';czl += 1;}while (czl > zl) {zp += 'I';czl -= 1;}if (!changemapurl()) {return true;}cc.style.backgroundColor = '#ffffff';cl.style.textDecoration = 'underline';cl.style.color = '#0000cc';cl.style.fontWeight = 'normal';nc.style.backgroundColor = '#eeeeee';nl.style.textDecoration = 'none';nl.style.color = '#000000';nl.style.fontWeight = 'bold';EZOut(czl < max_zoom);EZIn(czl > 0);}return false;} else {return true;}}
+function Z(diff) {return ZTo(czl + diff);}
+
+function recentermap(e) {if (!browserok) return true;var x, y;if (e.offsetX) {x = e.offsetX;y = e.offsetY;} else if (e.layerX) {x = e.layerX;y = e.layerY;} else { return true; }if (x >= 0 && x < map_x && y >= 0 && y < map_y) {var oldzp = zp;zp += "P" + (x - (map_x / 2)) + "," + (y - (map_y / 2));if (!changemapurl()) { zp = oldzp; return true; }}return false;}
+//-->
+
+
+
+
+
+
+
+</script><table>
+                                 <tr>
+                                    <td valign="top" style="padding-top: 10px; padding-left: 35px" id="mapsect"><map id="ml" name="ml">
+                                          <area shape="circle" coords="20,145,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,1304181919793718264" title="D'Amore's Pizza Connection" alt="D'Amore's Pizza Connection" id="point0">
+                                          <area shape="circle" coords="77,133,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,15663837819932937749" title="Berry's Pizza Cafe" alt="Berry's Pizza Cafe" id="point1">
+                                          <area shape="circle" coords="65,263,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,4618787876089397321" title="California Pizza Kitchen Inc" alt="California Pizza Kitchen Inc" id="point2">
+                                          <area shape="circle" coords="172,157,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,5180805168380099715" title="Domino's Pizza: Los Angeles" alt="Domino's Pizza: Los Angeles" id="point3">
+                                          <area shape="circle" coords="172,153,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,14193438559301529144" title="California Pizza Kitchen: Wells Fargo" alt="California Pizza Kitchen: Wells Fargo" id="point4">
+                                          <area shape="circle" coords="5,152,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,674053322974272377" title="California Pizza Kitchen" alt="California Pizza Kitchen" id="point5">
+                                          <area shape="circle" coords="212,65,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,13583569710057896861" title="Martorana Bros Casa Bianca Pizza Pie" alt="Martorana Bros Casa Bianca Pizza Pie" id="point6">
+                                          <area shape="circle" coords="57,141,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,12740008205340303082" title="California Pizza Kitchen: Beverly Hills" alt="California Pizza Kitchen: Beverly Hills" id="point7">
+                                          <area shape="circle" coords="80,130,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,5312313120755970085" title="Pane E Vino Trattoria" alt="Pane E Vino Trattoria" id="point8">
+                                          <area shape="circle" coords="97,122,10" href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;latlng=34052222,-118242778,18055754755490181859" title="Angeli-Caffe-Pizzeria" alt="Angeli-Caffe-Pizzeria" id="point9"></map><img id="map" src="./dependencies/mapdata.gif" onclick="recentermap(event)" usemap="#ml" style="border: 1px solid black; position:relative" border="1" width="360" height="360"><br><div style="padding-top: 0.5em;" align="center"><font size="-1">
+                                             Click on any point to re-center the map.
+                                             </font></div>
+                                    </td>
+                                    <td valign="top" style="padding-top: 10px; padding-left: 10px"><span id="zin">
+                                          <table class="lz" cellpadding="2" cellspacing="0" border="1" style="margin-bottom:3px; ">
+                                             <tr>
+                                                <td class="zlvl" nowrap align="center" onclick="return Z(-1)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=I">Zoom In</a></font></td>
+                                             </tr>
+                                          </table></span><table class="lz" cellpadding="2" cellspacing="0" border="1">
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#ffffff" nowrap id="zl0" onclick="return ZTo(0)" onmouseover="return ZOver(0)" onmouseout="return ZOut(0)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=IIIIIII" id="l0">0</a></font></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#ffffff" nowrap id="zl1" onclick="return ZTo(1)" onmouseover="return ZOver(1)" onmouseout="return ZOut(1)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=IIIIII" id="l1">1</a>
+                                                   - Street
+                                                   </font></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#ffffff" nowrap id="zl2" onclick="return ZTo(2)" onmouseover="return ZOver(2)" onmouseout="return ZOut(2)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=IIIII" id="l2">2</a></font></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#ffffff" nowrap id="zl3" onclick="return ZTo(3)" onmouseover="return ZOver(3)" onmouseout="return ZOut(3)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=IIII" id="l3">3</a>
+                                                   - City
+                                                   </font></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#ffffff" nowrap id="zl4" onclick="return ZTo(4)" onmouseover="return ZOver(4)" onmouseout="return ZOut(4)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=III" id="l4">4</a></font></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#ffffff" nowrap id="zl5" onclick="return ZTo(5)" onmouseover="return ZOver(5)" onmouseout="return ZOut(5)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=II" id="l5">5</a></font></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#ffffff" nowrap id="zl6" onclick="return ZTo(6)" onmouseover="return ZOver(6)" onmouseout="return ZOut(6)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=I" id="l6">6</a></font></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#eeeeee" nowrap id="zl7" onclick="return ZTo(7)" onmouseover="return ZOver(7)" onmouseout="return ZOut(7)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=" id="l7">7</a></font></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#ffffff" nowrap id="zl8" onclick="return ZTo(8)" onmouseover="return ZOver(8)" onmouseout="return ZOut(8)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=O" id="l8">8</a></font></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="zlvl" bgcolor="#ffffff" nowrap id="zl9" onclick="return ZTo(9)" onmouseover="return ZOver(9)" onmouseout="return ZOut(9)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=OO" id="l9">9</a></font></td>
+                                          </tr>
+                                       </table><span id="zout">
+                                          <table class="lz" cellpadding="2" cellspacing="0" border="1" style="margin-top: 3px;">
+                                             <tr>
+                                                <td class="zlvl" nowrap align="center" onclick="return Z(1)"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=O">Zoom Out</a></font></td>
+                                             </tr>
+                                          </table></span><br><center>
+                                          <table class="lp" cellpadding="2" cellspacing="0" border="1">
+                                             <tr>
+                                                <td class="empty">
+                                                   &nbsp;
+                                                   
+                                                </td>
+                                                <td class="pdir" align="center" valign="middle" nowrap id="pU" onclick="return P('U')" onmouseover="POver('U')" onmouseout="POut('U')"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=U" id="plU">
+                                                         N
+                                                         </a></font></td>
+                                                <td class="empty">
+                                                   &nbsp;
+                                                   
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="pdir" align="center" valign="middle" nowrap id="pL" onclick="return P('L')" onmouseover="POver('L')" onmouseout="POut('L')"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=L" id="plL">
+                                                         W
+                                                         </a></font></td>
+                                                <td class="pdir" align="center" valign="middle" nowrap id="pC" onclick="return P('C')" onmouseover="POver('C')" onmouseout="POut('C')"><font size="-2">
+                                                      &nbsp;
+                                                      </font></td>
+                                                <td class="pdir" align="center" valign="middle" nowrap id="pR" onclick="return P('R')" onmouseover="POver('R')" onmouseout="POut('R')"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=R" id="plR">
+                                                         E
+                                                         </a></font></td>
+                                             </tr>
+                                             <tr>
+                                                <td class="empty">
+                                                   &nbsp;
+                                                   
+                                                </td>
+                                                <td class="pdir" align="center" valign="middle" nowrap id="pD" onclick="return P('D')" onmouseover="POver('D')" onmouseout="POut('D')"><font size="-2"><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;zoom=7&amp;zp=D" id="plD">
+                                                         S
+                                                         </a></font></td>
+                                                <td class="empty">
+                                                   &nbsp;
+                                                   
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </center>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                     </table><br><a href="http://www.google.com/local/add?hl=en&amp;gl=US">Information for Business Owners</a><br><br><center>
+                        Results Page <font size="+1" color="#0000FF">1</font><font size="-3">&nbsp;</font><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;start=10">2</a><font size="-3">&nbsp;</font><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;start=20">3</a><font size="-3">&nbsp;</font><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;start=30">4</a><font size="-3">&nbsp;</font><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;start=40">5</a><font size="-3">&nbsp;</font><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;start=50">6</a><font size="-3">&nbsp;</font><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;start=60">7</a><font size="-3">&nbsp;</font><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;start=70">8</a><font size="-3">&nbsp;</font><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;start=80">9</a><font size="-3">&nbsp;</font><a href="?client=local-hws-earthlink&amp;hl=&amp;lr=&amp;sa=&amp;near=los+angeles%2C+ca&amp;q=pizza&amp;start=90">10</a><font size="-3">&nbsp;</font>
+                        &nbsp; 
+                        <a href="?q=pizza&amp;hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;output=xml_no_dtd&amp;client=local-hws-earthlink&amp;near=los+angeles,+ca&amp;ad=w3&amp;sa=N&amp;start=10"> next &gt; </a></center><br></td>
+               </tr>
+            </table>
+         </div>
+      </div><br><script>sf(1);</script><div class="uNav" style="margin-top:20px;"><script>uN();</script></div><script>fo();initSearch()</script><div style="padding-left: 25px;"><br>Map data &copy;2005 Navteq&trade;, Tele Atlas<br><font class="p" size="-1">&copy;2005 Google</font></div>
+   </body>
+</html>

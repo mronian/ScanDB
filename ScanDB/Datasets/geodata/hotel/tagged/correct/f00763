@@ -1,0 +1,445 @@
+<DOC>
+<DOCNO>f00763</DOCNO>
+<DOCHDR>http://hotels.OC-USA.com/servlet/reservations.PropertyInformationXML?propcode=ORB;30529&remote=OC-USA&servepop=</DOCHDR>
+<html xmlns:mapurl="http://www.oracle.com/XSL/Transform/java/lodging.MapQUtils"><head><META http-equiv="Content-Type" content="text/html"><title>Clarion Hotel Seattle Airport&nbsp;Seattle hotel reservations.
+       </title><meta name="keywords" content="Clarion Hotel Seattle Airport Seattle, WA hotel reservations discount lodging hotels motels resorts travel hotels discount Clarion Hotel Seattle Airport in Seattle, WA Reservations hotels motels discounts rooms accommodations bed breakfast bandb"><meta name="description" content="Seattle hotel reservations for the Clarion Hotel Seattle Airport in Seattle, WA. Click here to view property details, features, amenities and to book a hotel room online."><link href="/css/2004_spring.css" type="text/css" rel="stylesheet"><link rel="stylesheet" href="/css/2004_calendar.css" type="text/css"><style>
+body {
+   font: 13px Arial; color: #000000; BACKGROUND-COLOR: #FFFFFF;}
+</style><script type="text/javascript" src="/java/datebox.js"></script><script type="text/javascript" src="/java/calendar.js"></script><script type="text/javascript" src="/java/pop_up.js"></script><script type="text/javascript" src="/java/date_selector.js"></script><script language="JavaScript" type="text/JavaScript"><!--
+function openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+        function showInfoSection(n) {
+
+              var numGroups = 5;
+
+      	document.getElementById("info-group" + n).className = "isShown";
+		document.getElementById("info-tab" + n).className = "current";
+		for (i=1; i <= numGroups; i++) {
+		  if(n != i) {
+		      hideInfoSection(i);
+		  }
+		}
+      }
+
+      function hideInfoSection(i) {
+	      var groupName = 'info-group' + i;
+	      var tabName = "info-tab" + i;
+    		document.getElementById(groupName).className = "isHidden";
+    		document.getElementById(tabName).className = "notCurrent";
+      }
+
+      function displayLess(n) {
+        document.getElementById("short" + n).className = "isShown";
+        document.getElementById("long" + n).className = "isHidden";
+      }
+      function displayMore(n) {
+        document.getElementById("short" + n).className = "isHidden";
+        document.getElementById("long" + n).className = "isShown";
+      }
+
+      function showAllRooms(n) {
+        for(i=6; i <= n; i++) {
+          document.getElementById("rate" + i).className = 'isShown';
+
+        }
+          document.getElementById("allrates").className = 'isHidden';
+          document.getElementById("fewerrates").className = 'isShown';
+      }
+
+      function showFewerRooms(n) {
+        for (i=6; i<=n; i++) {
+          document.getElementById("rate" + i).className = 'isHidden';
+
+        }
+          document.getElementById("allrates").className = 'isShown';
+          document.getElementById("fewerrates").className = 'isHidden';
+      }
+
+      function resizeImage(photo) {
+       var curImg      = document.getElementById(photo);
+       var imgWidth  = curImg.width;
+       var imgHeight = curImg.height;
+
+       if(imgWidth > 668) {
+         var imgWidthDiff = 668/imgWidth;
+         imgWidth = 668;
+         imgHeight = Math.round(imgHeight*imgWidthDiff);
+
+         curImg.width = imgWidth;
+         curImg.height = imgHeight;
+       }
+     }
+
+
+  
+//--></script><style type="text/css">
+          #amenities ul {
+          	list-style-type: disc;
+          	margin-left: 2px;
+          	}
+          #amenities li {
+          	list-style-type: disc;
+           	}
+      .isHidden {display : none;}
+      .isShown {display : inline;}
+
+
+
+#slidingDoorsTabs {
+	height:47px; /* Must declare height or line across tab bottoms vanishes in NN6.2 + NN7 */
+	width:777px;
+  	background:url(/images/propavail/bg.gif) repeat-x bottom;
+  	font-size:14px;
+  	line-height:normal;
+  	}
+#slidingDoorsTabs ul {
+	margin:0 0 0 -40px;
+	list-style:none;
+	}
+#slidingDoorsTabs li {
+	float:left; /* Float makes LIs stand side by side */
+	background:url(/images/propavail/tab_left.gif) no-repeat left top;
+	margin:0;
+  	padding:0 0 0 10px;
+ 	}
+#slidingDoorsTabs a {
+	float:left;
+	display:block;
+	background:url(/images/propavail/tab_right.gif) no-repeat right top;
+	padding:26px 15px 4px 4px;
+	text-decoration:none;
+	color:#039;
+	font-size: 14px;
+   }
+/* Commented Backslash Hack
+   	hides rule from IE5-Mac \*/
+#slidingDoorsTabs a {
+	float:none;
+	font-size: 14px;
+}
+	/* End IE5-Mac hack - Turns float off to prevent IE5Mac from stacking the tabs vertically and creating a mess */
+
+#slidingDoorsTabs a:hover {
+	color:#337;
+	font-size: 14px;
+   }
+#slidingDoorsTabs .current {
+  	 background-image:url(/images/propavail/tab_left_on.gif);
+   	}
+#slidingDoorsTabs .current a {
+  	background-image:url(/images/propavail/tab_right_on.gif);
+   	padding-bottom:4px;
+   	font-weight:bold;
+   	}
+#slidingDoorsTabs .special a {
+   	background-image:url(/images/propavail/tab_right_special.gif);
+   	padding-bottom:5px;
+ 	}
+
+#slidingDoorsTabs .notCurrent {
+  	 background-image:url(/images/propavail/tab_left.gif);
+   	}
+#slidingDoorsTabs .notCurrent a {
+	background-image:url(/images/propavail/tab_right.gif);
+	color:#039;
+	padding-bottom:4px;
+	font-weight:normal;
+	font-size: 14px;
+   	}
+
+.group { border-left: 1px #2961AD solid; border-right: 1px #2961AD solid; }
+      .unSelected {
+          padding-bottom: 0 px;
+      }
+
+.info-group {
+
+    border-left: 1px #2961AD solid; border-right: 1px #2961AD solid; border-bottom: 1px #2961AD solid;
+
+}
+.unSelected { padding-bottom: 0 px;
+      }
+
+      .isSelected {
+        font-weight: bold;
+        padding-bottom; 5px;
+      }
+      .empty {border-bottom: 1px #2961AD solid; }
+}
+</style><meta name="DCSext.channel" content="Affiliate"><meta name="DCSext.chname" content="OC-USA"><meta name="DCSext.online" content="Yes"><meta name="DCS.dcsuri" content="/PropInfo.html"><meta name="WT.ti" content="Property Information"></head><body bgcolor="#FFFFFF" text="#000000" leftmargin="2" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="setDates();showInfoSection('1')"><style>
+body {background-color:ffffff;margin-top:0px;margin-right:0px;margin-bottom:5px;margin-left:0px;}
+</style>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td valign="bottom" background="/affiliates/custom/OC-USA/beach-banner-back.jpg">
+			<p><font size="3" color="yellow" face="Comic Sans MS"><b>&nbsp;Beaches and Towns Network<br>
+					</b></font><font size="6" color="yellow" face="Comic Sans MS"><b><img src="/affiliates/custom/OC-USA/clear_dot.gif" alt="Travel America" height="5" width="24" align="bottom" border="0">Hotel Reservations Pages<br>
+					</b></font><font size="3" color="#ffff00" face="Comic Sans MS"><b><map name="map1"><area shape="RECT" coords="577,0,673,28" href="http://www.oc-usa.com/travel_network.html" alt="beaches and towns travel network"><area shape="RECT" coords="481,0,573,28" href="http://www.oc-usa.com/international_hotels.html" alt="international hotels"><area shape="RECT" coords="385,1,476,28" href="http://www.oc-usa.com/us_hotels.html" alt="u.s. hotels"><area shape="RECT" coords="287,1,382,28" href="http://www.oc-usa.com/hot_deals.html" alt="hot hotel deals and specials"><area shape="rect" coords="191,2,286,29" href="http://www.oc-usa.com/travel_articles.html" alt="travel articles"><area shape="rect" coords="99,0,191,28" href="http://www.oc-usa.com/city_guides.html" alt="city guides"><area shape="RECT" coords="2,1,95,28" href="http://www.oc-usa.com/index.html" alt="us hotels home page"><area shape="RECT" coords="10,10,20,20" href="http://www.oc-usa.com/"></map><img src="/affiliates/custom/OC-USA/tts_tabs7e.gif" alt="Tourist Information Index" height="30" width="675" usemap="#map1" align="top" border="0"></b></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#002d8a">
+			<center>
+				<font size="3" color="#eeeeee" face="Arial,Verdana,Helvetica"><b>Hotels &amp; Travel Information - Reserve Online or Call 1-866-226-9330.</b></font></center>
+		</td>
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td valign="top" width="100%">
+			<blockquote>
+<!-- START OF SmartSource Data Collector TAG --><!-- (c) 1999-2003 NetIQ Corporation. All rights reserved. --><!-- V6.1 --><!-- $DateTime: 2003/09/30 11:23:29 $ --><!-- $Revision: 1.3 $ --><SCRIPT LANGUAGE="Javascript"><!--
+gVersion="1.0";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.1"><!--
+gVersion="1.1";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.2"><!--
+gVersion="1.2";
+var RE={"%09":/\t/g, "%20":/ /g, "%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g};
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.3"><!--
+gVersion="1.3";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.4"><!--
+gVersion="1.4";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="Javascript1.5"><!--
+gVersion="1.5";
+  
+//--></SCRIPT><SCRIPT LANGUAGE="JavaScript"><!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+
+var gDomain="statse.webtrendslive.com";
+var gDcsId="dcsuy22seau4fibba68ia3qp2_7e5d";
+// Add customizations here
+//WT.sp="@@SPLITVALUE@@";
+// (c) 1999-2003 NetIQ Corporation. All rights reserved.
+// $DateTime: 2003/09/30 11:23:29 $
+// $Revision: 1.3 $
+function dcsMultiTrack(){
+	for (var i=0;i<arguments.length;i++){
+		if (arguments[i].indexOf('WT.')==0){
+				WT[arguments[i].substring(3)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCS.')==0){
+				DCS[arguments[i].substring(4)]=arguments[i+1];
+				i++;
+		}
+		if (arguments[i].indexOf('DCSext.')==0){
+				DCSext[arguments[i].substring(7)]=arguments[i+1];
+				i++;
+		}
+	}
+	var dCurrent=new Date();
+	DCS.dcsdat=dCurrent.getTime();
+	dcsTag();
+}
+
+
+function dcsVar(){
+	var dCurrent=new Date();
+	WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+	if (WT.tz==0){
+		WT.tz="0";
+	}
+	WT.bh=dCurrent.getHours();
+	WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+	if (typeof(screen)=="object"){
+		WT.cd=screen.colorDepth;
+		WT.sr=screen.width+"x"+screen.height;
+	}
+	if (typeof(navigator.javaEnabled())=="boolean"){
+		WT.jo=navigator.javaEnabled()?"Yes":"No";
+	}
+	if (document.title){
+		WT.ti=document.title;
+	}
+	WT.js="Yes";
+	if (typeof(gVersion)!="undefined"){
+		WT.jv=gVersion;
+	}
+	DCS.dcsdat=dCurrent.getTime();
+	DCS.dcssip=window.location.hostname;
+	DCS.dcsuri=window.location.pathname;
+	if (window.location.search){
+		DCS.dcsqry=window.location.search;
+	}
+	if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+		if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+			DCS.dcsref=window.document.referrer;
+		}
+	}
+}
+
+function A(N,V){
+	return "&"+N+"="+dcsEscape(V);
+}
+
+function dcsEscape(S){
+	if (typeof(RE)!="undefined"){
+		var retStr = new String(S);
+		for (R in RE){
+			retStr = retStr.replace(RE[R],R);
+		}
+		return retStr;
+	}
+	else{
+		return escape(S);
+	}
+}
+
+function dcsCreateImage(dcsSrc){
+	if (document.images){
+		gImages[gIndex]=new Image;
+		gImages[gIndex].src=dcsSrc;
+		gIndex++;
+	}
+	else{
+		document.write('<IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+	}
+}
+
+function dcsMeta(){
+	var myDocumentElements;
+	if (document.all){
+		myDocumentElements=document.all.tags("meta");
+	}
+	else if (document.documentElement){
+		myDocumentElements=document.getElementsByTagName("meta");
+	}
+	if (typeof(myDocumentElements)!="undefined"){
+		for (var i=1;i<=myDocumentElements.length;i++){
+			myMeta=myDocumentElements.item(i-1);
+			if (myMeta.name){
+				if (myMeta.name.indexOf('WT.')==0){
+					WT[myMeta.name.substring(3)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCSext.')==0){
+					DCSext[myMeta.name.substring(7)]=myMeta.content;
+				}
+				else if (myMeta.name.indexOf('DCS.')==0){
+					DCS[myMeta.name.substring(4)]=myMeta.content;
+				}
+			}
+		}
+	}
+}
+
+function dcsTag(){
+	var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?";
+	for (N in DCS){
+		if (DCS[N]) {
+			P+=A(N,DCS[N]);
+		}
+	}
+	for (N in WT){
+		if (WT[N]) {
+			P+=A("WT."+N,WT[N]);
+		}
+	}
+	for (N in DCSext){
+		if (DCSext[N]) {
+			P+=A(N,DCSext[N]);
+		}
+	}
+	if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+		P=P.substring(0,2040)+"&WT.tu=1";
+	}
+	dcsCreateImage(P);
+}
+
+dcsVar();
+dcsMeta();
+dcsTag();
+  
+//--></SCRIPT><NOSCRIPT><IMG BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://statse.webtrendslive.com/dcsuy22seau4fibba68ia3qp2_7e5d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No"></NOSCRIPT>
+	<!--BEGIN ROI TRACKING Code -->
+	<script language="javascript" src="http://track.roiservice.com/track/track.aspx?ROIID=932444107000015"></script>
+	<script language="javascript"><!--
+	if (typeof(ROIID) + '' != 'undefined') {
+	      TrackEvent('PropPage', 0);
+	     }
+	//--></script>
+	<!--END ROI TRACKING Code-->
+	<br><table width="777" border="0" cellspacing="0" cellpadding="0"><tr><td width="2" valign="top"><img src="/images/results/result_header_left.gif" width="2" height="34"></td><td width="413" background="/images/results/result_header_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="8"><img src="/images/b.gif" width="1" height="1"></td><td width="618" class="results-header"><strong class="14BLUEdark">Clarion Hotel Seattle Airport</strong></td></tr></table></td><td align="center" background="/images/results/result_header_bg.gif"><table width="100" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" background="/images/results/star_empty.gif"><a href="#hotelrating" onclick="javascript: window.open('http://primary.lodging.com/ldcratings.html','rating','width=470,height=600,scrollbars')"><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""></a></td></tr></table></td><td align="left" background="/images/results/result_header_bg.gif">&nbsp;</td><td width="3" valign="top"><img src="/images/results/result_header_right.gif" width="3" height="34"></td></tr><tr><td width="2" valign="top"><img src="/images/results/result_fadeborder_left.gif" width="2" height="42"></td><td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="8"><tr><td width="100%" colspan="2"><p><GEO TYPE="US">3000 S. 176th St.<br>Seattle,&nbsp;
+				Washington
+        &nbsp;98188</GEO>&nbsp;&nbsp;
+              <strong> &nbsp;&nbsp;</strong><a onclick="showInfoSection('5');document.mapimage.src='http://mqmapgend.mapquest.com:80/mqmapgend?MQMapGenRequest=FDBnqeflmJI%2C3ii8drs-F3bP%10vk2g%26sdmH2h%108n%40FDJ%15_n%21y%40n%29NE%18%26Ivb2+VQK%3AFDJ%15_n%21y%40n%29NE%18%3D+1%2FXlm%2F167l+ur%7Cqf*2q+SF%17%26FDR2dmwjDE%3Butal0%24ydzumyt6eq%22tmlr7%3DTPS84bcV8hs%7C%17DOV*E%14H2h*50wrsq%40_n10awlf%24%3A%26%40%24%3A%26z%245u6%24xu6%24%18%12%19%3AHOHQJ%3Bwt5q4r%3A%29ual1fbw%26%40%24%3A%26%40%24%3A16b%3A*E%14JrblVkj3me%2CU%13N%15S%3DTPGy22sO2n*V%14GS'" href="#hotelinfo"><strong>Map</strong></a><br><br></p></td></tr></table></td><td width="168" align="center" valign="middle"><a onclick="showInfoSection('4')" href="#hotelinfo"><img src="https://image.pegs.com/images/CC/WA012/wa012_b1.jpg" alt="" width="100" height="67" border="0"></a><br><a onclick="showInfoSection('4')" href="#hotelinfo"><strong>More Photos</strong></a><br><br></td><td width="191" align="center" valign="middle"><table width="170" border="0" cellspacing="0" cellpadding="0"><tr><td width="170" align="center" valign="top"><br><a href="http://info.OC-USA.com/auto/brg.cgi?remote=OC-USA" target="_blank"><img src="/images/results/LPGicon.gif" alt="This hotel is RestEasy Guaranteed - Click for more info" width="79" height="53" border="0"></a><br></td></tr></table></td><td width="3" valign="top"><img src="/images/results/result_fadeborder_right.gif" width="3" height="46"></td></tr></table><a name="Getrates" id="Getrates"></a><br><table width="777" border="0" cellspacing="0" cellpadding="0"><form name="mainForm" action="/servlet/reservations.AvailabilityXML" method="post"><input type="hidden" name="propcode" value="ORB;30529"><input type="hidden" name="remote" value="OC-USA"><input type="hidden" name="caller" value="propinfo"><tr><td width="2"><img src="/images/propavail/chkdates_bg_left.gif" width="2" height="81"></td><td valign="top" background="/images/propavail/chkdates_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="5"><tr class="searchboxText"><td colspan="6" align="left" nowrap class="advancedsearchboxText"><b><font color="#FF6633">Check Rates for this Hotel</font></b></td></tr><tr class="searchboxText"><td width="29%" align="left" valign="top" nowrap class="searchboxText">Check-In<br><select name="inmonth" class="searchboxText" onChange="changeDates()"><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7" selected="">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="inday" class="searchboxText" onChange="changeDates()"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30" selected="">30</option><option value="31">31</option></select><select name="inyear" onChange="changeDates()" class="searchboxText"><option value="2006" selected="">2006</option><option value="2007">2007</option></select><a href="javascript://" onclick="displayCalendar(true,'in')"><img src="/images/2004_calendar.gif" width="28" height="17" alt="View Calendar" border="0" align="absmiddle"></a></td><td width="30%" align="left" valign="top" nowrap class="searchboxText">Check-Out<span class="advancedsearchboxText"><br><select name="outmonth" class="searchboxText" onChange="checkOutDate()"><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7" selected="">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="outday" class="searchboxText" onChange="checkOutDate()"><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31" selected="">31</option></select><select name="outyear" onChange="checkOutDate()" class="searchboxText"><option value="2006" selected="">2006</option><option value="2007">2007</option></select><a href="javascript://" onClick="displayCalendar(true,'out')"><img src="/images/2004_calendar.gif" width="28" height="17" alt="View Calendar" border="0" align="absmiddle"></a></span></td><td width="9%" align="left" valign="top" nowrap class="searchboxText">Rooms<span class="advancedsearchboxText"><br><select name="numrooms" size="1" class="searchboxText"><option value="1" selected="">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select></span></td><td width="11%" align="left" valign="top" nowrap class="searchboxText">Adults/room<span class="advancedsearchboxText"><br><select name="numadults" class="searchboxText"><option value="1">1</option><option value="2" selected="">2</option><option value="3">3</option><option value="4">4</option></select></span></td><td width="8%" align="left" valign="top" nowrap class="searchboxText">Children<br><select name="numchildren" id="numchildren" class="searchboxText"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></td><td width="13%" align="left" valign="bottom" nowrap class="searchboxText"><span class="advancedsearchboxText"><input type="image" src="/images/propavail/get_rates.gif" width="85" height="21" border="0"></span></td></tr></table></td><td width="2"><img src="/images/propavail/chkdates_bg_right.gif" width="2" height="81"></td></tr></form></table><br><a name="hotelinfo"></a><div style="width:777px;height:auto;float:left" name="wrapper"><div id="slidingDoorsTabs"><ul><li class="current" id="info-tab1"><a href="#info" onclick="showInfoSection('1'); return false;">Hotel Highlights</a></li><li class="notCurrent" id="info-tab2"><a onclick="showInfoSection('2'); return false;" href="#info">Policies &amp; Restrictions</a></li><li class="notCurrent" id="info-tab3"><a onclick="showInfoSection('3'); return false;" href="#info">General Information</a></li><li class="notCurrent" id="info-tab4"><a onclick="showInfoSection('4'); return false;" href="#info">Photos</a></li><li class="notCurrent" id="info-tab5"><a onclick="showInfoSection('5'); document.mapimage.src='http://mqmapgend.mapquest.com:80/mqmapgend?MQMapGenRequest=FDBnqeflmJI%2C3ii8drs-F3bP%10vk2g%26sdmH2h%108n%40FDJ%15_n%21y%40n%29NE%18%26Ivb2+VQK%3AFDJ%15_n%21y%40n%29NE%18%3D+1%2FXlm%2F167l+ur%7Cqf*2q+SF%17%26FDR2dmwjDE%3Butal0%24ydzumyt6eq%22tmlr7%3DTPS84bcV8hs%7C%17DOV*E%14H2h*50wrsq%40_n10awlf%24%3A%26%40%24%3A%26z%245u6%24xu6%24%18%12%19%3AHOHQJ%3Bwt5q4r%3A%29ual1fbw%26%40%24%3A%26%40%24%3A16b%3A*E%14JrblVkj3me%2CU%13N%15S%3DTPGy22sO2n*V%14GS'; return false;" href="#info">Map</a></li></ul></div><div style="clear:both;" name="clearer"></div><div class="isShown" id="info-group1"><table id="info-group1" class="info-group" cellpadding="5" cellspacing="0" bgcolor="#F7F9FD" border="0" width="777"><tr style="padding:10 px;"><td><b>Hotel Description:</b><br><br>Adjacent to Seatac Airport. Transportation available to local malls and attractions. 12 miles to downtown Seattle. 15 miles to downtown Tacoma. FREE airport shuttle. Pet accommodation: 20.00 per night per pet. Limit of 2 pets per room, limit of 20lbs each.<br><br><br><table width="100" border="0" cellpadding="0" cellspacing="0"><tr><td align="left" background="/images/results/star_empty.gif"><a href="#hotelrating" onclick="javascript: window.open('http://primary.lodging.com/ldcratings.html','rating','width=470,height=600,scrollbars')"><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""><img src="http://primary.lodging.com/images/results/star_full.gif" width="20" height="22" border="0" alt=""></a></td></tr></table><br><br><b>Amenities:</b><div id="amenities"><ul style="margin-top: 5px;"><table width="550" cellspacing="0" cellpadding="2" border="0"><tr valign="top"><td><li>Handicapped rooms/facilities</li><li>Porters</li><li>Iron</li><li>Ice Machine</li><li>Free Newspaper</li><li>Refrigerator</li><li>Bus Parking</li><li>Barber/Beauty Shop</li><li>Safe Deposit Box</li><li>Air Conditioned</li><li>FEMA Approved</li><li>Barber Shop</li></td><td><li>Elevators</li><li>Pets Allowed</li><li>No Smoking Rooms/Facilities</li><li>Meeting/Banquet Facilities</li><li>Television with Cable</li><li>Laundry/Valet Services</li><li>Business Center</li><li>News Stand</li><li>Wireless Internet</li><li>Restaurant</li><li>Guest Laundromat</li><li>Free Airport Shuttle</li></td><td><li>FAX</li><li>Exercise Gym</li><li>Free Parking</li><li>Indoor Pool</li><li>High Speed Internet</li><li>Coffee Maker in Room</li><li>Bar/Lounge</li><li>Airport shuttle</li><li>Outdoor Parking</li><li>Radio</li><li>Copy Service</li><li>Hairdryer in Room</li></td></tr></table></ul></div></td></tr></table></div><div id="info-group2" class="isHidden"><table id="info-group2" border="0" cellpadding="2" cellspacing="0" width="777" bgcolor="#F7F9FD" class="info-group"><tr valign="top"><td style="padding:10px;"><b>Cancel Policy:</b><br><br>Cancellation policies vary from hotel to hotel. Most current and accurate cancellation policies will appear on your confirmed reservation notification.<br><br><b>Guarantee Policy:</b><br><br>All reservations made via the Internet require a credit card to guarantee the reservation. Some reservations may require a credit card deposit.<br><br><b>Check In:</b><br><br>1500<br><br><b>Check Out:</b><br><br>1200<br><br></td></tr></table></div><div id="info-group3" class="isHidden"><table id="info-group3" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td style="padding:10px;"></td></tr><tr valign="top"><td style="padding:10px;"><b>Areas Served:</b><br><br>Sea-Tac (SeaTac), SeaTac, Tukwila, Des Moines, Renton, Kent, Federal Way, Mercer Island, Auburn, Seattle, Bellevue, Pacific, Issaquah, Fife, Gig Harbor, Tacoma, Kirkland, Sumner, Port Orchard, Bremerton, Puyallup, Redmond, Bainbridge Island, Bonney Lake<br><br></td></tr></table></div><div id="info-group4" class="isHidden"><table id="info-group4" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td style="padding:10px;" align="center">
+      
+      
+      
+      
+      
+      
+      <img onload="resizeImage(this.id)" id="more-photos-14" hspace="3" vspace="3" src="https://image.pegs.com/images/CC/WA012/wa012_b1.jpg"> 
+      <img onload="resizeImage(this.id)" id="more-photos-16" hspace="3" vspace="3" src="https://image.pegs.com/images/CC/WA012/wa012_b5.jpg"> 
+      <img onload="resizeImage(this.id)" id="more-photos-18" hspace="3" vspace="3" src="https://image.pegs.com/images/CC/WA012/wa012_b6.jpg"> 
+      <img onload="resizeImage(this.id)" id="more-photos-20" hspace="3" vspace="3" src="https://image.pegs.com/images/CC/WA012/wa012_b7.jpg"> 
+      <img onload="resizeImage(this.id)" id="more-photos-22" hspace="3" vspace="3" src="https://image.pegs.com/images/CC/WA012/wa012_b8.jpg"> 
+      <img onload="resizeImage(this.id)" id="more-photos-24" hspace="3" vspace="3" src="https://image.pegs.com/images/CC/WA012/wa012_b9.jpg"> 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   </td></tr></table></div><div id="info-group5" class="isHidden"><table id="info-group5" border="0" cellpadding="2" cellspacing="0" bgcolor="#F7F9FD" width="777" class="info-group"><tr valign="top"><td align="center" style="padding:10px;"><img name="mapimage" src="/images/clear.gif"></td></tr></table></div></div><br><table width="777" border="0" cellpadding="5" cellspacing="0"><tr><td width="30" align="center">&nbsp;</td><td width="100" align="center" bgcolor="#FFFFCC"><a href="#Getrates"><strong>Check Rates for this Hotel </strong></a></td><td align="right">&nbsp;</td></tr></table></blockquote></td></tr></table>
+<blockquote>
+	<center>
+		<a href="javascript:history.back()">Click to Return to the Previous Page</a><br>
+		<br>
+		<a title="Beaches and Towns Network Home Page" href="http://www.OC-USA.com" target="_top">Return to the Home Page</a><br>
+		<br>
+		<a title="Hotel Reservations Customer Service" href="http://hotels.oc-usa.com/servlet/lodging.PersonalAccount?action=selfserve&remote=OC-USA" target="_top">Click for Customer Service<br>
+		
+			or Call 1-866-226-9330</a><br>
+		<hr>
+		<a title="Beaches and Towns Network of Travel Sites" href="http://info.oc-usa.com/auto/home.cgi?remote=OC-USA">Beaches and Towns Network, LLC. - &copy;1999-2005</a><br>
+		<br>
+		<font size="-1"><a title="Baltimore Inner Harbor" href="http://www.Baltimore.to" target="_blank">Also Visit: Baltimore</a>, <a title="South Baltimore" href="http://www.SouthBaltimore.com">South Baltimore</a>, <a title="Ocean City" href="http://www.OCtheBeach.com" target="_blank">Ocean </a><a title="OCOcean City" href="http://www.OCOceanCity.com">City</a>, <a title="Florida Vacations" href="http://www.GoFloridaVacations.com">Florida</a>, <a title="New Orleans Big Easy" href="http://www.BigEasy.org">New Orleans</a>, <a title="Raleigh Durham" href="http://www.Raleigh-Durham.com">Raleigh-Durham</a>,<br>
+			<a title="Savannah Georgia" href="http://www.SavannahGeorgia.net">Savannah</a>, <a title="Washington DC" href="http://www.DistrictColumbia.com">Washington, DC</a>, <a title="Travel Sources" href="http://www.TravelSources.com">TravelSources.com</a>, <a title="Golf Vacations Packages Getaways" href="http://www.GoGolfVacations.com" target="_blank">Golf Vacations</a>, <a title="Ski Vacations Resorts" href="http://www.goskivacations.com" target="_blank">Ski Vacations</a><br>
+			<a title="Teach Time Encyclopedia" href="http://www.TeachTime.com" target="_blank">Helping to sponsor the TeachTime Encyclopedia</a> <a title="Visit Military Bases" href="http://www.VisitMilitaryBases.com" target="_blank">&amp; Visit Military Bases</a><br>
+			<a title="TeachTime Encyclopedia" href="http://www.TeachTime.com" target="_blank"><br>
+			</a></font></center>
+</blockquote>
+<div id="CAL" name="CAL" style="position: absolute; top: 0; left: 0; width: 158; z-index: 100; visibility: hidden; border: 1 solid buttonface; border: 2 outset buttonhighlight; background-color: menu;"><span id="CAL_BODY" name="CAL_BODY"></span></div></body></html>

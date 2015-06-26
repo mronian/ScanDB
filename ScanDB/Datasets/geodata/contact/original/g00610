@@ -1,0 +1,454 @@
+<DOC>
+<DOCNO>g00610</DOCNO>
+<DOCHDR>http://www.osborne.com/aboutus/contact.shtml</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Contact Osborne McGraw-Hill</TITLE>
+<META NAME="Title" CONTENT="Osborne McGraw-Hill Required Reading for the Information Age">
+<META NAME="Author" CONTENT="Osborne McGraw-Hill">
+<META NAME="Owner" CONTENT="Osborne McGraw-Hill">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<META NAME="Robots" CONTENT="all">
+<META NAME="Language" CONTENT="English">
+<MAP NAME="topnavmap">
+
+<AREA SHAPE=RECT COORDS="4,28,48,46" HREF="http://shop.osborne.com/osborne/aboutus/aboutus.shtml">
+<AREA SHAPE=RECT COORDS="54,28,101,46" HREF="http://shop.osborne.com/osborne/downloads/downloads.shtml">
+<AREA SHAPE=RECT COORDS="109,28,143,46" HREF="http://shop.osborne.com/osborne/errata/errata.shtml">
+<AREA SHAPE=RECT COORDS="149,28,204,46" HREF="http://shop.osborne.com/osborne/pressroom/pressroom.shtml">
+<AREA SHAPE=RECT COORDS="209,15,314,54" HREF="http://shop.osborne.com/cgi-bin/osborne/database.html">
+<AREA SHAPE=RECT COORDS="318,17,421,44" HREF="http://shop.osborne.com/cgi-bin/osborne/programming.html">
+<AREA SHAPE=RECT COORDS="425,19,529,44" HREF="http://shop.osborne.com/cgi-bin/osborne/networking.html">
+<AREA SHAPE=RECT COORDS="533,16 637,44" HREF="http://shop.osborne.com/cgi-bin/osborne/certification.html">
+<AREA SHAPE=RECT COORDS="642,18,744,44" HREF="http://shop.osborne.com/cgi-bin/osborne/applications.html">
+</MAP>
+
+
+
+
+
+<TABLE cellpadding="0" cellspacing="0" border="0">
+<TR>
+<TD colspan="7">
+<!----BEGIN TOP NAV FOR HOME PAGE---->
+<script language="JavaScript">
+function view_cart(){
+document.view_cart.submit();
+}
+</script>
+
+
+<form name="view_cart" action="http://www.osborne.com/cgi-bin/quikstore.cgi" target="content">
+<input type="hidden" name="view_cart">
+</form>
+
+<TABLE cellpadding="0" cellspacing="0" border="0">
+<TR>
+<TD width="325"><A HREF="http://www.osborne.com"><IMG SRC="/images/osborne_logo.gif" border="0" height="34" width="325"></A></TD>
+<TD width="428" nowrap><FONT face="arial, geneva" size="2" color="blue"><DIV align="right">| <A href="http://www.osborne.com"> home</a> | <A href="http://shop.osborne.com/cgi-bin/osborne/ord/basket.html">view cart</a> | <A HREF="http://shop.osborne.com/osborne/aboutus/help.shtml"> help</a> | </DIV></TD>
+</TR><TR>
+<TD colspan="2" align="left"><IMG SRC="/images/home_tabs.gif" USEMAP="#topnavmap" ISMAP border="0"></TD>
+</TR>
+</TABLE>
+<!---END TOP NAV FOR HOMEPAGE---->
+</TD></TR>
+
+<TD bgcolor="#000000" width="1"><IMG SRC="../images/spacer.gif" width="1"></TD>
+
+
+<TD valign="top" width="138" bgcolor="#CED6E7">
+<!-----BEGIN SEARCH MODULE---->
+<!-- begin SEARCH SCRIPT -->
+<script language="JavaScript">
+<!--
+
+function setBackgroundColor(color1, color2, color3, color4) {
+
+  theColors = new Array(color1, color2, color3, color4);
+
+  var whichColor = Math.round(Math.random()*1000) % 4;
+
+  document.bgColor = theColors[whichColor];
+}
+
+//window.onErrorHandler = null;
+
+function noErrorMessages () { return true; }
+window.onerror = noErrorMessages;
+
+function SearchAndReplace(Content, SearchFor, ReplaceWith) {
+   var ReplaceWith = ' ';
+   var tmpContent = '';
+   tmpContent = Content;
+   var tmpBefore = new String();   
+   var tmpAfter = new String();
+   var tmpOutput = new String();
+   var intBefore = 0;
+   var intAfter = 0;
+
+tmpOutput = '';
+var myreturnstring = '';
+   if (SearchFor.length == 0)
+      return;
+
+   while (tmpContent.toUpperCase().indexOf(SearchFor.toUpperCase()) > -1) {
+   
+      // Get all content before the match
+      intBefore = tmpContent.toUpperCase().indexOf(SearchFor.toUpperCase());
+      tmpBefore = tmpContent.substring(0, intBefore);
+      tmpOutput = tmpOutput + tmpBefore;
+
+      // Get the string to replace
+      tmpOutput = tmpOutput + ReplaceWith;
+
+
+      // Get the rest of the content after the match until
+      // the next match or the end of the content
+      intAfter = tmpContent.length - SearchFor.length + 1;
+      tmpContent = tmpContent.substring(intBefore + SearchFor.length);
+
+   }
+
+myreturnstring = "" + tmpOutput + tmpContent;
+document.srexample.mv_searchspec.value = myreturnstring;
+
+return;
+}
+
+// -->
+</script>
+<!-- end SEARCH SCRIPT -->
+
+<TABLE cellpadding="0" cellspacing="0" border="0" width="142">
+<TR bgcolor="#638CBD">
+<TD colspan="2">
+<BR>
+&nbsp;<font face="arial, geneva" size="2" color="black"><b>Search Our Site:</b></TD></TR>
+<TR>
+          <TD vAlign="top" align="right" width="142" bgColor="#638cbd"><FONT
+            face="arial, geneva" size=2>
+            <!-- Should be action="/cgi-bin/osborne/search.html", but this page lives on www.osborne.com not on shop.osborne.com -->
+			<FORM action="http://shop.osborne.com/cgi-bin/osborne/search.html"  method="post" name="srexample">
+            <INPUT TYPE=hidden NAME=mv_searchtype VALUE=db>
+        <INPUT TYPE=hidden NAME=mv_matchlimit VALUE=20>
+        <INPUT TYPE=hidden NAME=mv_first_match VALUE=0>
+
+        <INPUT TYPE=hidden NAME=mv_search_file VALUE=products>
+        <INPUT TYPE=hidden NAME=mv_search_file VALUE=author2isbn>
+
+        <INPUT TYPE=hidden NAME=mv_search_field VALUE=":*">
+        <INPUT TYPE=hidden NAME=mv_search_field VALUE="lname">
+
+        <INPUT TYPE=hidden NAME=mv_column_op VALUE=rm>
+        <INPUT TYPE=hidden NAME=mv_column_op VALUE=rm>
+
+        <INPUT TYPE=hidden NAME=mv_substring_match VALUE=yes>
+        <INPUT TYPE=hidden NAME=mv_all_chars VALUE=yes>
+        <INPUT TYPE=hidden NAME=mv_unique VALUE=yes>
+        <INPUT TYPE=hidden NAME=mv_search_page VALUE=results.html>
+        <INPUT MAXLENGTH=30 NAME=mv_searchspec type=text size=11 class=iform onBlur="SearchAndReplace(document.srexample.mv_searchspec.value, '-', '');return true;"> </FONT></TD>
+          <TD align=left bgColor=#638cbd>
+            <DIV align=left><INPUT type=image src="/osborne/osborne_files/go_button.gif"
+            border=0>&nbsp;&nbsp;&nbsp;</DIV></FORM></TD></TR><TR bgcolor="#638CBD">
+<TD colspan="2" valign="top"><div align="center"><a href="/nba_registration.shtml"><img src="/osborne/osborne_files/registration.gif" border="0"></a></div><br></td>
+</tr>
+</table>
+
+
+<!----END SEARCH MODULE---->
+
+<!------BEGIN SIDE NAV---->
+<!---Topics Table--->
+
+<TABLE cellpadding="5" border="0" cellspacing="0" width="142" height="100%">
+
+<TR bgcolor="#CED6E7" height="100%">
+    <TD height="100%"> <FONT FACE="arial, geneva" size="1"> 
+      <p><a href="http://osborne.com/bookregistration/"><img src="../features/hardware/images/register.gif" width="133" height="60" border="0"></a>
+      <p><b><a href="http://shop.osborne.com/osborne/aboutus/aboutus.shtml">About 
+        Us</a></b> 
+      <p><b><a href="http://shop.osborne.com/osborne/aboutus/contact.shtml#Careers">Career 
+        Opportunities</a></b> 
+      <p><b><a href="http://shop.osborne.com/osborne/aboutus/contact.shtml">Contact 
+        Information</a></b> 
+      <p><b><a href="http://www.mheducation.com/intloffices.html">International 
+        Contact Information</a></b> 
+      <p><b><a href="http://shop.osborne.com/osborne/aboutus/writeforus.shtml">Write 
+        for Osborne</a></b> 
+      <p><b><a href="http://shop.osborne.com/osborne/aboutus/help.shtml">Help</a></b> 
+      <p><IMG SRC="../images/spacer.gif" height="50" width="1"> 
+      <p>
+      <FONT FACE="arial, geneva" size="1"><b>Please note:</b><br>
+      Contacting us via email reveals your email address and any other information 
+      you include. We will use this information only to help us to fulfill your 
+      request or respond to your inquiry and will not store it for any other purpose. 
+      <p>For further information regarding McGraw-Hill's Privacy Policy, please 
+        visit our <a href="http://shop.osborne.com/osborne/aboutus/privacy.shtml">official 
+        Privacy Policy page.</a></p>
+      </font> </font></td>
+</TR></TABLE>
+
+<!---end series table---->
+
+<!-----END SIDE NAV----->
+</TD>
+
+
+<TD bgcolor="#000000" width="1"><IMG SRC="../images/spacer.gif" width="1" height="1"></TD>
+
+<TD width="15" bgcolor="#FFFFFF" valign="top">
+<IMG SRC="../images/spacer.gif" height="1" width="15">
+</TD>
+
+<TD width="379" bgcolor="#FFFFFF" valign="top"><IMG SRC="../images/spacer.gif" width="585" height="1">
+<!----MAIN HOME PAGE CONTENT AREA---->
+
+<table width=580><tr><td>
+
+<FONT FACE="ARIAL, GENEVA" color="#638CBD" size="4"><B>CONTACT INFORMATION</B></FONT>
+<br>
+            <font face="arial, geneva" size=2> <br>
+            <A NAME="Menu"></A>
+            <ul>
+              <li><A HREF="#Customer Service">Customer Service</A>
+              <li><A HREF="#Public Relations">Public Relations</a>
+              <li><a href="#Marketing">Marketing</A>
+              <li><A HREF="#International Marketing">International Marketing and
+                Electronic Rights</A>
+              <!----<li><A HREF="#Editorial">Editorial</A>---->
+              <li><A HREF="#Careers">Career Information</A>
+              <li><A HREF="#Internet">Internet/Web Administration</A><br>
+              <li><A HREF="#Sales">Corporate and Government Sales</A>
+              <li><A HREF="#Education">Education Division</A>
+              <li><A HREF="#Library">Library Division</A>
+              <li><A HREF="#Privacy">Privacy Information</A>
+            </ul>
+            <p> At McGraw-Hill/Osborne Media, we're interested in what you have
+              to say. Please send us your comments on our books, disks, CDs, and
+              other products. Individual contact addresses and email addresses
+              may be obtained by selecting the desired department or division
+              from the menu above. By snail-mail, you can contact us at:
+            <menu><b> McGraw-Hill/Osborne Media<BR>
+              2100 Powell Street, 10th Floor<br>
+              Emeryville, CA 94608
+              <P> By telephone, you can contact us at +1 (800) 227-0900.
+              </b></menu>
+            <P>
+            <hr>
+            </font><A NAME="Customer Service"></a><font face="arial, geneva" size=2>
+            <h3>McGraw-Hill Customer Service</h3>
+
+<H5>Domestic Customer Service:</H5>
+
+Phone: +1 (877) 833-5524<br>
+
+Email: <A HREF="mailto: pbg.ecommerce_custserv@mcgraw-hill.com">pbg.ecommerce_custserv@mcgraw-hill.com</A>
+
+<p>
+
+<h5>International Customer Service:</H5>
+
+For customers outside the 50 United States<BR>
+
+Phone: +1 (609) 426-5793<BR>
+
+Fax: +1 (609) 426-7917<BR>
+
+Email: <A HREF="mailto:international_cs@mcgraw-hill.com">international_cs@mcgraw-hill.com</A>
+
+<P><A HREF="#Menu">Back to Menu</A>
+
+
+
+
+
+<hr>
+            </font><A NAME="Public Relations"></a><font face="arial, geneva" size=2>
+            <h3>Public Relations</h3>
+            <br>
+            Bettina Faltermeier<br>
+            Publicity Manager<br>
+            Phone: +1 (212) 904-3604 Email:<A HREF="mailto:bettina_faltermeier@mcgraw-hill.com">Bettina_Faltermeier@mcgraw-hill.com</A>
+            <P>
+            <P> <A HREF="#Menu">Back to Menu</A>
+            <hr>
+            </font><A NAME="Marketing"></a><font face="arial, geneva" size=2>
+            <h3>Marketing</h3><br>
+
+
+
+Email:<a href="mailto:OMG_Marketing@mcgraw-hill.com">OMG_Marketing@mcgraw-hill.com</a>
+
+<P>
+
+<A HREF="#Menu">Back to Menu</A>
+
+
+
+<hr>
+
+
+
+</font><A NAME="International Marketing"></a><font face="arial, geneva" size=2>
+
+<h3>International Marketing</h3><br>
+
+Email: <a href="mailto:OMG_International@mcgraw-hill.com">OMG_International@mcgraw-hill.com</A><P>
+
+<A HREF="#Menu">Back to Menu</A>
+
+
+
+
+
+<hr>
+        <!---    </font><A NAME="Editorial"></a><font face="arial, geneva" size=2>
+            <h3>Editorial Department</h3>
+            <br>
+            Scott Rogers<br>
+            Vice President &amp; Associate Publisher<br>
+            Email:<A HREF="mailto:Scott_Rogers@mcgraw-hill.com">Scott_Rogers@mcgraw-hill.com</A>
+            <P> <A HREF="#Menu">Back to Menu</A>
+            <hr>--->
+            </font><A NAME="Careers"></a><font face="arial, geneva" size=2>
+            <h3>Career Information</h3><br>
+
+
+
+To find out about job opportunities at Osborne/McGraw-Hill, please visit:<BR>
+
+<A HREF="http://www.mcgraw-hill.com/careeropps/index.html">www.mcgraw-hill.com/careeropps</a>
+
+<P>To submit a resume: <BR>
+
+Email:<A HREF="mailto:osborne_careers@mcgraw-hill.com">osborne_careers@mcgraw-hill.com</a>
+
+<hr>
+
+</font><A NAME="Internet"></a><font face="arial, geneva" size=2>
+
+
+
+<h3>Web Administration / Web Site Issues</h3><br>
+
+Paul Mayson<br>
+
+Marketing Manager <br>
+
+Email:<A HREF="mailto:paul_mayson@mcgraw-hill.com">paul_mayson@mcgraw-hill.com</A><p>
+
+<A HREF="#Menu">Back to Menu</A>
+
+<hr>
+            </font><A NAME="Sales"></a><font face="arial, geneva" size=2>
+            <h3>Special Sales</h3>
+            <br>
+            Discounts are available for bulk purchases. Please contact:<br>
+            George Hoare<br>
+            Phone: (212) 904-4069
+            <p>
+            <hr>
+            <h3>Government Sales</h3>
+            <br>
+            To place a federal government order, please contact:<br>
+            Phone: +1 (888) 878-5150
+            <p> For other assistance, please contact:<br>
+              Audrey Tunick<br>
+              Phone: +1 (703) 845-0900<br>
+              Email: <a href="mailto:audrey_tunick@mcgraw-hill.com">Audrey_Tunick@mcgraw-hill.com</a>
+              <A HREF="#Menu">Back to Menu</A>
+            <hr>
+            </font><A NAME="Education"></a><font face="arial, geneva" size=2>
+            <h3>Education Division</h3>
+            <br>
+            <p> College Adoptions:<br>
+              To order desk or exam copies:<br>
+              Phone: +1 (800) 338-3987<br>
+              Email: <a href="mailto:%20Veronica_Vergoth@mcgraw-hill.com">Veronica_Vergoth@mcgraw-hill.com</a>
+            <P>
+            <p> High School Questions or Requests:<br>
+              Mary Harris<br>
+              McGraw-Hill<br>
+              Two Penn Plaza, 21st Floor<br>
+              New York, NY 10121<br>
+              Phone: +1 (212) 904-5430<br>
+              Fax: +1 (212) 904-6206 <BR>
+              Email: <a href="mailto:Mary_Harris@mcgraw-hill.com">Mary_Harris@mcgraw-hill.com</a>
+            <P>
+            <hr>
+            </font><A NAME="Library"></a><font face="arial, geneva" size=2>
+            <h3>Library Division</h3><br>
+
+
+
+Library Sales<br>
+
+Karolyn Anderson<br>
+
+Phone: +1 (614) 430-4000 <br>
+
+Email:<A HREF="mailto:library.sales@mcgraw-hill.com">library.sales@mcgraw-hill.com</a>
+
+
+
+</font><A NAME="Privacy"></a><font face="arial, geneva" size=2>
+
+	<p>
+
+<b>PRIVACY INFORMATION:</b>
+Contacting us via email reveals your email address and any other information you include. We will use this information only to help us to fulfill your request or respond to your inquiry and will not store it for any other purpose.</P>
+
+<p>For further information regarding McGraw-Hill's Privacy Policy, please visit our <a href="http://books.mcgraw-hill.com/getpage.php?page=mhp_privacy_centercontent.php">official Privacy Policy page.</a></p></font>
+
+
+
+<P>
+<A HREF="#Menu"><font face="arial, geneva" size=2>Back to Menu</font></A>
+
+
+<font face="arial, geneva" size=3>
+<P><DIV align="center">
+<P><B><a href="aboutus.shtml">About Osborne</a></B>
+<P><B><a href="http://www.mheducation.com/intloffices.html">International Contact Information</a></B>
+<P><B><a href="writeforus.shtml">Write for Osborne</a></B>
+</DIV>
+
+</font></td></tr></table>
+
+
+<!----END MAIN HOME PAGE CONTENT AREA---->
+</TD>
+
+<TD width="10" bgcolor="#FFFFFF" valign="top"><IMG SRC="../images/spacer.gif" height="1" width="10"></td>
+
+
+</TR>
+</TABLE>
+
+<!---BEGIN FOOTER AND COPYRIGHT INFORMATION--->
+<P><BR>
+<DIV align="center">
+<TABLE cellpadding="0" cellspacing="0" border="0" width="720">
+<TR>
+<TD>
+<DIV align="center">
+<IMG SRC="/images/mgh_tagline.gif"><br>
+          <FONT face="arial, geneva" size="-2"> All prices and publication dates 
+          are subject to change. This page and all subsequent pages are © 1995-2003 
+          McGraw-Hill/Osborne Media. Any use of graphics or content from these 
+          pages without the express written consent of McGraw-Hill/Osborne Media 
+          is prohibited. For further information please check: 
+          <p> <A HREF="http://www.mcgraw-hill.com/copyrttm.htm">Terms of Use</A> 
+            &nbsp;&nbsp;&nbsp;<a href="/aboutus/privacy.shtml">Privacy Policy</a> 
+          <p> For further contact information please reference the McGraw-Hill/Osborne 
+            Media <a href="http://www.osborne.com/aboutus/contact.shtml">Contact 
+            Information page</a>. 
+          </FONT> </div>
+      </TD></TR></TABLE>
+
+ </div>
+<!---END FOOTER AND COPYRIGHT INFORMATION---->
+

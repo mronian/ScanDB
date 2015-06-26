@@ -1,0 +1,2165 @@
+<DOC>
+<DOCNO>f00112</DOCNO>
+<DOCHDR>http://www.eweek.com/article2/0,1759,1642193,00.asp</DOCHDR>
+<!-- Vignette V6 Fri Feb 11 00:35:42 2005 -->
+<!--WEB 3-->
+<!--include virtual="/common/data_embargo_content.asp"-->
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+
+<head>
+<link rel="alternate" type="application/rss+xml" title="eWEEK Technology News" href="http://rssnewsapps.ziffdavis.com/tech.xml" />
+
+
+<title>Contact Us</title>
+<META http-equiv="expires" CONTENT="Thu, 01 Dec 1994 16:00:00 GMT">
+<META http-equiv="Pragma" CONTENT="no-cache">
+
+
+
+
+<META name="keywords" content="HTML Page " lang="en-us">
+<META name="title" content="Contact Us" lang="en-us">
+
+<link rel="STYLESHEET" type="text/css" href="/util/css/eweek.css">
+
+<link rel="SHORTCUT ICON" href="/favicon.ico">
+
+<script language="javascript">
+
+function setCookie(name, value) {
+	var expire = new Date();
+	var today = new Date();
+	expire.setTime(today.getTime() + 1000*60*60*24*4);
+	document.cookie = name + "=" + escape(value) + "; path=/"   + ((expire == null) ? "" : ("; expires=" + expire.toGMTString()))
+}
+
+function getCookie(Name) {
+	var search = Name + "="
+	if (document.cookie.length > 0) {// if there are any cookies
+		offset = document.cookie.indexOf(search)
+		if (offset != -1) { // if cookie exists
+			offset += search.length;
+			// set index of beginning of value
+			end = document.cookie.indexOf(";", offset)
+			// set index of end of cookie value
+			if (end == -1)
+				end = document.cookie.length
+			return unescape(document.cookie.substring(offset, end))
+		}
+	}
+}
+
+function getMemberName(x) {
+	start = (x.indexOf(";") + 1);
+	end = x.indexOf(";", start);
+	var name = x.substr(start, (end - start));
+	return name
+}
+
+function displayPopUnder() {
+	var cookieExist = getCookie("eWEEK");
+	if (document.referrer&&document.referrer.indexOf('altavista')==-1) {
+        if (document.referrer.indexOf('google')==-1) {
+            if (cookieExist == null) {
+			    setCookie("eWEEK","eWEEK");
+		    	var promopopup = window.open("http://www.zdmcirc.com/zdmcirc/popups/ewkpop.html","promopopup","width=336,height=280");
+		    	self.focus();
+		    }
+        }
+    }
+}
+
+function popUp(link, width, height) {
+
+	var popUpWindow = window.open(link,"popUp",'toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=0,width='+width+',height='+height);
+
+}
+
+
+function cj_window(a_path) {
+	article_window=window.open(a_path,'article_window','width=415,height=550,scrollbars=yes,resize=yes,target=_top');
+	if (document.images) {article_window.focus();}
+}
+
+
+setCookie("successpage", document.location.pathname)
+</script>
+
+</head>
+
+
+<body topmargin="0" leftmargin="0" bgcolor="#BEC5CB" text="#000000" marginheight="0" marginwidth="0" onUnload="displayPopUnder();"><center>
+
+
+<!---------------- Begin Header Table ---------------->
+
+<table width="780" border="0" cellpadding="0" cellspacing="0" background="/images/ew_nav_bg.gif">
+	<tr>
+		<td rowspan="2" width="219" valign="top">
+			<!--height should = 79px-->
+			<a href="http://www.eweek.com" target="_top"><img src="/images/ew_nav_logo_top.gif" width="219" height="43" border="0" alt="Eweek Magazine"></a><br>
+			<a href="http://www.eweek.com" target="_top"><img src="/images/ew_nav_logo_bottom.gif" width="219" height="18" border="0" alt="Eweek Magazine"></a><br>
+			<img src="/images/ew_spacer.gif" width="1" height="18"></td>
+		<td width="561" valign="top">
+			<table width="561" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="461" valign="bottom">
+						<a href="http://www.eweek.com"><img src="/images/ew_nav_tagline.gif" width="191" height="21" border="0" alt="Enterprise News and Reviews"></a></td>
+					<td width="100">
+						<a href="http://www.ziffdavis.com"><img src="/images/ew_nav_zdlogo.gif" width="120" height="21" border="0" border="1" alt="Ziff Davis Internet"></a></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<!--Begin Navigation-->
+					<table width='100%' border='0' cellpadding='0' cellspacing='0'><tr><td><a href='http://www.eweek.com/category2/0,1738,294,00.asp'><img src='http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=89880,00.jpg' width='76' height='22' alt='Reviews' border='0'></a></td><td><img src='/images/ew_nav_break.gif' width='2' height='22'></td><td><a href='http://www.eweek.com/category2/0,1738,94,00.asp'><img src='http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=89882,00.jpg' width='87' height='22' alt='Opinions' border='0'></a></td><td><img src='/images/ew_nav_break.gif' width='2' height='22'></td><td><a href='http://www.eweek.com/category2/0,1738,877,00.asp'><img src='http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=89887,00.jpg' width='89' height='22' alt='Case Studies' border='0'></a></td><td><img src='/images/ew_nav_break.gif' width='2' height='22'></td><td><a href='http://www.eweek.com/category2/0,1738,1553097,00.asp'><img src='http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=89884,00.jpg' width='68' height='22' alt='Topics' border='0'></a></td><td><img src='/images/ew_nav_break.gif' width='2' height='22'></td><td><a href='http://www.eweek.com/category2/0,1738,1478348,00.asp'><img src='http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=89886,00.jpg' width='79' height='22' alt='Industries' border='0'></a></td><td><img src='/images/ew_nav_break.gif' width='2' height='22'></td><td><a href='http://www.eweek.com/category2/0,1738,46144,00.asp'><img src='http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=89889,00.jpg' width='66' height='22' alt='Tools' border='0'></a></td><td><img src='/images/ew_nav_break.gif' width='2' height='22'></td><td><a href='http://www.eweek.com/category2/0,1738,1574229,00.asp'><img src='http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=89891,00.jpg' width='84' height='22' alt='White Papers' border='0'></a></td></tr></table>
+					<!--End Navigation-->
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<form name="SmpleSearchForm" action="/search_redirect/" method="GET" target="_top">
+		<td valign="middle" align="right">
+			<img src="/images/ew_nav_search.gif">
+			<input name=qry type="text" size="27" maxlength="70" STYLE="font-size:12px;">
+			<select name=site size="1" STYLE="font-size:12px;">	
+				<option value='0|all| '> All Sites</option><option selected value="7">eWEEK</option>
+			</select>
+			<input type="image" src="/images/ew_nav_searcharrow.gif"  width="10" height="10" hspace="4" border="0" alt="">
+		</td>
+		</form>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://www.omeda.com/ziff/ewk/ewk.cgi?&t=whback&p=lz3home" target="_top"><img src="/images/ew_nav_subcall.gif" width="146" height="15" border="0"></a></td>
+		<td align="right" valign="bottom" class="nav_text">
+			<nowrap>
+			<!-- Vignette V6 Wed Jan 26 04:48:05 2005 -->
+<!--WEB 3-->
+
+
+		<a href="http://www.eweek.com/view_profile/0,1754,,00.asp" target="_top" class="nav_text">My Account</a><span class="nav_text">&nbsp;|</span>
+		<script language="javascript">
+			var isMemberCookie = getCookie("zm%5Fuser");
+			var signInUrl = "http://www.eweek.com/join/0,2475,,00.asp" + "?success_page=" + getCookie("successpage")  
+			var signOutUrl = "http://www.eweek.com/data_process_log_out/0,1207,,00.asp" + "?success_page=" + getCookie("successpage")  
+			var registerUrl = "http://www.eweek.com/join/0,2475,,00.asp" + "?success_page=" + getCookie("successpage")  
+			
+			if (isMemberCookie != null) {
+				document.write("<a href=\"" + signOutUrl + "\" target=\"_top\" class=\"nav_text\">Sign Out</a>&nbsp;");
+			} else {
+				document.write("<a href=\"" + signInUrl + "\" target=\"_top\" class=\"nav_text\">Sign In</a>&nbsp;");
+			}
+		</script>		
+		
+		
+		<script language="javascript">
+		
+			var isMemberCookie = getCookie("zm%5Fuser"); 
+
+			if (isMemberCookie != null) {
+				var memberName = getMemberName(isMemberCookie);
+				document.write("<span class=\"nav_text\">Welcome " + memberName + "</span>");
+			} else {
+				document.write("<span class=\"nav_text\">Not a member?</span> <a href=\"" + registerUrl + "\" target=\"_top\" class=\"nav_text\">Join now</a>");
+			}
+		
+		</script>
+
+			<img src="/images/ew_spacer.gif" width="2" height="1"></nowrap>
+		</td>
+	</tr>
+</table>
+
+
+								
+				<table border="0" width="780" cellpadding="0" cellspacing="0" class="AD_BG">
+					<tr>
+						<td align="left">
+								
+							
+					  				<IFRAME SRC="http://ad.doubleclick.net/adi/eweek.dart/home;dcopt=ist;ptile=1;sz=728x90;ord=3350139857?" width="728" height="90" frameborder="no" border="0" MARGINWIDTH="0" MARGINHEIGHT="0" SCROLLING="no" hspace="0">	
+									<A HREF="http://ad.doubleclick.net/jump/eweek.dart/home;dcopt=ist;abr=!ie;sz=728x90;ord=3350139857?" TARGET="_top">
+						  			<IMG SRC="http://ad.doubleclick.net/ad/eweek.dart/home;dcopt=ist;abr=!ie;sz=728x90;ord=3350139857?" border="0" height="90" width="728" hspace="">
+									</A> 
+					  				</IFRAME>
+							
+
+
+						</td>
+						<td align="right"><img src="/images/ew_spacer.gif" height="1" width="1"></td>
+						<td align="right" valign="top">
+							
+							<a href="http://www.omeda.com/ziff/ewk/ewk.cgi?&t=whback&p=lz4home" target="_top"><img src="http://common.ziffdavisinternet.com/util_get_image/2/0,1311,i=27343,00.gif" border="0"></a>
+								
+						</td>
+					</tr>
+						<td colspan="3"><img src="/images/ew_spacer.gif" height="2" width="1"></td>
+				</table>
+
+<!---------------- End Header Tables ----------------->
+
+<!-- Call the module data file before the main content area to check whether there are modules to display -->
+
+
+<script language="javascript">
+	var jBreadcrumbTitle;
+	jBreadcrumbTitle = "Contact Us";
+</script>
+<!-- ************* BEGIN MAIN TABLE ***********-->
+
+<table border="0" cellpadding="0" cellspacing="0" width="780" bgcolor="#FFFFFF" >	
+
+
+ 
+	<tr>
+		<td colspan="4"><img src="/images/ew_spacer.gif" width="1" height="5"></td>
+	</tr>
+	
+	<tr>
+		<td width="5"><img src="/images/ew_spacer.gif" width="5" height="1"></td>
+		<td valign="top" align="left" colspan="3">
+		<!-- Vignette V6 Tue Feb 22 12:01:56 PM 2005 -->
+<!--WEB 3-->
+
+<div class="breadcrumb">
+	<a href="http://www.eweek.com">Home</a>&nbsp;&gt;&nbsp;<a href="http://www.eweek.com/category2/0,1738,1642190,00.asp">About Us</a>&nbsp;&gt;&nbsp;<script language="javascript">document.write(jBreadcrumbTitle);</script>
+</div>
+
+
+		</td>
+
+						
+		<td width="5" rowspan="2">
+			<img src="/images/ew_spacer.gif" width="5" height="1">
+		</td>
+	</tr>
+
+
+	<tr>
+		<td width="5"><img src="/images/ew_spacer.gif" width="5" height="1"></td>
+		<td width="615" valign="top">
+
+
+
+
+<!--include virtual="/common/creprint.asp"-->
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+  function AlterActionAndSubmit()
+  {
+	if (document.toc_form.toc_select.value != "")
+		{
+		toc_select_index = document.toc_form.toc_select.selectedIndex;
+		toc_select_value = document.toc_form.toc_select.options[toc_select_index].value;
+
+		document.toc_form.action = toc_select_value;
+		document.toc_form.submit();
+		}
+  }
+
+function OpenSlideshowWindow(slideshow_name, winWidth, winHeight,isScrollbar)
+{
+LeftPosition = (winWidth) ? (winWidth) : 0;
+TopPosition = (winHeight) ? (winHeight): 0;
+settings = 'menubar=no,toolbar=no,scrollbars=yes,height=' + winHeight + ',width=' + winWidth
+hWin = window.open(slideshow_name, "SlideshowPopup", settings, false);
+hWin.focus();
+if (hWin.opener == null) hWin.opener = self;
+}
+
+// -->
+</SCRIPT>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+		<tr valign="top">
+		  <td align="left" valign="top" colspan="2">
+		  	
+
+    	<span class="Article_Title">Contact Us</span>
+	
+	</td></tr>
+
+<tr><td valign="top" width="65%"><a href="" class="authorsource"></a>
+
+
+  </td>
+  <td align="right" valign="top" width="35%">
+	 
+      
+  </td>
+
+
+  </tr>
+ <tr>
+  <td align="left" class="Article_Posts" colspan="2">
+
+
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td width="100%" class="content10">
+
+	</td>
+
+
+    
+	</tr>
+	</table>
+
+ </td></tr>
+
+
+
+
+<tr valign="top">
+	<td align="left" class="Article_Content" colspan="2"><p><br>
+		<P><span class="headerlarge">Customer Service</span>
+
+<P><A HREF="http://www.omeda.com/custsrv/ewk/">Subscriber Help</A><BR>
+<A HREF="http://www.eweek.com/newsletter_manage/">Newsletter Help</A><P>
+
+<HR><P>
+
+<P><span class="headerlarge">eWEEK Editorial Office </span>
+ 
+<P><GEO TYPE="US">500 Unicorn Drive
+<br>Woburn, MA 01801</GEO>
+<br>(781) 938-2600
+
+<p><!-- start ziffarticle //--><a href="http://www.eweek.com/article2/0,1759,718838,00.asp" >Get Directions</a><!-- end ziffarticle //--><p>
+
+<HR><P>
+<span class="headerlarge">eWEEK.com</span><P>
+
+Matthew Rothenberg<BR>
+Executive Editor, Ziff Davis Internet<BR>
+<A HREF="mailto:matthew_rothenberg@ziffdavis.com">matthew_rothenberg@ziffdavis.com</A><BR>
+(212) 503-5673<P>
+
+Rick Dagley<BR>
+Senior Editor<BR>
+<A HREF="mailto:rick_dagley@ziffdavis.com">rick_dagley@ziffdavis.com</A><BR>
+(781) 938-2628<P>
+
+David Morgenstern<BR>
+Senior Editor<BR>
+<A HREF="mailto:david_morgenstern@ziffdavis.com">david_morgenstern@ziffdavis.com</A><BR>
+(415) 547-8123<P>
+
+Sean Gallagher<BR>
+Senior Editor<BR>
+<A HREF="mailto:sean_gallagher@ziffdavis.com">sean_gallagher@ziffdavis.com</A><P>
+
+Steven J. Vaughan-Nichols<BR>
+Senior Editor<BR>
+<A HREF="mailto:StevenVaughan-Nichols@ziffdavis.com">StevenVaughan-Nichols@ziffdavis.com</A>
+<p> Chip Buchanan<br>
+  Senior Designer<br>
+  <a href="mailto:chip_buchanan@ziffdavis.com">chip_buchanan@ziffdavis.com</a><br>
+  (415) 547-8225
+<P>Matt Hicks<br>
+  Senior Writer<br>
+  <a href="mailto:matt_hicks@ziffdavis.com">matt_hicks@ziffdavis.com</a>
+<p> Ryan Naraine<br>
+  Senior Writer<br>
+  <a href="mailto:ryan_naraine@ziffdavis.com">ryan_naraine@ziffdavis.com</a>
+
+<P>Vikki Lipset<BR>
+  Associate Editor<BR>
+  <A HREF="mailto:vikki_lipset@ziffdavis.com">vikki_lipset@ziffdavis.com</A><BR>
+  (212) 503-5473
+<P>
+
+Don Sears<BR>
+Associate Editor, Ziff Davis Internet<BR>
+<A HREF="mailto:donald_sears@ziffdavis.com">donald_sears@ziffdavis.com</A><BR>
+(212) 503-4684<P>
+
+Lisa Vaas<BR>
+Associate Editor<BR>
+<A HREF="mailto:lisa_vaas@ziffdavis.com">lisa_vaas@ziffdavis.com</A><BR>
+(212) 503-4684<P>
+
+Katy Chase<BR>
+Copy Editor<BR>
+<A HREF="mailto:kathleen_chase@ziffdavis.com">kathleen_chase@ziffdavis.com</A><BR>
+(415) 547-8428
+
+<P>
+
+Jenni Miller<BR>
+Newsletter Editor<BR>
+<A HREF="mailto:jenni_miller@ziffdavis.com">jenni_miller@ziffdavis.com</A><P>
+
+
+
+
+<HR><P>
+<span class="headerlarge">eWEEK News</span><P>
+
+Scot Petersen<BR>
+Editor<BR>
+<A HREF="mailto:scot_petersen@ziffdavis.com">scot_petersen@ziffdavis.com</A><BR>
+(781) 938-2643<P>
+
+Chris Gonsalves<BR>
+Executive Editor, News<BR>
+<A HREF="mailto:chris_gonsalves@ziffdavis.com">chris_gonsalves@ziffdavis.com</A><BR>
+(781) 938-2633<P>
+
+Stan Gibson<BR>
+  Executive Editor<BR>
+<A HREF="mailto:stan_gibson@ziffdavis.com">stan_gibson@ziffdavis.com</A><BR>
+(781) 938-2632<P>
+
+Jeff Burt<BR>
+Senior Editor<BR>
+<A HREF="mailto:jeff_burt@ziffdavis.com">jeff_burt@ziffdavis.com</A><BR>
+(781) 938-2623<P>
+
+
+
+Caron Carlson<BR>
+Senior Editor<BR>
+<A HREF="mailto:caron_carlson@ziffdavis.com">caron_carlson@ziffdavis.com</A><BR>
+(703) 875-9443<P>
+
+Dennis Fisher<BR>
+  Senior Editor<BR>
+<A HREF="mailto:dennis_fisher@ziffdavis.com">dennis_fisher@ziffdavis.com</A><BR>
+(781) 938-2631<P>
+
+Peter Galli<BR>
+ Senior Editor<BR>
+<A HREF="mailto:peter_galli@ziffdavis.com">peter_galli@ziffdavis.com</A><BR>
+(415) 547-8495<P>
+
+Paula Musich<BR>
+Senior Editor<BR>
+<A HREF="mailto:paula_musich@ziffdavis.com">paula_musich@ziffdavis.com</A><BR>
+(541) 482-8853<P>
+
+Carmen Nobel<BR>
+Senior Editor<BR>
+<A HREF="mailto:carmen_nobel@ziffdavis.com">carmen_nobel@ziffdavis.com</A><BR>
+(781) 938-2641<P>
+
+Darryl K. Taft<BR>
+  Senior Editor<BR>
+<A HREF="mailto:darryl_taft@ziffdavis.com">darryl_taft@ziffdavis.com</A><BR>
+(443) 253-0063<P>
+
+Dennis Callaghan<BR>
+Senior Writer<BR>
+<A HREF="mailto:dennis_callaghan@ziffdavis.com">dennis_callaghan@ziffdavis.com</A><BR>
+(781) 938-2624<P>
+
+Renee Boucher Ferguson<BR>
+Senior Writer<BR>
+<A HREF="mailto:renee_ferguson@ziffdavis.com">renee_ferguson@ziffdavis.com</A><BR>
+(518) 580-8515<P>
+
+
+
+Brian Fonseca<BR>
+Senior Writer<BR>
+<A HREF="mailto:brian_fonseca@ziffdavis.com">brian_fonseca@ziffdavis.com</A><BR>
+(781) 938-2651<P>
+
+
+Shelley Solheim<BR>
+Staff Writer<BR>
+<A HREF="mailto:shelley_solheim@ziffdavis.com">shelley_solheim@ziffdavis.com</A><BR>
+(212) 503-5660<P>
+
+<HR><P>
+<span class="headerlarge">eWEEK Labs</span><P>
+
+Jim Rapoza<BR>
+Director<BR>
+<A HREF="mailto:jim_rapoza@ziffdavis.com">jim_rapoza@ziffdavis.com</A><BR>
+(781) 938-2652<br>
+<i><b>Beats:</b> Web authoring and development tools, Multimedia development, Document and content management, Portals and Knowledge Management, Browsers, Commerce and B2B applications, Application servers, Web servers, general Labs questions.</i>
+<p>
+
+Debra Donston<BR>
+Executive Editor<BR>
+<A HREF="mailto:debra_donston@ziffdavis.com">debra_donston@ziffdavis.com</A><BR>
+(781) 938-2629<P>
+
+Peter Coffee<BR>
+Technology Editor<BR>
+<A HREF="mailto:peter_coffee@ziffdavis.com">peter_coffee@ziffdavis.com</A><BR>
+(310) 371-8096<br>
+<i><b>Beats:</b> Business Intelligence, Development Tools, Database Servers, high-level and emerging technology analysis.</i>
+<p>
+Cameron Sturdevant<BR>
+  West Coast Technical Director<BR>
+<A HREF="mailto:cameron_sturdevant@ziffdavis.com">cameron_sturdevant@ziffdavis.com</A><BR>
+(415) 547-8224<br>
+<i><b>Beats:</b> Web site monitoring and performance analysis, Anti-Spam, networking management tools, systems management, remote management, ID systems, vulnerability scanners, Intrusion Detection Systems, Intrusion Prevention Systems, hacking tools, Grids and clusters.</i>
+<p>
+Henry Baltazar<BR>
+Senior Analyst<BR>
+<A HREF="mailto:henry_baltazar@ziffdavis.com">henry_baltazar@ziffdavis.com</A><BR>
+(415) 547-8221<br>
+<i><b>Beats:</b> Enterprise storage, storage hardware, backup, datawarehousing and disaster recovery, Utility computing - storage.</i>
+<p>
+Jason Brooks<BR>
+Senior Analyst<BR>
+<A HREF="mailto:jason_brooks@ziffdavis.com">jason_brooks@ziffdavis.com</A><BR>
+(415) 547 8222<br>
+<i><b>Beats:</b> Handhelds, client peripherals, Processors, Mobile software, Desktop operating systems, utilities, Network and server OS.</i>
+<p>
+
+Francis Chu<BR>
+Technical Analyst<BR>
+<A HREF="mailto:francis_chu@ziffdavis.com">francis_chu@ziffdavis.com</A><BR>
+(415) 547-8223<br>
+<i><b>Beats:</b> Testing tools and performance management, Blade servers, Server systems, Server Management, Virtual servers, Systems utilities, Desktop and client security, Utility computing - servers.</i>
+<p>
+
+Michael Caton<BR>
+Technical Analyst<BR>
+<A HREF="mailto:michael_caton@ziffdavis.com">michael_caton@ziffdavis.com</A><BR>
+(781) 938-2662<br>
+<i><b>Beats:</b> CRM, ERP, SFA, Help desk and service and support, Collaboration and Messaging systems, IM, Streaming Media, Videoconferencing, Email security, Utility computing - applications.</i>
+<p>
+
+Andrew Garcia<BR>
+Technical Analyst<BR>
+<A HREF="mailto:andrew_garcia@ziffdavis.com">andrew_garcia@ziffdavis.com</A><BR>
+(415) 547-8220<br>
+<i><b>Beats:</b> Networking hardware, Enterprise class wireless, Network and protocol managers, Patch Management, Directories, VPNs/firewalls, Encryption/PKI, VOIP.</i>
+<p>
+
+Anne Chen<BR>
+Senior Writer<BR>
+<A HREF="mailto:anne_chen@ziffdavis.com">anne_chen@ziffdavis.com</A><BR>
+(415) 547-8640<br>
+<i><b>Beats:</b> Standards and XML, Notebooks and tablets, Desktop PCs, Office suites, Desktop productivity software, Voice recognition, case studies and trend stories.</i>
+<p>
+
+Mary Stevens<BR>
+Managing Editor<BR>
+<A HREF="mailto:mary_stevens@ziffdavis.com">mary_stevens@ziffdavis.com</A><BR>
+(781) 938-2640<P>
+
+<HR><P>
+
+<span class="headerlarge">Letters To The Editor</span><P>
+
+eWEEK welcomes your comments. Please send them to:<P>
+
+Letters to the Editor<BR>
+<GEO TYPE="US">500 Unicorn Drive<br>
+Woburn, MA 01801</GEO><br>
+
+or e-mail at <A HREF="mailto:eweek@ziffdavis.com">eweek@ziffdavis.com</A>.<P>
+
+All letters must include name, address, company, title and telephone number. We reserve the right to edit letters for clarity and space. Individual responses and communications with columnists and staff are considered for publication unless specifically stated otherwise.<P>
+
+<HR><P>
+
+<span class="headerlarge">Reusing Copyright Material</span><P>
+
+Reproduction in whole or in part without permission is prohibited. For permission to reuse material in this publication &#91;or on this website&#93; or to use our logo, contact Ziff Davis Media's Rights and Permissions Manager.<P>
+Olga Gonopolsky<BR>
+Ziff Davis Media Inc.<BR>
+<GEO TYPE="US">28 East 28th Street<BR>
+New York, NY 10016</GEO><BR>
+Tel: (212) 503-5438<BR>
+Fax: (212) 503-5420<BR>
+<A HREF="mailto:permissions@ziffdavis.com">permissions@ziffdavis.com</A><P>
+For reprints, contact Linda Ragusin via e-mail, <a href="mailto:lragusin@fostereprints.com">lragusin@fostereprints.com;</a> phone, (866) 879-9144. 
+
+<HR><P>
+
+<span class="headerlarge">eWeek Editorial Calendar</span><P>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber1" width="447" height="1">
+  <tr>
+    <td width="427" height="28" colspan="3" bgcolor="#FFCC00">
+    <p align="center"><b>eWEEK Edit Calendar 2005 </b></td>
+  </tr>
+  <tr>
+    <td width="108" height="28" bgcolor="#FFCC00"><b><font size="2">Issue Date</font></b></td>
+    <td width="119" height="28" bgcolor="#FFCC00"><b>
+    <font style="font-size: 9pt">eWEEK</font></b><font style="font-size: 9pt"><b> 
+    Labs</b><br>
+    <br>
+    <br>
+    Deb Donston<br>
+    (781) 938-2629</font><font size="2"><b><br>
+    </b></font><b><font style="font-size: 9pt">
+    <a href="mailto:debra_donston@ziffdavis.com">debra_donston@ziffdavis.com</a></font></b></td>
+    <td width="109" height="28" bgcolor="#FFCC00"><font style="font-size: 9pt">
+    <b>System Solutions</b><br>
+    Mike Zimmerman<br>
+    (781) 938-2657</font><font size="2"><b><br>
+    </b></font><b><font style="font-size: 9pt">
+    <a href="mailto:mike_zimmerman@ziffdavis.com">mike_zimmerman@ziffdavis.com</a></font></b><p>
+    <font style="font-size: 9pt"><b>Network Solutions</b></font></p>
+    <p><font style="font-size: 9pt">Scot Peterson<br>
+    (781) 938-2643</font><b><font size="1"> </font><font style="font-size: 9pt">
+    <a href="mailto:scot_petersen@ziffdavis.com">scot_petersen@ziffdavis.com</a></font></b></td>
+  </tr>
+    <tr>
+    <td width="108" height="18" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Jan. 17 </span></td>
+    <td width="119" height="18" bgcolor="#C0C0C0"><span style="font-size: 9pt">Server management</span></td>
+    <td width="109" height="18" bgcolor="#C0C0C0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="108" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Jan. 24</span></td>
+    <td width="119" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt">
+    Privacy</span></td>
+    <td width="109" height="7" bgcolor="#C0C0C0">Manufacturing</td>
+  </tr>
+  <tr>
+    <td width="108" height="13" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Jan. 31</span></td>
+    <td width="119" height="13" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Mobile computing</span></td>
+    <td width="109" height="13" bgcolor="#C0C0C0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="108" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Feb. 7</span></td>
+    <td width="119" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Storage</span></td>
+    <td width="109" height="7" bgcolor="#C0C0C0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="108" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Feb. 14</span></td>
+    <td width="119" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Web services management</span></td>
+    <td width="109" height="7" bgcolor="#C0C0C0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="108" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Feb. 21</span></td>
+    <td width="119" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Business process management</span></td>
+    <td width="109" height="7" bgcolor="#C0C0C0">Retail</td>
+  </tr>
+  <tr>
+    <td width="108" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Feb. 28</span></td>
+    <td width="119" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Wireless</span></td>
+    <td width="109" height="7" bgcolor="#C0C0C0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="108" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      March 7 </span></td>
+    <td width="119" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Workstations</span></td>
+    <td width="109" height="7" bgcolor="#C0C0C0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="108" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      March 14</span></td>
+    <td width="119" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      TBD</span></td>
+    <td width="109" height="7" bgcolor="#C0C0C0">&nbsp;</td>
+  </tr>
+   <tr>
+    <td width="108" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      March 21</span></td>
+    <td width="119" height="7" bgcolor="#C0C0C0"><span style="font-size: 9pt"> 
+      Hacking demystified</span></td>
+    <td width="109" height="7" bgcolor="#C0C0C0">&nbsp;</td>
+  </tr>
+   </table>
+<p><br>
+&nbsp; <br>
+&nbsp; </td>
+</tr>
+</table>
+</p>
+<table width="100%">
+  <tr>
+    <td align="left" valign="top" nowrap width="50%">&nbsp; </td>
+    <td align="right" valign="top" nowrap width="50%">&nbsp;&nbsp;&nbsp; </td>
+  </tr>
+</table>
+
+<P><BR>&nbsp; <BR>&nbsp; 
+</P>
+	</td>
+</tr>
+</table>
+
+<table width="100%">
+<tr>
+  <td align="left" valign="top" nowrap width="50%">
+  
+  	&nbsp;
+  
+  </td>
+  <td align="right" valign="top" nowrap width="50%">&nbsp;
+  
+  &nbsp;
+  </td>
+</tr>
+</table>
+
+
+        <div align="center">
+        <span class="dot">
+        <img src="/images/ew_grey_pixel.gif" width="380" height="1">
+            
+<script language="JavaScript">
+function OpenSaveArticleWindow(querystring)
+{
+LeftPosition = (screen.width) ? (screen.width)/10 : 0;
+TopPosition = (screen.height) ? (screen.height)/10 : 0;
+settings = 'menubar=no,height=400,width=500'
+hWin = window.open("/save_article/" + querystring, "SaveArticle", settings, false);
+hWin.focus();
+if (hWin.opener == null) hWin.opener = self;
+}
+
+function OpenEmailArticleWindow(querystring)
+{
+	LeftPosition = (screen.width) ? (screen.width)/10 : 0;
+	TopPosition = (screen.height) ? (screen.height)/10 : 0;
+	settings = 'menubar=no,height=575,width=365,resizable=yes,scrollbars=yes'
+	hWin = window.open("/email_article/" + querystring, "SaveArticle", settings, true);
+	hWin.focus();
+	if (hWin.opener == null) hWin.opener = self;
+}
+
+
+
+</script>
+
+ <table cellpadding="0" cellspacing="0" border="0">
+
+<form action="http://www.eweek.com/print_article2/0,2533,a=15220,00.asp" method="POST" name="article_icons">
+	<tr>
+ 	   
+       <td align="left"><input type="hidden" name="hidPrint" value="true"><input type="image" src="/images/ew_print_icon.gif" alt="Print" border="0" align="absmiddle"></td>
+	   <td><img src="/images/ew_spacer.gif" width="8" height="1"></td>
+	   <td align="left"><a href="JavaScript:OpenEmailArticleWindow('?a=15220&s=26710&c=/');" class="link6"><img src="/images/ew_email_icon.gif" alt="Email" border="0" align="absmiddle"></a></td>
+
+	
+	<!--Reprint Links-->
+<td><img src='/images/ew_spacer.gif' width='10' height='1'></td><td align='left'><a href='http://www.icopyright.com/3.54?icx_id=15220&icx_pricing=online' onclick="window.open(this.href,'Reprints','width=565,height=650,scrollbars=no,resizable=yes');return false;" class='link6'><img src='/images/ew_reprint_icon2.gif' alt='Order Reprints of this Article.' border='0'align='absmiddle'></a></td>
+		</form>
+	
+	</tr>
+ </table>
+        <img src="/images/ew_grey_pixel.gif" width="380" height="1">
+        </span>
+        </div>
+        <br>
+		<table border="0" cellspacing="0" cellpadding="3"><tr valign="top"><td align="left" colspan="2">&nbsp;</td></tr><tr valign="top"><td align="left"><a target="_blank" href="http://rssnewsapps.ziffdavis.com/tech.xml"><img src="/images/ew_xml_orange.gif" width="36" height="14" border="0" alt="XML" align="left" /></a></td><td align=left><div class="Rss_Content"><b>Add</b> eWEEK Technology News to your <a target="_blank" href="http://rssnewsapps.ziffdavis.com/tech.xml">RSS newsreader</a> or <a target="_blank" href="http://add.my.yahoo.com/rss?url=http://rssnewsapps.ziffdavis.com/tech.xml">My Yahoo!</a></div></td></tr></table>
+<a name="talkback">
+
+
+
+<br>
+
+
+<br />
+
+
+	<script language="JavaScript">  
+	<!--
+	function ws(w){window.status=w;return true;}
+	
+	function google_ad_request_done(google_ads) 
+	{  
+		var i;
+		
+		
+
+		document.write('<div class="sponsors_container"><div class="sponsors">' +
+		
+			
+				'<img src="/images/ew_ad_gr.gif" width="75" height="9" class="left_ad_image">' +
+				'<p class="right_text"><a href="http://www.google.com/ads_by_google.html">' + 
+					'Ads By Google' + 
+				'</a></p>' +
+			
+		
+			'<img src="/images/ew_marketplace_header.gif" class="left_ad_type_image">' +
+			
+			
+			
+			
+			'<ul>');
+		
+		
+		
+		for(i = 0; i < google_ads.length; ++i) 
+		{    
+	
+			
+				document.write('<li><p class="sponsor_header">');
+				document.write('<a href="' + google_ads[i].url + '" onMouseOver="return ws(\'' + google_ads[i].visible_url + '\')">' +
+					google_ads[i].line1 + '</p>');
+				
+				document.write('<p class="sponsor_text">' +
+					'<a href="' +  google_ads[i].url + '" onMouseOver="return ws(\'' + google_ads[i].visible_url + '\')" STYLE="text-decoration: none"><font color=#333333>' + google_ads[i].line2 + ' ' + google_ads[i].line3 +  '<br />' + google_ads[i].visible_url + '</font></a>' + 
+		  			'</p></li>');
+		
+		}
+		
+			
+			document.write('</ul></div></div>');
+	
+		
+	} 
+	// -->
+	</script>
+	
+	
+	
+
+	<script language="JavaScript">
+	<!--         
+	
+	         google_ad_client 	= 'ziffdavis_js';         
+			 google_ad_output 	= 'js';         
+			 google_max_num_ads = 5;                 
+			 google_safe      	= 'high';
+			 google_ad_channel  = 'eweek-1';
+		
+	-->
+	</script>
+	<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+	 
+<!-- Vignette V6 Wed Mar 02 09:48:48 AM 2005 -->
+<!--WEB 3--><table width="424" cellspacing="0" cellpadding="0">
+<tr><td><a href="http://ad.doubleclick.net/clk;13683874;5913751;s?http://www.pcmag.com/shopping/0,,c=4&h=306&s=2,00.asp"><!-- start ziffimage //--><img width="148" height="48" border="0" src="http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=89538,00.gif" alt="dell_bsd_mod_left""><!-- end ziffimage //--></a></td>
+	<td><a href="http://ad.doubleclick.net/clk;13756698;5913751;x?http://www.pcmag.com/shopping/0,,c=1&h=300&s=2,00.asp"><!-- start ziffimage //--><img width="126" height="48" border="0" src="http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=89539,00.gif" alt="dell_bsd_mod_middle""><!-- end ziffimage //--></a></td>
+	<td><a href="http://ad.doubleclick.net/clk;13691963;5913751;q?
+http://www.pcmag.com/shopping/0,,c=5&h=1540&s=2,00.asp"><!-- start ziffimage //--><img width="150" height="48" border="0" src="http://common.ziffdavisinternet.com/util_get_image/9/0,1311,i=92222,00.gif" alt="Toshiba eWeek Right""><!-- end ziffimage //--></a></td></tr></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td colspan="3"><img src="/images/ew_spacer.gif" height="10" width="1"></td></tr>
+<tr><td><img src="/images/ew_spacer.gif" height="1" width="5"></td>
+<td class="BorderBG" width="100%"><img src="/images/ew_spacer.gif" height="1" width="1"></td>
+<td><img src="/images/ew_spacer.gif" height="1" width="5"></td></tr>
+<tr><td colspan="3"><img src="/images/ew_spacer.gif" height="10" width="1"></td></tr></table>
+
+<!--featuredpartner sites table start-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="50%" height="100%" style="border-top: 1px solid;border-left: 1px solid; border-right: 1px solid; border-bottom: 1px solid">
+<!--start left side-->
+<table width=100% border=0 cellspacing=0 cellpadding=0  bgcolor="E6E6E6"><tr>
+<tr><td valign="bottom"><!-- start ziffimage //--><img width="167" height="13" border="0" src="http://common.ziffdavisinternet.com/util_get_image/7/0,1311,i=70398,00.gif" alt="Ziff Davis Partner Sites""><!-- end ziffimage //--></td></tr>
+<tr> <td>
+<span class="Module_Content"><li><a href="http://devsource.ziffdavis.com" class="Module_Content">Visual Studio &amp; .Net Dev Center</a><br>
+<li><a href="http://ad.doubleclick.net/clk;12352373;5913751;e?http://hpsmartbusiness.ziffdavis.com" class="Module_Content">Free Info on Tech Solutions</a>
+<li><a href="http://ad.doubleclick.net/clk;14351952;5913751;i?http://webmeetingsolutions.ziffdavis.com" class="Module_Content">Web Meeting Solutions Center</a>
+</span> </td></tr>
+<tr><td><img src="/images/ew_spacer.gif" height="3"></td></tr></table>
+<!--end left side-->
+</td>
+<td width="10"><img src="/images/ew_spacer.gif" width="10" height="1"></td>
+<td width="50%" height="100%" style="border-top: 1px solid;border-left: 1px solid; border-right: 1px solid; border-bottom: 1px solid">
+<!--start right side-->
+<table width=100% border=0 cellspacing=0 cellpadding=0  bgcolor="E6E6E6"><tr>
+<tr><td valign="bottom"><!-- start ziffimage //--><img width="167" height="13" border="0" src="http://common.ziffdavisinternet.com/util_get_image/7/0,1311,i=70397,00.gif" alt="Ziff Davis Featured Sites""><!-- end ziffimage //--></td></tr>
+<tr> <td> <span class="Module_Content">
+<li><a href="http://ad.doubleclick.net/clk;6441420;5913751;d?http://channelzone.ziffdavis.com" class="Module_Content">IT Reseller News & Resources</a><br>
+<li><a href="http://ad.doubleclick.net/clk;9606364;5913751;q?http://www.eweek.com/category2/0,1738,1237893,00.asp" class="Module_Content">eWEEK.com Storage Topic Center</a><br>
+<li><a href="http://www.pdfzone.com/">PDFzone</a>
+</span></td></tr>
+<tr><td><img src="/images/ew_spacer.gif" height="3"></td></tr></table>
+<!--end left side-->
+</td></tr></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td colspan="3"><img src="/images/ew_spacer.gif" height="10" width="1"></td></tr>
+<tr><td><img src="/images/ew_spacer.gif" height="1" width="5"></td>
+<td class="BorderBG" width="100%"><img src="/images/ew_spacer.gif" height="1" width="1"></td>
+<td><img src="/images/ew_spacer.gif" height="1" width="5"></td></tr>
+<tr><td colspan="3"><img src="/images/ew_spacer.gif" height="10" width="1"></td></tr></table><table border="0" cellpadding="0" cellspacing="0" width="">
+  <tr><td align="left" width="38%" valign="top" style="border: 1px solid #003366">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" ID="Table1">
+	<tr><td colspan="4" class="sub_ew_bluebg"><img src="/images/ew_subscription_services.gif" width="276" height="15"></td></tr>
+	<tr><td colspan="4" bgcolor="#FFFFFF"><img src="/images/spacer.gif" width="1" height="1"></td></tr>
+	<tr><td colspan="4" class="sub_ew_bluebg"><img src="/images/spacer.gif" width="1" height="1"></td></tr>
+	<tr align="left" valign="top"><td width="5"><img src="/images/spacer.gif" width="5" height="1"></td>		
+		<td><img src="/images/ew_subscription_subhead.gif" width="95" height="27"><br>
+			<form  method="post" action="http://www.omeda.com/ziff/ewk/ewk.cgi?&t=whback&p=embed" onsubmit="window.open('','form_results','width=700,height=600,scrollbars,status');" target="form_results" name="order" ID="Form1">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+		<td>
+			<div style="font-size:10px;color:#666666;margin:3 0 3 3">Fill-in form below to apply.</div></td>
+	</tr>
+	<tr>
+		<td>
+			</td>
+	</tr>
+	<tr>
+		<td>
+			<div style="margin-left:3px">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Newsletter_Content">
+				<tr>
+					<td width="33%">
+						First Name:<br>
+						<input type="Text" name="FNAME" size="10" maxlength="10" ID="Text1" tabindex="1" style="width:75px"></td>
+					<td>
+						<img src="/images/ew_spacer.gif" height="1" width="5"></td>
+					<td width="33%">
+						Last Name:<br>
+						<input type="Text" name="LNAME" size="10" maxlength="18" ID="Text2" tabindex="2" style="width:75px"></td>
+					<td>
+						<img src="/images/ew_spacer.gif" height="1" width="5"></td>
+					<td width="33%">
+						Title:<br>
+						<input type="Text" name="TITLE" size="10" maxlength="18" ID="Text4" tabindex="3" style="width:75px"></td>
+				</tr>
+				<tr>
+					<td>
+						Company:<br>
+						<input type="Text" name="COMPANY" size="10" maxlength="28" ID="Text3" tabindex="4" style="width:75px"></td>
+					<td>
+						<img src="/images/ew_spacer.gif" height="1" width="1"></td>
+					<td>
+						Address:<br>
+						<input type="Text" name="ADDRESS2" size="10" maxlength="28" ID="Text8" tabindex="5" style="width:75px"></td>
+					<td>
+						<img src="/images/ew_spacer.gif" height="1" width="1"></td>
+					<td>
+						City:<br>
+						<input type="Text" name="CITY" size="10" maxlength="28" ID="Text9" tabindex="6" style="width:75px">
+						</td>
+				</tr>
+				<tr>
+					<td>
+						State:<br>
+						<select NAME="STATE" SIZE="1" tabindex="7" ID="Select1">
+							<option VALUE="SELECT ONE"> </option><option VALUE="AL">AL</option>
+							<option VALUE="AK">AK</option><option VALUE="AZ">AZ</option>
+							<option VALUE="AR">AR</option><option VALUE="CA">CA</option>
+							<option VALUE="CO">CO</option><option VALUE="CT">CT</option>
+							<option VALUE="DE">DE</option><option VALUE="DC">DC</option>
+							<option VALUE="FL">FL</option><option VALUE="GA">GA</option>
+							<option VALUE="GU">GU</option><option VALUE="HI">HI</option>
+							<option VALUE="ID">ID</option><option VALUE="IL">IL</option>
+							<option VALUE="IN">IN</option><option VALUE="IA">IA</option>
+							<option VALUE="KS">KS</option><option VALUE="KY">KY</option>
+							<option VALUE="LA">LA</option><option VALUE="ME">ME</option>
+							<option VALUE="MD">MD</option><option VALUE="MA">MA</option>
+							<option VALUE="MI">MI</option><option VALUE="MN">MN</option>
+							<option VALUE="MS">MS</option><option VALUE="MO">MO</option>
+							<option VALUE="MT">MT</option><option VALUE="NE">NE</option>
+							<option VALUE="NV">NV</option><option VALUE="NH">NH</option>
+							<option VALUE="NJ">NJ</option><option VALUE="NM">NM</option>
+							<option VALUE="NY">NY</option><option VALUE="NC">NC</option>
+							<option VALUE="ND">ND</option><option VALUE="OH">OH</option>
+							<option VALUE="OK">OK</option><option VALUE="OR">OR</option>
+							<option VALUE="PA">PA</option><option VALUE="PR">PR</option>
+							<option VALUE="RI">RI</option><option VALUE="SC">SC</option>
+							<option VALUE="SD">SD</option><option VALUE="TN">TN</option>
+							<option VALUE="TX">TX</option><option VALUE="UT">UT</option>
+							<option VALUE="VT">VT</option><option VALUE="VI">VI</option>
+							<option VALUE="VA">VA</option><option VALUE="WA">WA</option>
+							<option VALUE="WV">WV</option><option VALUE="WI">WI</option>
+							<option VALUE="WY">WY</option><option VALUE="SELECT ONE">--</option>
+							<option VALUE="AE">AE</option><option VALUE="AP">AP</option>
+							<option VALUE="SELECT ONE">--</option><option VALUE="54">AB</option>
+							<option VALUE="55">BC</option><option VALUE="56">MB</option>
+							<option VALUE="57">NB</option><option VALUE="58">NF</option>
+							<option VALUE="59">NS</option><option VALUE="60">NT</option>
+							<option VALUE="61">ON</option><option VALUE="62">PE</option>
+							<option VALUE="63">QC</option><option VALUE="64">SK</option>
+							<option VALUE="65">YT</option>
+						</select>					
+					</td>
+					<td>
+						<img src="/images/ew_spacer.gif" height="1" width="1"></td>
+					<td>
+						Zip Code:<br>
+						<input type="Text" name="ZIPCODE" size="3" maxlength="7" ID="Text5"  tabindex="8" style="width:75px"></td>
+					<td>
+						<img src="/images/ew_spacer.gif" height="1" width="1"></td>
+					<td>
+						E-mail:<br>
+						<input type="Text" name="EMAIL_ADDRESS" size="10" maxlength="28" ID="Text6" tabindex="9" style="width:75px"></td>
+				</tr>
+			</table>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<input type="Image" src="/images/ew_submit_wht.gif" name="APPLY" value="Submit" tabindex="10" ID="Submit1" style="margin: 4 0 4 0"></td>
+	</tr>
+	</table></ziffhtml></form></td>
+		<td width="10"><img src="/images/spacer.gif" width="10" height="1"></td>
+		<td><!--Begin Cover Image-->
+			<div style="margin: 10 0 10 0"><!-- start ziffimage //--><img width="67" height="89" border="0" src="http://common.ziffdavisinternet.com/util_get_image/5/0,1311,i=51908,00.jpg" alt="Cover: October 27 Filter""><!-- end ziffimage //--></div>
+			<!--End Cover Image-->
+			
+			<!--Begin Bullets-->
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="sub_ew_linktext" ID="Table2">
+	<tr align="left" valign="top"><td><img src="/images/ew_subscription_arrow.gif" width="8" height="9" vspace="3" hspace="2"></td>
+			<td><a href="http://www.omeda.com/ziff/ewk/ewk.cgi?&t=whback&p=lzrenew" class="sub_ew_linktext">Renew today</a></td></tr>
+	<tr align="left" valign="top"><td><img src="/images/ew_subscription_arrow.gif" width="8" height="9" vspace="3" hspace="2"></td>
+			<td><a href="http://www.zinio.com/delivery?issn=1530-6283&of=Pf2&bd=1&rf=ewksample" class="sub_ew_linktext">Try digital eWEEK!</a></td></tr>
+	<tr align="left" valign="top"><td><img src="/images/ew_subscription_arrow.gif" width="8" height="9" vspace="3" hspace="2"></td>
+			<td><a href="http://service.eweek.com" class="sub_ew_linktext">Subscription Help</a></td>			</tr></table>
+			<!--End Bullets-->
+		</td></tr></table>
+
+	</td></tr></table><br><table width="100%" border="0" cellpadding="4" cellspacing="0" style="border: 1px solid">
+<tr class="AdModule_BG"><td colspan="2" class="AdModule_Hdr">
+<b><font color="CE0E0E">FREE</font> ZIFF DAVIS MEDIA ESEMINARS AT <font color="CE0E0E">ESEMINARSLIVE.COM</font></b>
+</td></tr>
+
+<tr>
+<td width="" valign="top">
+<div style="; border-right: thin solid silver;">
+<div class="AdModule_Content">
+ 
+
+<li><b>
+March 8, 4 p.m. ET<br>
+<a href="http://www.eseminarslive.com/article2/0,2290,1764858,00.asp?partnerref=bot">
+What You Need to Know about Remote Access and HIPAA Compliance</a></b>
+<i>Sponsored by Citrix Online</i>
+</li>
+
+<li><b>
+March 3, 2 p.m. ET<br>
+<a href="http://www.eseminarslive.com/article2/0,2290,1758488,00.asp?partnerref=bot">
+Mapping IT Costs &#150; You Are Here! X</a></b> with Michael Krieger.
+<i>Sponsored by Unisys & Intel</i>
+</li>
+
+<li><b>
+March 8, 2 p.m. ET<br>
+<a href="http://www.eseminarslive.com/article2/0,2290,1763394,00.asp?partnerref=bot">
+Ready, Set, Standardize: Tips and Techniques for Reversing IT Chaos</a></b> with Michael Krieger.
+<i>Sponsored by Unisys & Intel</i>
+</li>
+ 
+<li><b>
+March 15, 4 p.m. ET<br>
+<a href="http://www.eseminarslive.com/article2/0,2290,1764934,00.asp?artnerref=bot">
+IT Governance: The Road to Higher Profit</a></b> with Michael Krieger.
+<i>Sponsored by Unisys</i>.</li>
+ 
+</td>
+<td width="50%" valign="top">
+                                    
+<div class="AdModule_Content">
+<a href="http://www.enterprise.eseminarslive.com/eng/nonAuthGeneric/redirect.cfm?sectionID=ziffDavis/zdregistration.cfm&cl=y&tag=vts9"><!-- start ziffimage //--><img width="181" height="56" border="0" src="http://common.ziffdavisinternet.com/util_get_image/9/0,1311,i=98140,00.gif" alt="Q1 Tradeshow Logo""><!-- end ziffimage //--></a><br>
+Ziff Davis Internet eSeminars kicks off its 2005 Virtual Tradeshow series with <a href="http://www.enterprise.eseminarslive.com/eng/nonAuthGeneric/redirect.cfm?sectionID=ziffDavis/zdregistration.cfm&cl=y&tag=vts9">The Enterprise Solutions Virtual Tradeshow</a>, March 30-31. Keynotes will be delivered by Gordon Eubanks, former CEO/President of Symantec and current CEO/President of Oblix, and Rock Regan, former CIO of the State of Connecticut. Industry experts will address the most pressing enterprise IT issues such as regulatory compliance, security, storage, Grid networks, mobile solutions, Linux and outsourcing.
+</div>
+
+<div align="right" valign="bottom">
+<a href="http://www.enterprise.eseminarslive.com/eng/nonAuthGeneric/redirect.cfm?sectionID=ziffDavis/zdregistration.cfm&cl=y&tag=vts9" class="AdModule_Content">Register Today!</a>
+ 
+</div>
+
+</td>
+</tr>
+</table>
+ 
+<!-- end eSeminars--><!-- start side by side Ad module -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="50%" height="100%" style="border-top: 1px solid;border-left: 1px solid; border-right: 1px solid; border-bottom: 1px solid">
+
+<!---- Start left side ---->
+
+<table width="100%" height="100%" border="0" cellpadding="3" cellspacing="0" style="border: 0px solid">
+
+<tr class="AdModule_BG">
+
+<td class="AdModule_Hdr">
+
+<b>FREE WHITE PAPER
+</b>
+
+</td></tr>
+<tr><td>
+<span class="AdModule_ContentLarge">
+<font face="Verdana" size="2">
+<a href="http://ad.doubleclick.net/clk;14394844;5913751;p?http://webmeetingsolutions.ziffdavis.com/register.html"> <b>
+Grow Your Business with Real-time Collaboration Tools</a>
+</b>
+</font>
+<BR><BR>
+<font face="Verdana" size="1">
+For today's business, reducing travel time can mean enormous savings in operating costs and a substantial increase in employee productivity. With extremely effective communication and interactive tools from WebEx, companies are keeping their global workers connected with customers and colleagues while gaining a financial competitive edge. <b></font>
+<font face="Verdana" size="2">
+<a href="http://ad.doubleclick.net/clk;14394844;5913751;p?http://webmeetingsolutions.ziffdavis.com/register.html"> 
+<br><br>
+See how your business can benefit! </a>
+</b>
+</font>
+
+</span>
+
+</td></tr>
+
+<tr><td valign="bottom">
+
+<P align="right"><span class="AdModule_Content">
+
+>> brought to you by WebEx</span> 
+
+</td></tr>
+
+</table>
+
+<td width="10"><img src="/images/pcm_spacer.gif" width="10" height="1"></td>
+
+<td width="50%" height="100%" style="border-top: 1px solid;border-left: 1px solid; border-right: 1px solid; border-bottom: 1px solid">
+
+
+<!-- End left/ Start right side -->
+
+<table width="100%" height="100%" border="0" cellpadding="3" cellspacing="0" style="border: 0px solid">
+<tr class="AdModule_BG"><td class="AdModule_Hdr"><b>DOWNLOADABLE TOOLS FOR I.T. 
+</font></b></td></tr>
+<tr><td valign="">
+<span class="AdModule_ContentLarge">
+
+<b>New Downloads from Baseline Help You Calculate ROI, Make Better Tech Decisions   
+
+</span>
+<span class="AdModule_Content"> 
+<ul>
+
+<li><a href="http://www.baselinemag.com/article2/0,1397,1679718,00.asp">Cost Out a Wireless Network </a>
+<li><a href="http://www.baselinemag.com/article2/0,1397,1648903,00.asp">Project Sarbanes-Oxley Impact</a> 
+<li><a href="http://www.baselinemag.com/article2/0,1397,1630979,00.asp">Plan a Electronic Document Management System</a> 
+<li><a href="http://www.baselinemag.com/article2/0,1397,1633155,00.asp">Add Up the Cost of Spam (and a Spam Filter)</a>
+</ul>
+</font>
+</span>
+</td></tr>
+<tr><td valign="bottom"><span class="AdModule_Content">
+
+&nbsp;<P align="right"><font face="Verdana" size="1">See More Tools! <br>
+<a href="http://www.baselinemag.com/category2/0,1426,655834,00.asp">Planners</a>
+| <a href="http://www.baselinemag.com/category2/0,1426,655835,00.asp">Calculators</a>
+| <a href="http://www.baselinemag.com/category2/0,1426,655836,00.asp">Quizzes</a>
+| <a href="http://www.baselinemag.com/article2/0,1397,1627691,00.asp">All</a></b> </a</font>
+</span></td></tr></table>
+</td></tr></table>
+<!-- end side by side Ad module -->	
+	
+				<div id="bottom">
+				
+				
+<table border="0" cellpadding="0" cellspacing="0" width="615">
+	<tr><td colspan="3"><img src="/images/ew_spacer.gif" height="10" width="1"></td></tr>
+	<tr>
+		<td><img src="/images/ew_spacer.gif" height="1" width="5"></td>
+		<td class="BorderBG" width="100%"><img src="/images/ew_spacer.gif" height="1" width="1"></td>
+		<td><img src="/images/ew_spacer.gif" height="1" width="5"></td>
+	</tr>
+	<tr><td colspan="3"><img src="/images/ew_spacer.gif" height="10" width="1"></td></tr>
+</table>
+
+				
+				
+				<!-- Begin Sponsor Links -->
+	<!-- Vignette V6 Wed Mar 02 11:40:11 AM 2005 -->
+<!--WEB 3-->	
+
+	<div class="sponsors_container">
+			<div class="sponsors">
+				<img src="/images/ew_ad_gr.gif" width="75" height="9" class="left_ad_image">
+				<img src="/images/ew_intel_header.gif" class="left_ad_type_image">
+				
+				<ul class="intel_links">
+
+<li>
+<A HREF="http://ad.doubleclick.net/clk;13609763;5913751;n?http://www.pcmag.com/shopping/0,,c=1,00.asp">Shop Now! - Dell Home Solutions Center</A>
+</li>
+
+<li>
+<A HREF="http://ad.doubleclick.net/clk;14446468;6706301;h?http://www.computers.us.fujitsu.com/store/index_FLASH.shtml
+ "> Fujitsu notebooks and Tablet PCs- Official Site</A>
+</li>
+
+<li>
+<A HREF="
+http://ad.doubleclick.net/clk;13607222;5913751;b?http://www.buympc.com/intelshowcase">Build your custom desktop or notebook now at MPC!</A>
+</li>
+
+<li>
+<A HREF="http://ad.doubleclick.net/clk;13683864;5913751;r?http://www.pcmag.com/shopping/0,,c=3&h=305,00.asp">Dell Small Business Products</A>
+</li>
+
+
+<li>
+<A HREF="http://ad.doubleclick.net/clk;13691968;5913751;v? http://www.toshibadirect.com/td/b2c/ebtext.to?page=699offer&seg=HHO&src=BKEM&cm_mmc=zdi_content-_-699_intelshowcase_textlinks-_-text-_-intelshowcase_textlinks">Save &#36;200! Toshiba Satellite A60 - Now &#36;699.</A>
+</li>
+
+
+				</ul>
+			</div>
+		</div>		<div class="sponsors_container">
+			<div class="sponsors">
+			
+				<img src="/images/ew_sponsors_header.gif" class="left_ad_type_image">
+				
+				<ul class="sponsor_links">
+
+<!--Dell SMB BSD - Q4-->
+<li>
+<A 
+
+HREF="http://ad.doubleclick.net/clk;13683892;5913751;s?http://landingstrip.dell.com/landingstrip/ls.asp?CID=6920&LID=185327&DGC=BA&DGStor=BSD&DGSite=ZIF&Conum=12&K=MON&DURL=http://www1.us.dell.com/content/topics/segtopic.aspx/banner_jump_dsktp?c%3Dus%26cs%3D04%26l%3Den%26s%3Dbsd">FREE Memory, Big
+Savings on Select Dell PCs!
+
+</a></li>
+
+
+
+<!--Dell eCatalog CPC - take down 4/27/05-->
+<li>
+<A 
+
+HREF="http://ad.doubleclick.net/clk;13719697;5913751;v?http://landingstrip.dell.com/landingstrip/ls.asp?CID=6923&LID=181134&DGC=EC&DGStor=BSD&DGSite=ZIF&Conum=12&K=ECAT&DURL=http://www1.us.dell.com/content/topics/segtopic.aspx/ecatalog_jump?c%3Dus%26cs%3D04%26l%3Den%26s%3Dbsd">
+Shop the Dell E-Catalog! Easy, convenient, online!
+</a></li>
+
+
+<!--App River - take down 3/31/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;14555382;6374559;t?http://www.appriver.com/landing1/default.asp?adid=5000">
+Trap Spam and Fraud Before They Trap You: But How?
+</a></li>
+
+
+<!-- MIcrosoft VS.Net Devsource- take down 6/30/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/click;h=v2|3495|0|0|%2a|q;12080627;0-0;0;10523245;31-1|1;7688721|7706617|1;;%3fhttp://msdn.mi
+crosoft.com/vstudio/se/default.aspx">
+Visual Studio&#174; .NET Special Edition &#150; Upgrade now.
+</a></li>
+
+
+
+
+<!-- ADIC- take down 4/30/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;12103850;10512803;j?http://www2.adic.com/pvx_glasshouse/form.cfm?lead=WE-0110">PNEW Glasshouse White Paper from ADIC&#174; : Pathlight VX: A Truly Integrated VT</a></li>
+
+
+
+<!-- DICE- take down 3/31/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13254318;5913751;f?http://seeker.dice.com/seeker.epl?rel_code=1102&op=2">Dice - 59,000 tech jobs available now
+</a></li>
+
+<!-- APC - take down 3/31/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13167034;5913751;d?http://www.apcc.com/go/promo/whitepapers/form.cfm?tsk=w837y&thepromo=7">Free White Paper: Solutions for rack system challenges!
+</a></li>
+
+
+<!-- Ciphertrust - take down 3/31/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13192046;5913751;e?http://www.ciphertrust.com/files/forms/landing_template.php?sp= ZDQ1_eWeekTextLink">Win the Battle Against Viruses: Learn How</a></li>
+
+
+<!-- Unysis Wave 1- take down 3/31/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13204336;5913751;a?http://www.unisys3d.com">Learn to Cut Data Center Costs at Unisys3D.com</a></li>
+
+
+<!-- Shavlik- take down 3/31/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13255005;5913751;z?http://www.shavlik.com/pDownloadForm4.aspx">Free Security Patch Management Software - Shavlik HFNetChkPro!</a></li>
+
+<!-- IBM Tivoli- take down 2/28/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13334795;10762361;e?http://www.ibm.com/software/info/middleware/r/productivity">IBM Middleware for productivity.  That's On Demand Business. <a></li>
+
+<!-- Oracle Grid- take down 3/14/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13336233;10685851;b?http://www.oracle.com/go/?&Src=2004758&Act=618">See Qualcomm, EPL, and Deutsche Post on the Oracle Grid. <a></li>
+
+
+
+<!-- Microsoft WSS- take down 3/14/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/click;h=v2|343D|0|0|%2a|o;9819551;0-0;0;9716982;31-1|1;6290796|6308692|1;;%3fhttp://www.microsoft.com/windowsserversystem/mn12601/default.mspx">Improve IT Efficiency with Windows Server System.<a></li>
+
+<!-- Toshiba- take down 3/31/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13691967;7234791;w?http://www.toshibadirect.com/td/b2c/ebtext.to?page=699offer&seg=HHO&src=BKEM&cm_mmc=zdi_content-_-699_sponsorship_textlinks-_-text-_-sponsorship_textlinks">Save &#36;200! Toshiba Satellite A60 - Now &#36;699..<a></li>
+
+
+<!-- Network Solutions- take down 3/31/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13542232;10804638;v?http://ads.netsol.com/landing/P61C281S502N0B9A1D255E0000V100">Feature-rich Web site hosting. Network Solutions&#174;<a></li>
+
+
+<!-- IBM Open power- take down 3/6/05-->
+<li>
+<A 
+HREF="http://ad.doubleclick.net/clk;13528471;10803575;d?http://www.ibm.com/eserver/openpower/campaigns/webcast.shtml?ca=OP&me=W&met=textlink&re=ogil">New IBM eServe&#0153; OpenPower&#0153; servers: enhanced for Linux;<a></li>
+
+
+<!--Novell- take down 3/2/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/clk;13817018;5913751;h?http://www.novell.com/expand">
+Join Novell & HP at the Expanding Choice Seminar
+</a></li>
+
+<!--IBM Websphere- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/clk;13827618;10889048;r?http://www.ibm.com/software/info/middleware/r/flexible">
+Watch IBM's Integration Reference Architecture video 
+</a></li>
+
+<!--IBM Tivoli- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/clk;13824374;10891021;x?http://www-306.ibm.com/software/info/middleware/automate/index2.jsp">
+Get the IBM Storage Resource Management Whitepaper 
+</a></li>
+
+
+<!--IBM DB2- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/clk;14006418;10906045;s?http://www-306.ibm.com/software/data/ondemandbusiness/">
+Learn More About IBM DB2 Information Management
+
+</a></li>
+
+<!--Microsoft Sm.Business- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/click;h=v2|34F4|0|0|%2a|r;13706426;0-0;0;10748727;31-1|1;8802443|8820339|1;;%3fhttp://www.mbs-pos.com">
+Get the Free Microsoft Retail Solutions CD.
+</a></li>
+
+<!--IBM SWG PP- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/clk;13824735;10888913;o?http://www.ibm.com/software/info/middleware/r/workplace 
+">
+Download the IBM brochure on redefining teamwork   
+
+</a></li>
+
+<!--IBM SDP- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/clk;13821114;10889417;c?http://www-306.ibm.com/software/info/middleware/develop/index2.jsp">IBM Middleware for software development. That's On Demand Business. 
+</a></li>
+
+<!--Faxback- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/clk;14306790;5913751;i?http://www.faxback.com/landing/zd">Is Your Office FAX Integrated - Free Whitepaper & Webinar! 
+</a></li>
+
+<!--IBM eServer Total storage- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/clk;14285849;10900295;k?http://www.ibm.com/servers/storage/campaign/total/index.html?ca=total&met=exli&me=W&P_Creative=S
+">IBM TotalStorage
+Access, process, and protect your data
+in a more streamlined, more effective way.
+</a></li>
+
+<!--IBM SDP makegood- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/clk;14233034;10391031;h?http://www.ibm.com/software/info/middleware/r/build2">IBM Middleware for software development. That's On Demand Business. 
+</a></li>
+
+<!--Microsoft Channel Insider- take down 3/31/05-->
+<li>
+<A HREF="http://ad.doubleclick.net/click;h=v2|34EC|0|0|%2a|f;13768315;0-0;0;10872015;31-1|1;8836979|8854875|1;;%3fhttp://oem.microsoft.com/licensingwebcast">Big changes in anti-piracy efforts. Learn more. 
+</a></li>
+
+
+
+				</ul>
+			</div>	
+		</div>			
+				<!-- End Sponsor Links -->
+				
+				</div>
+		
+		</td>
+		
+			
+			
+			<td width="5">
+				<img src="/images/ew_spacer.gif" width="5" height="1">
+			</td>
+			<td valign="top">
+                
+					<span class="bgcolor12"><img src="/images/ew_spacer.gif" width="145" height="5"></span><br>
+				
+			
+					<!-- OLD MODULE INCLUDE -->
+					<!-- include file="display_module_group.asp" -->
+					<!-- OLD MODULE INCLUDE -->
+					
+					
+					
+					<!-- Vignette V6 Fri Jan 28 11:00:37 2005 -->
+<!--WEB 3-->
+
+<!-- END TABLE OF CONTENTS -->
+<!-- Vignette V6 Wed Jan 26 04:48:37 2005 -->
+<!--WEB 3-->
+
+<!-- RELATED LINKS -->
+<!-- Vignette V6 Wed Mar 02 05:09:32 PM 2005 -->
+<!--WEB 3-->
+						<div class="html_module_container" style="WIDTH:145px;">
+							<table width="145" cellpadding="0" cellspacing="0" border="0" class="Module_BG">
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="18" width="1"></td>
+		<td align="left" valign="center" class="Module_Border">
+			<div class="modulepadding_title"> 
+        <!--Begin Module Title-->
+        TOPIC CENTERS 
+        <!--End Module Title-->
+      </div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+		<td align="left" valign="top" class="Module_Content">
+			
+        <!--Begin Module Content-->
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1743485,00.asp" class="Module_Content">Content Creation</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237934,00.asp" class="Module_Content">Database</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237917,00.asp" class="Module_Content">Desktops &amp; Notebooks</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237896,00.asp" class="Module_Content">Enterprise Apps</a><!-- end ziffsection //--><br>
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237918,00.asp" class="Module_Content">Infrastructure</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237915,00.asp" class="Module_Content">Linux &amp; Open Source</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237905,00.asp" class="Module_Content">Macintosh</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237933,00.asp" class="Module_Content">Messaging/Collaboration</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237892,00.asp" class="Module_Content">Mobile &amp; Wireless</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1730034,00.asp" class="Module_Content">Search</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237860,00.asp" class="Module_Content">Security</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1237893,00.asp" class="Module_Content">Storage</a><!-- end ziffsection //--><br>
+
+<div align="center"><!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1553097,00.asp" class="Module_Content"><b>More Topics ></b></a><!-- end ziffsection //-->
+
+
+			<!--End Module Content-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>		
+	<tr>
+		<td colspan="3" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+</table>
+
+						</div>
+					
+						<div class="html_module_container" style="WIDTH:145px;">
+							<table width="145" cellpadding="0" cellspacing="0" border="0" class="Module_BG">
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="18" width="1"></td>
+		<td align="left" valign="center" class="Module_Border">
+			<div class="modulepadding_title"> 
+        <!--Begin Module Title-->
+        INDUSTRY CENTERS 
+        <!--End Module Title-->
+      </div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+		<td align="left" valign="top" class="Module_Content">
+			<div class="modulepadding_body"> 
+        <!--Begin Module Content-->
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1478350,00.asp" class="Module_Content">Finance</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1478352,00.asp" class="Module_Content">Government</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1478354,00.asp" class="Module_Content">Health Care</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1478355,00.asp" class="Module_Content">Manufacturing</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1478356,00.asp" class="Module_Content">Retail</a><!-- end ziffsection //--><br>
+
+<!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1624818,00.asp" class="Module_Content">SCM/Logistics</a><!-- end ziffsection //--><br>
+
+<a class="Module_Content" href="http://www.thechannelinsider.com">Channel</a>
+
+			<!--End Module Content-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>		
+	<tr>
+		<td colspan="3" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+</table>
+						</div>
+					
+						<div class="html_module_container" style="WIDTH:145px;">
+							<table width="145" cellpadding="0" cellspacing="0" border="0" class="Module_BG">
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="18" width="1"></td>
+		<td align="left" valign="center" class="Module_Border">
+			<div class="modulepadding_title">
+			<!--Begin Module Title-->
+				WIRELESS VIEW
+			<!--End Module Title-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+		<td align="left" valign="top" class="Module_Content">
+			<div class="modulepadding_body">
+			<!--Begin Module Content-->
+			<!-- start ziffimage //--><img width="134" height="50" border="0" src="http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=83127,00.jpg" alt="Evan Schuman"" align="center"><!-- end ziffimage //--><br><!-- start ziffarticle //--><a href="http://www.eweek.com/article2/0,1759,1771603,00.asp" class="Filter_Article_Title">
+<!--Begin Module Head-->
+Should Cingular Put Data on Hold? 
+
+
+		<!--End Module Head-->
+</a><!-- end ziffarticle //-->
+			<br>
+			<span class="Newsletter_Content">
+			<!--Begin Module Deck-->
+The environment was ripe and ready for Cingular to start selling data services, but was it ready? Company execs tell eWEEK.com that the experience has them ready to "eat crow."
+
+
+
+ 
+
+
+<!--End Module Deck-->
+</span>
+			<!--End Module Content-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>		
+	<tr>
+		<td colspan="3" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+</table>
+
+						</div>
+					
+						<div class="html_module_container" style="WIDTH:145px;">
+							<table width="145" cellpadding="0" cellspacing="0" border="0" class="Module_BG">
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="18" width="1"></td>
+		<td align="left" valign="center" class="Module_Border">
+			<div class="modulepadding_title">
+			<!--Begin Module Title-->
+				COURSEY'S VIEW
+			<!--End Module Title-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+		<td align="left" valign="top" class="Module_Content">
+			<div class="modulepadding_body">
+			<!--Begin Module Content-->
+			<!-- start ziffimage //--><img width="134" height="50" border="0" src="http://common.ziffdavisinternet.com/util_get_image/7/0,1311,i=70688,00.jpg" alt="David Coursey"" align="center"><!-- end ziffimage //--><br><!-- start ziffarticle //--><a href="http://www.eweek.com/article2/0,1759,1771541,00.asp" class="Filter_Article_Title">
+			<!--Begin Module Head-->
+Media Player Flaw Speaks Volumes on Microsoft Security 
+
+
+
+			<!--End Module Head-->
+</a><!-- end ziffarticle //-->
+			<br>
+			<span class="Newsletter_Content">
+			<!--Begin Module Deck-->
+Microsoft is revealing its tendency to "encourage" customers to buy new software by letting them sway in the breeze for a while. 
+
+  <!--End Module Deck-->
+</span>
+			<!--End Module Content-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>		
+	<tr>
+		<td colspan="3" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+</table>
+
+						</div>
+					
+						<div class="html_module_container" style="WIDTH:145px;">
+							<table width="145" cellpadding="0" cellspacing="0" 
+
+border="0" class="Module_BG">
+
+
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" 
+
+height="18" width="1"></td>
+		<td align="left" valign="center" 
+
+class="Module_Border">
+			<div class="modulepadding_title">
+			<!--Begin Module Title-->
+				WEBLOGS
+			<!--End Module Title-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" 
+
+height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" 
+
+height="1" width="1"></td>
+		<td align="left" valign="top" 
+
+class="Module_Content">
+			
+			<!--Begin Module Content-->
+<!--Blog1-->
+<!--Begin Module Head-->
+<a href="http://blog.ziffdavis.com/coursey/" class="filter_article_title">
+<b>We'll Always Have Paris (It Seems)
+</b></a>
+<br>
+<div class="module_date">
+                        David Coursey<a href="http://blog.ziffdavis.com/coursey/Rss.aspx"><!-- start ziffimage //--><img width="24" height="9" border="0" src="http://common.ziffdavisinternet.com/util_get_image/6/0,1311,i=68422,00.gif" alt="xml""><!-- end ziffimage //--></a>
+                        </div>
+			
+      <div class="modulepadding_body"> 
+        <!--End Module Head--><span class="Newsletter_Content">
+        <!--Begin Module Deck-->
+
+Paris Hilton has invaded our technology space again, this time as the supposed victim of evil hackers. <br><br>
+			<!--End Module Deck-->
+
+		</div></span>
+	
+
+	
+	
+  <!--Blog2-->
+
+
+  <!--Begin Module Head-->
+<a href="http://blog.ziffdavis.com/rothenberg/" class="filter_article_title">
+<b>Jef Raskin: An Appreciation</b></a>
+<br>
+<div class="module_date">
+                        Matthew Rothenberg<a href="http://blog.ziffdavis.com/rothenberg/rss.aspx"><!-- start ziffimage //--><img width="24" height="9" border="0" src="http://common.ziffdavisinternet.com/util_get_image/6/0,1311,i=68422,00.gif" alt="xml""><!-- end ziffimage //--></a>
+                        </div>
+			
+      <div class="modulepadding_body"> 
+        <!--End Module Head--><span class="Newsletter_Content">
+        <!--Begin Module Deck-->
+       The Mac daddy's tough medicine helped temper the Cupertino Kool-Aid.  <br>
+         <!--End Module Deck-->
+</div></span>
+
+
+
+	 <!--Blog3-->
+<!--Begin Module Head--><br><a href="http://blog.ziffdavis.com/katt" class="filter_article_title">
+<b>Careful Where You Tipping Point That Thing </b></a>
+<br><div class="module_date">
+                        Spencer Katt<a href="http://blog.ziffdavis.com/katt/Rss.aspx"><!-- start ziffimage //--><img width="24" height="9" border="0" src="http://common.ziffdavisinternet.com/util_get_image/6/0,1311,i=68422,00.gif" alt="xml""><!-- end ziffimage //--></a>
+                        </div>
+			
+      <div class="modulepadding_body"> 
+        <!--End Module Head--><span class="Newsletter_Content">
+        <!--Begin Module Deck-->
+        I wonder if "tipping point" is the official replacement for the overworked "paradigm shift," since IBM execs roaming the halls at PartnerWorld used it in every other sentence.<br>
+
+			<!--End Module Deck-->
+
+			</div></span>
+
+			<!--End Module Content2-->
+			
+                        
+<p align="right"><!-- start ziffsection //--><a href="http://www.eweek.com/category2/0,1738,1591374,00.asp" class="Module_Content">More Blogs ></a><!-- end ziffsection //-->
+
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" 
+
+height="1" width="1"></td>
+	</tr>		
+	<tr>
+		<td colspan="3" class="Module_Border">
+			<img src="/images/spacer.gif" 
+
+height="1" width="1"></td>
+	</tr>
+</table>
+						</div>
+					
+						<div class="html_module_container" style="WIDTH:145px;">
+							<table width="145" cellpadding="0" cellspacing="0" border="0" class="Module_BG">
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="18" width="1"></td>
+		<td align="left" valign="center" class="Module_Border">
+			<div class="modulepadding_title">
+			<!--Begin Module Title-->
+				eWEEK RSS FEEDS
+			<!--End Module Title-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+		<td align="left" valign="top" class="Module_Content">
+			<div class="modulepadding_body">
+			<!--Begin Module Content-->
+			<a href="http://rssnewsapps.ziffdavis.com/tech.xml"><!-- start ziffimage //--><img width="36" height="14" border="0" src="http://common.ziffdavisinternet.com/util_get_image/1/0,1311,i=19420,00.gif" alt="XML""><!-- end ziffimage //--></a> Want an easy way to keep up with breaking tech news?  <!-- start ziffarticle //--><a href="http://www.eweek.com/article2/0,1759,1642191,00.asp" class="Module_Content"><b>Get eWEEK headlines delivered to your desktop with RSS</b></a><!-- end ziffarticle //-->. 
+			<!--End Module Content-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>		
+	<tr>
+		<td colspan="3" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+</table>
+
+						</div>
+					
+						<div class="html_module_container" style="WIDTH:145px;">
+							<table width="145" cellpadding="0" cellspacing="0" border="0" class="Module_BG">
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="18" width="1"></td>
+		<td align="left" valign="center" class="Module_Border">
+			<div class="modulepadding_title">
+			<!--Begin Module Title-->
+				CURRENT ISSUE
+			<!--End Module Title-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+		<td align="left" valign="top" class="Module_Content">
+			<div class="modulepadding_body">
+			<!--Begin Module Content-->
+<div align="center"><a href="/current_issue/" class="Module_Content"><!-- start ziffimage //--><img width="93" height="120" border="0" src="http://common.ziffdavisinternet.com/util_get_image/9/0,1311,i=99485,00.gif" alt="Cover: February 28, 2005"" align="center"><!-- end ziffimage //--></a></div>
+<p><a href="/current_issue/" class="standard_archive_title">eWEEK of February 28:</a>
+<br><span class="Newsletter_Content">Lexmark, HP battle lawsuits, IBM makes way for partners and more.
+<br><a href="/current_issue/" class="Module_Content">Look inside > </a></span>
+			<!--End Module Content-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>		
+	<tr>
+		<td colspan="3" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+</table>
+
+
+						</div>
+					
+						<div class="html_module_container" style="WIDTH:145px;">
+							<table width="145" cellpadding="0" cellspacing="0" border="0" class="Module_BG">
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="18" width="1"></td>
+		<td align="left" valign="center" class="Module_Border">
+			<div class="modulepadding_title">
+			<!--Begin Module Title-->
+				eWEEK CAREER CENTER
+			<!--End Module Title-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+		<td align="left" valign="top" class="Module_Content">
+			<div class="modulepadding_body">
+			<!--Begin Module Content-->
+			<span class="Newsletter_Content">
+			<!--Begin Module Deck-->
+Access our new career resources and job search! 
+
+<a href="http://ad.doubleclick.net/clk;14281162;10942852;z?http://seeker.dice.com/seeker.epl?rel_code=1102&op=2">Click here</a> to post your resume and search job listings! <br>
+
+</span><span class="Footer_Text"><br>Powered by Dice 
+</span>
+			<!--End Module Content-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>		
+	<tr>
+		<td colspan="3" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+</table>
+
+						</div>
+					<!-- Vignette V6 Thu Mar 03 08:25:45 AM 2005 -->
+<!--WEB 3-->
+<div class="html_module_container">
+<table width="145" border="0" cellspacing="0" cellpadding="0">
+	
+			<tr>
+				<td class="wp_border" colspan="7"><img src="/images/ew_wp_title.gif"></td>
+			</tr>
+		<?xml version="1.0" encoding="UTF-16"?><tr xmlns:ibn="urn:industrybrains.com:linkserver"><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td><td class="wp_bgcolor" colspan="5"><img src="/images/spacer.gif" width="1" height="5" /></td><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td></tr><tr xmlns:ibn="urn:industrybrains.com:linkserver"><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td><td class="wp_bgcolor"><img src="/images/spacer.gif" width="3" height="1" /></td><td class="wp_bgcolor" align="left" valign="top"><a class="wp_ModuleLink" href="http://links.industrybrains.com/click?sid=111&amp;pos=1&amp;lid=304570&amp;pr=2&amp;tstamp=20050303082240&amp;url=http://clk.atdmt.com/DSM/go/zffdvvt10340000015dsm/direct/01/"><img border="0" src="/images/wp_icon.gif" /></a></td><td class="wp_bgcolor"><img src="/images/spacer.gif" width="5" height="1" /></td><td class="wp_bgcolor" align="left" valign="top"><a class="wp_ModuleLink" href="http://links.industrybrains.com/click?sid=111&amp;pos=1&amp;lid=304570&amp;pr=2&amp;tstamp=20050303082240&amp;url=http://clk.atdmt.com/DSM/go/zffdvvt10340000015dsm/direct/01/">Boost Enterprise Efficiency with Verity TeleForm.</a></td><td class="wp_bgcolor"><img src="/images/spacer.gif" width="5" height="1" /></td><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td></tr><tr xmlns:ibn="urn:industrybrains.com:linkserver"><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td><td class="wp_bgcolor" colspan="5"><img src="/images/spacer.gif" width="1" height="5" /></td><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td></tr><tr xmlns:ibn="urn:industrybrains.com:linkserver"><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td><td class="wp_bgcolor" colspan="5"><img src="/images/spacer.gif" width="1" height="5" /></td><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td></tr><tr xmlns:ibn="urn:industrybrains.com:linkserver"><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td><td class="wp_bgcolor"><img src="/images/spacer.gif" width="3" height="1" /></td><td class="wp_bgcolor" align="left" valign="top"><a class="wp_ModuleLink" href="http://links.industrybrains.com/click?sid=111&amp;pos=2&amp;lid=313213&amp;pr=2&amp;tstamp=20050303082240&amp;url=http://clk.atdmt.com/DSM/go/zffdvdat0040000002dsm/direct/01/"><img border="0" src="/images/wp_icon.gif" /></a></td><td class="wp_bgcolor"><img src="/images/spacer.gif" width="5" height="1" /></td><td class="wp_bgcolor" align="left" valign="top"><a class="wp_ModuleLink" href="http://links.industrybrains.com/click?sid=111&amp;pos=2&amp;lid=313213&amp;pr=2&amp;tstamp=20050303082240&amp;url=http://clk.atdmt.com/DSM/go/zffdvdat0040000002dsm/direct/01/">New e-Book - The Definitive Guide to Identity Mgmt</a></td><td class="wp_bgcolor"><img src="/images/spacer.gif" width="5" height="1" /></td><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td></tr><tr xmlns:ibn="urn:industrybrains.com:linkserver"><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td><td class="wp_bgcolor" colspan="5"><img src="/images/spacer.gif" width="1" height="5" /></td><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td></tr><tr xmlns:ibn="urn:industrybrains.com:linkserver"><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td><td class="wp_bgcolor" colspan="5"><img src="/images/spacer.gif" width="1" height="5" /></td><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td></tr><tr xmlns:ibn="urn:industrybrains.com:linkserver"><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td><td class="wp_bgcolor"><img src="/images/spacer.gif" width="3" height="1" /></td><td class="wp_bgcolor" align="left" valign="top"><a class="wp_ModuleLink" href="http://links.industrybrains.com/click?sid=111&amp;pos=3&amp;lid=316013&amp;pr=2&amp;tstamp=20050303082240&amp;url=http://www.xerox.com/go/xrx/xportal/forms/contactform.jsp%3fform_no%3d7015%26formname%3dXerox%2bGlobal%2bServices%2b-%2bWhite%2bPaper%2bRequest%2b-%2bIDC%2bResearch%26Xcntry%3dUSA%26Xlang%3den_US"><img border="0" src="/images/wp_icon.gif" /></a></td><td class="wp_bgcolor"><img src="/images/spacer.gif" width="5" height="1" /></td><td class="wp_bgcolor" align="left" valign="top"><a class="wp_ModuleLink" href="http://links.industrybrains.com/click?sid=111&amp;pos=3&amp;lid=316013&amp;pr=2&amp;tstamp=20050303082240&amp;url=http://www.xerox.com/go/xrx/xportal/forms/contactform.jsp%3fform_no%3d7015%26formname%3dXerox%2bGlobal%2bServices%2b-%2bWhite%2bPaper%2bRequest%2b-%2bIDC%2bResearch%26Xcntry%3dUSA%26Xlang%3den_US">Organizations Focus On Information Management</a></td><td class="wp_bgcolor"><img src="/images/spacer.gif" width="5" height="1" /></td><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td></tr><tr xmlns:ibn="urn:industrybrains.com:linkserver"><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td><td class="wp_bgcolor" colspan="5"><img src="/images/spacer.gif" width="1" height="5" /></td><td class="wp_border"><img src="/images/spacer.gif" width="1" height="1" /></td></tr>		
+	<tr>
+		<td class="wp_border"><img src="/images/spacer.gif" width="1" height="1"/></td>
+		
+			<td colspan="4" align="center" class="wp_bgcolor"><a class="wp_MoreLink" href="http://whitepapers.eweek.com/IBPaper/eweek/">All White Papers &gt;</a></td>
+		
+		<td class="wp_bgcolor"><img src="/images/spacer.gif" width="5" height="1"/></td>
+		<td class="wp_border"><img src="/images/spacer.gif" width="1" height="1"/></td> 
+	</tr>
+		
+
+	<tr>
+		<td class="wp_border"><img src="/images/spacer.gif" width="1" height="1"/></td> 
+		<td class="wp_bgcolor" colspan="5"><img src="/images/spacer.gif" width="1" height="5"/></td>
+		<td class="wp_border"><img src="/images/spacer.gif" width="1" height="1"/></td> 
+	</tr>
+	
+	<tr>
+		<td colspan="7" class="wp_border"><img src="/images/ew_spacer.gif"></td>
+	<tr>
+</table>
+</div>
+
+
+<script language="javascript">
+function Popup_Description(n_id)
+{
+	var strURL;
+	
+	strURL = "";
+	strURL = "http://www.eweek.com/newsletter_description/0,,,n=";
+	strURL = strURL + n_id;
+	strURL = strURL + ",00.asp";
+	
+	newsletter_popup = window.open(strURL, "NewsletterWindow", "HEIGHT=300,WIDTH=300,RESIZABLE=yes");
+	
+}
+</script>
+
+<div class="module_container" style="WIDTH:143px;">
+
+	<!--Begin Module Title-->
+		<h4>FREE NEWSLETTERS</h4>
+	<!--End Module Title-->
+
+
+		<!--Begin Module Content-->
+
+			<p>Get eWEEK's FREE online newsletters. Fill-in the form below:</p>
+
+				<form action="/data_process_newsletter_manage/" name="newslettersForm" method="get">
+				
+					<ul>
+						<li><b>1. Make your selections:</b><li>
+
+						<li>	
+							
+								<table width="92%" border="0" cellpadding="0" cellspacing="0"> <tr><td width='10' valign='top'><input type='checkbox' name='86' value='1'></td><td width='129' class='Newsletter_Content'>The Coursey Report<br></td></tr><tr><td colspan='2'><img src='/images/ew_spacer.gif' height='3' width='1'></td></tr><tr><td width='10' valign='top'><input type='checkbox' name='6' value='1'></td><td width='129' class='Newsletter_Content'>eWEEK News & Views<br></td></tr><tr><td colspan='2'><img src='/images/ew_spacer.gif' height='3' width='1'></td></tr><tr><td width='10' valign='top'><input type='checkbox' name='83' value='1'></td><td width='129' class='Newsletter_Content'>Industry Center Update: Finance<br></td></tr><tr><td colspan='2'><img src='/images/ew_spacer.gif' height='3' width='1'></td></tr><tr><td width='10' valign='top'><input type='checkbox' name='82' value='1'></td><td width='129' class='Newsletter_Content'>Industry Center Update: Healthcare<br></td></tr><tr><td colspan='2'><img src='/images/ew_spacer.gif' height='3' width='1'></td></tr><tr><td width='10' valign='top'><input type='checkbox' name='84' value='1'></td><td width='129' class='Newsletter_Content'>Industry Center Update: Manufacturing<br></td></tr><tr><td colspan='2'><img src='/images/ew_spacer.gif' height='3' width='1'></td></tr><tr><td width='10' valign='top'><input type='checkbox' name='85' value='1'></td><td width='129' class='Newsletter_Content'>Industry Center Update: Retail<br></td></tr><tr><td colspan='2'><img src='/images/ew_spacer.gif' height='3' width='1'></td></tr>
+								</table>
+						</li>
+
+						<input type="hidden" name="hidSource" value="EW_26710_newsltrmod">
+				
+						<li><b>2. Select email format:</b></li>
+
+						<li>
+							<SELECT name="SelFormat">
+								<OPTION value="1" selected> HTML </OPTION>
+								<OPTION value="2">Text only</OPTION>
+							</SELECT>
+						</li>
+
+						<li><b>3. Enter email address:</b></li>
+						<li><input type="text" size="10" name="email" maxlength="64"></li>
+
+						</ul>
+							
+						<p class="bottom_link"><a href="JavaScript: document.newslettersForm.submit();"><img src="/images/ew_submit_wht.gif" alt="" border="0"></a></p>
+						<p class="bottom_link"><a href="http://www.eweek.com/newsletter_manage/0,1751,,00.asp">View all Newsletters ></a></p>
+
+				</form>
+
+			
+		<!--End Module Content-->
+
+</div>
+						<div class="html_module_container" style="WIDTH:145px;">
+							<table width="145" cellpadding="0" cellspacing="0" border="0" class="Module_BG">
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="18" width="1"></td>
+		<td align="left" valign="center" class="Module_Border">
+			<div class="modulepadding_title">
+			<!--Begin Module Title-->
+				eWEEK EDITORIAL CALENDAR
+			<!--End Module Title-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+		<td align="left" valign="top" class="Module_Content">
+			<div class="modulepadding_body">
+			<!--Begin Module Content-->
+			<span class="Newsletter_Content">
+			<!--Begin Module Deck-->
+
+For a list of what eWEEK is covering this year, go to our 
+
+<a href="http://eweekmedia.com/calendar/"><b>editorial calendar.</b></a>
+</span>
+			<!--End Module Content-->
+			</div>
+		</td>
+		<td width="1" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>		
+	<tr>
+		<td colspan="3" class="Module_Border">
+			<img src="/images/spacer.gif" height="1" width="1"></td>
+	</tr>
+</table>
+
+						</div>
+					<!-- Vignette V6 Wed Jan 26 04:48:37 2005 -->
+<!--WEB 3-->
+			</td>			
+
+
+	</tr>
+</table>
+<!-- begin footer -->
+<!-- Vignette V6 Thu Feb 24 14:42:16 2005 -->
+<!--WEB 3--><table border="0" cellpadding="0" cellspacing="0" width="780" bordercolor="#ff0000">
+	<tr align="left" valign="middle">
+	<td valign="middle" width="108" background="http://www.eweek.com/images/ew_footer_bg.gif"></td>
+		<td valign="middle" background="http://www.eweek.com/images/ew_footer_bg.gif"><p class="Footer_Pub" style="margin-top:5"><a href="http://www.eweek.com/previous_issues/" class="Footer_Pub">Issue Index</a> | 
+	<a href="http://www.eweek.com/article2/0,1759,1642193,00.asp" class="Footer_Pub">Contact Us</a> | 
+	<a href="http://www.eweek.com/article2/0,1759,1642194,00.asp" class="Footer_Pub">About</a> | 
+	<a href="http://eweekmedia.com/" class="Footer_Pub">Advertise</a> | 
+	<a href="http://www.omeda.com/custsrv/ewk/" class="Footer_Pub">Magazine Customer Service</a></p></td></tr>
+
+	<tr align="left" valign="top" bgcolor="#ffffff">
+		<td><!-- start ziffimage //--><img width="108" height="21" border="0" src="http://common.ziffdavisinternet.com/util_get_image/8/0,1311,i=85850,00.gif" alt="eWEEK Quick LInks"" align="left"><!-- end ziffimage //--></td>
+		<td><p class="Footer_Text" style="margin-top:5"><a href="/category2/0,1738,1237893,00.asp">Storage Devices</a> | 
+<a href="/category2/0,1738,1237860,00.asp">Networking Security</a> | 
+<a href="/category2/0,1738,1237918,00.asp">Network Infrastructure </a> | 
+<a href="/category2/0,1738,1237892,00.asp">Wireless Networking </a>
+<BR>
+<a href="/category2/0,1738,1237934,00.asp">Database Management Systems </a> | 
+<a href="/category2/0,1738,1237917,00.asp">PC Desktops</a> | 
+<a href="/category2/0,1738,1237895,00.asp">Web Programming</a> | 
+<a href="/category2/0,1738,1237896,00.asp">Enterprise Solutions</a>
+<br>
+<a href="/category2/0,1738,1237915,00.asp">Linux Operating Systems </a> |		
+<a href="/category2/0,1738,1237905,00.asp">Mac Operating System</a> | 
+<a href="/category2/0,1738,1237933,00.asp">Mobile Messaging </a> |
+<a href="/category2/0,1738,1586434,00.asp">Internet Telephony </a>
+<br>
+<a href="/category2/0,1738,1237904,00.asp">Microsoft Windows News </a>
+<br></ziffhtml></p></td></tr>
+
+	<tr align="left" valign="top" bgcolor="#ffffff">
+		<td valign="middle"><a href="http://www.ziffdavis.com" name="Ziff Davis Media Inc." title="Ziff Davis Media Inc." class="Footer_ZD"><!-- start ziffimage //--><img width="108" height="15" border="0" src="http://common.ziffdavisinternet.com/util_get_image/7/0,1311,i=74724,00.gif" alt="Ziff Davis Footer Logo"" align="left"><!-- end ziffimage //--></a></td>
+		<td><p class="Footer_Text" style="margin-top:5"><a href="http://www.ziffdavis.com/about/contact" title="Contact Us">Contact Us</a> | 
+<a href="http://www.ziffdavis.com" title="Advertise">Advertise</a> | 
+<a href="http://www.ziffdavis.com/about/contact" title="Contact Us">Reprints</a> | 
+<a href="http://www.zdmcirc.com/index.html" title="Magazine Subscriptions">Magazine Subscriptions</a> | 
+<a href="/newsletter_manage/" title="Newsletters">Newsletters</a> | 
+<a href="http://www.eweek.com/article2/0,1759,1642191,00.asp" title="Newsletters">RSS Feeds</a> | 
+<a href="http://pcmag.shopping.com/main/linkin_id-3052806">Tech Shop</a><BR>
+<a href="http://whitepapers.eweek.com">White Papers</a>  |	<a href="http://elearning.ziffdavis.com/eweek">Tech Courses Online</a> |		
+<a href="http://affiliates.ziffdavis.com">Headlines for Your Site</a> | 
+<a href="http://www.pcmag.com/category2/0,4148,2130,00.asp">Custom Utilities</a> |
+<a href="http://ad.doubleclick.net/clk;14281052;10942852;x?http://seeker.dice.com/seeker.epl?rel_code=1102&op=2">Tech Jobs</a></ziffhtml></p></td></tr>
+
+	<tr align="left" valign="top" bgcolor="#ffffff">
+		<td><img src="/images/spacer.gif" width="108" align="left"></td>
+		<td><p class="Footer_Text" style="margin-top:5"><a href="http://www.1up.com">1UP</a> |
+<a href="http://www.baselinemag.com">Baseline</a> |
+<a href="http://www.cioinsight.com">CIO Insight</a> |
+<a href="http://www.computergaming.com">Computer Gaming World</a> |
+<a href="http://www.devsource.com">DevSource</a> |
+<a href="http://www.digitallife.com">DigitalLife</a> |
+<a href="http://www.egmmag.com">Electronic Gaming Monthly</a><BR>
+<a href="http://www.eseminarslive.com">eSeminars</a> |
+<a href="http://www.eweek.com">eWEEK</a> |
+<a href="http://www.extremeipod.com">Extreme iPod</a> | 
+<a href="http://www.extremetech.com">ExtremeTech</a> | 
+<a href="http://www.microsoft-watch.com">Microsoft Watch</a> |
+<a href="http://www.playstationmagazine.com">Official US PlayStation Magazine</a><br>
+<a href="http://www.tips-it.com">Windows Patch Management</a> |
+<a href="http://www.pcmag.com">PC Magazine</a> | 
+<a href="http://www.pdfzone.com">PDF Zone</a> | 
+<a href="http://www.publish.com">Publish</a> | 
+<a href="http://www.pcmag.com/category2/0,4148,13806,00.asp">Small Business Center</a> |
+<a href="http://www.syncmag.com">Sync</a> |
+<a href="http://www.thechannelinsider.com">The Channel Insider</a><br><br>
+
+Use of this site is governed by our <a href="http://www.ziffdavis.com/about/terms">Terms of Use</a> and <a href="http://www.ziffdavis.com/about/privacy">Privacy Policy</a><br>
+Copyright &copy; </ziffhtml>
+
+
+1996-2005 <a href="http://www.ziffdavis.com" title="Ziff Davis Publishing Holdings Inc." class="Footer_ZD">Ziff Davis Publishing Holdings Inc.</a> All Rights Reserved. eWEEK and Spencer F. Katt are trademarks of Ziff Davis Publishing Holdings, Inc. Reproduction in whole or in part in any form or medium without express written permission of Ziff Davis Media Inc. is prohibited.</p>
+
+</td></tr></table>
+<!-- end footer -->
+
+<!-- ************* END MAIN TABLE ***********-->
+
+
+<!-- START RedMeasure V4 - CGI v1.1 Revision: 1.6 -->
+<!-- COPYRIGHT 2000 Red Sheriff Limited --> 
+<div class="redsheriff" style="display:none">
+
+<script language="JavaScript"><!--
+var pCid="us_us-ziffdavis_0-ew-1-41-About_Us-O-s";
+var pUrl="http://www.eweek.com/article2/0,1759,1642193,00.asp?rsDis=Contact_Us-Page001-15220";
+var w0=1;
+var refR=escape(document.referrer);
+if (refR.length>=252) refR=refR.substring(0,252)+"...";
+//--></script>
+
+
+<script language="JavaScript1.1"><!--
+var w0=0;
+//--></script>
+<script language="JavaScript1.1" src="http://server-us.imrworldwide.com/c1.js">
+</script>
+<script language="JavaScript"><!--
+if(w0){
+	document.write('<img src="http://server-us.imrworldwide.com/cgi-bin/count?ref='+
+		refR+'&cid='+pCid+'" width=1 height=1>');
+}
+document.write("<COMMENT>");
+//-->
+</script>
+<noscript>
+<img src="http://server-us.imrworldwide.com/cgi-bin/count?cid=us_us-ziffdavis_0-ew-1-41-About_Us-O-s&url=http://www.eweek.com/article2/0,1759,1642193,00.asp?rsDis=Contact_Us-Page001-15220" width=1 height=1>
+</noscript>
+</COMMENT>
+
+
+<!-- START RedSheriff Customer Intelligence -->
+<!-- COPYRIGHT 2001 Red Sheriff Limited -->
+<img src=http://server-us.imrworldwide.com/cgi-bin/count?cid=us_us-zdmkeycode_0 width=1 height=1>
+<!-- END RedSheriff Customer Intelligence -->
+
+<!-- END RedMeasure V4 -->
+
+</div>
+
+
+
+</center>
+
+</body>
+
+
+</html>
+<!-- CDA 6.09.00 -->
+<!--OID info a=15220 s=26710 -->
+<!--CAT 41 -->

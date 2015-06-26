@@ -1,0 +1,1118 @@
+<DOC>
+<DOCNO>f00365</DOCNO>
+<DOCHDR>http://www.villagevoice.com/aboutus/index.php?page=contact</DOCHDR>
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd" />
+	<html><head>
+	<title>
+	village voice > aboutus	</title>
+
+	<meta name="description" content="village voice > aboutus" />
+	<meta name="copyright" content="village voice" />
+	<link rel="SHORTCUT ICON" href="http://villagevoice.com/images/favicon.ico" />
+	<link rel="stylesheet" href="/generic/style_main.css" type="text/css" />
+	<script src="/generic/js_main.js" type="text/javascript"></script>
+	
+
+	</head>
+
+	<body class="vvbody">
+
+	<!-- START CONTAINER -->
+	<table border="0" cellpadding="0" cellspacing="0" width="997" style="margin-left : 1px">
+	<tbody><tr>
+	<td colspan="5" align="center" valign="middle" width="997">
+
+					<!-- START AD_TOP -->
+				
+		<table style="margin : 1px 0px;" border="0" cellpadding="0" cellspacing="0" width="997">
+		<tbody><tr>
+		<td align="center" valign="middle" width="181" bgcolor="#253C87"><a href="/"><img src="/images/nav_top/voicelogo-181.gif" alt="village voice" border="0" height="90" width="181"></a></td>
+		<td width="1">
+		<img src="/images/generic/x.gif" width="1" height="1" />
+		</td>
+		<td align="left" bgcolor="#ababab" width="100%">
+
+				
+		
+		<!-- START TOP AD -->
+		<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_jx.ads/villagevoice.com/Aboutus@Top,Middle1,Right,Right1,Right2!Top?x">
+		<!-- --> <A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/villagevoice.com/Aboutus@Top,Middle1,Right,Right1,Right2!Top?x"><IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/villagevoice.com/Aboutus@Top,Middle1,Right,Right1,Right2!Top?x"></a>
+		</script>
+		<script LANGUAGE="JavaScript"> <!--
+		_version=10; //--> </script>
+		<script LANGUAGE="JavaScript1.1"> <!--
+		_version=11; // --> </script>
+		<script LANGUAGE="JavaScript">
+		<!--
+		if (navigator.appVersion.indexOf('MSIE 3') != -1){
+		document.write('<IFRAME WIDTH=468 HEIGHT=60 MARGINWIDTH=0 MARGINHEIGHT=0 BORDER=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_sx.ads/villagevoice.com/Aboutus@Top,Middle1,Right,Right1,Right2!Top?x" BORDER=0 VSPACE=5 HSPACE=18></iframe>');
+		} else if (_version < 11) {
+		document.write ('<A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/villagevoice.com/Aboutus@Top,Middle1,Right,Right1,Right2!Top?x"><IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/villagevoice.com/Aboutus@Top,Middle1,Right,Right1,Right2!Top?x" width=468 height=60 ALIGN=CENTER BORDER=0 vspace=5 HSPACE=18></a>');
+		}
+		// -->
+		</SCRIPT>
+		<!-- END TOP AD -->
+		
+				
+		</td>
+		
+		</tr>
+		</tbody>
+		</table>
+		<!-- END AD_TOP -->
+
+	</td>
+	</tr>
+
+	<tr>
+	<td colspan="5" align="center" valign="middle" width="997">
+
+					<!-- START NAV_TOP -->	
+				
+		<script type="text/javascript">
+		<!-- //
+		var menus    	= new Array();
+		var menuTimeout = null;
+		var hideWhich   = null;
+
+		var menuItem		= new Array();
+		menuItem["news"]	= {section:"news",id:"nav_news",link:"/news/"};
+		menuItem["nyclife"]	= {section:"nyclife",id:"nav_nyclife",link:"/nyclife/"};
+		menuItem["music"]	= {section:"music",id:"nav_music",link:"/2004/toc.php?section=music"};
+		menuItem["film"]	= {section:"film",id:"nav_film",link:"/2004/toc.php?section=film"};
+		menuItem["arts"]	= {section:"arts",id:"nav_arts",link:"/2004/toc.php?section=arts"};
+		menuItem["people"]	= {section:"people",id:"nav_people",link:"/2004/toc.php?section=people"};
+		menuItem["classifieds"]	= {section:"classifieds",id:"nav_classifieds",link:"/classifieds/"};
+		menuItem["home"]	= {section:"home",id:"nav_home",link:"/2004/"};
+
+		function hideAllSubsections()
+		{
+			for( var i in menuItem ) {
+				hideSubsection("subsection_" + menuItem[i].id);
+			}
+		}
+		function showSubsection(menuId) {
+			getElem( "subsection_" + menuId ).style.display="block";
+		}
+		function hideSubsection(menuId) {
+			if( getElem( "subsection_" + hideWhich ) ) {
+				getElem( "subsection_" + hideWhich ).style.display="none";
+			}
+		}		
+		function hiSectionMenu(menuId) {
+			document.images[menuId].src = '/images/nav_top/' + menuId + '_over.gif';
+			clearTimeout(menuTimeout);
+			hideAllSubsections();
+			showSubsection( menuId );
+			return true;
+		}
+		function loSectionMenu(menuId) {
+			document.images[menuId].src = '/images/nav_top/' + menuId + '.gif';
+			hideWhich = menuId;
+			menuTimeout=setTimeout('hideSubsection()',500)
+			return true;
+		}
+		function hiSubsection(menuId) {
+			clearTimeout(menuTimeout);
+		}
+		function getElem( idString ) {
+			var obj = null;
+			if ( document.getElementById ) {
+				obj = document.getElementById( idString );
+			} else if ( document.layers
+						&& document.layers[idString] ) {
+				obj = document.layers[idString]
+			} else if ( document.all
+						&& document.all[idString] ) {
+				obj = document.all[idString]
+			}
+			return obj;
+		}
+
+		var preloadFlag = false;
+		function preloadImages()
+		{
+			if (document.images)
+			{
+				preloadImgArray = new Array();
+				for( var i in menuItem ) {
+					preloadImgArray[menuItem[i].id]		= new Image();
+					preloadImgArray[menuItem[i].id].src	= "/images/nav_top/" + menuItem[i].id + "_over.gif";
+				}
+				preloadFlag = true;
+			}
+		}
+		preloadImages();
+
+		// -->
+		</script>
+		<!-- End Preload Script -->
+
+		<!-- START MAIN NAV -->
+		<table border="0" cellpadding="0" cellspacing="0" width="997">
+		<tbody>
+		<tr>
+			<td><a href="/news/" onmouseover="hiSectionMenu('nav_news');" onmouseout="loSectionMenu('nav_news');"><img name="nav_news" id="nav_news" src="/images/nav_top/nav_news.gif" border="0" height="25" width="112" /></a></td><td><a href="/nyclife/" onmouseover="hiSectionMenu('nav_nyclife');" onmouseout="loSectionMenu('nav_nyclife');"><img name="nav_nyclife" id="nav_nyclife" src="/images/nav_top/nav_nyclife.gif" border="0" height="25" width="112"></a></td><td><a href="/music/" onmouseover="hiSectionMenu('nav_music');" onmouseout="loSectionMenu('nav_music');"><img name="nav_music" id="nav_music" src="/images/nav_top/nav_music.gif" border="0" height="25" width="112" /></a></td><td><a href="/film/" onmouseover="hiSectionMenu('nav_film');" onmouseout="loSectionMenu('nav_film');"><img name="nav_film" id="nav_film" src="/images/nav_top/nav_film.gif" border="0" height="25" width="112" /></a></td><td><a href="/arts/" onmouseover="hiSectionMenu('nav_arts');" onmouseout="loSectionMenu('nav_arts');"><img name="nav_arts" id="nav_arts" src="/images/nav_top/nav_arts.gif" border="0" height="25" width="112" /></a></td><td><a href="/people/" onmouseover="hiSectionMenu('nav_people');" onmouseout="loSectionMenu('nav_people');"><img name="nav_people" id="nav_people" src="/images/nav_top/nav_people.gif" border="0" height="25" width="112" /></a></td><td><a href="/classifieds/" onmouseover="hiSectionMenu('nav_classifieds');" onmouseout="loSectionMenu('nav_classifieds');"><img name="nav_classifieds" id="nav_classifieds" src="/images/nav_top/nav_classifieds.gif" border="0" height="25" width="112" /></a></td><td><a href="/index.php" onmouseover="hiSectionMenu('nav_home');" onmouseout="loSectionMenu('nav_home');"><img name="nav_home" id="nav_home" src="/images/nav_top/nav_home.gif" border="0" height="25" width="213" /></a></td>
+		</tr>
+		
+		<tr>
+			<td colspan="8" style="text-align:left;">
+				<!-- START SUBNAV -->
+				<div id="subsection" style="height:25px;">
+
+				<div id="subsection_nav_news" style="display:none;" onmouseover="hiSubsection('nav_news');" onmouseout="loSectionMenu('nav_news')">
+				<div class="subnav">
+				<img src="/images/generic/x.gif" align="middle" height="25" width="6"><a href="/news/index.php?page=categpage&categ=Nation&categlabel=National+News&lab_id=1">National</a>
+				<img src="/images/nav_top/dot-news.gif" align="middle" /><a href="/news/index.php?page=categpage&categ=CityState&categlabel=Local+News&lab_id=2">Local</a>
+				<img src="/images/nav_top/dot-news.gif" align="middle" /><a href="/home/index.php?page=categpage&categ=Features&categlabel=Features&lab_id=4">Features</a>
+				<img src="/images/nav_top/dot-news.gif" align="middle" /><a href="/generic/act_findrecent.php?author=Nat+Hentoff">Hentoff</a>
+				<img src="/images/nav_top/dot-news.gif" align="middle" /><a href="/generic/act_findrecent.php?column=Mondo+Washington">Mondo Washington</a>
+				<img src="/images/nav_top/dot-news.gif" align="middle" /><a href="/generic/act_findrecent.php?column=Press%20Clips">Press Clips</a>
+				<img src="/images/nav_top/dot-news.gif" align="middle" /><a href="http://villagevoice.com/blogs/bushbeat/" target="_blank">The Bush Beat</a>
+				<img src="/images/nav_top/dot-news.gif" align="middle" /><a href="/blogs/">Blogs</a>
+				</div></div>
+
+				<div id="subsection_nav_nyclife" style="display:none;" onmouseover="hiSubsection('nav_nyclife');" onmouseout="loSectionMenu('nav_nyclife')">
+				<div class="subnav">
+				<img src="/images/generic/x.gif" align="middle" height="25" width="74"><a href="/nycguide/">NYC Guide</a>
+				<img src="/images/nav_top/dot-nyc.gif" align="middle" /><a href="/nycguide/index.php?sid=1">Eats</a>
+				<img src="/images/nav_top/dot-nyc.gif" align="middle" /><a href="/generic/act_findrecent.php?column=La+Dolce+Musto">Musto</a>
+				<img src="/images/nav_top/dot-nyc.gif" align="middle" /><a href="/nycguide/index.php?sid=3">Style</a>
+				<img src="/images/nav_top/dot-nyc.gif" align="middle" /><a href="/nyclife/index.php?page=shelter">Shelter</a>
+				<img src="/images/nav_top/dot-nyc.gif" align="middle" /><a href="/generic/act_findrecent.php?column=Fly%20Life">Nightlife &amp; Drinks</a>
+				<img src="/images/nav_top/dot-nyc.gif" align="middle" /><a href="http://www.villagevoice.com/bestof/2004/">Best of NYC</a>
+				</div></div>
+
+				<div id="subsection_nav_music" style="display:none;" onmouseover="hiSubsection('nav_music');"
+				onmouseout="loSectionMenu('nav_music')">
+				<div class="subnav">
+				<img src="/images/generic/x.gif" align="middle" height="25" width="181"><a href="/nycguide/index.php?sid=6">Shows</a>
+				<img src="/images/nav_top/dot-music.gif" align="middle" /><a href="/music/">Reviews & Features</a>
+				<img src="/images/nav_top/dot-music.gif" align="middle" /><a href="/pazzandjop/">Pazz & Jop poll</a>
+				<img src="/images/nav_top/dot-music.gif" align="middle" /><a href="/bandwidth/">Bandwidth</a>
+				</div></div>
+
+				<div id="subsection_nav_film" style="display:none;" onmouseover="hiSubsection('nav_film');"
+				onmouseout="loSectionMenu('nav_film')">
+				<div class="subnav">
+				<img src="/images/generic/x.gif" align="middle" height="25" width="206"><a href="/nycguide/index.php?sid=5">Showtimes &amp; Events</a>
+				<img src="/images/nav_top/dot-film.gif" align="middle" /><a href="/film/">Reviews & Features</a>
+				<img src="/images/nav_top/dot-film.gif" align="middle" /><a href="/take/six/">Take 6 poll</a>
+				</div></div>
+
+				<div id="subsection_nav_arts" style="display:none;" onmouseover="hiSubsection('nav_arts');"
+				onmouseout="loSectionMenu('nav_arts')">
+				<div class="subnav">
+				<img src="/images/generic/x.gif" align="middle" height="25" width="349"><a href="/nycguide/index.php?sid=10">Calendar</a>
+				<img src="/images/nav_top/dot-arts.gif" align="middle" /><a href="/books/">Books</a>
+				<img src="/images/nav_top/dot-arts.gif" align="middle" /><a href="/theater/">Theater</a>
+				<img src="/images/nav_top/dot-arts.gif" align="middle" /><a href="/art/">Art &amp; Photography</a>
+				<img src="/images/nav_top/dot-arts.gif" align="middle" /><a href="/dance/">Dance</a>
+				<img src="/images/nav_top/dot-arts.gif" align="middle" /><a href="/screens/">Screens</a>
+				<img src="/images/nav_top/dot-arts.gif" align="middle" /><a href="/obies/">OBIES Theater Awards</a>
+				</div></div>
+
+				<div id="subsection_nav_people" style="display:none;" onmouseover="hiSubsection('nav_people');" onmouseout="loSectionMenu('nav_people')">
+				<div class="subnav">
+				<img src="/images/generic/x.gif" align="middle" height="25" width="400"><a href="/home/index.php?page=categpage&categ=special1&categlabel=Sex&lab_id=5">Sex</a>
+				<img src="/images/nav_top/dot-people.gif" align="middle" /><a href="/generic/act_findrecent.php?column=Free%20Will%20Astrology">Horoscopes</a>
+				<img src="/images/nav_top/dot-people.gif" align="middle" /><a href="http://personals.villagevoice.com">Personals</a>
+				<img src="/images/nav_top/dot-people.gif" align="middle" /><a href="/home/index.php?page=columnpage&column=Mind%20|%20Body%20|%20Spirit&lab_id=6">Mind Body Spirit</a>
+				</div></div>
+
+				<div id="subsection_nav_classifieds" style="display:none;" onmouseover="hiSubsection('nav_classifieds');" onmouseout="loSectionMenu('nav_classifieds')">
+				<div class="subnav">
+				<img src="/images/generic/x.gif" align="middle" height="25" width="295">
+				<a href="https://secure.villagevoice.com/classifieds/index.php?page=place_ad_free">Place an ad</a>
+				<img src="/images/nav_top/dot-classifieds.gif" align="middle" /><a href="/realestate/">Apartments</a>
+				<img src="/images/nav_top/dot-classifieds.gif" align="middle" /><a href="/classifieds/index.php?page=employment">Jobs</a>
+				<img src="/images/nav_top/dot-classifieds.gif" align="middle" /><a href="/classifieds/index.php?page=music">Music</a>
+				<img src="/images/nav_top/dot-classifieds.gif" align="middle" /><a href="/classifieds/index.php?page=merchandise">Merchandise</a>
+				<img src="/images/nav_top/dot-classifieds.gif" align="middle" /><a href="/classifieds/index.php?page=all">All classifieds</a>
+				</div></div>
+				<div id="subsection_nav_home" style="display:none;" onmouseover="hiSubsection('nav_home');" onmouseout="loSectionMenu('nav_home')"></div>
+				</div>
+				<!-- END SUBNAV -->
+		</td>
+		</tr>
+		</tbody></table>
+		<!-- END NAV_TOP -->
+	</td>
+	</tr>
+	<tr>
+	<td align="left" valign="top" width="120">
+
+			<script language="JavaScript1.2">
+<!--//
+function joe(newWin) {
+    var joeWin=window.open(newWin,"","width=500, height=570, scrollbars=yes, menubar=no, resizable=yes");
+	joeWin.focus();
+	return;
+}
+//-->
+</script>
+
+<!-- START WELCOME LETTER IMG -->
+<!--<a href="javascript: joe('/aboutus/pages/edletter.php')">
+<img src="/images/specials/readabout.gif" width="120" height="60" alt="the new villagevoice.com" border="0" style="margin-bottom:5px;" /></a>-->
+<!-- END WELCOME LETTER IMG -->
+		
+		<!-- START MOD_NYCGUIDE_LEFT -->
+		<div class="eventstop">
+		<a href="/nycguide/"><img src="/images/generic/search-events.gif" /></a>
+		</div>
+		<div class="eventsbottom" style="margin-bottom: 8px;">
+		<table border="0" cellpadding="1" cellspacing="0" width="110">
+		<tr><td align="left"><span class="eventshome">11,309 things to do: <a href="/nycguide/index.php?sid=1">eats</a>, <a href="/nycguide/index.php?sid=3">shopping</a>,
+<a href="/nycguide/index.php?sid=6">music</a>, <a href="/nycguide/index.php?sid=5">film</a>, <a href="/nycguide/index.php?sid=7">comedy</a>, and more.</span>		</td>
+		</tr>
+		<tr>
+		<td id="eventsbottomText" align="left">
+<form action="/nycguide/" method="get">		
+day:<br />
+		<select style="font-family: Verdana; font-size: 9px;" name="stm">
+		<option value="">- any - 
+		<option value="1109839503">Thu. 3-3
+			<option value="1109925903">Fri. 3-4
+			<option value="1110012303">Sat. 3-5
+			<option value="1110098703">Sun. 3-6
+			<option value="1110185103">Mon. 3-7
+			<option value="1110271503">Tue. 3-8
+			<option value="1110357903">Wed. 3-9
+					
+		</select>
+		category:<br />
+		<select style="font-family: Verdana; font-size: 9px;" name="sid">
+			<option value="" selected="selected">all</option>
+			<option value="0">all<option value="1">eats<option value="2">drinks<option value="3">shopping<option value="4">services<option value="5">film<option value="6">music<option value="7">comedy<option value="8">theater<option value="9">dance<option value="10">art<option value="11">events<option value="12">LGBT<option value="13">body/sex<option value="14">activism<option value="15">dvds<option value="16">video games<option value="17">web radio<option value="18">recreation<option value="19">attractions<option value="20">hotels<option value="21">free<option value="22">other</select>
+		
+		keyword:<br />
+		<input name="kee" style="width: 90px;" type="text"><br />
+		<input src="/images/generic/go.gif" class="mid" type="image" vspace="5">
+		</form>
+		</td>
+		</tr> 
+		</table>
+		</div>
+		<!-- END MOD_NYCGUIDE_LEFT -->
+					
+		<!-- START MOD_SEARCH_LEFT -->
+		<table cellpadding="0" cellspacing="0" broder="0" width="120">
+		<tr>
+		<form action="/cgi-bin/search.cgi" method="get">
+		<td width="120">
+		<div class="articlesearchtop" style="margin: 0px;">
+		<img src="/images/generic/search-articles.gif" />
+		</div>	
+		<div class="articlesearchbottom" style="margin-bottom: 8px;">
+		keyword:<br />
+		<input name="q" style="width: 90px;" type="text"><br />
+		<input type="hidden" name="ul" value="villagevoice.com"></input>
+		<input type="hidden" name="m" value="any"></input>
+		<input type="hidden" name="cmd" value="search"></input>
+		<input src="/images/generic/go-search.gif" type="image" hspace="0" vspace="5">
+		</div>
+		</td>
+		</form>
+		</tr>
+		</table>
+		<!-- END MOD_SEARCH_LEFT -->
+			
+
+<!-- START MOD_COLUMNS_LEFT -->
+<table width="115" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<form>
+<td>
+<!-- START MOD_COLUMNS_LEFT -->
+<div class="standardheader" style="font-size: 11px; margin-top: 3px;">
+voice columns:
+</div>
+
+<div style="margin : 3px 0 8px 8px;">
+<select style="width: 100px; font-family: Verdana; font-size: 9px;" name="category" onChange="jumpPage(this)">
+<option selected="selected"> -- select -- </option>
+<option value="/home/index.php?page=columnpage&column=Bars">Bars 
+<option value="/home/index.php?page=columnpage&column=Club+Crawl">Club Crawl 
+<option value="/home/index.php?page=columnpage&column=Counter+Culture">Counter Culture 
+<option value="/home/index.php?page=columnpage&column=Eddytor's+Dozen">Eddytor's Dozen 
+<option value="/home/index.php?page=columnpage&column=Events">Events
+<option value="/home/index.php?page=columnpage&column=Fashion Forward">Fashion Forward  
+<option value="/home/index.php?page=columnpage&column=Fly Life">Fly Life 
+<option value="/home/index.php?page=columnpage&column=Footnotes">Footnotes 
+<option value="/home/index.php?page=columnpage&column=Free Will Astrology">Free Will Astrology 
+<option value="/home/index.php?page=columnpage&column=Jump Cuts">Jump Cuts 
+<option value="/home/index.php?page=columnpage&column=La Dolce Musto">La Dolce Musto 
+<option value="/home/index.php?page=columnpage&column=Liberty Beat">Liberty Beat 
+<option value="/home/index.php?page=columnpage&column=Liquid City">Liquid City
+<option value="/home/index.php?page=columnpage&column=Lusty Lady">Lusty Lady 
+<option value="/home/index.php?page=columnpage&column=Mondo Washington">Mondo Washington 
+<option value="/home/index.php?page=columnpage&column=Moving Words">Moving Words 
+<option value="/home/index.php?page=columnpage&column=Neighborhoods">Neighborhoods 
+<option value="/home/index.php?page=columnpage&column=Panel Discussion">Panel Discussion 
+<option value="/home/index.php?page=columnpage&column=Press Clips">Press Clips 
+<option value="/home/index.php?page=columnpage&column=Pucker Up">Pucker Up 
+<option value="/home/index.php?page=columnpage&column=Savage Love">Savage Love 
+<option value="/home/index.php?page=columnpage&column=Scanners">Scanners 
+<option value="/home/index.php?page=columnpage&column=Shelter">Shelter 
+<option value="/home/index.php?page=columnpage&column=Sightlines">Sightlines
+<option value="/home/index.php?page=columnpage&column=Style Find">Style Find 
+<option value="/home/index.php?page=columnpage&column=Sutton Impact">Sutton Impact 
+<option value="/home/index.php?page=columnpage&column=Tear Sheet">Tear Sheet 
+<option value="/home/index.php?page=columnpage&column=The Essay">The Essay 
+<option value="/home/index.php?page=columnpage&column=The Sound of The Industry">The Sound of The Industry 
+<option value="/home/index.php?page=columnpage&column=Tracking Shots">Tracking Shots 
+<option value="/home/index.php?page=columnpage&column=TV">TV 
+<option value="/home/index.php?page=columnpage&column=Vox Populi">Vox Populi 
+</select>
+</div>
+</td>
+</form>
+</tr>
+</table>
+<!-- END MOD_COLUMNS_LEFT -->
+
+
+
+			<div class="standardheader" style="font-size: 11px; margin-top: 3px;">on the web</div>
+			<!-- START RUNNING COMMENTARY -->
+			<div class="All_HomeBox"></div><div class="bititems">
+			<p>
+			<a name="13882"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=Paris+Hilton+Takes+Racing+Lessons+to+Outwit+Paparazzi+%3Cbr+%2F%3E&url=http%3A%2F%2Fwww.femalefirst.co.uk%2Fcelebrity%2F28042004.htm" >Paris Hilton Takes Racing Lessons to Outwit Paparazzi <br /></a></p>
+			<p>
+			<a name="13886"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=Hackers+Crack+the+Game%27s+Website+%3Cbr+%2F%3E&url=http%3A%2F%2Fwww.sohh.com%2Fthewire%2Fread.php%3FcontentID%3D6794" >Hackers Crack the Game's Website <br /></a></p>
+			<p>
+			<a name="13888"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=Lars+Von+Trier+Removes+Donkey+Slaughter+Scene+%3Cbr+%2F%3E%3Cbr+%2F%3E&url=http%3A%2F%2Fnews.bbc.co.uk%2F2%2Fhi%2Fentertainment%2F4314579.stm" >Lars Von Trier Removes Donkey Slaughter Scene <br /><br /></a></p>
+			<p>
+			<a name="13889"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=ACLU+Defends+Man+Charged+with+Offensive+Bumper+Sticker+%3Cbr+%2F%3E&url=http%3A%2F%2Fwww.pntonline.com%2Fengine.pl%3Fstation%3Dportales%26template%3Dstoryfull.html%26id%3D4308" >ACLU Defends Man Charged with Offensive Bumper Sticker <br /></a></p>
+			<p>
+			<a name="13890"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=MoveOn.org+Seeks+%27Games%27+to+Slam+Bush+on+Social+Security+&url=http%3A%2F%2Fwww.cnsnews.com%2F%2FViewPolitics.asp%3FPage%3D%5CPolitics%5Carchive%5C200503%5CPOL20050303a.html" >MoveOn.org Seeks 'Games' to Slam Bush on Social Security </a></p>
+			<p>
+			<a name="13891"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=Bill+Gates+%27Terrified+for+Our+Workforce+of+Tomorrow%27+&url=http%3A%2F%2Fwww.alternet.org%2Fstory%2F21399%2F" >Bill Gates 'Terrified for Our Workforce of Tomorrow' </a></p>
+			<p>
+			<a name="13892"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=Dizzee+Rascal+Arrested%2C+Weapons+and+Marijuana+Found+in+Car+&url=http%3A%2F%2Fwww.allhiphop.com%2Fhiphopnews%2F%3FID%3D4140" >Dizzee Rascal Arrested, Weapons and Marijuana Found in Car </a></p>
+			<p>
+			<a name="13887"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=Battle+for+Choice+Rages+Through+Statehouses+%3Cbr+%2F%3E&url=http%3A%2F%2Fwww.womenenews.com%2Farticle.cfm%2Fdyn%2Faid%2F2205" >Battle for Choice Rages Through Statehouses <br /></a></p>
+			<p>
+			<a name="13840"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=Illegal+Drug+Sales+Boom+on+Internet&url=http%3A%2F%2Fwww.stuff.co.nz%2Fstuff%2F0%2C2106%2C3204910a12%2C00.html" >Illegal Drug Sales Boom on Internet</a></p>
+			<p>
+			<a name="13839"></a><a href="http://villagevoice.com/generic/act_headlinedirect.php?title=George+Soros+Sued+Over+Dog+Attack+%3Cbr+%2F%3E&url=http%3A%2F%2Fwww.cnsnews.com%2F%2FViewSpecialReports.asp%3FPage%3D%5CSpecialReports%5Carchive%5C200503%5CSPE20050302a.html" >George Soros Sued Over Dog Attack <br /></a></p></div>
+					<!-- COVER -->
+		<a href="/home/index.php?page=toc">
+		<img src="/images/covers/printcover_small.jpg" border="0" width="115" />		
+		</a>
+				
+		<!-- START MOD_SHORTIES_LEFT -->
+		<p align="left">
+		</p><div class="eventsbottom" style="border-color: rgb(194, 128, 29); border-top: 1px solid rgb(194, 128, 29); margin-bottom: 0px;"><a href="/aboutus/" class="subnav" style="font-size: 11px; color: rgb(194, 128, 29);">about us</a></div>
+		<div class="eventsbottom" style="border-color: rgb(194, 128, 29); margin-bottom: 0px;"><a href="/aboutus/index.php?page=rss" class="subnav" style="font-size: 11px; color: rgb(194, 128, 29);">rss feeds</a></div>
+		<div class="eventsbottom" style="border-color: rgb(194, 128, 29); margin-bottom: 0px;"><a href="/home/index.php?page=special&module=1" class="subnav" style="font-size: 11px; color: rgb(194, 128, 29);">most popular</a></div>
+		<div class="eventsbottom" style="border-color: rgb(194, 128, 29); margin-bottom: 0px;"><a href="/home/index.php?page=special&module=2" class="subnav" style="font-size: 11px; color: rgb(194, 128, 29);">most recent</a></div>
+		<div class="eventsbottom" style="border-color: rgb(194, 128, 29); margin-bottom: 0px;"><a href="/home/index.php?page=special&module=3" class="subnav" style="font-size: 11px; color: rgb(194, 128, 29);">most emailed</a></div>
+		<!--<div class="eventsbottom" style="border-color: rgb(194, 128, 29);"><a href="#" class="subnav" style="font-size: 11px; color: rgb(194, 128, 29);">voice giveaways</a></div>-->
+			
+		<p></p>
+		<p align="left">
+		</p><!--<div class="eventsbottom" style="border-color: rgb(76, 98, 142); border-top: 1px solid rgb(76, 98, 142); margin-bottom: 0px;"><a href="/aboutus/pages/newspop.php" class="subnav" style="font-size: 11px; color: rgb(76, 98, 142);" onclick="window.open('/aboutus/pages/newspop.php', 'nlsignup','width=320,height=375,scrollbars=1,menu=0,location=0;');return false;">promotions</a></div>-->
+		<div class="eventsbottom" style="border-color: rgb(76, 98, 142); border-top: 1px solid rgb(76, 98, 142); margin-bottom: 0px;"><a href="/aboutus/index.php?page=advertising" class="subnav" style="font-size: 11px; color: rgb(76, 98, 142);">advertising</a></div>
+		<div class="eventsbottom" style="border-color: rgb(76, 98, 142); margin-bottom: 0px;"><a href="/aboutus/index.php?page=awards" class="subnav" style="font-size: 11px; color: rgb(76, 98, 142);">awards</a></div>
+		<div class="eventsbottom" style="border-color: rgb(76, 98, 142); margin-bottom: 0px;"><a href="/generic/act_findrecent.php?categ=Letters" class="subnav" style="font-size: 11px; color: rgb(76, 98, 142);">letters</a></div>
+		<!--<div class="eventsbottom" style="border-color: rgb(76, 98, 142);"><a href="#" class="subnav" style="font-size: 11px; color: rgb(76, 98, 142);">corrections</a></div>-->
+		<p></p>
+
+		<!-- END MOD_SHORTIES_LEFT -->
+	</td>
+	<td width="8">
+	<img src="/images/generic/x.gif" alt="" border="0" height="1" width="8" />
+	</td>
+	<td align="left" valign="top" width="488">
+
+			
+		<script language="javascript">
+		function validateEmail(email, msg, optional) 
+		{
+			if (!email.value && optional) 
+			{
+			return true;
+			}
+			
+			var re_mail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z])+$/;
+			if (!re_mail.test(email.value)) 
+			{
+			alert(msg);
+			email.focus();
+			email.select();
+			return false;
+			}
+		
+		return true;
+		}
+		</script>
+		
+    <table border="0" cellspacing="0" cellpadding="3">
+      <tr>
+        <td width="100%" valign="top" class="bodytext">
+          <div class="aboutUsTitle">Contact
+          Us</div> 
+
+          <p>Send your comments or questions to the Village Voice.
+          We welcome your feedback, so make sure your letter finds
+          its way to the appropriate person by selecting from the
+          options below.</p>
+
+          <p><font size="1">If you are interested in editorial
+          internship opportunities at the <i>Voice</i>, please do
+          not use this form. Download the <a
+          href="/aboutus/jobs.php#intern"><b>internship
+          application</b></a>.</font></p>
+                  
+          <b>Please fill in all required fields below</b>
+          
+
+          <form method="post" name="Form1" onsubmit="javascript: return validateEmail(this.email,'Not a valid email address. Please check the address and try again!');">
+            <b>Type of Inquiry:</b> 
+
+            <p><select name="comment_type">
+              <option selected="selected" value="letter to editor">
+                Letter to the Editor
+              </option>
+
+              <option value="letter to writer">
+                Letter to a Writer
+              </option>
+
+              <option value="problem">
+                Report a Web Site Problem
+              </option>
+
+              <option value="listings">
+                Submit an Event Listing
+              </option>
+
+              <option value="classified question">
+                Classified Ad Inquiry
+              </option>
+
+              <option value="classified problem">
+                Report a Classified Ad Problem
+              </option>
+
+              <option value="advertising inquiry">
+                Advertising Inquiry
+              </option>
+
+              <option value="reprint request">
+                Reprint Request
+              </option>
+
+              <option value="backissue request">
+                Back Issue Request
+              </option>
+
+              <option value="rant">
+                Free-Form Rant
+              </option>
+
+              <option value="comment">
+                Comment/Suggestion
+              </option>
+            </select></p>
+
+            <p><b>Enter your comments here:</b></p>
+
+            <p><textarea rows="10" name="comment_text" cols="33">
+            </textarea></p>
+
+            <p><b>Your e-mail address:</b> <font
+            size="1">(required)</font></p>
+
+            <p><input type="text" name="email" size="30" /></p>
+            <hr noshade="noshade" color="#000000" size="1" />
+
+            <p>Please enter additional contact information below
+            (optional).</p>
+
+            <p>However, letters to the editor must include your
+            phone number in order to be considered for
+            publication.</p>
+
+            <table width="100%" cellpadding="0" cellspacing="3"
+            border="0" class="bodytext">
+              <tr>
+                <td valign="top"><b>First Name:</b><br />
+                <input type="TEXT" name="firstname"
+                size="15" /></td>
+
+                <td valign="top"><b>Last Name:</b><br />
+                <input type="TEXT" name="lastname"
+                size="15" /></td>
+              </tr>
+
+              <tr>
+                <td valign="top"><b>Street Address:</b><br />
+                <input type="TEXT" name="streetaddress"
+                size="20" /></td>
+
+                <td valign="top"><b>City:</b><br />
+                <input type="TEXT" name="city" size="10" /></td>
+              </tr>
+
+              <tr>
+                <td valign="top"><b>State:</b><br />
+                 <select name="state">
+                  <option value="">
+                  </option>
+
+                  <option value="AL">
+                    Alabama
+                  </option>
+
+                  <option value="AK">
+                    Alaska
+                  </option>
+
+                  <option value="AZ">
+                    Arizona
+                  </option>
+
+                  <option value="AR">
+                    Arkansas
+                  </option>
+
+                  <option value="CA">
+                    California
+                  </option>
+
+                  <option value="CO">
+                    Colorado
+                  </option>
+
+                  <option value="CT">
+                    Connecticut
+                  </option>
+
+                  <option value="DE">
+                    Delaware
+                  </option>
+
+                  <option value="DC">
+                    Dist. of Columbia
+                  </option>
+
+                  <option value="FL">
+                    Florida
+                  </option>
+
+                  <option value="GA">
+                    Georgia
+                  </option>
+
+                  <option value="HI">
+                    Hawaii
+                  </option>
+
+                  <option value="ID">
+                    Idaho
+                  </option>
+
+                  <option value="IL">
+                    Illinois
+                  </option>
+
+                  <option value="IN">
+                    Indiana
+                  </option>
+
+                  <option value="IA">
+                    Iowa
+                  </option>
+
+                  <option value="KS">
+                    Kansas
+                  </option>
+
+                  <option value="KY">
+                    Kentucky
+                  </option>
+
+                  <option value="LA">
+                    Louisiana
+                  </option>
+
+                  <option value="ME">
+                    Maine
+                  </option>
+
+                  <option value="MD">
+                    Maryland
+                  </option>
+
+                  <option value="MA">
+                    Massachusetts
+                  </option>
+
+                  <option value="MI">
+                    Michigan
+                  </option>
+
+                  <option value="MN">
+                    Minnesota
+                  </option>
+
+                  <option value="MS">
+                    Mississippi
+                  </option>
+
+                  <option value="MO">
+                    Missouri
+                  </option>
+
+                  <option value="MT">
+                    Montana
+                  </option>
+
+                  <option value="NE">
+                    Nebraska
+                  </option>
+
+                  <option value="NV">
+                    Nevada
+                  </option>
+
+                  <option value="NH">
+                    New Hampshire
+                  </option>
+
+                  <option value="NJ">
+                    New Jersey
+                  </option>
+
+                  <option value="NM">
+                    New Mexico
+                  </option>
+
+                  <option value="NY">
+                    New York
+                  </option>
+
+                  <option value="NC">
+                    North Carolina
+                  </option>
+
+                  <option value="ND">
+                    North Dakota
+                  </option>
+
+                  <option value="OH">
+                    Ohio
+                  </option>
+
+                  <option value="OK">
+                    Oklahoma
+                  </option>
+
+                  <option value="OR">
+                    Oregon
+                  </option>
+
+                  <option value="PA">
+                    Pennsylvania
+                  </option>
+
+                  <option value="PR">
+                    Puerto Rico
+                  </option>
+
+                  <option value="RI">
+                    Rhode Island
+                  </option>
+
+                  <option value="SC">
+                    South Carolina
+                  </option>
+
+                  <option value="SD">
+                    South Dakota
+                  </option>
+
+                  <option value="TN">
+                    Tennessee
+                  </option>
+
+                  <option value="TX">
+                    Texas
+                  </option>
+
+                  <option value="UT">
+                    Utah
+                  </option>
+
+                  <option value="VT">
+                    Vermont
+                  </option>
+
+                  <option value="VA">
+                    Virginia
+                  </option>
+
+                  <option value="WA">
+                    Washington
+                  </option>
+
+                  <option value="WV">
+                    West Virginia
+                  </option>
+
+                  <option value="WI">
+                    Wisconsin
+                  </option>
+
+                  <option value="WY">
+                    Wyoming
+                  </option>
+
+                  <option value="nonusa">
+                    ---------
+                  </option>
+
+                  <option value="nonusa">
+                    outside the U.S.
+                  </option>
+                </select></td>
+
+                <td valign="top"><b>ZIP:</b><br />
+                <input name="zip" size="5" /></td>
+              </tr>
+
+              <tr>
+                <td valign="top"><b>Day phone:</b><br />
+                <input name="dayphone" size="14" /></td>
+
+                <td valign="top"><b>Night phone:</b><br />
+                <input type="text" name="nightphone"
+                size="14" /></td>
+              </tr>
+
+              <tr>
+                <td valign="top" align="center" colspan="2"><br />
+                 <input type="submit" name="Submit"
+                value="Submit" />&nbsp;&nbsp;&nbsp;<input
+                type="Reset" value="Clear" /></td>
+              </tr>
+            </table>
+          </form>
+        </td>
+
+        <td width="154" align="center" valign="top">
+        <table border="0" cellspacing="0" cellpadding="2" width=150>
+	<tr>
+		<td valign="top" align="left" id="aboutUsNav">
+		
+			<p><a href="/aboutus/index.php?page=history">Our History</a><br />About our venerable newspaper.<span></p>
+
+			<p><a href="/aboutus/index.php?page=masthead">Masthead</a><br />The roster of talent.<span></p>
+
+			<p><a href="/aboutus/index.php?page=contact">Contact Us</a><br />Send your comment or question to the web site or paper.<span></p>
+
+			<p><a href="/aboutus/index.php?page=advertising">Advertising</a><br />Advertising opportunites and contacts.<span></p>
+
+			<p><a href="/aboutus/index.php?page=jobs">Work at the Voice</a><br />Current job openings at the Village Voice.<span></p>
+
+			<p><a href="/aboutus/index.php?page=getpaper">Get the Paper</a><br />Pick-up locations, how to subscribe, get back issues.<span></p>
+
+			<p><a href="/aboutus/index.php?page=partners">Partners</a><br />Who we work with.<span></p>
+
+			<p><a href="/aboutus/index.php?page=press">Press Releases</a><br />The latest from our PR department.<span></p>
+
+			<p><a href="/aboutus/index.php?page=awards">Editorial Awards</a></p>
+
+			<!--<p><a href="/aboutus/promo/">Promotions</a><br />Events and happenings hosted by the <i>Voice</i>.<span></p>-->
+
+			<p><a href="/aboutus/index.php?page=fineprint">Copyright/Fine Print</a><br />Rights and clearances information.<span></p>
+
+			<p><a href="/aboutus/index.php?page=prodhome">Print Production</a><br />Newspaper advertising specs and sizing information.<span>
+
+		</td>
+	</tr>
+</table>
+        </td>
+      </tr>
+    </table>
+    
+
+					<!-- START NAV_FOOTER-->
+				
+	<table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td style="text-align:center;">
+		<hr noshade="noshade" size="1" width="450">
+		<p>
+		<span class="bottomlinks">
+			<a href="/">home</a> |
+			<a href="/news/">news</a> |
+			<a href="/nyclife/">nyc life</a> |
+			<a href="/music/">music</a> |
+			<a href="/film/">film</a> |
+			<a href="/arts/">arts</a> |
+			<a href="/people/">people</a> |
+			<a href="/classifieds/">classifieds</a> |
+			<a href="/aboutus/">about us</a> |
+			<a href="/aboutus/index.php?page=contact">contact us</a> |
+			<a href="/aboutus/index.php?page=rss">rss</a>
+
+			<br /><br />
+
+			<a href="http://www.laweekly.com">LA Weekly</a> |
+			<a href="http://www.ocweekly.com">OC Weekly</a> |
+			<a href="http://www.seattleweekly.com">Seattle Weekly</a> |
+			<a href="http://www.citypages.com">Minneapolis City Pages</a> |
+			<a href="http://www.nashvillescene.com">Nashville Scene</a>
+
+			<br /><br />
+			<a href="/aboutus/">Copyright &copy;</a> 2004 Village Voice Media, Inc., <GEO TYPE="US">36 Cooper Square, New York, NY 10003</GEO> <i>The Village Voice</i> and <i>Voice</i> are registered trademarks. All rights reserved. View our <a href="/generic/privacypolicy.php">privacy policy</a>.
+		</span>
+		</p><br />
+	</td>
+	</tr>
+	</table>
+		<!-- END NAV_FOOTER -->
+		
+	</td>
+	<td width="8">
+	<img src="/images/generic/x.gif" alt="" border="0" height="1" width="8" />
+	</td>
+	<td width="373" valign="top" align="left">
+
+		<table cellpadding="0" cellspacing="0">
+		<tr valign="top">
+		<td>
+		<div style="width:146px;height:140px;border:1px solid #c00;margin-right:4px;">
+	  <div id="classadboxtop">
+	    classifieds
+	  </div>
+
+	  <div style="padding : 4px 4px 10px 0;">
+			<table border="0">
+				<tbody>
+				<tr><td  class="classhome" align="right"><b>4059</b> ads </td><td class="classhome"><a href="http://www.villagevoice.com/realestate/">Apartments</a></td></tr>
+<tr><td  class="classhome" align="right"><b>263</b> ads </td><td class="classhome"><a href="http://www.villagevoice.com/classifieds/index.php?page=employment">Jobs</a></td></tr>
+<tr><td  class="classhome" align="right"><b>171</b> ads </td><td class="classhome"><a href="http://www.villagevoice.com/classifieds/index.php?page=music">Music</a></td></tr>
+<tr><td  class="classhome" align="right"><b>19</b> ads </td><td class="classhome"><a href="http://www.villagevoice.com/classifieds/index.php?page=merchandise">Merchandise</a></td></tr>
+				</tbody>
+			</table>
+
+		</div>
+		<script type="text/javascript">
+		<!-- //
+		function jumpPage(s)
+			{
+			var newloc = s.options[s.selectedIndex].value;
+			if(newloc != "")
+			{
+				document.location.href = newloc;
+			}
+		}
+		// -->
+		</script>
+
+		<div style="text-align:left;width:125px;margin:0px auto;">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<form id="select_category" style="margin:0px;">
+					<select style="margin-top:3px;width:125px;font:9px Verdana;" onchange="jumpPage(this);" name="category" size="1">
+						<option selected="selected">Choose Category</option>
+						<option value="http://www.villagevoice.com/realestate/">Apartments for Rent</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=ads&category=Employment&amp;sort=1&amp;database=0&amp;a=0&amp;class=4025">Jobs - Help Wanted</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=employment">Jobs - All</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=ads&category=Bulletin+Board&amp;sort=1&amp;database=0&amp;a=0&amp;class=9999">Bulletin Board</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Business Services</option>
+						<option value="http://www.villagevoice.com/realestate/">Commercial Real Estate</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Education</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Entertainment</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Home Improvement</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Medical/Health</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=merchandise">Merchandise</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Moving and Storage</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=music">Music Notes</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">New Age</option>
+						<option value="http://www.villagevoice.com/realestate/">New Jersey Real Estate</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Notices</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Personal Services</option>
+						<option value="http://personals.villagevoice.com/">Personals</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Pets</option>
+						<option value="http://www.villagevoice.com/realestate/">Real Estate Services</option>
+						<option value="http://www.villagevoice.com/realestate/">Residential for Sale</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=ads&category=roommates&amp;sort=1&amp;database=0&amp;a=0&amp;class=6155">Shares</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Stage/Screen</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=autos">Transportation</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=travel">Vacation/Travel</option>
+						<option value="http://www.villagevoice.com/classifieds/index.php?page=all">Adult</option>
+					</select>
+				</form>
+			</tr>
+		</table>
+		</div>
+	</div>
+
+		</td>
+		<td>
+		<div style="width:148px;height:142px;">
+	<img src="/images/classifieds/classads-nyc.gif" width="148" height="142" alt="" border="0" USEMAP="#classads_map">
+		<map name="classads_map">
+		<area shape="rect" alt="" coords="85,122,125,132" href="https://secure.villagevoice.com/classifieds/index.php?page=place_ad_free">
+		<area shape="rect" alt="" coords="24,122,76,132" href="/classifieds/">
+		<area shape="rect" alt="" coords="5,47,142,100" href="/classifieds/">
+	</map></div>		</td>
+		</tr>
+		</table>
+
+			
+		<script language="javascript">
+		function validateEmail(email, msg, optional) 
+		{
+			if (!email.value && optional) 
+			{
+			return true;
+			}
+			
+			var re_mail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z])+$/;
+			if (!re_mail.test(email.value)) 
+			{
+			alert(msg);
+			email.focus();
+			email.select();
+			return false;
+			}
+		
+		return true;
+		}
+
+		function validRequired(formField,fieldLabel)
+		{
+		  var result = true; 
+		  if (formField.value == "" || formField.value == "email")
+		  {
+		  alert('You must fill in the "' + fieldLabel +'" area.');
+		  formField.focus();
+		  result = false;
+		  }
+		  return result;
+		}
+
+		function validateForm(theForm)
+		{
+			if (!validRequired(theForm.email," email address "))
+			{
+				return false;
+			}
+			
+			if(theForm.type_nwsl.checked == false && theForm.type_promo.checked == false)
+			{
+				alert('you must check one of the newsletter options');
+				return false;
+			}
+			
+		return true;
+		}
+		</script>
+	
+		<!-- START MOD_NEWSLETTER_LEFT -->
+		<div style="width : 300px; padding : 3px; background : #ABABAB; color : white; font-family : Verdana, Arial; font-weight : bold; font-size : 12px; margin-top : 20px;">
+			voice e-mail sign up
+		</div>
+		
+		<div style="width : 298px; padding : 3px; border-right : 1px dashed #ABABAB; border-left : 1px dashed #ABABAB; border-bottom : 1px dashed #ABABAB;">
+		
+		<table width="290" cellpadding="0" border="0" cellspacing="0">
+		<tr>
+		<form action="/generic/act_send.php" name="Nletter" method="post" onsubmit="return (validateForm(this) && validateEmail(this.email,'Not a valid emailto address',0));">
+		<td>
+		
+			<table border="0" class="articlesidebar"><tr><td align="center" colspan="3">
+				<input type="hidden" name="send_case" value="newsletter"></input>
+				<input type="hidden" name="refpage" value="L2Fib3V0dXMvaW5kZXgucGhwP3BhZ2U9Y29udGFjdA=="></input>
+				<input style="width: 100px;" value="email" name="email" type="text" />
+				<input style="width: 100px;" value="zip code" name="zip" type="text" />
+				<input src="/images/generic/go-search.gif" style="vertical-align: middle;" value="Sign Me Up" type="image">
+			</td></tr><tr><td valign="top" style="font-size: 9px">
+				<input type="checkbox" name="type_nwsl" CHECKED />send me the weekly villagevoice.com newsletter<br />
+				<input type="checkbox" name="type_promo" CHECKED />send me weekly freebies and special offers				
+			</td></tr></table>
+
+		<!--<div style="text-align: justify;" class="articlesidebar">
+		
+			<b>Stay up-to-date with the Voice.  Once a week, we'll e-mail you a summary of what's happening on villagevoice.com.</b>
+
+		</div>-->
+		
+		</td>
+		</form>
+		</tr>
+		</table>
+		</div>
+		<!-- END MOD_NEWSLETTER_LEFT -->
+
+	
+
+		<br/>		
+		<!-- START AD_RIGHT -->
+		<div align="left">
+		<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_jx.ads/villagevoice.com/Aboutus@Middle1,Right,Right1,Top!Middle1?x">
+		<!-- --> <A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/villagevoice.com/Aboutus@Middle1,Right,Right1,Top!Middle1?x"><IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/villagevoice.com/Aboutus@Middle1,Right,Right1,Top!Middle1?x"></a>
+		</script>
+		<script LANGUAGE="JavaScript"> <!--
+		_version=10; //--> </script>
+		<script LANGUAGE="JavaScript1.1"> <!--
+		_version=11; // --> </script>
+		<script LANGUAGE="JavaScript">
+		<!--
+		if (navigator.appVersion.indexOf('MSIE 3') != -1){
+		document.write('<IFRAME WIDTH=250 HEIGHT=250 MARGINWIDTH=0 MARGINHEIGHT=0 BORDER=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_sx.ads/villagevoice.com/Aboutus@Middle1,Right,Right1,Top!Middle1?x" BORDER=0 VSPACE=5 HSPACE=18></iframe>');
+		} else if (_version < 11) {
+		document.write ('<A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/villagevoice.com/Aboutus@Middle1,Right,Right1,Top!Middle1?x"><IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/villagevoice.com/Aboutus@Middle1,Right,Right1,Top!Middle1?x" width=250 height=250 ALIGN=CENTER BORDER=0></a>');
+		}
+		// -->
+		</SCRIPT>	
+		</div>
+		<!-- END AD -->
+		
+		
+		
+		<!-- ad with us -->
+		<div style="margin : 10px 0; border : 1px solid #ababab; padding : 3px; width : 300px; text-align : center;" class="bodytext">
+		<a href="/aboutus/index.php?page=advertising">advertise with us</a>
+		</div>
+		
+		
+		
+		<!-- START AD_RIGHT -->
+		<div align="left">
+		<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_jx.ads/villagevoice.com/Aboutus@Right,Right1,Top,Middle1!Right?x">
+		<!-- --> <A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/villagevoice.com/Aboutus@Right,Right1,Top,Middle1!Right?x"><IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/villagevoice.com/Aboutus@Right,Right1,Top,Middle1!Right?x"></a>
+		</script>
+		<script LANGUAGE="JavaScript"> <!--
+		_version=10; //--> </script>
+		<script LANGUAGE="JavaScript1.1"> <!--
+		_version=11; // --> </script>
+		<script LANGUAGE="JavaScript">
+		<!--
+		if (navigator.appVersion.indexOf('MSIE 3') != -1){
+		document.write('<IFRAME WIDTH=120 HEIGHT=600 MARGINWIDTH=0 MARGINHEIGHT=0 BORDER=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000" SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_sx.ads/villagevoice.com/Aboutus@Right,Right1,Top,Middle1!Right?x" BORDER=0></iframe>');
+		} else if (_version < 11) {
+		  document.write ('<A HREF="http://oas.villagevoice.com/RealMedia/ads/click_nx.ads/villagevoice.com/Aboutus@Right,Right1,Top,Middle1!Right?x"><IMG SRC="http://oas.villagevoice.com/RealMedia/ads/adstream_nx.ads/villagevoice.com/Aboutus@Right,Right1,Top,Middle1!Right?x" width=120 height=600 ALIGN=CENTER BORDER=0></a>');
+		}
+		// -->
+		</SCRIPT>
+		</div>
+		<!-- END AD_RIGHT -->
+		
+		
+
+	</td>
+		</tr>
+		</tbody>
+	</table>
+	<!-- END CONTAINER -->
+	</body>
+</html>
+

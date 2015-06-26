@@ -1,0 +1,1586 @@
+<DOC>
+<DOCNO>f00138</DOCNO>
+<DOCHDR>http://www.nga.mil/portal/site/nga01/index.jsp?epi-content=CONTACT</DOCHDR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<title>National Geospatial-Intelligence Agency</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Cache-Control" content="NO-CACHE">
+	<meta http-equiv="Pragma" content="NO-CACHE">
+	<meta name="description" content="NGA provides timely, relevant, and accurate geospatial intelligence in support of national security.">
+	<meta name="keywords" content="national geospatial-intelligence agency intelligence imagery geospatial data information">
+	<meta name="agency" content="NGA">
+	<meta name="title" content="National Geospatial-Intelligence Agency">
+	<meta name="keyword" content="national geospatial-intelligence agency intelligence imagery geospatial data information">
+	<meta name="poc" content="NGA">
+	<meta name="cutdate" content="none">
+	<meta name="datadate" content="none">
+	
+	<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+/* GENERAL FONT AND LINK SETTINGS   */
+BODY,
+PRE,
+TR,
+TD,
+TH,
+P			{font-family: Verdana, Geneva, sans-serif;
+			font-size: x-small;
+			color: #000000;
+			font-weight: normal;
+			font-style: normal}
+
+P			{margin-top: 0px; margin-bottom: 1em}
+
+TH			{font-weight: bold}
+
+.epi-fontSm,
+.wsui-font-small	{font-size: x-small}
+
+.epi-font,
+.wsui-font		{font-size: x-small}
+
+.epi-fontLg,
+.wsui-font-large	{font-size: medium}
+
+a:link			{color: #00194c;
+			text-decoration: underline}
+
+a:visited		{color: #336699;
+			text-decoration: underline}
+
+a:active,
+a:hover			{color: #003366;
+			text-decoration: underline}
+
+a.epi-headline		{font-weight: normal;
+			 text-decoration: underline !important}
+
+
+/* FOR TRAIL, PAGE, AND SECTION TITLES  */
+/* NAVIGATION TRAILS */
+.epi-trail,
+.wsui-trail       	{font-family: Verdana, Geneva, sans-serif;
+                       	font-size: small;
+                       	color: #CC0000;
+                       	font-weight: normal;
+                       	margin-bottom: 0px}
+
+.epi-trail a,
+.wsui-trail a      	{color: #CC0000 !important;
+                     	text-decoration: none !important}
+
+.epi-trail a:hover,
+.wsui-trail a:hover     {color: #CC0000;
+                      	text-decoration: underline !important}
+
+.epi-trailOn,
+.wsui-trail-current    	{font-family: Verdana, Geneva, sans-serif;
+                       	font-size: small;
+                       	color: #000000;
+                       	font-weight: bold;
+                       	margin-bottom: 0px}
+
+
+/* PAGE TITLES */
+h1,
+.epi-pageTitle,
+.wsui-page-title	{font-family: Verdana, Geneva, sans-serif;
+			font-size: medium;
+			color: #000000;
+			font-weight: bold;
+                       	margin-bottom: 0px}
+
+
+/* SECTION TITLES*/
+h2,
+.epi-sectionTitle,
+.wsui-section-title	{font-family: Verdana, Geneva, sans-serif;
+			font-size: small;
+			color: #000000;
+			font-weight: bold;
+                       	margin-top: 0px;
+                       	margin-bottom: .5em}
+
+.epi-sectionTitleBG	{background-color: #e6e6e6}
+
+
+/* ERROR AND CONFIRMATION MESSAGE COLORS  */
+.epi-error,
+.wsui-error		{color: #ff0000 !important}
+
+.epi-ok,
+.wsui-ok		{color: #009900 !important}
+
+.epi-dim,
+.wsui-dim		{color: #666666 !important}
+
+
+/* NAVIGATIONAL MENUS AND LINKS  */
+.epi-menu,
+.wsui-menu          	{color: #CC0000 !important;
+                     	text-decoration: none !important}
+
+.epi-menuOn,
+.wsui-menu-current	{color: #000000 !important;
+                   	font-weight: bold}
+
+.epi-nextPrev      	{color: #CC0000 !important;
+            		text-decoration: none !important}
+
+.epi-menu:hover,
+.epi-menuOn:hover,
+.epi-nextPrev:hover,
+.wsui-menu:hover,
+.wsui-menu-current:hover	{color: #000000;
+                      		text-decoration: underline !important}
+
+
+/* FORM ELEMENTS  */
+/* FOR LAYOUT TABLES THAT CONTAIN FORMS -- CONVENIENTLY PROVIDES FOR APPROPRIATE SPACING */
+table.epi-formTable td  		{padding-top: .25em;
+                      			padding-bottom: .25em}
+
+table.epi-formTable td table td		{padding: 0em}
+
+table.epi-formTable td.epi-spacerCell	{font-size: 0px; height: 1em}
+
+
+/* FORM LABELS */
+.epi-formLabel,
+.wsui-form-label	{font-weight: bold;
+			text-align: left;
+			padding-right: .75em}
+
+
+/* FORM INPUT ELEMENTS */
+select,
+textarea,
+.epi-input		{font-family: Verdana, Geneva, sans-serif;
+			font-size: x-small;
+			color: #000000;
+			background-color: #ffffff}
+
+
+/* FORM HTML BUTTONS */
+.epi-button		{font-family: Verdana, Geneva, sans-serif;
+			font-size: x-small;
+			color: #000000;
+			background-color: #dddddd}
+
+
+/* FOR LINKS THAT BEHAVE LIKE BUTTONS   */
+.epi-buttonLink		{color: #CC0000 !important;
+			text-decoration: underline !important}
+
+.epi-buttonLink:hover	{color: #000000 !important;
+			text-decoration: underline !important}
+
+
+/* MISC. UI ELEMENTS   */
+HR 			{color: #cccccc;
+			height: 1px}
+
+.epi-lineBreak		{background-color: #cccccc}
+
+.epi-block		{background-color: #e6e6e6;
+			border: 1px solid #e6e6e6}
+
+.wsui-block-bgcolor     {background-color: #e6e6e6}
+
+.epi-blockBorder	{background-color: #e6e6e6}
+
+li			{padding: .2em .2em}
+
+
+/* STANDARD DATA TABLES */
+.epi-dataTable,
+.wsui-table		{border-bottom: solid 1px #ffffff;
+			border-left: solid 1px #ffffff;
+			border-right: solid 0px #ffffff}
+
+.epi-dataTable TH,
+.wsui-table TH		{color: #222222;
+			background-color: #b8d1e6;
+			border-top: solid 1px #ffffff;
+			border-right: solid 1px #ffffff;
+			padding: .5em}
+
+.epi-dataTable TH a,
+.wsui-table TH a	{color: #222222  !important;
+			text-decoration: none}
+
+.epi-dataTable TH.epi-rowHeadSorted,
+.epi-dataTable TH.epi-rowHeadSorted a		{color: #000000 !important;
+						background-color: #9cbfdd;
+						text-decoration: none}
+
+.epi-dataTable TD,
+.wsui-table TD		{border-top: solid 1px #ffffff;
+			border-right: solid 1px #ffffff;
+			padding-top: .3em;
+			padding-bottom: .3em;
+			padding-left: .5em;
+			padding-right: .5em}
+
+.epi-dataTable .epi-padRight	{padding-right: 2em}
+
+
+/* DATA TABLE LITE: generally not used with background colors on odd and even rows	*/
+.epi-dataTableLite	{border-bottom: solid 1px #ffffff;
+			border-left: solid 1px #ffffff;
+			border-right: solid 1px #ffffff}
+
+.epi-dataTableLite TH	{color: #00194c;
+			background-color: #f7fafc;
+			border-top: solid 1px #ffffff;
+			border-right: solid 0px #ffffff;
+			padding: .5em}
+
+.epi-dataTableLite TH a	{color: #00194c !important;
+			text-decoration: none}
+
+.epi-dataTableLite TD 	{border-top: solid 1px #ffffff;
+			border-right: solid 0px #ffffff;
+			padding-top: .3em;
+			padding-bottom: .3em;
+			padding-left: .5em;
+			padding-right: .5em}
+
+.epi-dataTableLite epi-padRight  	{padding-right: 2em}
+
+
+/* DATA TREE */
+.epi-dataTree		{border-bottom: solid 1px #ffffff;
+			border-left: solid 1px #ffffff;
+			border-right: solid 1px #ffffff}
+
+.epi-dataTree TH	{color: #222222;
+			background-color: #b8d1e6;
+			border-top: solid 1px #ffffff;
+			border-bottom: solid 1px #ffffff;
+			padding-top: .3em;
+			padding-bottom: .3em}
+
+.epi-dataTree TH a	{color: #222222  !important;
+			text-decoration: none}
+
+.epi-dataTree .epi-padding  	{padding-right: 1em;
+				padding-left: 1em}
+
+.epi-dataTree .epi-padLeft	{padding: 0px 0px 0px 3px}
+
+
+/* TABLES WITHIN DATA TABLES: BORDERS AND PADDING */
+.epi-dataTable .epi-embeddedTable TD,
+.epi-dataTableLite .epi-embeddedTable TD,
+.epi-dataTree .epi-embeddedTable TD		{border: 0px;
+						padding: 0px}
+
+/* SHARED BACKGROUND COLORS */
+.epi-rowOdd,
+.wsui-table-row-odd	{background-color: #f7fafc}
+
+.epi-rowEven,
+.wsui-table-row-even 	{background-color: #f2f6fa}
+
+.epi-rowSpecial1,
+.wsui-table-row-sectionheader	{background-color: #d1e1ef}
+
+.epi-rowFooter		{background-color: #dce8f3}
+
+.epi-dataTableBorder	{background-color: #ffffff}
+
+/* EPI-ROWHEAD: used only to simulate the effect of a data table's header row; not necessary if using <th>*/
+.epi-rowHead,
+.wsui-table-row-header 	{color: #222222;
+				font-weight: bold;
+				background-color: #b8d1e6;
+				padding-top: .3em;
+				padding-bottom: .3em}
+
+.epi-rowHead a,
+.wsui-table-row-header  a	{color: #222222  !important;
+				text-decoration: none}
+
+.epi-rowHeadSorted	{color: #000000;
+				font-weight: bold;
+				background-color: #9cbfdd;
+				padding-top: .3em;
+				padding-bottom: .3em}
+
+.epi-rowHeadSorted a	{color: #000000  !important;
+				text-decoration: none}
+
+/* CHROME, PAGE, AND ALIGNMENT CLASSES    */
+.epi-pageBG		{background-color: #ffffff}
+
+.epi-chromeHeader	{font-family: Verdana, Geneva, sans-serif;
+			font-size: x-small;
+			color: #000000;
+			background-color: #e6e6e6}
+
+.epi-chromeBG		{background-color: #ffffff}
+
+.epi-chromeBorder	{background-color: #999999}
+
+
+/* MY PAGES CLASSES: do NOT use for normal code */
+.epi-button-normal			{background-color: #9cbfdd;
+					cursor: normal}
+.epi-button-normal table.rollover 	{background-color: #f2f6fa}
+.epi-button-normal a 			{color: #00194c !important;
+					text-decoration: none !important}
+
+.epi-button-rollover 			{background-color: #9cbfdd;
+					cursor: hand}
+.epi-button-rollover table.rollover 	{background-color: #b8d1e6}
+.epi-button-rollover a 			{color:#222222 !important;
+ 					text-decoration: none !important}
+
+.epi-button-current,
+.epi-button-current table.rollover 	{background-color:#9cbfdd}
+.epi-button-current a 			{color: #000000 !important;
+					font-weight:bold;
+ 					text-decoration:none !important}
+
+.epi-button-current-rollover 			{background-color:#9cbfdd;
+						cursor: hand}
+.epi-button-current-rollover table.rollover 	{background-color: #b8d1e6}
+.epi-button-current-rollover a 			{color: #222222  !important;
+						font-weight:bold;
+ 						text-decoration:none !important}
+
+.epi-button-line 				{border-bottom: 1px solid #ffffff}
+
+
+/* GENERIC COLORS: used only in custom styles and custom secondary pages */
+.epi-BG1		{background-color: #FFFFFF}
+.epi-BG2		{background-color: #CCCCCC}
+.epi-BG3		{background-color: #ffffff}
+.epi-BG4		{background-color: #e6e6e6}
+
+.epi-font1		{font-family: Arial, Helvetica, sans-serif;
+			font-size: small;
+			color: #000000}
+
+.epi-font2		{font-family: Arial, Helvetica, sans-serif;
+			font-size: x-small;
+			color: #000099}
+
+.epi-font3		{font-family: Verdana, Geneva, sans-serif;
+			font-size: small;
+			color: #000000}
+
+.epi-font4		{font-family: Verdana, Geneva, sans-serif;
+			font-size: small;
+			color: #000000}
+
+.epi-link1,
+.epi-link1:link,
+.epi-link1:visited	{color: #000000;
+			text-decoration: none}
+
+.epi-link1:active,
+.epi-link1:hover	{color: #000000;
+			text-decoration: underline}
+
+.epi-link2,
+.epi-link2:link,
+.epi-link2:visited	{color: #000099;
+			text-decoration: none}
+
+.epi-link2:active,
+.epi-link2:hover	{color: #000099;
+			text-decoration: underline}
+
+.epi-link3,
+.epi-link3:link,
+.epi-link3:visited	{color: #000000;
+			text-decoration: none}
+
+.epi-link3:active,
+.epi-link3:hover	{color: #000000;
+			text-decoration: underline}
+
+
+/* DEPRECATED: do not use in new code */
+.epi-align		{text-align: left}
+
+.epi-rowSpecial2	{background-color: #dce8f3}
+
+.epi-errorColor,
+.epi-errorSm,
+.wsui-error-small	   {color: #ff0000 !important}
+
+.epi-okColor,
+.epi-okSm,
+.wsui-ok-small         	{color: #009900 !important}
+
+.epi-dimColor,
+.epi-dimSm,
+.wsui-dim-small       	{color: #666666 !important}
+
+.epi-buttonSm,
+.wsui-button-small	{font-family: Verdana, Geneva, sans-serif;
+			font-size: x-small;
+			color: #000000;
+			background-color: #dddddd}
+
+.epi-form,
+.epi-formSm		{font-family: Verdana, Geneva, sans-serif;
+			font-size: x-small;
+			color: #000000;
+			background-color: #ffffff}
+
+.epi-buttonLinkSm	{color: #CC0000;
+			text-decoration: underline}
+
+.epi-buttonLinkSm:hover	{color: #000000;
+			text-decoration: underline}
+
+.epi-blockBGColor	{background-color: #e6e6e6}
+
+.epi-chromeHeaderFont	{font-family: Verdana, Geneva, sans-serif;
+			font-size: x-small;
+			color: #000000;
+			font-weight: bold}
+
+.epi-chromeHeaderBG	{background-color: #e6e6e6}
+
+.epi-rowSubHead		{background-color: #d1e1ef}
+
+
+</style>
+
+	<base target="_top">
+	
+	<link href="/portal/templates/template0005/ZRSeTaXaSeRRbRfYVQbaUdRQWaSXaXVZ/nga.ico" rel="shortcut icon">	
+	<style type="text/css">
+
+p {
+	font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: normal !important;
+    font-size: 13px !important;
+    color: #000000 !important	
+}
+
+/*
+____________
+
+Scrollbar
+____________
+*/
+	BODY {
+      SCROLLBAR-FACE-COLOR: #336699 !important; 
+      SCROLLBAR-HIGHLIGHT-COLOR: #333333 !important; 
+      SCROLLBAR-SHADOW-COLOR: #666666 !important; 
+      SCROLLBAR-3DLIGHT-COLOR: #cccccc !important; 
+      SCROLLBAR-ARROW-COLOR: #ffffff !important; 
+      SCROLLBAR-TRACK-COLOR: #000000 !important; 
+      SCROLLBAR-DARKSHADOW-COLOR: #666666 !important
+	}
+
+
+
+
+/*
+____________
+
+Header Links
+____________
+*/
+	.nga-headerLink {
+    	font-weight: bold !important;
+    	font-size: 12px !important;
+    	color: #000099 !important;
+    	font-style: bold !important;
+    	font-family: Arial, Helvetica, sans-serif !important;
+    	text-decoration: underline !important
+	}
+
+	.nga-headerLink:hover {
+		font-size: 12px !important; 
+    	font-weight: bold !important;
+    	text-decoration: none !important;
+		color: #000099 !important
+	}
+	
+	
+	
+      
+/*
+____________
+
+Breadcrumb Trail
+____________
+*/
+
+	.nga-breadcrumbHead {
+    	font-family: Verdana, Arial, Helvetica, sans-serif !important; 
+    	font-size: 13px !important; 
+    	font-weight: bold !important;
+    	text-decoration: none !important; 
+    	color: #000099  !important
+	}
+
+	.nga-breadcrumbText {
+    	font-family: Verdana, Arial, Helvetica, sans-serif !important; 
+    	font-size: 11px !important; 
+    	font-weight: normal !important;
+    	text-decoration: none !important; 
+    	color: #000000  !important
+	}
+	
+	.nga-breadcrumbLink {
+    	font-family: Verdana, Arial, Helvetica, sans-serif !important; 
+    	font-size: 12px !important; 
+    	font-weight: normal !important;
+    	text-decoration: underline !important; 
+    	color: #555555  !important
+	}
+
+	.nga-breadcrumbLink:hover {
+		color: #333333 !important;
+		text-decoration: none !important
+	}
+
+
+
+
+/*
+____________
+
+Page Content Area
+____________
+*/
+
+	.nga-pageTitle {
+		font-family: Verdana, Arial, Helvetica, sans-serif !important; 
+    	font-size: 16px !important;
+    	font-weight: bold !important;
+    	text-decoration: none !important;
+    	color: #000099 !important
+	}
+	
+	.nga-pageDescription {
+		font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    	font-size: 13px !important; 
+    	font-weight: normal !important;
+    	text-decoration: none !important;
+    	color: #666666 !important
+	}
+	
+	/* Classes for list view */
+	/* --------------------- */
+	.nga-listTitle {
+		font-family: Verdana, Arial, Helvetica, sans-serif !important; 
+    	font-size: 16px !important; 
+    	font-weight: bold !important;
+    	text-decoration: none !important;
+    	color: #000000 !important
+	}
+
+	.nga-bookmarkPageTitle {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: bold !important;
+    	font-size: 13px !important;
+    	color: #000000 !important
+	}
+
+	.nga-listItemTitle {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: bold !important;
+    	font-size: 14px !important;
+    	color: #000099 !important
+	}
+
+    .nga-listItemDescription {
+    	font-family: Verdana, Arial, Helvetica, sans-serif !important; 
+        font-size: 11px !important; 
+        font-weight: normal !important;
+        text-decoration: none !important;
+      	color: #333333 !important
+    }
+
+	/* Classes for item detail view */
+	/* ---------------------------- */
+	.nga-renderedItemTitle {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: bold !important;
+    	font-size: 16px !important;
+    	color: #000099 !important
+	}
+
+	.nga-renderedItemClassification {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: normal !important;
+    	font-size: 16px !important;
+    	color: #000000 !important
+	}
+
+	.nga-renderedItemDescription {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: bold !important;
+    	font-size: 14px !important;
+    	color: #999999 !important
+	}
+
+	.nga-renderedItemText {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: normal !important;
+    	font-size: 13px !important;
+    	color: #000000 !important
+	}
+
+	/* Classes for FAQ detail view */
+	/* ---------------------------- */
+
+	.nga-FAQItemDescription {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: normal !important;
+    	font-style: italic !important;
+    	font-size: 16px !important;
+    	color: #666666 !important
+	}
+
+	.nga-FAQQuestionText {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: bold !important;
+    	font-size: 12px !important;
+    	color: #222222 !important
+	}
+
+	.nga-FAQAnswerText {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: normal !important;
+    	font-size: 12px !important;
+    	color: #000000 !important
+	}
+		
+	/* Classes to be used within body content of content items  */
+	/* -------------------------------------------------------- */
+	.nga-renderedItemCalloutMedium {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: bold !important;
+    	font-size: 12px !important;
+    	color: #000000 !important
+	}
+
+	.nga-renderedItemCalloutLarge {
+		font-family: Arial, Helvetica, sans-serif !important;
+    	font-weight: bold !important;
+    	font-size: 18px !important;
+    	color: #000000 !important
+	}
+	
+	.nga-renderedItemInlineLink {
+		font-size: 11px !important; 
+     	font-weight: bold !important;
+     	text-decoration: underline !important; 
+		color: #000099 !important	
+	}
+
+	.nga-renderedItemInlineLink:hover {
+		font-size: 11px !important; 
+     	font-weight: bold !important;
+     	text-decoration: none !important; 
+     	color: #000099 !important
+	}	
+
+	/* Classes for forms (buttons, input elements) */
+	/* ------------------------------------------- */
+	.nga-pageContentButton {
+		font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 13px !important;
+        font-style: normal !important;
+        color: #000000 !important;
+        text-decoration: none !important;
+        border: 1px solid #666666 !important;
+        height: 22px !important
+	}
+
+	.nga-formText {
+		font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    	font-size: 12px !important; 
+    	font-weight: bold !important;
+    	text-decoration: none !important;
+    	color: #000000 !important
+	}
+
+/*
+____________
+
+Vertical Navigation Area
+____________
+*/    
+
+	.nga-verticalNavBG {
+    	background-color: #CCCCCC !important
+	}
+
+	.nga-verticalNavLine {
+		background-color: #666666 !important
+	}
+	
+	.nga-verticalNavText {
+		font-size: 11px !important; 
+     	font-weight: normal !important;
+     	text-decoration: none !important; 
+		color: #333333 !important	
+	}
+	
+	.nga-verticalNavLink {
+		font-size: 11px !important; 
+     	font-weight: bold !important;
+     	text-decoration: underline !important; 
+		color: #000099 !important	
+	}
+
+	.nga-verticalNavLink:hover {
+		font-size: 11px !important; 
+     	font-weight: bold !important;
+     	text-decoration: none !important;
+     	color: #000099 !important
+	}
+	
+	.nga-verticalNavLinkNoBold {
+		font-size: 11px !important; 
+     	font-weight: normal !important;
+     	text-decoration: underline !important; 
+		color: #000099 !important	
+	}
+
+	.nga-verticalNavLinkNoBold:hover {
+		font-size: 11px !important; 
+     	font-weight: normal !important;
+     	text-decoration: none !important; 
+     	color: #000099 !important
+	}
+	
+	.nga-verticalNavInputElement {
+		font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 11px !important;
+        font-style: normal !important;
+        color: #000000 !important;
+        text-decoration: none !important;
+        border: 1px solid #666666 !important;
+        height: 18px !important;
+        width: 115px !important
+	}	
+
+	.nga-verticalNavButton {
+		font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 11px !important;
+        font-style: normal !important;
+        color: #000000 !important;
+        text-decoration: none !important;
+        border: 1px solid #666666 !important;
+        height: 18px !important
+	}
+
+	.nga-verticalNavLoginTitle {
+		font-family: Arial, Helvetica, sans-serif !important;
+		font-weight: bold !important;
+		font-size: 12px !important;
+		color: #ffffff !important;
+		font-style: normal !important;
+		text-decoration: none  !important
+	}
+	
+/*
+____________
+
+Disclaimer
+____________
+*/
+
+	.nga-disclaimerText {
+		font-family: Arial, Helvetica, sans-serif !important;
+		font-size: 10px !important; 
+     	font-weight: normal !important;
+     	text-decoration: none !important; 
+		color: #333333 !important	
+	}
+
+	.nga-disclaimerLink {
+		font-family: Arial, Helvetica, sans-serif !important;
+		font-size: 10px !important; 
+     	font-weight: bold !important;
+     	text-decoration: none !important; 
+		color: #000099 !important	
+	}
+
+	.nga-disclaimerLink:hover {
+		font-family: Arial, Helvetica, sans-serif !important;
+		font-size: 10px !important; 
+     	font-weight: bold !important;
+     	text-decoration: none !important; 
+     	color: #666666 !important
+	}
+
+	
+	
+/*
+____________
+
+Footer Area
+____________
+*/
+
+	.nga-footerLine {
+		background-color: #666666 !important
+	}
+	
+	.nga-footerLineLight {
+		background-color: #CCCCCC !important
+	}	
+
+	.nga-footerText {
+		font-size: 11px !important; 
+     	font-weight: normal !important;
+     	text-decoration: none !important; 
+     	color: #333333 !important
+     }
+         
+	.nga-footerLink {
+     	font-size: 11px !important; 
+    	font-weight: normal !important;
+     	text-decoration: underline !important; 
+     	color: #333333 !important
+     }
+        
+	.nga-footerLink:hover {
+     	font-size: 11px !important; 
+     	font-weight: normal !important;
+     	text-decoration: none !important; 
+     	color: #333333 !important
+     }
+	
+/*
+____________
+
+Module Chrome Components
+____________
+*/
+	
+    .nga-chromeMenu {
+    	padding-left:5px !important;
+    	padding-right:5px !important;
+    	padding-top:2px !important;
+    	padding-bottom:2px !important;
+		background-color: #DDDDDD !important
+    }
+    
+	.nga-chromeModuleTitle {
+		font-family: Verdana, Arial, Helvetica, sans-serif !important; 
+    	font-size: 12px !important; 
+    	font-weight: bold !important;
+    	text-decoration: none !important;
+    	color: #666666 !important
+	}
+	
+	.nga-chromeModuleEditLink {
+		font-family: Verdana, Arial, Helvetica, sans-serif !important;
+     	font-size: 11px !important; 
+    	font-weight: normal !important;
+     	text-decoration: none !important; 
+     	color: #666666 !important
+     }
+        
+	.nga-chromeModuleEditLink:hover {
+		font-family: Verdana, Arial, Helvetica, sans-serif !important;
+     	font-size: 11px !important; 
+     	font-weight: normal !important;
+     	text-decoration: none !important; 
+     	color: #333333 !important;
+     }	
+
+</style>
+	
+
+
+
+
+
+
+</head>
+<body class="epi-pageBG" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="765">
+<tr style="padding-left:2px; padding-top:2px">
+	<td style="padding-left:2px" colspan="2" valign="top" align="left">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<wl:cache name="nga_header_maritime" timeout="7d">
+<map id="topLogoMap" name="topLogoMap">
+	<area shape="circle" coords="57,57,40" href="index.jsp?front_door=true" alt="Click to visit NGA home." target="_top">
+	<area shape="rectangle" coords="96,0,477,21" href="index.jsp?front_door=true" alt="Click to visit NGA home." target="_top">
+</map>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td><img usemap="#topLogoMap" src="/portal/templates/template0008/dYRdZaTeTWeYQUWcSRbWQeRQXbSXaXVZ/nga_banner_top.gif" border="0" alt="Top portion of NGA banner."></td>
+	<td><img src="/portal/templates/template0008/dYRdZaTeTWeYQUWcSRbWQeRQXbSXaXVZ/nga_banner_top_clip.gif" alt="Clip image for NGA banner."></td>
+</tr>
+</table>
+</wl:cache></td>
+</tr>
+<tr style="padding-left:2px" align="left">
+	<td style="padding-left:2px" align="left" valign="top" height="100%">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="nga-verticalNavBG" width="145" height="100%">
+
+
+
+
+<wl:cache name="nga_header" timeout="1d">
+<tr>
+	<map id="bottomLogoMap" name="bottomLogoMap">
+		<area shape="circle" coords="58,20,45" href="http://www.nga.mil/" alt="Click to visit NGA home." target="_top">
+	</map>
+	<td class="nga-verticalNavBG"><img usemap="#bottomLogoMap" src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/nga_banner_bottom.gif" border="0" alt="Bottom portion of NGA logo."></td>
+</tr>
+</wl:cache>
+
+
+
+
+
+
+
+
+<tr>
+	<td><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" height="10" /></td>
+</tr>
+<tr>
+	<td>
+		<form method="get" action="/portal/site/nga01/index.jsp">
+		<table border="0" cellpadding="0" cellspacing="0" class="nga-verticalNavBG">
+		<input type="hidden" name="site" value="my_collection"/>
+		<input type="hidden" name="client" value="my_collection"/>
+		<input type="hidden" name="output" value="xml_no_dtd"/>
+		<input type="hidden" name="epi-content" value="GOOGLE_SEARCH"/>		
+		<tr>
+			<td colspan="2" class="nga-verticalNavLine" height="1"></td>
+		</tr>
+		<tr style="padding-top:3px;padding-bottom:3px">
+			<td colspan="2" class="nga-verticalNavText">&nbsp;Search NGA:</td>
+		</tr>
+		<tr>
+			<td>&nbsp;<input title="Search Query Box" class="nga-verticalNavInputElement" type="text" size="10" name="q" maxlength="255" value="">&nbsp;&nbsp;</td>
+			<td>
+				<input title="Start Search" class="nga-verticalNavButton" type="submit" name="btnG" value="Go">&nbsp;
+			</td>
+		</tr>
+		<tr>			
+			<td style="padding-left:8px;padding-bottom:6px">
+				<a href="/portal/site/nga01/index.jsp?epi-content=GOOGLE_SEARCH&site=my_collection&client=my_collection&output=xml_no_dtd&access=p&proxycustom=ADVANCED" class="nga-verticalNavLinkNoBold">Advanced Search</a>
+			</td>
+		</tr>
+		<tr style="padding-left:8px">
+			<td colspan="2" valign="middle">
+				<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="middle"><span style="font-family:verdana; font-size:10px; color:#666666">Enhanced By </span></td>
+					<td><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/Logo_25gry.gif" border="0" alt="Powered by Google" /></td>
+				</tr>
+				</table>
+			</td>
+		</tr>		
+		<tr>
+			<td colspan="2" class="nga-verticalNavLine" height="1"></td>
+		</tr>		
+		</form>
+		</table>
+	</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr><td style="padding-top:10px"><table border="0" cellpadding="0" cellspacing="0">
+
+		
+		<tr style="background-color:CCCCCC">
+			<td width="2"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="2" height="18" /></td>
+			
+			<td width="8"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/node_closed.gif" border="0" alt="space" width="8" height="18" /></td>
+			<td width="100%" style="padding-bottom:3px" colspan="1" nowrap>
+				
+			 		<a href="/portal/site/nga01/?epi_menuItemID=5abdfaef1c3b1f0cdcc133449a27a759&epi_menuID=b7a9ba3525aee259dcc133449a27a759&epi_baseMenuID=b7a9ba3525aee259dcc133449a27a759"  class="nga-verticalNavLink">About NGA</a>
+					
+			 	&nbsp;
+			</td>
+		</tr>
+		<tr>
+			 <td colspan="3"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="1" height="1" /></td>
+		</tr>
+		
+		
+		<tr style="background-color:CCCCCC">
+			<td width="2"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="2" height="18" /></td>
+			
+			<td width="8"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/node_closed.gif" border="0" alt="space" width="8" height="18" /></td>
+			<td width="100%" style="padding-bottom:3px" colspan="1" nowrap>
+				
+			 		<a href="/portal/site/nga01/?epi_menuItemID=36c3ce9eb30d8304ea806a103227a759&epi_menuID=b7a9ba3525aee259dcc133449a27a759&epi_baseMenuID=b7a9ba3525aee259dcc133449a27a759"  class="nga-verticalNavLink">What's HOT</a>
+					
+			 	&nbsp;
+			</td>
+		</tr>
+		<tr>
+			 <td colspan="3"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="1" height="1" /></td>
+		</tr>
+		
+		
+		<tr style="background-color:CCCCCC">
+			<td width="2"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="2" height="18" /></td>
+			
+			<td width="8"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/node_closed.gif" border="0" alt="space" width="8" height="18" /></td>
+			<td width="100%" style="padding-bottom:3px" colspan="1" nowrap>
+				
+			 		<a href="/portal/site/nga01/?epi_menuItemID=ae4ed3a3ab63363cdcc133449a27a759&epi_menuID=b7a9ba3525aee259dcc133449a27a759&epi_baseMenuID=b7a9ba3525aee259dcc133449a27a759"  class="nga-verticalNavLink">Careers</a>
+					
+			 	&nbsp;
+			</td>
+		</tr>
+		<tr>
+			 <td colspan="3"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="1" height="1" /></td>
+		</tr>
+		
+		
+		<tr style="background-color:CCCCCC">
+			<td width="2"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="2" height="18" /></td>
+			
+			<td width="8"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/node_closed.gif" border="0" alt="space" width="8" height="18" /></td>
+			<td width="100%" style="padding-bottom:3px" colspan="1" nowrap>
+				
+			 		<a href="/portal/site/nga01/?epi_menuItemID=c1480aea6bac354cdcc133449a27a759&epi_menuID=b7a9ba3525aee259dcc133449a27a759&epi_baseMenuID=b7a9ba3525aee259dcc133449a27a759"  class="nga-verticalNavLink">Business Opportunities</a>
+					
+			 	&nbsp;
+			</td>
+		</tr>
+		<tr>
+			 <td colspan="3"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="1" height="1" /></td>
+		</tr>
+		
+		
+		<tr style="background-color:CCCCCC">
+			<td width="2"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="2" height="18" /></td>
+			
+			<td width="8"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/node_closed.gif" border="0" alt="space" width="8" height="18" /></td>
+			<td width="100%" style="padding-bottom:3px" colspan="1" nowrap>
+				
+			 		<a href="/portal/site/nga01/?epi_menuItemID=595c3029def3805cdcc133449a27a759&epi_menuID=b7a9ba3525aee259dcc133449a27a759&epi_baseMenuID=b7a9ba3525aee259dcc133449a27a759"  class="nga-verticalNavLink">Joint Initiatives</a>
+					
+			 	&nbsp;
+			</td>
+		</tr>
+		<tr>
+			 <td colspan="3"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="1" height="1" /></td>
+		</tr>
+		
+		
+		<tr style="background-color:CCCCCC">
+			<td width="2"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="2" height="18" /></td>
+			
+			<td width="8"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/node_closed.gif" border="0" alt="space" width="8" height="18" /></td>
+			<td width="100%" style="padding-bottom:3px" colspan="1" nowrap>
+				
+			 		<a href="/portal/site/nga01/?epi_menuItemID=2a4a41d1917b685cdcc133449a27a759&epi_menuID=b7a9ba3525aee259dcc133449a27a759&epi_baseMenuID=b7a9ba3525aee259dcc133449a27a759"  class="nga-verticalNavLink">Products and Services</a>
+					
+			 	&nbsp;
+			</td>
+		</tr>
+		<tr>
+			 <td colspan="3"><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" width="1" height="1" /></td>
+		</tr>
+		
+</table></td></tr>
+
+
+
+
+
+
+
+
+
+
+<form action="" method="post" name="login_form">
+<tr>
+	<td><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" height="10" /></td>
+</tr>
+
+	
+	<tr>
+		<td>
+
+
+
+
+
+
+
+	<input type="hidden" name="realm" id="realm" value="realm1">
+	</td>
+	</tr>
+		
+	<tr class="nga-verticalNavLine">
+		<td style="padding-top:3px;padding-bottom:3px" class="nga-verticalNavLoginTitle">&nbsp;Login</td>
+	</tr>
+	<tr>
+		<td style="padding-top:3px" class="nga-verticalNavText">&nbsp;Username:</td>
+	</tr>
+	<tr>
+		<td>&nbsp;<input size="10" title="Username Input Field" class="nga-verticalNavInputElement" type="text" name="nga_username" value=""></td>
+	</tr>
+	<tr>
+		<td class="nga-verticalNavText">&nbsp;Password:</td>
+	</tr>
+	<tr>
+		<td>&nbsp;<input size="10" title="Password Input Field" class="nga-verticalNavInputElement" type="password" name="nga_password" value=""></td>
+	</tr>
+	
+		<tr>
+			<td><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" border="0" alt="space" height="10" /></td>
+		</tr>
+			
+	<tr align="left">
+		<td style="padding-bottom:7px">&nbsp;<input title="Click to login" type="button" class="nga-verticalNavButton" value="Login" onclick="login('index.jsp?epi-content=DELIVERY_LOGIN&epi-process=nga_processLogin.jsp');"></td>
+	</tr>	
+	<tr style="padding-left:3px">
+		<td><a href="/portal/site/nga01/index.jsp?epi-content=FORGOT_PASSWORD" class="nga-verticalNavLink">Forgot Your Password?</a></td>
+	</tr>
+	<tr style="padding-left:3px">
+		<td style="padding-bottom:11px"><a href="/portal/site/nga01/index.jsp?epi-content=REALM_PICKER&epi-process=pre_process_realm_picker.jsp" class="nga-verticalNavLink">New User? Register</a></td>
+	</tr>
+	
+<tr>
+	<td class="nga-verticalNavLine" height="1" width="100%"></td>
+</tr>
+<tr>
+	<td align="center" class="nga-disclaimerText" style="padding-top:5px; padding-bottom:5px">
+		this is a U.S. Government system.<br>before continuing, read this<br>
+		<a class="nga-disclaimerLink" href="/portal/site/nga01/index.jsp?epi-content=DISCLAIMER">disclaimer</a>.
+	</td>
+</tr>
+<tr>
+	<td class="nga-verticalNavLine" height="1" width="100%"></td>
+</tr>
+<tr height="100%">
+	<td><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" alt="space" border="0" height="1" /></td>
+</tr>
+<tr class="nga-verticalNavLine">
+	<td><img src="/portal/templates/template0003/VXRbdXdaeZYadRQQccRYVcddXbSXaXVZ/spacer.gif" alt="space" height="5" border="0"></td>
+</tr>
+</form>
+</table>
+
+
+
+
+
+<script language="javaScript" type="text/javascript">
+
+ 	function login(processURL) {
+		document.login_form.action = processURL;
+		document.login_form.submit();
+	}
+	
+ 	function logout(processURL) {
+		document.login_form.action = processURL;
+		document.login_form.submit();
+	}
+</script></td>
+	<td align="left" valign="top" width="618">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr align="left">
+			<td align="left">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+
+
+<tr align="right">	
+	<td nowrap valign="top" class="epi-font2" align="right">
+		<table border="0" cellspacing="0" cellpadding="0">
+		<tr align="right">
+			<!-- Home link (to NGA.mil) -->
+			<td nowrap><a href="/portal/site/nga01/index.jsp?front_door=true" class="nga-headerLink">Home</a></td>
+					
+			<!-- Contact Us link -->
+			<td><img src="/portal/templates/template0038/UTTSbTYbWVRcVdfaUUcWbfReXbSXaXVZ/spacer.gif" border="0" alt="space" width="10" height="5" /></td>
+			<td nowrap><a href="/portal/site/nga01/index.jsp?epi-content=CONTACT" class="nga-headerLink">Contact Us</a></td>				
+			
+			<!-- NGA Kids link -->
+			<td><img src="/portal/templates/template0038/UTTSbTYbWVRcVdfaUUcWbfReXbSXaXVZ/spacer.gif" border="0" alt="space" width="10" height="5" /></td>
+			<td nowrap><a alt="Launch NGA Kids" title="Launch NGA Kids" class="nga-headerLink" href="#" onClick="window.open('/ngakids/index.html', 'NGAKidsWindow', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=yes, width=800, height=600');">NGA Kids</a></td>
+
+			<!-- FAQ link -->
+			
+				<td><img src="/portal/templates/template0038/UTTSbTYbWVRcVdfaUUcWbfReXbSXaXVZ/spacer.gif" border="0" alt="space" width="10" height="5" /></td>
+				<td nowrap><a href="/portal/site/nga01/?epi_menuItemID=682d89422481f4c2c9be3110d927a759&epi_menuID=b7a9ba3525aee259dcc133449a27a759&epi_baseMenuID=b7a9ba3525aee259dcc133449a27a759" class="nga-headerLink">FAQ</a></td>					
+				
+			<!------------------------------------------->
+			<!-- BEGIN : Links for logged-in VAP users -->
+			<!------------------------------------------->
+			
+			<!----------------------------------------->
+			<!-- END : Links for logged-in VAP users -->
+			<!----------------------------------------->				
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+
+
+<tr>
+	<td><img src="/portal/templates/template0038/UTTSbTYbWVRcVdfaUUcWbfReXbSXaXVZ/spacer.gif" alt="space" border="0" height="25" /></td>
+</tr>
+
+
+
+	
+
+
+
+
+
+<tr>
+	<td><img src="/portal/templates/template0038/UTTSbTYbWVRcVdfaUUcWbfReXbSXaXVZ/spacer.gif" border="0" alt="space" height="20" /></td>
+</tr>
+</table>
+</td>
+		</tr>
+		<tr align="left">	
+			<td align="left" style="padding-left:10px; padding-right:10px; padding-top:10px">
+				
+					
+
+
+
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+    <td class="nga-pageTitle" style="padding-bottom:10px">Contacting NGA.mil</td>
+</tr>
+<tr>
+    <td><hr size="1" noshade="true" width="100%"></td>
+</tr>
+<tr>
+    <td align="left" style="padding-bottom: 10px" class="nga-pageDescription">
+        Official comments and questions regarding NGA and its policies are handled by the Public Affairs Division,
+        Office of Corporate Relations at <a href="mailto:queries@nga.mil">queries@nga.mil</a>.
+    </td>
+</tr>
+<tr>
+    <td>
+        You may also use the following links:
+        <ul>
+           <li><a href="mailto:Recruitment@nga.mil">Employment/Internship</a> or call 703-755-5900
+           <li><a href="/cda/article/0,2311,3104_11959_114346,00.html">NGA Products for Public Sale</a>
+           <li><a href="/cda/channel/front/0,2272,3104_12108,00.html">Aeronautical</a> and <a href="http://pollux.nss.nima.mil/index/index.html">Maritime</a> safety information.
+           <li><a href="/mil/cda/article/0,2311,3104_59363_120057,00.html">NGA Military Support</a> and <a href="http://www.dscr.dla.mil/">DoD Support from DLA</a>
+        </ul>
+        Contact us using one of the methods below:
+        <ul>
+           <li><A HREF="#Form">Online Form</A>&nbsp; ||&nbsp; <A HREF="#Postal">U.S. Postal Mail</A>&nbsp; ||&nbsp; <A HREF="#Phone">Phone </A>
+           <li><A HREF="/cda/press/0,2385,3104,00.html">NGA Press and Media Inquiry</A>     
+           <li><A HREF="/cda/article/0,2311,3104_10581_119052,00.html">NGA Inspector General</A>
+           <li><A HREF="http://www.defenselink.mil/faq/pis/dod_addresses.html">Postal Mail addresses of the Secretary of Defense and other senior officials </A> are also available.
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td><hr size="1" width="100%" noshade="true"></td>
+</tr>
+<tr>
+    <td>
+        <h2>
+        <a NAME="Form">Online Form Instructions</a>
+        </h2>
+
+        <p>
+           <ul>
+              <li>Provide your postal address along with your e-mail address. 
+                We will notify you by e-mail whether we have the item(s) you seek. 
+            To ensure a timely delivery of your information, please make sure 
+            your postal address is accurate and complete.
+              </li>
+              <li>This request form is <b><u>not</u></b> a substitute for a Freedom of Information Act 
+            (FOIA) request. To find out more information about how to submit a 
+            FOIA request to NGA, please visit the 
+            <a href="/portal/site/nga01/?epi_menuItemID=bd2119e95b6825c2c9be3110d927a759&epi_menuID=b7a9ba3525aee259dcc133449a27a759&epi_baseMenuID=b7a9ba3525aee259dcc133449a27a759">FOIA</a>
+            pages.
+              </li>
+           </ul>
+        </p>
+    </td>
+</tr>
+<!-- Start Form -->       
+<!-- Do not edit the form data below this line -->
+<tr>
+    <td>
+        <form name="contact_form" ACTION="/portal/site/nga01/index.jsp?epi-content=CONTACT&epi-process=nga_processContact.jsp" METHOD="post"> 
+        <!-- BEG hidden form elements -->
+        <input type="hidden" name="nga_contact" value="Online Request Form">
+        <input type="hidden" name="sendto" value="queries@nga.mil">
+        <!-- END hidden form elements -->
+        
+        <table border="0" cellpadding="0" cellspacing="10">
+        <tr>
+           <td width="33%">
+              <p align="right"><b>Your Name (Enter Full Name):</b></p>
+           </td>
+           <td width="66%">
+              <input title="Full Name Input Field" type="text" NAME="fullname" width="40" size="30">
+           </td>
+        </tr>
+        <tr>
+           <td>
+              <p align="right"><b>Your E-mail Address:</b></p>
+           </td>
+           <td>
+              <p><input title="Email Input Field" type="text" NAME="email" width="40" size="30"><i>(Required field)</i></p>
+           </td>
+        <tr>
+           <td>
+              <p align="right"><b>Subject:</b></p>
+           </td>
+           <td>
+              <input title="Subject Input Field" type="text" name="subject" width="40" size="30">
+           </td>
+        </tr>
+        <tr>
+           <td valign="top">
+              <p align="right"><b>Your U.S. Postal Address:</b></p>
+           </td>
+           <td>
+              <textarea title="Postal Address Text Area" name="postal_address" rows="5" cols="40" wrap="physical"></textarea>
+           </td>
+        </tr>
+        <tr>
+           <td valign="top">
+               <p align="right"><b>Your Message:</b></p>
+           </td>
+           <td>
+               <textarea title="Message Description Text Area" name="description" rows="5" cols="60" wrap="physical"></textarea>
+           </td>
+        </tr>
+        <tr>
+           <td align="center" colspan="2">
+            <input title="Submit Form" type="submit" class="nga-pageContentButton" name="send" value="Submit This Form">
+            &nbsp;         
+            <input title="Reset Form" type="reset" class="nga-pageContentButton" name="clear" value="Clear Form and Start Over">
+           </td>
+        </tr>
+       </table>
+       </form>
+    </td>      
+</tr>
+<!-- Do not edit the form data above this line -->
+<!-- End Form -->
+<tr>
+    <td><hr size="1" width="100%" noshade="true"></td>
+</tr> 
+<tr>
+    <td>
+        <h2><a name="Postal">U.S. Postal Mail</a> Instructions</h2>
+        <p>
+        <ul> 
+           <li>Mail your request (along with a return postal address and a valid e-mail address) to:</li>
+         </ul>
+         <center>
+         <address>NGA
+         <br>Office of Corporate Relations
+         <br>Public Affairs Division, MS D-54
+         <br><GEO TYPE="US">4600 Sangamore Road
+         <br>Bethesda, MD  20816-5003</GEO>
+        </address>
+        </center>
+    </td>
+</tr>       
+<tr>
+    <td><hr size="1" width="100%" noshade="true"></td>
+</tr>
+<tr>
+    <td>
+        <h2><a name="Phone">Telephone Contact Instructions</a></h2>
+        <ul>
+               <li> For directory assistance and customer support, call 800-455-0899.</li>
+        </ul>
+      </td>
+</tr>     
+<tr>
+    <td><hr size="1" width="100%" noshade="true"></td>
+</tr>
+<tr>
+    <td>
+        <b>PRIVACY ACT STATEMENT</b>:
+        <br>
+        Disclosure of your contact information is voluntary.  
+        It is solicited for the sole purpose of responding to your
+        comment or request. If not provided, we cannot respond.
+    </td>
+</tr>
+</table>
+					
+			</td>
+		</tr>
+		</table>	
+	</td>
+</tr>
+<tr>
+	<td style="padding-left:2px" colspan="2" valign="bottom" align="left">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<wl:cache name="nga_footer" timeout="1h">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<td colspan="2"><img alt="space" src="/portal/templates/template0035/QedcYaVcTdSTQWWcWdUeXdRQXbSXaXVZ/spacer.gif" border="0" height="15" /></td>
+</tr>
+<tr>
+	<td colspan="2" height="1" class="nga-footerLine"></td>
+</tr>
+<tr>
+	<td colspan="2"><img src="/portal/templates/template0035/QedcYaVcTdSTQWWcWdUeXdRQXbSXaXVZ/spacer.gif" border="0" alt="space" height="12" /></td>
+</tr>
+<tr>
+	<td style="background-color:#000000"><img src="/portal/templates/template0035/QedcYaVcTdSTQWWcWdUeXdRQXbSXaXVZ/nga_footer.gif" border="0" alt="NGA footer image"/></td>
+	<td width="100%" style="background-color:#000000"><img alt="space" src="/portal/templates/template0035/QedcYaVcTdSTQWWcWdUeXdRQXbSXaXVZ/spacer.gif" border="0" width="1"></td>
+</tr>
+<tr style="padding-left:15px; padding-right:15px; padding-top:5px; padding-bottom:5px">
+	<td colspan="2">
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td nowrap><a href="#PrintPage" title="Print this page" onClick="window.print()" class="nga-footerLink"><img alt="Print this page" src="/portal/templates/template0035/QedcYaVcTdSTQWWcWdUeXdRQXbSXaXVZ/footer_icon_print.gif" width="14" height="9" border="0">Print Page</a></td>
+	    	<td width="100%">&nbsp;</td>
+	    	<td class="nga-footerText" align="right" nowrap>
+	    		
+	    		<a href="/portal/site/nga01/index.jsp?epi-content=CONTACT" class="nga-footerLink">Contact Us</a> | 
+	    		<a href="/portal/site/nga01/index.jsp?epi-content=EMERGENCY" class="nga-footerLink">Emergency</a> | 
+	    		
+	    			<a href="/portal/site/nga01/?epi_menuItemID=bd2119e95b6825c2c9be3110d927a759&epi_menuID=b7a9ba3525aee259dcc133449a27a759&epi_baseMenuID=b7a9ba3525aee259dcc133449a27a759" class="nga-footerLink">FOIA</a> |
+	    			
+	    		<a href="/portal/site/nga01/index.jsp?epi-content=SECURITY_POLICY" class="nga-footerLink">NGA Security Policy</a>
+	    	</td>
+	    </tr>
+	    </table>
+    </td>	
+</tr>
+<tr>
+	<td colspan="2" height="1" class="nga-footerLineLight"></td>
+</tr>
+</table>
+</wl:cache>
+	</td>
+</tr>	
+</table>
+
+</body>
+</html>
+
+
+

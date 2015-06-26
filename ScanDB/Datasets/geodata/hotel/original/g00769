@@ -1,0 +1,1142 @@
+<DOC>
+<DOCNO>g00769</DOCNO>
+<DOCHDR>http://www.cnghotels.com/bookingengine/info.asp?cid=51356&hotelid=716992</DOCHDR>
+
+<HTML>
+	<HEAD>
+		<TITLE>
+			online-hotel-bookings.co.uk
+			--
+			About theClarion Hotel Seattle Airport
+		</TITLE>
+<!--	<script language="JavaScript" src="calendar.js"></script>	-->
+		<script language="JavaScript">
+
+// global variables - these are only declared once - when the page is included
+var weekend = [0,6];
+var weekendColor = "#6699ff";
+var fontface = "Verdana";
+var fontsize = 1;
+var state_CurrentYear; // This variable retains the year as state, after it has already been selected from the picker.
+
+// global date object - hold present date
+var gNow = new Date();
+// global date object to hold last possible date chosen as a departure day -> yesterday + 1year + 30 days (max booking length)
+var gLastDate = new Date();
+gLastDate.setDate(gLastDate.getDate() + 30);
+gLastDate.setFullYear(gLastDate.getFullYear() +1);
+
+// global handle to calendar pop-up window
+var ggWinCal;
+
+// browser test - not used
+isNav = (navigator.appName.indexOf("Netscape") != -1) ? true : false;
+isIE = (navigator.appName.indexOf("Microsoft") != -1) ? true : false;
+
+// months of calendar localised
+Calendar.Months = ["January", "February", "March",
+"April", "May", "June","July", "August", "September",
+"October", "November", "December"];
+
+// Non-Leap year Month days..
+Calendar.DOMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+// Leap year Month days..
+Calendar.lDOMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+// sets up the calendar to point to a window, as sets the values of the variables required to build the calendar such as the montha nd year displayed
+function Calendar(p_item, p_item1, p_WinCal, p_month, p_year) {
+ if ((p_month == null) && (p_year == null)) return;
+ if (p_WinCal == null){
+  this.gWinCal = ggWinCal;
+ } else { 
+  this.gWinCal = p_WinCal;
+ }
+ 
+ this.gMonthName = Calendar.get_month(p_month);
+ this.gMonth = new Number(p_month);
+ this.gYear = p_year;
+ this.gBGColor = "white";
+ this.gFGColor = "black";
+ this.gTextColor = "black";
+ this.gHeaderColor = "black";
+ this.gReturnItem = p_item;
+ this.gReturnItem1 = p_item1;
+}
+
+// allows the following global functions to be called as functions of the calendar object
+Calendar.get_month = Calendar_get_month;
+Calendar.get_daysofmonth = Calendar_get_daysofmonth;
+Calendar.calc_month_year = Calendar_calc_month_year;
+
+// returns localised string with name of month
+function Calendar_get_month(monthNo) {
+ return Calendar.Months[monthNo];
+}
+
+// takes year and month as parameter and 
+function Calendar_get_daysofmonth(monthNo, p_year) {
+ /* 
+ Check for leap year ..
+ 1.Years evenly divisible by four are normally leap years, except for... 
+ 2.Years also evenly divisible by 100 are not leap years, except for... 
+ 3.Years also evenly divisible by 400 are leap years. 
+ */
+ if ((p_year % 4) == 0) {
+  if ((p_year % 100) == 0 && (p_year % 400) != 0) {
+   return Calendar.DOMonth[monthNo];
+  }
+  return Calendar.lDOMonth[monthNo];
+ } else {
+  return Calendar.DOMonth[monthNo];
+ }
+}
+
+
+// used to calculate the months and years used in the calendar forward and backward links
+function Calendar_calc_month_year(p_Month, p_Year, incr) {
+ /* 
+ Will return an 1-D array with 1st element being the calculated month 
+ and second being the calculated year 
+ after applying the month increment/decrement as specified by 'incr' parameter.
+ 'incr' will normally have 1/-1 to navigate thru the months.
+ */
+ var ret_arr = new Array();
+ 
+  if (incr == -1) 
+ {
+  // B A C K W A R D
+  if (p_Month == 0) {
+   ret_arr[0] = 11;
+   ret_arr[1] = parseInt(p_Year) - 1;
+  } else {
+		ret_arr[0] = parseInt(p_Month) - 1;
+		// no negative booking, should the user scroll back then the year will automatically default to next year.
+		if ( ( ( parseInt( p_Month ) <= parseInt( gNow.getMonth() ) ) ) && ( parseInt( p_Year  ) == parseInt( gNow.getFullYear().toString() ) ) ) {
+			ret_arr[1] = parseInt(p_Year) + 1;
+		} 
+		else { 
+			ret_arr[1] = parseInt(p_Year); 
+		}
+  }
+ } 
+ else if (incr == 1) {
+  // F O R W A R D
+  if (p_Month == 11) {
+   ret_arr[0] = 0;
+   ret_arr[1] = parseInt(p_Year) + 1;
+  } 
+  else {
+   ret_arr[0] = parseInt(p_Month) + 1;
+   ret_arr[1] = parseInt(p_Year);
+  }
+ }
+ 
+ // store the year for the next time the user selects the calendar picker
+ // If you leave the picker on december and open and close it a few times
+ // without this the year's will keep incrementing. But with this they dont.
+ if (p_Month == 11) {
+	state_CurrentYear = parseInt(ret_arr[1]) - 1; 
+ }
+ else {
+	state_CurrentYear = ret_arr[1];
+ }
+ return ret_arr;
+}
+
+// This is for compatibility with Navigator 3, we have to create and discard one object before the prototype object exists.
+new Calendar();
+
+// retures as html stream the a table with the required month and each required day
+Calendar.prototype.getMonthlyCalendarCode = function() {
+ var vCode = "";
+ var vHeader_Code = "";
+ var vData_Code = "";
+ 
+ // Begin Table Drawing code here..
+ vCode = vCode + "<div align='Center'><TABLE BORDER=1 BGCOLOR=\"" + this.gBGColor + "\">";
+ 
+ vHeader_Code = this.cal_header();
+ vData_Code = this.cal_data();
+ vCode = vCode + vHeader_Code + vData_Code;
+ 
+ vCode = vCode + "</TABLE></div>";
+ 
+ return vCode;
+}
+
+// funcion builds html stream and writes it to the document
+Calendar.prototype.show = function() {
+ var vCode = "";
+ 
+ this.gWinCal.document.open();
+ 
+ // Setup the page...
+ this.wwrite("<html>");
+ this.wwrite("<head><title>Calendar</title>");
+ this.wwrite("</head>");
+
+ this.wwrite("<body " + 
+  "link=\"" + this.gLinkColor + "\" " + 
+  "vlink=\"" + this.gLinkColor + "\" " +
+  "alink=\"" + this.gLinkColor + "\" " +
+  "text=\"" + this.gTextColor + "\">");
+
+ // calculate the required months and years used in the forwarsd and backward links
+ var prevMMYYYY = Calendar.calc_month_year(this.gMonth, this.gYear, -1);
+ var prevMM = prevMMYYYY[0];
+ var prevYYYY = prevMMYYYY[1];
+
+ var nextMMYYYY = Calendar.calc_month_year(this.gMonth, this.gYear, 1);
+ var nextMM = nextMMYYYY[0];
+ var nextYYYY = nextMMYYYY[1];
+ 
+ this.wwrite("<TABLE WIDTH='100%' BORDER=0 CELLSPACING=0 CELLPADDING=0><TR><TD WIDTH='10%' ALIGN=center bgcolor='#6699ff'>");
+ 
+// show backward link
+// if this month and this year - then dont show back link - no negative bookings
+ if (this.gMonth == gNow.getMonth() && this.gYear == gNow.getFullYear()) {
+	this.wwrite("<Font size='1'>&nbsp;</Font>");
+ } else {
+	this.wwrite("<Font size='1'><A HREF=\"" +
+	"javascript:window.opener.Build(" + 
+	"'" + this.gReturnItem + "', '" + this.gReturnItem1 + "', '" + prevMM + "', '" + prevYYYY + "'" + ");" +
+	"\"><<\/A></Font>");
+ }
+
+// show month and year on top of calendar
+ this.wwrite("</TD><TD ALIGN='center' bgcolor='" + this.gHeaderColor + "'>");
+ this.wwriteA("<FONT FACE='" + fontface + "' Color='white' SIZE=1><B>");
+ this.wwriteA(this.gMonthName + " " + this.gYear  );
+ this.wwriteA("</B></TD><TD WIDTH='10%' ALIGN=center bgcolor='#6699ff'>");
+ 
+// show forward link
+// if choosing arrival dates
+//	- do not show link for more than one year after today
+// if choosing departure dates
+//  - do not show link for more than 30 days after the last arrival date
+ if ((this.gMonth == gNow.getMonth() && this.gYear == gNow.getFullYear()+1 && this.gReturnItem == 'frm_Search.ad') || (this.gMonth == gLastDate.getMonth() && this.gYear == gLastDate.getFullYear() && this.gReturnItem == 'frm_Search.dd')) {
+	this.wwrite("<Font size='1'>&nbsp;</Font>");
+ } else {
+	this.wwrite("<Font size='1'><A HREF=\"" +
+	"javascript:window.opener.Build(" + 
+	"'" + this.gReturnItem + "', '" + this.gReturnItem1 + "', '" + nextMM + "', '" + nextYYYY + "'" + ");" +
+	"\">><\/A></Font>");
+ }
+ this.wwrite("</TD></TR></TABLE><BR>");
+
+ // get html stream for complete month and write to document
+ vCode = this.getMonthlyCalendarCode();
+ this.wwrite(vCode);
+
+ this.wwrite("</font></body></html>");
+ this.gWinCal.document.close();
+}
+
+// writes html string to calendar followed by carrige return
+Calendar.prototype.wwrite = function(wtext) {
+ this.gWinCal.document.writeln(wtext);
+}
+
+// writes html string to calendar
+Calendar.prototype.wwriteA = function(wtext) {
+ this.gWinCal.document.write(wtext);
+}
+
+// function returns a html stream with the header for the page
+// it display the starting leters of each weekday - localised
+Calendar.prototype.cal_header = function() {
+ var vCode = "";
+ 
+ vCode = vCode + "<TR bgcolor='" + this.gHeaderColor + "'>";
+ vCode = vCode + "<TD WIDTH='14%' align='center' ><FONT SIZE='1' FACE='" + fontface + "' COLOR='white'><B>S</B></FONT></TD>";
+ vCode = vCode + "<TD WIDTH='14%' align='center'><FONT SIZE='1' FACE='" + fontface + "' COLOR='white'><B>M</B></FONT></TD>";
+ vCode = vCode + "<TD WIDTH='14%' align='center'><FONT SIZE='1' FACE='" + fontface + "' COLOR='white'><B>T</B></FONT></TD>";
+ vCode = vCode + "<TD WIDTH='14%' align='center'><FONT SIZE='1' FACE='" + fontface + "' COLOR='white'><B>W</B></FONT></TD>";
+ vCode = vCode + "<TD WIDTH='14%' align='center'><FONT SIZE='1' FACE='" + fontface + "' COLOR='white'><B>T</B></FONT></TD>";
+ vCode = vCode + "<TD WIDTH='14%' align='center'><FONT SIZE='1' FACE='" + fontface + "' COLOR='white'><B>F</B></FONT></TD>";
+ vCode = vCode + "<TD WIDTH='16%' align='center'><FONT SIZE='1' FACE='" + fontface + "' COLOR='white'><B>S</B></FONT></TD>";
+ vCode = vCode + "</TR>";
+ 
+ return vCode;
+}
+
+
+// function returns a html stream with the days of the calendar, and links to change the dates on the bookingform if clicked - likre this
+//<TD WIDTH='14%'><FONT SIZE='1' FACE='Verdana'><A HREF='#' onClick="self.opener.document.frm_Search.ad.selectedIndex='6';self.opener.document.frm_Search.am.selectedIndex=5;self.opener.amadChange(self.opener.document.frm_Search.am,self.opener.document.frm_Search.ad,self.opener.document.frm_Search.dm,self.opener.document.frm_Search.dd);window.close();">7</A></FONT></TD>
+Calendar.prototype.cal_data = function() {
+ var vDate = new Date();
+ vDate.setDate(1);
+ vDate.setMonth(this.gMonth);
+ vDate.setFullYear(this.gYear);
+
+ var vFirstDay=vDate.getDay();
+ var vDay=1;
+ var vLastDay=Calendar.get_daysofmonth(this.gMonth, this.gYear);
+ var vOnLastDay=0;
+ var vCode = "";
+
+ /*
+ Get day for the 1st of the requested month/year..
+ Place as many blank cells before the 1st day of the month as necessary. 
+ */	
+
+ vCode = vCode + "<TR>";
+ for (i=0; i<vFirstDay; i++) {
+  vCode = vCode + "<TD WIDTH='14%'" + this.write_weekend_string(i) + "><FONT SIZE='1' FACE='" + fontface + "'> </FONT></TD>";
+ }
+
+ // Write rest of the 1st week
+ for (j=vFirstDay; j<7; j++) {
+  vCode = vCode + "<TD WIDTH='14%'" + this.write_weekend_string(j);
+
+  // if this month and this year, write blank spaces until today - we can only book from today on
+  if ( (this.gMonth == gNow.getMonth() && this.gYear == gNow.getFullYear() && vDay < gNow.getDate() && this.gReturnItem == 'frm_Search.ad') || (this.gMonth == gNow.getMonth() && this.gYear == gNow.getFullYear() && vDay <= gNow.getDate() && this.gReturnItem == 'frm_Search.dd') || (this.gMonth == gNow.getMonth() && this.gYear == gNow.getFullYear()+1 && vDay >= gNow.getDate() && this.gReturnItem == 'frm_Search.ad') || (vDay >= gLastDate.getDate() && this.gMonth == gLastDate.getMonth() && this.gYear == gLastDate.getFullYear() && this.gReturnItem == 'frm_Search.dd') ) {
+	vCode += "><FONT SIZE='1' FACE='" + fontface + "' COLOR='gray'>" + this.format_day(vDay);
+  } else {
+   vCode += "><FONT SIZE='1' FACE='" + fontface + "'>";
+   vCode = vCode + "<A HREF='#' " + 
+    "onClick=\"self.opener.document." + this.gReturnItem + ".selectedIndex='" + 
+     (vDay - 1) + 
+     "';self.opener.document." + this.gReturnItem1  + ".selectedIndex=" + this.gMonth + ";" 
+     if (this.gReturnItem == 'frm_Search.ad' || this.gReturnItem == 'frm_Search.nad') {
+      if (this.gReturnItem == 'frm_Search.ad') {
+       vCode = vCode + "self.opener.amadChange(self.opener.document.frm_Search.am,self.opener.document.frm_Search.ad,self.opener.document.frm_Search.dm,self.opener.document.frm_Search.dd);";
+      } else {
+       vCode = vCode + "self.opener.amadChange(self.opener.document.frm_Search.nam,self.opener.document.frm_Search.nad,self.opener.document.frm_Search.ndm,self.opener.document.frm_Search.ndd);";
+      }
+     } else {
+      if (this.gReturnItem == 'frm_Search.dd') {
+       vCode = vCode + "self.opener.dmddChange(self.opener.document.frm_Search.dm,self.opener.document.frm_Search.dd,self.opener.document.frm_Search.am,self.opener.document.frm_Search.ad);";
+      } else {
+       vCode = vCode + "self.opener.dmddChange(self.opener.document.frm_Search.ndm,self.opener.document.frm_Search.ndd,self.opener.document.frm_Search.nam,self.opener.document.frm_Search.nad);";
+      }
+     }
+     vCode = vCode + "window.close();\">" + 
+     this.format_day(vDay) +
+   "</A>";
+  }
+
+   vCode = vCode + "</FONT></TD>";
+  vDay=vDay + 1;
+ }
+ vCode = vCode + "</TR>";
+ 
+ // Write the rest of the weeks
+ for (k=2; k<7; k++) {
+  vCode = vCode + "<TR>";
+
+  for (j=0; j<7; j++) {
+   vCode = vCode + "<TD WIDTH='14%'" + this.write_weekend_string(j);
+
+  // if this month and this year, write blank spaces until tomorrow - we can only book from tomorrow on
+  if ( (this.gMonth == gNow.getMonth() && this.gYear == gNow.getFullYear() && vDay < gNow.getDate() && this.gReturnItem == 'frm_Search.ad') || (this.gMonth == gNow.getMonth() && this.gYear == gNow.getFullYear() && vDay <= gNow.getDate() && this.gReturnItem == 'frm_Search.dd') || (this.gMonth == gNow.getMonth() && this.gYear == gNow.getFullYear()+1 && vDay >= gNow.getDate() && this.gReturnItem == 'frm_Search.ad') || (vDay >= gLastDate.getDate() && this.gMonth == gLastDate.getMonth() && this.gYear == gLastDate.getFullYear() && this.gReturnItem == 'frm_Search.dd') ) {
+	vCode += "><FONT SIZE='1' FACE='" + fontface + "' COLOR='gray'>" + this.format_day(vDay);
+  } else {
+	vCode += "><FONT SIZE='1' FACE='" + fontface + "'>"
+    vCode = vCode + "<A HREF='#' " + 
+     "onClick=\"self.opener.document." + this.gReturnItem + ".selectedIndex='" + 
+     (vDay - 1) + 
+     "';self.opener.document." + this.gReturnItem1  + ".selectedIndex=" + this.gMonth + ";"
+     if (this.gReturnItem == 'frm_Search.ad' || this.gReturnItem == 'frm_Search.nad') {
+      if (this.gReturnItem == 'frm_Search.ad') {
+       vCode = vCode + "self.opener.amadChange(self.opener.document.frm_Search.am,self.opener.document.frm_Search.ad,self.opener.document.frm_Search.dm,self.opener.document.frm_Search.dd);";
+      } else {
+       vCode = vCode + "self.opener.amadChange(self.opener.document.frm_Search.nam,self.opener.document.frm_Search.nad,self.opener.document.frm_Search.ndm,self.opener.document.frm_Search.ndd);";
+	  }      
+     } else {
+      if (this.gReturnItem == 'frm_Search.dd') {
+       vCode = vCode + "self.opener.dmddChange(self.opener.document.frm_Search.dm,self.opener.document.frm_Search.dd,self.opener.document.frm_Search.am,self.opener.document.frm_Search.ad);";
+      } else {
+       vCode = vCode + "self.opener.dmddChange(self.opener.document.frm_Search.ndm,self.opener.document.frm_Search.ndd,self.opener.document.frm_Search.nam,self.opener.document.frm_Search.nad);";
+      }
+     }
+     vCode = vCode + "window.close();\">" + 
+     this.format_day(vDay) + 
+    "</A>";
+  }
+
+    vCode = vCode + "</FONT></TD>";
+   vDay=vDay + 1;
+
+   if (vDay > vLastDay) {   
+    vOnLastDay = 1;
+    break;
+   }
+  }
+
+  if (j == 6) {
+   vCode = vCode + "</TR>";
+  }
+  if (vOnLastDay == 1) {
+   break;
+  }
+ }
+ 
+ // Fill up the rest of last week with proper blanks, so that we get proper square blocks
+ for (m=1; m<(7-j); m++) {
+  vCode = vCode + "<TD WIDTH='14%'" + this.write_weekend_string(j+m) + 
+  "><FONT SIZE='1' FACE='" + fontface + "' COLOR='gray'>" + m + "</FONT></TD>";
+ }
+ return vCode;
+}
+
+// funciton used to build html for displaying each day in the calendar
+// if the day biegg displayed is = to the arrival or departure day on the booking form, it is displayed in red bold
+// if day is = to today, display in bold
+Calendar.prototype.format_day = function(vday) {
+	var vNowDay = gNow.getDate();
+	var vNowMonth = gNow.getMonth();
+	var vNowYear = gNow.getFullYear();
+
+	// show departure and arrival day in red
+	// show today in bold
+	if ((vday == document.frm_Search.ad.value && this.gMonth == document.frm_Search.am.value-1 && this.gYear == vNowYear) || (vday == document.frm_Search.dd.value && this.gMonth == document.frm_Search.dm.value-1 && this.gYear == vNowYear)) {
+		return ("<FONT COLOR=\"RED\"><B>" + vday + "</B></FONT>");
+	} else {
+		if (vday == vNowDay && this.gMonth == vNowMonth && this.gYear == vNowYear) {
+			return ("<B>" + vday + "</B>");
+		} else {
+			return (vday);
+		}
+	}
+}
+
+// function called while building the html to display every day in the calendar
+// tests day passed in as parameter
+// if weekend (sat or sun) - display as different colour
+Calendar.prototype.write_weekend_string = function(vday) {
+	var i;
+	// Return special formatting for the weekend day.
+	for (i=0; i<weekend.length; i++) {
+		if (vday == weekend[i]) {
+			return (" BGCOLOR=\"" + weekendColor + "\"");
+		}
+	}
+	return "";
+}
+
+// function constructs new calendar
+// the calendar is customised (test and linnk colours)
+// function calls show() function which writes html to the calendar document object
+function Build(p_item, p_item1, p_month, p_year) {
+ var p_WinCal = ggWinCal;
+ gCal = new Calendar(p_item, p_item1, p_WinCal, p_month, p_year);
+
+ // Customize your Calendar here..
+ gCal.gBGColor="white";
+ gCal.gLinkColor="#3a4f98";
+ gCal.gTextColor="#3a4f98";
+ gCal.gHeaderColor="#3a4f98";
+
+ gCal.show();
+}
+
+// This function is called directly by the bookingform on the MBE, IBE, and KcBE
+// function gets argunents from bookingform, does some stuff to calculate
+//  the year based on the dates selected on the booingform, opens a pop-up
+//  window and sets global handle ggWinCal = the window
+// build() is then called to write the html to the window
+function show_calendar() {
+	/* 
+	p_month : 0-11 for Jan-Dec; 12 for All Months.
+	p_year : 4-digit year
+	p_format: Date format (mm/dd/yyyy, dd/mm/yy, ...)
+	p_item : Return Item.
+	*/
+		
+	p_item = arguments[0];
+	p_item1 = arguments[1];
+	if (arguments[2] == null) {
+		p_month = new String(gNow.getMonth());
+	} else { 
+		p_month = arguments[2];
+	}
+
+	// if arrival day is before today, and month is this month, then year is next year
+	// otherwise year is this year
+	p_year = gNow.getFullYear();
+	if ((document.frm_Search.ad.value < gNow.getDate() && document.frm_Search.am.value == gNow.getMonth()+1) || (document.frm_Search.am.value < gNow.getMonth()+1)) {
+		p_year++;
+	}
+
+	//if the given month is < than the current and the years are equal then advance to the next year. No negative booking.
+	// This pieces of code, provides this facility where the month is selected from bookinginfo.asp.
+	if ( ( parseInt( p_month ) < parseInt( gNow.getMonth() ) ) && ( parseInt( p_year ) == parseInt( gNow.getFullYear().toString() ) ) ) {
+		p_year = parseInt(p_year) + 1;
+	}
+ 
+	vWinCal = window.open("", "Calendar", "width=170,height=200,status=no,resizable=no,top=200,left=200");
+	vWinCal.opener = self;
+	ggWinCal = vWinCal;
+ 
+ Build(p_item, p_item1, p_month, p_year);
+}
+
+// end script
+</script>
+
+		<SCRIPT LANGUAGE="JavaScript">
+<!--
+// Checks if browser is Netscape 2.0x since the options array properties don't work with Netscape 2.0x
+function isBrowserSupp() {
+    // Get the version of the browser
+    version =  parseFloat( navigator.appVersion );
+
+    if ( ( version >= 2.0 ) && ( version < 2.1 ) && ( navigator.appName.indexOf( "Netscape" ) != -1 ) ) {
+        return false;
+    }
+    else {
+    return true;
+    }
+
+return true;
+}
+
+function isLeapYear(yrStr)
+{
+var leapYear=false;
+var year = parseInt(yrStr, 10);
+// every fourth year is a leap year
+if (year%4 == 0)
+    {
+    leapYear=true;
+    // unless it's a multiple of 100
+    if (year%100 == 0)
+        {
+        leapYear=false;
+        // unless it's a multiple of 400
+        if (year%400 == 0)
+            {
+            leapYear=true;
+            }
+        }
+    }
+return leapYear;
+}
+
+
+function getDaysInMonth(mthIdx, YrStr)
+{
+// all the rest have 31
+var maxDays=31
+// expect Feb. (of course)
+if (mthIdx==1)
+    {
+    if (isLeapYear(YrStr))
+        {
+        maxDays=29;
+        }
+    else
+        {
+        maxDays=28;
+        }
+    }
+// thirty days hath...
+if (mthIdx==3 || mthIdx==5 || mthIdx==8 || mthIdx==10)
+    {
+    maxDays=30;
+    }
+return maxDays;
+}
+
+
+//the function which does some magic to the date fields
+// return non-zero if it is the last day of the month
+function adjustDate(mthIdx, Dt)
+{
+var value=0;
+
+var today = new Date()
+var theYear = parseInt(today.getYear(),10)
+
+if (mthIdx < today.getMonth()) {
+    theYear = (parseInt(today.getYear(), 10) + 1)
+}
+if(theYear<100){
+    theYear = "19" + theYear
+}
+else{
+    if((theYear-100) < 10){
+        theYear = "0" + (theYear-100)
+    }
+    else{
+        theYear = (theYear-100)+""
+    }
+    theYear = "20" + theYear
+}
+
+
+var numDays=getDaysInMonth(mthIdx, theYear);
+
+if (mthIdx==1)
+    {
+    if (Dt.options.selectedIndex + 1 < numDays)
+        {
+        return 0;
+        }
+    else
+        {
+        Dt.options.selectedIndex=numDays - 1;
+        //check for leap year
+        if (numDays==29)
+            {
+            return 99;
+            }
+        else
+            {
+            return 1;
+            }
+        }
+    }
+if (Dt.options.selectedIndex + 1 < numDays)
+    {
+    value=0;
+    }
+else
+    {
+    if (Dt.options.selectedIndex + 1 > numDays)
+        {
+        Dt.options.selectedIndex--;
+        value=3;
+        }
+    else
+        {
+        //index is 31 or 30
+        value=2;
+        }
+    }
+return value;
+}
+
+//changes departure month when arrival month is changed
+function amadChange(inM,inD,outM,outD)
+{
+if (!isBrowserSupp())
+    {
+    return;
+    }
+
+var res = adjustDate(inM.options.selectedIndex, inD);
+if (res != 0)
+    {
+           outD.options.selectedIndex=0;
+           if (inM.options.selectedIndex==11){
+            outM.options.selectedIndex=0
+           }
+           else{
+            outM.options.selectedIndex=inM.options.selectedIndex + 1;
+           }
+    }
+else
+    {
+    outM.options.selectedIndex = inM.options.selectedIndex;
+    outD.options.selectedIndex = inD.options.selectedIndex+1;
+    }
+return;
+}
+
+function dmddChange(outM,outD,inM,inD)
+{
+if (!isBrowserSupp())
+    {
+    return;
+    }
+
+adjustDate(outM.options.selectedIndex,outD);
+if (((outM.options.selectedIndex < inM.options.selectedIndex) && (inM.options.selectedIndex != 11)) || ((outM.options.selectedIndex == inM.options.selectedIndex) && (outD.options.selectedIndex <= inD.options.selectedIndex)))
+	{
+		amadChange(inM,inD,outM,outD);
+	}
+return;
+}
+//end new script code
+// -->
+		</SCRIPT>
+		<SCRIPT LANGUAGE="JavaScript">
+function validateForm(theForm)
+{
+	theForm.submitButton.disabled = true;
+	//check dates
+	var toDay = new Date()
+	var toMonth = toDay.getMonth()
+	var toYear = toDay.getFullYear()
+	var inY, outY
+	var startDate
+	var endDate
+	var dateDiff
+
+	inY = toYear;
+	outY = toYear;
+	if (theForm.am.options.selectedIndex < toMonth) inY = toYear + 1;
+	if (theForm.dm.options.selectedIndex < toMonth) outY = toYear + 1;
+	// convert check in date and check out date to milliseconds since 1970
+	startDate = new Date(inY,theForm.am.options.selectedIndex,theForm.ad.options.selectedIndex + 1);
+	endDate = new Date(outY,theForm.dm.options.selectedIndex,theForm.dd.options.selectedIndex + 1);
+	dateDiff = endDate - startDate
+	// 86400000 milliseconds in a day
+	if ((dateDiff/86400000) > 30)
+	{
+		event.returnValue = false;
+		theForm.submitButton.disabled = false;
+		alert("We cannot book for more than 30 nights. Please select different dates");
+	}
+}
+
+function viewMapPage(url,pop,name) 
+{
+	window.open(url, "mapinfo", "fullscreen=no,toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,directories=no,location=no,width=750,height=525,left=100,top=0")
+}
+		</SCRIPT>
+	</HEAD>
+	<style type="text/css">
+		<!--
+.inputText{font-family : Arial; font-size:8pt; font-weight:normal; color:#000000;}
+.bodyText{font-family : Arial; font-size:x-small; color:#000000;}
+.menuText{font-family : Arial; font-size:xx-small; color:#000000;}
+.titleText{font-family : Arial; font-size:small; color:#000000; font-weight:bold;}
+.copyText{font-family : Arial; font-size:xx-small; color:#000000;}
+.button{font-size:8pt; font-weight:bold; font-family : Arial; color:#FFffff; background-color:#000000;}
+--></style>
+	<BODY  background="../b2b/51356/" text="000000" bgcolor="FFffff" alink="000000" vlink="000000" link="000000" topMargin="0" leftMargin="0" rightMargin="0" bottomMargin="0">
+		<html>
+	<head>
+		<title>Welcome to cnghotels.com - Your online Hotel Reservation Experience!</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" href="http://www.cnghotels.com/css/main.css" type="text/css">
+			<!-- link rel="stylesheet" href="http://www.cnghotels.com/css/engine.css" type="text/css" -->
+			<script language="JavaScript" src="http://www.cnghotels.com/js/main.js"></script>
+	</head>
+	<body class="documentBody" onLoad="startClock()" onUnload="killClock()">
+		<br>
+		<img src="http://www.cnghotels.com/images/pixel.gif" width="20" height="20"><a href="http://www.cnghotels.com/"><img border="0" src="http://www.cnghotels.com/images/logo_cng_bug.gif"></a>
+		<br>
+		<br>
+		<br>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" height="39">
+			<tr>
+				<td height="19" colspan="3"><img src="http://www.cnghotels.com/images/pixel.gif" width="190" height="19"><img src="http://www.cnghotels.com/images/tabs_reserve.gif" width="407" height="19" border="0" usemap="#tabsMap"></td>
+			</tr>
+			<tr>
+				<td height="20" bgcolor="#9999ff" width="19%">
+					<table width="191" border="0" cellspacing="0" cellpadding="0" height="100%" ID="Table2">
+						<tr>
+							<td width="40" bgcolor="#9999ff" align="center" valign="middle"><a href="http://www.cnghotels.com/"><img src="http://www.cnghotels.com/images/btn_home.gif" width="24" height="11" border="0"></a></td>
+							<td width="1" bgcolor="#FFFFFF"></td>
+							<td bgcolor="#9999ff" align="center" valign="middle" width="120"><font size="1" color="#FFFFFF"><span id="theClock"></span></font></td>
+							<td width="1" bgcolor="#FFFFFF"></td>
+						</tr>
+					</table>
+				</td>
+				<!--<td height="20" bgcolor="#D6D3CE" width="5%" class="textArea">&nbsp;</td>-->
+				<td height="20" bgcolor="#9999ff" width="76%" class="textArea">
+					&nbsp; <a href="http://www.cnghotels.com/index.asp?view=reservations&subcat=bookings">
+						<font color="#000000">book online</font></a> &nbsp; <font color="#FFFFFF">|</font>
+					&nbsp; <a href="http://www.cnghotels.com/index.asp?view=reservations&subcat=specials">
+						<font color="#000000">special deals</font></a> &nbsp; <font color="#FFFFFF">|</font>
+					&nbsp; <a href="http://www.cnghotels.com/bookingenginev4/cancellation/cgcancellation.asp">
+						<font color="#000000">cancellations</font></a> &nbsp; <font color="#FFFFFF">|</font>
+					&nbsp; <a href="http://www.cnghotels.com/index.asp?view=reservations&subcat=faq"><font color="#000000">
+							faq</font></a> &nbsp; <font color="#FFFFFF">|</font> &nbsp; <a href="http://www.cnghotels.com/index.asp?view=reservations&subcat=customercare">
+						<font color="#000000">customer care</font></a></td>
+			</tr>
+		</table>
+
+		<table align="center" border="0" cellspacing="0" cellpadding="0" width="740">
+			<tr valign="top">
+				<td rowspan="5" valign="top" height="100%"></td>
+				<td align="center" valign="top">
+			</td>
+			<td rowspan="3" valign="top">
+				&nbsp;
+			</td>
+			</tr>
+			
+			<tr align="right">
+				<td bgColor="ffffff" class="menuText">
+					
+					
+					<br>
+					
+					<strong><A target="_top" href="http://www.online-hotel-bookings.co.uk?tourOpID1=&tourOpID2=">
+							Home
+						</A></strong>&nbsp;|&nbsp;
+					
+					<strong><A href="index.asp?CID=51356&LC=EN&tourOpID1=&tourOpID2=&am=&ad=&dm=&dd=&na=&nc=&cur=&PageId=&DeploymentId=">
+							New Search
+						</A></strong>
+					
+					&nbsp;|&nbsp;<strong><A href="index.asp?cityWanted=Seattle&LC=EN&state=WA&ccode=US&pageNumber=0&am=&ad=&dm=&dd=&na=&nc=&CID=51356&tourOpID1=&tourOpID2=&cur=&PageId=&DeploymentId="> Seattle Hotel List</A></strong>
+					
+					&nbsp;|&nbsp;<strong><A href="Comments.asp?Cid=51356&tourOpID1=">Contact Us</A></strong>
+					
+				</td>
+			</tr>
+			
+			<!--America West Implementation-->
+			<tr valign="top">
+				<td align="center">
+					<table width="740" border="0" cellspacing="0" cellpadding="0">
+						
+						<tr>
+							<td bgColor="ffffff"  align="center" class="titleText">
+								<br>
+								<strong>
+									Hotel Information
+								</strong>
+								<br>
+								<hr noshade size="1" color="000000">
+							</td>
+							<td bgColor="ffffff" align="right" class="titleText">
+								<br>
+								
+								<img src="Images/skyline.gif" width="15" height="15" alt="City Centre" border="0" />
+								20KM
+								<img src="Images/airport.gif" width="15" height="15" alt="Distance from Airport SEA" border="0">
+								0KM
+								<br>
+								<hr noshade size="1" color="000000">
+							</td>
+						</tr>
+						
+						<tr valign="top">
+							<td align="left" bgcolor="ffffff" class="bodyText">
+								<strong>
+									Clarion Hotel Seattle Airport
+								</strong>
+								<br>
+								<strong>
+									3000 S 176th St<BR>
+									,Seattle
+								</strong>
+								
+								<!-- Map Point Implementation Here -->
+								
+								<BR>
+								<BR>
+								<BR>
+								<a href="javascript:viewMapPage('mapinfo.asp?gCID=51356&gLC=EN&ghotelName=Clarion%2BHotel%2BSeattle%2BAirport&ghotelAirportDistance=0&ghotelAirportDistanceUnit=KM&ghotelCityCDistance=20&ghotelCityCDistanceUnit=KM&ghotelAirportName=SEA&ghotelStreet=3000 S 176th St&ghotelCity=Seattle&gLatitude=47.445423&gLongitude=-122.293884&gTextColor=000000&gBackgroundColor=FFffff&gDistanceType=','','')">
+									View Hotel on map
+								</a>
+								
+								<!-- Map Point Implementation End Here -->
+								
+							</td>
+							<td align="right" bgcolor="ffffff" class="bodyText" valign="top">
+								<strong>
+									
+										<form action="results.asp?CID=51356&LC=EN&hotelID=716992&tourOpID1=&tourOpID2=&strCountryCode=US&strStateCode=WA&strCity=Seattle&strHotelName=Clarion+Hotel+Seattle+Airport&strHotelStreet=3000 S 176th St&strHotelPostalCode=98188&destID=&cur=&origSearch=&PageId=&DeploymentId=" METHOD="POST" NAME="frm_Search" onSubmit="validateForm(this);" ID="Form1">
+											
+											<form action="results.asp?CID=51356&LC=EN&hotelID=716992&tourOpID1=&tourOpID2=&strCountryCode=US&strStateCode=WA&strCity=Seattle&strHotelName=Clarion+Hotel+Seattle+Airport&strHotelStreet=3000 S 176th St&strHotelPostalCode=98188&destID=&cur=&origSearch=&PageId=&DeploymentId=" METHOD="POST" NAME="frm_Search" onSubmit="validateForm(this);">
+												<B><FONT SIZE="-1" FACE="Arial, Helvetica">Check in:</FONT></B>
+												<select class="inputText" name="am" size="1" onChange="amadChange(this, document.frm_Search.ad, document.frm_Search.dm, document.frm_Search.dd)">
+													<option  value="1">January</option>
+													<option value="2">February</option>
+													<option value="3">March</option>
+													<option value="4">April</option>
+													<option value="5">May</option>
+													<option value="6">June</option>
+													<option value="7">July</option>
+													<option  selected value="8">August</option>
+													<option value="9">September</option>
+													<option value="10">October</option>
+													<option value="11">November</option>
+													<option value="12">December</option>
+												</select>
+												<select class="inputText" name="ad" size="1" onChange="amadChange(document.frm_Search.am, this, document.frm_Search.dm, document.frm_Search.dd)">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option  selected value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+													<option value="26">26</option>
+													<option value="27">27</option>
+													<option value="28">28</option>
+													<option value="29">29</option>
+													<option value="30">30</option>
+													<option value="31">31</option>
+												</select>
+												<a href="javascript:show_calendar('frm_Search.ad','frm_Search.am',frm_Search.am.options.selectedIndex);" onmouseover="window.status='Date Picker';return true;" onmouseout="window.status='';return true;">
+													<img src="Images/show_calendar.gif" border="0"></a>
+												<br>
+												<B><FONT SIZE="-1" FACE="Arial, Helvetica">Check out:</FONT></B>
+												<select class="inputText" name="dm" size="1" onChange="dmddChange(this,document.frm_Search.dd,document.frm_Search.am,document.frm_Search.ad)">
+													<option  value="1">January</option>
+													<option value="2">February</option>
+													<option value="3">March</option>
+													<option value="4">April</option>
+													<option value="5">May</option>
+													<option value="6">June</option>
+													<option value="7">July</option>
+													<option  selected value="8">August</option>
+													<option value="9">September</option>
+													<option value="10">October</option>
+													<option value="11">November</option>
+													<option value="12">December</option>
+												</select>
+												<select class="inputText" name="dd" size="1" onChange="dmddChange(document.frm_Search.dm,this,document.frm_Search.am,document.frm_Search.ad)">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option  selected value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+													<option value="26">26</option>
+													<option value="27">27</option>
+													<option value="28">28</option>
+													<option value="29">29</option>
+													<option value="30">30</option>
+													<option value="31">31</option>
+												</select>
+												<a href="javascript:show_calendar('frm_Search.dd','frm_Search.dm',frm_Search.dm.options.selectedIndex);" onmouseover="window.status='Date Picker';return true;" onmouseout="window.status='';return true;">
+													<img src="Images/show_calendar.gif" border="0"></a>
+												<br>
+												<B><FONT SIZE="-1" FACE="Arial, Helvetica">Rooms:</FONT></B>
+												<select class="inputText" name="nr" size="1">
+													<option selected>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+												<br>
+												<B><FONT SIZE="-1" FACE="Arial, Helvetica">Adults/room:</FONT></B>
+												<select class="inputText" name="na" size="1">
+													<option selected>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+												<br>
+												<input type="hidden" name="nc" value="0" ID="Hidden1"> 
+												<!--<B><FONT SIZE="-1" FACE="Arial, Helvetica">Children/room:</FONT></B>
+												<select class="inputText" name="nc" size="1">
+													<option selected>0</option>
+													<option>1</option>
+													<option>2</option>
+												</select>-->
+												<INPUT TYPE="submit" name="submitButton" VALUE="Check availability!" class="button">
+												
+								</strong>
+							</td>
+						</tr>
+					</table>
+					
+					<hr noshade size="1" color="000000">
+					</form>
+					<TABLE>
+<TR>
+<TD><img src="http://www.griangraf.com/images2/hotelimages/seattle/clarionhotel-ext.jpg"></TD>
+<TD><img src="http://www.griangraf.com/images2/hotelimages/seattle/clarionhotel-int.jpg"></TD>
+</TR>
+</TABLE><br><font face="Arial" size="2"><b></b><br></font>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="ffffff">
+<tr align="right">
+</tr>
+<td align="left">
+<font face="Arial" size="2">The Clarion Hotel Seattle Airport is a 2 Star hotel.   That will cater for both business and leisure guests during their stay at the hotel.</font>
+</td>
+</tr>
+</table><br><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="ffffff">
+<td align="center">
+<font face="Arial" size="2" color="000000"><b>Additional Features</b></font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td>
+<font face="Arial" size="2">The hotel has 214 guestrooms that are all decorated to the highest standards.  All the rooms come with cable television, air conditioning, multi-line phone, internet access, voice mail and coffee and tea maker.<br></font><br><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td align="center">
+<font face="Arial" size="2" color="000000"><b>Area Description</b></font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td>
+<font face="Arial" size="2">The hotel is adjacent to Seatac Airport and is only 12 miles from downtown Seattle and only 15 miles to downtown Tacoma.  <br></font><br><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td align="center">
+<font face="Arial" size="2" color="000000"><b>Dining Facilities</b></font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td>
+<font face="Arial" size="2">The hotel has excellent on site dining facilities that will cater to all its guests dining needs during their stay at the hotel.<br></font><br><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td align="center">
+<font face="Arial" size="2" color="000000"><b>Local Attractions</b></font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td>
+<font face="Arial" size="2">Attractions include Seattle, South Center, Lewis and Clarke Bowling Center, Lewis and Clarke Movies, Boeing Space Center, Emerald Downs Horsetrack, Boeing Museum of Flight, Weyerhauser Warehouse, Boeing-Kent, Boeing-Renton, West Seattle General Hospital, Kingdome, Financial District, Folklife Festival, Hydroplane Racing, Pike Place Market, Pioneer Square, Seattle Aquarium, Tacoma Dome, Puyallup Fair, Seattle Center, Space Needle, Waterfront, Financial Center-Tacoma, University of Washington and McCord Air Force Base.<br></font><br><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td align="center">
+<font face="Arial" size="2" color="000000"><b>Location Description</b></font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td>
+<font face="Arial" size="2">Directions to Our Hotel, take I-5 exit, 152, 188th Street, right on Pacific Highway.  International Boulevard.  Highway 99.  After a quarter of a mile turn right on to 176th Street.  The hotel is located on the left. <br></font><br><br></td>
+</tr>
+</table><br><b></b><br><b></b><br><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<tr align="right">
+<font face="Arial" size="2">
+</font>
+</tr>
+<td align="center">
+<font face="Arial" size="3" color="000000">
+</font>
+</td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>AIR CONDITIONING IN PUBLIC AREAS</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Bar/Lounge</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Coffee Maker In Room</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Disabled Rooms/Facilities</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Elevators</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Hairdryers Available</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Iron</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Guest Laundromat</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>No Smoking Rooms/Facilities</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Safe Deposit Box</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Television With Cable</font><br></td>
+</tr>
+<tr bgcolor="ffffff">
+<td colspan="2">
+<font face="Arial" size="2" color="000000">
+<li></li>Laundry/Valet Services</font><br></td>
+</tr>
+</table><br><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="ffffff">
+<td align="center">
+<font face="Arial" size="2" color="000000">
+</font>
+</td>
+</tr>
+<tr bgcolor="ffffff">
+<td>
+<font face="Arial" size="2">
+</font>
+</td>
+</tr>
+</table>
+
+						<br>
+				</td>
+			</tr>
+			
+		</table>
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0052)http://homepage.eircom.net/~space22/onlinehotels.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"></STYLE>
+<META content="MSHTML 6.00.2900.2802" name=GENERATOR></HEAD>
+<BODY lang=EN-GB style="tab-interval: 36.0pt">
+<DIV class=Section1>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]><O:P></O:P></P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><B><SPAN 
+style="FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: Verdana">To Book By Telephone 
+</SPAN></B><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana"><BR><BR>Lo-call 
+from the UK <B>0871 871 8011</B> &nbsp;&nbsp; Toll Free from the US <B>1-888 205 0282<BR>
+</B><BR><BR>Rep Of Ireland Call <B>021 483 5293</B>&nbsp;&nbsp; All Others 
+Call <B>+353 21 483 5293</B> <BR><BR></SPAN><SPAN 
+style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana; mso-bidi-font-family: Arial"></SPAN><SPAN 
+style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana"></SPAN><SPAN 
+style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana; mso-bidi-font-family: Arial"></SPAN><SPAN 
+style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana"><BR>Central Reservation Centre, 
+Hotel Telephone number not available through this service 
+</SPAN></P></DIV></BODY></HTML>
+
+		<table align=center border="0" cellspacing="0" cellpadding="1" width="740" class="copyText">
+			<tr>
+				<td align="center">
+					&copy
+					online-hotel-bookings.co.uk
+					,
+					2006
+					.</td>
+			</tr>
+		</table>
+	</BODY>
+</HTML>

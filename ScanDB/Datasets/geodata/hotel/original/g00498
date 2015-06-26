@@ -1,0 +1,416 @@
+<DOC>
+<DOCNO>g00498</DOCNO>
+<DOCHDR>http://www.hotelbelleclaire.com/reservations.html</DOCHDR>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+        <title>Budget Hotel New York - Hotel Belleclaire </title>
+<meta name="Description" content="An affordable, stylish hotel
+on New York's Upper West Side.">
+<meta name="keywords" content="New York budget hotel,
+cheap nyc hotel, cheap new york city lodging, discount reservations
+new york, economy hotel nyc, triumph hotel, triumph hotel new york,
+accommodations, reservations, west side, budget, low rates, value,
+discount, shared bath, American Museum of Natural History, strawberry
+fields, Lincoln Center, reasonable prices, inns motels, night life,
+tourist class, lodging, travel, Rose Center, Broadway, Upper west side,
+suite, suites, Hotel, Travel, Lodging, Suites, bargain, Bed &
+Breakfast, B&B, vacation, JFK, LGA, EWR, Empire State Building, Grand
+Central Station, Rockefeller Center, Central
+Park"><SCRIPT LANGUAGE = "JavaScript">
+<SCRIPT>
+function FormValidator(theForm)
+{
+	<!-- Repeat Password -->
+	if (theForm.FROM2.value == "")
+	{
+		alert("Please enter your email address into the \"Repeat Email\" field.");
+		theForm.FROM2.focus();
+		return (false);
+	}
+	if (theForm.FROM.value != theForm.FROM2.value)
+	{
+		alert("You entered two different email addresses! Please make sure your correct address is entered into the \"Email\" and \"Repeat email\" fields.");
+		theForm.FROM.focus();
+		return (false);
+	}
+}
+    </SCRIPT>
+<SCRIPT language=JavaScript>
+//set todays date
+
+Now = new Date();
+NowDay = Now.getDate();
+NowMonth = Now.getMonth();
+NowYear = Now.getYear();
+if (NowYear < 2000) NowYear += 1900; //for Netscape
+
+
+//function for returning how many days there are in a month including leap years
+
+function DaysInMonth(WhichMonth, WhichYear)
+{
+	var DaysInMonth = 31;
+
+	if (WhichMonth == "Apr" || WhichMonth == "Jun" || WhichMonth == "Sep" || WhichMonth == "Nov") DaysInMonth = 30;
+
+	if (WhichMonth == "Feb" && (WhichYear/4) != Math.floor(WhichYear/4))	DaysInMonth = 28;
+
+	if (WhichMonth == "Feb" && (WhichYear/4) == Math.floor(WhichYear/4))	DaysInMonth = 29;
+
+	return DaysInMonth;
+}
+
+
+//function to change the available days in a months
+
+function ChangeOptionDays(Which)
+{
+	DaysObject = eval("document.Form1." + Which + "Day");
+	MonthObject = eval("document.Form1." + Which + "Month");
+	YearObject = eval("document.Form1." + Which + "Year");
+
+	Month = MonthObject[MonthObject.selectedIndex].text;
+	Year = YearObject[YearObject.selectedIndex].text;
+
+	DaysForThisSelection = DaysInMonth(Month, Year);
+
+	CurrentDaysInSelection = DaysObject.length;
+
+	if (CurrentDaysInSelection > DaysForThisSelection)
+	{
+		for (i=0; i<(CurrentDaysInSelection-DaysForThisSelection); i++)
+		{
+			DaysObject.options[DaysObject.options.length - 1] = null
+		}
+	}
+
+	if (DaysForThisSelection > CurrentDaysInSelection)
+	{
+		for (i=0; i<(DaysForThisSelection-CurrentDaysInSelection); i++)
+		{
+			NewOption = new Option(DaysObject.options.length + 1);
+			DaysObject.add(NewOption);
+		}
+	}
+
+	if (DaysObject.selectedIndex < 0) DaysObject.selectedIndex == 0;
+}
+
+
+//function to set options to today
+
+function SetToToday(Which)
+{
+
+	DaysObject = eval("document.Form1." + Which + "Day");
+	MonthObject = eval("document.Form1." + Which + "Month");
+	YearObject = eval("document.Form1." + Which + "Year");
+
+
+	YearObject[0].selected = true;
+	MonthObject[NowMonth].selected = true;
+
+	ChangeOptionDays(Which);
+
+	DaysObject[NowDay-1].selected = true;
+}
+
+
+//function to write option years plus x
+
+function WriteYearOptions(YearsAhead)
+{
+	line = "";
+
+	for (i=0; i<YearsAhead; i++)
+	{
+		line += "<OPTION>";
+		line += NowYear + i;
+	}
+
+	return line;
+}
+
+</SCRIPT>
+<SCRIPT LANGUAGE = "JavaScript"><!--
+
+        if (document.images) {            // Active Images
+            img1on = new Image();      
+            img1on.src = "img/resroll1.gif"; 
+            img2on = new Image();      
+            img2on.src = "img/ratesroll1a.gif"; 
+            img3on = new Image();      
+            img3on.src = "img/roomsroll1.gif"; 
+            img4on = new Image();      
+            img4on.src = "img/locroll1.gif"; 
+            img5on = new Image();      
+            img5on.src = "img/svcroll1.gif"; 
+            img6on = new Image();      
+            img6on.src = "img/guestbookroll1.gif"; 
+            img7on = new Image();      
+            img7on.src = "img/toproll.gif"; 
+            img8on = new Image();      
+            img8on.src = "img/homeroll1.gif"; 
+            img9on = new Image();      
+            img9on.src = "img/specroll1.gif"; 
+            img10on = new Image();      
+            img10on.src = "img/galleryroll1.gif"; 
+            img11on = new Image();      
+            img11on.src = "img/directionsroll1.gif"; 
+            img12on = new Image();      
+            img12on.src = "img/onlineresroll1.gif"; 
+            
+
+            img1off = new Image(); 
+            img1off.src = "img/res1a.gif"; 
+            img2off = new Image(); 
+            img2off.src = "img/rates1a.gif"; 
+            img3off = new Image(); 
+            img3off.src = "img/rooms1.gif"; 
+            img4off = new Image(); 
+            img4off.src = "img/loc1.gif"; 
+            img5off = new Image(); 
+            img5off.src = "img/svc1.gif"; 
+            img6off = new Image(); 
+            img6off.src = "img/guestbook1.gif"; 
+            img7off = new Image(); 
+            img7off.src = "img/top.gif"; 
+            img8off = new Image(); 
+            img8off.src = "img/home1.gif"; 
+            img9off = new Image(); 
+            img9off.src = "img/spec1.gif"; 
+            img10off = new Image(); 
+            img10off.src = "img/gallery1a.gif"; 
+            img11off = new Image(); 
+            img11off.src = "img/directions1.gif"; 
+            img12off = new Image(); 
+            img12off.src = "img/onlineres1a.gif"; 
+
+
+
+
+        }
+
+// Function to 'activate' images.
+function imgOn(imgName) {
+        if (document.images) {
+            document[imgName].src = eval(imgName + "on.src");
+        }
+}
+
+// Function to 'deactivate' images.
+function imgOff(imgName) {
+        if (document.images) {
+            document[imgName].src = eval(imgName + "off.src");
+        }
+}
+
+// -->
+</SCRIPT><STYLE TYPE="text/css">
+   <!--
+   .nounderline A {text-decoration:none}
+   -->
+   </STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+function popup(url) {
+emailWin=window.open(url,"win",'toolbar=0,location=0,directories=0,status=1,menubar=0,scrollbars=0,resizable=1,width=400,height=550');
+self.name = "mainWin"; }
+</SCRIPT></HEAD>
+<BODY MARGINHEIGHT="0" MARGINWIDTH="0" MARGIN="NO" leftmargin="0" onload="SetToToday('FirstSelect');" topmargin="0" BGCOLOR="#C0D6A4" LINK="#666633" ALINK="#666633" VLINK="#666633" BACKGROUND="img/83bg.gif">
+
+
+<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0"  WIDTH="100%">
+	<TR>
+		<TD BGCOLOR="#E8E8C9" WIDTH="83" VALIGN="top" ROWSPAN="2"><IMG SRC="img/hleft.gif" ALT="Hotel Belleclaire" WIDTH="83" HEIGHT="97" HSPACE="0" VSPACE="0" BORDER="0"><BR><IMG NAME="img1" SRC="img/resx1.gif" ALT="Reservations" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"><BR><A HREF="specials.html" onMouseOver = "imgOn('img9')" 
+ onMouseOut = "imgOff('img9')"><IMG NAME="img9" SRC="img/spec1.gif" ALT="Specials" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"></A><BR><A HREF="rooms.html#rates" onMouseOver = "imgOn('img2')" 
+ onMouseOut = "imgOff('img2')"><IMG NAME="img2" SRC="img/rates1a.gif" ALT="Rates" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"></A><BR><A HREF="rooms.html" onMouseOver = "imgOn('img3')" 
+ onMouseOut = "imgOff('img3')"><IMG NAME="img3" SRC="img/rooms1.gif" ALT="Rooms" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"></A><BR><A HREF="location.html" onMouseOver = "imgOn('img4')" 
+ onMouseOut = "imgOff('img4')"><IMG NAME="img4" SRC="img/loc1.gif" ALT="Location" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"></A><BR><A HREF="directions.html" onMouseOver = "imgOn('img11')" 
+ onMouseOut = "imgOff('img11')"><IMG NAME="img11" SRC="img/directions1.gif" ALT="Driving Directions" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"></A><BR><A HREF="gallery.html" onMouseOver = "imgOn('img10')" 
+ onMouseOut = "imgOff('img10')"><IMG NAME="img10" SRC="img/gallery1a.gif" ALT="Gallery" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"></A><BR><A HREF="services.html" onMouseOver = "imgOn('img5')" 
+ onMouseOut = "imgOff('img5')"><IMG NAME="img5" SRC="img/svc1.gif" ALT="Services" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"></A><BR><A HREF="guestbook.html" onMouseOver = "imgOn('img6')" 
+ onMouseOut = "imgOff('img6')"><IMG NAME="img6" SRC="img/guestbook1.gif" ALT="Guestbook" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"></A><BR><A HREF="index.html" onMouseOver = "imgOn('img8')" 
+ onMouseOut = "imgOff('img8')"><IMG NAME="img8" SRC="img/home1.gif" ALT="Home" WIDTH="83" HEIGHT="26" HSPACE="0" VSPACE="5" BORDER="0"></A><BR><IMG SRC="img/greenpix.gif" ALT="" WIDTH="71" HEIGHT="1" HSPACE="0" VSPACE="10" BORDER="0"><BR><IMG SRC="img/contactside1.gif" ALT="" WIDTH="83" HEIGHT="193" HSPACE="0" VSPACE="20" BORDER="0"></TD><TD BGCOLOR="#C0D6A4" VALIGN="top" WIDTH="83"><IMG SRC="img/bleft.gif" ALT="Hotel Belleclaire" WIDTH="83" HEIGHT="97" HSPACE="0" VSPACE="0" BORDER="0"></TD><TD VALIGN="top"><TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0"  WIDTH="100%">
+	<TR>
+		<TD ALIGN="center"><IMG SRC="img/1pix.gif" ALT="" WIDTH="1" HEIGHT="3" HSPACE="0" VSPACE="0" BORDER="0"><BR><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif">250&nbsp;West&nbsp;77th&nbsp;Street&nbsp;&nbsp;&nbsp;&nbsp;New&nbsp;York,&nbsp;NY&nbsp;10024&nbsp;&nbsp;&nbsp;&nbsp;phone&nbsp;-&nbsp;212.362.7700&nbsp;&nbsp;&nbsp;&nbsp;toll&nbsp;free&nbsp-&nbsp;877.HOTELBC<BR><BR><IMG SRC="img/tresv.gif" ALT="" WIDTH="343" HEIGHT="36" HSPACE="0" VSPACE="10" BORDER="0"><BR>
+
+<A HREF="reservations1.html" onMouseOver = "imgOn('img12')" 
+ onMouseOut = "imgOff('img12')"><IMG NAME="img12" SRC="img/onlineres1a.gif" ALT="Click for instant reservations" WIDTH="260" HEIGHT="62" HSPACE="20" VSPACE="10" BORDER="0"></A><BR><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif">For a more personal response, fill out the form below.</font></font></TD>
+	</TR>
+</TABLE>
+</TD></TR>
+	<TR>
+		<TD BGCOLOR="#C0D6A4" VALIGN="top" COLSPAN="2" ALIGN="center"><TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0"  WIDTH="85%"><IMG SRC="img/1pix.gif" ALT="" WIDTH="1" HEIGHT="20" HSPACE="0" VSPACE="0" BORDER="0"><BR>
+	<TR>
+		<TD><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=8 WIDTH="100%">
+<TR><TD ALIGN=Center ><FORM onSubmit="return FormValidator(this);" action=/cgi-bin/mail2 method=POST name=Form1>
+<input type=hidden name=ar-resreply.txt value="email">
+<input type=hidden name=ars-resreply.txt value="Thank You - The Belleclaire Hotel">
+<input type=hidden name=AR-FROM value="reservations@hotelbelleclairenewyork.com">
+<input type=hidden name=LOGIN value="belleman">
+<input type=hidden name=TEMPLATE value="/gadgets/res.tpl">
+<input type=hidden name=TO value="reservations@hotelbelleclairenewyork.com">
+<input type=hidden name=SUBJECT value="Reservations Request Form BC">
+<INPUT type=hidden name=REDIRECT value="http://hotelbelleclairenewyork.com/resreply.html">
+<input type="hidden" name="format-FROM" value="EMAIL" />
+<INPUT type=hidden name=MANDATORY value="name" > <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0><TR><TD ALIGN=Right ><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif">Full Name </FONT></TD><TD><INPUT NAME="name" TYPE=Text SIZE="40" MAXLENGTH="50"></TD><TD><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif"> *Required</FONT></TD></TR>
+<TR><TD ALIGN=Right><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif">FROM (your email)</FONT> </TD><TD><INPUT NAME="FROM" TYPE=Text SIZE="40" MAXLENGTH="50"></TD><TD><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif"> *Required</FONT></TD></TR>
+<TR><TD ALIGN=Right><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif">Repeat your email</FONT> </TD><TD><INPUT NAME="FROM2" TYPE=Text SIZE="40" MAXLENGTH="50"></TD><TD><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif"> *Required</FONT></TD></TR>
+
+<TR><TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Company Name </font></TD><TD><INPUT NAME="companyname" TYPE=Text SIZE="40" MAXLENGTH="50"></TD><TD>&nbsp;</TD></TR>
+     <TR><TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Address </font></TD><TD><INPUT NAME="address" TYPE=Text SIZE="40" MAXLENGTH="50"></TD><TD>&nbsp;</TD></TR>
+       <TR><TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Phone </font></TD><TD><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD><INPUT NAME="phone" TYPE=Text SIZE="15" MAXLENGTH="50"></TD>     <TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Fax <INPUT NAME="fax" TYPE=Text SIZE="15" MAXLENGTH="50"></font></TD></TR></TABLE></TD><TD>&nbsp;</TD></TR>
+        <TR><TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">City </font></TD><TD><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD><INPUT NAME="city" TYPE=Text SIZE="15" MAXLENGTH="50"></TD>        <TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">State <INPUT NAME="state" TYPE=Text SIZE="10" MAXLENGTH="50"></font></TD></TR></TABLE></TD><TD>&nbsp;</TD></TR>
+     <TR><TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Country </font></TD><TD><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%"><TR><TD><INPUT NAME="country" TYPE=Text SIZE="15" MAXLENGTH="50"></TD>          <TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">ZIP <INPUT NAME="zip" TYPE=Text SIZE="10" MAXLENGTH="50"></font></TD></TR></TABLE></TD><TD>&nbsp;</TD></TR></TABLE><P><P>
+<TABLE BORDER=0 CELLSPACING=3 CELLPADDING=3>
+<TR>
+	<TD COLSPAN="2"  ALIGN=Center ><FONT FACE="Avant Garde, Arial, Sans Serif">Date(s) you would like to make a reservation:</font></TD>
+</TR>
+<TR>
+	<TD ALIGN=Right ><FONT FACE="Avant Garde, Arial, Sans Serif">Arrival:</font></TD>
+	<TD>
+                                      <SELECT name="FirstSelectMonth" onchange="ChangeOptionDays('FirstSelect')">
+                                        <OPTION>Jan
+	<OPTION>Feb
+	<OPTION>Mar
+	<OPTION>Apr
+	<OPTION>May
+	<OPTION>Jun
+	<OPTION>Jul
+	<OPTION>Aug
+	<OPTION>Sep
+	<OPTION>Oct
+	<OPTION>Nov
+	<OPTION>Dec
+</SELECT>
+                                      <select name="FirstSelectDay">
+                                        <option>1 
+                                        <option>2 
+                                        <option>3 
+                                        <option>4 
+                                        <option>5 
+                                        <option>6 
+                                        <option>7 
+                                        <option>8 
+                                        <option>9 
+                                        <option>10 
+                                        <option>11 
+                                        <option>12 
+                                        <option>13 
+                                        <option>14 
+                                        <option>15 
+                                        <option>16 
+                                        <option>17 
+                                        <option>18 
+                                        <option>19 
+                                        <option>20 
+                                        <option>21 
+                                        <option>22 
+                                        <option>23 
+                                        <option>24 
+                                        <option>25 
+                                        <option>26 
+                                        <option>27 
+                                        <option>28 
+                                        <option>29 
+                                        <option>30 
+                                        <option>31 
+                                      </select>
+                                      <SELECT name="FirstSelectYear" onchange="ChangeOptionDays('FirstSelect')">
+                                        <SCRIPT language="JavaScript">
+		document.write(WriteYearOptions(50));
+	</SCRIPT>
+</SELECT>
+                                    </TD>
+</TR>
+<TR>
+	<TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Staying for</font></TD>
+	<TD>
+<select name=nights>
+                                        <option selected>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                      </select>
+<FONT FACE="Avant Garde, Arial, Sans Serif">nights</font></TD>
+</TR>
+<TR>
+	<TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Number of adults?</font></TD>
+	<TD><select name=adults><OPTION>1</OPTION><OPTION>2</OPTION></Select></TD>
+<TR>
+	<TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Number of children?</font></TD>
+	<TD><select name=children><OPTION>0</OPTION><OPTION>1</OPTION><OPTION>2</OPTION></Select></TD>
+</TR>
+<TR>
+	<TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Type of room:</font></TD>
+	<TD><select name=Type><OPTION>Economy Room (shared bath)</OPTION><OPTION>Superior Room</OPTION><OPTION>2 Room Suite</OPTION></Select></TD>
+</TR>
+<TR>
+	<TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Bed Type Requested:</font></TD>
+	<TD><select name=Bed><OPTION>One King Size</OPTION><OPTION>One Queen Size</OPTION><OPTION>Two Doubles</OPTION></Select></TD>
+</TR>
+<TR>
+	<TD ALIGN=Right><FONT FACE="Avant Garde, Arial, Sans Serif">Would you prefer:</font></TD>
+	<TD><select name=Prefer><OPTION>Non-Smoking</OPTION><OPTION>Smoking</OPTION></Select></TD>
+</TR>
+<TR>
+	<TD ALIGN=Right ><FONT FACE="Avant Garde, Arial, Sans Serif">Are you traveling:</font></TD>
+	<TD><select name=TravelingOn><OPTION>On Business</OPTION><OPTION>On Leisure</OPTION></Select></TD>
+</TR>
+
+<TR>
+	<TD ALIGN="center" COLSPAN="2"><FONT FACE="Avant Garde, Arial, Sans Serif">Would you like us to keep you informed about special events and promotions? <BR><input type=radio name=SUBJECT VALUE="_list"><FONT FACE="Avant Garde, Arial, Sans Serif">Yes <input type=radio name=SUBJECT VALUE="do_not_list"><FONT FACE="Avant Garde, Arial, Sans Serif">No</font></font></font></TD>
+</TR>
+</TABLE>
+<IMG SRC="img/1pix.gif" ALT="" WIDTH="1" HEIGHT="8" HSPACE="0" VSPACE="0" BORDER="0">
+<TABLE BORDER=0 CELLSPACING=3 CELLPADDING=3 >
+<TR>
+	<TD COLSPAN="3" ><FONT FACE="Avant Garde, Arial, Sans Serif">What is the best way to contact you regarding availability?</font></TD>
+</TR>
+<TR>
+	<TD><input type=radio name=contact_by VALUE="E-mail"><FONT FACE="Avant Garde, Arial, Sans Serif">e-mail </font></TD>
+	<TD><input type=radio name=contact_by VALUE="FAX"><FONT FACE="Avant Garde, Arial, Sans Serif">fax</font></TD>
+<TD><input type=radio name=contact_by VALUE="Phone"><FONT FACE="Avant Garde, Arial, Sans Serif">phone</font></TD>
+</TR>
+</TABLE><P><FONT FACE="Avant Garde, Arial, Sans Serif">
+Other questions or comments?<BR>
+<textarea name=feedback cols=50 rows=5  wrap="NO"></textarea>
+<BR> <BR>
+<FONT COLOR="#000066"><FONT FACE="Avant Garde, Arial, Sans Serif" COLOR="#666633">To send your inquiry click <B>ONCE</B> on the "Mail it" button below.<BR> <BR></FONT><BR> <BR>
+
+<input type=submit value="Mail it"><input type=reset value="Clear">
+</font></font></FORM></TD></TR></TABLE></TD>
+	</TR>
+</TABLE><TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0"  WIDTH="100%">
+	<TR>
+		<TD BGCOLOR="#E8E8C9"><IMG SRC="img/1pix.gif" ALT="" WIDTH="1" HEIGHT="1" HSPACE="0" VSPACE="0" BORDER="0" ALIGN="right"></TD>
+	</TR>
+</TABLE><CENTER><DIV CLASS="nounderline"><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif">| <A HREF="reservations.html">Reservations</A> | <A HREF="specials.html">Specials</A> | <A HREF="rooms.html">Rooms</A> | <A HREF="rooms.html#rates">Rates</A> | <A HREF="location.html">Location</A> | <A HREF="services.html">Services</A> | <A HREF="index.html">Home</A> | <A HREF="guestbook.html">Guestbook</A> | <a href="gallery.html">Gallery</a> | <A HREF="mailto:reservations@hotelbelleclaire.com">Email</A> |</font></DIV><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif"><TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0"  WIDTH="100%">
+	<TR>
+		<TD BGCOLOR="#E8E8C9"><IMG SRC="img/1pix.gif" ALT="" WIDTH="1" HEIGHT="1" HSPACE="0" VSPACE="0" BORDER="0" ALIGN="right"></TD>
+	</TR>
+</TABLE>
+</font></center></TD>
+	</TR>
+	<TR>
+		<TD BGCOLOR="#E8E8C9" ALIGN="center"><A HREF="#top" onMouseOver = "imgOn('img7')" 
+ onMouseOut = "imgOff('img7')"><IMG NAME="img7" SRC="img/top.gif" ALT="Return to top" WIDTH="29" HEIGHT="25" HSPACE="0" VSPACE="0" BORDER="0"></A></TD><TD BGCOLOR="#C0D6A4" COLSPAN="2" ALIGN="center"><IMG SRC="img/1pix.gif" ALT="" WIDTH="1" HEIGHT="20" HSPACE="0" VSPACE="0" BORDER="0"><BR><FONT COLOR="#666633" FACE="Avant Garde, Arial, Sans Serif">Belleclaire&nbsp;Hotel&nbsp;&nbsp;&nbsp;&nbsp;250&nbsp;West&nbsp;77th&nbsp;Street&nbsp;&nbsp;&nbsp;&nbsp;New&nbsp;York,&nbsp;NY&nbsp;10024<BR>phone&nbsp;-&nbsp;212.362.7700&nbsp;&nbsp;&nbsp;&nbsp;toll&nbsp;free&nbsp-&nbsp;877.HOTELBC&nbsp;&nbsp;&nbsp;&nbsp;fax&nbsp;-&nbsp;212.362.1004<BR><IMG SRC="img/1pix.gif" ALT="" WIDTH="1" HEIGHT="8" HSPACE="0" VSPACE="0" BORDER="0"><BR><DIV CLASS="nounderline">email - <A HREF="mailto:reservations@hotelbelleclaire.com">reservations@hotelbelleclaire.com</A><BR><IMG SRC="img/1pix.gif" ALT="" WIDTH="1" HEIGHT="10" HSPACE="0" VSPACE="0" BORDER="0"><BR><FONT COLOR="#C0D6A4">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</FONT></div></font></TD></TR>
+</TABLE>
+
+
+
+
+</BODY></HTML>

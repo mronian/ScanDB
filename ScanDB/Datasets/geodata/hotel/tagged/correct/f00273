@@ -1,0 +1,330 @@
+<DOC>
+<DOCNO>f00273</DOCNO>
+<DOCHDR>http://www.airportsfotravelodge.com</DOCHDR>
+<html>
+<head>
+
+<TITLE>San Francisco Airport Travelodge - San Francisco, California - Official Hotel Website - San Francisco Hotels</TITLE>
+
+<meta name="description" content="San Francisco Hotels, Fisherman's Wharf, Near Ghirardelli Square, Cable Car Stations, Near Pier 39 San Francisco Hotels">
+
+<meta name="keywords" content="San Francisco Hotel,San Francisco Hotels,San Francisco Hotels,Union Square,Moscone Convention Center,Civic Center,Fisherman's Wharf,Chinatown,travel,Downtown,Curran Theatre,cable car,California,corporate,executive,Davies Symphony Hall,Ballet,Opera,Museum of Modern Art,BART,transportation,street cars,Geary,Taylor,historic,moderate,Bay Area,silcon valley,bed breakfast,overnight,stay,place,rooms,franchise,hotelier,Corporate Housing,Directories,Directory,Guest Houses,Motels,Resorts,Timeshares,Vacations Rentals,villas,condos,accomodations,lodging,Inns,Suites,Hotels,Motels,Resorts,packages,Reservations,wholesale,travel,agents,area,information,cheap, budget,all inclusive,Best Western,Marriott,Days,Drury,Embassy,Fairfield,Four Points,Hampton,Hilton,Holiday,Express,Howard Johnsons,Hyatt,La Quinta,Omni, Radisson,Ramada,Residence,Ritz-Carlton,Sheraton Worldwide">
+
+<meta name="ROBOTS" CONTENT="ALL">
+
+<STYLE type="text/css">
+.normalform { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #424242; background-color: #F8F8F8; border: 1px #575757 solid }
+	</STYLE>
+	<script language="javascript" src="calendar/calendar.js"></script>
+	<LINK REL=STYLESHEET href="calendar/calendar.css" type="text/css">
+</head>
+
+<body text="#384490" link="#FFFFFF" vlink="#CCCCCC" alink="#CCCCCC" bgcolor="#00539B">
+
+
+<script language="JavaScript">
+
+function ValidateDate ()
+{
+
+var d1 = document.form1.start_date.value+"";
+
+if( d1 == "mm/dd/yyyy" ) {
+	alert ('Please select proper date range!');
+	return false
+}
+start_month = d1.substring(0,2);
+start_day = d1.substring(3,5);
+start_year = d1.substring(6,10);
+
+start_date  = new Date(start_year ,start_month, start_day);
+
+var d2 = document.form1.end_date.value;
+
+if( d2 == "mm/dd/yyyy" ) {
+	alert ('Please select proper date range!');
+	return false
+}
+
+end_month = d2.substring(0,2);
+end_day = d2.substring(3,5);
+end_year = d2.substring(6,10);
+
+
+end_date = new Date(end_year ,end_month, end_day );
+
+if (end_date <=start_date)
+{
+	alert ('Please select proper date range!');
+	return false
+}
+if ( (end_date.getTime()- start_date.getTime())/(24*60*60*1000) > 14  )
+{
+	alert ('Guests are limited to 14 days per reservation!');
+	return false ;
+}
+return true;
+
+}
+
+function SetP () {
+	var d1 = document.form1.start_date.value+"";
+
+	start_month = d1.substring(0,2);
+	start_day = d1.substring(3,5);
+	start_year = d1.substring(6,10);
+
+	var d2 = document.form1.end_date.value;
+
+	end_month = d2.substring(0,2);
+	end_day = d2.substring(3,5);
+	end_year = d2.substring(6,10);
+
+
+	url = '';
+	url+=document.form1.url.value;
+	url+="client_id="+ document.form1.client_id.value;
+	url+="&state="+ document.form1.state.value;
+	url+="&start_month="+start_month;
+	url+="&start_day="+ start_day;
+	url+="&start_year="+ start_year;
+
+	url+="&end_month="+ end_month;
+	url+="&end_day="+ end_day;
+	url+="&end_year="+ end_year;
+
+	ret = url;
+
+	return ret;
+}
+
+
+</script>
+<script language="JavaScript">
+  <!-- Hide this from older browsers
+  // 
+  // 
+  var message = "San Francisco Airport Travelodge - San Francisco, California";
+  var speed = 100;
+  var forward = true; 
+
+  function bounce(){
+    if (forward) {
+      message = " " + message;
+      forward = ((message.length > 120) ? false : true);
+    } else {
+      if (message.charAt(0) == ' ') {
+        message = message.substring(1, message.length);
+      } else {
+        forward = true;
+      }
+    }
+    window.status = message;
+    setTimeout("bounce()", speed);
+  } 
+
+  bounce(); 
+
+  // end hide -->
+</script>
+
+<style type="text/css">
+<!--
+BODY {
+scrollbar-arrow-color:#FFFFFF;
+scrollbar-face-color:#00539B;
+scrollbar-highlight-color:#FFFFFF;
+scrollbar-3dlight-color:#CCCCCC;
+scrollbar-darkshadow-color:#DDDDDD;
+scrollbar-shadow-color:#CCCCCC;
+scrollbar-track-color:#CCCCCC;
+}
+-->
+</style>
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!-- Begin
+if (screen.height == 480 && screen.width == 640) {
+alert("This site is best viewed at 800 x 600 resolution or higher. Guests with low screen resolution will have to scroll to see all site content. We suggest increasing your screen resolution to a higher setting.");
+}
+//  End -->
+</script>
+<table width="750" border="1" align="center" bordercolor="#FFFFFF">
+  <tr bgcolor="#FFFFFF"> 
+    <td height="185"> 
+      <table width="750" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr> 
+          <td><img src="images/header_greylines.gif" width="400" height="56"><img src="images/header_name.gif" width="350" height="56"></td>
+        </tr>
+        <tr> 
+          <td><img src="images/header_pic1.jpg" width="145" height="100"><img src="images/header_pic2.jpg" width="110" height="100"><img src="images/header_pic3.jpg" width="145" height="100"><img src="images/header_pic4.jpg" width="175" height="100"><img src="images/header_pic5.jpg" width="175" height="100"></td>
+        </tr>
+      </table>
+      <table width="750" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#999999">
+        <tr> 
+          <td valign="top" bgcolor="#FFFFFF" rowspan="2" height="4"> 
+            <div align="center"><font face="Arial" size="1" color="#FFFFFF"><OBJECT id="menuobj" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=146 HEIGHT=225> <PARAM NAME=movie VALUE="menu.swf"> <PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=wmode VALUE=opaque> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="menu.swf" menu=false quality=high wmode=opaque bgcolor=#FFFFFF  WIDTH=146 HEIGHT=225 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT><script src="menujs.js" type="text/javascript"></script> </font> </div>
+          </td>
+          <td colspan="5" valign="top" bgcolor="#FFFFFF" width="630" height="2"> 
+            <form name="form1" method="post" onSubmit="return false;">
+              <table width=601 border="0" bordercolor="#00539B" bgcolor="#00539B" cellpadding="0" cellspacing="0" hspace="1" align="right">
+                <tr bgcolor="#00539B" valign="middle"> 
+                  <td colspan="2"> 
+                    <div align="left"><b><font face="Arial" size="2" color="#FFFFFF"> 
+                      </font></b> <b><font face="Arial" size="2" color="#FFFFFF"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id=animation width=200 height=16 codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0" align="absbottom">
+                        <param name="movie" value=sub_banner.swf>
+                        <param name="quality" value="high">
+                        <param name="play" value="true">
+                        <param name="loop" value="true">
+                        <param name="bgcolor" value="#00539b">
+                        <script language=JavaScript>
+ <!--
+ var ShockMode = 0;
+ if (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"] && navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin) {
+ 	 if (navigator.plugins && navigator.plugins["Shockwave Flash"])
+ 	   ShockMode = 1;
+ } if (ShockMode ) {
+   document.write('<embed src=sub_banner.swf');
+   document.write(' width=200 height=20 bgcolor="#00539b" quality="high" loop="true"');
+   document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/">');
+ document.write('</EMBED>');
+ } else if (!(navigator.appName && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("2.")>=0)) {   document.write('<IMG SRC="nonflash.gif" width=200 height=20>');
+}
+ //-->
+ </script><noembed>
+                        <img src="nonflash.gif" width=200 height=16 border=0 align="absbottom"></NOEMBED><noscript><img src="nonflash.gif" width=200 height=20 border=0></noscript> 
+                      </object> 
+                      <input type="HIDDEN" name="client_id" value="1079301399">
+                      <input type="HIDDEN" name="state" value="page">
+                      <input type="HIDDEN" name="url" value="https://www.secure.innstreet.com/develop2/index.php?">
+                      </font></b></div>
+                  </td>
+                  <td width="600"> 
+                    <div id="calendar_container" style="position: absolute;; left: 313px; top: 17px"></div>
+                    <div align="center"><b><font face="Arial" size="2" color="#FFFFFF">Check 
+                      In Date: 
+                      <input class="normalform" name="start_date" id="date_1" value="mm/dd/yyyy" size="7" onfocus="if (this.value == 'mm/dd/yyyy') {this.value = '';}; show_calendar(this, 'date_1', 'date_2', 'calendar_container');" >
+                      Check Out Date: 
+                      <input class="normalform" name="end_date" id="date_2" value="mm/dd/yyyy" size="7" onfocus="if (this.value == 'mm/dd/yyyy') {this.value = '';}; show_calendar(this, 'date_1', 'date_2', 'calendar_container');" >
+                      <input type="Image"
+			    src="images/search.gif" border="0" alt="Check for Rate &amp; Availability"  onClick="if (ValidateDate ()) {
+				window.open(SetP(),'reservation','resizable=1,width=650,height=600,status=1,scrolling=yes,scrollbars=1');} return false;" align="middle" name="Image" width="24" height="16">
+                      </font></b></div>
+                  </td>
+                </tr>
+              </table>
+            </form>
+        <tr> 
+          <td colspan="5" valign="top" bgcolor="#FFFFFF" width="630" height="11"> 
+            <table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr> 
+                <td height="2"> 
+                  <div align="left"><img src="images/sfo_front1.jpg" width="295" height="221"> 
+                  </div>
+                </td>
+                <td height="2" valign="top"> 
+                  <div align="right"><img src="images/sfo_lobby.jpg" width="295" height="221" vspace="5"></div>
+                </td>
+              </tr>
+              <tr valign="top"> 
+                <td colspan="2"> <font face="Arial" size="2" color="#00539B"> 
+                  </font> 
+                  <p><font face="Arial" size="2" color="#00539B">We are ideally 
+                    located just 2 miles north of the SFO airport between downtown 
+                    San Francisco and Silicon Valley, just a few minutes drive 
+                    from Cow Palace arena and 3COM Stadium ("Candlestick Park"--home 
+                    of the San Francisco 49'ers). Our unbeatable location makes 
+                    it easy for you to reach all of the Bay Area's finest attractions, 
+                    including the Golden Gate Bridge, the Presidio, Pier 39, Alcatraz, 
+                    Coit Tower, Union Square, and the wine countries of Napa Valley, 
+                    Sonoma Valley, and Monterey. And while you're here, don't 
+                    forget to enjoy our own home town, South San Francisco, "the 
+                    Birthplace of Biotechnology". <br>
+                    <br>
+                    Our hotel features 199 spacious rooms (including 23 suites), 
+                    plenty of free guest parking, free airport shuttle service, 
+                    a 24-hour IHOP restaurant, heated year-round swimming pool, 
+                    guest laundry, and a very competitively priced Park & Fly 
+                    program. There is even a 24-hour gas station across the street 
+                    so you can quickly refuel before returning your rental car 
+                    to the airport.<br>
+                    <br>
+                    Every room features standard amenities such as including in-room 
+                    coffee, in-room safe, iron & ironing board, hairdryer, air-conditioning, 
+                    remote cable TV with Showtime/CNN/ESPN, modem data ports, 
+                    and voicemail. You can even enjoy Pay-Per-View movies and 
+                    Nintendo right in your room! Our suites add extra square footage, 
+                    a refrigerator and microwave oven, and a sofa-bed for your 
+                    comfort. <br>
+                    <br>
+                    We take great pride in our clean, comfortable rooms and excellent 
+                    customer service, and we want your stay to be as restful and 
+                    convenient as possible. Take a look at our great online rates, 
+                    and please don't hesitate to call us if you have any questions.</font><font face="Arial" size="2"> 
+                    </font><font face="Arial" size="2" color="#00539B"> <br>
+                    <br>
+                    </font></p>
+                  </td>
+              </tr>
+            </table>
+        
+        <tr> 
+          <td valign="bottom" bgcolor="#FFFFFF" height="2" align="right" width="148"> 
+            <div align="center"><font face="Arial" size="1" color="#999999"><b><a href="http://ahoteldeal.com" target="_blank"> 
+              <font color="#006699">ahoteldeal.com &copy;</font></a></b></font></div>
+          </td>
+          <td colspan="5" height="2" valign="top" bgcolor="#FFFFFF" width="630"> 
+            <div align="center"><font color="#00539B" face="Arial" size="2"><b><GEO TYPE="US">326 South Airport Blvd - San Francisco, California 94080</GEO> - Phone: (650) 583-9600</b></font> 
+            </div>          </td>
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+
+</table>
+
+<table width="744" border="0" align="center" bordercolor="#FFFFFF">
+  <tr bgcolor="#00539B"> 
+    <td width="93"> 
+      <div align="center"><font color="#FFFFFF" size="1" face="Arial"><b><a href="hotel.html">Hotel 
+        Features</a></b></font></div>
+    </td>
+    <td width="93"> 
+      <div align="center"><font color="#FFFFFF" size="1" face="Arial"><b><a href="location.html"> 
+        </a><a href="location.html">Location</a></b></font></div>
+    </td>
+    <td width="93"> 
+      <div align="center"><font color="#FFFFFF" size="1" face="Arial"><b><a href="reservations.html" onClick="window.open('https://www.secure.innstreet.com/develop2/index.php?client_id=1079301399','reservation','resizable=1,width=650,height=600,status=1,scrollbars=1'); return false;" >Reservations 
+        </a></b></font></div>
+    </td>
+    <td width="93"> 
+      <div align="center"><font color="#FFFFFF" size="1" face="Arial"><b><a href="" onClick="window.open('https://www.secure.innstreet.com/develop2/index.php?client_id=1079301399','reservation','resizable=1,width=650,height=600,status=1,scrollbars=1'); return false;" > 
+        </a><a href="rooms.html">Rooms</a></b></font></div>
+    </td>
+    <td width="93"> 
+      <div align="center"><font face="Arial" size="1" color="#FFFFFF"><a href="area.html">Attractions</a></font></div>
+    </td>
+    <td bgcolor="#00539B" width="93"> 
+      <div align="center"><font face="Arial" size="1" color="#FFFFFF"><a href="rewards.html">Trip 
+        Rewards</a></font></div>
+    </td>
+    <td width="93" bgcolor="#00539B"> 
+      <div align="center"><font color="#FFFFFF" face="Arial" size="1"><a href="links.html">Links</a></font></div>
+    </td>
+    <td width="93"> 
+      <div align="center"><font face="Arial" size="1" color="#FFFFFF"><b><a href="sitemap.html">Site 
+        Map</a></b></font></div>
+    </td>
+  </tr>
+</table>
+<iframe width=132 height=142 name="gToday:contrast:agenda.js" id="gToday:contrast:agenda.js" src="calendar/ipopeng.htm" scrolling="yes" scrollbars="1" frameborder="0" style="visibility:visible; z-index:999; position:absolute; left:-500px; top:0px;">
+</iframe>
+
+<BR>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,709 @@
+<DOC>
+<DOCNO>f00501</DOCNO>
+<DOCHDR>http://workforcesecurity.doleta.gov/map.asp</DOCHDR>
+<html>
+<head>
+    <TITLE>Office of Workforce Security Map</TITLE> 
+<meta name="Description" content="Office of Workforce Security Map">
+<meta name="Keywords" content="Department of Labor, Unemployment Insurance, Doleta, OWS, Office of Workforce Security, ETA, Employment Training Administration">	
+	
+  
+    
+<link rel="Stylesheet" href="css/stylesheet-ns4.css" type="text/css">
+<STYLE TYPE="text/css">
+
+	@import url(css/stylesheet-ns4.css);
+	@import url(css/stylesheet.css);
+
+</STYLE>
+
+
+<script language="JavaScript" src="javascript/publicJavascript.js" type="text/javascript"></script>
+<script language="JavaScript" src="javascript/script2.js" type="text/javascript"></script>
+
+</head>
+
+<body leftmargin="3" topmargin="0" marginheight="0" ONLOAD="preloadImages(); " style="font-family: Verdana, Arial, Helvetica, sans-serif">
+
+
+<table  cellspacing="0" cellpadding="0" width="760" summary="layout table" border="0" id="table1" class="table1">
+  <tr>
+    <td valign="bottom">
+	<p><a href="#content"><img src="images/spacer.gif" border="0" width="1" height="1" alt="skip to content"></a><!-- was ../images/spacer.gif -->
+	<br>
+	<a href="http://www.dol.gov"> <img src="images/seal-rev.gif" width="75" height="75" border="0" align="left" alt="Seal of U.S. Department of Labor"> 
+	</a><br>
+	<div style="color: #003399; font-weight: bold"><span style="font-size: medium; vertical-align: top">U.S. Department of Labor<br></span>
+	<span style="font-size: small">Employment &amp; Training Administration</span></div></td>
+    <td valign="bottom" align="right"> <img src="images/image_collage.gif" width="339" height="60" alt="Photos representing the workforce - Digital Imagery© copyright 2001 PhotoDisc, Inc."> 
+      <p></p></TD>
+  </TR>
+</table>
+
+<!-- end of the top bar image -->
+<TABLE cellSpacing="0" cellPadding="0" width="761" summary="layout table" border="0" id="table1" class="table1">
+  <TBODY>
+   <TR vAlign="top" align="left"> 
+    <TD  colspan="2">
+	  
+	  <TABLE width="761" height="26" border="0" cellPadding="0" cellSpacing="0" id="table2" class="table2" style="margin-top: 0px; padding-top:0px;">
+          <TBODY>
+             <tr> 
+     			<td bgcolor="#FFCC00" width="260" height="2" align="left" valign="top"><img src="images/curve-wh-left.gif" width="15" height="18" align="top" alt=""><span style="color: #003399; font-weight: bold; font-style: italic; font-size: medium"><a href="http://www.doleta.gov/" style="text-decoration:none; color: #003399;">www.doleta.gov</a></span></td>
+     			<td width="15" height="2" bgcolor="#FFCC00" valign="bottom" align="right"><img src="images/curve-bl-bot.gif" width="15" height="18" align="absbottom"  alt=""></td>
+     			<td width="162" height="2" bgcolor="#003399" valign="baseline" align="right" style="color: #ffffff; font-size: xx-small; font-weight: bold">Search:</td>
+				<!-- this is messy like this, but it really does work -->
+				<FORM ACTION="http://verity.doleta.gov/search97cgi/s97is.dll" METHOD="post">
+            	<INPUT TYPE="hidden" NAME="Action" VALUE="FilterSearch">
+                <INPUT TYPE="hidden" NAME="ResultTemplate" VALUE="searchrs.hts"> 
+                <INPUT TYPE="hidden" NAME="filter" VALUE="edsflt.hts">
+     			<TD bgColor="#00309c" vAlign="top" width="341" height="2" align="left"> 
+					<div align="right">
+          			<label for="query"><input type="TEXTFIELD" name="query" id="query"></label>
+          			<input type="image" border="0" value="Go" name="Go" src="images/go_button.gif" height="12" width="18" alt="Go">
+          			<IMG alt="" height="12" hspace="10" src="images/vert_line.gif" width=3 > 
+		  			<a href="http://verity.doleta.gov/search97cgi/s97is.dll?Action=FormGen&Template=advsrch.hts#content" target="_parent" style="font-size: xx-small; font-weight: bold" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Advanced Search</a>
+          			<img src="images/curve-wh-right.gif" width="15" height="18" align="top" alt=""></div>
+      			</TD>
+				</form>
+             </tr>
+		   </tbody>
+      </table>
+	 </td>
+	</tr>
+	
+	<TR vAlign="top" align="left"> 
+    <TD colspan="2">
+	  <!-- start global navigation links - the blue bar with all the link buttons -->
+	  <!------- could be, if really necessary made into another include file ------->
+        <TABLE cellSpacing="0" cellPadding="0" width="761" bgColor="#3366cc" summary="Global navigation links" border=0 name="Global navigation links">
+          <TBODY>
+            <TR vAlign="bottom" align="left"> 
+              <TD> <a href="http://www.doleta.gov/etainfo/" title="About ETA"
+				onmousedown="changeImages('About', 'images/About-down.gif'); return true;"
+				onmouseup="changeImages('About', 'images/About-over.gif'); return true;"
+				onmouseover="changeImages('About', 'images/About-over.gif'); return true;"
+				onmouseout="changeImages('About', 'images/About.gif'); return true;"> 
+                <IMG NAME="About" SRC="images/About.gif" WIDTH="69" HEIGHT="31" BORDER=0 ALT="About ETA"></A></TD>
+              <TD> <a href="http://www.doleta.gov/jobseekers/" title="Advancing Your Career"
+				onmousedown="changeImages('Advancing', 'images/Advancing-down.gif'); return true;"
+				onmouseup="changeImages('Advancing', 'images/Advancing-over.gif'); return true;"
+				onmouseover="changeImages('Advancing', 'images/Advancing-over.gif'); return true;"
+				onmouseout="changeImages('Advancing', 'images/Advancing.gif'); return true;"> 
+                <IMG NAME="Advancing" SRC="images/Advancing.gif" WIDTH="91" HEIGHT="31" BORDER=0 ALT="Advancing Your Career"></A></TD>
+              <TD> <a href="http://www.doleta.gov/business/" title="Business and Industry"
+				onmousedown="changeImages('Business', 'images/Business-down.gif'); return true;"
+				onmouseup="changeImages('Business', 'images/Business-over.gif'); return true;"
+				onmouseover="changeImages('Business', 'images/Business-over.gif'); return true;"
+				onmouseout="changeImages('Business', 'images/Business.gif'); return true;"> 
+                <IMG NAME="Business" SRC="images/Business.gif" WIDTH=87 HEIGHT="31" BORDER=0 ALT="Business and Industry"></A></TD>
+              <TD> <A HREF="http://www.doleta.gov/usworkforce/" title="Workforce Professionals"
+				ONMOUSEOVER="changeImages('Workforce', 'images/Workforce-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('Workforce', 'images/Workforce.gif'); return true;"
+				ONMOUSEDOWN="changeImages('Workforce', 'images/Workforce-down.gif'); return true;"
+				ONMOUSEUP="changeImages('Workforce', 'images/Workforce-over.gif'); return true;"> 
+                <IMG NAME="Workforce" SRC="images/Workforce.gif" WIDTH="96" HEIGHT="31" BORDER=0 ALT="Workforce Professionals"></A></TD>
+              <TD> <A HREF="http://www.doleta.gov/grants/" title="Grants and Contracts"
+				ONMOUSEOVER="changeImages('Grants', 'images/Grants-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('Grants', 'images/Grants.gif'); return true;"
+				ONMOUSEDOWN="changeImages('Grants', 'images/Grants-down.gif'); return true;"
+				ONMOUSEUP="changeImages('Grants', 'images/Grants-over.gif'); return true;"> 
+                <IMG NAME="Grants" SRC="images/Grants.gif" WIDTH="92" HEIGHT="31" BORDER=0 ALT="Grants and Contracts"></A></TD>
+              <TD> <A HREF="http://www.doleta.gov/reports/" title="ETA Library"
+				ONMOUSEOVER="changeImages('Reports_and_Data', 'images/Reports-and-Data-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('Reports_and_Data', 'images/Reports-and-Data.gif'); return true;"
+				ONMOUSEDOWN="changeImages('Reports_and_Data', 'images/Reports-and-Data-down.gif'); return true;"
+				ONMOUSEUP="changeImages('Reports_and_Data', 'images/Reports-and-Data-over.gif'); return true;"> 
+                <IMG NAME="Reports_and_Data" SRC="images/Reports-and-Data.gif" WIDTH=82 HEIGHT="31" BORDER=0 ALT="ETA Library"></A></TD>
+              <TD> <A HREF="http://www.doleta.gov/Performance/" title="Performance and Results"
+				ONMOUSEOVER="changeImages('Performance', 'images/Performance-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('Performance', 'images/Performance.gif'); return true;"
+				ONMOUSEDOWN="changeImages('Performance', 'images/Performance-down.gif'); return true;"
+				ONMOUSEUP="changeImages('Performance', 'images/Performance-over.gif'); return true;"> 
+                <IMG NAME="Performance" SRC="images/Performance.gif" WIDTH="89" HEIGHT="31" BORDER="0" ALT="Performance and Results"></A></TD>
+              <TD> <A HREF="http://www.doleta.gov/regions/" title="Regions and States"
+				ONMOUSEOVER="changeImages('Regions', 'images/Regions-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('Regions', 'images/Regions.gif'); return true;"
+				ONMOUSEDOWN="changeImages('Regions', 'images/Regions-down.gif'); return true;"
+				ONMOUSEUP="changeImages('Regions', 'images/Regions-over.gif'); return true;"> 
+                <IMG NAME="Regions" SRC="images/Regions.gif" WIDTH="81" HEIGHT="31" BORDER="0" ALT="Regions and States"></A></TD>
+              <TD> <A HREF="http://www.dol.gov/dol/siteindex.htm" title="Other Topics"
+				ONMOUSEOVER="changeImages('Topics', 'images/Topics-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('Topics', 'images/Topics.gif'); return true;"
+				ONMOUSEDOWN="changeImages('Topics', 'images/Topics-down.gif'); return true;"
+				ONMOUSEUP="changeImages('Topics', 'images/Topics-over.gif'); return true;"> 
+                <IMG NAME="Topics" SRC="images/Topics.gif" WIDTH="72" HEIGHT="31" BORDER="0" ALT="Other Topics"></A></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+		</td>
+		</tr>    
+
+ <TR vAlign="top" align="left"> 
+    <TD colspan=2>
+<Table BORDER="0" CELLSPACING="0" CELLPADDING="0" width="761" VSPACE="0" HSPACE="0" style="font-family: verdana, Arial, Helvetica, sans-serif"> 
+    <TR>
+		<TD BGCOLOR="#FFFFCC" VALIGN="TOP" width="560" ALIGN="LEFT">	 
+		  <DIV style="font-size: 8pt">
+ 		  <span class="crumb-date">Friday, March 4, 2005
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.doleta.gov">Home</a>&nbsp;>&nbsp; <%=ybar %><a href="">UI</a>&nbsp;>&nbsp;Map</span> </div></td>
+		<td align="right" valign="top" bgcolor="#ffffcc"><img src="images/curvemedylw.gif" width="15" height="18"></td>
+		<td valign="top" align="center" width="151" bgcolor="#3366cc">&nbsp;</td>
+    </TR> 
+</table>
+
+		</TD> 
+		</td>
+  </tr>
+  <tr> 
+<td width="610" align="left" valign="top">
+    <a name="content">
+      
+      
+     
+<table width="600" border="0">
+	<tr>
+		<td valign="top">
+<br>
+<br>
+	 
+	  </td>
+	  <td>&nbsp;</td>
+     <td align="left" valign="top" >
+	 
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+      <br>
+  <font face="verdana" color="#990000"><strong>Office of Workforce Security Map</strong></font>
+      
+      <!--Start Content Here --> 
+  <tr>
+  <td COLSPAN="4" width="600">
+	<br>
+	<p>
+	<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #990000">
+	<b>Click on your state</b>
+	</FONT>
+	</p>
+	<center>
+	<img src="images/us1.gif" width="468" height="273" border="0" alt="US Map of OWS Offices" usemap="map.asp#Map">
+	</center> 
+	<!-----------------------Map Info for US Map----------------------------------> 
+	<map name="Map">
+	<area shape="poly" coords="417,67,417,68" href="map.asp"> 
+	<area shape="poly" coords="73,45,75,59,40,64,25,57,21,40,36,32,75,33" href="redirect.asp?link=www.wa.gov/esd/" target="_top" alt="State Office for Washington" title="State Office for Washington"> 
+	<area shape="poly" coords="24,59,24,76,19,90,22,97,76,97,75,77,82,64,74,61,39,66" href="redirect.asp?link=www.emp.state.or.us" target="_top" alt="State Office of Oregon" title="State Office of Oregon"> 
+	<area shape="poly" coords="76,96,119,97,122,70,110,75,100,66,95,64,95,56,83,43,84,32,77,33,73,46,76,59,80,64,75,77" href="redirect.asp?link=www.labor.state.id.us" target="_top" alt="State Office of Idaho" title="State Office of Idaho"> 
+	<area shape="poly" coords="172,31,172,69,122,70,110,74,102,67,96,65,96,55,83,42,85,32" href="redirect.asp?link=dli.state.mt.us/" alt="State Office of Montana" title="State Office of Montana" target="_top"> 
+	<area shape="poly" coords="172,60,228,59,223,32,173,30" href="redirect.asp?link=www.jobsnd.com" alt="State Office of North Dakota" title="State Office of North Dakota" target="_top"> 
+	<area shape="poly" coords="229,83,267,83,259,74,256,65,261,54,280,43,274,39,266,39,258,35,249,36,241,27,237,33,224,33,229,82,231,82" href="redirect.asp?link=www.mnworkforcecenter.org/" target="_top" alt="State Office of Minnesota" title="State Office of Minnesota"> 
+	<area shape="poly" coords="121,106,172,106,172,70,122,70" href="redirect.asp?link=wydoe.state.wy.us/" target="_top" alt="State Office of Wyoming" title="State Office of Wyoming">
+	<area shape="poly" coords="173,89,214,88,226,92,230,83,227,60,173,60" href="redirect.asp?link=www.state.sd.us/dol/" alt="State Office of South Dakota" title="State Office of South Dakota" target="_top"> 
+	<area shape="poly" coords="188,115,239,117,228,92,216,89,172,88,172,107,185,105" href="redirect.asp?link=www.dol.state.ne.us/wdp.htm" alt="State Office of Nebraska" title="State Office of Nebraska" target="_top"> 
+	<area shape="poly" coords="54,100,54,124,95,164,95,183,78,185,55,170,25,114,23,99" href="redirect.asp?link=www.edd.ca.gov/" alt="State Office of California" title="State Office of California" target="_top"> 
+	<area shape="poly" coords="99,145,98,97,54,96,53,125,94,161" href="redirect.asp?link=www.detr.state.nv.us/" alt="State Office of Nevada" title="State Office of Nevada" target="_top"> <area shape="poly" coords="136,144,137,107,121,107,122,96,98,97,98,145" href="redirect.asp?link=jobs.utah.gov" alt="State Office of Utah" title="State Office of Utah" target="_top"> <area shape="poly" coords="135,146,134,196,124,196,93,187,95,165,92,160,101,146" href="redirect.asp?link=www.de.state.az.us/links/esa/index.html" alt="Statae Office of Arizona" title="Statae Office of Arizona" target="_top"> 
+	<area shape="poly" coords="177,191" href="map.asp"> 
+	<area shape="poly" coords="179,191,179,143,135,143,134,198,140,197,143,192" href="redirect.asp?link=www.dol.state.nm.us" alt="State Office of New Mexico" title="State Office of New Mexico" target="_top"> 
+	<area shape="poly" coords="188,142,136,143,137,106,183,106,187,113" href="redirect.asp?link=www.coworkforce.com/" alt="State Office of Colorado" title="State Office of Colorado" target="_top"> 
+	<area shape="poly" coords="242,143,243,122,239,118,188,116,187,143" href="redirect.asp?link=www.hr.state.ks.us" alt="State Office of Kansas" title="State Office of Kansas" target="_top"> <area shape="poly" coords="241,146,243,150,243,177,237,173,226,177,204,169,203,152,180,150,181,144" href="redirect.asp?link=www.oesc.state.ok.us" alt="State Office of Oklahoma" title="State Office of Oklahoma" target="_top"> 
+	<area shape="poly" coords="180,150,202,153,203,168,227,177,236,173,247,178,247,189,250,198,247,211,238,220,228,223,221,235,224,247,211,243,198,220,191,214,187,213,180,220,172,215,170,205,156,193,179,190" href="redirect.asp?link=www.twc.state.tx.us" alt="State Office of Texas" title="State Office of Texas" target="_top"> 
+	<area shape="poly" coords="248,181,268,182,271,188,267,193,267,199,276,201,276,207,283,212,275,217,269,219,265,209,260,214,249,212,251,200" href="redirect.asp?link=www.ldol.state.la.us/" alt="State Office of Louisiana" title="State Office of Louisiana" target="_top"> 
+	<area shape="poly" coords="246,151,275,148,277,155,267,181,246,181,244,176,243,151" href="redirect.asp?link=www.state.ar.us/esd/" alt="State Office of Arkansas" title="State Office of Arkansas" target="_top"> 
+	<area shape="poly" coords="235,110,267,112,277,98,268,89,268,83,230,81,228,89" href="redirect.asp?link=www.state.ia.us/government/des/" alt="State Office of Iowa" title="State Office of Iowa" target="_top"> 
+	<area shape="poly" coords="236,110,267,113,275,126,273,131,279,136,283,142,279,151,274,150,245,148,243,124" href="redirect.asp?link=www.dolir.state.mo.us/es/index.htm" alt="State Office of Missouri" title="State Office of Missouri" target="_top"> 
+	<area shape="poly" coords="273,94,294,93,294,84,295,71,292,63,271,52,262,53,256,64,266,80,260,73" href="redirect.asp?link=www.dwd.state.wi.us/" alt="State Office of Wisconsin" title="State Office of Wisconsin" target="_top"> 
+	<area shape="poly" coords="279,56,296,66,300,62,312,59,318,63,322,62,319,55,312,52,300,55,292,53,294,48,285,48" href="redirect.asp?link=www.icesa.org/sections/links/miweb.cfm" alt="State Office of Michigan" title="State Office of Michigan" target="_top"> 
+	<area shape="poly" coords="300,98,327,100,333,88,332,78,325,79,328,69,317,62,308,68,303,74,303,84" href="redirect.asp?link=www.icesa.org/sections/links/miweb.cfm" alt="State Office of Michigan" title="State Office of Michigan" target="_top"> 
+	<area shape="poly" coords="297,99" href="map.asp"> 
+	<area shape="poly" coords="295,100,316,100,316,124,306,134,291,136,295,127" href="redirect.asp?link=www.dwd.state.in.us" alt="State Office of Indiana" title="State Office of Indiana" target="_top"> 
+	<area shape="poly" coords="285,143,295,127,295,99,294,93,274,93,276,97,268,110,275,124,272,130" href="redirect.asp?link=www.ides.state.il.us" alt="State Office of Illinois" title="State Office of Illinois" target="_top"> 
+	<area shape="poly" coords="317,99,328,99,334,103,348,99,347,115,333,130,317,126" href="redirect.asp?link=www.jfs.ohio.gov/ouc/" alt="State Office of Ohio" title="State Office of Ohio" target="_top"> 
+	<area shape="poly" coords="328,146,281,149,293,135,306,135,316,127,331,131,335,141" href="redirect.asp?link=www.desky.org/" alt="State Office of Kentucky" title="State Office of Kentucky" target="_top"> 
+	<area shape="poly" coords="276,162,275,162,319,163,339,152,340,147,282,149" href="redirect.asp?link=www.state.tn.us/labor-wfd/" alt="State Office of Tennesseee" title="State Office of Tennesseee" target="_top"> 
+	<area shape="poly" coords="291,165,288,191,292,207,278,210,277,203,267,199,267,197,273,190,268,184,277,162" href="redirect.asp?link=mdes.ms.gov/" alt="State Office of Mississippi" title="State Office of Mississippi" target="_top"> 
+	<area shape="poly" coords="292,164,309,164,315,184,313,201,298,202,298,205,292,208,288,195" href="redirect.asp?link=www.dir.state.al.us" alt="State Office of Alabama" title="State Office of Alabama" target="_top"> 
+	<area shape="poly" coords="311,202,337,203,341,200,344,189,327,163,309,163,315,182" href="redirect.asp?link=www.dol.state.ga.us/" alt="State Office of Georgia" title="State Office of Georgia" target="_top"> 
+	<area shape="poly" coords="348,255,351,237,341,202,299,203,299,205,310,211,319,208,330,220,333,232,340,248" href="redirect.asp?link=www.floridajobs.org/" alt="State Office of Florida" title="State Office of Florida" target="_top"> 
+	<area shape="poly" coords="326,163,339,160,346,161,348,164,357,165,364,173,351,187,345,187" href="redirect.asp?link=www.sces.org/" alt="State Office of South Carolina" title="State Office of South Carolina" target="_top"> 
+	<area shape="poly" coords="341,148,381,148,377,160,366,172,357,165,350,163,346,159,322,162" href="redirect.asp?link=www.ncesc.com" alt="State Office of North Carolina" title="State Office of North Carolina" target="_top"> 
+	<area shape="poly" coords="381,146,327,147,334,142,341,141,349,135,362,123,367,123,376,134" href="redirect.asp?link=www.vec.state.va.us" alt="State Office of Virginia" title="State Office of Virginia" target="_top"> 
+	<area shape="poly" coords="347,116,347,119,363,121,347,136,336,140,332,130" href="redirect.asp?link=www.state.wv.us/bep/" alt="State Office of West Virginia" title="State Office of West Virginia" target="_top"> 
+	<area shape="poly" coords="348,100,352,95,388,99,390,105,387,110,382,119,348,119" href="redirect.asp?link=www.dli.state.pa.us/landi/site/default.asp" alt="State Office of Pennsylvania" title="State Office of Pennsylvania" target="_top"> 
+	<area shape="poly" coords="390,105,397,107,394,112,396,113,391,124,381,121,388,109" href="redirect.asp?link=wnjpin.state.nj.us/" alt="State Office of New Jersey" title="State Office of New Jersey" target="_top"> 
+	<area shape="poly" coords="356,120,382,120,377,131,365,123" href="redirect.asp?link=www.dllr.state.md.us/employment/" alt="State Office of Maryland" title="State Office of Maryland" target="_top"> 
+	<area shape="poly" coords="381,123,386,121,388,133,382,134,379,130,380,124" href="redirect.asp?link=www.delawareworks.com/services.shtml" alt="State Office of Delaware" title="State Office of Delaware" target="_top"> 
+	<area shape="poly" coords="400,96,414,97,414,101,398,110,400,100" href="redirect.asp?link=www.ctdol.state.ct.us" target="_top" alt="State Office of Connecticut" title="State Office of Connecticut"> 
+	<area shape="poly" coords="389,68,399,69,401,94,399,107,392,105,390,99,353,95,358,93,358,84,376,84" href="redirect.asp?link=www.labor.state.ny.us/" alt="State Office of New York" title="State Office of New York" target="_top"> 
+	<area shape="poly" coords="401,69,413,69,414,74,406,83,407,91,400,91" href="redirect.asp?link=www.det.state.vt.us/" alt="State of Vermont" title="State of Vermont" target="_top"> 
+	<area shape="poly" coords="420,89,417,68,424,63,421,58,432,46,435,49,438,47,440,52,440,62,446,71,432,77" href="redirect.asp?link=www.state.me.us/labor/" alt="State of Maine" title="State of Maine" target="_top"> 
+	<area shape="poly" coords="404,90,412,90,422,98,417,100,415,97,402,96" href="redirect.asp?link=www.detma.org/" alt="State of Massachusetts" title="State of Massachusetts" target="_top"> 
+	<area shape="poly" coords="408,89,415,89,417,93,421,88,417,68,413,67,414,72,407,81" href="redirect.asp?link=www.nhes.state.nh.us/" alt="State  Office of New Hampshire" title="State  Office of New Hampshire" target="_top"> 
+	<area shape="poly" coords="417,101,444,102,445,112,405,110" href="redirect.asp?link=www.det.state.ri.us/" alt="State Office of Rhode Island" title="State Office of Rhode Island" target="_top"> 
+	<area shape="poly" coords="91,202,92,210,99,233,111,237,125,248,122,252,108,242,88,240,74,249,48,261,26,264,11,254,25,259,43,258,68,247,57,237,56,232,53,217,68,199" href="redirect.asp?link=www.labor.state.ak.us/" alt="State Office of Alaska" title="State Office of Alaska" target="_top"> 
+	<area shape="poly" coords="139,221,186,240,198,253,187,261,184,247" href="redirect.asp?link=www.dlir.state.hi.us/" alt="State Office of Hawaii" title="State Office of Hawaii" target="_top"> 
+	</map>
+	<!------------------------------------End Map Info-------------------------------------> 
+	<!----------------------Table for State Links------------------------------------------>
+	<center>
+	<table cellpadding="0" cellspacing="1" border="0" valign="top" width="600" summary="For state specific information on unemployment benefits, employment assistance, or employer information, click on the desired State in the table">
+	<tr>
+	<br><br><br>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dir.state.al.us" class="chart">Alabama</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.labor.state.ak.us/" class="chart">Alaska</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.state.ar.us/esd/" class="chart">Arkansas</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.de.state.az.us/links/esa/index.html" class="chart">Arizona</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.edd.ca.gov/" class="chart">California</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.coworkforce.com/" class="chart">Colorado</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.ctdol.state.ct.us" class="chart">Connecticut</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.delawareworks.com/services.shtml" class="chart">Delaware</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=does.ci.washington.dc.us/" class="chart">DC</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.floridajobs.org/" class="chart">Florida</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dol.state.ga.us/" class="chart">Georgia</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dlir.state.hi.us/" class="chart">Hawaii</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.labor.state.id.us" class="chart">Idaho</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.ides.state.il.us" class="chart">Illinois</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dwd.state.in.us" class="chart">Indiana</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.state.ia.us/government/des/" class="chart">Iowa</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.hr.state.ks.us" class="chart">Kansas</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.desky.org/" class="chart">Kentucky</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.ldol.state.la.us/" class="chart">Louisiana</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.state.me.us/labor/" class="chart">Maine</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dllr.state.md.us/employment/" class="chart">Maryland</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.detma.org/#790" class="chart">Massachusetts</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.icesa.org/sections/links/miweb.cfm" class="chart">Michigan</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.mnworkforcecenter.org/" class="chart">Minnesota</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=mdes.ms.gov/" class="chart">Mississippi</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dolir.state.mo.us/es/index.htm" class="chart">Missouri</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=dli.state.mt.us/" class="chart">Montana</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dol.state.ne.us/wdp.htm" class="chart">Nebraska</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=detr.state.nv.us/" class="chart">Nevada</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.nhes.state.nh.us/" class="chart">New Hampshire</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=wnjpin.state.nj.us/" class="chart">New Jersey</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dol.state.nm.us" class="chart">New Mexico</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.labor.state.ny.us/" class="chart">New York</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.ncesc.com" class="chart">North Carolina</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.jobsnd.com" class="chart"> North Dakota</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.state.oh.us/odjfs/ouc/" class="chart">Ohio</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.oesc.state.ok.us" class="chart">Oklahoma</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.emp.state.or.us" class="chart">Oregon</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dli.state.pa.us/landi/site/default.asp" class="chart">Pennsylvania</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.det.state.ri.us/" class="chart">Rhode Island</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.sces.org/" class="chart">South Carolina</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.state.sd.us/dol/" class="chart">South Dakota</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.state.tn.us/labor-wfd/" class="chart">Tennessee</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.twc.state.tx.us" class="chart">Texas</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=jobs.utah.gov" class="chart">Utah</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.det.state.vt.us/" class="chart">Vermont</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.vec.state.va.us" class="chart">Virginia</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.state.wv.us/bep/" class="chart">West Virginia</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.wa.gov/esd/" class="chart">Washington</a>
+		</font></td>
+		<td bgcolor="#C0C0C0" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=www.dwd.state.wi.us/" class="chart">Wisconsin</a>
+		</font></td>
+	</tr>
+	<tr>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href="redirect.asp?link=wydoe.state.wy.us/" class="chart">Wyoming</a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href class="chart"></a>
+		</font></td>
+		<td bgcolor="white" align="center" valign="middle" width="100" height="23">
+		<font STYLE="font-family: Verdana, Arial, Helvetica, Sans-serif; font-size: 10pt; color: #003399">
+		<a href class="chart"></a>
+		</font></td>
+	</tr>
+	</table>
+	</center>
+	<br><br>
+	<!--End Content Here -->
+	  <p>
+</font>
+</td> </tr>
+
+	  </table>
+</td>
+  <!-- <td><img src="images/spacer.gif" width="10" height="1"></td-->
+   <td align="right" valign="top" width="151" bgcolor="#3366CC">
+    
+<table width="151" border="0" cellspacing="0" cellpadding="0" align="right">
+  <tr> 
+  <td width="151" bgcolor="#3366CC" align="left" valign="top" >
+
+
+   <!--start of right navigation-->
+   
+   
+   &nbsp;<span style="color: #FFCC00; font-size: x-small; font-weight: bold">Resources</span>
+    <ul class="SideNavBar">
+      <li><a href="http://www.dol.gov/dol/findit.htm" style="font-size: 9pt; color:#ffffff"><span onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Find it! in DOL</span></a></li>
+      <li class="navbar"><a href="http://www.doleta.gov/help.cfm" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Find it! in ETA</a></li>
+      <li class="navbar"><a href="http://www.doleta.gov/Compliance_Assistance.cfm" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Compliance Assistance</a></li>
+    </ul>
+   <hr width="95%" align=center>
+   
+	<!--About UI-->
+	
+	<span style="text-decoration: none">&nbsp;</span>
+	<a href="unemploy/aboutui.asp" style="font-size: x-small; font-weight: bold" onMouseover="this.className='ont'" onMouseout="this.className='offt'" class="offt">About UI</a> 
+	
+    <ul class="SideNavBar">
+		<li><a href="unemploy/uifactsheet.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Unemployment<br><span style="text-decoration: none">&nbsp;</span>Insurance</a></li>
+	
+		<li><a href="unemploy/factsheetteuc.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Temp Extended<br><span style="text-decoration: none">&nbsp;</span>Benefits TEUC</a></li>
+
+		<li><a href="unemploy/factsheetteuc_a.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Airline and<br><span style="text-decoration: none">&nbsp;</span>related TEUC</a></li>
+
+		<li><a href="unemploy/unemcomp.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Federal Employ.</a></li>
+		
+		<li><a href="unemploy/ucx.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Ex-Service<br><span style="text-decoration: none">&nbsp;</span>Members</a></li>
+
+		<li><a href="unemploy/extenben.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Extended <br><span style="text-decoration: none">&nbsp;</span>Benefits</a></li>
+		
+		<li><a href="unemploy/disaster.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Disaster<br><span style="text-decoration: none">&nbsp;</span>Unemployment</a></li>
+		
+		<li><a href="unemploy/tra.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Trade<br><span style="text-decoration: none">&nbsp;</span>Readjustment<br><span style="text-decoration: none">&nbsp;</span>Allowance</a></li>
+		
+		<li><a href="unemploy/self.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Self Employ.<br><span style="text-decoration: none">&nbsp;</span>Assistance</a>
+	</ul>
+	
+	<!--LAWS-->
+	<span style="text-decoration: none">&nbsp;</span>
+	<a href="unemploy/laws.asp" style="font-size: x-small; font-weight: bold" onMouseover="this.className='ont'" onMouseout="this.className='offt'" class="offt">Laws</a> 
+
+	<ul class="SideNavBar">  
+		<li><a href="unemploy/laws.asp#overview" style="font-size: 9pt" onmouseover="this.className='on'" onmouseout="this.className='off'" class="off">Overview</a></li>
+		<li><a href="unemploy/laws.asp#InterstateAgreements" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Agreements</a></li>
+		<li><a href="unemploy/laws.asp#FederalLegislation" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Legislation</a></li>	
+		<li><a href="unemploy/laws.asp#FederalRegulations" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Regulations</a></li>
+		<li><a href="unemploy/laws.asp#FederalInfo" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Federal Info</a></li>
+		<li><a href="unemploy/laws.asp#StateLaw" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">State Info</a></li>
+	</ul>
+	
+	<!--Data and Statistic-->
+    <span style="text-decoration: none">&nbsp;</span>
+	<span style="color: #FFCC00; font-size: x-small; font-weight: bold">Data and Statistics</span>
+	
+	<ul class="SideNavBar">
+		<li><a href="unemploy/claims_arch.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Weekly Claims</a> 
+	
+		<li><a href="unemploy/performance.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Performance<br><span style="text-decoration: none">&nbsp;</span>Management</a></li>
+
+		<li><a href="unemploy/finance.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Program Stats</a></li>
+	
+		<li><a href="http://www.bls.gov/" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Labor Statistics</a></li>
+	
+		<li><a href="unemploy/tax.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">UI Tax Info</a></li>
+	</ul>
+	
+	
+	<span style="text-decoration: none">&nbsp;</span>
+	<a href="unemploy/budget.asp" style="font-size: x-small; font-weight: bold" onMouseover="this.className='ont'" onMouseout="this.className='offt'" class="offt">Budget</a> 
+	<br><br>
+	
+	
+	
+	<!--Advisories-->
+	
+	<span style="text-decoration: none">&nbsp;</span>
+	<a href="XDMS/indexfrm.xml" style="font-size: x-small; font-weight: bold" onMouseover="this.className='ont'" onMouseout="this.className='offt'" class="offt">Advisories</a>
+	<br><br>
+
+	<!--About OWS-->
+	
+	<span style="text-decoration: none">&nbsp;&nbsp;</span><a href="unemploy/aboutows.asp" style="font-size: x-small; font-weight: bold" onMouseover="this.className='ont'" onMouseout="this.className='offt'" class="offt">About OWS</a> 
+	<ul class="SideNavBar">
+		<li><a href="unemploy/uirelprojects.asp" style="font-size: 9pt" onMouseover="this.className='on'" onMouseout="this.className='off'" class="off">Current Projects</a></li>
+	</ul>	
+	<hr width="95%" align="center"><br>
+	<!--
+	<div align="center">
+   <a href="http://www.doleta.gov/listserv/"><img src="images/listserv.gif" alt="Subscribe to ETA Listserves" width="122" height="48" border="0"></a>
+   </div>
+	-->
+</td>
+</tr>
+</table>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="3" align="center" valign="middle"> 
+           <br> 
+           
+<div style="margin-top: -1.3em">
+<!---------------------------------->
+<!-- Start of footer include file -->
+<!---------------------------------->
+<LINK href="include/botm_style.css" type="text/css" rel="STYLESHEET">
+	  <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0" name="Footer navigation links">
+          <TBODY>
+			  <!-------------------------------------------------------------------------------------------->
+			  <!-- this table data is the first part of the footer (three links, one image and blue space -->
+			  <!-------------------------------------------------------------------------------------------->
+            <TR> 
+              <TD width="610" height="40" valign="bottom">
+			    <TABLE cellSpacing="0" cellPadding="0" width="95%" bgColor="#ffffff" border="0">
+                  <TBODY>
+                    <TR> 
+                      <TD vAlign="top" align="left" width="33%"> 
+					    <DIV class="footer-links"><A href="#content"><IMG height="18" alt="Back to Top" src="images/topdoc.gif" width="18" align="center" border="0"></A>
+					    <A href="#content">Back to Top</A></DIV></TD>
+                      <TD vAlign="top" align="center" width="33%"><DIV class=footer-links><A href="http://www.doleta.gov">www.doleta.gov</A></DIV></TD>
+                      <TD vAlign="top" align="right" width="33%"> <DIV class=footer-links><A href="http://www.dol.gov">www.dol.gov</A></DIV></TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+			  </td>
+			  <td VALIGN="TOP" ALIGN="LEFT" BGCOLOR="#3366CC" WIDTH="151">&nbsp;</TD>
+			 </tr>
+			  <!-------------------------------------------------------------------------------------------->
+			  <!-- this is the end of the first part of the footer ----------------------------------------->
+			  <!-------------------------------------------------------------------------------------------->
+
+
+			  <!-------------------------------------------------------------------------------------------->
+			  <!-- this is the middle of the footer with blue hrs on the top and bottom -------------------->
+			  <!-------------------------------------------------------------------------------------------->
+			<tr>
+			  <td width="610">	
+				<HR WIDTH="95%" COLOR="#003399"> 
+					 <DIV ALIGN="CENTER" CLASS="footer-links" ><A
+						HREF="http://www.dol.gov/dol/faqs/index.htm">Frequently Asked Questions</A> |
+						<a href="http://www.dol.gov/dol/foia/main.htm">Freedom of Information Act</A> |
+						<A HREF="http://www.dol.gov/feedback/FeedbackForm.asp">Customer Survey</A> 
+						<BR><a href="http://www.doleta.gov/privacy.cfm">Privacy &amp; Security Statement</A> |
+						<a href="http://www.dol.gov/dol/disclaim.htm">Disclaimers</A> 
+					 </DIV>
+				<HR WIDTH="95%" COLOR="#003399"> </font></div>
+			  </td>
+			  <td width="151" bgcolor="#3366cc">&nbsp;</td>
+			</tr>
+			  <!-------------------------------------------------------------------------------------------->
+			  <!-- this is the end of the middle part of the footer ---------------------------------------->
+			  <!-------------------------------------------------------------------------------------------->
+
+
+			  <!-------------------------------------------------------------------------------------------->
+			  <!-- this is the last part of the footer ----------------------------------------------------->
+			  <!-------------------------------------------------------------------------------------------->
+            <TR> 
+			  <td>
+			    <table width="610">
+					<tr>
+                    	<td width="3"><img src="images/spacer.gif" alt="" width="3" height="1" border="0"></td>
+                    	<TD vAlign=top align=left width="50%"> <DIV CLASS="footer-address"><B>Employment 
+                          and Training Agency</B><BR>
+                          U.S. Department of Labor<BR>
+                          Frances Perkins Building<BR>
+                          <GEO TYPE="US">200 Constitution Avenue, NW<BR>
+                          Washington, DC 20210</GEO></DIV></TD>
+                      	<TD vAlign=top align=right width="50%"> <DIV class=footer-address>1-877-US-2JOBS<BR>
+                          <A href="http://www.dol.gov/dol/contact/index.htm">Contact Us</A><br>
+                          <A href="contacts.asp">Pagemaster</A>
+                          (Page content/style questions)<br>
+                          <A href="contacts.asp">Webmaster</A>.
+                          (Technical issues) </DIV></TD>
+                        <td width="3"><img src="images/spacer.gif" alt="" width="3" height="1" border="0"></td>
+                    </TR>
+				</table>
+			  </td>
+			  <td width="151" bgcolor="#3366cc">&nbsp;</td>
+			</tr>
+			  <!-------------------------------------------------------------------------------------------->
+			  <!-- this is the end of the last part of the footer ------------------------------------------>
+			  <!-------------------------------------------------------------------------------------------->
+
+			<!-- added the following table row to put some space between the text and the bottom of the browser -->
+			<tr>
+			  <td colspan="3">&nbsp;</td>
+			</tr>
+			<!-- end of added row modification ------------------------------------------------------------------->
+                </TABLE>
+			  </TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+
+<!-------------------------------->
+<!-- End of footer include file -->
+<!-------------------------------->
+</div>  
+<!--end of page graphic/text -->
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+		

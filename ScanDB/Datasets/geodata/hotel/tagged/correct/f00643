@@ -1,0 +1,1406 @@
+<DOC>
+<DOCNO>f00643</DOCNO>
+<DOCHDR>http://smartpages.worldres.com/script/hotel_search.php?SI=788&FE=11205&CN=New+York</DOCHDR>
+<html><head>
+<title>SmartPages: Discount Hotel Reservations Online - New York and Hotels and Lodging Worldwide</title>
+<META NAME="keywords" CONTENT="New York,reservations,booking,accomodation,hotel,hotels,reservation,accommodation,discount,resort,travel,rates,information,world,discounts,bookings,inn,room,,reservations,booking,accomodation,hotel,hotels,reservation,accommodation,discount,resort,travel,rates,information,world,discounts,bookings,inn,room,reservations,booking,accomodation,hotel,hotels,reservation,accommodation,discount,resort,travel,rates,information,world,discounts,bookings,inn,room">
+<META NAME="description" CONTENT="Find and reserve a room at a huge selection of hotels in New York. Get the best discounts at accommodations - including distinctive hotels, inns and resorts worldwide! See detailed information and photos. Check rates and availability and reserve online with instant confirmation. We provide online booking for a wide variety of hotels, inns, B&Bs, and resorts all over the world. Search at your leisure and book a room online, anytime!">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META HTTP-EQUIV="Content-Language" CONTENT="en-US">
+<META NAME="ISO-Language" CONTENT="en-US">
+<META NAME="copyright" CONTENT="1997-2006 by Worldres Inc.">
+<script language="Javascript"><!-- 
+var lang = 1;
+
+function openWindow() {
+myWin=window.open('','wr_ext','menubar=no,toolbar=no,scrollbars=yes,width=450,height=350,resizable=yes');
+myWin.focus();}
+function openWindow() {
+myWin=window.open('','wr_ext','menubar=no,toolbar=no,scrollbars=yes,width=450,height=350,resizable=yes');
+myWin.focus();}
+var lang = 1;
+
+//-->
+</script>
+<script language="Javascript" src="/calendarPopUp.js"></script>
+<script language="Javascript" src="/selectDate.js"></script>
+<link rel="stylesheet" type="text/css" href="/default.css">
+</head>
+<body bgcolor="#FFFFFF" link="#003399" vlink="#6699ff" alink="#ff0000" text="#000000">
+
+
+<script src="http://www.yellowpages.com/sp/co/nav/cobrand.jsp?From=worldres" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">yellowpagesHeader("CO", "s1");</script>
+<style>
+#wait {
+	position:absolute;
+	width:480;
+	padding:35px;
+	background-color : #FFFFFF;
+	visibility : hidden;
+	z-index : 100;
+}
+.waittext {
+	font-family:arial,helvetica,sans-serif;
+	font-size:10pt;
+	color:#000000;
+}
+.waitbold {
+	font-size:12pt;
+ 	font-weight: bold
+}
+</style>
+<script>
+	var ns4=document.layers
+	var ie4=document.all
+	var ns6=document.getElementById&&!document.all
+	
+	function closeit(){
+		if (ie4)
+			document.all.wait.style.visibility="hidden"
+		else if (ns6)
+			document.getElementById("wait").style.visibility="hidden"
+		else if (ns4)
+			document.layers.wait.visibility="hide"
+	}
+
+	function showit(){
+		if (ie4)
+			document.all.wait.style.visibility="visible"
+		else if (ns6)
+			document.getElementById("wait").style.visibility="visible"
+		else if (ns4)
+			document.layers.wait.visibility="show"
+	}
+
+	function changeit(str1,styl1,str2,styl2) {
+		if (document.getElementById && navigator.userAgent.substr(0,7) == "Mozilla") {
+			document.getElementById("content1").firstChild.nodeValue = str1;
+			document.getElementById("content1").className = styl1;
+			document.getElementById("content2").firstChild.nodeValue = str2;
+			document.getElementById("content2").className = styl2;
+		}
+	}
+</script>
+<div id="wait" style="left:160px;top:120px">
+<table width="400" border="0" align="center" cellpadding="35" cellspacing="0">
+  <tr> 
+    <td align="center" class="WRTD_search_pleasewait"><span class="WRTD_search_pleasewait" id="headline">Please wait a moment...&nbsp;</span>
+	<br><br><img src="http://images.worldres.com/site_images/SHARED/standard/dots.gif"><br><br>
+      <span class="WRTXT_12px" id="content1">...we are searching&nbsp;</span><br>
+      <span class="WRTXT_12px" id="content2">to find just the right hotel for you.&nbsp;</span><br></td>
+  </tr>
+</table>
+</div>
+<script>showit()</script><script>changeit("Searching for hotels around","WRTXT_12px","New York, New York, United States","WRTXT_12px_bold");</script>
+
+<table width="" border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="4" bgcolor="#FFFFFF"><IMG SRC="http://images.worldres.com/site_images/clear.gif" width="" height="3" border="0"></td></tr>
+<tr><td valign="top" width="200" bgcolor="#FFFFFF"><script>
+<!--
+        if (!lang) var lang = "1";
+
+		var txtBadCityArray = new Array(7);
+		txtBadCityArray[1] = " City is a required entry.";
+		txtBadCityArray[2] = " Ville est une entrée obligatoire.";
+		txtBadCityArray[3] = " Die Stadt muss eingegeben werden.";
+		txtBadCityArray[4] = " Es necesario introducir el nombre de la ciudad.";
+		txtBadCityArray[5] = " È necessario indicare una città.";
+		txtBadCityArray[6] = " De naam van uw stad is vereist.";
+		txtBadCityArray[7] = " É obrigatório introduzir a Cidade.";
+
+		var txtBadCheckInArray = new Array(7);
+		txtBadCheckInArray[1] = " Check-in date has already passed. \n Please enter a future date.";
+		txtBadCheckInArray[2] = " La date d'arrivée saisie a déjà expiré.";
+		txtBadCheckInArray[3] = " Sie haben ein vergangenes Datum als Ankunftsdatum eingegeben. \n Bitte geben Sie ein neues Datum ein.";
+		txtBadCheckInArray[4] = " La fecha de entrada que introdujo ya ha pasado.";
+		txtBadCheckInArray[5] = " La data di arrivo immessa è già trascorsa.";
+		txtBadCheckInArray[6] = " De aankomstdatum die u ingevoerd heeft, is reeds verstreken.";
+		txtBadCheckInArray[7] = " A data de Check-in introduzida está ultrapassada.";
+
+		var txtBadCheckOutArray = new Array(7);
+		txtBadCheckOutArray[1] = " Check-out date is prior to check-in date. \n Please adjust your dates. ";
+		txtBadCheckOutArray[2] = " La date que vous donnez est incorrecte";
+		txtBadCheckOutArray[3] = " Das Abreisedatum ist vor dem Ankunftsdatum. \n Bitte geben Sie ein neues Datum ein.";
+		txtBadCheckOutArray[4] = " La fecha es incorrecta";
+		txtBadCheckOutArray[5] = " La data non è esatta";
+		txtBadCheckOutArray[6] = " Ongeldige datum";
+		txtBadCheckOutArray[7] = " A data é incorrecta";
+
+        function validateForm(form) {
+	        today = new Date();
+			currDay = today.getDate();
+			if (form.CN) {
+		    	if (form.CN.value == ""){
+					alert(txtBadCityArray[lang]);
+                	return false;
+                }
+    		} 
+    		if (form.CD.selectedIndex > 0){
+	    		if((form.CMY.selectedIndex == 1) && (form.CD.options[form.CD.selectedIndex].value < currDay)) {
+	    			alert(txtBadCheckInArray[lang]);
+		                return false;
+	            	}
+	        }
+   	        return true;
+        }
+// -->
+</script>
+<!-- BEGIN TplDistChannel -->		<!-- END TplDistChannel -->
+
+<FORM NAME="Fsearch" ACTION="/script/hotel_search.php" METHOD="GET" onSubmit="return validateForm(Fsearch);">
+<input type="hidden" name="FE" value="11205"> 
+		<input type="hidden" value="New York" name="CN">		<input type="hidden" value="United States" name="CON">		<input type="hidden" value="New York" name="STN">			     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr class="WRTD_lnav_datestab"> 
+                <td width="5" valign="top" class="WRTD_lnav_datestab"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_LNAV_tableft.jpg" width="5" height="5"></td>
+                <td width="99%" class="WRTD_lnav_datestab"> Enter Your Dates 		</td>
+                <td width="5" align="right" valign="top" class="WRTD_lnav_datestab"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_LNAV_tabright.jpg" width="5" height="5"></td>
+              </tr>
+            </table></td>
+        </tr>
+		
+        <tr> 
+          <td valign="top" class="WRTD_lnav_button"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  
+              <tr> 
+                <td class="WRTD_dates_body">Check-in Date:</td>
+              </tr>
+              <tr> 
+                <td class="WRTD_dates_body"> 
+                  <select name="CD">
+                  <OPTION VALUE="" selected class="WR_Select">day 
+	              
+							
+                    <OPTION VALUE="1"  class="WR_Select">1                  
+							
+                    <OPTION VALUE="2"  class="WR_Select">2                  
+							
+                    <OPTION VALUE="3"  class="WR_Select">3                  
+							
+                    <OPTION VALUE="4"  class="WR_Select">4                  
+							
+                    <OPTION VALUE="5"  class="WR_Select">5                  
+							
+                    <OPTION VALUE="6"  class="WR_Select">6                  
+							
+                    <OPTION VALUE="7"  class="WR_Select">7                  
+							
+                    <OPTION VALUE="8"  class="WR_Select">8                  
+							
+                    <OPTION VALUE="9"  class="WR_Select">9                  
+							
+                    <OPTION VALUE="10"  class="WR_Select">10                  
+							
+                    <OPTION VALUE="11"  class="WR_Select">11                  
+							
+                    <OPTION VALUE="12"  class="WR_Select">12                  
+							
+                    <OPTION VALUE="13"  class="WR_Select">13                  
+							
+                    <OPTION VALUE="14"  class="WR_Select">14                  
+							
+                    <OPTION VALUE="15"  class="WR_Select">15                  
+							
+                    <OPTION VALUE="16"  class="WR_Select">16                  
+							
+                    <OPTION VALUE="17"  class="WR_Select">17                  
+							
+                    <OPTION VALUE="18"  class="WR_Select">18                  
+							
+                    <OPTION VALUE="19"  class="WR_Select">19                  
+							
+                    <OPTION VALUE="20"  class="WR_Select">20                  
+							
+                    <OPTION VALUE="21"  class="WR_Select">21                  
+							
+                    <OPTION VALUE="22"  class="WR_Select">22                  
+							
+                    <OPTION VALUE="23"  class="WR_Select">23                  
+							
+                    <OPTION VALUE="24"  class="WR_Select">24                  
+							
+                    <OPTION VALUE="25"  class="WR_Select">25                  
+							
+                    <OPTION VALUE="26"  class="WR_Select">26                  
+							
+                    <OPTION VALUE="27"  class="WR_Select">27                  
+							
+                    <OPTION VALUE="28"  class="WR_Select">28                  
+							
+                    <OPTION VALUE="29"  class="WR_Select">29                  
+							
+                    <OPTION VALUE="30"  class="WR_Select">30                  
+							
+                    <OPTION VALUE="31"  class="WR_Select">31                  
+					
+                  </select> 
+                  <select name="CMY" class="WR_Select" style="onchange="javascript:checkAll (document.Fsearch.CMY, document.Fsearch.CD,document.Fsearch.OMY,document.Fsearch.OD,2);">
+                    <OPTION VALUE="" selected class="WR_Select">month/year 
+                   				   <OPTION VALUE="200607"  class="WR_Select">Jul 2006				   <OPTION VALUE="200608"  class="WR_Select">Aug 2006				   <OPTION VALUE="200609"  class="WR_Select">Sep 2006				   <OPTION VALUE="200610"  class="WR_Select">Oct 2006				   <OPTION VALUE="200611"  class="WR_Select">Nov 2006				   <OPTION VALUE="200612"  class="WR_Select">Dec 2006				   <OPTION VALUE="200701"  class="WR_Select">Jan 2007				   <OPTION VALUE="200702"  class="WR_Select">Feb 2007				   <OPTION VALUE="200703"  class="WR_Select">Mar 2007				   <OPTION VALUE="200704"  class="WR_Select">Apr 2007				   <OPTION VALUE="200705"  class="WR_Select">May 2007				   <OPTION VALUE="200706"  class="WR_Select">Jun 2007				   <OPTION VALUE="200707"  class="WR_Select">Jul 2007		
+        			</SELECT>   
+		      <A HREF="javascript:popUpCalendar('CD','CMY','Fsearch')"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_calendar.gif" width="37" height="20" border=0 alt="calendar" align="absmiddle"></A></td>
+              </tr>
+	
+              <tr> 
+                <td class="WRTD_dates_body"># of Nights</td>
+              </tr>
+              <tr> 
+                <td class="WRTD_dates_body">
+		  <select name="NN">
+		    
+                                                        
+                    <option value="1" >1</option>
+		    
+                                                        
+                    <option value="2" >2</option>
+		    
+                                                        
+                    <option value="3" >3</option>
+		    
+                                                        
+                    <option value="4" >4</option>
+		    
+                                                        
+                    <option value="5" >5</option>
+		    
+                                                        
+                    <option value="6" >6</option>
+		    
+                                                        
+                    <option value="7" >7</option>
+		    
+                                                        
+                    <option value="8" >8</option>
+		    
+                                                        
+                    <option value="9" >9</option>
+		    
+                                                        
+                    <option value="10" >10</option>
+		    
+                                                        
+                    <option value="11" >11</option>
+		    
+                                                        
+                    <option value="12" >12</option>
+		    
+                                                        
+                    <option value="13" >13</option>
+		    
+                                                        
+                    <option value="14" >14</option>
+		    
+                                                        
+                    <option value="15" >15</option>
+		    
+                                                        
+                    <option value="16" >16</option>
+		    
+                                                        
+                    <option value="17" >17</option>
+		    
+                                                        
+                    <option value="18" >18</option>
+		    
+                                                        
+                    <option value="19" >19</option>
+		    
+                                                        
+                    <option value="20" >20</option>
+		    
+                                                        
+                    <option value="21" >21</option>
+		    
+                                                        
+                    <option value="22" >22</option>
+		    
+                                                        
+                    <option value="23" >23</option>
+		    
+                                                        
+                    <option value="24" >24</option>
+		    
+                                                        
+                    <option value="25" >25</option>
+		    
+                                                        
+                    <option value="26" >26</option>
+		    
+                                                        
+                    <option value="27" >27</option>
+		    
+                                                        
+                    <option value="28" >28</option>
+		    
+                                                        
+                    <option value="29" >29</option>
+		    
+                                                        
+                    <option value="30" >30</option>
+		    
+                                                        
+                    <option value="31" >31</option>
+		    
+                                                        
+                    <option value="32" >32</option>
+		    
+                                                        
+                    <option value="33" >33</option>
+		    
+                                                        
+                    <option value="34" >34</option>
+		    
+                                                        
+                    <option value="35" >35</option>
+		    
+                                                        
+                    <option value="36" >36</option>
+		    
+                                                        
+                    <option value="37" >37</option>
+		    
+                                                        
+                    <option value="38" >38</option>
+		    
+                                                        
+                    <option value="39" >39</option>
+		    
+                                                        
+                    <option value="40" >40</option>
+		    
+                                                        
+                    <option value="41" >41</option>
+		    
+                                                        
+                    <option value="42" >42</option>
+		    
+                                                        
+                    <option value="43" >43</option>
+		    
+                                                        
+                    <option value="44" >44</option>
+		    
+                                                        
+                    <option value="45" >45</option>
+		    
+                                                        
+                    <option value="46" >46</option>
+		    
+                                                        
+                    <option value="47" >47</option>
+		    
+                                                        
+                    <option value="48" >48</option>
+		    
+                                                        
+                    <option value="49" >49</option>
+		    
+                                                        
+                    <option value="50" >50</option>
+		    
+                                                        
+                    <option value="51" >51</option>
+		    
+                                                        
+                    <option value="52" >52</option>
+		    
+                                                        
+                    <option value="53" >53</option>
+		    
+                                                        
+                    <option value="54" >54</option>
+		    
+                                                        
+                    <option value="55" >55</option>
+		    
+                                                        
+                    <option value="56" >56</option>
+		    
+                                                        
+                    <option value="57" >57</option>
+		    
+                                                        
+                    <option value="58" >58</option>
+		    
+                                                        
+                    <option value="59" >59</option>
+		    
+                                                        
+                    <option value="60" >60</option>
+		    
+                                                        
+                    <option value="61" >61</option>
+		    
+                                                        
+                    <option value="62" >62</option>
+		    
+                                                        
+                    <option value="63" >63</option>
+		    
+                                                        
+                    <option value="64" >64</option>
+		    
+                                                        
+                    <option value="65" >65</option>
+		    
+                                                        
+                    <option value="66" >66</option>
+		    
+                                                        
+                    <option value="67" >67</option>
+		    
+                                                        
+                    <option value="68" >68</option>
+		    
+                                                        
+                    <option value="69" >69</option>
+		    
+                                                        
+                    <option value="70" >70</option>
+		    
+                                                        
+                    <option value="71" >71</option>
+		    
+                                                        
+                    <option value="72" >72</option>
+		    
+                                                        
+                    <option value="73" >73</option>
+		    
+                                                        
+                    <option value="74" >74</option>
+		    
+                                                        
+                    <option value="75" >75</option>
+		    
+                                                        
+                    <option value="76" >76</option>
+		    
+                                                        
+                    <option value="77" >77</option>
+		    
+                                                        
+                    <option value="78" >78</option>
+		    
+                                                        
+                    <option value="79" >79</option>
+		    
+                                                        
+                    <option value="80" >80</option>
+		    
+                                                        
+                    <option value="81" >81</option>
+		    
+                                                        
+                    <option value="82" >82</option>
+		    
+                                                        
+                    <option value="83" >83</option>
+		    
+                                                        
+                    <option value="84" >84</option>
+		    
+                                                        
+                    <option value="85" >85</option>
+		    
+                                                        
+                    <option value="86" >86</option>
+		    
+                                                        
+                    <option value="87" >87</option>
+		    
+                                                        
+                    <option value="88" >88</option>
+		    
+                                                        
+                    <option value="89" >89</option>
+		    
+                                                        
+                    <option value="90" >90</option>
+		    
+                                                        
+                    <option value="91" >91</option>
+		    
+                                                        
+                    <option value="92" >92</option>
+		    
+                                                        
+                    <option value="93" >93</option>
+		    
+                                                        
+                    <option value="94" >94</option>
+		    
+                                                        
+                    <option value="95" >95</option>
+		    
+                                                        
+                    <option value="96" >96</option>
+		    
+                                                        
+                    <option value="97" >97</option>
+		    
+                                                        
+                    <option value="98" >98</option>
+		    
+                                                        
+                    <option value="99" >99</option>
+		    
+                                        
+                  </select></td>
+              </tr>
+	
+              <tr> 
+                <td height="5" class="WRTD_dates_body"><img src="http://images.worldres.com/site_images/SHARED/standard/clear.gif" width="5" height="5">&nbsp; </td>
+              </tr>
+
+              <tr> 
+                <td align="right" class="WRTD_dates_body"> <input name="Submit2" type="submit" class="WRBTN_check_avail" value="Check rates & availability"> &nbsp; </td>
+              </tr>
+
+              <tr> 
+                <td class="WRTD_dates_body"><img src="http://images.worldres.com/site_images/SHARED/standard/clear.gif" width="5" height="5"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td class="WRTD_lnav_button"><a href="/script/refine_search.php?FE=11205&CN=New+York&STY=C&DNA=New+York%2C+New+York%2C+United+States&PTY=1&PTY=3&PTY=9&PTY=10" class="WRLNK_nodeco_11px">&nbsp;<img src="http://images.worldres.com/site_images/SHARED/standard/arrow_11x11_forwd.gif" width="11" height="11" hspace="0" vspace="6" border="0" align="absmiddle">&nbsp;Refine your search</a></td>
+        </tr>
+        <tr> 
+          <td class="WRTD_lnav_button"><a href="/script/search.php" class="WRLNK_nodeco_11px">&nbsp;<img src="http://images.worldres.com/site_images/SHARED/standard/arrow_11x11_back.gif" width="11" height="11" hspace="0" vspace="6" border="0" align="absmiddle">&nbsp;Begin a new search</a></td>
+        </tr>
+      </table>	  
+      <br>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr class="WRTD_lnav_datestab"> 
+                <td width="5" align="left" valign="top" class="WRTD_lnav_promotab"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_SRCH_tableft.jpg" width="5" height="5"></td>
+                <td width="95%" class="WRTD_lnav_promotab">Also in this destination</td>
+                <td width="5" align="right" valign="top" class="WRTD_lnav_promotab"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_SRCH_tabrightlite.jpg" width="5" height="5"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td class="WRTD_lnav_promobutton">&nbsp;&nbsp;<a href="/script/hotel_search.php?DC=2&FE=11205&CN=New+York" class="WRLNK_nodeco_11px_bold"><img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" width="20" height="18" vspace="6" border="0" align="absmiddle"></a>&nbsp;<a href="/script/hotel_search.php?DC=2&FE=11205&CN=New+York" class="WRLNK_nodeco_11px_bold">See Discounts only</a></td>
+        </tr>
+      </table>
+</FORM>
+
+</td><td width="10"><img src="http://images.worldres.com/site_images/clear.gif" width="10" height="10"></td><td valign="top" width="-201"><script>closeit();</script><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="5" valign="top" class="WRTD_search_locationname"><img src="http://images.worldres.com/site_images/SHARED/standard/WR_SRCH_tableft.jpg" width="5" height="5"></td>
+          <td width="100%" height=30 class="WRTD_search_locationname">
+		  	 Hotels in New York, New York, United States          </td>
+                  </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+
+      <!-- BEGIN TplRefineSearchTop -->		<FORM NAME="RTsearch" ACTION="/script/hotel_search.php" METHOD="GET">
+		<input type="hidden" name="FE" value="11205">		
+		<input type="hidden" name="CD" value="">
+		<input type="hidden" name="CMY" value="">
+		<input type="hidden" name="NN" value="">
+		
+				<tr class="WRTD_search_sortbar">
+		 
+				<input type="hidden" value="New York" name="CN">				<input type="hidden" value="United States" name="CON">				<input type="hidden" value="New York" name="STN">			 		          <td width="50%" class="WRTD_search_sortbar"> 
+		 
+			<select NAME="OB" class="SRCH" onChange="{ document.RTsearch.submit();}">
+            <option selected>Sort by...</option>
+	        
+						
+	        <OPTION VALUE="quality" >Hotel Rating (5 star to 1 star)			
+						
+	        <OPTION VALUE="quality_des" >Hotel Rating (1 star to 5 star)			
+						
+	        <OPTION VALUE="property_name" >Name (A to Z)			
+						
+	        <OPTION VALUE="property_name_des" >Name (Z to A)			
+						
+	        <OPTION VALUE="offer" >Packages first			
+			        </SELECT>
+         
+          </td>
+         <td width="50%" align="right" class="WRTD_search_sortbar"> 
+         
+							
+            <select NAME="LM" onChange="{ document.RTsearch.submit();}" class="SRCH">
+              <option value="" selected>See hotels near a landmark...</option>
+              
+			 
+             <OPTION VALUE="" style="background-color:#ccc">Airports</option>
+                          <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MjU6IkpvaG4gRiBLZW5uZWR5IEludGwgKEpGSykiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNjM5NzI7czo5OiJsb25naXR1ZGUiO2Q6LTczLjc3ODg4O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >John F Kennedy Intl (JFK)</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTY6IkxhIEd1YXJkaWEgKExHQSkiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzc3MjI7czo5OiJsb25naXR1ZGUiO2Q6LTczLjg3MjU7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >La Guardia (LGA)</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTc6Ik5ld2FyayBJbnRsIChFV1IpIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjY5MjU7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjE2ODYxO3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Newark Intl (EWR)</option>               
+             <OPTION VALUE="" style="background-color:#ccc">Points of Interest</option>
+                          <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTI6IkJhdHRlcnkgUGFyayI7czo4OiJsYXRpdHVkZSI7ZDo0MC43MDM4ODtzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDI1NTU7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Battery Park</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTQ6IkJheW9ubmUgQnJpZGdlIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjY0Nzc3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4xNDg4ODtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Bayonne Bridge</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTU6IkJyb29rbHluIEJyaWRnZSI7czo4OiJsYXRpdHVkZSI7ZDo0MC43MDc1O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDIyMjtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Brooklyn Bridge</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTM6IkNhcm5lZ2llIEhhbGwiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzc1Mjc7czo5OiJsb25naXR1ZGUiO2Q6LTczLjk4Mzg4O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Carnegie Hall</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTI6IkNlbnRyYWwgUGFyayI7czo4OiJsYXRpdHVkZSI7ZDo0MC43NzMwNTtzOjk6ImxvbmdpdHVkZSI7ZDotNzMuOTc3MjI7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Central Park</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MjE6IkNlbnRyYWwgUGFyayBSZXNldm9pciI7czo4OiJsYXRpdHVkZSI7ZDo0MC43ODkxNjtzOjk6ImxvbmdpdHVkZSI7ZDotNzMuOTY2Mzg7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Central Park Resevoir</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTA6IkVhc3QgUml2ZXIiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzM0NzI7czo5OiJsb25naXR1ZGUiO2Q6LTczLjk3NDk5O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >East River</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTI6IkVsbGlzIElzbGFuZCI7czo4OiJsYXRpdHVkZSI7ZDo0MC43MDc3NztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDU1ODM7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Ellis Island</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTc6IkVtcGlyZSBTdGF0ZSBCbGRnIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjc0ODE7czo5OiJsb25naXR1ZGUiO2Q6LTczLjk4NDM5O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Empire State Bldg</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTI6IkZsdXNoaW5nIEJheSI7czo4OiJsYXRpdHVkZSI7ZDo0MC44MDI3NztzOjk6ImxvbmdpdHVkZSI7ZDotNzMuODc1O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Flushing Bay</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTY6IkdvdmVybm9ycyBJc2xhbmQiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNjkxNjY7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAxODA1O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Governors Island</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6Mjk6Ikdyb3VuZCBaZXJvIChXb3JsZCBUcmFkZSBDdHIpIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjcxMTM4O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMTY5NDtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Ground Zero (World Trade Ctr)</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTY6IkhhY2tlbnNhY2sgUml2ZXIiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzQyNTtzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMTAxNjY7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Hackensack River</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTI6Ikh1ZHNvbiBSaXZlciI7czo4OiJsYXRpdHVkZSI7ZDo0MC43NTc1O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMjA1NTtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Hudson River</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6NjoiTWFjeSdzIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjc1MDQ7czo5OiJsb25naXR1ZGUiO2Q6LTczLjk4OTM7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Macy's</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MjI6Ik1hZGlzb24gU3F1YXJlICBHYXJkZW4iO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzUxNjY7czo5OiJsb25naXR1ZGUiO2Q6LTczLjk5ODMzO3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Madison Square  Garden</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTY6Ik1hbmhhdHRhbiBCcmlkZ2UiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzExMzg7czo5OiJsb25naXR1ZGUiO2Q6LTczLjk5NDcyO3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Manhattan Bridge</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTE6Ik1lYWRvd2xhbmRzIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjgxODg4O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wODQ0NDtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Meadowlands</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MjE6Ik1ldExpZmUgKFBhbiBBbSkgQmxkZyI7czo4OiJsYXRpdHVkZSI7ZDo0MC43NTg2MTtzOjk6ImxvbmdpdHVkZSI7ZDotNzMuOTgzMDU7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >MetLife (Pan Am) Bldg</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTk6Ik1ldHJvIE11c2V1bSBvZiBBcnQiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzg2MTE7czo5OiJsb25naXR1ZGUiO2Q6LTczLjk3MTExO3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Metro Museum of Art</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTU6Ik5ldyBZb3JrIEhhcmJvciI7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTUyNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDM0NDQ7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >New York Harbor</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTA6Ik5ld2FyayBCYXkiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNjUzNjE7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjE1MDU1O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Newark Bay</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6Mjc6Ik5ZIFBhdmlsbGlvbiAoV29ybGQncyBGYWlyKSI7czo4OiJsYXRpdHVkZSI7ZDo0MC43NDAyNztzOjk6ImxvbmdpdHVkZSI7ZDotNzMuODM1ODM7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >NY Pavillion (World's Fair)</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTM6IlBhc3NhaWMgUml2ZXIiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzI2MTE7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjEyMzA1O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Passaic River</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTQ6IlB1bGFza2kgQnJpZGdlIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjcyODg4O3M6OToibG9uZ2l0dWRlIjtkOi03NC4xMTtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Pulaski Bridge</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTc6IlF1ZWVuc2Jvcm8gQnJpZGdlIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjc2MTk0O3M6OToibG9uZ2l0dWRlIjtkOi03My45NTkxNjtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Queensboro Bridge</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTM6IlJpa2VycyBJc2xhbmQiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzk0NzI7czo5OiJsb25naXR1ZGUiO2Q6LTczLjg4NzIyO3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Rikers Island</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTY6IlJvb3NldmVsdCBJc2xhbmQiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzcwNTU7czo5OiJsb25naXR1ZGUiO2Q6LTczLjk2MDI3O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Roosevelt Island</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTI6IlNoZWEgU3RhZGl1bSI7czo4OiJsYXRpdHVkZSI7ZDo0MC43NjA1NTtzOjk6ImxvbmdpdHVkZSI7ZDotNzMuODUyNzc7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Shea Stadium</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTM6IlN0YXRlbiBJc2xhbmQiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNjIyMjI7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjExNDQ0O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Staten Island</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTc6IlN0YXR1ZSBvZiBMaWJlcnR5IjtzOjg6ImxhdGl0dWRlIjtkOjQwLjY5MTM4O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wNTMwNTtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Statue of Liberty</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MzA6IlRhdmVybiBvbiB0aGUgR3JlZW4gUmVzdGF1cmFudCI7czo4OiJsYXRpdHVkZSI7ZDo0MC43NzU1NTtzOjk6ImxvbmdpdHVkZSI7ZDotNzMuOTgyNzc7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Tavern on the Green Restaurant</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTQ6IlRyaWJvcm8gQnJpZGdlIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjc5MjIyO3M6OToibG9uZ2l0dWRlIjtkOi03My45MzYxMTtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Triboro Bridge</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6OToiVW5pc3BoZXJlIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjc0MzYxO3M6OToibG9uZ2l0dWRlIjtkOi03My44MzYxMTtzOjExOiJkZXN0aW5hdGlvbiI7YToyOntzOjg6ImxhdGl0dWRlIjtkOjQwLjcxNDE3O3M6OToibG9uZ2l0dWRlIjtkOi03NC4wMDYzOTt9fQ==" >Unisphere</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MjE6IlVuaXRlZCBOYXRpb25zIEhkcXRycyI7czo4OiJsYXRpdHVkZSI7ZDo0MC43NTg2MTtzOjk6ImxvbmdpdHVkZSI7ZDotNzMuOTY4MDU7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >United Nations Hdqtrs</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6Mjc6IlVTVEEgTmF0aW9uYWwgVGVubmlzIENlbnRlciI7czo4OiJsYXRpdHVkZSI7ZDo0MC43NDk4O3M6OToibG9uZ2l0dWRlIjtkOi03My44NDY0O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >USTA National Tennis Center</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MjQ6IlZlcmF6YW5ubyBOYXJyb3dzIEJyaWRnZSI7czo4OiJsYXRpdHVkZSI7ZDo0MC42MTQ0NDtzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDM2Mzg7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Verazanno Narrows Bridge</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTk6IldpbGxpYW1zYnVyZyBCcmlkZ2UiO3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzIzNjE7czo5OiJsb25naXR1ZGUiO2Q6LTczLjk3ODg4O3M6MTE6ImRlc3RpbmF0aW9uIjthOjI6e3M6ODoibGF0aXR1ZGUiO2Q6NDAuNzE0MTc7czo5OiJsb25naXR1ZGUiO2Q6LTc0LjAwNjM5O319" >Williamsburg Bridge</option>             <OPTION VALUE="YTo0OntzOjQ6Im5hbWUiO3M6MTQ6IllhbmtlZSBTdGFkaXVtIjtzOjg6ImxhdGl0dWRlIjtkOjQwLjgyODI7czo5OiJsb25naXR1ZGUiO2Q6LTczLjkyODg7czoxMToiZGVzdGluYXRpb24iO2E6Mjp7czo4OiJsYXRpdHVkZSI7ZDo0MC43MTQxNztzOjk6ImxvbmdpdHVkZSI7ZDotNzQuMDA2Mzk7fX0=" >Yankee Stadium</option>                          </SELECT>
+		
+					</td>
+		        </tr>
+        </FORM>
+<!-- END TplRefineSearchTop -->
+
+        <tr class="WRTD_search_numberbar"> 
+          <td class="WRTD_search_numberbar">
+		  65 property(ies) found:</td>
+          <td class="WRTD_search_numberbar">&nbsp;</td>
+        </tr>
+		      </table> 
+      
+
+		
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=8997&FE=11205&CN=New+York" class="WRTXT_13px_bold">Comfort Inn Manhattan</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_2_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=8997&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=8997&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a8500/8997/hotel_tn.jpg" alt="Comfort Inn Manhattan" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">42 W. 35th St., New York, NY 10001-2201</GEO><br> <span class="WRTXT_11px">Boutique style hotel located in midtown Manhattan. All rooms feature free wireless Internet.  continenta&nbsp;<a href="/script/property.php?hotel_id=8997&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>2.7 mi from New York city center. Hotel 131 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/comfortinn_sm.gif" vspace="0" border="0" alt="Comfort"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=12109&FE=11205&CN=New+York" class="WRTXT_13px_bold">Hotel 17</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_2_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+		 &nbsp;&nbsp;
+		<img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" border="0" align="absmiddle" style="margin-right:5px;">
+		 	  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=12109&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=12109&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a12000/12109/hotel_tn.jpg" alt="Hotel 17" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">225 East 17th Street, Bet. 2nd and 3rd Ave., New York, NY 10003</GEO><br> <span class="WRTXT_11px">Located in the Gramercy District of Manhattan, 3 blks from Greenwich Village.  Newly renovated rooms!&nbsp;<a href="/script/property.php?hotel_id=12109&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>1.8 mi from New York city center. Hotel 120 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"></td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=15017&FE=11205&CN=New+York" class="WRTXT_13px_bold">Oxbridge Apts Theater District</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_2_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+		 &nbsp;&nbsp;
+		<img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" border="0" align="absmiddle" style="margin-right:5px;">
+		 	  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="/script/property.php?hotel_id=15017&FE=11205&CN=New+York&INFO=rates " class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=15017&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a15000/15017/hotel_tn.jpg" alt="Oxbridge Apts Theater District" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">32 West 46th St. (5 - 6th Ave)., New York, NY 10036</GEO><br> <span class="WRTXT_11px">Walk to theater, Rockefeller Center and Times Square.  Major shopping and restaurants nearby.&nbsp;<a href="/script/property.php?hotel_id=15017&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>5.5 mi from New York city center. Apartment 12 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"></td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTXT_09px_grey">The lowest available rate is shown above. &nbsp;<a href="#all_rates.href#" class="WRLNK_deco_9px"><a href="/script/property.php?INFO=rates&hotel_id=15017&FE=11205&CN=New+York" class="WRLNK_deco_9px">See all rates</a> for this property</a></td>
+        </tr>
+                <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=25040&FE=11205&CN=New+York" class="WRTXT_13px_bold">Marrakech Hotel</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_2_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+		 &nbsp;&nbsp;
+		<img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" border="0" align="absmiddle" style="margin-right:5px;">
+		 	  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=25040&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=25040&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a25000/25040/hotel_tn.jpg" alt="Marrakech Hotel" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">2690 Broadway, New York, NY 10025</GEO><br> <span class="WRTXT_11px">Located  on Manhattan's Trendy Upper West Side, a few blocks from Columbia Univ. & Grant's Tomb.&nbsp;<a href="/script/property.php?hotel_id=25040&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>6.2 mi from New York city center. Hotel 150 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"></td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=25475&FE=11205&CN=New+York" class="WRTXT_13px_bold">Radisson Lexington New York</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=25475&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=25475&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a25000/25475/hotel_tn.jpg" alt="Radisson Lexington New York" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">511 Lexington Avenue, New York, NY 10017</GEO><br> <span class="WRTXT_11px">Radisson Hotel in Exceptional Midtown Manhattan Location.&nbsp;<a href="/script/property.php?hotel_id=25475&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>3.3 mi from New York city center. Hotel 705 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/raddison_logo_sm.gif" vspace="0" border="0" alt="Radisson Hotels Worldwide"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=33057&FE=11205&CN=New+York" class="WRTXT_13px_bold">Signature Suites West Village</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+		 &nbsp;&nbsp;
+		<img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" border="0" align="absmiddle" style="margin-right:5px;">
+		 	  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="/script/property.php?hotel_id=33057&FE=11205&CN=New+York&INFO=rates " class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=33057&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a33000/33057/hotel_tn.jpg" alt="Signature Suites West Village" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">55 Morton Street, New York, NY 10014</GEO><br> <span class="WRTXT_11px">West Village Just off 7th Ave South And Bedford Street!&nbsp;<a href="/script/property.php?hotel_id=33057&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>1.1 mi from New York city center. Apartment 14 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"></td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTXT_09px_grey">The lowest available rate is shown above. &nbsp;<a href="#all_rates.href#" class="WRLNK_deco_9px"><a href="/script/property.php?INFO=rates&hotel_id=33057&FE=11205&CN=New+York" class="WRLNK_deco_9px">See all rates</a> for this property</a></td>
+        </tr>
+                <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=38662&FE=11205&CN=New+York" class="WRTXT_13px_bold">The Waldorf=Astoria®</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_4_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=38662&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=38662&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a38500/38662/hotel_tn.jpg" alt="The Waldorf=Astoria®" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">301 Park Avenue, New York, NY 10022</GEO><br> <span class="WRTXT_11px">The Waldorf=Astoria is located on prestigious Park Avenue, in the heart of midtown Manhattan, within walking distance of&nbsp;<a href="/script/property.php?hotel_id=38662&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>3.4 mi from New York city center. Hotel 1235 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/hilton_sm.gif" vspace="0" border="0" alt="Hilton Hotel Corporation"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=42724&FE=11205&CN=New+York" class="WRTXT_13px_bold">Best Western President Hotel</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_2_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=42724&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=42724&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a42500/42724/hotel_tn.jpg" alt="Best Western President Hotel" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">234 West 48th Street, New York, NY 10036</GEO><br> <span class="WRTXT_11px">In the Heart of Broadway.&nbsp;<a href="/script/property.php?hotel_id=42724&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>3.4 mi from New York city center. Hotel 334 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/bestwestern_sm.gif" vspace="0" border="0" alt="Best Western"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=48717&FE=11205&CN=New+York" class="WRTXT_13px_bold">Embassy Suites Hotel New York</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=48717&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=48717&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a48500/48717/hotel_tn.jpg" alt="Embassy Suites Hotel New York" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">102 North End Avenue, New York, NY 10282</GEO><br> <span class="WRTXT_11px">The Embassy Suites Hotel New York City is the only upscale, all-suite hotel in Lower Manhattan located in the world's fi&nbsp;<a href="/script/property.php?hotel_id=48717&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>5.1 mi from New York city center. Hotel 463 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/embassysuites_sm.gif" vspace="0" border="0" alt="Embassy Suites"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=50306&FE=11205&CN=New+York" class="WRTXT_13px_bold">Ramada Plza New Yorker Hotel</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=50306&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=50306&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a50000/50306/hotel_tn.jpg" alt="Ramada Plza New Yorker Hotel" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">481 8th Avenue, 34th St. & 8th Ave, New York, NY 10001</GEO><br> <span class="WRTXT_11px">Ramada New Yorker Hotel in Midtown Manhattan, NY&nbsp;<a href="/script/property.php?hotel_id=50306&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>2.7 mi from New York city center. Hotel 844 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/ramada_sm.gif" vspace="0" border="0" alt="Ramada"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=60783&FE=11205&CN=New+York" class="WRTXT_13px_bold">Super 8 NYC Manhattan Times Sq</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=60783&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=60783&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a60500/60783/hotel_tn.jpg" alt="Super 8 NYC Manhattan Times Sq" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">59 West 46th Street, Between 5th and 6th Avenue, New York, NY 10036</GEO><br> <span class="WRTXT_11px">Located less than 1 mile from the center of New York
+City. All of New York is at your doorstep.&nbsp;<a href="/script/property.php?hotel_id=60783&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>3.2 mi from New York city center. Hotel 206 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/super8_sm.gif" vspace="0" border="0" alt="Super 8"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=96196&FE=11205&CN=New+York" class="WRTXT_13px_bold">Sohotel</a> 
+
+		
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=96196&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=96196&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a96000/96196/hotel_tn.jpg" alt="Sohotel" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">341 BROOME ST, New York, NY 10013</GEO><br> <span class="WRTXT_11px">&nbsp;<a href="/script/property.php?hotel_id=96196&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>0.7 mi from New York city center. Hotel 100 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"></td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=67843&FE=11205&CN=New+York" class="WRTXT_13px_bold">Marriott Marquis NYC</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_4_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=67843&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=67843&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a67500/67843/hotel_tn.jpg" alt="Marriott Marquis NYC" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">1535 Broadway, New York, NY 10036</GEO><br> <span class="WRTXT_11px">Located 8 mi West of La Guardia Airport, 2 mi North of Downtown, and 1/4 block from Times Square.&nbsp;<a href="/script/property.php?hotel_id=67843&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>3.2 mi from New York city center. Hotel 1944 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/marriott_sm.gif" vspace="0" border="0" alt="Marriott International"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids.gif" width="17" height="18" border="0" alt="Children Stay Free"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=34793&FE=11205&CN=New+York" class="WRTXT_13px_bold">Signature Suites Greenwich Village</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+		 &nbsp;&nbsp;
+		<img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" border="0" align="absmiddle" style="margin-right:5px;">
+		 	  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=34793&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=34793&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a34500/34793/hotel_tn.jpg" alt="Signature Suites Greenwich Village" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">160 Bleecker Street, Suite 1he, New York, NY 10012</GEO><br> <span class="WRTXT_11px">In the heart of Greenwhich Village. Very large apartment suites with amazing views.&nbsp;<a href="/script/property.php?hotel_id=34793&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>1.0 mi from New York city center. All-Suite 75 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"></td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=8937&FE=11205&CN=New+York" class="WRTXT_13px_bold">Comfort Inn Midtown</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_2_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=8937&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=8937&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a8500/8937/hotel_tn.jpg" alt="Comfort Inn Midtown" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">129 West 46th St, New York, NY 10036</GEO><br> <span class="WRTXT_11px">Walk to Times Square, Rockefeller Center, Broadway/Theatre District, Fifth Ave. shopping & all major city sights.&nbsp;<a href="/script/property.php?hotel_id=8937&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>3.2 mi from New York city center. Hotel 79 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/comfortinn_sm.gif" vspace="0" border="0" alt="Comfort"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=14607&FE=11205&CN=New+York" class="WRTXT_13px_bold">Comfort Inn Central Park West</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=14607&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=14607&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a14500/14607/hotel_tn.jpg" alt="Comfort Inn Central Park West" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">31 West 71st St., New York, NY 10023-4103</GEO><br> <span class="WRTXT_11px">Enjoy comfort and relaxation in this boutique hotel located at Central Park just minutes from trendy restaurants.&nbsp;<a href="/script/property.php?hotel_id=14607&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>4.5 mi from New York city center. Hotel 90 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/comfortinn_sm.gif" vspace="0" border="0" alt="Comfort"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=17809&FE=11205&CN=New+York" class="WRTXT_13px_bold">Oxbridge Apts Carnegie Hill</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_2_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+		 &nbsp;&nbsp;
+		<img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" border="0" align="absmiddle" style="margin-right:5px;">
+		 	  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="/script/property.php?hotel_id=17809&FE=11205&CN=New+York&INFO=rates " class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=17809&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a17500/17809/hotel_tn.jpg" alt="Oxbridge Apts Carnegie Hill" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">1412 Madison Ave. (E97/98 St.), New York, NY 10128</GEO><br> <span class="WRTXT_11px">Carnegie Hill one block from Central Park, Fifth Avenue and Museum Mile.&nbsp;<a href="/script/property.php?hotel_id=17809&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>5.8 mi from New York city center. Apartment 4 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"></td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTXT_09px_grey">The lowest available rate is shown above. &nbsp;<a href="#all_rates.href#" class="WRLNK_deco_9px"><a href="/script/property.php?INFO=rates&hotel_id=17809&FE=11205&CN=New+York" class="WRLNK_deco_9px">See all rates</a> for this property</a></td>
+        </tr>
+                <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=34861&FE=11205&CN=New+York" class="WRTXT_13px_bold">Portland Square Hotel</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_2_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+		 &nbsp;&nbsp;
+		<img src="http://images.worldres.com/site_images/SHARED/standard/discount_icon.gif" alt="DISCOUNTS - Lowest Prices Guaranteed!" border="0" align="absmiddle" style="margin-right:5px;">
+		 	  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=34861&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=34861&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a34500/34861/hotel_tn.jpg" alt="Portland Square Hotel" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">132 West 47th Steet, New York, NY 10036</GEO><br> <span class="WRTXT_11px">In the heart of Time Square New York!&nbsp;<a href="/script/property.php?hotel_id=34861&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>3.3 mi from New York city center. Hotel 150 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/aamainlogo_sm.gif" vspace="0" border="0" alt="Affordable Accomodations"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness_no.gif" width="17" height="18" border="0" alt="No Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=35681&FE=11205&CN=New+York" class="WRTXT_13px_bold">Comfort Inn New York</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_2_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=35681&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=35681&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a35500/35681/hotel_tn.jpg" alt="Comfort Inn New York" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">442 W. 36th Street, Manhattan, New York, NY 10018</GEO><br> <span class="WRTXT_11px">Javitz Convention Ctr, Madison Square Garden Theatre, Sport Center & Empire State Building within walking distance.&nbsp;<a href="/script/property.php?hotel_id=35681&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>2.9 mi from New York city center. Hotel 56 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/comfortinn_sm.gif" vspace="0" border="0" alt="Comfort"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets_no.gif" width="17" height="18" border="0" alt="Pets Not Allowed"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr_no.gif" width="17" height="18" border="0" alt="No Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant_no.gif" width="17" height="18" border="0" alt="No Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap.gif" width="17" height="18" border="0" alt="Physically Disabled Services Available"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv_no.gif" width="17" height="18" border="0" alt="No Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+			
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2" class="WRTXT_13px_bold">
+				<a href="/script/property.php?hotel_id=38661&FE=11205&CN=New+York" class="WRTXT_13px_bold">Hilton Times Square</a> 
+
+		 
+		<img src="http://images.worldres.com/site_images/SHARED/standard/rating_3_stars.gif" alt="Quality" vspace="2" border="0" align="absmiddle">
+		 
+			  </td>
+          <td width="180" rowspan="3"> <table width="100%" border="0" cellspacing="0" cellpadding="6">
+              <tr> <td align="center" class="WRTD_search_action_summ">
+                				                    </td>
+              </tr>
+              <tr> 
+                 
+                <td align="center" class="WRTD_search_action_go"><a href="http://reservations.worldres.com/cgi-bin/roomlist/rooms_available.cgi?site_id=788&lang_id=1&front_end_id=11205&hotel_id=38661&capacity_type=1&price_id=1&CN=New+York" class="WRLNK_nodeco_11px_rev">Check rates & availability</a></td>
+                               </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td width="60" valign="top"><a href="/script/property.php?hotel_id=38661&FE=11205&CN=New+York"><img src="http://images.worldres.com/property/a38500/38661/hotel_tn.jpg" alt="Hilton Times Square" width="60" height="60" hspace="4" vspace="4" border="0"></a></td>
+          <td class="WRTXT_09px_grey"><GEO TYPE="US">234 West 42nd Street, New York, NY 10036</GEO><br> <span class="WRTXT_11px">Located in the heart of Times Square,the hotel's modernisitc facade is complemented by original works of art.&nbsp;<a href="/script/property.php?hotel_id=38661&FE=11205&CN=New+York" class="WRLNK_deco_11px">more</a>...<br>
+            </span>3.1 mi from New York city center. Hotel 443 rooms            </td>
+        </tr>
+        <tr> 
+          <td width="60" align="center"> <img src="http://images.worldres.com/site_images/brand_logos_small/hilton_sm.gif" vspace="0" border="0" alt="Hilton Hotel Corporation"> </td>
+                        <td>
+            <img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_fitness.gif" width="17" height="18" border="0" alt="Fitness Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_kids_no.gif" width="17" height="18" border="0" alt="Extra Charge for Children"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pets.gif" width="17" height="18" border="0" alt="Pets OK"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_business_ctr.gif" width="17" height="18" border="0" alt="Business Center"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_restaurant.gif" width="17" height="18" border="0" alt="Restaurant"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_handicap_no.gif" width="17" height="18" border="0" alt="No Physically Disabled Services"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_pool_no.gif" width="17" height="18" border="0" alt="No Pool"><img vspace="3" style="margin-left:5px" align="left" src="http://images.worldres.com/site_images/SHARED/standard/WR_amen_roomsrv.gif" width="17" height="18" border="0" alt="Room Service">			</td>
+			        </tr>
+		        <tr> 
+          <td height="1" colspan="3" class="WRTD_div_gray"><img src="http://images.worldres.com/site_images/SHARED/standard/cleardot.gif" width="1" height="1"></td>
+        </tr>
+      </table>
+		    </td>
+  </tr>
+<tr>
+	<td>
+      
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td align="right" class="WRTD_search_paging">
+		  &nbsp;&nbsp;
+		  |
+		  		<span class="WRTXT_10px_bold">1</span>| <a href="/script/hotel_search.php?PG=1&FE=11205&CN=New+York" class="WRLNK_deco_10px">2</a>| <a href="/script/hotel_search.php?PG=2&FE=11205&CN=New+York" class="WRLNK_deco_10px">3</a>| <a href="/script/hotel_search.php?PG=3&FE=11205&CN=New+York" class="WRLNK_deco_10px">4</a>&nbsp;&nbsp;&nbsp; 
+			 <a href="/script/hotel_search.php?PG=1&FE=11205&CN=New+York" class="WRLNK_deco_10px_bold">Next</a> &nbsp;&nbsp;</td>         </tr>
+      </table> 
+	   	</td>
+</tr>
+
+<tr>
+	<td><br>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				</table>
+	</td>
+</tr>
+
+</table>
+</td><td valign="top" width="1" bgcolor="#FFFFFF">
+</td></tr></table>
+
+
+<script language=javascript>
+<!--	
+function opensec()
+{
+window.open("https://html.worldres.com/security/security_1.html","my_new_window","width=500,height=375,location=no,directories=no,status=no,toolbar=no,menubar=no,scrollbars=yes,resizable=yes")
+}
+//-->
+</script>
+
+<hr size="1" width="98%">
+<div align="center"><font face="Verdana, Helvetica, Arial" size="1"><b>
+<a href="http://search.worldres.com/search/GetHTMLServlet?TI=FPLenglish1.html&SI=788&FE=11205">new lodging search</a> · 
+<a href="http://smartpages.worldres.com/script/modresinterim.asp">Change Reservations</a> · 
+<a href="http://smartpages.worldres.com/help/index.asp">Reservation Help</a></b></font></div>
+<br>
+<div align="center"><a href='javascript:opensec()'><img src="http://images.worldres.com/site_images/secure_message.gif" border="0" alt="Security Guaranteed!"></a></div>
+<br>
+<div align="center"><img src="http://images.worldres.com/site_images/wrfooter.gif" usemap="#wrfootermap" border="0">
+<map name="wrfootermap"><area shape="rect" coords="5,2,317,27" href="http://www.worldres.com/">
+<area shape="rect" coords="28,31,284,44" href="http://www.worldres.com/copyright.html"></map> </div>
+</body></html>
+<!-- Cache: attpts01 July 29, 2006 06:44:36 script-hotel_search.php TTL: 60 -->

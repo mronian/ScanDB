@@ -1,0 +1,353 @@
+<DOC>
+<DOCNO>f00068</DOCNO>
+<DOCHDR>http://www.imaginova.com/contactus</DOCHDR>
+<HTML>
+<HEAD>
+<TITLE>Imaginova: Contact Us</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- Preload Script -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		topnav_02_aboutus_over = newImage("../images/topnav_02-aboutus_over.gif");
+		aboutus_over = newImage("../images/aboutus-over.gif");
+		topnav_04_aboutus_over = newImage("../images/topnav_04-aboutus_over.gif");
+		ourbrands_over = newImage("../images/ourbrands-over.gif");
+		topnav_06_ourbrands_over = newImage("../images/topnav_06-ourbrands_over.gif");
+		newsroom_over = newImage("../images/newsroom-over.gif");
+		topnav_08_newsroom_over = newImage("../images/topnav_08-newsroom_over.gif");
+		partners_over = newImage("../images/partners-over.gif");
+		topnav_10_partners_over = newImage("../images/topnav_10-partners_over.gif");
+		store_over = newImage("../images/store-over.gif");
+		topnav_12_store_over = newImage("../images/topnav_12-store_over.gif");
+		contactus_over = newImage("../images/contactus-over.gif");
+		topnav_14_contactus_over = newImage("../images/topnav_14-contactus_over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+		<link href="../imaginova.css" rel="stylesheet" media="screen">
+	<script type="text/javascript"><!--
+var preloadFlag = true;
+
+// --></script>
+
+	</HEAD>
+<BODY BGCOLOR=black text="black" link="#ffa500" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 ONLOAD="preloadImages();">
+
+
+			<a href="../"><IMG SRC="../images/imaginova_header.jpg" WIDTH=700 HEIGHT=79 ALT="Imaginova" border="0"></a><br>
+
+			<!-- navigation -->
+		<TABLE WIDTH=700 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+			<IMG SRC="../images/topnav_01.gif" WIDTH=14 HEIGHT=28 ALT=""></TD>
+		<TD>
+			<IMG NAME="topnav_02" SRC="../images/topnav_02.gif" WIDTH=1 HEIGHT=28 ALT=""></TD>
+		<TD>
+			<A HREF="../aboutus/"
+				ONMOUSEOVER="changeImages('topnav_02', '../images/topnav_02-aboutus_over.gif', 'aboutus', '../images/aboutus-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('topnav_02', '../images/topnav_02.gif', 'aboutus', '../images/aboutus.gif'); return true;">
+				<IMG NAME="aboutus" SRC="../images/aboutus.gif" WIDTH=89 HEIGHT=28 BORDER=0 ALT="About Us"></A></TD>
+		<TD>
+			<IMG NAME="topnav_04" SRC="../images/topnav_04-aboutus_over.gif" WIDTH=1 HEIGHT=28 ALT=""></TD>
+		<TD>
+			<A HREF="../ourbrands/"
+				ONMOUSEOVER="changeImages('topnav_06', '../images/ourbrands-over.gif', 'topnav_06', '../images/topnav_06-ourbrands_over.gif'); return true;"
+				ONMOUSEOUT="changeImages('topnav_06', '../images/ourbrands.gif', 'topnav_06', '../images/topnav_06.gif'); return true;">
+				<IMG NAME="ourbrands" SRC="../images/ourbrands.gif" WIDTH=99 HEIGHT=28 BORDER=0 ALT="Our Brands"></A></TD>
+		<TD>
+			<IMG NAME="topnav_06" SRC="../images/topnav_06.gif" WIDTH=1 HEIGHT=28 ALT=""></TD>
+		<TD>
+			<A HREF="../newsroom/"
+				ONMOUSEOVER="changeImages('newsroom', '../images/newsroom-over.gif', 'topnav_08', '../images/topnav_08-newsroom_over.gif'); return true;"
+				ONMOUSEOUT="changeImages('newsroom', '../images/newsroom.gif', 'topnav_08', '../images/topnav_08.gif'); return true;">
+				<IMG NAME="newsroom" SRC="../images/newsroom.gif" WIDTH=100 HEIGHT=28 BORDER=0 ALT="Newsroom"></A></TD>
+		<TD>
+			<IMG NAME="topnav_08" SRC="../images/topnav_08.gif" WIDTH=1 HEIGHT=28 ALT=""></TD>
+		<TD>
+			<A HREF="../partners/"
+				ONMOUSEOVER="changeImages('topnav_08', '../images/topnav_08-newsroom_over.gif', 'partners', '../images/partners-over.gif', 'topnav_10', '../images/topnav_10-partners_over.gif'); return true;"
+				ONMOUSEOUT="changeImages('topnav_08', '../images/topnav_08.gif', 'partners', '../images/partners.gif', 'topnav_10', '../images/topnav_10.gif'); return true;">
+				<IMG NAME="partners" SRC="../images/partners.gif" WIDTH=82 HEIGHT=28 BORDER=0 ALT="Partners"></A></TD>
+		<TD>
+			<IMG NAME="topnav_10" SRC="../images/topnav_10.gif" WIDTH=1 HEIGHT=28 ALT=""></TD>
+		<TD>
+			<A HREF="http://www.starrynight.com/imaginovastore/" TARGET="_blank"
+				ONMOUSEOVER="changeImages('topnav_10', '../images/topnav_10-partners_over.gif', 'store', '../images/store-over.gif', 'topnav_12', '../images/topnav_12-store_over.gif'); return true;"
+				ONMOUSEOUT="changeImages('topnav_10', '../images/topnav_10.gif', 'store', '../images/store.gif', 'topnav_12', '../images/topnav_12.gif'); return true;">
+				<IMG NAME="store" SRC="../images/store.gif" WIDTH=65 HEIGHT=28 BORDER=0 ALT="Store"></A></TD>
+		<TD>
+			<IMG NAME="topnav_12" SRC="../images/topnav_12.gif" WIDTH=1 HEIGHT=28 ALT=""></TD>
+		<TD>
+			<A HREF="../contactus/"
+				ONMOUSEOVER="changeImages('topnav_12', '../images/topnav_12-store_over.gif', 'contactus', '../images/contactus-over.gif', 'topnav_14', '../images/topnav_14-contactus_over.gif'); return true;"
+				ONMOUSEOUT="changeImages('topnav_12', '../images/topnav_12.gif', 'contactus', '../images/contactus.gif', 'topnav_14', '../images/topnav_14.gif'); return true;">
+				<IMG NAME="contactus" SRC="../images/contactus.gif" WIDTH=98 HEIGHT=28 BORDER=0 ALT="Contact Us"></A></TD>
+		<TD>
+			<IMG NAME="topnav_14" SRC="../images/topnav_14.gif" WIDTH=1 HEIGHT=28 ALT=""></TD>
+		<TD>
+			<IMG SRC="../images/topnav_15.gif" WIDTH=16 HEIGHT=28 ALT=""></TD>
+			<TD>
+			<IMG SRC="../images/nav_130.gif" WIDTH=130 HEIGHT=28 ALT=""></TD>
+	</TR>
+</TABLE>
+
+<!-- End navigation -->
+
+		<table width="700" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td valign="top" bgcolor="white" width="170">
+
+				<!-- Subnav -->
+<TABLE WIDTH=170 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+			<IMG SRC="subnav_images/contactus.gif" WIDTH=170 HEIGHT=55 ALT="Contact Us"></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="./">
+				<IMG SRC="subnav_images/contactinfo_on.gif" WIDTH=170 HEIGHT=20 BORDER=0 ALT="Contact Information"></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="officelocations.html">
+				<IMG SRC="subnav_images/officelocations.gif" WIDTH=170 HEIGHT=20 BORDER=0 ALT="Office Locations"></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="subnav_images/blank.gif" WIDTH=170 HEIGHT=65 ALT=""></TD>
+	</TR>
+</TABLE>
+<!-- End Subnav -->
+
+				</td>
+				<td valign="top" bgcolor="white" width="400"><img src="../images/spacer.gif" alt="" width="400" height="16" border="0"><br>
+					<img src="images/page_section_contact.gif" alt="Contact Info" width="400" height="30" border="0"><br>
+
+					<!--contact-->
+
+					<table width="400" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td align="right">
+
+					<table width="380" border="0" cellspacing="4" cellpadding="4">
+									<tr>
+										<td class="maintextsm" valign="top" width="150"><img src="../images/spacer.gif" alt="" width="150" height="1" border="0"></td>
+										<td width="202"><img src="../images/spacer.gif" alt="" width="202" height="1" border="0"></td>
+									</tr>
+									<tr>
+							<td class="maintextsm" valign="top" width="150">
+
+							<b>Imaginova&#153; Corp.</b>
+
+							</td>
+	        <td class="maintextsm" width="202"><b>212-703-5800</b></td>
+	</tr>
+	<tr>
+	        <td class="maintextsm" valign="top" width="150">
+              <ul><li>SPACE.com</li></ul>
+            </td>
+	        <td class="maintextsm" valign="top" width="202">212-703-5800<br>
+											<br>
+											Comments and suggestions: <br><a href="http://www.space.com/php/contactus/thoughts.php">Click Here</a><br>
+											<br>
+
+Editorial Office: 212-703-5845<br><br>
+
+Advertising and sponsorship opportunities: <a href="mailto:advertising@hq.space.com">advertising@hq.space.com</a><br>
+											<br>
+
+                Customer Service:<br><a href="http://www.space.com/php/contactus/thoughts.php">Click Here</a><br>
+                <br>
+
+              </td>
+	</tr>
+
+
+									<tr>
+	        <td class="maintextsm" valign="top" width="150">
+<ul><li>Space News</ul>
+            </td>
+	            <td class="maintextsm" valign="top" width="202">703.658.8400<br>
+											<a href="mailto:spacenewshelp@imaginova.com">spacenewshelp@imaginova.com
+<br>
+												<br>
+											</a></td>
+	</tr>
+									<tr>
+									<td class="maintextsm" valign="top" width="150">
+										<ul>
+											<li>Starry Night Astronomy Software
+										</ul>
+										</td>
+									<td class="maintextsm" width="202"><u>For Orders Only</u><br>
+									(800) 252-5417<br>
+											<a href="mailto:orders@starrynight.com">orders@starrynight.com<br>
+												<br>
+											</a><BR><u>All other calls</u><br>
+											(416) 410-0259<br>
+
+											Mon-Fri, 9 AM to 5 PM EST<br>
+													<a href="mailto:contact@starrynight.com">contact@starrynight.com</a> <br>
+											<br>
+											For information about educational bundles, site licenses, curriculum planning,for the student and teacher guides for Pro and Backyard, please check: <a href="http://www.starrynight.com/edu/">http://www.starrynight.com/edu/</a>.
+<br>
+											<br>
+										</td>
+	</tr>
+
+									<tr>
+									<td class="maintextsm" valign="top" width="150">
+										<ul>
+											<li>Orion Telescopes & Binoculars
+										</ul>
+										</td>
+									<td class="maintextsm" width="202">
+											<GEO TYPE="US">89 Hangar Way<br>
+											Watsonville, CA 95076-2465</GEO><br>
+											Office: 831.763.7000<br>
+											Mail Order Sales: 800.447.1001<br>
+
+										</td>
+	</tr>
+
+
+								<tr>
+										<td class="maintextsm" colspan="2" width="364"><b>Advertising and sponsorship opportunities:</b><br>
+
+To receive information describing advertising and sponsorship opportunities on SPACE.com or <i>Space News</i>,
+please e-mail <a href="mailto:advertising@hq.space.com">advertising@hq.space.com</a> or call us at 212-703-5800.
+<br>
+											<br>
+											<b>Comments and suggestions:</b><br>
+
+General comments, criticisms or suggestions: <a href="http://www.space.com/php/contactus/thoughts.php">Click Here</a>.<br><br>
+
+				<b>Media questions and interview inquiries:</b><br>
+              Media professionals can send their questions to <a href="mailto:pressinquiries@imaginova.com">pressinquiries@imaginova.com</a>
+              or call 212-703-5871.<br><br>
+              <b>Newsroom:</b><br>
+
+News releases and story ideas can be faxed to our newsroom at 212-703-5801.<br>
+
+Individual writers can be reached by clicking on their bylines at the top of stories.<br><br>
+<!--
+<b>Space Shop questions, comments and credit card questions:</b><br>
+
+<a href="http://www.space.com/php/contactus/thoughts.php">Click Here</a>.<br><br>
+-->
+<b>Technical Problems</b><br>
+
+<a href="http://www.space.com/php/contactus/troubleshooter.php">Click Here</a>.<br>
+											<br>
+										</td>
+									</tr>
+						</table>
+						</td>
+						</tr>
+						</table>
+
+
+					<!--end contact-->
+
+					</td>
+							<td valign="top" bgcolor="#003471" width="130"><img src="../images/sidebar_130.gif" alt="" width="130" height="374" border="0"></td>
+						</tr>
+
+		</table>
+
+		<!--footer-->
+		
+
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+				<td bgcolor="gray" width="700"><img src="images/spacer.gif" alt="" width="1" height="2" border="0"></td>
+			</tr>
+		<tr>
+		<td class="footer" align="left" valign="middle" bgcolor="black" width="700"><a href="../aboutus/"><span class="footer">About Us</span></a> &#149; <a href="../ourbrands/"><span class="footer">Our Brands</span></a> &#149; <a href="../newsroom/"><span class="footer">Newsroom</span></a> &#149; <a href="../partners/"><span class="footer">Partners</span></a> &#149; <a href="http://www.starrynight.com/imaginovastore/" target="_blank"><span class="footer">Store</span></a> &#149; <a href="../contactus/"><span class="footer">Contact Us</span></a></td>
+	</tr>
+			<tr>
+		<td class="copyright" align="left" valign="top" bgcolor="white" width="700">
+					<br>
+						&copy; 2004-2005 Imaginova&#153; Corp. All Rights Reserved.<br>
+						<br>
+
+				</td>
+	</tr>
+		</table>
+	<!-- BEGIN WEBSIDESTORY CODE v9.1.0 (11up) -->
+	<!-- COPYRIGHT 1997-2003 WEBSIDESTORY, INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479 B1. Privacy notice at: http://websidestory.com/privacy -->
+	<script language="javascript" id="_hbc">
+	var _acct="DM5310168HFW92EN3";	//account number(s)
+	var _pn="PUT+PAGE+NAME+HERE"; //page name(s)
+	var _mlc="CONTENT+CATEGORY"; //multi-level content category
+	var _seg=""; // visitor segmentation
+	var _cmp=""; // campaign id
+	var _gp="";  // campaign goal
+	var _cmpn="";// campaign id in query
+	var _gpn=""; // campaign goal in query
+	var _fnl=""; // funnels
+	var _pec=""; // error codes
+	var _fv="";  // form validation function name
+	var _dcmp="";// dynamic campaign
+	var _dcmpn="";//dynamic campaign in query
+	var _hra=""; // response attribute
+	var _hcn=""; // conversion
+	var _hcv=""; // conversion value
+	var _hlt=""; // lead tracking
+	var _hla=""; // lead attribute
+	var _hqsr="";// response attribute in referrer query
+	var _hqsp="";// response attribute in query
+	var _hc1=""; // custom 1
+	var _hc2=""; // custom 2
+	var _hc3=""; // custom 3
+	var _hc4=""; // custom 4
+	var _lt="none";  // link tracking
+	var _ci="";  // customer id
+	var _cp="null"; // campaign
+	var _cpd=""; // campaign domain
+	var _pndef="title"; //default page name
+	var _ctdef="full"; //default content category
+	var _dlf="n"; //download filter
+	var _elf="n"; //exit link filter
+	var _dft="n"; // download file tracker variable, set to y to use the name reference
+	var _hrf=""; // custom referrer. use valid url or param name
+	var _epg="n"; //event page identifier
+	var _vpc="090100r";
+	var _gn="ehg-space.hitbox.com",_mn="we71"; //gateway & machine name
+	</script><script language="javascript1.1" defer src="http://www.imaginova.com/js/hbe-11up.js">
+	</script><script language="javascript">if(navigator.appName!='Netscape'&&parseInt(
+	navigator.appVersion)==4)document.write("<\!"+"--")</script><noscript>
+	<img src="http://ehg-space.hitbox.com/HG?hc=we71&cd=1&hv=6&ce=u&hb=DM5310168HFW92EN3&n=PUT+PAGE+NAME+HERE&vcon=CONTENT+CATEGORY&seg=&cmp=&gp=&fnl=&pec=&dcmp=&ra=&gn=&cv=&ld=&la=&c1=&c2=&c3=&c4=&vpc=090100rn" border="0" width="1" height="1">
+	</noscript><!--//-->
+<!-- END WEBSIDESTORY CODE  -->
+
+		<!--end footer-->
+
+	</BODY>
+</HTML>

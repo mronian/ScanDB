@@ -1,0 +1,705 @@
+<DOC>
+<DOCNO>g00464</DOCNO>
+<DOCHDR>http://www.backstage.com/backstage/contact/index.jsp</DOCHDR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+																
+	
+
+
+
+<HTML>
+<HEAD>
+<TITLE>Backstage.com</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="copyright" CONTENT="2000 VNUemedia">
+<META NAME="author" CONTENT="VNUemedia Design team">
+<META NAME="description" CONTENT="The Complete Online Performing Arts Resource">
+<META NAME="keywords" CONTENT="Performing arts, arts resource, dance, acting, film, stage, television, casting, resumes">
+<META NAME="rating" CONTENT="general">
+
+ <STYLE>
+   
+P	{
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 12px;
+	font-style : normal;
+	color : black;
+	}
+
+P.small {
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 10px;
+	font-style : normal;
+	color : black;
+	}
+	
+B	{
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 12px;
+	font-style : bold;
+	color : black;
+	}
+	
+B.small	{
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 10pt;
+	font-style : bold;
+	color : black;
+	}
+	
+B.title	{
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 14px;
+	font-style : bold;
+	color : "#000070";
+	}
+
+B.headline	{
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 15px;
+	font-style : bold;
+	color : "#000000";
+	}
+	
+I	{
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 12px;
+	font-style : italic;
+	color : black;
+	}
+
+UL	{
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 12px;
+	font-style : normal;
+	color : black;
+	}
+
+TD	{
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 12px;
+	font-style : normal;
+	color : black;
+	}
+	
+TD.small	{
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 10px;
+	font-style : normal;
+	color : black;
+	}
+			
+/* Override: use SPAN tag with STYLE attribute OR 
+   DIV tag with STYLE att for entire P block-level element */
+
+H1 {
+	font-family : "arial", "helvetica", san-serif
+	font-size : 1.8em;
+	font-style : normal;
+	font-weight : 700;
+	color: black;
+	}
+	
+H2 {
+	font-family : "arial", "helvetica", san-serif
+	font-size : 1.4em;
+	font-style : normal;
+	font-weight : 700;
+	color: black;
+	}
+
+H3 {
+	font-family : "arial", "helvetica", san-serif
+	font-size : 5px;
+	font-style : normal;
+	color:  "#black";
+	}
+
+.body {
+	font-family : "arial", "helvetica", san-serif;
+	font-size : 12px;
+	font-style : normal;
+	color : black;
+	}
+	
+/* Override: use SPAN tag with STYLE attribute inside FONT tag
+   PLACE in this order: FONT, SPAN, ANCHOR */
+	
+A:link {
+	font-family : "Arial", "Helvetica", sans-serif;
+	font-size : 12px;
+	font-style : normal;
+	color: "#000070";
+	text-decoration: none;
+}
+
+A:visited {
+	font-family : "Arial", "Helvetica", sans-serif;
+	font-size : 12px;
+	font-style : normal;
+	color: "#006600";
+	text-decoration: none;
+}
+
+A:active {
+	font-family : "Arial", "Helvetica", sans-serif;
+	font-size : 12px;
+	font-style : normal;
+	color: "#000075";
+	text-decoration: none;
+	}
+
+	
+.emailform {
+	font-family : "Verdana";
+	font-size : 10px;
+	font-weight : bold;
+	color: black;
+	}	
+	
+.red {
+	font-family : "Arial", "Helvetica", sans-serif;
+	font-size : 9pt;
+	font-weight : bold;
+	color: #FF0000;
+	text-decoration: none;
+	}
+.blue {
+	font-family : "Arial", "Helvetica", sans-serif;
+	font-size : 9pt;
+	font-weight : bold;
+	color: #000070;
+	text-decoration: underline;
+	}
+.test{
+	font-family : "Arial", "Helvetica", sans-serif;
+	font-size : 15pt;
+	font-weight : bold;
+	color: #000000;
+	font-style : italic;
+	}
+.test2{
+	font-family : "Arial", "Helvetica", sans-serif;
+	font-size : 13pt;
+	font-weight : bold;
+	color: #000000;
+	}
+.test3{
+	font-family : "Arial", "Helvetica", sans-serif;
+	font-size : 11pt;
+	color: #000000;
+	font-style : italic;
+	}
+.test4{
+	font-family : "Arial", "Helvetica", sans-serif;
+	font-size : 11pt;
+	color: #000000;
+	}
+  </STYLE>
+<script language="JavaScript">
+
+<!--
+function leapto(form) {
+var myindex=form.dest.selectedIndex
+location.href=(form.dest.options[myindex].value);
+// You can output to ANY frame using:  parent.[framename].location.href
+}
+// -->
+                
+
+
+function RightslinkPopUp (title, date, author, contentID) 
+
+{
+	var url = "https://s100.copyright.com/servlet/DispatchServlet";
+	var location = url
+		+ "?PublisherName=" + escape("VNU eMedia")
+		+ "&publication=" + escape("Back Stage")
+		+ "&ContentID=" + escape(contentID)
+		+ "&Title=" + escape(title)
+		+ "&Author=" + escape(author)
+		+ "&PublicationDate=" + escape(date)
+		+ "&Install=S";
+		window.open( location, 'Rightslink','location=no,toolbar=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=650,height=550');
+}
+
+
+
+
+
+</script>
+
+
+<!-- Begin Pop Up Window -->
+
+<script language="JavaScript">
+<!--
+function openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+//-->
+</script>
+
+<!-- End Pop Up Window -->
+
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="/backstage/images/backgreylong3.gif" LINK="#18085A">
+
+
+
+
+      <!-- begin ad (this HTML generated by VNUAdTag) //-->
+
+      <iframe width="1" height="1" marginwidth="0" marginheight="0" frameborder="0"
+        bordercolor="#000000" scrolling="no" src="http://ads.vnuemedia.com/html.ng/Site=myvnu&AdSize=1x1&PagePos=19&Bust=5667439806309114618">
+	<script language="JavaScript1.1" 
+	  src="http://ads.vnuemedia.com/js.ng/params.richmedia=yes&Site=myvnu&AdSize=1x1&PagePos=19&Bust=5667439806309114618">
+	</script> 
+	<noscript>
+	  <a href="http://ads.vnuemedia.com/click.ng/params.richmedia=yes&Site=myvnu&AdSize=1x1&PagePos=19&Bust=5667439806309114618">
+	    <img width="1" height="1" border="0" 
+	      src="http://ads.vnuemedia.com/image.ng/params.richmedia=yes&Site=myvnu&AdSize=1x1&PagePos=19&Bust=5667439806309114618"/>
+	  </a>
+	</noscript>
+      </iframe>
+
+      <!-- end generated ad //-->
+      
+
+
+<!---*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- AD Server Scripts -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--->
+<TABLE WIDTH="640" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+		<TD WIDTH="125">
+		<!-- <a href="javascript:openBrWindow('/backstage/contact/siteinfo.jsp','popup','resizable=no,scrollbars=yes,width=550,height=350');"><IMG SRC="/backstage/images/backstage_20010330.gif" BORDER="0" WIDTH="120" HEIGHT="60"></A> -->
+
+
+<!--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="120" height="60">
+  <param name=movie value="file:///F%7C/Web%20Development/Backstage/flash/20010516.swf">
+  <param name=quality value=high>
+  <embed src="file:///F%7C/Web%20Development/Backstage/flash/20010516.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="120" height="60">
+  </embed> 
+</object>-->
+
+ 
+<!-- Start DoubleClick Ad Tag 120x60 -->
+<!-- Ad Tag last edited 8/21/2002 -->
+
+
+      <!-- begin ad (this HTML generated by VNUAdTag) //-->
+
+      <iframe width="120" height="60" marginwidth="0" marginheight="0" frameborder="0"
+        bordercolor="#000000" scrolling="no" src="http://ads.vnuemedia.com/html.ng/Site=backstage&AdSize=120x60&PagePos=1&Bust=-9125109283131180988">
+	<script language="JavaScript1.1" 
+	  src="http://ads.vnuemedia.com/js.ng/params.richmedia=yes&Site=backstage&AdSize=120x60&PagePos=1&Bust=-9125109283131180988">
+	</script> 
+	<noscript>
+	  <a href="http://ads.vnuemedia.com/click.ng/params.richmedia=yes&Site=backstage&AdSize=120x60&PagePos=1&Bust=-9125109283131180988">
+	    <img width="120" height="60" border="0" 
+	      src="http://ads.vnuemedia.com/image.ng/params.richmedia=yes&Site=backstage&AdSize=120x60&PagePos=1&Bust=-9125109283131180988"/>
+	  </a>
+	</noscript>
+      </iframe>
+
+      <!-- end generated ad //-->
+      
+
+<!-- End DoubleClick Ad Tag 120x60 -->
+</TD>
+
+		<TD WIDTH="15"><IMG src="/backstage/images/spacer.gif" width="15" height="1"></TD>
+		<TD WIDTH="500">
+		
+<!-- Start DoubleClick Ad Tag 468x60 -->
+
+
+      <!-- begin ad (this HTML generated by VNUAdTag) //-->
+
+      
+	<script language="JavaScript1.1" 
+	  src="http://ads.vnuemedia.com/js.ng/Site=backstage&PagePos=0&Bust=-3805435107268618943">
+	</script> 
+	<noscript>
+	  <a href="http://ads.vnuemedia.com/click.ng/Site=backstage&PagePos=0&Bust=-3805435107268618943">
+	    <img border="0" 
+	      src="http://ads.vnuemedia.com/image.ng/Site=backstage&PagePos=0&Bust=-3805435107268618943"/>
+	  </a>
+	</noscript>
+      
+
+      <!-- end generated ad //-->
+      
+
+<!-- End DoubleClick Ad Tag 460x60 -->
+		
+		</TD>
+	</TR>
+</TABLE>
+
+
+<!---*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- AD Server Scripts -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--->
+
+
+<TABLE WIDTH="640" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+		<TD><A HREF="/backstage/index.jsp"><IMG src="/backstage/images/back.gif" width="125" height="55" BORDER="0"></A></TD>
+		<TD WIDTH="15"><IMG src="/backstage/images/spacer.gif" width="15" height="1"></TD>
+		<TD><IMG SRC="/backstage/images/contact_header.gif" WIDTH="500" HEIGHT="60" VSPACE="5"></TD>
+	</TR>
+</TABLE>
+<!-- ADs and Nameplate table CLOSE -->	
+
+
+
+<!-- Page Table open-->
+<TABLE WIDTH="640" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+		
+    <TD WIDTH="125" VALIGN="top">
+ 		
+      <P>
+	  	  <A HREF="/backstage/rossreports/directories.jsp"><IMG src="/backstage/images/ross_online.gif" width="125" height="58" BORDER="0"></A><br><br>
+
+		
+		 <A HREF="/backstage/members/index.jsp"><IMG src="/backstage/images/memberlogin.gif" border="0"></A>
+        <A HREF="/backstage/subscriptions_rr.jsp"></A>
+        
+		<A HREF="/backstage/subscriptions_rr.jsp"><img src="/backstage/images/subscribe_bs.gif" border="0"></a><br>
+		<A HREF="/backstage/directory/index.jsp"><IMG src="/backstage/images/resource.gif" border="0" width="125" height="45" ALT="Performance Service Advertising"></A><BR>
+		
+		<IMG src="/backstage/images/topcap.gif" BORDER="0" width="125" height="2"><BR>
+        <A HREF="/backstage/casting/index.jsp"><IMG src="/backstage/images/casting.gif" BORDER="0" width="125" height="13" ALT="Casting Notices"></A><BR>
+        <IMG src="/backstage/images/divider.gif" BORDER="0" width="125" height="1"><BR>
+        <A HREF="/backstage/features/index.jsp"><IMG src="/backstage/images/features.gif" BORDER="0" width="125" height="13" ALT="Feature Stories from Back Stage and Back Stage West"></A><BR>
+        <IMG src="/backstage/images/divider.gif" BORDER="0" width="125" height="1"><BR>
+        <A HREF="/backstage/news/index.jsp"><IMG src="/backstage/images/news.gif" BORDER="0" width="125" height="13" ALT="News Stories from Back Stage and Back Stage West"></A><BR>
+        <IMG src="/backstage/images/divider.gif" BORDER="0" width="125" height="1"><BR>
+        <A HREF="/backstage/columns/index.jsp"><IMG src="/backstage/images/columns.gif" BORDER="0" width="125" height="13" ALT="Columns from Back Stage and Back Stage West"></A><BR>
+        <IMG src="/backstage/images/divider.gif" width="125" height="1"><BR>
+        <A HREF="/backstage/showguide/index.jsp"><IMG src="/backstage/images/showguide.gif" border="0" width="125" height="13" ALT="Play Reviews and Postings for All Regions"></A><BR>
+        
+		<IMG src="/backstage/images/bottomcap.gif" BORDER="0" width="125" height="7"><BR>
+
+		<IMG src="/backstage/images/topcap.gif" width="125" height="2"><BR>
+        <A HREF="http://bbs.backstage.com/cgi-bin/Ultimate.cgi"><IMG src="/backstage/images/careerchat.gif" border="0" width="125" height="13" ALT="Online Bulletin Board for Artists"></A><BR>
+
+
+	   <IMG src="/backstage/images/divider.gif" width="125" height="1"><BR>
+		<a href="/backstage/calendar/index.jsp"><img src="/backstage/images/calendar.gif" width="125" height="13" border="0" alt="Calendar"></a><br>
+		<IMG src="/backstage/images/divider.gif" width="125" height="1"><BR>
+
+       
+        <A HREF="/backstage/toolbox/index.jsp"><IMG src="/backstage/images/toolbox.gif" border="0" width="125" height="13" ALT="Tools for Artists Including Artist Funding, How-To Articles, Listing Links, and The Ross Reports"></A><BR>
+        <IMG src="/backstage/images/divider.gif" width="125" height="1"><BR>
+        <A HREF="/backstage/register/index.jsp"><IMG src="/backstage/images/register.gif" border="0" width="125" height="22" ALT="Broadway Grosses and Related Data, Posted Weekly"></A><BR>
+        <IMG src="/backstage/images/bottomcap.gif" width="125" height="7"><BR>
+       
+	   	<IMG src="/backstage/images/topcap.gif" BORDER="0" width="125" height="2"><BR>
+		<IMG src="/backstage/images/other.gif" BORDER="0" width="125" height="13"><BR>
+	    <A HREF="/backstage/chicago/index.jsp"><IMG src="/backstage/images/chicago.gif" BORDER="0" width="125" height="13"></A><BR>
+		<IMG src="/backstage/images/divider.gif" width="125" height="1"><BR>
+		<A HREF="/backstage/florida/index.jsp"><IMG src="/backstage/images/florida.gif" BORDER="0" width="125" height="13"></A><BR>	
+		<IMG src="/backstage/images/divider.gif" width="125" height="1"><BR>
+		<A HREF="/backstage/las_vegas/index.jsp"><IMG src="/backstage/images/las_vegas2.gif" BORDER="0" width="125" height="13"></A><BR>
+	<IMG src="/backstage/images/bottomcap.gif" BORDER="0" width="125" height="7"><BR>
+		
+	   <!-- 	<IMG src="/backstage/images/advertisements.gif" width="122" height="13"><BR> -->
+		<!-- Start DoubleClick Ad Tag 120x240 -->
+		<!-- Ad Tag last edited 5/4/2001 -->
+		
+
+      <!-- begin ad (this HTML generated by VNUAdTag) //-->
+
+      
+	<script language="JavaScript1.1" 
+	  src="http://ads.vnuemedia.com/js.ng/Site=backstage&AdSize=120x240&PagePos=1&Bust=5556820040227581979">
+	</script> 
+	<noscript>
+	  <a href="http://ads.vnuemedia.com/click.ng/Site=backstage&AdSize=120x240&PagePos=1&Bust=5556820040227581979">
+	    <img width="120" height="240" border="0" 
+	      src="http://ads.vnuemedia.com/image.ng/Site=backstage&AdSize=120x240&PagePos=1&Bust=5556820040227581979"/>
+	  </a>
+	</noscript>
+      
+
+      <!-- end generated ad //-->
+      
+
+		<!-- End DoubleClick Ad Tag 120x240 -->
+			
+		<BR>
+       	<IMG SRC="/backstage/images/spacer.gif" width="125" height="5">
+		
+		<IMG src="/backstage/images/topcap.gif" width="125" height="2"><BR	>
+		<A HREF="/backstage/contact/printsub.jsp"><IMG src="/backstage/images/subscriptions.gif" border="0" width="125" height="22" ALT="Print Subscription Information"></A><BR>
+		<IMG src="/backstage/images/divider.gif" width="125" height="1"><BR>
+    	<A HREF="/backstage/advertise/index.jsp"><IMG src="/backstage/images/advertising.gif" border="0" width="125" height="13" ALT="Advertising Information"></A><BR>
+		<IMG src="/backstage/images/divider.gif" width="125" height="1"><BR>
+     	<A HREF="/backstage/contact/index.jsp"><IMG src="/backstage/images/contactus.gif" border="0" width="125" height="13" ALT="Contact Information for Backstage.com, Back Stage and Back Stage West"></A><BR> 
+		<IMG src="/backstage/images/divider.gif" width="125" height="1"><BR>
+		<A HREF="/backstage/contact/faq.jsp"><IMG src="/backstage/images/faq_nav.gif" border="0" width="125" height="13" ALT="FAQ for Backstage.com, Back Stage and Back Stage West"></A><BR> 
+		<IMG src="/backstage/images/bottomcap.gif" width="125" height="7"><BR> <BR>
+             
+<div align="center">
+<!-- 120 x 240 ad tag -->
+
+<!-- Creative for 120x400 format ## adTemplate_120x400.jsp -->
+<script type="text/javascript" language="JavaScript">
+<!--
+google_ad_client = 'ca-vnu-us_120x400';
+google_ad_width = 120;
+google_ad_height = 400;
+google_ad_format = '120x400_pas_abgnc';
+google_ad_type = 'text';
+google_safe = 'high';
+// -->
+</script>
+
+<script type="text/javascript" language="JavaScript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+<noscript>
+<img height=1 width=1 border=0
+src="http://pagead2.googlesyndication.com/pagead/imp.gif?client=ca-vnu-us_120x400&event=noscript"/>
+
+</noscript>
+<!-- End Creative -->
+
+
+
+<!-- 120 x 240 ad tag -->
+</div>
+		 <BR>
+      </P>
+    </TD>
+		<TD WIDTH="15"><IMG SRC="/backstage/images/spacer.gif" WIDTH="15" HEIGHT="1" BORDER="0"></TD>
+    		<TD WIDTH="500" VALIGN="top"> 
+<!-------------------------- CONTENT HERE ---------------------------------->
+
+		
+<table width=468 border=0 cellpadding=10 cellspacing=0>
+<tr>
+<td><font size="2" face="arial, helvetica, sans-serif">
+<b>SUBSCRIBERS</b> <br>
+* Direct any <b>website</b> comments or questions regarding: <br>
+<br>
+Website login<br>
+Account information<br>
+Billing<br>
+Site Navigation<br>
+Keyword Search<br>
+Technical Issues<br>
+Online Customer Service<br>
+<br>
+To: <a href="mailto:info@backstage.com">info@backstage.com</a> or (800) 634-6810 U.S. (646) 654-5552 Outside U.S.<br><br>
+<b>Check and Money Order Payments</b> <br>
+BackStage.com offers pre-paid six-month and one-year subscriptions. To pay by check or money order for six months or one full year of BackStage.com membership, please send payment of $65.70 for six months or $131.40 for one year to the following address: <br><br>
+VNU eMedia <br>
+770 Broadway <br>
+6th Floor <br>
+New York, NY 10003 <br>
+Attention: Shared Services <br>
+(Make checks payable to BackStage.com) <br><br>
+IMPORTANT: Be sure to provide your <b>name, address, phone number, e-mail address, 4-character minimum Login Name of your choice</b> and 4-character minimum password of your choice for account purposes. <br>
+<I>*NOTE: Pre-pay plans are non-refundable.</I> <br>
+<br>
+* Direct any <b>print-related</b> issues regarding: <br>
+<br>
+Print Delivery <br>
+Missed Issues <br>
+Back Issue/Single Issue Orders<br>
+Account information<br>
+Billing<br>
+Back Stage and Back Stage West Print Subscription Services<br>
+<br>
+To: <a href="mailto:backstage@espcomp.com">backstage@espcomp.com</a> (Back Stage), <a href="mailto:backstagewest@espcomp.com">backstagewest@espcomp.com</a>(Back Stage West) or (800) 562-2706 U.S. 818-487-4582 Outside U.S.<br>
+<br>
+<br>
+<b>E-CASTING NEWSLETTER INQUIRIES</b> (free e-mail newsletter)<br>
+<br>
+Email us at <a href="mailto:backstage@backstage.com">backstage@backstage.com</a> <br>
+<br>
+<br>
+<b>CASTING CONTACTS</b><br>
+<br>
+East - 646-654-5700, then press 1 for casting, or email <a href="mailto:bscasting@backstage.com">bscasting@backstage.com</a><br>
+West - 323-525-2358 or <a href="mailto:bswcasting@backstage.com">bswcasting@backstage.com</a><br>
+Chicago - 765-414-2050<br>
+Florida - 561-620-1039 or <a href="mailto:florida@backstage.com">florida@backstage.com</a><br>
+<br>
+<br>
+<b>EDITORIAL CONTACT</b><br>
+<br>
+Sherry Eaker -- Editor in Chief<br> 
+<a href="mailto:seaker@backstage.com">seaker@backstage.com</a><br>
+<br>
+David Sheward -- Editorial Director<br>
+<a href="mailto:dsheward@backstage.com">dsheward@backstage.com</a><br>
+<br>
+Pamela Bock -- Senior Web Editor<br>
+<a href="mailto:pbock@backstage.com">pbock@backstage.com</a><br>
+<br>
+Thomas Penketh -- East Coast Web Editor <br>
+<a href="mailto:tpenketh@backstage.com">tpenketh@backstage.com</a><br>
+<br>
+<br>
+Back Stage East<br>
+770 Broadway, 4th flr<br>
+NY, NY 10003<br>
+646-654-5700<br>
+<br>
+Back Stage West<br>
+5055 Wilshire Blvd<br>
+Los Angeles CA 90036<br>
+323-525-2356<br>
+<br>
+<br>
+<b>ADVERTISING</b><br>
+<br>
+<a href="/backstage/advertise/index.jsp">Click Here</a> for the advertising information and contact information.<br></font>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+			<script language="JavaScript" src="http://ads.vnuemedia.com/ads/beacon/nnselect.js"></script><noscript>  <img src='http://ping.nnselect.com/ping.gif?c=111' height='1' width='1'></noscript>
+
+
+<CENTER><hr size=1 noshade>
+&#169; 2005 <A HREF="http://www.vnuemedia.com">VNU eMedia, Inc.</a>  All rights reserved.
+
+<A HREF="http://www.vnuemedia.com/terms.html">Terms of Use</a> and <A HREF="http://www.vnuemedia.com/privacy.html">Privacy Policy</a>
+
+
+      <!-- begin ad (this HTML generated by VNUAdTag) //-->
+
+      <iframe width="1" height="1" marginwidth="0" marginheight="0" frameborder="0"
+        bordercolor="#000000" scrolling="no" src="http://ads.vnuemedia.com/html.ng/Site=backstage&AdSize=1x1&PagePos=13&Bust=-22306506631670579">
+	<script language="JavaScript1.1" 
+	  src="http://ads.vnuemedia.com/js.ng/params.richmedia=yes&Site=backstage&AdSize=1x1&PagePos=13&Bust=-22306506631670579">
+	</script> 
+	<noscript>
+	  <a href="http://ads.vnuemedia.com/click.ng/params.richmedia=yes&Site=backstage&AdSize=1x1&PagePos=13&Bust=-22306506631670579">
+	    <img width="1" height="1" border="0" 
+	      src="http://ads.vnuemedia.com/image.ng/params.richmedia=yes&Site=backstage&AdSize=1x1&PagePos=13&Bust=-22306506631670579"/>
+	  </a>
+	</noscript>
+      </iframe>
+
+      <!-- end generated ad //-->
+      
+
+</CENTER>
+
+
+<!-- START RedSheriff Measurement V5.01 -->
+<!-- COPYRIGHT 2002 RedSheriff Limited -->
+<script language="JavaScript" type="text/javascript"><!--
+  var _rsCI="us-emediatop";
+  var _rsCG="BackStage";
+  var _rsDT=0;
+  var _rsSI=escape(window.location);
+  var _rsLP=location.protocol.indexOf('https')>-1?'https:':'http:';
+  var _rsRP=escape(document.referrer);
+  var _rsND=_rsLP+'//secure-us.imrworldwide.com/';
+
+  if (parseInt(navigator.appVersion)>=4) {
+    var _rsRD=(new Date()).getTime();
+    var _rsSE=1;
+    var _rsSV="";
+    var _rsSM=0.4;
+    _rsCL='<scr'+'ipt language="JavaScript" type="text/javascript" src="'+_rsND+'v5.js"></scr'+'ipt>';
+  } else {
+    _rsCL='<img src="'+_rsND+'cgi-bin/m?ci='+_rsCI+'&cg='+_rsCG+'&si='+_rsSI+'&rp='+_rsRP+'">';
+  }
+  document.write(_rsCL);
+//--></script>
+<noscript>
+<img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-emediatop&amp;cg=BackStage" alt="">
+</noscript>
+<!-- END RedSheriff Measurement V5.01 -->
+
+			
+			
+<!-------------------------- CONTENT END HERE ------------------------------>
+
+
+		</font>
+</center>
+
+
+
+
+			
+			
+
+<BR>
+
+
+
+</TD>
+					
+					<!-- SIDEBAR -->
+					</TD>
+					<TD>
+					<img src="http://66.162.189.124/1x1.gif" width="5" height="1">
+					<img src="http://66.162.189.124/1x1.gif" width="1" height="1">
+					</TD>
+ 					<TD valign="top">
+					
+
+      <!-- begin ad (this HTML generated by VNUAdTag) //-->
+
+      
+	<script language="JavaScript1.1" 
+	  src="http://ads.vnuemedia.com/js.ng/Site=backstage&PagePos=2&Bust=535785130429540096">
+	</script> 
+	<noscript>
+	  <a href="http://ads.vnuemedia.com/click.ng/Site=backstage&PagePos=2&Bust=535785130429540096">
+	    <img border="0" 
+	      src="http://ads.vnuemedia.com/image.ng/Site=backstage&PagePos=2&Bust=535785130429540096"/>
+	  </a>
+	</noscript>
+      
+
+      <!-- end generated ad //-->
+       
+
+					
+					</TD>
+				
+				</TR>
+				
+  			</TABLE> <!-- PAGE TABLE CLOSE --> 
+
+<img src="http://66.162.189.124/1x1.gif" width="1" height="1">
+<img src="http://66.162.189.125/1x1.gif" width="1" height="1">
+
+			
+</BODY>
+</HTML>
+
+
+

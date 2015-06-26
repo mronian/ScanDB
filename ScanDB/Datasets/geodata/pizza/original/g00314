@@ -1,0 +1,316 @@
+<DOC>
+<DOCNO>g00314</DOCNO>
+<DOCHDR>http://unofficial.stanford.edu/bus_focus.php?bid=2054</DOCHDR>
+
+
+<html><!-- InstanceBegin template="/Templates/sub.dwt.php" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+
+<!-- InstanceBeginEditable name="doctitle" -->
+
+<title>The Unofficial Guide - Businesses</title>
+
+<!-- InstanceEndEditable --> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+
+<link href="css/ug.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+
+
+
+// ||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+
+Menu = {timer : null, current : null};
+
+Menu.getStyle = function(name){
+
+	if(document.getElementById) return document.getElementById(name).style;
+
+	else if(document.all) return document.all[name].style;
+
+	else if(document.layers) return document.layers[name];
+
+}
+
+Menu.show = function(name, event){
+
+	if(this.timer) clearTimeout(this.timer);
+
+	ph = document.getElementById("placeholder").style;
+
+	//this.getStyle(name).left = event.clientX + document.body.scrollLeft - 8;
+
+	this.getStyle(name).left = document.body.clientWidth/2 - 260;
+
+	this.getStyle(name).top = 87;
+
+	this.getStyle(name).visibility = "visible";
+
+	this.current = name;
+
+}
+
+Menu.hide = function(){
+
+	this.timer = setTimeout("Menu.doHide()",50);
+
+}
+
+Menu.doHide = function(){
+
+	if(this.current){
+
+		this.getStyle(this.current).visibility = "hidden";
+
+		this.current = null;
+
+	}
+
+}
+
+
+
+// ||||||||||||||||||||||||||||||||||||||||||||||||||
+
+</script>
+
+</head>
+
+
+<body background="images/bg.gif" bottommargin="0" leftmargin="0" topmargin="0">
+
+<table id="maintable" width="832" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <tr> 
+
+    <td width="21" rowspan="2" valign="top" background="/ug/images/bg_shad.gif">&nbsp;</td>
+
+    <td style="border-left: 1px solid #FFCC33; border-right: 1px solid #FFCC33; padding: 15px; background: #F7F2EE url(images/tempbg.gif) top right no-repeat;" width="790" valign="top"><img src="images/title_main.gif" alt="The Unofficial Guide" width="351" height="48"> 
+
+      <div style="position: absolute; display: block;" id="placeholder"></div><br>
+
+      <font color="#990000" size="2"><a href="index.php"><strong>Home</strong></a><strong>
+
+      :: <a id="exp" onmouseover="Menu.doHide(); Menu.show('subnav2', event);" onmouseout="Menu.hide();" onfocus="blur();" href="#">Explore the Guide</a></strong></font>
+
+      <div id="subnav2" style="position:absolute; z-index:1000; visibility:hidden; height:10px;" onMouseOver="Menu.show(this.id);" onMouseOut="Menu.hide();"> 
+
+        <!--Netscpe 6+ will trigger the events in the layer tag, so the if statement is used to prevent this.-->
+
+        <layer onMouseOver="if(document.layers)Menu.show('subnav2');" onMouseOut="if(document.layers)Menu.hide();"> 
+
+        <table class="menu" border="0" cellspacing="1" cellpadding="0">
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=40">Past & Future Stanford</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=43">Daily Life</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=52">Home Life</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=61">Campus Resources</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=105">Campus Culture</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=33">Jetting Around Town</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=113">Breaking The Bubble</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=71">Night on the Town</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=76">Working Hard</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=82">Wining And Dining</a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td><a href="chapters.php?sec=100">Hitting the Road</a></td>
+
+          </tr>
+
+        </table>
+
+        </layer>
+
+      </div>
+
+      <font color="#990000" size="2"><strong> :: <a href="businesses.php">Businesses</a> 
+
+      :: <a href="about.php">About the Guide</a></strong></font> <br>
+
+      <!-- InstanceBeginEditable name="Main" --> 
+
+            <table width="472" border="0" cellpadding="0" cellspacing="0">
+
+              <tr valign="top"> 
+
+                <td height="18" colspan="2"><p><img src="images/hr_semi.gif" width="461" height="7"><br>
+
+                  </p></td>
+
+              </tr>
+
+              <tr> 
+
+                <td width="235"><p><img src="images/search.gif" alt="Search" width="48" height="20"> 
+
+                    for a business or location.</p></td>
+
+                <td width="237"><form name="form1" method="post" action="search_results.php">
+
+                    <div align="right"> 
+
+                      <input name="search_field" type="text" id="search_field" style="border: 1px solid #990000;">
+
+                      &nbsp;&nbsp; 
+
+                      <input type="submit" name="Submit" value="Search">
+
+                    </div>
+
+                  </form></td>
+
+              </tr>
+
+            </table>
+
+            
+
+      <p><img src="images/businesses.gif" alt="Businesses" width="146" height="41"><br>
+
+        <img src="images/hr_full.gif" width="572" height="5"> <br>
+
+				<a href="businesses.php">Home</a> > <a href="businesses.php?browse=both&bid=196">Food</a> > <a href="businesses.php?browse=both&bid=195">Restaurants</a> > <a href="businesses.php?browse=both&bid=175">Pizza</a> > New York Pizza 
+
+      </p>
+
+      <br>
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr> 
+
+          <td width="28%" valign="top"> <table border="0" cellpadding="0" cellspacing="0" class="nav_box">
+
+              <tr>
+
+                <td><h2>Restaurants</h2><a href="businesses.php?bid=200&browse=both">American</a><br><a href="businesses.php?bid=208&browse=both">Bars & Taverns</a><br><a href="businesses.php?bid=131&browse=both">Californian</a><br><a href="businesses.php?bid=134&browse=both">Chinese</a><br><a href="businesses.php?bid=148&browse=both">French</a><br><a href="businesses.php?bid=152&browse=both">Hawaiin</a><br><a href="businesses.php?bid=203&browse=both">Indian</a><br><a href="businesses.php?bid=160&browse=both">Italian</a><br><a href="businesses.php?bid=161&browse=both">Japanese</a><br><a href="businesses.php?bid=165&browse=both">Mediterranian</a><br><a href="businesses.php?bid=166&browse=both">Mexican</a><br><a href="businesses.php?bid=175&browse=both">Pizza</a><br><a href="businesses.php?bid=179&browse=both">Sandwiches and Subs</a><br><a href="businesses.php?bid=184&browse=both">Singaporean</a><br><a href="businesses.php?bid=143&browse=both">Spanish, Tapas</a><br><a href="businesses.php?bid=188&browse=both">Thai</a><br></td>
+
+              </tr>
+
+            </table>
+
+            
+
+          </td>
+
+          <td width="72%" valign="top"><h2>New York Pizza</h2>
+
+            <table width="488" height="58" border="0" align="left" cellpadding="0" cellspacing="0">
+
+              <tr> 
+
+                <td>&nbsp;</td>
+
+                <td width="115" height="20"><img src="images/standard_tag.gif" alt="standard">
+				</td>
+
+              </tr>
+
+              <tr> 
+
+                <td colspan="2" class="standard"><b>Address1:</b> 325 Hamilton Avenue Palo Alto, CA 94301<br><b>Phone:</b> (650) 328-6800<br><b>Fax:</b> (650) 328-2447<br><br></td>
+
+              </tr>
+
+            </table>
+
+            <p>&nbsp;</p></td>
+
+        </tr>
+
+      </table>
+
+      <!-- InstanceEndEditable -->    </td>
+
+    <td width="21" rowspan="2" valign="top" background="images/bg_shad_r.gif">&nbsp;</td>
+
+  </tr>
+
+  <tr> 
+
+    <td style="border-left: 1px solid #FFCC33; border-right: 1px solid #FFCC33;" width="700" height="35" valign="top" bgcolor="#DEDDDD"><div align="center"> 
+
+        <h3><font color="#990000"><strong><a href="index.php"><font size="2">Home</font></a><font size="2">
+
+          :: <a href="#">Explore the Guide</a> :: <a href="businesses.php">Businesses</a> 
+
+          :: <a href="about.php">About the Guide</a></font></strong><font size="2"><br>
+
+          </font><br>
+
+          <font size="1">Copyright &copy; 2005 Unofficial Guide.<br>
+
+          Powered by <a href="http://is.stanford.edu">SSE Stanford Internet 
+
+          Solutions </a>.</font></font></h3>
+
+      </div></td>
+
+  </tr>
+
+</table>
+
+</body>
+
+<!-- InstanceEnd --></html>
+
+
+
+
