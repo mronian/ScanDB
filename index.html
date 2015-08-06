@@ -5,7 +5,7 @@
     <title>Scandb by mronian</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -33,7 +33,24 @@ information from directories and other sources of business details.</p>
 <h2>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
-<p></p>
+<ol>
+<li>OpenCV <br>
+</li>
+<li>Python 2.7 <br>
+</li>
+<li>Django 1.7 <br>
+</li>
+<li>Celery 3.1.18<br>
+</li>
+<li>Tesseract OCR 3.02 <br>
+</li>
+<li>OCROpus <br>
+</li>
+<li>PLY (Python Lex-Yacc) 3.6 <br>
+</li>
+<li>Python Weka Wrapper
+9.</li>
+</ol>
 
 <h2>
 <a id="setting-it-up" class="anchor" href="#setting-it-up" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting it Up</h2>
@@ -70,7 +87,32 @@ errors after the text is produced by Tesseract.</p>
 <h2>
 <a id="how-does-it-work" class="anchor" href="#how-does-it-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>How does it Work?</h2>
 
-<p></p>
+<ul>
+<li>Auto - Thresholding</li>
+<li>De - Skewing of Scanned Documents</li>
+<li>Binarisation</li>
+<li>Extracting segments of information from scanned pages</li>
+<li>Line Extraction</li>
+<li>OCR by Tesseract</li>
+<li>Correcting OCR with Spell Check</li>
+<li>Regular Expressions for Details like Email, Website, Phone Number etc.</li>
+<li>Address Detection using a Multilayer Perceptron based Neural Network trained on US addresses.</li>
+<li>Analysing Tokens</li>
+<li>Parsing Tokens with a Stochastic Layout Parser</li>
+<li>Layout Parser uses an LR Grammar</li>
+<li>Validating Information</li>
+<li>Showing Information to User</li>
+</ul>
+
+<h2>
+<a id="future-work" class="anchor" href="#future-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>Future Work</h2>
+
+<ul>
+<li>Fuzzy String Matching</li>
+<li>Neural Network to correct OCR errors and learn from Human validation</li>
+<li>Store Page Numbers to help scanning of complete books in one go</li>
+<li>Data validation using Google and other online sources</li>
+</ul>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/mronian/ScanDB">Scandb</a> is maintained by <a href="https://github.com/mronian">mronian</a>.</span>
@@ -83,4 +125,3 @@ errors after the text is produced by Tesseract.</p>
   
   </body>
 </html>
-
